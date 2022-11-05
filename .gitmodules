@@ -1,3 +1,3 @@
-[submodule "assets"]
+[submodule "media"]
 	path = client
-	url = https://github.com/ClubPenguinPlus/assets
+	url = https://github.com/Club-Penguin-Plus-Official/media
