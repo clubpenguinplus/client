@@ -3,7 +3,6 @@ name: Client CI
 on:
   push:
     branches: [master]
-  pull_request:
 
 jobs:
   client-ci:
