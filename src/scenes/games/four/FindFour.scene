@@ -1,0 +1,277 @@
+{
+    "id": "c497abe9-ef5b-4e05-9576-c628bc1df794",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "c78a9501-c3e6-456b-b088-10901aee86b1",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "window",
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "444f3793-1a41-4386-9e05-e712dbd5f24d",
+                    "label": "window",
+                    "components": [],
+                    "texture": {
+                        "key": "four",
+                        "frame": "window"
+                    }
+                },
+                {
+                    "type": "Image",
+                    "id": "8bd244b6-e19b-4100-ad75-9be7d47ee878",
+                    "label": "shadow",
+                    "components": [],
+                    "texture": {
+                        "key": "four",
+                        "frame": "shadow"
+                    },
+                    "y": -44
+                },
+                {
+                    "type": "Container",
+                    "id": "0a4b10d7-2a94-4fb2-8652-09e09d0f3ec4",
+                    "label": "counterContainer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "ffb54173-b9ac-4fe1-bab7-7a6b435da288",
+                    "label": "board",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "four",
+                        "frame": "board"
+                    },
+                    "y": -44
+                },
+                {
+                    "prefabId": "aa157150-c6e0-4443-8649-1a137743c2ee",
+                    "id": "df191ca7-415a-4fc9-a8d5-e65fef52082c",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "player2",
+                    "components": [],
+                    "x": -126,
+                    "y": 232,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "aa157150-c6e0-4443-8649-1a137743c2ee",
+                    "id": "464b8f4f-cdab-4139-af39-d1ac85c8631e",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "player1",
+                    "components": [],
+                    "x": -126,
+                    "y": 172,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Image",
+                    "id": "9eee329c-ab1e-4e40-9949-fd7a1f1a0508",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onClose()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 181,
+                    "y": -243
+                },
+                {
+                    "type": "Image",
+                    "id": "7583ca44-3abe-403e-9adb-f44e6d03c299",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 181,
+                    "y": -245
+                },
+                {
+                    "type": "Image",
+                    "id": "ec828e7e-f8fe-45ce-a6b2-37004b848cde",
+                    "label": "hover",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "four",
+                        "frame": "counter_1"
+                    },
+                    "x": -145,
+                    "y": -194,
+                    "originY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Container",
+                    "id": "679651b3-e1fc-4c54-9ea1-6b6dde4bbb91",
+                    "label": "hitbox",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -152,
+                    "y": -44,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "4fafbb7a-591f-4463-8d07-172b8c6e05dd",
+                            "label": "column1",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(-145)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(0)",
+                            "fillColor": "#e30000",
+                            "fillAlpha": 0.5,
+                            "width": 60,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a93e8a11-ef0a-4709-9dc9-adea848a3ecf",
+                            "label": "column2",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(-97)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(1)",
+                            "x": 55,
+                            "fillColor": "#bae300",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "ea44a581-3a33-4dd7-99bf-bfd9354a5c0b",
+                            "label": "column3",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(-49)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(2)",
+                            "x": 103,
+                            "fillColor": "#00e303",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "b5511c79-353f-462a-af15-ce997e16e3c0",
+                            "label": "column4",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(0)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(3)",
+                            "x": 152,
+                            "fillColor": "#00e3bb",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a98e67e8-76f5-4b03-ad29-da0d84d3bfc8",
+                            "label": "column5",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(49)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(4)",
+                            "x": 201,
+                            "fillColor": "#006be3",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a70bebf6-99db-47bc-9056-936a252ab337",
+                            "label": "column6",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(98)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(5)",
+                            "x": 250,
+                            "fillColor": "#5800e3",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a64fbfde-d510-41b5-90c5-d75bbed76702",
+                            "label": "column7",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(145)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(6)",
+                            "x": 304,
+                            "fillColor": "#e37800",
+                            "fillAlpha": 0.5,
+                            "width": 60,
+                            "height": 304
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fed2c198-258f-4f6a-b7e3-21b688fed227",
+            "label": "placers"
+        },
+        {
+            "id": "4974b1ce-2910-4903-af1b-8077c4c1c801",
+            "label": "items",
+            "objectIds": [
+                "464b8f4f-cdab-4139-af39-d1ac85c8631e",
+                "df191ca7-415a-4fc9-a8d5-e65fef52082c"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,553 @@
+{
+    "id": "f2082da8-be0e-4d58-9e4b-bc469ab52280",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/coffee/coffee-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Coffee",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "901b67b3-90b1-479f-bfd0-8026cd3c7d84",
+            "label": "coffeebg",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeebg"
+            },
+            "x": 733,
+            "y": 479
+        },
+        {
+            "type": "Sprite",
+            "id": "d2a7accb-ef32-406b-bd8a-5bb63b5cde6a",
+            "label": "coffeebagbarrel",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBeanBarrelOver();",
+            "ShowHint.text": "Bean Counters",
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeebagbarrel0001"
+            },
+            "x": 1373.0699002825866,
+            "y": 719.4016707422898,
+            "originX": 0.5455926569637659,
+            "originY": 0.435953172360424
+        },
+        {
+            "type": "Image",
+            "id": "66e16610-3c24-4a30-863a-67437f104d0c",
+            "label": "coffeecouch_left_arm",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeecouch-left-arm"
+            },
+            "x": 222.2928295466819,
+            "y": 409,
+            "originX": 0.6411603693335237
+        },
+        {
+            "type": "Image",
+            "id": "ea0bd71e-64f8-4035-b8f9-dba07f69c77d",
+            "label": "coffee_footrest",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffee-footrest"
+            },
+            "x": 257.9376525878906,
+            "y": 454.59780737302873,
+            "originX": 0.5071577140209638,
+            "originY": 0.24860383632442326
+        },
+        {
+            "type": "Image",
+            "id": "8c90e327-f899-4aac-a477-91a3e3daee31",
+            "label": "rail",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "rail"
+            },
+            "x": 648,
+            "y": 552.9822587504649,
+            "originY": 0.989433852050304
+        },
+        {
+            "type": "Image",
+            "id": "870c36c6-7417-4f90-b37f-8897344ad14c",
+            "label": "smoothiebartop",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiebartop"
+            },
+            "x": 118.84710397097516,
+            "y": 578.0281436656322,
+            "originX": 0.5354892273471202,
+            "originY": 0.40035490072287755
+        },
+        {
+            "type": "Image",
+            "id": "334c5052-3fe0-49f1-8067-2fe6a8ab47c0",
+            "label": "smoothiebarbottom",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiebarbottom"
+            },
+            "x": 203.22774160113786,
+            "y": 837.6658863027025,
+            "originX": 0.57017459175551,
+            "originY": 0.708599633234524
+        },
+        {
+            "type": "Sprite",
+            "id": "9f359898-b88d-400a-af1e-a8b1bd399fd5",
+            "label": "smoothiemachine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiemachine0001"
+            },
+            "x": 122.09897232395858,
+            "y": 859.8341953019369,
+            "originX": 0.540398201501314,
+            "originY": 0.9605976562090578
+        },
+        {
+            "type": "Ellipse",
+            "id": "660316f6-401a-4c19-a9a9-98d606334148",
+            "label": "smoothiezone",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSmoothieMachineOver();",
+            "ShowHint.text": "Smoothie Smash",
+            "x": 67,
+            "y": 537,
+            "scaleX": 1.5080773725778969,
+            "scaleY": 3.4162829021161816,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "c29208c0-88a0-463c-bb95-93b4bd632e6b",
+            "label": "tikihut",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "tikihut"
+            },
+            "x": 34.994408991738254,
+            "y": 594.9078945884169,
+            "originX": 0.4268917298408774,
+            "originY": 1.0357469607928678
+        },
+        {
+            "type": "Image",
+            "id": "df6ecea0-3aeb-4bbb-bc7c-46335fff9d13",
+            "label": "coffeefg",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeefg"
+            },
+            "x": -136.9999928497151,
+            "y": 975.4999925176061,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "e26d9a22-d230-4265-95b3-f8efa0d6b3f6",
+            "label": "towndoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "towndoor",
+            "Button.hoverCallback": "() => this.onTownDoorOver();",
+            "Button.hoverOutCallback": "() => this.onTownDoorOut();",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "coffee",
+                "frame": "towndoor"
+            },
+            "x": 708.9425085197669,
+            "y": 344.64460809072193,
+            "originX": 0.4862833901317792,
+            "originY": 0.8531515227265744
+        },
+        {
+            "type": "Image",
+            "id": "7adfb06e-61c7-4812-8289-bb470f9927c4",
+            "label": "coffeecouch_top",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeecouch-top"
+            },
+            "x": 467,
+            "y": 282,
+            "scaleX": 0.8886626093085153,
+            "scaleY": 0.8886626093085153
+        },
+        {
+            "type": "Image",
+            "id": "0edcb6e7-d500-499c-a935-a2c6ada92e6c",
+            "label": "coffeetable",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeetable"
+            },
+            "x": 466.2494491551358,
+            "y": 426.87343927288464,
+            "originX": 0.5312467211615225,
+            "originY": 0.6144110713298818
+        },
+        {
+            "type": "Image",
+            "id": "9c43047e-4d30-4c26-a177-8dbde07b2366",
+            "label": "coffeebar",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeebar"
+            },
+            "x": 937.8995394631188,
+            "y": 494.45095548108185,
+            "originX": 0.6170021840612098,
+            "originY": 0.7839712872415296
+        },
+        {
+            "type": "Sprite",
+            "id": "c89a3ecf-e96f-4bc7-ac6b-c357e9aaa3bc",
+            "label": "cashregister_coffee",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCoffeeCashRegisterOver();",
+            "texture": {
+                "key": "coffee",
+                "frame": "cashregister-coffee0001"
+            },
+            "x": 907.0018186991018,
+            "y": 489.0160204745877,
+            "originX": 0.5438756335900801,
+            "originY": 0.8668002968130717
+        },
+        {
+            "type": "Image",
+            "id": "307c0cff-69e5-4785-afbb-2dbbaf291103",
+            "label": "smoothiesmashsign",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiesmashsign"
+            },
+            "x": 31.704099655151367,
+            "y": 598.9030695379387,
+            "scaleX": 0.85,
+            "scaleY": 0.85,
+            "originX": 0.2556756505989983,
+            "originY": 1.3167318550863913
+        },
+        {
+            "type": "Image",
+            "id": "7a9d7a9b-fc2a-4395-82bb-677948aee27b",
+            "label": "smoothiesmashtext_en",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiesmashtext_en"
+            },
+            "x": 36.63584766109379,
+            "y": 631.3118499324878,
+            "scaleX": 0.4068530157718546,
+            "scaleY": 0.4068530157718546,
+            "originX": 0.0034519961301153947,
+            "originY": 2.623818522325409
+        },
+        {
+            "type": "Image",
+            "id": "6258e672-e06b-4d36-8b94-ceb351cfc251",
+            "label": "fruitbox",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "fruitbox"
+            },
+            "x": 326,
+            "y": 860,
+            "scaleX": 0.45605346343625297,
+            "scaleY": 0.45605346343625297
+        },
+        {
+            "type": "Image",
+            "id": "09498860-ef42-4a3a-9a8e-fc50ef291507",
+            "label": "fgfruit",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "fgfruit"
+            },
+            "x": 181,
+            "y": 909,
+            "scaleX": 0.45605346343625297,
+            "scaleY": 0.45605346343625297
+        },
+        {
+            "type": "Sprite",
+            "id": "4cd5937d-be01-4e5a-8f70-bdef49c3f56d",
+            "label": "cashregister_smoothie",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSmoothieCashRegisterOver();",
+            "texture": {
+                "key": "coffee",
+                "frame": "cashregister-smoothie0001"
+            },
+            "x": 269.32581369127956,
+            "y": 895.7496854178951,
+            "originX": 0.23505190795785325,
+            "originY": 2.2127957465350896
+        },
+        {
+            "type": "Image",
+            "id": "695bdaae-316d-474d-88a0-5df5a60663eb",
+            "label": "smoothiechair",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiechair"
+            },
+            "x": 439.03927633231285,
+            "y": 672.3715786829943,
+            "originX": 0.5234399578426765,
+            "originY": 0.20337798802722049
+        },
+        {
+            "type": "Image",
+            "id": "4c703869-3d4d-4258-b410-575bfe92b418",
+            "label": "smoothiechair_1",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "smoothiechair"
+            },
+            "x": 421.03927633231285,
+            "y": 780.2537496860556,
+            "originX": 0.5234399578426765,
+            "originY": 0.1477613607823235
+        },
+        {
+            "type": "Image",
+            "id": "ee73ca43-b3b1-4ce1-bbaf-20c63404b5d1",
+            "label": "fruittable",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "fruittable"
+            },
+            "x": 906.7459495345938,
+            "y": 805.9189906918772,
+            "originX": 0.5125607880186606,
+            "originY": 0.7042046239291063
+        },
+        {
+            "type": "Container",
+            "id": "f1976481-5487-4151-9fa7-e9f23ccd98cc",
+            "label": "bottomcoffee",
+            "components": [],
+            "x": 711.3267781138305,
+            "y": 737.2605668992305,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "5b3e4a77-ff93-4ade-88bc-9bb0f4a996c9",
+                    "label": "bottomcoffeechaircush_1",
+                    "components": [],
+                    "texture": {
+                        "key": "coffee",
+                        "frame": "bottomcoffeechaircush"
+                    },
+                    "x": 2.673221886169472,
+                    "y": 45.739433100769475
+                },
+                {
+                    "type": "Image",
+                    "id": "f0e071ac-c371-42ef-98a3-26e3a5dfe29e",
+                    "label": "bottomcoffeechairback_1",
+                    "components": [],
+                    "texture": {
+                        "key": "coffee",
+                        "frame": "bottomcoffeechairback"
+                    },
+                    "x": -2.326778113830528,
+                    "y": -1.2605668992305255
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "e9fc72bc-90bd-4f82-b462-262696517878",
+            "label": "bottomcoffeechairarm",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "bottomcoffeechairarm"
+            },
+            "x": 688,
+            "y": 792.8197180357201,
+            "originY": 0.6738193828782374
+        },
+        {
+            "type": "Image",
+            "id": "7704c684-ebc4-4b2c-83b2-3ad61e945c45",
+            "label": "bottomcoffeecouchback",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "bottomcoffeecouchback"
+            },
+            "x": 1110,
+            "y": 802
+        },
+        {
+            "type": "Image",
+            "id": "5cd99cf2-a2cb-4ca8-b0d3-1a4def0af4f7",
+            "label": "coffeebeanleft",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "coffeebeanleft"
+            },
+            "x": 1212,
+            "y": 735
+        },
+        {
+            "type": "Image",
+            "id": "db815184-addf-481d-af7b-ef327d0122f1",
+            "label": "bottomcoffeecouchfront",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "bottomcoffeecouchfront"
+            },
+            "x": 1189.7731595664625,
+            "y": 923.708886494362,
+            "originX": 0.3994734650704348,
+            "originY": 0.9526785001239316
+        },
+        {
+            "type": "Sprite",
+            "id": "0eef4b3a-8238-46cd-9951-5ef9af1d6403",
+            "label": "bookroomdoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBookRoomOver();",
+            "SimpleButton.hoverOutCallback": "() => this.onBookRoomOut();",
+            "texture": {
+                "key": "coffee",
+                "frame": "bookroomdoor"
+            },
+            "x": 1294.772927498817,
+            "y": 588.9487961054027,
+            "originX": 0.45688283877951824,
+            "originY": 1.0017969623208385
+        },
+        {
+            "type": "Image",
+            "id": "52026608-6bd7-4db0-b4f9-9b112bcfd983",
+            "label": "bookroomlight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "bookroomlight"
+            },
+            "x": 1313,
+            "y": 395,
+            "scaleX": 0.44484805539980127,
+            "scaleY": 0.44484805539980127,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "19b06774-89c8-4bfe-803c-e3aa05350fd8",
+            "label": "clubpenguintimes_en",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "clubpenguintimes_en"
+            },
+            "x": 1315,
+            "y": 219,
+            "scaleX": 0.4368656034442943,
+            "scaleY": 0.4368656034442943
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "457d5f89-93dc-474e-b305-d5a864cab33d",
+            "label": "sort",
+            "objectIds": [
+                "df6ecea0-3aeb-4bbb-bc7c-46335fff9d13",
+                "0edcb6e7-d500-499c-a935-a2c6ada92e6c",
+                "66e16610-3c24-4a30-863a-67437f104d0c",
+                "ea0bd71e-64f8-4035-b8f9-dba07f69c77d",
+                "c89a3ecf-e96f-4bc7-ac6b-c357e9aaa3bc",
+                "8c90e327-f899-4aac-a477-91a3e3daee31",
+                "c29208c0-88a0-463c-bb95-93b4bd632e6b",
+                "307c0cff-69e5-4785-afbb-2dbbaf291103",
+                "7a9d7a9b-fc2a-4395-82bb-677948aee27b",
+                "870c36c6-7417-4f90-b37f-8897344ad14c",
+                "334c5052-3fe0-49f1-8067-2fe6a8ab47c0",
+                "09498860-ef42-4a3a-9a8e-fc50ef291507",
+                "6258e672-e06b-4d36-8b94-ceb351cfc251",
+                "9f359898-b88d-400a-af1e-a8b1bd399fd5",
+                "4cd5937d-be01-4e5a-8f70-bdef49c3f56d",
+                "695bdaae-316d-474d-88a0-5df5a60663eb",
+                "ee73ca43-b3b1-4ce1-bbaf-20c63404b5d1",
+                "e9fc72bc-90bd-4f82-b462-262696517878",
+                "f1976481-5487-4151-9fa7-e9f23ccd98cc",
+                "d2a7accb-ef32-406b-bd8a-5bb63b5cde6a"
+            ]
+        }
+    ]
+}

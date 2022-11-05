@@ -1,0 +1,556 @@
+{
+    "id": "3b9487f3-aeb8-4bac-95f7-1b1b4fae4a70",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapHeight": 52,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "2e3cb4cb-5882-4e08-bbc6-e88eee8ac431",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "card_bg",
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "NinePatchContainer",
+                    "id": "a95e00f1-6c2c-4342-99c2-a511260db9fe",
+                    "label": "card_bg",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-bg"
+                    },
+                    "x": -90,
+                    "y": -21,
+                    "width": 286.264013444,
+                    "height": 557.532006592,
+                    "marginLeft": 40,
+                    "marginRight": 40,
+                    "marginTop": 0,
+                    "marginBottom": 0
+                },
+                {
+                    "type": "Text",
+                    "id": "841ebb39-649d-42b9-9511-ea1f3e822dc7",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -85,
+                    "y": -233,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Friends",
+                    "fixedWidth": 420,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "2ac6e99f-200e-4c66-bf80-a3495a593265",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 14,
+                    "y": -237,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "5a1c1fba-b044-4f40-9206-0ec74445befe",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 14,
+                    "y": -238,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "496ebb23-ce4a-4f95-80c8-24982e6de3b7",
+                    "label": "icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddies-icon"
+                    },
+                    "x": -157,
+                    "y": -233
+                },
+                {
+                    "prefabId": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+                    "id": "6eeaebcc-ba63-4f4e-9b87-8fce28d4514e",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "buddy_item_5",
+                    "components": [],
+                    "x": -33,
+                    "y": 150,
+                    "visible": true,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+                    "id": "8832d9b7-0a60-4918-afa5-d8c8a8e7a2f9",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "buddy_item_4",
+                    "components": [],
+                    "x": -148,
+                    "y": 150,
+                    "visible": true,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+                    "id": "39722cd4-e0f0-4a56-9956-1810785d54ea",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "buddy_item_3",
+                    "components": [],
+                    "x": -33,
+                    "y": 0,
+                    "visible": true,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+                    "id": "ae597d89-b8e4-47d4-9a9f-f263f2a9130d",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "buddy_item_2",
+                    "components": [],
+                    "x": -148,
+                    "y": 0,
+                    "visible": true,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+                    "id": "22fa7563-5315-46f4-8966-e40b241e26a2",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "buddy_item_1",
+                    "components": [],
+                    "x": -33,
+                    "y": -150,
+                    "visible": true,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+                    "id": "68c9019a-a0e7-42f8-8b77-1072aa33724e",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "buddy_item",
+                    "components": [],
+                    "x": -148,
+                    "y": -150,
+                    "visible": true,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "40a04e92-a4e2-4a3f-abdf-5d379bd6a185",
+                    "label": "searchContainer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -237,
+                    "y": 234,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "62785e7e-4724-40ad-b8f3-33fa2e0809b4",
+                            "label": "search_bg",
+                            "components": [],
+                            "texture": {
+                                "key": "prompt",
+                                "frame": "window"
+                            },
+                            "x": 147,
+                            "y": 24.03082275390625,
+                            "scaleX": 0.308474152,
+                            "scaleY": 0.43019445,
+                            "width": 928,
+                            "height": 340,
+                            "marginLeft": 50,
+                            "marginRight": 50,
+                            "marginTop": 50,
+                            "marginBottom": 50,
+                            "ninePatchContainerOriginY": 0.999953263437327
+                        },
+                        {
+                            "type": "Container",
+                            "id": "f2a7d7cb-643b-49eb-875d-3abca9f85d3a",
+                            "label": "bar",
+                            "components": [],
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "list": [
+                                {
+                                    "type": "Container",
+                                    "id": "081b96bd-6b45-49fb-9d94-0ec5527db8d7",
+                                    "label": "search_bar_highlight",
+                                    "components": [],
+                                    "list": [
+                                        {
+                                            "type": "Rectangle",
+                                            "id": "2219ff2e-73a6-4994-bbe6-7c19617e7274",
+                                            "label": "rectangle",
+                                            "components": [],
+                                            "x": 178,
+                                            "y": 1,
+                                            "isFilled": true,
+                                            "fillColor": "#1d446c",
+                                            "width": 280,
+                                            "height": 25
+                                        },
+                                        {
+                                            "type": "Ellipse",
+                                            "id": "b3b5c546-817f-405e-bc3f-7861b5c2ff13",
+                                            "label": "ellipse_2",
+                                            "components": [],
+                                            "x": 319,
+                                            "y": 1,
+                                            "isFilled": true,
+                                            "fillColor": "#1d446c",
+                                            "width": 25,
+                                            "height": 25
+                                        },
+                                        {
+                                            "type": "Ellipse",
+                                            "id": "0fad62fd-5f21-4630-b30b-8105f88fa5f0",
+                                            "label": "ellipse_3",
+                                            "components": [],
+                                            "x": 38,
+                                            "y": 1,
+                                            "isFilled": true,
+                                            "fillColor": "#1d446c",
+                                            "width": 25,
+                                            "height": 25
+                                        },
+                                        {
+                                            "type": "Container",
+                                            "id": "7143165d-d86c-4afb-b446-1d2eadd8660c",
+                                            "label": "search_bar_highlight_1",
+                                            "components": [],
+                                            "y": 3,
+                                            "list": [
+                                                {
+                                                    "type": "Rectangle",
+                                                    "id": "7986ea69-4b94-4f20-a924-a22a950d10f3",
+                                                    "label": "rectangle2",
+                                                    "components": [],
+                                                    "x": 178,
+                                                    "isFilled": true,
+                                                    "fillColor": "#29a9bd",
+                                                    "width": 280,
+                                                    "height": 25
+                                                },
+                                                {
+                                                    "type": "Ellipse",
+                                                    "id": "04b977f9-0712-4442-ade8-6aa41ba09914",
+                                                    "label": "ellipse_22",
+                                                    "components": [],
+                                                    "x": 319,
+                                                    "isFilled": true,
+                                                    "fillColor": "#29a9bd",
+                                                    "width": 25,
+                                                    "height": 25
+                                                },
+                                                {
+                                                    "type": "Ellipse",
+                                                    "id": "b32362f5-a584-43f1-b901-c83110888d3d",
+                                                    "label": "ellipse_32",
+                                                    "components": [],
+                                                    "x": 38,
+                                                    "isFilled": true,
+                                                    "fillColor": "#29a9bd",
+                                                    "width": 25,
+                                                    "height": 25
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Container",
+                                    "id": "d23c4c2c-6cac-49e4-9a9e-23e5a445e35a",
+                                    "label": "search_bar",
+                                    "components": [],
+                                    "x": 2,
+                                    "y": 3,
+                                    "list": [
+                                        {
+                                            "type": "Rectangle",
+                                            "id": "e2d1225e-b2eb-4b8e-a686-f6f9fe366d8f",
+                                            "label": "rectangle_1",
+                                            "components": [],
+                                            "x": 176,
+                                            "y": -1,
+                                            "isFilled": true,
+                                            "fillColor": "#ffffff",
+                                            "width": 280,
+                                            "height": 25
+                                        },
+                                        {
+                                            "type": "Ellipse",
+                                            "id": "04308a37-56ff-4c71-a922-e5abe6e5a87a",
+                                            "label": "ellipse_2_1",
+                                            "components": [],
+                                            "x": 317,
+                                            "y": -1,
+                                            "isFilled": true,
+                                            "fillColor": "#ffffff",
+                                            "width": 25,
+                                            "height": 25
+                                        },
+                                        {
+                                            "type": "Ellipse",
+                                            "id": "46395e94-8b87-43a3-8088-b8e69ccf1b0e",
+                                            "label": "ellipse_3_1",
+                                            "components": [],
+                                            "x": 36,
+                                            "y": -1,
+                                            "isFilled": true,
+                                            "fillColor": "#ffffff",
+                                            "width": 25,
+                                            "height": 25
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Text",
+                            "id": "16243d41-c1fd-44c5-a45f-dd97bdfc6919",
+                            "label": "searchInput",
+                            "scope": "CLASS",
+                            "components": [
+                                "InputText"
+                            ],
+                            "InputText.charlimit": 12,
+                            "InputText.entercallback": "() => this.onSearchEnter()",
+                            "x": 26,
+                            "y": 1,
+                            "originY": 0.5,
+                            "text": "Enter Name",
+                            "fixedWidth": 200,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "14px",
+                            "color": "#4c4c4cff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4483c8db-9fd1-4f24-a768-d3efc59a1e58",
+                            "label": "window_button_small",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "window-button-small",
+                            "Button.callback": "() => this.onSearchEnter()",
+                            "texture": {
+                                "key": "prompt",
+                                "frame": "window-button-small"
+                            },
+                            "x": 259,
+                            "y": 1,
+                            "scaleX": 0.2,
+                            "scaleY": 0.2,
+                            "originY": 0.49523809523809526,
+                            "tintTopLeft": "#73b5e5",
+                            "tintTopRight": "#73b5e5",
+                            "tintBottomLeft": "#73b5e5",
+                            "tintBottomRight": "#73b5e5"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7c5b07a0-653d-4050-b0a5-cac389cbd2cd",
+                            "label": "nameSearch_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "InputText"
+                            ],
+                            "x": 259,
+                            "y": 1,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Find",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "12px",
+                            "color": "#ffffffff"
+                        },
+                        {
+                            "prefabId": "7477daa3-a788-4bef-ba1b-bab1d90dbe49",
+                            "id": "f1875110-111d-4477-b91a-39e84c34c6b8",
+                            "unlock": [
+                                "x",
+                                "y",
+                                "scaleX",
+                                "scaleY",
+                                "visible"
+                            ],
+                            "label": "searchItem",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 149,
+                            "y": -61,
+                            "scaleX": 0.8,
+                            "scaleY": 0.8,
+                            "visible": false,
+                            "nestedPrefabs": [],
+                            "list": []
+                        },
+                        {
+                            "prefabId": "ea538fda-7ec7-4c58-b177-d265da193314",
+                            "id": "33479fa0-0068-4dd7-9406-0ef444833ef8",
+                            "unlock": [
+                                "x",
+                                "y",
+                                "scaleX",
+                                "scaleY",
+                                "visible"
+                            ],
+                            "label": "requestItem",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 149,
+                            "y": -61,
+                            "scaleX": 0.8,
+                            "scaleY": 0.8,
+                            "visible": false,
+                            "nestedPrefabs": [],
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "a7657ea8-1ecb-4576-8633-0db77f64e712",
+                            "label": "searchError",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 148,
+                            "y": -51,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "visible": false,
+                            "text": "error",
+                            "fixedWidth": 200,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "14px",
+                            "color": "#a0d3e9ff",
+                            "wordWrapWidth": 200
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c07ff5d4-f49c-4fc8-a186-01875d2c3bf3",
+                            "label": "x_button_1",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "blue-button",
+                            "Button.callback": "() => this.hideSearch()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "blue-button"
+                            },
+                            "x": 272,
+                            "y": -104,
+                            "scaleX": 0.3,
+                            "scaleY": 0.3
+                        },
+                        {
+                            "type": "Image",
+                            "id": "82fc5929-12f0-4eea-bd6e-7350b1788688",
+                            "label": "blue_x_1",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "blue-x"
+                            },
+                            "x": 272,
+                            "y": -104.5,
+                            "scaleX": 0.3,
+                            "scaleY": 0.3
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "3a2022e0-a154-4abb-8444-0210e4c14fe6",
+            "label": "items",
+            "objectIds": [
+                "68c9019a-a0e7-42f8-8b77-1072aa33724e",
+                "22fa7563-5315-46f4-8966-e40b241e26a2",
+                "ae597d89-b8e4-47d4-9a9f-f263f2a9130d",
+                "39722cd4-e0f0-4a56-9956-1810785d54ea",
+                "8832d9b7-0a60-4918-afa5-d8c8a8e7a2f9",
+                "6eeaebcc-ba63-4f4e-9b87-8fce28d4514e"
+            ]
+        }
+    ]
+}

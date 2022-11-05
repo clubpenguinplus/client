@@ -1,0 +1,4940 @@
+{
+    "id": "7061cec6-f747-46aa-89d9-4b0909826568",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "client/client/media/interface/catalogs/clothing/sep05-pack.json",
+            "client/client/media/interface/catalogs/clothing/clothingcatalog-pack.json",
+            "client/client/media/interface/catalogs/catalogs-master-pack.json",
+            "client/client/media/interface/catalogs/clothing/july22/jul22-pack.json",
+            "client/client/media/interface/catalogs/clothing/may22-clothing.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "ClothingCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "52f3005a-7ddb-490b-87f4-cf073294cbde",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "57b2b996-55c9-445c-b77f-6018d01d18d4",
+            "label": "page16",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b51bf15b-9f2b-4819-978c-70881d9359bc",
+                    "label": "page16_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page16_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "0e3611ff-5d93-41e3-a882-b75a1f5b3546",
+                    "label": "close_left_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 486,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ce87d747-ad02-4291-afa7-b388b5a021f3",
+                    "label": "page_left_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 485,
+                    "y": 588,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "57323182-a8fd-465a-b44f-517e0c4d1bb3",
+            "label": "page15",
+            "components": [],
+            "x": 763,
+            "y": 463,
+            "scaleX": 0.94175026927846,
+            "scaleY": 0.94175026927846,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c39fe089-5408-4454-aa66-fbe608a9ebce",
+                    "label": "page12_bg",
+                    "components": [],
+                    "texture": {
+                        "key": "june22clothing",
+                        "frame": "page12"
+                    }
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "34346a18-4023-43d8-9e04-fb121326ad48",
+                    "label": "flag_button_7187",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7187)",
+                    "x": -384,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e4bc1a22-a8bd-484c-b921-6fb49f46d84e",
+                    "label": "flag_button_7186",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7186)",
+                    "x": -483,
+                    "y": -230,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "129f4d75-15c9-4fed-ab01-cb5887b08125",
+                    "label": "flag_button_7188",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7188)",
+                    "x": -273,
+                    "y": -227,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "dcb3eb28-9895-40e8-bc03-4992a24e6e7a",
+                    "label": "flag_button_7189",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7189)",
+                    "x": -166,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "94be2649-6dd3-4ad1-b816-88def424c7be",
+                    "label": "flag_button_7185",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7185)",
+                    "x": -538,
+                    "y": -144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ea639a76-d241-403f-85e7-e93dcb0032ce",
+                    "label": "flag_button_7184",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7184)",
+                    "x": -427,
+                    "y": -135,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "fd66b523-1710-4a92-a906-da2854234582",
+                    "label": "flag_button_7183",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7183)",
+                    "x": -318,
+                    "y": -139,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5255ca37-975f-412d-a94d-e13cd49cc0f7",
+                    "label": "flag_button_7182",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7182)",
+                    "x": -223,
+                    "y": -140,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5cbaea93-76f4-4f29-8c52-a4a95cc4c929",
+                    "label": "flag_button_7148",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7148)",
+                    "x": -106,
+                    "y": -139,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "fb33e804-35d9-4034-a867-830631247e84",
+                    "label": "flag_button_514",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(514)",
+                    "x": -544,
+                    "y": -43,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2d52e1c9-23c0-433c-ae0f-d6804d2f5abc",
+                    "label": "flag_button_533",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(533)",
+                    "x": -427,
+                    "y": -41,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "1f6b322e-8aeb-48d0-be63-37adbe844dd2",
+                    "label": "flag_button_502",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(502)",
+                    "x": -322,
+                    "y": -47,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "41cbfff6-7991-4417-9e67-8f067a5a1dde",
+                    "label": "flag_button_7096",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7096)",
+                    "x": -219,
+                    "y": -45,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "daca9ca4-ccb7-4619-b318-7a6b7f952815",
+                    "label": "flag_button_504",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(504)",
+                    "x": -110,
+                    "y": -41,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4c20044c-b11b-4560-8dab-43f1e1376445",
+                    "label": "flag_button_538",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(538)",
+                    "x": -534,
+                    "y": 51,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d094d4e4-dd4f-4346-ba28-a73af60085a8",
+                    "label": "flag_button_529",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(529)",
+                    "x": -427,
+                    "y": 47,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "869c7637-94e0-4e83-b7f8-d09567f12b6e",
+                    "label": "flag_button_505",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(505)",
+                    "x": -324,
+                    "y": 49,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0c59a27b-cfd4-4d85-8a78-3aad116688a8",
+                    "label": "flag_button_500",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(500)",
+                    "x": -221,
+                    "y": 47,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5572c335-d073-4a66-a3c2-5edaeb4cd3ae",
+                    "label": "flag_button_535",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(535)",
+                    "x": -110,
+                    "y": 49,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ad1a3e0f-2c4e-4cfb-b70e-967bd7e00007",
+                    "label": "flag_button_525",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(525)",
+                    "x": -538,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "559f1b7b-1962-4eb1-96c1-e1171c9109c7",
+                    "label": "flag_button_506",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(506)",
+                    "x": -428,
+                    "y": 142,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "191464a2-8785-46a4-8c7c-8d905b4d3dbc",
+                    "label": "flag_button_536",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(536)",
+                    "x": -325,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "1d72c1c6-f1ab-4586-96d1-378abe60d57a",
+                    "label": "flag_button_540",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(540)",
+                    "x": -221,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "046ffec8-26de-46da-ad02-bdcd617dfa4a",
+                    "label": "flag_button_507",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(507)",
+                    "x": -109,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a812995f-f296-427d-8c61-a66354c5f4aa",
+                    "label": "flag_button_542",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(542)",
+                    "x": -544,
+                    "y": 240,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5855e2c0-fbef-477a-a5dd-f240180a5720",
+                    "label": "flag_button_546",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(546)",
+                    "x": -431,
+                    "y": 236,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4a7da8c3-e344-49e6-9a5a-173107d9bd28",
+                    "label": "flag_button_548",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(548)",
+                    "x": -321,
+                    "y": 236,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5342ac05-781d-4af4-81bc-1c4289e449cb",
+                    "label": "flag_button_530",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(530)",
+                    "x": -219,
+                    "y": 240,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "919afa0e-096b-49ad-8566-703b1cc095e7",
+                    "label": "flag_button_508",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(508)",
+                    "x": -111,
+                    "y": 239,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "327a7511-32d1-4937-a12f-e0e4cde1e211",
+                    "label": "flag_button_541",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(541)",
+                    "x": 408.9185791015625,
+                    "y": -230.4365997314453,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a25550e1-0857-4a56-993f-a906badd58e0",
+                    "label": "flag_button_519",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(519)",
+                    "x": 508.3985595703125,
+                    "y": -227.6732635498047,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9510451f-9b63-4877-a365-daac8c5a1ce2",
+                    "label": "flag_button_545",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(545)",
+                    "x": 103,
+                    "y": -109,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ac56033d-3633-4624-a953-69de318ed3c3",
+                    "label": "flag_button_531",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(531)",
+                    "x": 199,
+                    "y": -112,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "7b427ae7-6368-44ae-b67b-37f2e23596e7",
+                    "label": "flag_button_527",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(527)",
+                    "x": 308,
+                    "y": -112,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "8c90378f-5068-4eb8-a689-29c0a67d1d6e",
+                    "label": "flag_button_524",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(524)",
+                    "x": 410,
+                    "y": -114,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "225d1f80-1438-458c-9aa0-ae758a13677c",
+                    "label": "flag_button_501",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(501)",
+                    "x": 507,
+                    "y": -112,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0f663eeb-f4d9-4925-b037-a986d7c146f9",
+                    "label": "flag_button_511",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(511)",
+                    "x": 102,
+                    "y": 9,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "b6dbbc6a-1747-47d1-8a0d-ba6abebe3e0e",
+                    "label": "flag_button_528",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(528)",
+                    "x": 206,
+                    "y": 7,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a15a5d88-434c-439b-a9e1-30577fac8aaa",
+                    "label": "flag_button_534",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(534)",
+                    "x": 305,
+                    "y": 9,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "dcc0b64f-7089-4f48-b8df-d2b40e8bde2e",
+                    "label": "flag_button_512",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(512)",
+                    "x": 404,
+                    "y": 8,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d86edec4-6899-45f0-8e92-d71de00545d0",
+                    "label": "flag_button_520",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(520)",
+                    "x": 511,
+                    "y": 9,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "47a60a9a-4859-467b-b748-763942ad0c95",
+                    "label": "flag_button_513",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(513)",
+                    "x": 102,
+                    "y": 130,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9c3adc9a-2ca6-4059-b8ad-bbd0d8e67b1e",
+                    "label": "flag_button_7095",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7095)",
+                    "x": 200,
+                    "y": 130,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "cedd2445-4dda-4d90-bf3a-37dc33d02e70",
+                    "label": "flag_button_543",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(543)",
+                    "x": 307,
+                    "y": 131,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2aaa69b5-5f66-494b-bf94-b22575ea8016",
+                    "label": "flag_button_522",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(522)",
+                    "x": 405,
+                    "y": 128,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3d6785fd-ca38-446a-aaf7-8c0cb383e52b",
+                    "label": "flag_button_547",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(547)",
+                    "x": 508,
+                    "y": 135,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "7a2dd74c-1487-4c44-b678-6ac48c43b1c2",
+                    "label": "flag_button_537",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(537)",
+                    "x": 98,
+                    "y": 251,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c7c42558-4d5d-463a-baf1-3e64060f83d4",
+                    "label": "flag_button_517",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(517)",
+                    "x": 203,
+                    "y": 248,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6c2ec54b-163d-4a4f-9dac-c2cce0a762ef",
+                    "label": "flag_button_526",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(526)",
+                    "x": 303,
+                    "y": 250,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "bf2f9c57-1bdc-4d0f-abe3-7f7526ced4e5",
+                    "label": "flag_button_518",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(518)",
+                    "x": 407,
+                    "y": 250,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "76926897-84dd-4807-9c64-c3dd4f184447",
+                    "label": "flag_button_539",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(539)",
+                    "x": 506,
+                    "y": 252,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "baa2456d-3f4a-418d-a28a-5e50b0ac6a49",
+                    "label": "flag_button_523",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(523)",
+                    "x": 103,
+                    "y": -344,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6b81651e-d64e-4cf9-a36d-2e94e16c84a3",
+                    "label": "flag_button_503",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(503)",
+                    "x": 306,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "65558169-3b03-420f-a020-927c5bdb02ae",
+                    "label": "flag_button_510",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(510)",
+                    "x": 202,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "24234f65-7008-44ba-a954-8939759090af",
+                    "label": "flag_button_509",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(509)",
+                    "x": 100,
+                    "y": -231,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9d5780c1-d6e9-441f-b294-45f8a3336bdb",
+                    "label": "flag_button_521",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(521)",
+                    "x": 513,
+                    "y": -341,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2c8416e2-fda9-4456-98f5-da404c259972",
+                    "label": "flag_button_516",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(516)",
+                    "x": 405,
+                    "y": -348,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "502ac77e-ce64-478a-983b-8f72f6da66d4",
+                    "label": "flag_button_544",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(544)",
+                    "x": 304,
+                    "y": -343,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "22e46a44-d604-4bf8-9383-421cc49c225f",
+                    "label": "flag_button_515",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(515)",
+                    "x": 201,
+                    "y": -344,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Image",
+                    "id": "6669f191-7928-407e-9be4-fe6b706999c6",
+                    "label": "page_left_15_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": -625,
+                    "y": 123,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "4b0b4b35-8628-4efb-bd60-835185d5cd84",
+                    "label": "close_right_15_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 491,
+                    "y": -424,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ff1da23f-bdd9-40cd-a820-ce87c9308dc9",
+                    "label": "page_right_15_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 491,
+                    "y": 126,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "b4351287-855c-4270-a5bb-a65bd4a34be2",
+                    "label": "close_left_15_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": -625,
+                    "y": -424,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "aad014bb-d6d6-44d1-8004-6f9ab97fc7b0",
+            "label": "page14",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f408f7cd-b18d-4dd1-8e7d-158d6f8dafb5",
+                    "label": "page14_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page14_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "0818f27f-c112-45f3-90f8-f234f6d28c0e",
+                    "label": "close_left_15",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "51ab29cd-fe8d-4348-95fd-8593bf8c12b5",
+                    "label": "bg_holder_1_1b",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(952)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 337,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "22a2d450-d6a2-4896-8dcc-913f8b9fb9d1",
+                    "label": "bg_2_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_7"
+                    },
+                    "x": 338,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "72d0f479-d165-4e87-b2aa-90228eb6165f",
+                    "label": "shadow_bg_1_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 337,
+                    "y": 626
+                },
+                {
+                    "type": "Image",
+                    "id": "3f087272-bd67-41db-b2d6-7552ad36c802",
+                    "label": "bg_holder_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(909)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 1193,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "406b8627-42c2-4ff5-a5af-d71fb657be3b",
+                    "label": "bg_2_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_12"
+                    },
+                    "x": 1194,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "c85ff117-9c81-4e6b-ae9f-860bfe7a1f59",
+                    "label": "shadow_bg_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 1193,
+                    "y": 626
+                },
+                {
+                    "type": "Image",
+                    "id": "12d2c1f7-9ddb-41b4-865c-3a88e552dbae",
+                    "label": "page_right_15",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "2b3377d8-4041-4572-92cf-1cea22134b26",
+                    "label": "close_right_15",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "6b9c6799-f27b-4f59-96f1-be41ea612831",
+                    "label": "page_left_15",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "3f4b818e-1055-4382-87ad-e0748971117e",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1040,
+                    "y": 148
+                },
+                {
+                    "type": "Image",
+                    "id": "3c1c9b52-f604-4745-b429-cbb28ec2641a",
+                    "label": "bg_holderb",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(938)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 337,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "f989e413-60ed-4293-b4e4-c86308fdadca",
+                    "label": "bg_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_5"
+                    },
+                    "x": 338,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "cfb2a189-8d4c-46e5-a666-2ec9fb417bc8",
+                    "label": "shadow_bgb",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 337,
+                    "y": 366
+                },
+                {
+                    "type": "Image",
+                    "id": "026e0c2a-7adb-4aa3-b53e-b89e43e9d2db",
+                    "label": "bg_holder_1b",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(994)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 603,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "244359c4-d4b7-4869-92c7-6eabf73da84e",
+                    "label": "bg_2b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_6"
+                    },
+                    "x": 604,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "42781536-f753-4b25-a1f4-5ac50bb84373",
+                    "label": "shadow_bg_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 603,
+                    "y": 366
+                },
+                {
+                    "type": "Image",
+                    "id": "3c3c37f8-9b86-4142-8cbb-07560ecf4cb2",
+                    "label": "bg_holder_1_1_1b",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(946)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 603,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "5f6ad7d1-8e6c-47ac-897c-dcfd517db53a",
+                    "label": "bg_2_1_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_8"
+                    },
+                    "x": 604,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "422d1844-9573-4995-8e43-a634ebda1da6",
+                    "label": "shadow_bg_1_1_1b",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 603,
+                    "y": 626
+                },
+                {
+                    "type": "Image",
+                    "id": "cdc9583f-5af2-47b4-ba2c-294f4ec56f75",
+                    "label": "bg_holder_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(937)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 927,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "75038000-f7c6-4e4f-91ce-34f3c1ea64de",
+                    "label": "bg_2_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_11"
+                    },
+                    "x": 928,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "40fd7c81-ba5a-4263-9859-4b826f52c414",
+                    "label": "shadow_bg_1_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 927,
+                    "y": 626
+                },
+                {
+                    "type": "Image",
+                    "id": "df381daa-d1be-45bb-9d4a-27be576b3151",
+                    "label": "bg_holder_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(991)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 1193,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "b5952158-f509-42fd-92f6-4c48a1e89391",
+                    "label": "bg_2_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_10"
+                    },
+                    "x": 1194,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "3e845cc1-babe-4b29-b7a8-bbb3bdc414b2",
+                    "label": "shadow_bg_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 1193,
+                    "y": 366
+                },
+                {
+                    "type": "Image",
+                    "id": "7e60d606-3336-4dc7-8bbf-8386e550d960",
+                    "label": "bg_holder_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(947)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 927,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "16bdd6ac-3fdb-411f-8253-7cf89cd9ce0c",
+                    "label": "bg_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_9"
+                    },
+                    "x": 928,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "29ba5a69-46b3-4250-84e7-2683b1065250",
+                    "label": "shadow_bg_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 927,
+                    "y": 366
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "eda7ad6a-3c91-42f0-a047-ad1495cdf12d",
+            "label": "page13",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "086b2615-2b70-4127-91d3-ef47d6968dd0",
+                    "label": "page13_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page13_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "d70085b8-1348-46be-8af2-8ee719ca64a6",
+                    "label": "close_left_14",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "e0d6797d-f52f-4ba0-8219-89fd4df5f238",
+                    "label": "bg_holder_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(966)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 1193,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "a626ef09-f438-4781-b0c3-0da3f6bf21f3",
+                    "label": "bg_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_4"
+                    },
+                    "x": 1194,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "d131fdad-d22e-4872-a58a-77ec415cdabb",
+                    "label": "shadow_bg_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 1193,
+                    "y": 626
+                },
+                {
+                    "type": "Image",
+                    "id": "0949661e-7534-462b-b41d-6af1e416358d",
+                    "label": "page_right_14",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d7fb7084-62f5-4e44-a74f-8590e303b0f3",
+                    "label": "close_right_14",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "5707c5f1-617c-4555-a4e2-e8962afefe8c",
+                    "label": "page_left_14",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "19afd167-7097-43e6-a259-87a86f06c618",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(383)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 610,
+                    "y": 659
+                },
+                {
+                    "type": "Image",
+                    "id": "e0e09aa0-c143-4262-b5ac-53e8abd84466",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(832)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 587,
+                    "y": 123
+                },
+                {
+                    "type": "Image",
+                    "id": "bdb8661e-2f87-479f-916e-87788fc94be5",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 492,
+                    "y": 114
+                },
+                {
+                    "type": "Image",
+                    "id": "9d7752bd-58d2-4122-8b00-9521a69bc1c1",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 411,
+                    "y": 672
+                },
+                {
+                    "type": "Image",
+                    "id": "14f8f0ed-2af8-42cb-b5dd-cf6e5129717d",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1184,
+                    "y": 189
+                },
+                {
+                    "type": "Image",
+                    "id": "ed934d3d-953e-4b47-8f5a-7fa1ecaec11d",
+                    "label": "bg_holder",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(9000)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 927,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "e0424f97-f2b5-4c80-9e04-dd3e5d45a84b",
+                    "label": "bg_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_1"
+                    },
+                    "x": 928,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "0881bd6f-e409-48c9-b92f-7c38591e547a",
+                    "label": "shadow_bg",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 927,
+                    "y": 366
+                },
+                {
+                    "type": "Image",
+                    "id": "a7601f13-7bd7-42b9-8560-be6378d2907d",
+                    "label": "bg_holder_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(929)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 1193,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "8be5ff2c-55de-421c-8001-632b1ede0c6a",
+                    "label": "bg_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_2"
+                    },
+                    "x": 1194,
+                    "y": 359
+                },
+                {
+                    "type": "Image",
+                    "id": "c46367f4-05b9-48d1-83ea-f83f912fbf9f",
+                    "label": "shadow_bg_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 1193,
+                    "y": 366
+                },
+                {
+                    "type": "Image",
+                    "id": "0b2f0dd6-2277-425f-aa24-ae8492c72674",
+                    "label": "bg_holder_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(997)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 927,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "2294ba4f-6694-44ae-a60d-84fa746d8e3d",
+                    "label": "bg_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_3"
+                    },
+                    "x": 928,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "7f762a9b-5925-4319-aa99-5277626039ab",
+                    "label": "shadow_bg_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 927,
+                    "y": 626
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "e65b4f34-8353-4969-a83f-916eec0ea286",
+            "label": "page12",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "45805a8a-3bd4-4101-ac77-caef195e3db7",
+                    "label": "page12_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page12_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "574485de-4abc-470a-ba12-256049310071",
+                    "label": "close_left_13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "377e572d-08e7-4297-addf-bcc903f7eb34",
+                    "label": "page_right_13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "89491aa6-e0e5-4a01-a25c-22a30a7a7948",
+                    "label": "close_right_13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "c93a6535-301b-4329-be43-22f8f437b0b7",
+                    "label": "page_left_13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "efb1cc13-d063-4404-8fc2-16c020d0abd4",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(271)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1052,
+                    "y": 492
+                },
+                {
+                    "type": "Image",
+                    "id": "a846c01f-72ec-49b0-a81f-8085443a033f",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(139)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 295,
+                    "y": 238
+                },
+                {
+                    "type": "Image",
+                    "id": "c32cfab1-ac03-472a-b5ff-4d8cec3866d8",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(269)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 919,
+                    "y": 739
+                },
+                {
+                    "type": "Image",
+                    "id": "343393dd-9270-41a2-a289-4c7446cdb4d1",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(273)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 885,
+                    "y": 492
+                },
+                {
+                    "type": "Image",
+                    "id": "03fbd66c-7f2e-4a75-a36d-f5c55106065d",
+                    "label": "big_coin_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "big_coin"
+                    },
+                    "x": 1035,
+                    "y": 196
+                },
+                {
+                    "type": "Image",
+                    "id": "8d70ef19-1716-4d2c-938c-6ed2f77a65cf",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 346,
+                    "y": 179
+                },
+                {
+                    "type": "Image",
+                    "id": "7d80abdc-a4ca-413d-a210-3461108b1d83",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(270)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1218,
+                    "y": 492
+                },
+                {
+                    "type": "Image",
+                    "id": "a9fa0a75-7672-4032-9a1f-db8e2dcd9630",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(830)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1154,
+                    "y": 739
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "190e379d-2afc-4464-a752-25c77edec8bc",
+                    "label": "sec-rocker_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(382)",
+                    "x": 510,
+                    "y": 88,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cbb85d9c-9558-4b2d-a993-39ec4b4ac654",
+            "label": "page11",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "a4e53e85-803b-4caa-8fb8-26804ab19771",
+                    "label": "page11_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page11_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "aeb9331d-16cf-4562-b096-ffef4553b369",
+                    "label": "close_left_12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "180f5852-a721-4ead-9ac5-08a02c55a86c",
+                    "label": "page_right_12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "92ce253a-9f6e-4cab-8c9a-3b6623f46675",
+                    "label": "close_right_12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "60e912a3-da47-40b0-ae1d-db56a33e0f2a",
+                    "label": "page_left_12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "224598b6-ab8f-4f9a-8a8d-001bc4f10794",
+                    "label": "small_buy0001_png_1_2_2_2_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(831)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 575,
+                    "y": 425
+                },
+                {
+                    "type": "Image",
+                    "id": "aa7fcb35-7f4e-4a29-8f2f-ba1018eb7176",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 927,
+                    "y": 286
+                },
+                {
+                    "type": "Image",
+                    "id": "d6fba4ae-bfda-4a23-bc91-194b0d25656a",
+                    "label": "coin_1_1_1_1_2_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 933,
+                    "y": 650
+                },
+                {
+                    "type": "Image",
+                    "id": "2234bdf0-1cfa-41e6-a574-1e0e446186b2",
+                    "label": "big_coin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "big_coin"
+                    },
+                    "x": 458,
+                    "y": 187
+                },
+                {
+                    "type": "Image",
+                    "id": "ce4693d9-d7d7-42dc-9157-fddf2f54b3a4",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(267)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 361,
+                    "y": 718
+                },
+                {
+                    "type": "Image",
+                    "id": "2f866bf6-89c9-43f5-b8c3-8b14e51db158",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(272)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 593,
+                    "y": 718
+                },
+                {
+                    "type": "Image",
+                    "id": "fd16e38f-8592-4577-b88d-c7d7ce05df2d",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(125)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1027,
+                    "y": 220
+                },
+                {
+                    "type": "Image",
+                    "id": "7a47bf9e-8132-49e3-8ad6-a9445668bdba",
+                    "label": "small_buy0001_png_1_2_2_2_2_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(384)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 893,
+                    "y": 544
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "1de7877c-4d16-467b-b3e5-0f6be6ba34e9",
+            "label": "page10",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9b880475-523d-4bc7-8c29-fef8f4d4dc45",
+                    "label": "page10_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page10_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "7e561753-723a-4ddb-85ce-de104994afeb",
+                    "label": "close_left_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "365529ae-b042-42f4-b0ed-137b57bc9ac0",
+                    "label": "page_right_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "c2a75d40-8774-4ef7-bc03-30cdd5fa046b",
+                    "label": "close_right_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "73acf594-211c-4308-90a7-b1ba35d6f4e1",
+                    "label": "page_left_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "27be5d97-9dbb-4496-bded-2c22f1839483",
+                    "label": "coin_1_1_1_1_2_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 930,
+                    "y": 266
+                },
+                {
+                    "type": "Image",
+                    "id": "3bccb24a-aa50-4eb0-9bf3-78d268183af6",
+                    "label": "small_buy0001_png_1_2_2_2_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(833)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 884,
+                    "y": 336
+                },
+                {
+                    "type": "Image",
+                    "id": "db2cc3bc-3ce6-49c5-850f-d803562a800f",
+                    "label": "buy2_3_1_1_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4011)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 522,
+                    "y": 486,
+                    "angle": 30,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "5c824e41-8854-466b-991d-a2784cb108c7",
+            "label": "page9",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "aeb28b49-c0b4-4ff2-9c33-513f6ba6ae4e",
+                    "label": "page9_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page9_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "c5310587-ffb2-46fb-868f-64155ff36ad9",
+                    "label": "coin_1_1_1_1_2_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1288,
+                    "y": 743
+                },
+                {
+                    "type": "Image",
+                    "id": "c24ec30e-b66c-4ab1-8413-bb5752b6f326",
+                    "label": "close_left_10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "47fbc829-5bcb-447a-9405-8fd21211112c",
+                    "label": "page_right_10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "1c2dcf22-6563-49a6-9b24-b14ebb48cf0a",
+                    "label": "close_right_10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "50038f3c-3150-4653-8a2b-b81608754a11",
+                    "label": "page_left_10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "47d274b3-df9a-4523-946a-191295252db1",
+                    "label": "coin_1_1_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1267,
+                    "y": 393
+                },
+                {
+                    "type": "Image",
+                    "id": "b45769ee-a545-451e-a4c3-b136cf844a2d",
+                    "label": "coin_1_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 642,
+                    "y": 112
+                },
+                {
+                    "type": "Image",
+                    "id": "d95299fc-6f38-4b10-8083-6a6f226b96bc",
+                    "label": "coin_1_1_1_1_2_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1205,
+                    "y": 118
+                },
+                {
+                    "type": "Image",
+                    "id": "bb77fbed-520a-4fc9-a748-7db278e6f0cd",
+                    "label": "small_buy0001_png_1_2_2_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(841)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 467,
+                    "y": 183
+                },
+                {
+                    "type": "Image",
+                    "id": "ee82375b-7ecb-4320-ae26-e2c19be181cc",
+                    "label": "small_buy0001_png_1_2_2_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(732)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1072,
+                    "y": 179
+                },
+                {
+                    "type": "Image",
+                    "id": "7fbb3840-44df-4a86-9d6d-61cd64bb1e27",
+                    "label": "small_buy0001_png_1_2_2_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(842)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1232,
+                    "y": 452
+                },
+                {
+                    "type": "Image",
+                    "id": "4c74dbbb-eef3-4fca-8b85-b0d8f117a533",
+                    "label": "small_buy0001_png_1_2_2_2_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(388)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 864,
+                    "y": 740
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0bdf0508-783a-42b0-aecb-218ca6820367",
+                    "label": "sec-rocker",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(650)",
+                    "x": 408,
+                    "y": 537,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "53329db2-5f2d-4b01-aa6a-b4ff71ef3297",
+                    "label": "sec-suprema",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(677)",
+                    "x": 959,
+                    "y": 366,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "005d3a98-61a3-4620-8971-94fd06f96689",
+            "label": "page8",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "caa851a4-13af-468b-9d3f-64b13008731d",
+                    "label": "page8_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page8_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "279397fe-3ccd-4598-8ed1-d6b6760ff707",
+                    "label": "close_left_9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "7a5d06ea-7fb1-4dba-a1a5-8772b85600c4",
+                    "label": "page_right_9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "9701d281-16e5-4bc7-9d91-db6c836b6172",
+                    "label": "close_right_9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "79ebbec2-79ec-417e-b9d2-5ff34c73ce6f",
+                    "label": "page_left_9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "80d78ad4-cdeb-4a6c-b598-79e71b78d5eb",
+                    "label": "coin_1_1_1_1_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 960,
+                    "y": 139
+                },
+                {
+                    "type": "Image",
+                    "id": "4a4bb3ed-0d4c-47f5-a93f-c3f1ee2ecd95",
+                    "label": "coin_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 427,
+                    "y": 133
+                },
+                {
+                    "type": "Image",
+                    "id": "42fe1c38-25ce-4eff-a659-5e868a6e10a7",
+                    "label": "coin_1_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 396,
+                    "y": 754
+                },
+                {
+                    "type": "Image",
+                    "id": "7eea47d0-b14b-4c70-85c8-ae1547f062e4",
+                    "label": "coin_1_1_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 718,
+                    "y": 593
+                },
+                {
+                    "type": "Image",
+                    "id": "c71050f5-b32c-454e-b704-6cb307a1d6f6",
+                    "label": "coin_1_1_1_1_2_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1005,
+                    "y": 713
+                },
+                {
+                    "type": "Image",
+                    "id": "7fe42a70-7246-483d-86e5-9f1f08ea3d57",
+                    "label": "coin_1_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 691,
+                    "y": 132
+                },
+                {
+                    "type": "Image",
+                    "id": "bf42c0d6-8f39-4b1e-b1a8-40a421eb81a7",
+                    "label": "small_buy0001_png_1_2_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(843)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 292,
+                    "y": 194
+                },
+                {
+                    "type": "Image",
+                    "id": "b4aa0a9d-1e8d-4a1a-8b3b-e0ac9120d855",
+                    "label": "small_buy0001_png_1_2_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(433)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 620,
+                    "y": 189
+                },
+                {
+                    "type": "Image",
+                    "id": "39a550bc-7d06-47f2-bce8-d3e8e7b4c67a",
+                    "label": "small_buy0001_png_1_2_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(730)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 617,
+                    "y": 375
+                },
+                {
+                    "type": "Image",
+                    "id": "31eddd66-b5eb-468e-85d3-00f9efa3ddae",
+                    "label": "small_buy0001_png_1_2_2_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(368)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 592,
+                    "y": 730
+                },
+                {
+                    "type": "Image",
+                    "id": "30232a20-d588-4c98-a86e-625b673a2246",
+                    "label": "small_buy0001_png_1_2_2_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(434)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1073,
+                    "y": 124
+                },
+                {
+                    "type": "Image",
+                    "id": "3e13fdf5-bbb8-45fa-8fd0-87d842716e9f",
+                    "label": "small_buy0001_png_1_2_2_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(844)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1178,
+                    "y": 679
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "281bcf68-6d76-4255-82d4-f4495cd84eb2",
+                    "label": "sec-bcowboy",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(6022)",
+                    "x": 450,
+                    "y": 481,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2e16b4a5-6bba-48c6-a807-6ca0df02e0cf",
+                    "label": "sec-cvest",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(217)",
+                    "x": 1220,
+                    "y": 281,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "16451132-8ef3-45f4-97b9-19c475c26cae",
+                    "label": "sec-cbell",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5035)",
+                    "x": 1155,
+                    "y": 181,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "5a92b883-db49-4d68-96cf-a6466a916a55",
+            "label": "page7",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "15cad9d0-00b8-4bda-994c-335874d12dcc",
+                    "label": "page7_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page7_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "1032049c-3493-40de-b641-2e9985fd5ef0",
+                    "label": "close_left_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "794b6f65-d9e6-4003-b453-1cc311b15b2f",
+                    "label": "page_right_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "3d12701c-746f-4677-9326-3e302c0081c0",
+                    "label": "close_right_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "02ae058b-ffde-4df5-8c2b-7e6c98c5c6ab",
+                    "label": "page_left_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "c0178b11-2ec4-40f9-acf5-1ac35553ddd3",
+                    "label": "coin_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 908,
+                    "y": 450
+                },
+                {
+                    "type": "Image",
+                    "id": "7519e753-00dd-4207-9bfb-d916abec0175",
+                    "label": "coin_1_1_1_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1175,
+                    "y": 738
+                },
+                {
+                    "type": "Image",
+                    "id": "0d87c405-f2f3-4517-8f39-195a58f3abcb",
+                    "label": "coin_1_1_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 709,
+                    "y": 555
+                },
+                {
+                    "type": "Image",
+                    "id": "d64bb003-0be3-4ace-919c-96dc3c37ba06",
+                    "label": "coin_1_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 610,
+                    "y": 733
+                },
+                {
+                    "type": "Image",
+                    "id": "5d3cc4c6-957c-45a0-9197-3d73dc829003",
+                    "label": "coin_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 687,
+                    "y": 102
+                },
+                {
+                    "type": "Image",
+                    "id": "20f14ce9-14e2-4e8b-b91a-d097d58de542",
+                    "label": "coin_1_1_1_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1244,
+                    "y": 105
+                },
+                {
+                    "type": "Image",
+                    "id": "9ae1e3c6-4283-4e77-acd1-6580b25a4c29",
+                    "label": "small_buy0001_png_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(839)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 638,
+                    "y": 173
+                },
+                {
+                    "type": "Image",
+                    "id": "5b8365dc-e9b3-450d-ad45-ba438d64d9ea",
+                    "label": "small_buy0001_png_1_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(731)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 644,
+                    "y": 428
+                },
+                {
+                    "type": "Image",
+                    "id": "3881961b-1355-4ad6-a5de-401a2e8832e9",
+                    "label": "small_buy0001_png_1_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(386)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 401,
+                    "y": 724
+                },
+                {
+                    "type": "Image",
+                    "id": "0b5c8ed6-7980-46e6-a825-b4483f5092b8",
+                    "label": "small_buy0001_png_1_2_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(387)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 944,
+                    "y": 724
+                },
+                {
+                    "type": "Image",
+                    "id": "a1e66acd-7609-403c-8e66-48825e36ca35",
+                    "label": "small_buy0001_png_1_2_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(728)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 878,
+                    "y": 516
+                },
+                {
+                    "type": "Image",
+                    "id": "2af01d0a-ee19-447b-8b75-725ef223928c",
+                    "label": "small_buy0001_png_1_2_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(840)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1187,
+                    "y": 169
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "94f9d38c-47dd-4ce7-9d18-60cc53d46413",
+                    "label": "sec-free",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(1028)",
+                    "x": 870,
+                    "y": 201,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ea5ca1c9-a530-4871-8d86-c3f1ce130049",
+                    "label": "sec-sidetied",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(658)",
+                    "x": 500,
+                    "y": 233,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0d95b8c1-4eb8-44a3-bf0e-108d918e5c4b",
+                    "label": "sec-fire",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(670)",
+                    "x": 1095,
+                    "y": 510,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "671a14eb-6a3e-4760-98fb-c2ae61d9b5f5",
+            "label": "page6",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1434bd25-8283-4bde-8e4d-3c5bc6d143c1",
+                    "label": "page6_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page6_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "b7b61996-595d-49ea-8ca2-7c658220c07c",
+                    "label": "close_left_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "5165d15d-df12-47b6-adf4-ef2c84c6437d",
+                    "label": "page_right_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "cf7cd8cc-27db-47e7-9bd3-37527871f1cd",
+                    "label": "close_right_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "b18dae89-16dd-4196-8677-c8479cd63940",
+                    "label": "page_left_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "c8094b07-8091-458a-9147-37e79498d224",
+                    "label": "coin_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 578,
+                    "y": 84
+                },
+                {
+                    "type": "Image",
+                    "id": "d781a8bf-9238-4ada-b9c2-e3113489afb8",
+                    "label": "coin_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 948,
+                    "y": 134
+                },
+                {
+                    "type": "Image",
+                    "id": "49e26276-52f5-4992-a29b-15220c1dfb53",
+                    "label": "coin_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1234,
+                    "y": 169
+                },
+                {
+                    "type": "Image",
+                    "id": "08d43cda-c5b2-4482-8108-1517af93d479",
+                    "label": "coin_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 588,
+                    "y": 755
+                },
+                {
+                    "type": "Image",
+                    "id": "4d44e6ac-b809-412e-8ef0-9218ca015834",
+                    "label": "coin_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 984,
+                    "y": 757
+                },
+                {
+                    "type": "Image",
+                    "id": "d5e41a5f-8f58-4902-84f8-2739e857b2cb",
+                    "label": "small_buy0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(101)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 659,
+                    "y": 148
+                },
+                {
+                    "type": "Image",
+                    "id": "e12ddca3-1667-44c2-a174-752f2f3f044a",
+                    "label": "small_buy0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(4000)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 667,
+                    "y": 693
+                },
+                {
+                    "type": "Image",
+                    "id": "906ae70f-37eb-4014-a358-ce692448198e",
+                    "label": "small_buy0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(4001)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 905,
+                    "y": 192
+                },
+                {
+                    "type": "Image",
+                    "id": "6b7153ea-438e-47ae-9f17-eedc58bf4c2d",
+                    "label": "small_buy0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(3000)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1236,
+                    "y": 236
+                },
+                {
+                    "type": "Image",
+                    "id": "a9dd8b22-c9c3-4242-8638-112f0d2dc647",
+                    "label": "small_buy0001_png_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.webp",
+                    "Button.callback": "() => this.interface.prompt.showItem(6001)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.webp"
+                    },
+                    "x": 1169,
+                    "y": 730
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "bf2499e8-8c83-4a72-916a-e563c1d388b6",
+                    "label": "sec-darkvision",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(102)",
+                    "x": 556,
+                    "y": 262,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "41b67aed-2ed3-4511-8db0-ba6c5de9e0a3",
+                    "label": "sec-suit",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(261)",
+                    "x": 281,
+                    "y": 518,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "13c2fead-fcdd-4fd0-8121-e137b451846c",
+                    "label": "sec-mb",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5001)",
+                    "x": 1096,
+                    "y": 307,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "29658884-3613-41df-900c-bcdc986605f4",
+            "label": "page5",
+            "components": [],
+            "x": 1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7d305773-4a76-43d0-98e2-7c991cab2384",
+                    "label": "page5_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page5_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "98df51f2-b6a8-4fd2-9109-7a2c2bc1d688",
+                    "label": "close_left_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "bcbc3c68-fd89-4469-b5bc-0e893c8898d4",
+                    "label": "page_right_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ff4e347c-219c-4bdd-a44b-8df107b17620",
+                    "label": "close_right_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "59225b72-e7e6-4a13-811f-cd8b553256e8",
+                    "label": "page_left_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "55cd07e4-2a00-46c4-8080-8e56995c6524",
+                    "label": "buy1_3_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(281)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 257,
+                    "y": 543,
+                    "angle": -26,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "25a8f447-c970-4719-a365-37be676795b2",
+                    "label": "buy2_3_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(6002)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 592,
+                    "y": 234,
+                    "angle": -33,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "5f5c0332-dd45-4c6f-afd1-4a19c91df7f7",
+                    "label": "buy2_3_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(6004)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 520,
+                    "y": 651,
+                    "angle": 20,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "88d9247d-31a0-48a4-84ef-eac7c91fc059",
+                    "label": "buy2_3_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(6003)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1175,
+                    "y": 164,
+                    "angle": 20,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "9b9cdf24-069f-4dbc-9841-fcf722a799d8",
+                    "label": "buy2_3_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(6006)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1078,
+                    "y": 645,
+                    "angle": 14,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "a84c7a9d-ba5f-4657-a5af-17cad6d20982",
+                    "label": "buy2_3_1_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(6005)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 924,
+                    "y": 360,
+                    "angle": -32.00000000000006,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e6ab1cf3-9fce-4efa-a997-672744f1ac87",
+                    "label": "sec-blacksneak",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(352)",
+                    "x": 627,
+                    "y": 404,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "71037659-635b-4dc0-8e03-6e37bebbdb2e",
+                    "label": "sec-rugby",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(781)",
+                    "x": 903,
+                    "y": 662,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "036b6e91-5bd7-494b-aaa0-dcbafb487d94",
+            "label": "page4",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "69e1d982-58af-469c-9204-0fbd6b43ca54",
+                    "label": "page4_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page4_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "af7e11b8-2b56-4ade-9691-f1d0a11a4b28",
+                    "label": "close_left_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "6a77956f-b02c-4dcb-84f5-fa7b62625a19",
+                    "label": "page_right_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "e674130f-436b-410a-8b91-fb196639a149",
+                    "label": "close_right_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "00cdd9a1-e930-46ed-9bcc-70d2ef9b7c02",
+                    "label": "page_left_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "65fca443-83de-43d7-886b-5db8ac6a81a0",
+                    "label": "buy2_3_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(219)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 624,
+                    "y": 497,
+                    "angle": 33,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "bb254a88-a9b9-4339-9bd5-a4f0d4ab05ef",
+                    "label": "buy2_3_2_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(111)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 551,
+                    "y": 192,
+                    "angle": 25,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "b75a63ac-d026-4106-b5ce-364d43cc1964",
+                    "label": "buy2_3_2_3_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1006)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1168,
+                    "y": 143,
+                    "angle": 25,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "615b9341-4fe1-4127-807a-21608c0b42ac",
+                    "label": "buy1_3_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(4010)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 855,
+                    "y": 398,
+                    "angle": -26,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "82c9a251-220f-4eaf-bd25-eb0408fa532a",
+                    "label": "sec-bluehockey",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(278)",
+                    "x": 390,
+                    "y": 531,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "08a26254-77bc-4fd7-bc6c-1c9e8cdd9e35",
+                    "label": "sec-greenface",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(2018)",
+                    "x": 1104,
+                    "y": 600,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "db04679d-ea2d-4d68-8a82-ecaf3356c3f2",
+                    "label": "sec-yellowface",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(2019)",
+                    "x": 807,
+                    "y": 430,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "a47fa1a1-0bed-422b-9553-62cf51a77c3b",
+            "label": "page3",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "dbb4e35f-9b60-4de4-b0c5-d0d7990b63bd",
+                    "label": "page3_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page3_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "1c88f549-e6eb-4e81-b3a1-14d89aa83661",
+                    "label": "buy1_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1005)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 789,
+                    "y": 81,
+                    "angle": -7,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "284c27f9-7f7c-406c-9bfc-a83ccd72451b",
+                    "label": "buy1_1_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(314)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 823,
+                    "y": 352,
+                    "angle": -26,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ac277a4e-88c2-44b0-942d-32467b1ab700",
+                    "label": "buy2_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4008)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 497,
+                    "y": 369,
+                    "angle": -18,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "7bdbdff0-320c-401f-9300-dd626f0b50af",
+                    "label": "close_left_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "0e01ea48-8dd1-4537-a91d-c1082550d582",
+                    "label": "page_right_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d1c7e9f9-db11-496f-b797-9c4f4f499b60",
+                    "label": "close_right_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "5950fd82-d5df-4ffa-897f-fafd16cd8b85",
+                    "label": "page_left_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "dccb71b8-ef89-4700-82d7-adebf0ee5913",
+                    "label": "buy2_3_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(3004)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 596,
+                    "y": 636,
+                    "angle": 33,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "538547ff-945a-48fb-b3fc-3a4328ba23dc",
+                    "label": "buy2_3_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(222)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1153,
+                    "y": 630,
+                    "angle": 25,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "f1ff91c9-f437-4466-8864-fb3bab24bd2e",
+                    "label": "buy2_3_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4009)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1104,
+                    "y": 186,
+                    "angle": -44,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "94e68086-d4f8-4212-910f-835c2ab53f2d",
+                    "label": "buy2_3_2_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(312)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1191,
+                    "y": 503,
+                    "angle": -31,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "bb1e928a-c51d-4bba-b200-7c9474947768",
+                    "label": "sec-redbackpack",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(306)",
+                    "x": 1107,
+                    "y": 607,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5a8c01c0-e7ed-419e-a195-f073d27d3ec1",
+                    "label": "sec-redhockey",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(277)",
+                    "x": 710,
+                    "y": 205,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
+            "label": "page2",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "493af100-87ca-4cf8-bf4a-83db15cd50cc",
+                    "label": "page2_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page2_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "34ca1eae-1e73-4d13-a9a7-e5cb9a7f03ef",
+                    "label": "blue",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue",
+                    "Button.callback": "() => this.interface.prompt.showItem(1)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "blue"
+                    },
+                    "x": 554,
+                    "y": 225
+                },
+                {
+                    "type": "Image",
+                    "id": "2d24cbd0-d409-414d-a15c-3314295240ba",
+                    "label": "green",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "green",
+                    "Button.callback": "() => this.interface.prompt.showItem(2)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "green"
+                    },
+                    "x": 629,
+                    "y": 225
+                },
+                {
+                    "type": "Image",
+                    "id": "19e0ec8a-18f7-4546-ba56-f80bf0ef494c",
+                    "label": "salmon",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "salmon",
+                    "Button.callback": "() => this.interface.prompt.showItem(10)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "salmon"
+                    },
+                    "x": 704,
+                    "y": 225
+                },
+                {
+                    "type": "Image",
+                    "id": "d8225dd5-95c5-4fd0-8424-1cbd72ce7db5",
+                    "label": "black",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "black",
+                    "Button.callback": "() => this.interface.prompt.showItem(4)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "black"
+                    },
+                    "x": 590,
+                    "y": 300
+                },
+                {
+                    "type": "Image",
+                    "id": "4fd8b679-2505-410f-a343-a268635833d1",
+                    "label": "red",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "red",
+                    "Button.callback": "() => this.interface.prompt.showItem(5)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "red"
+                    },
+                    "x": 665,
+                    "y": 300
+                },
+                {
+                    "type": "Image",
+                    "id": "35f52067-7884-446e-8b74-84f01de9b4f1",
+                    "label": "yellow",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "yellow",
+                    "Button.callback": "() => this.interface.prompt.showItem(7)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "yellow"
+                    },
+                    "x": 554,
+                    "y": 375
+                },
+                {
+                    "type": "Image",
+                    "id": "452e7f17-5021-4848-9179-f71615084527",
+                    "label": "purple",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "purple",
+                    "Button.callback": "() => this.interface.prompt.showItem(8)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "purple"
+                    },
+                    "x": 629,
+                    "y": 375
+                },
+                {
+                    "type": "Image",
+                    "id": "a2cd9875-b88f-445f-a47a-61b610d39b90",
+                    "label": "darkgreen",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "darkgreen",
+                    "Button.callback": "() => this.interface.prompt.showItem(11)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "darkgreen"
+                    },
+                    "x": 704,
+                    "y": 375
+                },
+                {
+                    "type": "Image",
+                    "id": "418ba2da-e4e9-4e5d-b801-446cbb6ece0e",
+                    "label": "arctic",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "arctic",
+                    "Button.callback": "() => this.interface.prompt.showItem(16)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "arctic"
+                    },
+                    "x": 554,
+                    "y": 450
+                },
+                {
+                    "type": "Image",
+                    "id": "b534904f-2365-4954-823d-3572d6e1eb9f",
+                    "label": "brown",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "brown",
+                    "Button.callback": "() => this.interface.prompt.showItem(9)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "brown"
+                    },
+                    "x": 629,
+                    "y": 450
+                },
+                {
+                    "type": "Image",
+                    "id": "34dba6ea-e2fa-4e5d-a128-716eec014ad1",
+                    "label": "pink",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "pink",
+                    "Button.callback": "() => this.interface.prompt.showItem(3)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "pink"
+                    },
+                    "x": 704,
+                    "y": 450
+                },
+                {
+                    "type": "Image",
+                    "id": "8ee8903e-759a-4bf1-9522-fdb33a0a3a26",
+                    "label": "orange",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "orange",
+                    "Button.callback": "() => this.interface.prompt.showItem(6)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "orange"
+                    },
+                    "x": 554,
+                    "y": 525
+                },
+                {
+                    "type": "Image",
+                    "id": "dce3befc-4071-4418-b350-c61802a36dc4",
+                    "label": "lblue",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "lblue",
+                    "Button.callback": "() => this.interface.prompt.showItem(12)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "lblue"
+                    },
+                    "x": 629,
+                    "y": 525
+                },
+                {
+                    "type": "Image",
+                    "id": "b7d9d94e-2c5d-4594-b5e9-dde1c2a53a74",
+                    "label": "lgreen",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "lgreen",
+                    "Button.callback": "() => this.interface.prompt.showItem(13)",
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "lgreen"
+                    },
+                    "x": 704,
+                    "y": 525
+                },
+                {
+                    "type": "Image",
+                    "id": "ae218996-7855-4e4b-ae13-6575335d4acc",
+                    "label": "coin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 692,
+                    "y": 614
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c372771b-6b34-42e8-822e-c8f1344618c8",
+                    "label": "sec-redviking",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(452)",
+                    "x": 272,
+                    "y": 557,
+                    "scaleX": 0.7631339150761072,
+                    "scaleY": 0.740531067432945,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "bbb825bc-0a8b-4756-b7a1-500ccd99f2d0",
+                    "label": "buy1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1004)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 942,
+                    "y": 162,
+                    "angle": -7,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "f656f725-b3ae-400e-b828-f083c77f577a",
+                    "label": "buy1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(5002)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 833,
+                    "y": 536,
+                    "angle": 39,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "aff03756-270a-4fb9-a55d-aeeb6b9aeab4",
+                    "label": "buy2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4007)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1152,
+                    "y": 346,
+                    "angle": -18,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "8e789570-9b5e-4179-b3b9-57a59b5e959c",
+                    "label": "close_left",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ff17c5cc-41b9-4536-92fb-416493c3e4d7",
+                    "label": "page_right_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "8ffebee6-9ab2-4338-a99f-1a8da88edd30",
+                    "label": "close_right_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "85c93073-822a-4345-9999-9ed046c9380a",
+                    "label": "page_left_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
+            "label": "page1",
+            "components": [],
+            "x": -2,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1f4302a1-8723-4df7-b6ae-45c9e29ef4a9",
+                    "label": "page1_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page1_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "022ff965-564a-4164-a3de-5f8ed84c191c",
+                    "label": "close_right_4_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 914,
+                    "y": 39,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "e6ad9b2d-69c0-4b13-8711-695f897e2871",
+                    "label": "page_right_4_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 914,
+                    "y": 588,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f754888f-b0a5-474f-981c-815c9db2d940",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 189,
+            "y": 40,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "03e2c332-7c90-4eef-b439-0ff416fed521",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1134,
+                    "y": 796,
+                    "originX": 1,
+                    "text": "YOUR COINS:",
+                    "fixedWidth": 600,
+                    "align": "right",
+                    "fontFamily": "CCComiccrazy",
+                    "fontSize": "32px",
+                    "stroke": "#000",
+                    "strokeThickness": 9
+                },
+                {
+                    "type": "Image",
+                    "id": "97d935ea-f1df-49f2-8de8-b2b1e91be6f2",
+                    "label": "page_left",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "prevpagebtn",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "prevpagebtn"
+                    },
+                    "x": -43,
+                    "y": 519,
+                    "originX": 0,
+                    "originY": 0,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "95e504a4-8a1b-407f-9b60-93956a590e1a",
+                    "label": "page_right_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpagebtn",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "nextpagebtn"
+                    },
+                    "x": 1095,
+                    "y": 517,
+                    "originX": 0,
+                    "originY": 0,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "17edf3ea-5f58-48b8-acfc-36eea4bb0335",
+                    "label": "close_right_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "catclosebtn",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "catclosebtn"
+                    },
+                    "x": 1092,
+                    "y": -31,
+                    "originX": 0,
+                    "originY": 0,
+                    "visible": false
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "f5986f3f-53b8-4425-98a1-7981e4c2dc88",
+            "label": "pages",
+            "objectIds": [
+                "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
+                "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
+                "a47fa1a1-0bed-422b-9553-62cf51a77c3b",
+                "036b6e91-5bd7-494b-aaa0-dcbafb487d94",
+                "29658884-3613-41df-900c-bcdc986605f4",
+                "671a14eb-6a3e-4760-98fb-c2ae61d9b5f5",
+                "5a92b883-db49-4d68-96cf-a6466a916a55",
+                "005d3a98-61a3-4620-8971-94fd06f96689",
+                "5c824e41-8854-466b-991d-a2784cb108c7",
+                "1de7877c-4d16-467b-b3e5-0f6be6ba34e9",
+                "cbb85d9c-9558-4b2d-a993-39ec4b4ac654",
+                "e65b4f34-8353-4969-a83f-916eec0ea286",
+                "eda7ad6a-3c91-42f0-a047-ad1495cdf12d",
+                "aad014bb-d6d6-44d1-8004-6f9ab97fc7b0",
+                "57323182-a8fd-465a-b44f-517e0c4d1bb3",
+                "57b2b996-55c9-445c-b77f-6018d01d18d4"
+            ]
+        }
+    ]
+}

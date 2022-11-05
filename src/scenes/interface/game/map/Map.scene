@@ -1,0 +1,1720 @@
+{
+    "id": "dc649c7a-1824-4b21-8431-e3d1168a4506",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "bfaa02be-42e7-4151-a022-1a38f8f54b3a",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "f1c66f9e-79eb-4e26-95c4-f017d3067d09",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/bg"
+                    }
+                },
+                {
+                    "type": "Image",
+                    "id": "1d9af5e8-a12b-4285-aee8-2c90f6083656",
+                    "label": "map_places_dojo",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/dojo",
+                    "Button.callback": "() => this.onRoomClick(321)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "dojoext",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/dojo"
+                    },
+                    "x": 160,
+                    "y": -214
+                },
+                {
+                    "type": "Image",
+                    "id": "9984d120-ffe5-491c-888e-3ecc62d97729",
+                    "label": "map_fg",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/fg"
+                    },
+                    "x": 3,
+                    "y": 100
+                },
+                {
+                    "type": "Image",
+                    "id": "a4272d95-ccd0-446c-9bd6-e557ad5dc3a0",
+                    "label": "map_places_skihill",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/skihill",
+                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "mtn",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/skihill"
+                    },
+                    "x": -442,
+                    "y": -121
+                },
+                {
+                    "type": "Image",
+                    "id": "d290f36b-f4cb-4e90-90ce-c0c4223b92f9",
+                    "label": "map_left_snow",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/left_snow"
+                    },
+                    "x": -610,
+                    "y": 51
+                },
+                {
+                    "type": "Image",
+                    "id": "a3c0e25d-7e68-4224-a9ae-f142bc1e3071",
+                    "label": "map_snow_mound",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/snow_mound"
+                    },
+                    "x": -279,
+                    "y": -34
+                },
+                {
+                    "type": "Image",
+                    "id": "feb312c1-9bf3-4542-99cd-b616c0452435",
+                    "label": "map_snow",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/snow"
+                    },
+                    "x": -194,
+                    "y": 47
+                },
+                {
+                    "type": "Image",
+                    "id": "b04a2eb1-f97b-4441-b57b-e9a15f7c815a",
+                    "label": "map_places_lighthouse",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/lighthouse",
+                    "Button.callback": "() => this.onRoomClick(400)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "beach",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/lighthouse"
+                    },
+                    "x": -691,
+                    "y": 124
+                },
+                {
+                    "type": "Image",
+                    "id": "482b1d35-2fb3-4ff3-8204-b3e8eaa9256b",
+                    "label": "map_places_dock",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/dock",
+                    "Button.callback": "() => this.onRoomClick(800)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "dock",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/dock"
+                    },
+                    "x": -460,
+                    "y": 319
+                },
+                {
+                    "type": "Image",
+                    "id": "32024753-3b14-49c0-a97e-1972e2757cf4",
+                    "label": "map_places_igloos",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/igloos",
+                    "Button.callback": "() => this.iglooMap.visible = true",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "igloos",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/igloos"
+                    },
+                    "x": -152,
+                    "y": 263
+                },
+                {
+                    "type": "Image",
+                    "id": "1b80d5fb-59f0-4878-9547-21465b0dcae9",
+                    "label": "map_places_igloo",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/igloo",
+                    "Button.callback": "() => this.shell.client.sendJoinIgloo(this.shell.client.id)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "urigloo",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/igloo"
+                    },
+                    "x": -25,
+                    "y": 184
+                },
+                {
+                    "type": "Image",
+                    "id": "80932396-3e23-438f-b045-4edc1089210b",
+                    "label": "map_places_town",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/town",
+                    "Button.callback": "() => this.onRoomClick(100)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "town",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/town"
+                    },
+                    "x": -186,
+                    "y": 92
+                },
+                {
+                    "type": "Image",
+                    "id": "0fdf3db0-b7b0-41fb-9595-33242e0998ea",
+                    "label": "map_places_pufflewild",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/pufflewild",
+                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "pufflewild",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/pufflewild"
+                    },
+                    "x": -231,
+                    "y": -102
+                },
+                {
+                    "type": "Image",
+                    "id": "5a05e3c2-eeeb-453d-91d0-48a069ef7a3f",
+                    "label": "map_places_rink",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/rink",
+                    "Button.callback": "() => this.onRoomClick(802)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "rink",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/rink"
+                    },
+                    "x": -99,
+                    "y": -92
+                },
+                {
+                    "type": "Image",
+                    "id": "933d6970-0c00-4dca-9252-3b5418237bd5",
+                    "label": "map_left_trees",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/left_trees"
+                    },
+                    "x": -179,
+                    "y": -11
+                },
+                {
+                    "type": "Image",
+                    "id": "8038cebb-619e-40db-8f16-9bbe95fa8ad4",
+                    "label": "map_places_shack",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/shack",
+                    "Button.callback": "() => this.onRoomClick(807)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "shack",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/shack"
+                    },
+                    "x": 409,
+                    "y": -10
+                },
+                {
+                    "type": "Image",
+                    "id": "66592d0e-fdf7-43fa-8893-28a5b421edf1",
+                    "label": "map_right_trees",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/right_trees"
+                    },
+                    "x": 330,
+                    "y": 20
+                },
+                {
+                    "type": "Image",
+                    "id": "6e384513-d136-4897-a181-842d78297eaf",
+                    "label": "map_places_skivillage",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/skivillage",
+                    "Button.callback": "() => this.onRoomClick(200)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "village",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/skivillage"
+                    },
+                    "x": -329,
+                    "y": -10
+                },
+                {
+                    "type": "Image",
+                    "id": "fea8de8c-5459-4b3d-a5aa-280ac8c1474f",
+                    "label": "map_places_forts",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/forts",
+                    "Button.callback": "() => this.onRoomClick(801)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "forts",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/forts"
+                    },
+                    "x": 12,
+                    "y": 47
+                },
+                {
+                    "type": "Image",
+                    "id": "39fdf70d-d186-4348-b715-4d3efe71272a",
+                    "label": "map_places_pufflepark",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/pufflepark",
+                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "park",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/pufflepark"
+                    },
+                    "x": 163,
+                    "y": -16
+                },
+                {
+                    "type": "Image",
+                    "id": "e2234a8e-18c9-412d-ba43-97ead33ad34b",
+                    "label": "map_places_plaza",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/plaza",
+                    "Button.callback": "() => this.onRoomClick(300)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "plaza",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/plaza"
+                    },
+                    "x": 228,
+                    "y": 107
+                },
+                {
+                    "type": "Image",
+                    "id": "332a43da-6882-48fc-828e-9dd431bdf37e",
+                    "label": "map_places_forest",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/forest",
+                    "Button.callback": "() => this.onRoomClick(809)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "forest",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/forest"
+                    },
+                    "x": 421,
+                    "y": 136
+                },
+                {
+                    "type": "Image",
+                    "id": "515fac54-7f7e-4af6-b4df-21ff0cb928c4",
+                    "label": "map_places_skatepark",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/skatepark",
+                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "skatepark",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/skatepark"
+                    },
+                    "x": 618,
+                    "y": 7
+                },
+                {
+                    "type": "Image",
+                    "id": "25915eb0-16d2-4961-ba35-e349df9032af",
+                    "label": "map_places_cove",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "map/places/cove",
+                    "Button.callback": "() => this.onRoomClick(810)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "cove",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/cove"
+                    },
+                    "x": 657,
+                    "y": 164
+                },
+                {
+                    "type": "Image",
+                    "id": "d073a8f8-7fac-445c-9c68-d353a1485f53",
+                    "label": "map_places_iceberg",
+                    "components": [
+                        "ShowHint",
+                        "SimpleButton"
+                    ],
+                    "ShowHint.text": "berg",
+                    "SimpleButton.callback": "() => this.onRoomClick(805)",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/places/iceberg"
+                    },
+                    "x": 674,
+                    "y": -62
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "4e43d316-5edc-4eb6-a236-77b7c92133ec",
+                    "label": "block",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "alpha": 0.4,
+                    "isFilled": true,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Container",
+                    "id": "0c766396-84df-441e-a20c-829d5bb0805a",
+                    "label": "places_container",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -691,
+                    "y": -214,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ebf61184-1008-4403-88b0-cf1a91fa31e5",
+                            "label": "map_places_cove_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/cove_outline",
+                            "Button.callback": "() => this.onRoomClick(810)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "cove",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/cove_outline"
+                            },
+                            "x": 1349,
+                            "y": 385
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9bd22811-2c8e-4253-8dda-5787f226f003",
+                            "label": "map_places_skatepark_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/skatepark_outline",
+                            "Button.callback": "() => this.onRoomClick(230)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "skatepark",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/skatepark_outline"
+                            },
+                            "x": 1309,
+                            "y": 221
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ddf343f6-34c3-46f9-8db6-9265a358b2be",
+                            "label": "map_places_forest_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/forest_outline",
+                            "Button.callback": "() => this.onRoomClick(809)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "forest",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/forest_outline"
+                            },
+                            "x": 1110,
+                            "y": 349
+                        },
+                        {
+                            "type": "Image",
+                            "id": "75d6b63a-2262-4279-bc61-d60b69ec81c1",
+                            "label": "map_places_plaza_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/plaza_outline",
+                            "Button.callback": "() => this.onRoomClick(300)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "plaza",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/plaza_outline"
+                            },
+                            "x": 919.5,
+                            "y": 321
+                        },
+                        {
+                            "type": "Image",
+                            "id": "dd3f6367-f1ed-4e29-9dc8-0a481e3c730e",
+                            "label": "map_places_pufflepark_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/pufflepark_outline",
+                            "Button.callback": "() => this.onRoomClick(230)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "park",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/pufflepark_outline"
+                            },
+                            "x": 853,
+                            "y": 200
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3cbc9bf1-7fcb-443f-a0b7-3a9822138966",
+                            "label": "map_places_forts_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/forts_outline",
+                            "Button.callback": "() => this.onRoomClick(801)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "forts",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/forts_outline"
+                            },
+                            "x": 703,
+                            "y": 261
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b6d6d44f-e011-4e8a-a1dd-1dc148f23874",
+                            "label": "map_places_shack_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/shack_outline",
+                            "Button.callback": "() => this.onRoomClick(807)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "shack",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/shack_outline"
+                            },
+                            "x": 1100,
+                            "y": 203
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7efa0e09-ade1-4b18-9066-cb14770fe689",
+                            "label": "map_places_pufflewild_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/pufflewild_outline",
+                            "Button.callback": "() => this.onRoomClick(230)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "pufflewild",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/pufflewild_outline"
+                            },
+                            "x": 461,
+                            "y": 117
+                        },
+                        {
+                            "type": "Image",
+                            "id": "768d45c0-b226-4f74-82dc-9e0417c3d6f5",
+                            "label": "map_places_town_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/town_outline",
+                            "Button.callback": "() => this.onRoomClick(100)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "town",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/town_outline"
+                            },
+                            "x": 506,
+                            "y": 306.5
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c614094e-a863-4080-b6bc-d118bc3f2565",
+                            "label": "map_places_igloo_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/igloo_outline",
+                            "Button.callback": "() => this.shell.client.sendJoinIgloo(this.shell.client.id)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "urigloo",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/igloo_outline"
+                            },
+                            "x": 676,
+                            "y": 400
+                        },
+                        {
+                            "type": "Image",
+                            "id": "002f7df2-cffb-4c4b-a4b8-1114e4efd0a4",
+                            "label": "map_places_rink_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/rink_outline",
+                            "Button.callback": "() => this.onRoomClick(802)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "rink",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/rink_outline"
+                            },
+                            "x": 593,
+                            "y": 123
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8d57ab2c-eb59-46c9-b3ae-21e2d9ad7f89",
+                            "label": "map_places_igloos_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/igloos_outline",
+                            "Button.callback": "() => this.iglooMap.visible = true",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "igloos",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/igloos_outline"
+                            },
+                            "x": 540,
+                            "y": 475
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3dd82356-6501-425f-a8de-14859e7ac7fa",
+                            "label": "map_places_dock_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/dock_outline",
+                            "Button.callback": "() => this.onRoomClick(800)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "dock",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/dock_outline"
+                            },
+                            "x": 232,
+                            "y": 531
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3eea239d-8509-4151-9ae8-c5f965bf9598",
+                            "label": "map_places_lighthouse_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/lighthouse_outline",
+                            "Button.callback": "() => this.onRoomClick(400)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "beach",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/lighthouse_outline"
+                            },
+                            "y": 337
+                        },
+                        {
+                            "type": "Image",
+                            "id": "82875e15-1bab-4573-a7bf-77c9d76766cd",
+                            "label": "map_places_dojo_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/dojo_outline",
+                            "Button.callback": "() => this.onRoomClick(321)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "dojoext",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/dojo_outline"
+                            },
+                            "x": 851
+                        },
+                        {
+                            "type": "Image",
+                            "id": "25e17fa6-4025-4ce8-aba6-700ed0f1bba9",
+                            "label": "map_places_skihill_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/skihill_outline",
+                            "Button.callback": "() => this.onRoomClick(230)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "mtn",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/skihill_outline"
+                            },
+                            "x": 261.5,
+                            "y": 92.5
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1addb325-6a59-41f5-8908-441db3ec576c",
+                            "label": "map_places_skivillage_1",
+                            "components": [
+                                "Button",
+                                "ShowHint"
+                            ],
+                            "Button.spriteName": "map/places_outline/skivillage_outline",
+                            "Button.callback": "() => this.onRoomClick(200)",
+                            "Button.activeFrame": false,
+                            "ShowHint.text": "village",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places_outline/skivillage_outline"
+                            },
+                            "x": 363,
+                            "y": 205
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e4697ea7-7118-4032-8682-bc8c27bef333",
+                            "label": "map_places_iceberg_1",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "berg",
+                            "SimpleButton.callback": "() => this.onRoomClick(805)",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/places/iceberg"
+                            },
+                            "x": 1365,
+                            "y": 152
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "695115a0-7422-47a8-8281-4ca6a6033690",
+                    "label": "games_container",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -623,
+                    "y": -272,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Sprite",
+                            "id": "ff15c00e-ec56-4dc3-b333-c3dcbfe2cef4",
+                            "label": "aqua",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(805)",
+                            "ShowHint.text": "aquagrabber",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/aquagrabber"
+                            },
+                            "x": 1230,
+                            "y": 204
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "c15d4bef-2d04-4b16-91b7-6c5c54f967b3",
+                            "label": "arcade",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(121)",
+                            "ShowHint.text": "arcade",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/arcadegames"
+                            },
+                            "x": 450,
+                            "y": 309
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "a57bdeaf-9e0f-4b25-8fbe-07dd01fdd101",
+                            "label": "counters",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(110)",
+                            "ShowHint.text": "beancounters",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/beancounters"
+                            },
+                            "x": 302,
+                            "y": 379
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "f32f1312-9022-486a-84dc-7294ba20374b",
+                            "label": "jitsu",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "card",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/cardjitsu"
+                            },
+                            "x": 789,
+                            "y": 50,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "2f793649-bb8b-41bd-9402-8820a9041f5c",
+                            "label": "surfer",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(808)",
+                            "ShowHint.text": "cartsurfer",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/cartsurfer"
+                            },
+                            "x": 1071,
+                            "y": 227
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "8ebb1c48-0bc5-427b-9667-8ab2f75c6cb8",
+                            "label": "waves",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "catchinwaves",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/catchinwaves"
+                            },
+                            "x": 1219,
+                            "y": 458,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "4007ca6b-d263-4394-8209-868c826c4ab9",
+                            "label": "dancecontest",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(120)",
+                            "ShowHint.text": "dancecontest",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/dancecontest"
+                            },
+                            "x": 558,
+                            "y": 373
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "158dedff-7ac2-4f3d-b8cc-187fc59c3762",
+                            "label": "soundstudio",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "soundstudio",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/dj3ksoundstudio"
+                            },
+                            "x": 448,
+                            "y": 444,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "c6fe7375-6d13-4d56-a9db-f20462dc4ea2",
+                            "label": "hydro",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(800)",
+                            "ShowHint.text": "hydrohopper",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/hydrohopper"
+                            },
+                            "x": 124,
+                            "y": 577
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "4fcf6d78-c83e-403d-80cf-aa67715f530f",
+                            "label": "fishing",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(220)",
+                            "ShowHint.text": "icefishing",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/icefishing"
+                            },
+                            "x": 182,
+                            "y": 225
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "6dd475b1-a544-42e6-97ff-a6ef5da34b9e",
+                            "label": "jetpack",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(411)",
+                            "ShowHint.text": "jetpackadventure",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/jetpackadventure"
+                            },
+                            "x": 6,
+                            "y": 341
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "8797e84f-1a69-46eb-a8bf-5329e6ab057e",
+                            "label": "pizzatron",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(330)",
+                            "ShowHint.text": "pizzatron",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/pizzatron"
+                            },
+                            "x": 954,
+                            "y": 394
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "b26e0390-bde6-467b-a57a-e44cfbce5ab8",
+                            "label": "cannon",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(310)",
+                            "ShowHint.text": "pufflelaunch",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/pufflelaunch"
+                            },
+                            "x": 749,
+                            "y": 423
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "1f179b42-2bb0-4c01-b6d7-d3805ced29b5",
+                            "label": "rescue",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(808)",
+                            "ShowHint.text": "pufflerescue",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/pufflerescue"
+                            },
+                            "x": 916,
+                            "y": 240
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "7daceec6-b582-4553-959a-7ef13f3ba947",
+                            "label": "roundup",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(310)",
+                            "ShowHint.text": "puffleroundup",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/puffleroundup"
+                            },
+                            "x": 740,
+                            "y": 285
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "16ac654d-da3f-4e67-9993-afb913276fda",
+                            "label": "pufflescape",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "pufflescape",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/pufflescape"
+                            },
+                            "x": 855,
+                            "y": 491,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "a5a704cb-8ef6-4756-acf2-d18c864b5b1c",
+                            "label": "sled",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(230)",
+                            "ShowHint.text": "sled",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/sledracing"
+                            },
+                            "x": 153,
+                            "y": 89
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "9653da98-50fd-44ec-b58f-b7ff12b1f324",
+                            "label": "smoothie",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "smoothie",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/games/smoothiesmash"
+                            },
+                            "x": 322,
+                            "y": 529,
+                            "visible": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "1c34772e-c6d5-4965-bbb8-75cfe23a4291",
+                    "label": "shops_container",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -590,
+                    "y": -202,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Sprite",
+                            "id": "7f871f61-2ada-4660-875e-9dc927e0d7a7",
+                            "label": "catchinwavesupgrades",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "gameupgrade",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/catchinwavesupgrades"
+                            },
+                            "x": 1192,
+                            "y": 415,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "a10bdf84-a3f1-4754-9e63-16c6937c0277",
+                            "label": "costumetrunk",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "costumecatalog",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/costumetrunk"
+                            },
+                            "x": 916,
+                            "y": 320,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "949c07ab-0fbe-4137-a44a-95ce737b3316",
+                            "label": "hydrohopperupgrades",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "gameupgrade",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/hydrohopperupgrades"
+                            },
+                            "x": 172,
+                            "y": 514,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "b6eec7b7-9004-4973-aa22-9c3e15422163",
+                            "label": "icefishingupgrades",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(220)",
+                            "ShowHint.text": "gameupgrade",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/icefishingupgrades"
+                            },
+                            "x": 170,
+                            "y": 241
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "3dd7002c-ae5a-4cc4-aecd-2a585d4bad80",
+                            "label": "martialartworks",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "martialartworks",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/martialartworks"
+                            },
+                            "x": 746,
+                            "y": 33,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "4309d80b-913e-43c1-8dbb-71ee50bf5329",
+                            "label": "musiccatalog",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(410)",
+                            "ShowHint.text": "musiccatalog",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/musiccatalog"
+                            },
+                            "y": 386
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "e4ce89c1-51d4-42ec-9dc5-3fc510550626",
+                            "label": "penguinstyle",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(130)",
+                            "ShowHint.text": "clothingcatalog",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/penguinstyle"
+                            },
+                            "x": 505,
+                            "y": 349
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "7496244a-2e81-400b-910e-bd3568bb990a",
+                            "label": "petfurniture",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "petfurniture",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/petfurniture"
+                            },
+                            "x": 747,
+                            "y": 311,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "0f0e3286-f717-43b7-953f-25b2b0bed77a",
+                            "label": "sledraceupgrades",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "gameupgrade",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/sledracerupgrades"
+                            },
+                            "x": 123,
+                            "y": 71,
+                            "visible": false
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "cfda065b-a272-4087-8ded-4c463ef14dc3",
+                            "label": "snowandsports",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "sportscatalog",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/shops/snowandsports"
+                            },
+                            "x": 544,
+                            "y": 172,
+                            "visible": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "14a6ad25-ab8c-4bc2-83d3-2fba86a893a0",
+                    "label": "puffle_container",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -255,
+                    "y": -111,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "15eb02e6-a6d8-4c03-93e6-28b9b7f63dfa",
+                            "label": "map_puffles_adopt",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "puffleadopt",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/adopt"
+                            },
+                            "x": 427,
+                            "y": 190,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "831b894b-370a-41de-873b-d20830b2f944",
+                            "label": "map_puffles_rainbow",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "rainbowquest",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/rainbow"
+                            },
+                            "x": 559,
+                            "y": 193,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6b56914b-d4ba-4c2a-8319-c2882b3bd368",
+                            "label": "map_puffles_rescue",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(808)",
+                            "ShowHint.text": "pufflerescue",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/rescue"
+                            },
+                            "x": 534,
+                            "y": 58
+                        },
+                        {
+                            "type": "Image",
+                            "id": "522d817c-7e34-4d7f-9990-bc63f83cd7e5",
+                            "label": "map_puffles_roundup",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(310)",
+                            "ShowHint.text": "puffleroundup",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/roundup"
+                            },
+                            "x": 333,
+                            "y": 75
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d2d579c6-4566-41d1-8911-24c01c7a90c3",
+                            "label": "map_puffles_wild",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "pufflewild",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/wild"
+                            },
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "da7f6bb6-26aa-4b87-b599-4a1f7616dcc8",
+                            "label": "map_puffles_arcade",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(121)",
+                            "ShowHint.text": "arcade",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/arcade"
+                            },
+                            "x": 84,
+                            "y": 119
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f5e035a3-32f5-43ee-b299-33f5da649a0e",
+                            "label": "map_puffles_launch",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(310)",
+                            "ShowHint.text": "pufflelaunch",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/launch"
+                            },
+                            "x": 281,
+                            "y": 208
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4d8bc0e6-c879-4aa3-a6f7-01db529a5c7b",
+                            "label": "map_puffles_pufflescape",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "pufflescape",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/pufflescape"
+                            },
+                            "x": 371,
+                            "y": 314,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "0c70ce07-9372-4dba-a250-0a077a07d223",
+                            "label": "map_puffles_shop",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "petfurniture",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/shop"
+                            },
+                            "x": 511,
+                            "y": 308,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "af4fb445-d7e4-4b63-a71e-e827e650a59b",
+                            "label": "map_puffles_care",
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "ShowHint.text": "pufflecare",
+                            "texture": {
+                                "key": "map",
+                                "frame": "map/puffles/care"
+                            },
+                            "x": 147,
+                            "y": 371,
+                            "visible": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "e56fd13f-d93f-48b0-811f-785ce902404c",
+                    "label": "image",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/overlay/categories_bg"
+                    },
+                    "x": -467,
+                    "y": -383
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b67de3ed-ce73-49fb-8f0e-52e73698fb76",
+                    "label": "places_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "map/overlay/places_btn",
+                    "Button.callback": "() => this.changeMode(\"places\")",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/overlay/places_btn"
+                    },
+                    "x": -649,
+                    "y": -401
+                },
+                {
+                    "type": "Text",
+                    "id": "77ff6992-8b41-46c2-8fd1-452cbbc97a5d",
+                    "label": "places_txt",
+                    "components": [],
+                    "x": -649,
+                    "y": -327,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Places",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7f7f7fff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ec82df98-efc4-4930-9c87-5d095c05e9b2",
+                    "label": "games_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "map/overlay/games_btn",
+                    "Button.callback": "() => this.changeMode(\"games\")",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/overlay/games_btn"
+                    },
+                    "x": -520,
+                    "y": -401
+                },
+                {
+                    "type": "Text",
+                    "id": "27576876-8dba-4ca9-8526-bdc9d8a0dbbb",
+                    "label": "games_txt",
+                    "components": [],
+                    "x": -520,
+                    "y": -327,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Games",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7f7f7fff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4761f055-377d-44a9-b5fa-7c4b55ab3ff1",
+                    "label": "shops_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "map/overlay/shops_btn",
+                    "Button.callback": "() => this.changeMode(\"shops\")",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/overlay/shops_btn"
+                    },
+                    "x": -393,
+                    "y": -401
+                },
+                {
+                    "type": "Text",
+                    "id": "45a44884-0d73-496b-a8ba-4d197331bba3",
+                    "label": "shops_txt",
+                    "components": [],
+                    "x": -393,
+                    "y": -327,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Shops",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7f7f7fff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "230e399d-6445-4044-ac92-83a0db88af20",
+                    "label": "pets_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "map/overlay/puffles_btn",
+                    "Button.callback": "() => this.changeMode(\"puffles\")",
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/overlay/puffles_btn"
+                    },
+                    "x": -266,
+                    "y": -401
+                },
+                {
+                    "type": "Text",
+                    "id": "c3d437bf-8a48-4d53-afce-23d1323de9b2",
+                    "label": "shops_txt_1",
+                    "components": [],
+                    "x": -266,
+                    "y": -327,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Pets",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7f7f7fff"
+                },
+                {
+                    "prefabId": "9f793ade-93a8-4ab2-bd68-ccd899fb9179",
+                    "id": "4c6bbbdd-9ca9-4b1f-9a07-d2ad9ca2c5cb",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "iglooMap",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 0,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "Sprite",
+                    "id": "7396ebd4-e90e-48ed-a3af-4b5cc3a0619a",
+                    "label": "overlay",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "map/overlay/overlay"
+                    }
+                },
+                {
+                    "type": "Sprite",
+                    "id": "6c2b3e78-dca9-4ac7-b0e3-2f68df1b4353",
+                    "label": "close_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 717,
+                    "y": -439
+                },
+                {
+                    "type": "Image",
+                    "id": "36ca5495-88cd-47d9-a362-7e4e6eaad5b8",
+                    "label": "image_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-x"
+                    },
+                    "x": 717,
+                    "y": -441
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

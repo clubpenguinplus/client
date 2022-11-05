@@ -1,0 +1,348 @@
+{
+    "id": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 20,
+        "snapHeight": 20,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "80b40d42-bac6-4d3b-ac21-b81f37ee9a54",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "card_bg",
+            "x": 760,
+            "y": 460,
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "ae5ef1eb-31ba-4fb6-b949-c7cdbb0f48f4",
+                    "label": "photo",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -2,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "8621979a-5a8b-4fb0-a9f5-7591660d7e29",
+                            "label": "card_photo",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "texture": {
+                                "key": "main",
+                                "frame": "card-photo"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "fe294108-b9df-4ff7-8a4c-2b4ee0d81d76",
+                    "label": "card_bg",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/card-bg"
+                    },
+                    "y": 37
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "d6bbac10-17e0-44da-902d-f6dfbbe8bc93",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": -7,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "55aa1891-15ef-4424-b7ce-681f9b4f01cf",
+                    "id": "b958363f-47ef-45d1-ab73-8ee745452d50",
+                    "unlock": [
+                        "v",
+                        "y",
+                        "visible",
+                        "x"
+                    ],
+                    "label": "buttons",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 261,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Container",
+                    "id": "b173b409-a478-4303-9fbc-f0300fea9f35",
+                    "label": "stats",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": 255,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "7ddd32c4-e02e-4526-8380-775b7c5b3e8b",
+                            "label": "stamps_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "mobile/blue-button",
+                            "Button.callback": "() => { this.interface.loadExternal('Stampbook'); this.interface.stampbookId = this.id }",
+                            "texture": {
+                                "key": "main",
+                                "frame": "mobile/blue-button"
+                            },
+                            "x": -150,
+                            "y": 78
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6e0b3192-1f75-484c-ba84-d76ccd3a3345",
+                            "label": "card_coin",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "card-coin"
+                            },
+                            "x": -151,
+                            "y": -1,
+                            "scaleX": 1.5,
+                            "scaleY": 1.5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "41323b7b-a2e7-4992-b3c1-b2c6e3078c0e",
+                            "label": "coins",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 60,
+                            "y": 2,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Coins: 000000",
+                            "fixedWidth": 330,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1454e881-7bde-480a-b858-7a0708d1cefc",
+                            "label": "stamps",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 60,
+                            "y": 78,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Stamps: 690/420",
+                            "fixedWidth": 330,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6b48d92b-324b-46a2-89a8-7e01adf7af19",
+                            "label": "card_stamp",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "mobile/stamp-icon"
+                            },
+                            "x": -150,
+                            "y": 75
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "e96707d4-a8b8-4cf9-bdd5-3babddd9ac5c",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -238,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 360,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "0a074237-0457-4002-a588-2d9705f5aaf4",
+                    "label": "blue_x",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.visible = false}",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 179,
+                    "y": -245,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "prefabId": "676b9d5e-1fcd-4a27-8667-0f19254fc582",
+                    "id": "1e195136-b37b-4455-8b80-df6580175885",
+                    "unlock": [
+                        "visible",
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventorySort",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 434,
+                    "y": 315,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "092e5111-82e2-4289-8f29-b8d9568e9497",
+                    "id": "2c78d474-38e5-4639-85d4-0191679ebb81",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventory",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -135,
+                    "y": 33,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Image",
+                    "id": "fc25d4ef-f343-452e-a7f0-cf9b8f96963d",
+                    "label": "edit_player_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "edit_player_button",
+                    "Button.callback": "() => this.editPlayer()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "edit_player_button"
+                    },
+                    "x": 2992,
+                    "y": 284,
+                    "visible": false
+                },
+                {
+                    "type": "Container",
+                    "id": "9350c7da-a136-4655-b748-1664c595c9bf",
+                    "label": "container_2",
+                    "components": [],
+                    "x": -145,
+                    "y": -246,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "64eaeac1-385f-431a-9498-4196f79da9a6",
+                            "label": "member_ribbon_back",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "member/ribbon-back0001"
+                            },
+                            "y": 42
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f32e885d-6f4e-41e1-926f-946b9d7e239b",
+                            "label": "member_bg",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "member/bg"
+                            },
+                            "y": 15
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "24d3a0c6-aa13-4158-9d3c-f2e32dac38d3",
+                            "label": "member_main_anim",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "member/main_anim0001"
+                            },
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "99bd66d9-faf8-46a2-b5b0-6fdfb156f6d3",
+                            "label": "member_badge",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "member/badge"
+                            }
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3aa050c6-6b70-453a-9601-ec5e2048952d",
+                            "label": "member_chevrons",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "member/chevrons1y"
+                            },
+                            "y": 55,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "22109bb3-39ba-429a-ac04-947763e04506",
+                            "label": "member_ribbon_en",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "member/ribbon-en"
+                            },
+                            "y": 33
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

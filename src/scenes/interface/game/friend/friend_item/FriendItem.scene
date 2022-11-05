@@ -1,0 +1,193 @@
+{
+    "id": "4bb6ff30-8325-40f6-a7ec-ab36bcde7e44",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "460fe828-2a5c-48b5-8e64-374780777136",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "730363a5-60c9-4711-80a6-53256a41c9bd",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 60,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 185,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Image",
+                    "id": "934b9549-4336-4445-9936-2948042b7f94",
+                    "label": "add",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.addFriend()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/add"
+                    },
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "5a640153-d833-4b2d-bcaa-1ebb03ba1d10",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-photo"
+                    },
+                    "scaleX": 0.218,
+                    "scaleY": 0.218
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "36f653e5-9b9a-47ec-8ea0-432185b18367",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY",
+                        "visible"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 0,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "3448b496-17ad-4523-933c-0975d348ee3d",
+                    "label": "offlineonline",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -0.061767578125,
+                    "y": 75.26654052734375,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Offline",
+                    "fixedWidth": 185,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px",
+                    "color": "#a7c9d5ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c3535d26-9b6a-4103-9474-cc17f9edfe9e",
+                    "label": "offline",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-photo"
+                    },
+                    "scaleX": 0.21,
+                    "scaleY": 0.21,
+                    "visible": false,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5,
+                    "tintTopLeft": "#000000",
+                    "tintTopRight": "#000000",
+                    "tintBottomLeft": "#000000",
+                    "tintBottomRight": "#000000",
+                    "tintFill": true
+                },
+                {
+                    "type": "Image",
+                    "id": "3f562933-7b31-4dc1-a62e-5076c295a98a",
+                    "label": "over",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => {this.over.alpha = 0.1}",
+                    "SimpleButton.hoverOutCallback": "() => {this.over.alpha = 0.01}",
+                    "SimpleButton.callback": "() => this.onClick()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-photo"
+                    },
+                    "scaleX": 0.21,
+                    "scaleY": 0.21,
+                    "visible": false,
+                    "alpha": 0.01,
+                    "alphaTopLeft": 0.01,
+                    "alphaTopRight": 0.01,
+                    "alphaBottomLeft": 0.01,
+                    "alphaBottomRight": 0.01,
+                    "tintFill": true
+                },
+                {
+                    "type": "Image",
+                    "id": "7440b5d7-59f5-4ef5-a6da-dc09c08b5538",
+                    "label": "outline",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/outline"
+                    }
+                },
+                {
+                    "type": "Image",
+                    "id": "a33a4d92-9f42-421e-af25-f127c8662f64",
+                    "label": "bff",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.toggleBff()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/default"
+                    },
+                    "x": -40,
+                    "y": -39
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

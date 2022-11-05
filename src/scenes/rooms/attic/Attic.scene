@@ -1,0 +1,511 @@
+{
+    "id": "d06e2ce3-02f2-4c08-8508-2c0256d679c5",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/lodgeAttic/attic-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Attic",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "35457aaa-97a7-4ce5-8a8c-50288c3378b3",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "bg"
+            },
+            "x": -105,
+            "y": -12,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "cdcfe027-9fba-456d-9307-2e7aafea8a0d",
+            "label": "pizzabox",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "pizzabox"
+            },
+            "x": 212,
+            "y": 538
+        },
+        {
+            "type": "Image",
+            "id": "724f93d9-dafa-444a-86ed-ea5a38c884dd",
+            "label": "leftbluechair",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "leftbluechair"
+            },
+            "x": 71,
+            "y": 581
+        },
+        {
+            "type": "Image",
+            "id": "513201ba-a197-4f3d-90b5-5d7312d30b03",
+            "label": "bluechair",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "bluechair"
+            },
+            "x": 148.60520449114657,
+            "y": 502.39479550885346,
+            "originX": 0.6229437733913884,
+            "originY": 0.38541162868375467
+        },
+        {
+            "type": "Image",
+            "id": "96ee913d-c020-4e05-8c56-a8678d293027",
+            "label": "rug",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "rug"
+            },
+            "x": 195.41565813862397,
+            "y": 738.5843418613761,
+            "originX": 0.5604710352035555,
+            "originY": 0.4314344167770711
+        },
+        {
+            "type": "Image",
+            "id": "90566074-0da9-45fb-8991-7bbdd9031cfa",
+            "label": "lamp",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "lamp"
+            },
+            "x": 25.779589508140994,
+            "y": 597.693842622115,
+            "originX": 0.5243823641065,
+            "originY": 0.7229617252519517
+        },
+        {
+            "type": "Image",
+            "id": "3b2d2389-2eb3-4690-952c-ae856d428fcc",
+            "label": "pirate_fixed",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "pirate_fixed"
+            },
+            "x": 1410,
+            "y": 287
+        },
+        {
+            "type": "Image",
+            "id": "def8d478-a051-4c5d-9c67-da33a2a7285d",
+            "label": "paintings",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "paintings"
+            },
+            "x": 1429,
+            "y": 449
+        },
+        {
+            "type": "Image",
+            "id": "70455f9c-2420-4398-9558-e1f822b56af2",
+            "label": "pufflebag",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "pufflebag"
+            },
+            "x": 1331,
+            "y": 503
+        },
+        {
+            "type": "Image",
+            "id": "2d8af1d1-0412-4d24-a937-71aabc54955a",
+            "label": "yellowpuffbag",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "yellowpuffbag"
+            },
+            "x": 1386,
+            "y": 560
+        },
+        {
+            "type": "Sprite",
+            "id": "744bf6b7-7721-40a8-9619-6d45e1fc6b44",
+            "label": "horse",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onHorseOver()",
+            "texture": {
+                "key": "attic",
+                "frame": "horse0001"
+            },
+            "x": 1469,
+            "y": 573,
+            "originX": 0.544,
+            "originY": 0.503185
+        },
+        {
+            "type": "Image",
+            "id": "6e9740e2-b3f8-41a8-bb83-6b956c47543b",
+            "label": "chairback",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "chairback"
+            },
+            "x": 1134,
+            "y": 656
+        },
+        {
+            "type": "Image",
+            "id": "978eca94-bc31-47ed-bfab-a182897197b4",
+            "label": "circlestool",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "circlestool"
+            },
+            "x": 1052,
+            "y": 745
+        },
+        {
+            "type": "Image",
+            "id": "7294d42f-064f-4920-930d-6b011cc48921",
+            "label": "plantable",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "plantable"
+            },
+            "x": 1349,
+            "y": 751,
+            "originX": 0.7433049295987494,
+            "originY": 0.6417962170875826
+        },
+        {
+            "type": "Image",
+            "id": "46d3517d-8533-4356-b106-84cc8f54645a",
+            "label": "squarestool",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "squarestool"
+            },
+            "x": 1161,
+            "y": 821
+        },
+        {
+            "type": "Image",
+            "id": "b129cdc8-846f-4d18-b5c7-5193f7445d81",
+            "label": "fg_left",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "fg_left"
+            },
+            "x": -161,
+            "y": 972,
+            "originX": 0.004053513024603988,
+            "originY": 0.9838982835484917
+        },
+        {
+            "type": "Image",
+            "id": "305d78b7-ea92-40ed-b2cc-8473c6bf17bf",
+            "label": "brownchairfront",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "brownchairfront"
+            },
+            "x": 766,
+            "y": 761
+        },
+        {
+            "type": "Image",
+            "id": "932eea53-0702-497e-90cb-6e992ec0343c",
+            "label": "brownchair",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "brownchair"
+            },
+            "x": 764,
+            "y": 900,
+            "originX": 0.503982979899936,
+            "originY": 0.6854659688099547
+        },
+        {
+            "type": "Sprite",
+            "id": "e484bff0-be88-4677-8d31-c6be47a8d8c5",
+            "label": "boxdimension",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "boxdimension"
+            },
+            "x": 966,
+            "y": 974,
+            "originX": 0.47834338839237844,
+            "originY": 1.011384788761301
+        },
+        {
+            "type": "Image",
+            "id": "84040747-7635-4ac3-9a30-8c04d0cedfe3",
+            "label": "fg_right",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "fg_right"
+            },
+            "x": 1679,
+            "y": 1154,
+            "originX": 0.9977534832559671,
+            "originY": 1.0049481046883484
+        },
+        {
+            "type": "Image",
+            "id": "9aa0d430-ae3b-421a-bd01-7b0f9c6fd49c",
+            "label": "frontpizzabox",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "frontpizzabox"
+            },
+            "x": 537,
+            "y": 930.0003486965516,
+            "originY": 0.6917832102503532
+        },
+        {
+            "type": "Image",
+            "id": "fcaa31de-ba98-4429-a954-99e79e9af82c",
+            "label": "leftpencil",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "leftpencil"
+            },
+            "x": 1160,
+            "y": 696
+        },
+        {
+            "type": "Image",
+            "id": "44c16782-8674-42db-aa70-49333dc4dcc9",
+            "label": "circlestoolmirror",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "circlestoolmirror"
+            },
+            "x": 309,
+            "y": 469
+        },
+        {
+            "type": "Image",
+            "id": "fd0c1440-8005-447b-8832-2c204d1c335a",
+            "label": "leftstairhandle",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "leftstairhandle"
+            },
+            "x": 753.2325890753189,
+            "y": 474.0308788528382,
+            "originX": 0.6133198013694338,
+            "originY": 0.23500896788610423
+        },
+        {
+            "type": "Image",
+            "id": "c71c27bc-1f15-42dd-b06b-e10cb4c0b650",
+            "label": "rightstairhandle",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "rightstairhandle"
+            },
+            "x": 869.883720505676,
+            "y": 578.5735707900989,
+            "originX": 0.46612723328631056,
+            "originY": 0.3797219652131449
+        },
+        {
+            "type": "Image",
+            "id": "0525af2a-c025-4825-a322-f426cf59160b",
+            "label": "findfourtable",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfourtable",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "attic",
+                "frame": "findfourtable"
+            },
+            "x": 254,
+            "y": 596
+        },
+        {
+            "type": "Image",
+            "id": "ea2d23ff-4243-41b8-8434-a03cac96ede9",
+            "label": "findfourtable_1",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfourtable",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "attic",
+                "frame": "findfourtable"
+            },
+            "x": 369,
+            "y": 691
+        },
+        {
+            "type": "Image",
+            "id": "ca8038d7-468f-4143-8f29-0c24a7b1f045",
+            "label": "findfourtable_2",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfourtable",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "attic",
+                "frame": "findfourtable"
+            },
+            "x": 560,
+            "y": 685,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "7929f283-fac5-45ba-90ec-aa5a4eb1e845",
+            "label": "findfourtable_3",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfourtable",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "attic",
+                "frame": "findfourtable"
+            },
+            "x": 683,
+            "y": 626,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "4eb2140a-9ba7-48c8-839d-0f4408d1d438",
+            "label": "leftsoda",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "leftsoda"
+            },
+            "x": 1127.0949891243745,
+            "y": 679.4124909369787,
+            "originX": 0.31616253777615067,
+            "originY": 0.40589272767112367
+        },
+        {
+            "type": "Image",
+            "id": "b5d2ceca-0326-4ec8-8045-48b0756ada70",
+            "label": "rightpencil",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "rightpencil"
+            },
+            "x": 1199,
+            "y": 726
+        },
+        {
+            "type": "Image",
+            "id": "8e3180dd-9ece-498e-9993-3ff75eac5598",
+            "label": "apple",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "apple"
+            },
+            "x": 1234,
+            "y": 618
+        },
+        {
+            "type": "Image",
+            "id": "2e3edcd1-a29a-4e08-819c-64830ee98385",
+            "label": "book",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "book"
+            },
+            "x": 1190,
+            "y": 649
+        },
+        {
+            "type": "Image",
+            "id": "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92",
+            "label": "rightsoda",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "rightsoda"
+            },
+            "x": 1270,
+            "y": 575
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "167f5623-6351-4c6d-ad9c-fa45cd2b2108",
+            "label": "sort",
+            "objectIds": [
+                "744bf6b7-7721-40a8-9619-6d45e1fc6b44",
+                "b129cdc8-846f-4d18-b5c7-5193f7445d81",
+                "84040747-7635-4ac3-9a30-8c04d0cedfe3",
+                "7294d42f-064f-4920-930d-6b011cc48921",
+                "932eea53-0702-497e-90cb-6e992ec0343c",
+                "9aa0d430-ae3b-421a-bd01-7b0f9c6fd49c",
+                "e484bff0-be88-4677-8d31-c6be47a8d8c5",
+                "44c16782-8674-42db-aa70-49333dc4dcc9",
+                "fd0c1440-8005-447b-8832-2c204d1c335a",
+                "c71c27bc-1f15-42dd-b06b-e10cb4c0b650",
+                "96ee913d-c020-4e05-8c56-a8678d293027",
+                "90566074-0da9-45fb-8991-7bbdd9031cfa",
+                "724f93d9-dafa-444a-86ed-ea5a38c884dd",
+                "0525af2a-c025-4825-a322-f426cf59160b",
+                "4eb2140a-9ba7-48c8-839d-0f4408d1d438",
+                "2e3edcd1-a29a-4e08-819c-64830ee98385",
+                "8e3180dd-9ece-498e-9993-3ff75eac5598",
+                "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92"
+            ]
+        }
+    ]
+}

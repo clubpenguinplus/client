@@ -1,0 +1,1027 @@
+{
+    "id": "cc80118d-6e68-4c5b-8448-5b9fcdb5cc26",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/safetyquiz/safetyquiz-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "SafetyQuiz",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "92f0622c-1fb3-4183-a3d8-c205f0b0c2d0",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "safetyquiz",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "1a1497f4-4dae-4f79-8d97-31c0444719ea",
+            "label": "white_x",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.scene.stop()}",
+            "texture": {
+                "key": "main",
+                "frame": "white-x"
+            },
+            "x": 1439,
+            "y": 77,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Container",
+            "id": "b19c3f79-ae14-4fad-a536-18cfe3a05856",
+            "label": "page1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 381,
+            "y": 338,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1ddc52ad-5431-448f-8fde-9798a06cffbd",
+                    "label": "penguins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "penguins"
+                    },
+                    "y": 189
+                },
+                {
+                    "type": "Image",
+                    "id": "7bfbcfed-a5d6-4b02-8f2d-9ba624d2e3f2",
+                    "label": "modbutton",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "modbutton",
+                    "Button.callback": "() => this.startQuiz()",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "modbutton"
+                    },
+                    "x": 634,
+                    "y": 387
+                },
+                {
+                    "type": "Image",
+                    "id": "227cbeeb-719b-4dc8-abbf-03aea18f9703",
+                    "label": "item_locked",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "item_locked"
+                    },
+                    "x": 650,
+                    "y": -65
+                },
+                {
+                    "type": "Text",
+                    "id": "0b3c406f-7eb8-4ea1-8939-827cf4651a98",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-intro",
+                    "x": 650,
+                    "y": 122,
+                    "originX": 0.5,
+                    "text": "Test your online safety knowledge in this quiz and earn a FREE online safety sweater for your penguin.",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true,
+                    "shadow.color": "#26417dff",
+                    "shadow.blur": 3,
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Text",
+                    "id": "839ddf9d-d601-49fa-a6a9-f1283e84a18b",
+                    "label": "text_1",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz",
+                    "x": 658,
+                    "y": 369,
+                    "originX": 0.5,
+                    "text": "Safety Quiz",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "shadow.blur": 10,
+                    "wordWrapWidth": 550
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "e2d7fd0f-501f-4b88-bf8b-9a81688926a0",
+            "label": "page2",
+            "scope": "CLASS",
+            "components": [],
+            "x": 147,
+            "y": 114,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "cd229e09-6e37-4df8-875d-4570dc2ab77d",
+                    "label": "locked",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "locked"
+                    },
+                    "x": 407,
+                    "y": 534
+                },
+                {
+                    "type": "Image",
+                    "id": "b4ea8ab3-9f83-4ac3-a019-3c00cd1db547",
+                    "label": "clipboard",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "clipboard"
+                    },
+                    "x": 926,
+                    "y": 375
+                },
+                {
+                    "type": "Image",
+                    "id": "f12e8ca0-f09b-4154-96e7-036aff3e2d28",
+                    "label": "module_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "module_bg1"
+                    },
+                    "x": 955,
+                    "y": 440,
+                    "angle": 5
+                },
+                {
+                    "type": "Image",
+                    "id": "b28f749c-7f82-4d79-9ab9-673c70616b56",
+                    "label": "progress_rotated",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "progress-rotated0001"
+                    },
+                    "x": 978,
+                    "y": 162
+                },
+                {
+                    "type": "Image",
+                    "id": "1b46f6b1-e530-4f6b-bd89-3212650438df",
+                    "label": "safetyquiz",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "safetyquiz"
+                    },
+                    "y": 31,
+                    "originY": 0.5047169811320755
+                },
+                {
+                    "type": "Text",
+                    "id": "2e9efb29-f3a1-4ef9-87ca-65ebdab50e9c",
+                    "label": "title",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-title",
+                    "x": 54,
+                    "text": "Take the Be Cool, Be Heard, Be Safe Quiz!",
+                    "lineSpacing": 5,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "shadow.blur": 10,
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Image",
+                    "id": "0afd49fb-61b9-44ab-8b5b-47f2de62d4bd",
+                    "label": "answer_btn1",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.chooseAnswer(1)",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "module_button"
+                    },
+                    "x": 963,
+                    "y": 404,
+                    "angle": 5
+                },
+                {
+                    "type": "Image",
+                    "id": "37cf8690-be87-4c1e-868e-236c684b20ef",
+                    "label": "answer_btn2",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.chooseAnswer(2)",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "module_button"
+                    },
+                    "x": 951,
+                    "y": 479,
+                    "angle": 5
+                },
+                {
+                    "type": "Image",
+                    "id": "024b9c1c-9893-4a1f-8fff-dcae1ed6a329",
+                    "label": "answer_btn3",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.chooseAnswer(3)",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "module_button"
+                    },
+                    "x": 939,
+                    "y": 554,
+                    "angle": 5
+                },
+                {
+                    "type": "Image",
+                    "id": "87e1f9df-5cf8-4fb1-8b66-4e1d7254ea48",
+                    "label": "answer_btn4",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.chooseAnswer(4)",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "module_button"
+                    },
+                    "x": 927,
+                    "y": 629,
+                    "angle": 5
+                },
+                {
+                    "type": "Text",
+                    "id": "02a08ae1-0071-4478-8e03-ab306f8d2a6e",
+                    "label": "item",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-item",
+                    "x": 311,
+                    "y": 621,
+                    "originX": 0.5,
+                    "text": "Safety Sweater",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#454545ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "shadow.blur": 10,
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "e8651ef4-e6ba-41f1-900a-bebe2e50e67f",
+                    "label": "answer1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 963,
+                    "y": 404,
+                    "angle": 5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Answer",
+                    "fixedWidth": 450,
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#454545ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "32adcbb0-7e42-4600-9917-ffd0f8a3b77f",
+                    "label": "answer2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 951,
+                    "y": 479,
+                    "angle": 5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Answer",
+                    "fixedWidth": 450,
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#454545ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "8ca23507-895f-4bf9-8d37-9abd05145d8a",
+                    "label": "answer3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 939,
+                    "y": 554,
+                    "angle": 5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Answer",
+                    "fixedWidth": 450,
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#454545ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "1181cd2c-d2e2-46b7-859b-8fd4348f8dbc",
+                    "label": "answer4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 927,
+                    "y": 629,
+                    "angle": 5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Answer",
+                    "fixedWidth": 450,
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#454545ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "36643de8-229b-480e-a6d2-2b08b3442475",
+                    "label": "question",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 978,
+                    "y": 315,
+                    "angle": 5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Question?",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "fontStyle": "bold",
+                    "color": "#454545ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "wordWrapWidth": 500
+                },
+                {
+                    "type": "Text",
+                    "id": "4dcc79eb-e4fd-4a8d-a68c-62b37bdd2a60",
+                    "label": "instruction",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-instruction",
+                    "x": 999,
+                    "y": 237,
+                    "angle": 5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "(Choose the correct answer)",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#898989ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "wordWrapWidth": 600
+                },
+                {
+                    "type": "Sprite",
+                    "id": "bb845df8-4d22-4dc5-851c-1f5fe9d4395a",
+                    "label": "brownpuffle",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "brownpuffleanim0002"
+                    },
+                    "x": 227,
+                    "y": 291
+                },
+                {
+                    "type": "Image",
+                    "id": "4e3e855d-4a67-42bf-a500-ba995e0da089",
+                    "label": "cross1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "cross"
+                    },
+                    "x": 1175,
+                    "y": 425,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "bc316994-8c06-4345-9519-7034f95d5141",
+                    "label": "tick1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "tick"
+                    },
+                    "x": 1176,
+                    "y": 425,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "724303bc-f914-4831-aa1f-e9afb601d75c",
+                    "label": "cross2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "cross"
+                    },
+                    "x": 1165,
+                    "y": 499,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "2f6661ac-494a-4956-877e-f4c25fa4a99e",
+                    "label": "tick2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "tick"
+                    },
+                    "x": 1166,
+                    "y": 499,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "48df6ba8-a230-4302-ab07-e29cd3b3b29b",
+                    "label": "cross3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "cross"
+                    },
+                    "x": 1155,
+                    "y": 575,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "b08ec224-15cb-41ff-a7d3-c500add42117",
+                    "label": "tick3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "tick"
+                    },
+                    "x": 1156,
+                    "y": 575,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "5b93eb19-7d2b-41c4-8735-e1e2221a1528",
+                    "label": "cross4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "cross"
+                    },
+                    "x": 1147,
+                    "y": 650,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "d46801e5-2634-46bd-92ae-170a1d0d43c4",
+                    "label": "tick4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "tick"
+                    },
+                    "x": 1148,
+                    "y": 650,
+                    "visible": false
+                },
+                {
+                    "type": "Container",
+                    "id": "4ebc65c6-45d5-439e-9bfb-ecd941c080e2",
+                    "label": "container_1",
+                    "components": [],
+                    "x": 801,
+                    "y": 142,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "329b902b-812b-45c0-a0f0-2116a7ea6476",
+                            "label": "num1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "1",
+                            "lineSpacing": 5,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#2e7b3aff",
+                            "strokeThickness": 6,
+                            "shadow.fill": true,
+                            "shadow.color": "#000000ff",
+                            "wordWrapWidth": 600
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f97c2373-0c60-4683-bcc1-92693514aee4",
+                            "label": "num1_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 70,
+                            "y": 7,
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "2",
+                            "lineSpacing": 5,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#2e7b3aff",
+                            "strokeThickness": 6,
+                            "shadow.fill": true,
+                            "shadow.color": "#000000ff",
+                            "wordWrapWidth": 600
+                        },
+                        {
+                            "type": "Text",
+                            "id": "83baf8d1-3464-4fdd-ac6a-93a2f30d3c14",
+                            "label": "num1_1_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 209,
+                            "y": 21,
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "4",
+                            "lineSpacing": 5,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#2e7b3aff",
+                            "strokeThickness": 6,
+                            "shadow.fill": true,
+                            "shadow.color": "#000000ff",
+                            "wordWrapWidth": 600
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8b7da19b-49b1-47ee-9e5a-5655187dcc25",
+                            "label": "num1_2",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 140,
+                            "y": 14,
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "3",
+                            "lineSpacing": 5,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#2e7b3aff",
+                            "strokeThickness": 6,
+                            "shadow.fill": true,
+                            "shadow.color": "#000000ff",
+                            "wordWrapWidth": 600
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9577ace1-9127-473a-b909-f71e6a17577a",
+                            "label": "num1_1_2",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 349,
+                            "y": 36,
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "6",
+                            "lineSpacing": 5,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#2e7b3aff",
+                            "strokeThickness": 6,
+                            "shadow.fill": true,
+                            "shadow.color": "#000000ff",
+                            "wordWrapWidth": 600
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d883c434-c521-4e33-aa49-aabf20d1e01b",
+                            "label": "num1_3",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 279,
+                            "y": 29,
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "5",
+                            "lineSpacing": 5,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#2e7b3aff",
+                            "strokeThickness": 6,
+                            "shadow.fill": true,
+                            "shadow.color": "#000000ff",
+                            "wordWrapWidth": 600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "bf83e5d6-2fc6-4843-acad-5083915568ea",
+            "label": "page3",
+            "scope": "CLASS",
+            "components": [],
+            "x": 508,
+            "y": 177,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "70f3ea16-163c-44b0-ba31-c30f0c2213c9",
+                    "label": "reward_anim",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "reward_anim0001"
+                    },
+                    "x": 252,
+                    "y": 415,
+                    "alpha": 0.3,
+                    "alphaTopLeft": 0.3,
+                    "alphaTopRight": 0.3,
+                    "alphaBottomLeft": 0.3,
+                    "alphaBottomRight": 0.3
+                },
+                {
+                    "type": "Image",
+                    "id": "4f774809-1447-4616-a38c-b08c3f4c6b75",
+                    "label": "greenbutton",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "greenbutton",
+                    "Button.callback": "() => this.collectReward()",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "greenbutton"
+                    },
+                    "x": 252,
+                    "y": 584
+                },
+                {
+                    "type": "Sprite",
+                    "id": "539a424a-5be1-4078-a42c-823cee2b710f",
+                    "label": "item_anim",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "item_anim0009"
+                    },
+                    "y": 470
+                },
+                {
+                    "type": "Text",
+                    "id": "763b07ce-7b45-4e81-8ec3-d39ade1c098c",
+                    "label": "congrats_sub",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-welldone",
+                    "x": 252,
+                    "y": 158,
+                    "originX": 0.5,
+                    "text": "You really know your stuff about online safety and how to be cool, be heard, and be safe!",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "shadow.blur": 10,
+                    "wordWrapWidth": 1100
+                },
+                {
+                    "type": "Text",
+                    "id": "b99ca0f1-feff-4374-9840-30af099b77de",
+                    "label": "congrats_head",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-congrats",
+                    "x": 252,
+                    "y": 33,
+                    "originX": 0.5,
+                    "text": "Congratulations!",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "60px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "shadow.blur": 10,
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "b8ec7053-bc95-44b9-b070-b87bb9f3ccd0",
+                    "label": "collect_txt",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-collect",
+                    "x": 252,
+                    "y": 564,
+                    "originX": 0.5,
+                    "text": "Collect Reward",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "stroke": "#498124ff",
+                    "strokeThickness": 6,
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "wordWrapWidth": 1100
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "47596fc4-627a-480d-baca-1abb46243b3c",
+            "label": "page4",
+            "scope": "CLASS",
+            "components": [],
+            "x": 381,
+            "y": 338,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "a7e205a2-08b6-438e-bdef-630d5e9f46c3",
+                    "label": "penguins2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "penguins"
+                    },
+                    "y": 189
+                },
+                {
+                    "type": "Image",
+                    "id": "ee105732-fb15-4d0a-a490-64a362d0b049",
+                    "label": "modbutton2",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "modbutton",
+                    "Button.callback": "() => this.startQuiz()",
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "modbutton"
+                    },
+                    "x": 659,
+                    "y": 385
+                },
+                {
+                    "type": "Text",
+                    "id": "0e2dd685-8728-407c-bad4-63a35fdc4743",
+                    "label": "goodtry",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-goodtry",
+                    "x": 668,
+                    "y": -83,
+                    "originX": 0.5,
+                    "text": "Good Try!",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "56px",
+                    "fontStyle": "bold",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true,
+                    "shadow.color": "#26417dff",
+                    "shadow.blur": 3,
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Text",
+                    "id": "eb3a6e2b-1340-4e98-8d84-bdf826a3312f",
+                    "label": "modbtn2text",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz",
+                    "x": 683,
+                    "y": 367,
+                    "originX": 0.5,
+                    "text": "Safety Quiz",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#000000ff",
+                    "shadow.blur": 10,
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Text",
+                    "id": "ea0a1680-977e-408d-8214-69282e5589f5",
+                    "label": "wrongbody",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "safetyquiz-wrongbody",
+                    "x": 668,
+                    "y": 15,
+                    "originX": 0.5,
+                    "text": "That wasn't quite right. Do you want to try the safety quiz again?",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true,
+                    "shadow.color": "#26417dff",
+                    "shadow.blur": 3,
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dcf079d6-32d7-449d-ab4a-5de4dcb01c03",
+                    "label": "brownpuffleanimwrong",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "safetyquiz",
+                        "frame": "brownpuffleanim0002"
+                    },
+                    "x": 648,
+                    "y": 123
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

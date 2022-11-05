@@ -1,0 +1,563 @@
+{
+    "id": "15812da0-19bd-4936-b5ee-a906695c809f",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/agentlobby/agentlobby-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Agentlobby",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d53f385b-ea30-42ec-a64a-7d35dc9c9fbc",
+            "label": "waterfallanim0001",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "waterfallanim0001"
+            },
+            "x": 754,
+            "y": 59
+        },
+        {
+            "type": "Image",
+            "id": "3730d7a1-48f3-4d35-96f4-0e98dfaf9dc3",
+            "label": "phonebox_reflection0001",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "phonebox_reflection0001"
+            },
+            "x": 1079
+        },
+        {
+            "type": "Image",
+            "id": "09c20c96-285d-4d6c-bd5d-3805a9e346a2",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "bg"
+            },
+            "x": 749,
+            "y": 479
+        },
+        {
+            "type": "Image",
+            "id": "07c8ba8c-e6d8-4a0e-8efb-b2be59100762",
+            "label": "door",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "door"
+            },
+            "x": 106,
+            "y": 328
+        },
+        {
+            "type": "Image",
+            "id": "4456e650-2518-48e1-9dc8-b9faf6303546",
+            "label": "doorext",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "doorext"
+            },
+            "x": 263,
+            "y": 360
+        },
+        {
+            "type": "Image",
+            "id": "537a9cbc-ede0-441f-ac80-340ba3f6964b",
+            "label": "stairsanim0001",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "stairsanim0001"
+            },
+            "x": 756,
+            "y": 272
+        },
+        {
+            "type": "Image",
+            "id": "07cd1a97-a569-45ca-a09d-917068183c50",
+            "label": "backchairfaceleft",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "backchairfaceleft"
+            },
+            "x": 611,
+            "y": 362
+        },
+        {
+            "type": "Image",
+            "id": "3b57c766-e2b8-4c4e-9a82-ee1b8cc61f2b",
+            "label": "backchairfacefront",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "backchairfacefront"
+            },
+            "x": 773,
+            "y": 374
+        },
+        {
+            "type": "Image",
+            "id": "b73e5695-5a77-4967-8597-78bae451dd9f",
+            "label": "deskleft",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "deskleft"
+            },
+            "x": 512,
+            "y": 381
+        },
+        {
+            "type": "Image",
+            "id": "5b106f01-1ceb-48e0-a865-bf57c2a3ed07",
+            "label": "deskright",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "deskright"
+            },
+            "x": 732,
+            "y": 440
+        },
+        {
+            "type": "Image",
+            "id": "d9705078-5005-4354-b6e7-40c4dfd5f087",
+            "label": "phonebox0001",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "phonebox0001"
+            },
+            "x": 578,
+            "y": -186
+        },
+        {
+            "type": "Image",
+            "id": "2b06e171-b1a2-4cea-bf46-78149c6098b3",
+            "label": "railing",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "railing"
+            },
+            "x": 143,
+            "y": 512
+        },
+        {
+            "type": "Image",
+            "id": "e6ea759d-a5d6-445b-a947-80d70d126ac4",
+            "label": "potplant",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "potplant"
+            },
+            "x": 145,
+            "y": 567
+        },
+        {
+            "type": "Image",
+            "id": "42bb9ddc-881c-4d61-86ad-9509ca31f40b",
+            "label": "vending",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "vending"
+            },
+            "x": -3,
+            "y": 574
+        },
+        {
+            "type": "Image",
+            "id": "467ebb0b-6c69-4936-9531-96ae98f641b9",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "table"
+            },
+            "x": 256,
+            "y": 697
+        },
+        {
+            "type": "Image",
+            "id": "7ef2fe75-15aa-4e84-afcf-e44821aa6c3e",
+            "label": "comfy",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "comfy"
+            },
+            "x": 1371,
+            "y": 438
+        },
+        {
+            "type": "Image",
+            "id": "f8ae52b4-b219-434e-8aab-103ecb1bfdd9",
+            "label": "comfyarm",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "comfyarm"
+            },
+            "x": 1422,
+            "y": 452
+        },
+        {
+            "type": "Image",
+            "id": "7436f0a8-0713-452e-a4af-8a896969781b",
+            "label": "deskfront",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "deskfront"
+            },
+            "x": 1165,
+            "y": 470
+        },
+        {
+            "type": "Image",
+            "id": "fd16427e-a88c-4ba3-bfc0-1a7457fcb62f",
+            "label": "coolerbg",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "coolerbg"
+            },
+            "x": 466.3441313995378,
+            "y": 610.2065699768882,
+            "originX": 0.4936323436848329,
+            "originY": 0.32740299987835897
+        },
+        {
+            "type": "Sprite",
+            "id": "fa5474a9-b794-4761-abb8-2d9f0cc3c95c",
+            "label": "fishanim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "fishanim0001"
+            },
+            "x": 461.6882627990755,
+            "y": 630.0687807113247,
+            "originX": 0.47085028442390037,
+            "originY": 0.7328808798742715
+        },
+        {
+            "type": "Image",
+            "id": "e63d208f-aee8-4ac7-8d97-f50677efda94",
+            "label": "coolerfg",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "coolerfg"
+            },
+            "x": 468.49389760739575,
+            "y": 660.3237141432189,
+            "originX": 0.6543220236381728,
+            "originY": 1.2665464267902364
+        },
+        {
+            "type": "Image",
+            "id": "cd6708a4-8bc2-428c-be36-5a3c3b2a4f7d",
+            "label": "otherbit",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "otherbit"
+            },
+            "x": 1338,
+            "y": 556
+        },
+        {
+            "type": "Image",
+            "id": "15659d38-5021-4e0a-acce-c5314662e55f",
+            "label": "chairfaceleft",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "chairfaceleft"
+            },
+            "x": 660,
+            "y": 722
+        },
+        {
+            "type": "Image",
+            "id": "ede03cbc-1f93-4388-9eb2-714ea64cc9a3",
+            "label": "chairfacefront",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "chairfacefront"
+            },
+            "x": 753,
+            "y": 782
+        },
+        {
+            "type": "Image",
+            "id": "e8ded328-02de-4975-9f8f-8677c6b68061",
+            "label": "chairfaceright",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "chairfaceright"
+            },
+            "x": 848,
+            "y": 730
+        },
+        {
+            "type": "Image",
+            "id": "796da0f5-30b8-4033-b849-d4b2369e51c1",
+            "label": "chairfaceright_1",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "chairfaceright"
+            },
+            "x": 1192,
+            "y": 722
+        },
+        {
+            "type": "Image",
+            "id": "ba546896-e587-423d-9e8f-e4c0c770f2ec",
+            "label": "backchairfacefront_1",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "backchairfacefront"
+            },
+            "x": 1115,
+            "y": 761
+        },
+        {
+            "type": "Image",
+            "id": "54e340ac-9e0e-489e-aed1-77850d59ca2b",
+            "label": "desks",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "desks"
+            },
+            "x": 436.90355385687303,
+            "y": 729.3585294534367,
+            "originX": 0.1829942307765526,
+            "originY": 0.5508098205861981
+        },
+        {
+            "type": "Image",
+            "id": "79d3be15-3a99-454f-9584-93caa725799a",
+            "label": "backinnitbutnotback",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "backinnitbutnotback"
+            },
+            "x": 1158.06406267431,
+            "y": 590.0688914908317,
+            "originX": 0.5359651564098228,
+            "originY": 0.3320635258549568
+        },
+        {
+            "type": "Image",
+            "id": "8d785107-d4a3-488d-a5fb-337269d4e94d",
+            "label": "backinnit",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "backinnit"
+            },
+            "x": 1120,
+            "y": 602
+        },
+        {
+            "type": "Image",
+            "id": "f6200d31-e459-469b-8a99-3c7cf022c487",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 1005.837117522818,
+            "originY": 1.009290664201809
+        },
+        {
+            "type": "Image",
+            "id": "8a44c9ed-7f3f-45df-b136-250b9d8e7bdd",
+            "label": "channel4_bg",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "channel4_bg"
+            },
+            "x": 464,
+            "y": 129
+        },
+        {
+            "type": "Image",
+            "id": "b8c0b1f7-4e77-4a29-afbf-cfceb87fd7ae",
+            "label": "channel4_fire",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "channel4_fire0001"
+            },
+            "x": 464,
+            "y": 123
+        },
+        {
+            "type": "Image",
+            "id": "e5199054-c9a1-4cf3-a0f9-395c5c5a692d",
+            "label": "channel4_fg",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "channel4_fg"
+            },
+            "x": 461,
+            "y": 145
+        },
+        {
+            "type": "Image",
+            "id": "2b4a1f55-14cd-4724-8503-dbe6f42d9aad",
+            "label": "changechannel",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "changechannel0001"
+            },
+            "x": 461,
+            "y": 128
+        },
+        {
+            "type": "Image",
+            "id": "7040b575-efdb-4c7c-b6b5-0d8090a66581",
+            "label": "tv",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "tv"
+            },
+            "x": 475,
+            "y": 87
+        },
+        {
+            "type": "Image",
+            "id": "dfa6af33-baef-4ab9-a931-beaca5bcb082",
+            "label": "hourhand",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "hourhand0001"
+            },
+            "x": 1391,
+            "y": 1012.121230120244,
+            "originY": 15.220058577154479
+        },
+        {
+            "type": "Image",
+            "id": "fe945d7e-39c8-40da-ade7-a6a319a8b50c",
+            "label": "minutehand",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "minutehand0001"
+            },
+            "x": 1391,
+            "y": 1003.2891949739513,
+            "originY": 11.224614106212547
+        },
+        {
+            "type": "Image",
+            "id": "d0a56561-777c-419c-81b2-e48d36551dcb",
+            "label": "clockmid",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "clockmid"
+            },
+            "x": 1391,
+            "y": 1048.9213765631303,
+            "originY": 11.31004301759782
+        },
+        {
+            "type": "Sprite",
+            "id": "1d0563c7-2803-4fbd-a3f0-324bd371e8cf",
+            "label": "shifty",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "shifty0001"
+            },
+            "x": 1410,
+            "y": 1036.9454761442928,
+            "originY": 14.767133697857416
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "95dbf6b8-338e-445a-94dd-18ff8a9cd3f9",
+            "label": "sort",
+            "objectIds": [
+                "f6200d31-e459-469b-8a99-3c7cf022c487",
+                "8d785107-d4a3-488d-a5fb-337269d4e94d",
+                "79d3be15-3a99-454f-9584-93caa725799a",
+                "54e340ac-9e0e-489e-aed1-77850d59ca2b",
+                "ba546896-e587-423d-9e8f-e4c0c770f2ec",
+                "796da0f5-30b8-4033-b849-d4b2369e51c1",
+                "e8ded328-02de-4975-9f8f-8677c6b68061",
+                "ede03cbc-1f93-4388-9eb2-714ea64cc9a3",
+                "15659d38-5021-4e0a-acce-c5314662e55f",
+                "cd6708a4-8bc2-428c-be36-5a3c3b2a4f7d",
+                "e63d208f-aee8-4ac7-8d97-f50677efda94",
+                "fa5474a9-b794-4761-abb8-2d9f0cc3c95c",
+                "fd16427e-a88c-4ba3-bfc0-1a7457fcb62f",
+                "7436f0a8-0713-452e-a4af-8a896969781b",
+                "f8ae52b4-b219-434e-8aab-103ecb1bfdd9",
+                "7ef2fe75-15aa-4e84-afcf-e44821aa6c3e",
+                "467ebb0b-6c69-4936-9531-96ae98f641b9",
+                "42bb9ddc-881c-4d61-86ad-9509ca31f40b",
+                "e6ea759d-a5d6-445b-a947-80d70d126ac4",
+                "2b06e171-b1a2-4cea-bf46-78149c6098b3",
+                "5b106f01-1ceb-48e0-a865-bf57c2a3ed07",
+                "b73e5695-5a77-4967-8597-78bae451dd9f",
+                "3b57c766-e2b8-4c4e-9a82-ee1b8cc61f2b",
+                "07cd1a97-a569-45ca-a09d-917068183c50",
+                "537a9cbc-ede0-441f-ac80-340ba3f6964b",
+                "4456e650-2518-48e1-9dc8-b9faf6303546",
+                "1d0563c7-2803-4fbd-a3f0-324bd371e8cf",
+                "d0a56561-777c-419c-81b2-e48d36551dcb",
+                "fe945d7e-39c8-40da-ade7-a6a319a8b50c",
+                "dfa6af33-baef-4ab9-a931-beaca5bcb082"
+            ]
+        }
+    ]
+}

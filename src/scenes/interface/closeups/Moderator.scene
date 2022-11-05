@@ -1,0 +1,162 @@
+{
+    "id": "8038d5b7-d8df-46c9-a51d-c6823362d853",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/safetyquiz/safetyquiz-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Moderator",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "92f0622c-1fb3-4183-a3d8-c205f0b0c2d0",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "safetyquiz",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "1ddc52ad-5431-448f-8fde-9798a06cffbd",
+            "label": "penguins",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "safetyquiz",
+                "frame": "penguins"
+            },
+            "x": 381,
+            "y": 527
+        },
+        {
+            "type": "Image",
+            "id": "1a1497f4-4dae-4f79-8d97-31c0444719ea",
+            "label": "white_x",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.scene.stop()}",
+            "texture": {
+                "key": "main",
+                "frame": "white-x"
+            },
+            "x": 1439,
+            "y": 77,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "91f0cec6-bf1b-4234-8f56-8879deff7508",
+            "label": "mod",
+            "components": [],
+            "texture": {
+                "key": "safetyquiz",
+                "frame": "mod"
+            },
+            "x": 1031,
+            "y": 272
+        },
+        {
+            "type": "Text",
+            "id": "905fda67-7dc6-47f7-ae2d-aafc7b3b0c35",
+            "label": "text",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "moderator-body",
+            "x": 1031,
+            "y": 429,
+            "originX": 0.5,
+            "text": "If someone is breaking the rules, click on their penguin, then click the 'M' to report them to a moderator. You can also click on the skull to ignore them",
+            "lineSpacing": 15,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "shadow.offsetX": 2,
+            "shadow.offsetY": 2,
+            "shadow.fill": true,
+            "shadow.color": "#26417dff",
+            "shadow.blur": 3,
+            "wordWrapWidth": 530
+        },
+        {
+            "type": "Image",
+            "id": "c63059cf-f660-437f-87d7-dd40be179318",
+            "label": "modbutton",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "modbutton",
+            "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.scene.stop() }",
+            "texture": {
+                "key": "safetyquiz",
+                "frame": "modbutton"
+            },
+            "x": 1016,
+            "y": 725
+        },
+        {
+            "type": "Text",
+            "id": "1995505f-706d-4bea-8951-23830329da77",
+            "label": "text_1",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "safetyquiz",
+            "x": 1038,
+            "y": 707,
+            "originX": 0.5,
+            "text": "Safety Quiz",
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "shadow.fill": true,
+            "shadow.color": "#000000ff",
+            "shadow.blur": 10,
+            "wordWrapWidth": 550
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

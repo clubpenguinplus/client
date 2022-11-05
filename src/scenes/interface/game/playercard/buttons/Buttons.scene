@@ -1,0 +1,252 @@
+{
+    "id": "8808181a-7877-4aef-982e-f4ba2441da75",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "6ac0cd17-7552-4894-a5cc-93d2081afaa3",
+            "label": "container_1",
+            "components": [],
+            "x": 790.6731008322703,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "cc52a380-fae2-4ca6-bb0c-90a7a5ae503b",
+                    "label": "report_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onReportClick()",
+                    "ShowHint.text": "reportPlayer",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": 179.32691352599045
+                },
+                {
+                    "type": "Image",
+                    "id": "e7420ff2-8996-4651-9900-bd00f84538fe",
+                    "label": "ignore_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onIgnoreClick()",
+                    "ShowHint.text": "ignorePlayer",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": 119.32691352599045
+                },
+                {
+                    "type": "Image",
+                    "id": "8df3aa1e-b498-4020-9be9-90c47a525198",
+                    "label": "stamps_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onStampClick()",
+                    "ShowHint.text": "viewStampbook",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": -0.6730864740095512
+                },
+                {
+                    "type": "Image",
+                    "id": "6a228319-6c4c-4f67-89ce-a53d0c26004e",
+                    "label": "igloo_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onIglooClick()",
+                    "ShowHint.text": "visitIgloo",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": -60.67308647400955
+                },
+                {
+                    "type": "Image",
+                    "id": "dac3a748-a577-4cda-b986-cf15dcd1986c",
+                    "label": "mail_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onMailClick()",
+                    "ShowHint.text": "sendPostcard",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": 59.32691192626953,
+                    "y": 0.6971156016820146,
+                    "originY": 0.5124484928871789
+                },
+                {
+                    "type": "Image",
+                    "id": "ebce1c1c-faeb-45a9-ba2c-1559e185f215",
+                    "label": "profile_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onFindClick()",
+                    "ShowHint.text": "findPlayer",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": -120.67308647400955
+                },
+                {
+                    "type": "Image",
+                    "id": "7490ec55-9795-4b55-bcf2-7170ee493ffd",
+                    "label": "friend_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onFriendClick()",
+                    "ShowHint.text": "addFriend",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": -180.67308647400955
+                },
+                {
+                    "type": "Image",
+                    "id": "682a26a5-7f79-4e67-9be0-4992ab794f04",
+                    "label": "report_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mod-icon-disabled"
+                    },
+                    "x": 179.32691352599045,
+                    "y": -1
+                },
+                {
+                    "type": "Image",
+                    "id": "26ec7369-28a0-470f-b281-7dd6a3e7b31f",
+                    "label": "ignore_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "ignore-icon-disabled"
+                    },
+                    "x": 119.32691352599045,
+                    "y": -2
+                },
+                {
+                    "type": "Image",
+                    "id": "2b0aee28-83bc-4f3e-bc89-4c338f5558d0",
+                    "label": "stamps_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "stamps-icon-disabled"
+                    },
+                    "x": -0.6730864740095512,
+                    "y": -2
+                },
+                {
+                    "type": "Image",
+                    "id": "f0daa280-4416-48d2-986e-41f34099de22",
+                    "label": "igloo_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "igloo-icon-disabled"
+                    },
+                    "x": -60.67308647400955,
+                    "y": -2
+                },
+                {
+                    "type": "Image",
+                    "id": "cfb82a86-19c5-46d2-9431-ee6919e20269",
+                    "label": "mail_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mail-icon-disabled"
+                    },
+                    "x": 59.32691352599045
+                },
+                {
+                    "type": "Image",
+                    "id": "49810571-d58b-4ed6-883f-1f1baffe6403",
+                    "label": "profile_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "help-icon-disabled"
+                    },
+                    "x": -120.67308647400955,
+                    "y": -2
+                },
+                {
+                    "type": "Image",
+                    "id": "92ce6fc2-cb90-444d-9a33-0566100ebc0f",
+                    "label": "friend_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddies-icon-disabled"
+                    },
+                    "x": -180.67308647400955,
+                    "y": -2
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

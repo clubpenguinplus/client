@@ -1,0 +1,11 @@
+{
+    "skip": [
+        "client/media/clothing",
+        "client/media/furniture",
+        "client/media/swf",
+        "client/media/games/swf",
+        "client/media/puffles",
+        "client/media/interface/game/stampbook/stamps"
+    ],
+    "playUrl": "http://localhost:8888/en/"
+}

@@ -1,0 +1,104 @@
+{
+    "id": "7774cb3f-550a-4bfa-9130-4e16f9b5a70e",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "460fe828-2a5c-48b5-8e64-374780777136",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "NinePatchContainer",
+                    "id": "7440b5d7-59f5-4ef5-a6da-dc09c08b5538",
+                    "label": "outline",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy-online"
+                    },
+                    "x": -25,
+                    "width": 200,
+                    "height": 70
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "36f653e5-9b9a-47ec-8ea0-432185b18367",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY",
+                        "visible"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -76,
+                    "y": -3,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "730363a5-60c9-4711-80a6-53256a41c9bd",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 24,
+                    "y": -10,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 185,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "86f135b4-4c5d-4af8-8354-90ebf00ce143",
+                    "label": "addFriend",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 24,
+                    "y": 8,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "is online",
+                    "fixedWidth": 185,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px",
+                    "color": "#000000ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

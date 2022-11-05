@@ -1,0 +1,165 @@
+{
+    "id": "0edae028-fab6-46c5-a33e-0a0d9a65fcb3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/beacon/lightroof-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beacon",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a665fdbb-2a30-479a-a9c0-447ec4773f69",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "lightroof",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "4208daaf-aea2-45d3-9406-371b27af5251",
+            "label": "light",
+            "components": [],
+            "texture": {
+                "key": "lightroof",
+                "frame": "light"
+            },
+            "x": 688.6894422954724,
+            "y": 555.9710578661634,
+            "originX": 0.6309839947998837,
+            "originY": 0.8038810334259991
+        },
+        {
+            "type": "Image",
+            "id": "dc4ec1d2-430c-4216-9733-c5e02826b9d3",
+            "label": "launch",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lightroof",
+                "frame": "launch"
+            },
+            "x": 1321,
+            "y": 570
+        },
+        {
+            "type": "Sprite",
+            "id": "c0af4c55-a43d-4505-8748-92460573d137",
+            "label": "launchActive",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lightroof",
+                "frame": "launch/launch0001"
+            },
+            "x": 1321,
+            "y": 570,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "09eaf95e-f381-4922-922f-a45cf7948855",
+            "label": "railing",
+            "components": [],
+            "texture": {
+                "key": "lightroof",
+                "frame": "railing"
+            },
+            "x": 680,
+            "y": 846,
+            "originY": 0.7486553607307954
+        },
+        {
+            "type": "Image",
+            "id": "9522205a-6203-411e-b7a4-316ebf83d25d",
+            "label": "railing_2",
+            "components": [],
+            "texture": {
+                "key": "lightroof",
+                "frame": "railing_2"
+            },
+            "x": 230.2762147789686,
+            "y": 563.4632225414601,
+            "originX": 0.8421959359650598,
+            "originY": 0.3415237313641213
+        },
+        {
+            "type": "Rectangle",
+            "id": "2819dbb3-6799-418b-9059-d6f06b883a7f",
+            "label": "telescopeZone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => {}",
+            "Zone.hoverOutCallback": "() => {}",
+            "x": 320,
+            "y": 373,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Rectangle",
+            "id": "10b73897-bbcf-4c6d-a931-96919bc3babe",
+            "label": "jetpackZone",
+            "components": [
+                "SimpleButton",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onJetpackOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onJetpackOut()",
+            "SimpleButton.callback": "() => this.shell.client.penguin.move(1342, 565)",
+            "ShowHint.text": "Jetpack Adventure",
+            "x": 1323,
+            "y": 587,
+            "angle": -5,
+            "alpha": 0.5,
+            "fillColor": "#00ff00",
+            "width": 245,
+            "height": 150
+        },
+        {
+            "type": "Container",
+            "id": "7e83ea08-f4b8-451f-9bdd-8281717a1ef3",
+            "label": "snow",
+            "components": [],
+            "x": 5,
+            "y": 1722,
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "bbac4209-750d-4002-a662-47265b2636fc",
+            "label": "sort",
+            "objectIds": [
+                "9522205a-6203-411e-b7a4-316ebf83d25d",
+                "09eaf95e-f381-4922-922f-a45cf7948855",
+                "4208daaf-aea2-45d3-9406-371b27af5251",
+                "7e83ea08-f4b8-451f-9bdd-8281717a1ef3"
+            ]
+        }
+    ]
+}

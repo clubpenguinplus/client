@@ -1,0 +1,347 @@
+{
+    "id": "cb00a192-5272-480d-a021-1ea1e850367e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/forest/forest-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forest",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c855babf-c9fe-4131-9b2b-438db96a5e0c",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "6b39c562-e31c-46a5-8ac6-30ace7de3e56",
+            "label": "bush3",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "bush3"
+            },
+            "x": 1514,
+            "y": 444
+        },
+        {
+            "type": "Image",
+            "id": "97515f06-0b13-4a7e-a430-ce93beecab32",
+            "label": "trees5",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trees5"
+            },
+            "x": 1506,
+            "y": 331
+        },
+        {
+            "type": "Image",
+            "id": "3f83934f-a1ca-4f71-8ef0-d28bfd899f7f",
+            "label": "trees1",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trees1"
+            },
+            "x": 47,
+            "y": 593
+        },
+        {
+            "type": "Image",
+            "id": "ebc4450c-8591-4487-8ee1-f1cbd0d28659",
+            "label": "bush",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "bush"
+            },
+            "x": 208,
+            "y": 588
+        },
+        {
+            "type": "Sprite",
+            "id": "c335026b-ece4-48eb-a870-b0d2286eee0a",
+            "label": "wave4_0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "wave4_",
+            "Animation.end": 16,
+            "texture": {
+                "key": "forest",
+                "frame": "wave4_0001"
+            },
+            "x": 841,
+            "y": 299
+        },
+        {
+            "type": "Sprite",
+            "id": "b0ca7aed-5bac-40ad-a158-b56cb3799ad5",
+            "label": "wave3_0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "wave3_",
+            "Animation.end": 30,
+            "texture": {
+                "key": "forest",
+                "frame": "wave3_0001"
+            },
+            "x": 835,
+            "y": 245
+        },
+        {
+            "type": "Sprite",
+            "id": "fd2e7cd3-a4d2-4f34-96cf-b139d6a71240",
+            "label": "wave1_0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "wave1_",
+            "Animation.end": 6,
+            "texture": {
+                "key": "forest",
+                "frame": "wave1_0001"
+            },
+            "x": 836,
+            "y": 238
+        },
+        {
+            "type": "Sprite",
+            "id": "6613ed13-474c-43f5-883a-5b624688a993",
+            "label": "boulder",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "boulder_0001"
+            },
+            "x": 80,
+            "y": 688
+        },
+        {
+            "type": "Image",
+            "id": "670e95d7-ab3d-4b95-b534-bd6b5d0a1539",
+            "label": "sign",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "sign"
+            },
+            "x": 1494,
+            "y": 691
+        },
+        {
+            "type": "Image",
+            "id": "fd3debd5-c2c8-4cab-b8bc-322455641098",
+            "label": "stairs",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "stairs"
+            },
+            "x": 1495.797799326391,
+            "y": 797.8005501684023,
+            "originX": 0.6897705507697157,
+            "originY": 0.4530375509481828
+        },
+        {
+            "type": "Image",
+            "id": "118b39bb-c867-4dad-b162-e76a1de66624",
+            "label": "rock",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "rock"
+            },
+            "x": 652,
+            "y": 800
+        },
+        {
+            "type": "Image",
+            "id": "41a61bb7-161d-4c69-a3df-37c99d370c78",
+            "label": "fg1",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "fg1"
+            },
+            "x": 24,
+            "y": 998,
+            "originX": 0.1011899210002752,
+            "originY": 0.9226389186455517
+        },
+        {
+            "type": "Image",
+            "id": "96452ffd-255a-4b9b-90ac-188ac3f5d6bf",
+            "label": "caveshadow",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "caveshadow"
+            },
+            "x": 1094,
+            "y": 266
+        },
+        {
+            "type": "Image",
+            "id": "5d198685-c2a4-4559-bb27-8e876716657f",
+            "label": "cave",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "cave"
+            },
+            "x": 1091,
+            "y": 228
+        },
+        {
+            "type": "Image",
+            "id": "7b8b14b2-8438-4939-b46c-7b11ead1aa2e",
+            "label": "trees6",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trees6"
+            },
+            "x": 613,
+            "y": 167
+        },
+        {
+            "type": "Image",
+            "id": "1a847b77-960f-488e-ba8e-1c293c305c29",
+            "label": "trees4",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trees4"
+            },
+            "x": 733,
+            "y": 258
+        },
+        {
+            "type": "Image",
+            "id": "08777980-c7d0-457e-8770-afde7c0d8c1f",
+            "label": "trees2",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trees2"
+            },
+            "x": 727,
+            "y": 363
+        },
+        {
+            "type": "Image",
+            "id": "38569aa1-8d93-4404-af14-8c6a67c870a1",
+            "label": "trees3",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trees3"
+            },
+            "x": 383,
+            "y": 141
+        },
+        {
+            "type": "Image",
+            "id": "1690840e-9814-46d8-9d7b-aa5a0d21a6b3",
+            "label": "trunk",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "trunk"
+            },
+            "x": 484,
+            "y": 324
+        },
+        {
+            "type": "Image",
+            "id": "f02b7c8e-d473-4232-b72c-085aa3028178",
+            "label": "bush2",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "bush2"
+            },
+            "x": 785,
+            "y": 562
+        },
+        {
+            "type": "Sprite",
+            "id": "57e38b90-1eb0-4903-ade2-61ee9a9fbb28",
+            "label": "waves2_0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "waves_",
+            "Animation.end": 6,
+            "texture": {
+                "key": "forest",
+                "frame": "waves2_0001"
+            },
+            "x": 822,
+            "y": 168
+        },
+        {
+            "type": "Rectangle",
+            "id": "4c87b69e-589f-4081-9e12-756af9e9d3d0",
+            "label": "rectangle_1",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.boulder.play('forest-boulder')",
+            "Zone.hoverOutCallback": "() => this.boulder.playReverse('forest-boulder')",
+            "Zone.callback": "() => this.shell.client.penguin.move(168, 700)",
+            "x": 170,
+            "y": 690,
+            "scaleX": 1.508403064644881,
+            "scaleY": 1.4406462297458782,
+            "fillColor": "#00d822",
+            "fillAlpha": 100,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1f5d85b4-0341-4b8f-b708-ed63d0d50adc",
+            "label": "sort",
+            "objectIds": [
+                "41a61bb7-161d-4c69-a3df-37c99d370c78",
+                "118b39bb-c867-4dad-b162-e76a1de66624",
+                "f02b7c8e-d473-4232-b72c-085aa3028178",
+                "ebc4450c-8591-4487-8ee1-f1cbd0d28659",
+                "3f83934f-a1ca-4f71-8ef0-d28bfd899f7f",
+                "fd3debd5-c2c8-4cab-b8bc-322455641098",
+                "4c87b69e-589f-4081-9e12-756af9e9d3d0",
+                "6613ed13-474c-43f5-883a-5b624688a993"
+            ]
+        }
+    ]
+}

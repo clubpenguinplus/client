@@ -1,0 +1,337 @@
+{
+    "id": "06606f01-d6a4-4dd8-89a5-389d49270e4b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "Servers",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "2df8eaea-42ca-488c-b2db-030beeb2c591",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Text",
+            "id": "cd539005-a4ee-493d-9699-024f0c3cf9ec",
+            "label": "text_2",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "safe",
+            "x": 1095,
+            "y": 908,
+            "originY": 0.5,
+            "text": "Ultimate safe chat",
+            "fixedWidth": 400,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px"
+        },
+        {
+            "type": "Image",
+            "id": "301a85ab-d65d-42bf-a328-82daaa6b311c",
+            "label": "safe_small",
+            "components": [],
+            "texture": {
+                "key": "servers",
+                "frame": "safe_small"
+            },
+            "x": 1070,
+            "y": 908,
+            "originY": 0.5161290322580645
+        },
+        {
+            "type": "Text",
+            "id": "a2357d40-ba85-4524-8b48-0a0427ad447b",
+            "label": "text_1",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "population",
+            "x": 645,
+            "y": 908,
+            "originY": 0.5,
+            "text": "Amount of penguins online",
+            "fixedWidth": 400,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px"
+        },
+        {
+            "type": "Image",
+            "id": "55e6d159-ef2d-4438-8e91-c7de6e621fea",
+            "label": "bar_full_small",
+            "components": [],
+            "texture": {
+                "key": "servers",
+                "frame": "bar_full_small"
+            },
+            "x": 620,
+            "y": 908
+        },
+        {
+            "type": "Text",
+            "id": "6b9c5da6-539b-470a-b4c3-8fa5a68e143f",
+            "label": "text",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "friendsOn",
+            "x": 277,
+            "y": 908,
+            "originY": 0.5,
+            "text": "Friends online",
+            "fixedWidth": 300,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px"
+        },
+        {
+            "type": "Image",
+            "id": "568eed78-10bd-4110-a4e1-6fe1c0a26263",
+            "label": "online_small",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "buddies-icon"
+            },
+            "x": 252,
+            "y": 908
+        },
+        {
+            "type": "Image",
+            "id": "915d2eb9-7362-4642-a783-2f2c6bc11da5",
+            "label": "more",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.more_servers.visible = true",
+            "texture": {
+                "key": "servers",
+                "frame": "more"
+            },
+            "x": 1300,
+            "y": 630,
+            "originY": 0.5027322404371585
+        },
+        {
+            "type": "Text",
+            "id": "fbbe9c79-7a12-47b5-884a-b75493fb5d17",
+            "label": "suggested",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "suggestedServers",
+            "x": 760,
+            "y": 85,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "YOUR SUGGESTED SERVERS",
+            "fixedWidth": 1200,
+            "align": "center",
+            "fontFamily": "CCComicrazy",
+            "fontSize": "40px",
+            "fontStyle": "italic",
+            "stroke": "#003366",
+            "strokeThickness": 10,
+            "shadow.color": "#000000ff"
+        },
+        {
+            "type": "Container",
+            "id": "320881a3-2ac9-4dc7-b617-4aa9adda4d01",
+            "label": "server_container",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "9e9b9d6c-11de-46c2-b7c9-9a61e3be81fb",
+            "label": "mod",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onModClick()",
+            "texture": {
+                "key": "main",
+                "frame": "mod"
+            },
+            "x": 1428,
+            "y": 89,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "d7f2e895-424c-436b-a16b-a544b2dcc8ee",
+            "label": "more_servers",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 92,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "28ca98f4-8fa9-491b-a724-a0499673217c",
+                    "label": "more_bg",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "y": 388,
+                    "isFilled": true,
+                    "width": 1400,
+                    "height": 920
+                },
+                {
+                    "type": "Text",
+                    "id": "0b6764d4-86fd-45a9-a011-51698a3b0cbb",
+                    "label": "more_text",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "selectServer",
+                    "y": -3,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "PLEASE SELECT A SERVER",
+                    "fixedWidth": 1200,
+                    "align": "center",
+                    "fontFamily": "CCComicrazy",
+                    "fontSize": "40px",
+                    "fontStyle": "italic",
+                    "stroke": "#003366",
+                    "strokeThickness": 10,
+                    "shadow.color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "22924e58-af97-4ac2-84db-641e93f9459e",
+                    "label": "image",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => {this.more_servers.visible = false}",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 628,
+                    "y": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "656ace91-cde3-4a48-8c03-6e9faf338e99",
+                    "label": "image_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 628,
+                    "y": -1
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "78b7ddd1-407d-423b-88fd-15633ececd46",
+                    "label": "rectangle",
+                    "components": [],
+                    "x": 549,
+                    "y": 438,
+                    "isFilled": true,
+                    "fillColor": "#0e4571",
+                    "width": 50,
+                    "height": 680
+                },
+                {
+                    "type": "Image",
+                    "id": "548b85fc-4e98-43ff-a08c-39dcbe0b2f6f",
+                    "label": "image_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 549,
+                    "y": 89
+                },
+                {
+                    "type": "Image",
+                    "id": "a8f18f36-9cb0-443c-9d44-a0a2be79a38d",
+                    "label": "image_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-arrow"
+                    },
+                    "x": 549,
+                    "y": 87
+                },
+                {
+                    "type": "Image",
+                    "id": "2416ebd0-9d86-4d42-be90-a0d0a320bf94",
+                    "label": "image_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 549,
+                    "y": 771
+                },
+                {
+                    "type": "Image",
+                    "id": "7b8e20f3-43b8-4fb0-a065-53bf1a7313af",
+                    "label": "image_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-arrow"
+                    },
+                    "x": 549,
+                    "y": 769,
+                    "angle": -180
+                },
+                {
+                    "type": "Container",
+                    "id": "2318aac7-f710-440c-88af-9ffde799ea99",
+                    "label": "more_server_container",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -760,
+                    "y": -92,
+                    "list": []
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

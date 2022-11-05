@@ -1,0 +1,192 @@
+{
+    "id": "cae4912d-8452-45a5-9375-6dacd340d8bd",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "460fe828-2a5c-48b5-8e64-374780777136",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "e8a976be-b867-4ae2-801c-abab908f5840",
+                    "label": "rectangle_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onClick()",
+                    "isFilled": true,
+                    "fillColor": "#327dd0",
+                    "width": 300,
+                    "height": 90
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "36f653e5-9b9a-47ec-8ea0-432185b18367",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY",
+                        "visible"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -96,
+                    "y": -3,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "7440b5d7-59f5-4ef5-a6da-dc09c08b5538",
+                    "label": "outline",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/outline"
+                    },
+                    "width": 300,
+                    "height": 90
+                },
+                {
+                    "type": "Text",
+                    "id": "730363a5-60c9-4711-80a6-53256a41c9bd",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 55,
+                    "y": -20,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 185,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Text",
+                    "id": "86f135b4-4c5d-4af8-8354-90ebf00ce143",
+                    "label": "addFriend",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 55,
+                    "y": -2,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Wants to be your friend!",
+                    "fixedWidth": 185,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px"
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "5486d49e-791f-4f17-ab25-1e1411a7919a",
+                    "label": "window_button_small",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "window-button-small",
+                    "Button.callback": "() => this.onYesClick()",
+                    "texture": {
+                        "key": "prompt",
+                        "frame": "window-button-small"
+                    },
+                    "x": 3,
+                    "y": 23,
+                    "scaleX": 0.2,
+                    "scaleY": 0.2,
+                    "width": 400,
+                    "height": 105,
+                    "marginLeft": 50,
+                    "marginRight": 50,
+                    "marginTop": 50,
+                    "marginBottom": 50,
+                    "ninePatchContainerTint": "#73b5e5"
+                },
+                {
+                    "type": "Text",
+                    "id": "ad81a5c4-231d-4e3f-b4ad-56668a5cceb9",
+                    "label": "nameSearch_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 3,
+                    "y": 23,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "+ Add Friend",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "12px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "d44c10e7-b418-4f01-9763-4ee1d917bda7",
+                    "label": "window_button_small_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "window-button-small",
+                    "Button.callback": "() => this.onNoClick()",
+                    "texture": {
+                        "key": "prompt",
+                        "frame": "window-button-small"
+                    },
+                    "x": 93,
+                    "y": 23,
+                    "scaleX": 0.2,
+                    "scaleY": 0.2,
+                    "width": 330,
+                    "height": 105,
+                    "marginLeft": 50,
+                    "marginRight": 50,
+                    "marginTop": 50,
+                    "marginBottom": 50,
+                    "ninePatchContainerTint": "#73b5e5"
+                },
+                {
+                    "type": "Text",
+                    "id": "d5f6b64f-6856-4ced-8a20-813f79264590",
+                    "label": "nameSearch",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 93,
+                    "y": 23,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "No Thanks",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "12px",
+                    "color": "#ffffffff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

@@ -1,0 +1,1530 @@
+{
+    "id": "0a1595e3-d135-4be4-bb1c-df01e81c4350",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/menus/create/create-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Create",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "ae08f5cf-8c87-4f46-9aa9-0862991a5280",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "524534b2-db46-4da1-b803-bf1846903e0a",
+            "label": "rookie_talk",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "create",
+                "frame": "rookie-talk"
+            },
+            "x": 351,
+            "y": 605,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "85adafc0-9079-4aa6-b360-79afdf670088",
+            "label": "rookie_stand",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "create",
+                "frame": "rookie-stand"
+            },
+            "x": 220,
+            "y": 750,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "f10632ee-9a4c-496d-84f9-7d5900d2a028",
+            "label": "rookie_happy",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "create",
+                "frame": "rookie-happy"
+            },
+            "x": 233,
+            "y": 698,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "22821d33-e0a8-4767-b355-765849b3f130",
+            "label": "rookie_speech",
+            "scope": "CLASS",
+            "components": [],
+            "x": 565,
+            "y": 739,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "75f3a8b2-776e-4023-aab1-9e5ce320324f",
+                    "label": "text_bg",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "text-bg"
+                    },
+                    "x": 414,
+                    "y": 67
+                },
+                {
+                    "type": "Text",
+                    "id": "f8b12f1c-2cb8-46c0-b5a0-b9cb365cf943",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -6,
+                    "text": "rookie",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#474747ff",
+                    "wordWrapWidth": 860
+                },
+                {
+                    "type": "Container",
+                    "id": "4f51e526-649b-4c89-8945-8e7050e7a164",
+                    "label": "ok",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 814,
+                    "y": 120,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "24deb8cc-c7f1-404e-b97b-391b0f4f568d",
+                            "label": "ok_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "ok-btn",
+                            "Button.callback": "() => this.next()",
+                            "texture": {
+                                "key": "create",
+                                "frame": "ok-btn"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3c637ba2-7998-4d26-823b-c6fc85c32823",
+                            "label": "ok_text",
+                            "components": [],
+                            "y": 3,
+                            "originX": 0.5,
+                            "originY": 0.6,
+                            "text": "OK",
+                            "fixedWidth": 100,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#353535ff"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "75692dba-9355-4d05-b9ee-1415d59fcfa0",
+            "label": "colorselect",
+            "scope": "CLASS",
+            "components": [],
+            "x": 641,
+            "y": 201,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "75b1be23-d63e-4cd2-80d7-da16ae5723dd",
+                    "label": "box",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "box"
+                    },
+                    "x": 359,
+                    "y": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "81ec28dc-57bd-4338-a030-e8f1232fafec",
+                    "label": "penguin_body",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "penguin-body"
+                    },
+                    "x": 616,
+                    "y": 117,
+                    "tintTopLeft": "#003366",
+                    "tintTopRight": "#003366",
+                    "tintBottomLeft": "#003366",
+                    "tintBottomRight": "#003366"
+                },
+                {
+                    "type": "Image",
+                    "id": "84711220-c243-4223-bd31-f705febf6290",
+                    "label": "penguin_body_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "penguin-body"
+                    },
+                    "x": 616,
+                    "y": 117,
+                    "tintTopLeft": "#003366",
+                    "tintTopRight": "#003366",
+                    "tintBottomLeft": "#003366",
+                    "tintBottomRight": "#003366"
+                },
+                {
+                    "type": "Image",
+                    "id": "ae776dc0-aa85-4246-beab-60aceef19809",
+                    "label": "body_highlight",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "body-highlight"
+                    },
+                    "x": 616,
+                    "y": 164
+                },
+                {
+                    "type": "Container",
+                    "id": "60e3f9af-0c91-44eb-88e8-ab6afa17f02e",
+                    "label": "bgs",
+                    "components": [],
+                    "x": 15,
+                    "y": -9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "62ab1926-d102-4b0f-a06b-d93e1bb2340e",
+                            "label": "color_body_1_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "70db47d9-5134-4135-8deb-6b1675df70c6",
+                            "label": "color_body_2_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 115,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1c132df4-58ca-4b46-9b8e-11e22f99953f",
+                            "label": "color_body_3_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 231,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "afeb218f-f88f-451b-bc46-2c4b4abe9552",
+                            "label": "color_body_4_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 346,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1dfd4aa0-05fc-4010-9aed-489fb38770a8",
+                            "label": "color_body_5_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "y": 117,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "bf6bc146-a88c-4d90-bff5-371d15108828",
+                            "label": "color_body_6_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 115,
+                            "y": 117,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "15b2bdd5-bd88-4b13-b7d0-1a42d8933c6f",
+                            "label": "color_body_7_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 231,
+                            "y": 117,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f8511ef6-5259-426b-ad42-e6ea1729e861",
+                            "label": "color_body_15_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 292,
+                            "y": 347,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f0ae25fe-40c0-45a5-abc7-017347a7d312",
+                            "label": "color_body_12_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 346,
+                            "y": 232,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9dfe4286-6f50-4387-8fbd-12226b1ea9c9",
+                            "label": "color_body_11_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 231,
+                            "y": 232,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6992a341-b47b-4cd1-935d-21f66c3076bf",
+                            "label": "color_body_10_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 115,
+                            "y": 232,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ffc98976-9054-41cb-9ff4-edf027c3c0fe",
+                            "label": "color_body_9_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "y": 232,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6a1ba5f4-1290-44be-a59d-241c0bf10070",
+                            "label": "color_body_8_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 346,
+                            "y": 117,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1be60191-5a1e-44ba-a3d8-05c9a952842c",
+                            "label": "color_body_14_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 173,
+                            "y": 347,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        },
+                        {
+                            "type": "Image",
+                            "id": "94df13f8-a38e-4fe9-bcfa-729f176a4d1a",
+                            "label": "color_body_13_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "create",
+                                "frame": "color-body"
+                            },
+                            "x": 59,
+                            "y": 347,
+                            "scaleX": 0.66,
+                            "scaleY": 0.66
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "40369e15-3e5e-4458-ac2f-0f0594882199",
+                    "label": "color_body_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 15,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#003366",
+                    "tintTopRight": "#003366",
+                    "tintBottomLeft": "#003366",
+                    "tintBottomRight": "#003366"
+                },
+                {
+                    "type": "Image",
+                    "id": "cc1dbbfc-1b90-49b3-94b7-6eafb825955f",
+                    "label": "color_highlight_1",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(1)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(1)",
+                    "SimpleButton.callback": "() => this.switchColor(1)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight-hover"
+                    },
+                    "x": 15,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "5376dbc8-2cc0-40e4-bc10-40ce172f4ba9",
+                    "label": "color_body_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 130,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#009900",
+                    "tintTopRight": "#009900",
+                    "tintBottomLeft": "#009900",
+                    "tintBottomRight": "#009900"
+                },
+                {
+                    "type": "Image",
+                    "id": "dbf26c95-a3cb-4535-9f90-53ce1e98b12f",
+                    "label": "color_highlight_2",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(2)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(2)",
+                    "SimpleButton.callback": "() => this.switchColor(2)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 130,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "6b86c3d7-8b20-4d86-8a7a-d2e2df767e4b",
+                    "label": "color_body_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 246,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#FF3399",
+                    "tintTopRight": "#FF3399",
+                    "tintBottomLeft": "#FF3399",
+                    "tintBottomRight": "#FF3399"
+                },
+                {
+                    "type": "Image",
+                    "id": "d18bd20c-1615-4ed9-80fd-3eb8e81e4c3b",
+                    "label": "color_highlight_3",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(3)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(3)",
+                    "SimpleButton.callback": "() => this.switchColor(3)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 246,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "14703f0f-f186-4171-b418-9b85452b973c",
+                    "label": "color_body_4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 361,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#333333",
+                    "tintTopRight": "#333333",
+                    "tintBottomLeft": "#333333",
+                    "tintBottomRight": "#333333"
+                },
+                {
+                    "type": "Image",
+                    "id": "5409a515-fcc9-45fb-a6a2-f383e4469e7a",
+                    "label": "color_highlight_4",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(4)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(4)",
+                    "SimpleButton.callback": "() => this.switchColor(4)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 361,
+                    "y": -9,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "b4f868a4-e686-4363-ae41-a94be072446b",
+                    "label": "color_body_5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 15,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#CC0000",
+                    "tintTopRight": "#CC0000",
+                    "tintBottomLeft": "#CC0000",
+                    "tintBottomRight": "#CC0000"
+                },
+                {
+                    "type": "Image",
+                    "id": "504c7bc7-f61e-4b9e-aca0-5428ed149c03",
+                    "label": "color_highlight_5",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(5)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(5)",
+                    "SimpleButton.callback": "() => this.switchColor(5)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 15,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "1efeaa4c-ecd7-4252-bbb9-87ccb0e483b6",
+                    "label": "color_body_6",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 130,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#FF6600",
+                    "tintTopRight": "#FF6600",
+                    "tintBottomLeft": "#FF6600",
+                    "tintBottomRight": "#FF6600"
+                },
+                {
+                    "type": "Image",
+                    "id": "88746fa7-cbd1-4698-8541-b7e5396017b7",
+                    "label": "color_highlight_6",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(6)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(6)",
+                    "SimpleButton.callback": "() => this.switchColor(6)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 130,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "34f4fe12-b90b-47ec-a4d7-bd537d7b148d",
+                    "label": "color_body_7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 246,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#FFCC00",
+                    "tintTopRight": "#FFCC00",
+                    "tintBottomLeft": "#FFCC00",
+                    "tintBottomRight": "#FFCC00"
+                },
+                {
+                    "type": "Image",
+                    "id": "cfae32b7-f44e-4e39-b748-35e28eb18575",
+                    "label": "color_highlight_7",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(7)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(7)",
+                    "SimpleButton.callback": "() => this.switchColor(7)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 246,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "625d1f71-1d63-462f-a6a0-f1873304781d",
+                    "label": "color_body_13",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 307,
+                    "y": 338,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#8AE302",
+                    "tintTopRight": "#8AE302",
+                    "tintBottomLeft": "#8AE302",
+                    "tintBottomRight": "#8AE302"
+                },
+                {
+                    "type": "Image",
+                    "id": "c2387b46-c5e4-4627-91f4-55292891c7f7",
+                    "label": "color_highlight_13",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(13)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(13)",
+                    "SimpleButton.callback": "() => this.switchColor(13)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 307,
+                    "y": 338,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "3ecfef01-e550-4672-81fa-9183f48aaf75",
+                    "label": "color_body_12",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 361,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#0099CC",
+                    "tintTopRight": "#0099CC",
+                    "tintBottomLeft": "#0099CC",
+                    "tintBottomRight": "#0099CC"
+                },
+                {
+                    "type": "Image",
+                    "id": "635f95f0-c970-466b-921a-51a40152b569",
+                    "label": "color_highlight_12",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(12)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(12)",
+                    "SimpleButton.callback": "() => this.switchColor(12)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 361,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "4a022bb7-d7e8-4527-bc4f-16ba0ae94ce4",
+                    "label": "color_body_11",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 246,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#006600",
+                    "tintTopRight": "#006600",
+                    "tintBottomLeft": "#006600",
+                    "tintBottomRight": "#006600"
+                },
+                {
+                    "type": "Image",
+                    "id": "8f259a80-069b-49bd-910b-1885c82db370",
+                    "label": "color_highlight_11",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(11)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(11)",
+                    "SimpleButton.callback": "() => this.switchColor(11)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 246,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "92b3410e-bbfe-4f46-be51-86cb537baa20",
+                    "label": "color_body_10",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 130,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#FF6666",
+                    "tintTopRight": "#FF6666",
+                    "tintBottomLeft": "#FF6666",
+                    "tintBottomRight": "#FF6666"
+                },
+                {
+                    "type": "Image",
+                    "id": "bc243ff2-ea13-48c1-a31b-d842ab8b6e01",
+                    "label": "color_highlight_10",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(10)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(10)",
+                    "SimpleButton.callback": "() => this.switchColor(10)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 130,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "071f0d00-8d3a-414b-890d-f7fca7f2a016",
+                    "label": "color_body_9",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 15,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#996600",
+                    "tintTopRight": "#996600",
+                    "tintBottomLeft": "#996600",
+                    "tintBottomRight": "#996600"
+                },
+                {
+                    "type": "Image",
+                    "id": "7dca7a25-6544-4344-b94d-c974db3322fb",
+                    "label": "color_highlight_9",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(9)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(9)",
+                    "SimpleButton.callback": "() => this.switchColor(9)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 15,
+                    "y": 223,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "683adbf8-68b0-4658-ab70-09d6afc3804d",
+                    "label": "color_body_8",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 361,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#660099",
+                    "tintTopRight": "#660099",
+                    "tintBottomLeft": "#660099",
+                    "tintBottomRight": "#660099"
+                },
+                {
+                    "type": "Image",
+                    "id": "d9ffd966-411e-4744-ba34-5f711f240984",
+                    "label": "color_highlight_8",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(8)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(8)",
+                    "SimpleButton.callback": "() => this.switchColor(8)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 361,
+                    "y": 108,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "73131ca3-dd5a-4d8c-acd4-e642b37e5fcf",
+                    "label": "color_body_16",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 188,
+                    "y": 338,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#F0F0D8",
+                    "tintTopRight": "#F0F0D8",
+                    "tintBottomLeft": "#F0F0D8",
+                    "tintBottomRight": "#F0F0D8"
+                },
+                {
+                    "type": "Image",
+                    "id": "fab084dd-e697-474f-89a2-4043f581cdfc",
+                    "label": "color_highlight_16",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(16)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(16)",
+                    "SimpleButton.callback": "() => this.switchColor(16)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 188,
+                    "y": 338,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "5762624a-a879-445f-b2e7-3a7e54d74ba4",
+                    "label": "color_body_15",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-body"
+                    },
+                    "x": 74,
+                    "y": 338,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "tintTopLeft": "#02A797",
+                    "tintTopRight": "#02A797",
+                    "tintBottomLeft": "#02A797",
+                    "tintBottomRight": "#02A797"
+                },
+                {
+                    "type": "Image",
+                    "id": "8cf4a43c-1991-43a8-ab23-cc7d6c4f8638",
+                    "label": "color_highlight_15",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.overColor(15)",
+                    "SimpleButton.hoverOutCallback": "() => this.outColor(15)",
+                    "SimpleButton.callback": "() => this.switchColor(15)",
+                    "texture": {
+                        "key": "create",
+                        "frame": "color-highlight"
+                    },
+                    "x": 74,
+                    "y": 338,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "6dbbd93d-5efc-40d1-aeff-742abca189ee",
+            "label": "age",
+            "scope": "CLASS",
+            "components": [],
+            "x": 780,
+            "y": 578,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "28b469b8-f285-4b96-8f88-ea9c56a053f9",
+                    "label": "login_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "login-button",
+                    "Button.callback": "() => this.under13()",
+                    "texture": {
+                        "key": "login",
+                        "frame": "login-button"
+                    },
+                    "originY": 0.5047619047619047
+                },
+                {
+                    "type": "Image",
+                    "id": "023f6f73-1373-411b-b583-4483896e0867",
+                    "label": "login_button_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "login-button",
+                    "Button.callback": "() => this.over13()",
+                    "texture": {
+                        "key": "login",
+                        "frame": "login-button"
+                    },
+                    "x": 430,
+                    "originY": 0.5047619047619047
+                },
+                {
+                    "type": "Text",
+                    "id": "67399de9-b45b-4623-94a7-4ef4c03962a7",
+                    "label": "text_1",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "under13",
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Under 13",
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#b9daf4ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.color": "#ffffffff",
+                    "shadow.blur": 5
+                },
+                {
+                    "type": "Text",
+                    "id": "04586f7a-6c9f-4dee-9b47-4b1bdd58cf0c",
+                    "label": "text_1_1",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "over13",
+                    "x": 430,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "13 or Over",
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#b9daf4ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.color": "#ffffffff",
+                    "shadow.blur": 5
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "8f0477c8-84c7-4753-8549-67dfcc0f0ce3",
+            "label": "username",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1.0142778268555555,
+            "y": -0.9692134942528665,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9a2ef61a-4edb-42eb-a8d8-065c798511e8",
+                    "label": "mobile_chat_box0001",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/chat-box0001"
+                    },
+                    "x": 979.9857233195612,
+                    "y": 593.9692119847492
+                },
+                {
+                    "type": "Image",
+                    "id": "f305c20b-d4c3-45e6-99f0-e4f4eae767ca",
+                    "label": "mobile_blue_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mobile/blue-button",
+                    "Button.callback": "() => this.submitUsername()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/blue-button"
+                    },
+                    "x": 1393.9857233195614,
+                    "y": 593.9692119847492
+                },
+                {
+                    "type": "Image",
+                    "id": "6645be2a-bcb8-4b9d-a6b4-83c58fa3a62a",
+                    "label": "mobile_chat_send0001",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/chat_send0001"
+                    },
+                    "x": 1395.9857233195614,
+                    "y": 590.9692119847492
+                },
+                {
+                    "type": "Text",
+                    "id": "16bde5dc-8594-4a6c-9e1e-db4334472b78",
+                    "label": "username_text",
+                    "scope": "CLASS",
+                    "components": [
+                        "InputText"
+                    ],
+                    "InputText.charlimit": 12,
+                    "InputText.inputfilter": "/^[A-Z0-9 ]*$/i",
+                    "x": 970.9857233195612,
+                    "y": 599.9692119847492,
+                    "originX": 0.5,
+                    "originY": 0.6,
+                    "text": "Penguin Name",
+                    "fixedWidth": 750,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#89bedaff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "48a41f07-9cd0-41cf-86a5-a2898bcb0477",
+            "label": "password",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "133f0142-6453-4ebf-81c7-c9fefd00cf6b",
+                    "label": "mobile_chat_box0002_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/chat-box0001"
+                    },
+                    "x": 980,
+                    "y": 639
+                },
+                {
+                    "type": "Image",
+                    "id": "c5be3c42-53a4-40eb-849c-51e316868692",
+                    "label": "mobile_blue_button2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mobile/blue-button",
+                    "Button.hoverOutCallback": "() => this.showConfirmPassword(false)",
+                    "Button.callback": "() => this.showConfirmPassword(true)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/blue-button"
+                    },
+                    "x": 1394,
+                    "y": 640
+                },
+                {
+                    "type": "Text",
+                    "id": "5910a68d-d4d4-44f9-a85d-422259240dbd",
+                    "label": "confirm_password_text",
+                    "scope": "CLASS",
+                    "components": [
+                        "InputText",
+                        "LocalisedString"
+                    ],
+                    "InputText.ispassword": true,
+                    "InputText.charlimit": 24,
+                    "LocalisedString.id": "pword2",
+                    "x": 971,
+                    "y": 646,
+                    "originX": 0.5,
+                    "originY": 0.6,
+                    "text": "Confirm Password",
+                    "fixedWidth": 750,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#89bedaff"
+                },
+                {
+                    "type": "Image",
+                    "id": "65eaa727-eb52-4546-b5ec-62ec840fd752",
+                    "label": "mobile_chat_send0002_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/find-icon"
+                    },
+                    "x": 1396,
+                    "y": 637
+                },
+                {
+                    "type": "Image",
+                    "id": "a036669e-9292-4298-a929-13c4483d7d41",
+                    "label": "mobile_chat_box0002",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/chat-box0001"
+                    },
+                    "x": 980,
+                    "y": 537
+                },
+                {
+                    "type": "Image",
+                    "id": "46b33e67-2828-4ed0-befd-5049a8746b89",
+                    "label": "mobile_blue_button2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mobile/blue-button",
+                    "Button.hoverOutCallback": "() => this.showPassword(false)",
+                    "Button.callback": "() => this.showPassword(true)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/blue-button"
+                    },
+                    "x": 1394,
+                    "y": 537
+                },
+                {
+                    "type": "Image",
+                    "id": "b6de3344-24b6-4d99-9203-4f48576b182d",
+                    "label": "mobile_chat_send0002",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/find-icon"
+                    },
+                    "x": 1396,
+                    "y": 534
+                },
+                {
+                    "type": "Text",
+                    "id": "056c3e05-2ebe-43e7-ba18-62d2c53c794f",
+                    "label": "password_text",
+                    "scope": "CLASS",
+                    "components": [
+                        "InputText",
+                        "LocalisedString"
+                    ],
+                    "InputText.ispassword": true,
+                    "InputText.charlimit": 24,
+                    "LocalisedString.id": "pword",
+                    "x": 971,
+                    "y": 543,
+                    "originX": 0.5,
+                    "originY": 0.6,
+                    "text": "Password",
+                    "fixedWidth": 750,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#89bedaff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cc13af47-1320-4d8e-8a2e-13a69a25ef2f",
+            "label": "email",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "82475cb4-607c-4fae-9013-73d51d9a68a2",
+                    "label": "mobile_chat_box0004",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/chat-box0001"
+                    },
+                    "x": 979.9857233195612,
+                    "y": 593.9692119847492
+                },
+                {
+                    "type": "Image",
+                    "id": "784a0ac9-27b7-458e-960c-c764d6ccf0ea",
+                    "label": "mobile_blue_button4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mobile/blue-button",
+                    "Button.callback": "() => this.submitEmail()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/blue-button"
+                    },
+                    "x": 1393.9857233195614,
+                    "y": 593.9692119847492
+                },
+                {
+                    "type": "Image",
+                    "id": "48888b72-a340-4b7c-b8af-d4ca25b23423",
+                    "label": "mobile_chat_send0004",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mobile/chat_send0001"
+                    },
+                    "x": 1395.9857233195614,
+                    "y": 590.9692119847492
+                },
+                {
+                    "type": "Text",
+                    "id": "c9097803-9fc5-413b-a835-cd2755a522ba",
+                    "label": "email_text",
+                    "scope": "CLASS",
+                    "components": [
+                        "InputText",
+                        "LocalisedString"
+                    ],
+                    "InputText.charlimit": 24,
+                    "LocalisedString.id": "emilAdr",
+                    "x": 970.9857233195612,
+                    "y": 599.9692119847492,
+                    "originX": 0.5,
+                    "originY": 0.6,
+                    "text": "Email Address",
+                    "fixedWidth": 750,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#89bedaff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c0705c02-53ef-4fa8-af3f-51da816ce111",
+            "label": "tos",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "335b8332-5228-4dac-b0ea-fbb5db150045",
+                    "label": "privacyButton",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onPrivacyClick()",
+                    "texture": {
+                        "key": "login",
+                        "frame": "checkbox"
+                    },
+                    "x": 794,
+                    "y": 634,
+                    "scaleX": 1.5,
+                    "scaleY": 1.5
+                },
+                {
+                    "type": "Image",
+                    "id": "ce3fa922-1c2a-4da8-b4cf-6b338c98d184",
+                    "label": "tosButton",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onTosClick()",
+                    "texture": {
+                        "key": "login",
+                        "frame": "checkbox"
+                    },
+                    "x": 794,
+                    "y": 537,
+                    "scaleX": 1.5,
+                    "scaleY": 1.5
+                },
+                {
+                    "type": "Text",
+                    "id": "fc714517-bf1c-4e56-8561-827917b3ece4",
+                    "label": "tosText",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "tos",
+                    "x": 1140,
+                    "y": 548,
+                    "originX": 0.5,
+                    "originY": 0.6,
+                    "text": "Terms of Service",
+                    "fixedWidth": 600,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#89bedaff"
+                },
+                {
+                    "type": "Text",
+                    "id": "22c6b007-fa3c-4c91-a5eb-c9020754d1d9",
+                    "label": "privacyText",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "privacy",
+                    "x": 1140,
+                    "y": 648,
+                    "originX": 0.5,
+                    "originY": 0.6,
+                    "text": "Privacy Policy",
+                    "fixedWidth": 600,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#89bedaff"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "23db2786-1cc0-4bb0-a2e8-4fd1aa8bce01",
+            "label": "logo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "create",
+                "frame": "logo2"
+            },
+            "x": 992,
+            "y": 258,
+            "visible": false,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5
+        },
+        {
+            "type": "Container",
+            "id": "7a04c082-b9e7-4fa6-bcaa-2114be40f807",
+            "label": "inputTextContainer",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

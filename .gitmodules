@@ -1,0 +1,3 @@
+[submodule "assets"]
+	path = client
+	url = https://github.com/ClubPenguinPlus/assets

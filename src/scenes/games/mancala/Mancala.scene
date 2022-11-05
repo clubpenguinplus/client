@@ -1,0 +1,518 @@
+{
+    "id": "ce0a15ab-d3a1-4e2d-bac2-8a202f2a25a7",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "c78a9501-c3e6-456b-b088-10901aee86b1",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "window",
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "444f3793-1a41-4386-9e05-e712dbd5f24d",
+                    "label": "window",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "container"
+                    }
+                },
+                {
+                    "type": "Image",
+                    "id": "7b74e112-09fc-4922-be64-66119c9a3c31",
+                    "label": "lower_wait",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "lower_wait"
+                    },
+                    "y": 116
+                },
+                {
+                    "type": "Image",
+                    "id": "54f9e076-1648-4a1c-88f1-c4ed684ac4a7",
+                    "label": "upper_wait",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "upper_wait"
+                    },
+                    "y": -80
+                },
+                {
+                    "type": "Image",
+                    "id": "ffb54173-b9ac-4fe1-bab7-7a6b435da288",
+                    "label": "board",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "board"
+                    },
+                    "y": 16
+                },
+                {
+                    "prefabId": "81f9f79e-3ff3-47fb-b6c0-aff4692bab0f",
+                    "id": "df191ca7-415a-4fc9-a8d5-e65fef52082c",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "player2",
+                    "components": [],
+                    "x": -220,
+                    "y": -125,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "81f9f79e-3ff3-47fb-b6c0-aff4692bab0f",
+                    "id": "464b8f4f-cdab-4139-af39-d1ac85c8631e",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "player1",
+                    "components": [],
+                    "x": -217,
+                    "y": 163,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "9eee329c-ab1e-4e40-9949-fd7a1f1a0508",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onClose()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 247,
+                    "y": -151
+                },
+                {
+                    "type": "Image",
+                    "id": "7583ca44-3abe-403e-9adb-f44e6d03c299",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 247,
+                    "y": -153
+                },
+                {
+                    "type": "Container",
+                    "id": "0a4b10d7-2a94-4fb2-8652-09e09d0f3ec4",
+                    "label": "counterContainer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "6c36ac06-9f6e-424c-b5b7-8369d9b913c6",
+                    "label": "end_hitbox0004",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(7)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(7)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(7)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "end-hitbox0004"
+                    },
+                    "x": -199,
+                    "y": 11,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "afcd824f-ff27-4d52-a4fd-a7fe8111333f",
+                    "label": "cup_hitbox0004",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(6)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(6)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(6)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": -142,
+                    "y": -20,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "e681e47f-9a03-4d2d-9d06-b0f4fa363c2a",
+                    "label": "cup_hitbox",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(5)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(5)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(5)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": -85,
+                    "y": -20,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "12bae6c3-8f60-4c24-8541-949fdcde6954",
+                    "label": "cup_hitbox_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(3)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(3)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(3)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": 29,
+                    "y": -20,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "310477e5-b88a-4ae6-b337-062d5361b549",
+                    "label": "cup_hitbox_2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(4)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(4)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(4)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": -28,
+                    "y": -20,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "703f721e-9b5b-427a-a6ab-eeb71ddf15cb",
+                    "label": "cup_hitbox_3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(1)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(1)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(1)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": 143,
+                    "y": -20,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "4f60b201-12d6-488f-80a9-6f85f8d8ab73",
+                    "label": "cup_hitbox_4",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(2)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(2)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(2)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": 86,
+                    "y": -20,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "3463abd4-be47-4b74-9555-4bb94dead85a",
+                    "label": "cup_hitbox_5",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(8)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(8)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(8)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": -142,
+                    "y": 39,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "0d3979a3-53fd-48a8-a2d9-e2406715b219",
+                    "label": "cup_hitbox_6",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(12)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(12)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(12)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": 86,
+                    "y": 39,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "94a18d81-645b-4ea0-acdd-9b5fab2ae12c",
+                    "label": "cup_hitbox_7",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(13)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(13)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(13)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": 143,
+                    "y": 39,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "7b863c34-ff01-4022-a8f9-2ec438f9c31e",
+                    "label": "cup_hitbox_8",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(10)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(10)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(10)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": -28,
+                    "y": 39,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "b210ab4f-36c6-4dc8-aad9-614ed0c589d3",
+                    "label": "cup_hitbox_9",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(11)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(11)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(11)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": 29,
+                    "y": 39,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "38057644-2a73-4098-923e-76c19d702da3",
+                    "label": "cup_hitbox_10",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(9)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(9)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(9)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "cup_hitbox0004"
+                    },
+                    "x": -85,
+                    "y": 39,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "b896b051-9bc5-46d2-b614-5339735eaa4d",
+                    "label": "end_hitbox",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(0)",
+                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(0)",
+                    "SimpleButton.callback": "() => this.onHitboxDown(0)",
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "end-hitbox0004"
+                    },
+                    "x": 200,
+                    "y": 11,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "481f0f91-6de4-4e2e-9380-c5eaf547d7c4",
+                    "label": "currentArrow",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "current_arrow0001"
+                    },
+                    "x": -141,
+                    "y": -91,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "505b2cab-de22-499c-b83f-360665733964",
+                    "label": "currentArrowText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -143,
+                    "y": -84,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "4",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "stroke": "#000000ff",
+                    "shadow.blur": 5
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fed2c198-258f-4f6a-b7e3-21b688fed227",
+            "label": "placers",
+            "objectIds": [
+                "6c36ac06-9f6e-424c-b5b7-8369d9b913c6",
+                "afcd824f-ff27-4d52-a4fd-a7fe8111333f",
+                "e681e47f-9a03-4d2d-9d06-b0f4fa363c2a",
+                "310477e5-b88a-4ae6-b337-062d5361b549",
+                "12bae6c3-8f60-4c24-8541-949fdcde6954",
+                "4f60b201-12d6-488f-80a9-6f85f8d8ab73",
+                "703f721e-9b5b-427a-a6ab-eeb71ddf15cb",
+                "b896b051-9bc5-46d2-b614-5339735eaa4d",
+                "3463abd4-be47-4b74-9555-4bb94dead85a",
+                "38057644-2a73-4098-923e-76c19d702da3",
+                "7b863c34-ff01-4022-a8f9-2ec438f9c31e",
+                "b210ab4f-36c6-4dc8-aad9-614ed0c589d3",
+                "0d3979a3-53fd-48a8-a2d9-e2406715b219",
+                "94a18d81-645b-4ea0-acdd-9b5fab2ae12c"
+            ]
+        },
+        {
+            "id": "4974b1ce-2910-4903-af1b-8077c4c1c801",
+            "label": "items",
+            "objectIds": [
+                "464b8f4f-cdab-4139-af39-d1ac85c8631e",
+                "df191ca7-415a-4fc9-a8d5-e65fef52082c"
+            ]
+        }
+    ]
+}

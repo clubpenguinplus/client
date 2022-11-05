@@ -1,0 +1,85 @@
+{
+    "id": "ba7dc8df-af93-4730-8143-9dc3bef1ebe4",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "ModPanel",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "29564549-607b-462d-b6fc-41e9800b0972",
+            "label": "bg",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "prefabId": "d44a536e-8824-4c11-8cdd-649f5629a29c",
+            "id": "4d66193c-3420-4cb5-ac49-4d0ad1b4bc5a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "moderator",
+            "scope": "CLASS",
+            "components": [],
+            "x": 359,
+            "y": 480,
+            "nestedPrefabs": [],
+            "list": []
+        },
+        {
+            "prefabId": "e1fd9cda-cb4e-4071-8083-ad30ac555494",
+            "id": "1a1b18fb-212f-4a48-a5a9-044e15d81d84",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "modActions",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1121,
+            "y": 314,
+            "visible": false,
+            "nestedPrefabs": [],
+            "list": []
+        },
+        {
+            "prefabId": "1fbdf614-1174-493e-8bc8-d2accb4d34df",
+            "id": "7173399c-4908-4495-8c32-26d3ebedb08b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "wiretap",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1113,
+            "y": 655,
+            "nestedPrefabs": [],
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

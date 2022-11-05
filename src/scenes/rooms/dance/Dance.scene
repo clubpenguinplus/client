@@ -1,0 +1,571 @@
+{
+    "id": "080865d9-a779-4eb0-ae75-56efe0a00201",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/dance/dance-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dance",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "fec53d40-49f2-46dc-aa87-03265683729a",
+            "label": "rectangle",
+            "components": [],
+            "x": 164,
+            "y": 296,
+            "isFilled": true,
+            "fillColor": "#3f3a46",
+            "width": 200,
+            "height": 500
+        },
+        {
+            "type": "Sprite",
+            "id": "2e638dd0-cce5-4e2f-a10a-38221fa4c8d2",
+            "label": "danceFloor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "danceFloor001"
+            },
+            "x": 704,
+            "y": 660
+        },
+        {
+            "type": "Sprite",
+            "id": "755706ea-e258-4b25-b812-9566acb35fdb",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 200,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "dance",
+                "frame": "door0001"
+            },
+            "x": 139,
+            "y": 270
+        },
+        {
+            "type": "Sprite",
+            "id": "e3e99d89-5965-4f7d-80e0-2ecaaedd6a33",
+            "label": "upstairs",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onStairsOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onStairsOut()",
+            "MoveTo.x": 1400,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "dance",
+                "frame": "upstairs"
+            },
+            "x": 1355,
+            "y": 335
+        },
+        {
+            "type": "Sprite",
+            "id": "a7d50089-75ec-4917-bfdd-0e7eca650ed6",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "bg"
+            },
+            "x": 751,
+            "y": 483
+        },
+        {
+            "type": "Sprite",
+            "id": "9fd86187-602a-419b-ba60-c362eaf67192",
+            "label": "leftRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "leftRailing"
+            },
+            "x": 407,
+            "y": 320
+        },
+        {
+            "type": "Sprite",
+            "id": "69e056f0-ccc6-450d-8e6e-40399c673ec5",
+            "label": "floorSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "floorSpeaker"
+            },
+            "x": 339,
+            "y": 339
+        },
+        {
+            "type": "Sprite",
+            "id": "a1489308-4e29-4cc6-b8d0-12ae86f6e57e",
+            "label": "floorSpeakerbut",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "floorSpeakerbut0001"
+            },
+            "x": 352,
+            "y": 348
+        },
+        {
+            "type": "Sprite",
+            "id": "71dbd575-d76e-4f7f-9cae-bd8db91f4cf0",
+            "label": "doorRailingLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "doorRailingLeft"
+            },
+            "x": 152,
+            "y": 561
+        },
+        {
+            "type": "Sprite",
+            "id": "5babf86d-bc5b-45bd-b8cd-b7930d32e36c",
+            "label": "doorRailingRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "doorRailingRight"
+            },
+            "x": 273,
+            "y": 430
+        },
+        {
+            "type": "Sprite",
+            "id": "3c416bb4-f43f-4a65-89a6-ce56d5bc5bbb",
+            "label": "backChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "backChair"
+            },
+            "x": 1445,
+            "y": 683
+        },
+        {
+            "type": "Sprite",
+            "id": "e8f2f0b9-1019-4158-9c1d-aa1171a028c0",
+            "label": "rightChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "rightChair"
+            },
+            "x": 1541,
+            "y": 799
+        },
+        {
+            "type": "Sprite",
+            "id": "c4c0bbdd-064c-4294-b972-ccfb6f6bca1f",
+            "label": "table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "table"
+            },
+            "x": 1423,
+            "y": 778
+        },
+        {
+            "type": "Sprite",
+            "id": "e7574811-4577-4ec0-ac5c-32d2cf808927",
+            "label": "leftChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "leftChair"
+            },
+            "x": 1340,
+            "y": 880
+        },
+        {
+            "type": "Sprite",
+            "id": "7ae54632-1c1a-43e6-8399-79171b804faf",
+            "label": "leftChairBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "leftChairBack"
+            },
+            "x": 1301,
+            "y": 886
+        },
+        {
+            "type": "Sprite",
+            "id": "cf7ed55d-0fb3-45c3-a4a9-a0acd86389ad",
+            "label": "soundStudio",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint",
+                "LocalisedSprite"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSoundStudioOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSoundStudioOut()",
+            "MoveTo.x": 700,
+            "MoveTo.y": 350,
+            "ShowHint.text": "Mix Music",
+            "texture": {
+                "key": "dance",
+                "frame": "soundstudio-en0001"
+            },
+            "x": 694,
+            "y": 392
+        },
+        {
+            "type": "Sprite",
+            "id": "b52a3506-282a-4ad2-878c-f997ddcfa2be",
+            "label": "sofa",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "sofa"
+            },
+            "x": 149.36760765951857,
+            "y": 627.7627502053078,
+            "originX": 0.6049295941144784,
+            "originY": 0.15003229044350086
+        },
+        {
+            "type": "Sprite",
+            "id": "0ab944cc-a228-4687-ae62-0d76bde27d99",
+            "label": "rightRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "rightRailing"
+            },
+            "x": 962,
+            "y": 324
+        },
+        {
+            "type": "Sprite",
+            "id": "ea2d9470-6990-4938-8473-a89411cde292",
+            "label": "boilerSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "boilerSpeaker0001"
+            },
+            "x": 1002,
+            "y": 321
+        },
+        {
+            "type": "Image",
+            "id": "f14e4b9f-d1a6-42a6-b858-951f4b215d25",
+            "label": "danceContestTable",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "danceContestTable"
+            },
+            "x": 1140,
+            "y": 429
+        },
+        {
+            "type": "Rectangle",
+            "id": "587688bb-a8d0-422b-a21e-e3f6f73f8a5b",
+            "label": "danceContest",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onContestOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onContestOut()",
+            "MoveTo.x": 1100,
+            "MoveTo.y": 480,
+            "ShowHint.text": "Dance Contest",
+            "x": 1146,
+            "y": 314,
+            "scaleX": 1.2072727597353405,
+            "scaleY": 2.543735967809845,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "4afbcba4-022f-4f34-9545-8b9c9bc7170c",
+            "label": "danceContestBanner",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "dance",
+                "frame": "danceContestBanner-en"
+            },
+            "x": 1181,
+            "y": 269,
+            "angle": -5
+        },
+        {
+            "type": "Sprite",
+            "id": "149caa3b-82bc-4a11-9fb8-67c4e88c4075",
+            "label": "danceContestClip",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "danceContestClipAnim0001"
+            },
+            "x": 1127,
+            "y": 402
+        },
+        {
+            "type": "Sprite",
+            "id": "3e943668-445c-45bd-a979-15f7b4ec45aa",
+            "label": "rightSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "rightSpeaker0001"
+            },
+            "x": 1081,
+            "y": 55
+        },
+        {
+            "type": "Sprite",
+            "id": "fd843215-c59e-4a44-899f-785cb07c2541",
+            "label": "corner",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "corner"
+            },
+            "x": 1301,
+            "y": 240
+        },
+        {
+            "type": "Sprite",
+            "id": "49813809-8ee0-4cc3-8b50-dec5c24620da",
+            "label": "upstairsRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "upstairsRailing"
+            },
+            "x": 1176,
+            "y": 500
+        },
+        {
+            "type": "Sprite",
+            "id": "c2079cbb-5acd-490e-bd6d-e68fa0ea1479",
+            "label": "neonSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "neonSign0001"
+            },
+            "x": 1135,
+            "y": 109
+        },
+        {
+            "type": "Sprite",
+            "id": "ffa863ca-b009-49c5-a585-e4450373671d",
+            "label": "leftSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "leftSpeaker0001"
+            },
+            "x": 290,
+            "y": 73
+        },
+        {
+            "type": "Ellipse",
+            "id": "c31a4ac1-e243-4fae-bf3b-787701a74f0e",
+            "label": "ellipse",
+            "components": [],
+            "x": 229,
+            "y": 844,
+            "isFilled": true,
+            "fillColor": "#40e8d6",
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "ce0e8727-264e-4ea9-b8ea-bd95f825b358",
+            "label": "ellipse_1",
+            "components": [],
+            "x": 229,
+            "y": 827,
+            "isFilled": true,
+            "fillColor": "#40e8d6",
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "4d417e4a-465b-48e4-a698-158fdc83d1e8",
+            "label": "ellipse_1_1",
+            "components": [],
+            "x": 210,
+            "y": 822,
+            "isFilled": true,
+            "fillColor": "#40e8d6",
+            "width": 20,
+            "height": 13
+        },
+        {
+            "type": "Ellipse",
+            "id": "163a3ce8-6b34-4ea4-8a8a-c97fdc0a2be9",
+            "label": "ellipse_1_1_1",
+            "components": [],
+            "x": 249,
+            "y": 795,
+            "angle": -51,
+            "isFilled": true,
+            "fillColor": "#40e8d6",
+            "width": 20,
+            "height": 13
+        },
+        {
+            "type": "Ellipse",
+            "id": "4bfb6596-aae1-4d1f-b87c-82f3c19fc2f4",
+            "label": "ellipse_1_1_1_1",
+            "components": [],
+            "x": 235,
+            "y": 798,
+            "angle": -120,
+            "isFilled": true,
+            "fillColor": "#40e8d6",
+            "width": 25,
+            "height": 13
+        },
+        {
+            "type": "Sprite",
+            "id": "0f04354c-3a44-4e9a-b88c-dd8504631ad8",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "fgg"
+            },
+            "x": 717,
+            "y": 1007.5,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "2f0e9307-41f6-4391-8d36-c1daaa2ff2c3",
+            "label": "keeper",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dance",
+                "frame": "keeper0001"
+            },
+            "x": 1044,
+            "y": 191
+        },
+        {
+            "type": "Rectangle",
+            "id": "a5a8980d-0d17-4859-8182-4b0502c23f64",
+            "label": "boiler_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSpeakerOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSpeakerOut()",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 360,
+            "x": 1030,
+            "y": 306,
+            "fillColor": "#00d9da",
+            "fillAlpha": 0.5,
+            "width": 128,
+            "height": 200
+        },
+        {
+            "type": "Ellipse",
+            "id": "f7c627b8-527d-4c4b-ad35-3d41b647e8a4",
+            "label": "keeper_btn",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onKeeperOver()",
+            "SimpleButton.hoverOutCallback": "",
+            "x": 1039,
+            "y": 226,
+            "scaleX": 0.3869603294123536,
+            "scaleY": 0.2549735670919765,
+            "fillColor": "#00d9da",
+            "fillAlpha": 0.5,
+            "width": 128,
+            "height": 200
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "0f04354c-3a44-4e9a-b88c-dd8504631ad8",
+                "71dbd575-d76e-4f7f-9cae-bd8db91f4cf0",
+                "5babf86d-bc5b-45bd-b8cd-b7930d32e36c",
+                "a5a8980d-0d17-4859-8182-4b0502c23f64",
+                "e7574811-4577-4ec0-ac5c-32d2cf808927",
+                "7ae54632-1c1a-43e6-8399-79171b804faf",
+                "c4c0bbdd-064c-4294-b972-ccfb6f6bca1f",
+                "e8f2f0b9-1019-4158-9c1d-aa1171a028c0",
+                "3c416bb4-f43f-4a65-89a6-ce56d5bc5bbb",
+                "49813809-8ee0-4cc3-8b50-dec5c24620da",
+                "b52a3506-282a-4ad2-878c-f997ddcfa2be"
+            ]
+        }
+    ]
+}

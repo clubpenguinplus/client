@@ -1,0 +1,262 @@
+{
+    "id": "1fbdf614-1174-493e-8bc8-d2accb4d34df",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 20,
+        "snapHeight": 20,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "80b40d42-bac6-4d3b-ac21-b81f37ee9a54",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "rectangle",
+            "list": [
+                {
+                    "type": "NinePatchContainer",
+                    "id": "b56a1e1d-4eec-4add-b553-2d767c61bb03",
+                    "label": "rectangle",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "prompt",
+                        "frame": "window"
+                    },
+                    "width": 780,
+                    "height": 600,
+                    "marginLeft": 50,
+                    "marginRight": 50,
+                    "marginTop": 50,
+                    "marginBottom": 50
+                },
+                {
+                    "type": "Text",
+                    "id": "e96707d4-a8b8-4cf9-bdd5-3babddd9ac5c",
+                    "label": "header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -253,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Wiretap",
+                    "fixedWidth": 360,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Text",
+                    "id": "66a709d7-fa04-4636-9da1-edf5a75d2b78",
+                    "label": "header_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -262,
+                    "y": -179,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Tap a room",
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "c439c760-5ee7-4ce1-9275-e8d92a786fcd",
+                    "label": "ninepatchcontainer_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/item"
+                    },
+                    "x": -262,
+                    "y": -129,
+                    "width": 200,
+                    "height": 50,
+                    "marginTop": 23,
+                    "marginBottom": 23
+                },
+                {
+                    "type": "Text",
+                    "id": "79805f78-d5d6-415a-abb5-dd9093f570e8",
+                    "label": "tap_a_room",
+                    "scope": "CLASS",
+                    "components": [
+                        "InputText"
+                    ],
+                    "InputText.inputfilter": "/^[0-9]*$/",
+                    "InputText.entercallback": "() => this.tapRoom()",
+                    "x": -262,
+                    "y": -129,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Room ID",
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Text",
+                    "id": "72ad8c93-3a60-4bcc-8bc5-76730c7fa295",
+                    "label": "header_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -259,
+                    "y": -52,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Tap all rooms",
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "db0f9e80-18da-4725-ab5a-6db6f69316ae",
+                    "label": "blue_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.tapAllRooms()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": -259,
+                    "y": 2
+                },
+                {
+                    "type": "Image",
+                    "id": "45fa947c-d1a0-4021-82fd-43469dd65699",
+                    "label": "blue_arrow",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-arrow"
+                    },
+                    "x": -259
+                },
+                {
+                    "type": "Text",
+                    "id": "846aa604-37b9-49fd-bea3-ee5fef70f9b2",
+                    "label": "header_4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -261,
+                    "y": 90,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your tapped rooms:",
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "#ffffffff",
+                    "wordWrapWidth": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "8d842167-ea6d-46bd-a756-1d9534c9afce",
+                    "label": "tapped_rooms",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -261,
+                    "y": 139,
+                    "originX": 0.5,
+                    "fixedWidth": 200,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "color": "#ace3f6ff",
+                    "wordWrapWidth": 200
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "ebf07d5e-592c-4382-8789-9f4f4be5cd6c",
+                    "label": "ninepatchcontainer",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/item"
+                    },
+                    "x": 109,
+                    "y": 26,
+                    "width": 500,
+                    "height": 450,
+                    "marginTop": 23,
+                    "marginBottom": 23
+                },
+                {
+                    "type": "Text",
+                    "id": "a9aeaa27-3a74-4d75-aa2d-ef3b3a930ce3",
+                    "label": "messages",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 109,
+                    "y": -177,
+                    "originX": 0.5,
+                    "fixedWidth": 500,
+                    "fixedHeight": 400,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                    "fontFamily": "Burbank Small",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "807acaf3-96f9-4b44-aecb-7ccfaaf6c334",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => { this.hide() }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 337,
+                    "y": -249
+                },
+                {
+                    "type": "Image",
+                    "id": "7aa42cdd-e5e2-4ad5-b52b-0164cc10eec6",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 337,
+                    "y": -251
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

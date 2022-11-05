@@ -1,0 +1,112 @@
+{
+    "id": "7477daa3-a788-4bef-ba1b-bab1d90dbe49",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "460fe828-2a5c-48b5-8e64-374780777136",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "e8a976be-b867-4ae2-801c-abab908f5840",
+                    "label": "rectangle_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onClick()",
+                    "isFilled": true,
+                    "fillColor": "#327dd0",
+                    "width": 94,
+                    "height": 122
+                },
+                {
+                    "type": "Text",
+                    "id": "730363a5-60c9-4711-80a6-53256a41c9bd",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 48,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 185,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px"
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "36f653e5-9b9a-47ec-8ea0-432185b18367",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY",
+                        "visible"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": -3,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "7440b5d7-59f5-4ef5-a6da-dc09c08b5538",
+                    "label": "outline",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/outline"
+                    },
+                    "width": 94,
+                    "height": 122
+                },
+                {
+                    "type": "Text",
+                    "id": "86f135b4-4c5d-4af8-8354-90ebf00ce143",
+                    "label": "addFriend",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -47,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "+ Add Friend",
+                    "fixedWidth": 185,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "13px",
+                    "fontStyle": "bold"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
