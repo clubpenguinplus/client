@@ -809,7 +809,7 @@ export default class Main extends BaseScene {
 
         this.events.on('sleep', this.onSleep, this)
 
-        //if (this.shell.client.penguin.rank > 3) {
+        //if (this.shell.client.penguin.rank >= 3) {
         //this.mod_btn.visible = true;
         //}
 
@@ -1003,7 +1003,7 @@ export default class Main extends BaseScene {
             item.visible = false
         }
 
-        if (this.shell.client.penguin.rank > 1) {
+        if (this.shell.client.penguin.rank >= 3) {
             this.mod_btn.visible = true
         }
 

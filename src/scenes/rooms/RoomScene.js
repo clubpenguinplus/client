@@ -79,7 +79,7 @@ export default class RoomScene extends BaseScene {
     }
 
     addPenguin(id, penguin) {
-        if (penguin.stealthMode && this.shell.client.rank < 4) return
+        if (penguin.stealthMode && this.shell.client.rank < 3) return
 
         this.penguins[id] = penguin
 

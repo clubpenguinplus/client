@@ -25,7 +25,7 @@ export default class PenguinFactory {
         if (user.id == client.id) {
             client.penguin = new ClientPenguin(user, room, this.penguinLoader)
             return client.penguin
-        } else if (user.stealthMode == 1 && client.rank < 4) {
+        } else if (user.stealthMode == 1 && client.rank < 3) {
             return
         } else {
             return new Penguin(user, room, this.penguinLoader)

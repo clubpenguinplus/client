@@ -263,7 +263,7 @@ export default class PlayerCard extends BaseContainer {
             this.inventory.visible = false
         }
 
-        if (this.shell.client.rank > 3) this.edit_player_button.visible = true
+        if (this.shell.client.rank >= 3) this.edit_player_button.visible = true
 
         this.inventorySort.closeMenu()
 
