@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clubpenguinplus/client.git"
+    "url": "git+https://github.com/Club-Penguin-Plus-Official/client.git"
   },
   "author": "Club Penguin Plus",
   "bugs": {
-    "url": "https://github.com/clubpenguinplus/client/issues"
+    "url": "https://github.com/Club-Penguin-Plus-Official/client/issues"
   },
   "homepage": "https://www.cpplus.pw",
   "devDependencies": {
