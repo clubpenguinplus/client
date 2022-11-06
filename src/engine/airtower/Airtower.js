@@ -229,27 +229,35 @@ export default class Airtower {
                 if (this.creation) {
                     if (message == 'U#KO') {
                         this.creation.invalidUsername()
+                        return
                     } else if (message == 'U#OK') {
                         this.creation.chooseColor()
+                        return
                     } else if (message == 'E#KO') {
                         this.creation.invalidEmail()
+                        return
                     } else if (message == 'E#OK') {
                         this.creation.submitSignup()
+                        return
                     } else if (message == 'R#OK') {
                         this.creation.accountCreated()
+                        return
                     }
-                    return
                 } else if (this.activate) {
                     if (message == 'A#OK') {
                         this.activate.accountActivated()
+                        return
                     } else if (message == 'A#KO') {
                         this.activate.invalidCode()
+                        return
                     }
                 } else if (this.register) {
                     if (message == 'R#OK') {
                         this.register.keyRegistered()
+                        return
                     } else if (message == 'R#KO') {
                         this.register.invalidKey()
+                        return
                     }
                 } else if (message == 'KO') {
                     if (!this.lastLoginScene) return this.scene.start('Login')
