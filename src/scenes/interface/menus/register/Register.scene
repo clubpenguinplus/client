@@ -1,5 +1,5 @@
 {
-    "id": "52dcadf0-327d-45a0-9884-ee476ca6230b",
+    "id": "fbd76c38-b4fd-4d12-9280-e3a424900200",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -8,7 +8,7 @@
         "superClassName": "BaseScene",
         "preloadPackFiles": [],
         "createMethodName": "_create",
-        "sceneKey": "Login",
+        "sceneKey": "Register",
         "borderWidth": 1520,
         "borderHeight": 960
     },
@@ -65,37 +65,6 @@
             },
             "x": 760,
             "y": 728
-        },
-        {
-            "type": "Sprite",
-            "id": "e7d1dae8-bad8-408a-864c-184cec80ed19",
-            "label": "forgotButton",
-            "components": [
-                "SimpleButton",
-                "Animation"
-            ],
-            "Animation.key": "small-button",
-            "Animation.end": 3,
-            "Animation.repeat": 0,
-            "Animation.onHover": true,
-            "texture": {
-                "key": "login",
-                "frame": "small-button"
-            },
-            "x": 760,
-            "y": 604
-        },
-        {
-            "type": "Image",
-            "id": "b92b7009-e006-476e-a579-f883f6ec6feb",
-            "label": "note",
-            "components": [],
-            "texture": {
-                "key": "login",
-                "frame": "note"
-            },
-            "x": 1182,
-            "y": 556
         },
         {
             "type": "Text",
@@ -155,25 +124,6 @@
             "color": "#000000ff"
         },
         {
-            "type": "Text",
-            "id": "731adc13-a878-47cf-866b-555084400e4c",
-            "label": "forgotText",
-            "components": [
-                "LocalisedString"
-            ],
-            "LocalisedString.id": "forgotPass",
-            "x": 760,
-            "y": 604,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Forgot your password?",
-            "lineSpacing": 25,
-            "align": "right",
-            "fontFamily": "Burbank Small",
-            "fontSize": "30px",
-            "color": "#ffffffff"
-        },
-        {
             "type": "Sprite",
             "id": "d54f4f4f-2569-4441-a370-6e29e4af5074",
             "label": "loginButton",
@@ -181,13 +131,13 @@
                 "Button"
             ],
             "Button.spriteName": "login-button",
-            "Button.callback": "() => this.onLoginSubmit()",
+            "Button.callback": "() => this.onRegisterSubmit()",
             "texture": {
                 "key": "login",
                 "frame": "login-button"
             },
             "x": 760,
-            "y": 483
+            "y": 546
         },
         {
             "type": "Text",
@@ -196,12 +146,12 @@
             "components": [
                 "LocalisedString"
             ],
-            "LocalisedString.id": "login",
+            "LocalisedString.id": "register",
             "x": 760,
-            "y": 483,
+            "y": 546,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Login",
+            "text": "Register",
             "lineSpacing": 25,
             "align": "right",
             "fontFamily": "Burbank Small",
@@ -215,12 +165,12 @@
             "components": [
                 "LocalisedString"
             ],
-            "LocalisedString.id": "password",
+            "LocalisedString.id": "betaKey",
             "x": 620,
-            "y": 258,
+            "y": 385,
             "originX": 1,
             "originY": 0.5,
-            "text": "Password:",
+            "text": "Beta Key:",
             "lineSpacing": 25,
             "align": "right",
             "fontFamily": "Burbank Small",
@@ -234,12 +184,12 @@
             "components": [
                 "LocalisedString"
             ],
-            "LocalisedString.id": "pengName",
+            "LocalisedString.id": "username",
             "x": 620,
-            "y": 200,
+            "y": 309,
             "originX": 1,
             "originY": 0.5,
-            "text": "Penguin Name:",
+            "text": "Username:",
             "lineSpacing": 25,
             "align": "right",
             "fontFamily": "Burbank Small",
@@ -256,7 +206,7 @@
                 "frame": "input"
             },
             "x": 815,
-            "y": 258
+            "y": 385
         },
         {
             "type": "Image",
@@ -268,21 +218,7 @@
                 "frame": "input"
             },
             "x": 815,
-            "y": 200
-        },
-        {
-            "prefabId": "1a09293b-d8f0-454f-ad6c-dc0364729549",
-            "id": "759943e1-d192-45c9-8562-671e6d1d788a",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "checks",
-            "scope": "CLASS",
-            "components": [],
-            "x": 568,
-            "y": 328,
-            "nestedPrefabs": []
+            "y": 309
         },
         {
             "type": "Container",
@@ -291,7 +227,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 635,
-            "y": 200,
+            "y": 356.1357590398048,
             "list": [
                 {
                     "type": "Text",
@@ -301,8 +237,7 @@
                     "components": [
                         "InputText"
                     ],
-                    "InputText.charlimit": 12,
-                    "InputText.inputfilter": "/^[A-Z0-9 ]*$/i",
+                    "y": -48,
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
@@ -319,7 +254,7 @@
                         "InputText"
                     ],
                     "InputText.ispassword": true,
-                    "y": 58,
+                    "y": 28.86422789629154,
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
@@ -330,36 +265,26 @@
             ]
         },
         {
-            "prefabId": "b1f49bb5-b7f5-4eb9-81d7-21aa125e487f",
-            "id": "71f5ebab-c88b-4516-881b-0ac2f1827416",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
+            "type": "Text",
+            "id": "af894383-ae7a-41e6-b3f5-5d03265d7154",
+            "label": "suggested",
+            "components": [
+                "LocalisedString"
             ],
-            "label": "waitPrompt",
-            "scope": "CLASS",
-            "components": [],
+            "LocalisedString.id": "registerKey",
             "x": 760,
-            "y": 480,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
-            "prefabId": "4a66782f-1b3a-41da-b0c3-3d9d3c24217c",
-            "id": "864618dc-5334-40ca-af06-f3fb878ca5b1",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
-            ],
-            "label": "savePrompt",
-            "scope": "CLASS",
-            "components": [],
-            "x": 760,
-            "y": 480,
-            "visible": false,
-            "nestedPrefabs": []
+            "y": 106,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "REGISTER YOUR BETA KEY",
+            "fixedWidth": 1200,
+            "align": "center",
+            "fontFamily": "CCComicrazy",
+            "fontSize": "40px",
+            "fontStyle": "italic",
+            "stroke": "#003366",
+            "strokeThickness": 10,
+            "shadow.color": "#000000ff"
         }
     ],
     "plainObjects": [],

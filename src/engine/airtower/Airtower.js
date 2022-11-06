@@ -245,6 +245,12 @@ export default class Airtower {
                     } else if (message == 'A#KO') {
                         this.activate.invalidCode()
                     }
+                } else if (this.register) {
+                    if (message == 'R#OK') {
+                        this.register.keyRegistered()
+                    } else if (message == 'R#KO') {
+                        this.register.invalidKey()
+                    }
                 } else if (message == 'KO') {
                     if (!this.lastLoginScene) return this.scene.start('Login')
 
