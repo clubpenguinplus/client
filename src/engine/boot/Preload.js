@@ -8,6 +8,7 @@ import Servers from '@scenes/interface/menus/servers/Servers'
 import Main from '@scenes/interface/game/main/Main'
 import IglooEdit from '@scenes/interface/game/iglooedit/IglooEdit'
 import Activate from '@scenes/interface/menus/activate/Activate'
+import Register from '@scenes/interface/menus/register/Register'
 
 export default class Preload extends BaseScene {
     preload() {
@@ -20,6 +21,7 @@ export default class Preload extends BaseScene {
         this.scene.add('Create', Create)
         this.scene.add('Login', Login)
         this.scene.add('Activate', Activate)
+        this.scene.add('Register', Register)
         this.scene.add('PenguinSelect', PenguinSelect)
         this.scene.add('PenguinLogin', PenguinLogin)
         this.scene.add('Servers', Servers)
@@ -170,6 +172,13 @@ export default class Preload extends BaseScene {
             let accDeets = queryString.split('=')[1]
             window.email = accDeets.substring(0, accDeets.indexOf('&'))
             window.activationCode = accDeets.substring(accDeets.indexOf('&') + 1, accDeets.length)
+            return
+        }
+        if (queryString.includes('register')) {
+            this.scene.start('Register')
+            let accDeets = queryString.split('=')[1]
+            window.username = accDeets.substring(0, accDeets.indexOf('&'))
+            window.betaKey = accDeets.substring(accDeets.indexOf('&') + 1, accDeets.length)
             return
         }
         if (this.airtower.isSavedPenguins) return this.scene.start('PenguinSelect')

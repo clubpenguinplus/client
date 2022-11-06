@@ -150,7 +150,7 @@ export default class Register extends BaseScene {
 
         // usernameText (components)
         const usernameTextLocalisedString = new LocalisedString(usernameText)
-        usernameTextLocalisedString.id = 'username'
+        usernameTextLocalisedString.id = 'pengName'
 
         // usernameInput (components)
         new InputText(usernameInput)
@@ -194,7 +194,7 @@ export default class Register extends BaseScene {
         this.interface.showLoading(this.crumbs.getString('registering'))
 
         this.airtower.connectLogin(false, false, () => {
-            this.airtower.sendXml(`<msg t='sys'><body action='register' r='0'><username>${email}</username><key>${betaKey}</key></body></msg>`)
+            this.airtower.sendXml(`<msg t='sys'><body action='register' r='0'><username>${username}</username><key>${betaKey}</key></body></msg>`)
         })
     }
 

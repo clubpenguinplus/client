@@ -184,7 +184,7 @@
             "components": [
                 "LocalisedString"
             ],
-            "LocalisedString.id": "username",
+            "LocalisedString.id": "pengName",
             "x": 620,
             "y": 309,
             "originX": 1,
