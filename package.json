@@ -1,9 +1,9 @@
 {
   "name": "clubpenguinplus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
-    "devclient": "webpack serve --host=0.0.0.0",
+    "devclient": "webpack serve --host=0.0.0.0 && cp CLIENT-PRE-COMMIT .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit && cp MEDIA-PRE-COMMIT client/.git/hooks/pre-commit && chmod +x client/.git/hooks/pre-commit",
     "editor": "phasereditor2d-launcher -project . -max-number-files 100000 -public",
     "build": "node ./utils/pre-build.js && webpack --mode production --env obfuscate=true",
     "build-crumbs": "node ./utils/build-crumbs.js",

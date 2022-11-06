@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ..
+
+npm run build-crumbs
+
+git add *
+
+exit 0
