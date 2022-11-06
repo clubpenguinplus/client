@@ -4,6 +4,8 @@ cd ..
 
 npm run build-crumbs
 
+cd client
+
 git add *
 
 exit 0
