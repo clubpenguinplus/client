@@ -15,8 +15,6 @@ export default class Preload extends BaseScene {
 
         this.load.on('progress', this.onProgress, this)
 
-        WebFont.load(this.crumbs.fonts)
-
         this.load.pack('preload', 'client/media/preload/preload-pack.json')
 
         this.scene.add('Create', Create)
@@ -87,7 +85,14 @@ export default class Preload extends BaseScene {
         window.updateScaling()
     }
 
-    create() {
+    async create() {
+        this.currentFont = 0
+        let fonts = await this.loadFonts()
+
+        console.log(fonts)
+
+        if (!fonts) return
+
         let parent = this.game.config.parent
 
         document.querySelector(`#${parent} canvas`).onclick = () => {
@@ -170,5 +175,30 @@ export default class Preload extends BaseScene {
         let frame = Math.round(progress * 58) + 1
         let prog = frame.toString().length == 1 ? `0${frame}` : frame
         this.interface.loading.bar.setFrame(`beam_00${prog}`)
+    }
+
+    async loadFonts() {
+        var font = this.crumbs.fonts[this.currentFont]
+        let f = await this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal')
+        console.log(f, this.currentFont, this.crumbs.fonts.length)
+        if (f) {
+            this.currentFont++
+            if (this.currentFont < this.crumbs.fonts.length) {
+                return await this.loadFonts()
+            } else {
+                return true
+            }
+        }
+    }
+
+    async loadFont(name, url, style = 'normal', weight = 'normal') {
+        var newFont = new FontFace(name, `url('${url}')`, {
+            style: style,
+            weight: weight,
+        })
+        let loaded = await newFont.load()
+        document.fonts.add(loaded)
+        console.log(`Loaded font ${name}`)
+        return true
     }
 }
