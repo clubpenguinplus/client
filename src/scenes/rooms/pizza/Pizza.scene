@@ -1,0 +1,629 @@
+{
+    "id": "875a8497-c650-4008-b7ca-1d0785e1a2de",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/pizza/pizza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pizza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c6c00cf7-4c9d-45e2-8034-52d1143a91c2",
+            "label": "pizzabg",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizzabg"
+            },
+            "x": -168,
+            "y": 980,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "1d796a28-a6e2-47b7-9b49-bd5b64edb623",
+            "label": "pizzatrondoor",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "pizzatrondoor",
+            "Button.hoverCallback": "() => this.onKitchenDoorOver();",
+            "Button.hoverOutCallback": "() => this.onKitchenDoorOut();",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Play Pizzatron",
+            "texture": {
+                "key": "pizza",
+                "frame": "pizzatrondoor"
+            },
+            "x": 335.69646888903833,
+            "y": 306.4688458388692,
+            "originX": 0.48021837658106786,
+            "originY": 0.9003115834408637
+        },
+        {
+            "type": "Image",
+            "id": "f9a73157-52ae-43b7-b266-4e0bb159099b",
+            "label": "plazadoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "plazadoor",
+            "Button.hoverCallback": "() => this.onPlazaDoorOver();",
+            "Button.hoverOutCallback": "() => this.onPlazaDoorOut();",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pizza",
+                "frame": "plazadoor"
+            },
+            "x": 767.637229710969,
+            "y": 309.62969070159545,
+            "originX": 0.5199195396147315,
+            "originY": 1.0148757815639158
+        },
+        {
+            "type": "Image",
+            "id": "17e67e1d-8467-4be4-844b-4af413f5f150",
+            "label": "plazadoorframe",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "plazadoorframe"
+            },
+            "x": 767,
+            "y": 180
+        },
+        {
+            "type": "Image",
+            "id": "9ea97caa-0e69-4987-82b4-99837ecf5d85",
+            "label": "hostdesk",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "hostdesk"
+            },
+            "x": 519.8212446701093,
+            "y": 322.68225372699186,
+            "originX": 0.2761225664178129,
+            "originY": 0.6751629609045678
+        },
+        {
+            "type": "Image",
+            "id": "2a4611bb-2913-478f-a47e-758093617502",
+            "label": "topbar",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "topbar"
+            },
+            "x": 377.6732452000135,
+            "y": 435.27757670394556,
+            "originX": 0.5572380151438793,
+            "originY": 0.3421656070478353
+        },
+        {
+            "type": "Sprite",
+            "id": "523bdb34-96ea-43b5-805a-1fdc2f5628b1",
+            "label": "pizzacashreg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizzacashregover0001"
+            },
+            "x": 335.78355549617237,
+            "y": 518.4012921022943,
+            "originX": 0.35783558110761077,
+            "originY": 1.768191599791271
+        },
+        {
+            "type": "Image",
+            "id": "b126ac56-2f0e-4f25-bd1d-64400502bf3b",
+            "label": "bottombar",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "bottombar"
+            },
+            "x": 316.7829284667969,
+            "y": 564.2176000073492,
+            "originX": 0.4992715088832618,
+            "originY": 0.6284675334523625
+        },
+        {
+            "type": "Image",
+            "id": "010e1f2f-ccc4-4ade-84b7-024dc49a44db",
+            "label": "leftleftchair",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "leftleftchair"
+            },
+            "x": 669.5590209960938,
+            "y": 452.38304520720015,
+            "originX": 0.46559009562668846,
+            "originY": 0.4257825591948193
+        },
+        {
+            "type": "Image",
+            "id": "dd8687e7-7c35-456f-b7ba-a89727f1ec25",
+            "label": "leftrightchair",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "leftrightchair"
+            },
+            "x": 827.7349840622186,
+            "y": 424.67702868800666,
+            "originX": 0.5573498406221858,
+            "originY": 0.43927663934121564
+        },
+        {
+            "type": "Image",
+            "id": "98faa75e-cf17-4913-9b65-f85f96df98e6",
+            "label": "lefttable",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "lefttable"
+            },
+            "x": 763.3035278320312,
+            "y": 507.20474142443624,
+            "originX": 0.5009572282338591,
+            "originY": 0.44251752300446573
+        },
+        {
+            "type": "Image",
+            "id": "b6dd01d0-4794-4078-9532-67d94926ff0f",
+            "label": "rightrightchair",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "rightrightchair"
+            },
+            "x": 1035.8530031875564,
+            "y": 485,
+            "originX": 0.4873956394236967
+        },
+        {
+            "type": "Image",
+            "id": "836110bb-0b18-4ded-b512-bf59c07ee313",
+            "label": "righttable",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "righttable"
+            },
+            "x": 1040,
+            "y": 522.4729522212508,
+            "originX": 0.46089783593941874,
+            "originY": 0.1447045449145579
+        },
+        {
+            "type": "Image",
+            "id": "ad125214-94a9-4c8d-abc9-d3038785ed5f",
+            "label": "rightleftchair",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "rightleftchair"
+            },
+            "x": 916.0289916992188,
+            "y": 590.6770133865499,
+            "originX": 0.5750371746458496,
+            "originY": 0.43666888765648254
+        },
+        {
+            "type": "Image",
+            "id": "9b32d1b3-e0b9-421d-8976-1453f6876a2c",
+            "label": "tablechairmoveto",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "tablechairmoveto"
+            },
+            "x": 921,
+            "y": 617,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "abed189c-6d08-45b4-88db-4fde9a26dc8a",
+            "label": "tablechairmoveto_1",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "tablechairmoveto"
+            },
+            "x": 1038,
+            "y": 503,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "e1b633fb-f74f-4966-b655-165e81bbcada",
+            "label": "tablechairmoveto_2",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "tablechairmoveto"
+            },
+            "x": 817,
+            "y": 447,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "d6362238-4d0c-476b-bf5f-d3928f0fccf6",
+            "label": "tablechairmoveto_3",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "tablechairmoveto"
+            },
+            "x": 678,
+            "y": 479,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "77a61cf0-0ad8-41db-9d05-51d6c7e28f50",
+            "label": "piano",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "piano"
+            },
+            "x": 1382,
+            "y": 250
+        },
+        {
+            "type": "Image",
+            "id": "372f68ec-5a3b-46c1-a4ee-986c2a503ec9",
+            "label": "mic",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "mic"
+            },
+            "x": 1331.0865289062997,
+            "y": 615.4975412112229,
+            "originX": 0.5434767226845313,
+            "originY": 1.079146176760191
+        },
+        {
+            "type": "Image",
+            "id": "1ee7a996-d7f5-42b7-9a73-37d3b55ba0fa",
+            "label": "stagespeaker",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "stagespeaker"
+            },
+            "x": 1465,
+            "y": 617.607061909084,
+            "originY": 0.6102783507760194
+        },
+        {
+            "type": "Image",
+            "id": "56d26296-44ec-4f42-a7c7-851dae469930",
+            "label": "pianocurtain",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pianocurtain"
+            },
+            "x": 1533.7802426792723,
+            "y": 663.5693675987734,
+            "originX": 0.9905857051568245,
+            "originY": 1.0050070729677631
+        },
+        {
+            "type": "Image",
+            "id": "51d5971f-c0ff-4617-a2ad-749945ac1a3a",
+            "label": "pianostool",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pianostool"
+            },
+            "x": 1282,
+            "y": 472
+        },
+        {
+            "type": "Image",
+            "id": "afe963aa-1345-4d16-b18f-e52773c35454",
+            "label": "topbarstool",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "topbarstool"
+            },
+            "x": 502,
+            "y": 408,
+            "originY": 0.08360821123994976
+        },
+        {
+            "type": "Image",
+            "id": "5c7cfb8b-002e-4b1e-8403-c074c34974d2",
+            "label": "midbarstool",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "midbarstool"
+            },
+            "x": 504,
+            "y": 491.1116457577148,
+            "originY": 0.08360821123994976
+        },
+        {
+            "type": "Image",
+            "id": "49398c96-eff2-44e5-bdfd-6e04d86db897",
+            "label": "bottombarstool",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "bottombarstool"
+            },
+            "x": 448,
+            "y": 567.1090493447447,
+            "originY": 0.09329174121111336
+        },
+        {
+            "type": "Image",
+            "id": "e2a40107-d3b1-4525-a0fb-c3632bb868fe",
+            "label": "pizzafg",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizzafg"
+            },
+            "x": 770.2605318729187,
+            "y": 787.662558047776,
+            "originX": 0.5394800555795032,
+            "originY": 0.724312198188327
+        },
+        {
+            "type": "Image",
+            "id": "2694b1ab-1c41-4cdc-b477-e519568a7227",
+            "label": "lowrighttablefront",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "lowrighttablefront"
+            },
+            "x": 1476,
+            "y": 949.01268975639,
+            "originY": 0.8973471901122606
+        },
+        {
+            "type": "Image",
+            "id": "5fa3cd85-a2cf-4c64-8f58-78a851108766",
+            "label": "frontlights",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "frontlights"
+            },
+            "x": 826.8154477478352,
+            "y": 974.5506960988384,
+            "originX": 0.502471144914401,
+            "originY": 1.008726366378036
+        },
+        {
+            "type": "Image",
+            "id": "3fdcdb50-8f14-454e-a64f-3a2a98002358",
+            "label": "stringlights",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "stringlights"
+            },
+            "x": 779,
+            "y": 32
+        },
+        {
+            "type": "Image",
+            "id": "8759661c-377e-48e2-a967-18dd7ca86f3c",
+            "label": "tables",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "tables"
+            },
+            "x": 856.7607061291246,
+            "y": 972.6145793515118,
+            "originX": 0.49690907073389756,
+            "originY": 1.013720613883312
+        },
+        {
+            "type": "Image",
+            "id": "494949c3-ed5f-4c5d-9a9a-2be0c06f592b",
+            "label": "barmoveto",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "barmoveto"
+            },
+            "x": 446,
+            "y": 586,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "62013018-c59a-45a4-bc84-2af95baa8d59",
+            "label": "barmoveto_1",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "barmoveto"
+            },
+            "x": 504,
+            "y": 512,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "14e3c737-e0c1-493f-aaae-86e9cbf315ae",
+            "label": "barmoveto_2",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "barmoveto"
+            },
+            "x": 502,
+            "y": 425,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "a700c4fe-a703-490a-8211-0f533180db6a",
+            "label": "kitchen_en",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "kitchen_en"
+            },
+            "x": 319,
+            "y": 92
+        },
+        {
+            "type": "Image",
+            "id": "ce902a3d-e067-4c8c-b301-1689bbd6c0b0",
+            "label": "pizzarail",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizzarail"
+            },
+            "x": 916.4400733146049,
+            "y": 294.9069843632877,
+            "originX": 0.43436085422063814,
+            "originY": 0.3912449447381145
+        },
+        {
+            "type": "Image",
+            "id": "60bd5716-bb9e-4635-9fec-ecafc0ac40c4",
+            "label": "barmoveto_3",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "pizza",
+                "frame": "barmoveto"
+            },
+            "x": 486.3199735277102,
+            "y": 307.4988098144531,
+            "originX": -0.2733335618083406,
+            "originY": 0.07029392289432579,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "457d5f89-93dc-474e-b305-d5a864cab33d",
+            "label": "sort",
+            "objectIds": [
+                "2a4611bb-2913-478f-a47e-758093617502",
+                "b126ac56-2f0e-4f25-bd1d-64400502bf3b",
+                "98faa75e-cf17-4913-9b65-f85f96df98e6",
+                "010e1f2f-ccc4-4ade-84b7-024dc49a44db",
+                "dd8687e7-7c35-456f-b7ba-a89727f1ec25",
+                "836110bb-0b18-4ded-b512-bf59c07ee313",
+                "ad125214-94a9-4c8d-abc9-d3038785ed5f",
+                "b6dd01d0-4794-4078-9532-67d94926ff0f",
+                "56d26296-44ec-4f42-a7c7-851dae469930",
+                "372f68ec-5a3b-46c1-a4ee-986c2a503ec9",
+                "afe963aa-1345-4d16-b18f-e52773c35454",
+                "5c7cfb8b-002e-4b1e-8403-c074c34974d2",
+                "49398c96-eff2-44e5-bdfd-6e04d86db897",
+                "e2a40107-d3b1-4525-a0fb-c3632bb868fe",
+                "5fa3cd85-a2cf-4c64-8f58-78a851108766",
+                "1ee7a996-d7f5-42b7-9a73-37d3b55ba0fa",
+                "8759661c-377e-48e2-a967-18dd7ca86f3c",
+                "2694b1ab-1c41-4cdc-b477-e519568a7227",
+                "ce902a3d-e067-4c8c-b301-1689bbd6c0b0",
+                "60bd5716-bb9e-4635-9fec-ecafc0ac40c4",
+                "14e3c737-e0c1-493f-aaae-86e9cbf315ae",
+                "62013018-c59a-45a4-bc84-2af95baa8d59",
+                "494949c3-ed5f-4c5d-9a9a-2be0c06f592b",
+                "d6362238-4d0c-476b-bf5f-d3928f0fccf6",
+                "e1b633fb-f74f-4966-b655-165e81bbcada",
+                "abed189c-6d08-45b4-88db-4fde9a26dc8a",
+                "9b32d1b3-e0b9-421d-8976-1453f6876a2c",
+                "523bdb34-96ea-43b5-805a-1fdc2f5628b1",
+                "9ea97caa-0e69-4987-82b4-99837ecf5d85"
+            ]
+        }
+    ]
+}
