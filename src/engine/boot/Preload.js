@@ -139,6 +139,7 @@ export default class Preload extends BaseScene {
         this.crumbs.puffles = crumbs.puffles
 
         this.crumbs.getString = (key) => {
+            key = key.toString()
             let result = this.crumbs.strings[key]
             if (key.includes(',')) {
                 result = this.crumbs.strings[key.split(',')[0]]
@@ -151,6 +152,7 @@ export default class Preload extends BaseScene {
         }
 
         this.crumbs.getError = (key) => {
+            key = key.toString()
             let result = this.crumbs.strings.errors[key]
             if (key.includes(',')) {
                 result = this.crumbs.strings.errors[key.split(',')[0]]

@@ -984,6 +984,41 @@ export default class Create extends BaseScene {
         return 'pt'
     }
 
+    invalidUsername(username) {
+        if (username.length < 3) {
+            return 34
+        } else if (username.length > 15) {
+            return 35
+        } else if (!username.match(/^[a-zA-Z0-9 ]+$/)) {
+            return 48
+        }
+        return false
+    }
+
+    invalidEmail(email) {
+        if (!email.includes('@')) {
+            return 45
+        } else if (!email.includes('.')) {
+            return 45
+        } else if (email.length > 50) {
+            return 46
+        } else if (email.includes('+')) {
+            return 47
+        }
+        return false
+    }
+
+    invalidPassword(password, username) {
+        if (password.length < 6) {
+            return 36
+        } else if (password.length > 50) {
+            return 37
+        } else if (password.includes(username)) {
+            return 44
+        }
+        return false
+    }
+
     create() {
         this.airtower.creation = this
         this._create()
@@ -1113,14 +1148,9 @@ export default class Create extends BaseScene {
     submitUsername() {
         this.username_text.__InputText.clickZone.visible = false
         this.chosenUsername = this.username_text.textContent
-        if (this.chosenUsername.length < 3) {
-            this.text.text = this.crumbs.getString('create-username-too-short')
-            this.username_text.__InputText.clickZone.visible = true
-            this.username_text.__InputText.clearText()
-            return
-        }
-        if (this.chosenUsername.length > 12) {
-            this.text.text = this.crumbs.getString('create-username-too-long')
+        let invalid = this.invalidUsername(this.chosenUsername)
+        if (invalid) {
+            this.text.text = this.crumbs.getError(invalid)
             this.username_text.__InputText.clickZone.visible = true
             this.username_text.__InputText.clearText()
             return
@@ -1160,8 +1190,9 @@ export default class Create extends BaseScene {
     }
 
     submitPassword() {
-        if (this.password_text.textContent.length < 6) {
-            this.text.text = this.crumbs.getString('create-password-too-short')
+        let invalid = this.invalidPassword(this.password_text.textContent)
+        if (invalid) {
+            this.text.text = this.crumbs.getError(invalid)
             this.password_text.__InputText.clearText()
             this.confirm_password_text.__InputText.clearText()
             return
@@ -1207,8 +1238,9 @@ export default class Create extends BaseScene {
     submitEmail() {
         this.email_text.__InputText.clickZone.visible = false
         this.chosenEmail = this.email_text.textContent
-        if (!this.chosenEmail.includes('@')) {
-            this.text.text = this.crumbs.getString('create-email-invalid')
+        let invalid = this.invalidEmail(this.chosenEmail)
+        if (invalid) {
+            this.text.text = this.crumbs.getError(invalid)
             this.email_text.__InputText.clickZone.visible = true
             this.email_text.__InputText.clearText()
             return
