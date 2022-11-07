@@ -2,7 +2,7 @@ import SpriteLoader from './SpriteLoader'
 
 export default class ItemLoader extends SpriteLoader {
     constructor(penguin) {
-        super(penguin.room.world)
+        super(penguin.room.shell)
 
         this.penguin = penguin
         this.equipped = this.penguin.items.equipped
