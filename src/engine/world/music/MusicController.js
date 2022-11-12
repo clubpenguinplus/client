@@ -5,6 +5,7 @@ export default class MusicController extends Phaser.Scene {
     create() {
         this.musicLoader = new MusicLoader(this)
         this.sfxLoader = new SfxLoader(this)
+        this.lastPlayed = {}
     }
 
     get musicMuted() {
@@ -59,8 +60,8 @@ export default class MusicController extends Phaser.Scene {
 
     playSfx(key, loop = false) {
         // Rate limit to 20 sounds per second
-        if (Date.now() - this.lastPlayed < 50) return
-        this.lastPlayed = Date.now()
+        if (this.lastPlayed[key] && Date.now() - this.lastPlayed[key] < 50) return
+        this.lastPlayed[key] = Date.now()
         this.sound.add(key, {loop: loop}).play()
     }
 
