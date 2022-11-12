@@ -57,14 +57,12 @@ const rooms = {
         x: 170,
         y: 450,
     },
-    /*
     220: {
         key: 'Lodge',
         scene: require('@rooms/lodge/Lodge').default,
-        x: 760,
-        y: 800,
+        x: 330,
+        y: 450,
     },
-    */
     221: {
         key: 'Attic',
         scene: require('@rooms/attic/Attic').default,

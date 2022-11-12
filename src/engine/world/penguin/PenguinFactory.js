@@ -35,8 +35,6 @@ export default class PenguinFactory {
     createPenguins(users, room) {
         let penguins = {}
 
-        if (!room.roomPhysics) return
-
         for (let user of users) {
             if (!(user.id in penguins)) {
                 penguins[user.id] = this.createPenguin(user, room)

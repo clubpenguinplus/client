@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/client/media/rooms/lodgeAttic/attic-pack.json"
+            "client/client/media/rooms/attic/attic-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Attic",
@@ -257,7 +257,11 @@
             "id": "e484bff0-be88-4677-8d31-c6be47a8d8c5",
             "label": "boxdimension",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBoxDimOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onBoxDimOut()",
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension"
@@ -266,6 +270,38 @@
             "y": 974,
             "originX": 0.47834338839237844,
             "originY": 1.011384788761301
+        },
+        {
+            "type": "Sprite",
+            "id": "a1345f1f-e326-4e94-8bbe-6dfe7f11ae55",
+            "label": "boxdimension-anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "boxdimension-hover-anim0001"
+            },
+            "x": 964,
+            "y": 994,
+            "originX": 0.49999999999999933,
+            "originY": 1.8995033355331223,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "0389399c-148e-406f-9410-7e5738e7f63f",
+            "label": "boxdimension-flaps",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "attic",
+                "frame": "boxdimension-hover-flaps"
+            },
+            "x": 981,
+            "y": 1017.9631945186845,
+            "originX": 0.47834338839237844,
+            "originY": 1.6725657121405844,
+            "visible": false
         },
         {
             "type": "Image",
@@ -277,7 +313,7 @@
                 "frame": "fg_right"
             },
             "x": 1679,
-            "y": 1154,
+            "y": 1153,
             "originX": 0.9977534832559671,
             "originY": 1.0049481046883484
         },
@@ -504,7 +540,9 @@
                 "4eb2140a-9ba7-48c8-839d-0f4408d1d438",
                 "2e3edcd1-a29a-4e08-819c-64830ee98385",
                 "8e3180dd-9ece-498e-9993-3ff75eac5598",
-                "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92"
+                "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92",
+                "a1345f1f-e326-4e94-8bbe-6dfe7f11ae55",
+                "0389399c-148e-406f-9410-7e5738e7f63f"
             ]
         }
     ]

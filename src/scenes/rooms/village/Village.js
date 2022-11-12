@@ -13,7 +13,7 @@ export default class Village extends RoomScene {
             dock: () => this.triggerRoom(800, 1200, 400),
             beach: () => this.triggerRoom(400, 360, 520),
             epf: () => this.triggerRoom(212, 700, 450),
-            lodge: () => this.triggerRoom(220, 300, 560),
+            lodge: () => this.triggerRoom(220, 330, 450),
             mountain: () => this.triggerRoom(230, 1036, 520),
             pufflewild: () => this.triggerRoom(130, 1036, 520),
         }

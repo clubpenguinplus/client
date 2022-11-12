@@ -12,13 +12,17 @@ export default class Attic extends RoomScene {
         this.horse
         /** @type {Phaser.GameObjects.Sprite} */
         this.boxdimension
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.boxdimension_anim
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.boxdimension_flaps
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
         this.sort
 
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            lodge: () => this.triggerRoom(220, 1146, 562),
+            lodge: () => this.triggerRoom(220, 1180, 360),
         }
         this.music = '884'
 
@@ -27,7 +31,7 @@ export default class Attic extends RoomScene {
 
     /** @returns {void} */
     _preload() {
-        this.load.pack('attic-pack', 'client/media/rooms/lodgeAttic/attic-pack.json')
+        this.load.pack('attic-pack', 'client/media/rooms/attic/attic-pack.json')
     }
 
     /** @returns {void} */
@@ -98,8 +102,18 @@ export default class Attic extends RoomScene {
         const boxdimension = this.add.sprite(966, 974, 'attic', 'boxdimension')
         boxdimension.setOrigin(0.47834338839237844, 1.011384788761301)
 
+        // boxdimension-anim
+        const boxdimension_anim = this.add.sprite(964, 994, 'attic', 'boxdimension-hover-anim0001')
+        boxdimension_anim.setOrigin(0.49999999999999933, 1.8995033355331223)
+        boxdimension_anim.visible = false
+
+        // boxdimension-flaps
+        const boxdimension_flaps = this.add.sprite(981, 1017.9631945186845, 'attic', 'boxdimension-hover-flaps')
+        boxdimension_flaps.setOrigin(0.47834338839237844, 1.6725657121405844)
+        boxdimension_flaps.visible = false
+
         // fg_right
-        const fg_right = this.add.image(1679, 1154, 'attic', 'fg_right')
+        const fg_right = this.add.image(1679, 1153, 'attic', 'fg_right')
         fg_right.setOrigin(0.9977534832559671, 1.0049481046883484)
 
         // frontpizzabox
@@ -151,11 +165,16 @@ export default class Attic extends RoomScene {
         const rightsoda = this.add.image(1270, 575, 'attic', 'rightsoda')
 
         // lists
-        const sort = [horse, fg_left, fg_right, plantable, brownchair, frontpizzabox, boxdimension, circlestoolmirror, leftstairhandle, rightstairhandle, rug, lamp, leftbluechair, findfourtable, leftsoda, book, apple, rightsoda]
+        const sort = [horse, fg_left, fg_right, plantable, brownchair, frontpizzabox, boxdimension, circlestoolmirror, leftstairhandle, rightstairhandle, rug, lamp, leftbluechair, findfourtable, leftsoda, book, apple, rightsoda, boxdimension_anim, boxdimension_flaps]
 
         // horse (components)
         const horseSimpleButton = new SimpleButton(horse)
         horseSimpleButton.hoverCallback = () => this.onHorseOver()
+
+        // boxdimension (components)
+        const boxdimensionSimpleButton = new SimpleButton(boxdimension)
+        boxdimensionSimpleButton.hoverCallback = () => this.onBoxDimOver()
+        boxdimensionSimpleButton.hoverOutCallback = () => this.onBoxDimOut()
 
         // findfourtable (components)
         const findfourtableButton = new Button(findfourtable)
@@ -179,12 +198,19 @@ export default class Attic extends RoomScene {
 
         this.horse = horse
         this.boxdimension = boxdimension
+        this.boxdimension_anim = boxdimension_anim
+        this.boxdimension_flaps = boxdimension_flaps
         this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
     /* START-USER-CODE */
+
+    create() {
+        super.create()
+        this.boxdimension_anim.play('attic-boxdimension')
+    }
 
     onHorseOver() {
         this.horse.play('attic-horse')
@@ -193,14 +219,17 @@ export default class Attic extends RoomScene {
 
     onBoxDimOver() {
         this.boxdimension.setFrame('boxdimension-hover')
+        this.boxdimension_anim.visible = true
+        this.boxdimension_flaps.visible = true
         this.shell.musicController.addSfx('attic-BoxOpen')
-        this.boxLoop = this.shell.musicController.addSfx('attic-BoxLoop')
-        this.boxLoop.play({loop: true})
+        this.shell.musicController.addSfx('attic-BoxLoop', true)
     }
 
     onBoxDimOut() {
         this.boxdimension.setFrame('boxdimension')
-        this.boxLoop.stop()
+        this.boxdimension_anim.visible = false
+        this.boxdimension_flaps.visible = false
+        this.shell.musicController.stopSfx('attic-BoxLoop')
         this.shell.musicController.addSfx('attic-BoxClose')
     }
     /* END-USER-CODE */
