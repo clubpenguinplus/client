@@ -1,9 +1,8 @@
-import SpriteLoader from './SpriteLoader'
-import PuffleLoader from './PuffleLoader'
+import PenguinSpriteFactory from '@engine/loaders/PenguinSpriteFactory'
 
-export default class PenguinLoader extends SpriteLoader {
+export default class PenguinLoader {
     constructor(shell) {
-        super(shell)
+        this.shell = shell
 
         this.nameStyle = {
             fontFamily: 'Burbank Small',
@@ -15,16 +14,16 @@ export default class PenguinLoader extends SpriteLoader {
     }
 
     loadPenguin(penguin) {
-        this.ploader = new PuffleLoader(penguin)
-
         this.addPenguin(penguin)
         this.addShadow(penguin)
         this.addInput(penguin)
+
+        penguin.playFrame(penguin.frame)
     }
 
     addPenguin(penguin) {
-        this.loadSprite(penguin, 'penguin_body', 1)
-        this.loadSprite(penguin, 'penguin', 2)
+        penguin.bodySprite = PenguinSpriteFactory.create(penguin, 'body', 1)
+        penguin.penguinSprite = PenguinSpriteFactory.create(penguin, 'penguin', 2)
     }
 
     addShadow(penguin) {
@@ -42,12 +41,7 @@ export default class PenguinLoader extends SpriteLoader {
     addName(penguin) {
         let x = penguin.x
         let y = penguin.y + 40
-        if (penguin.username_approved == 1) {
-            var nameTag = penguin.room.add.text(x, y, penguin.username, this.nameStyle)
-        }
-        if (penguin.username_approved != 1) {
-            var nameTag = penguin.room.add.text(x, y, 'P' + penguin.id, this.nameStyle)
-        }
+        let nameTag = penguin.room.add.text(x, y, penguin.username, this.nameStyle)
 
         nameTag.setOrigin(0.5)
         nameTag.depth = penguin.depth + 2000 // Keep nametag above everything else

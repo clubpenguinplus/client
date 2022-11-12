@@ -200,7 +200,6 @@ export default class Preload extends BaseScene {
         })
         let loaded = await newFont.load()
         document.fonts.add(loaded)
-        console.log(`Loaded font ${name}`)
         return true
     }
 }

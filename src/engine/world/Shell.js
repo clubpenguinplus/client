@@ -14,6 +14,8 @@ export default class Shell extends BaseScene {
         this.client
         this.room
 
+        this.secretFramesCache = {}
+
         this.muteMusic = localStorage.muteMusic == 'true' ? true : false
         this.muteAll = localStorage.muteAll == 'true' ? true : false
 
