@@ -262,13 +262,13 @@ export default class RoomScene extends BaseScene {
     mineForCoins() {
         if (this.miningTimeout) clearTimeout(this.miningTimeout)
         if (this.goes < 2) {
-            // Awards the player with 1-100 coins if they've tried to mine 1 or 2 times in the same spot (minimum 1 if the lights are off, minimum 50 if the lights are on)
+            // Awards the player with 1-100 coins if they've tried to mine 1 or 2 times in the same spot
             let coins = 1 + Math.round(Math.random() * 99)
             this.airtower.sendXt('u#mc', coins)
 
             this.miningTimeout = setTimeout(() => this.mineForCoins(), (10 + Math.round(Math.random() * 30)) * 1000)
         } else if (this.goes < 4) {
-            // Awards the player with 1-10 coins if they've tried to mine 3 or 4 times in the same spot (minimum 1 if the lights are off, minimum 5 if the lights are on)
+            // Awards the player with 1-10 coins if they've tried to mine 3 or 4 times in the same spot
             let coins = 1 + Math.round(Math.random() * 9)
             this.airtower.sendXt('u#mc', coins)
 
