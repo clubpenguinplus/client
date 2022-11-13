@@ -10,6 +10,14 @@ export default class Agentlobby extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.fishanim
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.channel
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.channel4_fire
+        /** @type {Phaser.GameObjects.Image} */
+        this.channel4_fg
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.changechannel
         /** @type {Phaser.GameObjects.Image} */
         this.hourhand
         /** @type {Phaser.GameObjects.Image} */
@@ -41,7 +49,7 @@ export default class Agentlobby extends RoomScene {
         this.add.image(749, 479, 'agentlobby', 'bg')
 
         // door
-        this.add.image(106, 328, 'agentlobby', 'door')
+        const door = this.add.image(106, 328, 'agentlobby', 'door')
 
         // doorext
         const doorext = this.add.image(263, 360, 'agentlobby', 'doorext')
@@ -130,17 +138,20 @@ export default class Agentlobby extends RoomScene {
         const fg = this.add.image(760, 1005.837117522818, 'agentlobby', 'fg')
         fg.setOrigin(0.5, 1.009290664201809)
 
-        // channel4_bg
-        this.add.image(464, 129, 'agentlobby', 'channel4_bg')
+        // channel
+        const channel = this.add.sprite(464, 129, 'agentlobby', 'channel1')
 
         // channel4_fire
-        this.add.image(464, 123, 'agentlobby', 'channel4_fire0001')
+        const channel4_fire = this.add.sprite(464, 123, 'agentlobby', 'channel4_fire0001')
+        channel4_fire.visible = false
 
         // channel4_fg
-        this.add.image(461, 145, 'agentlobby', 'channel4_fg')
+        const channel4_fg = this.add.image(461, 145, 'agentlobby', 'channel4_fg')
+        channel4_fg.visible = false
 
         // changechannel
-        this.add.image(461, 128, 'agentlobby', 'changechannel0001')
+        const changechannel = this.add.sprite(461, 128, 'agentlobby', 'changechannel0001')
+        changechannel.visible = false
 
         // tv
         this.add.image(475, 87, 'agentlobby', 'tv')
@@ -164,7 +175,23 @@ export default class Agentlobby extends RoomScene {
         // lists
         const sort = [fg, backinnit, backinnitbutnotback, desks, backchairfacefront_1, chairfaceright_1, chairfaceright, chairfacefront, chairfaceleft, otherbit, coolerfg, fishanim, coolerbg, deskfront, comfyarm, comfy, table, vending, potplant, railing, deskright, deskleft, backchairfacefront, backchairfaceleft, stairsanim0001, doorext, shifty, clockmid, minutehand, hourhand]
 
+        // door (components)
+        const doorButton = new Button(door)
+        doorButton.spriteName = 'door'
+        doorButton.activeFrame = false
+        const doorMoveTo = new MoveTo(door)
+        doorMoveTo.x = 168
+        doorMoveTo.y = 444
+
+        // channel (components)
+        const channelSimpleButton = new SimpleButton(channel)
+        channelSimpleButton.callback = () => this.toggleChannel()
+
         this.fishanim = fishanim
+        this.channel = channel
+        this.channel4_fire = channel4_fire
+        this.channel4_fg = channel4_fg
+        this.changechannel = changechannel
         this.hourhand = hourhand
         this.minutehand = minutehand
         this.shifty = shifty
@@ -181,6 +208,8 @@ export default class Agentlobby extends RoomScene {
         super.create()
         this.fishanim.play('agentlobby-fishanim')
         this.shifty.play('agentlobby-shifty')
+        this.channel4_fire.play('agentlobby-channel4_fire')
+        this.curChan = 1
 
         this.setClockTime()
     }
@@ -213,6 +242,38 @@ export default class Agentlobby extends RoomScene {
             num = '0' + num
         }
         return num
+    }
+
+    toggleChannel() {
+        switch (this.curChan) {
+            case 1:
+                this.curChan = 2
+                this.channel.setFrame('channel2')
+                break
+            case 2:
+                this.curChan = 3
+                this.channel.setFrame('channel3')
+                break
+            case 3:
+                this.curChan = 4
+                this.channel4_fg.visible = true
+                this.channel4_fire.visible = true
+                this.channel.setFrame('channel4_bg')
+                break
+            case 4:
+                this.curChan = 5
+                this.channel4_fg.visible = false
+                this.channel4_fire.visible = false
+                this.channel.play('agentlobby-channel5')
+                break
+            case 5:
+                this.curChan = 1
+                this.channel.stop('agentlobby-channel5')
+                this.channel.setFrame('channel1')
+                break
+        }
+
+        this.changechannel.play('agentlobby-changechannel')
     }
 
     /* END-USER-CODE */

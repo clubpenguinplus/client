@@ -55,7 +55,14 @@
             "type": "Image",
             "id": "07c8ba8c-e6d8-4a0e-8efb-b2be59100762",
             "label": "door",
-            "components": [],
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 168,
+            "MoveTo.y": 444,
             "texture": {
                 "key": "agentlobby",
                 "frame": "door"
@@ -400,52 +407,62 @@
             "originY": 1.009290664201809
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "8a44c9ed-7f3f-45df-b136-250b9d8e7bdd",
-            "label": "channel4_bg",
-            "components": [],
+            "label": "channel",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.toggleChannel()",
             "texture": {
                 "key": "agentlobby",
-                "frame": "channel4_bg"
+                "frame": "channel1"
             },
             "x": 464,
             "y": 129
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "b8c0b1f7-4e77-4a29-afbf-cfceb87fd7ae",
             "label": "channel4_fire",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "agentlobby",
                 "frame": "channel4_fire0001"
             },
             "x": 464,
-            "y": 123
+            "y": 123,
+            "visible": false
         },
         {
             "type": "Image",
             "id": "e5199054-c9a1-4cf3-a0f9-395c5c5a692d",
             "label": "channel4_fg",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "agentlobby",
                 "frame": "channel4_fg"
             },
             "x": 461,
-            "y": 145
+            "y": 145,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "2b4a1f55-14cd-4724-8503-dbe6f42d9aad",
             "label": "changechannel",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "agentlobby",
                 "frame": "changechannel0001"
             },
             "x": 461,
-            "y": 128
+            "y": 128,
+            "visible": false
         },
         {
             "type": "Image",
