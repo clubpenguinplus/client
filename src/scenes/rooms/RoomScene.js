@@ -1,4 +1,5 @@
 import BaseScene from '@scenes/base/BaseScene'
+import Coin from '@scenes/interface/game/mining/Coin'
 
 export default class RoomScene extends BaseScene {
     constructor(key) {
@@ -55,6 +56,13 @@ export default class RoomScene extends BaseScene {
         if (this.shell.client.roomsWaddled.length >= 20) {
             this.shell.client.stampEarned(15)
         }
+
+        if (this.mining_zone) {
+            this.miningZone = new Phaser.Geom.Ellipse(this.mining_zone.x, this.mining_zone.y, this.mining_zone.width, this.mining_zone.height)
+            this.coin = new Coin(this, 551.9600819184787, -49.143491473676306)
+            this.add.existing(this.coin)
+        }
+
         window.updateScaling()
     }
 
@@ -236,8 +244,50 @@ export default class RoomScene extends BaseScene {
         prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', 'dual', () => this.joinGame(minigame, id, isRuffle))
     }
 
-    turnOnMining() {
-        if (!this.mining) this.mining = true
+    isMiningSpot(x, y) {
+        if (!this.miningZone) return false
+        if (this.miningZone.contains(x, y)) {
+            // Checks if the player has moved, or is just staying in the same spot
+            if (!this.lastX || !this.lastY || this.lastX + 50 < x || this.lastX - 50 > x || this.lastY + 50 < y || this.lastY - 50 > y) {
+                this.lastX = x
+                this.lastY = y
+
+                // Choooses a random point in the next 10-40 seconds to make the player find coins
+                this.goes = 0
+                this.miningTimeout = setTimeout(() => this.mineForCoins(), (10 + Math.round(Math.random() * 30)) * 1000)
+            }
+        }
+    }
+
+    mineForCoins() {
+        if (this.miningTimeout) clearTimeout(this.miningTimeout)
+        if (this.goes < 2) {
+            // Awards the player with 1-100 coins if they've tried to mine 1 or 2 times in the same spot (minimum 1 if the lights are off, minimum 50 if the lights are on)
+            let coins = 1 + Math.round(Math.random() * 99)
+            this.airtower.sendXt('u#mc', coins)
+
+            this.miningTimeout = setTimeout(() => this.mineForCoins(), (10 + Math.round(Math.random() * 30)) * 1000)
+        } else if (this.goes < 4) {
+            // Awards the player with 1-10 coins if they've tried to mine 3 or 4 times in the same spot (minimum 1 if the lights are off, minimum 5 if the lights are on)
+            let coins = 1 + Math.round(Math.random() * 9)
+            this.airtower.sendXt('u#mc', coins)
+
+            this.miningTimeout = setTimeout(() => this.mineForCoins(), (10 + Math.round(Math.random() * 30)) * 1000)
+        } else {
+            // Stops the player from mining if they've tried to mine 5 times in the same spot
+        }
+
+        this.goes++
+    }
+
+    playCoin(coins) {
+        this.coin.x = this.client.penguin.x
+        this.coin.y = this.client.penguin.y - 130
+        this.coin.play(coins)
+    }
+
+    cancelMining() {
+        if (this.miningTimeout) clearTimeout(this.miningTimeout)
     }
 
     joinGame(minigame, id, isRuffle = true) {

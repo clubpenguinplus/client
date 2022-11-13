@@ -1,0 +1,1260 @@
+{
+    "id": "f8b7898a-6fc0-4995-82aa-dac2fef9af89",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "a577083b-0396-4122-8a7a-3680a9bfbd31",
+            "label": "container_1",
+            "components": [],
+            "x": 29,
+            "y": 52,
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "670e9570-bc65-4674-9708-28dc2f08713d",
+                    "label": "frame1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -18,
+                    "y": 8,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "c102a482-2f4e-4781-a2f3-ff4709b5a6a2",
+                            "label": "coin_0001",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0001"
+                            },
+                            "x": 18,
+                            "y": -5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "75371bcc-460e-4afb-93c9-388edf423dcb",
+                            "label": "text",
+                            "components": [],
+                            "x": 12,
+                            "y": 17,
+                            "scaleX": 0.6166445600432048,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "44de238c-630b-4ac4-8c86-c098b3c51bc0",
+                    "label": "frame2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -18,
+                    "y": 7,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "01ce9f18-4267-4a0b-bd7c-b40172631b5f",
+                            "label": "coin_0002",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0002"
+                            },
+                            "x": 18,
+                            "y": -5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c517e206-b589-4a32-9da5-0578f392417c",
+                            "label": "text_1",
+                            "components": [],
+                            "x": 12,
+                            "y": 17,
+                            "scaleX": 0.6166445600432048,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "61c7c8d1-a81d-4389-a516-055a66236185",
+                    "label": "frame3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": 6,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ae9bc5e8-b43d-407c-a7fb-80d5cb1425f3",
+                            "label": "coin_0003",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0003"
+                            },
+                            "x": 13,
+                            "y": -5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "aeac1e1d-f809-4d3f-b8e9-ccb04bc4cd5b",
+                            "label": "text_2",
+                            "components": [],
+                            "x": 5.5,
+                            "y": 14,
+                            "scaleX": 0.30957740295663727,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "14196091-7097-44ea-a599-dcddb684443a",
+                    "label": "frame4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": 7,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ee0430c0-7914-43c9-a3e8-c91aadd38c15",
+                            "label": "coin_0004",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0004"
+                            },
+                            "x": 13,
+                            "y": -5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "5b8d1437-ca2b-4e95-a1f2-09636ce9de87",
+                            "label": "text_3",
+                            "components": [],
+                            "x": 5.5,
+                            "y": 12,
+                            "scaleX": 0.30957740295663727,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "04c5cfd5-0f5c-4ee5-8aab-c33fa155eaa9",
+                    "label": "frame5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "coin_0005"
+                    },
+                    "y": 7,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "3c3514e9-3b15-4620-a97a-78d57aba0fa7",
+                    "label": "frame6",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "coin_0006"
+                    },
+                    "y": 6,
+                    "visible": false
+                },
+                {
+                    "type": "Container",
+                    "id": "f30354ca-5427-4096-856b-47d6069b12bb",
+                    "label": "frame7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -5,
+                    "y": 1,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "bd96759c-1364-4dc6-914e-4c868034ad76",
+                            "label": "coin_0007",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0007"
+                            },
+                            "x": 5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "11508fb2-f086-4a74-bd8a-c7e2fb40f5b3",
+                            "label": "text_4",
+                            "components": [],
+                            "x": 6.5,
+                            "y": 5,
+                            "scaleX": 0.2892037833316321,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "b419acb7-46de-4524-a21a-b441d0c6958d",
+                    "label": "frame8",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -5,
+                    "y": -4,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "cc2b9e62-21e8-42cc-b2e9-96a2e3952c53",
+                            "label": "coin_0008",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0008"
+                            },
+                            "x": 5,
+                            "y": 5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "ea535023-3e91-4d3d-bbfc-8c35e49c0d43",
+                            "label": "text_28",
+                            "components": [],
+                            "x": 6.5,
+                            "y": 6,
+                            "scaleX": 0.2892037833316321,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "4ba42fad-d06b-4de2-9e12-2500f5565bb2",
+                    "label": "frame9",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -8,
+                    "y": -5,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "fa00f771-528c-4897-8f2a-5dcdbbcda4e9",
+                            "label": "coin_0009",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0009"
+                            },
+                            "x": 8,
+                            "y": 8
+                        },
+                        {
+                            "type": "Text",
+                            "id": "533deed0-c77d-42f1-ae5b-d8cb87f082a4",
+                            "label": "text_6",
+                            "components": [],
+                            "x": 11,
+                            "y": 4,
+                            "scaleX": 0.5513511811365961,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "034f2b32-4161-45c3-994d-d7bc729d5796",
+                    "label": "frame10",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -8,
+                    "y": -11,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "8a59aad9-9b91-4fe7-bbcd-a5bb81d41b40",
+                            "label": "coin_0010",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0010"
+                            },
+                            "x": 8,
+                            "y": 12
+                        },
+                        {
+                            "type": "Text",
+                            "id": "80965a02-ccff-4313-95d5-80b58929fbcb",
+                            "label": "text_7",
+                            "components": [],
+                            "x": 11,
+                            "y": 5,
+                            "scaleX": 0.5513511811365961,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "2d809df3-4b39-46e5-a79b-2646648c2bb1",
+                    "label": "frame11",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": -14,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a3ffb5cf-e8ae-4798-b1f5-9a28a39634a8",
+                            "label": "coin_0011",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0011"
+                            },
+                            "x": 13,
+                            "y": 16
+                        },
+                        {
+                            "type": "Text",
+                            "id": "5463854a-56ac-4223-9977-38dfa5e31498",
+                            "label": "text_8",
+                            "components": [],
+                            "x": 15,
+                            "y": 6,
+                            "scaleX": 0.7019936124483478,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "d5ad468a-1fed-4ec8-8b01-6f0dff2ba840",
+                    "label": "frame12",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": -19,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "f4481d25-43cf-44bd-9c1f-586c3f03e234",
+                            "label": "coin_0012",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0012"
+                            },
+                            "x": 13,
+                            "y": 21
+                        },
+                        {
+                            "type": "Text",
+                            "id": "4a3d1739-4968-41e4-9a0e-203ff698c542",
+                            "label": "text_9",
+                            "components": [],
+                            "x": 15,
+                            "y": 7,
+                            "scaleX": 0.7019936124483478,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "bb3ae112-d7fe-4914-8779-f910d65869ec",
+                    "label": "frame13",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -22,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a3686efd-2678-41df-91be-81566944e3b3",
+                            "label": "coin_0013",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0013"
+                            },
+                            "x": 21,
+                            "y": 24
+                        },
+                        {
+                            "type": "Text",
+                            "id": "605fac84-105c-4af6-9f87-c186ab4e4c4c",
+                            "label": "text_10",
+                            "components": [],
+                            "x": 20,
+                            "y": 6,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "00d7bb49-414e-4a51-8edb-f2dea899d926",
+                    "label": "frame14",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3cd98cad-8a52-4c0d-825a-3cb659a82865",
+                            "label": "coin_0014",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0014"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c096ee1b-e25c-49c8-b78d-29f9ab01ab3b",
+                            "label": "text_27",
+                            "components": [],
+                            "x": 20,
+                            "y": 6,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "dd0cf73b-2b1d-4678-b338-f9425769a71a",
+                    "label": "frame15",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "4f3f4c25-5711-4d78-9dfa-4e0647c408cd",
+                            "label": "coin_0015",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0015"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "de2dc38d-4015-4dcc-9207-62842599ce50",
+                            "label": "text_26",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "da616343-2245-44c6-bd52-9c88d1ef4e20",
+                    "label": "frame16",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -22,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3fa934b6-4b73-4579-8842-6eee2bd4715c",
+                            "label": "coin_0016",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0016"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "2263b47a-d01e-40c3-ac38-dac5fa70e22d",
+                            "label": "text_25",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "50016e58-ea10-4511-892e-86ed5e3c4773",
+                    "label": "frame17",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -25,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "f0904e35-d944-42fb-a6e9-f9b9a569e595",
+                            "label": "coin_0017",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0017"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8c50dc7b-4a87-43d8-aaf4-fbac4721eb43",
+                            "label": "text_24",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "2e8ba0aa-deb1-4cee-b9aa-9ca63a55f91b",
+                    "label": "frame18",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -25,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "fb9c858c-70e8-49b7-9e66-88845bd8e386",
+                            "label": "coin_0018",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0018"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7868b14f-f666-450b-b61b-60a46627335c",
+                            "label": "text_23",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "919d79cd-e86b-4638-ac7c-ba3e51dffb1a",
+                    "label": "frame19",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3cf773fd-5bbb-4161-8b79-e244d3b9cbf8",
+                            "label": "coin_0019",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0019"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8f429e39-2393-4489-816d-3f5032d76f04",
+                            "label": "text_22",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "02600a04-e19a-4331-8732-e36d7f668147",
+                    "label": "frame20",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "c49c24e5-7c5a-4415-9887-8f4756e9ce5b",
+                            "label": "coin_0020",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0020"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "85334a7c-fc74-48c6-9f32-4548b82900eb",
+                            "label": "text_21",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "8fb32477-5df7-49e4-b28b-8d1249daa268",
+                    "label": "frame21",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "cb6bec15-7752-4b26-8701-8350d2ce6404",
+                            "label": "coin_0021",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0021"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "10119430-01bf-4968-989a-e1fe2e8092b2",
+                            "label": "text_20",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "7cd9ca57-299d-4b9b-b951-44843a217d4d",
+                    "label": "frame22",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1bc98d96-154b-4322-9f84-bfeaf3d2940a",
+                            "label": "coin_0022",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0022"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "07c6bbb9-91b6-4501-9381-5fe0b0af0d8e",
+                            "label": "text_19",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "00ebbd74-5b2b-4f18-8391-d6b6d48f31b2",
+                    "label": "frame23",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3df53944-af3b-4173-9d2c-0e9be2c4c5fd",
+                            "label": "coin_0023",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0023"
+                            },
+                            "x": 21,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d0bf396e-9493-48a2-9cef-054857e7bd2b",
+                            "label": "text_18",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "3b757af3-de1f-47d8-a562-6fd65f110770",
+                    "label": "frame24",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -22,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ed67d0c3-ace5-41c0-98d1-55f1f854dc19",
+                            "label": "coin_0024",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0024"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "5d4614eb-78e0-4a97-a67b-31923aa0838a",
+                            "label": "text_17",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "5d14bc93-32fd-491d-a218-1efeaa30a2a6",
+                    "label": "frame25",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -24,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "15c76ba5-dd30-4960-bc17-4878ef580565",
+                            "label": "coin_0025",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0025"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "47969a48-1db1-422d-b63b-9a5d7c5950e2",
+                            "label": "text_16",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "68fed12f-6117-4d8e-9ed2-05d048bb1c1c",
+                    "label": "frame26",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -23,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "b0631e64-51cc-4c48-be5a-03a05a2947a1",
+                            "label": "coin_0026",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0026"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9b541f06-272d-4efb-983d-19a30ed39fba",
+                            "label": "text_15",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "e3a3411f-d550-4e7e-a986-72bf49482f6e",
+                    "label": "frame27",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -22,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "58352a1a-c9b4-4b55-9341-c3e6f3b14cfe",
+                            "label": "coin_0027",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0027"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f845e36d-843e-4189-aa81-08822aa0ae87",
+                            "label": "text_14",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "d0b0824d-3c01-41d0-8966-769a08484c0d",
+                    "label": "frame28",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -22,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "f5943f3e-86cb-4cc5-b6c9-20559649e5ae",
+                            "label": "coin_0028",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0028"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3a2bf752-9e7a-495e-814d-3c9ae91c64b3",
+                            "label": "text_13",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "cbfb393a-79f8-4d57-9c9e-4a0cb7f999ea",
+                    "label": "frame29",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -20,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "59ea515c-e526-44ca-8762-6116ca480dcc",
+                            "label": "coin_0029",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0029"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "b4942e9e-2b5e-4bdc-8973-b93ab7ce43f2",
+                            "label": "text_12",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "alpha": 0.7,
+                            "alphaTopLeft": 0.7,
+                            "alphaTopRight": 0.7,
+                            "alphaBottomLeft": 0.7,
+                            "alphaBottomRight": 0.7,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "060a9485-a432-4203-bbb5-d38fa8198bef",
+                    "label": "frame30",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": -25,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "dd658b60-0eb4-4b1b-bd85-540706ad17a3",
+                            "label": "coin_0030",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "coin_0030"
+                            },
+                            "x": 21,
+                            "y": 27
+                        },
+                        {
+                            "type": "Text",
+                            "id": "abf40c00-40b6-42ca-8249-629aa1c867c5",
+                            "label": "text_11",
+                            "components": [],
+                            "x": 20,
+                            "y": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "alpha": 0.5,
+                            "alphaTopLeft": 0.5,
+                            "alphaTopRight": 0.5,
+                            "alphaBottomLeft": 0.5,
+                            "alphaBottomRight": 0.5,
+                            "text": "100",
+                            "fixedWidth": 50,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontStyle": "italic",
+                            "stroke": "#9c6f2fff",
+                            "strokeThickness": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5ef3624c-4e93-464d-9eeb-22cd5ef4b9ac",
+            "label": "texts",
+            "objectIds": [
+                "abf40c00-40b6-42ca-8249-629aa1c867c5",
+                "b4942e9e-2b5e-4bdc-8973-b93ab7ce43f2",
+                "3a2bf752-9e7a-495e-814d-3c9ae91c64b3",
+                "f845e36d-843e-4189-aa81-08822aa0ae87",
+                "9b541f06-272d-4efb-983d-19a30ed39fba",
+                "5d4614eb-78e0-4a97-a67b-31923aa0838a",
+                "47969a48-1db1-422d-b63b-9a5d7c5950e2",
+                "d0bf396e-9493-48a2-9cef-054857e7bd2b",
+                "07c6bbb9-91b6-4501-9381-5fe0b0af0d8e",
+                "10119430-01bf-4968-989a-e1fe2e8092b2",
+                "85334a7c-fc74-48c6-9f32-4548b82900eb",
+                "8f429e39-2393-4489-816d-3f5032d76f04",
+                "7868b14f-f666-450b-b61b-60a46627335c",
+                "8c50dc7b-4a87-43d8-aaf4-fbac4721eb43",
+                "2263b47a-d01e-40c3-ac38-dac5fa70e22d",
+                "de2dc38d-4015-4dcc-9207-62842599ce50",
+                "c096ee1b-e25c-49c8-b78d-29f9ab01ab3b",
+                "605fac84-105c-4af6-9f87-c186ab4e4c4c",
+                "4a3d1739-4968-41e4-9a0e-203ff698c542",
+                "5463854a-56ac-4223-9977-38dfa5e31498",
+                "80965a02-ccff-4313-95d5-80b58929fbcb",
+                "533deed0-c77d-42f1-ae5b-d8cb87f082a4",
+                "11508fb2-f086-4a74-bd8a-c7e2fb40f5b3",
+                "5b8d1437-ca2b-4e95-a1f2-09636ce9de87",
+                "aeac1e1d-f809-4d3f-b8e9-ccb04bc4cd5b",
+                "c517e206-b589-4a32-9da5-0578f392417c",
+                "75371bcc-460e-4afb-93c9-388edf423dcb"
+            ]
+        }
+    ]
+}

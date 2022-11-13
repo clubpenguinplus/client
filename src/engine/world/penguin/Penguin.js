@@ -137,6 +137,12 @@ export default class Penguin extends BaseContainer {
         // Get correct frame id
         let frame = [25, 26].includes(_frame) ? this.getSecretFrame(_frame) : _frame
 
+        if (this.room.miningZone && this.isClient && frame == 36) {
+            this.room.isMiningSpot(this.x, this.y)
+        } else {
+            this.room.cancelMining()
+        }
+
         this.createAnims(frame, frame != _frame)
 
         this.playAnims(frame)

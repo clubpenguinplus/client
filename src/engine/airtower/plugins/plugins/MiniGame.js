@@ -36,7 +36,7 @@ export default class MiniGame extends Plugin {
         this.client.coins = args[0]
         let prompt = this.shell.game.scene.getScene('InterfaceController').prompt
         if (args[2] == 'NaN') {
-            args.coinsEarned = 0
+            args[2] = 0
         }
         prompt.showCoins(args[1], args[2])
     }
