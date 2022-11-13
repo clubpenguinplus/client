@@ -1,38 +1,73 @@
 name: Client CI
 
 on:
-  push:
-    branches: [master]
+    push:
+        branches: [master]
 
 jobs:
-  client-ci:
-    runs-on: ubuntu-latest
+    client-ci:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "16"
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: '16'
 
-      - name: Checkout repository and submodules
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.MEDIA_KEY }}
-          submodules: recursive
+            - name: Checkout repository and submodules
+              uses: actions/checkout@v2
+              with:
+                  token: ${{ secrets.MEDIA_KEY }}
+                  submodules: recursive
 
-      - name: Installing
-        run: npm install
+            - name: Installing
+              run: npm install
 
-      - name: Build
-        run: npm run build
+            - name: Build
+              run: npm run build
 
-      - name: Push static content to CDN
-        uses: nebula-dev/spaces-sync-action@master
-        env:
-          SOURCE_DIR: "./client/"
-          SPACE_REGION: "nyc3"
-          SPACE_NAME: ${{ secrets.SPACE_NAME }}
-          SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
-          SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
+            - name: Push static content to CDN
+              uses: Club-Penguin-Plus-Official/spaces-sync-action@master
+              env:
+                  SOURCE_DIR: './client/'
+                  SPACE_REGION: 'nyc3'
+                  SPACE_NAME: ${{ secrets.SPACE_NAME }}
+                  SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
+                  SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
+                  FILE_PATH: 'client'
+
+    create-archive:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Install Zip
+              uses: montudor/action-zip@v1
+
+            - name: Checkout repository and submodules
+              uses: actions/checkout@v2
+              with:
+                  token: ${{ secrets.MEDIA_KEY }}
+                  submodules: recursive
+                  path: client
+
+            - name: Checkout server
+              uses: actions/checkout@v2
+              with:
+                  name: Club-Penguin-Plus-Official/server
+                  token: ${{ secrets.MEDIA_KEY }}
+                  path: server
+
+            - name: Zip files
+              run: zip -qq -r archive/archive.zip server client
+
+            - name: Upload archive
+              uses: Club-Penguin-Plus-Official/spaces-sync-action@master
+              env:
+                  SOURCE_DIR: './archive/'
+                  SPACE_REGION: 'nyc3'
+                  SPACE_NAME: ${{ secrets.SPACE_NAME }}
+                  SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
+                  SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
+                  FILE_PATH: 'archive'
