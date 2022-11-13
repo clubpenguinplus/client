@@ -62,7 +62,7 @@ jobs:
               id: package-version
               uses: martinbeentjes/npm-get-version-action@main
               with:
-                  PACKAGE_JSON_PATH: 'client'
+                  path: 'client'
 
             - name: Create archive folder
               run: mkdir -p archive
