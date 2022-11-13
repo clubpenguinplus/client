@@ -121,18 +121,18 @@ export default class Lodge extends RoomScene {
         const atticlight = this.add.image(1421, 204, 'lodge', 'atticlight')
 
         // fireplace
-        const fireplace = this.add.container(1434, 392)
+        const fireplace = this.add.container(1434, 537.0177069602676)
 
         // fireplace_lower
-        const fireplace_lower = this.add.sprite(-0.6740658385836014, 198.66703726374038, 'lodge', 'fireplace_lower')
+        const fireplace_lower = this.add.sprite(-0.6740658385836014, 53.64933030347282, 'lodge', 'fireplace_lower')
         fireplace.add(fireplace_lower)
 
         // fire
-        const fire = this.add.sprite(-1.6740658385836014, 165.66703726374038, 'lodge', 'fireanim0001')
+        const fire = this.add.sprite(-1.6740658385836014, 20.649330303472823, 'lodge', 'fireanim0001')
         fireplace.add(fire)
 
         // fireplace_upper
-        const fireplace_upper = this.add.sprite(40.3259341614164, -75.33296273625962, 'lodge', 'fireplace_upper')
+        const fireplace_upper = this.add.sprite(40.3259341614164, -220.35066969652718, 'lodge', 'fireplace_upper')
         fireplace.add(fireplace_upper)
 
         // greenchair
