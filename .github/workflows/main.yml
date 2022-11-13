@@ -29,20 +29,19 @@ jobs:
               run: npm run build
 
             - name: Push static content to CDN
-              uses: Club-Penguin-Plus-Official/spaces-sync-action@master
+              uses: nebula-dev/spaces-sync-action@master
               env:
                   SOURCE_DIR: './client/'
                   SPACE_REGION: 'nyc3'
                   SPACE_NAME: ${{ secrets.SPACE_NAME }}
                   SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
                   SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
-                  FILE_PATH: 'client'
 
     create-archive:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Install Zip
+            - name: Install zip
               uses: montudor/action-zip@v1
 
             - name: Checkout repository and submodules
@@ -59,8 +58,14 @@ jobs:
                   token: ${{ secrets.MEDIA_KEY }}
                   path: server
 
+            - name: get-npm-version
+              uses: martinbeentjes/npm-get-version-action@main
+
+            - name: Create archive folder
+              run: mkdir -p archive
+
             - name: Zip files
-              run: zip -qq -r archive/archive.zip server client
+              run: zip -qq -r archive/${{ steps.package-version.outputs.current-version}}.zip server client
 
             - name: Upload archive
               uses: Club-Penguin-Plus-Official/spaces-sync-action@master
