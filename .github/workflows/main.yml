@@ -51,6 +51,9 @@ jobs:
                   submodules: recursive
                   path: client
 
+            - name: Remove .git folder to reduce file size
+              run: rm -rf client/.git
+
             - name: Checkout server
               uses: actions/checkout@v2
               with:
