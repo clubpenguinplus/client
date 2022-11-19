@@ -513,6 +513,34 @@
             "y": 219,
             "scaleX": 0.4368656034442943,
             "scaleY": 0.4368656034442943
+        },
+        {
+            "type": "Ellipse",
+            "id": "d65fbf79-1275-4ef1-a59e-74fd85fa028e",
+            "label": "ellipse_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 438,
+            "y": 678,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "7182f337-8eff-4b0c-ad7f-c91ca4b9ffc2",
+            "label": "ellipse",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 419,
+            "y": 788,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
         }
     ],
     "plainObjects": [],

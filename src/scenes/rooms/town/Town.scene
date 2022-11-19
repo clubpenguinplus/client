@@ -321,6 +321,62 @@
             },
             "x": 770,
             "y": 266
+        },
+        {
+            "type": "Ellipse",
+            "id": "382be17b-3832-4383-b0f7-4eaefe7fc571",
+            "label": "ellipse_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 567,
+            "y": 456,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "06c2fa8a-b265-44ae-a3e2-c8b8dbce420c",
+            "label": "ellipse",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 695,
+            "y": 449,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "4707fea7-9c6e-498d-805e-a6143858ad1d",
+            "label": "ellipse_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 294,
+            "y": 501,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "aa3b0ad8-3346-4024-af65-37e07bc1ed54",
+            "label": "ellipse_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 321,
+            "y": 477,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
         }
     ],
     "plainObjects": [],

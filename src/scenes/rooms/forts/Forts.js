@@ -8,6 +8,12 @@ export default class Forts extends RoomScene {
     constructor() {
         super('Forts')
 
+        /** @type {Phaser.GameObjects.Text} */
+        this.day
+        /** @type {Phaser.GameObjects.Text} */
+        this.am_pm
+        /** @type {Phaser.GameObjects.Text} */
+        this.clockTime
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container>} */
         this.sort
 
@@ -96,6 +102,32 @@ export default class Forts extends RoomScene {
         const fort5 = this.add.image(-16.033557870140385, -35.28884335827149, 'forts', 'fort5')
         container_2.add(fort5)
 
+        // day
+        const day = this.add.text(1113, 233, '', {})
+        day.scaleX = 0.7423339656191315
+        day.angle = 4
+        day.setOrigin(0.5, 0.5)
+        day.text = 'WEDNESDAY'
+        day.setStyle({color: '#ffffffff', fontFamily: 'CCFaceFront', fontSize: '20px', fontStyle: 'italic'})
+        day.setPadding({left: 5, right: 5})
+
+        // am_pm
+        const am_pm = this.add.text(1176, 153, '', {})
+        am_pm.scaleX = 0.7185407046195333
+        am_pm.angle = 1
+        am_pm.setOrigin(0.5, 0.5)
+        am_pm.text = 'AM'
+        am_pm.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'CPLCD', fontSize: '50px'})
+
+        // clockTime
+        const clockTime = this.add.text(1097, 170, '', {})
+        clockTime.scaleX = 0.6363895309486298
+        clockTime.angle = 1
+        clockTime.setOrigin(0.5, 0.5)
+        clockTime.text = '12:59'
+        clockTime.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'cplcd', fontSize: '90px'})
+        clockTime.setPadding({left: 5, right: 5})
+
         // lists
         const sort = [snowman, fort2, fort3, container_1, fort6, fort7, fort10]
 
@@ -110,12 +142,51 @@ export default class Forts extends RoomScene {
         flag2_0004Animation.start = 4
         flag2_0004Animation.end = 16
 
+        this.day = day
+        this.am_pm = am_pm
+        this.clockTime = clockTime
         this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
     /* START-USER-CODE */
+
+    create() {
+        super.create()
+
+        var now = new Date(Date.now() - 1000 * 60 * 60 * 8)
+        var timeInHours = now.getUTCHours()
+        if (timeInHours == 12) {
+            this.am_pm.text = 'PM'
+        } else if (timeInHours > 12) {
+            timeInHours = timeInHours - 12
+            this.am_pm.text = 'PM'
+        }
+        var timeInMinutes = now.getUTCMinutes()
+        if (timeInMinutes < 10) {
+            this.clockTime.text = timeInHours + ':0' + timeInMinutes
+        } else {
+            this.clockTime.text = timeInHours + ':' + timeInMinutes
+        }
+        var day = now.getUTCDay()
+
+        if (day == 1) {
+            this.day.text = 'MONDAY'
+        } else if (day == 2) {
+            this.day.text = 'TUESDAY'
+        } else if (day == 3) {
+            this.day.text = 'WEDNESDAY'
+        } else if (day == 4) {
+            this.day.text = 'THURSDAY'
+        } else if (day == 5) {
+            this.day.text = 'FRIDAY'
+        } else if (day == 6) {
+            this.day.text = 'SATURDAY'
+        } else {
+            this.day.text = 'SUNDAY'
+        }
+    }
 
     /* END-USER-CODE */
 }

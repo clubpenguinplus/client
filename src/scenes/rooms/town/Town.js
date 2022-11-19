@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite} from '@components/components'
+import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Seat} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -108,6 +108,18 @@ export default class Town extends RoomScene {
         // localisation
         const localisation = this.add.image(770, 266, 'town', 'localised-en')
 
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(567, 456, 40, 40)
+
+        // ellipse
+        const ellipse = this.add.ellipse(695, 449, 40, 40)
+
+        // ellipse_2
+        const ellipse_2 = this.add.ellipse(294, 501, 40, 40)
+
+        // ellipse_3
+        const ellipse_3 = this.add.ellipse(321, 477, 40, 40)
+
         // lists
         const sort = [bench_arm, left_chair, right_chair, table]
 
@@ -141,6 +153,22 @@ export default class Town extends RoomScene {
 
         // localisation (components)
         new LocalisedSprite(localisation)
+
+        // ellipse_1 (components)
+        const ellipse_1Seat = new Seat(ellipse_1)
+        ellipse_1Seat.direction = 'southeast'
+
+        // ellipse (components)
+        const ellipseSeat = new Seat(ellipse)
+        ellipseSeat.direction = 'southwest'
+
+        // ellipse_2 (components)
+        const ellipse_2Seat = new Seat(ellipse_2)
+        ellipse_2Seat.direction = 'southeast'
+
+        // ellipse_3 (components)
+        const ellipse_3Seat = new Seat(ellipse_3)
+        ellipse_3Seat.direction = 'southeast'
 
         this.dc_door = dc_door
         this.coffee_door = coffee_door

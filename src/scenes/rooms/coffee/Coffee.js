@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Animation} from '@components/components'
+import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Animation, Seat} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -187,6 +187,12 @@ export default class Coffee extends RoomScene {
         clubpenguintimes_en.scaleX = 0.4368656034442943
         clubpenguintimes_en.scaleY = 0.4368656034442943
 
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(438, 678, 40, 40)
+
+        // ellipse
+        const ellipse = this.add.ellipse(419, 788, 40, 40)
+
         // lists
         const sort = [coffeefg, coffeetable, coffeecouch_left_arm, coffee_footrest, cashregister_coffee, rail, tikihut, smoothiesmashsign, smoothiesmashtext_en, smoothiebartop, smoothiebarbottom, fgfruit, fruitbox, smoothiemachine, cashregister_smoothie, smoothiechair, fruittable, bottomcoffeechairarm, bottomcoffee, coffeebagbarrel]
 
@@ -224,6 +230,14 @@ export default class Coffee extends RoomScene {
         bookroomdoorSimpleButton.hoverCallback = () => this.onBookRoomOver()
         bookroomdoorSimpleButton.hoverOutCallback = () => this.onBookRoomOut()
         new MoveTo(bookroomdoor)
+
+        // ellipse_1 (components)
+        const ellipse_1Seat = new Seat(ellipse_1)
+        ellipse_1Seat.direction = 'west'
+
+        // ellipse (components)
+        const ellipseSeat = new Seat(ellipse)
+        ellipseSeat.direction = 'west'
 
         this.coffeebagbarrel = coffeebagbarrel
         this.smoothiemachine = smoothiemachine

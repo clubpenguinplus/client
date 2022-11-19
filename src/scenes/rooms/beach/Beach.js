@@ -20,6 +20,8 @@ export default class Beach extends RoomScene {
             light: () => this.triggerRoom(410, 456, 492),
             migrator: () => null,
         }
+
+        this.music = '582'
         /* END-USER-CTR-CODE */
     }
 

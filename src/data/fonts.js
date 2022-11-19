@@ -8,6 +8,7 @@ const fonts = [
     {name: 'Burbank Small', weight: 'bold', url: 'https://media.cpplus.pw/client/fonts/BurbankSmallBold.woff2'},
     {name: 'CCComiccrazy', url: 'https://media.cpplus.pw/client/fonts/CCComiccrazyRoman.woff2'},
     {name: 'CCFaceFront', weight: 'bold', style: 'italic', url: 'https://media.cpplus.pw/client/fonts/CCFaceFrontBoldItalic.woff2'},
+    {name: 'CPLCD', url: 'https://media.cpplus.pw/client/fonts/CPLCD.woff2'},
 ]
 
 export default fonts

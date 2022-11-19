@@ -12,7 +12,7 @@ export default class Mall extends RoomScene {
 
         this.roomTriggers = {}
 
-        this.music = '1160'
+        this.music = '749'
 
         /* END-USER-CTR-CODE */
     }
