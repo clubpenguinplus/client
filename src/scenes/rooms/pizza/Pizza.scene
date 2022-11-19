@@ -228,86 +228,6 @@
         },
         {
             "type": "Image",
-            "id": "9b32d1b3-e0b9-421d-8976-1453f6876a2c",
-            "label": "tablechairmoveto",
-            "scope": "CLASS",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "tablechairmoveto"
-            },
-            "x": 921,
-            "y": 617,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
-            "id": "abed189c-6d08-45b4-88db-4fde9a26dc8a",
-            "label": "tablechairmoveto_1",
-            "scope": "CLASS",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "tablechairmoveto"
-            },
-            "x": 1038,
-            "y": 503,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
-            "id": "e1b633fb-f74f-4966-b655-165e81bbcada",
-            "label": "tablechairmoveto_2",
-            "scope": "CLASS",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "tablechairmoveto"
-            },
-            "x": 817,
-            "y": 447,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
-            "id": "d6362238-4d0c-476b-bf5f-d3928f0fccf6",
-            "label": "tablechairmoveto_3",
-            "scope": "CLASS",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "tablechairmoveto"
-            },
-            "x": 678,
-            "y": 479,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
             "id": "77a61cf0-0ad8-41db-9d05-51d6c7e28f50",
             "label": "piano",
             "components": [],
@@ -479,63 +399,6 @@
         },
         {
             "type": "Image",
-            "id": "494949c3-ed5f-4c5d-9a9a-2be0c06f592b",
-            "label": "barmoveto",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "barmoveto"
-            },
-            "x": 446,
-            "y": 586,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
-            "id": "62013018-c59a-45a4-bc84-2af95baa8d59",
-            "label": "barmoveto_1",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "barmoveto"
-            },
-            "x": 504,
-            "y": 512,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
-            "id": "14e3c737-e0c1-493f-aaae-86e9cbf315ae",
-            "label": "barmoveto_2",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "pizza",
-                "frame": "barmoveto"
-            },
-            "x": 502,
-            "y": 425,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
-            "type": "Image",
             "id": "a700c4fe-a703-490a-8211-0f533180db6a",
             "label": "kitchen_en",
             "components": [],
@@ -580,6 +443,103 @@
             "alphaTopRight": 0,
             "alphaBottomLeft": 0,
             "alphaBottomRight": 0
+        },
+        {
+            "type": "Ellipse",
+            "id": "9690a6ff-1b8a-4a9b-a60a-cd63b0758b3b",
+            "label": "moveto",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 502,
+            "y": 426,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "a21ed27a-a5bb-4e1e-beb1-dcc9ecbf71af",
+            "label": "moveto_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 504,
+            "y": 509,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "8810e235-6dae-4e54-9d69-751503bdb91d",
+            "label": "moveto_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 449,
+            "y": 584,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "42ef8906-20c2-48eb-8225-04078ff2d112",
+            "label": "moveto_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 676,
+            "y": 476,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "5cbc3b50-09f9-4f96-b1f9-83c70d39beef",
+            "label": "moveto_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 817,
+            "y": 447,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "1e39bfdb-6d90-48d7-89b8-3b800ace49a8",
+            "label": "moveto_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 916,
+            "y": 612,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "37dcc2dc-7e32-4bf6-9c09-b9b59394a250",
+            "label": "moveto_6",
+            "components": [
+                "Seat"
+            ],
+            "x": 1036,
+            "y": 502,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
         }
     ],
     "plainObjects": [],
@@ -614,13 +574,6 @@
                 "2694b1ab-1c41-4cdc-b477-e519568a7227",
                 "ce902a3d-e067-4c8c-b301-1689bbd6c0b0",
                 "60bd5716-bb9e-4635-9fec-ecafc0ac40c4",
-                "14e3c737-e0c1-493f-aaae-86e9cbf315ae",
-                "62013018-c59a-45a4-bc84-2af95baa8d59",
-                "494949c3-ed5f-4c5d-9a9a-2be0c06f592b",
-                "d6362238-4d0c-476b-bf5f-d3928f0fccf6",
-                "e1b633fb-f74f-4966-b655-165e81bbcada",
-                "abed189c-6d08-45b4-88db-4fde9a26dc8a",
-                "9b32d1b3-e0b9-421d-8976-1453f6876a2c",
                 "523bdb34-96ea-43b5-805a-1fdc2f5628b1",
                 "9ea97caa-0e69-4987-82b4-99837ecf5d85"
             ]

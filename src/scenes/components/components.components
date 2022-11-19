@@ -485,6 +485,23 @@
             "baseClass": "",
             "gameObjectType": "Phaser.GameObjects.Sprite",
             "properties": []
+        },
+        {
+            "name": "Seat",
+            "baseClass": "EventComponent",
+            "gameObjectType": "Phaser.GameObjects.Ellipse",
+            "properties": [
+                {
+                    "name": "direction",
+                    "label": "Sit direction",
+                    "tooltip": "The direction the player will sit when clicking on this seat (south, southeast, northwest, etc)",
+                    "defValue": "south",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                }
+            ]
         }
     ],
     "meta": {

@@ -23,30 +23,26 @@ export default class LocalisedSprite {
         return gameObject['__LocalisedSprite']
     }
 
+    /* START-USER-CODE */
+
     get language() {
-        if (window.location.pathname.includes('en')) {
-            return 'en'
-        } else if (window.location.pathname.includes('es')) {
-            return 'es'
+        for (let lang of ['en', 'es', 'pt']) {
+            if (window.location.pathname.includes(lang)) {
+                return lang
+            }
         }
-        return 'pt'
+        return 'en'
     }
 
     getFrame() {
         let currentFrame = this.gameObject.frame.name
-        if (currentFrame.includes('-en')) {
-            return currentFrame.replace('-en', `-${this.language}`)
-        } else if (currentFrame.includes('-es')) {
-            return currentFrame.replace('-es', `-${this.language}`)
-        } else if (currentFrame.includes('-pt')) {
-            return currentFrame.replace('-pt', `-${this.language}`)
+        for (let lang of ['-en', '-es', '-pt']) {
+            if (currentFrame.includes(lang)) {
+                return currentFrame.replace(lang, `-${this.language}`)
+            }
         }
         return currentFrame
     }
-
-    /* START-USER-CODE */
-
-    // Write your code here.
 
     /* END-USER-CODE */
 }

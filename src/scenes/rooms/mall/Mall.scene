@@ -390,10 +390,10 @@
                 "key": "mall",
                 "frame": "chair-pointing-br"
             },
-            "x": 1179.1119181660138,
-            "y": 797.1678772490206,
-            "originX": 0.6439991649593242,
-            "originY": 0.6628298249924666
+            "x": 1166.9304295983175,
+            "y": 763.4344985135499,
+            "originX": 0.5196980539568238,
+            "originY": 0.40334206190559074
         },
         {
             "type": "Image",
@@ -404,10 +404,10 @@
                 "key": "mall",
                 "frame": "chair-pointing-br"
             },
-            "x": 934.8783569335938,
-            "y": 791.8734741210938,
-            "originX": 0.6007994154715272,
-            "originY": 0.6682574858255494
+            "x": 914.0609780405067,
+            "y": 762.5061003254889,
+            "originX": 0.38837718186859815,
+            "originY": 0.4423546104747428
         },
         {
             "type": "Image",
@@ -445,10 +445,10 @@
                 "key": "mall",
                 "frame": "left-table"
             },
-            "x": 1000.0608286418951,
-            "y": 822.4014526988249,
-            "originX": 0.4696983352263504,
-            "originY": 0.693904219074999
+            "x": 1002.9909619323308,
+            "y": 788.6993504841565,
+            "originX": 0.48767462135937734,
+            "originY": 0.4366363991738102
         },
         {
             "type": "Image",
@@ -549,7 +549,8 @@
             "id": "99280b7f-19db-4ada-8133-9b844b0da893",
             "label": "costumes",
             "components": [
-                "Button"
+                "Button",
+                "LocalisedSprite"
             ],
             "Button.spriteName": "costumes",
             "Button.activeFrame": false,
@@ -572,10 +573,10 @@
                 "key": "mall",
                 "frame": "fish-stand"
             },
-            "x": 770.4835107635396,
-            "y": 287.231850500529,
+            "x": 770.4835205078125,
+            "y": 314.21016114597984,
             "originX": 0.5065352897072228,
-            "originY": 0.7409092036261504
+            "originY": 0.90245602461396
         },
         {
             "type": "Image",
@@ -708,10 +709,10 @@
                 "key": "mall",
                 "frame": "right-table"
             },
-            "x": 1492.5888081833987,
-            "y": 669.3747109691476,
-            "originX": 0.4913423814932434,
-            "originY": 0.08749777668575076
+            "x": 1493.0393841975344,
+            "y": 697.3067494463579,
+            "originX": 0.49410628953026453,
+            "originY": 0.3023597353175905
         },
         {
             "type": "Image",
@@ -775,7 +776,8 @@
             "id": "2d4ae33e-58ce-47ae-af3c-61ce1a41c318",
             "label": "costume_trunk_en",
             "components": [
-                "Button"
+                "Button",
+                "LocalisedSprite"
             ],
             "Button.spriteName": "costume-trunk",
             "Button.activeFrame": false,
@@ -787,6 +789,98 @@
             "x": 1430,
             "y": 1196.9759297031899,
             "originY": 3.2650079138484642
+        },
+        {
+            "type": "Ellipse",
+            "id": "52b6b5d1-e67a-46ff-ae08-16929bb2da96",
+            "label": "ellipse_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 933,
+            "y": 778,
+            "fillColor": "#ffffff",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "32c4b398-a3f9-45ac-9beb-9da9a3fa036d",
+            "label": "ellipse",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 1056,
+            "y": 856,
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "5d854f72-23a8-4840-8267-f6452a58e5b5",
+            "label": "ellipse_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1176,
+            "y": 788,
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "df4b128f-4db4-4eaa-b3c8-7de4bfc7c488",
+            "label": "ellipse_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1217,
+            "y": 860,
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "6ee7f606-5f6f-4089-b7a9-01a240066b1e",
+            "label": "ellipse_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 1342,
+            "y": 871,
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "3e46af49-9ff0-4581-8a4c-0d9b02c81aa7",
+            "label": "ellipse_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1415,
+            "y": 760,
+            "width": 40,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "1136d316-b665-415d-b416-9d96b9bf9416",
+            "label": "ellipse_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1446,
+            "y": 681,
+            "width": 40,
+            "height": 40
         }
     ],
     "plainObjects": [],

@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite} from '@components/components'
+import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Seat} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -132,12 +132,12 @@ export default class Mall extends RoomScene {
         chair_pointing_bottom.setOrigin(0.38369298214823694, 0.44724516573452755)
 
         // chair_pointing_br
-        const chair_pointing_br = this.add.image(1179.1119181660138, 797.1678772490206, 'mall', 'chair-pointing-br')
-        chair_pointing_br.setOrigin(0.6439991649593242, 0.6628298249924666)
+        const chair_pointing_br = this.add.image(1166.9304295983175, 763.4344985135499, 'mall', 'chair-pointing-br')
+        chair_pointing_br.setOrigin(0.5196980539568238, 0.40334206190559074)
 
         // chair_pointing_br_1
-        const chair_pointing_br_1 = this.add.image(934.8783569335938, 791.8734741210938, 'mall', 'chair-pointing-br')
-        chair_pointing_br_1.setOrigin(0.6007994154715272, 0.6682574858255494)
+        const chair_pointing_br_1 = this.add.image(914.0609780405067, 762.5061003254889, 'mall', 'chair-pointing-br')
+        chair_pointing_br_1.setOrigin(0.38837718186859815, 0.4423546104747428)
 
         // chair_pointing_right
         const chair_pointing_right = this.add.image(1418.6447672664056, 747.0656982007835, 'mall', 'chair-pointing-right')
@@ -148,8 +148,8 @@ export default class Mall extends RoomScene {
         chair_pointing_right_back.setOrigin(0.5, 0.5391997726833714)
 
         // left_table
-        const left_table = this.add.image(1000.0608286418951, 822.4014526988249, 'mall', 'left-table')
-        left_table.setOrigin(0.4696983352263504, 0.693904219074999)
+        const left_table = this.add.image(1002.9909619323308, 788.6993504841565, 'mall', 'left-table')
+        left_table.setOrigin(0.48767462135937734, 0.4366363991738102)
 
         // chair_pointing_tl
         const chair_pointing_tl = this.add.image(1048.060816455566, 843.6545074514646, 'mall', 'chair-pointing-tl')
@@ -183,8 +183,8 @@ export default class Mall extends RoomScene {
         costumes.setOrigin(0.3865125462173723, 0.5699764537157709)
 
         // fish_stand
-        const fish_stand = this.add.image(770.4835107635396, 287.231850500529, 'mall', 'fish-stand')
-        fish_stand.setOrigin(0.5065352897072228, 0.7409092036261504)
+        const fish_stand = this.add.image(770.4835205078125, 314.21016114597984, 'mall', 'fish-stand')
+        fish_stand.setOrigin(0.5065352897072228, 0.90245602461396)
 
         // food_display_br
         const food_display_br = this.add.image(1332, 620, 'mall', 'food-display-br')
@@ -221,8 +221,8 @@ export default class Mall extends RoomScene {
         right_middle_pillar.setOrigin(0.4037822780996908, 0.8766545428097522)
 
         // right_table
-        const right_table = this.add.image(1492.5888081833987, 669.3747109691476, 'mall', 'right-table')
-        right_table.setOrigin(0.4913423814932434, 0.08749777668575076)
+        const right_table = this.add.image(1493.0393841975344, 697.3067494463579, 'mall', 'right-table')
+        right_table.setOrigin(0.49410628953026453, 0.3023597353175905)
 
         // tree_pillar_br
         const tree_pillar_br = this.add.image(1520.8738884287548, 831.3338260936, 'mall', 'tree-pillar-br')
@@ -244,6 +244,27 @@ export default class Mall extends RoomScene {
         const costume_trunk_en = this.add.image(1430, 1196.9759297031899, 'mall', 'costume-trunk-en')
         costume_trunk_en.setOrigin(0.5, 3.2650079138484642)
 
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(933, 778, 40, 40)
+
+        // ellipse
+        const ellipse = this.add.ellipse(1056, 856, 40, 40)
+
+        // ellipse_2
+        const ellipse_2 = this.add.ellipse(1176, 788, 40, 40)
+
+        // ellipse_3
+        const ellipse_3 = this.add.ellipse(1217, 860, 40, 40)
+
+        // ellipse_4
+        const ellipse_4 = this.add.ellipse(1342, 871, 40, 40)
+
+        // ellipse_5
+        const ellipse_5 = this.add.ellipse(1415, 760, 40, 40)
+
+        // ellipse_6
+        const ellipse_6 = this.add.ellipse(1446, 681, 40, 40)
+
         // lists
         const sort = [another_one, antiques, big_pillar_top_right, bottom_right_table, bottom_right, cashreg_br, cashreg_tr, right_middle_stuff, chair_pointing_bottom, chair_pointing_br, chair_pointing_br_1, chair_pointing_right, chair_pointing_right_back, left_table, chair_pointing_tl, middle_table, chair_pointing_tl_1, chair_pointing_tl_back, chair_pointing_tl_back_1, chair_pointing_tr, chair_pointing_tr_back, costumes, fish_stand, food_display_br, hats_costumes, left_middle_pillar, pedestal, pillar_bl, pillar_cashreg_tl, pillar_clothes_tl, pillar_top_right, right_middle_pillar, right_table, tree_pillar_br, foreground, fragile_sign_en, anvils_sign_en, costume_trunk_en]
 
@@ -257,6 +278,7 @@ export default class Mall extends RoomScene {
         costumesButton.spriteName = 'costumes'
         costumesButton.activeFrame = false
         costumesButton.isLocalised = true
+        new LocalisedSprite(costumes)
 
         // fragile_sign_en (components)
         new LocalisedSprite(fragile_sign_en)
@@ -269,6 +291,35 @@ export default class Mall extends RoomScene {
         costume_trunk_enButton.spriteName = 'costume-trunk'
         costume_trunk_enButton.activeFrame = false
         costume_trunk_enButton.isLocalised = true
+        new LocalisedSprite(costume_trunk_en)
+
+        // ellipse_1 (components)
+        const ellipse_1Seat = new Seat(ellipse_1)
+        ellipse_1Seat.direction = 'southeast'
+
+        // ellipse (components)
+        const ellipseSeat = new Seat(ellipse)
+        ellipseSeat.direction = 'northwest'
+
+        // ellipse_2 (components)
+        const ellipse_2Seat = new Seat(ellipse_2)
+        ellipse_2Seat.direction = 'southeast'
+
+        // ellipse_3 (components)
+        const ellipse_3Seat = new Seat(ellipse_3)
+        ellipse_3Seat.direction = 'northeast'
+
+        // ellipse_4 (components)
+        const ellipse_4Seat = new Seat(ellipse_4)
+        ellipse_4Seat.direction = 'northwest'
+
+        // ellipse_5 (components)
+        const ellipse_5Seat = new Seat(ellipse_5)
+        ellipse_5Seat.direction = 'northeast'
+
+        // ellipse_6 (components)
+        const ellipse_6Seat = new Seat(ellipse_6)
+        ellipse_6Seat.direction = 'southeast'
 
         this.le_one = le_one
         this.le_two = le_two

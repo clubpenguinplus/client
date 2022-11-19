@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Animation} from '@components/components'
+import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Animation, Seat} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -10,14 +10,6 @@ export default class Pizza extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.pizzacashreg
-        /** @type {Phaser.GameObjects.Image} */
-        this.tablechairmoveto
-        /** @type {Phaser.GameObjects.Image} */
-        this.tablechairmoveto_1
-        /** @type {Phaser.GameObjects.Image} */
-        this.tablechairmoveto_2
-        /** @type {Phaser.GameObjects.Image} */
-        this.tablechairmoveto_3
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort
 
@@ -93,34 +85,6 @@ export default class Pizza extends RoomScene {
         const rightleftchair = this.add.image(916.0289916992188, 590.6770133865499, 'pizza', 'rightleftchair')
         rightleftchair.setOrigin(0.5750371746458496, 0.43666888765648254)
 
-        // tablechairmoveto
-        const tablechairmoveto = this.add.image(921, 617, 'pizza', 'tablechairmoveto')
-        tablechairmoveto.alphaTopLeft = 0
-        tablechairmoveto.alphaTopRight = 0
-        tablechairmoveto.alphaBottomLeft = 0
-        tablechairmoveto.alphaBottomRight = 0
-
-        // tablechairmoveto_1
-        const tablechairmoveto_1 = this.add.image(1038, 503, 'pizza', 'tablechairmoveto')
-        tablechairmoveto_1.alphaTopLeft = 0
-        tablechairmoveto_1.alphaTopRight = 0
-        tablechairmoveto_1.alphaBottomLeft = 0
-        tablechairmoveto_1.alphaBottomRight = 0
-
-        // tablechairmoveto_2
-        const tablechairmoveto_2 = this.add.image(817, 447, 'pizza', 'tablechairmoveto')
-        tablechairmoveto_2.alphaTopLeft = 0
-        tablechairmoveto_2.alphaTopRight = 0
-        tablechairmoveto_2.alphaBottomLeft = 0
-        tablechairmoveto_2.alphaBottomRight = 0
-
-        // tablechairmoveto_3
-        const tablechairmoveto_3 = this.add.image(678, 479, 'pizza', 'tablechairmoveto')
-        tablechairmoveto_3.alphaTopLeft = 0
-        tablechairmoveto_3.alphaTopRight = 0
-        tablechairmoveto_3.alphaBottomLeft = 0
-        tablechairmoveto_3.alphaBottomRight = 0
-
         // piano
         this.add.image(1382, 250, 'pizza', 'piano')
 
@@ -170,27 +134,6 @@ export default class Pizza extends RoomScene {
         const tables = this.add.image(856.7607061291246, 972.6145793515118, 'pizza', 'tables')
         tables.setOrigin(0.49690907073389756, 1.013720613883312)
 
-        // barmoveto
-        const barmoveto = this.add.image(446, 586, 'pizza', 'barmoveto')
-        barmoveto.alphaTopLeft = 0
-        barmoveto.alphaTopRight = 0
-        barmoveto.alphaBottomLeft = 0
-        barmoveto.alphaBottomRight = 0
-
-        // barmoveto_1
-        const barmoveto_1 = this.add.image(504, 512, 'pizza', 'barmoveto')
-        barmoveto_1.alphaTopLeft = 0
-        barmoveto_1.alphaTopRight = 0
-        barmoveto_1.alphaBottomLeft = 0
-        barmoveto_1.alphaBottomRight = 0
-
-        // barmoveto_2
-        const barmoveto_2 = this.add.image(502, 425, 'pizza', 'barmoveto')
-        barmoveto_2.alphaTopLeft = 0
-        barmoveto_2.alphaTopRight = 0
-        barmoveto_2.alphaBottomLeft = 0
-        barmoveto_2.alphaBottomRight = 0
-
         // kitchen_en
         this.add.image(319, 92, 'pizza', 'kitchen_en')
 
@@ -206,8 +149,29 @@ export default class Pizza extends RoomScene {
         barmoveto_3.alphaBottomLeft = 0
         barmoveto_3.alphaBottomRight = 0
 
+        // moveto
+        const moveto = this.add.ellipse(502, 426, 70, 50)
+
+        // moveto_1
+        const moveto_1 = this.add.ellipse(504, 509, 70, 50)
+
+        // moveto_2
+        const moveto_2 = this.add.ellipse(449, 584, 70, 50)
+
+        // moveto_3
+        const moveto_3 = this.add.ellipse(676, 476, 70, 50)
+
+        // moveto_4
+        const moveto_4 = this.add.ellipse(817, 447, 70, 50)
+
+        // moveto_5
+        const moveto_5 = this.add.ellipse(916, 612, 70, 50)
+
+        // moveto_6
+        const moveto_6 = this.add.ellipse(1036, 502, 70, 50)
+
         // lists
-        const sort = [topbar, bottombar, lefttable, leftleftchair, leftrightchair, righttable, rightleftchair, rightrightchair, pianocurtain, mic, topbarstool, midbarstool, bottombarstool, pizzafg, frontlights, stagespeaker, tables, lowrighttablefront, pizzarail, barmoveto_3, barmoveto_2, barmoveto_1, barmoveto, tablechairmoveto_3, tablechairmoveto_2, tablechairmoveto_1, tablechairmoveto, pizzacashreg, hostdesk]
+        const sort = [topbar, bottombar, lefttable, leftleftchair, leftrightchair, righttable, rightleftchair, rightrightchair, pianocurtain, mic, topbarstool, midbarstool, bottombarstool, pizzafg, frontlights, stagespeaker, tables, lowrighttablefront, pizzarail, barmoveto_3, pizzacashreg, hostdesk]
 
         // pizzatrondoor (components)
         const pizzatrondoorButton = new Button(pizzatrondoor)
@@ -227,43 +191,38 @@ export default class Pizza extends RoomScene {
         plazadoorButton.activeFrame = false
         new MoveTo(plazadoor)
 
-        // tablechairmoveto (components)
-        new MoveTo(tablechairmoveto)
-        new SimpleButton(tablechairmoveto)
-
-        // tablechairmoveto_1 (components)
-        new MoveTo(tablechairmoveto_1)
-        new SimpleButton(tablechairmoveto_1)
-
-        // tablechairmoveto_2 (components)
-        new MoveTo(tablechairmoveto_2)
-        new SimpleButton(tablechairmoveto_2)
-
-        // tablechairmoveto_3 (components)
-        new MoveTo(tablechairmoveto_3)
-        new SimpleButton(tablechairmoveto_3)
-
-        // barmoveto (components)
-        new MoveTo(barmoveto)
-        new SimpleButton(barmoveto)
-
-        // barmoveto_1 (components)
-        new MoveTo(barmoveto_1)
-        new SimpleButton(barmoveto_1)
-
-        // barmoveto_2 (components)
-        new MoveTo(barmoveto_2)
-        new SimpleButton(barmoveto_2)
-
         // barmoveto_3 (components)
         new MoveTo(barmoveto_3)
         new SimpleButton(barmoveto_3)
 
+        // moveto (components)
+        const movetoSeat = new Seat(moveto)
+        movetoSeat.direction = 'west'
+
+        // moveto_1 (components)
+        const moveto_1Seat = new Seat(moveto_1)
+        moveto_1Seat.direction = 'west'
+
+        // moveto_2 (components)
+        const moveto_2Seat = new Seat(moveto_2)
+        moveto_2Seat.direction = 'west'
+
+        // moveto_3 (components)
+        const moveto_3Seat = new Seat(moveto_3)
+        moveto_3Seat.direction = 'southeast'
+
+        // moveto_4 (components)
+        const moveto_4Seat = new Seat(moveto_4)
+        moveto_4Seat.direction = 'southwest'
+
+        // moveto_5 (components)
+        const moveto_5Seat = new Seat(moveto_5)
+        moveto_5Seat.direction = 'east'
+
+        // moveto_6 (components)
+        new Seat(moveto_6)
+
         this.pizzacashreg = pizzacashreg
-        this.tablechairmoveto = tablechairmoveto
-        this.tablechairmoveto_1 = tablechairmoveto_1
-        this.tablechairmoveto_2 = tablechairmoveto_2
-        this.tablechairmoveto_3 = tablechairmoveto_3
         this.sort = sort
 
         this.events.emit('scene-awake')

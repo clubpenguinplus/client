@@ -23,12 +23,12 @@ export default class Shell extends BaseScene {
     }
 
     get language() {
-        if (window.location.pathname.includes('en')) {
-            return 'en'
-        } else if (window.location.pathname.includes('es')) {
-            return 'es'
+        for (let lang of ['en', 'es', 'pt']) {
+            if (window.location.pathname.includes(lang)) {
+                return lang
+            }
         }
-        return 'pt'
+        return 'en'
     }
 
     create() {

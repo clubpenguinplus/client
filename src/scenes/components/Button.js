@@ -45,18 +45,35 @@ export default class Button extends SimpleButton {
         return this.gameObject.texture.key
     }
 
+    get language() {
+        for (let lang of ['en', 'es', 'pt']) {
+            if (window.location.pathname.includes(lang)) {
+                return lang
+            }
+        }
+        return 'en'
+    }
+
     start() {
         super.start()
         this.gameObject.on('pointerdown', (pointer) => this.onDown(pointer))
     }
 
     onOver() {
-        this.gameObject.setTexture(this.textureKey, `${this.spriteName}-hover`, false, false)
+        if (this.isLocalised) {
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}-hover`, false, false)
+        } else {
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-hover`, false, false)
+        }
         super.onOver()
     }
 
     onOut() {
-        this.gameObject.setTexture(this.textureKey, this.spriteName, false, false)
+        if (this.isLocalised) {
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}`, false, false)
+        } else {
+            this.gameObject.setTexture(this.textureKey, this.spriteName, false, false)
+        }
         super.onOut()
     }
 
@@ -65,10 +82,10 @@ export default class Button extends SimpleButton {
             return
         }
 
-        if (this.activeFrame) {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-active`, false, false)
+        if (this.isLocalised) {
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}-${this.activeFrame ? 'active' : 'hover'}`, false, false)
         } else {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-hover`, false, false)
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.activeFrame ? 'active' : 'hover'}`, false, false)
         }
     }
 
@@ -77,10 +94,10 @@ export default class Button extends SimpleButton {
             return
         }
 
-        if (this.activeFrame) {
-            this.gameObject.setTexture(this.textureKey, this.spriteName, false, false)
+        if (this.isLocalised) {
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}${this.activeFrame ? '' : '-hover'}`, false, false)
         } else {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-hover`, false, false)
+            this.gameObject.setTexture(this.textureKey, `${this.spriteName}${this.activeFrame ? '' : '-hover'}`, false, false)
         }
 
         super.onUp(pointer)
