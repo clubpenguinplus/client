@@ -170,10 +170,17 @@
             "originY": 0.7012878750867257
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "2cd3bbe8-13de-4efd-ad5d-ef28f7db8c90",
-            "label": "tower_0001",
-            "components": [],
+            "label": "tower",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "tower_",
+            "Animation.end": 12,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
             "texture": {
                 "key": "forts",
                 "frame": "tower_0001"
@@ -182,10 +189,17 @@
             "y": 199
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "dc647f6e-f987-482b-87f3-bdfec3dcb50f",
-            "label": "target_0001",
-            "components": [],
+            "label": "target",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "target_",
+            "Animation.end": 12,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
             "texture": {
                 "key": "forts",
                 "frame": "target_0001"
@@ -264,7 +278,7 @@
             "components": [],
             "x": 1113,
             "y": 233,
-            "scaleX": 0.7423339656191315,
+            "scaleX": 0.8,
             "angle": 4,
             "originX": 0.5,
             "originY": 0.5,
@@ -272,7 +286,7 @@
             "paddingLeft": 5,
             "paddingRight": 5,
             "fontFamily": "CCFaceFront",
-            "fontSize": "20px",
+            "fontSize": "18px",
             "fontStyle": "italic",
             "color": "#ffffffff"
         },
@@ -282,16 +296,14 @@
             "label": "am_pm",
             "scope": "CLASS",
             "components": [],
-            "x": 1176,
-            "y": 153,
-            "scaleX": 0.7185407046195333,
-            "angle": 1,
+            "x": 1177,
+            "y": 149,
             "originX": 0.5,
             "originY": 0.5,
             "text": "AM",
             "align": "right",
             "fontFamily": "CPLCD",
-            "fontSize": "50px",
+            "fontSize": "35px",
             "color": "#DCE8FD"
         },
         {
@@ -303,7 +315,6 @@
             "x": 1097,
             "y": 170,
             "scaleX": 0.6363895309486298,
-            "angle": 1,
             "originX": 0.5,
             "originY": 0.5,
             "text": "12:59",
@@ -313,6 +324,18 @@
             "fontFamily": "cplcd",
             "fontSize": "90px",
             "color": "#DCE8FD"
+        },
+        {
+            "type": "Ellipse",
+            "id": "0a21f770-d3e7-4508-bdd3-e77e670776e4",
+            "label": "hitbox",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1304,
+            "y": 147,
+            "fillColor": "#ffffff",
+            "width": 60,
+            "height": 70
         }
     ],
     "plainObjects": [],

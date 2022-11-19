@@ -8,12 +8,18 @@ export default class Forts extends RoomScene {
     constructor() {
         super('Forts')
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.tower
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.target
         /** @type {Phaser.GameObjects.Text} */
         this.day
         /** @type {Phaser.GameObjects.Text} */
         this.am_pm
         /** @type {Phaser.GameObjects.Text} */
         this.clockTime
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.hitbox
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container>} */
         this.sort
 
@@ -78,11 +84,11 @@ export default class Forts extends RoomScene {
         const snowman = this.add.image(1373.196460639223, 738.0884840194266, 'forts', 'snowman')
         snowman.setOrigin(0.4903035518237796, 0.7012878750867257)
 
-        // tower_0001
-        this.add.image(1193, 199, 'forts', 'tower_0001')
+        // tower
+        const tower = this.add.sprite(1193, 199, 'forts', 'tower_0001')
 
-        // target_0001
-        this.add.image(1300, 181, 'forts', 'target_0001')
+        // target
+        const target = this.add.sprite(1300, 181, 'forts', 'target_0001')
 
         // text
         this.add.image(1105, 76, 'forts', 'text')
@@ -104,29 +110,29 @@ export default class Forts extends RoomScene {
 
         // day
         const day = this.add.text(1113, 233, '', {})
-        day.scaleX = 0.7423339656191315
+        day.scaleX = 0.8
         day.angle = 4
         day.setOrigin(0.5, 0.5)
         day.text = 'WEDNESDAY'
-        day.setStyle({color: '#ffffffff', fontFamily: 'CCFaceFront', fontSize: '20px', fontStyle: 'italic'})
+        day.setStyle({color: '#ffffffff', fontFamily: 'CCFaceFront', fontSize: '18px', fontStyle: 'italic'})
         day.setPadding({left: 5, right: 5})
 
         // am_pm
-        const am_pm = this.add.text(1176, 153, '', {})
-        am_pm.scaleX = 0.7185407046195333
-        am_pm.angle = 1
+        const am_pm = this.add.text(1177, 149, '', {})
         am_pm.setOrigin(0.5, 0.5)
         am_pm.text = 'AM'
-        am_pm.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'CPLCD', fontSize: '50px'})
+        am_pm.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'CPLCD', fontSize: '35px'})
 
         // clockTime
         const clockTime = this.add.text(1097, 170, '', {})
         clockTime.scaleX = 0.6363895309486298
-        clockTime.angle = 1
         clockTime.setOrigin(0.5, 0.5)
         clockTime.text = '12:59'
         clockTime.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'cplcd', fontSize: '90px'})
         clockTime.setPadding({left: 5, right: 5})
+
+        // hitbox
+        const hitbox = this.add.ellipse(1304, 147, 60, 70)
 
         // lists
         const sort = [snowman, fort2, fort3, container_1, fort6, fort7, fort10]
@@ -136,15 +142,32 @@ export default class Forts extends RoomScene {
         flag1_0001Animation.key = 'flag1_'
         flag1_0001Animation.end = 16
 
+        // tower (components)
+        const towerAnimation = new Animation(tower)
+        towerAnimation.key = 'tower_'
+        towerAnimation.end = 12
+        towerAnimation.repeat = 0
+        towerAnimation.autoPlay = false
+
+        // target (components)
+        const targetAnimation = new Animation(target)
+        targetAnimation.key = 'target_'
+        targetAnimation.end = 12
+        targetAnimation.repeat = 0
+        targetAnimation.autoPlay = false
+
         // flag2_0004 (components)
         const flag2_0004Animation = new Animation(flag2_0004)
         flag2_0004Animation.key = 'flag2_'
         flag2_0004Animation.start = 4
         flag2_0004Animation.end = 16
 
+        this.tower = tower
+        this.target = target
         this.day = day
         this.am_pm = am_pm
         this.clockTime = clockTime
+        this.hitbox = hitbox
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -154,6 +177,11 @@ export default class Forts extends RoomScene {
 
     create() {
         super.create()
+
+        this.bounds = this.hitbox.getBounds()
+
+        this.tower.on('animationcomplete', () => this.onTowerAnimComplete())
+        this.target.on('animationcomplete', () => this.onTargetAnimComplete())
 
         var now = new Date(Date.now() - 1000 * 60 * 60 * 8)
         var timeInHours = now.getUTCHours()
@@ -186,6 +214,21 @@ export default class Forts extends RoomScene {
         } else {
             this.day.text = 'SUNDAY'
         }
+    }
+
+    onSnowballComplete(x, y) {
+        if (this.bounds.contains(x, y)) {
+            this.tower.__Animation.play()
+            this.target.__Animation.play()
+        }
+    }
+
+    onTowerAnimComplete() {
+        this.tower.setFrame('tower_0001')
+    }
+
+    onTargetAnimComplete() {
+        this.target.setFrame('target_0001')
     }
 
     /* END-USER-CODE */

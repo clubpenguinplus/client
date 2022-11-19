@@ -1,4 +1,5 @@
 import PathEngine from '@engine/world/penguin/pathfinding/PathEngine'
+import {parse} from 'crypto-js/enc-utf8'
 
 export default class SnowballFactory {
     constructor(shell) {
