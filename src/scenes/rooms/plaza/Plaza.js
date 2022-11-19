@@ -26,6 +26,7 @@ export default class Plaza extends RoomScene {
 
         this.roomTriggers = {
             pizza: () => this.triggerRoom(330, 760, 330),
+            mall: () => this.triggerRoom(340, 250, 700),
         }
 
         this.music = '677'
