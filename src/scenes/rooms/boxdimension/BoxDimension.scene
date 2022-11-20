@@ -1,0 +1,133 @@
+{
+    "id": "497b4b82-d0e9-4ae2-86f1-0b17f1f92c52",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/boxdimension/boxdimension-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "BoxDimension",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d9f63114-285a-4fa9-9ac0-524682067c2c",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "boxdimension",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "594ea5f7-a655-4d73-a139-4569b2d604d2",
+            "label": "leftboxes0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "leftboxes",
+            "Animation.end": 110,
+            "texture": {
+                "key": "boxdimension",
+                "frame": "leftboxes0001"
+            },
+            "x": 485,
+            "y": 327
+        },
+        {
+            "type": "Sprite",
+            "id": "438cbd4b-3f75-4450-9057-a4911c5c790f",
+            "label": "portal0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "portal",
+            "Animation.end": 100,
+            "texture": {
+                "key": "boxdimension",
+                "frame": "portal0001"
+            },
+            "x": 1232,
+            "y": 159
+        },
+        {
+            "type": "Image",
+            "id": "a5ee5df5-43e8-4a2e-952a-2533f826d2aa",
+            "label": "aboveportal",
+            "components": [],
+            "texture": {
+                "key": "boxdimension",
+                "frame": "aboveportal"
+            },
+            "x": 1193,
+            "y": 237
+        },
+        {
+            "type": "Sprite",
+            "id": "5b94f29b-f254-4cef-8778-56f4d023cb93",
+            "label": "rightbox0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "rightbox",
+            "Animation.end": 110,
+            "texture": {
+                "key": "boxdimension",
+                "frame": "rightbox0001"
+            },
+            "x": 1513,
+            "y": 424
+        },
+        {
+            "type": "Image",
+            "id": "f188dcd9-4f7b-4ce4-8e7e-b4c42d199ec8",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "boxdimension",
+                "frame": "boxes"
+            },
+            "x": 765,
+            "y": 585.5
+        },
+        {
+            "type": "Sprite",
+            "id": "8647f424-0592-4d52-89d2-3ae918bf0dfd",
+            "label": "frontboxes0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "frontboxes",
+            "Animation.end": 110,
+            "texture": {
+                "key": "boxdimension",
+                "frame": "frontboxes0001"
+            },
+            "x": 753,
+            "y": 811
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1f5d85b4-0341-4b8f-b708-ed63d0d50adc",
+            "label": "sort"
+        }
+    ]
+}

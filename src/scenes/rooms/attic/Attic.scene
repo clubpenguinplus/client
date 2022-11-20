@@ -26,7 +26,7 @@
                 "frame": "bg"
             },
             "x": -105,
-            "y": -12,
+            "y": -15,
             "originX": 0,
             "originY": 0
         },
@@ -40,7 +40,7 @@
                 "frame": "pizzabox"
             },
             "x": 212,
-            "y": 538
+            "y": 535
         },
         {
             "type": "Image",
@@ -52,7 +52,7 @@
                 "frame": "leftbluechair"
             },
             "x": 71,
-            "y": 581
+            "y": 578
         },
         {
             "type": "Image",
@@ -64,7 +64,7 @@
                 "frame": "bluechair"
             },
             "x": 148.60520449114657,
-            "y": 502.39479550885346,
+            "y": 499.39479550885346,
             "originX": 0.6229437733913884,
             "originY": 0.38541162868375467
         },
@@ -78,7 +78,7 @@
                 "frame": "rug"
             },
             "x": 195.41565813862397,
-            "y": 738.5843418613761,
+            "y": 735.5843418613761,
             "originX": 0.5604710352035555,
             "originY": 0.4314344167770711
         },
@@ -92,7 +92,7 @@
                 "frame": "lamp"
             },
             "x": 25.779589508140994,
-            "y": 597.693842622115,
+            "y": 594.693842622115,
             "originX": 0.5243823641065,
             "originY": 0.7229617252519517
         },
@@ -106,7 +106,7 @@
                 "frame": "pirate_fixed"
             },
             "x": 1410,
-            "y": 287
+            "y": 284
         },
         {
             "type": "Image",
@@ -118,7 +118,7 @@
                 "frame": "paintings"
             },
             "x": 1429,
-            "y": 449
+            "y": 446
         },
         {
             "type": "Image",
@@ -130,7 +130,7 @@
                 "frame": "pufflebag"
             },
             "x": 1331,
-            "y": 503
+            "y": 500
         },
         {
             "type": "Image",
@@ -142,7 +142,7 @@
                 "frame": "yellowpuffbag"
             },
             "x": 1386,
-            "y": 560
+            "y": 557
         },
         {
             "type": "Sprite",
@@ -158,7 +158,7 @@
                 "frame": "horse0001"
             },
             "x": 1469,
-            "y": 573,
+            "y": 570,
             "originX": 0.544,
             "originY": 0.503185
         },
@@ -171,8 +171,10 @@
                 "key": "attic",
                 "frame": "chairback"
             },
-            "x": 1134,
-            "y": 656
+            "x": 1166.1846078201497,
+            "y": 596.6769363147381,
+            "originX": 0.7049975020391702,
+            "originY": 0.09186185735317463
         },
         {
             "type": "Image",
@@ -184,7 +186,8 @@
                 "frame": "circlestool"
             },
             "x": 1052,
-            "y": 745
+            "y": 715.4476985483765,
+            "originY": 0.22341352654558833
         },
         {
             "type": "Image",
@@ -195,10 +198,10 @@
                 "key": "attic",
                 "frame": "plantable"
             },
-            "x": 1349,
-            "y": 751,
-            "originX": 0.7433049295987494,
-            "originY": 0.6417962170875826
+            "x": 1246.0092549755211,
+            "y": 666.7338652541221,
+            "originX": 0.4564226314804238,
+            "originY": 0.3339699491107722
         },
         {
             "type": "Image",
@@ -209,8 +212,10 @@
                 "key": "attic",
                 "frame": "squarestool"
             },
-            "x": 1161,
-            "y": 821
+            "x": 1160.1953848044964,
+            "y": 783.4015465933392,
+            "originX": 0.49399540898877886,
+            "originY": 0.2209802144624126
         },
         {
             "type": "Image",
@@ -222,7 +227,7 @@
                 "frame": "fg_left"
             },
             "x": -161,
-            "y": 972,
+            "y": 969,
             "originX": 0.004053513024603988,
             "originY": 0.9838982835484917
         },
@@ -236,7 +241,7 @@
                 "frame": "brownchairfront"
             },
             "x": 766,
-            "y": 761
+            "y": 758
         },
         {
             "type": "Image",
@@ -248,7 +253,7 @@
                 "frame": "brownchair"
             },
             "x": 764,
-            "y": 900,
+            "y": 897,
             "originX": 0.503982979899936,
             "originY": 0.6854659688099547
         },
@@ -257,19 +262,33 @@
             "id": "e484bff0-be88-4677-8d31-c6be47a8d8c5",
             "label": "boxdimension",
             "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onBoxDimOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onBoxDimOut()",
+            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension"
             },
             "x": 966,
-            "y": 974,
+            "y": 971,
             "originX": 0.47834338839237844,
             "originY": 1.011384788761301
+        },
+        {
+            "type": "Rectangle",
+            "id": "5b7e2832-10e0-4a85-80ce-3e0406f7e258",
+            "label": "boxdimension_btn",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBoxDimOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onBoxDimOut()",
+            "MoveTo.x": 968,
+            "MoveTo.y": 816,
+            "x": 967,
+            "y": 864,
+            "width": 200,
+            "height": 200
         },
         {
             "type": "Sprite",
@@ -282,7 +301,7 @@
                 "frame": "boxdimension-hover-anim0001"
             },
             "x": 964,
-            "y": 994,
+            "y": 991,
             "originX": 0.49999999999999933,
             "originY": 1.8995033355331223,
             "visible": false
@@ -298,7 +317,7 @@
                 "frame": "boxdimension-hover-flaps"
             },
             "x": 981,
-            "y": 1017.9631945186845,
+            "y": 1014.9631945186845,
             "originX": 0.47834338839237844,
             "originY": 1.6725657121405844,
             "visible": false
@@ -313,7 +332,7 @@
                 "frame": "fg_right"
             },
             "x": 1679,
-            "y": 1153,
+            "y": 1150,
             "originX": 0.9977534832559671,
             "originY": 1.0049481046883484
         },
@@ -327,7 +346,7 @@
                 "frame": "frontpizzabox"
             },
             "x": 537,
-            "y": 930.0003486965516,
+            "y": 927.0003486965516,
             "originY": 0.6917832102503532
         },
         {
@@ -340,7 +359,7 @@
                 "frame": "leftpencil"
             },
             "x": 1160,
-            "y": 696
+            "y": 693
         },
         {
             "type": "Image",
@@ -352,7 +371,8 @@
                 "frame": "circlestoolmirror"
             },
             "x": 309,
-            "y": 469
+            "y": 446.4979269430127,
+            "originY": 0.23284831428784541
         },
         {
             "type": "Image",
@@ -364,7 +384,7 @@
                 "frame": "leftstairhandle"
             },
             "x": 753.2325890753189,
-            "y": 474.0308788528382,
+            "y": 471.0308788528382,
             "originX": 0.6133198013694338,
             "originY": 0.23500896788610423
         },
@@ -378,7 +398,7 @@
                 "frame": "rightstairhandle"
             },
             "x": 869.883720505676,
-            "y": 578.5735707900989,
+            "y": 575.5735707900989,
             "originX": 0.46612723328631056,
             "originY": 0.3797219652131449
         },
@@ -396,7 +416,7 @@
                 "frame": "findfourtable"
             },
             "x": 254,
-            "y": 596
+            "y": 593
         },
         {
             "type": "Image",
@@ -412,7 +432,7 @@
                 "frame": "findfourtable"
             },
             "x": 369,
-            "y": 691
+            "y": 688
         },
         {
             "type": "Image",
@@ -428,7 +448,7 @@
                 "frame": "findfourtable"
             },
             "x": 560,
-            "y": 685,
+            "y": 682,
             "flipX": true
         },
         {
@@ -445,7 +465,7 @@
                 "frame": "findfourtable"
             },
             "x": 683,
-            "y": 626,
+            "y": 623,
             "flipX": true
         },
         {
@@ -458,7 +478,7 @@
                 "frame": "leftsoda"
             },
             "x": 1127.0949891243745,
-            "y": 679.4124909369787,
+            "y": 676.4124909369787,
             "originX": 0.31616253777615067,
             "originY": 0.40589272767112367
         },
@@ -472,7 +492,7 @@
                 "frame": "rightpencil"
             },
             "x": 1199,
-            "y": 726
+            "y": 723
         },
         {
             "type": "Image",
@@ -484,7 +504,7 @@
                 "frame": "apple"
             },
             "x": 1234,
-            "y": 618
+            "y": 615
         },
         {
             "type": "Image",
@@ -496,7 +516,7 @@
                 "frame": "book"
             },
             "x": 1190,
-            "y": 649
+            "y": 646
         },
         {
             "type": "Image",
@@ -508,7 +528,119 @@
                 "frame": "rightsoda"
             },
             "x": 1270,
-            "y": 575
+            "y": 572
+        },
+        {
+            "type": "Ellipse",
+            "id": "dabcd04e-97d6-4389-a42b-5e405ecd0917",
+            "label": "ellipse_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 309,
+            "y": 453,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "7430ea4f-31c5-49fb-8b55-9b941fdaa986",
+            "label": "ellipse",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 129,
+            "y": 549,
+            "fillColor": "#ffffff",
+            "width": 60,
+            "height": 60
+        },
+        {
+            "type": "Ellipse",
+            "id": "af72df52-2dcc-4c82-8ed5-f9db628ca1bb",
+            "label": "ellipse_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 713,
+            "y": 805,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 70
+        },
+        {
+            "type": "Ellipse",
+            "id": "0cef707e-1efa-43b2-ab54-af0f9abec6f5",
+            "label": "ellipse_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 807,
+            "y": 754,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 70
+        },
+        {
+            "type": "Ellipse",
+            "id": "6991c506-3045-4b9b-beb3-90096ee7c0b5",
+            "label": "ellipse_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 1052,
+            "y": 724,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "01df9680-874c-4c40-a4c1-83f6cbd93aaa",
+            "label": "ellipse_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1160,
+            "y": 797,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "a99eb1fc-1bf0-4f88-864c-4f2a6343d1a2",
+            "label": "ellipse_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1115,
+            "y": 646,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "330646af-0d29-4f49-befe-5b35c46f9b61",
+            "label": "ellipse_7",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1168,
+            "y": 609,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 40
         }
     ],
     "plainObjects": [],
@@ -542,7 +674,10 @@
                 "8e3180dd-9ece-498e-9993-3ff75eac5598",
                 "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92",
                 "a1345f1f-e326-4e94-8bbe-6dfe7f11ae55",
-                "0389399c-148e-406f-9410-7e5738e7f63f"
+                "0389399c-148e-406f-9410-7e5738e7f63f",
+                "46d3517d-8533-4356-b106-84cc8f54645a",
+                "978eca94-bc31-47ed-bfab-a182897197b4",
+                "6e9740e2-b3f8-41a8-bb83-6b956c47543b"
             ]
         }
     ]

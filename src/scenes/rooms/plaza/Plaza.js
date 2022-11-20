@@ -19,7 +19,7 @@ export default class Plaza extends RoomScene {
         this.puffle
         /** @type {Phaser.GameObjects.Sprite} */
         this.smoke
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Rectangle>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -143,7 +143,7 @@ export default class Plaza extends RoomScene {
         rectangle_2.fillAlpha = 100
 
         // lists
-        const sort = [fg_2, fg_1, cover, rectangle]
+        const sort = [fg_2, fg_1]
 
         // mall_sign_en (components)
         new LocalisedSprite(mall_sign_en)

@@ -228,10 +228,13 @@
             "id": "34f931ae-e313-42ca-92fb-c15e59bdaa2a",
             "label": "door",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "door",
             "Button.activeFrame": false,
+            "MoveTo.x": 224,
+            "MoveTo.y": 680,
             "texture": {
                 "key": "mall",
                 "frame": "door"

@@ -207,6 +207,12 @@ const rooms = {
         x: 840,
         y: 480,
     },
+    811: {
+        key: 'BoxDimension',
+        scene: require('@rooms/boxdimension/BoxDimension').default,
+        x: 1180,
+        y: 260,
+    },
     /*
     813: {
         key: 'Cavemine',

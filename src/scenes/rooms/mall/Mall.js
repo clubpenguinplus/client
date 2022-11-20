@@ -10,7 +10,9 @@ export default class Mall extends RoomScene {
 
         /* START-USER-CTR-CODE */
 
-        this.roomTriggers = {}
+        this.roomTriggers = {
+            plaza: () => this.triggerRoom(300, 924, 504),
+        }
 
         this.music = '749'
 
@@ -272,6 +274,9 @@ export default class Mall extends RoomScene {
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
         doorButton.activeFrame = false
+        const doorMoveTo = new MoveTo(door)
+        doorMoveTo.x = 224
+        doorMoveTo.y = 680
 
         // costumes (components)
         const costumesButton = new Button(costumes)
