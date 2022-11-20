@@ -43,7 +43,7 @@ export default class Puffles extends Plugin {
         let penguin = this.shell.room.penguins[args.penguinId]
         let playercard = this.shell.interface.main.playerCard
         penguin.penguinLoader.addPuffle(penguin, args.color)
-        if (playercard.visible && playercard.id === args.penguinId) {
+        if (playercard.visible && playercard.id == args.penguinId) {
             playercard.paperDoll.paperDollPuffleLoader.loadPuffle(this.shell.crumbs.puffles[args.color].name)
         }
 
@@ -63,7 +63,7 @@ export default class Puffles extends Plugin {
             penguin.hasPuffle = false
         }
         let playercard = this.shell.interface.main.playerCard
-        if (playercard.visible && playercard.id === args.user) {
+        if (playercard.visible && playercard.id == args.user) {
             playercard.paperDoll.puffle.destroy()
         }
         if (penguin.puffle !== 0) {
@@ -87,7 +87,7 @@ export default class Puffles extends Plugin {
             penguin.hasPuffle = false
         }
         let playercard = this.shell.interface.main.playerCard
-        if (playercard.visible && playercard.id === args.user) {
+        if (playercard.visible && playercard.id == args.user) {
             playercard.paperDoll.puffle.destroy()
         }
 

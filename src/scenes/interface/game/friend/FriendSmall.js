@@ -365,7 +365,7 @@ export default class FriendSmall extends BaseContainer {
     }
 
     showPage() {
-        if (this.visible === false) return
+        if (this.visible == false) return
         if (this.penguins.length > 6) {
             this.parentContainer.buddy.visible = true
             this.parentContainer.buddy.showPage()
@@ -412,10 +412,10 @@ export default class FriendSmall extends BaseContainer {
 
     showFriend(friend) {
         for (let item of this.items) {
-            if (item.id === friend.id) return item.setPaperDoll(friend)
+            if (item.id == friend.id) return item.setPaperDoll(friend)
         }
-        if (this.searchItem.id === friend.id) return this.searchItem.setPaperDoll(friend)
-        if (this.requestItem.id === friend.id) return this.requestItem.setPaperDoll(friend)
+        if (this.searchItem.id == friend.id) return this.searchItem.setPaperDoll(friend)
+        if (this.requestItem.id == friend.id) return this.requestItem.setPaperDoll(friend)
     }
 
     onSearchEnter() {

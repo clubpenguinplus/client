@@ -264,7 +264,7 @@ export default class Buttons extends BaseContainer {
     onFriendClick() {
         if (this.friend_icon.frame.name == 'gift-icon') {
             for (var x in this.shell.mascots) {
-                if (this.shell.mascots[x].id === this.parentContainer.id) this.interface.prompt.showItem(this.shell.mascots[x].giveaway)
+                if (this.shell.mascots[x].id == this.parentContainer.id) this.interface.prompt.showItem(this.shell.mascots[x].giveaway)
             }
         } else if (this.friend_icon.frame.name == 'buddy-remove-icon') {
             this.showRemoveFriend()

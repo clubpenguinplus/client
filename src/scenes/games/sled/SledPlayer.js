@@ -373,7 +373,7 @@ class SledPlayer extends BaseContainer {
     }
 
     fixDesync() {
-        if (this.isClient && this.scene.finishPos === 0) {
+        if (this.isClient && this.scene.finishPos == 0) {
             this.airtower.sendXt('a#sg', `${this.id}%${this.fixedX}%${this.fixedY}%${this.scene.gameTime}`)
             setTimeout(() => {
                 this.fixDesync()

@@ -313,7 +313,7 @@ export default class ClientController {
             this.stamps.push(stamp)
             this.airtower.sendXt('st#sse', stamp)
             this.interface.main.stampEarnedBody.text = this.crumbs.stamps[stamp].name
-            if (this.crumbs.stamps[stamp].groupid === 7) {
+            if (this.crumbs.stamps[stamp].groupid == 7) {
                 this.interface.main.stampEarnedImage.setFrame(`stamps/activities000${this.crumbs.stamps[stamp].difficulty.toString()}`)
             } else {
                 this.interface.main.stampEarnedImage.setFrame(`stamps/events000${this.crumbs.stamps[stamp].difficulty.toString()}`)

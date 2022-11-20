@@ -66,7 +66,7 @@ export default class CanvasTint {
     static batchSprite(renderer, sprite, frame, camera, parentTransformMatrix) {
         let alpha = camera.alpha * sprite.alpha
 
-        if (alpha === 0) {
+        if (alpha == 0) {
             // Nothing to see, so abort early
             return
         }

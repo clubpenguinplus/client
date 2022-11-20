@@ -153,7 +153,7 @@ export default class FriendItem extends BaseContainer {
         this.offlineonline.visible = true
         this.bff.visible = true
 
-        if (('online' in friend && friend.online === undefined) || friend.online === false) {
+        if (('online' in friend && friend.online == undefined) || friend.online == false) {
             this.offline.visible = true
             this.offlineonline.text = 'Offline'
         } else {

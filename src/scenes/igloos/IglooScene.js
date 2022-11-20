@@ -90,11 +90,11 @@ export default class IglooScene extends RoomScene {
 
         if (!this.penguins) return
 
-        if (this.id === this.shell.client.id && Object.keys(this.penguins).length >= 10) {
+        if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 10) {
             this.shell.client.stampEarned(17)
         }
 
-        if (this.id === this.shell.client.id && Object.keys(this.penguins).length >= 30) {
+        if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 30) {
             this.shell.client.stampEarned(28)
         }
     }
@@ -241,7 +241,7 @@ export default class IglooScene extends RoomScene {
         this.quantities[item] = this.quantities[item] ? this.quantities[item] + 1 : 1
     }
 
-    /*========== Physics ==========*/
+    /*======= Physics =======*/
 
     addPhysics() {
         super.addPhysics()
@@ -259,7 +259,7 @@ export default class IglooScene extends RoomScene {
         return graphics.createGeometryMask()
     }
 
-    /*========== Furniture input ==========*/
+    /*======= Furniture input =======*/
 
     enableFurnitureInput() {
         for (let f of this.furnitureSprites) {
@@ -337,11 +337,11 @@ export default class IglooScene extends RoomScene {
     addPenguin(id, penguin) {
         super.addPenguin(id, penguin)
 
-        if (this.id === this.shell.client.id && Object.keys(this.penguins).length >= 10) {
+        if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 10) {
             this.shell.client.stampEarned(17)
         }
 
-        if (this.id === this.shell.client.id && Object.keys(this.penguins).length >= 30) {
+        if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 30) {
             this.shell.client.stampEarned(28)
         }
     }

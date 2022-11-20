@@ -11,9 +11,9 @@ if (!localStorage.getItem('debugMode')) {
     localStorage.setItem('debugMode', 'false')
 }
 
-if (localStorage.quality === 'low') {
+if (localStorage.quality == 'low') {
     window.currentScale = 0.4
-} else if (localStorage.quality === 'medium') {
+} else if (localStorage.quality == 'medium') {
     window.currentScale = 0.7
 } else {
     localStorage.quality = 'high'
@@ -36,8 +36,8 @@ const clubpenguinplus = {
         default: 'matter',
         matter: {
             debug: {
-                renderFill: localStorage.getItem('debugMode') === 'true' ? true : false,
-                renderLine: localStorage.getItem('debugMode') === 'true' ? true : false,
+                renderFill: localStorage.getItem('debugMode') == 'true' ? true : false,
+                renderLine: localStorage.getItem('debugMode') == 'true' ? true : false,
                 showInternalEdges: true,
             },
             gravity: false,

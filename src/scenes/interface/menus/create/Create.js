@@ -1063,7 +1063,7 @@ export default class Create extends BaseScene {
 
         for (let i = 1; i <= 16; i++) {
             if (!this['color_highlight_' + i]) continue
-            if (this['color_highlight_' + i].frame === 'color-highlight') continue
+            if (this['color_highlight_' + i].frame == 'color-highlight') continue
             this['color_highlight_' + i].setFrame('color-highlight')
         }
         this['color_highlight_' + color].setFrame('color-highlight-hover')

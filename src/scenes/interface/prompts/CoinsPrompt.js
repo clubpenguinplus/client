@@ -408,7 +408,7 @@ export default class CoinsPrompt extends BaseContainer {
         this.nextPageBtn.visible = false
         this.prevPageBtn.visible = false
 
-        if (category === 0) {
+        if (category == 0) {
             this.stampNumber.visible = false
             this.stampIcon.visible = false
             this.divider.visible = false
@@ -422,7 +422,7 @@ export default class CoinsPrompt extends BaseContainer {
 
         let categoryStamps = this.getCategoryStamps(category)
 
-        if (categoryStamps[0].length > 1 && categoryStamps[1] === categoryStamps[0].length) {
+        if (categoryStamps[0].length > 1 && categoryStamps[1] == categoryStamps[0].length) {
             this.bonus.visible = true
         } else {
             this.bonus.visible = false
@@ -480,7 +480,7 @@ export default class CoinsPrompt extends BaseContainer {
                 this.stamps[x].visible = false
             }
         }
-        if (this.page === Math.ceil(this.stamps.length / 9)) {
+        if (this.page == Math.ceil(this.stamps.length / 9)) {
             this.nextPageBtn.visible = false
         } else {
             this.nextPageBtn.visible = true
@@ -497,7 +497,7 @@ export default class CoinsPrompt extends BaseContainer {
                 this.stamps[x].visible = false
             }
         }
-        if (this.page === 1) {
+        if (this.page == 1) {
             this.prevPageBtn.visible = false
         }
         this.nextPageBtn.visible = true

@@ -17,7 +17,7 @@ export default class MusicController extends Phaser.Scene {
     }
 
     addMusic(track, fileExtension = 'mp3') {
-        if (track === 0) {
+        if (track == 0) {
             this.sound.stopAll()
             this.music = null
             this.musicPlaying = null
@@ -26,7 +26,7 @@ export default class MusicController extends Phaser.Scene {
 
         if (this.musicMuted) return
 
-        if (track === this.music || `music/${track}` === this.musicPlaying) {
+        if (track == this.music || `music/${track}` == this.musicPlaying) {
             return
         }
 
@@ -50,7 +50,7 @@ export default class MusicController extends Phaser.Scene {
     }
 
     play(key) {
-        if (key !== `music/${this.music}` || key === this.musicPlaying) {
+        if (key !== `music/${this.music}` || key == this.musicPlaying) {
             return
         }
 

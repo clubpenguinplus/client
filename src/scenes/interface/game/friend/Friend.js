@@ -250,7 +250,7 @@ export default class Friend extends BaseContainer {
     }
 
     showPage() {
-        if (this.visible === false) return
+        if (this.visible == false) return
 
         for (let item of this.items) {
             item.destroy()
@@ -273,7 +273,7 @@ export default class Friend extends BaseContainer {
         }
 
         // Update total text
-        if (this.listType === 'friends' || this.listType === 'ignores') {
+        if (this.listType == 'friends' || this.listType == 'ignores') {
             this.total.text = `(${this.shell.client[this.listType].length})`
             this.total.visible = true
         } else {
@@ -306,7 +306,7 @@ export default class Friend extends BaseContainer {
 
     showFriend(friend) {
         for (let item of this.items) {
-            if (item.id === friend.id) item.setPaperDoll(friend)
+            if (item.id == friend.id) item.setPaperDoll(friend)
         }
     }
 

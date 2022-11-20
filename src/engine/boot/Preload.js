@@ -169,7 +169,7 @@ export default class Preload extends BaseScene {
         this.interface.hideLoading()
         this.scene.start('InterfaceController')
         let queryString = window.location.href.substring(window.location.href.indexOf('?') + 1, window.location.href.length)
-        if (queryString === 'create') return this.scene.start('Create')
+        if (queryString == 'create') return this.scene.start('Create')
         if (queryString.includes('activate')) {
             this.scene.start('Activate')
             let accDeets = queryString.split('=')[1]

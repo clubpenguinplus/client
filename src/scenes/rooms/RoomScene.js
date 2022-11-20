@@ -48,7 +48,7 @@ export default class RoomScene extends BaseScene {
 
         this.interface.showInterface()
 
-        if (this.crumbs.pin.id && this.crumbs.pin.room === this.id) this.interface.addPin()
+        if (this.crumbs.pin.id && this.crumbs.pin.room == this.id) this.interface.addPin()
 
         if (!this.shell.client.roomsWaddled.includes(this.id)) {
             this.shell.client.roomsWaddled.push(this.id)
@@ -71,7 +71,7 @@ export default class RoomScene extends BaseScene {
             this.shell.itemsLoaded.push({id: key, type: type})
         })
 
-        if (this.crumbs.pin.id && this.crumbs.pin.room === this.id) {
+        if (this.crumbs.pin.id && this.crumbs.pin.room == this.id) {
             this.load.image('pin', `assets/media/clothing/icon/${this.crumbs.pin.id}.webp`)
         }
 
@@ -175,7 +175,7 @@ export default class RoomScene extends BaseScene {
         this.waiting = this.waiting.filter((user) => user.id != id)
     }
 
-    /*========== Physics ==========*/
+    /*======= Physics =======*/
 
     get roomPhysics() {
         let key = this.key.toLowerCase()
@@ -300,7 +300,7 @@ export default class RoomScene extends BaseScene {
         // To be overridden in derived class
     }
 
-    /*========== Animations ==========*/
+    /*======= Animations =======*/
 
     /**
      * Loads complex animations from JSON room anims file,
@@ -316,7 +316,7 @@ export default class RoomScene extends BaseScene {
         this.anims.fromJSON(anims)
     }
 
-    /*======= Prompts ========*/
+    /*===== Prompts ======*/
 
     unimplementedPrompt() {
         let prompt = this.game.scene.getScene('InterfaceController').prompt

@@ -608,7 +608,7 @@ export default class Coin extends Phaser.GameObjects.Container {
 
     runFrame() {
         if (this.frame < 31) {
-            if (this.frame === 1) {
+            if (this.frame == 1) {
                 this['frame' + this.frame].visible = true
             } else {
                 this['frame' + (this.frame - 1)].visible = false

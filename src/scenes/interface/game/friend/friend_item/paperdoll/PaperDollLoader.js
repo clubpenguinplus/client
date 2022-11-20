@@ -135,11 +135,11 @@ export default class PaperDollLoader {
 
     removeItem(slot) {
         if (slot == 'photo') {
-            if (this.paperDoll.parentContainer.containerName === 'FriendItem') {
+            if (this.paperDoll.parentContainer.containerName == 'FriendItem') {
                 this.paperDoll.parentContainer.bg.setScale(0.2)
                 this.paperDoll.parentContainer.bg.setTexture('main', 'card-photo')
                 return
-            } else if (this.paperDoll.parentContainer.containerName === 'PlayerCard') {
+            } else if (this.paperDoll.parentContainer.containerName == 'PlayerCard') {
                 this.paperDoll.parentContainer.card_photo.visible = false
                 return
             }

@@ -48,7 +48,7 @@ export default class RuffleManager {
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
             quality: 'low',
-            logLevel: localStorage.getItem('debugMode') === 'true' ? 'Trace' : 'Error',
+            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error',
         })
         this.swf = {minigame: minigame}
 
@@ -60,7 +60,7 @@ export default class RuffleManager {
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
             quality: 'low',
-            logLevel: localStorage.getItem('debugMode') === 'true' ? 'Trace' : 'Error',
+            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error',
         })
         this.swf = {path: path, params: params}
 
@@ -133,7 +133,7 @@ export default class RuffleManager {
     playerWearingItem(item) {
         let items = this.shell.client.penguin.items.equippedFlat
         for (var x in items) {
-            if (items[x] === item) {
+            if (items[x] == item) {
                 return true
             }
         }

@@ -76,7 +76,7 @@ export default class ClientPenguin extends Penguin {
     wearingItem(item) {
         let items = this.items.flat
         for (var x in items) {
-            if (items[x] === item) {
+            if (items[x] == item) {
                 return true
             }
             return false
