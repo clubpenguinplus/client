@@ -1,0 +1,215 @@
+{
+    "id": "22e2f774-1f3b-4cb3-9da9-a4c5dc2f6b62",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/dojoext/dojoext-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "DojoExt",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "2743bedc-7cc8-4096-a545-cdd393051c2a",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "bg"
+            },
+            "x": 762,
+            "y": 459
+        },
+        {
+            "type": "Sprite",
+            "id": "37131efd-e9ba-41d0-b9fc-48c1c6f969c8",
+            "label": "fireanim0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fireanim",
+            "Animation.end": 96,
+            "texture": {
+                "key": "dojoext",
+                "frame": "fireanim0001"
+            },
+            "x": 63,
+            "y": 147,
+            "originY": 0.5004580154109345
+        },
+        {
+            "type": "Sprite",
+            "id": "1539ed65-14bb-4038-ac10-bb4c207b1754",
+            "label": "waterfall0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "waterfall",
+            "Animation.end": 24,
+            "texture": {
+                "key": "dojoext",
+                "frame": "waterfall0001"
+            },
+            "x": 320,
+            "y": 358
+        },
+        {
+            "type": "Image",
+            "id": "3642999a-a5f0-4b51-bef5-4bb48ae0ddbb",
+            "label": "abovewaterfall",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "abovewaterfall"
+            },
+            "x": 856,
+            "y": 542
+        },
+        {
+            "type": "Image",
+            "id": "4774d152-a6e3-4064-bd00-d44647db85f5",
+            "label": "door0001",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojoext",
+                "frame": "door"
+            },
+            "x": 779,
+            "y": 502
+        },
+        {
+            "type": "Image",
+            "id": "da95ec35-ef95-40e4-968a-150c8adf9cc2",
+            "label": "dojo",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "dojo"
+            },
+            "x": 667,
+            "y": 488
+        },
+        {
+            "type": "Image",
+            "id": "f4df60cd-85a6-4fa2-aa3a-0a4bdd8c7205",
+            "label": "tree_bottom_lefter",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "tree-bottom-lefter"
+            },
+            "x": 1374,
+            "y": 692
+        },
+        {
+            "type": "Image",
+            "id": "79a642f4-fc94-49d2-8f33-7eb0d37a4763",
+            "label": "tree_bottomleft",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "tree-bottomleft"
+            },
+            "x": 1303,
+            "y": 787
+        },
+        {
+            "type": "Image",
+            "id": "179077d3-3759-44d6-b903-cfcef40693d6",
+            "label": "stoneleft",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "stoneleft"
+            },
+            "x": 471.7999267578125,
+            "y": 862.9704922274007,
+            "originX": 0.52893583911881,
+            "originY": 0.5612652611477137
+        },
+        {
+            "type": "Image",
+            "id": "4dd9efc3-8647-4e59-8084-c47e408e404a",
+            "label": "stoneright",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "stoneright"
+            },
+            "x": 1073.200439453125,
+            "y": 858.0861117100638,
+            "originX": 0.3412469526944675,
+            "originY": 0.5597417256679151
+        },
+        {
+            "type": "Image",
+            "id": "eabd7400-0e45-46a6-980c-c7edffa92b27",
+            "label": "foreground",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "foreground"
+            },
+            "x": 1498,
+            "y": 888
+        },
+        {
+            "type": "Image",
+            "id": "856bb3c6-4e00-4ab1-a3cd-6735024e8d2c",
+            "label": "front",
+            "components": [],
+            "texture": {
+                "key": "dojoext",
+                "frame": "front"
+            },
+            "x": 68.5,
+            "y": 307
+        },
+        {
+            "type": "Image",
+            "id": "c6f8ece9-a227-4466-a889-934a8f3147c6",
+            "label": "card",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "card",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojoext",
+                "frame": "card"
+            },
+            "x": 1434,
+            "y": 895,
+            "visible": false
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "179077d3-3759-44d6-b903-cfcef40693d6",
+                "4dd9efc3-8647-4e59-8084-c47e408e404a"
+            ]
+        }
+    ]
+}

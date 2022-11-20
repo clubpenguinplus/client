@@ -17,6 +17,8 @@ export default class BoxDimension extends RoomScene {
             attic: () => this.triggerRoom(221, 940, 700),
         }
 
+        this.music = 372
+
         /* END-USER-CTR-CODE */
     }
 

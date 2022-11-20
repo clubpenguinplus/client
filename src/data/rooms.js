@@ -99,14 +99,12 @@ const rooms = {
         y: 790,
     },
     */
-    /*
     321: {
         key: 'DojoExt',
         scene: require('@rooms/dojoext/DojoExt').default,
-        x: 780,
-        y: 790,
+        x: 810,
+        y: 800,
     },
-    */
     330: {
         key: 'Pizza',
         scene: require('@rooms/pizza/Pizza').default,
