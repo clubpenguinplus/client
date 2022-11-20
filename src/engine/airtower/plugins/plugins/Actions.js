@@ -48,13 +48,10 @@ export default class Actions extends Plugin {
             return
         }
 
-        for (let arg of args) {
-            arg = parseInt(arg)
-        }
-
         let penguin = this.room.penguins[args[0]]
         if (penguin.isClient) return
-        let callback = () => this.interface.main.snowballFactory.throwBall(args[0], args[1], args[2])
+
+        let callback = () => this.interface.main.snowballFactory.throwBall(parseInt(args[0]), parseInt(args[1]), parseInt(args[2]))
 
         if (penguin.isTweening) {
             return (penguin.afterMove = callback)
