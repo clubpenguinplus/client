@@ -1254,6 +1254,14 @@ export default class Create extends BaseScene {
         this.email_text.__InputText.clickZone.visible = true
     }
 
+    unhandledError() {
+        this.text.text = this.crumbs.getString('create-unhandled-error')
+        this.ok.visible = true
+        this.next = () => {
+            document.location.href = document.location.href.substring(0, document.location.href.indexOf('?'))
+        }
+    }
+
     submitSignup() {
         this.airtower.sendXml(`<msg t='sys'><body action='signup' r='0'><login z='w1'><nick>${this.chosenUsername}</nick><pword>${this.chosenPassword}</pword></login><email>${this.chosenEmail}</email><over13>${!this.parentSignup}</over13><color>${this.chosenColor}</color><lang>en</lang></body></msg>`)
     }

@@ -221,7 +221,7 @@ export default class Airtower {
             let identifier = msgAsArray[2]
             let args = msgAsArray.slice(3)
 
-            if (window.location.hostname == 'localhost') {
+            if (window.location.hostname == 'localhost' && localStorage.debugMode == 'true') {
                 console.log('[Airtower] Message received:', message)
             }
 
@@ -241,6 +241,9 @@ export default class Airtower {
                         return
                     } else if (message == 'R#OK') {
                         this.creation.accountCreated()
+                        return
+                    } else if (message == 'I#KO') {
+                        this.creation.unhandledError()
                         return
                     }
                 } else if (this.activate) {
