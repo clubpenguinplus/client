@@ -502,6 +502,40 @@
                     }
                 }
             ]
+        },
+		{
+            "name": "Pricetag",
+            "baseClass": "EventComponent",
+            "gameObjectType": "Phaser.GameObjects.GameObject",
+            "properties": [
+                {
+                    "name": "id",
+                    "label": "",
+                    "tooltip": "",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Name",
+            "baseClass": "EventComponent",
+            "gameObjectType": "Phaser.GameObjects.GameObject",
+            "properties": [
+                {
+                    "name": "id",
+                    "label": "",
+                    "tooltip": "",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
         }
     ],
     "meta": {

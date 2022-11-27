@@ -196,7 +196,7 @@ export default class Shop extends RoomScene {
 
     create() {
         super.create()
-        this.speakers.play('clothesspeakers')
+        this.speakers.play('shop-clothesspeakers')
         this.spinner.on('animationcomplete', () => this.spinner.setFrame('spinner0001'))
     }
 
@@ -205,7 +205,7 @@ export default class Shop extends RoomScene {
     }
 
     onSpinnerOut() {
-        this.spinner.stop('spinner')
+        this.spinner.stop('shop-spinner')
         this.spinner.setFrame('spinner0001')
     }
 
