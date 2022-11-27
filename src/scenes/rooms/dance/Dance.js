@@ -193,7 +193,7 @@ export default class Dance extends RoomScene {
         soundStudioMoveTo.x = 700
         soundStudioMoveTo.y = 350
         const soundStudioShowHint = new ShowHint(soundStudio)
-        soundStudioShowHint.text = 'Mix Music'
+        soundStudioShowHint.text = 'mixmusic'
         new LocalisedSprite(soundStudio)
 
         // danceContest (components)
@@ -204,7 +204,7 @@ export default class Dance extends RoomScene {
         danceContestMoveTo.x = 1100
         danceContestMoveTo.y = 480
         const danceContestShowHint = new ShowHint(danceContest)
-        danceContestShowHint.text = 'Dance Contest'
+        danceContestShowHint.text = 'dancecontest'
 
         // danceContestBanner (components)
         new LocalisedSprite(danceContestBanner)

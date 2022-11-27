@@ -181,7 +181,7 @@ export default class Pizza extends RoomScene {
         pizzatrondoorButton.activeFrame = false
         new MoveTo(pizzatrondoor)
         const pizzatrondoorShowHint = new ShowHint(pizzatrondoor)
-        pizzatrondoorShowHint.text = 'Play Pizzatron'
+        pizzatrondoorShowHint.text = 'pizzatron'
 
         // plazadoor (components)
         const plazadoorButton = new Button(plazadoor)

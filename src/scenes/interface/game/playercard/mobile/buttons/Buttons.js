@@ -99,49 +99,49 @@ export default class Buttons extends BaseContainer {
         report_buttonButton.spriteName = 'mobile/blue-button'
         report_buttonButton.callback = () => this.onReportClick()
         const report_buttonShowHint = new ShowHint(report_button)
-        report_buttonShowHint.text = 'Report Player'
+        report_buttonShowHint.text = 'reportPlayer'
 
         // ignore_button (components)
         const ignore_buttonButton = new Button(ignore_button)
         ignore_buttonButton.spriteName = 'mobile/blue-button'
         ignore_buttonButton.callback = () => this.onIgnoreClick()
         const ignore_buttonShowHint = new ShowHint(ignore_button)
-        ignore_buttonShowHint.text = 'Ignore Player'
+        ignore_buttonShowHint.text = 'ignorePlayer'
 
         // stamps_button (components)
         const stamps_buttonButton = new Button(stamps_button)
         stamps_buttonButton.spriteName = 'mobile/blue-button'
         stamps_buttonButton.callback = () => this.onStampClick()
         const stamps_buttonShowHint = new ShowHint(stamps_button)
-        stamps_buttonShowHint.text = 'View Stampbook'
+        stamps_buttonShowHint.text = 'viewStampbook'
 
         // igloo_button (components)
         const igloo_buttonButton = new Button(igloo_button)
         igloo_buttonButton.spriteName = 'mobile/blue-button'
         igloo_buttonButton.callback = () => this.onIglooClick()
         const igloo_buttonShowHint = new ShowHint(igloo_button)
-        igloo_buttonShowHint.text = 'Visit Igloo'
+        igloo_buttonShowHint.text = 'visitIgloo'
 
         // mail_button (components)
         const mail_buttonButton = new Button(mail_button)
         mail_buttonButton.spriteName = 'mobile/blue-button'
         mail_buttonButton.callback = () => this.onMailClick()
         const mail_buttonShowHint = new ShowHint(mail_button)
-        mail_buttonShowHint.text = 'Send Postcard'
+        mail_buttonShowHint.text = 'sendPostcard'
 
         // profile_button (components)
         const profile_buttonButton = new Button(profile_button)
         profile_buttonButton.spriteName = 'mobile/blue-button'
         profile_buttonButton.callback = () => this.onFindClick()
         const profile_buttonShowHint = new ShowHint(profile_button)
-        profile_buttonShowHint.text = 'Find Player'
+        profile_buttonShowHint.text = 'findPlayer'
 
         // buddy_button (components)
         const buddy_buttonButton = new Button(buddy_button)
         buddy_buttonButton.spriteName = 'mobile/blue-button'
         buddy_buttonButton.callback = () => this.onFriendClick()
         const buddy_buttonShowHint = new ShowHint(buddy_button)
-        buddy_buttonShowHint.text = 'Add Friend'
+        buddy_buttonShowHint.text = 'addFriend'
 
         this.report_button = report_button
         this.ignore_button = ignore_button
@@ -198,22 +198,22 @@ export default class Buttons extends BaseContainer {
 
         switch (relationship) {
             case 'online':
-                this.enableButton('friend', 'buddy-remove-icon', 'Remove Friend')
+                this.enableButton('friend', 'buddies-remove-icon', 'removeFriend')
                 this.enableButtons(['profile', 'igloo', 'stamps', 'report', 'mail'])
                 break
 
             case 'offline':
-                this.enableButton('friend', 'buddy-remove-icon', 'Remove Friend')
+                this.enableButton('friend', 'buddies-remove-icon', 'removeFriend')
                 this.enableButtons(['igloo', 'stamps', 'report', 'mail'])
                 break
 
             case 'ignore':
-                this.enableButton('ignore', 'ignore-remove-icon', 'Unignore Friend')
+                this.enableButton('ignore', 'ignore-remove-icon', 'unignorePlayer')
                 this.enableButton('report')
                 break
 
             case 'mascot':
-                this.enableButton('friend', 'gift-icon', 'Claim Giveaway')
+                this.enableButton('friend', 'gift-icon', 'claimGiveaway')
                 break
 
             default:
@@ -222,9 +222,9 @@ export default class Buttons extends BaseContainer {
         }
 
         if (this.shell.client.isModerator) {
-            this.enableButton('report', 'mute-icon', 'Warn Player')
-            this.enableButton('ignore', 'ignore-icon', 'Kick Player')
-            this.enableButton('profile', 'help-icon', 'Find Player')
+            this.enableButton('report', 'mute-icon', 'warnPlayer')
+            this.enableButton('ignore', 'ignore-icon', 'kickPlayer')
+            this.enableButton('profile', 'help-icon', 'findPlayer')
         }
 
         if (!['online', 'offline'].includes(relationship)) {

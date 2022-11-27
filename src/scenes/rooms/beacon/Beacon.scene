@@ -124,7 +124,7 @@
             "SimpleButton.hoverCallback": "() => this.onJetpackOver()",
             "SimpleButton.hoverOutCallback": "() => this.onJetpackOut()",
             "SimpleButton.callback": "() => this.shell.client.penguin.move(1342, 565)",
-            "ShowHint.text": "Jetpack Adventure",
+            "ShowHint.text": "jetpackadventure",
             "x": 1323,
             "y": 587,
             "angle": -5,

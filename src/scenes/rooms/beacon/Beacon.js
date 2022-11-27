@@ -85,7 +85,7 @@ export default class Beacon extends RoomScene {
         jetpackZoneSimpleButton.hoverOutCallback = () => this.onJetpackOut()
         jetpackZoneSimpleButton.callback = () => this.shell.client.penguin.move(1342, 565)
         const jetpackZoneShowHint = new ShowHint(jetpackZone)
-        jetpackZoneShowHint.text = 'Jetpack Adventure'
+        jetpackZoneShowHint.text = 'jetpackadventure'
 
         this.launch = launch
         this.launchActive = launchActive

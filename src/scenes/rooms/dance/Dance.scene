@@ -238,7 +238,7 @@
             "SimpleButton.hoverOutCallback": "() => this.onSoundStudioOut()",
             "MoveTo.x": 700,
             "MoveTo.y": 350,
-            "ShowHint.text": "Mix Music",
+            "ShowHint.text": "mixmusic",
             "texture": {
                 "key": "dance",
                 "frame": "soundstudio-en0001"
@@ -313,7 +313,7 @@
             "SimpleButton.hoverOutCallback": "() => this.onContestOut()",
             "MoveTo.x": 1100,
             "MoveTo.y": 480,
-            "ShowHint.text": "Dance Contest",
+            "ShowHint.text": "dancecontest",
             "x": 1146,
             "y": 314,
             "scaleX": 1.2072727597353405,

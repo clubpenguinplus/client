@@ -43,7 +43,7 @@
             "Button.hoverCallback": "() => this.onKitchenDoorOver();",
             "Button.hoverOutCallback": "() => this.onKitchenDoorOut();",
             "Button.activeFrame": false,
-            "ShowHint.text": "Play Pizzatron",
+            "ShowHint.text": "pizzatron",
             "texture": {
                 "key": "pizza",
                 "frame": "pizzatrondoor"

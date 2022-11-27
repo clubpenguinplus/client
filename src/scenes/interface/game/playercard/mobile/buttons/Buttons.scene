@@ -32,7 +32,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onReportClick()",
-                    "ShowHint.text": "Report Player",
+                    "ShowHint.text": "reportPlayer",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
@@ -50,7 +50,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onIgnoreClick()",
-                    "ShowHint.text": "Ignore Player",
+                    "ShowHint.text": "ignorePlayer",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
@@ -69,7 +69,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onStampClick()",
-                    "ShowHint.text": "View Stampbook",
+                    "ShowHint.text": "viewStampbook",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
@@ -88,7 +88,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onIglooClick()",
-                    "ShowHint.text": "Visit Igloo",
+                    "ShowHint.text": "visitIgloo",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
@@ -106,7 +106,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onMailClick()",
-                    "ShowHint.text": "Send Postcard",
+                    "ShowHint.text": "sendPostcard",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
@@ -126,7 +126,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onFindClick()",
-                    "ShowHint.text": "Find Player",
+                    "ShowHint.text": "findPlayer",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
@@ -145,7 +145,7 @@
                     ],
                     "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onFriendClick()",
-                    "ShowHint.text": "Add Friend",
+                    "ShowHint.text": "addFriend",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"

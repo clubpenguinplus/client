@@ -146,7 +146,7 @@ export default class IglooEdit extends BaseScene {
         button_editButton.callback = () => this.onEditClick()
         button_editButton.activeFrame = false
         const button_editShowHint = new ShowHint(button_edit)
-        button_editShowHint.text = 'Edit Igloo'
+        button_editShowHint.text = 'editIgloo'
 
         // button_lock (components)
         const button_lockButton = new Button(button_lock)
@@ -155,7 +155,7 @@ export default class IglooEdit extends BaseScene {
         button_lockButton.callback = () => this.onLockClick()
         button_lockButton.activeFrame = false
         const button_lockShowHint = new ShowHint(button_lock)
-        button_lockShowHint.text = 'Open Igloo'
+        button_lockShowHint.text = 'openIgloo'
 
         // button_save (components)
         const button_saveSimpleButton = new SimpleButton(button_save)

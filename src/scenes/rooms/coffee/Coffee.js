@@ -201,13 +201,13 @@ export default class Coffee extends RoomScene {
         coffeebagbarrelSimpleButton.hoverCallback = () => this.onBeanBarrelOver()
         new MoveTo(coffeebagbarrel)
         const coffeebagbarrelShowHint = new ShowHint(coffeebagbarrel)
-        coffeebagbarrelShowHint.text = 'Bean Counters'
+        coffeebagbarrelShowHint.text = 'beancounters'
 
         // smoothiezone (components)
         const smoothiezoneSimpleButton = new SimpleButton(smoothiezone)
         smoothiezoneSimpleButton.hoverCallback = () => this.onSmoothieMachineOver()
         const smoothiezoneShowHint = new ShowHint(smoothiezone)
-        smoothiezoneShowHint.text = 'Smoothie Smash'
+        smoothiezoneShowHint.text = 'smoothiesmash'
 
         // towndoor (components)
         const towndoorButton = new Button(towndoor)
