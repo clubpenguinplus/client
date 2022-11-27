@@ -225,44 +225,48 @@ export default class Airtower {
                 console.log('[Airtower] Message received:', message)
             }
 
-            if (type != 'xt') {
-                if (this.creation) {
-                    if (message == 'U#KO') {
-                        this.creation.invalidUsername()
-                        return
-                    } else if (message == 'U#OK') {
-                        this.creation.chooseColor()
-                        return
-                    } else if (message == 'E#KO') {
-                        this.creation.invalidEmail()
-                        return
-                    } else if (message == 'E#OK') {
-                        this.creation.submitSignup()
-                        return
-                    } else if (message == 'R#OK') {
-                        this.creation.accountCreated()
-                        return
-                    } else if (message == 'I#KO') {
-                        this.creation.unhandledError()
-                        return
-                    }
-                } else if (this.activate) {
-                    if (message == 'A#OK') {
-                        this.activate.accountActivated()
-                        return
-                    } else if (message == 'A#KO') {
-                        this.activate.invalidCode()
-                        return
-                    }
-                } else if (this.register) {
-                    if (message == 'R#OK') {
-                        this.register.keyRegistered()
-                        return
-                    } else if (message == 'R#KO') {
-                        this.register.invalidKey()
-                        return
-                    }
-                } else if (message == 'KO') {
+            if (type == 'xt') {
+                return this.fireEvent(identifier, args)
+            }
+
+            switch (message) {
+                case 'A#OK':
+                    this.interface.prompt.showError('You can now login with this device', 'Ok', () => (this.interface.prompt.error.visible = false))
+                    return
+                case 'A#KO':
+                    this.interface.prompt.showError('There was an error allowing your device. Please try again, and contact support if the issue persists.', 'Ok', () => (this.interface.prompt.error.visible = false))
+                    return
+                case 'U#KO':
+                    this.creation.invalidUsername()
+                    return
+                case 'U#OK':
+                    this.creation.chooseColor()
+                    return
+                case 'E#KO':
+                    this.creation.invalidEmail()
+                    return
+                case 'E#OK':
+                    this.creation.submitSignup()
+                    return
+                case 'R#OK':
+                    this.creation.accountCreated()
+                    return
+                case 'I#KO':
+                    this.creation.unhandledError()
+                    return
+                case 'A#OK':
+                    this.activate.accountActivated()
+                    return
+                case 'A#KO':
+                    this.activate.invalidCode()
+                    return
+                case 'R#OK':
+                    this.register.keyRegistered()
+                    return
+                case 'R#KO':
+                    this.register.invalidKey()
+                    return
+                case 'KO':
                     if (!this.lastLoginScene) return this.scene.start('Login')
 
                     let scene = this.scene.getScene(this.lastLoginScene)
@@ -270,7 +274,7 @@ export default class Airtower {
                     scene.events.once('create', () => this.onLoginError('error'))
                     this.scene.start(this.lastLoginScene)
                     return
-                } else if (message == 'OK') {
+                case 'OK':
                     if (this.password) {
                         this.sendXml(`<msg t='sys'><body action='login' r='0'><login z='w1'><nick><!${this.username}></nick><pword><!${this.password}></pword></login></body></msg>`)
                         this.password = null
@@ -279,14 +283,7 @@ export default class Airtower {
                         this.token = null
                     }
                     return
-                } else {
-                    let parsed = JSON.parse(message)
-
-                    return this.fireEvent(parsed.action, parsed.args)
-                }
             }
-
-            this.fireEvent(identifier, args)
         } catch (error) {
             console.error(error)
         }

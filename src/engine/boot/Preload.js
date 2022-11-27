@@ -172,20 +172,33 @@ export default class Preload extends BaseScene {
         if (queryString == 'create') return this.scene.start('Create')
         if (queryString.includes('activate')) {
             this.scene.start('Activate')
-            let accDeets = queryString.split('=')[1]
-            window.email = accDeets.substring(0, accDeets.indexOf('&'))
-            window.activationCode = accDeets.substring(accDeets.indexOf('&') + 1, accDeets.length)
+            let details = queryString.split('=')[1]
+            window.email = details.substring(0, details.indexOf('&'))
+            window.activationCode = details.substring(details.indexOf('&') + 1, details.length)
             return
         }
         if (queryString.includes('register')) {
             this.scene.start('Register')
-            let accDeets = queryString.split('=')[1]
-            window.username = accDeets.substring(0, accDeets.indexOf('&'))
-            window.betaKey = accDeets.substring(accDeets.indexOf('&') + 1, accDeets.length)
+            let details = queryString.split('=')[1]
+            window.username = details.substring(0, details.indexOf('&'))
+            window.betaKey = details.substring(details.indexOf('&') + 1, details.length)
             return
+        }
+        if (queryString.includes('twofa')) {
+            let details = queryString.split('=')[1]
+            let id = details.substring(0, details.indexOf('&'))
+            let code = details.substring(details.indexOf('&') + 1, details.length)
+
+            this.send2FA(id, code)
         }
         if (this.airtower.isSavedPenguins) return this.scene.start('PenguinSelect')
         this.scene.start('Login')
+    }
+
+    send2FA(id, code) {
+        this.airtower.connectLogin(false, false, () => {
+            this.airtower.sendXml(`<msg t='sys'><body action='2fa' r='0'><id>${id}</id><code>${code}</code></body></msg>`)
+        })
     }
 
     onProgress(progress) {
