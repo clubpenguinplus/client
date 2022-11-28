@@ -25,14 +25,12 @@ const rooms = {
         x: 360,
         y: 560,
     },
-    /*
     121: {
-        key: 'Lounge',
-        scene: require('@rooms/lounge/Lounge').default,
-        x: 1120,
-        y: 640,
+        key: 'Arcade',
+        scene: require('@rooms/arcade/Arcade').default,
+        x: 1260,
+        y: 570,
     },
-    */
     122: {
         key: 'School',
         scene: require('@rooms/school/School').default,

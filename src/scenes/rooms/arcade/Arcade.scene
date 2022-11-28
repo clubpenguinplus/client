@@ -1,0 +1,958 @@
+{
+    "id": "5398a8c5-1ea3-4fa0-b537-6a251a5a439e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/arcade/arcade-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Arcade",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "848d6126-bc3c-45b4-b127-988f7846a3eb",
+            "label": "dancefloor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "dancefloor0001"
+            },
+            "x": 757,
+            "y": 934
+        },
+        {
+            "type": "Sprite",
+            "id": "d9ffc2d3-68d5-4e34-82a7-f1551fba3507",
+            "label": "penguin_anim0001",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "penguin-anim0001"
+            },
+            "x": 744,
+            "y": 776,
+            "tintTopLeft": "#040427",
+            "tintTopRight": "#040427",
+            "tintBottomLeft": "#040427",
+            "tintBottomRight": "#040427",
+            "tintFill": true
+        },
+        {
+            "type": "Sprite",
+            "id": "0a85ea56-8c42-4ea3-80b5-849ab801a964",
+            "label": "penguin_anim",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "penguin-anim0001"
+            },
+            "x": 837,
+            "y": 783,
+            "tintTopLeft": "#040427",
+            "tintTopRight": "#040427",
+            "tintBottomLeft": "#040427",
+            "tintBottomRight": "#040427",
+            "tintFill": true
+        },
+        {
+            "type": "Sprite",
+            "id": "2014752b-f670-40e3-b9ab-97ed6c760c31",
+            "label": "penguin_anim_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "penguin-anim0001"
+            },
+            "x": 662,
+            "y": 794,
+            "tintTopLeft": "#040427",
+            "tintTopRight": "#040427",
+            "tintBottomLeft": "#040427",
+            "tintBottomRight": "#040427",
+            "tintFill": true
+        },
+        {
+            "type": "Sprite",
+            "id": "09e61454-2f3a-46dc-aa9a-72ce7696a5b3",
+            "label": "penguin_anim_2",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "penguin-anim0001"
+            },
+            "x": 706,
+            "y": 840,
+            "tintTopLeft": "#040427",
+            "tintTopRight": "#040427",
+            "tintBottomLeft": "#040427",
+            "tintBottomRight": "#040427",
+            "tintFill": true
+        },
+        {
+            "type": "Sprite",
+            "id": "33bbbbe6-e5d6-40f9-bb3b-605e43c6ae4e",
+            "label": "penguin_anim_3",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "penguin-anim0001"
+            },
+            "x": 811,
+            "y": 857,
+            "tintTopLeft": "#040427",
+            "tintTopRight": "#040427",
+            "tintBottomLeft": "#040427",
+            "tintBottomRight": "#040427",
+            "tintFill": true
+        },
+        {
+            "type": "Sprite",
+            "id": "823766e7-8dbc-4c57-a29f-0af5c981f0c8",
+            "label": "penguin_anim_4",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "penguin-anim0001"
+            },
+            "x": 791,
+            "y": 811,
+            "tintTopLeft": "#040427",
+            "tintTopRight": "#040427",
+            "tintBottomLeft": "#040427",
+            "tintBottomRight": "#040427",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "e97a6557-c694-4df3-8e0f-96a3cc08173a",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bg"
+            },
+            "x": 753,
+            "y": 487
+        },
+        {
+            "type": "Image",
+            "id": "b27c85d7-e488-4756-be6e-bfd2169d0253",
+            "label": "railing",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "railing"
+            },
+            "x": 1305.1633248423018,
+            "y": 615.7046329612486,
+            "originX": 0.06722470714435018,
+            "originY": 0.19432724118815067
+        },
+        {
+            "type": "Container",
+            "id": "d571c5e3-3309-41d0-b194-03fdaefbaa85",
+            "label": "container_3",
+            "components": [],
+            "x": 1364,
+            "y": 721,
+            "scaleX": -1,
+            "list": [
+                {
+                    "type": "TileSprite",
+                    "id": "6dcf7fa9-b837-43f1-abf4-e741fb797d67",
+                    "label": "chair_top_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "chair-top"
+                    },
+                    "x": 187.8040926413521,
+                    "y": -5.412293434143066,
+                    "originX": 0.5422677533961885,
+                    "originY": 0.4122131275617606,
+                    "width": 90,
+                    "height": 130
+                },
+                {
+                    "type": "TileSprite",
+                    "id": "cbd27cf0-8921-4c42-a003-4073bbee818e",
+                    "label": "chair_right_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "chair-right"
+                    },
+                    "x": 242.19590219434303,
+                    "y": 118.32233981181491,
+                    "originX": 0.4518468632195321,
+                    "originY": 0.1621360501554594,
+                    "width": 79,
+                    "height": 76
+                },
+                {
+                    "type": "TileSprite",
+                    "id": "4a6ff002-2f66-41b8-b987-9eb07bf8e471",
+                    "label": "chair_right_back_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "chair-right-back"
+                    },
+                    "x": 279,
+                    "y": 143.80409780565708,
+                    "originY": 0.5299535260287959,
+                    "width": 48,
+                    "height": 127
+                },
+                {
+                    "type": "TileSprite",
+                    "id": "553660be-bd4b-4f1e-9c78-19df00947f3d",
+                    "label": "chair_left_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "chair-left"
+                    },
+                    "x": 14.95102451514618,
+                    "y": 40.58770570167246,
+                    "originX": 0.5096063075900429,
+                    "originY": 0.4101394219136132,
+                    "width": 99,
+                    "height": 127
+                },
+                {
+                    "type": "TileSprite",
+                    "id": "58fb0c96-0162-487f-b6f5-11525b7f489f",
+                    "label": "chair_bottom_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "chair-bottom"
+                    },
+                    "x": 56.51024480341425,
+                    "y": 139.0774613665094,
+                    "originX": 0.6174104261005264,
+                    "originY": 0.2094091954011977,
+                    "width": 81,
+                    "height": 72
+                },
+                {
+                    "type": "TileSprite",
+                    "id": "32492362-54ce-4468-be0f-8e9210072bcc",
+                    "label": "chair_bottom_back_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "chair-bottom-back"
+                    },
+                    "x": 19,
+                    "y": 171.41229341697112,
+                    "originY": 0.6056693834904734,
+                    "width": 76,
+                    "height": 108
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "8744a3fc-3117-4f80-a44a-46410629bf07",
+            "label": "chair_bottom",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-bottom"
+            },
+            "x": 186.29385329151444,
+            "y": 863.126437617472,
+            "originX": 0.4295537443396844,
+            "originY": 0.19620052246488878
+        },
+        {
+            "type": "Image",
+            "id": "6c9caac4-2264-41b5-ba3d-b5f1773d1c04",
+            "label": "chair_bottom_back",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-bottom-back"
+            },
+            "x": 165.90204373852364,
+            "y": 898.3143423197997,
+            "originX": 0.5250269592477439,
+            "originY": 0.623280947405553
+        },
+        {
+            "type": "Image",
+            "id": "77592b8e-1dd6-478f-8dce-7891952d42a9",
+            "label": "chair_left",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-left"
+            },
+            "x": 155.55922006272837,
+            "y": 760.734633228786,
+            "originX": 0.5864567683103876,
+            "originY": 0.38767427739201604
+        },
+        {
+            "type": "Image",
+            "id": "fdd91e19-8458-4e43-ada9-aef58e7b69fc",
+            "label": "chair_right",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-right"
+            },
+            "x": 390.195902194343,
+            "y": 834.2733642632292,
+            "originX": 0.4518468632195314,
+            "originY": 0.174649529779331
+        },
+        {
+            "type": "Image",
+            "id": "abc0f8ba-20e9-4b3f-9e51-88bdbc5eb7e8",
+            "label": "chair_right_back",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-right-back"
+            },
+            "x": 425.09795109717146,
+            "y": 862.608195611314,
+            "originX": 0.4603739811910721,
+            "originY": 0.559907052057591
+        },
+        {
+            "type": "Image",
+            "id": "4dc4885a-e14d-4bf9-9cad-65ebf1cced62",
+            "label": "chair_top",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-top"
+            },
+            "x": 309.90204890282854,
+            "y": 713.4407799372716,
+            "originX": 0.5211338766980949,
+            "originY": 0.43415984567132
+        },
+        {
+            "type": "Image",
+            "id": "73863b5a-5026-47c4-95d0-94cf60a19022",
+            "label": "table_left",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "table-left"
+            },
+            "x": 264,
+            "y": 793
+        },
+        {
+            "type": "Image",
+            "id": "0dee98df-c966-49f2-9ea7-2f74d92e759a",
+            "label": "table_right",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "table-right"
+            },
+            "x": 1241,
+            "y": 799
+        },
+        {
+            "type": "Container",
+            "id": "2a604337-6936-461a-98d8-61e8c93d4594",
+            "label": "container_1",
+            "components": [],
+            "x": 1235,
+            "y": 69,
+            "scaleX": -1,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "71f1e803-a628-404b-bda4-cfdb6aa2cb0a",
+                    "label": "speaker_1",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "speaker"
+                    },
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "21fae66a-a10b-4155-922d-939f32f36ebf",
+                    "label": "speaker_bottom_anim",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "speaker-bottom-anim0001"
+                    },
+                    "x": 19,
+                    "y": 44
+                },
+                {
+                    "type": "Image",
+                    "id": "be425e87-d411-4bce-ad8b-2d3ae300c84c",
+                    "label": "speaker_top_anim",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "speaker-top-anim0001"
+                    },
+                    "x": 22
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0a411655-c898-4f4f-9097-858f004bce2c",
+            "label": "container_2",
+            "components": [],
+            "x": 285,
+            "y": 79,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "636c9db0-c6db-43d6-9147-1ee4b6c44266",
+                    "label": "speaker",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "speaker"
+                    },
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "7c82867a-777e-49ee-acc1-b6f66a1ed096",
+                    "label": "speaker_bottom_anim0001",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "speaker-bottom-anim0001"
+                    },
+                    "x": 19,
+                    "y": 44
+                },
+                {
+                    "type": "Image",
+                    "id": "85df2b73-9b90-4a43-a3e0-415a51be2d27",
+                    "label": "speaker_top_anim0001",
+                    "components": [],
+                    "texture": {
+                        "key": "arcade",
+                        "frame": "speaker-top-anim0001"
+                    },
+                    "x": 22
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "ff57ee1c-1025-49f3-83e8-5c6dafcfe264",
+            "label": "machinefour",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "machinefour"
+            },
+            "x": 357,
+            "y": 306
+        },
+        {
+            "type": "Sprite",
+            "id": "ad55402d-a920-42e4-abb4-340bbaee9ac5",
+            "label": "thinice_anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "thinice-anim0001"
+            },
+            "x": 1168,
+            "y": 276
+        },
+        {
+            "type": "Image",
+            "id": "654e368c-6e45-4be1-8660-f784a28cc2ce",
+            "label": "thinice_button",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "thinice-button"
+            },
+            "x": 1191,
+            "y": 271
+        },
+        {
+            "type": "Image",
+            "id": "02ea977c-261d-4a18-95cb-41355c0396a5",
+            "label": "thinice_machine",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "thinice-machine"
+            },
+            "x": 1169,
+            "y": 302
+        },
+        {
+            "type": "Image",
+            "id": "f5424fa1-9630-4b16-b6e0-5eb10d39ef74",
+            "label": "thinice_text_en",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "thinice-text-en"
+            },
+            "x": 1140,
+            "y": 218
+        },
+        {
+            "type": "Image",
+            "id": "e876eb5f-be3d-4b94-a4ca-fd726623508c",
+            "label": "stool_ti",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "stool-ti"
+            },
+            "x": 1093,
+            "y": 375.7677923814067,
+            "originY": 0.07986585034512865
+        },
+        {
+            "type": "Image",
+            "id": "95d76795-bb76-4ea2-b4b7-d7cf850aa15e",
+            "label": "vending",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "vending"
+            },
+            "x": 79,
+            "y": 566
+        },
+        {
+            "type": "Image",
+            "id": "2ad8615f-2a91-44d4-817a-6d9552bdbe16",
+            "label": "bin",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bin"
+            },
+            "x": 28,
+            "y": 719
+        },
+        {
+            "type": "Image",
+            "id": "03ed738d-8866-4b72-b671-e69e6e98a430",
+            "label": "vending_text_en",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "vending-text-en"
+            },
+            "x": 121,
+            "y": 496
+        },
+        {
+            "type": "Sprite",
+            "id": "415bbf9c-bc1b-4498-854f-cce4aea88f74",
+            "label": "bitsandbolt_anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsandbolt-anim0001"
+            },
+            "x": 231,
+            "y": 397
+        },
+        {
+            "type": "Image",
+            "id": "5b4915aa-feb6-482d-bd09-4c695247c4d0",
+            "label": "bitsandbolts_button_hover",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsandbolts-button"
+            },
+            "x": 210,
+            "y": 397
+        },
+        {
+            "type": "Image",
+            "id": "657410e0-7812-4a84-b3ae-5065192373bf",
+            "label": "bitsandbolt_machine",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsandbolt-machine"
+            },
+            "x": 228,
+            "y": 410
+        },
+        {
+            "type": "Image",
+            "id": "a95eb5b6-a8ad-4b12-84ac-a7205e92d80e",
+            "label": "bitsandbolt_text_en",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsandbolt-text-en"
+            },
+            "x": 215,
+            "y": 332
+        },
+        {
+            "type": "Image",
+            "id": "11c5ba3d-68da-4872-a07b-35667cd6786c",
+            "label": "stool_bandb",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "stool-bandb"
+            },
+            "x": 306,
+            "y": 488.0045339491966,
+            "originY": 0.10444538773042321
+        },
+        {
+            "type": "Image",
+            "id": "42879cb2-2467-45a6-8ecb-f352d8318b07",
+            "label": "game_bg",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/bg"
+            },
+            "x": 760,
+            "y": 242,
+            "scaleX": -1
+        },
+        {
+            "type": "Image",
+            "id": "a9521842-a489-4e17-908e-8db165103e18",
+            "label": "game_buildings_one",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/buildings-one"
+            },
+            "x": 760,
+            "y": 249,
+            "scaleX": -1
+        },
+        {
+            "type": "Image",
+            "id": "729dc142-9fc9-4d13-9ca3-192fa733c270",
+            "label": "game_buildings_two",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/buildings-two"
+            },
+            "x": 760,
+            "y": 280,
+            "scaleX": -1
+        },
+        {
+            "type": "Image",
+            "id": "d5855cb0-1ce9-4dca-9ea3-7b76a1c8fecd",
+            "label": "game_fg",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/fg"
+            },
+            "x": 760,
+            "y": 314
+        },
+        {
+            "type": "Image",
+            "id": "d344241f-f081-4b02-927c-6a73cf24fb30",
+            "label": "target_text_en",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "target-text-en"
+            },
+            "x": 792,
+            "y": 365
+        },
+        {
+            "type": "Image",
+            "id": "3104bd82-57b8-41b4-95af-378d26d9aada",
+            "label": "cameras",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "cameras"
+            },
+            "x": 460,
+            "y": 58
+        },
+        {
+            "type": "Image",
+            "id": "36d5e50e-d033-4afb-a92f-3f0235e19fd1",
+            "label": "cameras_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "cameras"
+            },
+            "x": 1060,
+            "y": 58,
+            "scaleX": -1
+        },
+        {
+            "type": "Sprite",
+            "id": "a7e7f4ad-47e4-406f-8434-72d936f0a246",
+            "label": "game_grey_light0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/grey-light0001"
+            },
+            "x": 584,
+            "y": 131
+        },
+        {
+            "type": "Sprite",
+            "id": "73b18dce-12c3-4b1f-b493-0c91b00e547c",
+            "label": "game_white_light0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/white-light0001"
+            },
+            "x": 595,
+            "y": 129
+        },
+        {
+            "type": "Sprite",
+            "id": "79a03fdc-aa38-4040-a4ed-8226e1d4dc2c",
+            "label": "game_grey_light",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/grey-light0001"
+            },
+            "x": 607,
+            "y": 131
+        },
+        {
+            "type": "Sprite",
+            "id": "e41d90d7-e57f-468d-a0f9-f1ed5e256974",
+            "label": "game_white_light",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/white-light0001"
+            },
+            "x": 926,
+            "y": 129
+        },
+        {
+            "type": "Sprite",
+            "id": "da48a63f-8b2b-447c-9b14-e7efec033793",
+            "label": "game_grey_light_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/grey-light0001"
+            },
+            "x": 938,
+            "y": 131
+        },
+        {
+            "type": "Sprite",
+            "id": "3f25d602-6792-49b9-b631-ab29e97a2ee3",
+            "label": "game_grey_light_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "game/grey-light0001"
+            },
+            "x": 915,
+            "y": 131
+        },
+        {
+            "type": "Image",
+            "id": "05d0abf3-ce51-4629-a2b3-3eb00347c7f0",
+            "label": "railing_two",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "railing-two"
+            },
+            "x": 760,
+            "y": 491.984442789772,
+            "originY": 0.988066478659622
+        },
+        {
+            "type": "Image",
+            "id": "8931390d-aa27-4fac-83a1-9e143d4aa0b2",
+            "label": "scoreboard_bg",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "scoreboard/bg"
+            },
+            "x": 760,
+            "y": 81
+        },
+        {
+            "type": "Image",
+            "id": "8a22ce4c-2dbe-466e-a7c5-ec03ab074aab",
+            "label": "scoreboard_gameLogo_en0001",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "scoreboard/gameLogo-en0001"
+            },
+            "x": 760,
+            "y": 88
+        },
+        {
+            "type": "Image",
+            "id": "3a810d8b-7714-4db7-b376-e7e7579ee8e7",
+            "label": "scoreboard_fg",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "scoreboard/fg"
+            },
+            "x": 760,
+            "y": 64
+        },
+        {
+            "type": "Sprite",
+            "id": "f6b169e0-caa2-420b-88c6-ac72f18a8ca8",
+            "label": "astro_anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "astro-anim0001"
+            },
+            "x": 1250,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "f6e611b5-0875-487b-aa03-bea08547568e",
+            "label": "astro_button_hover",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "astro-button"
+            },
+            "x": 1269,
+            "y": 384
+        },
+        {
+            "type": "Image",
+            "id": "9a6c94b2-f638-442a-944e-84b04c33dc4a",
+            "label": "astro_machine",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "astro-machine"
+            },
+            "x": 1260,
+            "y": 410
+        },
+        {
+            "type": "Image",
+            "id": "527aaaa2-8201-4231-8b90-a1926d574c05",
+            "label": "astro_text_en",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "astro-text-en"
+            },
+            "x": 1256,
+            "y": 357
+        },
+        {
+            "type": "Image",
+            "id": "3424342c-c416-4044-a7c8-28ac35273021",
+            "label": "stool_ab",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "stool-ab"
+            },
+            "x": 1180.4779025952323,
+            "y": 461.33408459570944,
+            "originX": 0.5079650432538718,
+            "originY": 0.06411081973307078
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "6dcf7fa9-b837-43f1-abf4-e741fb797d67",
+                "cbd27cf0-8921-4c42-a003-4073bbee818e",
+                "4a6ff002-2f66-41b8-b987-9eb07bf8e471",
+                "553660be-bd4b-4f1e-9c78-19df00947f3d",
+                "58fb0c96-0162-487f-b6f5-11525b7f489f",
+                "32492362-54ce-4468-be0f-8e9210072bcc",
+                "8744a3fc-3117-4f80-a44a-46410629bf07",
+                "6c9caac4-2264-41b5-ba3d-b5f1773d1c04",
+                "77592b8e-1dd6-478f-8dce-7891952d42a9",
+                "fdd91e19-8458-4e43-ada9-aef58e7b69fc",
+                "abc0f8ba-20e9-4b3f-9e51-88bdbc5eb7e8",
+                "4dc4885a-e14d-4bf9-9cad-65ebf1cced62",
+                "73863b5a-5026-47c4-95d0-94cf60a19022",
+                "0dee98df-c966-49f2-9ea7-2f74d92e759a",
+                "11c5ba3d-68da-4872-a07b-35667cd6786c",
+                "e876eb5f-be3d-4b94-a4ca-fd726623508c",
+                "3424342c-c416-4044-a7c8-28ac35273021",
+                "05d0abf3-ce51-4629-a2b3-3eb00347c7f0",
+                "b27c85d7-e488-4756-be6e-bfd2169d0253"
+            ]
+        },
+        {
+            "id": "90bac67e-364b-43d5-b9ec-1d1be8580dbe",
+            "label": "animpenguins",
+            "objectIds": [
+                "823766e7-8dbc-4c57-a29f-0af5c981f0c8",
+                "33bbbbe6-e5d6-40f9-bb3b-605e43c6ae4e",
+                "09e61454-2f3a-46dc-aa9a-72ce7696a5b3",
+                "2014752b-f670-40e3-b9ab-97ed6c760c31",
+                "0a85ea56-8c42-4ea3-80b5-849ab801a964",
+                "d9ffc2d3-68d5-4e34-82a7-f1551fba3507"
+            ]
+        }
+    ]
+}
