@@ -11,14 +11,12 @@ const rooms = {
         x: 640,
         y: 480,
     },
-    /*
     111: {
         key: 'Book',
         scene: require('@rooms/book/Book').default,
         x: 1260,
         y: 560,
     },
-    */
     120: {
         key: 'Dance',
         scene: require('@rooms/dance/Dance').default,

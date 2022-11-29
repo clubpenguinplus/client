@@ -1,0 +1,786 @@
+{
+    "id": "c495d873-668d-44c5-81dd-c1718dc441b2",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/book/book-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Book",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f781c27c-c7eb-42df-a7d2-f8d82a15fec4",
+            "label": "bookbg",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "bookbg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "e1a5d18c-ba98-44c1-865d-d743016d8ddd",
+            "label": "righttable",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "righttable"
+            },
+            "x": 1423,
+            "y": 687
+        },
+        {
+            "type": "Image",
+            "id": "64430aa9-642b-42ee-b719-70017f4254f9",
+            "label": "frontrightcouch",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "frontrightcouch"
+            },
+            "x": 1379,
+            "y": 821
+        },
+        {
+            "type": "Image",
+            "id": "3f396f73-5a3b-47e8-a966-5de781adc564",
+            "label": "backrightcouch",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "backrightcouch"
+            },
+            "x": 1403,
+            "y": 490
+        },
+        {
+            "type": "Image",
+            "id": "b36baa4f-7af8-465d-be00-52d028a6e5ab",
+            "label": "backrightcouchfrontarm",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "backrightcouchfrontarm"
+            },
+            "x": 1418.4565576986101,
+            "y": 537.4565576986101,
+            "originX": 0.47826137603676255,
+            "originY": 0.4559016485317183
+        },
+        {
+            "type": "Image",
+            "id": "54872927-6f76-4017-90c4-fc991564c26f",
+            "label": "cptholder",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "cptholder"
+            },
+            "x": 1014,
+            "y": 191
+        },
+        {
+            "type": "Image",
+            "id": "08c3e75a-99a1-4228-a89b-fbe371aeadb9",
+            "label": "tree",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "tree"
+            },
+            "x": 1456,
+            "y": 599
+        },
+        {
+            "type": "Image",
+            "id": "42f7a699-b4d4-4c78-ae3b-cfe554821a7f",
+            "label": "mancala_en",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "mancala_en",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "book",
+                "frame": "mancala_en"
+            },
+            "x": 1452,
+            "y": 293
+        },
+        {
+            "type": "Image",
+            "id": "d69cd1cc-c816-4538-a9d8-9516dc498541",
+            "label": "bookfg",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "bookfg"
+            },
+            "x": -109.99999585527848,
+            "y": 980.9999871678945,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Container",
+            "id": "8127fb0e-fe4c-4e19-aec8-1cc848e540ab",
+            "label": "mancala_board",
+            "scope": "CLASS",
+            "components": [
+                "ShowHint"
+            ],
+            "ShowHint.text": "Play Mancala",
+            "x": 1283,
+            "y": 670,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "e924ea68-4559-4605-bd71-623a24dd3485",
+                    "label": "mancala_table",
+                    "components": [],
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_table"
+                    },
+                    "x": 4.4261127391096124,
+                    "y": 8.486639824939743,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "3c3439d7-1bb3-4595-8c92-9cac26be19f3",
+                    "label": "mancala_board4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mancala_board",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_board"
+                    },
+                    "x": 3.4261127391096124,
+                    "y": -19.513360175060257,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "266e4a61-c4a4-4d18-8170-a7ff649f01bf",
+            "label": "mancala_board_1",
+            "scope": "CLASS",
+            "components": [
+                "ShowHint"
+            ],
+            "ShowHint.text": "Play Mancala",
+            "x": 1245,
+            "y": 550,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "700939b5-f35c-4201-b3ef-906a6a2f184e",
+                    "label": "mancala_table1",
+                    "components": [],
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_table"
+                    },
+                    "x": 1.4104978049983856,
+                    "y": 11.502254759051198,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "443ad535-d78d-4bb8-9056-84f45bd7a216",
+                    "label": "mancala_board1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mancala_board",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_board"
+                    },
+                    "x": 0.4104978049983856,
+                    "y": -16.497745240948802,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "bc1e5212-4f0d-4a1c-9c28-97c106a82115",
+            "label": "mancala_board_2",
+            "scope": "CLASS",
+            "components": [
+                "ShowHint"
+            ],
+            "ShowHint.text": "Play Mancala",
+            "x": 1127,
+            "y": 626,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b99244dd-a9d4-4758-89ad-84a0367f8ad6",
+                    "label": "mancala_table2",
+                    "components": [],
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_table"
+                    },
+                    "x": 7.441727673221067,
+                    "y": 14.517869693162538,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "b09f869c-2c5c-4e06-bb4a-d0f0eae3042f",
+                    "label": "mancala_board2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mancala_board",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_board"
+                    },
+                    "x": 6.441727673221067,
+                    "y": -13.482130306837462,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cca06f57-dead-4c48-8ba7-5a49efb6f0bc",
+            "label": "mancala_board_3",
+            "scope": "CLASS",
+            "components": [
+                "ShowHint"
+            ],
+            "ShowHint.text": "Play Mancala",
+            "x": 1168,
+            "y": 757,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "5ff7faa5-a5c1-4f6b-9b7e-8b78abc78bac",
+                    "label": "mancala_table3",
+                    "components": [],
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_table"
+                    },
+                    "x": 7.441727673221067,
+                    "y": 11.502254759051198,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "957c745d-9fdf-4ea3-a9d8-e77c4e1caddc",
+                    "label": "mancala_board3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "mancala_board",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "book",
+                        "frame": "mancala_board"
+                    },
+                    "x": 6.441727673221067,
+                    "y": -16.497745240948802,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "3a78aea2-e4a5-4b5a-8c35-b28ff4086e1a",
+            "label": "computerdesk",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "computerdesk"
+            },
+            "x": 993,
+            "y": 326
+        },
+        {
+            "type": "Image",
+            "id": "38ca8d7c-a399-437d-baf2-042ce315b3e4",
+            "label": "circlechair",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "circlechair"
+            },
+            "x": 1054.177933158297,
+            "y": 392.8531764312228,
+            "originX": 0.4201453781036627,
+            "originY": 0.5224659747871799
+        },
+        {
+            "type": "Image",
+            "id": "e62c982a-0678-4a21-8a0c-2c11aa664d80",
+            "label": "circledesk",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "circledesk"
+            },
+            "x": 1098.9010855124363,
+            "y": 462.1758141343272,
+            "originX": 0.5598960742441557,
+            "originY": 0.5579844974065759
+        },
+        {
+            "type": "Image",
+            "id": "0d9187d8-f287-4e12-b10c-76dd27005afa",
+            "label": "cpt_en",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "cpt_en"
+            },
+            "x": 1036,
+            "y": 226
+        },
+        {
+            "type": "Sprite",
+            "id": "1c25bcf3-791f-4657-a391-46e9253e6cf1",
+            "label": "part_frames",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.ArtOver();",
+            "SimpleButton.hoverOutCallback": "() => this.ArtOut();",
+            "texture": {
+                "key": "book",
+                "frame": "part_frames"
+            },
+            "x": 622,
+            "y": 188
+        },
+        {
+            "type": "Image",
+            "id": "dcd203aa-6b86-42f1-9ee7-02969a038284",
+            "label": "coatrack",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "coatrack"
+            },
+            "x": 791,
+            "y": 296
+        },
+        {
+            "type": "Image",
+            "id": "ec1fc12a-ef3c-464c-958a-fe8f78d852db",
+            "label": "plant",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "plant"
+            },
+            "x": 800,
+            "y": 407
+        },
+        {
+            "type": "Image",
+            "id": "c1260614-4ab1-4f68-a1ce-5f978b17ae8b",
+            "label": "walldivider",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "walldivider"
+            },
+            "x": 829.6883568088317,
+            "y": 449.43941899898664,
+            "originX": 0.3833653299925587,
+            "originY": 0.9172099980059495
+        },
+        {
+            "type": "Image",
+            "id": "cf9faf92-d63e-4bb6-9a3a-99df85aadd75",
+            "label": "railing",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "railing"
+            },
+            "x": 868,
+            "y": 475
+        },
+        {
+            "type": "Image",
+            "id": "e7f3c9d0-f382-4e47-a43e-3ecb5d1247c5",
+            "label": "deskchair",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "deskchair"
+            },
+            "x": 646,
+            "y": 295
+        },
+        {
+            "type": "Image",
+            "id": "5074e793-886e-4aff-974c-19286c8769a3",
+            "label": "bigdesk",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "bigdesk"
+            },
+            "x": 632.9891245411674,
+            "y": 376.46381297149935,
+            "originX": 0.5479873725331512,
+            "originY": 0.347373495693172
+        },
+        {
+            "type": "Image",
+            "id": "3624da5c-ea07-466f-af3b-2bd151a417c6",
+            "label": "partholder",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "partholder"
+            },
+            "x": 627,
+            "y": 73
+        },
+        {
+            "type": "Image",
+            "id": "dca0fd87-2045-483b-9fff-5eeb74c8b74a",
+            "label": "part_en",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "part_en"
+            },
+            "x": 627,
+            "y": 72
+        },
+        {
+            "type": "Image",
+            "id": "0333f2e8-c505-41fb-84f9-c11fab4f1efc",
+            "label": "bookcase",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "bookcase",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "book",
+                "frame": "bookcase"
+            },
+            "x": 423,
+            "y": 317
+        },
+        {
+            "type": "Image",
+            "id": "91b30008-32a3-4873-8d4e-e52a24b39305",
+            "label": "filecabinet",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "filecabinet"
+            },
+            "x": 319,
+            "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "94afea77-e913-4e4b-b7a0-5e9d6fcb2bca",
+            "label": "wanted_board",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "wanted_board"
+            },
+            "x": 328.52157439663756,
+            "y": 635.6346705897136,
+            "originX": 0.7049408563728526,
+            "originY": 0.6255344071020379
+        },
+        {
+            "type": "Image",
+            "id": "0007d115-353c-4aa0-b62a-5e285cdbf999",
+            "label": "chair",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "chair"
+            },
+            "x": 479.2257882212149,
+            "y": 711.2899762030828,
+            "originX": 0.4772536951437806,
+            "originY": 0.16139161898349222
+        },
+        {
+            "type": "Image",
+            "id": "317d4ab6-4653-463c-bd1a-6f0ee4bf92b5",
+            "label": "chair_1",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "chair"
+            },
+            "x": 604,
+            "y": 711.2899762030828,
+            "originY": 0.1855547757052954
+        },
+        {
+            "type": "Image",
+            "id": "b84baeb4-fd2d-4b37-94e5-526bcd17c625",
+            "label": "newsline",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newsline"
+            },
+            "x": 384,
+            "y": 921,
+            "originX": 0.5051464385745139,
+            "originY": 0.8699670054085217
+        },
+        {
+            "type": "Image",
+            "id": "7dee65d8-b6f1-4586-8443-d0d70b8a8d35",
+            "label": "lobbydesk",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "lobbydesk"
+            },
+            "x": 1007,
+            "y": 768
+        },
+        {
+            "type": "Image",
+            "id": "bb6cf924-f0e4-4cbc-bf4d-bf7df56bf69f",
+            "label": "newsdivider",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newsdivider"
+            },
+            "x": 896.9989556361367,
+            "y": 661.9903396342643,
+            "originX": 0.5246849113341769,
+            "originY": 0.7283354298411375
+        },
+        {
+            "type": "Image",
+            "id": "bf627c7f-da56-4f15-9d97-d67440de19b6",
+            "label": "wheelchair",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "wheelchair"
+            },
+            "x": 785,
+            "y": 721,
+            "originX": 0.4020959712771272,
+            "originY": 0.4668610351637075
+        },
+        {
+            "type": "Image",
+            "id": "e7a6d2ad-6643-4bb8-8c8f-6a5ef2c364b9",
+            "label": "newsdesk",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newsdesk"
+            },
+            "x": 896,
+            "y": 746
+        },
+        {
+            "type": "Image",
+            "id": "85b038ab-456f-48b2-81c4-69b5c4928aa6",
+            "label": "newslobbydivider",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newslobbydivider"
+            },
+            "x": 959,
+            "y": 760
+        },
+        {
+            "type": "Sprite",
+            "id": "e7b8502e-58ab-4c9d-87bd-93a1b59488f5",
+            "label": "newspaper",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newspaper0001"
+            },
+            "x": 315.13132051048785,
+            "y": 943.2560939533366,
+            "originX": 0.5096001422792065,
+            "originY": 0.9508237199864841
+        },
+        {
+            "type": "Image",
+            "id": "4c632917-8ff0-4ec6-ba91-0448b547a384",
+            "label": "newslineholder",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newslineholder"
+            },
+            "x": 485.27131892073226,
+            "y": 957.8293295400185,
+            "originX": 0.4780772528953547,
+            "originY": 0.8514208150107924
+        },
+        {
+            "type": "Sprite",
+            "id": "0986fd62-0063-431e-a8aa-89cd2f53db63",
+            "label": "newssquiggle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "newssquiggle0001"
+            },
+            "x": 314,
+            "y": 993,
+            "originX": 0.30479885219683506,
+            "originY": 4.12356153680589
+        },
+        {
+            "type": "Image",
+            "id": "73a0cbdf-ade4-4b69-b08c-57eb1f4ba7ec",
+            "label": "tales_en",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "tales_en",
+            "Button.hoverCallback": "() => this.BookOver();",
+            "Button.hoverOutCallback": "() => this.BookClose();",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "book",
+                "frame": "tales_en"
+            },
+            "x": 1438,
+            "y": 1018.2595776391645,
+            "originY": 1.5908116862160333
+        },
+        {
+            "type": "Image",
+            "id": "1ce73c99-a8f3-4e79-aec5-ee0706e994e8",
+            "label": "bookdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "bookdoor",
+            "Button.hoverCallback": "() => this.CoffeeDoorOver();",
+            "Button.hoverOutCallback": "() => this.CoffeeDoorOut();",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "book",
+                "frame": "bookdoor"
+            },
+            "x": 1263.4515764424298,
+            "y": 444.033224275611,
+            "originX": 0.4711510279872339,
+            "originY": 0.9456550913536067
+        },
+        {
+            "type": "Ellipse",
+            "id": "ab2a8a4a-ff77-4994-b306-ba42334c678d",
+            "label": "seatzone",
+            "scope": "CLASS",
+            "components": [
+                "Seat"
+            ],
+            "x": 480.2257995605468,
+            "y": 727.7742222800385,
+            "scaleX": 0.6447951148833675,
+            "scaleY": 0.467361763151831,
+            "originX": 0.4785032034255048,
+            "originY": 0.5296580297611317,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Ellipse",
+            "id": "db3656a9-c5ad-46ec-82b1-1b12567941ed",
+            "label": "seatzone_1",
+            "scope": "CLASS",
+            "components": [
+                "Seat"
+            ],
+            "x": 601.4515572641836,
+            "y": 724.7742031017925,
+            "scaleX": 0.6447951148833675,
+            "scaleY": 0.467361763151831,
+            "originX": 0.4570064068510131,
+            "originY": 0.5296580297611335,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fe558881-3771-42fb-961a-130eca3729b1",
+            "label": "sort",
+            "objectIds": [
+                "d69cd1cc-c816-4538-a9d8-9516dc498541",
+                "b36baa4f-7af8-465d-be00-52d028a6e5ab",
+                "08c3e75a-99a1-4228-a89b-fbe371aeadb9",
+                "e1a5d18c-ba98-44c1-865d-d743016d8ddd",
+                "64430aa9-642b-42ee-b719-70017f4254f9",
+                "cca06f57-dead-4c48-8ba7-5a49efb6f0bc",
+                "bc1e5212-4f0d-4a1c-9c28-97c106a82115",
+                "266e4a61-c4a4-4d18-8170-a7ff649f01bf",
+                "8127fb0e-fe4c-4e19-aec8-1cc848e540ab",
+                "e62c982a-0678-4a21-8a0c-2c11aa664d80",
+                "38ca8d7c-a399-437d-baf2-042ce315b3e4",
+                "c1260614-4ab1-4f68-a1ce-5f978b17ae8b",
+                "cf9faf92-d63e-4bb6-9a3a-99df85aadd75",
+                "5074e793-886e-4aff-974c-19286c8769a3",
+                "94afea77-e913-4e4b-b7a0-5e9d6fcb2bca",
+                "85b038ab-456f-48b2-81c4-69b5c4928aa6",
+                "bb6cf924-f0e4-4cbc-bf4d-bf7df56bf69f",
+                "e7a6d2ad-6643-4bb8-8c8f-6a5ef2c364b9",
+                "bf627c7f-da56-4f15-9d97-d67440de19b6",
+                "317d4ab6-4653-463c-bd1a-6f0ee4bf92b5",
+                "0007d115-353c-4aa0-b62a-5e285cdbf999",
+                "b84baeb4-fd2d-4b37-94e5-526bcd17c625",
+                "e7b8502e-58ab-4c9d-87bd-93a1b59488f5",
+                "4c632917-8ff0-4ec6-ba91-0448b547a384",
+                "73a0cbdf-ade4-4b69-b08c-57eb1f4ba7ec"
+            ]
+        }
+    ]
+}
