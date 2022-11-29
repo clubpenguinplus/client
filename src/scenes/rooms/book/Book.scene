@@ -741,6 +741,20 @@
             "originY": 0.5296580297611335,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "60ec91ee-478a-40b9-a07f-f9e57556e6c8",
+            "label": "wanted_en",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "wanted_en"
+            },
+            "x": 315.4850493101891,
+            "y": 652.551479305673,
+            "originX": 0.549085201551959,
+            "originY": 2.6781558188681864
         }
     ],
     "plainObjects": [],
@@ -779,7 +793,8 @@
                 "b84baeb4-fd2d-4b37-94e5-526bcd17c625",
                 "e7b8502e-58ab-4c9d-87bd-93a1b59488f5",
                 "4c632917-8ff0-4ec6-ba91-0448b547a384",
-                "73a0cbdf-ade4-4b69-b08c-57eb1f4ba7ec"
+                "73a0cbdf-ade4-4b69-b08c-57eb1f4ba7ec",
+                "60ec91ee-478a-40b9-a07f-f9e57556e6c8"
             ]
         }
     ]

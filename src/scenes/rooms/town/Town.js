@@ -13,7 +13,7 @@ export default class Town extends RoomScene {
         this.roomTriggers = {
             dock: () => this.triggerRoom(800, 1200, 400),
             snowForts: () => this.triggerRoom(801, 360, 520),
-            coffeeShop: () => this.triggerRoom(111, 700, 450),
+            coffeeShop: () => this.triggerRoom(110, 700, 450),
             danceClub: () => this.triggerRoom(120, 300, 560),
             clothesShop: () => this.triggerRoom(130, 1036, 520),
         }
