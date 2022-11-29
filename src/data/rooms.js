@@ -67,14 +67,12 @@ const rooms = {
         x: 966,
         y: 560,
     },
-    /*
     230: {
         key: 'Mtn',
         scene: require('@rooms/mtn/Mtn').default,
         x: 760,
         y: 440,
     },
-    */
     300: {
         key: 'Plaza',
         scene: require('@rooms/plaza/Plaza').default,
