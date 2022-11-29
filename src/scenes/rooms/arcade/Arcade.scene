@@ -39,10 +39,10 @@
             },
             "x": 744,
             "y": 776,
-            "tintTopLeft": "#040427",
-            "tintTopRight": "#040427",
-            "tintBottomLeft": "#040427",
-            "tintBottomRight": "#040427",
+            "tintTopLeft": "#0a0a39",
+            "tintTopRight": "#0a0a39",
+            "tintBottomLeft": "#0a0a39",
+            "tintBottomRight": "#0a0a39",
             "tintFill": true
         },
         {
@@ -56,10 +56,10 @@
             },
             "x": 837,
             "y": 783,
-            "tintTopLeft": "#040427",
-            "tintTopRight": "#040427",
-            "tintBottomLeft": "#040427",
-            "tintBottomRight": "#040427",
+            "tintTopLeft": "#0a0a39",
+            "tintTopRight": "#0a0a39",
+            "tintBottomLeft": "#0a0a39",
+            "tintBottomRight": "#0a0a39",
             "tintFill": true
         },
         {
@@ -73,10 +73,10 @@
             },
             "x": 662,
             "y": 794,
-            "tintTopLeft": "#040427",
-            "tintTopRight": "#040427",
-            "tintBottomLeft": "#040427",
-            "tintBottomRight": "#040427",
+            "tintTopLeft": "#0a0a39",
+            "tintTopRight": "#0a0a39",
+            "tintBottomLeft": "#0a0a39",
+            "tintBottomRight": "#0a0a39",
             "tintFill": true
         },
         {
@@ -90,10 +90,10 @@
             },
             "x": 706,
             "y": 840,
-            "tintTopLeft": "#040427",
-            "tintTopRight": "#040427",
-            "tintBottomLeft": "#040427",
-            "tintBottomRight": "#040427",
+            "tintTopLeft": "#0a0a39",
+            "tintTopRight": "#0a0a39",
+            "tintBottomLeft": "#0a0a39",
+            "tintBottomRight": "#0a0a39",
             "tintFill": true
         },
         {
@@ -107,10 +107,10 @@
             },
             "x": 811,
             "y": 857,
-            "tintTopLeft": "#040427",
-            "tintTopRight": "#040427",
-            "tintBottomLeft": "#040427",
-            "tintBottomRight": "#040427",
+            "tintTopLeft": "#0a0a39",
+            "tintTopRight": "#0a0a39",
+            "tintBottomLeft": "#0a0a39",
+            "tintBottomRight": "#0a0a39",
             "tintFill": true
         },
         {
@@ -124,10 +124,10 @@
             },
             "x": 791,
             "y": 811,
-            "tintTopLeft": "#040427",
-            "tintTopRight": "#040427",
-            "tintBottomLeft": "#040427",
-            "tintBottomRight": "#040427",
+            "tintTopLeft": "#0a0a39",
+            "tintTopRight": "#0a0a39",
+            "tintBottomLeft": "#0a0a39",
+            "tintBottomRight": "#0a0a39",
             "tintFill": true
         },
         {
@@ -151,115 +151,10 @@
                 "key": "arcade",
                 "frame": "railing"
             },
-            "x": 1305.1633248423018,
-            "y": 615.7046329612486,
-            "originX": 0.06722470714435018,
-            "originY": 0.19432724118815067
-        },
-        {
-            "type": "Container",
-            "id": "d571c5e3-3309-41d0-b194-03fdaefbaa85",
-            "label": "container_3",
-            "components": [],
-            "x": 1364,
-            "y": 721,
-            "scaleX": -1,
-            "list": [
-                {
-                    "type": "TileSprite",
-                    "id": "6dcf7fa9-b837-43f1-abf4-e741fb797d67",
-                    "label": "chair_top_1",
-                    "components": [],
-                    "texture": {
-                        "key": "arcade",
-                        "frame": "chair-top"
-                    },
-                    "x": 187.8040926413521,
-                    "y": -5.412293434143066,
-                    "originX": 0.5422677533961885,
-                    "originY": 0.4122131275617606,
-                    "width": 90,
-                    "height": 130
-                },
-                {
-                    "type": "TileSprite",
-                    "id": "cbd27cf0-8921-4c42-a003-4073bbee818e",
-                    "label": "chair_right_1",
-                    "components": [],
-                    "texture": {
-                        "key": "arcade",
-                        "frame": "chair-right"
-                    },
-                    "x": 242.19590219434303,
-                    "y": 118.32233981181491,
-                    "originX": 0.4518468632195321,
-                    "originY": 0.1621360501554594,
-                    "width": 79,
-                    "height": 76
-                },
-                {
-                    "type": "TileSprite",
-                    "id": "4a6ff002-2f66-41b8-b987-9eb07bf8e471",
-                    "label": "chair_right_back_1",
-                    "components": [],
-                    "texture": {
-                        "key": "arcade",
-                        "frame": "chair-right-back"
-                    },
-                    "x": 279,
-                    "y": 143.80409780565708,
-                    "originY": 0.5299535260287959,
-                    "width": 48,
-                    "height": 127
-                },
-                {
-                    "type": "TileSprite",
-                    "id": "553660be-bd4b-4f1e-9c78-19df00947f3d",
-                    "label": "chair_left_1",
-                    "components": [],
-                    "texture": {
-                        "key": "arcade",
-                        "frame": "chair-left"
-                    },
-                    "x": 14.95102451514618,
-                    "y": 40.58770570167246,
-                    "originX": 0.5096063075900429,
-                    "originY": 0.4101394219136132,
-                    "width": 99,
-                    "height": 127
-                },
-                {
-                    "type": "TileSprite",
-                    "id": "58fb0c96-0162-487f-b6f5-11525b7f489f",
-                    "label": "chair_bottom_1",
-                    "components": [],
-                    "texture": {
-                        "key": "arcade",
-                        "frame": "chair-bottom"
-                    },
-                    "x": 56.51024480341425,
-                    "y": 139.0774613665094,
-                    "originX": 0.6174104261005264,
-                    "originY": 0.2094091954011977,
-                    "width": 81,
-                    "height": 72
-                },
-                {
-                    "type": "TileSprite",
-                    "id": "32492362-54ce-4468-be0f-8e9210072bcc",
-                    "label": "chair_bottom_back_1",
-                    "components": [],
-                    "texture": {
-                        "key": "arcade",
-                        "frame": "chair-bottom-back"
-                    },
-                    "x": 19,
-                    "y": 171.41229341697112,
-                    "originY": 0.6056693834904734,
-                    "width": 76,
-                    "height": 108
-                }
-            ]
+            "x": 1310.1473388671875,
+            "y": 627.9924928940286,
+            "originX": 0.08861541638675746,
+            "originY": 0.22607861681280061
         },
         {
             "type": "Image",
@@ -356,6 +251,106 @@
             },
             "x": 264,
             "y": 793
+        },
+        {
+            "type": "TileSprite",
+            "id": "6dcf7fa9-b837-43f1-abf4-e741fb797d67",
+            "label": "chair_top_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-top"
+            },
+            "x": 1176.1959228515625,
+            "y": 715.5877075195312,
+            "scaleX": -1,
+            "originX": 0.5422677533961885,
+            "originY": 0.4122131275617606,
+            "width": 90,
+            "height": 130
+        },
+        {
+            "type": "TileSprite",
+            "id": "cbd27cf0-8921-4c42-a003-4073bbee818e",
+            "label": "chair_right_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-right"
+            },
+            "x": 1121.8040771484375,
+            "y": 839.3223266601562,
+            "scaleX": -1,
+            "originX": 0.4518468632195321,
+            "originY": 0.1621360501554594,
+            "width": 79,
+            "height": 76
+        },
+        {
+            "type": "TileSprite",
+            "id": "4a6ff002-2f66-41b8-b987-9eb07bf8e471",
+            "label": "chair_right_back_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-right-back"
+            },
+            "x": 1085,
+            "y": 864.8040771484375,
+            "scaleX": -1,
+            "originY": 0.5299535260287959,
+            "width": 48,
+            "height": 127
+        },
+        {
+            "type": "TileSprite",
+            "id": "553660be-bd4b-4f1e-9c78-19df00947f3d",
+            "label": "chair_left_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-left"
+            },
+            "x": 1349.0489501953125,
+            "y": 761.5877075195312,
+            "scaleX": -1,
+            "originX": 0.5096063075900429,
+            "originY": 0.4101394219136132,
+            "width": 99,
+            "height": 127
+        },
+        {
+            "type": "TileSprite",
+            "id": "58fb0c96-0162-487f-b6f5-11525b7f489f",
+            "label": "chair_bottom_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-bottom"
+            },
+            "x": 1307.48974609375,
+            "y": 860.0774536132812,
+            "scaleX": -1,
+            "originX": 0.6174104261005264,
+            "originY": 0.2094091954011977,
+            "width": 81,
+            "height": 72
+        },
+        {
+            "type": "TileSprite",
+            "id": "32492362-54ce-4468-be0f-8e9210072bcc",
+            "label": "chair_bottom_back_1",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "chair-bottom-back"
+            },
+            "x": 1345,
+            "y": 892.4122924804688,
+            "scaleX": -1,
+            "originY": 0.6056693834904734,
+            "width": 76,
+            "height": 108
         },
         {
             "type": "Image",
@@ -487,13 +482,22 @@
             "type": "Image",
             "id": "654e368c-6e45-4be1-8660-f784a28cc2ce",
             "label": "thinice_button",
-            "components": [],
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "thinice-button",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1093,
+            "MoveTo.y": 386,
+            "ShowHint.text": "thinice",
             "texture": {
                 "key": "arcade",
                 "frame": "thinice-button"
             },
-            "x": 1191,
-            "y": 271
+            "x": 1194.5,
+            "y": 270.5
         },
         {
             "type": "Image",
@@ -511,7 +515,9 @@
             "type": "Image",
             "id": "f5424fa1-9630-4b16-b6e0-5eb10d39ef74",
             "label": "thinice_text_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "arcade",
                 "frame": "thinice-text-en"
@@ -560,7 +566,9 @@
             "type": "Image",
             "id": "03ed738d-8866-4b72-b671-e69e6e98a430",
             "label": "vending_text_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "arcade",
                 "frame": "vending-text-en"
@@ -585,7 +593,16 @@
             "type": "Image",
             "id": "5b4915aa-feb6-482d-bd09-4c695247c4d0",
             "label": "bitsandbolts_button_hover",
-            "components": [],
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "bitsandbolts-button",
+            "Button.activeFrame": false,
+            "MoveTo.x": 306,
+            "MoveTo.y": 495,
+            "ShowHint.text": "bitsandbolts",
             "texture": {
                 "key": "arcade",
                 "frame": "bitsandbolts-button"
@@ -609,7 +626,9 @@
             "type": "Image",
             "id": "a95eb5b6-a8ad-4b12-84ac-a7205e92d80e",
             "label": "bitsandbolt_text_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "arcade",
                 "frame": "bitsandbolt-text-en"
@@ -685,7 +704,9 @@
             "type": "Image",
             "id": "d344241f-f081-4b02-927c-6a73cf24fb30",
             "label": "target_text_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "arcade",
                 "frame": "target-text-en"
@@ -861,8 +882,17 @@
         {
             "type": "Image",
             "id": "f6e611b5-0875-487b-aa03-bea08547568e",
-            "label": "astro_button_hover",
-            "components": [],
+            "label": "astro_button",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "astro-button",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1181,
+            "MoveTo.y": 473,
+            "ShowHint.text": "astrobarrier",
             "texture": {
                 "key": "arcade",
                 "frame": "astro-button"
@@ -886,7 +916,9 @@
             "type": "Image",
             "id": "527aaaa2-8201-4231-8b90-a1926d574c05",
             "label": "astro_text_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "arcade",
                 "frame": "astro-text-en"
@@ -907,6 +939,202 @@
             "y": 461.33408459570944,
             "originX": 0.5079650432538718,
             "originY": 0.06411081973307078
+        },
+        {
+            "type": "Ellipse",
+            "id": "ef268565-77ca-4a3c-83e3-d4f98029ac49",
+            "label": "moveto_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1185,
+            "y": 730,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "c68bf1d7-877c-46e1-85a3-32cc5a9d4a3d",
+            "label": "moveto",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 1343,
+            "y": 773,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "3207d533-08ce-405b-9d8d-9d54fd0cdc4f",
+            "label": "moveto_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 1324,
+            "y": 869,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "659148ca-59f6-4a17-9de6-f840f91e3f15",
+            "label": "moveto_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1118,
+            "y": 853,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "5160792a-2665-450e-9b4c-cc143928779d",
+            "label": "moveto_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1181,
+            "y": 473,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "2a1a915e-4539-476f-808c-2950e452a39b",
+            "label": "moveto_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1093,
+            "y": 386,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "f93a13fa-1e10-45dd-a20c-7de9bed631eb",
+            "label": "moveto_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 306,
+            "y": 495,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "003ede8e-6143-419a-b7f5-81ade512d879",
+            "label": "moveto_7",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 189,
+            "y": 876,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "3c054bc2-9e75-4a26-a585-4be013a57297",
+            "label": "moveto_8",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 398,
+            "y": 849,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "b29e649e-0aa1-4a3f-8ab5-ad2be6c2cd76",
+            "label": "moveto_9",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 304,
+            "y": 728,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "5ed8cbe3-2a8c-421e-ae34-f6eabaf28c93",
+            "label": "moveto_10",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 159,
+            "y": 776,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "41eb1ccc-79f9-449c-91ac-5e1bc672de28",
+            "label": "polygon_1",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "x": 1386.998579623233,
+            "y": 621.9587424556883,
+            "angle": 51,
+            "originX": 0.10299631838812275,
+            "originY": 0.569044961756756,
+            "width": 300,
+            "height": 150
+        },
+        {
+            "type": "Text",
+            "id": "323b2412-e0f9-4b66-8e76-c71480776404",
+            "label": "text_1",
+            "components": [],
+            "x": 576,
+            "y": 358,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "000",
+            "fontFamily": "cplcd",
+            "fontSize": "36px"
+        },
+        {
+            "type": "Text",
+            "id": "68df8949-775d-49d1-95ff-46a854f8a8e8",
+            "label": "text",
+            "components": [],
+            "x": 944,
+            "y": 358,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "000",
+            "fontFamily": "cplcd",
+            "fontSize": "36px"
         }
     ],
     "plainObjects": [],

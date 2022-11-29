@@ -273,6 +273,11 @@ export default class ClientController {
     }
 
     sendJoinRoom(id, name, x, y, randomRange = 40) {
+        if (!x || !y) {
+            x = this.crumbs.scenes.rooms[id].x
+            y = this.crumbs.scenes.rooms[id].y
+        }
+
         this.interface.destroyPin()
 
         if (this.activeSeat) {
@@ -286,7 +291,7 @@ export default class ClientController {
 
         this.lockRotation = false
 
-        let random = PathEngine.getRandomPos(x, y, randomRange)
+        let random = PathEngine.getRandomPos(parseInt(x), parseInt(y), parseInt(randomRange))
         this.airtower.sendXt('j#jr', `${id}%${random.x}%${random.y}`)
     }
 

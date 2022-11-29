@@ -71,8 +71,8 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onStairsOver()",
             "SimpleButton.hoverOutCallback": "() => this.onStairsOut()",
-            "MoveTo.x": 1400,
-            "MoveTo.y": 500,
+            "MoveTo.x": 1340,
+            "MoveTo.y": 470,
             "texture": {
                 "key": "dance",
                 "frame": "upstairs"

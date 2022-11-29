@@ -11,7 +11,7 @@ export default class Dance extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            arcade: () => this.triggerRoom(121, 1200, 400),
+            arcade: () => this.triggerRoom(121, 1280, 576),
             boiler: () => this.triggerRoom(804, 1040, 580),
             contest: () => this.triggerGame('DanceContest', 952),
             soundstudio: () => this.triggerGame('SoundStudio', 940, false),
@@ -182,8 +182,8 @@ export default class Dance extends RoomScene {
         upstairsSimpleButton.hoverCallback = () => this.onStairsOver()
         upstairsSimpleButton.hoverOutCallback = () => this.onStairsOut()
         const upstairsMoveTo = new MoveTo(upstairs)
-        upstairsMoveTo.x = 1400
-        upstairsMoveTo.y = 500
+        upstairsMoveTo.x = 1340
+        upstairsMoveTo.y = 470
 
         // soundStudio (components)
         const soundStudioSimpleButton = new SimpleButton(soundStudio)

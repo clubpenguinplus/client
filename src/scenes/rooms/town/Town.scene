@@ -26,7 +26,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.DiscoDoorOver()",
             "SimpleButton.hoverOutCallback": "() => this.DiscoDoorOut()",
-            "MoveTo.x": 890,
+            "MoveTo.x": 850,
             "MoveTo.y": 400,
             "texture": {
                 "key": "town",
@@ -99,8 +99,8 @@
                 "MoveTo",
                 "Button"
             ],
-            "MoveTo.x": 460,
-            "MoveTo.y": 450,
+            "MoveTo.x": 430,
+            "MoveTo.y": 430,
             "Button.spriteName": "coffeedoor",
             "Button.hoverCallback": "() => this.CoffeeDoorOver()",
             "Button.hoverOutCallback": "() => this.CoffeeDoorOut()",
@@ -123,7 +123,7 @@
                 "MoveTo",
                 "Button"
             ],
-            "MoveTo.x": 1130,
+            "MoveTo.x": 1100,
             "MoveTo.y": 400,
             "Button.spriteName": "clothesdoor",
             "Button.hoverCallback": "() => this.ShopDoorOver()",

@@ -128,13 +128,13 @@ export default class Town extends RoomScene {
         dc_doorSimpleButton.hoverCallback = () => this.DiscoDoorOver()
         dc_doorSimpleButton.hoverOutCallback = () => this.DiscoDoorOut()
         const dc_doorMoveTo = new MoveTo(dc_door)
-        dc_doorMoveTo.x = 890
+        dc_doorMoveTo.x = 850
         dc_doorMoveTo.y = 400
 
         // coffee_door (components)
         const coffee_doorMoveTo = new MoveTo(coffee_door)
-        coffee_doorMoveTo.x = 460
-        coffee_doorMoveTo.y = 450
+        coffee_doorMoveTo.x = 430
+        coffee_doorMoveTo.y = 430
         const coffee_doorButton = new Button(coffee_door)
         coffee_doorButton.spriteName = 'coffeedoor'
         coffee_doorButton.hoverCallback = () => this.CoffeeDoorOver()
@@ -143,7 +143,7 @@ export default class Town extends RoomScene {
 
         // clothes_door (components)
         const clothes_doorMoveTo = new MoveTo(clothes_door)
-        clothes_doorMoveTo.x = 1130
+        clothes_doorMoveTo.x = 1100
         clothes_doorMoveTo.y = 400
         const clothes_doorButton = new Button(clothes_door)
         clothes_doorButton.spriteName = 'clothesdoor'
