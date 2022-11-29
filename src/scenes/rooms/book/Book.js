@@ -31,7 +31,9 @@ export default class Book extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        this.roomTriggers = {
+            coffee: () => this.triggerRoom(110, 760, 480)
+        }
         /* END-USER-CTR-CODE */
     }
 
