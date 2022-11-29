@@ -36,6 +36,8 @@ export default class Book extends RoomScene {
             printerone: () => this.playPrintingPress(),
             printertwo: () => this.playPrintingPress(),
         }
+
+        this.music = '669'
         /* END-USER-CTR-CODE */
     }
 

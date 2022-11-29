@@ -11,8 +11,10 @@ export default class Mtn extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             village: () => this.triggerRoom(200, 760, 480),
-            unknown: null,
+            unknown: () => this.triggerRoom(200, 760, 480),
         }
+
+        this.music = '590'
         /* END-USER-CTR-CODE */
     }
 
@@ -151,14 +153,14 @@ export default class Mtn extends RoomScene {
 
     create() {
         super.create()
-        this.skichairback.play('skichairback')
-        this.skichairfront.play('skichairfront')
-        this.skichairtopback.play('skichairtopback')
-        this.skichairtopfront.play('skichairtopfront')
+        this.skichairback.play('mtn-skichairback')
+        this.skichairfront.play('mtn-skichairfront')
+        this.skichairtopback.play('mtn-skichairtopback')
+        this.skichairtopfront.play('mtn-skichairtopfront')
     }
 
     onSkiCatHover() {
-        this.ski_cat.play('skicat')
+        this.ski_cat.play('mtn-skicat')
     }
 
     onSkiCatOut() {
