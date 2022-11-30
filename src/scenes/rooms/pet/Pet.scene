@@ -1,0 +1,1243 @@
+{
+    "id": "b39d056d-ebc1-4025-af2a-a06c70dd9539",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/pet/pet-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pet",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "077bd112-8061-4e44-83a0-a95015ac3c04",
+            "label": "outsidebgs",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "outsidebgs"
+            },
+            "x": 799,
+            "y": 200
+        },
+        {
+            "type": "Image",
+            "id": "ed8cd354-6e3d-4f91-8d49-88f0d45bacc2",
+            "label": "scapebg",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "scapebg"
+            },
+            "x": 972,
+            "y": 186
+        },
+        {
+            "type": "Sprite",
+            "id": "5267cb87-5c66-4ffd-9cbc-efb004c17578",
+            "label": "scapeanim",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onScapeOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onScapeOut()",
+            "texture": {
+                "key": "pet",
+                "frame": "scapeanim0001"
+            },
+            "x": 981.5900268554688,
+            "y": 331.94525780789996,
+            "originX": 0.4689440156816471,
+            "originY": 0.8225152757837617
+        },
+        {
+            "type": "Image",
+            "id": "23231cd8-3ec9-4f3a-8476-bd5f0dc471b3",
+            "label": "scapetubefront",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "scapetubefront"
+            },
+            "x": 992,
+            "y": 121
+        },
+        {
+            "type": "Sprite",
+            "id": "e7094f5b-873d-453c-a0ae-fab1dd999729",
+            "label": "launchwindow",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "launchwindow0001"
+            },
+            "x": 1187,
+            "y": 153
+        },
+        {
+            "type": "Image",
+            "id": "6c410b14-9495-40fa-9572-f357d683d160",
+            "label": "launchbg",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "launchbg"
+            },
+            "x": 1211,
+            "y": 277
+        },
+        {
+            "type": "Sprite",
+            "id": "3d597ea2-e7cb-445c-8147-e035d6dadcae",
+            "label": "launchcannon",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onLaunchOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onLaunchOut()",
+            "texture": {
+                "key": "pet",
+                "frame": "launchcannon0001"
+            },
+            "x": 1168.9594774838056,
+            "y": 413.1620268785253,
+            "originX": 0.20545231686031068,
+            "originY": 1.007214184440187
+        },
+        {
+            "type": "Image",
+            "id": "3a38590c-6ac0-4ebd-b213-3f5ca7785053",
+            "label": "petbg",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "petbg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "be9a207a-105d-49b4-855d-0b8f181abd48",
+            "label": "plazadoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "plazadoor",
+            "Button.hoverCallback": "() => this.onPlazaDoorOver()",
+            "Button.hoverOutCallback": "() => this.onPlazaDoorOut()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pet",
+                "frame": "plazadoor"
+            },
+            "x": 753.8012542920723,
+            "y": 303.05017168288964,
+            "originX": 0.5116718928836345,
+            "originY": 1.1089683243635304
+        },
+        {
+            "type": "Image",
+            "id": "cdaa0253-06a3-4ba9-9ccf-d10db2a8855a",
+            "label": "launchtube",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "launchtube"
+            },
+            "x": 1209,
+            "y": 186
+        },
+        {
+            "type": "Image",
+            "id": "a8b20a89-d399-422e-be79-20b83301d7a7",
+            "label": "parkdoor_en",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "parkdoor_en",
+            "Button.hoverCallback": "() => this.onParkDoorOver()",
+            "Button.hoverOutCallback": "() => this.onParkDoorOut()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pet",
+                "frame": "parkdoor_en"
+            },
+            "x": 1382.1940872839104,
+            "y": 511.05890273762463,
+            "originX": 0.03377041211446366,
+            "originY": 0.9972320668753666
+        },
+        {
+            "type": "Image",
+            "id": "f4cee9e1-ff34-4460-9c57-fb04d1431dfb",
+            "label": "adoptbg",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoptbg"
+            },
+            "x": 302,
+            "y": 339
+        },
+        {
+            "type": "Sprite",
+            "id": "32c9c425-cd9c-459e-b99f-eef89bbd7ae5",
+            "label": "white_lookaround",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "white_lookaround0001"
+            },
+            "x": 366,
+            "y": 270
+        },
+        {
+            "type": "Image",
+            "id": "ed5ae5c9-f31a-4f5d-b84d-a37cdfdb04d8",
+            "label": "adoptsillright",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoptsillright"
+            },
+            "x": 395,
+            "y": 248
+        },
+        {
+            "type": "Image",
+            "id": "e109dfca-7fa9-4b85-9ea7-62b8822a5127",
+            "label": "tubesagain",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "tubesagain"
+            },
+            "x": 750,
+            "y": 480
+        },
+        {
+            "type": "Container",
+            "id": "a383e9b0-4051-4a83-ac43-3a0c7833d411",
+            "label": "purplepuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 285,
+            "y": 276,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "5475f821-591e-427e-ba00-344818b20271",
+                    "label": "purplepuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "purppuffbody"
+                    },
+                    "x": -6.681768928523127,
+                    "y": -0.38986315154176054
+                },
+                {
+                    "type": "Sprite",
+                    "id": "88cabd6e-527c-4c94-94ad-9db7310cdebd",
+                    "label": "purplepuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "purplepuffblink0001"
+                    },
+                    "x": -6
+                },
+                {
+                    "type": "Image",
+                    "id": "1cb8d68d-7259-4dde-8c43-aa3cb8c53c84",
+                    "label": "purplepuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "purppuffmouth"
+                    },
+                    "x": -5,
+                    "y": 17
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "b5a7f561-a13e-487c-9895-17f29d7d0ec5",
+            "label": "pufflecareholder",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pufflecareholder0001"
+            },
+            "x": 560,
+            "y": 177
+        },
+        {
+            "type": "Image",
+            "id": "d1db04f3-ef81-4c44-aca6-8da372403be3",
+            "label": "launchrail",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "launchrail"
+            },
+            "x": 1205,
+            "y": 86
+        },
+        {
+            "type": "Image",
+            "id": "61d44dce-dd10-47d9-b42b-23fd502e7ff0",
+            "label": "tubes",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "tubes"
+            },
+            "x": 1075,
+            "y": 471
+        },
+        {
+            "type": "Image",
+            "id": "2daed35c-721c-49da-bf3f-2325d73d9442",
+            "label": "leftplazarail",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "leftplazarail"
+            },
+            "x": 642,
+            "y": 345
+        },
+        {
+            "type": "Image",
+            "id": "7d21376a-626d-46d6-8cd1-1c2a4a021748",
+            "label": "exittext_en",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "exittext_en"
+            },
+            "x": 1454,
+            "y": 140
+        },
+        {
+            "type": "Image",
+            "id": "d77fce3f-af7e-4d42-afcb-9cc70ef985ac",
+            "label": "fgtubebg",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "fgtubebg"
+            },
+            "x": 825,
+            "y": 200
+        },
+        {
+            "type": "Sprite",
+            "id": "bdfdb762-a376-4890-8dca-bf6f09c4e1b9",
+            "label": "adopthitlight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adopthitlight"
+            },
+            "x": 281,
+            "y": 311,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "b31fc7e6-9735-43cc-8c61-9d2f15e5c40b",
+            "label": "pufflecarefoot",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pufflecarefoot"
+            },
+            "x": 535,
+            "y": 379
+        },
+        {
+            "type": "Image",
+            "id": "46a94be4-b96b-42f5-bc47-f60c4e9a73fb",
+            "label": "adoptholder",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoptholder"
+            },
+            "x": 212,
+            "y": 292
+        },
+        {
+            "type": "Image",
+            "id": "56167174-6dab-462d-bf1d-5e47ee06ed59",
+            "label": "adoptledge",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoptledge"
+            },
+            "x": 324,
+            "y": 216
+        },
+        {
+            "type": "Image",
+            "id": "7d61b00d-cfa7-4380-8fe0-1fcd40d96be1",
+            "label": "fgtubes",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "fgtubes"
+            },
+            "x": -21.48598668872944,
+            "y": 986.2663606360335,
+            "originX": -0.007458432914759377,
+            "originY": 2.3961196214632623
+        },
+        {
+            "type": "Image",
+            "id": "cb7394f9-cefb-4461-a924-a87c2b856fe6",
+            "label": "hoteldoorouter",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "hoteldoorouter"
+            },
+            "x": 91,
+            "y": 552
+        },
+        {
+            "type": "Image",
+            "id": "45a02319-9a2f-4f9f-b360-1f01f87532ab",
+            "label": "hoteldoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "hoteldoor",
+            "Button.hoverCallback": "() => this.onHotelDoorOver()",
+            "Button.hoverOutCallback": "() => this.onHotelDoorOut()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pet",
+                "frame": "hoteldoor"
+            },
+            "x": 116.68995030429409,
+            "y": 698.6241548569319,
+            "originX": 0.7680652017695832,
+            "originY": 0.7019890430962736
+        },
+        {
+            "type": "Image",
+            "id": "d5ec75c7-7774-4179-b393-5cde045b77af",
+            "label": "floorholder",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "floorholder"
+            },
+            "x": 760,
+            "y": 688
+        },
+        {
+            "type": "Image",
+            "id": "fcd5536b-5c16-4f23-8da9-1d1798a714db",
+            "label": "floorpuffle_blue",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "floorpuffle_blue"
+            },
+            "x": 760,
+            "y": 894
+        },
+        {
+            "type": "Image",
+            "id": "c111f4db-01be-4cd5-8fb6-6b4737f564e4",
+            "label": "adoptbottom",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoptbottom"
+            },
+            "x": 303,
+            "y": 457
+        },
+        {
+            "type": "Sprite",
+            "id": "8ff8d2e1-54bb-4454-9344-655dfca8db1d",
+            "label": "adoptbookbase",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onAdoptBookOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onAdoptBookOut()",
+            "texture": {
+                "key": "pet",
+                "frame": "adoptbookbase"
+            },
+            "x": 235.62287079326646,
+            "y": 471.0063253004727,
+            "originX": 0.43714293255948317,
+            "originY": 0.2937895331279545
+        },
+        {
+            "type": "Image",
+            "id": "6816ae56-4d3d-49d3-ab5b-35775b793eb2",
+            "label": "adopttext_en",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adopttext_en"
+            },
+            "x": 48.33995048475995,
+            "y": 1036.7531711265651,
+            "originX": -0.9552002829442289,
+            "originY": 1.9512385444077311
+        },
+        {
+            "type": "Image",
+            "id": "007724e4-c2ad-494a-9bf8-192d5b21c4ee",
+            "label": "ball",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "ball"
+            },
+            "x": 466,
+            "y": 406.1737224759599,
+            "originY": 0.4187347913804749
+        },
+        {
+            "type": "Image",
+            "id": "66613364-c897-41d1-8409-cc1c7bfaf12e",
+            "label": "hotelholder",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "hotelholder"
+            },
+            "x": 7,
+            "y": 555
+        },
+        {
+            "type": "Image",
+            "id": "bfc97a75-f2af-49b9-991b-174c0de39c46",
+            "label": "art",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "art"
+            },
+            "x": 269.2754258413467,
+            "y": 579.1737224759598,
+            "originX": 0.5116688504684447,
+            "originY": 0.4671813580574992
+        },
+        {
+            "type": "Image",
+            "id": "6e305a40-67b2-4cac-945d-e66e03a73322",
+            "label": "pinkbowl",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pinkbowl"
+            },
+            "x": 208.86228707932665,
+            "y": 645.485157872593,
+            "originX": 0.4859541614731685,
+            "originY": 0.29814770762246856
+        },
+        {
+            "type": "Image",
+            "id": "7fe8415b-2414-4b34-8a3e-24fb329130f3",
+            "label": "bed",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "bed"
+            },
+            "x": 348.3575134277344,
+            "y": 802.6494362135142,
+            "originX": 0.5674908283121518,
+            "originY": 0.18901087183319448
+        },
+        {
+            "type": "Image",
+            "id": "1a41c9f4-0261-4d46-a009-918b2583632d",
+            "label": "foodbowl",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "foodbowl"
+            },
+            "x": 1022,
+            "y": 849.8948606130384,
+            "originY": 0.32941839833070014
+        },
+        {
+            "type": "Image",
+            "id": "bbfd6fb1-0dee-44d1-bda4-24d2cda0c200",
+            "label": "parkrailright",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "parkrailright"
+            },
+            "x": 1418,
+            "y": 566
+        },
+        {
+            "type": "Image",
+            "id": "598c27ad-c70d-4728-bdc0-efdc879d8cbb",
+            "label": "surf",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "surf"
+            },
+            "x": 1429,
+            "y": 611
+        },
+        {
+            "type": "Image",
+            "id": "98cc3db3-2ce5-420b-9264-1cac1e56b350",
+            "label": "bluebackpost",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "bluebackpost"
+            },
+            "x": 1322,
+            "y": 690
+        },
+        {
+            "type": "Image",
+            "id": "d8e0fe66-fd45-49f3-be0e-ff1cfe27c7ad",
+            "label": "bluefrontpost",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "bluefrontpost"
+            },
+            "x": 1324.3319091796875,
+            "y": 740.3404767357516,
+            "originX": 0.5264688634931882,
+            "originY": 0.17431535438945286
+        },
+        {
+            "type": "Image",
+            "id": "f6ab4380-f912-48b5-8968-8e51ce9a90a3",
+            "label": "petfg",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "petfg"
+            },
+            "x": 766.0552024192884,
+            "y": 1082.5857631910912,
+            "originX": 0.5381963125129007,
+            "originY": 1.2860131045015724
+        },
+        {
+            "type": "Image",
+            "id": "3f3f3862-fde9-4e7e-99d3-58f915a8a64a",
+            "label": "post",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "post"
+            },
+            "x": 564.7219403215181,
+            "y": 790.5699787963789,
+            "originX": 0.40905694472304527,
+            "originY": 0.18885584235753775
+        },
+        {
+            "type": "Image",
+            "id": "3d717eea-88f2-4f17-b4ce-e01f8c8fcd38",
+            "label": "postright",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "postright"
+            },
+            "x": 601.1986825179283,
+            "y": 862.2777314422309,
+            "originX": 0.4927152956175302,
+            "originY": 0.9006587410358551
+        },
+        {
+            "type": "Image",
+            "id": "a9454758-1d6e-4d4a-b83d-98b782bdafa5",
+            "label": "skateboard",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "skateboard"
+            },
+            "x": 995.574909512421,
+            "y": 755.0842636581053,
+            "originX": 0.5955979543128237,
+            "originY": 0.17195270453297884
+        },
+        {
+            "type": "Image",
+            "id": "f3299c25-9683-4dbf-ac5b-dba05a836e69",
+            "label": "petcat_en",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "petcat_en",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pet",
+                "frame": "petcat_en"
+            },
+            "x": 1403.558936402699,
+            "y": 1112.6047147940585,
+            "originX": 0.5167250745274439,
+            "originY": 3.7487366503831177
+        },
+        {
+            "type": "Image",
+            "id": "8765b806-59ea-4938-b191-dd800d42d67f",
+            "label": "adoptbutton",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "adoptbutton",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pet",
+                "frame": "adoptbutton"
+            },
+            "x": 1464.3840460404854,
+            "y": 1125.893640269903,
+            "originX": 0.8146233282006998,
+            "originY": 2.8476480758706697
+        },
+        {
+            "type": "Image",
+            "id": "d6992fe8-afe7-4e73-947d-868f2c957101",
+            "label": "parkrailleft",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "parkrailleft"
+            },
+            "x": 1312,
+            "y": 479
+        },
+        {
+            "type": "Sprite",
+            "id": "fc4ed74a-4a09-4863-a2ed-5b7f0cabe606",
+            "label": "pufflecarebutton",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pufflecarebutton0001"
+            },
+            "x": 243,
+            "y": 431
+        },
+        {
+            "type": "Sprite",
+            "id": "0f67f82a-45ac-4dfe-98c7-b5e3713cb57a",
+            "label": "goldtube",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "goldtube0001"
+            },
+            "x": 474,
+            "y": 299
+        },
+        {
+            "type": "Image",
+            "id": "3d23f124-873b-4bf6-8d81-8304850335fe",
+            "label": "adoptsign",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoptsign"
+            },
+            "x": 423,
+            "y": 297
+        },
+        {
+            "type": "Image",
+            "id": "275556a4-d8b4-43fd-95ae-9a636d4f30d6",
+            "label": "rightplazarails",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "rightplazarails"
+            },
+            "x": 856,
+            "y": 346
+        },
+        {
+            "type": "Image",
+            "id": "1022929b-6c1b-42b3-9ac8-d98fc63dae23",
+            "label": "rightbackplazarails",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "rightbackplazarails"
+            },
+            "x": 878,
+            "y": 311
+        },
+        {
+            "type": "Image",
+            "id": "d412ecad-208f-421e-b46c-1c48b582c54f",
+            "label": "plazarail",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "plazarail"
+            },
+            "x": 791,
+            "y": 194
+        },
+        {
+            "type": "Image",
+            "id": "3b7f3d01-1156-484f-b35b-6c98f732184e",
+            "label": "adopthit",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onAdoptOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onAdoptOut()",
+            "texture": {
+                "key": "pet",
+                "frame": "adopthit"
+            },
+            "x": 363.540089674106,
+            "y": 466.1703010487845,
+            "originX": 0.717132413864551,
+            "originY": 0.9940416906618529,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "7e7d3aaf-340b-47d2-b40e-f128c8658318",
+            "label": "blackpuffblink",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "blackpuffblink0001"
+            },
+            "x": 398,
+            "y": 161
+        },
+        {
+            "type": "Container",
+            "id": "a50388ea-c40c-4572-ae61-a1bb393cca1b",
+            "label": "greenpuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 224,
+            "y": 348,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "6767b5c0-2f37-46f9-bbbe-e7bc12fb5c40",
+                    "label": "greenpuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "greenpuffbody"
+                    },
+                    "x": -6.681768928523127,
+                    "y": -0.38986315154176054
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1e30cc70-463d-4d1b-909e-09f049e6e657",
+                    "label": "greenpuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "greenpuffblink0001"
+                    },
+                    "x": -6
+                },
+                {
+                    "type": "Image",
+                    "id": "2d7ff3bf-f6f7-4bdc-a05d-cff8c47ee53d",
+                    "label": "greenpuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "greenpuffmouth"
+                    },
+                    "x": -5,
+                    "y": 17
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b6ff294b-e425-462f-83a9-4167b7a1b0bb",
+            "label": "brownpuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 287,
+            "y": 332,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "1ba9dfd4-2f6b-4e13-8400-781cc4f23e5e",
+                    "label": "brownpuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "brownpuffbody"
+                    },
+                    "x": -6.681768928523127,
+                    "y": -0.38986315154176054
+                },
+                {
+                    "type": "Sprite",
+                    "id": "461c915c-c1b2-4346-9586-cf5530e6355c",
+                    "label": "brownpuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "brownpuffblink0001"
+                    },
+                    "x": -1
+                },
+                {
+                    "type": "Image",
+                    "id": "fc95b8e4-7590-4707-83c4-0ed317de6fc8",
+                    "label": "brownpuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "brownpuffmouth"
+                    },
+                    "x": 1,
+                    "y": 17
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "5bf4fa4e-bc9d-4cd3-8f0e-734740328f52",
+            "label": "yellowpuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 345,
+            "y": 330,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "bd287f06-0c94-4d29-afcd-538093d354f6",
+                    "label": "yellowpuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "yellowpuffbody"
+                    },
+                    "x": -6.681768928523127,
+                    "y": -0.38986315154176054
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e2ac7614-f100-4b86-8f3e-1e32ad2cfd3c",
+                    "label": "yellowpuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "yellowpuffblink0001"
+                    },
+                    "x": -1
+                },
+                {
+                    "type": "Image",
+                    "id": "41bb4dea-e9fa-4857-8368-3c87a76e8bb1",
+                    "label": "yellowpuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "yellowpuffmouth"
+                    },
+                    "x": 1,
+                    "y": 17
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "5fa17b8a-b57a-4f93-a22d-74862d474c92",
+            "label": "bluedogblink",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "bluedogblink0001"
+            },
+            "x": 260,
+            "y": 377
+        },
+        {
+            "type": "Container",
+            "id": "13dc606e-d72b-4c6a-b884-9ee5698ac0de",
+            "label": "bluepuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 218.7750712280227,
+            "y": 406.2965608520422,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "6c74cb3b-25b0-4789-b40e-9bee57b8c526",
+                    "label": "bluepuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "bluepuffbody"
+                    },
+                    "x": -2.7750712280227106,
+                    "y": -4.296560852042205
+                },
+                {
+                    "type": "Sprite",
+                    "id": "9d1f7950-7572-4aa7-b5a8-399434f73d99",
+                    "label": "bluepuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "bluepuffblink0001"
+                    },
+                    "x": 2.2249287719772894,
+                    "y": -5.296560852042205
+                },
+                {
+                    "type": "Image",
+                    "id": "99d9f0f0-0506-4ba5-91a3-b0253d04255e",
+                    "label": "bluepuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "bluepuffmouth"
+                    },
+                    "x": 6.224928771977289,
+                    "y": 12.703439147957795
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "99ae0797-cdd3-41b6-b9e7-7055aa636b9b",
+            "label": "orangecatblink",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "orangecatblink0001"
+            },
+            "x": 321,
+            "y": 383
+        },
+        {
+            "type": "Container",
+            "id": "9121e50c-4f40-4376-9e41-88d74d1304ef",
+            "label": "redpuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 377,
+            "y": 368,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "1f888a3f-17bd-48f7-a490-a60ed2fee8d2",
+                    "label": "redpuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "redpuffbody"
+                    },
+                    "x": -6.681768928523127,
+                    "y": -0.38986315154176054
+                },
+                {
+                    "type": "Sprite",
+                    "id": "126c44f7-d7aa-478d-b995-cf83ce8e77e9",
+                    "label": "redpuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "redpuffeyes0001"
+                    },
+                    "x": -6
+                },
+                {
+                    "type": "Image",
+                    "id": "a73c7123-ddde-47bc-bf0a-566a795bd75c",
+                    "label": "redpuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "redpuffmouth"
+                    },
+                    "x": -5,
+                    "y": 17
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0f9abc41-90d1-4a5d-8468-2b30904134e6",
+            "label": "pinkpuffle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 243,
+            "y": 193,
+            "allowPickChildren": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "7685fbb3-d9c9-4829-93bf-29d2354018e2",
+                    "label": "pinkpuffbody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "pinkpuffbody"
+                    },
+                    "x": -2.7750712280227106,
+                    "y": -4.296560852042205
+                },
+                {
+                    "type": "Sprite",
+                    "id": "3ef3fc97-0019-413f-b844-5e3e67221b01",
+                    "label": "pinkpuffblink",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "pinkpuffblink0001"
+                    },
+                    "x": 2.2249287719772894,
+                    "y": -5.296560852042205
+                },
+                {
+                    "type": "Image",
+                    "id": "904b0919-fc0b-45f3-a31e-9da301ebeed0",
+                    "label": "pinkpuffmouth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pet",
+                        "frame": "pinkpuffmouth"
+                    },
+                    "x": 6.224928771977289,
+                    "y": 12.703439147957795
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "4bafbd03-befe-49ae-ab0a-2eebfaaf0b1d",
+            "label": "orangepuffjump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "orangepuffjump0001"
+            },
+            "x": 322,
+            "y": 147
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "7d61b00d-cfa7-4380-8fe0-1fcd40d96be1",
+                "6816ae56-4d3d-49d3-ab5b-35775b793eb2",
+                "007724e4-c2ad-494a-9bf8-192d5b21c4ee",
+                "8ff8d2e1-54bb-4454-9344-655dfca8db1d",
+                "bfc97a75-f2af-49b9-991b-174c0de39c46",
+                "6e305a40-67b2-4cac-945d-e66e03a73322",
+                "f6ab4380-f912-48b5-8968-8e51ce9a90a3",
+                "7fe8415b-2414-4b34-8a3e-24fb329130f3",
+                "3f3f3862-fde9-4e7e-99d3-58f915a8a64a",
+                "3d717eea-88f2-4f17-b4ce-e01f8c8fcd38",
+                "1a41c9f4-0261-4d46-a009-918b2583632d",
+                "d8e0fe66-fd45-49f3-be0e-ff1cfe27c7ad",
+                "a9454758-1d6e-4d4a-b83d-98b782bdafa5",
+                "f3299c25-9683-4dbf-ac5b-dba05a836e69",
+                "8765b806-59ea-4938-b191-dd800d42d67f",
+                "98cc3db3-2ce5-420b-9264-1cac1e56b350",
+                "598c27ad-c70d-4728-bdc0-efdc879d8cbb",
+                "bbfd6fb1-0dee-44d1-bda4-24d2cda0c200",
+                "d6992fe8-afe7-4e73-947d-868f2c957101"
+            ]
+        }
+    ]
+}

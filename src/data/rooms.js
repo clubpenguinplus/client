@@ -77,14 +77,12 @@ const rooms = {
         x: 760,
         y: 680,
     },
-    /*
     310: {
         key: 'Pet',
         scene: require('@rooms/pet/Pet').default,
         x: 828,
         y: 520,
     },
-    */
     320: {
         key: 'Dojo',
         scene: require('@rooms/dojo/Dojo').default,
