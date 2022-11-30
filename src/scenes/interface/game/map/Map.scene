@@ -496,7 +496,7 @@
                                 "ShowHint"
                             ],
                             "Button.spriteName": "map/places_outline/skatepark_outline",
-                            "Button.callback": "() => this.onRoomClick(230)",
+                            "Button.callback": "() => this.onRoomClick(435)",
                             "Button.activeFrame": false,
                             "ShowHint.text": "skatepark",
                             "texture": {

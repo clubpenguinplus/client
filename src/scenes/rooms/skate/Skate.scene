@@ -5,8 +5,12 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "preloadPackFiles": [],
-        "createMethodName": "editorCreate",
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/skate/skate-pack.json"
+        ],
+        "createMethodName": "_create",
         "sceneKey": "Skate",
         "borderWidth": 1520,
         "borderHeight": 960
