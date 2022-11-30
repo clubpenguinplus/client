@@ -1,0 +1,502 @@
+{
+    "id": "75c74f2f-15d8-4c43-876a-363223db12d1",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/dojo/dojo-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dojo",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "2876af3a-0a6d-4af6-a2a5-4e3260b463dd",
+            "label": "dojobg",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "dojobg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "00b1a7aa-74e9-4a96-82b6-9038a4ff31ec",
+            "label": "dojowindows",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "dojowindows"
+            },
+            "x": 760,
+            "y": 40
+        },
+        {
+            "type": "Image",
+            "id": "2508b15c-417c-493c-bf38-d1907080fc40",
+            "label": "firedoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "firedoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "firedoor"
+            },
+            "x": 194.28181728931185,
+            "y": 484.6726523021942,
+            "originX": 0.5057480595933267,
+            "originY": 0.7315540909724606
+        },
+        {
+            "type": "Image",
+            "id": "47987cd1-2a14-4b28-a1ff-9f1dd0edc2bf",
+            "label": "firedoorholder",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "firedoorholder"
+            },
+            "x": 155,
+            "y": 350
+        },
+        {
+            "type": "Image",
+            "id": "0923af8e-037f-460b-924a-d9d7ff293a10",
+            "label": "firestatue",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "firestatue"
+            },
+            "x": 52,
+            "y": 464
+        },
+        {
+            "type": "Image",
+            "id": "f57d63cd-6914-42e9-8173-8eedfbf027af",
+            "label": "waterdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "waterdoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "waterdoor"
+            },
+            "x": 762,
+            "y": 352,
+            "originX": 0.5124979327439129,
+            "originY": 0.9302077247307126
+        },
+        {
+            "type": "Image",
+            "id": "e9a66a42-30c3-4044-9a0d-28d5870f3454",
+            "label": "snowdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "snowdoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "snowdoor"
+            },
+            "x": 1302.8251563367128,
+            "y": 496.23231053123124,
+            "originX": 0.37332738715241254,
+            "originY": 0.7591213589035156
+        },
+        {
+            "type": "Image",
+            "id": "ad3a6391-2c75-4b43-ac93-9e3210b1a53f",
+            "label": "snowdoorholder",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "snowdoorholder"
+            },
+            "x": 1364,
+            "y": 353
+        },
+        {
+            "type": "Image",
+            "id": "e3706463-54a2-4aa4-895e-86b3d80a357e",
+            "label": "snowstatue",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "snowstatue"
+            },
+            "x": 1504,
+            "y": 466
+        },
+        {
+            "type": "Image",
+            "id": "3b0d18c1-60f1-448a-94b5-615e63feb8c4",
+            "label": "dojofg",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "dojofg"
+            },
+            "x": -135,
+            "y": 1003,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "635280d1-b84c-494d-b94a-f01e73c7ee44",
+            "label": "waterdoorholder",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "waterdoorholder"
+            },
+            "x": 764,
+            "y": 220
+        },
+        {
+            "type": "Image",
+            "id": "468ce3ef-069c-4f70-8d3b-72c36867389b",
+            "label": "waterstatues",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "waterstatues"
+            },
+            "x": 759,
+            "y": 266
+        },
+        {
+            "type": "Image",
+            "id": "eb96513b-3b80-4beb-b8f5-e5c9e4cdc2e3",
+            "label": "leftcolumn",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "leftcolumn"
+            },
+            "x": 446,
+            "y": 264
+        },
+        {
+            "type": "Image",
+            "id": "7c420cd4-8f8a-4d49-af30-b20d878969fa",
+            "label": "rightcolumn",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "rightcolumn"
+            },
+            "x": 1083,
+            "y": 264
+        },
+        {
+            "type": "Image",
+            "id": "0692e85b-58d4-4bf2-908b-779026de3155",
+            "label": "belttut",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "belttut",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "belttut"
+            },
+            "x": 469,
+            "y": 235
+        },
+        {
+            "type": "Image",
+            "id": "4125a177-15cb-4ffa-ae21-9bdc4f609776",
+            "label": "bonsai",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "bonsai"
+            },
+            "x": 929,
+            "y": 513,
+            "originX": 0.5205752314512851,
+            "originY": 0.42023141037347894
+        },
+        {
+            "type": "Image",
+            "id": "f193e028-77c8-4add-babc-f64a12786100",
+            "label": "jitsutut",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "jitsutut",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "jitsutut"
+            },
+            "x": 1064,
+            "y": 235,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "1728f572-d6a8-47e2-af0c-09606c851c38",
+            "label": "senseihit",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "senseihit",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "senseihit"
+            },
+            "x": 766.0932706356324,
+            "y": 612.3270635632375,
+            "originX": 0.5043212278088237,
+            "originY": 0.940834933722732
+        },
+        {
+            "type": "Image",
+            "id": "da508c3b-a704-40ca-88ab-8b4d24a9bd80",
+            "label": "senseiholder_en",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "senseiholder_en"
+            },
+            "x": 765,
+            "y": 492.7822963098243,
+            "originY": 0.46191031532985244
+        },
+        {
+            "type": "Image",
+            "id": "7a3f3527-9d1b-4515-9ad3-5f83031c597b",
+            "label": "backpot",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "backpot"
+            },
+            "x": 613,
+            "y": 558
+        },
+        {
+            "type": "Sprite",
+            "id": "759e7e31-4cd2-4125-adc8-8c58c4fbe703",
+            "label": "potdots",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "potdots0001"
+            },
+            "x": 613,
+            "y": 544
+        },
+        {
+            "type": "Sprite",
+            "id": "b270ec51-0cbd-4ac1-87e5-d54a0a971702",
+            "label": "potmagic",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "potmagic0001"
+            },
+            "x": 613,
+            "y": 533.8306782058418,
+            "originY": 0.7766019319850123
+        },
+        {
+            "type": "Image",
+            "id": "ef58fb84-6d76-4320-8aae-c0039f162dfa",
+            "label": "frontpot",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "frontpot"
+            },
+            "x": 613,
+            "y": 561
+        },
+        {
+            "type": "Image",
+            "id": "8797a9da-dc9a-4adf-9bb9-4735e4b9bcd4",
+            "label": "light",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "light"
+            },
+            "x": 609.6882264321175,
+            "y": 883.9883770861188,
+            "originX": 0.471247223537298,
+            "originY": 1.0949980725488346
+        },
+        {
+            "type": "Image",
+            "id": "17c222e1-92dc-409e-a8ce-6bec53ea9137",
+            "label": "mat",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "mat",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "mat"
+            },
+            "x": 455,
+            "y": 664
+        },
+        {
+            "type": "Image",
+            "id": "a8176310-d65c-47dd-a9ab-279198b065fc",
+            "label": "mat_1",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "mat",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "mat"
+            },
+            "x": 423,
+            "y": 755
+        },
+        {
+            "type": "Image",
+            "id": "715ba5d7-b0be-46be-8591-9ac9d714de13",
+            "label": "mat_2",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "mat",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "mat"
+            },
+            "x": 1068,
+            "y": 664,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "3830b617-dc14-431c-a005-adc12ca89465",
+            "label": "mat_3",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "mat",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "mat"
+            },
+            "x": 1100,
+            "y": 755,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "1eb62a7d-2683-4525-9317-e6bc2efcdbc2",
+            "label": "dojocat_en",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "dojocat_en",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "dojocat_en"
+            },
+            "x": 1417.4467709810208,
+            "y": 1057.4425197968365,
+            "originX": 0.5605562242373128,
+            "originY": 3.0358267725551324
+        },
+        {
+            "type": "Image",
+            "id": "2a4f86cd-2ab1-4ea3-864d-2047cf3a6939",
+            "label": "jitsucards",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "jitsucards",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "jitsucards"
+            },
+            "x": 1418.6018451537025,
+            "y": 1083.479422870884,
+            "originX": 0.46604934058932374,
+            "originY": 2.2954732423555133
+        },
+        {
+            "type": "Image",
+            "id": "1f0ef097-812a-4cb8-a4d5-db5853cd9cd2",
+            "label": "dojoext",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "dojoext",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dojo",
+                "frame": "dojoext"
+            },
+            "x": 762,
+            "y": 896,
+            "originX": 0.5032167308626421,
+            "originY": 0.5516157441767048
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "3b0d18c1-60f1-448a-94b5-615e63feb8c4",
+                "8797a9da-dc9a-4adf-9bb9-4735e4b9bcd4",
+                "4125a177-15cb-4ffa-ae21-9bdc4f609776",
+                "da508c3b-a704-40ca-88ab-8b4d24a9bd80",
+                "ef58fb84-6d76-4320-8aae-c0039f162dfa",
+                "b270ec51-0cbd-4ac1-87e5-d54a0a971702",
+                "1eb62a7d-2683-4525-9317-e6bc2efcdbc2",
+                "2a4f86cd-2ab1-4ea3-864d-2047cf3a6939"
+            ]
+        }
+    ]
+}

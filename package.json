@@ -36,6 +36,8 @@
   },
   "prettier": "./prettier-config.json",
   "dependencies": {
+    "@analytics/google-analytics": "^1.0.5",
+    "analytics": "^0.8.1",
     "crypto-js": "^4.1.1",
     "devtools-detect": "^4.0.0"
   }

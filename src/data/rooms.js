@@ -85,14 +85,12 @@ const rooms = {
         y: 520,
     },
     */
-    /*
     320: {
         key: 'Dojo',
         scene: require('@rooms/dojo/Dojo').default,
         x: 780,
         y: 790,
     },
-    */
     321: {
         key: 'DojoExt',
         scene: require('@rooms/dojoext/DojoExt').default,
