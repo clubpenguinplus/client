@@ -48,6 +48,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "firedoor",
+            "Button.hoverCallback": "() => this.fireDoorOver()",
+            "Button.hoverOutCallback": "() => this.fireDoorOut()",
             "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
@@ -91,6 +93,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "waterdoor",
+            "Button.hoverCallback": "() => this.waterDoorOver()",
+            "Button.hoverOutCallback": "() => this.waterDoorOut()",
             "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
@@ -110,6 +114,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "snowdoor",
+            "Button.hoverCallback": "() => this.snowDoorOver()",
+            "Button.hoverOutCallback": "() => this.snowDoorOut()",
             "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",

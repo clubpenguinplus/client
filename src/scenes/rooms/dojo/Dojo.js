@@ -144,18 +144,24 @@ export default class Dojo extends RoomScene {
         // firedoor (components)
         const firedoorButton = new Button(firedoor);
         firedoorButton.spriteName = "firedoor";
+        firedoorButton.hoverCallback = () => this.fireDoorOver();
+        firedoorButton.hoverOutCallback = () => this.fireDoorOut();
         firedoorButton.activeFrame = false;
         new MoveTo(firedoor);
 
         // waterdoor (components)
         const waterdoorButton = new Button(waterdoor);
         waterdoorButton.spriteName = "waterdoor";
+        waterdoorButton.hoverCallback = () => this.waterDoorOver();
+        waterdoorButton.hoverOutCallback = () => this.waterDoorOut();
         waterdoorButton.activeFrame = false;
         new MoveTo(waterdoor);
 
         // snowdoor (components)
         const snowdoorButton = new Button(snowdoor);
         snowdoorButton.spriteName = "snowdoor";
+        snowdoorButton.hoverCallback = () => this.snowDoorOver();
+        snowdoorButton.hoverOutCallback = () => this.snowDoorOut();
         snowdoorButton.activeFrame = false;
         new MoveTo(snowdoor);
 
@@ -235,6 +241,30 @@ export default class Dojo extends RoomScene {
 
         this.potdots.play('dojo-potdots')
         this.potmagic.play('dojo-potmagic')
+    }
+
+    waterDoorOver() {
+        this.shell.musicController.addSfx('dojo-wateropen')
+    }
+
+    waterDoorOut() {
+        this.shell.musicController.addSfx('dojo-waterclose')
+    }
+
+    fireDoorOver() {
+        this.shell.musicController.addSfx('dojo-fireopen')
+    }
+
+    fireDoorOut() {
+        this.shell.musicController.addSfx('dojo-fireclose')
+    }
+
+    snowDoorOver() {
+        this.shell.musicController.addSfx('dojo-snowopen')
+    }
+
+    snowDoorOut() {
+        this.shell.musicController.addSfx('dojo-snowclose')
     }
 
     /* END-USER-CODE */
