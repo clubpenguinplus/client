@@ -169,7 +169,7 @@ export default class Ship extends RoomScene {
         leftrope.setOrigin(0.7981281263860741, 1.1829844349935512);
 
         // lists
-        const sort = [farrightbarrel, frontship, greencheese, boxrope, rightdivider, barrelrightmid, barrelrightmidtwo, greencheese_1, barrelrightmidupper, middlepole, net, storesignholder, storetext_en, frontboxesleft, farleftbarrelfront, farleftbarrel, stackdabox, yarr, wheel, stackedmiddlelowerbarrel, stackedmiddleuppperbarrel, leftmidbarrel, leftsnowglob, rightsnowglob, onboard, rightrope, onestinkywheel, uparrow, ladder];
+        const sort = [farrightbarrel, frontship, greencheese, boxrope, rightdivider, barrelrightmid, barrelrightmidtwo, greencheese_1, barrelrightmidupper, middlepole, net, storesignholder, storetext_en, frontboxesleft, farleftbarrelfront, farleftbarrel, stackdabox, yarr, wheel, stackedmiddlelowerbarrel, stackedmiddleuppperbarrel, leftmidbarrel, leftsnowglob, rightsnowglob, onboard, rightrope, onestinkywheel, uparrow, ladder, leftrope];
 
         // shipholddoor (components)
         const shipholddoorButton = new Button(shipholddoor);
