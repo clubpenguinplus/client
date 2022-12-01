@@ -1,0 +1,268 @@
+{
+    "id": "ffbd89bf-ab69-4d1d-9319-97a3a4d4cfc4",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/shiphold/shiphold-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shiphold",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "cbafa396-558b-414b-a7d8-648f38a3a994",
+            "label": "shipholdbg",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "shipholdbg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "107a3f1b-33fd-42a6-94e1-8c609c5e790e",
+            "label": "quartersdoornokey",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "quartersdoornokey",
+            "Button.hoverCallback": "() => this.onQuartersOver()",
+            "Button.hoverOutCallback": "() => this.onQuartersOut()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "shiphold",
+                "frame": "quartersdoornokey"
+            },
+            "x": 1259.426013191893,
+            "y": 529.2899780135118,
+            "originX": 0.03161437994209239,
+            "originY": 0.8321883830197927
+        },
+        {
+            "type": "Image",
+            "id": "3df9293c-a214-41f0-bbdc-604b66d78f97",
+            "label": "cqkeysign",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "cqkeysign",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "shiphold",
+                "frame": "cqkeysign"
+            },
+            "x": 1336,
+            "y": 421,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "7248aace-7ba1-4ba8-bc75-60e89e1bdff3",
+            "label": "pirate_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "shiphold",
+                "frame": "pirate_en"
+            },
+            "x": 254,
+            "y": 211
+        },
+        {
+            "type": "Image",
+            "id": "7f24dc7f-4e72-4663-8ced-63234f7f4d81",
+            "label": "ptholder",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "ptholder"
+            },
+            "x": 264,
+            "y": 111
+        },
+        {
+            "type": "Image",
+            "id": "c2643017-dd2c-461d-bdcd-2b268829d1c4",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "table"
+            },
+            "x": 439,
+            "y": 549.8866569889494,
+            "originY": 0.35928344387359545
+        },
+        {
+            "type": "Image",
+            "id": "bc192830-c587-45ca-8998-81ca49b8b89a",
+            "label": "map",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "map"
+            },
+            "x": 444.48845039290177,
+            "y": 576.5980200673546,
+            "originX": 0.251822576092917,
+            "originY": 0.4329295298079681
+        },
+        {
+            "type": "Image",
+            "id": "f2c29a76-1f05-4f67-a349-4349f4f5ae22",
+            "label": "clock",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "clock"
+            },
+            "x": 508.49835005612886,
+            "y": 643.7772240738743,
+            "originX": 0.40204484593947276,
+            "originY": 4.14598195520638
+        },
+        {
+            "type": "Image",
+            "id": "40de7fbd-9257-4ee9-af29-cbe357ebf0e0",
+            "label": "abacus",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "abacus"
+            },
+            "x": 343.391789354084,
+            "y": 602.1343148326719,
+            "originX": 0.5201708602041157,
+            "originY": 0.6294687771240914
+        },
+        {
+            "type": "Image",
+            "id": "f8778ed8-941c-4e15-9904-390b8c2201bf",
+            "label": "shipbox",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "shipbox"
+            },
+            "x": 172.238731579695,
+            "y": 559.5560022724044,
+            "originX": 0.7639600499124785,
+            "originY": 0.4115585360281083
+        },
+        {
+            "type": "Image",
+            "id": "be9b8646-9a5d-491d-9e96-cc34744e62b7",
+            "label": "unicycle",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "unicycle"
+            },
+            "x": 137,
+            "y": 761.5286079654029,
+            "originY": 1.0329432129256988
+        },
+        {
+            "type": "Image",
+            "id": "b4966eb1-046c-47eb-866a-54e72c21d31a",
+            "label": "staircase",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "staircase"
+            },
+            "x": 1361.5668814561182,
+            "y": 589.1655927194098,
+            "originX": 0.48640147685925816,
+            "originY": 0.5372530970074114
+        },
+        {
+            "type": "Image",
+            "id": "5c345717-7315-4320-9f8b-04f43b5178d4",
+            "label": "crew_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "shiphold",
+                "frame": "crew_en"
+            },
+            "x": 260,
+            "y": 640
+        },
+        {
+            "type": "Image",
+            "id": "8f8fb85e-5885-461e-a601-c1015a4fbb9d",
+            "label": "shipholdfg",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "shipholdfg"
+            },
+            "x": 663.241865152077,
+            "y": 1020.6410589948367,
+            "originX": 0.4989748484851761,
+            "originY": 1.0078396266804674
+        },
+        {
+            "type": "Image",
+            "id": "f9935137-b2cf-487f-8785-1433c62ff928",
+            "label": "boxmiddle",
+            "components": [],
+            "texture": {
+                "key": "shiphold",
+                "frame": "boxmiddle"
+            },
+            "x": 825,
+            "y": 488
+        },
+        {
+            "type": "Image",
+            "id": "bdc80c8b-af03-4e84-8c8f-8fa709cec7dc",
+            "label": "cq_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "shiphold",
+                "frame": "cq_en"
+            },
+            "x": 1363,
+            "y": 193
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "c2643017-dd2c-461d-bdcd-2b268829d1c4",
+                "bc192830-c587-45ca-8998-81ca49b8b89a",
+                "f2c29a76-1f05-4f67-a349-4349f4f5ae22",
+                "40de7fbd-9257-4ee9-af29-cbe357ebf0e0",
+                "f8778ed8-941c-4e15-9904-390b8c2201bf",
+                "8f8fb85e-5885-461e-a601-c1015a4fbb9d",
+                "be9b8646-9a5d-491d-9e96-cc34744e62b7",
+                "b4966eb1-046c-47eb-866a-54e72c21d31a"
+            ]
+        }
+    ]
+}

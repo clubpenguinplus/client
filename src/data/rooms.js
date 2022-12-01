@@ -131,6 +131,12 @@ const rooms = {
         x: 900,
         y: 600,
     },
+    421: {
+        key: 'Shiphold',
+        scene: require('@rooms/shiphold/Shiphold').default,
+        x: 1120,
+        y: 730,
+    },
     423: {
         key: 'Shipnest',
         scene: require('@rooms/shipnest/Shipnest').default,

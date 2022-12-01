@@ -11,7 +11,7 @@ export default class Ship extends RoomScene {
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
-            hold: () => null,
+            hold: () => this.triggerRoom(421, 1120, 730),
             beach: () => this.triggerRoom(400, 700, 411),
         }
         this.music = '380'
