@@ -125,6 +125,12 @@ const rooms = {
         x: 410,
         y: 800,
     },
+    420: {
+        key: 'Ship',
+        scene: require('@rooms/ship/Ship').default,
+        x: 900,
+        y: 600,
+    },
     /*
     430: {
         key: 'HotelLobby',

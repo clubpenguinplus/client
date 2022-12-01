@@ -1,0 +1,595 @@
+{
+    "id": "b3ab7048-6b28-4bf1-b4ab-ff0e3b75fa49",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/ship/ship-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Ship",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d6862fe7-bf9c-4e57-bcb7-4b67fb0655fe",
+            "label": "shipbg",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "shipbg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "777383b8-58bd-45c0-899a-787a23374b01",
+            "label": "mop",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "mop"
+            },
+            "x": 259,
+            "y": 255
+        },
+        {
+            "type": "Image",
+            "id": "5df38772-9db0-46a1-a92a-40bc31243519",
+            "label": "stackdabox",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "stackdabox"
+            },
+            "x": 192.96954927322463,
+            "y": 341.5245632750483,
+            "originX": 0.531756394185797,
+            "originY": 0.598534911037491
+        },
+        {
+            "type": "Image",
+            "id": "ec583b6a-7356-4e57-9661-afa6ac08e7c9",
+            "label": "farleftbarrel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "farleftbarrel"
+            },
+            "x": 156.30487230738947,
+            "y": 429.7829233844337,
+            "originX": 0.5618124736018576,
+            "originY": 0.5334771980923334
+        },
+        {
+            "type": "Image",
+            "id": "67e3127c-c1d7-456d-bceb-b0a42ef6fa3d",
+            "label": "scrolls",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "scrolls"
+            },
+            "x": 1089,
+            "y": 283
+        },
+        {
+            "type": "Image",
+            "id": "d0561be3-7126-4ad0-aadf-23f7c9c88c1e",
+            "label": "farleftbarrelfront",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "farleftbarrelfront"
+            },
+            "x": 117,
+            "y": 547.0926276338932,
+            "originY": 1.102589565662003
+        },
+        {
+            "type": "Image",
+            "id": "0177e12c-7ce7-439f-b60f-35449af73a43",
+            "label": "frontboxesleft",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "frontboxesleft"
+            },
+            "x": 134,
+            "y": 605.2467062418659,
+            "originY": 0.8003766632408542
+        },
+        {
+            "type": "Image",
+            "id": "9ceec49a-1a46-431a-b819-7f36f60e1e31",
+            "label": "stackedcheesebox",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "stackedcheesebox"
+            },
+            "x": 1203,
+            "y": 275
+        },
+        {
+            "type": "Image",
+            "id": "1e62de01-4d96-45d5-af19-0ec5affd7a5f",
+            "label": "stackedboxes",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "stackedboxes"
+            },
+            "x": 1289,
+            "y": 283
+        },
+        {
+            "type": "Image",
+            "id": "a095f798-09e8-49f4-879e-4bed4ef3b752",
+            "label": "treasure",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "treasure"
+            },
+            "x": 1369,
+            "y": 367
+        },
+        {
+            "type": "Image",
+            "id": "c7c720b0-37b7-455a-845d-76d197f05ba6",
+            "label": "pointy",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "pointy"
+            },
+            "x": 1434,
+            "y": 382
+        },
+        {
+            "type": "Image",
+            "id": "69e9153f-1f9f-4569-b271-ac3e475a2546",
+            "label": "farrightbarrel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "farrightbarrel"
+            },
+            "x": 1385.5802413613715,
+            "y": 463.60742073270853,
+            "originX": 0.4566690329546222,
+            "originY": 0.5938709799354738
+        },
+        {
+            "type": "Image",
+            "id": "d414c52f-8511-4b03-bdbf-241aa4ea9954",
+            "label": "greencheese",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "greencheese"
+            },
+            "x": 1347,
+            "y": 513
+        },
+        {
+            "type": "Image",
+            "id": "04b9b16b-bb0e-44a1-8940-5fa3492f5158",
+            "label": "frontship",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "frontship"
+            },
+            "x": 749.2787977801404,
+            "y": 725.0718347494346,
+            "originX": 0.5082797296435227,
+            "originY": 0.68041164880849
+        },
+        {
+            "type": "Image",
+            "id": "7bb1e62b-2488-4af7-b37c-3d5bbf0cadd6",
+            "label": "barrelrightmidupper",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "barrelrightmidupper"
+            },
+            "x": 990,
+            "y": 412
+        },
+        {
+            "type": "Image",
+            "id": "9259e949-5980-4a4e-ad72-6a49284fe6bd",
+            "label": "barrelrightmidtwo",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "barrelrightmidtwo"
+            },
+            "x": 1003,
+            "y": 453
+        },
+        {
+            "type": "Image",
+            "id": "1e3ec828-30ed-410c-9211-0e6b9ef05da1",
+            "label": "barrelrightmid",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "barrelrightmid"
+            },
+            "x": 1021,
+            "y": 492
+        },
+        {
+            "type": "Image",
+            "id": "2a4ec396-4361-4ea0-87c7-38910de007fd",
+            "label": "boxrope",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "boxrope"
+            },
+            "x": 594,
+            "y": 541
+        },
+        {
+            "type": "Image",
+            "id": "0cf1b24a-c746-4883-ac0a-04cf8a7e14d8",
+            "label": "rightdivider",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "rightdivider"
+            },
+            "x": 1097.4359383027313,
+            "y": 525.4990127372481,
+            "originX": 0.673926844229979,
+            "originY": 0.9781366590765451
+        },
+        {
+            "type": "Image",
+            "id": "f345f30b-0396-43d9-b2c1-d3b4afb4544a",
+            "label": "greencheese_1",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "greencheese"
+            },
+            "x": 1005,
+            "y": 488,
+            "originX": 0.48384115968675534,
+            "originY": 1.6287249196585445
+        },
+        {
+            "type": "Image",
+            "id": "21450726-c34c-4163-a5ac-85b16512747e",
+            "label": "stackedmiddlelowerbarrel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "stackedmiddlelowerbarrel"
+            },
+            "x": 831,
+            "y": 435
+        },
+        {
+            "type": "Image",
+            "id": "2fc04a4f-0c97-4173-ada0-b10d805eac79",
+            "label": "stackedmiddleuppperbarrel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "stackedmiddleuppperbarrel"
+            },
+            "x": 833,
+            "y": 378
+        },
+        {
+            "type": "Image",
+            "id": "dbf67ccb-1954-48da-9f12-e67c9c784a4c",
+            "label": "leftmidbarrel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "leftmidbarrel"
+            },
+            "x": 720,
+            "y": 422
+        },
+        {
+            "type": "Image",
+            "id": "1cea71be-0792-471d-a010-5d24399af474",
+            "label": "middlepole",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "middlepole"
+            },
+            "x": 768,
+            "y": 451.3280135880202,
+            "originY": 0.8900924904818011
+        },
+        {
+            "type": "Image",
+            "id": "c7460346-c236-43ce-89a2-320d55104a8a",
+            "label": "shipholddoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "shipholddoor",
+            "Button.hoverCallback": "() => this.onHoldOver()",
+            "Button.hoverOutCallback": "() => this.onHoldOut()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "ship",
+                "frame": "shipholddoor"
+            },
+            "x": 568.6925978266287,
+            "y": 487.05018858730864,
+            "originX": 0.6097448792294609,
+            "originY": 0.5779135368315953
+        },
+        {
+            "type": "Image",
+            "id": "d7f1f5d7-b9bd-45c3-8fa8-8ccbeec1ea40",
+            "label": "net",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "net"
+            },
+            "x": 699.4155658779765,
+            "y": 1113.2537108831857,
+            "originX": 0.4151268575635654,
+            "originY": 1.5204747243533672
+        },
+        {
+            "type": "Image",
+            "id": "b7429ed8-e65d-40d9-85fc-1f9bc96b2374",
+            "label": "uparrow",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onArrowOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onArrowOut()",
+            "texture": {
+                "key": "ship",
+                "frame": "uparrow0001"
+            },
+            "x": 796.5908931155651,
+            "y": 631.5327562162049,
+            "originX": 0.6968531885821571,
+            "originY": 2.1724619522830326
+        },
+        {
+            "type": "Sprite",
+            "id": "a83f11f5-4eb0-4ddb-af37-4526e7281f22",
+            "label": "ladder",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "ladder0001"
+            },
+            "x": 825.2467080333363,
+            "y": 1189.0527734015163,
+            "originX": 0.38005436270060733,
+            "originY": 2.1453594317162135
+        },
+        {
+            "type": "Image",
+            "id": "5ba777c8-cfab-44fa-bc97-fa3769c6618e",
+            "label": "storesignholder",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "storesignholder"
+            },
+            "x": 399.27245071235075,
+            "y": 412.09777317450215,
+            "originX": 0.21922522754292695,
+            "originY": 0.30164515566023287
+        },
+        {
+            "type": "Image",
+            "id": "2b2e5195-d3af-4627-98a1-e2ae5f744eef",
+            "label": "storetext_en",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "storetext_en"
+            },
+            "x": 457,
+            "y": 457
+        },
+        {
+            "type": "Image",
+            "id": "d4dcdaa3-33e2-461d-8426-3acc8f5a6332",
+            "label": "onestinkywheel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "onestinkywheel"
+            },
+            "x": 152,
+            "y": 465.40874961342365,
+            "originY": 1.981504230735994
+        },
+        {
+            "type": "Image",
+            "id": "9d6db89d-69f6-4fd8-9ba7-5fcf0a2fb9c8",
+            "label": "leftscrolls",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "leftscrolls"
+            },
+            "x": 377,
+            "y": 262
+        },
+        {
+            "type": "Image",
+            "id": "3edde1b6-f610-49a7-8206-7efa0031f369",
+            "label": "midscrolls",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "midscrolls"
+            },
+            "x": 596,
+            "y": 304
+        },
+        {
+            "type": "Sprite",
+            "id": "45568c4b-aa13-45c4-8e25-0d0ee19d7f5b",
+            "label": "yarr",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "yarr0001"
+            },
+            "x": 532.326122192504,
+            "y": 1223.5742650190525,
+            "originX": 0.42344793344715465,
+            "originY": 11.397787082162672
+        },
+        {
+            "type": "Image",
+            "id": "d99511f6-9083-4d3c-b7f6-09c188e7656e",
+            "label": "wheel",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "wheel"
+            },
+            "x": 361.69372137491496,
+            "y": 404.2434923742345,
+            "originX": 0.523201662670068,
+            "originY": 0.6373287601282388
+        },
+        {
+            "type": "Image",
+            "id": "9a715cda-891a-4d8e-9748-8b99e32c895c",
+            "label": "rightsnowglob",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "rightsnowglob"
+            },
+            "x": 1197.2246248336712,
+            "y": 776.7251896407297,
+            "originX": 0.44257564178759423,
+            "originY": 0.21166115537585709
+        },
+        {
+            "type": "Image",
+            "id": "c67eeb48-00cb-4edf-80c5-70274b89739b",
+            "label": "rightrope",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "rightrope"
+            },
+            "x": 1048.6497802734375,
+            "y": 870.3842775036557,
+            "originX": 0.46792813909306835,
+            "originY": 0.8643861816977328
+        },
+        {
+            "type": "Image",
+            "id": "1680a7e7-e507-4d4f-bbcd-cb62e06cfd73",
+            "label": "onboard",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "onboard"
+            },
+            "x": 1041.5281837429502,
+            "y": 880.5165714127049,
+            "originX": 0.29482120123919786,
+            "originY": 0.7333742674028686
+        },
+        {
+            "type": "Image",
+            "id": "42e5f089-408c-4917-b529-66ade86fdaef",
+            "label": "leftsnowglob",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "leftsnowglob"
+            },
+            "x": 805,
+            "y": 913
+        },
+        {
+            "type": "Image",
+            "id": "72930921-9576-4c87-bf01-1cdf2c8a95c4",
+            "label": "leftrope",
+            "components": [],
+            "texture": {
+                "key": "ship",
+                "frame": "leftrope"
+            },
+            "x": 903.7753753582157,
+            "y": 894.2565764021662,
+            "originX": 0.7981281263860741,
+            "originY": 1.1829844349935512
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "69e9153f-1f9f-4569-b271-ac3e475a2546",
+                "04b9b16b-bb0e-44a1-8940-5fa3492f5158",
+                "d414c52f-8511-4b03-bdbf-241aa4ea9954",
+                "2a4ec396-4361-4ea0-87c7-38910de007fd",
+                "0cf1b24a-c746-4883-ac0a-04cf8a7e14d8",
+                "1e3ec828-30ed-410c-9211-0e6b9ef05da1",
+                "9259e949-5980-4a4e-ad72-6a49284fe6bd",
+                "f345f30b-0396-43d9-b2c1-d3b4afb4544a",
+                "7bb1e62b-2488-4af7-b37c-3d5bbf0cadd6",
+                "1cea71be-0792-471d-a010-5d24399af474",
+                "d7f1f5d7-b9bd-45c3-8fa8-8ccbeec1ea40",
+                "5ba777c8-cfab-44fa-bc97-fa3769c6618e",
+                "2b2e5195-d3af-4627-98a1-e2ae5f744eef",
+                "0177e12c-7ce7-439f-b60f-35449af73a43",
+                "d0561be3-7126-4ad0-aadf-23f7c9c88c1e",
+                "ec583b6a-7356-4e57-9661-afa6ac08e7c9",
+                "5df38772-9db0-46a1-a92a-40bc31243519",
+                "45568c4b-aa13-45c4-8e25-0d0ee19d7f5b",
+                "d99511f6-9083-4d3c-b7f6-09c188e7656e",
+                "21450726-c34c-4163-a5ac-85b16512747e",
+                "2fc04a4f-0c97-4173-ada0-b10d805eac79",
+                "dbf67ccb-1954-48da-9f12-e67c9c784a4c",
+                "42e5f089-408c-4917-b529-66ade86fdaef",
+                "9a715cda-891a-4d8e-9748-8b99e32c895c",
+                "1680a7e7-e507-4d4f-bbcd-cb62e06cfd73",
+                "c67eeb48-00cb-4edf-80c5-70274b89739b",
+                "d4dcdaa3-33e2-461d-8426-3acc8f5a6332",
+                "b7429ed8-e65d-40d9-85fc-1f9bc96b2374",
+                "a83f11f5-4eb0-4ddb-af37-4526e7281f22"
+            ]
+        }
+    ]
+}
