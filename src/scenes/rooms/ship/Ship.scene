@@ -363,6 +363,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onArrowOver()",
             "SimpleButton.hoverOutCallback": "() => this.onArrowOut()",
+            "SimpleButton.callback": "() => this.triggerRoom(423, 860, 580)",
             "texture": {
                 "key": "ship",
                 "frame": "uparrow0001"

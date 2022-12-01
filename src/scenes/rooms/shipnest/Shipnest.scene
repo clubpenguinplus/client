@@ -1,0 +1,195 @@
+{
+    "id": "78f8e885-62f1-44d0-a25e-ee2ee06dc038",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/shipnest/shipnest-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shipnest",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "ea6c16a8-6910-4243-a45b-4df141dc1add",
+            "label": "nestsky",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "nestsky"
+            },
+            "x": 760,
+            "y": 268
+        },
+        {
+            "type": "Image",
+            "id": "cc95509a-1222-4419-b940-f3e9d859395b",
+            "label": "nesthold",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "nesthold"
+            },
+            "x": 760,
+            "y": 650
+        },
+        {
+            "type": "Image",
+            "id": "b13583b6-44ec-4317-9f60-e0bc371daf0d",
+            "label": "rope",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "rope"
+            },
+            "x": 768,
+            "y": 698
+        },
+        {
+            "type": "Image",
+            "id": "64cfdb4e-8c39-4fde-b943-49b6f1608376",
+            "label": "powder_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "shipnest",
+                "frame": "powder_en"
+            },
+            "x": 978,
+            "y": 400
+        },
+        {
+            "type": "Image",
+            "id": "667b234a-4645-4050-9cc5-5fbe31ff8a14",
+            "label": "bolts",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "bolts"
+            },
+            "x": 749,
+            "y": 419
+        },
+        {
+            "type": "Image",
+            "id": "a819d4f5-36d5-4be0-b602-ef1fc56141db",
+            "label": "snowballs",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "snowballs"
+            },
+            "x": 1110,
+            "y": 498
+        },
+        {
+            "type": "Sprite",
+            "id": "30d8e4da-7c1b-4cda-a293-e569ec8539ef",
+            "label": "cannonback",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "shipnest",
+                "frame": "cannonback0001"
+            },
+            "x": 277,
+            "y": 314
+        },
+        {
+            "type": "Image",
+            "id": "1cd0147e-80dd-47f9-99a2-fc8f97545cec",
+            "label": "leftsnowball",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "leftsnowball"
+            },
+            "x": 375,
+            "y": 625
+        },
+        {
+            "type": "Image",
+            "id": "43a3e0d8-7bf5-4361-aeb9-c60b168154bf",
+            "label": "frontnest",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "frontnest"
+            },
+            "x": 762.7051818790857,
+            "y": 792.3350823480458,
+            "originX": 0.5162977384186201,
+            "originY": 0.9749512495034177
+        },
+        {
+            "type": "Sprite",
+            "id": "bb80483b-304e-4aeb-8aa8-0c71270af0fd",
+            "label": "jollyflag",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onJollyFlagOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onJollyFlagOut()",
+            "texture": {
+                "key": "shipnest",
+                "frame": "jollyflag0001"
+            },
+            "x": 606,
+            "y": 179
+        },
+        {
+            "type": "Image",
+            "id": "046427a5-b1ea-4340-ac1e-6e1a388337de",
+            "label": "jolly",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "jolly"
+            },
+            "x": 752.0739135742188,
+            "y": 527.0758697410583,
+            "originX": 0.21087001853450807,
+            "originY": 0.9642941486243463
+        },
+        {
+            "type": "Sprite",
+            "id": "798f5731-066e-46ab-8fd2-959cd884a742",
+            "label": "nestyarr",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "shipnest",
+                "frame": "nestyarr0001"
+            },
+            "x": 324,
+            "y": 813
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "43a3e0d8-7bf5-4361-aeb9-c60b168154bf",
+                "046427a5-b1ea-4340-ac1e-6e1a388337de"
+            ]
+        }
+    ]
+}

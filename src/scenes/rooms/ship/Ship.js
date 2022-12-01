@@ -183,6 +183,7 @@ export default class Ship extends RoomScene {
         const uparrowSimpleButton = new SimpleButton(uparrow);
         uparrowSimpleButton.hoverCallback = () => this.onArrowOver();
         uparrowSimpleButton.hoverOutCallback = () => this.onArrowOut();
+        uparrowSimpleButton.callback = () => this.triggerRoom(423, 860, 580);
 
         this.uparrow = uparrow;
         this.ladder = ladder;
