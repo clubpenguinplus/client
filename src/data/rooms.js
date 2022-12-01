@@ -151,7 +151,7 @@ const rooms = {
         y: 350,
     },
     */
-   435: {
+    435: {
         key: 'Skate',
         scene: require('@rooms/skate/Skate').default,
         x: 760,

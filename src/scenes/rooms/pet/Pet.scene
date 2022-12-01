@@ -221,6 +221,51 @@
         },
         {
             "type": "Image",
+            "id": "9b92e7cd-6288-4528-8bcf-01cb6fd9215d",
+            "label": "arch",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "arch"
+            },
+            "x": 1228,
+            "y": 237
+        },
+        {
+            "type": "Image",
+            "id": "a2f18742-a093-4335-902e-907ad41766f8",
+            "label": "arch_1",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "parkdoor-arch"
+            },
+            "x": 1454,
+            "y": 226
+        },
+        {
+            "type": "Container",
+            "id": "f8cc8ede-93a1-416b-8432-9c0acfbfc249",
+            "label": "pufflesanim",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "424c3a91-601f-496d-a874-a0fbd6a8e33c",
+            "label": "parkdoor_bottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "parkdoor-bottom"
+            },
+            "x": 1448,
+            "y": 343
+        },
+        {
+            "type": "Image",
             "id": "e109dfca-7fa9-4b85-9ea7-62b8822a5127",
             "label": "tubesagain",
             "components": [],
@@ -744,6 +789,34 @@
         },
         {
             "type": "Image",
+            "id": "12e4b809-45c8-45fe-800c-a3bc8b0b0332",
+            "label": "greenwagonback",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "greenwagonback"
+            },
+            "x": 1222.7927663161865,
+            "y": 419.84860032892414,
+            "originX": 0.5886805691116538,
+            "originY": 0.26258745277194984
+        },
+        {
+            "type": "Image",
+            "id": "ab3b33dc-2a11-4235-8a75-e86ad7e8e227",
+            "label": "greenwagonfront",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "greenwagonfront"
+            },
+            "x": 1185.8826904296875,
+            "y": 495.6616107610942,
+            "originX": 0.4450143343997173,
+            "originY": 0.32577998529755736
+        },
+        {
+            "type": "Image",
             "id": "d6992fe8-afe7-4e73-947d-868f2c957101",
             "label": "parkrailleft",
             "components": [],
@@ -751,8 +824,10 @@
                 "key": "pet",
                 "frame": "parkrailleft"
             },
-            "x": 1312,
-            "y": 479
+            "x": 1289.3217652178835,
+            "y": 512.3086573362336,
+            "originX": 0.33916145544598203,
+            "originY": 0.758206646017315
         },
         {
             "type": "Sprite",
@@ -1204,6 +1279,43 @@
             },
             "x": 322,
             "y": 147
+        },
+        {
+            "type": "Image",
+            "id": "bb8427b0-5b6f-4904-8f83-b921c62b3887",
+            "label": "discoball",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "discoball"
+            },
+            "x": 63,
+            "y": 1195.838477738851,
+            "originY": 5.735363235450404
+        },
+        {
+            "type": "Image",
+            "id": "77dfbb6d-e653-446c-bad1-4e34147f3b4b",
+            "label": "foodbowlgreen",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "foodbowlgreen"
+            },
+            "x": 888,
+            "y": 402
+        },
+        {
+            "type": "Image",
+            "id": "809af997-cc54-42ca-bb1c-a6bfd3143616",
+            "label": "foodbowlyellow",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "foodbowlyellow"
+            },
+            "x": 926,
+            "y": 438
         }
     ],
     "plainObjects": [],
@@ -1236,7 +1348,10 @@
                 "98cc3db3-2ce5-420b-9264-1cac1e56b350",
                 "598c27ad-c70d-4728-bdc0-efdc879d8cbb",
                 "bbfd6fb1-0dee-44d1-bda4-24d2cda0c200",
-                "d6992fe8-afe7-4e73-947d-868f2c957101"
+                "d6992fe8-afe7-4e73-947d-868f2c957101",
+                "ab3b33dc-2a11-4235-8a75-e86ad7e8e227",
+                "12e4b809-45c8-45fe-800c-a3bc8b0b0332",
+                "bb8427b0-5b6f-4904-8f83-b921c62b3887"
             ]
         }
     ]

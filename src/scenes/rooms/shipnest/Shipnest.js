@@ -5,9 +5,8 @@ import {MoveTo, SimpleButton, LocalisedSprite, ShowHint, Button, Animation, Seat
 /* START OF COMPILED CODE */
 
 export default class Shipnest extends RoomScene {
-
     constructor() {
-        super("Shipnest");
+        super('Shipnest')
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
@@ -19,81 +18,79 @@ export default class Shipnest extends RoomScene {
 
     /** @returns {void} */
     _preload() {
-
-        this.load.pack("shipnest-pack", "client/media/rooms/shipnest/shipnest-pack.json");
+        this.load.pack('shipnest-pack', 'client/media/rooms/shipnest/shipnest-pack.json')
     }
 
     /** @returns {void} */
     _create() {
-
         // nestsky
-        this.add.image(760, 268, "shipnest", "nestsky");
+        this.add.image(760, 268, 'shipnest', 'nestsky')
 
         // nesthold
-        this.add.image(760, 650, "shipnest", "nesthold");
+        this.add.image(760, 650, 'shipnest', 'nesthold')
 
         // rope
-        this.add.image(768, 698, "shipnest", "rope");
+        this.add.image(768, 698, 'shipnest', 'rope')
 
         // powder_en
-        const powder_en = this.add.image(978, 400, "shipnest", "powder_en");
+        const powder_en = this.add.image(978, 400, 'shipnest', 'powder_en')
 
         // bolts
-        this.add.image(749, 419, "shipnest", "bolts");
+        this.add.image(749, 419, 'shipnest', 'bolts')
 
         // snowballs
-        this.add.image(1110, 498, "shipnest", "snowballs");
+        this.add.image(1110, 498, 'shipnest', 'snowballs')
 
         // cannonback
-        const cannonback = this.add.sprite(277, 314, "shipnest", "cannonback0001");
+        const cannonback = this.add.sprite(277, 314, 'shipnest', 'cannonback0001')
 
         // leftsnowball
-        this.add.image(375, 625, "shipnest", "leftsnowball");
+        this.add.image(375, 625, 'shipnest', 'leftsnowball')
 
         // frontnest
-        const frontnest = this.add.image(762.7051818790857, 792.3350823480458, "shipnest", "frontnest");
-        frontnest.setOrigin(0.5162977384186201, 0.9749512495034177);
+        const frontnest = this.add.image(762.7051818790857, 792.3350823480458, 'shipnest', 'frontnest')
+        frontnest.setOrigin(0.5162977384186201, 0.9749512495034177)
 
         // jollyflag
-        const jollyflag = this.add.sprite(606, 179, "shipnest", "jollyflag0001");
+        const jollyflag = this.add.sprite(606, 179, 'shipnest', 'jollyflag0001')
 
         // jolly
-        const jolly = this.add.image(752.0739135742188, 527.0758697410583, "shipnest", "jolly");
-        jolly.setOrigin(0.21087001853450807, 0.9642941486243463);
+        const jolly = this.add.image(752.0739135742188, 527.0758697410583, 'shipnest', 'jolly')
+        jolly.setOrigin(0.21087001853450807, 0.9642941486243463)
 
         // nestyarr
-        const nestyarr = this.add.sprite(324, 813, "shipnest", "nestyarr0001");
+        const nestyarr = this.add.sprite(324, 813, 'shipnest', 'nestyarr0001')
 
         // lists
-        const sort = [frontnest, jolly];
+        const sort = [frontnest, jolly]
 
         // powder_en (components)
-        new LocalisedSprite(powder_en);
+        new LocalisedSprite(powder_en)
 
         // cannonback (components)
-        new SimpleButton(cannonback);
+        new SimpleButton(cannonback)
 
         // jollyflag (components)
-        const jollyflagSimpleButton = new SimpleButton(jollyflag);
-        jollyflagSimpleButton.hoverCallback = () => this.onJollyFlagOver();
-        jollyflagSimpleButton.hoverOutCallback = () => this.onJollyFlagOut();
+        const jollyflagSimpleButton = new SimpleButton(jollyflag)
+        jollyflagSimpleButton.hoverCallback = () => this.onJollyFlagOver()
+        jollyflagSimpleButton.hoverOutCallback = () => this.onJollyFlagOut()
 
-        this.cannonback = cannonback;
-        this.jollyflag = jollyflag;
-        this.nestyarr = nestyarr;
-        this.sort = sort;
+        this.cannonback = cannonback
+        this.jollyflag = jollyflag
+        this.nestyarr = nestyarr
+        this.sort = sort
 
-        this.events.emit("scene-awake");
+        this.events.emit('scene-awake')
     }
 
     /** @type {Phaser.GameObjects.Sprite} */
-    cannonback;
+    cannonback
     /** @type {Phaser.GameObjects.Sprite} */
-    jollyflag;
+    jollyflag
     /** @type {Phaser.GameObjects.Sprite} */
-    nestyarr;
+    nestyarr
     /** @type {Phaser.GameObjects.Image[]} */
-    sort;
+    sort
 
     /* START-USER-CODE */
 
@@ -117,8 +114,7 @@ export default class Shipnest extends RoomScene {
         this.cannonback.play('shipnest-fuse').once('animationcomplete', () => {
             this.cannonback.play('shipnest-cannonback')
             this.cannonback.play('shipnest-cannonfire')
-        }
-        )
+        })
     }
 
     onCannonOut() {
