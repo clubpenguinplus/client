@@ -7,7 +7,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/client/media/rooms/pet/pet-pack.json"
+            "client/client/media/rooms/mine/mine-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Mine",
