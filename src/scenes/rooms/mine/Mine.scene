@@ -1,0 +1,164 @@
+{
+    "id": "85ca75bd-2dda-4210-a1db-bb472d630040",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/pet/pet-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mine",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "1847d018-853c-4aa4-9dc3-c3299b480621",
+            "label": "minebg",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "minebg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "5f77c389-05b1-4418-9871-763d445b6ded",
+            "label": "backstairsbox_hover",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "backstairsbox-hover"
+            },
+            "x": 825,
+            "y": 39,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "dde838bc-b91c-4558-84da-95335727a8af",
+            "label": "backstairholder",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "backstairholder"
+            },
+            "x": 782,
+            "y": 191
+        },
+        {
+            "type": "Image",
+            "id": "9bf2e256-f2a2-4187-86fb-d03950865de5",
+            "label": "backstairsbox",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "backstairsbox"
+            },
+            "x": 825,
+            "y": 39,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "86ce620a-489f-4c1b-9eb2-74ebc67cc4b4",
+            "label": "cavehit",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cavehit"
+            },
+            "x": -7,
+            "y": 369,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "9ebda650-cf5f-4ddd-b5ec-784259be2ff0",
+            "label": "cavehit_hover",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cavehit-hover"
+            },
+            "x": 4,
+            "y": 340,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "3af2fdfe-020b-4afb-ba5c-52696ca6005b",
+            "label": "pufflerescueholder",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "pufflerescueholder"
+            },
+            "x": 490,
+            "y": 90
+        },
+        {
+            "type": "Image",
+            "id": "c3cd9c1e-7967-4ea4-bac7-284f81cc8a0b",
+            "label": "leftfg",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "leftfg"
+            },
+            "x": 304,
+            "y": 327
+        },
+        {
+            "type": "Image",
+            "id": "29a1224b-b339-48b8-9d04-e4bb22fb6547",
+            "label": "puffleboard",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "puffleboard"
+            },
+            "x": 444,
+            "y": 233
+        },
+        {
+            "type": "Image",
+            "id": "9444247d-e886-4a84-8006-745d0c9ce27c",
+            "label": "pufflerescue_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "mine",
+                "frame": "pufflerescue_en"
+            },
+            "x": 448,
+            "y": 90
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}
