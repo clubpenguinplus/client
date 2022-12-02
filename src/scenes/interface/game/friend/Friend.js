@@ -356,7 +356,7 @@ export default class Friend extends BaseContainer {
         this.buddyitemcontainer.y = -(distance * yoffset)
 
         for (let i of this.items) {
-            if (i.y + this.buddyitemcontainer.y < -285 || i.y + this.buddyitemcontainer.y > 310) {
+            if (i.y + this.buddyitemcontainer.y < -280 || i.y + this.buddyitemcontainer.y > 300) {
                 i.visible = false
             } else {
                 i.visible = true
