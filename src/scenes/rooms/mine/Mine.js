@@ -90,8 +90,7 @@ export default class Mine extends RoomScene {
     // Write your code here
 
     create() {
-
-        this.editorCreate();
+        super.create()
     }
 
     /* END-USER-CODE */
