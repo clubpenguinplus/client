@@ -16,6 +16,8 @@ export default class Friend extends BaseContainer {
         this.icon
         /** @type {Phaser.GameObjects.Text} */
         this.total
+        /** @type {Phaser.GameObjects.Image} */
+        this.buddy_scroller
         /** @type {Phaser.GameObjects.Container} */
         this.buddyitemcontainer
         /** @type {Array<any>} */
@@ -155,6 +157,7 @@ export default class Friend extends BaseContainer {
         this.text = text
         this.icon = icon
         this.total = total
+        this.buddy_scroller = buddy_scroller
         this.buddyitemcontainer = buddyitemcontainer
         this.items = items
 
@@ -177,6 +180,10 @@ export default class Friend extends BaseContainer {
         scene.events.on('update', () => this.updateMaskPos(mask))
 
         this.buddyitemcontainer.setMask(mask)
+
+        this.buddy_scroller.setInteractive()
+        this.buddy_scroller.on('pointerdown', (pointer) => this.onScrollerDown(pointer))
+        this.buddy_scroller.on('pointerup', (pointer) => this.onScrollerUp(pointer))
 
         /* END-USER-CTR-CODE */
     }
@@ -267,6 +274,7 @@ export default class Friend extends BaseContainer {
                 x = x + 120
             }
             let p = new FriendItem(this.scene, x, y)
+            p.over.__SimpleButton.start()
             this.buddyitemcontainer.add(p)
             p.setItem(this.penguins[i])
             this.items.push(p)
@@ -325,6 +333,41 @@ export default class Friend extends BaseContainer {
         this.page = 1
         this.listType = 'friends'
         this.showPage()
+    }
+
+    onScrollerDown(pointer) {
+        let y = pointer.y - this.y
+        if (y < this.minY) y = this.minY
+        if (y > this.maxY) y = this.maxY
+        this.buddy_scroller.y = y
+        this.scene.input.on('pointermove', this.onScrollerMove, this)
+        this.scene.input.on('pointerup', this.onScrollerUp, this)
+    }
+
+    onScrollerMove(pointer) {
+        let y = pointer.y - this.y
+        if (y < this.minY) y = this.minY
+        if (y > this.maxY) y = this.maxY
+        this.buddy_scroller.y = y
+
+        let distance = Phaser.Math.Difference(this.minY, y)
+        let height = Math.ceil(this.penguins.length / 3) > 3 ? Math.ceil(this.penguins.length / 3) * 150 - 450 : 0
+        let yoffset = height / (this.maxY - this.minY)
+        this.buddyitemcontainer.y = -(distance * yoffset)
+
+        for (let i of this.items) {
+            if (i.y + this.buddyitemcontainer.y < -285 || i.y + this.buddyitemcontainer.y > 310) {
+                i.visible = false
+            } else {
+                i.visible = true
+            }
+        }
+    }
+
+    onScrollerUp(pointer) {
+        this.scene.input.removeListener('pointermove', this.onScrollerMove)
+        this.scene.input.removeListener('pointerup', this.onScrollerUp)
+        this.scrollerDown = false
     }
 
     /* END-USER-CODE */

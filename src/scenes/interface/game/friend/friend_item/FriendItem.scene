@@ -139,6 +139,7 @@
                     "SimpleButton.hoverCallback": "() => {this.over.alpha = 0.1}",
                     "SimpleButton.hoverOutCallback": "() => {this.over.alpha = 0.01}",
                     "SimpleButton.callback": "() => this.onClick()",
+                    "SimpleButton.pixelPerfect": true,
                     "texture": {
                         "key": "main",
                         "frame": "card-photo"

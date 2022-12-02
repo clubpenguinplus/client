@@ -283,6 +283,7 @@
                     "type": "Image",
                     "id": "30a7440c-abd9-440a-a4df-3157a7755511",
                     "label": "buddy_scroller",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "main",

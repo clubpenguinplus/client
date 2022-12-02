@@ -283,17 +283,6 @@ export default class FriendSmall extends BaseContainer {
         this.page = 1
         this.pageSize = this.items.length
 
-        this.showPage()
-
-        const style = {
-            width: '360px',
-            height: '50px',
-            fontFamily: 'Burbank Small',
-            fontSize: '20px',
-            color: '#fff',
-        }
-        const chatRegex = this.shell.client.isModerator ? /^[a-zA-Z0-9\s!.,'?]*$/ : /^[a-zA-Z\s!,'?]*$/
-
         /* END-USER-CTR-CODE */
     }
 
@@ -366,12 +355,12 @@ export default class FriendSmall extends BaseContainer {
 
     showPage() {
         if (this.visible == false) return
-        if (this.penguins.length > 6) {
-            this.parentContainer.buddy.visible = true
-            this.parentContainer.buddy.showPage()
-            this.visible = false
-            return
-        }
+        //if (this.penguins.length > 6) {
+        //    this.parentContainer.friend.visible = true
+        //    this.parentContainer.friend.showPage()
+        //    this.visible = false
+        //    return
+        //}
 
         let page = this.penguins.slice((this.page - 1) * this.pageSize, this.page * this.pageSize)
 

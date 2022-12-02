@@ -112,6 +112,7 @@ export default class FriendItem extends BaseContainer {
             this.over.alpha = 0.01
         }
         overSimpleButton.callback = () => this.onClick()
+        overSimpleButton.pixelPerfect = true
 
         // bff (components)
         const bffSimpleButton = new SimpleButton(bff)
