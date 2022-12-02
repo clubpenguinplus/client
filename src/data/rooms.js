@@ -199,14 +199,12 @@ const rooms = {
         x: 760,
         y: 680,
     },
-    /*
     808: {
         key: 'Mine',
         scene: require('@rooms/mine/Mine').default,
         x: 760,
         y: 680,
     },
-    */
     809: {
         key: 'Forest',
         scene: require('@rooms/forest/Forest').default,
