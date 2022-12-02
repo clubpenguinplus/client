@@ -4,7 +4,7 @@ import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Seat} from '@co
 
 /* START OF COMPILED CODE */
 
-export default class Town extends RoomScene {
+export default class CloudForest extends RoomScene {
     constructor() {
         super('Town')
 

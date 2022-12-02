@@ -2,6 +2,9 @@ import EventComponent from './EventComponent'
 
 /* START OF COMPILED CODE */
 
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
+
 export default class Name extends EventComponent {
     constructor(gameObject) {
         super(gameObject)

@@ -149,6 +149,7 @@ export default class Preload extends BaseScene {
                     result = result.replace(`{args[${i}]}`, args[i])
                 }
             }
+            if (!result) result = `localisedString.${key}`
             return result
         }
 

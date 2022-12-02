@@ -1,0 +1,184 @@
+{
+    "id": "400d77b9-1259-4060-8c5d-9c7131105239",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "fae11c51-33e2-45ab-bd18-fd8450f7eb2c",
+            "label": "page2",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "915ff87b-900d-46b2-80ae-d83835bd747d",
+                    "label": "page2Bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "constant",
+                        "frame": "backgroundsPage"
+                    },
+                    "x": 760,
+                    "y": 453
+                },
+                {
+                    "type": "Text",
+                    "id": "642b12d8-cbb6-410d-a2c2-e10d8a21a257",
+                    "label": "page2_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 260,
+                    "y": 79,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Player card backgrounds for everyone",
+                    "fixedWidth": 330,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "bold italic",
+                    "wordWrapWidth": 330
+                },
+                {
+                    "type": "Text",
+                    "id": "b0dc6e34-7982-44b7-bade-66191fd4059f",
+                    "label": "bgsPrice",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 171,
+                    "y": 141,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "60     each!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "italic",
+                    "color": "#9dc3fcff"
+                },
+                {
+                    "type": "Image",
+                    "id": "333af346-ca9f-48e2-b783-679149741c93",
+                    "label": "coinPng",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "jan22clothing",
+                        "frame": "coin"
+                    },
+                    "x": 157,
+                    "y": 140
+                },
+                {
+                    "type": "Text",
+                    "id": "46f35cc1-07ad-49ae-b063-c2bf6d3670cc",
+                    "label": "page2_header_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 952,
+                    "y": 84,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Player card backgrounds for everyone",
+                    "fixedWidth": 330,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "bold italic",
+                    "wordWrapWidth": 330
+                },
+                {
+                    "type": "Text",
+                    "id": "b655ec81-0dfc-47ce-8c4b-57ada4e875d2",
+                    "label": "bgsPrice_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 863,
+                    "y": 146,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "60     each!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "italic",
+                    "color": "#9dc3fcff"
+                },
+                {
+                    "type": "Image",
+                    "id": "01d4fd69-5f35-4045-808b-11bde14bceba",
+                    "label": "coinPng_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "jan22clothing",
+                        "frame": "coin"
+                    },
+                    "x": 849,
+                    "y": 145
+                },
+                {
+                    "type": "Image",
+                    "id": "7d885a1c-11d1-4b5f-be6f-55a683fefcc2",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "prevPage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "prevPage"
+                    },
+                    "x": 139,
+                    "y": 729
+                },
+                {
+                    "type": "Image",
+                    "id": "07c7201d-8dba-40dc-9f7d-99c6d941d7f6",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextPage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "nextPage"
+                    },
+                    "x": 1383,
+                    "y": 729
+                },
+                {
+                    "type": "Image",
+                    "id": "c2f0f03b-b61d-40c5-9b6f-434e453a08ac",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "closebtn"
+                    },
+                    "x": 1441,
+                    "y": 37
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

@@ -1,0 +1,126 @@
+{
+    "id": "1cadbefd-c316-4f60-aa90-f27c1a74dd43",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
+            "label": "page1",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
+                    "label": "page1Bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "constant",
+                        "frame": "front"
+                    },
+                    "x": 760,
+                    "y": 454
+                },
+                {
+                    "type": "Text",
+                    "id": "9eb17f90-4d3b-42a7-9b41-040d8eee1ac2",
+                    "label": "titleText",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "penguinStyle",
+                    "x": 785,
+                    "y": 98,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Penguin Style",
+                    "fixedWidth": 650,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "80px",
+                    "fontStyle": "bold italic"
+                },
+                {
+                    "type": "Text",
+                    "id": "1173ecb4-25fa-462e-802a-626c1d11760e",
+                    "label": "monthText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 833,
+                    "y": 158,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "December 2022",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "italic"
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6ecc3946-4e33-43b5-8777-9cf11495a6ca",
+                    "label": "closeBtn_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1124,
+                    "y": 39,
+                    "fillColor": "#26efeb",
+                    "fillAlpha": 0.5,
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "type": "Image",
+                    "id": "9b099d10-076b-4510-bdb0-0db4aec444e1",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextPage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "nextPage"
+                    },
+                    "x": 1063,
+                    "y": 729
+                },
+                {
+                    "type": "Image",
+                    "id": "7fae5925-23fa-44ca-8452-970828b157a8",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "closebtn"
+                    },
+                    "x": 1118,
+                    "y": 39
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
