@@ -21,6 +21,8 @@ export default class InputText extends EventComponent {
         this.inputfilter
         /** @type {any} */
         this.entercallback = () => {}
+        /** @type {any} */
+        this.userdefinedonclickfunction = () => {}
 
         this.gameObject = gameObject
         gameObject['__InputText'] = this
@@ -41,6 +43,7 @@ export default class InputText extends EventComponent {
     /* START-USER-CODE */
 
     start() {
+        this.defaultText = this.gameObject.text
         this.lineWidth = this.gameObject.style.fixedWidth
 
         this.clickZone = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, this.lineWidth, this.gameObject.height, 0x00ff00, localStorage.debugMode == 'true' ? 0.5 : 0)
@@ -91,6 +94,8 @@ export default class InputText extends EventComponent {
                 return
             }
 
+            this.userdefinedonclickfunction()
+
             if (!this.userClicked) {
                 this.userClicked = true
                 this.gameObject.text = ''
@@ -120,7 +125,7 @@ export default class InputText extends EventComponent {
                 charPoint++
             }
 
-            this.beforeCursor = this.gameObject.textContent
+            this.beforeCursor = text.substring(0, charPoint - 1)
             this.afterCursor = text.substring(charPoint - 1, text.length)
             this.gameObject.textContent = this.beforeCursor + this.afterCursor
             this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
@@ -148,6 +153,7 @@ export default class InputText extends EventComponent {
             this.gameObject.scene.shell.isInputActive = false
             this.indicator.visible = false
         } else {
+            this.userdefinedonclickfunction()
             this.input.once('pointerup', (pointer) => this.onClick(pointer))
 
             let offset = 0
@@ -172,7 +178,7 @@ export default class InputText extends EventComponent {
                 charPoint++
             }
 
-            this.beforeCursor = this.gameObject.textContent
+            this.beforeCursor = text.substring(0, charPoint - 1)
             this.afterCursor = text.substring(charPoint - 1, text.length)
             this.gameObject.textContent = this.beforeCursor + this.afterCursor
             this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
@@ -360,9 +366,9 @@ export default class InputText extends EventComponent {
     }
 
     clearText() {
-        this.userClicked = true
-        this.gameObject.text = ''
-        this.gameObject.textContent = ''
+        this.userClicked = false
+        this.gameObject.text = this.defaultText
+        this.gameObject.textContent = this.defaultText
         this.indicator.x = this.gameObject.x
     }
 

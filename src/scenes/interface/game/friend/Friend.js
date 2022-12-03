@@ -1,8 +1,10 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {Button, DraggableContainer, ShowHint} from '@components/components'
+import {Button, DraggableContainer, InputText} from '@components/components'
 
 import FriendItem from './friend_item/FriendItem'
+import SearchItem from './friend_item/SearchItem'
+import RequestItem from './friend_item/RequestItem'
 
 /* START OF COMPILED CODE */
 
@@ -20,6 +22,18 @@ export default class Friend extends BaseContainer {
         this.buddy_scroller
         /** @type {Phaser.GameObjects.Container} */
         this.buddyitemcontainer
+        /** @type {Phaser.GameObjects.Container} */
+        this.searchContainer
+        /** @type {SearchItem} */
+        this.searchItem
+        /** @type {RequestItem} */
+        this.requestItem
+        /** @type {Phaser.GameObjects.Text} */
+        this.searchError
+        /** @type {Phaser.GameObjects.Text} */
+        this.nameSearch_1
+        /** @type {Phaser.GameObjects.Text} */
+        this.searchInput
         /** @type {Array<any>} */
         this.items
 
@@ -27,8 +41,99 @@ export default class Friend extends BaseContainer {
         const card_bg = scene.add.image(0, 5, 'main', 'card-bg')
         this.add(card_bg)
 
+        // text
+        const text = scene.add.text(0, -236, '', {})
+        text.setOrigin(0.5, 0.5)
+        text.text = 'Friends'
+        text.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 420, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        this.add(text)
+
+        // x_button
+        const x_button = scene.add.image(180, -240, 'main', 'blue-button')
+        x_button.scaleX = 0.7
+        x_button.scaleY = 0.7
+        this.add(x_button)
+
+        // blue_x
+        const blue_x = scene.add.image(180, -241, 'main', 'blue-x')
+        blue_x.scaleX = 0.7
+        blue_x.scaleY = 0.7
+        this.add(blue_x)
+
+        // buddy_scroll
+        const buddy_scroll = scene.add.image(177, 16, 'main', 'buddy/scroll')
+        this.add(buddy_scroll)
+
+        // icon
+        const icon = scene.add.image(-72, -236, 'main', 'buddies-icon')
+        this.add(icon)
+
+        // total
+        const total = scene.add.text(81, -234, '', {})
+        total.setOrigin(0.5, 0.5)
+        total.text = '(99)'
+        total.setStyle({color: '#144e90ff', fixedWidth: 50, fontFamily: 'Burbank Small', fontSize: '20px'})
+        this.add(total)
+
+        // buddy_scroller
+        const buddy_scroller = scene.add.image(177, -141, 'main', 'buddy/scroller')
+        this.add(buddy_scroller)
+
+        // buddyitemcontainer
+        const buddyitemcontainer = scene.add.container(0, 0)
+        this.add(buddyitemcontainer)
+
+        // searchContainer
+        const searchContainer = scene.add.container(-207, 227)
+        searchContainer.visible = false
+        this.add(searchContainer)
+
+        // search_bg
+        const search_bg = scene.add.ninePatchContainer(207, 102, 464, 250, 'prompt', 'window')
+        search_bg.marginLeft = 50
+        search_bg.marginTop = 50
+        search_bg.marginRight = 50
+        search_bg.marginBottom = 50
+        search_bg.ninePatchContainerOriginY = 0.999953263437327
+        searchContainer.add(search_bg)
+
+        // searchItem
+        const searchItem = new SearchItem(scene, 207, -53)
+        searchItem.scaleX = 1
+        searchItem.scaleY = 1
+        searchItem.visible = false
+        searchContainer.add(searchItem)
+
+        // requestItem
+        const requestItem = new RequestItem(scene, 207, -50)
+        requestItem.scaleX = 1
+        requestItem.scaleY = 1
+        requestItem.visible = false
+        searchContainer.add(requestItem)
+
+        // searchError
+        const searchError = scene.add.text(207, -46, '', {})
+        searchError.setOrigin(0.5, 0.5)
+        searchError.visible = false
+        searchError.text = 'error'
+        searchError.setStyle({align: 'center', color: '#a0d3e9ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '18px'})
+        searchError.setWordWrapWidth(200)
+        searchContainer.add(searchError)
+
+        // x_button_1
+        const x_button_1 = scene.add.image(403, -114, 'main', 'blue-button')
+        x_button_1.scaleX = 0.5
+        x_button_1.scaleY = 0.5
+        searchContainer.add(x_button_1)
+
+        // blue_x_1
+        const blue_x_1 = scene.add.image(403, -114, 'main', 'blue-x')
+        blue_x_1.scaleX = 0.5
+        blue_x_1.scaleY = 0.5
+        searchContainer.add(blue_x_1)
+
         // container_2
-        const container_2 = scene.add.container(-223, 272)
+        const container_2 = scene.add.container(-223, 280)
         this.add(container_2)
 
         // search_bar_highlight
@@ -94,53 +199,36 @@ export default class Friend extends BaseContainer {
         ellipse_3_1.isFilled = true
         search_bar.add(ellipse_3_1)
 
-        // text
-        const text = scene.add.text(0, -236, '', {})
-        text.setOrigin(0.5, 0.5)
-        text.text = 'Friends'
-        text.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 420, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
-        this.add(text)
+        // window_button_small
+        const window_button_small = scene.add.image(158, 281, 'prompt', 'window-button-small')
+        window_button_small.scaleX = 0.3
+        window_button_small.scaleY = 0.3
+        window_button_small.setOrigin(0.5, 0.49523809523809526)
+        window_button_small.tintTopLeft = 7583205
+        window_button_small.tintTopRight = 7583205
+        window_button_small.tintBottomLeft = 7583205
+        window_button_small.tintBottomRight = 7583205
+        this.add(window_button_small)
 
-        // x_button
-        const x_button = scene.add.image(180, -240, 'main', 'blue-button')
-        x_button.scaleX = 0.7
-        x_button.scaleY = 0.7
-        this.add(x_button)
+        // nameSearch_1
+        const nameSearch_1 = scene.add.text(158, 281, '', {})
+        nameSearch_1.setOrigin(0.5, 0.5)
+        nameSearch_1.text = 'Find'
+        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '18px'})
+        this.add(nameSearch_1)
 
-        // blue_x
-        const blue_x = scene.add.image(180, -241, 'main', 'blue-x')
-        blue_x.scaleX = 0.7
-        blue_x.scaleY = 0.7
-        this.add(blue_x)
-
-        // buddy_scroll
-        const buddy_scroll = scene.add.image(177, 16, 'main', 'buddy/scroll')
-        this.add(buddy_scroll)
-
-        // icon
-        const icon = scene.add.image(-72, -236, 'main', 'buddies-icon')
-        this.add(icon)
-
-        // total
-        const total = scene.add.text(81, -234, '', {})
-        total.setOrigin(0.5, 0.5)
-        total.text = '(99)'
-        total.setStyle({color: '#144e90ff', fixedWidth: 50, fontFamily: 'Burbank Small', fontSize: '20px'})
-        this.add(total)
+        // searchInput
+        const searchInput = scene.add.text(-183, 282, '', {})
+        searchInput.setOrigin(0, 0.5)
+        searchInput.text = 'Enter Name'
+        searchInput.setStyle({color: '#696969ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '20px'})
+        this.add(searchInput)
 
         // rectangle_2
         const rectangle_2 = scene.add.rectangle(0, 251, 425, 2)
         rectangle_2.isFilled = true
         rectangle_2.fillColor = 2645137
         this.add(rectangle_2)
-
-        // buddy_scroller
-        const buddy_scroller = scene.add.image(177, -141, 'main', 'buddy/scroller')
-        this.add(buddy_scroller)
-
-        // buddyitemcontainer
-        const buddyitemcontainer = scene.add.container(0, 0)
-        this.add(buddyitemcontainer)
 
         // lists
         const items = []
@@ -154,11 +242,36 @@ export default class Friend extends BaseContainer {
         x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.close()
 
+        // x_button_1 (components)
+        const x_button_1Button = new Button(x_button_1)
+        x_button_1Button.spriteName = 'blue-button'
+        x_button_1Button.callback = () => this.hideSearch()
+
+        // window_button_small (components)
+        const window_button_smallButton = new Button(window_button_small)
+        window_button_smallButton.spriteName = 'window-button-small'
+        window_button_smallButton.callback = () => this.onSearchEnter()
+
+        // nameSearch_1 (components)
+        new InputText(nameSearch_1)
+
+        // searchInput (components)
+        const searchInputInputText = new InputText(searchInput)
+        searchInputInputText.charlimit = 12
+        searchInputInputText.entercallback = () => this.onSearchEnter()
+        searchInputInputText.userdefinedonclickfunction = () => this.showSearch()
+
         this.text = text
         this.icon = icon
         this.total = total
         this.buddy_scroller = buddy_scroller
         this.buddyitemcontainer = buddyitemcontainer
+        this.searchContainer = searchContainer
+        this.searchItem = searchItem
+        this.requestItem = requestItem
+        this.searchError = searchError
+        this.nameSearch_1 = nameSearch_1
+        this.searchInput = searchInput
         this.items = items
 
         /* START-USER-CTR-CODE */
@@ -208,7 +321,10 @@ export default class Friend extends BaseContainer {
         return this.shell.client.friends.sort((a, b) => {
             if (!a.online) a.online = false
             if (!b.online) b.online = false
+            if (!a.isBff) a.isBff = false
+            if (!b.isBff) b.isBff = false
             return (
+                -(a.isBff - b.isBff) ||
                 -(a.online - b.online) || // Reverse: true before false
                 a.username.toLowerCase().localeCompare(b.username.toLowerCase())
             )
@@ -275,6 +391,7 @@ export default class Friend extends BaseContainer {
             }
             let p = new FriendItem(this.scene, x, y)
             p.over.__SimpleButton.start()
+            p.bff.__SimpleButton.start()
             this.buddyitemcontainer.add(p)
             p.setItem(this.penguins[i])
             this.items.push(p)
@@ -368,6 +485,43 @@ export default class Friend extends BaseContainer {
         this.scene.input.removeListener('pointermove', this.onScrollerMove)
         this.scene.input.removeListener('pointerup', this.onScrollerUp)
         this.scrollerDown = false
+    }
+
+    onSearchEnter() {
+        this.page = 1
+        this.airtower.sendXt('b#sh', this.searchInput.textContent)
+        this.searchInput.__InputText.clearText()
+    }
+
+    close() {
+        this.visible = false
+        this.searchInput.__InputText.clickZone.visible = false
+    }
+
+    open() {
+        this.visible = true
+        this.page = 1
+        this.listType = 'friends'
+        this.showPage()
+
+        this.searchInput.__InputText.clickZone.visible = true
+
+        if (this.shell.client.pending.length > 0) {
+            this.searchContainer.visible = true
+            this.requestItem.visible = true
+            this.requestItem.setItem(this.shell.client.pending[0])
+        }
+    }
+
+    showSearch() {
+        this.searchContainer.visible = true
+    }
+
+    hideSearch() {
+        this.searchInput.__InputText.clearText()
+        this.searchContainer.visible = false
+        this.searchItem.visible = false
+        this.searchError.visible = false
     }
 
     /* END-USER-CODE */

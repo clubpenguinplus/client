@@ -1,6 +1,6 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {Button, DraggableContainer, ShowHint, InputText} from '@components/components'
+import {Button, DraggableContainer, InputText} from '@components/components'
 
 import FriendItem from './friend_item/FriendItem'
 import SearchItem from './friend_item/SearchItem'

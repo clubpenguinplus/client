@@ -96,7 +96,7 @@ export default class FriendItem extends BaseContainer {
         this.add(outline)
 
         // bff
-        const bff = scene.add.image(-40, -39, 'main', 'buddy/default')
+        const bff = scene.add.image(-35, -36, 'main', 'buddy/default')
         this.add(bff)
 
         // add (components)
@@ -138,6 +138,14 @@ export default class FriendItem extends BaseContainer {
 
     /* START-USER-CODE */
 
+    get parent() {
+        let p = this.parentContainer
+        while (!p.listType) {
+            p = p.parentContainer
+        }
+        return p
+    }
+
     setItem(friend) {
         if (!friend) return this.clearItem()
 
@@ -153,6 +161,14 @@ export default class FriendItem extends BaseContainer {
         this.outline.visible = true
         this.offlineonline.visible = true
         this.bff.visible = true
+
+        this.isBff = friend.isBff
+
+        if (friend.isBff == 1) {
+            this.bff.setFrame('buddy/bff')
+        } else {
+            this.bff.setFrame('buddy/default')
+        }
 
         if (('online' in friend && friend.online == undefined) || friend.online == false) {
             this.offline.visible = true
@@ -183,7 +199,7 @@ export default class FriendItem extends BaseContainer {
 
     onClick() {
         if (this.id) {
-            if (this.parentContainer.listType == 'pending') {
+            if (this.parent.listType == 'pending') {
                 return this.interface.main.showRequest({id: this.id, username: this.username.text})
             }
             this.interface.showCard(this.id)
@@ -191,10 +207,29 @@ export default class FriendItem extends BaseContainer {
     }
 
     addFriend() {
-        this.parentContainer.showSearch()
+        this.parent.showSearch()
     }
 
-    toggleBff() {}
+    toggleBff() {
+        if (this.isBff == 1) {
+            for (let f of this.shell.client.friends) {
+                if (f.id == this.id) {
+                    f.isBff = 0
+                    this.airtower.sendXt('b#bff', `${this.id}%0`)
+                    break
+                }
+            }
+        } else {
+            for (let f of this.shell.client.friends) {
+                if (f.id == this.id) {
+                    f.isBff = 1
+                    this.airtower.sendXt('b#bff', `${this.id}%1`)
+                    break
+                }
+            }
+        }
+        setTimeout(() => this.parent.showPage(), 50)
+    }
     /* END-USER-CODE */
 }
 

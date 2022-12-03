@@ -35,6 +35,7 @@ export default class ClientController {
                 id: temp[0],
                 username: temp[1],
                 online: temp[2] == '1' ? true : false,
+                isBff: temp[3] == '1' ? 1 : 0,
             }
         }
 

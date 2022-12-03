@@ -477,6 +477,17 @@
                         "id": "expression",
                         "expressionType": "any"
                     }
+                },
+                {
+                    "name": "userdefinedonclickfunction",
+                    "label": "On Click",
+                    "tooltip": "The function that is ran when the text is clicked",
+                    "defValue": "() => {}",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "expression",
+                        "expressionType": "any"
+                    }
                 }
             ]
         },
@@ -503,7 +514,7 @@
                 }
             ]
         },
-		{
+        {
             "name": "Pricetag",
             "baseClass": "EventComponent",
             "gameObjectType": "Phaser.GameObjects.GameObject",
