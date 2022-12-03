@@ -83,27 +83,14 @@ export default class CoinsPrompt extends BaseContainer {
         const totalCoins = scene.add.text(0, -160, '', {})
         totalCoins.setOrigin(0.5, 0.5)
         totalCoins.text = 'Your total coins: 8888888'
-        totalCoins.setStyle({
-            color: '#005cc6ff',
-            fontFamily: 'Burbank Small',
-            fontSize: '30px',
-            fontStyle: 'bold',
-            stroke: '#ffffffff',
-        })
+        totalCoins.setStyle({color: '#005cc6ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(totalCoins)
 
         // coinsEarned
         const coinsEarned = scene.add.text(0, -195, '', {})
         coinsEarned.setOrigin(0.5, 0.5)
         coinsEarned.text = 'Coins Earned: 88888'
-        coinsEarned.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '45px',
-            fontStyle: 'bold',
-            stroke: '#003d7cff',
-            strokeThickness: 8,
-        })
+        coinsEarned.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
         this.add(coinsEarned)
 
         // coins_right
@@ -119,89 +106,42 @@ export default class CoinsPrompt extends BaseContainer {
         const gameName = scene.add.text(0, -290, '', {})
         gameName.setOrigin(0.5, 0.5)
         gameName.text = 'Aqua Grabber'
-        gameName.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '50px',
-            fontStyle: 'bold',
-            stroke: '#003d7cff',
-            strokeThickness: 10,
-        })
+        gameName.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '50px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 10})
         this.add(gameName)
 
         // useCoins
         const useCoins = scene.add.text(0, 76, '', {})
         useCoins.setOrigin(0.5, 0.5)
         useCoins.text = 'Use your coins to:'
-        useCoins.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '30px',
-            fontStyle: 'bold',
-            stroke: '#ffffffff',
-        })
+        useCoins.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(useCoins)
 
         // buyClothes
         const buyClothes = scene.add.text(-270, 216, '', {})
         buyClothes.setOrigin(0.5, 0.5)
         buyClothes.text = 'Buy new clothing'
-        buyClothes.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '20px',
-            fontStyle: 'bold',
-            stroke: '#ffffffff',
-            'shadow.offsetX': 1,
-            'shadow.offsetY': 2,
-            'shadow.fill': true,
-        })
+        buyClothes.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(buyClothes)
 
         // adoptPet
         const adoptPet = scene.add.text(0, 216, '', {})
         adoptPet.setOrigin(0.5, 0.5)
         adoptPet.text = 'Adopt a pet'
-        adoptPet.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '20px',
-            fontStyle: 'bold',
-            stroke: '#ffffffff',
-            'shadow.offsetX': 1,
-            'shadow.offsetY': 2,
-            'shadow.fill': true,
-        })
+        adoptPet.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(adoptPet)
 
         // decorateIgloo
         const decorateIgloo = scene.add.text(270, 216, '', {})
         decorateIgloo.setOrigin(0.5, 0.5)
         decorateIgloo.text = 'Decorate your igloo'
-        decorateIgloo.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '20px',
-            fontStyle: 'bold',
-            stroke: '#ffffffff',
-            'shadow.offsetX': 1,
-            'shadow.offsetY': 2,
-            'shadow.fill': true,
-        })
+        decorateIgloo.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(decorateIgloo)
 
         // done
         const done = scene.add.text(0, 283, '', {})
         done.setOrigin(0.5, 0.5)
         done.text = 'Done'
-        done.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '45px',
-            fontStyle: 'bold',
-            stroke: '#003d7cff',
-            strokeThickness: 8,
-        })
+        done.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
         this.add(done)
 
         // divider
@@ -216,13 +156,7 @@ export default class CoinsPrompt extends BaseContainer {
         const stampNumber = scene.add.text(12, -95, '', {})
         stampNumber.setOrigin(0.5, 0.5)
         stampNumber.text = '22/22'
-        stampNumber.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '20px',
-            fontStyle: 'bold',
-            stroke: '#ffffffff',
-        })
+        stampNumber.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(stampNumber)
 
         // bonus
@@ -230,33 +164,19 @@ export default class CoinsPrompt extends BaseContainer {
         this.add(bonus)
 
         // bonusLeft
-        const bonusLeft = scene.add.text(0, 0, '', {})
+        const bonusLeft = scene.add.text(21, -7, '', {})
         bonusLeft.angle = -30
         bonusLeft.setOrigin(0.5, 0.5)
-        bonusLeft.text = 'BONUS!'
-        bonusLeft.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '45px',
-            fontStyle: 'bold',
-            stroke: '#7c5900ff',
-            strokeThickness: 8,
-        })
+        bonusLeft.text = 'x2'
+        bonusLeft.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
         bonus.add(bonusLeft)
 
         // bonusRight
-        const bonusRight = scene.add.text(640, 0, '', {})
+        const bonusRight = scene.add.text(621, -9, '', {})
         bonusRight.angle = 30
         bonusRight.setOrigin(0.5, 0.5)
-        bonusRight.text = 'BONUS!'
-        bonusRight.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '45px',
-            fontStyle: 'bold',
-            stroke: '#7c5900ff',
-            strokeThickness: 8,
-        })
+        bonusRight.text = 'x2'
+        bonusRight.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
         bonus.add(bonusRight)
 
         // stampLayer

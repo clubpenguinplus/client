@@ -6,6 +6,7 @@ export default class MusicController extends Phaser.Scene {
         this.musicLoader = new MusicLoader(this)
         this.sfxLoader = new SfxLoader(this)
         this.lastPlayed = {}
+        this.sfxLooping = []
     }
 
     get musicMuted() {
@@ -63,10 +64,21 @@ export default class MusicController extends Phaser.Scene {
         if (this.lastPlayed[key] && Date.now() - this.lastPlayed[key] < 50) return
         this.lastPlayed[key] = Date.now()
         this.sound.add(key, {loop: loop}).play()
+        if (loop) {
+            this.sfxLooping.push(key)
+        }
     }
 
     stopSfx(track) {
         this.sound.stopByKey(`sfx/${track}`)
+        this.sfxLooping.filter((key) => key !== `sfx/${track}`)
+    }
+
+    stopLoopingSfx() {
+        this.sfxLooping.forEach((key) => {
+            this.sfxLooping.splice(this.sfxLooping.indexOf(key), 1)
+            this.sound.stopByKey(key)
+        })
     }
 
     shufflePlaylist(playlist) {

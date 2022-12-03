@@ -280,6 +280,7 @@ export default class ClientController {
         }
 
         this.interface.destroyPin()
+        this.shell.musicController.stopLoopingSfx()
 
         if (this.activeSeat) {
             return this.interface.prompt.showError('Please exit your game before leaving the room')
