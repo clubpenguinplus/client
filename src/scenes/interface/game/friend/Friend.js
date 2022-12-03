@@ -380,6 +380,8 @@ export default class Friend extends BaseContainer {
         }
         this.items = []
 
+        let temp = []
+
         let x = -140
         let y = -290
         for (let i = 0; i < this.penguins.length; i++) {
@@ -395,7 +397,11 @@ export default class Friend extends BaseContainer {
             this.buddyitemcontainer.add(p)
             p.setItem(this.penguins[i])
             this.items.push(p)
+
+            temp.push(this.penguins[i].id)
         }
+
+        this.airtower.sendXt('u#gbs', temp.join('%'))
 
         // Update total text
         if (this.listType == 'friends' || this.listType == 'ignores') {

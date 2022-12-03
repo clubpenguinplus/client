@@ -153,7 +153,6 @@ export default class FriendItem extends BaseContainer {
 
         this.id = friend.id
         this.username.text = friend.username
-        this.airtower.sendXt('u#gb', friend.id)
         this.outline.visible = true
         this.over.visible = true
         this.bg.visible = true
