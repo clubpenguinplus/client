@@ -9,12 +9,16 @@ export default class MusicController extends Phaser.Scene {
         this.sfxLooping = []
     }
 
+    get shell() {
+        return this.scene.get('Shell')
+    }
+
     get musicMuted() {
-        return this.scene.get('Shell').muteMusic
+        return shell.muteMusic
     }
 
     get sfxMuted() {
-        return this.scene.get('Shell').muteAll
+        return shell.muteAll
     }
 
     addMusic(track, fileExtension = 'mp3') {

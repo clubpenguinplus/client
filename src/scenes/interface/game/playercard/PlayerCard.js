@@ -158,8 +158,8 @@ export default class PlayerCard extends BaseContainer {
         const stamps_btnButton = new Button(stamps_btn)
         stamps_btnButton.spriteName = 'blue-button'
         stamps_btnButton.callback = () => {
-            this.interface.loadExternal('Stampbook')
             this.interface.stampbookId = this.id
+            this.interface.loadExternal('Stampbook')
         }
 
         // x_button (components)
@@ -257,7 +257,7 @@ export default class PlayerCard extends BaseContainer {
             this.buttons.visible = false
             this.inventory.visible = true
             this.inventory.showPage()
-            this.stamps.text = `Your Stamps: ${this.shell.client.stamps.length}/${Object.keys(this.crumbs.stamps).length}`
+            this.stamps.text = `Your Stamps: ${this.getTotalStamps()[1]}/${this.getTotalStamps()[0]}`
         } else {
             this.stats.visible = false
             this.buttons.visible = true
@@ -285,6 +285,35 @@ export default class PlayerCard extends BaseContainer {
     editPlayer() {
         this.airtower.sendXt('o#gp', this.id)
         this.visible = false
+    }
+
+    getCategoryStamps(category) {
+        let categoryStamps = []
+        let ownedCategoryStamps = []
+        for (var stamp in this.crumbs.stamps) {
+            if (this.crumbs.stamps[stamp].groupid == category) {
+                categoryStamps.push(this.crumbs.stamps[stamp])
+                if (this.shell.client.stamps.includes(stamp)) {
+                    ownedCategoryStamps.push(this.crumbs.stamps[stamp])
+                }
+            }
+        }
+        return [categoryStamps.length, ownedCategoryStamps.length]
+    }
+
+    getTotalStamps() {
+        let groups = []
+        let totalStamps = 0
+        let ownedStamps = 0
+        for (let page of this.crumbs.stampbook.enabledPages) {
+            if (this.crumbs.stampbook[page].group) groups.push(this.crumbs.stampbook[page].group)
+        }
+        for (let group of groups) {
+            let cgs = this.getCategoryStamps(group)
+            totalStamps += cgs[0]
+            ownedStamps += cgs[1]
+        }
+        return [totalStamps, ownedStamps]
     }
 
     /* END-USER-CODE */

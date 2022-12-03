@@ -156,11 +156,11 @@ export default class Arcade extends RoomScene {
         container_1.add(speaker_1)
 
         // speaker_bottom_anim
-        const speaker_bottom_anim = this.add.image(19, 44, 'arcade', 'speaker-bottom-anim0001')
+        const speaker_bottom_anim = this.add.sprite(18, 44, 'arcade', 'speaker-bottom-anim0001')
         container_1.add(speaker_bottom_anim)
 
         // speaker_top_anim
-        const speaker_top_anim = this.add.image(22, 0, 'arcade', 'speaker-top-anim0001')
+        const speaker_top_anim = this.add.sprite(21, 0, 'arcade', 'speaker-top-anim0001')
         container_1.add(speaker_top_anim)
 
         // container_2
@@ -171,11 +171,11 @@ export default class Arcade extends RoomScene {
         container_2.add(speaker)
 
         // speaker_bottom_anim0001
-        const speaker_bottom_anim0001 = this.add.image(19, 44, 'arcade', 'speaker-bottom-anim0001')
+        const speaker_bottom_anim0001 = this.add.sprite(18, 44, 'arcade', 'speaker-bottom-anim0001')
         container_2.add(speaker_bottom_anim0001)
 
         // speaker_top_anim0001
-        const speaker_top_anim0001 = this.add.image(22, 0, 'arcade', 'speaker-top-anim0001')
+        const speaker_top_anim0001 = this.add.sprite(21, 0, 'arcade', 'speaker-top-anim0001')
         container_2.add(speaker_top_anim0001)
 
         // machinefour
@@ -442,6 +442,10 @@ export default class Arcade extends RoomScene {
         new MoveTo(polygon_1)
 
         this.dancefloor = dancefloor
+        this.speaker_bottom_anim = speaker_bottom_anim
+        this.speaker_top_anim = speaker_top_anim
+        this.speaker_bottom_anim0001 = speaker_bottom_anim0001
+        this.speaker_top_anim0001 = speaker_top_anim0001
         this.thinice_anim = thinice_anim
         this.bitsandbolt_anim = bitsandbolt_anim
         this.game_grey_light0001 = game_grey_light0001
@@ -459,6 +463,14 @@ export default class Arcade extends RoomScene {
 
     /** @type {Phaser.GameObjects.Sprite} */
     dancefloor
+    /** @type {Phaser.GameObjects.Sprite} */
+    speaker_bottom_anim
+    /** @type {Phaser.GameObjects.Sprite} */
+    speaker_top_anim
+    /** @type {Phaser.GameObjects.Sprite} */
+    speaker_bottom_anim0001
+    /** @type {Phaser.GameObjects.Sprite} */
+    speaker_top_anim0001
     /** @type {Phaser.GameObjects.Sprite} */
     thinice_anim
     /** @type {Phaser.GameObjects.Sprite} */
@@ -508,7 +520,7 @@ export default class Arcade extends RoomScene {
         this.speaker_top_anim.play('arcade-speaker-top-anim')
         this.speaker_bottom_anim.play('arcade-speaker-bottom-anim')
         this.speaker_bottom_anim0001.play('arcade-speaker-bottom-anim')
-        this.speaker_top_anim0001.play('arcade-speaker-bottom-anim')
+        this.speaker_top_anim0001.play('arcade-speaker-top-anim')
     }
 
     /* END-USER-CODE */

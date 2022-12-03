@@ -313,7 +313,7 @@ export default class Puffle extends BaseContainer {
     getSecretFrame(frame) {
         let equipped = this.items.equippedFlat
 
-        for (let secret of this.crumbs.secretFrames[frame]) {
+        for (let secret of this.crumbs.secret_frames[frame]) {
             if (this.checkSecretFrames(equipped, secret)) {
                 return secret.secret_frame
             }

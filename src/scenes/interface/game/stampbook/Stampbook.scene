@@ -1,0 +1,2274 @@
+{
+    "id": "c8441ac4-de22-42d7-a9b1-1c8c69cd0d42",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/stampbook/stampbook-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Stampbook",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "4a42fe8f-b0de-4719-954b-9905e257b91d",
+            "label": "blocker",
+            "scope": "CLASS",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Sprite",
+            "id": "a98d34df-f6ca-4b2f-b738-49d035c24272",
+            "label": "editor_background",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stampbook",
+                "frame": "editor_background"
+            },
+            "x": 760,
+            "y": 480,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "152a2b8a-5c2f-4cdd-aec8-b2456be8681e",
+            "label": "bgcontainer",
+            "scope": "CLASS",
+            "components": [],
+            "x": 95,
+            "y": 152,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "57911d95-2246-4a11-b761-df32a6a8325f",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "bg"
+                    },
+                    "x": 620,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "7d3b07e8-3875-4f6f-99c8-8cc71734a8e3",
+                    "label": "close",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "close"
+                    },
+                    "x": 1297
+                },
+                {
+                    "type": "Image",
+                    "id": "a9e8a251-c051-4fc1-8d87-1783a9894cf3",
+                    "label": "page_back",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "page_back"
+                    },
+                    "y": 605
+                },
+                {
+                    "type": "Image",
+                    "id": "61df8dad-8a0f-461f-8f7c-15c63108c65a",
+                    "label": "page_forward",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "page_forward"
+                    },
+                    "x": 1298,
+                    "y": 608
+                },
+                {
+                    "type": "Image",
+                    "id": "cd903c45-59ce-4241-85ab-4fbfca1c7dd5",
+                    "label": "dividers",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "dividers"
+                    },
+                    "x": 688,
+                    "y": -16
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "66245614-483c-49c9-a6d9-a1890abaef48",
+            "label": "page",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "21dd6a9b-d19f-4785-886a-b86e4dec9000",
+                    "label": "pagebg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "pagebgs/games"
+                    },
+                    "x": 744,
+                    "y": 862,
+                    "originY": 1
+                },
+                {
+                    "type": "Text",
+                    "id": "fd148cc5-090b-4faf-a6eb-4bfe7f2f88de",
+                    "label": "aquaText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 231,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Aqua Grabber",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "24defd74-d395-4b04-bdb0-bd2b88c64107",
+                    "label": "aquaIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/13"
+                    },
+                    "x": 231,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "cc3bd707-d338-4e99-a85e-77a88347ebaf",
+                    "label": "aquaButton",
+                    "components": [],
+                    "x": 314,
+                    "y": 231,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "87a9a949-913d-440c-94c2-bbc50a3ce614",
+                    "label": "astroText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 231,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Astro Barrier",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "8c73ab39-efa4-406e-9e01-88a13c9caaed",
+                    "label": "astroIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/14"
+                    },
+                    "x": 471,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "baba9164-fbfb-4807-aa93-6edbd6d5df23",
+                    "label": "astroButton",
+                    "components": [],
+                    "x": 554,
+                    "y": 231,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "92508b45-b9ba-4916-acda-9cdcaf6ab1d9",
+                    "label": "jitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 231,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Card-Jitsu",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "6534b95f-bef0-4981-9b6a-b834d6364d10",
+                    "label": "jitsuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/38"
+                    },
+                    "x": 712,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "96549528-6db3-445e-b4a9-00172f1ebdb0",
+                    "label": "jitsuButton",
+                    "components": [],
+                    "x": 794,
+                    "y": 231,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "0cc81dd7-7239-4157-b363-694038f76cc3",
+                    "label": "fireJitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 231,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Card-Jitsu Fire",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "2512d64b-55bc-4164-b027-4488c66b3be5",
+                    "label": "fireJitsuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/32"
+                    },
+                    "x": 953,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "fbdc33b3-1d7c-481c-83b4-7f902935cd4f",
+                    "label": "fireJitsuButton",
+                    "components": [],
+                    "x": 1034,
+                    "y": 231,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "d017a5f9-ac36-43f1-9fab-21a821198ec0",
+                    "label": "snowJitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1230,
+                    "y": 231,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Card-Jitsu Snow",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "58fdc08b-daae-43f6-9da7-8d2db09760db",
+                    "label": "snowJitsuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/60"
+                    },
+                    "x": 1191,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "9ba99e04-2a28-4816-aebc-012ca53f0220",
+                    "label": "snowJitsuButton",
+                    "components": [],
+                    "x": 1274,
+                    "y": 231,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "84038d20-d4fe-44ee-a7f1-86b26b5e9e96",
+                    "label": "waterJitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 306,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Card-Jitsu Water",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "3ea0d83a-62a4-4065-8fcb-10f411df1543",
+                    "label": "waterJistuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/34"
+                    },
+                    "x": 231,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d02a0a85-7624-4084-b420-1eb53bb0e20d",
+                    "label": "waterJitsuButton",
+                    "components": [],
+                    "x": 314,
+                    "y": 306,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "e0c747fb-bc4a-4b71-867a-03a5ab5b7510",
+                    "label": "cartSurferText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 306,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Cart Surfer",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "3a02fbba-e4bd-42a9-bf5e-b645caec6263",
+                    "label": "cartSurferIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/28"
+                    },
+                    "x": 471,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d3b01726-9c8c-43fb-8d6b-2e6a8b872d09",
+                    "label": "cartSurferButton",
+                    "components": [],
+                    "x": 554,
+                    "y": 306,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "822c71f9-f65a-4dd2-8af4-2e8509b2ebba",
+                    "label": "wavesText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 306,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Catchin Waves",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "9e2638d4-bf51-46c5-ad63-736a8c8d3051",
+                    "label": "wavesIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/15"
+                    },
+                    "x": 712,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "7ad11ac3-c7c5-403c-9665-d84853e07b00",
+                    "label": "wavesButton",
+                    "components": [],
+                    "x": 794,
+                    "y": 306,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "eb409ad4-bcf1-470c-8802-ee745faf49d1",
+                    "label": "fishingText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 306,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Ice Fishing",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "50d695ee-3a1b-4215-b037-b3bf2602e4b5",
+                    "label": "fishingIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/52"
+                    },
+                    "x": 953,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "2742601c-a1da-47fa-b1ed-71f4049b311a",
+                    "label": "fishingButton",
+                    "components": [],
+                    "x": 1034,
+                    "y": 306,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "f4f9e0ec-293c-483c-9db8-4ebef97321a0",
+                    "label": "jPAText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1230,
+                    "y": 306,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Jet Pack Adventure",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "2da2052c-885b-4180-8695-d1dc0b750c9e",
+                    "label": "jPAIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/11"
+                    },
+                    "x": 1191,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "f1be6da8-0a34-4c74-9995-f0c6cefeb414",
+                    "label": "jPAButton",
+                    "components": [],
+                    "x": 1274,
+                    "y": 306,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "741afd78-53d7-4e2d-b1f4-8ad9a005ab98",
+                    "label": "missionsText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 382,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Missions",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "263e758f-6f77-4ff3-a72a-00c8ebf27e32",
+                    "label": "missionsIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/22"
+                    },
+                    "x": 231,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "6902fbe1-1322-4cff-99b2-1cf90938f3ef",
+                    "label": "missionsButton",
+                    "components": [],
+                    "x": 314,
+                    "y": 382,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "b05fc877-05c8-4a7d-90cd-38357e947b83",
+                    "label": "pizzatronText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 382,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Pizzatron 3000",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "0cd000f8-18e2-482c-b74a-ff6772526a67",
+                    "label": "pizzatronIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/54"
+                    },
+                    "x": 471,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "57a3df71-6ab3-43cb-9edc-1c2ba00244fd",
+                    "label": "pizzatronButton",
+                    "components": [],
+                    "x": 554,
+                    "y": 382,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "f643f440-7f87-4f12-b804-365ab57af30a",
+                    "label": "launchText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 382,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Puffle Launch",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "b07b2986-d0ec-44d6-81d7-9baebd2fd4e0",
+                    "label": "launchIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/48"
+                    },
+                    "x": 712,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ffa90515-2df6-45eb-afa8-5f78cf9ec2fe",
+                    "label": "launchButton",
+                    "components": [],
+                    "x": 794,
+                    "y": 382,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "d1e5a5ca-befe-4296-aaab-561ad9721bcd",
+                    "label": "rescueText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 382,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Puffle Rescue",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "82f8cee7-5cbb-4305-a1b4-cc34a467aedd",
+                    "label": "rescueIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/19"
+                    },
+                    "x": 953,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "62bf7ea1-c4e4-4f73-b24b-6c6a33fab05e",
+                    "label": "rescueButton",
+                    "components": [],
+                    "x": 1034,
+                    "y": 382,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "6f7da7c5-7661-44f7-8055-1fa6105a8bd6",
+                    "label": "pufflescapeText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1230,
+                    "y": 382,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Pufflescape",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "13ae4bd9-be74-4314-9dfd-d64478735292",
+                    "label": "pufflescapeIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/57"
+                    },
+                    "x": 1191,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "027096e1-7c81-4d4f-8a0c-a529b24fd9d6",
+                    "label": "pufflescapeButton",
+                    "components": [],
+                    "x": 1274,
+                    "y": 382,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "5ab2595e-a558-4531-a5dd-feefc8f8c631",
+                    "label": "smoothieText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 457,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Smoothie Smash",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "9d4d2e56-efc1-4a95-afdf-9e26e42e0087",
+                    "label": "smoothieIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/58"
+                    },
+                    "x": 231,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "aad01117-fcd0-4f21-92f2-9c6ea82cad23",
+                    "label": "smoothieButton",
+                    "components": [],
+                    "x": 314,
+                    "y": 457,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "a12ec10c-cc62-4a76-957c-017e53d24019",
+                    "label": "sysDefText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 457,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "System Defender",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "4da3dcf1-56d0-4bbb-957d-778f7cb43700",
+                    "label": "sysDefIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/46"
+                    },
+                    "x": 471,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "695e5cf3-e824-4376-97f6-b4652ada6d52",
+                    "label": "sysDefButton",
+                    "components": [],
+                    "x": 554,
+                    "y": 457,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "279b4d36-aba5-4fb3-95a4-f7ad8f723473",
+                    "label": "thinIceText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 457,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Thin Ice",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "a7de7815-b6a3-4744-ae64-b79c50f66235",
+                    "label": "thinIceIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/16"
+                    },
+                    "x": 712,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b5ffac05-e3f4-4997-925c-841faae47f26",
+                    "label": "thinIceButton",
+                    "components": [],
+                    "x": 794,
+                    "y": 457,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "d1bf6af6-7d61-4c36-8cd4-d37052bbe7d0",
+                    "label": "huntText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 457,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Treasure Hunt",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "034fe730-8194-4c94-a9b5-24d468939750",
+                    "label": "huntIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/56"
+                    },
+                    "x": 953,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "2cb64d1a-1a33-469b-aa76-865943d9825c",
+                    "label": "huntButton",
+                    "components": [],
+                    "x": 1034,
+                    "y": 457,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "0ae396f0-e41b-4038-86f5-b09ae485631e",
+                    "label": "huntText_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1234,
+                    "y": 457,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Treasure Hunt",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "0c0f2347-fdc3-45a9-a36e-b9d2249f752a",
+                    "label": "huntIcon_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/56"
+                    },
+                    "x": 1193,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "bfcce4c1-5382-4228-8fbd-0e892b8d3a39",
+                    "label": "huntButton_1",
+                    "components": [],
+                    "x": 1274,
+                    "y": 457,
+                    "visible": false,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "0fd8f806-250d-4224-a4f6-3a05212e16a2",
+                    "label": "pagenum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1225,
+                    "y": 95,
+                    "text": "Page\n6 of 29",
+                    "fixedWidth": 150,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "cfc822ec-ef35-4c42-a63e-938957fb234f",
+                    "label": "stampnum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 880,
+                    "y": 120,
+                    "text": "100/100",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "35px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "e06eae0b-b4ee-43df-bb09-7974587d6ff4",
+                    "label": "stampcategory",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1183,
+                    "y": 101,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "Game Stamps:",
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "3481eb31-0396-44ef-aefd-dd88c85cf53b",
+                    "label": "pagename",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 329,
+                    "y": 117,
+                    "originY": 0.5,
+                    "text": "Games",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "fcfdec94-cc97-4eb3-bc5b-f7dde4be3608",
+                    "label": "pageicon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/8"
+                    },
+                    "x": 255,
+                    "y": 120
+                },
+                {
+                    "type": "Image",
+                    "id": "867fc6e3-f7e9-4710-8335-fdc6123fddff",
+                    "label": "down_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => this.nextStampPage()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 882,
+                    "y": 732,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "a6079431-8c38-4d35-8fab-c5818b29633f",
+                    "label": "down_arrow",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 882,
+                    "y": 731,
+                    "angle": -180,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "170f2efc-133f-4ce0-88b4-f5be3f252da1",
+                    "label": "up_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => this.prevStampPage()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 882,
+                    "y": 670,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "9ff4757d-ed67-4a58-84cf-944e9c14d77e",
+                    "label": "up_arrow",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 882,
+                    "y": 669,
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2fcff564-ee36-42e1-9159-6f0a39be2390",
+            "label": "front",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "7278d4d5-3c80-4720-8911-ec30f1edd7c4",
+                    "label": "cover",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "colour/1"
+                    },
+                    "x": 743,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "a47175a9-1c7c-483b-8934-fad9002bd80e",
+                    "label": "pattern",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "pattern/1"
+                    },
+                    "x": 740,
+                    "y": 480,
+                    "alpha": 0.15,
+                    "alphaTopLeft": 0.15,
+                    "alphaTopRight": 0.15,
+                    "alphaBottomLeft": 0.15,
+                    "alphaBottomRight": 0.15
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d2ec2178-9638-4ae9-8d1c-00308d49274f",
+                    "label": "clasp_bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "clasp"
+                    },
+                    "x": 1358,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ca5a8ef7-0f92-45f7-9974-53f42c05b06f",
+                    "label": "clasp",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "clasp/1"
+                    },
+                    "x": 1338,
+                    "y": 472
+                },
+                {
+                    "type": "Text",
+                    "id": "66690e3a-abe7-4ffa-af25-524c7bcaaa47",
+                    "label": "total",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 257,
+                    "y": 754,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#F4B851",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 3,
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Text",
+                    "id": "069ab41d-8d51-4d03-a1c5-93e279faa937",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 253,
+                    "y": 639,
+                    "text": "Loading Stampbook...",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "100px",
+                    "fontStyle": "bold",
+                    "color": "#F4B851",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 3,
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Sprite",
+                    "id": "34527d6e-d2e1-4789-a552-db1a0cde5d9a",
+                    "label": "edit",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "edit",
+                    "Button.callback": "() => this.editStampbook()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "edit"
+                    },
+                    "x": 1465,
+                    "y": 897
+                },
+                {
+                    "type": "Image",
+                    "id": "220a6b15-5cde-473c-b9a5-f19d75e6a716",
+                    "label": "grey_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => this.scene.stop(\"Stampbook\")",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 1346,
+                    "y": 169
+                },
+                {
+                    "type": "Image",
+                    "id": "a1f5cc01-fe51-4dad-b4e0-40b82dcea799",
+                    "label": "grey_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-x"
+                    },
+                    "x": 1346,
+                    "y": 167
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "52b1d16f-c5db-455d-8a2c-f3a89b06f663",
+            "label": "editor",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "c89e0bf3-300d-4c99-a7d0-7c23161f0490",
+                    "label": "editor_top",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "editor_top"
+                    },
+                    "x": 787,
+                    "y": 37
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ee16e781-2112-4c40-a044-51886c91bea4",
+                    "label": "editor_side",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "editor_side"
+                    },
+                    "x": 56,
+                    "y": 243
+                },
+                {
+                    "type": "Sprite",
+                    "id": "275f9e15-a76e-4b8a-860b-1d6243681e84",
+                    "label": "claspthumb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openClasp()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "thumbs/clasp/1"
+                    },
+                    "x": 76,
+                    "y": 445
+                },
+                {
+                    "type": "Container",
+                    "id": "07ab8038-7fc3-4f70-a683-e919a45bdc39",
+                    "label": "claspselect",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 205,
+                    "y": 375,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "416f0886-a968-4c4b-ab42-affbf38ecc13",
+                            "label": "claspselect_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "editor_options"
+                            },
+                            "x": 51,
+                            "y": 73
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ad6fe51d-c832-4389-9129-fb8826fbd7ec",
+                            "label": "thumbs_clasp_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(1)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/1"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c7169b4c-cba0-47d3-a899-ef18444331c3",
+                            "label": "thumbs_clasp_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(2)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/2"
+                            },
+                            "x": 103,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "750c229e-799b-4e8e-a886-e81ab549abcd",
+                            "label": "thumbs_clasp_3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(3)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/3"
+                            },
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "393090b8-9971-4cbf-b725-99430c72efc9",
+                            "label": "thumbs_clasp_4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(4)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/4"
+                            },
+                            "x": 103,
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7e3c306a-db7b-4f0a-812d-3dfd49e6bb9f",
+                            "label": "thumbs_clasp_5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(5)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/5"
+                            },
+                            "y": 145,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e8f4d7c5-bd9d-4d36-a276-32b5b40620b7",
+                            "label": "thumbs_clasp_6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(6)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/6"
+                            },
+                            "x": 103,
+                            "y": 144,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        }
+                    ]
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c883d7a4-5c75-4821-a725-2362a5482856",
+                    "label": "patternthumb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openPattern()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "thumbs/color/1"
+                    },
+                    "x": 76,
+                    "y": 328
+                },
+                {
+                    "type": "Container",
+                    "id": "5d60401d-1aeb-4468-ba4b-d088173ff8f0",
+                    "label": "patternselect",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 205,
+                    "y": 261,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "e5201611-9559-4dd4-9bf3-ad2b803acaa8",
+                            "label": "patternselect_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "editor_options"
+                            },
+                            "x": 51,
+                            "y": 73
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9cfc3f49-d3f0-4bff-9fbb-122baddefba8",
+                            "label": "thumbs_pattern_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(1)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/1"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "22dabb16-4eaa-402a-9ed5-1308d357dc74",
+                            "label": "thumbs_pattern_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(2)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/2"
+                            },
+                            "x": 103,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c2fb7dde-8417-4dc7-b676-f50eefbb65ea",
+                            "label": "thumbs_pattern_3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(3)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/3"
+                            },
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "648965d5-4b20-4735-8cd5-9f14ab1c80df",
+                            "label": "thumbs_pattern_4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(4)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/4"
+                            },
+                            "x": 103,
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "daa51063-cebf-4c6f-94e9-07dce8253d48",
+                            "label": "thumbs_pattern_5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(5)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/5"
+                            },
+                            "y": 145,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c980091f-7a15-4ddf-b0f5-a88efe4d11af",
+                            "label": "thumbs_pattern_6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(6)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/6"
+                            },
+                            "x": 103,
+                            "y": 144,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        }
+                    ]
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4a21f2c2-fa96-4c99-a1a4-7acdf3709cd6",
+                    "label": "colorthumb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openColour()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "thumbs/color/1"
+                    },
+                    "x": 76,
+                    "y": 215
+                },
+                {
+                    "type": "Container",
+                    "id": "915a0bf9-6622-49ef-9047-307bb8688701",
+                    "label": "colorselect",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 205,
+                    "y": 145,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "038de595-b1cb-405a-a63e-9b678d67bc1f",
+                            "label": "colorselect_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "editor_options"
+                            },
+                            "x": 51,
+                            "y": 73
+                        },
+                        {
+                            "type": "Image",
+                            "id": "17ed9666-53b6-4db7-9cb8-3c8583b3f64a",
+                            "label": "thumbs_color_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(1)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/1"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1a84dff2-5948-4cfe-b46f-c520aebe5add",
+                            "label": "thumbs_color_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(2)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/2"
+                            },
+                            "x": 103,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e7a9191a-87b4-4c5e-82d4-baada8cb38a1",
+                            "label": "thumbs_color_3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(3)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/3"
+                            },
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "0e7c0876-54cf-41a2-a671-8bb6e7d08d08",
+                            "label": "thumbs_color_4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(4)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/4"
+                            },
+                            "x": 103,
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6f6275c4-f804-4cf6-88f1-8f5a81b34d1f",
+                            "label": "thumbs_color_5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(5)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/5"
+                            },
+                            "y": 145,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9a4439d3-ee9a-4054-a333-3211ced6c6d0",
+                            "label": "thumbs_color_6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(6)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/6"
+                            },
+                            "x": 103,
+                            "y": 144,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "f9aaf9c3-c657-4f71-9976-3b49022382da",
+                    "label": "save",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.saveStampbook()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "save"
+                    },
+                    "x": 1463,
+                    "y": 899
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "bf9f2082-0805-4061-981e-508f96765900",
+            "label": "stampLayer",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "f131a004-7964-4155-b27e-b28e2441add3",
+            "label": "stampInfo",
+            "scope": "CLASS",
+            "components": [],
+            "x": -190,
+            "y": 259,
+            "visible": false,
+            "list": [
+                {
+                    "type": "NinePatchContainer",
+                    "id": "bf8c8808-5d07-477f-a35f-ed8c8e0dd8e8",
+                    "label": "stampInfoBg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "list/small"
+                    },
+                    "x": 6.518512446268176,
+                    "y": -118.87806837021839,
+                    "width": 300,
+                    "height": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "6e765939-af14-43fd-94f6-46772311fd38",
+                    "label": "stampInfoTitle",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 7,
+                    "y": -175,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Full House",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "1d72cc0d-a7b6-4855-b5aa-beb24f3c4265",
+                    "label": "stampInfoBody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 6.518512446268176,
+                    "y": -93.87806837021839,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Get all ya mates together and play in a band innit",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 275
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0524b342-9899-4e09-adfa-6a8f29ca84db",
+            "label": "stampHovers",
+            "scope": "CLASS",
+            "components": [],
+            "x": 260,
+            "y": 270,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "cedca445-c725-4720-85c4-efcbf3bf9bdb",
+                    "label": "stampHover1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(0)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(0)",
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "94ed0650-1786-4664-a492-6dd9c3548ac2",
+                    "label": "stampHover2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(1)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(1)",
+                    "x": 170,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "8b7f1388-b305-4bd4-9459-c205a7917c14",
+                    "label": "stampHover3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(2)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(2)",
+                    "x": 340,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "282d28bf-b29e-426d-96cc-380b815d9d5b",
+                    "label": "stampHover4",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(3)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(3)",
+                    "x": 510,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b80d948a-a688-4da2-965f-75871421d5a5",
+                    "label": "stampHover5",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(4)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(4)",
+                    "y": 150,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "e54d18f0-5b43-4917-b065-52700c4a2e46",
+                    "label": "stampHover6",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(5)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(5)",
+                    "x": 170,
+                    "y": 150,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "0e9164f1-fdf2-4cbb-8050-9c5abca6865f",
+                    "label": "stampHover7",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(6)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(6)",
+                    "x": 340,
+                    "y": 150,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "0eb852f8-e533-4acc-9edd-d4b3cf717358",
+                    "label": "stampHover8",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(7)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(7)",
+                    "x": 510,
+                    "y": 150,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c14e7c81-6b4b-45c3-9fbf-ee469a67e11b",
+                    "label": "stampHover9",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(8)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(8)",
+                    "y": 300,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "88e511e2-392c-4882-bec9-0cf559c8cd5d",
+                    "label": "stampHover10",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(9)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(9)",
+                    "x": 170,
+                    "y": 300,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "749646ae-0174-4d20-afaf-6ad70b09ac3f",
+                    "label": "stampHover11",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(10)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(10)",
+                    "x": 340,
+                    "y": 300,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d006064e-7a60-47d9-9101-939341d28b0f",
+                    "label": "stampHover12",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(11)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(11)",
+                    "x": 510,
+                    "y": 300,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "49205130-40b5-44ff-bd06-598ed7adcd4e",
+                    "label": "stampHover13",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(12)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(12)",
+                    "y": 450,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "fb6215f1-6e27-49a8-83d9-275076953424",
+                    "label": "stampHover14",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(13)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(13)",
+                    "x": 170,
+                    "y": 450,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ad6ddf67-12da-47cf-85ac-ec780786b5ce",
+                    "label": "stampHover15",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(14)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(14)",
+                    "x": 340,
+                    "y": 450,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "9e6a906c-b5e9-440c-9af4-a2fea8b03a82",
+                    "label": "stampHover16",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(15)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(15)",
+                    "x": 510,
+                    "y": 450,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "39b4eea7-a6d2-4ed0-b1ab-c2a3191340b4",
+            "label": "pages",
+            "objectIds": [
+                "2fcff564-ee36-42e1-9159-6f0a39be2390",
+                "66245614-483c-49c9-a6d9-a1890abaef48"
+            ]
+        },
+        {
+            "id": "56a4b5ab-700a-4543-9885-6ee15f2c4153",
+            "label": "indexButtons",
+            "objectIds": [
+                "cc3bd707-d338-4e99-a85e-77a88347ebaf",
+                "baba9164-fbfb-4807-aa93-6edbd6d5df23",
+                "96549528-6db3-445e-b4a9-00172f1ebdb0",
+                "fbdc33b3-1d7c-481c-83b4-7f902935cd4f",
+                "9ba99e04-2a28-4816-aebc-012ca53f0220",
+                "d02a0a85-7624-4084-b420-1eb53bb0e20d",
+                "d3b01726-9c8c-43fb-8d6b-2e6a8b872d09",
+                "7ad11ac3-c7c5-403c-9665-d84853e07b00",
+                "2742601c-a1da-47fa-b1ed-71f4049b311a",
+                "f1be6da8-0a34-4c74-9995-f0c6cefeb414",
+                "6902fbe1-1322-4cff-99b2-1cf90938f3ef",
+                "57a3df71-6ab3-43cb-9edc-1c2ba00244fd",
+                "ffa90515-2df6-45eb-afa8-5f78cf9ec2fe",
+                "62bf7ea1-c4e4-4f73-b24b-6c6a33fab05e",
+                "027096e1-7c81-4d4f-8a0c-a529b24fd9d6",
+                "aad01117-fcd0-4f21-92f2-9c6ea82cad23",
+                "695e5cf3-e824-4376-97f6-b4652ada6d52",
+                "b5ffac05-e3f4-4997-925c-841faae47f26",
+                "2cb64d1a-1a33-469b-aa76-865943d9825c",
+                "bfcce4c1-5382-4228-8fbd-0e892b8d3a39"
+            ]
+        },
+        {
+            "id": "b4e512a5-620a-4bc7-a4b7-dd1eb49d8106",
+            "label": "indexIcons",
+            "objectIds": [
+                "24defd74-d395-4b04-bdb0-bd2b88c64107",
+                "8c73ab39-efa4-406e-9e01-88a13c9caaed",
+                "6534b95f-bef0-4981-9b6a-b834d6364d10",
+                "2512d64b-55bc-4164-b027-4488c66b3be5",
+                "58fdc08b-daae-43f6-9da7-8d2db09760db",
+                "3ea0d83a-62a4-4065-8fcb-10f411df1543",
+                "3a02fbba-e4bd-42a9-bf5e-b645caec6263",
+                "9e2638d4-bf51-46c5-ad63-736a8c8d3051",
+                "50d695ee-3a1b-4215-b037-b3bf2602e4b5",
+                "2da2052c-885b-4180-8695-d1dc0b750c9e",
+                "263e758f-6f77-4ff3-a72a-00c8ebf27e32",
+                "0cd000f8-18e2-482c-b74a-ff6772526a67",
+                "b07b2986-d0ec-44d6-81d7-9baebd2fd4e0",
+                "82f8cee7-5cbb-4305-a1b4-cc34a467aedd",
+                "13ae4bd9-be74-4314-9dfd-d64478735292",
+                "9d4d2e56-efc1-4a95-afdf-9e26e42e0087",
+                "4da3dcf1-56d0-4bbb-957d-778f7cb43700",
+                "a7de7815-b6a3-4744-ae64-b79c50f66235",
+                "034fe730-8194-4c94-a9b5-24d468939750",
+                "0c0f2347-fdc3-45a9-a36e-b9d2249f752a"
+            ]
+        },
+        {
+            "id": "f98b9896-86bd-4609-a515-ef4d9f8df225",
+            "label": "indexText",
+            "objectIds": [
+                "fd148cc5-090b-4faf-a6eb-4bfe7f2f88de",
+                "87a9a949-913d-440c-94c2-bbc50a3ce614",
+                "92508b45-b9ba-4916-acda-9cdcaf6ab1d9",
+                "0cc81dd7-7239-4157-b363-694038f76cc3",
+                "d017a5f9-ac36-43f1-9fab-21a821198ec0",
+                "84038d20-d4fe-44ee-a7f1-86b26b5e9e96",
+                "e0c747fb-bc4a-4b71-867a-03a5ab5b7510",
+                "822c71f9-f65a-4dd2-8af4-2e8509b2ebba",
+                "eb409ad4-bcf1-470c-8802-ee745faf49d1",
+                "f4f9e0ec-293c-483c-9db8-4ebef97321a0",
+                "741afd78-53d7-4e2d-b1f4-8ad9a005ab98",
+                "b05fc877-05c8-4a7d-90cd-38357e947b83",
+                "f643f440-7f87-4f12-b804-365ab57af30a",
+                "d1e5a5ca-befe-4296-aaab-561ad9721bcd",
+                "6f7da7c5-7661-44f7-8055-1fa6105a8bd6",
+                "5ab2595e-a558-4531-a5dd-feefc8f8c631",
+                "a12ec10c-cc62-4a76-957c-017e53d24019",
+                "279b4d36-aba5-4fb3-95a4-f7ad8f723473",
+                "d1bf6af6-7d61-4c36-8cd4-d37052bbe7d0",
+                "0ae396f0-e41b-4038-86f5-b09ae485631e"
+            ]
+        }
+    ]
+}

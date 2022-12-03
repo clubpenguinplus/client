@@ -303,7 +303,7 @@ export default class Penguin extends BaseContainer {
             return this.secretFramesCache[frameString]
         }
 
-        for (let secret of this.crumbs.secretFrames[frame]) {
+        for (let secret of this.crumbs.secret_frames[frame]) {
             if (this.checkSecretFrames(equipped, secret)) {
                 this.secretFramesCache[frameString] = secret.secret_frame
 

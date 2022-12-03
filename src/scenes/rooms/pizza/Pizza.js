@@ -191,6 +191,11 @@ export default class Pizza extends RoomScene {
         plazadoorButton.activeFrame = false
         new MoveTo(plazadoor)
 
+        // pizzacashreg (components)
+        const pizzacashregSimpleButton = new SimpleButton(pizzacashreg)
+        pizzacashregSimpleButton.hoverCallback = () => this.onCashRegOver()
+        pizzacashregSimpleButton.hoverOutCallback = () => this.onCashRegOut()
+
         // barmoveto_3 (components)
         new MoveTo(barmoveto_3)
         new SimpleButton(barmoveto_3)
@@ -237,19 +242,29 @@ export default class Pizza extends RoomScene {
     }
 
     onPlazaDoorOver() {
-        this.shell.musicController.addSfx('Pizza-PlazaOpen')
+        this.shell.musicController.addSfx('pizza-PlazaOpen')
     }
 
     onPlazaDoorOut() {
-        this.shell.musicController.addSfx('Pizza-PlazaClose')
+        this.shell.musicController.addSfx('pizza-PlazaClose')
     }
 
     onKitchenDoorOver() {
-        this.shell.musicController.addSfx('Pizza-KitchenOpen')
+        this.shell.musicController.addSfx('pizza-KitchenOpen')
     }
 
     onKitchenDoorOut() {
-        this.shell.musicController.addSfx('Pizza-KitchenClose')
+        this.shell.musicController.addSfx('pizza-KitchenClose')
+    }
+
+    onCashRegOver() {
+        this.pizzacashreg.play('pizza-cashregover')
+        this.shell.musicController.addSfx('pizza-CashUp')
+    }
+
+    onCashRegOut() {
+        this.pizzacashreg.play('pizza-cashregdown')
+        this.shell.musicController.addSfx('pizza-CashDown')
     }
 
     /* END-USER-CODE */

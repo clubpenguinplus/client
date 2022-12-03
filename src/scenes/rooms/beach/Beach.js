@@ -119,19 +119,19 @@ export default class Beach extends RoomScene {
         switch (frame) {
             case '0001':
             case '0346':
-                this.bucket.play('bucket1')
+                this.bucket.play('beach-bucket1')
                 break
             case '0070':
-                this.bucket.play('bucket2')
+                this.bucket.play('beach-bucket2')
                 break
             case '0137':
-                this.bucket.play('bucket3')
+                this.bucket.play('beach-bucket3')
                 break
             case '0210':
-                this.bucket.play('bucket4')
+                this.bucket.play('beach-bucket4')
                 break
             case '0269':
-                this.bucket.play('bucket5')
+                this.bucket.play('beach-bucket5')
                 break
             default:
                 break

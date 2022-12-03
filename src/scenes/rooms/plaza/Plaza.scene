@@ -68,20 +68,6 @@
             "y": 65
         },
         {
-            "type": "Sprite",
-            "id": "ad1ba330-8d4c-4b32-ad72-26a56e99944a",
-            "label": "cover",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "plaza",
-                "frame": "cover_0001"
-            },
-            "x": 507,
-            "y": 673.9236627496881,
-            "originY": 1.6478945983850846
-        },
-        {
             "type": "Image",
             "id": "9a9589bb-496f-4654-9eb4-2626095d3159",
             "label": "mall_fg",
@@ -143,6 +129,20 @@
             },
             "x": 480,
             "y": 283
+        },
+        {
+            "type": "Sprite",
+            "id": "ad1ba330-8d4c-4b32-ad72-26a56e99944a",
+            "label": "cover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "cover_0001"
+            },
+            "x": 507,
+            "y": 673.9236627496881,
+            "originY": 1.6478945983850846
         },
         {
             "type": "Image",

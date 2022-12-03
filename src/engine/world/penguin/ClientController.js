@@ -67,8 +67,8 @@ export default class ClientController {
         this.throttleDelay = 100
 
         // Input
-        this.keys = this.crumbs.quickKeys.keys
-        this.emotes = this.crumbs.quickKeys.emotes
+        this.keys = this.crumbs.quick_keys.keys
+        this.emotes = this.crumbs.quick_keys.emotes
 
         this.keyActions = {
             send_frame: (id) => this.sendFrame(id),

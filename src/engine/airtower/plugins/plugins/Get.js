@@ -50,9 +50,17 @@ export default class Get extends Plugin {
     }
 
     getStampbook(args) {
-        if (!this.interface.book) return
+        if (!this.interface.stampbook) return
 
-        this.interface.book.initStampbook(args, false)
+        let a = {}
+        a.username = args[0]
+        a.stamps = args[1].split(',')
+        a.color = args[2]
+        a.clasp = args[3]
+        a.pattern = args[4]
+        a.pins = args[5].split(',')
+
+        this.interface.stampbook.initStampbook(a, false)
     }
 
     getMascots(args) {

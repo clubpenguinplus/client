@@ -20,7 +20,8 @@ for (let lang of langs) {
         strings: require(`${assets}/strings.json`),
         worlds: require(`${assets}/worlds.json`),
         stamps: require(`${assets}/stamps.json`),
-        puffles: require(`${assets}/puffles.json`)
+        puffles: require(`${assets}/puffles.json`),
+        stampbook: require(`${assets}/stampbook.json`),
     }
 
     try {

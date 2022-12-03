@@ -118,6 +118,8 @@ export default class SfxLoader extends Phaser.Loader.LoaderPlugin {
             return
         }
 
+        this.musicController.shell.itemsLoaded.push({id: key, type: 'audio'})
+
         for (var i = 0; i < this.loading.length; i++) {
             if (this.loading[i].key == key) {
                 this.loading.splice(i, 1)

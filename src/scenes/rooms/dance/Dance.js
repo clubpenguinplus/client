@@ -345,7 +345,7 @@ export default class Dance extends RoomScene {
 
     onDoorOver() {
         this.door.play('dance-doorAnim')
-        this.shell.musicController.addSfx('danceClub-Door')
+        this.shell.musicController.addSfx('dance-Door')
     }
 
     onDoorOut() {
@@ -355,11 +355,12 @@ export default class Dance extends RoomScene {
 
     onSpeakerOver() {
         this.boilerSpeaker.setFrame('boilerSpeaker0002')
-        this.shell.musicController.addSfx('danceClub-SpeakerOpen')
+        this.shell.musicController.addSfx('dance-SpeakerOpen')
     }
 
     onSpeakerOut() {
-        this.shell.musicController.addSfx('danceClub-SpeakerClose')
+        this.boilerSpeaker.setFrame('boilerSpeaker0001')
+        this.shell.musicController.addSfx('dance-SpeakerClose')
     }
 
     onContestOver() {
@@ -373,12 +374,12 @@ export default class Dance extends RoomScene {
 
     onStairsOver() {
         this.upstairs.setFrame('upstairs-hover')
-        this.shell.musicController.addSfx('danceClub-LightOn')
+        this.shell.musicController.addSfx('dance-LightOn')
     }
 
     onStairsOut() {
         this.upstairs.setFrame('upstairs')
-        this.shell.musicController.addSfx('danceClub-LightOff')
+        this.shell.musicController.addSfx('dance-LightOff')
     }
 
     onKeeperOver() {

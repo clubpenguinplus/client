@@ -13,6 +13,7 @@ const interfaces = {
     ModPanel: require('@scenes/interface/menus/mod/ModPanel').default,
     SafetyQuiz: require('@scenes/interface/closeups/SafetyQuiz').default,
     Moderator: require('@scenes/interface/closeups/Moderator').default,
+    Stampbook: require('@scenes/interface/game/stampbook/Stampbook').default,
 }
 
 export default interfaces

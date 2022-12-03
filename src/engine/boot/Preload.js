@@ -125,19 +125,9 @@ export default class Preload extends BaseScene {
         // Set crumbs
         let crumbs = this.cache.json.get(`crumbs-${lang}`)
 
-        this.crumbs.colors = crumbs.colors
-        this.crumbs.flooring = crumbs.flooring
-        this.crumbs.furniture = crumbs.furniture
-        this.crumbs.igloos = crumbs.igloos
-        this.crumbs.items = crumbs.items
-        this.crumbs.penguin = crumbs.penguin
-        this.crumbs.quickKeys = crumbs.quick_keys
-        this.crumbs.safeMessages = crumbs.safe_messages
-        this.crumbs.secretFrames = crumbs.secret_frames
-        this.crumbs.strings = crumbs.strings
-        this.crumbs.worlds = crumbs.worlds
-        this.crumbs.stamps = crumbs.stamps
-        this.crumbs.puffles = crumbs.puffles
+        for (let c in crumbs) {
+            this.crumbs[c] = crumbs[c]
+        }
 
         this.crumbs.getString = (key) => {
             key = key.toString()

@@ -12,9 +12,9 @@ export default class Plaza extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.parksign
         /** @type {Phaser.GameObjects.Sprite} */
-        this.cover
-        /** @type {Phaser.GameObjects.Sprite} */
         this.cannon
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.cover
         /** @type {Phaser.GameObjects.Sprite} */
         this.puffle
         /** @type {Phaser.GameObjects.Sprite} */
@@ -55,10 +55,6 @@ export default class Plaza extends RoomScene {
         // mall_sign_en
         const mall_sign_en = this.add.image(894, 65, 'plaza', 'mall_sign-en')
 
-        // cover
-        const cover = this.add.sprite(507, 673.9236627496881, 'plaza', 'cover_0001')
-        cover.setOrigin(0.5, 1.6478945983850846)
-
         // mall_fg
         this.add.image(914, 302, 'plaza', 'mall_fg')
 
@@ -70,6 +66,10 @@ export default class Plaza extends RoomScene {
 
         // buildings2
         this.add.image(480, 283, 'plaza', 'buildings2')
+
+        // cover
+        const cover = this.add.sprite(507, 673.9236627496881, 'plaza', 'cover_0001')
+        cover.setOrigin(0.5, 1.6478945983850846)
 
         // pet_sign_en
         const pet_sign_en = this.add.image(362, 292, 'plaza', 'pet_sign-en')
@@ -238,8 +238,8 @@ export default class Plaza extends RoomScene {
         rectangle_2SimpleButton.hoverOutCallback = () => this.parksign.setFrame('park')
 
         this.parksign = parksign
-        this.cover = cover
         this.cannon = cannon
+        this.cover = cover
         this.puffle = puffle
         this.smoke = smoke
         this.sort = sort
@@ -250,52 +250,52 @@ export default class Plaza extends RoomScene {
     /* START-USER-CODE */
 
     onPuffleOver() {
-        this.shell.musicController.addSfx('PlazaCannon')
+        this.shell.musicController.addSfx('plaza-Cannon')
         this.smoke.__Animation.play()
         this.puffle.__Animation.play()
         this.cannon.__Animation.play()
     }
 
     onHoleOver() {
-        this.shell.musicController.addSfx('HoleOpen')
+        this.shell.musicController.addSfx('plaza-HoleOpen')
         this.cover.play('plaza-holeopen')
     }
 
     onHoleOut() {
-        this.shell.musicController.addSfx('HoleClose')
+        this.shell.musicController.addSfx('plaza-HoleClose')
         this.cover.play('plaza-holeclose')
     }
 
     onMallOver() {
-        this.shell.musicController.addSfx('StageOpen')
+        this.shell.musicController.addSfx('plaza-StageOpen')
     }
 
     onMallOut() {
-        this.shell.musicController.addSfx('StageClose')
+        this.shell.musicController.addSfx('plaza-StageClose')
     }
 
     onPizzaOver() {
-        this.shell.musicController.addSfx('PizzaOpen')
+        this.shell.musicController.addSfx('plaza-PizzaOpen')
     }
 
     onPizzaOut() {
-        this.shell.musicController.addSfx('PizzaClose')
+        this.shell.musicController.addSfx('plaza-PizzaClose')
     }
 
     onHotelOver() {
-        this.shell.musicController.addSfx('HotelOpen')
+        this.shell.musicController.addSfx('plaza-HotelOpen')
     }
 
     onHotelOut() {
-        this.shell.musicController.addSfx('HotelClose')
+        this.shell.musicController.addSfx('plaza-HotelClose')
     }
 
     onPetOver() {
-        this.shell.musicController.addSfx('PetOpen')
+        this.shell.musicController.addSfx('plaza-PetOpen')
     }
 
     onPetOut() {
-        this.shell.musicController.addSfx('PetClose')
+        this.shell.musicController.addSfx('plaza-PetClose')
     }
 
     /* END-USER-CODE */

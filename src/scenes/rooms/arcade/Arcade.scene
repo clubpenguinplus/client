@@ -385,27 +385,29 @@
                     "y": 45
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "21fae66a-a10b-4155-922d-939f32f36ebf",
                     "label": "speaker_bottom_anim",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "arcade",
                         "frame": "speaker-bottom-anim0001"
                     },
-                    "x": 19,
+                    "x": 18,
                     "y": 44
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "be425e87-d411-4bce-ad8b-2d3ae300c84c",
                     "label": "speaker_top_anim",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "arcade",
                         "frame": "speaker-top-anim0001"
                     },
-                    "x": 22
+                    "x": 21
                 }
             ]
         },
@@ -429,27 +431,29 @@
                     "y": 45
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "7c82867a-777e-49ee-acc1-b6f66a1ed096",
                     "label": "speaker_bottom_anim0001",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "arcade",
                         "frame": "speaker-bottom-anim0001"
                     },
-                    "x": 19,
+                    "x": 18,
                     "y": 44
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "85df2b73-9b90-4a43-a3e0-415a51be2d27",
                     "label": "speaker_top_anim0001",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "arcade",
                         "frame": "speaker-top-anim0001"
                     },
-                    "x": 22
+                    "x": 21
                 }
             ]
         },

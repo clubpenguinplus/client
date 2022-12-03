@@ -119,7 +119,11 @@
             "id": "523bdb34-96ea-43b5-805a-1fdc2f5628b1",
             "label": "pizzacashreg",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCashRegOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCashRegOut()",
             "texture": {
                 "key": "pizza",
                 "frame": "pizzacashregover0001"
