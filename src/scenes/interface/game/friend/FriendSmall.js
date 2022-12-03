@@ -355,12 +355,12 @@ export default class FriendSmall extends BaseContainer {
 
     showPage() {
         if (this.visible == false) return
-        //if (this.penguins.length > 6) {
-        //    this.parentContainer.friend.visible = true
-        //    this.parentContainer.friend.showPage()
-        //    this.visible = false
-        //    return
-        //}
+        if (this.penguins.length > 6) {
+            this.parentContainer.friend.visible = true
+            this.parentContainer.friend.showPage()
+            this.visible = false
+            return
+        }
 
         let page = this.penguins.slice((this.page - 1) * this.pageSize, this.page * this.pageSize)
 
