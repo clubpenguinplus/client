@@ -29,36 +29,24 @@
             "y": 480
         },
         {
-            "type": "Sprite",
+            "type": "Container",
             "id": "594ea5f7-a655-4d73-a139-4569b2d604d2",
-            "label": "leftboxes0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "leftboxes",
-            "Animation.end": 110,
-            "texture": {
-                "key": "boxdimension",
-                "frame": "leftboxes0001"
-            },
+            "label": "leftboxes",
+            "scope": "CLASS",
+            "components": [],
             "x": 485,
-            "y": 327
+            "y": 327,
+            "list": []
         },
         {
-            "type": "Sprite",
+            "type": "Container",
             "id": "438cbd4b-3f75-4450-9057-a4911c5c790f",
-            "label": "portal0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "portal",
-            "Animation.end": 100,
-            "texture": {
-                "key": "boxdimension",
-                "frame": "portal0001"
-            },
+            "label": "portal",
+            "scope": "CLASS",
+            "components": [],
             "x": 1232,
-            "y": 159
+            "y": 159,
+            "list": []
         },
         {
             "type": "Image",
@@ -101,20 +89,14 @@
             "y": 585.5
         },
         {
-            "type": "Sprite",
+            "type": "Container",
             "id": "8647f424-0592-4d52-89d2-3ae918bf0dfd",
-            "label": "frontboxes0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "frontboxes",
-            "Animation.end": 110,
-            "texture": {
-                "key": "boxdimension",
-                "frame": "frontboxes0001"
-            },
+            "label": "frontboxes",
+            "scope": "CLASS",
+            "components": [],
             "x": 753,
-            "y": 811
+            "y": 811,
+            "list": []
         }
     ],
     "plainObjects": [],
