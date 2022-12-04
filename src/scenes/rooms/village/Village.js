@@ -189,15 +189,16 @@ export default class Village extends RoomScene {
 
         let skichairfh = this.add.video(0, 0, 'village-skichairfh')
         this.skichairfh.add(skichairfh)
-        skichairfh.play(true)
 
         let tubelift = this.add.video(0, 0, 'village-tubelift')
         this.tubelift.add(tubelift)
-        tubelift.play(true)
 
         let skichairsh = this.add.video(-61, -252, 'village-skichair')
         this.skichairsh.add(skichairsh)
+
+        skichairfh.play(true)
         skichairsh.play(true)
+        tubelift.play(true)
 
         this.tubepile.play('village-tubepile')
         this.belt.play('village-belt')
