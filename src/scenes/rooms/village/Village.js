@@ -49,7 +49,7 @@ export default class Village extends RoomScene {
         this.add.image(1383, 303, 'village', 'epf')
 
         // tubelift
-        const tubelift = this.add.sprite(122, 286, 'village', 'tubelift0001')
+        const tubelift = this.add.container(122, 286)
         tubelift.scaleX = 0.5
         tubelift.scaleY = 0.5
 
@@ -96,14 +96,13 @@ export default class Village extends RoomScene {
         toursign_en.setOrigin(0.5872172481438145, 2.461207972926635)
 
         // skichairfh
-        const skichairfh = this.add.sprite(221, 122, 'village', 'skichairfh0001')
+        const skichairfh = this.add.container(221, 122)
 
         // arrow
         this.add.image(608, 375, 'village', 'arrow')
 
         // skichairsh
-        const skichairsh = this.add.sprite(261.99604271365615, 410.1601804653192, 'village', 'skichair0090')
-        skichairsh.setOrigin(0.5723559217599259, 0.9625417552868838)
+        const skichairsh = this.add.container(261.99604271365615, 410.1601804653192)
 
         // tourszone
         const tourszone = this.add.rectangle(211, 580, 128, 128)
@@ -158,7 +157,7 @@ export default class Village extends RoomScene {
         this.events.emit('scene-awake')
     }
 
-    /** @type {Phaser.GameObjects.Sprite} */
+    /** @type {Phaser.GameObjects.Container} */
     tubelift
     /** @type {Phaser.GameObjects.Sprite} */
     tubepile
@@ -170,15 +169,15 @@ export default class Village extends RoomScene {
     tours
     /** @type {Phaser.GameObjects.Sprite} */
     toursign_en
-    /** @type {Phaser.GameObjects.Sprite} */
+    /** @type {Phaser.GameObjects.Container} */
     skichairfh
-    /** @type {Phaser.GameObjects.Sprite} */
+    /** @type {Phaser.GameObjects.Container} */
     skichairsh
     /** @type {Phaser.GameObjects.Rectangle} */
     tourszone
     /** @type {Phaser.GameObjects.Sprite} */
     belt
-    /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+    /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
     sort
 
     /* START-USER-CODE */
@@ -188,10 +187,19 @@ export default class Village extends RoomScene {
     create() {
         super.create()
 
-        this.skichairfh.play('village-skifirsthalf')
-        this.tubelift.play('village-tubelift')
+        let skichairfh = this.add.video(0, 0, 'village-skichairfh')
+        this.skichairfh.add(skichairfh)
+        skichairfh.play(true)
+
+        let tubelift = this.add.video(0, 0, 'village-tubelift')
+        this.tubelift.add(tubelift)
+        tubelift.play(true)
+
+        let skichairsh = this.add.video(-61, -252, 'village-skichair')
+        this.skichairsh.add(skichairsh)
+        skichairsh.play(true)
+
         this.tubepile.play('village-tubepile')
-        this.skichairsh.play('village-skisecondhalf')
         this.belt.play('village-belt')
     }
 

@@ -90,19 +90,16 @@
             "y": 303
         },
         {
-            "type": "Sprite",
+            "type": "Container",
             "id": "45e369a4-d0bc-465d-818d-25dd5932db92",
             "label": "tubelift",
             "scope": "CLASS",
             "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "tubelift0001"
-            },
             "x": 122,
             "y": 286,
             "scaleX": 0.5,
-            "scaleY": 0.5
+            "scaleY": 0.5,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -276,17 +273,14 @@
             "originY": 2.461207972926635
         },
         {
-            "type": "Sprite",
+            "type": "Container",
             "id": "719071db-fb30-4199-a7d7-93b3d843ed17",
             "label": "skichairfh",
             "scope": "CLASS",
             "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "skichairfh0001"
-            },
             "x": 221,
-            "y": 122
+            "y": 122,
+            "list": []
         },
         {
             "type": "Image",
@@ -301,19 +295,14 @@
             "y": 375
         },
         {
-            "type": "Sprite",
+            "type": "Container",
             "id": "e9a65a5b-9a59-4208-9de1-89e3d920f646",
             "label": "skichairsh",
             "scope": "CLASS",
             "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "skichair0090"
-            },
             "x": 261.99604271365615,
             "y": 410.1601804653192,
-            "originX": 0.5723559217599259,
-            "originY": 0.9625417552868838
+            "list": []
         },
         {
             "type": "Rectangle",
