@@ -610,7 +610,7 @@
                                 "ShowHint"
                             ],
                             "Button.spriteName": "map/places_outline/pufflewild_outline",
-                            "Button.callback": "() => this.onRoomClick(230)",
+                            "Button.callback": "() => this.onRoomClick(436)",
                             "Button.activeFrame": false,
                             "ShowHint.text": "pufflewild",
                             "texture": {

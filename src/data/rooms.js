@@ -157,6 +157,12 @@ const rooms = {
         x: 760,
         y: 480,
     },
+    436: {
+        key: 'Wild',
+        scene: require('@rooms/wild/Wild').default,
+        x: 760,
+        y: 480,
+    },
     800: {
         key: 'Dock',
         scene: require('@rooms/dock/Dock').default,

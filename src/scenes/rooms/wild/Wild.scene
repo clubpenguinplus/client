@@ -1,0 +1,493 @@
+{
+    "id": "c6cb671a-ea71-42d8-8c67-e6ed34f4bc6f",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/wild/wild-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Wild",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b28147b1-93a0-497b-a05c-e692988affc7",
+            "label": "wildbg",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "wildbg"
+            },
+            "x": 760,
+            "y": 364
+        },
+        {
+            "type": "Image",
+            "id": "af10d267-9aa5-48c7-98df-0d36c60dda0a",
+            "label": "staircover",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "staircover"
+            },
+            "x": 1206,
+            "y": 102
+        },
+        {
+            "type": "Image",
+            "id": "a10a3740-e081-4494-bb85-80d88f29e54a",
+            "label": "treehouse",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "treehouse"
+            },
+            "x": 977,
+            "y": 150
+        },
+        {
+            "type": "Sprite",
+            "id": "a17f2d8f-dda5-4b37-8b18-4fe08ce9521b",
+            "label": "backleftbush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "backleftbush0001"
+            },
+            "x": 519,
+            "y": 214
+        },
+        {
+            "type": "Sprite",
+            "id": "fd6124ed-8fbe-46f9-97e3-ddce8254fe79",
+            "label": "backleftbushother",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "backleftbushother0001"
+            },
+            "x": 598,
+            "y": 212
+        },
+        {
+            "type": "Sprite",
+            "id": "f694bd5e-cc2d-4a79-9130-4c58e47a8f44",
+            "label": "mainbush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "mainbush0001"
+            },
+            "x": 774,
+            "y": 243
+        },
+        {
+            "type": "Sprite",
+            "id": "0722ad70-c191-4154-9f4d-1ccf83286636",
+            "label": "rightbush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "rightbush0001"
+            },
+            "x": 975,
+            "y": 261
+        },
+        {
+            "type": "Sprite",
+            "id": "c93a63dc-5f21-4ab4-b5c7-2ee5d8f7bb5f",
+            "label": "frontrightbush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "frontrightbush0001"
+            },
+            "x": 971,
+            "y": 287
+        },
+        {
+            "type": "Sprite",
+            "id": "f075e963-224d-4d53-91d4-7e863bc11684",
+            "label": "backbush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "backbush0001"
+            },
+            "x": 735,
+            "y": 144
+        },
+        {
+            "type": "Sprite",
+            "id": "f6557779-9e18-4f26-b122-15fab3367616",
+            "label": "abovesambush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "abovesambush0001"
+            },
+            "x": 852,
+            "y": 192
+        },
+        {
+            "type": "Sprite",
+            "id": "839f9bbb-6a11-495b-85b0-c69f252c0903",
+            "label": "samface",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "samface0001"
+            },
+            "x": 857,
+            "y": 234
+        },
+        {
+            "type": "Image",
+            "id": "fffa8960-acb1-44c3-aac6-dee72c0b5d7b",
+            "label": "smallbush",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "smallbush"
+            },
+            "x": 849,
+            "y": 270
+        },
+        {
+            "type": "Image",
+            "id": "9827a1b2-73d3-4689-be9a-a1dcdb5881fe",
+            "label": "treehouserock",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "treehouserock"
+            },
+            "x": 1046,
+            "y": 311
+        },
+        {
+            "type": "Image",
+            "id": "4ead3738-e619-4552-84d0-f300fb90c816",
+            "label": "leftbigtree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "leftbigtree"
+            },
+            "x": -82,
+            "y": 104
+        },
+        {
+            "type": "Image",
+            "id": "4fc56be5-b898-4bf1-b770-3beabfa7cfa4",
+            "label": "purpletint",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "purpletint"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "cdf601e8-e1fa-4e02-86ce-93cd378017e0",
+            "label": "farleftbush",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "farleftbush"
+            },
+            "x": 135,
+            "y": 309
+        },
+        {
+            "type": "Image",
+            "id": "9d3203c3-f2b9-477a-92ee-9cecedb7a643",
+            "label": "midlefttree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "midlefttree"
+            },
+            "x": 420,
+            "y": 118
+        },
+        {
+            "type": "Image",
+            "id": "048835f5-0d27-4cfc-ba4f-7dad780ef264",
+            "label": "woodstoop",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "woodstoop"
+            },
+            "x": 758,
+            "y": 359
+        },
+        {
+            "type": "Image",
+            "id": "b0aae8a0-ed28-4858-8717-bdf9c6b9ed86",
+            "label": "rightree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "rightree"
+            },
+            "x": 1357,
+            "y": 530
+        },
+        {
+            "type": "Image",
+            "id": "e7eb2b38-1456-41f2-8996-260a7e0c9852",
+            "label": "fronthut",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "fronthut"
+            },
+            "x": 1212,
+            "y": 632
+        },
+        {
+            "type": "Image",
+            "id": "9c796f8f-b9f7-4672-a9e6-3e3eae90957d",
+            "label": "backhut",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "backhut"
+            },
+            "x": 1245.3745147425054,
+            "y": 623.7442109946197,
+            "originX": 0.3305158321734479,
+            "originY": 0.7234013187163733
+        },
+        {
+            "type": "Image",
+            "id": "54ee151e-a990-4a38-82c3-86ebbb7c3828",
+            "label": "righfgmidtree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "righfgmidtree"
+            },
+            "x": 1379,
+            "y": 771
+        },
+        {
+            "type": "Image",
+            "id": "93ae2de7-7088-43fa-ad57-ec30a1c27c08",
+            "label": "rightfgrighttree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "rightfgrighttree"
+            },
+            "x": 1504,
+            "y": 867
+        },
+        {
+            "type": "Image",
+            "id": "7e11c58a-889c-468f-a331-1d273c5877dc",
+            "label": "rightfglefttree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "rightfglefttree"
+            },
+            "x": 1124,
+            "y": 829
+        },
+        {
+            "type": "Image",
+            "id": "e3b79f83-8c29-4bdf-afef-9ab2e6e9245d",
+            "label": "frontleftrock",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "frontleftrock"
+            },
+            "x": 328,
+            "y": 817
+        },
+        {
+            "type": "Image",
+            "id": "79abc86c-3488-4b57-bb14-c7dec933f104",
+            "label": "frontlefttree",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "frontlefttree"
+            },
+            "x": 488,
+            "y": 855
+        },
+        {
+            "type": "Image",
+            "id": "ad4302d0-40fe-4a12-9ed0-06850b8afc0b",
+            "label": "leftcliff",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "leftcliff"
+            },
+            "x": 175.22021312192322,
+            "y": 601.7756531115893,
+            "originX": 0.7708654256246983,
+            "originY": 0.8625455759776944
+        },
+        {
+            "type": "Image",
+            "id": "a9deb4aa-d372-4610-8b8f-a356b3492697",
+            "label": "arrowsign",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "arrowsign"
+            },
+            "x": 527.2026039954341,
+            "y": 670.1013019977171,
+            "originX": 0.5440520799086812,
+            "originY": 0.5101972407196027
+        },
+        {
+            "type": "Sprite",
+            "id": "32b8d380-16a7-43b1-908e-d6ff474b150a",
+            "label": "redcreature",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "redcreature0001"
+            },
+            "x": 546,
+            "y": 66
+        },
+        {
+            "type": "Sprite",
+            "id": "809c556b-d541-4f46-9ea3-3c67f28af7ea",
+            "label": "greencreature",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "greencreature0001"
+            },
+            "x": 642,
+            "y": 37
+        },
+        {
+            "type": "Sprite",
+            "id": "efd41823-41bb-44a6-89d7-0be8d05d8c57",
+            "label": "whitecreature",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "whitecreature0001"
+            },
+            "x": 873,
+            "y": 39
+        },
+        {
+            "type": "Sprite",
+            "id": "0de42f02-3f8b-48b8-9af4-b64fe9c35369",
+            "label": "yellowcreature",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "yellowcreature0001"
+            },
+            "x": 980,
+            "y": 70
+        },
+        {
+            "type": "Sprite",
+            "id": "97fe2352-c46e-44ee-9577-cac8964e7d00",
+            "label": "sam",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "sam0001"
+            },
+            "x": 761,
+            "y": 208,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "819ee3ed-9452-4cf7-9339-0620ee253714",
+            "label": "backlights",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "backlights"
+            },
+            "x": 982,
+            "y": 175
+        },
+        {
+            "type": "Image",
+            "id": "f26fb1d6-0f4d-45a7-a5c0-546fa9219c1d",
+            "label": "leftbacklights",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "leftbacklights"
+            },
+            "x": 419,
+            "y": 251
+        },
+        {
+            "type": "Image",
+            "id": "6c31bec1-750e-4654-83dd-67cf8f408714",
+            "label": "stooputensils",
+            "components": [],
+            "texture": {
+                "key": "wild",
+                "frame": "stooputensils"
+            },
+            "x": 762,
+            "y": 338
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "9c796f8f-b9f7-4672-a9e6-3e3eae90957d",
+                "54ee151e-a990-4a38-82c3-86ebbb7c3828",
+                "93ae2de7-7088-43fa-ad57-ec30a1c27c08",
+                "7e11c58a-889c-468f-a331-1d273c5877dc",
+                "79abc86c-3488-4b57-bb14-c7dec933f104",
+                "ad4302d0-40fe-4a12-9ed0-06850b8afc0b",
+                "a9deb4aa-d372-4610-8b8f-a356b3492697"
+            ]
+        }
+    ]
+}
