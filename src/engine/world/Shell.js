@@ -84,7 +84,12 @@ export default class Shell extends BaseScene {
 
     createIgloo(args) {
         this.room = this.iglooFactory.createIgloo(args)
-        this.room.waiting = args.users
+        let users = []
+        for (let u of args[1].split(',')) {
+            let user = this.shell.arrayToObject(u)
+            users.push(user)
+        }
+        this.room.waiting = users
 
         this.room.events.once('create', () => this.addPenguins())
     }

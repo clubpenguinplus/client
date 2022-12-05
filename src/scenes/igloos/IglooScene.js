@@ -31,9 +31,25 @@ export default class IglooScene extends RoomScene {
     }
 
     init(data) {
-        this.args = data.args
-        this.id = data.args.igloo
-        this.music = data.args.music
+        let users = []
+        for (let u of data.args[1].split(',')) {
+            let user = this.shell.arrayToObject(u)
+            users.push(user)
+        }
+
+        console.log(users)
+
+        this.args = {
+            igloo: data.args[0],
+            users: users,
+            type: data.args[2],
+            flooring: data.args[3],
+            music: data.args[4],
+            location: data.args[5],
+            furniture: data.args[6],
+        }
+        this.id = this.args.igloo
+        this.music = this.args.music
 
         this.loader = new FurnitureLoader(this)
 
@@ -45,6 +61,8 @@ export default class IglooScene extends RoomScene {
 
     preload() {
         super.preload()
+
+        this.load.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}/` : 'https://media.cpplus.pw/'
 
         this.load.image(`locations/${this.args.location}`, `/client/media/igloos/locations/${this.args.location}.webp`)
 

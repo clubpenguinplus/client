@@ -1,8 +1,7 @@
 import BaseScene from '@scenes/base/BaseScene'
 
-import {Button, Interactive, ShowHint, SimpleButton} from '@components/components'
+import {Button, Interactive, ShowHint, SimpleButton, LocalisedString} from '@components/components'
 
-import GridView from './gridview/GridView'
 import IglooMusic from './igloomusic/IglooMusic'
 
 /* START OF COMPILED CODE */
@@ -14,15 +13,15 @@ export default class IglooEdit extends BaseScene {
         /** @type {Phaser.GameObjects.Container} */
         this.defaultControls
         /** @type {Phaser.GameObjects.Image} */
-        this.button_lock
+        this.button_backyard
         /** @type {Phaser.GameObjects.Container} */
         this.controls
         /** @type {Phaser.GameObjects.Image} */
         this.button_furniture
-        /** @type {Phaser.GameObjects.Container} */
-        this.furniture
-        /** @type {GridView} */
-        this.gridView
+        /** @type {Phaser.GameObjects.Text} */
+        this.music
+        /** @type {Phaser.GameObjects.Text} */
+        this.hide
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
@@ -34,194 +33,185 @@ export default class IglooEdit extends BaseScene {
         const defaultControls = this.add.container(1426, 758)
 
         // button_edit
-        const button_edit = this.add.image(0, 126, 'iglooedit', 'button/edit')
-        button_edit.setOrigin(0.6422018348623854, 0.5)
+        const button_edit = this.add.image(0, 126, 'iglooedit-new', 'edit-btn')
         defaultControls.add(button_edit)
 
-        // button_lock
-        const button_lock = this.add.image(0, 0, 'iglooedit', 'button/lock')
-        button_lock.setOrigin(0.5, 0.5045871559633027)
-        defaultControls.add(button_lock)
+        // button_backyard
+        const button_backyard = this.add.image(0, 0, 'iglooedit-new', 'backyard')
+        defaultControls.add(button_backyard)
 
         // controls
         const controls = this.add.container(162, 359)
         controls.visible = false
 
-        // note
-        const note = this.add.image(12, 504, 'iglooedit', 'note')
-        controls.add(note)
-
-        // button_save
-        const button_save = this.add.image(1263, 520, 'iglooedit', 'button/save')
-        controls.add(button_save)
-
-        // button_igloo_catalog
-        const button_igloo_catalog = this.add.image(1263, 390, 'iglooedit', 'button/igloo_catalog')
-        button_igloo_catalog.setOrigin(0.5046728971962616, 0.5)
-        controls.add(button_igloo_catalog)
-
         // button_furniture_catalog
-        const button_furniture_catalog = this.add.image(1263, 260, 'iglooedit', 'button/furniture_catalog')
-        button_furniture_catalog.setOrigin(0.6405228758169934, 0.5043478260869565)
+        const button_furniture_catalog = this.add.image(1235, 380, 'iglooedit-new', 'catalog')
         controls.add(button_furniture_catalog)
 
         // button_furniture
-        const button_furniture = this.add.image(1263, 130, 'iglooedit', 'button/furniture')
+        const button_furniture = this.add.image(1263, 524, 'iglooedit-new', 'cardboardbox')
         button_furniture.setOrigin(0.5, 0.584)
         controls.add(button_furniture)
 
-        // furniture
-        const furniture = this.add.container(1238, 294)
-        furniture.visible = false
+        // music_panel
+        const music_panel = this.add.image(-105, -307, 'iglooedit-new', 'music-panel')
+        controls.add(music_panel)
 
-        // list
-        const list = this.add.image(7, 251, 'iglooedit', 'list')
-        furniture.add(list)
+        // all
+        const all = this.add.image(498, -117, 'iglooedit-new', 'all-selected')
+        controls.add(all)
 
-        // divider
-        const divider = this.add.image(0, 68, 'iglooedit', 'divider')
-        furniture.add(divider)
+        // location
+        const location = this.add.image(613, -116, 'iglooedit-new', 'location')
+        controls.add(location)
 
-        // iglooButton
-        const iglooButton = this.add.image(0, 518, 'iglooedit', 'button/small')
-        furniture.add(iglooButton)
+        // igloos
+        const igloos = this.add.image(728, -116, 'iglooedit-new', 'igloos')
+        controls.add(igloos)
 
-        // icon_igloo
-        const icon_igloo = this.add.image(0, 518, 'iglooedit', 'icon/igloo')
-        icon_igloo.setOrigin(0.5, 0.5070422535211268)
-        furniture.add(icon_igloo)
+        // flooring
+        const flooring = this.add.image(843, -116, 'iglooedit-new', 'flooring')
+        controls.add(flooring)
 
-        // puffleButton
-        const puffleButton = this.add.image(0, 418, 'iglooedit', 'button/small')
-        furniture.add(puffleButton)
+        // room
+        const room = this.add.image(958, -116, 'iglooedit-new', 'room')
+        controls.add(room)
 
-        // icon_puffle
-        const icon_puffle = this.add.image(0, 418, 'iglooedit', 'icon/puffle')
-        icon_puffle.setOrigin(0.5074626865671642, 0.5)
-        furniture.add(icon_puffle)
+        // wall
+        const wall = this.add.image(1073, -116, 'iglooedit-new', 'wall')
+        controls.add(wall)
 
-        // wallButton
-        const wallButton = this.add.image(0, 318, 'iglooedit', 'button/small')
-        furniture.add(wallButton)
+        // pets
+        const pets = this.add.image(1188, -116, 'iglooedit-new', 'pets')
+        controls.add(pets)
 
-        // icon_wall
-        const icon_wall = this.add.image(0, 318, 'iglooedit', 'icon/wall')
-        icon_wall.setOrigin(0.5, 0.5068493150684932)
-        furniture.add(icon_wall)
+        // top_bar
+        const top_bar = this.add.image(616, -260, 'iglooedit-new', 'top-bar')
+        controls.add(top_bar)
 
-        // roomButton
-        const roomButton = this.add.image(0, 218, 'iglooedit', 'button/small')
-        furniture.add(roomButton)
+        // close_btn
+        const close_btn = this.add.image(1307, -316, 'iglooedit-new', 'close-btn')
+        controls.add(close_btn)
 
-        // icon_room
-        const icon_room = this.add.image(0, 218, 'iglooedit', 'icon/room')
-        icon_room.setOrigin(0.5087719298245614, 0.5066666666666667)
-        furniture.add(icon_room)
+        // x
+        const x = this.add.image(1307, -317, 'iglooedit-new', 'x')
+        controls.add(x)
 
-        // floorButton
-        const floorButton = this.add.image(0, 118, 'iglooedit', 'button/small')
-        furniture.add(floorButton)
+        // big_button
+        const big_button = this.add.ninePatchContainer(-70, -61, 80, 65, 'iglooedit-new', 'big-button')
+        controls.add(big_button)
 
-        // icon_floor
-        const icon_floor = this.add.image(0, 118, 'iglooedit', 'icon/floor')
-        furniture.add(icon_floor)
+        // music_icon
+        const music_icon = this.add.image(-71, -61, 'iglooedit-new', 'music-icon')
+        controls.add(music_icon)
 
-        // allButton
-        const allButton = this.add.image(0, 0, 'iglooedit', 'button/large')
-        furniture.add(allButton)
+        // arrow
+        const arrow = this.add.image(2, -60, 'iglooedit-new', 'arrow')
+        controls.add(arrow)
 
-        // icon_all
-        const icon_all = this.add.image(0, 0, 'iglooedit', 'icon/all')
-        icon_all.setOrigin(0.5076923076923077, 0.5)
-        furniture.add(icon_all)
+        // small_btn
+        const small_btn = this.add.ninePatchContainer(-55, 21, 150, 42, 'iglooedit-new', 'small-btn')
+        small_btn.marginLeft = 30
+        small_btn.marginRight = 30
+        controls.add(small_btn)
 
-        // gridView
-        const gridView = new GridView(this, 0, 0)
-        this.add.existing(gridView)
-        gridView.visible = false
+        // music
+        const music = this.add.text(-70, -107, '', {})
+        music.setOrigin(0.5, 0.5)
+        music.text = 'Music'
+        music.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
+        controls.add(music)
+
+        // hide
+        const hide = this.add.text(-55, 21, '', {})
+        hide.setOrigin(0.5, 0.5)
+        hide.text = 'Hide'
+        hide.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
+        controls.add(hide)
+
+        // text_1
+        const text_1 = this.add.text(705, 228, '', {})
+        text_1.text = 'Sahmyool'
+        text_1.setStyle({fontFamily: 'Burbank Small', fontSize: '24px', stroke: '#3a3a3aff', strokeThickness: 10})
 
         // button_edit (components)
         const button_editButton = new Button(button_edit)
-        button_editButton.spriteName = 'button/edit'
+        button_editButton.spriteName = 'edit-btn'
         button_editButton.callback = () => this.onEditClick()
-        button_editButton.activeFrame = false
         const button_editShowHint = new ShowHint(button_edit)
         button_editShowHint.text = 'editIgloo'
 
-        // button_lock (components)
-        const button_lockButton = new Button(button_lock)
-        button_lockButton.spriteName = 'button/lock'
-        button_lockButton.hoverOutCallback = () => this.onLockOut()
-        button_lockButton.callback = () => this.onLockClick()
-        button_lockButton.activeFrame = false
-        const button_lockShowHint = new ShowHint(button_lock)
-        button_lockShowHint.text = 'openIgloo'
-
-        // button_save (components)
-        const button_saveSimpleButton = new SimpleButton(button_save)
-        button_saveSimpleButton.callback = () => this.onSaveClick()
-
-        // button_igloo_catalog (components)
-        const button_igloo_catalogSimpleButton = new SimpleButton(button_igloo_catalog)
-        button_igloo_catalogSimpleButton.callback = () => this.interface.loadExternal('IglooCatalog')
+        // button_backyard (components)
+        const button_backyardButton = new Button(button_backyard)
+        button_backyardButton.spriteName = 'backyard'
+        const button_backyardShowHint = new ShowHint(button_backyard)
+        button_backyardShowHint.text = 'backyard'
 
         // button_furniture_catalog (components)
         const button_furniture_catalogButton = new Button(button_furniture_catalog)
-        button_furniture_catalogButton.spriteName = 'button/furniture_catalog'
+        button_furniture_catalogButton.spriteName = 'catalog'
         button_furniture_catalogButton.callback = () => this.interface.loadExternal('FurnitureCatalog')
         button_furniture_catalogButton.activeFrame = false
 
         // button_furniture (components)
         const button_furnitureButton = new Button(button_furniture)
-        button_furnitureButton.spriteName = 'button/furniture'
+        button_furnitureButton.spriteName = 'cardboardbox'
         button_furnitureButton.callback = () => this.onFurnitureClick()
         button_furnitureButton.activeFrame = false
 
-        // list (components)
-        new Interactive(list)
+        // music_panel (components)
+        new Interactive(music_panel)
 
-        // iglooButton (components)
-        const iglooButtonButton = new Button(iglooButton)
-        iglooButtonButton.spriteName = 'button/small'
-        iglooButtonButton.callback = () => this.showGridView('igloo')
-        iglooButtonButton.activeFrame = false
+        // all (components)
+        const allSimpleButton = new SimpleButton(all)
+        allSimpleButton.callback = () => this.selectCategory(0)
 
-        // puffleButton (components)
-        const puffleButtonButton = new Button(puffleButton)
-        puffleButtonButton.spriteName = 'button/small'
-        puffleButtonButton.callback = () => this.showGridView(4)
-        puffleButtonButton.activeFrame = false
+        // location (components)
+        const locationSimpleButton = new SimpleButton(location)
+        locationSimpleButton.callback = () => this.selectCategory(1)
 
-        // wallButton (components)
-        const wallButtonButton = new Button(wallButton)
-        wallButtonButton.spriteName = 'button/small'
-        wallButtonButton.callback = () => this.showGridView(2)
-        wallButtonButton.activeFrame = false
+        // igloos (components)
+        const igloosSimpleButton = new SimpleButton(igloos)
+        igloosSimpleButton.callback = () => this.selectCategory(2)
 
-        // roomButton (components)
-        const roomButtonButton = new Button(roomButton)
-        roomButtonButton.spriteName = 'button/small'
-        roomButtonButton.callback = () => this.showGridView(1)
-        roomButtonButton.activeFrame = false
+        // flooring (components)
+        const flooringSimpleButton = new SimpleButton(flooring)
+        flooringSimpleButton.callback = () => this.selectCategory(3)
 
-        // floorButton (components)
-        const floorButtonButton = new Button(floorButton)
-        floorButtonButton.spriteName = 'button/small'
-        floorButtonButton.callback = () => this.showGridView(3)
-        floorButtonButton.activeFrame = false
+        // room (components)
+        const roomSimpleButton = new SimpleButton(room)
+        roomSimpleButton.callback = () => this.selectCategory(4)
 
-        // allButton (components)
-        const allButtonButton = new Button(allButton)
-        allButtonButton.spriteName = 'button/large'
-        allButtonButton.callback = () => this.showGridView()
-        allButtonButton.activeFrame = false
+        // wall (components)
+        const wallSimpleButton = new SimpleButton(wall)
+        wallSimpleButton.callback = () => this.selectCategory(5)
+
+        // pets (components)
+        const petsSimpleButton = new SimpleButton(pets)
+        petsSimpleButton.callback = () => this.selectCategory(6)
+
+        // top_bar (components)
+        new Interactive(top_bar)
+
+        // close_btn (components)
+        const close_btnButton = new Button(close_btn)
+        close_btnButton.spriteName = 'close-btn'
+        close_btnButton.callback = () => this.onSaveClick()
+
+        // music (components)
+        const musicLocalisedString = new LocalisedString(music)
+        musicLocalisedString.id = 'music'
+
+        // hide (components)
+        const hideLocalisedString = new LocalisedString(hide)
+        hideLocalisedString.id = 'hide'
 
         this.defaultControls = defaultControls
-        this.button_lock = button_lock
+        this.button_backyard = button_backyard
         this.controls = controls
         this.button_furniture = button_furniture
-        this.furniture = furniture
-        this.gridView = gridView
+        this.music = music
+        this.hide = hide
 
         this.events.emit('scene-awake')
     }
@@ -232,16 +222,6 @@ export default class IglooEdit extends BaseScene {
         this._create()
 
         this.events.on('sleep', () => this.onSleep())
-
-        // Furniture list close hit area
-        let poly = new Phaser.Geom.Polygon([0, 0, 1520, 0, 1520, 413, 1370, 200, 1130, 200, 1130, 900, 1370, 900, 1370, 570, 1520, 535, 1520, 960, 0, 960])
-        Phaser.Geom.Polygon.Translate(poly, -this.furniture.x, -this.furniture.y)
-
-        let closeArea = this.add.graphics()
-        this.furniture.add(closeArea)
-
-        closeArea.setInteractive(poly, Phaser.Geom.Polygon.Contains)
-        closeArea.on('pointerover', () => (this.furniture.visible = false))
     }
 
     onSleep() {
@@ -293,27 +273,14 @@ export default class IglooEdit extends BaseScene {
         this.hideControls()
     }
 
-    onFurnitureClick() {
-        this.furniture.visible = !this.furniture.visible
-    }
-
     showControls() {
         this.defaultControls.visible = false
         this.controls.visible = true
-
-        this.setControlsInteractive(true)
     }
 
     hideControls() {
         this.defaultControls.visible = true
         this.controls.visible = false
-        this.furniture.visible = false
-        this.gridView.visible = false
-    }
-
-    showGridView(filter = null) {
-        this.gridView.visible = true
-        this.gridView.startGrid(filter)
     }
 
     saveIgloo() {
@@ -326,14 +293,6 @@ export default class IglooEdit extends BaseScene {
         })
 
         this.airtower.sendXt('g#ur', furniture.join(','))
-    }
-
-    setControlsInteractive(interactive) {
-        let set = interactive ? 'setInteractive' : 'disableInteractive'
-
-        for (let control of this.controls.list) {
-            control[set]()
-        }
     }
 
     /* END-USER-CODE */
