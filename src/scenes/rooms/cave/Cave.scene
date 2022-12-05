@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "yukon/assets/media/rooms/cave/cave-pack.json"
+            "client/client/media/rooms/cave/cave-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Cave",
