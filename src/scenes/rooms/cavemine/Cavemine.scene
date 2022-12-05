@@ -1,0 +1,426 @@
+{
+    "id": "76b9b345-e4fd-408a-9583-1ca5391e4e58",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/cavemine/cavemine-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Cavemine",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "32c01632-b9d5-4fc0-a9d3-1080f44fc33e",
+            "label": "goldminebg",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "goldminebg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "f301d465-17d6-41bd-804f-613fbda7b68c",
+            "label": "sign_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "sign-hover"
+            },
+            "x": 725,
+            "y": 337,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "9581e0e4-a3bd-4d53-87ff-5eacc659059b",
+            "label": "sign_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "cavemine",
+                "frame": "sign_en"
+            },
+            "x": 724,
+            "y": 336
+        },
+        {
+            "type": "Image",
+            "id": "9c4e6144-2892-4665-91b2-c4691d604ce4",
+            "label": "waterground",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "waterground"
+            },
+            "x": 923,
+            "y": 445
+        },
+        {
+            "type": "Image",
+            "id": "da6ff664-f6e4-4b09-87e0-68fe0ed5bd68",
+            "label": "waterdoor_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "waterdoor-hover"
+            },
+            "x": 964,
+            "y": 365,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "51d8f660-6e9f-41d2-88ae-a4bb9152c1ff",
+            "label": "waterdoorhit",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onWaterDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onWaterDoorOut()",
+            "texture": {
+                "key": "cavemine",
+                "frame": "waterdoor-hover"
+            },
+            "x": 995.3532259509559,
+            "y": 418.38286316212924,
+            "originX": 0.6072552153744025,
+            "originY": 0.6977558660441063,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "cd70be61-a9d8-4b5c-a6ae-14e18b906610",
+            "label": "signzone",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSignOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSignOut()",
+            "texture": {
+                "key": "cavemine",
+                "frame": "signzone"
+            },
+            "x": 721,
+            "y": 300,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "e27e6f42-148b-4ea3-bd5e-9edc0ce313df",
+            "label": "hats",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "hats",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "cavemine",
+                "frame": "hats"
+            },
+            "x": 721.487437353811,
+            "y": 474.5879385233235,
+            "originX": 0.48370916012206117,
+            "originY": 0.713432017049483
+        },
+        {
+            "type": "Image",
+            "id": "b8a1199a-d148-4572-b73c-4f3fb4b414e5",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "fg"
+            },
+            "x": 956.868776488496,
+            "y": 539.7416433379842,
+            "originX": 0.459258158693247,
+            "originY": 0.557443886827661
+        },
+        {
+            "type": "Image",
+            "id": "950fcf24-2030-40c6-82cf-dd3fac408b0a",
+            "label": "chairone",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "chairone"
+            },
+            "x": 395.2425462682757,
+            "y": 777.3360179020655,
+            "originX": 0.48277006145368334,
+            "originY": 0.06557323485466814
+        },
+        {
+            "type": "Image",
+            "id": "8e16df0f-56ab-4b12-865e-a56af6e3330b",
+            "label": "chairtwo",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "chairtwo"
+            },
+            "x": 278.6361805975864,
+            "y": 724.0934716337898,
+            "originX": 0.5271771195627466,
+            "originY": 0.05534303173240745
+        },
+        {
+            "type": "Image",
+            "id": "39556504-32eb-4b65-8dfc-b3962a65e9d2",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "table"
+            },
+            "x": 229,
+            "y": 852
+        },
+        {
+            "type": "Image",
+            "id": "6a2c61b2-d11c-4711-a423-93e03a817244",
+            "label": "roick",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "roick"
+            },
+            "x": 274,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "25d8d04c-36f7-41cf-a984-65f73a3d6bb7",
+            "label": "minestairs",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "minestairs"
+            },
+            "x": 133,
+            "y": 527
+        },
+        {
+            "type": "Image",
+            "id": "74ce45cc-39fe-4ad0-9fbe-90247c271d6c",
+            "label": "minehover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "minehoverhit0002"
+            },
+            "x": 100,
+            "y": 533,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "0501d425-9a45-4531-b45c-936d2fb254a7",
+            "label": "mineholder",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "mineholder"
+            },
+            "x": 33.450672541159435,
+            "y": 659.2399118826083,
+            "originX": 0.44592282247673537,
+            "originY": 0.8956866648043753
+        },
+        {
+            "type": "Image",
+            "id": "06cf0646-d478-4482-8fb6-2cca2c823fcd",
+            "label": "otherfg",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "otherfg"
+            },
+            "x": -137.5,
+            "y": 1002.5,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "152ed8cb-a674-44c2-bd12-e5676a6ff46b",
+            "label": "minehoverhit",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onStairOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onStairOut()",
+            "texture": {
+                "key": "cavemine",
+                "frame": "minehoverhit0004"
+            },
+            "x": 166.74848780590233,
+            "y": 649.9777560992591,
+            "originX": 0.7395417693585447,
+            "originY": 0.7733279522764006,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Image",
+            "id": "e62cf99c-e025-4133-b754-51573666db82",
+            "label": "otherock",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "otherock"
+            },
+            "x": 383.2437352880262,
+            "y": 541.8992021990294,
+            "originX": 0.38434123965619554,
+            "originY": 0.340778976303019
+        },
+        {
+            "type": "Image",
+            "id": "e091ee59-0a00-4fb8-b237-95d15721ad02",
+            "label": "pufflezone_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "pufflezone-hover"
+            },
+            "x": 342,
+            "y": 21,
+            "visible": false
+        },
+        {
+            "type": "Ellipse",
+            "id": "f495009d-b12f-4121-84b8-d0f501a7b082",
+            "label": "puffhit",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPuffleZoneOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPuffleZoneOut()",
+            "x": 406.7590265080627,
+            "y": 374.53705619099435,
+            "scaleX": 3.7698710378503946,
+            "scaleY": 2.819358984993884,
+            "originX": 0.5886117575128106,
+            "originY": 0.9864166714177861,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "206f5c21-f64e-491a-b201-f6d54e834846",
+            "label": "lantern",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "lantern"
+            },
+            "x": 809,
+            "y": 342
+        },
+        {
+            "type": "Sprite",
+            "id": "89d1802f-d3df-4f74-a9f4-599b2fa54bfd",
+            "label": "mining_zone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "miningZone"
+            },
+            "x": 598,
+            "y": 739,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Ellipse",
+            "id": "0001d364-c667-453e-8dea-840bd895e9d1",
+            "label": "seatzone",
+            "scope": "CLASS",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 275,
+            "y": 745,
+            "scaleX": 0.6447951148833675,
+            "scaleY": 0.467361763151831,
+            "originX": 0.4785032034255048,
+            "originY": 0.5296580297611317,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Ellipse",
+            "id": "453e0bb9-8942-4231-84e3-9022c6a3fd48",
+            "label": "seatzone_1",
+            "scope": "CLASS",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 392,
+            "y": 800,
+            "scaleX": 0.6447951148833675,
+            "scaleY": 0.467361763151831,
+            "originX": 0.4570064068510131,
+            "originY": 0.5296580297611335,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "b8a1199a-d148-4572-b73c-4f3fb4b414e5",
+                "06cf0646-d478-4482-8fb6-2cca2c823fcd",
+                "0501d425-9a45-4531-b45c-936d2fb254a7",
+                "e62cf99c-e025-4133-b754-51573666db82",
+                "950fcf24-2030-40c6-82cf-dd3fac408b0a",
+                "8e16df0f-56ab-4b12-865e-a56af6e3330b",
+                "39556504-32eb-4b65-8dfc-b3962a65e9d2"
+            ]
+        }
+    ]
+}

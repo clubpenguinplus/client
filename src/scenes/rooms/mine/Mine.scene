@@ -482,7 +482,8 @@
             "id": "d9160e6b-ff1d-41f9-878e-0f8430f736cb",
             "label": "stairhit",
             "components": [
-                "SimpleButton"
+                "SimpleButton",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.onGoldOver()",
             "SimpleButton.hoverOutCallback": "() => this.onGoldOut()",

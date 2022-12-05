@@ -229,14 +229,12 @@ const rooms = {
         x: 1180,
         y: 260,
     },
-    /*
     813: {
         key: 'Cavemine',
         scene: require('@rooms/cavemine/Cavemine').default,
         x: 840,
         y: 480,
     },
-    */
     916: {
         key: 'AquaGrabber',
         scene: require('@games/aquagrabber/AquaGrabber').default,
