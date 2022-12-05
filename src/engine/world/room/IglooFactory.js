@@ -7,7 +7,7 @@ export default class IglooFactory {
     }
 
     createIgloo(args) {
-        let config = this.igloos[args.type]
+        let config = this.igloos[args[2]]
 
         if (config.key in this.scene.manager.keys) {
             this.scene.start(config.key, {args: args})

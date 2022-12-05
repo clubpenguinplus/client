@@ -4,6 +4,16 @@ export default class PenguinLoader {
     constructor(shell) {
         this.shell = shell
 
+        this.clientNameStyle = {
+            fontFamily: 'Burbank Small',
+            fontSize: 24,
+            color: '#ffffff',
+            stroke: '#3a3a3aff',
+            strokeThickness: 8,
+            align: 'center',
+            fixedWidth: 250,
+        }
+
         this.nameStyle = {
             fontFamily: 'Burbank Small',
             fontSize: 24,
@@ -41,7 +51,7 @@ export default class PenguinLoader {
     addName(penguin) {
         let x = penguin.x
         let y = penguin.y + 40
-        let nameTag = penguin.room.add.text(x, y, penguin.username, this.nameStyle)
+        let nameTag = penguin.room.add.text(x, y, penguin.username, this.shell.client.id == penguin.id ? this.clientNameStyle : this.nameStyle)
 
         nameTag.setOrigin(0.5)
         nameTag.depth = penguin.depth + 2000 // Keep nametag above everything else

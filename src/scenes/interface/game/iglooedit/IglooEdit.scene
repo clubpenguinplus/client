@@ -32,36 +32,30 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "button/edit",
+                    "Button.spriteName": "edit-btn",
                     "Button.callback": "() => this.onEditClick()",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "editIgloo",
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/edit"
+                        "key": "iglooedit-new",
+                        "frame": "edit-btn"
                     },
-                    "y": 126,
-                    "originX": 0.6422018348623854
+                    "y": 126
                 },
                 {
                     "type": "Image",
                     "id": "2f257361-5079-49b1-9efd-16ad2b8c389d",
-                    "label": "button_lock",
+                    "label": "button_backyard",
                     "scope": "CLASS",
                     "components": [
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "button/lock",
-                    "Button.hoverOutCallback": "() => this.onLockOut()",
-                    "Button.callback": "() => this.onLockClick()",
-                    "Button.activeFrame": false,
-                    "ShowHint.text": "openIgloo",
+                    "Button.spriteName": "backyard",
+                    "ShowHint.text": "backyard",
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/lock"
-                    },
-                    "originY": 0.5045871559633027
+                        "key": "iglooedit-new",
+                        "frame": "backyard"
+                    }
                 }
             ]
         },
@@ -77,65 +71,20 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "a7c6fc23-6911-494a-95e7-d4405c6cb84c",
-                    "label": "note",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "note"
-                    },
-                    "x": 12,
-                    "y": 504
-                },
-                {
-                    "type": "Image",
-                    "id": "5d5104f2-aa6c-4d59-8e01-e8543c8869bd",
-                    "label": "button_save",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.onSaveClick()",
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/save"
-                    },
-                    "x": 1263,
-                    "y": 520
-                },
-                {
-                    "type": "Image",
-                    "id": "a01066f8-1c7e-4651-af2f-88044dcc3098",
-                    "label": "button_igloo_catalog",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.loadExternal('IglooCatalog')",
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/igloo_catalog"
-                    },
-                    "x": 1263,
-                    "y": 390,
-                    "originX": 0.5046728971962616
-                },
-                {
-                    "type": "Image",
                     "id": "31b8f480-fe56-4bad-9886-17e2cff52a01",
                     "label": "button_furniture_catalog",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button/furniture_catalog",
+                    "Button.spriteName": "catalog",
                     "Button.callback": "() => this.interface.loadExternal('FurnitureCatalog')",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/furniture_catalog"
+                        "key": "iglooedit-new",
+                        "frame": "catalog"
                     },
-                    "x": 1263,
-                    "y": 260,
-                    "originX": 0.6405228758169934,
-                    "originY": 0.5043478260869565
+                    "x": 1235,
+                    "y": 380
                 },
                 {
                     "type": "Image",
@@ -145,237 +94,288 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button/furniture",
+                    "Button.spriteName": "cardboardbox",
                     "Button.callback": "() => this.onFurnitureClick()",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/furniture"
+                        "key": "iglooedit-new",
+                        "frame": "cardboardbox"
                     },
                     "x": 1263,
-                    "y": 130,
+                    "y": 524,
                     "originY": 0.584
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "443e63ac-f824-4b35-9fa8-4383ed92b122",
-            "label": "furniture",
-            "scope": "CLASS",
-            "components": [],
-            "x": 1238,
-            "y": 294,
-            "visible": false,
-            "list": [
+                },
                 {
                     "type": "Image",
-                    "id": "2bd10636-619d-4a21-b3e1-38055658a1f3",
-                    "label": "list",
+                    "id": "10bc818a-c70f-4081-945a-60211c80aed7",
+                    "label": "music_panel",
                     "components": [
                         "Interactive"
                     ],
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "list"
+                        "key": "iglooedit-new",
+                        "frame": "music-panel"
                     },
-                    "x": 7,
-                    "y": 251
+                    "x": -105,
+                    "y": -307
                 },
                 {
                     "type": "Image",
-                    "id": "3fbd6b5a-d1f3-4858-b725-e2d46e461f72",
-                    "label": "divider",
-                    "components": [],
+                    "id": "aa0e11f4-f6b6-4c5d-b2aa-b3b0ce255d00",
+                    "label": "all",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(0)",
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "divider"
+                        "key": "iglooedit-new",
+                        "frame": "all-selected"
                     },
-                    "y": 68
+                    "x": 498,
+                    "y": -117
                 },
                 {
                     "type": "Image",
-                    "id": "5a32c81e-fecb-4b0c-88ea-e544ff6b61a3",
-                    "label": "iglooButton",
+                    "id": "343bc315-2de5-4c57-a3c1-3000b7212c25",
+                    "label": "location",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(1)",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "location"
+                    },
+                    "x": 613,
+                    "y": -116
+                },
+                {
+                    "type": "Image",
+                    "id": "4b798c9d-dac5-4405-ae39-9e15b08e6b9c",
+                    "label": "igloos",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(2)",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "igloos"
+                    },
+                    "x": 728,
+                    "y": -116
+                },
+                {
+                    "type": "Image",
+                    "id": "2ded3721-74c6-4620-bce2-d6855cc77886",
+                    "label": "flooring",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(3)",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "flooring"
+                    },
+                    "x": 843,
+                    "y": -116
+                },
+                {
+                    "type": "Image",
+                    "id": "f66d2822-89e9-4c71-8898-0cfd3ce6916d",
+                    "label": "room",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(4)",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "room"
+                    },
+                    "x": 958,
+                    "y": -116
+                },
+                {
+                    "type": "Image",
+                    "id": "f2d8c54d-b9d8-4f22-aab3-b9f4243653db",
+                    "label": "wall",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(5)",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "wall"
+                    },
+                    "x": 1073,
+                    "y": -116
+                },
+                {
+                    "type": "Image",
+                    "id": "b4cb5805-2580-428c-8682-3fe6f7a56a22",
+                    "label": "pets",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCategory(6)",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "pets"
+                    },
+                    "x": 1188,
+                    "y": -116
+                },
+                {
+                    "type": "Image",
+                    "id": "8b5ed828-be6b-4e74-9adc-142ceb706a3b",
+                    "label": "top_bar",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "top-bar"
+                    },
+                    "x": 616,
+                    "y": -260
+                },
+                {
+                    "type": "Image",
+                    "id": "9d147340-cf7c-44b2-9be1-73899ee60fd9",
+                    "label": "close_btn",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button/small",
-                    "Button.callback": "() => this.showGridView('igloo')",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "close-btn",
+                    "Button.callback": "() => this.onSaveClick()",
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/small"
+                        "key": "iglooedit-new",
+                        "frame": "close-btn"
                     },
-                    "y": 518
+                    "x": 1307,
+                    "y": -316
                 },
                 {
                     "type": "Image",
-                    "id": "ca35b46d-82b0-4bff-ae47-f84cbe689211",
-                    "label": "icon_igloo",
+                    "id": "952b33e3-6e64-46d8-a747-4815f93e25e5",
+                    "label": "x",
                     "components": [],
                     "texture": {
-                        "key": "iglooedit",
-                        "frame": "icon/igloo"
+                        "key": "iglooedit-new",
+                        "frame": "x"
                     },
-                    "y": 518,
-                    "originY": 0.5070422535211268
+                    "x": 1307,
+                    "y": -317
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "eff788c7-fbe9-4749-9459-7cdfd8b0fde9",
+                    "label": "big_button",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "big-button"
+                    },
+                    "x": -70,
+                    "y": -61,
+                    "width": 80,
+                    "height": 65
                 },
                 {
                     "type": "Image",
-                    "id": "a50e7600-1c49-4ba0-8810-85b33d89a633",
-                    "label": "puffleButton",
+                    "id": "5a3fc350-450e-4bc6-b65a-2e11832a32d8",
+                    "label": "music_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "music-icon"
+                    },
+                    "x": -71,
+                    "y": -61
+                },
+                {
+                    "type": "Image",
+                    "id": "d710eb57-e424-478d-854b-516ad4763f01",
+                    "label": "arrow",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "arrow"
+                    },
+                    "x": 2,
+                    "y": -60
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "82cd793e-1c1b-4100-91a1-356ee5e419d8",
+                    "label": "small_btn",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "small-btn"
+                    },
+                    "x": -55,
+                    "y": 21,
+                    "width": 150,
+                    "height": 42,
+                    "marginLeft": 30,
+                    "marginRight": 30
+                },
+                {
+                    "type": "Text",
+                    "id": "7fb482c5-a33a-495a-b5cc-a2b4265a67f4",
+                    "label": "music",
+                    "scope": "CLASS",
                     "components": [
-                        "Button"
+                        "LocalisedString"
                     ],
-                    "Button.spriteName": "button/small",
-                    "Button.callback": "() => this.showGridView(4)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/small"
-                    },
-                    "y": 418
+                    "LocalisedString.id": "music",
+                    "x": -70,
+                    "y": -107,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Music",
+                    "fixedWidth": 150,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "22px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
                 },
                 {
-                    "type": "Image",
-                    "id": "bdb509db-8e1d-42d0-a938-81d8172c8471",
-                    "label": "icon_puffle",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "icon/puffle"
-                    },
-                    "y": 418,
-                    "originX": 0.5074626865671642
-                },
-                {
-                    "type": "Image",
-                    "id": "70549603-bb81-45b4-b0a1-1b5154d874d7",
-                    "label": "wallButton",
+                    "type": "Text",
+                    "id": "74341179-abc6-463d-a36a-fd6bc18fb7ba",
+                    "label": "hide",
+                    "scope": "CLASS",
                     "components": [
-                        "Button"
+                        "LocalisedString"
                     ],
-                    "Button.spriteName": "button/small",
-                    "Button.callback": "() => this.showGridView(2)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/small"
-                    },
-                    "y": 318
-                },
-                {
-                    "type": "Image",
-                    "id": "ece04df6-1bec-495a-936a-8f5841af6eef",
-                    "label": "icon_wall",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "icon/wall"
-                    },
-                    "y": 318,
-                    "originY": 0.5068493150684932
-                },
-                {
-                    "type": "Image",
-                    "id": "41748cce-2a8d-40d0-896c-dd3565b4c540",
-                    "label": "roomButton",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "button/small",
-                    "Button.callback": "() => this.showGridView(1)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/small"
-                    },
-                    "y": 218
-                },
-                {
-                    "type": "Image",
-                    "id": "b832a345-2396-43ad-a8fe-8ce9f66c7363",
-                    "label": "icon_room",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "icon/room"
-                    },
-                    "y": 218,
-                    "originX": 0.5087719298245614,
-                    "originY": 0.5066666666666667
-                },
-                {
-                    "type": "Image",
-                    "id": "c22928c6-8bc6-4329-b9cd-8541504e58ce",
-                    "label": "floorButton",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "button/small",
-                    "Button.callback": "() => this.showGridView(3)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/small"
-                    },
-                    "y": 118
-                },
-                {
-                    "type": "Image",
-                    "id": "d9de4a71-9982-4557-9be8-93046ed7cc9f",
-                    "label": "icon_floor",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "icon/floor"
-                    },
-                    "y": 118
-                },
-                {
-                    "type": "Image",
-                    "id": "7b9e7479-1f24-447a-bf42-6d52c7522ed3",
-                    "label": "allButton",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "button/large",
-                    "Button.callback": "() => this.showGridView()",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "button/large"
-                    }
-                },
-                {
-                    "type": "Image",
-                    "id": "cf4fd356-770f-40c8-90bf-6b87de86e3c4",
-                    "label": "icon_all",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit",
-                        "frame": "icon/all"
-                    },
-                    "originX": 0.5076923076923077
+                    "LocalisedString.id": "hide",
+                    "x": -55,
+                    "y": 21,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Hide",
+                    "fixedWidth": 150,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "22px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
                 }
             ]
         },
         {
-            "prefabId": "5e67778f-f6b1-47c7-a8e0-fccf4a610c82",
-            "id": "f749e1e6-e14e-4503-8aed-0e0d28e0ef65",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
-            ],
-            "label": "gridView",
-            "scope": "CLASS",
+            "type": "Text",
+            "id": "98e51904-2f19-4773-9a62-07a005810131",
+            "label": "text_1",
             "components": [],
-            "x": 0,
-            "y": 0,
-            "visible": false,
-            "nestedPrefabs": []
+            "x": 705,
+            "y": 228,
+            "text": "Sahmyool",
+            "fontFamily": "Burbank Small",
+            "fontSize": "24px",
+            "stroke": "#3a3a3aff",
+            "strokeThickness": 10
         }
     ],
     "plainObjects": [],

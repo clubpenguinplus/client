@@ -18,24 +18,19 @@ export default class MusicItem extends BaseContainer {
         this.bold = false
 
         // item
-        const item = scene.add.image(0, 0, 'main', 'buddy/item')
+        const item = scene.add.image(0, 0, 'iglooedit-new', 'play')
         this.add(item)
 
         // title
-        const title = scene.add.text(1, 0, '', {})
+        const title = scene.add.text(18, 0, '', {})
         title.setOrigin(0.5, 0.5)
-        title.setStyle({
-            fixedWidth: 300,
-            fontFamily: 'Burbank Small',
-            fontSize: '24px',
-        })
+        title.setStyle({color: '#3e83c5ff', fixedWidth: 280, fontFamily: 'Burbank Small', fontSize: '18px'})
         this.add(title)
 
         // item (components)
         const itemButton = new Button(item)
-        itemButton.spriteName = 'friend/item'
+        itemButton.spriteName = 'play'
         itemButton.callback = () => this.onClick()
-        itemButton.activeFrame = false
 
         this.title = title
 
