@@ -22,7 +22,7 @@ export default class Shack extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             forest: () => this.triggerRoom(809, 1200, 400),
-            /* skate: () => this.triggerRoom(###, 360, 520), */
+            skate: () => this.triggerRoom(435, 277, 344),
             mine: () => this.triggerRoom(808, 760, 480),
             school: () => this.triggerRoom(122, 250, 700),
             dojo: () => this.triggerRoom(321, 760, 700),
