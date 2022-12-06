@@ -236,7 +236,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onSoundStudioOver()",
             "SimpleButton.hoverOutCallback": "() => this.onSoundStudioOut()",
-            "MoveTo.x": 700,
+            "MoveTo.x": 694,
             "MoveTo.y": 350,
             "ShowHint.text": "mixmusic",
             "texture": {
@@ -244,7 +244,8 @@
                 "frame": "soundstudio-en0001"
             },
             "x": 694,
-            "y": 392
+            "y": 365.6383835617195,
+            "originY": 0.36411552165499084
         },
         {
             "type": "Sprite",
@@ -564,7 +565,8 @@
                 "e8f2f0b9-1019-4158-9c1d-aa1171a028c0",
                 "3c416bb4-f43f-4a65-89a6-ce56d5bc5bbb",
                 "49813809-8ee0-4cc3-8b50-dec5c24620da",
-                "b52a3506-282a-4ad2-878c-f997ddcfa2be"
+                "b52a3506-282a-4ad2-878c-f997ddcfa2be",
+                "cf7ed55d-0fb3-45c3-a4a9-a0acd86389ad"
             ]
         }
     ]

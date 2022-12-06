@@ -25,7 +25,7 @@ export default class PenguinSelect extends BaseScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'load', 'bg')
+        const bg = this.add.image(0, 0, 'main', 'backgroun')
         bg.setOrigin(0, 0)
 
         // largeBg

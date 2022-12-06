@@ -15,6 +15,8 @@ export default class Load extends BaseScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.shovel
         /** @type {Phaser.GameObjects.Sprite} */
+        this.logo
+        /** @type {Phaser.GameObjects.Sprite} */
         this.bar
         /** @type {Phaser.GameObjects.Sprite} */
         this.spinner
@@ -46,6 +48,10 @@ export default class Load extends BaseScene {
         const shovel = this.add.sprite(760, 384, 'load', 'penguin1_0001')
         shovel.visible = false
 
+        // logo
+        const logo = this.add.sprite(762, 418, 'logo', 'tween0001')
+        logo.visible = false
+
         // bar
         const bar = this.add.sprite(760, 611, 'load', 'beam_0001')
 
@@ -60,6 +66,7 @@ export default class Load extends BaseScene {
         this.cart = cart
         this.pizza = pizza
         this.shovel = shovel
+        this.logo = logo
         this.bar = bar
         this.spinner = spinner
 
@@ -94,6 +101,21 @@ export default class Load extends BaseScene {
     onWake(sys, data) {
         this.bar.play('bar')
 
+        if (data.isLogo) {
+            this.logo.visible = true
+            this.logo.play('logo-tween')
+            this.bar.y = 750
+            this.spinner.y = 750
+            this.shovel.visible = false
+            this.cart.visible = false
+            this.pizza.visible = false
+            return
+        }
+
+        this.logo.visible = false
+        this.logo.stop('logo-tween')
+        this.bar.y = 611
+        this.spinner.y = 611
         var sprite = Phaser.Math.RND.between(0, 2)
         if (sprite == 0) {
             this.shovel.visible = true

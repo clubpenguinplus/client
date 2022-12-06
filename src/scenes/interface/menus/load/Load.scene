@@ -73,6 +73,20 @@
         },
         {
             "type": "Sprite",
+            "id": "24b69e84-4ff6-4c48-ac0f-9a7f011c3b5c",
+            "label": "logo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "logo",
+                "frame": "tween0001"
+            },
+            "x": 762,
+            "y": 418,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
             "id": "9e988d46-ca41-47f5-aebc-25d44ed6b54b",
             "label": "bar",
             "scope": "CLASS",

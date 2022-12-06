@@ -158,7 +158,7 @@ export default class Create extends BaseScene {
     /** @returns {void} */
     _create() {
         // bg
-        this.add.image(760, 480, 'load', 'bg')
+        this.add.image(760, 480, 'main', 'backgroun')
 
         // rookie_talk
         const rookie_talk = this.add.image(351, 605, 'create', 'rookie-talk')

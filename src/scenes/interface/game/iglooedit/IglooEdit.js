@@ -22,6 +22,8 @@ export default class IglooEdit extends BaseScene {
         this.music
         /** @type {Phaser.GameObjects.Text} */
         this.hide
+        /** @type {Phaser.GameObjects.Image[]} */
+        this.categories
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
@@ -54,85 +56,83 @@ export default class IglooEdit extends BaseScene {
         controls.add(button_furniture)
 
         // music_panel
-        const music_panel = this.add.image(-105, -307, 'iglooedit-new', 'music-panel')
+        const music_panel = this.add.image(-105, -334, 'iglooedit-new', 'music-panel')
         controls.add(music_panel)
 
         // all
-        const all = this.add.image(498, -117, 'iglooedit-new', 'all-selected')
+        const all = this.add.image(498, -144, 'iglooedit-new', 'all-selected')
         controls.add(all)
 
         // location
-        const location = this.add.image(613, -116, 'iglooedit-new', 'location')
+        const location = this.add.image(613, -143, 'iglooedit-new', 'location')
         controls.add(location)
 
         // igloos
-        const igloos = this.add.image(728, -116, 'iglooedit-new', 'igloos')
+        const igloos = this.add.image(728, -143, 'iglooedit-new', 'igloos')
         controls.add(igloos)
 
         // flooring
-        const flooring = this.add.image(843, -116, 'iglooedit-new', 'flooring')
+        const flooring = this.add.image(843, -143, 'iglooedit-new', 'flooring')
         controls.add(flooring)
 
         // room
-        const room = this.add.image(958, -116, 'iglooedit-new', 'room')
+        const room = this.add.image(958, -143, 'iglooedit-new', 'room')
         controls.add(room)
 
         // wall
-        const wall = this.add.image(1073, -116, 'iglooedit-new', 'wall')
+        const wall = this.add.image(1073, -143, 'iglooedit-new', 'wall')
         controls.add(wall)
 
         // pets
-        const pets = this.add.image(1188, -116, 'iglooedit-new', 'pets')
+        const pets = this.add.image(1188, -143, 'iglooedit-new', 'pets')
         controls.add(pets)
 
         // top_bar
-        const top_bar = this.add.image(616, -260, 'iglooedit-new', 'top-bar')
+        const top_bar = this.add.image(616, -287, 'iglooedit-new', 'top-bar')
         controls.add(top_bar)
 
         // close_btn
-        const close_btn = this.add.image(1307, -316, 'iglooedit-new', 'close-btn')
+        const close_btn = this.add.image(1305, -311, 'iglooedit-new', 'close-btn')
         controls.add(close_btn)
 
         // x
-        const x = this.add.image(1307, -317, 'iglooedit-new', 'x')
+        const x = this.add.image(1305, -312, 'iglooedit-new', 'x')
         controls.add(x)
 
         // big_button
-        const big_button = this.add.ninePatchContainer(-70, -61, 80, 65, 'iglooedit-new', 'big-button')
+        const big_button = this.add.ninePatchContainer(-70, -88, 80, 65, 'iglooedit-new', 'big-button')
         controls.add(big_button)
 
         // music_icon
-        const music_icon = this.add.image(-71, -61, 'iglooedit-new', 'music-icon')
+        const music_icon = this.add.image(-71, -88, 'iglooedit-new', 'music-icon')
         controls.add(music_icon)
 
         // arrow
-        const arrow = this.add.image(2, -60, 'iglooedit-new', 'arrow')
+        const arrow = this.add.image(2, -87, 'iglooedit-new', 'arrow')
         controls.add(arrow)
 
         // small_btn
-        const small_btn = this.add.ninePatchContainer(-55, 21, 150, 42, 'iglooedit-new', 'small-btn')
+        const small_btn = this.add.ninePatchContainer(-55, -6, 150, 42, 'iglooedit-new', 'small-btn')
         small_btn.marginLeft = 30
         small_btn.marginRight = 30
         controls.add(small_btn)
 
         // music
-        const music = this.add.text(-70, -107, '', {})
+        const music = this.add.text(-70, -134, '', {})
         music.setOrigin(0.5, 0.5)
         music.text = 'Music'
         music.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
         controls.add(music)
 
         // hide
-        const hide = this.add.text(-55, 21, '', {})
+        const hide = this.add.text(-55, -6, '', {})
         hide.setOrigin(0.5, 0.5)
         hide.text = 'Hide'
         hide.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
         controls.add(hide)
 
-        // text_1
-        const text_1 = this.add.text(705, 228, '', {})
-        text_1.text = 'Sahmyool'
-        text_1.setStyle({fontFamily: 'Burbank Small', fontSize: '24px', stroke: '#3a3a3aff', strokeThickness: 10})
+        // lists
+        const categories = [all, location, igloos, flooring, room, wall, pets]
 
         // button_edit (components)
         const button_editButton = new Button(button_edit)
@@ -212,6 +212,7 @@ export default class IglooEdit extends BaseScene {
         this.button_furniture = button_furniture
         this.music = music
         this.hide = hide
+        this.categories = categories
 
         this.events.emit('scene-awake')
     }
@@ -258,7 +259,6 @@ export default class IglooEdit extends BaseScene {
 
     onEditClick() {
         this.interface.hideInterface(false)
-        this.shell.room.showEditBg()
         this.shell.room.hidePenguins()
         this.shell.room.enableFurnitureInput()
         this.showControls()
@@ -267,7 +267,6 @@ export default class IglooEdit extends BaseScene {
     onSaveClick() {
         this.saveIgloo()
         this.interface.showInterface()
-        this.shell.room.hideEditBg()
         this.shell.room.showPenguins()
         this.shell.room.disableFurnitureInput()
         this.hideControls()
@@ -293,6 +292,17 @@ export default class IglooEdit extends BaseScene {
         })
 
         this.airtower.sendXt('g#ur', furniture.join(','))
+    }
+
+    selectCategory(id) {
+        for (let c of this.categories) {
+            let n = c.frame.name
+            if (n.substring(n.length - 9) == '-selected') {
+                c.setFrame(n.substring(0, n.length - 9))
+            }
+        }
+
+        this.categories[id].setFrame(this.categories[id].frame.name + '-selected')
     }
 
     /* END-USER-CODE */

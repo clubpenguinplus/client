@@ -78,7 +78,8 @@ export default class Dance extends RoomScene {
         const leftChairBack = this.add.sprite(1301, 886, 'dance', 'leftChairBack')
 
         // soundStudio
-        const soundStudio = this.add.sprite(694, 392, 'dance', 'soundstudio-en0001')
+        const soundStudio = this.add.sprite(694, 365.6383835617195, 'dance', 'soundstudio-en0001')
+        soundStudio.setOrigin(0.5, 0.36411552165499084)
 
         // sofa
         const sofa = this.add.sprite(149.36760765951857, 627.7627502053078, 'dance', 'sofa')
@@ -167,7 +168,7 @@ export default class Dance extends RoomScene {
         keeper_btn.fillAlpha = 0.5
 
         // lists
-        const sort = [fg, doorRailingLeft, doorRailingRight, boiler_btn, leftChair, leftChairBack, table, rightChair, backChair, upstairsRailing, sofa]
+        const sort = [fg, doorRailingLeft, doorRailingRight, boiler_btn, leftChair, leftChairBack, table, rightChair, backChair, upstairsRailing, sofa, soundStudio]
 
         // door (components)
         const doorSimpleButton = new SimpleButton(door)
@@ -190,7 +191,7 @@ export default class Dance extends RoomScene {
         soundStudioSimpleButton.hoverCallback = () => this.onSoundStudioOver()
         soundStudioSimpleButton.hoverOutCallback = () => this.onSoundStudioOut()
         const soundStudioMoveTo = new MoveTo(soundStudio)
-        soundStudioMoveTo.x = 700
+        soundStudioMoveTo.x = 694
         soundStudioMoveTo.y = 350
         const soundStudioShowHint = new ShowHint(soundStudio)
         soundStudioShowHint.text = 'mixmusic'

@@ -5,9 +5,8 @@ import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite, Animation, Seat
 /* START OF COMPILED CODE */
 
 export default class Wild extends RoomScene {
-
     constructor() {
-        super("Wild");
+        super('Wild')
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
@@ -19,174 +18,177 @@ export default class Wild extends RoomScene {
 
     /** @returns {void} */
     _preload() {
-
-        this.load.pack("wild-pack", "client/media/rooms/wild/wild-pack.json");
+        this.load.pack('wild-pack', 'client/media/rooms/wild/wild-pack.json')
     }
 
     /** @returns {void} */
     _create() {
-
         // wildbg
-        this.add.image(760, 364, "wild", "wildbg");
+        this.add.image(760, 364, 'wild', 'wildbg')
 
         // staircover
-        this.add.image(1206, 102, "wild", "staircover");
+        this.add.image(1206, 99.5, 'wild', 'staircover')
 
         // treehouse
-        this.add.image(977, 150, "wild", "treehouse");
+        this.add.image(977, 150, 'wild', 'treehouse')
 
         // backleftbush
-        const backleftbush = this.add.sprite(519, 214, "wild", "backleftbush0001");
+        const backleftbush = this.add.sprite(519, 214, 'wild', 'backleftbush0001')
 
         // backleftbushother
-        const backleftbushother = this.add.sprite(598, 212, "wild", "backleftbushother0001");
+        const backleftbushother = this.add.sprite(598, 212, 'wild', 'backleftbushother0001')
 
         // mainbush
-        const mainbush = this.add.sprite(774, 243, "wild", "mainbush0001");
+        const mainbush = this.add.sprite(774, 243, 'wild', 'mainbush0001')
 
         // rightbush
-        const rightbush = this.add.sprite(975, 261, "wild", "rightbush0001");
+        const rightbush = this.add.sprite(975, 261, 'wild', 'rightbush0001')
 
         // frontrightbush
-        const frontrightbush = this.add.sprite(971, 287, "wild", "frontrightbush0001");
+        const frontrightbush = this.add.sprite(971, 287, 'wild', 'frontrightbush0001')
 
         // backbush
-        const backbush = this.add.sprite(735, 144, "wild", "backbush0001");
+        const backbush = this.add.sprite(735, 144, 'wild', 'backbush0001')
 
         // abovesambush
-        const abovesambush = this.add.sprite(852, 192, "wild", "abovesambush0001");
+        const abovesambush = this.add.sprite(852, 192, 'wild', 'abovesambush0001')
 
         // samface
-        const samface = this.add.sprite(857, 234, "wild", "samface0001");
+        const samface = this.add.sprite(857, 234, 'wild', 'samface0001')
 
         // smallbush
-        this.add.image(849, 270, "wild", "smallbush");
+        this.add.image(849, 270, 'wild', 'smallbush')
 
         // treehouserock
-        this.add.image(1046, 311, "wild", "treehouserock");
+        this.add.image(1046, 311, 'wild', 'treehouserock')
 
         // leftbigtree
-        this.add.image(-82, 104, "wild", "leftbigtree");
+        this.add.image(-82, 104, 'wild', 'leftbigtree')
 
         // purpletint
-        this.add.image(760, 480, "wild", "purpletint");
+        this.add.image(760, 480, 'wild', 'purpletint')
 
         // farleftbush
-        this.add.image(135, 309, "wild", "farleftbush");
+        this.add.image(135, 307, 'wild', 'farleftbush')
 
         // midlefttree
-        this.add.image(420, 118, "wild", "midlefttree");
+        this.add.image(420, 118, 'wild', 'midlefttree')
 
         // woodstoop
-        this.add.image(758, 359, "wild", "woodstoop");
+        this.add.image(758, 359, 'wild', 'woodstoop')
 
         // rightree
-        this.add.image(1357, 530, "wild", "rightree");
+        this.add.image(1357, 530, 'wild', 'rightree')
 
         // fronthut
-        this.add.image(1212, 632, "wild", "fronthut");
+        this.add.image(1212, 632, 'wild', 'fronthut')
 
         // backhut
-        const backhut = this.add.image(1245.3745147425054, 623.7442109946197, "wild", "backhut");
-        backhut.setOrigin(0.3305158321734479, 0.7234013187163733);
+        const backhut = this.add.image(1245.3745147425054, 623.7442109946197, 'wild', 'backhut')
+        backhut.setOrigin(0.3305158321734479, 0.7234013187163733)
 
         // righfgmidtree
-        const righfgmidtree = this.add.image(1379, 771, "wild", "righfgmidtree");
+        const righfgmidtree = this.add.image(1379, 771, 'wild', 'righfgmidtree')
 
         // rightfgrighttree
-        const rightfgrighttree = this.add.image(1504, 867, "wild", "rightfgrighttree");
+        const rightfgrighttree = this.add.image(1504, 867, 'wild', 'rightfgrighttree')
 
         // rightfglefttree
-        const rightfglefttree = this.add.image(1124, 829, "wild", "rightfglefttree");
+        const rightfglefttree = this.add.image(1124, 829, 'wild', 'rightfglefttree')
 
         // frontleftrock
-        this.add.image(328, 817, "wild", "frontleftrock");
+        this.add.image(328, 817, 'wild', 'frontleftrock')
 
         // frontlefttree
-        const frontlefttree = this.add.image(488, 855, "wild", "frontlefttree");
+        const frontlefttree = this.add.image(488, 855, 'wild', 'frontlefttree')
 
         // leftcliff
-        const leftcliff = this.add.image(175.22021312192322, 601.7756531115893, "wild", "leftcliff");
-        leftcliff.setOrigin(0.7708654256246983, 0.8625455759776944);
+        const leftcliff = this.add.image(175.22021312192322, 599.7756531115893, 'wild', 'leftcliff')
+        leftcliff.setOrigin(0.7708654256246983, 0.8625455759776944)
 
         // arrowsign
-        const arrowsign = this.add.image(527.2026039954341, 670.1013019977171, "wild", "arrowsign");
-        arrowsign.setOrigin(0.5440520799086812, 0.5101972407196027);
+        const arrowsign = this.add.image(527.2026039954341, 670.1013019977171, 'wild', 'arrowsign')
+        arrowsign.setOrigin(0.5440520799086812, 0.5101972407196027)
 
         // redcreature
-        const redcreature = this.add.sprite(546, 66, "wild", "redcreature0001");
+        const redcreature = this.add.sprite(546, 66, 'wild', 'redcreature0001')
 
         // greencreature
-        const greencreature = this.add.sprite(642, 37, "wild", "greencreature0001");
+        const greencreature = this.add.sprite(642, 37, 'wild', 'greencreature0001')
 
         // whitecreature
-        const whitecreature = this.add.sprite(873, 39, "wild", "whitecreature0001");
+        const whitecreature = this.add.sprite(873, 39, 'wild', 'whitecreature0001')
 
         // yellowcreature
-        const yellowcreature = this.add.sprite(980, 70, "wild", "yellowcreature0001");
+        const yellowcreature = this.add.sprite(980, 70, 'wild', 'yellowcreature0001')
 
         // sam
-        const sam = this.add.sprite(761, 208, "wild", "sam0001");
-        sam.visible = false;
+        const sam = this.add.sprite(761, 208, 'wild', 'sam0001')
+        sam.visible = false
 
         // backlights
-        this.add.image(982, 175, "wild", "backlights");
+        this.add.image(982, 175, 'wild', 'backlights')
 
         // leftbacklights
-        this.add.image(419, 251, "wild", "leftbacklights");
+        this.add.image(419, 251, 'wild', 'leftbacklights')
 
         // stooputensils
-        this.add.image(762, 338, "wild", "stooputensils");
+        this.add.image(762, 338, 'wild', 'stooputensils')
+
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(243.5, 387, 1, 1)
+        rectangle_1.isFilled = true
+        rectangle_1.fillColor = 4670561
 
         // lists
-        const sort = [backhut, righfgmidtree, rightfgrighttree, rightfglefttree, frontlefttree, leftcliff, arrowsign];
+        const sort = [backhut, righfgmidtree, rightfgrighttree, rightfglefttree, frontlefttree, leftcliff, arrowsign]
 
-        this.backleftbush = backleftbush;
-        this.backleftbushother = backleftbushother;
-        this.mainbush = mainbush;
-        this.rightbush = rightbush;
-        this.frontrightbush = frontrightbush;
-        this.backbush = backbush;
-        this.abovesambush = abovesambush;
-        this.samface = samface;
-        this.redcreature = redcreature;
-        this.greencreature = greencreature;
-        this.whitecreature = whitecreature;
-        this.yellowcreature = yellowcreature;
-        this.sam = sam;
-        this.sort = sort;
+        this.backleftbush = backleftbush
+        this.backleftbushother = backleftbushother
+        this.mainbush = mainbush
+        this.rightbush = rightbush
+        this.frontrightbush = frontrightbush
+        this.backbush = backbush
+        this.abovesambush = abovesambush
+        this.samface = samface
+        this.redcreature = redcreature
+        this.greencreature = greencreature
+        this.whitecreature = whitecreature
+        this.yellowcreature = yellowcreature
+        this.sam = sam
+        this.sort = sort
 
-        this.events.emit("scene-awake");
+        this.events.emit('scene-awake')
     }
 
     /** @type {Phaser.GameObjects.Sprite} */
-    backleftbush;
+    backleftbush
     /** @type {Phaser.GameObjects.Sprite} */
-    backleftbushother;
+    backleftbushother
     /** @type {Phaser.GameObjects.Sprite} */
-    mainbush;
+    mainbush
     /** @type {Phaser.GameObjects.Sprite} */
-    rightbush;
+    rightbush
     /** @type {Phaser.GameObjects.Sprite} */
-    frontrightbush;
+    frontrightbush
     /** @type {Phaser.GameObjects.Sprite} */
-    backbush;
+    backbush
     /** @type {Phaser.GameObjects.Sprite} */
-    abovesambush;
+    abovesambush
     /** @type {Phaser.GameObjects.Sprite} */
-    samface;
+    samface
     /** @type {Phaser.GameObjects.Sprite} */
-    redcreature;
+    redcreature
     /** @type {Phaser.GameObjects.Sprite} */
-    greencreature;
+    greencreature
     /** @type {Phaser.GameObjects.Sprite} */
-    whitecreature;
+    whitecreature
     /** @type {Phaser.GameObjects.Sprite} */
-    yellowcreature;
+    yellowcreature
     /** @type {Phaser.GameObjects.Sprite} */
-    sam;
+    sam
     /** @type {Phaser.GameObjects.Image[]} */
-    sort;
+    sort
 
     /* START-USER-CODE */
 

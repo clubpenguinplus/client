@@ -32,7 +32,7 @@ export default class Login extends BaseScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 1, 'load', 'bg')
+        const bg = this.add.image(0, 1, 'main', 'backgroun')
         bg.setOrigin(0, 0)
 
         // backButton

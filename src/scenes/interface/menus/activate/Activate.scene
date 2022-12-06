@@ -19,8 +19,8 @@
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "load",
-                "frame": "bg"
+                "key": "main",
+                "frame": "backgroun"
             },
             "y": 1,
             "originX": 0,

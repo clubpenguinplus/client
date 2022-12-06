@@ -21,8 +21,8 @@
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "load",
-                "frame": "bg"
+                "key": "main",
+                "frame": "backgroun"
             },
             "x": 760,
             "y": 480

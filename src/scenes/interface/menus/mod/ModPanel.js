@@ -26,7 +26,7 @@ export default class ModPanel extends BaseScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(760, 480, 'load', 'bg')
+        const bg = this.add.image(760, 480, 'main', 'backgroun')
 
         // moderator
         const moderator = new Moderator(this, 359, 480)

@@ -13,7 +13,6 @@ export default class IglooScene extends RoomScene {
         super(key)
 
         this.isIgloo = true
-        this.editBg
         this.roomCrate
         this.wallCrate
 
@@ -92,7 +91,6 @@ export default class IglooScene extends RoomScene {
 
     create() {
         if (this.id == this.shell.client.id) {
-            this.addEditBg()
             this.addCrates()
             this.interface.showIglooEdit()
         }
@@ -115,12 +113,6 @@ export default class IglooScene extends RoomScene {
         if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 30) {
             this.shell.client.stampEarned(28)
         }
-    }
-
-    addEditBg() {
-        this.editBg = this.add.image(786, 501, 'iglooedit', 'bg')
-        this.editBg.depth = -3
-        this.editBg.visible = false
     }
 
     addCrates() {
@@ -150,14 +142,6 @@ export default class IglooScene extends RoomScene {
     addLocation() {
         let location = this.add.image(760, 480, `locations/${this.args.location}`)
         location.depth = -4
-    }
-
-    showEditBg() {
-        if (this.editBg) this.editBg.visible = true
-    }
-
-    hideEditBg() {
-        if (this.editBg) this.editBg.visible = false
     }
 
     hidePenguins() {

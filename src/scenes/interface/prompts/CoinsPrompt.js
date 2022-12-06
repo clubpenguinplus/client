@@ -251,13 +251,14 @@ export default class CoinsPrompt extends BaseContainer {
     /* START-USER-CODE */
 
     show(game, coins) {
+        game = game.toLowerCase()
         for (var x in this.stamps) {
             this.stamps[x].destroy()
         }
 
         let category
 
-        switch (game.toLowerCase()) {
+        switch (game) {
             case 'aquagrabber':
                 category = 13
                 break
@@ -294,8 +295,11 @@ export default class CoinsPrompt extends BaseContainer {
             case 'pufflelaunch':
                 category = 48
                 break
-            case 'pufflerescue':
+            case 'pufflescape':
                 category = 57
+                break
+            case 'pufflerescue':
+                category = 19
                 break
             case 'smoothie':
                 category = 58
@@ -317,7 +321,7 @@ export default class CoinsPrompt extends BaseContainer {
             this.icon.setFrame('icons/aquagrabber')
             this.gameName.text = 'Gift from a moderator!'
         } else {
-            this.icon.setFrame(`icons/${game.toLowerCase()}`)
+            this.icon.setFrame(`icons/${game}`)
             this.gameName.text = this.shell.getString(game)
         }
 

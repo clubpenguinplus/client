@@ -15,7 +15,7 @@ export default class PuffleRescue extends RoomScene {
 
     /** @returns {void} */
     _preload() {
-        this.load.pack('preload-pack', 'client/media/preload/preload-pack.json')
+        this.load.pack('load-pack', 'client/media/interface/menus/load/load-pack.json')
     }
 
     /** @returns {void} */

@@ -25,7 +25,7 @@ export default class Servers extends BaseScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'load', 'bg')
+        const bg = this.add.image(0, 0, 'main', 'backgroun')
         bg.setOrigin(0, 0)
 
         // text_2
@@ -295,7 +295,7 @@ export default class Servers extends BaseScene {
             return this.interface.prompt.showError('Sorry this server is full. Please select another server.')
         }
 
-        this.interface.showLoading(`${this.getString('joining')} ${world}`)
+        this.interface.showLoading(`${this.getString('joining')} ${world}`, true, true)
         this.scene.stop()
         this.airtower.connectGame(world, username, key)
     }

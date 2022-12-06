@@ -7,7 +7,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/client/media/preload/preload-pack.json"
+            "client/client/media/interface/menus/load/load-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "PuffleRescue",

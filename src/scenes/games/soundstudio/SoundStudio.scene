@@ -46,12 +46,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/one0001"
                     },
-                    "x": -1187.0185277997828,
+                    "x": -1225.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -63,12 +63,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/two0001"
                     },
-                    "x": -1157.0185277997828,
+                    "x": -1194.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -80,12 +80,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/three0001"
                     },
-                    "x": -1127.0185277997828,
+                    "x": -1163.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -97,12 +97,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/four0001"
                     },
-                    "x": -1097.0185277997828,
+                    "x": -1131.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -114,12 +114,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/five0001"
                     },
-                    "x": -1067.0185277997828,
+                    "x": -1101.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -131,12 +131,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/six0001"
                     },
-                    "x": -1037.0185277997828,
+                    "x": -1069.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -148,12 +148,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/seven0001"
                     },
-                    "x": -1007.0185277997828,
+                    "x": -1039.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -165,12 +165,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/eight0001"
                     },
-                    "x": -977.0185277997828,
+                    "x": -1007.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -182,12 +182,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/nine0001"
                     },
-                    "x": -947.0185277997828,
+                    "x": -977.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -199,12 +199,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/ten0001"
                     },
-                    "x": -917.0185277997828,
+                    "x": -946.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -216,12 +216,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/eleven0001"
                     },
-                    "x": -887.0185277997828,
+                    "x": -915.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -233,12 +233,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twelve0001"
                     },
-                    "x": -857.0185277997828,
+                    "x": -884.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -250,12 +250,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirteen0001"
                     },
-                    "x": -827.0185277997828,
+                    "x": -853.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -267,12 +267,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/fourteen0001"
                     },
-                    "x": -797.0185277997828,
+                    "x": -822.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -284,12 +284,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/fifteen0001"
                     },
-                    "x": -767.0185277997828,
+                    "x": -790.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -301,12 +301,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/sixteen0001"
                     },
-                    "x": -737.0185277997828,
+                    "x": -760.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -318,12 +318,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/seventeen0001"
                     },
-                    "x": -707.0185277997828,
+                    "x": -728.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -335,12 +335,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/eighteen0001"
                     },
-                    "x": -677.0185277997828,
+                    "x": -698.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -352,12 +352,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/nineteen0001"
                     },
-                    "x": -647.0185277997828,
+                    "x": -666.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -369,12 +369,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twenty0001"
                     },
-                    "x": -617.0185277997828,
+                    "x": -636.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -386,12 +386,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentyone0001"
                     },
-                    "x": -587.0185277997828,
+                    "x": -605.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -403,12 +403,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentytwo0001"
                     },
-                    "x": -557.0185277997828,
+                    "x": -574.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -420,12 +420,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentythree0001"
                     },
-                    "x": -527.0185277997828,
+                    "x": -543.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -437,12 +437,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentyfour0001"
                     },
-                    "x": -497.0185277997828,
+                    "x": -511.01852779978276,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -454,12 +454,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentyfive0001"
                     },
-                    "x": -467.0185277997828,
+                    "x": -481.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -471,12 +471,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentysix0001"
                     },
-                    "x": -437.0185277997828,
+                    "x": -449.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -488,12 +488,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentyseven0001"
                     },
-                    "x": -407.0185277997828,
+                    "x": -419.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -505,12 +505,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentyeight0001"
                     },
-                    "x": -377.0185277997828,
+                    "x": -387.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -522,12 +522,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/twentynine0001"
                     },
-                    "x": -347.0185277997828,
+                    "x": -356.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -539,12 +539,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirty0001"
                     },
-                    "x": -317.0185277997828,
+                    "x": -325.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -556,12 +556,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyone0001"
                     },
-                    "x": -287.0185277997828,
+                    "x": -294.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -573,12 +573,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtytwo0001"
                     },
-                    "x": -257.0185277997828,
+                    "x": -263.0185277997828,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -590,12 +590,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtythree0001"
                     },
-                    "x": -227.01852779978282,
+                    "x": -231.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -607,12 +607,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyfour0001"
                     },
-                    "x": -197.01852779978282,
+                    "x": -201.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -624,12 +624,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyfive0001"
                     },
-                    "x": -167.01852779978282,
+                    "x": -169.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -641,12 +641,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtysix0001"
                     },
-                    "x": -137.01852779978282,
+                    "x": -139.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -660,10 +660,10 @@
                     },
                     "x": -107.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -677,10 +677,10 @@
                     },
                     "x": -77.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -692,12 +692,12 @@
                         "key": "soundstudio",
                         "frame": "waveforms/thirtynine0001"
                     },
-                    "x": -47.01852779978282,
+                    "x": -45.01852779978282,
                     "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
                 },
                 {
@@ -709,28 +709,13 @@
                         "key": "soundstudio",
                         "frame": "waveforms/forty0001"
                     },
-                    "x": -17.018527799782817,
-                    "y": 4.9986155230924965,
-                    "tintTopLeft": "#ba0505",
-                    "tintTopRight": "#ba0505",
-                    "tintBottomLeft": "#ba0505",
-                    "tintBottomRight": "#ba0505",
+                    "x": -15,
+                    "y": 5,
+                    "tintTopLeft": "#ffff66",
+                    "tintTopRight": "#ffff66",
+                    "tintBottomLeft": "#ffff66",
+                    "tintBottomRight": "#ffff66",
                     "tintFill": true
-                },
-                {
-                    "type": "Image",
-                    "id": "ca99363d-eda5-4e0d-8b6e-fd285dd1be6a",
-                    "label": "time_indicator",
-                    "components": [],
-                    "texture": {
-                        "key": "soundstudio",
-                        "frame": "time_indicator"
-                    },
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
                 }
             ]
         },
@@ -764,13 +749,13 @@
             "label": "currentTime",
             "scope": "CLASS",
             "components": [],
-            "x": 326.9984130859375,
-            "y": 75.04197692871094,
+            "x": 327,
+            "y": 67,
             "originX": 0.49997517505489686,
             "originY": 2.2659405008227753,
             "text": "0:00",
             "fontFamily": "Burbank Small",
-            "fontSize": "28px",
+            "fontSize": "24px",
             "fontStyle": "bold",
             "color": "#ffffffff"
         },
@@ -789,12 +774,13 @@
         {
             "type": "Image",
             "id": "d8d68ba4-e840-407c-8b09-264274ab8ebd",
-            "label": "start_btn",
+            "label": "recordBtn",
+            "scope": "CLASS",
             "components": [
                 "Button"
             ],
             "Button.spriteName": "start_btn",
-            "Button.callback": "() => this.startRecording()",
+            "Button.callback": "() => this.onRecordPress()",
             "texture": {
                 "key": "soundstudio",
                 "frame": "start_btn"
@@ -887,6 +873,7 @@
             "type": "Text",
             "id": "8025310c-7f20-4242-b58c-dfef46bf801f",
             "label": "record_txt",
+            "scope": "CLASS",
             "components": [
                 "LocalisedString"
             ],
@@ -899,7 +886,7 @@
             "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "fontStyle": "bold",
-            "color": "#5ddc59ff"
+            "color": "#BDFFC4"
         },
         {
             "type": "Text",
@@ -917,7 +904,7 @@
             "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "fontStyle": "bold",
-            "color": "#c188d0ff"
+            "color": "#EEDCFF"
         },
         {
             "type": "Text",
@@ -935,7 +922,7 @@
             "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "fontStyle": "bold",
-            "color": "#79a6daff"
+            "color": "#D5E6FF"
         },
         {
             "type": "Text",
@@ -953,7 +940,7 @@
             "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "fontStyle": "bold",
-            "color": "#87d393ff"
+            "color": "#DAFFD8"
         },
         {
             "type": "Text",
@@ -971,7 +958,7 @@
             "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "fontStyle": "bold",
-            "color": "#e095cbff"
+            "color": "#F2E0FF"
         },
         {
             "type": "Text",
@@ -989,12 +976,13 @@
             "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "fontStyle": "bold",
-            "color": "#77d8c0ff"
+            "color": "#9CEBE2"
         },
         {
             "type": "Text",
             "id": "d23cf1f0-355e-4616-a2b1-4530ebb71a57",
-            "label": "record_txt_5_1_1",
+            "label": "timeLeft",
+            "scope": "CLASS",
             "components": [],
             "x": 1446,
             "y": 79,
@@ -1020,9 +1008,9 @@
             "originY": 0.5,
             "text": "LOOPS",
             "fontFamily": "Burbank Small",
-            "fontSize": "35px",
+            "fontSize": "30px",
             "fontStyle": "bold",
-            "color": "#c2b6caff"
+            "color": "#CCCCCC"
         },
         {
             "type": "Text",
@@ -1038,9 +1026,27 @@
             "originY": 0.5,
             "text": "ONE-SHOTS",
             "fontFamily": "Burbank Small",
-            "fontSize": "35px",
+            "fontSize": "30px",
             "fontStyle": "bold",
-            "color": "#c2b6caff"
+            "color": "#CCCCCC"
+        },
+        {
+            "type": "Image",
+            "id": "ca99363d-eda5-4e0d-8b6e-fd285dd1be6a",
+            "label": "timeIndicator",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "soundstudio",
+                "frame": "time_indicator"
+            },
+            "x": 327,
+            "y": 76,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5
         },
         {
             "type": "Container",
@@ -1583,6 +1589,22 @@
                     "y": 317
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "9ac61137-2314-4eb0-a443-35631fe413b2",
+            "label": "close",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "close_btn",
+            "Button.callback": "() => this.quit()",
+            "texture": {
+                "key": "soundstudio",
+                "frame": "close_btn"
+            },
+            "x": 1491,
+            "y": 22
         }
     ],
     "plainObjects": [],
@@ -1668,6 +1690,27 @@
                 "5f71f4ed-ea06-41c9-a12a-7e7131fbb6ad",
                 "88bb2384-26c5-4e0c-baa8-99304e03cf38",
                 "97eb60cd-552e-4271-8100-074caf90f7ad"
+            ]
+        },
+        {
+            "id": "a5516215-71bf-42c7-bd56-c6d6ddca404e",
+            "label": "sfxButtons",
+            "objectIds": [
+                "956446c1-455f-46e6-a68d-e14ea5582839",
+                "17c86a79-1bbc-436b-9f74-1f85b6007783",
+                "0cfdc650-ed23-4bbe-aad4-883fb4ac6080",
+                "e302e534-4671-408d-b140-353e2737d805",
+                "891b8870-0a0f-4dfc-9734-4f7a866af4ae",
+                "d98a530a-5e6a-4e39-9a66-7b5789bfbfa4",
+                "bcddf009-c506-49d8-83f9-fdcd4a99283b",
+                "d37c7cb4-6c73-4c85-8972-f8945e3410b6",
+                "f767a802-e228-496f-b0d8-0143a5897b39",
+                "801c5e60-22fa-43c0-8f23-40cbe3518497",
+                "a20ffef7-2f83-45b3-ae76-9f7e031b9856",
+                "732834e3-ac85-47a9-a095-d8251be2d34e",
+                "30635be3-d613-427d-b4af-728ff9bf475f",
+                "fac25ab1-e32c-4096-bfbd-92300b93253a",
+                "d3a1c338-a4be-4bf6-b152-1855b3e6d513"
             ]
         }
     ]

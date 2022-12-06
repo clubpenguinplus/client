@@ -37,7 +37,7 @@
                 "frame": "staircover"
             },
             "x": 1206,
-            "y": 102
+            "y": 99.5
         },
         {
             "type": "Image",
@@ -213,7 +213,7 @@
                 "frame": "farleftbush"
             },
             "x": 135,
-            "y": 309
+            "y": 307
         },
         {
             "type": "Image",
@@ -347,7 +347,7 @@
                 "frame": "leftcliff"
             },
             "x": 175.22021312192322,
-            "y": 601.7756531115893,
+            "y": 599.7756531115893,
             "originX": 0.7708654256246983,
             "originY": 0.8625455759776944
         },
@@ -466,6 +466,18 @@
             },
             "x": 762,
             "y": 338
+        },
+        {
+            "type": "Rectangle",
+            "id": "285a7793-d012-4b8b-b0a3-c803a22fb8ad",
+            "label": "rectangle_1",
+            "components": [],
+            "x": 243.5,
+            "y": 387,
+            "isFilled": true,
+            "fillColor": "#474461",
+            "width": 1,
+            "height": 1
         }
     ],
     "plainObjects": [],

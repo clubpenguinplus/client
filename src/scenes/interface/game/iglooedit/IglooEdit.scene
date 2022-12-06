@@ -117,7 +117,7 @@
                         "frame": "music-panel"
                     },
                     "x": -105,
-                    "y": -307
+                    "y": -334
                 },
                 {
                     "type": "Image",
@@ -132,7 +132,7 @@
                         "frame": "all-selected"
                     },
                     "x": 498,
-                    "y": -117
+                    "y": -144
                 },
                 {
                     "type": "Image",
@@ -147,7 +147,7 @@
                         "frame": "location"
                     },
                     "x": 613,
-                    "y": -116
+                    "y": -143
                 },
                 {
                     "type": "Image",
@@ -162,7 +162,7 @@
                         "frame": "igloos"
                     },
                     "x": 728,
-                    "y": -116
+                    "y": -143
                 },
                 {
                     "type": "Image",
@@ -177,7 +177,7 @@
                         "frame": "flooring"
                     },
                     "x": 843,
-                    "y": -116
+                    "y": -143
                 },
                 {
                     "type": "Image",
@@ -192,7 +192,7 @@
                         "frame": "room"
                     },
                     "x": 958,
-                    "y": -116
+                    "y": -143
                 },
                 {
                     "type": "Image",
@@ -207,7 +207,7 @@
                         "frame": "wall"
                     },
                     "x": 1073,
-                    "y": -116
+                    "y": -143
                 },
                 {
                     "type": "Image",
@@ -222,7 +222,7 @@
                         "frame": "pets"
                     },
                     "x": 1188,
-                    "y": -116
+                    "y": -143
                 },
                 {
                     "type": "Image",
@@ -236,7 +236,7 @@
                         "frame": "top-bar"
                     },
                     "x": 616,
-                    "y": -260
+                    "y": -287
                 },
                 {
                     "type": "Image",
@@ -251,8 +251,8 @@
                         "key": "iglooedit-new",
                         "frame": "close-btn"
                     },
-                    "x": 1307,
-                    "y": -316
+                    "x": 1305,
+                    "y": -311
                 },
                 {
                     "type": "Image",
@@ -263,8 +263,8 @@
                         "key": "iglooedit-new",
                         "frame": "x"
                     },
-                    "x": 1307,
-                    "y": -317
+                    "x": 1305,
+                    "y": -312
                 },
                 {
                     "type": "NinePatchContainer",
@@ -276,7 +276,7 @@
                         "frame": "big-button"
                     },
                     "x": -70,
-                    "y": -61,
+                    "y": -88,
                     "width": 80,
                     "height": 65
                 },
@@ -290,7 +290,7 @@
                         "frame": "music-icon"
                     },
                     "x": -71,
-                    "y": -61
+                    "y": -88
                 },
                 {
                     "type": "Image",
@@ -302,7 +302,7 @@
                         "frame": "arrow"
                     },
                     "x": 2,
-                    "y": -60
+                    "y": -87
                 },
                 {
                     "type": "NinePatchContainer",
@@ -314,7 +314,7 @@
                         "frame": "small-btn"
                     },
                     "x": -55,
-                    "y": 21,
+                    "y": -6,
                     "width": 150,
                     "height": 42,
                     "marginLeft": 30,
@@ -330,7 +330,7 @@
                     ],
                     "LocalisedString.id": "music",
                     "x": -70,
-                    "y": -107,
+                    "y": -134,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Music",
@@ -351,7 +351,7 @@
                     ],
                     "LocalisedString.id": "hide",
                     "x": -55,
-                    "y": 21,
+                    "y": -6,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Hide",
@@ -363,19 +363,6 @@
                     "color": "#3e83c5ff"
                 }
             ]
-        },
-        {
-            "type": "Text",
-            "id": "98e51904-2f19-4773-9a62-07a005810131",
-            "label": "text_1",
-            "components": [],
-            "x": 705,
-            "y": 228,
-            "text": "Sahmyool",
-            "fontFamily": "Burbank Small",
-            "fontSize": "24px",
-            "stroke": "#3a3a3aff",
-            "strokeThickness": 10
         }
     ],
     "plainObjects": [],
@@ -384,5 +371,20 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "34d81843-1671-4f46-890e-5f55f24b824b",
+            "label": "categories",
+            "objectIds": [
+                "aa0e11f4-f6b6-4c5d-b2aa-b3b0ce255d00",
+                "343bc315-2de5-4c57-a3c1-3000b7212c25",
+                "4b798c9d-dac5-4405-ae39-9e15b08e6b9c",
+                "2ded3721-74c6-4620-bce2-d6855cc77886",
+                "f66d2822-89e9-4c71-8898-0cfd3ce6916d",
+                "f2d8c54d-b9d8-4f22-aab3-b9f4243653db",
+                "b4cb5805-2580-428c-8682-3fe6f7a56a22"
+            ]
+        }
+    ]
 }
