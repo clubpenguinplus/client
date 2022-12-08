@@ -155,17 +155,17 @@ export default class Shell extends BaseScene {
     }
 
     isFriend(id) {
-        let friendsFlat = this.client.friends.map((friend) => friend.id)
-        return friendsFlat.includes(id)
+        let friendsFlat = this.client.friends.map((friend) => parseInt(friend.id))
+        return friendsFlat.includes(parseInt(id))
     }
 
     isIgnore(id) {
-        let ignoresFlat = this.client.ignores.map((ignore) => ignore.id)
-        return ignoresFlat.includes(id)
+        let ignoresFlat = this.client.ignores.map((ignore) => parseInt(ignore.id))
+        return ignoresFlat.includes(parseInt(id))
     }
 
     isOnline(id) {
-        let friend = this.client.friends.find((obj) => obj.id == id)
+        let friend = this.client.friends.find((obj) => parseInt(obj.id) == parseInt(id))
         return friend.online
     }
 

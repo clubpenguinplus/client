@@ -127,7 +127,7 @@
                     "color": "#144e90ff"
                 },
                 {
-                    "type": "Image",
+                    "type": "NinePatchContainer",
                     "id": "30a7440c-abd9-440a-a4df-3157a7755511",
                     "label": "buddy_scroller",
                     "scope": "CLASS",
@@ -137,7 +137,13 @@
                         "frame": "buddy/scroller"
                     },
                     "x": 177,
-                    "y": -141
+                    "y": -141,
+                    "width": 32,
+                    "height": 60,
+                    "marginLeft": 8,
+                    "marginRight": 8,
+                    "marginTop": 40,
+                    "marginBottom": 15
                 },
                 {
                     "type": "Container",

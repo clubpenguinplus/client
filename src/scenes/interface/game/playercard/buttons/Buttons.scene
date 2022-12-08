@@ -221,7 +221,7 @@
                     "components": [],
                     "texture": {
                         "key": "main",
-                        "frame": "help-icon-disabled"
+                        "frame": "find-icon-disabled"
                     },
                     "x": -120.67308647400955,
                     "y": -2

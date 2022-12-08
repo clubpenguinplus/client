@@ -7,7 +7,7 @@ export default class Friend extends Plugin {
             ia: this.friendAdd,
             rq: this.friendRequest,
             arq: this.friendAccept,
-            ir: this.friendRemove,
+            rf: this.friendRemove,
             bf: this.friendFind,
             fo: this.friendOnline,
             of: this.friendOffline,
@@ -41,7 +41,7 @@ export default class Friend extends Plugin {
 
     friendRemove(args) {
         // Filter friend out of list
-        this.shell.client.friends = this.shell.client.friends.filter((obj) => obj.id != args[0])
+        this.shell.client.friends = this.shell.client.friends.filter((obj) => parseInt(obj.id) != parseInt(args[0]))
         this.interface.updateFriends()
     }
 

@@ -18,7 +18,7 @@ export default class Friend extends BaseContainer {
         this.icon
         /** @type {Phaser.GameObjects.Text} */
         this.total
-        /** @type {Phaser.GameObjects.Image} */
+        /** @type {NinePatchContainer} */
         this.buddy_scroller
         /** @type {Phaser.GameObjects.Container} */
         this.buddyitemcontainer
@@ -76,7 +76,11 @@ export default class Friend extends BaseContainer {
         this.add(total)
 
         // buddy_scroller
-        const buddy_scroller = scene.add.image(177, -141, 'main', 'buddy/scroller')
+        const buddy_scroller = scene.add.ninePatchContainer(177, -141, 32, 60, 'main', 'buddy/scroller')
+        buddy_scroller.marginLeft = 8
+        buddy_scroller.marginTop = 40
+        buddy_scroller.marginRight = 8
+        buddy_scroller.marginBottom = 15
         this.add(buddy_scroller)
 
         // buddyitemcontainer

@@ -1,0 +1,702 @@
+{
+    "id": "05d9b314-2e62-4cbb-a192-d40f392c9e7c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "Punish",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "1a4431c5-1880-43c1-a230-01a439e2d3f2",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "banning",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 452
+        },
+        {
+            "type": "Image",
+            "id": "1a1497f4-4dae-4f79-8d97-31c0444719ea",
+            "label": "white_x",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.scene.stop()}",
+            "texture": {
+                "key": "main",
+                "frame": "white-x"
+            },
+            "x": 1451,
+            "y": 60,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Text",
+            "id": "2da41b8d-b63f-4208-aae0-838b87bf43d1",
+            "label": "punishUser",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 180,
+            "originX": 0.5,
+            "text": "Punish Player: Username",
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 550
+        },
+        {
+            "type": "Container",
+            "id": "a3c7567c-3c58-464d-8503-b315aefe48fe",
+            "label": "choosePunishment",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 348,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9ff6fbf3-041c-45d1-b6ed-f3292d7fb05d",
+                    "label": "long_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.warn()",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    }
+                },
+                {
+                    "type": "Text",
+                    "id": "69f86406-f7f3-4f4d-b6e7-2c0c08585478",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Warn",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "fe2601e8-6f39-452c-a662-79c950bf0d9b",
+                    "label": "long_button_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.mute()",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    },
+                    "y": 150
+                },
+                {
+                    "type": "Text",
+                    "id": "9436e4f2-ced0-4974-96f9-f2522a3177ce",
+                    "label": "text_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 150,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Mute",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "a349f137-d13c-4743-940e-c0beca8e565e",
+                    "label": "long_button_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.ban()",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    },
+                    "y": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "2b3e5fa1-95ae-4b99-9695-456305fd9ee8",
+                    "label": "text_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 300,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Ban",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "15ce9174-b9ab-4bca-8e9f-25265b84df35",
+                    "label": "progress1",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "progress1"
+                    },
+                    "x": 297.5,
+                    "y": -156
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "a5f14456-f974-431b-9368-0e0ed73a8e63",
+            "label": "chooseDuration",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 348,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "43d54a71-10cd-48b9-abc8-eb9a91c62aff",
+                    "label": "long_button1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.setDuration(24)",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "x": -160
+                },
+                {
+                    "type": "Text",
+                    "id": "6c7540a5-15e7-41e3-90fc-1f8d55c3606a",
+                    "label": "text1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -160,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1 Day",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "0d73cf20-cd4d-47b7-a92f-f14ae22946cd",
+                    "label": "long_button_22",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.setDuration(72)",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "x": -160,
+                    "y": 150
+                },
+                {
+                    "type": "Text",
+                    "id": "7e03f06c-84f2-4dcc-b855-948cdac864a8",
+                    "label": "text_22",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -160,
+                    "y": 150,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "3 Days",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "d0de21c6-87ac-4ac7-a2ea-295bf6e1488a",
+                    "label": "long_button_21",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.setDuration(168)",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "x": -160,
+                    "y": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "cdebe806-59e8-4475-8ed4-c416d9e790f4",
+                    "label": "text_31",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -160,
+                    "y": 300,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1 Week",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "5d39ae2f-40c3-48dc-824f-2eea7dea84a9",
+                    "label": "long_button_31",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.setDuration(504)",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "x": 160
+                },
+                {
+                    "type": "Text",
+                    "id": "ae34a982-9277-4e43-a3a5-62c4dafe8e80",
+                    "label": "text_41",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 160,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "3 Weeks",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "3997ea6c-4220-478b-8c70-68425b1fe954",
+                    "label": "long_button_41",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.setDuration(2190)",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "x": 160,
+                    "y": 150
+                },
+                {
+                    "type": "Text",
+                    "id": "4cf7ec5f-6c41-4828-a5ed-3c8f6f78967d",
+                    "label": "text_51",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 160,
+                    "y": 150,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "3 Months",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "e77113c8-57ef-4f7f-8d1a-d3f4f0c9566e",
+                    "label": "long_button_51",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.setDuration(\"p\")",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "x": 160,
+                    "y": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "51100bd2-4bb0-4e49-b6a8-a854cfdc3c19",
+                    "label": "text_61",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 160,
+                    "y": 300,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Permanent",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "5f37fb87-faee-4e6a-9a76-fac14bd65717",
+                    "label": "progress2",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "progress2"
+                    },
+                    "x": 297.5,
+                    "y": -156
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "a046b72f-5b2b-42dd-8275-83d6f2a86c49",
+            "label": "chooseReason",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 348,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "e7ed3ed4-342e-4868-9114-1e0feec491d4",
+                    "label": "long_button10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.setReason('c')",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    },
+                    "y": -30
+                },
+                {
+                    "type": "Text",
+                    "id": "c46804ce-464d-4953-8c6a-7449cd75f336",
+                    "label": "text10",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -30,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Offensive/Swearing",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "267fde70-e531-4feb-a35b-cf2a4091c83e",
+                    "label": "long_button_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.setReason('p')",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    },
+                    "y": 90
+                },
+                {
+                    "type": "Text",
+                    "id": "f38b5725-22b8-45a0-90a4-af3ee3cb6f1a",
+                    "label": "text_12",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 90,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Personal Info",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "dedcce5b-d26f-4e95-8146-635557cfdbf8",
+                    "label": "long_button_12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.setReason('i')",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    },
+                    "y": 210
+                },
+                {
+                    "type": "Text",
+                    "id": "8e0a8a07-e92c-41b3-a723-6ce65ca83926",
+                    "label": "text_13",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 210,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Inappropriate Igloo",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "acfc1075-199d-4f71-af2f-4e831d3f4e1d",
+                    "label": "progress3",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "progress3"
+                    },
+                    "x": 297.5,
+                    "y": -156
+                },
+                {
+                    "type": "Image",
+                    "id": "d100b0f8-273e-418d-95f5-69ee2bf7c240",
+                    "label": "long_button_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "long_button",
+                    "Button.callback": "() => this.setReason('m')",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "long_button"
+                    },
+                    "y": 330
+                },
+                {
+                    "type": "Text",
+                    "id": "93a2f2e4-b351-499e-9a1c-605238def397",
+                    "label": "text_7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 330,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Cheating",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4b6b92a8-7780-4f1f-9878-d3f4c18c5da5",
+            "label": "enterDetails",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 348,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "2b9d2187-9803-4b5b-b962-fb536821a90c",
+                    "label": "progress4",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "progress4"
+                    },
+                    "x": 297.5,
+                    "y": -156
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "17d6a49c-5e13-4092-8052-d8778e145e90",
+                    "label": "rectangle_1",
+                    "components": [],
+                    "y": 58,
+                    "isFilled": true,
+                    "strokeColor": "#683909",
+                    "lineWidth": 10,
+                    "isStroked": true,
+                    "width": 600,
+                    "height": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "9eb69e6d-e741-4def-b497-f541b5aaad2a",
+                    "label": "detailsText",
+                    "scope": "CLASS",
+                    "components": [
+                        "InputText"
+                    ],
+                    "InputText.multiline": true,
+                    "y": 58,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Enter Details",
+                    "fixedWidth": 550,
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                },
+                {
+                    "type": "Image",
+                    "id": "89ddfab0-26bd-4440-b1e4-219af6e2df6e",
+                    "label": "long_button_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.submit()",
+                    "texture": {
+                        "key": "banning",
+                        "frame": "button"
+                    },
+                    "y": 286
+                },
+                {
+                    "type": "Text",
+                    "id": "0dfc1d9d-9b50-4934-bfb2-77c923d2c9e9",
+                    "label": "text_9",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 286,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Submit",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "shadow.fill": true,
+                    "shadow.color": "#ffffffff",
+                    "wordWrapWidth": 550
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

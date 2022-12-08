@@ -16,7 +16,6 @@ export default class Prompt extends BaseContainer {
             color: '#000000',
             align: 'center',
             fixedWidth: 626,
-            wordWrap: {width: 600, useAdvancedWrap: true},
         }
 
         this.buttonTextStyle = {
@@ -51,6 +50,8 @@ export default class Prompt extends BaseContainer {
 
     createText() {
         let text = this.scene.add.text(0, 0, '', this.textStyle)
+
+        text.setWordWrapWidth(600)
 
         text.setOrigin(0.5, 0.5)
 

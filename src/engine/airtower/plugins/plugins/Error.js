@@ -61,8 +61,7 @@ export default class Error extends Plugin {
     }
 
     ban(args) {
-        let reason = args[0]
-        this.interface.prompt.showWarn('ban', reason)
+        this.interface.prompt.showWarn('ban', `${args[0]},${args[1]}`)
         this.airtower.doNotReconnect = true
     }
 }

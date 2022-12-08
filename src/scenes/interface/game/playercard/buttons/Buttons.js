@@ -87,7 +87,7 @@ export default class Buttons extends BaseContainer {
         this.add(mail_icon)
 
         // profile_icon
-        const profile_icon = scene.add.image(-120.67308647400955, -2, 'main', 'help-icon-disabled')
+        const profile_icon = scene.add.image(-120.67308647400955, -2, 'main', 'find-icon-disabled')
         this.add(profile_icon)
 
         // friend_icon
@@ -200,6 +200,11 @@ export default class Buttons extends BaseContainer {
             case 'online':
                 this.enableButton('friend', 'buddies-remove-icon', 'removeFriend')
                 this.enableButtons(['profile', 'igloo', 'stamps', 'report', 'mail'])
+                if (this.shell.client.isModerator) {
+                    this.enableButton('report', 'mute-icon', 'punishPlayer')
+                    this.enableButton('ignore', 'ignore-icon', 'kickPlayer')
+                    this.enableButton('profile', 'find-icon', 'findPlayer')
+                }
                 break
 
             case 'offline':
@@ -222,9 +227,7 @@ export default class Buttons extends BaseContainer {
         }
 
         if (this.shell.client.isModerator) {
-            this.enableButton('report', 'mute-icon', 'warnPlayer')
-            this.enableButton('ignore', 'ignore-icon', 'kickPlayer')
-            this.enableButton('profile', 'help-icon', 'findPlayer')
+            this.airtower.sendXt('g#on', this.parentContainer.id)
         }
 
         if (!['online', 'offline'].includes(relationship)) {
@@ -266,7 +269,7 @@ export default class Buttons extends BaseContainer {
             for (var x in this.shell.mascots) {
                 if (this.shell.mascots[x].id == this.parentContainer.id) this.interface.prompt.showItem(this.shell.mascots[x].giveaway)
             }
-        } else if (this.friend_icon.frame.name == 'buddy-remove-icon') {
+        } else if (this.friend_icon.frame.name == 'buddies-remove-icon') {
             this.showRemoveFriend()
         } else {
             this.showRequestFriend()
@@ -321,7 +324,7 @@ export default class Buttons extends BaseContainer {
         })
     }
 
-    showRemoveFriend() {
+    show() {
         let text = `Would you like to remove ${this.username}\nfrom your friend list?`
 
         this.interface.prompt.showWindow(text, 'dual', () => {
@@ -363,14 +366,8 @@ export default class Buttons extends BaseContainer {
     }
 
     showWarn() {
-        let text = `Warn Player: ${this.username}`
-
-        // Change to input text prompt for reason
-        this.interface.prompt.showWindow(text, 'dual', () => {
-            this.airtower.sendXt('o#w', this.parentContainer.id)
-
-            this.interface.prompt.window.visible = false
-        })
+        this.interface.punishuser = {id: this.parentContainer.id, username: this.username}
+        this.interface.loadExternal('Punish')
     }
 
     showKick() {
@@ -395,6 +392,13 @@ export default class Buttons extends BaseContainer {
         })
     }
 
+    isOnline(user) {
+        if (this.shell.client.isModerator && user == this.parentContainer.id) {
+            this.enableButton('report', 'mute-icon', 'punishPlayer')
+            this.enableButton('ignore', 'ignore-icon', 'kickPlayer')
+            this.enableButton('profile', 'find-icon', 'findPlayer')
+        }
+    }
     /* END-USER-CODE */
 }
 

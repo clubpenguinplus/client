@@ -111,11 +111,21 @@ export default class WarnPrompt extends BaseContainer {
         }
     }
 
+    showMute(duration) {
+        this.visible = true
+        this.duration = duration
+
+        this.image.setTexture('banning', 'rude-warn')
+        this.header.text = this.getString('mute-header')
+        this.info.text = this.getString('mute-body')
+        this.onOkClick = () => (this.visible = false)
+    }
+
     showBan(reason) {
         this.visible = true
 
         if (reason.includes(',')) {
-            this.duration = reason.split(',')[1]
+            this.duration = parseInt(reason.split(',')[1])
             reason = reason.split(',')[0]
         } else {
             this.duration = 0

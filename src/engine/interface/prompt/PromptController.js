@@ -73,7 +73,7 @@ export default class PromptController {
                 this.warn.showBan(reason)
                 break
             case 'warn':
-                this.warn.showWarn(reason)
+                this.warn.showWarn('c')
                 break
             case 'kick':
                 this.warn.showWarn('k')

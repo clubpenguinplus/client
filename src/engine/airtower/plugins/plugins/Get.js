@@ -11,6 +11,7 @@ export default class Get extends Plugin {
             gb: this.getFriend,
             gsb: this.getStampbook,
             gm: this.getMascots,
+            on: this.getOnline,
         }
     }
 
@@ -68,5 +69,9 @@ export default class Get extends Plugin {
         for (let i = 0; i < args.length; i++) {
             this.shell.mascots.push(args[i])
         }
+    }
+
+    getOnline(args) {
+        this.interface.main.playerCard.buttons.isOnline(args[0])
     }
 }
