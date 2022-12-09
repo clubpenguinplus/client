@@ -437,24 +437,43 @@ export default class Mancala extends BaseContainer {
         this.currentArrowText.visible = false
     }
 
-    onHitboxDown(hitbox) {
-        let hitBoxes = [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13]
-        console.log('Hitbox is ', hitbox)
-        console.log('Stones in Hitbox', this.map[hitbox].stones)
-        if (this.map[hitbox].stones != 0) {
-            console.log('There were non-zero stones in the hitbox')
-            let stonesToPlace = this.map[hitbox].stones / this.map[hitbox].stones
-            for (let i = 0; i < this.map[hitbox].stones; i++) {
-                let nextHitbox = hitBoxes[hitbox + i]
-                console.log('Next Hitbox: ', nextHitbox)
-                this.map[nextHitbox].stones += stonesToPlace
-            }
-            this.map[hitbox].stones = 0
-        } else {
-            return
-        }
-    }
+    moveStones(currentPlayer, startingHole) {
+        let numStones = this.map[startingHole].stones;
+      
+        this.map[startingHole].stones = 0;
+      
+        let currentIndex = startingHole;
+      
+        for (let i = 0; i < numStones; i++) {
+        // Move to the next hole
+          currentIndex = (currentIndex + 1) % 14;
+      
+          // Skip the opponent's mancala
+          if (currentIndex === 7 && currentPlayer === 0) {
+            currentIndex++;
+          } else if (currentIndex === 0 && currentPlayer === 1) {
+            currentIndex++;
+          }
 
+          this.map[currentIndex].stones++;
+      
+          // If the last stone was placed in the player's own mancala, go again
+          if (i === numStones - 1 && currentIndex === currentPlayer) {
+            return true;
+          }
+      
+          // If the last stone was placed in an empty hole on the player's own side, capture the stones
+          if (i === numStones - 1 && this.map[currentIndex].stones === 1 && this.map[currentIndex].player === currentPlayer) {
+            let oppositeHole = 14 - currentIndex;
+            this.map[currentPlayer].stones += this.map[oppositeHole].stones + 1;
+            this.map[oppositeHole].stones = 0;
+          }
+        }
+      
+        // Return false if the player's turn is over
+        return false;
+      }
+    
     /* END-USER-CODE */
 }
 
