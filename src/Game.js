@@ -23,17 +23,17 @@ export default class Game extends Phaser.Game {
 window.onload = () => {
     if (!correctDomain()) return window.open('https://play.clubpenguin.plus', '_self')
 
-    if (window.location.hostname != 'localhost' && VERSION.split('.')[1] != 0) {
-        window.addEventListener('devtoolschange', (event) => {
-            alert('Close devtools to play.')
-            document.location.reload()
-        })
+    // if (window.location.hostname != 'localhost') {
+    //     window.addEventListener('devtoolschange', (event) => {
+    //         alert('Close devtools to play.')
+    //         document.location.reload()
+    //     })
 
-        if (devtools.isOpen) {
-            alert('Close devtools to play.')
-            document.location.reload()
-        }
-    }
+    //     if (devtools.isOpen) {
+    //         alert('Close devtools to play.')
+    //         document.location.reload()
+    //     }
+    // }
 
     function correctDomain() {
         let correctDomain = false
