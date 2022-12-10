@@ -703,7 +703,7 @@ export default class SafetyQuiz extends BaseScene {
             this.question.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-question`)
             this.answer1.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer1`)
             this.answer2.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer2`)
-            if (this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`)) {
+            if (!this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`).includes('localisedString')) {
                 this.answer3.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`)
                 this.answer3.visible = true
                 this.answer_btn3.visible = true
@@ -711,7 +711,7 @@ export default class SafetyQuiz extends BaseScene {
                 this.answer3.visible = false
                 this.answer_btn3.visible = false
             }
-            if (this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`)) {
+            if (!this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`).includes('localisedString')) {
                 this.answer4.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`)
                 this.answer4.visible = true
                 this.answer_btn4.visible = true
