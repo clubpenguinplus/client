@@ -38,7 +38,6 @@ export default class Preload extends BaseScene {
         window.updateScaling = this.updateScaling.bind(this)
         // By default Phaser doesn't update the zoom on window resize. This checks every second, and also will be called on room loads, and window resize.
         window.updateScaling()
-        //setInterval(window.updateScaling, 1000)
         window.addEventListener('resize', () => window.updateScaling())
     }
 

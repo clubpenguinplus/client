@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import {SimpleButton, Button, MoveTo, Pin, Zone, ShowHint, Seat} from '@components/components'
+import {SimpleButton, Button, MoveTo, ShowHint, Seat} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class Book extends RoomScene {
@@ -35,7 +35,7 @@ export default class Book extends RoomScene {
             printertwo: () => this.playPrintingPress(),
         }
 
-        this.music = '669'
+        this.music = 669
         /* END-USER-CTR-CODE */
     }
 

@@ -16,7 +16,7 @@ export default class Mine extends RoomScene {
             rescue: () => this.triggerGame('pufflerescue', 927),
             shack: () => this.triggerRoom(807, 925, 538),
         }
-        this.music = '675'
+        this.music = 675
         /* END-USER-CTR-CODE */
     }
 

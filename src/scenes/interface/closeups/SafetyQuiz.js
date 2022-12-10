@@ -642,7 +642,7 @@ export default class SafetyQuiz extends BaseScene {
     // Write your code here
 
     create() {
-        this._create()
+        super.create()
         this.answers = [3, 3, 1, 4, 1, 2]
     }
 

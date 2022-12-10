@@ -8,6 +8,7 @@ export default class InterfaceController extends BaseScene {
     metricsManager = new MetricsManager()
 
     create() {
+        super.create()
         this.prompt = new PromptController(this)
 
         // External interface scenes

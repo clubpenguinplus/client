@@ -32,6 +32,7 @@ export default class Shell extends BaseScene {
     }
 
     create() {
+        super.create()
         var RuffleHolder = this.scene.get('RuffleHolder')
 
         if (window.location.hostname == 'localhost') window.shell = this

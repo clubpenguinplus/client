@@ -9,7 +9,7 @@ export default class Card extends RoomScene {
         super('Card')
 
         /* START-USER-CTR-CODE */
-        this.music = '1'
+        this.music = 1
         /* END-USER-CTR-CODE */
     }
 
@@ -39,23 +39,6 @@ export default class Card extends RoomScene {
 
     create() {
         super.create()
-
-        setTimeout(() => {
-            this.onUpdateGame
-        }, 5000)
-    }
-
-    onUpdateGame() {
-        var player1name = 'Vesper'
-        var player1color = 1
-        var player1rank = 0
-        var player2name = 'VesperDev'
-        var player2color = 2
-        var player2rank = 1
-
-        var ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
-
-        ruffleplayer.stateInit('onUpdateGame', `0|${player1name}|${player1color}${player1rank}%1|${player2name}|${player2color}${player2rank}`)
     }
 
     /* END-USER-CODE */

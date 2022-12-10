@@ -12,7 +12,7 @@ export default class Wild extends RoomScene {
         this.roomTriggers = {
             village: () => this.triggerRoom(200, 700, 514),
         }
-        this.music = '897'
+        this.music = 897
         /* END-USER-CTR-CODE */
     }
 

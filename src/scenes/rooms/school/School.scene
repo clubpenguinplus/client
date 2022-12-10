@@ -88,7 +88,8 @@
                 "frame": "chair8"
             },
             "x": 304,
-            "y": 431
+            "y": 399.47688205906013,
+            "originY": 0.04966974370085901
         },
         {
             "type": "Image",
@@ -100,7 +101,8 @@
                 "frame": "chair8"
             },
             "x": 402,
-            "y": 432
+            "y": 401.0203840925246,
+            "originY": 0.05743405846463686
         },
         {
             "type": "Image",
@@ -112,7 +114,8 @@
                 "frame": "chair2"
             },
             "x": 381,
-            "y": 401
+            "y": 442,
+            "originY": 0.8232406830604544
         },
         {
             "type": "Image",
@@ -124,7 +127,8 @@
                 "frame": "chair2"
             },
             "x": 281,
-            "y": 398
+            "y": 441,
+            "originY": 0.8404039051698586
         },
         {
             "type": "Image",
@@ -136,7 +140,8 @@
                 "frame": "chair8"
             },
             "x": 367,
-            "y": 565
+            "y": 536.1943922263825,
+            "originY": 0.08849131751975067
         },
         {
             "type": "Image",
@@ -196,7 +201,8 @@
                 "frame": "chair9"
             },
             "x": 240,
-            "y": 554
+            "y": 530.6758001850613,
+            "originY": 0.023995922144109148
         },
         {
             "type": "Image",
@@ -208,7 +214,8 @@
                 "frame": "chair2"
             },
             "x": 343,
-            "y": 535
+            "y": 581,
+            "originY": 0.8690092753521999
         },
         {
             "type": "Image",
@@ -220,7 +227,8 @@
                 "frame": "chair7"
             },
             "x": 710,
-            "y": 433
+            "y": 405.8694276601772,
+            "originY": 0.13825903546902965
         },
         {
             "type": "Image",
@@ -232,7 +240,8 @@
                 "frame": "chair3"
             },
             "x": 716,
-            "y": 405
+            "y": 447,
+            "originY": 0.8043493691967302
         },
         {
             "type": "Image",
@@ -243,8 +252,9 @@
                 "key": "school",
                 "frame": "chair4"
             },
-            "x": 592,
-            "y": 452
+            "x": 605,
+            "y": 414,
+            "originY": 0.06146704192096798
         },
         {
             "type": "Image",
@@ -256,7 +266,8 @@
                 "frame": "chair1"
             },
             "x": 605,
-            "y": 407
+            "y": 463,
+            "originY": 0.9777096820450962
         },
         {
             "type": "Image",
@@ -268,7 +279,8 @@
                 "frame": "chair5"
             },
             "x": 709,
-            "y": 549
+            "y": 525.3576615442951,
+            "originY": 0.09928239905584864
         },
         {
             "type": "Image",
@@ -291,8 +303,9 @@
                 "key": "school",
                 "frame": "chair1"
             },
-            "x": 706,
-            "y": 530
+            "x": 709,
+            "y": 581,
+            "originY": 0.8518460532427956
         },
         {
             "type": "Image",
@@ -304,7 +317,8 @@
                 "frame": "chair4"
             },
             "x": 598,
-            "y": 549
+            "y": 527.2599130180868,
+            "originY": 0.12517101140380663
         },
         {
             "type": "Image",
@@ -315,8 +329,9 @@
                 "key": "school",
                 "frame": "chair1"
             },
-            "x": 595,
-            "y": 529
+            "x": 598,
+            "y": 584,
+            "originY": 0.8947541085163074
         },
         {
             "type": "Image",
@@ -364,7 +379,8 @@
                 "frame": "fg2.png.png"
             },
             "x": 743,
-            "y": 344
+            "y": 600.3200871275012,
+            "originY": 0.8530579712500017
         },
         {
             "type": "Image",
@@ -376,7 +392,8 @@
                 "frame": "fg3"
             },
             "x": 764,
-            "y": 415
+            "y": 617.2398802829914,
+            "originY": 0.7290372248364891
         },
         {
             "type": "Image",
@@ -391,7 +408,137 @@
             "y": 506
         },
         {
-            "type": "Image",
+            "type": "Sprite",
+            "id": "f34752f5-a7ae-4c12-8efe-ffe65d5efb55",
+            "label": "locker_5",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 915,
+            "y": 1012.699043405277,
+            "originY": 0.8570859828555114
+        },
+        {
+            "type": "Sprite",
+            "id": "07263734-d527-4d94-91db-5a4671312891",
+            "label": "locker_6",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1033,
+            "y": 1008.5017169401333,
+            "originY": 0.8414243169407959
+        },
+        {
+            "type": "Sprite",
+            "id": "68a0905f-acd8-4fbb-a0b3-464fdf4c3170",
+            "label": "locker_7",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1151,
+            "y": 1011.8595781122483,
+            "originY": 0.8539536496725683
+        },
+        {
+            "type": "Sprite",
+            "id": "82f363bd-a76c-4a7b-98db-7c09c1daa506",
+            "label": "locker_8",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1269,
+            "y": 1013.5385086983058,
+            "originY": 0.8602183160384544
+        },
+        {
+            "type": "Sprite",
+            "id": "dd47e011-3dce-410c-84e4-232cc4659ade",
+            "label": "locker_9",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1387,
+            "y": 1016.0569045773921,
+            "originY": 0.8696153155872838
+        },
+        {
+            "type": "Sprite",
+            "id": "b13114ad-c647-4adc-a515-c456ffbd4cc8",
+            "label": "locker",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 304,
+            "y": 1011.0201128192195,
+            "originY": 0.8508213164896252
+        },
+        {
+            "type": "Sprite",
+            "id": "17ba84a4-8475-4137-95d4-ace0f35a2b80",
+            "label": "locker_2",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 422,
+            "y": 1007.6622516471047,
+            "originY": 0.8382919837578532
+        },
+        {
+            "type": "Sprite",
+            "id": "48094d0b-8191-4c49-9bfd-7de14e7a7979",
+            "label": "locker_3",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 540,
+            "y": 1013.5385086983058,
+            "originY": 0.8602183160384544
+        },
+        {
+            "type": "Sprite",
+            "id": "b670f760-c37b-49a0-bf84-5d2dd6349b29",
+            "label": "locker_4",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 658,
+            "y": 1010.1806475261908,
+            "originY": 0.8476889833066821
+        },
+        {
+            "type": "Sprite",
+            "id": "9487f7a3-bf2f-458c-8e66-0768d5ae4ef8",
+            "label": "locker_1",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 186,
+            "y": 1010.518047764558,
+            "originY": 0.8489481587718389
+        },
+        {
+            "type": "Sprite",
             "id": "a1827d96-76f3-4728-97f0-7990eced5647",
             "label": "fg",
             "components": [],
@@ -400,10 +547,11 @@
                 "frame": "fg"
             },
             "x": 753,
-            "y": 484
+            "y": 1227.1024961248506,
+            "originY": 1.2350172946082631
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "9351ae9a-8bc1-4425-9713-904be3e7d8c0",
             "label": "door",
             "components": [],
@@ -412,10 +560,11 @@
                 "frame": "door"
             },
             "x": 1479,
-            "y": 606
+            "y": 1770.641023812042,
+            "originY": 3.925414825717541
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "aa72c4a7-4723-4d10-897f-4aa31f9d9294",
             "label": "door_1",
             "components": [],
@@ -424,11 +573,12 @@
                 "frame": "door"
             },
             "x": 52,
-            "y": 607,
+            "y": 1638.0922686853976,
+            "originY": 3.532624319662934,
             "flipX": true
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "5cf7bc3c-0d6e-483e-a587-a7d6538e6c8c",
             "label": "mic",
             "components": [],
@@ -436,11 +586,13 @@
                 "key": "school",
                 "frame": "mic"
             },
-            "x": 1077,
-            "y": 276
+            "x": 1094,
+            "y": 302,
+            "originX": 0.7046615371015782,
+            "originY": 0.831551690104559
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "fb748cf6-f8d7-4673-bb5e-ee7e6d97cf69",
             "label": "chair10",
             "components": [],
@@ -452,7 +604,7 @@
             "y": 373
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "e56efbfb-2b94-4643-9197-2ed42a5d3161",
             "label": "chair13",
             "components": [],
@@ -464,7 +616,7 @@
             "y": 369
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "ae76ad4c-23c7-4749-8885-b30dd8c8f274",
             "label": "table7",
             "components": [],
@@ -476,7 +628,7 @@
             "y": 402
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "92a0e3ab-7084-4d3a-bd48-796a331a4c80",
             "label": "table8",
             "components": [],
@@ -488,7 +640,7 @@
             "y": 545
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "94671ce2-3b08-4487-928b-68afdca9c73f",
             "label": "chair12",
             "components": [],
@@ -496,11 +648,13 @@
                 "key": "school",
                 "frame": "chair12"
             },
-            "x": 1072,
-            "y": 593
+            "x": 1083.0517230034852,
+            "y": 553.3979925708444,
+            "originX": 0.6072982815872352,
+            "originY": 0.12283802448423232
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "c91d9e54-fdc0-4815-b543-2688cacb25f4",
             "label": "chair11",
             "components": [],
@@ -509,10 +663,11 @@
                 "frame": "chair11"
             },
             "x": 1048,
-            "y": 560
+            "y": 596.8390766782843,
+            "originY": 0.8231497954235465
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "9a85b897-0a5a-4f63-b53d-eb096ab560de",
             "label": "rosette_0001",
             "components": [],
@@ -521,7 +676,8 @@
                 "frame": "rosette_0001"
             },
             "x": 859,
-            "y": 324
+            "y": 1001.828228926573,
+            "originY": 6.955506942157839
         },
         {
             "type": "Image",
@@ -533,7 +689,8 @@
                 "frame": "photo_0001"
             },
             "x": 858,
-            "y": 419
+            "y": 1023.8313427344806,
+            "originY": 9.018751306119444
         },
         {
             "type": "Image",
@@ -546,6 +703,193 @@
             },
             "x": 1132,
             "y": 7
+        },
+        {
+            "type": "Ellipse",
+            "id": "32d1f0e1-27fe-423e-b8db-567abd86b852",
+            "label": "ellipse_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 231,
+            "y": 551,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "84bbfae3-2726-4535-b9b7-c24dfe40d5b1",
+            "label": "ellipse",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 360,
+            "y": 547,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "79de0815-0d77-4291-be57-215455677708",
+            "label": "ellipse_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 599,
+            "y": 542,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "10a26acb-fbdd-41c9-bc2c-656c2d897187",
+            "label": "ellipse_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 711,
+            "y": 541,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "eb6274a4-9467-46f6-b8c8-54c4de986eee",
+            "label": "ellipse_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 708,
+            "y": 421,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "985789f8-7434-4e10-86be-6234f2cd74c2",
+            "label": "ellipse_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 606,
+            "y": 415,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "701bebaa-ab2f-4b47-8c72-422cf2eaf20a",
+            "label": "ellipse_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 394,
+            "y": 411,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "cd6fd35b-e2d9-4aae-b684-b43e5a1e9ce0",
+            "label": "ellipse_7",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 299,
+            "y": 408,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "25c88ba2-06e3-4cce-807c-120922ede226",
+            "label": "ellipse_8",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 702,
+            "y": 288,
+            "angle": 26,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "4ba6e03a-cdbd-4db1-92ca-4e9f8ff80077",
+            "label": "ellipse_9",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1009,
+            "y": 388,
+            "angle": -33,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "63df8d32-82e7-40a6-a6be-49f880814ae6",
+            "label": "ellipse_10",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 1210,
+            "y": 384,
+            "angle": 37,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "ea1a9bd9-f4bf-4b81-807b-3389da24630f",
+            "label": "ellipse_11",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 1324,
+            "y": 520,
+            "angle": 37,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "e997bbb6-1e8b-4085-8009-c1a19a3b93fb",
+            "label": "ellipse_12",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1079,
+            "y": 574,
+            "angle": 56,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
         }
     ],
     "plainObjects": [],
@@ -554,5 +898,79 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "9736cc33-11bf-4e8f-b9ed-13e1796208bc",
+            "label": "lockers",
+            "objectIds": [
+                "9487f7a3-bf2f-458c-8e66-0768d5ae4ef8",
+                "b13114ad-c647-4adc-a515-c456ffbd4cc8",
+                "17ba84a4-8475-4137-95d4-ace0f35a2b80",
+                "48094d0b-8191-4c49-9bfd-7de14e7a7979",
+                "b670f760-c37b-49a0-bf84-5d2dd6349b29",
+                "f34752f5-a7ae-4c12-8efe-ffe65d5efb55",
+                "07263734-d527-4d94-91db-5a4671312891",
+                "68a0905f-acd8-4fbb-a0b3-464fdf4c3170",
+                "82f363bd-a76c-4a7b-98db-7c09c1daa506",
+                "dd47e011-3dce-410c-84e4-232cc4659ade"
+            ]
+        },
+        {
+            "id": "250bed5d-2b68-47c5-92f5-c5e2d70dc55c",
+            "label": "sort",
+            "objectIds": [
+                "ea49ba28-6505-4149-8ddb-9c1c887e1281",
+                "3c85f2d8-0313-4eb0-a7d3-f875e800a8df",
+                "991a3d70-1c9c-433d-bf85-cc6ed12a1f4f",
+                "d7cade3d-1c63-4198-8e88-289d4d0fb4d9",
+                "0153e9bd-e063-4398-b815-9656f183e588",
+                "ac197aef-b0a1-437b-a7b8-f5c4a5acceef",
+                "0468bdf7-5a05-47f0-bf9c-5069d24ce320",
+                "e6066063-ff38-4a4b-a8b7-897d2ba49c63",
+                "9dfb0a0a-dcd7-4441-bb7f-220e7b8f4fbf",
+                "b07832ce-1814-4cb2-862b-50c55692a46d",
+                "dd6db963-40c9-4e51-a755-6fb2f63f784f",
+                "5129e5e3-b16b-4c8c-a355-a90401eff8eb",
+                "5f48868d-8cbc-4464-aaa3-8bddee56aa9e",
+                "5d42c74e-2ae0-4b47-a501-8e40a201b68a",
+                "50c4c01a-e8bb-4b13-9332-ab4852098f6c",
+                "5228dc00-d6ce-46f1-8907-87a67e3baa24",
+                "9f453f52-ab5f-419d-9e26-6766a5596a5c",
+                "87bcb7d4-624c-4937-a03f-99c9a41110db",
+                "c6f8f595-c687-4046-b627-9f467ff319bd",
+                "076f9812-06b3-4b15-8d3d-bae14db6a515",
+                "49a54668-09d6-444d-8097-60b145f83483",
+                "24167782-c61d-4a51-8cbf-cb03552cb107",
+                "6a15110f-2d3a-4e67-b4c8-875932ccb955",
+                "ef7ad16b-755c-4021-bcaa-8d6c4be5565a",
+                "f7759254-42b2-491c-b610-537346fbc96d",
+                "3e25d412-8682-46ef-913f-c15a35f6d481",
+                "f34752f5-a7ae-4c12-8efe-ffe65d5efb55",
+                "07263734-d527-4d94-91db-5a4671312891",
+                "68a0905f-acd8-4fbb-a0b3-464fdf4c3170",
+                "82f363bd-a76c-4a7b-98db-7c09c1daa506",
+                "dd47e011-3dce-410c-84e4-232cc4659ade",
+                "b13114ad-c647-4adc-a515-c456ffbd4cc8",
+                "17ba84a4-8475-4137-95d4-ace0f35a2b80",
+                "48094d0b-8191-4c49-9bfd-7de14e7a7979",
+                "b670f760-c37b-49a0-bf84-5d2dd6349b29",
+                "9487f7a3-bf2f-458c-8e66-0768d5ae4ef8",
+                "a1827d96-76f3-4728-97f0-7990eced5647",
+                "9351ae9a-8bc1-4425-9713-904be3e7d8c0",
+                "aa72c4a7-4723-4d10-897f-4aa31f9d9294",
+                "5cf7bc3c-0d6e-483e-a587-a7d6538e6c8c",
+                "fb748cf6-f8d7-4673-bb5e-ee7e6d97cf69",
+                "e56efbfb-2b94-4643-9197-2ed42a5d3161",
+                "ae76ad4c-23c7-4749-8885-b30dd8c8f274",
+                "92a0e3ab-7084-4d3a-bd48-796a331a4c80",
+                "94671ce2-3b08-4487-928b-68afdca9c73f",
+                "c91d9e54-fdc0-4815-b543-2688cacb25f4",
+                "be690bd1-b04d-4a2f-9352-e6bfaffdcf21",
+                "94d990e2-e804-4fdb-b5c7-2b4f2d4729df",
+                "eb7b7799-0f41-4a4d-a2e2-15322a2d4667",
+                "9a85b897-0a5a-4f63-b53d-eb096ab560de"
+            ]
+        }
+    ]
 }

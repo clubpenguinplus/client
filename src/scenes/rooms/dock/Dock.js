@@ -30,6 +30,8 @@ export default class Dock extends RoomScene {
             hydro: () => null,
         }
 
+        this.music = 585
+
         /* END-USER-CTR-CODE */
     }
 

@@ -15,7 +15,7 @@ export default class DojoExt extends RoomScene {
             dojo: () => this.triggerRoom(320, 760, 800),
         }
 
-        this.music = '1166'
+        this.music = 1166
 
         /* END-USER-CTR-CODE */
     }

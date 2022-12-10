@@ -15,7 +15,7 @@ export default class Cavemine extends RoomScene {
             mine: () => this.triggerRoom(808, 1000, 650),
             underground: () => null,
         }
-        this.music = '532'
+        this.music = 532
         /* END-USER-CTR-CODE */
     }
 
@@ -120,13 +120,6 @@ export default class Cavemine extends RoomScene {
         // lantern
         this.add.image(809, 342, 'cavemine', 'lantern')
 
-        // mining_zone
-        const mining_zone = this.add.sprite(598, 739, 'cavemine', 'miningZone')
-        mining_zone.alphaTopLeft = 0
-        mining_zone.alphaTopRight = 0
-        mining_zone.alphaBottomLeft = 0
-        mining_zone.alphaBottomRight = 0
-
         // seatzone
         const seatzone = this.add.ellipse(275, 745, 128, 128)
         seatzone.scaleX = 0.6447951148833675
@@ -138,6 +131,9 @@ export default class Cavemine extends RoomScene {
         seatzone_1.scaleX = 0.6447951148833675
         seatzone_1.scaleY = 0.467361763151831
         seatzone_1.setOrigin(0.4570064068510131, 0.5296580297611335)
+
+        // mining_zone
+        const mining_zone = this.add.ellipse(621, 734, 700, 450)
 
         // lists
         const sort = [fg, otherfg, mineholder, otherock, chairone, chairtwo, table]
@@ -188,9 +184,9 @@ export default class Cavemine extends RoomScene {
         this.minehover = minehover
         this.minehoverhit = minehoverhit
         this.pufflezone_hover = pufflezone_hover
-        this.mining_zone = mining_zone
         this.seatzone = seatzone
         this.seatzone_1 = seatzone_1
+        this.mining_zone = mining_zone
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -208,12 +204,12 @@ export default class Cavemine extends RoomScene {
     minehoverhit
     /** @type {Phaser.GameObjects.Image} */
     pufflezone_hover
-    /** @type {Phaser.GameObjects.Sprite} */
-    mining_zone
     /** @type {Phaser.GameObjects.Ellipse} */
     seatzone
     /** @type {Phaser.GameObjects.Ellipse} */
     seatzone_1
+    /** @type {Phaser.GameObjects.Ellipse} */
+    mining_zone
     /** @type {Phaser.GameObjects.Image[]} */
     sort
 

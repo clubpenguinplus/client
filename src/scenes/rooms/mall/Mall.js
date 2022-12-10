@@ -14,7 +14,7 @@ export default class Mall extends RoomScene {
             plaza: () => this.triggerRoom(300, 924, 504),
         }
 
-        this.music = '749'
+        this.music = 749
 
         /* END-USER-CTR-CODE */
     }

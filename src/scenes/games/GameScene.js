@@ -20,6 +20,7 @@ export default class GameScene extends RoomScene {
     }
 
     create() {
+        window.updateScaling()
         this._create()
 
         this.sound.pauseOnBlur = false

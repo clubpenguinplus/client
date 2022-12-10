@@ -22,7 +22,7 @@ export default class Book extends BaseScene {
     }
 
     create() {
-        this._create()
+        super.create()
 
         this.interface.book = this
 

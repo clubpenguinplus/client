@@ -51,8 +51,10 @@
                 "key": "skate",
                 "frame": "railing2"
             },
-            "x": 1222,
-            "y": 374
+            "x": 1206.5251210883862,
+            "y": 350.9968016178712,
+            "originX": 0.18418614466094257,
+            "originY": 0.3356914401276514
         },
         {
             "type": "Image",
@@ -63,8 +65,10 @@
                 "key": "skate",
                 "frame": "railing3"
             },
-            "x": 1254,
-            "y": 488
+            "x": 1240.6163209413069,
+            "y": 462.9056017649504,
+            "originX": 0.21524087109163548,
+            "originY": 0.3127283713802269
         },
         {
             "type": "Image",
@@ -122,7 +126,14 @@
             "type": "Image",
             "id": "d4046bf6-e3e2-4ba1-92ab-8538fb2a566a",
             "label": "skate",
-            "components": [],
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "skate",
+            "Button.activeFrame": false,
+            "MoveTo.x": 300,
+            "MoveTo.y": 270,
             "texture": {
                 "key": "skate",
                 "frame": "skate"
@@ -139,8 +150,10 @@
                 "key": "skate",
                 "frame": "fg2"
             },
-            "x": 648,
-            "y": 826
+            "x": 646.6369855269844,
+            "y": 699.2437501579271,
+            "originX": 0.49747597996282805,
+            "originY": 0.16730633525779298
         },
         {
             "type": "Image",
@@ -177,6 +190,20 @@
             },
             "x": 1261,
             "y": 228
+        },
+        {
+            "type": "Image",
+            "id": "f2a94402-fe0a-4d95-b07c-af5748402a71",
+            "label": "railing1",
+            "components": [],
+            "texture": {
+                "key": "skate",
+                "frame": "railing1"
+            },
+            "x": 1172.866631309672,
+            "y": 691.3702917992708,
+            "originX": 0.4582764034671558,
+            "originY": 0.41586599876093105
         }
     ],
     "plainObjects": [],
@@ -185,5 +212,19 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "83b4ba2f-1683-4a0f-9186-456612d3d369",
+            "label": "sort",
+            "objectIds": [
+                "7ae89f31-08e5-49c8-ac6a-3437739cb804",
+                "4be50e03-85ed-4111-a097-75116e839637",
+                "a2578e85-568f-4cbc-ba32-09286e9d6c7b",
+                "f2a94402-fe0a-4d95-b07c-af5748402a71",
+                "312578d1-ac64-4fe4-b0ff-41d3e4d88d25",
+                "62aada2c-ab84-4e8b-b3d5-c54dd737573a"
+            ]
+        }
+    ]
 }

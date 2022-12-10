@@ -54,7 +54,7 @@ export default class Shop extends RoomScene {
         this.roomTriggers = {
             town: () => this.triggerRoom(100, 932, 560),
         }
-        this.music = '1173'
+        this.music = 1173
 
         /* END-USER-CTR-CODE */
     }

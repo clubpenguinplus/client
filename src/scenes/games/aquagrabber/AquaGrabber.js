@@ -9,7 +9,7 @@ export default class AquaGrabber extends RoomScene {
         super('AquaGrabber')
 
         /* START-USER-CTR-CODE */
-        this.music = '115'
+        this.music = 115
         /* END-USER-CTR-CODE */
     }
 

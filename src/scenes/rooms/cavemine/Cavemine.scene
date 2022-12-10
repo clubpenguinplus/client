@@ -348,23 +348,6 @@
             "y": 342
         },
         {
-            "type": "Sprite",
-            "id": "89d1802f-d3df-4f74-a9f4-599b2fa54bfd",
-            "label": "mining_zone",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "cavemine",
-                "frame": "miningZone"
-            },
-            "x": 598,
-            "y": 739,
-            "alphaTopLeft": 0,
-            "alphaTopRight": 0,
-            "alphaBottomLeft": 0,
-            "alphaBottomRight": 0
-        },
-        {
             "type": "Ellipse",
             "id": "0001d364-c667-453e-8dea-840bd895e9d1",
             "label": "seatzone",
@@ -399,6 +382,17 @@
             "originY": 0.5296580297611335,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Ellipse",
+            "id": "6887708e-9940-459b-ab16-3fa3a1423ccf",
+            "label": "mining_zone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 621,
+            "y": 734,
+            "width": 700,
+            "height": 450
         }
     ],
     "plainObjects": [],

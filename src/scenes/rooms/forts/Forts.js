@@ -31,6 +31,8 @@ export default class Forts extends RoomScene {
             plaza: () => this.triggerRoom(300, 340, 660),
         }
 
+        this.music = 587
+
         /* END-USER-CTR-CODE */
     }
 

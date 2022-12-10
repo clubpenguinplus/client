@@ -17,7 +17,7 @@ export default class Arcade extends RoomScene {
             astro: () => this.triggerGame('astrobarrier', 900),
         }
 
-        this.music = '674'
+        this.music = 674
 
         /* END-USER-CTR-CODE */
     }

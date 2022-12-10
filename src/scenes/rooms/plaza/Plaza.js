@@ -29,9 +29,12 @@ export default class Plaza extends RoomScene {
             mall: () => this.triggerRoom(340, 250, 700),
             pet: () => this.triggerRoom(310, 828, 520),
             cave: () => this.triggerRoom(806, 1242, 685),
+            forts: () => this.triggerRoom(801, 1320, 460),
+            forest: () => this.triggerRoom(809, 150, 320),
+            hotel: null,
         }
 
-        this.music = '677'
+        this.music = 677
 
         /* END-USER-CTR-CODE */
     }

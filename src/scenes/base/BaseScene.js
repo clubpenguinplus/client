@@ -18,4 +18,9 @@ export default class BaseScene extends Phaser.Scene {
     getString(...args) {
         return args.map((id) => this.crumbs.getString(id)).join(' ')
     }
+
+    create() {
+        if (window.updateScaling) window.updateScaling()
+        if (this._create) this._create()
+    }
 }

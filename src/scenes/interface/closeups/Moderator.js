@@ -111,7 +111,7 @@ export default class Moderator extends BaseScene {
     // Write your code here
 
     create() {
-        this._create()
+        super.create()
     }
 
     /* END-USER-CODE */

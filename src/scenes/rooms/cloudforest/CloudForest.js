@@ -18,7 +18,7 @@ export default class CloudForest extends RoomScene {
             clothesShop: () => this.triggerRoom(130, 1036, 520),
         }
 
-        this.music = '1160'
+        this.music = 1160
 
         /* END-USER-CTR-CODE */
     }

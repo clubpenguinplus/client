@@ -24,11 +24,13 @@ export default class Shack extends RoomScene {
             forest: () => this.triggerRoom(809, 1200, 400),
             skate: () => this.triggerRoom(435, 277, 344),
             mine: () => this.triggerRoom(808, 760, 480),
-            school: () => this.triggerRoom(122, 250, 700),
+            school: () => this.triggerRoom(122, 1320, 760),
             dojo: () => this.triggerRoom(321, 760, 700),
             volleyone: null,
             volleytwo: null,
         }
+
+        this.music = 580
         /* END-USER-CTR-CODE */
     }
 
@@ -89,7 +91,7 @@ export default class Shack extends RoomScene {
         book.setOrigin(0.5543950774704023, 0.23363958838686746)
 
         // guitar
-        const guitar = this.add.image(879, 816.5039124145493, 'shack', 'guitar')
+        const guitar = this.add.image(888, 825.5, 'shack', 'guitar')
         guitar.setOrigin(0.5, 0.5562989051818661)
 
         // coffee

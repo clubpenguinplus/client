@@ -20,6 +20,8 @@ export default class Cove extends RoomScene {
             waves: () => null,
         }
 
+        this.music = 579
+
         /* END-USER-CTR-CODE */
     }
 

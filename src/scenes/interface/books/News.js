@@ -20,7 +20,7 @@ export default class News extends BaseScene {
     }
 
     create() {
-        this._create()
+        super.create()
 
         // Reset page
         this.page = 0

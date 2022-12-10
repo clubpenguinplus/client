@@ -27,7 +27,7 @@ export default class Attic extends RoomScene {
             lodge: () => this.triggerRoom(220, 1180, 360),
             boxdimension: () => this.triggerRoom(811, 1180, 260),
         }
-        this.music = '884'
+        this.music = 884
 
         /* END-USER-CTR-CODE */
     }

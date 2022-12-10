@@ -28,7 +28,7 @@ export default class Agentlobby extends RoomScene {
         this.sort
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        this.music = 922
         /* END-USER-CTR-CODE */
     }
 

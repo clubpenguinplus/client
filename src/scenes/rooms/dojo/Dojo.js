@@ -15,7 +15,7 @@ export default class Dojo extends RoomScene {
             waterdojo: null,
             snowdojo: null,
         }
-        this.music = '403'
+        this.music = 403
         /* END-USER-CTR-CODE */
     }
 

@@ -59,7 +59,7 @@ export default class MusicController extends Phaser.Scene {
             return
         }
 
-        this.mtrack = this.sound.play(key, {loop: true})
+        this.mtrack = this.sound.play(key, {loop: true, volume: localStorage.musicVolume / 100 || 0.5})
         this.musicPlaying = key
     }
 
@@ -67,7 +67,7 @@ export default class MusicController extends Phaser.Scene {
         // Rate limit to 20 sounds per second
         if (this.lastPlayed[key] && Date.now() - this.lastPlayed[key] < 50) return
         this.lastPlayed[key] = Date.now()
-        this.sound.add(key, {loop: loop}).play()
+        this.sound.add(key, {loop: loop, volume: localStorage.musicVolume / 100 || 0.5}).play()
         if (loop) {
             this.sfxLooping.push(key)
         }

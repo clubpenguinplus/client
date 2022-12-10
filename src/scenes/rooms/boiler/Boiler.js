@@ -1,7 +1,6 @@
 import RoomScene from '../RoomScene'
-import Main from '@scenes/interface/game/main/Main'
 
-import {Animation, Button, MoveTo, Pin, Zone} from '@components/components'
+import {Animation, Button, MoveTo, Zone} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -18,8 +17,7 @@ export default class Boiler extends RoomScene {
             dance: () => this.triggerRoom(120, 935, 520),
             cave: () => this.triggerRoom(806, 285, 630),
         }
-        this.roomAnims = true
-        this.music = '6'
+        this.music = 667
 
         /* END-USER-CTR-CODE */
     }
@@ -81,11 +79,11 @@ export default class Boiler extends RoomScene {
     /* START-USER-CODE */
 
     onDrawerOver() {
-        this.drawer.play('drawer_open')
+        this.drawer.play('boiler-drawer_open')
     }
 
     onDrawerOut() {
-        this.drawer.play('drawer_close')
+        this.drawer.play('boiler-drawer_close')
     }
 
     onNewspaperClick() {

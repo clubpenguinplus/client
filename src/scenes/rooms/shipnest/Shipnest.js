@@ -12,7 +12,7 @@ export default class Shipnest extends RoomScene {
         this.roomTriggers = {
             ship: () => this.triggerRoom(420, 900, 600),
         }
-        this.music = '492'
+        this.music = 492
         /* END-USER-CTR-CODE */
     }
 

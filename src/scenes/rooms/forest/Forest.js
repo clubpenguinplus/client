@@ -21,7 +21,7 @@ export default class Forest extends RoomScene {
             cove: () => this.triggerRoom(810, 520, 416),
             lake: () => this.triggerRoom(814, 480, 300),
         }
-        this.roomAnims = true
+        this.music = 586
 
         /* END-USER-CTR-CODE */
     }

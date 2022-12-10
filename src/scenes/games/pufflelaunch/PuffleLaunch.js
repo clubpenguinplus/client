@@ -9,7 +9,7 @@ export default class PuffleLaunch extends RoomScene {
         super('PuffleLaunch')
 
         /* START-USER-CTR-CODE */
-        this.music = '124'
+        this.music = 124
         /* END-USER-CTR-CODE */
     }
 

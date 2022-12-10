@@ -17,7 +17,7 @@ export default class Pet extends RoomScene {
             scape: () => null,
             launch: () => null,
         }
-        this.music = '659'
+        this.music = 659
         /* END-USER-CTR-CODE */
     }
 
