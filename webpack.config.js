@@ -72,7 +72,7 @@ let config = {
 module.exports = (env, argv) => {
     if (argv.mode === 'production') {
         config.output.filename = 'clubpenguinplus.min.js'
-        config.optimization.minimize = true
+        config.optimization.minimize = false
 
         if (env.obfuscate === 'true') {
             config.plugins.push(
