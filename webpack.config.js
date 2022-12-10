@@ -85,7 +85,7 @@ module.exports = (env, argv) => {
 
         config.plugins.push(
             new BannerPlugin({
-                banner: `Club Penguin Plus v${require('./package.json').version}\nClub Penguin Plus is a fan-made project and is not affiliated with Disney or Club Penguin.\nThe Club Penguin Plus client is based off https://github.com/wizguin/yukon which is under the MIT License.\nYukon is the copyright of its respective authors and Club Penguin Plus does not claim ownership of any of this work.\nAnything written by the Club Penguin Plus team is not under the same license.\nYou do not have permission to use, copy, modify, reverse-engineer, or distribute any code made specifically for Club Penguin Plus.\For more info, review our terms of service at https://cpplus.pw/en/terms`
+                banner: `CP+ sVersion ${require('./package.json').version}\nClub Penguin Plus is a fan-made project and is not affiliated with Disney or Club Penguin.\nThe Club Penguin Plus client is based off https://github.com/wizguin/yukon which is under the MIT License.\nYukon is the copyright of its respective authors and Club Penguin Plus does not claim ownership of any of this work.\nAnything written by the Club Penguin Plus team is not under the same license.\nYou do not have permission to use, copy, modify, reverse-engineer, or distribute any code made specifically for Club Penguin Plus.\nFor more info, review our terms of service at https://cpplus.pw/en/terms`
             })
         )
     }

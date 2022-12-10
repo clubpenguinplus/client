@@ -5,6 +5,7 @@ import registerNinePatchContainerFactory from '@engine/utils/ninepatch/registerN
 import clubpenguinplus from './data/game'
 
 import devtools from 'devtools-detect'
+import {VERSION} from 'phaser'
 
 export default class Game extends Phaser.Game {
     constructor(config) {
@@ -22,7 +23,7 @@ export default class Game extends Phaser.Game {
 window.onload = () => {
     if (!correctDomain()) return window.open('https://play.clubpenguin.plus', '_self')
 
-    if (window.location.hostname != 'localhost') {
+    if (window.location.hostname != 'localhost' && VERSION.split('.')[1] != 0) {
         window.addEventListener('devtoolschange', (event) => {
             alert('Close devtools to play.')
             document.location.reload()
