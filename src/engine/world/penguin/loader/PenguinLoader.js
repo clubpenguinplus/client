@@ -51,9 +51,16 @@ export default class PenguinLoader {
     addName(penguin) {
         let x = penguin.x
         let y = penguin.y + 40
-        let nameTag = penguin.room.add.text(x, y, penguin.username, this.shell.client.id == penguin.id ? this.clientNameStyle : this.nameStyle)
+        let nameTag = penguin.room.add.container(x, y)
+        let first = penguin.room.add.text(0, 0, penguin.username, this.shell.client.id == penguin.id ? this.clientNameStyle : this.nameStyle)
+        first.setOrigin(0.5)
+        nameTag.add(first)
+        if (penguin.username != penguin.realUsername && (this.shell.client.id == penguin.id || this.shell.client.rank >= 3)) {
+            let second = penguin.room.add.text(0, 30, `(${penguin.realUsername})`, this.nameStyle)
+            second.setOrigin(0.5)
+            nameTag.add(second)
+        }
 
-        nameTag.setOrigin(0.5)
         nameTag.depth = penguin.depth + 2000 // Keep nametag above everything else
 
         return nameTag

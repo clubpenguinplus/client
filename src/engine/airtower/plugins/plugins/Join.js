@@ -34,28 +34,7 @@ export default class Join extends Plugin {
         }
 
         let users = args[1].split(',').map((user) => {
-            let data = user.split('|')
-            return {
-                id: data[0],
-                username: data[1],
-                color: data[2],
-                head: data[3],
-                face: data[4],
-                neck: data[5],
-                body: data[6],
-                hand: data[7],
-                feet: data[8],
-                flag: data[9],
-                photo: data[10],
-                coins: data[11],
-                x: data[12],
-                y: data[13],
-                frame: data[14],
-                rank: data[15],
-                stealthMode: data[16],
-                username_approved: data[17],
-                walking: data[18],
-            }
+            return this.shell.arrayToObject(user)
         })
 
         this.shell.joinRoom(args[0], users)

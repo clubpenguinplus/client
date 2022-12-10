@@ -363,6 +363,7 @@ export default class FriendSmall extends BaseContainer {
         }
 
         let page = this.penguins.slice((this.page - 1) * this.pageSize, this.page * this.pageSize)
+        let temp = []
 
         for (let [index, item] of this.items.entries()) {
             let friend = page[index]
@@ -370,10 +371,13 @@ export default class FriendSmall extends BaseContainer {
             if (friend) {
                 item.visible = true
                 item.setItem(friend)
+                temp.push(friend.id)
             } else {
                 item.setItem(null)
             }
         }
+
+        this.airtower.sendXt('u#gbs', temp.join('%'))
     }
 
     prevPage() {

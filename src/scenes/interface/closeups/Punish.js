@@ -423,7 +423,7 @@ export default class Punish extends BaseScene {
 
     create() {
         this._create()
-        this.punishUser.text = this.interface.punishuser.username
+        this.punishUser.text = `Punish User: ${this.interface.punishuser.username}`
         this.id = this.interface.punishuser.id
     }
 

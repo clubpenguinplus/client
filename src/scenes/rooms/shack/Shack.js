@@ -196,11 +196,8 @@ export default class Shack extends RoomScene {
     }
 
     setClockTime() {
-        // Penguin Standard Time (PST)
-        var now = new Date(Date.now() - 1000 * 60 * 60 * 8)
-
-        var timeInHours = now.getUTCHours()
-        var timeInMinutes = now.getUTCMinutes()
+        var timeInHours = this.shell.getPSTHours()
+        var timeInMinutes = this.shell.getPSTMinutes()
         let minuteDegrees = 0
         let hourDegrees = 0
 
@@ -216,7 +213,7 @@ export default class Shack extends RoomScene {
         this.minutehand.rotation = Phaser.Math.DegToRad(minuteDegrees)
         this.hourhand.rotation = Phaser.Math.DegToRad(hourDegrees)
 
-        let timeout = 60 - now.getUTCSeconds()
+        let timeout = 60 - this.shell.getPSTSeconds()
         setTimeout(() => this.setClockTime(), timeout * 1000)
     }
 

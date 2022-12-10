@@ -215,15 +215,12 @@ export default class Agentlobby extends RoomScene {
     }
 
     setClockTime() {
-        // Penguin Standard Time (PST)
-        var now = new Date(Date.now() - 1000 * 60 * 60 * 8)
-
-        var timeInHours = now.getUTCHours()
+        var timeInHours = this.shell.getPSTHours()
         if (timeInHours > 12) {
             timeInHours = timeInHours - 12
         }
         // There is a random 5 minute offset on the frames :shrug:
-        var timeInMinutes = now.getUTCMinutes() + 5
+        var timeInMinutes = this.shell.getPSTMinutes() + 5
         if (timeInMinutes > 60) {
             timeInMinutes = timeInMinutes - 60
         }
@@ -232,7 +229,7 @@ export default class Agentlobby extends RoomScene {
         this.hourhand.setFrame(`hourhand${this.fourFigures(timeInHours + 1)}`)
         this.minutehand.setFrame(`minutehand${this.fourFigures(timeInMinutes)}`)
 
-        let timeout = 60 - now.getUTCSeconds()
+        let timeout = 60 - this.shell.getPSTSeconds()
         setTimeout(() => this.setClockTime(), timeout * 1000)
     }
 

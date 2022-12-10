@@ -19,7 +19,7 @@ export default class ClientController {
 
         // Assign user attributes
 
-        this.string = this.shell.arrayToObject(args[0])
+        this.string = this.shell.arrayToObject(args[0], true)
 
         this.room = args[1]
         this.joinTime = args[2]
@@ -32,7 +32,7 @@ export default class ClientController {
         for (let friend in this.friends) {
             let temp = this.friends[friend].split('|')
             this.friends[friend] = {
-                id: temp[0],
+                id: parseInt(temp[0]),
                 username: temp[1],
                 online: temp[2] == '1' ? true : false,
                 isBff: temp[3] == '1' ? 1 : 0,

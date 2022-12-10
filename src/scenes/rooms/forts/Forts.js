@@ -182,22 +182,26 @@ export default class Forts extends RoomScene {
 
         this.tower.on('animationcomplete', () => this.onTowerAnimComplete())
         this.target.on('animationcomplete', () => this.onTargetAnimComplete())
+    }
 
-        var now = new Date(Date.now() - 1000 * 60 * 60 * 8)
-        var timeInHours = now.getUTCHours()
+    update() {
+        if (this.lastTime && this.lastTime == this.shell.getPSTMinutes()) return
+        this.lastTime = this.shell.getPSTMinutes()
+
+        var timeInHours = this.shell.getPSTHours()
         if (timeInHours == 12) {
             this.am_pm.text = 'PM'
         } else if (timeInHours > 12) {
             timeInHours = timeInHours - 12
             this.am_pm.text = 'PM'
         }
-        var timeInMinutes = now.getUTCMinutes()
+        var timeInMinutes = this.shell.getPSTMinutes()
         if (timeInMinutes < 10) {
             this.clockTime.text = timeInHours + ':0' + timeInMinutes
         } else {
             this.clockTime.text = timeInHours + ':' + timeInMinutes
         }
-        var day = now.getUTCDay()
+        var day = this.shell.getPSTDay()
 
         if (day == 1) {
             this.day.text = 'MONDAY'

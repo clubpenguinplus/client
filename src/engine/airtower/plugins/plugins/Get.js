@@ -43,11 +43,8 @@ export default class Get extends Plugin {
             this.interface.main.mainRequestItem.setPaperDoll(fr)
         }
 
-        if (this.interface.main.friend.visible) {
-            this.interface.main.friend.showFriend(fr)
-        } else if (this.interface.main.friendSmall.visible) {
-            this.interface.main.friendSmall.showFriend(fr)
-        }
+        this.interface.main.friend.showFriend(fr)
+        this.interface.main.friendSmall.showFriend(fr)
     }
 
     getStampbook(args) {

@@ -230,11 +230,7 @@ export default class PlayerCard extends BaseContainer {
      */
     _showCard(penguin, items = penguin) {
         // Text
-        if (penguin.username_approved == 1) {
-            this.username.text = penguin.username
-        } else {
-            this.username.text = 'P' + penguin.id
-        }
+        this.username.text = penguin.username
 
         for (var x in this.shell.mascots) {
             if (this.shell.mascots[x].id == penguin.id) this.username.text = this.shell.mascots[x].name

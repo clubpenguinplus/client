@@ -177,11 +177,27 @@ export default class Shell extends BaseScene {
         this.RuffleManager.handleLoadMinigame(minigame)
     }
 
-    arrayToObject(player) {
+    arrayToObject(player, isClient = false) {
         let stringArray = player.split('|')
+
+        let id = parseInt(stringArray[0])
+        let ua = parseInt(stringArray[17])
+
+        isClient = isClient ? true : id == this.client.id
+
+        let username, realUsername
+        if (ua != 1) {
+            username = 'P' + id
+            realUsername = isClient || this.client.penguin.rank > 2 ? `${stringArray[1]}` : 'Unknown'
+        } else {
+            username = stringArray[1]
+            realUsername = stringArray[1]
+        }
+
         return {
-            id: parseInt(stringArray[0]),
-            username: stringArray[1],
+            id: id,
+            username: username,
+            realUsername: realUsername,
             color: parseInt(stringArray[2]),
             head: parseInt(stringArray[3]),
             face: parseInt(stringArray[4]),
@@ -197,8 +213,28 @@ export default class Shell extends BaseScene {
             frame: parseInt(stringArray[14]),
             rank: parseInt(stringArray[15]),
             stealthMode: parseInt(stringArray[16]),
-            username_approved: parseInt(stringArray[17]),
+            username_approved: ua,
             walking: parseInt(stringArray[18]),
         }
+    }
+
+    get PST() {
+        return new Date(Date.now() - 1000 * 60 * 60 * 8)
+    }
+
+    getPSTDay() {
+        return this.PST.getUTCDay()
+    }
+
+    getPSTHours() {
+        return this.PST.getUTCHours()
+    }
+
+    getPSTMinutes() {
+        return this.PST.getUTCMinutes()
+    }
+
+    getPSTSeconds() {
+        return this.PST.getUTCSeconds()
     }
 }
