@@ -5,7 +5,6 @@ import registerNinePatchContainerFactory from '@engine/utils/ninepatch/registerN
 import clubpenguinplus from './data/game'
 
 import devtools from 'devtools-detect'
-import {VERSION} from 'phaser'
 
 export default class Game extends Phaser.Game {
     constructor(config) {
