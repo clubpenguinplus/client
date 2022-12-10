@@ -14,11 +14,11 @@ export default class MusicController extends Phaser.Scene {
     }
 
     get musicMuted() {
-        return shell.muteMusic
+        return this.shell.muteMusic
     }
 
     get sfxMuted() {
-        return shell.muteAll
+        return this.shell.muteAll
     }
 
     addMusic(track, fileExtension = 'mp3') {

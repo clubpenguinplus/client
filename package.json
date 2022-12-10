@@ -1,11 +1,11 @@
 {
   "name": "clubpenguinplus",
-  "version": "0.0.70",
+  "version": "0.0.68",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",
     "editor": "phasereditor2d-launcher -project . -max-number-files 100000 -public",
-    "build": "node ./utils/pre-build.js && webpack --mode production",
+    "build": "node ./utils/pre-build.js && webpack --mode production --env obfuscate=true",
     "build-crumbs": "node ./utils/build-crumbs.js",
     "format": "npx prettier --write ./src/",
     "update-version": "node ./utils/update-version.js"
