@@ -1,0 +1,263 @@
+{
+    "id": "e0a99fc4-a792-4ed0-bdba-724f81408a62",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/town/town-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Town",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c5e3b198-e894-4338-ada5-0835018294d7",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "37743def-eadf-4b0c-b199-c07a512b8afc",
+            "label": "clothes_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "clothes_door",
+            "Button.hoverCallback": "() => this.ShopDoorOver()",
+            "Button.hoverOutCallback": "() => this.ShopDoorOut()",
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "clothes_door"
+            },
+            "x": 1072,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "bf26df9b-10c0-4263-a8ea-f6af44d3e0cc",
+            "label": "coffee_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "coffee_door",
+            "Button.hoverCallback": "() => this.CoffeeDoorOver()",
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "coffee_door"
+            },
+            "x": 439,
+            "y": 497
+        },
+        {
+            "type": "Image",
+            "id": "80c8b2ca-a4c2-441b-894f-a2de9a09aceb",
+            "label": "dance_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "dance_door",
+            "Button.hoverCallback": "() => this.DiscoDoorOver()",
+            "Button.hoverOutCallback": "() => this.DiscoDoorOut()",
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "dance_door"
+            },
+            "x": 744,
+            "y": 424
+        },
+        {
+            "type": "Image",
+            "id": "963ead99-c3e7-4566-b260-0568dc4fd555",
+            "label": "light_leftest",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "light_leftest"
+            },
+            "x": 698.0361256853585,
+            "y": 585.8939267819319,
+            "originX": 0.5370259229921763,
+            "originY": 0.5907347905969184
+        },
+        {
+            "type": "Image",
+            "id": "112d841e-fb34-43bb-9677-f5a46474ab76",
+            "label": "light_left",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "light_left"
+            },
+            "x": 877.5710994517133,
+            "y": 604.7517278785053,
+            "originX": 0.47037926160625954,
+            "originY": 0.6482759055640155
+        },
+        {
+            "type": "Image",
+            "id": "14a53ed4-a94b-4e58-a361-4eb6b2722159",
+            "label": "light_right",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "light_right"
+            },
+            "x": 1042.6433508224302,
+            "y": 673.537277604362,
+            "originX": 0.5444311075906121,
+            "originY": 0.6341543907483951
+        },
+        {
+            "type": "Image",
+            "id": "494167cd-d79c-4d90-93d2-f359309ee96a",
+            "label": "light_rightest",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "light_rightest"
+            },
+            "x": 1223.5502268363282,
+            "y": 585.0764744361331,
+            "originX": 0.5189052053210755,
+            "originY": 0.617168307396897
+        },
+        {
+            "type": "Image",
+            "id": "43898a76-143d-45f2-8d94-0062620773b6",
+            "label": "snow_top",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "snow-top"
+            },
+            "x": 729,
+            "y": 293
+        },
+        {
+            "type": "Image",
+            "id": "09656ae9-bc68-4bb0-99a4-a70164b13e51",
+            "label": "bridge",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "bridge"
+            },
+            "x": 92,
+            "y": 626
+        },
+        {
+            "type": "Image",
+            "id": "127692e2-244a-4cdc-9fa7-3cc50afa8ea3",
+            "label": "trees_bottomleft",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "trees_bottomleft"
+            },
+            "x": 26,
+            "y": 941
+        },
+        {
+            "type": "Image",
+            "id": "a6dc7a78-e011-40c5-9a21-656a1b756d49",
+            "label": "snowman",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "snowman"
+            },
+            "x": 258,
+            "y": 779.3568975380433,
+            "originY": 0.5247550996479734
+        },
+        {
+            "type": "Image",
+            "id": "eeb0d935-6fad-4e30-b9dd-90a1c3387e63",
+            "label": "tree_middle",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "tree_middle"
+            },
+            "x": 511,
+            "y": 974
+        },
+        {
+            "type": "Image",
+            "id": "3d8ae195-1542-47c7-8046-c189515ea564",
+            "label": "trees_right",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "trees_right"
+            },
+            "x": 1575,
+            "y": 818
+        },
+        {
+            "type": "Image",
+            "id": "53d7f8e8-3d88-42c2-8fb5-005d18a85baa",
+            "label": "trees_bottomright",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "trees_bottomright"
+            },
+            "x": 1434,
+            "y": 951
+        },
+        {
+            "type": "Image",
+            "id": "2666542e-01e9-46cb-9f6f-d7a30a9b2a79",
+            "label": "bauble",
+            "components": [],
+            "texture": {
+                "key": "town-merrywalrus",
+                "frame": "bauble"
+            },
+            "x": 1449,
+            "y": 514
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "963ead99-c3e7-4566-b260-0568dc4fd555",
+                "2666542e-01e9-46cb-9f6f-d7a30a9b2a79",
+                "53d7f8e8-3d88-42c2-8fb5-005d18a85baa",
+                "3d8ae195-1542-47c7-8046-c189515ea564",
+                "eeb0d935-6fad-4e30-b9dd-90a1c3387e63",
+                "a6dc7a78-e011-40c5-9a21-656a1b756d49",
+                "127692e2-244a-4cdc-9fa7-3cc50afa8ea3",
+                "09656ae9-bc68-4bb0-99a4-a70164b13e51",
+                "43898a76-143d-45f2-8d94-0062620773b6",
+                "14a53ed4-a94b-4e58-a361-4eb6b2722159",
+                "112d841e-fb34-43bb-9677-f5a46474ab76"
+            ]
+        }
+    ]
+}

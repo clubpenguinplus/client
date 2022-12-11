@@ -1,7 +1,7 @@
 const rooms = {
     100: {
         key: 'Town',
-        scene: require('@rooms/town/Town').default,
+        scene: require('@rooms/town/merrywalrus/Town').default,
         x: 760,
         y: 660,
     },

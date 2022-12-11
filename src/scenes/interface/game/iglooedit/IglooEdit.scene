@@ -33,7 +33,7 @@
                         "ShowHint"
                     ],
                     "Button.spriteName": "edit-btn",
-                    "Button.callback": "() => this.onEditClick()",
+                    "Button.callback": "() => this.chooseIglooButton()",
                     "ShowHint.text": "editIgloo",
                     "texture": {
                         "key": "iglooedit-new",
@@ -65,9 +65,8 @@
             "label": "controls",
             "scope": "CLASS",
             "components": [],
-            "x": 162,
-            "y": 359,
-            "visible": false,
+            "x": 0.0014140540733933449,
+            "y": -0.0016985858862005642,
             "list": [
                 {
                     "type": "Image",
@@ -83,8 +82,8 @@
                         "key": "iglooedit-new",
                         "frame": "catalog"
                     },
-                    "x": 1235,
-                    "y": 380
+                    "x": 1396.9985859979595,
+                    "y": 739.0016987305266
                 },
                 {
                     "type": "Image",
@@ -101,8 +100,8 @@
                         "key": "iglooedit-new",
                         "frame": "cardboardbox"
                     },
-                    "x": 1263,
-                    "y": 524,
+                    "x": 1424.9985859979595,
+                    "y": 883.0016987305266,
                     "originY": 0.584
                 },
                 {
@@ -116,8 +115,8 @@
                         "key": "iglooedit-new",
                         "frame": "music-panel"
                     },
-                    "x": -105,
-                    "y": -334
+                    "x": 56.99858599795955,
+                    "y": 25.001698730526513
                 },
                 {
                     "type": "Image",
@@ -131,8 +130,8 @@
                         "key": "iglooedit-new",
                         "frame": "all-selected"
                     },
-                    "x": 498,
-                    "y": -144
+                    "x": 659.9985859979596,
+                    "y": 215.00169873052653
                 },
                 {
                     "type": "Image",
@@ -146,8 +145,8 @@
                         "key": "iglooedit-new",
                         "frame": "location"
                     },
-                    "x": 613,
-                    "y": -143
+                    "x": 774.9985859979596,
+                    "y": 216.00169873052653
                 },
                 {
                     "type": "Image",
@@ -161,8 +160,8 @@
                         "key": "iglooedit-new",
                         "frame": "igloos"
                     },
-                    "x": 728,
-                    "y": -143
+                    "x": 889.9985859979596,
+                    "y": 216.00169873052653
                 },
                 {
                     "type": "Image",
@@ -176,8 +175,8 @@
                         "key": "iglooedit-new",
                         "frame": "flooring"
                     },
-                    "x": 843,
-                    "y": -143
+                    "x": 1004.9985859979596,
+                    "y": 216.00169873052653
                 },
                 {
                     "type": "Image",
@@ -191,8 +190,8 @@
                         "key": "iglooedit-new",
                         "frame": "room"
                     },
-                    "x": 958,
-                    "y": -143
+                    "x": 1119.9985859979595,
+                    "y": 216.00169873052653
                 },
                 {
                     "type": "Image",
@@ -206,8 +205,8 @@
                         "key": "iglooedit-new",
                         "frame": "wall"
                     },
-                    "x": 1073,
-                    "y": -143
+                    "x": 1234.9985859979595,
+                    "y": 216.00169873052653
                 },
                 {
                     "type": "Image",
@@ -221,8 +220,8 @@
                         "key": "iglooedit-new",
                         "frame": "pets"
                     },
-                    "x": 1188,
-                    "y": -143
+                    "x": 1349.9985859979595,
+                    "y": 216.00169873052653
                 },
                 {
                     "type": "Image",
@@ -235,8 +234,8 @@
                         "key": "iglooedit-new",
                         "frame": "top-bar"
                     },
-                    "x": 616,
-                    "y": -287
+                    "x": 777.9985859979596,
+                    "y": 72.00169873052651
                 },
                 {
                     "type": "Image",
@@ -251,8 +250,8 @@
                         "key": "iglooedit-new",
                         "frame": "close-btn"
                     },
-                    "x": 1305,
-                    "y": -311
+                    "x": 1466.9985859979595,
+                    "y": 48.00169873052651
                 },
                 {
                     "type": "Image",
@@ -263,8 +262,8 @@
                         "key": "iglooedit-new",
                         "frame": "x"
                     },
-                    "x": 1305,
-                    "y": -312
+                    "x": 1466.9985859979595,
+                    "y": 47.00169873052651
                 },
                 {
                     "type": "NinePatchContainer",
@@ -275,8 +274,8 @@
                         "key": "iglooedit-new",
                         "frame": "big-button"
                     },
-                    "x": -70,
-                    "y": -88,
+                    "x": 91.99858599795955,
+                    "y": 271.0016987305264,
                     "width": 80,
                     "height": 65
                 },
@@ -289,8 +288,8 @@
                         "key": "iglooedit-new",
                         "frame": "music-icon"
                     },
-                    "x": -71,
-                    "y": -88
+                    "x": 90.99858599795955,
+                    "y": 271.0016987305264
                 },
                 {
                     "type": "Image",
@@ -301,8 +300,8 @@
                         "key": "iglooedit-new",
                         "frame": "arrow"
                     },
-                    "x": 2,
-                    "y": -87
+                    "x": 163.99858599795957,
+                    "y": 272.0016987305264
                 },
                 {
                     "type": "NinePatchContainer",
@@ -313,8 +312,8 @@
                         "key": "iglooedit-new",
                         "frame": "small-btn"
                     },
-                    "x": -55,
-                    "y": -6,
+                    "x": 106.99858599795955,
+                    "y": 353.0016987305264,
                     "width": 150,
                     "height": 42,
                     "marginLeft": 30,
@@ -329,8 +328,8 @@
                         "LocalisedString"
                     ],
                     "LocalisedString.id": "music",
-                    "x": -70,
-                    "y": -134,
+                    "x": 91.99858599795955,
+                    "y": 225.00169873052653,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Music",
@@ -350,8 +349,8 @@
                         "LocalisedString"
                     ],
                     "LocalisedString.id": "hide",
-                    "x": -55,
-                    "y": -6,
+                    "x": 106.99858599795955,
+                    "y": 353.0016987305264,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Hide",
@@ -361,6 +360,190 @@
                     "fontSize": "22px",
                     "fontStyle": "bold",
                     "color": "#3e83c5ff"
+                },
+                {
+                    "prefabId": "d6cf4a9b-bcc7-4de0-bd9b-d33346f4fd2b",
+                    "id": "4668eefa-869b-44f9-b5c8-824002752f00",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "iglooMusic",
+                    "components": [],
+                    "x": 759.9985859979596,
+                    "y": 480.0016987305264,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "1b8cf0fa-f73d-4350-945a-dc2655c3a1a6",
+            "label": "chooseIgloo",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9d37d487-3da3-4609-858c-7c184f40ac73",
+                    "label": "bg",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "bg"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "0ce30d95-bcc3-4034-b01c-c9a8772285b3",
+                    "label": "choose_igloo",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "choose-igloo",
+                    "Button.callback": "() => this.onEditClick()",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "choose-igloo"
+                    },
+                    "x": 944,
+                    "y": 349
+                },
+                {
+                    "type": "Image",
+                    "id": "56601698-af3b-4e6a-abd7-6a74243c917f",
+                    "label": "toggle_panel",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "toggle-panel"
+                    },
+                    "x": 1180,
+                    "y": 349
+                },
+                {
+                    "type": "Image",
+                    "id": "ba72b0a2-b6e3-4f4c-b3aa-81561edaf3c2",
+                    "label": "toggler",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "toggler"
+                    },
+                    "x": 1151,
+                    "y": 352
+                },
+                {
+                    "type": "Image",
+                    "id": "f87f7b0f-0e19-4f38-8a0f-71335d7ee3b9",
+                    "label": "preview_pane",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "preview-pane"
+                    },
+                    "x": 340,
+                    "y": 744,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "59f380ac-4616-4fc4-9caa-51f518da2f6a",
+                    "label": "plus",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "plus"
+                    },
+                    "x": 340,
+                    "y": 716,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "05ab10c1-0791-42ef-8987-8dc2a4b27a24",
+                    "label": "preview_pane_1",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "preview-pane"
+                    },
+                    "x": 760,
+                    "y": 744,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "00ee3874-71fb-427b-9086-28b988b3b543",
+                    "label": "plus_1",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "plus"
+                    },
+                    "x": 760,
+                    "y": 716,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "199c2754-848e-4b93-b6c2-1773bde820bf",
+                    "label": "preview_pane_2",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "preview-pane"
+                    },
+                    "x": 1180,
+                    "y": 744,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "028be075-8d17-43da-aece-b2a68a1dec69",
+                    "label": "plus_2",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "plus"
+                    },
+                    "x": 1180,
+                    "y": 716,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "60795c35-37cf-4502-a574-9c6249a40402",
+                    "label": "close_btn_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close-btn",
+                    "Button.callback": "() => {this.chooseIgloo.visible = false}",
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "close-btn"
+                    },
+                    "x": 1475,
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "4657b3f7-362d-4d98-910d-918e4c798137",
+                    "label": "x_1",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "x"
+                    },
+                    "x": 1475,
+                    "y": 44
                 }
             ]
         }

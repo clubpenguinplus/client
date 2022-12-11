@@ -50,10 +50,6 @@ export default class Stampbook extends BaseScene {
         const page_forward = this.add.image(1298, 608, 'stampbook', 'page_forward')
         bgcontainer.add(page_forward)
 
-        // dividers
-        const dividers = this.add.image(688, -16, 'stampbook', 'dividers')
-        bgcontainer.add(dividers)
-
         // page
         const page = this.add.container(0, 0)
         page.visible = false
@@ -565,14 +561,18 @@ export default class Stampbook extends BaseScene {
         page.add(down_arrow)
 
         // up_btn
-        const up_btn = this.add.image(882, 670, 'main', 'grey-button')
+        const up_btn = this.add.image(882, 249, 'main', 'grey-button')
         up_btn.visible = false
         page.add(up_btn)
 
         // up_arrow
-        const up_arrow = this.add.image(882, 669, 'main', 'grey-arrow')
+        const up_arrow = this.add.image(882, 248, 'main', 'grey-arrow')
         up_arrow.visible = false
         page.add(up_arrow)
+
+        // dividers
+        const dividers = this.add.image(783, 136, 'stampbook', 'dividers')
+        page.add(dividers)
 
         // front
         const front = this.add.container(0, 0)
@@ -1132,7 +1132,6 @@ export default class Stampbook extends BaseScene {
         this.close = close
         this.page_back = page_back
         this.page_forward = page_forward
-        this.dividers = dividers
         this.page = page
         this.pagebg = pagebg
         this.aquaText = aquaText
@@ -1184,6 +1183,7 @@ export default class Stampbook extends BaseScene {
         this.down_arrow = down_arrow
         this.up_btn = up_btn
         this.up_arrow = up_arrow
+        this.dividers = dividers
         this.front = front
         this.cover = cover
         this.pattern = pattern
@@ -1251,8 +1251,6 @@ export default class Stampbook extends BaseScene {
     page_back
     /** @type {Phaser.GameObjects.Image} */
     page_forward
-    /** @type {Phaser.GameObjects.Image} */
-    dividers
     /** @type {Phaser.GameObjects.Container} */
     page
     /** @type {Phaser.GameObjects.Image} */
@@ -1355,6 +1353,8 @@ export default class Stampbook extends BaseScene {
     up_btn
     /** @type {Phaser.GameObjects.Image} */
     up_arrow
+    /** @type {Phaser.GameObjects.Image} */
+    dividers
     /** @type {Phaser.GameObjects.Container} */
     front
     /** @type {Phaser.GameObjects.Sprite} */

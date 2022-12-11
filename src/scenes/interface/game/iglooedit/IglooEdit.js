@@ -3,6 +3,7 @@ import BaseScene from '@scenes/base/BaseScene'
 import {Button, Interactive, ShowHint, SimpleButton, LocalisedString} from '@components/components'
 
 import IglooMusic from './igloomusic/IglooMusic'
+import IglooItem from './IglooItem'
 
 /* START OF COMPILED CODE */
 
@@ -22,6 +23,8 @@ export default class IglooEdit extends BaseScene {
         this.music
         /** @type {Phaser.GameObjects.Text} */
         this.hide
+        /** @type {Phaser.GameObjects.Container} */
+        this.chooseIgloo
         /** @type {Phaser.GameObjects.Image[]} */
         this.categories
 
@@ -43,93 +46,155 @@ export default class IglooEdit extends BaseScene {
         defaultControls.add(button_backyard)
 
         // controls
-        const controls = this.add.container(162, 359)
-        controls.visible = false
+        const controls = this.add.container(0.0014140540733933449, -0.0016985858862005642)
 
         // button_furniture_catalog
-        const button_furniture_catalog = this.add.image(1235, 380, 'iglooedit-new', 'catalog')
+        const button_furniture_catalog = this.add.image(1396.9985859979595, 739.0016987305266, 'iglooedit-new', 'catalog')
         controls.add(button_furniture_catalog)
 
         // button_furniture
-        const button_furniture = this.add.image(1263, 524, 'iglooedit-new', 'cardboardbox')
+        const button_furniture = this.add.image(1424.9985859979595, 883.0016987305266, 'iglooedit-new', 'cardboardbox')
         button_furniture.setOrigin(0.5, 0.584)
         controls.add(button_furniture)
 
         // music_panel
-        const music_panel = this.add.image(-105, -334, 'iglooedit-new', 'music-panel')
+        const music_panel = this.add.image(56.99858599795955, 25.001698730526513, 'iglooedit-new', 'music-panel')
         controls.add(music_panel)
 
         // all
-        const all = this.add.image(498, -144, 'iglooedit-new', 'all-selected')
+        const all = this.add.image(659.9985859979596, 215.00169873052653, 'iglooedit-new', 'all-selected')
         controls.add(all)
 
         // location
-        const location = this.add.image(613, -143, 'iglooedit-new', 'location')
+        const location = this.add.image(774.9985859979596, 216.00169873052653, 'iglooedit-new', 'location')
         controls.add(location)
 
         // igloos
-        const igloos = this.add.image(728, -143, 'iglooedit-new', 'igloos')
+        const igloos = this.add.image(889.9985859979596, 216.00169873052653, 'iglooedit-new', 'igloos')
         controls.add(igloos)
 
         // flooring
-        const flooring = this.add.image(843, -143, 'iglooedit-new', 'flooring')
+        const flooring = this.add.image(1004.9985859979596, 216.00169873052653, 'iglooedit-new', 'flooring')
         controls.add(flooring)
 
         // room
-        const room = this.add.image(958, -143, 'iglooedit-new', 'room')
+        const room = this.add.image(1119.9985859979595, 216.00169873052653, 'iglooedit-new', 'room')
         controls.add(room)
 
         // wall
-        const wall = this.add.image(1073, -143, 'iglooedit-new', 'wall')
+        const wall = this.add.image(1234.9985859979595, 216.00169873052653, 'iglooedit-new', 'wall')
         controls.add(wall)
 
         // pets
-        const pets = this.add.image(1188, -143, 'iglooedit-new', 'pets')
+        const pets = this.add.image(1349.9985859979595, 216.00169873052653, 'iglooedit-new', 'pets')
         controls.add(pets)
 
         // top_bar
-        const top_bar = this.add.image(616, -287, 'iglooedit-new', 'top-bar')
+        const top_bar = this.add.image(777.9985859979596, 72.00169873052651, 'iglooedit-new', 'top-bar')
         controls.add(top_bar)
 
         // close_btn
-        const close_btn = this.add.image(1305, -311, 'iglooedit-new', 'close-btn')
+        const close_btn = this.add.image(1466.9985859979595, 48.00169873052651, 'iglooedit-new', 'close-btn')
         controls.add(close_btn)
 
         // x
-        const x = this.add.image(1305, -312, 'iglooedit-new', 'x')
+        const x = this.add.image(1466.9985859979595, 47.00169873052651, 'iglooedit-new', 'x')
         controls.add(x)
 
         // big_button
-        const big_button = this.add.ninePatchContainer(-70, -88, 80, 65, 'iglooedit-new', 'big-button')
+        const big_button = this.add.ninePatchContainer(91.99858599795955, 271.0016987305264, 80, 65, 'iglooedit-new', 'big-button')
         controls.add(big_button)
 
         // music_icon
-        const music_icon = this.add.image(-71, -88, 'iglooedit-new', 'music-icon')
+        const music_icon = this.add.image(90.99858599795955, 271.0016987305264, 'iglooedit-new', 'music-icon')
         controls.add(music_icon)
 
         // arrow
-        const arrow = this.add.image(2, -87, 'iglooedit-new', 'arrow')
+        const arrow = this.add.image(163.99858599795957, 272.0016987305264, 'iglooedit-new', 'arrow')
         controls.add(arrow)
 
         // small_btn
-        const small_btn = this.add.ninePatchContainer(-55, -6, 150, 42, 'iglooedit-new', 'small-btn')
+        const small_btn = this.add.ninePatchContainer(106.99858599795955, 353.0016987305264, 150, 42, 'iglooedit-new', 'small-btn')
         small_btn.marginLeft = 30
         small_btn.marginRight = 30
         controls.add(small_btn)
 
         // music
-        const music = this.add.text(-70, -134, '', {})
+        const music = this.add.text(91.99858599795955, 225.00169873052653, '', {})
         music.setOrigin(0.5, 0.5)
         music.text = 'Music'
         music.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
         controls.add(music)
 
         // hide
-        const hide = this.add.text(-55, -6, '', {})
+        const hide = this.add.text(106.99858599795955, 353.0016987305264, '', {})
         hide.setOrigin(0.5, 0.5)
         hide.text = 'Hide'
         hide.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
         controls.add(hide)
+
+        // iglooMusic
+        const iglooMusic = new IglooMusic(this, 759.9985859979596, 480.0016987305264)
+        iglooMusic.visible = false
+        controls.add(iglooMusic)
+
+        // chooseIgloo
+        const chooseIgloo = this.add.container(0, 0)
+        chooseIgloo.visible = false
+
+        // bg
+        const bg = this.add.image(760, 480, 'iglooedit-new', 'bg')
+        chooseIgloo.add(bg)
+
+        // choose_igloo
+        const choose_igloo = this.add.image(944, 349, 'iglooedit-new', 'choose-igloo')
+        chooseIgloo.add(choose_igloo)
+
+        // toggle_panel
+        const toggle_panel = this.add.image(1180, 349, 'iglooedit-new', 'toggle-panel')
+        chooseIgloo.add(toggle_panel)
+
+        // toggler
+        const toggler = this.add.image(1151, 352, 'iglooedit-new', 'toggler')
+        chooseIgloo.add(toggler)
+
+        // preview_pane
+        const preview_pane = this.add.image(340, 744, 'iglooedit-new', 'preview-pane')
+        preview_pane.visible = false
+        chooseIgloo.add(preview_pane)
+
+        // plus
+        const plus = this.add.image(340, 716, 'iglooedit-new', 'plus')
+        plus.visible = false
+        chooseIgloo.add(plus)
+
+        // preview_pane_1
+        const preview_pane_1 = this.add.image(760, 744, 'iglooedit-new', 'preview-pane')
+        preview_pane_1.visible = false
+        chooseIgloo.add(preview_pane_1)
+
+        // plus_1
+        const plus_1 = this.add.image(760, 716, 'iglooedit-new', 'plus')
+        plus_1.visible = false
+        chooseIgloo.add(plus_1)
+
+        // preview_pane_2
+        const preview_pane_2 = this.add.image(1180, 744, 'iglooedit-new', 'preview-pane')
+        preview_pane_2.visible = false
+        chooseIgloo.add(preview_pane_2)
+
+        // plus_2
+        const plus_2 = this.add.image(1180, 716, 'iglooedit-new', 'plus')
+        plus_2.visible = false
+        chooseIgloo.add(plus_2)
+
+        // close_btn_1
+        const close_btn_1 = this.add.image(1475, 45, 'iglooedit-new', 'close-btn')
+        chooseIgloo.add(close_btn_1)
+
+        // x_1
+        const x_1 = this.add.image(1475, 44, 'iglooedit-new', 'x')
+        chooseIgloo.add(x_1)
 
         // lists
         const categories = [all, location, igloos, flooring, room, wall, pets]
@@ -137,7 +202,7 @@ export default class IglooEdit extends BaseScene {
         // button_edit (components)
         const button_editButton = new Button(button_edit)
         button_editButton.spriteName = 'edit-btn'
-        button_editButton.callback = () => this.onEditClick()
+        button_editButton.callback = () => this.chooseIglooButton()
         const button_editShowHint = new ShowHint(button_edit)
         button_editShowHint.text = 'editIgloo'
 
@@ -206,12 +271,25 @@ export default class IglooEdit extends BaseScene {
         const hideLocalisedString = new LocalisedString(hide)
         hideLocalisedString.id = 'hide'
 
+        // choose_igloo (components)
+        const choose_iglooButton = new Button(choose_igloo)
+        choose_iglooButton.spriteName = 'choose-igloo'
+        choose_iglooButton.callback = () => this.onEditClick()
+
+        // close_btn_1 (components)
+        const close_btn_1Button = new Button(close_btn_1)
+        close_btn_1Button.spriteName = 'close-btn'
+        close_btn_1Button.callback = () => {
+            this.chooseIgloo.visible = false
+        }
+
         this.defaultControls = defaultControls
         this.button_backyard = button_backyard
         this.controls = controls
         this.button_furniture = button_furniture
         this.music = music
         this.hide = hide
+        this.chooseIgloo = chooseIgloo
         this.categories = categories
 
         this.events.emit('scene-awake')
@@ -221,6 +299,8 @@ export default class IglooEdit extends BaseScene {
 
     create() {
         this._create()
+
+        this.items = []
 
         this.events.on('sleep', () => this.onSleep())
     }
@@ -257,8 +337,13 @@ export default class IglooEdit extends BaseScene {
         }
     }
 
-    onEditClick() {
+    chooseIglooButton() {
         this.interface.hideInterface(false)
+        this.chooseIgloo.visible = true
+    }
+
+    onEditClick() {
+        this.chooseIgloo.visible = false
         this.shell.room.hidePenguins()
         this.shell.room.enableFurnitureInput()
         this.showControls()
@@ -273,6 +358,7 @@ export default class IglooEdit extends BaseScene {
     }
 
     showControls() {
+        this.loadItems(0)
         this.defaultControls.visible = false
         this.controls.visible = true
     }
@@ -303,6 +389,16 @@ export default class IglooEdit extends BaseScene {
         }
 
         this.categories[id].setFrame(this.categories[id].frame.name + '-selected')
+    }
+
+    loadItems(category) {
+        let xcoord = 85
+        for (let item of this.shell.client.furnitureInventory) {
+            let sprite = new IglooItem(this, xcoord, 85)
+            this.controls.add(sprite)
+            this.items.push(sprite)
+            xcoord += 120
+        }
     }
 
     /* END-USER-CODE */

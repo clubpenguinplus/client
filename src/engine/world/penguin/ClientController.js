@@ -43,6 +43,13 @@ export default class ClientController {
         this.inventory = typeof args[9] == 'string' ? args[9].split(',') : []
         this.iglooInventory = typeof args[10] == 'string' ? args[10].split(',') : []
         this.furnitureInventory = typeof args[11] == 'string' ? args[11].split(',') : []
+        for (let item in this.furnitureInventory) {
+            let temp = this.furnitureInventory[item].split(':')
+            this.furnitureInventory[item] = {
+                id: parseInt(temp[0]),
+                quantity: parseInt(temp[1]),
+            }
+        }
         this.stamps = typeof args[12] == 'string' ? args[12].split(',') : []
         this.postcards = typeof args[13] == 'string' ? args[13].split(',') : []
         this.pending = typeof args[14] == 'string' ? args[14].split(',') : []
