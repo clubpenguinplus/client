@@ -134,6 +134,10 @@ export default class ClientController {
         return this.rank >= 3
     }
 
+    get isEPF() {
+        return false
+    }
+
     initInventory() {
         // Generates object from slots in format: { color: [], head: [], ... }
         let inventory = Object.fromEntries(this.slots.map((slot) => [slot, []]))

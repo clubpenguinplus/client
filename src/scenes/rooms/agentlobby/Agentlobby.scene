@@ -17,21 +17,33 @@
     },
     "displayList": [
         {
-            "type": "Image",
+            "type": "Container",
             "id": "d53f385b-ea30-42ec-a64a-7d35dc9c9fbc",
-            "label": "waterfallanim0001",
+            "label": "waterfall",
+            "scope": "CLASS",
+            "components": [],
+            "x": 754,
+            "y": 59,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "91f65455-fc4c-44b4-8a6b-dcc98226d70c",
+            "label": "droplets",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "agentlobby",
-                "frame": "waterfallanim0001"
+                "frame": "droplets0029"
             },
-            "x": 754,
-            "y": 59
+            "x": 756,
+            "y": 202
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "3730d7a1-48f3-4d35-96f4-0e98dfaf9dc3",
-            "label": "phonebox_reflection0001",
+            "label": "phonebox_reflection",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "agentlobby",
@@ -83,16 +95,14 @@
             "y": 360
         },
         {
-            "type": "Image",
+            "type": "Container",
             "id": "537a9cbc-ede0-441f-ac80-340ba3f6964b",
-            "label": "stairsanim0001",
+            "label": "stairs",
+            "scope": "CLASS",
             "components": [],
-            "texture": {
-                "key": "agentlobby",
-                "frame": "stairsanim0001"
-            },
             "x": 756,
-            "y": 272
+            "y": 272,
+            "list": []
         },
         {
             "type": "Image",
@@ -143,9 +153,10 @@
             "y": 440
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "d9705078-5005-4354-b6e7-40c4dfd5f087",
-            "label": "phonebox0001",
+            "label": "phonebox",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "agentlobby",
@@ -153,6 +164,19 @@
             },
             "x": 578,
             "y": -186
+        },
+        {
+            "type": "Sprite",
+            "id": "2d34dca0-7af7-4904-9ba4-40bf5a81e2af",
+            "label": "phonebox_agent",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentlobby",
+                "frame": "phonebox_epf_open0001"
+            },
+            "x": 1116,
+            "y": 268.5
         },
         {
             "type": "Image",
@@ -211,8 +235,10 @@
                 "key": "agentlobby",
                 "frame": "comfy"
             },
-            "x": 1371,
-            "y": 438
+            "x": 1368.8126305440692,
+            "y": 460.96737928727475,
+            "originX": 0.487847947467051,
+            "originY": 0.6383577065498479
         },
         {
             "type": "Image",
@@ -224,7 +250,8 @@
                 "frame": "comfyarm"
             },
             "x": 1422,
-            "y": 452
+            "y": 484.8105418389639,
+            "originY": 0.7326988782905242
         },
         {
             "type": "Image",
@@ -302,8 +329,10 @@
                 "key": "agentlobby",
                 "frame": "chairfaceleft"
             },
-            "x": 660,
-            "y": 722
+            "x": 655.5493544892322,
+            "y": 702.3429823274422,
+            "originX": 0.4572053316272327,
+            "originY": 0.36058852714498013
         },
         {
             "type": "Image",
@@ -314,8 +343,10 @@
                 "key": "agentlobby",
                 "frame": "chairfacefront"
             },
-            "x": 753,
-            "y": 782
+            "x": 757.0797583848705,
+            "y": 778.2911287410268,
+            "originX": 0.5374289760079862,
+            "originY": 0.4712490600079597
         },
         {
             "type": "Image",
@@ -326,8 +357,10 @@
                 "key": "agentlobby",
                 "frame": "chairfaceright"
             },
-            "x": 848,
-            "y": 730
+            "x": 846.5164514964107,
+            "y": 712.5683050828261,
+            "originX": 0.48516451496410695,
+            "originY": 0.37368337016540654
         },
         {
             "type": "Image",
@@ -338,8 +371,10 @@
                 "key": "agentlobby",
                 "frame": "chairfaceright"
             },
-            "x": 1192,
-            "y": 722
+            "x": 1190.1455643705135,
+            "y": 704.9391922087234,
+            "originX": 0.4814556437051351,
+            "originY": 0.37637095803422754
         },
         {
             "type": "Image",
@@ -376,10 +411,10 @@
                 "key": "agentlobby",
                 "frame": "backinnitbutnotback"
             },
-            "x": 1158.06406267431,
-            "y": 590.0688914908317,
-            "originX": 0.5359651564098228,
-            "originY": 0.3320635258549568
+            "x": 1161.018186062095,
+            "y": 570.3749143711884,
+            "originX": 0.5621076267463943,
+            "originY": 0.07629736585212792
         },
         {
             "type": "Image",
@@ -530,6 +565,277 @@
             "x": 1410,
             "y": 1036.9454761442928,
             "originY": 14.767133697857416
+        },
+        {
+            "type": "Rectangle",
+            "id": "8a5e2e59-4f75-4abb-8015-e091e12ae2e0",
+            "label": "waterfall_over",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 754.0000000000001,
+            "y": 311.21145726234874,
+            "scaleX": 3.2931326024095626,
+            "scaleY": 2.7613149632729104,
+            "originX": 0.5000000000000002,
+            "originY": 0.8061592212374563,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "eac91f9e-3a6c-4965-8aa1-0700548d12d7",
+            "label": "phone_over",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 1063.34831316423,
+            "y": 411.48112083039797,
+            "scaleX": 1.357892558842039,
+            "scaleY": 2.2585734641423385,
+            "originX": 0.4329631745410405,
+            "originY": 0.8977584723401025,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Ellipse",
+            "id": "13da81b4-c3d0-4e50-8019-bff3e81e7244",
+            "label": "moveto",
+            "components": [
+                "Seat"
+            ],
+            "x": 774,
+            "y": 388,
+            "scaleX": 1.2748184493839068,
+            "scaleY": 1.168495107669347,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "6cde9879-0c14-44c3-8203-35a2071bc6e3",
+            "label": "moveto_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1105,
+            "y": 503,
+            "scaleX": 1.6161841893238098,
+            "scaleY": 0.9944453067672275,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "ef8ce7a9-163b-43d5-a3f0-a0f986e2e0bb",
+            "label": "moveto_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1161,
+            "y": 588,
+            "scaleX": 1.6629585330832621,
+            "scaleY": 1.4258435567924344,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "f7c9c8e9-b599-45a3-a566-254bcb53bcdd",
+            "label": "moveto_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 1349,
+            "y": 478,
+            "scaleX": 1.9433999056849476,
+            "scaleY": 1.5600724745867505,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "75ef0128-182c-4347-b30b-07f3b87d2ad2",
+            "label": "moveto_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 1199,
+            "y": 722,
+            "scaleX": 1.3577866119103739,
+            "scaleY": 1.5273308478700696,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "e3a5582d-a5c2-4b7c-9771-46de94c53e67",
+            "label": "moveto_5",
+            "components": [
+                "Seat"
+            ],
+            "x": 1114,
+            "y": 777,
+            "scaleX": 1.429259511549393,
+            "scaleY": 1.1637826777448343,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "1bbf70ff-0b87-43a1-b535-7129984c3914",
+            "label": "moveto_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 603,
+            "y": 378,
+            "scaleX": 1.305312625744648,
+            "scaleY": 1.0305559867169471,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "9468b5d4-6144-4185-b24a-38b53f62944e",
+            "label": "moveto_7",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 858,
+            "y": 733,
+            "scaleX": 1.4550007760905048,
+            "scaleY": 1.7256463212535502,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "030ea137-0482-4607-b9a9-fdc4cc0cbea4",
+            "label": "moveto_8",
+            "components": [
+                "Seat"
+            ],
+            "x": 757,
+            "y": 796,
+            "scaleX": 1.3928610028273511,
+            "scaleY": 1.360861416742287,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "6ac254b1-3a41-4f1a-83eb-6a962a061960",
+            "label": "moveto_9",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 651,
+            "y": 723,
+            "scaleX": 1.3133983535039406,
+            "scaleY": 1.9927607801507083,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "1b21e42a-2db9-498e-b703-de4037270a03",
+            "label": "moveto_10",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 421,
+            "y": 745,
+            "scaleX": 1.4622804778349132,
+            "scaleY": 1.3638359988975575,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "51f370dc-429f-4315-ac3d-4b1e543a6687",
+            "label": "moveto_11",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 393,
+            "y": 789,
+            "scaleX": 1.60920515560933,
+            "scaleY": 1.2984060666169186,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "61826a18-a8ce-4be1-bb08-cfe34c7089c5",
+            "label": "moveto_12",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 360,
+            "y": 838,
+            "scaleX": 1.5208827452033762,
+            "scaleY": 1.6686390220555083,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "fed92f15-229b-42eb-8ed4-a7ca40aca7e4",
+            "label": "moveto_13",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 272,
+            "y": 840,
+            "scaleX": 1.3236782104664502,
+            "scaleY": 1.9407537396495012,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "5b69bb14-78da-41f9-925e-298f7fe06943",
+            "label": "moveto_14",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 200,
+            "y": 825,
+            "scaleX": 1.1151511101054692,
+            "scaleY": 1.3856282026068625,
+            "fillColor": "#ffffff",
+            "width": 50,
+            "height": 30
         }
     ],
     "plainObjects": [],
