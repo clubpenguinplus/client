@@ -63,7 +63,7 @@ export default class IglooScene extends RoomScene {
 
         this.load.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}/` : 'https://media.cpplus.pw/'
 
-        this.load.image(`locations/${this.args.location}`, `/client/media/igloos/locations/${this.args.location}.webp`)
+        this.load.image(`locations/${this.args.location}`, `/client/media/igloos/locations/sprites/${this.args.location}.webp`)
 
         if (this.args.flooring) this.loadFlooring(this.args.flooring)
     }
@@ -162,7 +162,7 @@ export default class IglooScene extends RoomScene {
 
     loadFlooring(flooring) {
         if (this.textures.exists(`flooring/${flooring}`)) return
-        let path = '/client/media/igloos/flooring'
+        let path = '/client/media/igloos/flooring/sprites'
 
         this.load.multiatlas({
             key: `flooring/${flooring}`,
@@ -295,6 +295,11 @@ export default class IglooScene extends RoomScene {
     onPointerMove(pointer) {
         if (this.editing && this.selected) {
             this.selected.drag(pointer)
+            if (this.selected.y < 186) {
+                this.interface.iglooEdit.showMirror(this.selected.id, this.selected.x, this.selected.y)
+            } else {
+                this.interface.iglooEdit.hideMirror()
+            }
         }
     }
 
@@ -318,7 +323,7 @@ export default class IglooScene extends RoomScene {
 
     setSelected(furniture = null) {
         this.selected = furniture
-        this.interface.iglooEdit.setControlsInteractive(furniture == null)
+        if (this.selected && this.selected.y < 186) this.interface.iglooEdit.showMirror(this.selected.id, this.selected.x, this.selected.y)
     }
 
     spawnPuffles(puffleArray) {

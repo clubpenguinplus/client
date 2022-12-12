@@ -67,6 +67,7 @@
             "components": [],
             "x": 0.0014140540733933449,
             "y": -0.0016985858862005642,
+            "visible": false,
             "list": [
                 {
                     "type": "Image",
@@ -88,14 +89,9 @@
                 {
                     "type": "Image",
                     "id": "151d56f4-b183-4ee4-b5a9-78d527173e78",
-                    "label": "button_furniture",
+                    "label": "button_box",
                     "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "cardboardbox",
-                    "Button.callback": "() => this.onFurnitureClick()",
-                    "Button.activeFrame": false,
+                    "components": [],
                     "texture": {
                         "key": "iglooedit-new",
                         "frame": "cardboardbox"

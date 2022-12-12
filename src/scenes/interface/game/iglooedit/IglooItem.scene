@@ -7,8 +7,10 @@
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
-        "borderWidth": 1520,
-        "borderHeight": 960
+        "borderX": -45,
+        "borderY": -43,
+        "borderWidth": 89,
+        "borderHeight": 86
     },
     "displayList": [
         {
@@ -21,7 +23,12 @@
                     "type": "Image",
                     "id": "79c01421-32fb-4cab-99a6-c723585042d1",
                     "label": "bg",
-                    "components": [],
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onOut()",
                     "texture": {
                         "key": "iglooedit-new",
                         "frame": "item-bg"
@@ -39,6 +46,44 @@
                     },
                     "x": 38,
                     "y": -38
+                },
+                {
+                    "type": "Text",
+                    "id": "4fced831-fbbf-4bce-8071-d2ff06d4a6bd",
+                    "label": "quantityText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 38,
+                    "y": -38,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "99",
+                    "fixedWidth": 35,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "18px",
+                    "fontStyle": "bold",
+                    "color": "#464646ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "9c0ca5fd-2167-4af8-9171-2ed4d88edb05",
+                    "label": "cover",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "item-bg"
+                    },
+                    "visible": false,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5,
+                    "tintFill": true
                 }
             ]
         }

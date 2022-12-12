@@ -11,26 +11,31 @@ export default class FurnitureLoader extends BaseLoader {
         this.keyPrefix = 'furniture/sprites/'
     }
 
-    loadFurniture(item, crate = null, x, y, rotation = 1, frame = 1) {
+    loadFurniture(item, crate = null, x, y, rotation = 1, frame = 1, context = null) {
         let key = this.getKey(item)
 
         if (
             this.checkComplete('json', key, () => {
-                this.onFileComplete(key, item, crate, x, y, rotation, frame)
+                this.onFileComplete(key, item, crate, x, y, rotation, frame, context)
             })
         ) {
             return
         }
 
         this.multiatlas(key, `${item}.json`)
+        this.start()
     }
 
-    onFileComplete(key, item, crate, x, y, rotation, frame) {
+    onFileComplete(key, item, crate, x, y, rotation, frame, context) {
         if (!this.textureExists(key)) {
             return
         }
 
-        let sprite = new FurnitureSprite(this.scene, item, crate, x, y, key, rotation, frame)
-        this.scene.add.existing(sprite)
+        if (this.lastFileComplete && Date.now() - this.lastFileComplete < 100) return
+        this.lastFileComplete = Date.now()
+
+        let sprite = new FurnitureSprite(this.shell.room, item, crate, x, y, key, rotation, frame)
+        if (context) context.setSprite(sprite)
+        this.shell.room.add.existing(sprite)
     }
 }

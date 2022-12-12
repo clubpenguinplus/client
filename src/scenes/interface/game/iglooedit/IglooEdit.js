@@ -18,7 +18,7 @@ export default class IglooEdit extends BaseScene {
         /** @type {Phaser.GameObjects.Container} */
         this.controls
         /** @type {Phaser.GameObjects.Image} */
-        this.button_furniture
+        this.button_box
         /** @type {Phaser.GameObjects.Text} */
         this.music
         /** @type {Phaser.GameObjects.Text} */
@@ -47,15 +47,16 @@ export default class IglooEdit extends BaseScene {
 
         // controls
         const controls = this.add.container(0.0014140540733933449, -0.0016985858862005642)
+        controls.visible = false
 
         // button_furniture_catalog
         const button_furniture_catalog = this.add.image(1396.9985859979595, 739.0016987305266, 'iglooedit-new', 'catalog')
         controls.add(button_furniture_catalog)
 
-        // button_furniture
-        const button_furniture = this.add.image(1424.9985859979595, 883.0016987305266, 'iglooedit-new', 'cardboardbox')
-        button_furniture.setOrigin(0.5, 0.584)
-        controls.add(button_furniture)
+        // button_box
+        const button_box = this.add.image(1424.9985859979595, 883.0016987305266, 'iglooedit-new', 'cardboardbox')
+        button_box.setOrigin(0.5, 0.584)
+        controls.add(button_box)
 
         // music_panel
         const music_panel = this.add.image(56.99858599795955, 25.001698730526513, 'iglooedit-new', 'music-panel')
@@ -218,12 +219,6 @@ export default class IglooEdit extends BaseScene {
         button_furniture_catalogButton.callback = () => this.interface.loadExternal('FurnitureCatalog')
         button_furniture_catalogButton.activeFrame = false
 
-        // button_furniture (components)
-        const button_furnitureButton = new Button(button_furniture)
-        button_furnitureButton.spriteName = 'cardboardbox'
-        button_furnitureButton.callback = () => this.onFurnitureClick()
-        button_furnitureButton.activeFrame = false
-
         // music_panel (components)
         new Interactive(music_panel)
 
@@ -286,7 +281,7 @@ export default class IglooEdit extends BaseScene {
         this.defaultControls = defaultControls
         this.button_backyard = button_backyard
         this.controls = controls
-        this.button_furniture = button_furniture
+        this.button_box = button_box
         this.music = music
         this.hide = hide
         this.chooseIgloo = chooseIgloo
@@ -303,6 +298,7 @@ export default class IglooEdit extends BaseScene {
         this.items = []
 
         this.events.on('sleep', () => this.onSleep())
+        this.input.on('pointermove', (pointer) => this.onPointerMove(pointer))
     }
 
     onSleep() {
@@ -397,8 +393,29 @@ export default class IglooEdit extends BaseScene {
             let sprite = new IglooItem(this, xcoord, 85)
             this.controls.add(sprite)
             this.items.push(sprite)
+            sprite.setItem('furniture', item.id, item.quantity)
             xcoord += 120
         }
+    }
+
+    showMirror(id, x, y) {
+        if (!this.mirrorItem) {
+            this.mirrorItem = this.add.image(`furniture/icon/furniture/${id}`, x, y)
+        } else if (this.mirrorItem.id != id) {
+            this.mirrorItem.setTexture(`furniture/icon/furniture/${id}`)
+        }
+        this.mirrorItem.x = x
+        this.mirrorItem.y = y
+        this.mirrorItem.visible = true
+    }
+
+    hideMirror() {
+        if (this.mirrorItem) this.mirrorItem.visible = false
+    }
+
+    onPointerMove(pointer) {
+        if (!this.mirrorItem || !this.mirrorItem.visible) return
+        this.shell.room.onPointerMove(pointer)
     }
 
     /* END-USER-CODE */

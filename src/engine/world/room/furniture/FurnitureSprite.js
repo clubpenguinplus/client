@@ -1,11 +1,11 @@
 export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
-    constructor(scene, crate, x, y, texture, rotation, frame) {
+    constructor(scene, id, crate, x, y, texture, rotation, frame) {
         super(scene, x, y, texture, '1_1_1')
 
-        this.id = parseInt(texture.split('/')[1])
+        this.id = id
         this.frames = this.texture.getFrameNames()
         this.visible = !crate
-        this.crumb = scene.crumbs.furniture[texture.split('/')[1]]
+        this.crumb = scene.crumbs.furniture[id]
         this.isWall = this.crumb.type == 2
         this.trashIcon
 
@@ -14,7 +14,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         // Physics body that the furniture is allowed inside
         this.safeArea = this.isWall ? scene['wall'] : scene['room']
 
-        this.validatePos()
+        //this.validatePos()
         this.depth = this.y - 1 // - 1 to appear behind explosion
 
         // Last safe position
@@ -151,8 +151,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         this.scene.setSelected()
 
         if (!this.isSafe) {
-            if (this.isTrash) return this.sendToTrash()
-
             // Return to safe position
             this.x = this.safeX
             this.y = this.safeY
@@ -207,66 +205,10 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         } else {
             this.alpha = 1
         }
-
-        this.checkTrash()
-    }
-
-    /**
-     * Validates trash position when dragging furniture.
-     */
-    checkTrash() {
-        // Create trash icon if it doesn't exist yet
-        let icon = this.trashIcon ? this.trashIcon : this.addTrashIcon()
-
-        if (this.isTrash) {
-            // Update trash icon
-            icon.visible = true
-            icon.x = this.x + this.frame.width / 2
-            icon.y = this.y
-            icon.depth = this.y + 1
-
-            this.iglooEdit.button_furniture.setFrame('button/furniture-hover')
-        } else {
-            icon.visible = false
-
-            this.iglooEdit.button_furniture.setFrame('button/furniture')
-        }
-    }
-
-    addTrashIcon() {
-        this.trashIcon = this.scene.add.image(0, 0, 'iglooedit', 'remove')
-        this.trashIcon.visible = false
-        return this.trashIcon
-    }
-
-    sendToTrash() {
-        this.trashed = true
-
-        // Update furniture quantity
-        this.scene.quantities[this.id]--
-
-        this.trashIcon.destroy()
-
-        this.scene.tweens.add({
-            targets: this,
-            duration: 600,
-            x: 1430,
-            y: 460,
-            scale: 0.5,
-            ease: this.easeOutBack,
-            onComplete: () => this.onTrashComplete(),
-        })
     }
 
     easeOutBack(value) {
         return Phaser.Math.Easing.Back.Out(value, 0.5)
-    }
-
-    onTrashComplete() {
-        if (this.active) {
-            this.iglooEdit.button_furniture.setFrame('button/furniture')
-            this.destroy()
-        }
     }
 
     /*========== Animations ==========*/

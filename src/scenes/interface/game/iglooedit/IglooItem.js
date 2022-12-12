@@ -1,4 +1,7 @@
-// You can write more code here
+import FurnitureIconLoader from '@engine/loaders/FurnitureIconLoader'
+import FurnitureLoader from '@engine/loaders/FurnitureLoader'
+
+import {SimpleButton, Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -14,19 +17,134 @@ export default class IglooItem extends Phaser.GameObjects.Container {
         const quantity = scene.add.image(38, -38, 'iglooedit-new', 'item-amount')
         this.add(quantity)
 
+        // quantityText
+        const quantityText = scene.add.text(38, -38, '', {})
+        quantityText.setOrigin(0.5, 0.5)
+        quantityText.text = '99'
+        quantityText.setStyle({align: 'center', color: '#464646ff', fixedWidth: 35, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        this.add(quantityText)
+
+        // cover
+        const cover = scene.add.image(0, 0, 'iglooedit-new', 'item-bg')
+        cover.visible = false
+        cover.alpha = 0.5
+        cover.alphaTopLeft = 0.5
+        cover.alphaTopRight = 0.5
+        cover.alphaBottomLeft = 0.5
+        cover.alphaBottomRight = 0.5
+        cover.tintFill = true
+        this.add(cover)
+
+        // bg (components)
+        const bgSimpleButton = new SimpleButton(bg)
+        bgSimpleButton.hoverCallback = () => this.onOver()
+        bgSimpleButton.hoverOutCallback = () => this.onOut()
+
+        // cover (components)
+        new Interactive(cover)
+
+        this.bg = bg
         this.quantity = quantity
+        this.quantityText = quantityText
+        this.cover = cover
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        this.loader = new FurnitureIconLoader(scene)
+        this.furnitureLoader = new FurnitureLoader(scene)
         /* END-USER-CTR-CODE */
     }
 
     /** @type {Phaser.GameObjects.Image} */
+    bg
+    /** @type {Phaser.GameObjects.Image} */
     quantity
+    /** @type {Phaser.GameObjects.Text} */
+    quantityText
+    /** @type {Phaser.GameObjects.Image} */
+    cover
 
     /* START-USER-CODE */
 
-    // Write your code here.
+    setItem(type, id, quantity) {
+        if (this.scene.textures.exists(`furniture/icon/${type}/${id}`)) {
+            return this.addItem(type, id, quantity)
+        }
+        this.loader.loadIcon(type, id, () => {
+            this.addItem(type, id, quantity)
+        })
+    }
+
+    addItem(type, id, quantity) {
+        quantity = this.calculateQuantity(id, quantity)
+        this.item = {type, id, quantity}
+
+        this.icon = this.scene.add.image(0, 0, `furniture/icon/${type}/${id}`)
+        this.icon.scale = 0.5
+        this.add(this.icon)
+
+        if (parseInt(quantity) > 1) {
+            this.quantityText.visible = true
+            this.quantity.visible = true
+            this.quantityText.text = quantity
+        } else {
+            this.quantityText.visible = false
+            this.quantity.visible = false
+            if (parseInt(quantity) < 1) this.cover.visible = true
+        }
+
+        this.bringToTop(this.quantity)
+        this.bringToTop(this.quantityText)
+        this.bringToTop(this.cover)
+
+        this.bg.__SimpleButton.start()
+        this.bg.on('pointerdown', () => this.onClick())
+    }
+
+    calculateQuantity(id, quantity) {
+        for (let f of this.scene.shell.room.furnitureSprites) {
+            if (f.id == id) {
+                quantity--
+            }
+        }
+        return quantity
+    }
+
+    onOver() {
+        this.bg.tintTopLeft = 0xb5b5b5
+        this.bg.tintTopRight = 0xb5b5b5
+        this.bg.tintBottomLeft = 0xb5b5b5
+        this.bg.tintBottomRight = 0xb5b5b5
+    }
+
+    onOut() {
+        this.bg.tintTopLeft = 0xffffff
+        this.bg.tintTopRight = 0xffffff
+        this.bg.tintBottomLeft = 0xffffff
+        this.bg.tintBottomRight = 0xffffff
+    }
+
+    onClick() {
+        let pointer = this.scene.input.activePointer
+        this.furnitureLoader.loadFurniture(this.item.id, null, pointer.x, pointer.y, 1, 1, this)
+
+        this.item.quantity--
+        if (this.item.quantity > 1) {
+            this.quantityText.text = this.item.quantity
+        } else if (this.item.quantity == 1) {
+            this.quantityText.visible = false
+            this.quantity.visible = false
+        } else {
+            this.cover.visible = true
+            this.bringToTop(this.cover)
+        }
+    }
+
+    setSprite(sprite) {
+        let pointer = this.scene.input.activePointer
+        sprite.x = pointer.x
+        sprite.y = pointer.y
+        sprite.hover(pointer)
+    }
 
     /* END-USER-CODE */
 }
