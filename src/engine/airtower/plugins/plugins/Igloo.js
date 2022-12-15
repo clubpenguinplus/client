@@ -7,6 +7,7 @@ export default class Igloo extends Plugin {
             af: this.addFurniture,
             uf: this.updateFlooring,
             gi: this.getIgloos,
+            gid: this.getIglooData,
             gio: this.getIglooOpen,
         }
     }
@@ -59,5 +60,9 @@ export default class Igloo extends Plugin {
         if (args[0]) {
             this.interface.main.playerCard.buttons.enableButton('igloo')
         }
+    }
+
+    getIglooData(args) {
+        this.interface.iglooEdit.createPreview(args)
     }
 }

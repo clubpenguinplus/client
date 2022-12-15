@@ -367,12 +367,35 @@ export default class IglooEdit extends BaseScene {
         this.events.on('sleep', () => this.onSleep())
         this.input.on('pointermove', (pointer) => this.onPointerMove(pointer))
 
-        this.graphics = this.add.graphics()
-        let previewMask = this.add.graphics()
-        previewMask.fillStyle(0xffffff, 0)
-        previewMask.beginPath()
-        previewMask.fillRoundedRect(181, 124, 596, 398, 22)
-        this.previewMask = previewMask.createGeometryMask()
+        let previewMask0 = this.add.graphics()
+        previewMask0.fillStyle(0xffffff, 0)
+        previewMask0.beginPath()
+        previewMask0.fillRoundedRect(181, 124, 596, 398, 22)
+        this.previewMask0 = previewMask0.createGeometryMask()
+
+        let previewMask1 = this.add.graphics()
+        previewMask1.fillStyle(0xffffff, 0)
+        previewMask1.beginPath()
+        previewMask1.fillRoundedRect(100, 626, 298, 188, 10)
+        this.previewMask1 = previewMask1.createGeometryMask()
+
+        let previewMask2 = this.add.graphics()
+        previewMask2.fillStyle(0xffffff, 0)
+        previewMask2.beginPath()
+        previewMask2.fillRoundedRect(441, 626, 298, 188, 10)
+        this.previewMask2 = previewMask2.createGeometryMask()
+
+        let previewMask3 = this.add.graphics()
+        previewMask3.fillStyle(0xffffff, 0)
+        previewMask3.beginPath()
+        previewMask3.fillRoundedRect(782, 626, 298, 188, 10)
+        this.previewMask3 = previewMask3.createGeometryMask()
+
+        let previewMask4 = this.add.graphics()
+        previewMask4.fillStyle(0xffffff, 0)
+        previewMask4.beginPath()
+        previewMask4.fillRoundedRect(1123, 626, 298, 188, 10)
+        this.previewMask4 = previewMask4.createGeometryMask()
     }
 
     onSleep() {
@@ -411,26 +434,98 @@ export default class IglooEdit extends BaseScene {
         this.interface.hideInterface(false)
         this.chooseIgloo.visible = true
 
-        this.preview = this.iglooFactory.createIglooPreview(this.shell.room.argsToData())
-        this.preview.events.once('create', () => {
-            this.preview.cameras.main.setZoom(0.42)
-            this.preview.cameras.main.setOrigin(0, 0)
-            this.preview.cameras.main.x = 160
-            this.preview.cameras.main.y = 122
-            this.preview.cameras.main.setMask(this.previewMask)
-        })
+        this.createPreviews()
+    }
+
+    createPreviews() {
+        this.previews = []
+
+        let main = this.iglooFactory.createIglooPreview(this.shell.room.argsToData(), 0)
+
+        if (main.created) {
+            this.scalePreview(main, 0)
+        } else {
+            main.events.once('create', () => {
+                this.scalePreview(main, 0)
+            })
+        }
+
+        for (let i = 0; i < 4; i++) {
+            this.airtower.sendXt('g#gi', i)
+        }
+
+        this.previews.push(main)
+    }
+
+    createPreview(data) {
+        const id = parseInt(data[0])
+        data[0] = this.shell.client.id + 2000
+
+        let preview = this.iglooFactory.createIglooPreview(data, id + 1)
+        if (preview.created) {
+            this.scalePreview(preview, id + 1)
+        } else {
+            preview.events.once('create', () => {
+                this.scalePreview(preview, id + 1)
+            })
+        }
+
+        this.previews.push(preview)
+    }
+
+    scalePreview(preview, position) {
+        let scale, x, y, mask
+
+        switch (position) {
+            case 0:
+                scale = 0.42
+                x = 160
+                y = 122
+                mask = this.previewMask0
+                break
+            case 1:
+                scale = 0.21
+                x = 100
+                y = 626
+                mask = this.previewMask1
+                break
+            case 2:
+                scale = 0.21
+                x = 441
+                y = 626
+                mask = this.previewMask2
+                break
+            case 3:
+                scale = 0.21
+                x = 782
+                y = 626
+                mask = this.previewMask3
+                break
+            case 4:
+                scale = 0.21
+                x = 1123
+                y = 626
+                mask = this.previewMask4
+                break
+        }
+
+        preview.cameras.main.setZoom(scale)
+        preview.cameras.main.setOrigin(0, 0)
+        preview.cameras.main.x = x
+        preview.cameras.main.y = y
+        preview.cameras.main.setMask(mask)
     }
 
     closeChooseIgloo() {
         this.interface.showInterface()
         this.chooseIgloo.visible = false
 
-        this.preview.stop()
+        this.previews.forEach((preview) => preview.stop())
     }
 
     onEditClick() {
         this.chooseIgloo.visible = false
-        this.preview.stop()
+        this.previews.forEach((preview) => preview.stop())
         this.shell.room.hidePenguins()
         this.shell.room.enableFurnitureInput()
         this.showControls()

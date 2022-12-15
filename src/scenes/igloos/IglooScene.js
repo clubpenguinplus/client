@@ -1,6 +1,6 @@
 import RoomScene from '../rooms/RoomScene'
 
-import FurnitureLoader from '@engine/world/room/loader/FurnitureLoader'
+import FurnitureLoader from '@engine/loaders/FurnitureLoader'
 import FurnitureSprite from '@engine/world/room/furniture/FurnitureSprite'
 import PhysicsMaskGraphics from '@engine/utils/mask/PhysicsMaskGraphics'
 import RoomCrate from './crates/RoomCrate'
@@ -30,16 +30,7 @@ export default class IglooScene extends RoomScene {
     }
 
     init(data) {
-        console.log(data)
-
-        let users = []
-        for (let u of data.args[1].split(',')) {
-            let user = this.shell.arrayToObject(u)
-            users.push(user)
-        }
-
         this.args = this.dataToArgs(data)
-        this.args.users = users
 
         this.id = this.args.igloo
         this.music = this.args.music
@@ -53,18 +44,30 @@ export default class IglooScene extends RoomScene {
     }
 
     dataToArgs(data) {
+        let users = data.args[1].split(',').map((u) => {
+            return this.shell.arrayToObject(u)
+        })
+
+        let furniture = data.args[6].split(',').map((f) => {
+            let [id, furnitureId, x, y, frame, rotation] = f.split('|')
+            return {id, furnitureId, x, y, frame, rotation}
+        })
+
         return {
             igloo: data.args[0],
+            users: users,
             type: data.args[2],
             flooring: data.args[3],
             music: data.args[4],
             location: data.args[5],
-            furniture: data.args[6],
+            furniture: furniture,
         }
     }
 
     argsToData() {
-        return [this.args.igloo, '', this.args.type, this.args.flooring, this.args.music, this.args.location, this.args.furniture]
+        let furniture = this.args.furniture.map((f) => `${f.id}|${f.furnitureId}|${f.x}|${f.y}|${f.frame}|${f.rotation}`).join(',')
+
+        return [this.args.igloo, '', this.args.type, this.args.flooring, this.args.music, this.args.location, furniture]
     }
 
     preload() {
@@ -74,7 +77,7 @@ export default class IglooScene extends RoomScene {
 
         this.load.image(`locations/${this.args.location}`, `/client/media/igloos/locations/sprites/${this.args.location}.webp`)
 
-        if (this.args.flooring) this.loadFlooring(this.args.flooring)
+        if (this.args.flooring && parseInt(this.args.flooring) > 1) this.loadFlooring(this.args.flooring)
     }
 
     get editing() {
@@ -111,6 +114,8 @@ export default class IglooScene extends RoomScene {
         if (this.args.flooring) this.addFlooring(this.args.flooring)
         this.addLocation()
         this.loadAllFurniture()
+
+        this.created = true
 
         if (this.isPreview) return this.scene.bringToTop(this)
 
@@ -225,9 +230,13 @@ export default class IglooScene extends RoomScene {
     loadAllFurniture() {
         for (let f of this.args.furniture) {
             this.updateQuantity(f.furnitureId)
-            this.loader.loadFurniture(f.furnitureId, null, f.x, f.y, f.rotation, f.frame)
+            this.loader.loadFurniture(f.furnitureId, null, f.x, f.y, f.rotation, f.frame, this)
         }
         this.loader.start()
+    }
+
+    setSprite(sprite) {
+        // Empty method to prevent errors
     }
 
     loadFurniture(item) {
@@ -368,6 +377,7 @@ export default class IglooScene extends RoomScene {
     }
 
     stop() {
+        this.created = false
         for (let p in this.puffles) {
             if (this.puffles[p]) this.puffles[p].destroy()
         }

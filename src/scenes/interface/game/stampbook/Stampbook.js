@@ -1586,7 +1586,6 @@ export default class Stampbook extends BaseScene {
         ]
 
         if (this.pageIndex == this.crumbs.stampbook.enabledPages.length - 1) {
-            console.log('last page')
         }
 
         this.stamps = []

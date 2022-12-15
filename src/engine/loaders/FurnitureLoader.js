@@ -31,8 +31,11 @@ export default class FurnitureLoader extends BaseLoader {
             return
         }
 
-        if (this.lastFileComplete && Date.now() - this.lastFileComplete < 100) return
-        this.lastFileComplete = Date.now()
+        if (context.isPreview) {
+            let sprite = new FurnitureSprite(context, item, crate, x, y, key, rotation, frame)
+            context.add.existing(sprite)
+            return
+        }
 
         let sprite = new FurnitureSprite(this.shell.room, item, crate, x, y, key, rotation, frame)
         if (context) context.setSprite(sprite)

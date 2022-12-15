@@ -18,19 +18,18 @@ export default class IglooFactory {
         }
     }
 
-    createIglooPreview(args) {
+    createIglooPreview(args, id) {
         let config = this.igloos[args[2]]
-        console.log(config)
-        config.key = config.key.includes('preview') ? config.key : `${config.key}-preview`
+        let key = `${config.key}-preview-${id}`
 
-        if (config.key in this.scene.manager.keys) {
-            this.scene.start(config.key, {args: args})
+        if (key in this.scene.manager.keys) {
+            this.scene.start(key, {args: args})
 
-            this.shell.scene.bringToTop(config.key)
-            return this.scene.get(config.key)
+            this.shell.scene.bringToTop(key)
+            return this.scene.get(key)
         } else {
-            this.shell.scene.bringToTop(config.key)
-            return this.scene.add(config.key, config.preview, true, {args: args})
+            this.shell.scene.bringToTop(key)
+            return this.scene.add(key, config.preview, true, {args: args})
         }
     }
 }

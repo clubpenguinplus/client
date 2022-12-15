@@ -4,7 +4,7 @@ import IglooScene from '../IglooScene'
 
 export default class Basic extends IglooScene {
     constructor() {
-        super('Basic-preview')
+        super(`Basic-preview-${Date.now()}`)
 
         /** @type {Phaser.GameObjects.Image} */
         this.floor
