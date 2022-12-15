@@ -246,6 +246,62 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "db08563c-adc0-4c34-bee3-7e3d68d3d395",
+                    "label": "volume_down_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.shell.musicController.volumeDown()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": -162,
+                    "y": 8
+                },
+                {
+                    "type": "Image",
+                    "id": "2596a2bc-532e-4604-88ca-cf8202724728",
+                    "label": "volume_down_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "volume-down"
+                    },
+                    "x": -159,
+                    "y": 6
+                },
+                {
+                    "type": "Image",
+                    "id": "32085549-97d1-4df0-af45-69b3871c1170",
+                    "label": "volume_up_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.shell.musicController.volumeUp()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": -162,
+                    "y": -58
+                },
+                {
+                    "type": "Image",
+                    "id": "d6022761-3f37-45fb-ba34-00ae985504d8",
+                    "label": "volume_up_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "volume-up"
+                    },
+                    "x": -162,
+                    "y": -60
                 }
             ]
         }

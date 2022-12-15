@@ -2,6 +2,7 @@ const igloos = {
     1: {
         key: 'Basic',
         scene: require('@igloos/basic/Basic').default,
+        preview: require('@igloos/basic/Basic-preview').default,
         x: 760,
         y: 660,
     },

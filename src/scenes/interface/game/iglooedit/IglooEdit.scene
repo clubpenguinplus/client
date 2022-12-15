@@ -444,9 +444,8 @@
                         "key": "iglooedit-new",
                         "frame": "preview-pane"
                     },
-                    "x": 340,
-                    "y": 744,
-                    "visible": false
+                    "x": 250,
+                    "y": 744
                 },
                 {
                     "type": "Image",
@@ -457,9 +456,8 @@
                         "key": "iglooedit-new",
                         "frame": "plus"
                     },
-                    "x": 340,
-                    "y": 716,
-                    "visible": false
+                    "x": 250,
+                    "y": 716
                 },
                 {
                     "type": "Image",
@@ -470,9 +468,8 @@
                         "key": "iglooedit-new",
                         "frame": "preview-pane"
                     },
-                    "x": 760,
-                    "y": 744,
-                    "visible": false
+                    "x": 590,
+                    "y": 744
                 },
                 {
                     "type": "Image",
@@ -483,9 +480,8 @@
                         "key": "iglooedit-new",
                         "frame": "plus"
                     },
-                    "x": 760,
-                    "y": 716,
-                    "visible": false
+                    "x": 590,
+                    "y": 716
                 },
                 {
                     "type": "Image",
@@ -496,9 +492,8 @@
                         "key": "iglooedit-new",
                         "frame": "preview-pane"
                     },
-                    "x": 1180,
-                    "y": 744,
-                    "visible": false
+                    "x": 930,
+                    "y": 744
                 },
                 {
                     "type": "Image",
@@ -509,9 +504,32 @@
                         "key": "iglooedit-new",
                         "frame": "plus"
                     },
-                    "x": 1180,
-                    "y": 716,
-                    "visible": false
+                    "x": 930,
+                    "y": 716
+                },
+                {
+                    "type": "Image",
+                    "id": "32339297-31da-437e-bfa7-1dc1c429dd85",
+                    "label": "preview_pane_3",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "preview-pane"
+                    },
+                    "x": 1269,
+                    "y": 744
+                },
+                {
+                    "type": "Image",
+                    "id": "d68e1bb0-2291-4361-a441-fb05253ad14a",
+                    "label": "plus_3",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "plus"
+                    },
+                    "x": 1269,
+                    "y": 716
                 },
                 {
                     "type": "Image",
@@ -521,7 +539,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "close-btn",
-                    "Button.callback": "() => {this.chooseIgloo.visible = false}",
+                    "Button.callback": "() => this.closeChooseIgloo()",
                     "texture": {
                         "key": "iglooedit-new",
                         "frame": "close-btn"
@@ -540,6 +558,147 @@
                     },
                     "x": 1475,
                     "y": 44
+                },
+                {
+                    "type": "Text",
+                    "id": "af8baaf1-06f9-447c-ab9f-2e2f51956de7",
+                    "label": "title_3",
+                    "components": [],
+                    "x": 870,
+                    "y": 151,
+                    "originY": 0.5,
+                    "text": "0",
+                    "fixedWidth": 100,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "35px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "72578747-b702-4a4b-91d0-187c4de7944d",
+                    "label": "title_4",
+                    "components": [],
+                    "x": 870,
+                    "y": 114,
+                    "originY": 0.5,
+                    "text": "Grand Total Likes:",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f4aabb71-000f-471b-84d2-a0c7956cc1e1",
+                    "label": "title_5",
+                    "components": [],
+                    "x": 891,
+                    "y": 263,
+                    "originY": 0.5,
+                    "text": "Your current igloo",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "bc3f29e7-9f55-44d1-9c50-1d6aa9ae58e9",
+                    "label": "title_6",
+                    "components": [],
+                    "x": 1060,
+                    "y": 349,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Friends",
+                    "fixedWidth": 100,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "18px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "881d89e4-40bb-43c3-a9e9-1782374fa1be",
+                    "label": "title_7",
+                    "components": [],
+                    "x": 1300,
+                    "y": 349,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Everyone",
+                    "fixedWidth": 100,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "18px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "14acd9f9-a814-4b87-ab59-71b24473f97c",
+                    "label": "title_8",
+                    "components": [],
+                    "x": 944,
+                    "y": 429,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Edit",
+                    "fixedWidth": 100,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "18px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "c19fc21e-b300-4ac9-8e04-324d692058a5",
+                    "label": "title_9",
+                    "components": [],
+                    "x": 1180,
+                    "y": 429,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Igloo Visitors",
+                    "fixedWidth": 250,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "18px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "da6b9a18-c3e7-4138-b933-e03ae4f658b6",
+                    "label": "title_10",
+                    "components": [],
+                    "x": 892,
+                    "y": 507,
+                    "originY": 0.5,
+                    "text": "0",
+                    "fixedWidth": 100,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "e7d69dfd-bf33-457d-90b3-63f085224f61",
+                    "label": "title_11",
+                    "components": [],
+                    "x": 892,
+                    "y": 472,
+                    "originY": 0.5,
+                    "text": "Likes",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#3e83c5ff"
                 }
             ]
         }

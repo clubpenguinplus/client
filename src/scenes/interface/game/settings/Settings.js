@@ -101,6 +101,22 @@ export default class Settings extends BaseContainer {
         music_1.setStyle({color: '#000000ff', fixedWidth: 348, fontFamily: 'Burbank Small', fontSize: '32px'})
         this.add(music_1)
 
+        // volume_down_button
+        const volume_down_button = scene.add.image(-162, 8, 'main', 'blue-button')
+        this.add(volume_down_button)
+
+        // volume_down_icon
+        const volume_down_icon = scene.add.image(-159, 6, 'main', 'volume-down')
+        this.add(volume_down_icon)
+
+        // volume_up_button
+        const volume_up_button = scene.add.image(-162, -58, 'main', 'blue-button')
+        this.add(volume_up_button)
+
+        // volume_up_icon
+        const volume_up_icon = scene.add.image(-162, -60, 'main', 'volume-up')
+        this.add(volume_up_icon)
+
         // block (components)
         new Interactive(block)
 
@@ -127,6 +143,16 @@ export default class Settings extends BaseContainer {
         // checkbox_1 (components)
         const checkbox_1SimpleButton = new SimpleButton(checkbox_1)
         checkbox_1SimpleButton.callback = () => this.onMuteAllClick()
+
+        // volume_down_button (components)
+        const volume_down_buttonButton = new Button(volume_down_button)
+        volume_down_buttonButton.spriteName = 'blue-button'
+        volume_down_buttonButton.callback = () => this.shell.musicController.volumeDown()
+
+        // volume_up_button (components)
+        const volume_up_buttonButton = new Button(volume_up_button)
+        volume_up_buttonButton.spriteName = 'blue-button'
+        volume_up_buttonButton.callback = () => this.shell.musicController.volumeUp()
 
         this.checkbox = checkbox
         this.checkbox_1 = checkbox_1

@@ -2,6 +2,8 @@ import BaseScene from '@scenes/base/BaseScene'
 
 import {Button, Interactive, ShowHint, SimpleButton, LocalisedString} from '@components/components'
 
+import IglooFactory from '@engine/world/room/IglooFactory'
+
 import IglooMusic from './igloomusic/IglooMusic'
 import IglooItem from './IglooItem'
 
@@ -160,34 +162,36 @@ export default class IglooEdit extends BaseScene {
         chooseIgloo.add(toggler)
 
         // preview_pane
-        const preview_pane = this.add.image(340, 744, 'iglooedit-new', 'preview-pane')
-        preview_pane.visible = false
+        const preview_pane = this.add.image(250, 744, 'iglooedit-new', 'preview-pane')
         chooseIgloo.add(preview_pane)
 
         // plus
-        const plus = this.add.image(340, 716, 'iglooedit-new', 'plus')
-        plus.visible = false
+        const plus = this.add.image(250, 716, 'iglooedit-new', 'plus')
         chooseIgloo.add(plus)
 
         // preview_pane_1
-        const preview_pane_1 = this.add.image(760, 744, 'iglooedit-new', 'preview-pane')
-        preview_pane_1.visible = false
+        const preview_pane_1 = this.add.image(590, 744, 'iglooedit-new', 'preview-pane')
         chooseIgloo.add(preview_pane_1)
 
         // plus_1
-        const plus_1 = this.add.image(760, 716, 'iglooedit-new', 'plus')
-        plus_1.visible = false
+        const plus_1 = this.add.image(590, 716, 'iglooedit-new', 'plus')
         chooseIgloo.add(plus_1)
 
         // preview_pane_2
-        const preview_pane_2 = this.add.image(1180, 744, 'iglooedit-new', 'preview-pane')
-        preview_pane_2.visible = false
+        const preview_pane_2 = this.add.image(930, 744, 'iglooedit-new', 'preview-pane')
         chooseIgloo.add(preview_pane_2)
 
         // plus_2
-        const plus_2 = this.add.image(1180, 716, 'iglooedit-new', 'plus')
-        plus_2.visible = false
+        const plus_2 = this.add.image(930, 716, 'iglooedit-new', 'plus')
         chooseIgloo.add(plus_2)
+
+        // preview_pane_3
+        const preview_pane_3 = this.add.image(1269, 744, 'iglooedit-new', 'preview-pane')
+        chooseIgloo.add(preview_pane_3)
+
+        // plus_3
+        const plus_3 = this.add.image(1269, 716, 'iglooedit-new', 'plus')
+        chooseIgloo.add(plus_3)
 
         // close_btn_1
         const close_btn_1 = this.add.image(1475, 45, 'iglooedit-new', 'close-btn')
@@ -196,6 +200,69 @@ export default class IglooEdit extends BaseScene {
         // x_1
         const x_1 = this.add.image(1475, 44, 'iglooedit-new', 'x')
         chooseIgloo.add(x_1)
+
+        // title_3
+        const title_3 = this.add.text(870, 151, '', {})
+        title_3.setOrigin(0, 0.5)
+        title_3.text = '0'
+        title_3.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        chooseIgloo.add(title_3)
+
+        // title_4
+        const title_4 = this.add.text(870, 114, '', {})
+        title_4.setOrigin(0, 0.5)
+        title_4.text = 'Grand Total Likes:'
+        title_4.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '28px'})
+        chooseIgloo.add(title_4)
+
+        // title_5
+        const title_5 = this.add.text(891, 263, '', {})
+        title_5.setOrigin(0, 0.5)
+        title_5.text = 'Your current igloo'
+        title_5.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        chooseIgloo.add(title_5)
+
+        // title_6
+        const title_6 = this.add.text(1060, 349, '', {})
+        title_6.setOrigin(0.5, 0.5)
+        title_6.text = 'Friends'
+        title_6.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        chooseIgloo.add(title_6)
+
+        // title_7
+        const title_7 = this.add.text(1300, 349, '', {})
+        title_7.setOrigin(0.5, 0.5)
+        title_7.text = 'Everyone'
+        title_7.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        chooseIgloo.add(title_7)
+
+        // title_8
+        const title_8 = this.add.text(944, 429, '', {})
+        title_8.setOrigin(0.5, 0.5)
+        title_8.text = 'Edit'
+        title_8.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        chooseIgloo.add(title_8)
+
+        // title_9
+        const title_9 = this.add.text(1180, 429, '', {})
+        title_9.setOrigin(0.5, 0.5)
+        title_9.text = 'Igloo Visitors'
+        title_9.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        chooseIgloo.add(title_9)
+
+        // title_10
+        const title_10 = this.add.text(892, 507, '', {})
+        title_10.setOrigin(0, 0.5)
+        title_10.text = '0'
+        title_10.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        chooseIgloo.add(title_10)
+
+        // title_11
+        const title_11 = this.add.text(892, 472, '', {})
+        title_11.setOrigin(0, 0.5)
+        title_11.text = 'Likes'
+        title_11.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '26px'})
+        chooseIgloo.add(title_11)
 
         // lists
         const categories = [all, location, igloos, flooring, room, wall, pets]
@@ -274,9 +341,7 @@ export default class IglooEdit extends BaseScene {
         // close_btn_1 (components)
         const close_btn_1Button = new Button(close_btn_1)
         close_btn_1Button.spriteName = 'close-btn'
-        close_btn_1Button.callback = () => {
-            this.chooseIgloo.visible = false
-        }
+        close_btn_1Button.callback = () => this.closeChooseIgloo()
 
         this.defaultControls = defaultControls
         this.button_backyard = button_backyard
@@ -297,8 +362,17 @@ export default class IglooEdit extends BaseScene {
 
         this.items = []
 
+        this.iglooFactory = new IglooFactory(this.shell)
+
         this.events.on('sleep', () => this.onSleep())
         this.input.on('pointermove', (pointer) => this.onPointerMove(pointer))
+
+        this.graphics = this.add.graphics()
+        let previewMask = this.add.graphics()
+        previewMask.fillStyle(0xffffff, 0)
+        previewMask.beginPath()
+        previewMask.fillRoundedRect(181, 124, 596, 398, 22)
+        this.previewMask = previewMask.createGeometryMask()
     }
 
     onSleep() {
@@ -336,10 +410,27 @@ export default class IglooEdit extends BaseScene {
     chooseIglooButton() {
         this.interface.hideInterface(false)
         this.chooseIgloo.visible = true
+
+        this.preview = this.iglooFactory.createIglooPreview(this.shell.room.argsToData())
+        this.preview.events.once('create', () => {
+            this.preview.cameras.main.setZoom(0.42)
+            this.preview.cameras.main.setOrigin(0, 0)
+            this.preview.cameras.main.x = 160
+            this.preview.cameras.main.y = 122
+            this.preview.cameras.main.setMask(this.previewMask)
+        })
+    }
+
+    closeChooseIgloo() {
+        this.interface.showInterface()
+        this.chooseIgloo.visible = false
+
+        this.preview.stop()
     }
 
     onEditClick() {
         this.chooseIgloo.visible = false
+        this.preview.stop()
         this.shell.room.hidePenguins()
         this.shell.room.enableFurnitureInput()
         this.showControls()

@@ -59,7 +59,8 @@ export default class MusicController extends Phaser.Scene {
             return
         }
 
-        this.mtrack = this.sound.play(key, {loop: true, volume: localStorage.musicVolume / 100 || 0.5})
+        this.mtrack = this.sound.add(key, {loop: true, volume: localStorage.musicVolume || 0.5})
+        this.mtrack.play()
         this.musicPlaying = key
     }
 
@@ -67,7 +68,7 @@ export default class MusicController extends Phaser.Scene {
         // Rate limit to 20 sounds per second
         if (this.lastPlayed[key] && Date.now() - this.lastPlayed[key] < 50) return
         this.lastPlayed[key] = Date.now()
-        this.sound.add(key, {loop: loop, volume: localStorage.musicVolume / 100 || 0.5}).play()
+        this.sound.add(key, {loop: loop, volume: localStorage.musicVolume || 0.5}).play()
         if (loop) {
             this.sfxLooping.push(key)
         }
@@ -111,5 +112,19 @@ export default class MusicController extends Phaser.Scene {
         setTimeout(() => {
             this.mtrack.onStop(this.playNext, this)
         }, 20000)
+    }
+
+    volumeUp() {
+        if (!localStorage.musicVolume) localStorage.musicVolume = 0.5
+        localStorage.musicVolume = parseFloat(localStorage.musicVolume) + 0.1 <= 1 ? parseFloat(localStorage.musicVolume) + 0.1 : 1
+
+        if (this.mtrack) this.mtrack.setVolume(localStorage.musicVolume)
+    }
+
+    volumeDown() {
+        if (!localStorage.musicVolume) localStorage.musicVolume = 0.5
+        localStorage.musicVolume = parseFloat(localStorage.musicVolume) - 0.1 >= 0.1 ? parseFloat(localStorage.musicVolume) - 0.1 : 0.1
+
+        if (this.mtrack) this.mtrack.setVolume(localStorage.musicVolume)
     }
 }

@@ -36,6 +36,8 @@ export default class RoomScene extends BaseScene {
         this._create()
         this.sortChildren()
 
+        if (this.isPreview) return
+
         if (this.roomPhysics) this.addPhysics()
         if (this.roomAnims) this.addAnims()
         this.addInput()

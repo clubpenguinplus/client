@@ -30,23 +30,17 @@ export default class IglooScene extends RoomScene {
     }
 
     init(data) {
+        console.log(data)
+
         let users = []
         for (let u of data.args[1].split(',')) {
             let user = this.shell.arrayToObject(u)
             users.push(user)
         }
 
-        console.log(users)
+        this.args = this.dataToArgs(data)
+        this.args.users = users
 
-        this.args = {
-            igloo: data.args[0],
-            users: users,
-            type: data.args[2],
-            flooring: data.args[3],
-            music: data.args[4],
-            location: data.args[5],
-            furniture: data.args[6],
-        }
         this.id = this.args.igloo
         this.music = this.args.music
 
@@ -56,6 +50,21 @@ export default class IglooScene extends RoomScene {
         this.quantities = {}
 
         this.events.once('shutdown', () => this.onShutdown())
+    }
+
+    dataToArgs(data) {
+        return {
+            igloo: data.args[0],
+            type: data.args[2],
+            flooring: data.args[3],
+            music: data.args[4],
+            location: data.args[5],
+            furniture: data.args[6],
+        }
+    }
+
+    argsToData() {
+        return [this.args.igloo, '', this.args.type, this.args.flooring, this.args.music, this.args.location, this.args.furniture]
     }
 
     preload() {
@@ -86,6 +95,7 @@ export default class IglooScene extends RoomScene {
     }
 
     onShutdown() {
+        if (this.isPreview) return
         this.interface.hideIglooEdit()
     }
 
@@ -101,6 +111,8 @@ export default class IglooScene extends RoomScene {
         if (this.args.flooring) this.addFlooring(this.args.flooring)
         this.addLocation()
         this.loadAllFurniture()
+
+        if (this.isPreview) return this.scene.bringToTop(this)
 
         this.shell.airtower.sendXt('p#pg', this.id)
 
@@ -131,6 +143,8 @@ export default class IglooScene extends RoomScene {
 
         this.flooring = this.add.image(0, 0, `flooring/${flooring}`, `${this.floorFrame}_1`)
         this.flooring.depth = -1
+
+        if (this.isPreview) return
 
         if (this.roomPhysics.mask) {
             let mask = this.createMask()
