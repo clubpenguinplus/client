@@ -188,8 +188,8 @@
                 "key": "mine",
                 "frame": "cartanim0001"
             },
-            "x": 1384,
-            "y": 335,
+            "x": 1369,
+            "y": 319,
             "visible": false
         },
         {
@@ -501,6 +501,19 @@
             "alphaTopRight": 0,
             "alphaBottomLeft": 0,
             "alphaBottomRight": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "9d82371d-189d-44f9-9a33-9eed8dc830f2",
+            "label": "candleflame",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "candleflame0001"
+            },
+            "x": 295,
+            "y": 198
         }
     ],
     "plainObjects": [],

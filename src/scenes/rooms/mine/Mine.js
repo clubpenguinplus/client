@@ -78,7 +78,7 @@ export default class Mine extends RoomScene {
         const backcart = this.add.image(1144, 297, "mine", "backcart");
 
         // cartanim
-        const cartanim = this.add.sprite(1384, 335, "mine", "cartanim0001");
+        const cartanim = this.add.sprite(1369, 319, "mine", "cartanim0001");
         cartanim.visible = false;
 
         // rightfg
@@ -164,6 +164,9 @@ export default class Mine extends RoomScene {
         stairhit.alphaBottomLeft = 0;
         stairhit.alphaBottomRight = 0;
 
+        // candleflame
+        const candleflame = this.add.sprite(295, 198, "mine", "candleflame0001");
+
         // lists
         const sort = [rightfg, cartsurfer_en, backcart, frontcart, minefg, rightstairs, midrock, midleftrocktwo, midleftrockthree, pufflebedfront, stairhit_hover];
 
@@ -213,6 +216,7 @@ export default class Mine extends RoomScene {
         this.carthitbox = carthitbox;
         this.blackpuffle = blackpuffle;
         this.boardhit = boardhit;
+        this.candleflame = candleflame;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -234,6 +238,8 @@ export default class Mine extends RoomScene {
     blackpuffle;
     /** @type {Phaser.GameObjects.Image} */
     boardhit;
+    /** @type {Phaser.GameObjects.Sprite} */
+    candleflame;
     /** @type {Phaser.GameObjects.Image[]} */
     sort;
 
@@ -244,6 +250,7 @@ export default class Mine extends RoomScene {
     create() {
         super.create()
         this.blackpuffle.play('mine-blackpuffle')
+        this.candleflame.play('mine-candle')
     }
 
     cartOver() {
