@@ -161,8 +161,10 @@
                 "key": "mine",
                 "frame": "pufflerescue_en"
             },
-            "x": 448,
-            "y": 90
+            "x": 456,
+            "y": 89,
+            "scaleX": 0.4660050366312686,
+            "scaleY": 0.4660050366312686
         },
         {
             "type": "Image",

@@ -159,11 +159,7 @@
                     "id": "f96aae91-1544-4534-ac8e-9c16c961f5d4",
                     "label": "register",
                     "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "register",
-                    "Button.activeFrame": false,
+                    "components": [],
                     "texture": {
                         "key": "shop",
                         "frame": "register0001"

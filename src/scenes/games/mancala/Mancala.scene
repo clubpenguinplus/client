@@ -143,7 +143,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(7)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(7)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(7)",
+                    "SimpleButton.callback": "() => null",
                     "texture": {
                         "key": "mancala",
                         "frame": "end-hitbox0004"
@@ -165,7 +165,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(6)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(6)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(6)",
+                    "SimpleButton.callback": "() => this.moveStones(1, 6)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -187,7 +187,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(5)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(5)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(5)",
+                    "SimpleButton.callback": "() => this.moveStones(1, 5)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -209,7 +209,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(3)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(3)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(3)",
+                    "SimpleButton.callback": "() => this.moveStones(1, 3)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -231,7 +231,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(4)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(4)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(4)",
+                    "SimpleButton.callback": "() => this.moveStones(1, 4)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -253,7 +253,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(1)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(1)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(1)",
+                    "SimpleButton.callback": "() => this.moveStones(1, 1)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -275,7 +275,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(2)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(2)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(2)",
+                    "SimpleButton.callback": "() => this.moveStones(1, 2)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -297,7 +297,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(8)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(8)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(8)",
+                    "SimpleButton.callback": "() => this.moveStones(0, 8)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -319,7 +319,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(12)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(12)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(12)",
+                    "SimpleButton.callback": "() => this.moveStones(0, 12)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -341,7 +341,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(13)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(13)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(13)",
+                    "SimpleButton.callback": "() => this.moveStones(0, 13)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -363,7 +363,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(10)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(10)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(10)",
+                    "SimpleButton.callback": "() => this.moveStones(0, 10)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -385,7 +385,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(11)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(11)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(11)",
+                    "SimpleButton.callback": "() => this.moveStones(0, 11)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -407,7 +407,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(9)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(9)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(9)",
+                    "SimpleButton.callback": "() => this.moveStones(0, 9)",
                     "texture": {
                         "key": "mancala",
                         "frame": "cup_hitbox0004"
@@ -429,7 +429,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onHitboxOver(0)",
                     "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(0)",
-                    "SimpleButton.callback": "() => this.onHitboxDown(0)",
+                    "SimpleButton.callback": "() => null",
                     "texture": {
                         "key": "mancala",
                         "frame": "end-hitbox0004"
