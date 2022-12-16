@@ -173,19 +173,6 @@
                     "scaleY": 0.33,
                     "angle": -49.99999999999994,
                     "flipX": true
-                },
-                {
-                    "type": "Text",
-                    "id": "0157fd7b-ecd4-4891-9018-d5249710ff98",
-                    "label": "text",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 637,
-                    "y": 900,
-                    "text": "Your Coins: 1000000",
-                    "fontFamily": "Burbank",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
                 }
             ]
         },
@@ -204,6 +191,19 @@
             },
             "x": 1036,
             "y": 96
+        },
+        {
+            "type": "Text",
+            "id": "0157fd7b-ecd4-4891-9018-d5249710ff98",
+            "label": "text",
+            "scope": "CLASS",
+            "components": [],
+            "x": 637,
+            "y": 900,
+            "text": "Your Coins: 1000000",
+            "fontFamily": "Burbank",
+            "fontSize": "32px",
+            "color": "#000000ff"
         }
     ],
     "plainObjects": [],

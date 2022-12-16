@@ -93,14 +93,13 @@ export default class Hydro extends Book {
         hook_1.flipX = true;
         page1.add(hook_1);
 
+        // exit
+        const exit = this.add.image(1036, 96, "dockupgrade", "exit");
+
         // text
         const text = this.add.text(637, 900, "", {});
         text.text = "Your Coins: 1000000";
         text.setStyle({ "color": "#000000ff", "fontFamily": "Burbank", "fontSize": "32px" });
-        page1.add(text);
-
-        // exit
-        const exit = this.add.image(1036, 96, "dockupgrade", "exit");
 
         // lists
         const pages = [page1];

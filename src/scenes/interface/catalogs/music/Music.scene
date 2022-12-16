@@ -7,10 +7,9 @@
         "snapHeight": 260,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "News",
+        "superClassName": "Book",
         "preloadPackFiles": [
-            "client/client/media/interface/catalogs/music/music-pack.json",
-            "client/client/media/interface/catalogs/catalogs-master-pack.json"
+            "client/client/media/interface/catalogs/music/music-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Music",
@@ -38,212 +37,584 @@
             "id": "2147c74d-be30-4de0-bb64-56c10d927575",
             "label": "page1",
             "components": [],
+            "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
-                    "label": "musiccatalog",
+                    "id": "179af934-9256-4d6e-8cfa-828dddb86fce",
+                    "label": "page",
                     "components": [],
                     "texture": {
-                        "key": "musiccatalog"
+                        "key": "music",
+                        "frame": "page1"
                     },
                     "x": 760,
-                    "y": 460
+                    "y": 480
                 },
                 {
                     "type": "Image",
-                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
-                    "label": "close_btn",
+                    "id": "90858a6c-7feb-43a5-b51d-b79637b1792b",
+                    "label": "nextpage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "nextpage"
+                    },
+                    "x": 1062,
+                    "y": 768
+                },
+                {
+                    "type": "Image",
+                    "id": "c374b312-1d0b-4d42-992d-a78db80b1843",
+                    "label": "exit_1",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => { this.close() }",
+                    "SimpleButton.callback": "() => this.scene.stop()",
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "closebtn"
+                        "key": "music",
+                        "frame": "exit"
                     },
-                    "x": 1167,
-                    "y": 142
+                    "x": 1126,
+                    "y": 86
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f5673b0d-a373-4e97-a1c5-2024cf12df80",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "542d507e-e518-4df0-847f-c26bb7536573",
+                    "label": "page2body",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "page2"
+                    },
+                    "x": 760,
+                    "y": 480
                 },
                 {
                     "type": "Image",
-                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
-                    "label": "buy_bass",
+                    "id": "4dcc32ee-e86c-4a7f-811f-9ccc7b89b67d",
+                    "label": "nextpage1",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(729)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "music",
+                        "frame": "nextpage"
                     },
-                    "x": 583,
-                    "y": 351
+                    "x": 1381,
+                    "y": 767
                 },
                 {
                     "type": "Image",
-                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
-                    "label": "buy_acoustic",
+                    "id": "98fa10e3-67fd-4056-93c4-0f41fcb123c9",
+                    "label": "backpage",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(234)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "music",
+                        "frame": "backpage"
                     },
-                    "x": 1070,
-                    "y": 351
+                    "x": 139,
+                    "y": 767
                 },
                 {
                     "type": "Image",
-                    "id": "1162bc57-8916-40cc-80f4-ad2fb242601c",
-                    "label": "buy_tuba",
+                    "id": "ab19944e-0d4a-46ec-83d7-01bf5c70d71d",
+                    "label": "button",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
+                    "Button.spriteName": "button",
                     "Button.callback": "() => this.interface.prompt.showItem(293)",
-                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "music",
+                        "frame": "button"
                     },
-                    "x": 422,
-                    "y": 534
+                    "x": 262,
+                    "y": 218
                 },
                 {
                     "type": "Image",
-                    "id": "9bcb71ea-c922-4247-b896-a2d2f72a1fac",
-                    "label": "buy_drumsticks",
+                    "id": "7556eec0-f037-45d3-b65f-8102686e62ad",
+                    "label": "button_1",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(340)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
-                    },
-                    "x": 1085,
-                    "y": 534
-                },
-                {
-                    "type": "Image",
-                    "id": "62a907f3-3088-43c4-8514-edd36e48c39c",
-                    "label": "buy_red_elec",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buybtn",
+                    "Button.spriteName": "button",
                     "Button.callback": "() => this.interface.prompt.showItem(233)",
-                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "music",
+                        "frame": "button"
                     },
-                    "x": 394,
-                    "y": 702
+                    "x": 262,
+                    "y": 480
                 },
                 {
                     "type": "Image",
-                    "id": "55061804-3a4e-43b5-a15d-c8cb7433bbdf",
-                    "label": "buy_snare",
+                    "id": "29c8aa73-a632-42f0-9e87-d823752da163",
+                    "label": "button_2",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(180)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(5063)",
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "music",
+                        "frame": "button"
                     },
-                    "x": 878,
-                    "y": 702
+                    "x": 433,
+                    "y": 716
                 },
                 {
-                    "type": "Text",
-                    "id": "19d85cd6-5806-474f-b1c6-1bf53334821d",
-                    "label": "text_2_3",
-                    "components": [],
-                    "x": 844,
-                    "y": 683,
-                    "text": "380",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
+                    "type": "Image",
+                    "id": "495c8331-5e2d-434e-87be-f1ec10848a1e",
+                    "label": "exit",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "exit"
+                    },
+                    "x": 1445,
+                    "y": 82
                 },
                 {
-                    "type": "Text",
-                    "id": "ffb388b5-e805-4676-824d-f7eff7bf212a",
-                    "label": "text_2_3_1",
+                    "type": "Container",
+                    "id": "7a9594be-3d57-43e7-9ba2-157f9f126b6a",
+                    "label": "mic",
                     "components": [],
-                    "x": 355,
-                    "y": 683,
-                    "text": "350",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "04946340-bd9f-4f1d-a05b-b0341c5fe6af",
+                            "label": "secretholder2",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "secretholder"
+                            },
+                            "x": 776,
+                            "y": 485,
+                            "scaleX": 0.8503262048913669,
+                            "scaleY": 0.8503262048913669
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1b6d7d65-ef94-4675-92ce-065c441d31fd",
+                            "label": "secretwrap2",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "secretwrap"
+                            },
+                            "x": 775,
+                            "y": 490
+                        },
+                        {
+                            "type": "Image",
+                            "id": "fe080105-57b5-4de9-8e42-14872ff51436",
+                            "label": "exit_4",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.mic.visible = false",
+                            "texture": {
+                                "key": "music",
+                                "frame": "exit"
+                            },
+                            "x": 1031,
+                            "y": 246
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f5c084df-e16a-4304-b31e-49607aff7895",
+                            "label": "secrettext2",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "secrettext"
+                            },
+                            "x": 661,
+                            "y": 286,
+                            "scaleX": 0.42972712117801115,
+                            "scaleY": 0.42972712117801115
+                        },
+                        {
+                            "type": "Image",
+                            "id": "01a0c944-5c6f-49ba-9d4b-299866717474",
+                            "label": "mic_1",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "mic"
+                            },
+                            "x": 780,
+                            "y": 468,
+                            "flipX": true
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ac8f2114-d58f-4e47-b159-9c147036c2fc",
+                            "label": "button_10",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "button",
+                            "Button.callback": "() => this.interface.prompt.showItem(732)",
+                            "texture": {
+                                "key": "music",
+                                "frame": "button"
+                            },
+                            "x": 763,
+                            "y": 610
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4a245103-094d-42d7-bb53-90fcc52b5195",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8a50ddf9-ee47-44a8-a911-b4f048090628",
+                    "label": "page3body",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "page3"
+                    },
+                    "x": 760,
+                    "y": 480
                 },
                 {
-                    "type": "Text",
-                    "id": "99abb099-249a-48d4-b4d9-a97cdda2d800",
-                    "label": "text_2_3_1_1",
-                    "components": [],
-                    "x": 1054,
-                    "y": 517,
-                    "text": "120",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
+                    "type": "Image",
+                    "id": "934856e6-137f-4858-9ebb-f043fe5f2995",
+                    "label": "nextpage3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "nextpage"
+                    },
+                    "x": 1381,
+                    "y": 767
                 },
                 {
-                    "type": "Text",
-                    "id": "0f85516c-b507-4ef3-9e05-ee51f604ecd1",
-                    "label": "text_2_3_1_1_1",
-                    "components": [],
-                    "x": 387,
-                    "y": 517,
-                    "text": "350",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
+                    "type": "Image",
+                    "id": "e4262946-32d5-4d40-93b1-43be0d7c5e46",
+                    "label": "backpage3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "backpage"
+                    },
+                    "x": 139,
+                    "y": 767
                 },
                 {
-                    "type": "Text",
-                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
-                    "label": "text_2_3_1_1_1_1",
-                    "components": [],
-                    "x": 550,
-                    "y": 333,
-                    "text": "300",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
+                    "type": "Image",
+                    "id": "74957c8c-a930-4182-8ff1-149a4935b526",
+                    "label": "button2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(729)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 312,
+                    "y": 255
                 },
                 {
-                    "type": "Text",
-                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
-                    "label": "text_2_3_1_1_1_1_1",
+                    "type": "Image",
+                    "id": "e440282e-a6c1-4255-8367-699e441bfa47",
+                    "label": "button_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(5066)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 853,
+                    "y": 217
+                },
+                {
+                    "type": "Image",
+                    "id": "3d428144-beee-4277-8f42-7f60495f9292",
+                    "label": "button_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(5064)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 475,
+                    "y": 803
+                },
+                {
+                    "type": "Image",
+                    "id": "966a2ac9-de5d-486d-b8e2-272d5916de86",
+                    "label": "exit3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "exit"
+                    },
+                    "x": 1445,
+                    "y": 82
+                },
+                {
+                    "type": "Image",
+                    "id": "9649ac7d-b060-4ca8-94b5-b25a512ec3a4",
+                    "label": "button_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(234)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 1071,
+                    "y": 796
+                },
+                {
+                    "type": "Image",
+                    "id": "576fe936-fbba-4aa3-93e4-b7625a8a302c",
+                    "label": "button_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(5014)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 1138,
+                    "y": 448
+                },
+                {
+                    "type": "Image",
+                    "id": "3b82c34c-3593-464c-b787-aec965080dd0",
+                    "label": "button_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(340)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 1051,
+                    "y": 249
+                },
+                {
+                    "type": "Image",
+                    "id": "921459d5-6343-45b8-84d1-4cbd779bc218",
+                    "label": "button_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.interface.prompt.showItem(180)",
+                    "texture": {
+                        "key": "music",
+                        "frame": "button"
+                    },
+                    "x": 1256,
+                    "y": 183
+                },
+                {
+                    "type": "Container",
+                    "id": "810a1a8e-af7a-45ee-93b6-f3e3425f945f",
+                    "label": "violin",
                     "components": [],
-                    "x": 1039,
-                    "y": 333,
-                    "text": "300",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9679f592-99e0-476e-96bf-f9fd00fbf16d",
+                            "label": "secretholder",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "secretholder"
+                            },
+                            "x": 776,
+                            "y": 485,
+                            "scaleX": 0.8503262048913669,
+                            "scaleY": 0.8503262048913669
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4386d88a-1d5f-492d-9c9a-5101efdf9c5d",
+                            "label": "secretwrap",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "secretwrap"
+                            },
+                            "x": 775,
+                            "y": 490
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9d2718a7-dfdf-4d7c-b3bc-946fd23fe993",
+                            "label": "exit_2",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.violin.visible = false",
+                            "texture": {
+                                "key": "music",
+                                "frame": "exit"
+                            },
+                            "x": 1031,
+                            "y": 246
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d139f0fc-bee3-478e-9eb7-5ba1476c411a",
+                            "label": "secrettext",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "secrettext"
+                            },
+                            "x": 661,
+                            "y": 286,
+                            "scaleX": 0.42972712117801115,
+                            "scaleY": 0.42972712117801115
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6ea49a81-9d9e-481d-bf3e-719750880bf1",
+                            "label": "violin_1",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "violin"
+                            },
+                            "x": 780,
+                            "y": 468,
+                            "angle": 32
+                        },
+                        {
+                            "type": "Image",
+                            "id": "a3f1df47-dffc-433c-9b28-e2404dbeab35",
+                            "label": "button_9",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "button",
+                            "Button.callback": "() => this.interface.prompt.showItem(343)",
+                            "texture": {
+                                "key": "music",
+                                "frame": "button"
+                            },
+                            "x": 763,
+                            "y": 610
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "d9fddddb-cca3-43df-82b7-7829ee7ac05f",
+            "label": "page4",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "4b946e3c-b6e6-4e20-a847-766e7d8a8f2f",
+                    "label": "page4body",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "page4"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "eb346540-034c-4dcb-9c92-9e6d1734aff2",
+                    "label": "exit_5",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "exit"
+                    },
+                    "x": 1150,
+                    "y": 92
+                },
+                {
+                    "type": "Image",
+                    "id": "69a3e6f5-b840-4692-bc4f-369d2a88d216",
+                    "label": "backpage_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "music",
+                        "frame": "backpage"
+                    },
+                    "x": 528,
+                    "y": 770
                 }
             ]
         }
@@ -260,7 +631,10 @@
             "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
             "label": "pages",
             "objectIds": [
-                "2147c74d-be30-4de0-bb64-56c10d927575"
+                "2147c74d-be30-4de0-bb64-56c10d927575",
+                "f5673b0d-a373-4e97-a1c5-2024cf12df80",
+                "4a245103-094d-42d7-bb53-90fcc52b5195",
+                "d9fddddb-cca3-43df-82b7-7829ee7ac05f"
             ]
         }
     ]

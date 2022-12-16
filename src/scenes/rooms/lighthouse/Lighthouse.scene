@@ -167,7 +167,7 @@
             ],
             "Zone.hoverCallback": "() => this.onInstrumentsOver()",
             "Zone.hoverOutCallback": "() => this.onInstrumentsOut()",
-            "Zone.callback": "() => this.interface.loadExternal(\"lighthousehouse\")",
+            "Zone.callback": "() => this.interface.loadExternal(\"Music\")",
             "x": 1183,
             "y": 565,
             "alpha": 0.5,
@@ -260,6 +260,7 @@
                 "Button"
             ],
             "Button.spriteName": "book",
+            "Button.callback": "() => this.interface.loadExternal(\"Music\")",
             "Button.activeFrame": false,
             "texture": {
                 "key": "lighthouse",
