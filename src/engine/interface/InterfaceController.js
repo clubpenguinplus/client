@@ -90,6 +90,7 @@ export default class InterfaceController extends BaseScene {
 
     hideIglooEdit() {
         if (this.iglooEdit && this.iglooEdit.scene.isActive()) {
+            this.iglooEdit.closeChooseIgloo()
             this.scene.sleep('IglooEdit')
         }
     }

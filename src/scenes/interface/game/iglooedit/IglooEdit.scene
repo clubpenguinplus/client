@@ -448,16 +448,18 @@
                     "y": 744
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "59f380ac-4616-4fc4-9caa-51f518da2f6a",
                     "label": "plus",
                     "components": [],
                     "texture": {
                         "key": "iglooedit-new",
-                        "frame": "plus"
+                        "frame": "spinner0001"
                     },
                     "x": 250,
-                    "y": 716
+                    "y": 716,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
                 },
                 {
                     "type": "Image",
@@ -472,16 +474,18 @@
                     "y": 744
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "00ee3874-71fb-427b-9086-28b988b3b543",
                     "label": "plus_1",
                     "components": [],
                     "texture": {
                         "key": "iglooedit-new",
-                        "frame": "plus"
+                        "frame": "spinner0001"
                     },
                     "x": 590,
-                    "y": 716
+                    "y": 716,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
                 },
                 {
                     "type": "Image",
@@ -496,16 +500,18 @@
                     "y": 744
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "028be075-8d17-43da-aece-b2a68a1dec69",
                     "label": "plus_2",
                     "components": [],
                     "texture": {
                         "key": "iglooedit-new",
-                        "frame": "plus"
+                        "frame": "spinner0001"
                     },
                     "x": 930,
-                    "y": 716
+                    "y": 716,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
                 },
                 {
                     "type": "Image",
@@ -520,16 +526,18 @@
                     "y": 744
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "d68e1bb0-2291-4361-a441-fb05253ad14a",
                     "label": "plus_3",
                     "components": [],
                     "texture": {
                         "key": "iglooedit-new",
-                        "frame": "plus"
+                        "frame": "spinner0001"
                     },
                     "x": 1269,
-                    "y": 716
+                    "y": 716,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
                 },
                 {
                     "type": "Image",
@@ -699,6 +707,18 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "26px",
                     "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b5749e50-ef4e-4817-9eab-73005014302d",
+                    "label": "plus_4",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooedit-new",
+                        "frame": "spinner0001"
+                    },
+                    "x": 480,
+                    "y": 318
                 }
             ]
         }
@@ -722,6 +742,17 @@
                 "f66d2822-89e9-4c71-8898-0cfd3ce6916d",
                 "f2d8c54d-b9d8-4f22-aab3-b9f4243653db",
                 "b4cb5805-2580-428c-8682-3fe6f7a56a22"
+            ]
+        },
+        {
+            "id": "c9de078f-2ce1-4dc0-8c42-b8d7e1a888e0",
+            "label": "spinners",
+            "objectIds": [
+                "59f380ac-4616-4fc4-9caa-51f518da2f6a",
+                "00ee3874-71fb-427b-9086-28b988b3b543",
+                "028be075-8d17-43da-aece-b2a68a1dec69",
+                "d68e1bb0-2291-4361-a441-fb05253ad14a",
+                "b5749e50-ef4e-4817-9eab-73005014302d"
             ]
         }
     ]

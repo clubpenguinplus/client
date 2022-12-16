@@ -29,6 +29,8 @@ export default class IglooEdit extends BaseScene {
         this.chooseIgloo
         /** @type {Phaser.GameObjects.Image[]} */
         this.categories
+        /** @type {Phaser.GameObjects.Sprite[]} */
+        this.spinners
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
@@ -166,7 +168,9 @@ export default class IglooEdit extends BaseScene {
         chooseIgloo.add(preview_pane)
 
         // plus
-        const plus = this.add.image(250, 716, 'iglooedit-new', 'plus')
+        const plus = this.add.sprite(250, 716, 'iglooedit-new', 'spinner0001')
+        plus.scaleX = 0.7
+        plus.scaleY = 0.7
         chooseIgloo.add(plus)
 
         // preview_pane_1
@@ -174,7 +178,9 @@ export default class IglooEdit extends BaseScene {
         chooseIgloo.add(preview_pane_1)
 
         // plus_1
-        const plus_1 = this.add.image(590, 716, 'iglooedit-new', 'plus')
+        const plus_1 = this.add.sprite(590, 716, 'iglooedit-new', 'spinner0001')
+        plus_1.scaleX = 0.7
+        plus_1.scaleY = 0.7
         chooseIgloo.add(plus_1)
 
         // preview_pane_2
@@ -182,7 +188,9 @@ export default class IglooEdit extends BaseScene {
         chooseIgloo.add(preview_pane_2)
 
         // plus_2
-        const plus_2 = this.add.image(930, 716, 'iglooedit-new', 'plus')
+        const plus_2 = this.add.sprite(930, 716, 'iglooedit-new', 'spinner0001')
+        plus_2.scaleX = 0.7
+        plus_2.scaleY = 0.7
         chooseIgloo.add(plus_2)
 
         // preview_pane_3
@@ -190,7 +198,9 @@ export default class IglooEdit extends BaseScene {
         chooseIgloo.add(preview_pane_3)
 
         // plus_3
-        const plus_3 = this.add.image(1269, 716, 'iglooedit-new', 'plus')
+        const plus_3 = this.add.sprite(1269, 716, 'iglooedit-new', 'spinner0001')
+        plus_3.scaleX = 0.7
+        plus_3.scaleY = 0.7
         chooseIgloo.add(plus_3)
 
         // close_btn_1
@@ -264,8 +274,13 @@ export default class IglooEdit extends BaseScene {
         title_11.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '26px'})
         chooseIgloo.add(title_11)
 
+        // plus_4
+        const plus_4 = this.add.sprite(480, 318, 'iglooedit-new', 'spinner0001')
+        chooseIgloo.add(plus_4)
+
         // lists
         const categories = [all, location, igloos, flooring, room, wall, pets]
+        const spinners = [plus, plus_1, plus_2, plus_3, plus_4]
 
         // button_edit (components)
         const button_editButton = new Button(button_edit)
@@ -351,6 +366,7 @@ export default class IglooEdit extends BaseScene {
         this.hide = hide
         this.chooseIgloo = chooseIgloo
         this.categories = categories
+        this.spinners = spinners
 
         this.events.emit('scene-awake')
     }
@@ -359,6 +375,9 @@ export default class IglooEdit extends BaseScene {
 
     create() {
         this._create()
+        for (let s of this.spinners) {
+            s.anims.play('blue-spinner')
+        }
 
         this.items = []
 
@@ -376,25 +395,25 @@ export default class IglooEdit extends BaseScene {
         let previewMask1 = this.add.graphics()
         previewMask1.fillStyle(0xffffff, 0)
         previewMask1.beginPath()
-        previewMask1.fillRoundedRect(100, 626, 298, 188, 10)
+        previewMask1.fillRoundedRect(101, 627, 297, 187, 17)
         this.previewMask1 = previewMask1.createGeometryMask()
 
         let previewMask2 = this.add.graphics()
         previewMask2.fillStyle(0xffffff, 0)
         previewMask2.beginPath()
-        previewMask2.fillRoundedRect(441, 626, 298, 188, 10)
+        previewMask2.fillRoundedRect(441, 627, 297, 187, 17)
         this.previewMask2 = previewMask2.createGeometryMask()
 
         let previewMask3 = this.add.graphics()
         previewMask3.fillStyle(0xffffff, 0)
         previewMask3.beginPath()
-        previewMask3.fillRoundedRect(782, 626, 298, 188, 10)
+        previewMask3.fillRoundedRect(781, 627, 297, 187, 17)
         this.previewMask3 = previewMask3.createGeometryMask()
 
         let previewMask4 = this.add.graphics()
         previewMask4.fillStyle(0xffffff, 0)
         previewMask4.beginPath()
-        previewMask4.fillRoundedRect(1123, 626, 298, 188, 10)
+        previewMask4.fillRoundedRect(1120, 627, 297, 187, 17)
         this.previewMask4 = previewMask4.createGeometryMask()
     }
 
@@ -470,6 +489,8 @@ export default class IglooEdit extends BaseScene {
             })
         }
 
+        preview.input.on('pointerdown', () => this.switchIgloo(id))
+
         this.previews.push(preview)
     }
 
@@ -485,25 +506,25 @@ export default class IglooEdit extends BaseScene {
                 break
             case 1:
                 scale = 0.21
-                x = 100
+                x = 87
                 y = 626
                 mask = this.previewMask1
                 break
             case 2:
                 scale = 0.21
-                x = 441
+                x = 428
                 y = 626
                 mask = this.previewMask2
                 break
             case 3:
                 scale = 0.21
-                x = 782
+                x = 768
                 y = 626
                 mask = this.previewMask3
                 break
             case 4:
                 scale = 0.21
-                x = 1123
+                x = 1108
                 y = 626
                 mask = this.previewMask4
                 break
@@ -602,6 +623,30 @@ export default class IglooEdit extends BaseScene {
     onPointerMove(pointer) {
         if (!this.mirrorItem || !this.mirrorItem.visible) return
         this.shell.room.onPointerMove(pointer)
+    }
+
+    switchIgloo(id) {
+        let x, y
+        switch (id) {
+            case 0:
+                x = 101
+                y = 627
+                break
+            case 1:
+                x = 441
+                y = 627
+                break
+            case 2:
+                x = 781
+                y = 627
+                break
+            case 3:
+                x = 1121
+                y = 627
+                break
+        }
+        if (this.input.activePointer.x < x || this.input.activePointer.x > x + 297 || this.input.activePointer.y < y || this.input.activePointer.y > y + 187) return
+        this.airtower.sendXt('g#ci', id)
     }
 
     /* END-USER-CODE */
