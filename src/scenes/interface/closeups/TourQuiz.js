@@ -33,6 +33,8 @@ export default class TourQuiz extends BaseScene {
         this.question9;
         /** @type {Phaser.GameObjects.Container} */
         this.question10;
+        /** @type {Phaser.GameObjects.Container[]} */
+        this.questions;
 
 
         /* START-USER-CTR-CODE */
@@ -361,6 +363,9 @@ export default class TourQuiz extends BaseScene {
         const questions10_en = this.add.image(153, 187, "tourquiz", "questions10_en");
         question10.add(questions10_en);
 
+        // lists
+        const questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
+
         // block (components)
         new Interactive(block);
 
@@ -648,6 +653,7 @@ export default class TourQuiz extends BaseScene {
         this.question8 = question8;
         this.question9 = question9;
         this.question10 = question10;
+        this.questions = questions;
 
         this.events.emit("scene-awake");
     }
