@@ -314,6 +314,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onToursZoneOver()",
             "SimpleButton.hoverOutCallback": "() => this.onToursZoneOut()",
+            "SimpleButton.callback": "() => this.onTourClick()",
             "x": 211,
             "y": 580,
             "scaleX": 1.8609096049176221,

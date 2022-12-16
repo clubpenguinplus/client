@@ -15,6 +15,7 @@ const interfaces = {
     Moderator: require('@scenes/interface/closeups/Moderator').default,
     Stampbook: require('@scenes/interface/game/stampbook/Stampbook').default,
     Punish: require('@scenes/interface/closeups/Punish').default,
+    TourQuiz: require('@scenes/interface/closeups/TourQuiz').default,
 }
 
 export default interfaces

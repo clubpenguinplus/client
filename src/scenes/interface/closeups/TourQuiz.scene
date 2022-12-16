@@ -1,0 +1,1175 @@
+{
+    "id": "834db18c-bf98-4f42-96d9-1c413d5e8b2c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/tourquiz/tourquiz-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "TourQuiz",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "49be3420-6373-48ed-aad6-799a8c4c6c6d",
+            "label": "container",
+            "components": [],
+            "texture": {
+                "key": "tourquiz",
+                "frame": "container"
+            },
+            "x": 760,
+            "y": 440
+        },
+        {
+            "type": "Image",
+            "id": "e52419e7-c43a-49d2-8ae1-7948411d27cc",
+            "label": "exit",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "exit",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "tourquiz",
+                "frame": "exit"
+            },
+            "x": 1044,
+            "y": 171
+        },
+        {
+            "type": "Container",
+            "id": "a967d9d6-77db-45fc-9f3e-ab73e8932dfb",
+            "label": "already",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "53bf7c65-40a1-4d2c-adf8-f19a2b9a1850",
+                    "label": "psst_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "psst_en"
+                    },
+                    "x": 153,
+                    "y": -43
+                },
+                {
+                    "type": "Image",
+                    "id": "8fa5384b-b193-4688-a77e-0790430d9418",
+                    "label": "already_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "already_en"
+                    },
+                    "x": 153,
+                    "y": 99
+                },
+                {
+                    "type": "Image",
+                    "id": "19ca20f0-b21a-4906-ba6e-a0417a9be49c",
+                    "label": "button_already",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 360
+                },
+                {
+                    "type": "Image",
+                    "id": "c1d75480-fee8-4960-9d12-07ab6894e75c",
+                    "label": "ok_already",
+                    "components": [],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "ok_en"
+                    },
+                    "x": 153,
+                    "y": 356
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "bbe965d0-d634-4170-81b8-157050f16906",
+            "label": "age",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8d465609-8a20-4968-a9e7-f9d1af6dbee6",
+                    "label": "sorry_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "sorry_en"
+                    },
+                    "x": 153,
+                    "y": -43
+                },
+                {
+                    "type": "Image",
+                    "id": "5e9a6101-5d7e-412e-8f4c-087168fe7032",
+                    "label": "age_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "age_en"
+                    },
+                    "x": 153,
+                    "y": 99
+                },
+                {
+                    "type": "Image",
+                    "id": "5ed4a227-74e5-4d9d-a2f1-7ae8d4007c3d",
+                    "label": "button_age",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 360
+                },
+                {
+                    "type": "Image",
+                    "id": "606c9bbb-b5f0-4d97-aec0-973fa106a51e",
+                    "label": "ok_age",
+                    "components": [],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "ok_en"
+                    },
+                    "x": 153,
+                    "y": 356
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b05bfe8a-3c68-4723-8ffe-029f82f0012f",
+            "label": "home",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9868e4e1-4ca9-4ee6-adab-7aac4c51d007",
+                    "label": "guidestitle_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "guidestitle_en"
+                    },
+                    "x": 153,
+                    "y": -43
+                },
+                {
+                    "type": "Image",
+                    "id": "a89a2dda-2d31-4d5c-853d-aa3a3f2e127a",
+                    "label": "hometext_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "hometext_en"
+                    },
+                    "x": 153,
+                    "y": 149
+                },
+                {
+                    "type": "Image",
+                    "id": "9337f616-b386-45e9-b460-5480cba3f3ac",
+                    "label": "button_home",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "this.startQuiz()",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 360
+                },
+                {
+                    "type": "Image",
+                    "id": "9a9ecb5e-810f-46cc-9f2f-b6a7fe865743",
+                    "label": "takequiz_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "takequiz_en"
+                    },
+                    "x": 153,
+                    "y": 356
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "a3ca532a-f442-41c9-86bf-c238afe423a6",
+            "label": "question1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9d3b20d5-5d7a-4bfb-8f1e-a57f4120437a",
+                    "label": "button_q1_wrong1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ1();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "83beccbf-15e5-4806-a2d1-b132cb781e3d",
+                    "label": "button_q1_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ1();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "80f6e0d7-fcb4-45d8-9804-094e5011305d",
+                    "label": "button_q1_wrong3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ1();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "5c73b6df-89f3-45b7-960e-ddfd358e001c",
+                    "label": "button_q1_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ1(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "d0b38613-711e-4d90-98d8-0950c40d94b0",
+                    "label": "questions1_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions1_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "a081e0ae-30ca-47ac-8e5f-8ad2f37264ab",
+            "label": "question2",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c8133bde-d7d2-4b9d-88d7-a573bb826ba3",
+                    "label": "button_q2_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); ",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "0dd315da-0b95-4814-8e67-b68bfcb5506b",
+                    "label": "button_q2_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "c4e6d3f1-9fd9-4c9d-99f2-7d876759b5b1",
+                    "label": "button_q2_wrong3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); ",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "5133a4ae-21ad-4b80-9ada-fdfe8010e435",
+                    "label": "button_q2_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); ",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "387d447e-72ae-4b20-a393-940ab9dee280",
+                    "label": "questions2_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions2_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "dee398ad-1847-4568-8295-6fffc18a3e2b",
+            "label": "question3",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c9ec34e6-db03-4f7b-a1bb-97072b26e01b",
+                    "label": "button_q3_wrong1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); ",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "f201caf8-ae37-409b-a95f-b992caf8f2bd",
+                    "label": "button_q3_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "6cdddf27-417a-4528-b702-46074225e8b8",
+                    "label": "button_q3_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "1b982f7e-21fe-42c0-84cf-db60a3ec5ada",
+                    "label": "button_q3_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.nextQuestion(); ",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "4e7a8870-3683-49b7-a5df-2b6d7c0cf01d",
+                    "label": "questions3_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions3_en.png"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "ea8de60d-2e39-4649-a403-46277535a152",
+            "label": "question4",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "901de005-bae2-42ba-86bb-31c0e1d14c22",
+                    "label": "button_q4_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ4(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "5b650ec4-dbf8-4d9a-86be-c827b0600c79",
+                    "label": "button_q4_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ4();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "a6acad10-2c1f-4c6a-b60d-d6c2452d17e0",
+                    "label": "button_q4_wrong1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ4();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "a00d84e6-9d42-4aaf-b66d-5f089723840c",
+                    "label": "button_q4_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ4();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "de501863-c87c-47c3-bb4a-27d39b1646c6",
+                    "label": "questions4_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions4_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "190f4353-e2b2-4cbe-b4cd-86845a9404bf",
+            "label": "question5",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f190a467-3656-4652-9330-c34e2e9a5a59",
+                    "label": "button_q5_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ5(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "d36ced75-e073-4e12-bb97-15b3b9e3db32",
+                    "label": "button_q5_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ5();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "228e0700-a358-474e-89bb-82fc1e972045",
+                    "label": "button_q5_wrong1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ5();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "67b59a7d-7b5d-4179-be5c-a89124fbe726",
+                    "label": "button_q5_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ5();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "8ee0c658-1bcd-45dc-b51c-d386eb766503",
+                    "label": "questions5_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions5_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "9458cfd9-32ee-49b6-ac66-6de12e496494",
+            "label": "question6",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "3f65f7f9-d8f3-40ad-93ac-0d78063b02ec",
+                    "label": "button_q6_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ6();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "8cce5225-4b92-40e2-a0f5-ef2b9d215cb5",
+                    "label": "button_q6_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ6();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "20a7c3e8-2fd9-4f6b-b44e-41352144de80",
+                    "label": "button_q6_wrong1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ6();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "d60c90c8-1509-4dee-85ca-b4d9a009b549",
+                    "label": "button_q6_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ6(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "6cc72b41-fa26-4982-af29-7da9b7e9b6e5",
+                    "label": "questions6_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions6_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3960aa6d-5b0f-48c3-ac70-faa1c4261645",
+            "label": "question7",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d3e9b995-f981-47a2-b990-ffb1252f5116",
+                    "label": "button_q7_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ7();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "95c893a0-000f-4c64-a452-53d299f814b9",
+                    "label": "button_q7_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ7(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "3d5b5039-ab8c-4bc6-83cb-ed121e741644",
+                    "label": "button_q7_wrong1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ7();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "23d912ac-72da-4339-b7ed-62f58a476409",
+                    "label": "button_q7_wrong3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ7();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "13ef54b8-0be5-4d9d-8ccc-736fee961ba1",
+                    "label": "questions7_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions7_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b7d6dd1c-2491-473a-beea-61b760d3d5b9",
+            "label": "question8",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "55b3164f-cd13-4f24-9e6b-c6ab4eb94459",
+                    "label": "button_q8_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ8();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "177f3ad6-2a8f-46de-a408-e5a9a18e1402",
+                    "label": "button_q8_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ8();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "be8a2ddc-99e9-4458-849a-1a10006f52ae",
+                    "label": "button_q8_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ8(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "d49b7610-adbe-4b4e-9c1b-603bd5947eb6",
+                    "label": "button_q8_wrong3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ8();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "16bb1513-77a7-4d08-a1ef-07ffb4010574",
+                    "label": "questions8_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions8_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "6e446b06-c6be-45f0-81f2-d9dfcaf7dfa6",
+            "label": "question9",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7788627b-5dcb-4ae1-9749-5ee8a8a3b16b",
+                    "label": "button_q9_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ9();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "e82ce15b-112d-4b28-bb21-4e471e8551fc",
+                    "label": "button_q9_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ9(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "70a4b184-ab0e-4f94-9974-6c4edde3de6a",
+                    "label": "button_q9_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ9();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "63c06343-ccf8-4072-90d7-6982babb2eed",
+                    "label": "button_q9_wrong3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ9();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "ca440a00-16fd-4d04-b162-1ef1fa70d403",
+                    "label": "questions9_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions9_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f7b86bec-79d9-41ca-99e4-f037cdae7380",
+            "label": "question10",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "09e5416d-8e94-4c2f-9d92-0549588fefbb",
+                    "label": "button_q10_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ10(); this.correctAnswer();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 216
+                },
+                {
+                    "type": "Image",
+                    "id": "8ada698d-9497-4b88-bfcc-f7d08ab82a6f",
+                    "label": "button_q10_wrong",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ10();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "0411981b-c21d-44a3-9b2c-845743e1dead",
+                    "label": "button_q10_wrong2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ10();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 440
+                },
+                {
+                    "type": "Image",
+                    "id": "fe41fe70-ac05-49c0-8a20-04beddde04e9",
+                    "label": "button_q10_wrong3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.onQ10();",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 104
+                },
+                {
+                    "type": "Image",
+                    "id": "26167941-cf70-4d18-93ea-f82360c0693f",
+                    "label": "questions10_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "questions10_en"
+                    },
+                    "x": 153,
+                    "y": 187
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
