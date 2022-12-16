@@ -7,10 +7,9 @@
         "snapHeight": 260,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "News",
+        "superClassName": "Book",
         "preloadPackFiles": [
-            "client/client/media/interface/catalogs/catalogs-master-pack.json",
-            "client/client/media/interface/catalogs/hydro-pack.json"
+            "client/client/media/interface/catalogs/upgrades/dock/dockupgrade-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Hydro",
@@ -41,197 +40,170 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
-                    "label": "musiccatalog",
+                    "id": "1993dabc-9b9f-4e9f-b37b-b23c9446219e",
+                    "label": "bg",
                     "components": [],
                     "texture": {
-                        "key": "hydro"
+                        "key": "dockupgrade",
+                        "frame": "bg"
                     },
                     "x": 760,
-                    "y": 481
+                    "y": 478
                 },
                 {
                     "type": "Image",
-                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
-                    "label": "close_btn",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => { this.close() }",
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "closebtn"
-                    },
-                    "x": 1070,
-                    "y": 45
-                },
-                {
-                    "type": "Image",
-                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
-                    "label": "buy_wake1",
+                    "id": "c1acf06d-96d1-4cf4-a67f-5413b18e06e0",
+                    "label": "tag",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(711)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
-                    },
-                    "x": 784,
-                    "y": 509
-                },
-                {
-                    "type": "Text",
-                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
-                    "label": "txt_wake1",
-                    "components": [],
-                    "x": 743,
-                    "y": 490,
-                    "text": "300",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold",
-                    "color": "#6f4100ff"
-                },
-                {
-                    "type": "Image",
-                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
-                    "label": "buy_wake2",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buybtn",
+                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(712)",
-                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "dockupgrade",
+                        "frame": "tag"
                     },
-                    "x": 946,
-                    "y": 509
+                    "x": 770,
+                    "y": 481,
+                    "scaleX": 0.28,
+                    "scaleY": 0.28,
+                    "angle": 28
+                },
+                {
+                    "type": "Image",
+                    "id": "21b4b3bd-4585-43cc-8f3f-7fec424201ae",
+                    "label": "hook",
+                    "components": [],
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "hook"
+                    },
+                    "x": 726,
+                    "y": 456,
+                    "scaleX": 0.33,
+                    "scaleY": 0.33
+                },
+                {
+                    "type": "Image",
+                    "id": "7ec79ae7-aaa1-4cfd-b36b-83aa4c0eaded",
+                    "label": "threehundredone",
+                    "components": [],
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "300_two"
+                    },
+                    "x": 776,
+                    "y": 486
+                },
+                {
+                    "type": "Image",
+                    "id": "8ed7cae0-cf1b-4adf-b666-ca5497f411b5",
+                    "label": "coin",
+                    "components": [],
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "coin"
+                    },
+                    "x": 798,
+                    "y": 498,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "angle": 28
+                },
+                {
+                    "type": "Image",
+                    "id": "971c2a4d-cf8e-4385-9755-1cc2d570119a",
+                    "label": "tag_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.interface.prompt.showItem(711)",
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "tag"
+                    },
+                    "x": 494,
+                    "y": 409,
+                    "scaleX": 0.28,
+                    "scaleY": 0.28,
+                    "angle": -39.99999999999994,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "2fef4257-c0fb-42e1-bcb3-a316e9ba9199",
+                    "label": "coin_1",
+                    "components": [],
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "coin"
+                    },
+                    "x": 506,
+                    "y": 400,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "angle": -39.99999999999994,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "9fc9f8d9-2ca3-4dfc-b33c-0e15d9afd6ee",
+                    "label": "threehundredtwo",
+                    "components": [],
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "300_one"
+                    },
+                    "x": 489,
+                    "y": 424
+                },
+                {
+                    "type": "Image",
+                    "id": "fcc3083d-4de4-4a7a-81cd-e7f8cb555f1d",
+                    "label": "hook_1",
+                    "components": [],
+                    "texture": {
+                        "key": "dockupgrade",
+                        "frame": "hook"
+                    },
+                    "x": 521,
+                    "y": 372,
+                    "scaleX": 0.33,
+                    "scaleY": 0.33,
+                    "angle": -49.99999999999994,
+                    "flipX": true
                 },
                 {
                     "type": "Text",
-                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
-                    "label": "txt_wake2",
+                    "id": "0157fd7b-ecd4-4891-9018-d5249710ff98",
+                    "label": "text",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": 904,
-                    "y": 490,
-                    "text": "300",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "x": 637,
+                    "y": 900,
+                    "text": "Your Coins: 1000000",
+                    "fontFamily": "Burbank",
                     "fontSize": "32px",
-                    "fontStyle": "bold",
-                    "color": "#6f4100ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
-                    "label": "title",
-                    "components": [],
-                    "x": 437,
-                    "y": 65,
-                    "text": "HYDRO-HOPPER",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "60px",
-                    "fontStyle": "bold italic",
-                    "color": "#ffffffff",
-                    "stroke": "#000000ff",
-                    "strokeThickness": 10
-                },
-                {
-                    "type": "Text",
-                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
-                    "label": "upgrades",
-                    "components": [],
-                    "x": 889,
-                    "y": 73,
-                    "text": "GAME\nUPGRADES",
-                    "lineSpacing": -10,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold italic",
-                    "color": "6f4100",
-                    "stroke": "#000000ff",
-                    "strokeThickness": 1
-                },
-                {
-                    "type": "Text",
-                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
-                    "label": "bodyheader",
-                    "components": [],
-                    "x": 486,
-                    "y": 218,
-                    "text": "How these wakeboards work:",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 1,
-                    "shadow.offsetY": 1,
-                    "shadow.fill": true,
-                    "shadow.color": "#042635ff",
-                    "shadow.blur": 3,
-                    "wordWrapWidth": 250
-                },
-                {
-                    "type": "Text",
-                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
-                    "label": "bodytext",
-                    "components": [],
-                    "x": 488,
-                    "y": 287,
-                    "text": "Enter Hydro-Hopper whilst holding a wakeboard.\nYou'll get to use it in the game!",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "20px",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 1,
-                    "shadow.offsetY": 1,
-                    "shadow.fill": true,
-                    "shadow.color": "#042635ff",
-                    "shadow.blur": 3,
-                    "wordWrapWidth": 280
-                },
-                {
-                    "type": "Text",
-                    "id": "0dbeaffe-8e21-4843-920b-afbc4eac8c0b",
-                    "label": "txt_rodheader_1",
-                    "components": [],
-                    "x": 718,
-                    "y": 441,
-                    "text": "Yellow Arrow Wakeboard",
-                    "lineSpacing": -8,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "21px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 200
-                },
-                {
-                    "type": "Text",
-                    "id": "9c01d7bd-fdaf-4f62-8fbe-e638f76b033e",
-                    "label": "txt_rodheader_1_1",
-                    "components": [],
-                    "x": 881,
-                    "y": 441,
-                    "text": "Pink Striped Wakeboard",
-                    "lineSpacing": -8,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "21px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 200
+                    "color": "#000000ff"
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "9e5f43f5-044b-4102-8a7a-b8881c325e4f",
+            "label": "exit",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "exit",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "dockupgrade",
+                "frame": "exit"
+            },
+            "x": 1036,
+            "y": 96
         }
     ],
     "plainObjects": [],

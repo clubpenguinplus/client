@@ -1194,14 +1194,14 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(800)",
                             "ShowHint.text": "gameupgrade",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/shops/hydrohopperupgrades"
                             },
                             "x": 172,
-                            "y": 514,
-                            "visible": false
+                            "y": 514
                         },
                         {
                             "type": "Sprite",
@@ -1301,14 +1301,14 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(230)",
                             "ShowHint.text": "gameupgrade",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/shops/sledracerupgrades"
                             },
                             "x": 123,
-                            "y": 71,
-                            "visible": false
+                            "y": 71
                         },
                         {
                             "type": "Sprite",
@@ -1416,12 +1416,12 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(436)",
                             "ShowHint.text": "pufflewild",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/puffles/wild"
-                            },
-                            "visible": false
+                            }
                         },
                         {
                             "type": "Image",

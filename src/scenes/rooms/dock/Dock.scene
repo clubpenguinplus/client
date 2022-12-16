@@ -266,6 +266,7 @@
             ],
             "SimpleButton.hoverCallback": "() => { this.smallcatalog.__Animation.play() }",
             "SimpleButton.hoverOutCallback": "() => { this.smallcatalog.setFrame(\"catalog0001\") }",
+            "SimpleButton.callback": "() => this.interface.loadExternal('Hydro')",
             "x": 749,
             "y": 639,
             "scaleX": 0.6479719067963792,

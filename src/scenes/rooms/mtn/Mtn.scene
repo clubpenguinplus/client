@@ -339,6 +339,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onSkiCatHover();",
             "SimpleButton.hoverOutCallback": "() => this.onSkiCatOut();",
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
             "texture": {
                 "key": "mtn",
                 "frame": "ski_cat0001"
@@ -354,6 +355,7 @@
                 "Button"
             ],
             "Button.spriteName": "skicatbottom",
+            "Button.callback": "() => this.interface.loadExternal('Sled')",
             "Button.activeFrame": false,
             "texture": {
                 "key": "mtn",

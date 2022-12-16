@@ -7,10 +7,9 @@
         "snapHeight": 260,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "News",
+        "superClassName": "Book",
         "preloadPackFiles": [
-            "client/client/media/interface/catalogs/catalogs-master-pack.json",
-            "client/client/media/interface/catalogs/sled-pack.json"
+            "client/client/media/interface/catalogs/upgrades/mtn/upmtn-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Sled",
@@ -41,241 +40,294 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
-                    "label": "musiccatalog",
+                    "id": "5bd602af-bf17-4242-86f6-ff9f146fc608",
+                    "label": "pamphlet",
                     "components": [],
                     "texture": {
-                        "key": "sledcat"
+                        "key": "upmtn",
+                        "frame": "pamphlet"
                     },
                     "x": 760,
-                    "y": 481
+                    "y": 480
                 },
                 {
                     "type": "Image",
-                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
-                    "label": "close_btn",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => { this.close() }",
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "closebtn"
-                    },
-                    "x": 1070,
-                    "y": 45
-                },
-                {
-                    "type": "Image",
-                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
-                    "label": "buy_wake1",
+                    "id": "a957b86e-91eb-4b73-bf6c-53e61ad3cb33",
+                    "label": "tag",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(5047)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
-                    },
-                    "x": 623,
-                    "y": 650
-                },
-                {
-                    "type": "Text",
-                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
-                    "label": "txt_wake1",
-                    "components": [],
-                    "x": 582,
-                    "y": 631,
-                    "text": "300",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold",
-                    "color": "#6f4100ff"
-                },
-                {
-                    "type": "Image",
-                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
-                    "label": "buy_wake2",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buybtn",
+                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(5021)",
-                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "upmtn",
+                        "frame": "tag"
                     },
-                    "x": 941,
-                    "y": 582
+                    "x": 717,
+                    "y": 460,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25,
+                    "angle": 28
                 },
                 {
-                    "type": "Text",
-                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
-                    "label": "txt_wake2",
+                    "type": "Image",
+                    "id": "b2d0fd78-ee88-494d-850b-5452414742f1",
+                    "label": "hook",
                     "components": [],
-                    "x": 899,
-                    "y": 563,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold",
-                    "color": "#6f4100ff"
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "hook"
+                    },
+                    "x": 679,
+                    "y": 435,
+                    "scaleX": 0.33,
+                    "scaleY": 0.33,
+                    "angle": 12
                 },
                 {
-                    "type": "Text",
-                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
-                    "label": "title",
+                    "type": "Image",
+                    "id": "c28b483d-7414-4eb3-a579-b3efb0572cfa",
+                    "label": "toboggan",
                     "components": [],
-                    "x": 532,
-                    "y": 65,
-                    "text": "Sled Racing",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "60px",
-                    "fontStyle": "bold italic",
-                    "color": "#ffffffff",
-                    "stroke": "#000000ff",
-                    "strokeThickness": 10
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "toboggan"
+                    },
+                    "x": 598,
+                    "y": 418,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
                 },
                 {
-                    "type": "Text",
-                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
+                    "type": "Image",
+                    "id": "448c15a7-b079-4b7b-8b39-405932565848",
+                    "label": "frontsnow",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "frontsnow"
+                    },
+                    "x": 672,
+                    "y": 556
+                },
+                {
+                    "type": "Image",
+                    "id": "7ab00d8f-ee57-48d3-b8e7-94a08a0d16cd",
+                    "label": "pinksled",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "pinksled"
+                    },
+                    "x": 872,
+                    "y": 572,
+                    "scaleX": 0.45,
+                    "scaleY": 0.45
+                },
+                {
+                    "type": "Image",
+                    "id": "e95369d2-90c0-4cbb-a6f1-0716f85b8c12",
+                    "label": "greensled",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "greensled"
+                    },
+                    "x": 701,
+                    "y": 710,
+                    "scaleX": 0.45,
+                    "scaleY": 0.45
+                },
+                {
+                    "type": "Image",
+                    "id": "18905ce1-be50-42a2-a691-0e028d83972b",
                     "label": "upgrades",
                     "components": [],
-                    "x": 889,
-                    "y": 73,
-                    "text": "GAME\nUPGRADES",
-                    "lineSpacing": -10,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold italic",
-                    "color": "6f4100",
-                    "stroke": "#000000ff",
-                    "strokeThickness": 1
-                },
-                {
-                    "type": "Text",
-                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
-                    "label": "bodyheader",
-                    "components": [],
-                    "x": 486,
-                    "y": 247,
-                    "text": "How the sleds work:",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 1,
-                    "shadow.offsetY": 1,
-                    "shadow.fill": true,
-                    "shadow.color": "#042635ff",
-                    "shadow.blur": 3
-                },
-                {
-                    "type": "Text",
-                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
-                    "label": "bodytext",
-                    "components": [],
-                    "x": 488,
-                    "y": 290,
-                    "text": "Enter sled racing whilst holding the toboggan or one of the sleds. You'll get to use it in the game!",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "22px",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 1,
-                    "shadow.offsetY": 1,
-                    "shadow.fill": true,
-                    "shadow.color": "#042635ff",
-                    "shadow.blur": 3,
-                    "wordWrapWidth": 350
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "upgrades"
+                    },
+                    "x": 760,
+                    "y": 175
                 },
                 {
                     "type": "Image",
-                    "id": "9fca229e-0d29-46ae-81c7-95b118f2b7f7",
-                    "label": "buy_wake1_1",
+                    "id": "43e3cd3b-7007-43dd-8323-e62b17301f49",
+                    "label": "threehundredone",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "300_one"
+                    },
+                    "x": 716,
+                    "y": 471,
+                    "scaleX": 0.842126397361006,
+                    "scaleY": 0.842126397361006,
+                    "angle": 66
+                },
+                {
+                    "type": "Image",
+                    "id": "3ac00b70-e117-46fb-98f8-6129acdacc8b",
+                    "label": "coin",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "coin"
+                    },
+                    "x": 743,
+                    "y": 475,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5,
+                    "angle": 28
+                },
+                {
+                    "type": "Image",
+                    "id": "99196874-bebd-4697-acab-0432b3c0dc58",
+                    "label": "tag_1",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(5046)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.interface.prompt.showItem(5047)",
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "upmtn",
+                        "frame": "tag"
                     },
-                    "x": 804,
-                    "y": 820
+                    "x": 936,
+                    "y": 602,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25,
+                    "angle": 28
                 },
                 {
-                    "type": "Text",
-                    "id": "a70d7b13-0a2c-4db1-8ae0-203bd0d80ef0",
-                    "label": "txt_wake1_1",
+                    "type": "Image",
+                    "id": "80fea69b-8f93-4ec6-89e5-687ab7f24b5e",
+                    "label": "hook_1",
                     "components": [],
-                    "x": 763,
-                    "y": 801,
-                    "text": "300",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold",
-                    "color": "#6f4100ff"
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "hook"
+                    },
+                    "x": 898,
+                    "y": 577,
+                    "scaleX": 0.33,
+                    "scaleY": 0.33,
+                    "angle": 12
                 },
                 {
-                    "type": "Text",
-                    "id": "ef008f56-fc05-4c5e-8f78-bd35e2707ce4",
-                    "label": "txt_rodheader",
+                    "type": "Image",
+                    "id": "ebc76579-fc3f-4e45-8325-38e01f513f23",
+                    "label": "coin_1",
                     "components": [],
-                    "x": 886,
-                    "y": 528,
-                    "text": "Toboggan",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 200
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "coin"
+                    },
+                    "x": 962,
+                    "y": 617,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5,
+                    "angle": 28
                 },
                 {
-                    "type": "Text",
-                    "id": "b5d68190-250b-44a7-8074-5d7be76f0049",
-                    "label": "txt_rodheader_1",
+                    "type": "Image",
+                    "id": "15c31348-bece-455e-9917-da73640442e5",
+                    "label": "threehundredone_1",
                     "components": [],
-                    "x": 539,
-                    "y": 597,
-                    "text": "Pink Racing Sled",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 200
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "300_one"
+                    },
+                    "x": 935,
+                    "y": 613,
+                    "scaleX": 0.842126397361006,
+                    "scaleY": 0.842126397361006,
+                    "angle": 66
                 },
                 {
-                    "type": "Text",
-                    "id": "607ea16f-5f31-4d47-bfc7-8e0d598d93eb",
-                    "label": "txt_rodheader_1_1",
+                    "type": "Image",
+                    "id": "936eaefd-afe4-4181-892b-c935de4ae658",
+                    "label": "tag_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.interface.prompt.showItem(5046)",
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "tag"
+                    },
+                    "x": 569,
+                    "y": 737,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25,
+                    "angle": -33,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "684d2137-35b3-4880-b564-eaf8a332646d",
+                    "label": "coin_2",
                     "components": [],
-                    "x": 708,
-                    "y": 768,
-                    "text": "Green Racing Sled",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 200
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "coin"
+                    },
+                    "x": 579,
+                    "y": 731,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5,
+                    "angle": -33,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "0b218380-12ce-494b-b9c9-ced793a4543c",
+                    "label": "hook_2",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "hook"
+                    },
+                    "x": 609,
+                    "y": 716,
+                    "scaleX": 0.33,
+                    "scaleY": 0.33,
+                    "angle": 12,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "56a2145d-1494-48b0-9886-b838b9e0cf2e",
+                    "label": "threehundredone_2",
+                    "components": [],
+                    "texture": {
+                        "key": "upmtn",
+                        "frame": "300_one"
+                    },
+                    "x": 563,
+                    "y": 750,
+                    "scaleX": 0.842126397361006,
+                    "scaleY": 0.842126397361006,
+                    "angle": 2
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "74a998d7-9477-4ef4-8b99-4fa386a1d286",
+            "label": "exit",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "exit",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "upmtn",
+                "frame": "exit"
+            },
+            "x": 1033,
+            "y": 105
         }
     ],
     "plainObjects": [],

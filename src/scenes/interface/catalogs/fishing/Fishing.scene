@@ -7,10 +7,9 @@
         "snapHeight": 260,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "News",
+        "superClassName": "Book",
         "preloadPackFiles": [
-            "client/client/media/interface/catalogs/catalogs-master-pack.json",
-            "client/client/media/interface/catalogs/fishing-pack.json"
+            "client/client/media/interface/catalogs/upgrades/lodge/uplodge-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Fishing",
@@ -41,137 +40,95 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
-                    "label": "musiccatalog",
+                    "id": "0fecca51-11cd-47b5-9143-3acb5f2204e0",
+                    "label": "bg",
                     "components": [],
                     "texture": {
-                        "key": "fishing"
+                        "key": "uplodge",
+                        "frame": "bg"
                     },
                     "x": 760,
-                    "y": 481
+                    "y": 480
                 },
                 {
                     "type": "Image",
-                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
-                    "label": "close_btn",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => { this.close() }",
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "closebtn"
-                    },
-                    "x": 1070,
-                    "y": 45
-                },
-                {
-                    "type": "Image",
-                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
-                    "label": "buy_rod",
+                    "id": "a0596fa6-7b11-4a2f-9c21-d38b86999696",
+                    "label": "exit",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
-                    "Button.callback": "() => this.interface.prompt.showItem(321)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.scene.stop()",
                     "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
+                        "key": "uplodge",
+                        "frame": "exit"
                     },
-                    "x": 669,
-                    "y": 525
+                    "x": 1041,
+                    "y": 94
                 },
                 {
-                    "type": "Text",
-                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
-                    "label": "txt_rod",
-                    "components": [],
-                    "x": 628,
-                    "y": 506,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold",
-                    "color": "#6f4100ff"
+                    "type": "Image",
+                    "id": "8ec2271e-0200-4df6-a692-e396247b2c40",
+                    "label": "tag",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.interface.prompt.showItem(321)",
+                    "texture": {
+                        "key": "uplodge",
+                        "frame": "tag"
+                    },
+                    "x": 830,
+                    "y": 407,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3,
+                    "angle": -27,
+                    "flipX": true
                 },
                 {
-                    "type": "Text",
-                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
-                    "label": "title",
+                    "type": "Image",
+                    "id": "11e30e5c-439b-4462-9e99-c4938dd056c6",
+                    "label": "hook",
                     "components": [],
-                    "x": 495,
-                    "y": 58,
-                    "text": "Ice Fishing",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "70px",
-                    "fontStyle": "bold italic",
-                    "color": "#ffffffff",
-                    "stroke": "#1b4787ff",
-                    "strokeThickness": 10
+                    "texture": {
+                        "key": "uplodge",
+                        "frame": "hook"
+                    },
+                    "x": 870,
+                    "y": 379,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3,
+                    "angle": -23,
+                    "flipX": true
                 },
                 {
-                    "type": "Text",
-                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
-                    "label": "upgrades",
+                    "type": "Image",
+                    "id": "1a7f3794-3c41-4ab0-8d6b-25759cbcf2c3",
+                    "label": "twohundred",
                     "components": [],
-                    "x": 889,
-                    "y": 73,
-                    "text": "GAME\nUPGRADES",
-                    "lineSpacing": -10,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "fontStyle": "bold italic",
-                    "color": "6f4100",
-                    "stroke": "#000000ff",
-                    "strokeThickness": 1
+                    "texture": {
+                        "key": "uplodge",
+                        "frame": "200"
+                    },
+                    "x": 828,
+                    "y": 417
                 },
                 {
-                    "type": "Text",
-                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
-                    "label": "bodyheader",
+                    "type": "Image",
+                    "id": "0a8c8dd7-2f1f-4b68-b123-6e6b5019a02e",
+                    "label": "coin",
                     "components": [],
-                    "x": 486,
-                    "y": 223,
-                    "text": "How the fishing rod works:",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
-                    "label": "bodytext",
-                    "components": [],
-                    "x": 488,
-                    "y": 268,
-                    "text": "Enter Ice Fishing whilst holding the fishing rod.\nYou'll get to fish\nwith it in the game!",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "20px",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 220
-                },
-                {
-                    "type": "Text",
-                    "id": "3df858b2-02b2-4fe8-a6ef-0c319cf0e598",
-                    "label": "txt_rodheader",
-                    "components": [],
-                    "x": 594,
-                    "y": 446,
-                    "text": "Flashing Lure Fishing Rod",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "shadow.color": "#042635ff",
-                    "wordWrapWidth": 200
+                    "texture": {
+                        "key": "uplodge",
+                        "frame": "coin"
+                    },
+                    "x": 848,
+                    "y": 398,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5,
+                    "angle": -24,
+                    "flipX": true
                 }
             ]
         }

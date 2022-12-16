@@ -1,14 +1,18 @@
 import {Button, Interactive, SimpleButton} from '@components/components'
-import News from '@scenes/interface/books/News'
+import Book from '@scenes/interface/books/Book'
 
 /* START OF COMPILED CODE */
 
-export default class Hydro extends News {
-    constructor() {
-        super('Hydro')
+export default class Hydro extends Book {
 
+    constructor() {
+        super("Hydro");
+
+        /** @type {Phaser.GameObjects.Text} */
+        this.text;
         /** @type {Phaser.GameObjects.Container[]} */
-        this.pages
+        this.pages;
+
 
         /* START-USER-CTR-CODE */
         // Write your code here.
@@ -17,181 +21,114 @@ export default class Hydro extends News {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('catalogs-master-pack', 'client/media/interface/catalogs/catalogs-master-pack.json')
-        this.load.pack('hydro-pack', 'client/media/interface/catalogs/hydro-pack.json')
+
+        this.load.pack("dockupgrade-pack", "client/media/interface/catalogs/upgrades/dock/dockupgrade-pack.json");
     }
 
     /** @returns {void} */
     _create() {
+
         // block
-        const block = this.add.rectangle(760, 480, 1520, 960)
-        block.isFilled = true
-        block.fillColor = 0
-        block.fillAlpha = 0.1
+        const block = this.add.rectangle(760, 480, 1520, 960);
+        block.isFilled = true;
+        block.fillColor = 0;
+        block.fillAlpha = 0.1;
 
         // page1
-        const page1 = this.add.container(0, 0)
+        const page1 = this.add.container(0, 0);
 
-        // musiccatalog
-        const musiccatalog = this.add.image(760, 481, 'hydro')
-        page1.add(musiccatalog)
+        // bg
+        const bg = this.add.image(760, 478, "dockupgrade", "bg");
+        page1.add(bg);
 
-        // close_btn
-        const close_btn = this.add.image(1070, 45, 'catalogs-master', 'closebtn')
-        page1.add(close_btn)
+        // tag
+        const tag = this.add.image(770, 481, "dockupgrade", "tag");
+        tag.scaleX = 0.28;
+        tag.scaleY = 0.28;
+        tag.angle = 28;
+        page1.add(tag);
 
-        // buy_wake1
-        const buy_wake1 = this.add.image(784, 509, 'catalogs-master', 'buybtn')
-        page1.add(buy_wake1)
+        // hook
+        const hook = this.add.image(726, 456, "dockupgrade", "hook");
+        hook.scaleX = 0.33;
+        hook.scaleY = 0.33;
+        page1.add(hook);
 
-        // txt_wake1
-        const txt_wake1 = this.add.text(743, 490, '', {})
-        txt_wake1.text = '300'
-        txt_wake1.setStyle({
-            align: 'center',
-            color: '#6f4100ff',
-            fontFamily: 'Burbank Small',
-            fontSize: '32px',
-            fontStyle: 'bold',
-        })
-        page1.add(txt_wake1)
+        // threehundredone
+        const threehundredone = this.add.image(776, 486, "dockupgrade", "300_two");
+        page1.add(threehundredone);
 
-        // buy_wake2
-        const buy_wake2 = this.add.image(946, 509, 'catalogs-master', 'buybtn')
-        page1.add(buy_wake2)
+        // coin
+        const coin = this.add.image(798, 498, "dockupgrade", "coin");
+        coin.scaleX = 0.7;
+        coin.scaleY = 0.7;
+        coin.angle = 28;
+        page1.add(coin);
 
-        // txt_wake2
-        const txt_wake2 = this.add.text(904, 490, '', {})
-        txt_wake2.text = '300'
-        txt_wake2.setStyle({
-            align: 'center',
-            color: '#6f4100ff',
-            fontFamily: 'Burbank Small',
-            fontSize: '32px',
-            fontStyle: 'bold',
-        })
-        page1.add(txt_wake2)
+        // tag_1
+        const tag_1 = this.add.image(494, 409, "dockupgrade", "tag");
+        tag_1.scaleX = 0.28;
+        tag_1.scaleY = 0.28;
+        tag_1.angle = -39.99999999999994;
+        tag_1.flipX = true;
+        page1.add(tag_1);
 
-        // title
-        const title = this.add.text(437, 65, '', {})
-        title.text = 'HYDRO-HOPPER'
-        title.setStyle({
-            align: 'center',
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '60px',
-            fontStyle: 'bold italic',
-            stroke: '#000000ff',
-            strokeThickness: 10,
-        })
-        page1.add(title)
+        // coin_1
+        const coin_1 = this.add.image(506, 400, "dockupgrade", "coin");
+        coin_1.scaleX = 0.7;
+        coin_1.scaleY = 0.7;
+        coin_1.angle = -39.99999999999994;
+        coin_1.flipX = true;
+        page1.add(coin_1);
 
-        // upgrades
-        const upgrades = this.add.text(889, 73, '', {})
-        upgrades.text = 'GAME\nUPGRADES'
-        upgrades.setStyle({
-            align: 'center',
-            color: '6f4100',
-            fontFamily: 'Burbank Small',
-            fontSize: '32px',
-            fontStyle: 'bold italic',
-            stroke: '#000000ff',
-            strokeThickness: 1,
-        })
-        upgrades.setLineSpacing(-10)
-        page1.add(upgrades)
+        // threehundredtwo
+        const threehundredtwo = this.add.image(489, 424, "dockupgrade", "300_one");
+        page1.add(threehundredtwo);
 
-        // bodyheader
-        const bodyheader = this.add.text(486, 218, '', {})
-        bodyheader.text = 'How these wakeboards work:'
-        bodyheader.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '23px',
-            fontStyle: 'bold',
-            'shadow.offsetX': 1,
-            'shadow.offsetY': 1,
-            'shadow.color': '#042635ff',
-            'shadow.blur': 3,
-            'shadow.fill': true,
-        })
-        bodyheader.setWordWrapWidth(250)
-        page1.add(bodyheader)
+        // hook_1
+        const hook_1 = this.add.image(521, 372, "dockupgrade", "hook");
+        hook_1.scaleX = 0.33;
+        hook_1.scaleY = 0.33;
+        hook_1.angle = -49.99999999999994;
+        hook_1.flipX = true;
+        page1.add(hook_1);
 
-        // bodytext
-        const bodytext = this.add.text(488, 287, '', {})
-        bodytext.text = "Enter Hydro-Hopper whilst holding a wakeboard.\nYou'll get to use it in the game!"
-        bodytext.setStyle({
-            color: '#ffffffff',
-            fontFamily: 'Burbank Small',
-            fontSize: '20px',
-            'shadow.offsetX': 1,
-            'shadow.offsetY': 1,
-            'shadow.color': '#042635ff',
-            'shadow.blur': 3,
-            'shadow.fill': true,
-        })
-        bodytext.setWordWrapWidth(280)
-        page1.add(bodytext)
+        // text
+        const text = this.add.text(637, 900, "", {});
+        text.text = "Your Coins: 1000000";
+        text.setStyle({ "color": "#000000ff", "fontFamily": "Burbank", "fontSize": "32px" });
+        page1.add(text);
 
-        // txt_rodheader_1
-        const txt_rodheader_1 = this.add.text(718, 441, '', {})
-        txt_rodheader_1.text = 'Yellow Arrow Wakeboard'
-        txt_rodheader_1.setStyle({
-            align: 'center',
-            color: '#000000ff',
-            fontFamily: 'Burbank Small',
-            fontSize: '21px',
-            fontStyle: 'bold',
-            'shadow.color': '#042635ff',
-        })
-        txt_rodheader_1.setLineSpacing(-8)
-        txt_rodheader_1.setWordWrapWidth(200)
-        page1.add(txt_rodheader_1)
-
-        // txt_rodheader_1_1
-        const txt_rodheader_1_1 = this.add.text(881, 441, '', {})
-        txt_rodheader_1_1.text = 'Pink Striped Wakeboard'
-        txt_rodheader_1_1.setStyle({
-            align: 'center',
-            color: '#000000ff',
-            fontFamily: 'Burbank Small',
-            fontSize: '21px',
-            fontStyle: 'bold',
-            'shadow.color': '#042635ff',
-        })
-        txt_rodheader_1_1.setLineSpacing(-8)
-        txt_rodheader_1_1.setWordWrapWidth(200)
-        page1.add(txt_rodheader_1_1)
+        // exit
+        const exit = this.add.image(1036, 96, "dockupgrade", "exit");
 
         // lists
-        const pages = [page1]
+        const pages = [page1];
 
         // block (components)
-        new Interactive(block)
+        new Interactive(block);
 
-        // close_btn (components)
-        const close_btnSimpleButton = new SimpleButton(close_btn)
-        close_btnSimpleButton.callback = () => {
-            this.close()
-        }
+        // tag (components)
+        const tagButton = new Button(tag);
+        tagButton.spriteName = "tag";
+        tagButton.callback = () => this.interface.prompt.showItem(712);
 
-        // buy_wake1 (components)
-        const buy_wake1Button = new Button(buy_wake1)
-        buy_wake1Button.spriteName = 'buybtn'
-        buy_wake1Button.callback = () => this.interface.prompt.showItem(711)
-        buy_wake1Button.activeFrame = false
+        // tag_1 (components)
+        const tag_1Button = new Button(tag_1);
+        tag_1Button.spriteName = "tag";
+        tag_1Button.callback = () => this.interface.prompt.showItem(711);
 
-        // buy_wake2 (components)
-        const buy_wake2Button = new Button(buy_wake2)
-        buy_wake2Button.spriteName = 'buybtn'
-        buy_wake2Button.callback = () => this.interface.prompt.showItem(712)
-        buy_wake2Button.activeFrame = false
+        // exit (components)
+        const exitButton = new Button(exit);
+        exitButton.spriteName = "exit";
+        exitButton.callback = () => this.scene.stop();
 
-        this.pages = pages
+        this.text = text;
+        this.pages = pages;
 
-        this.events.emit('scene-awake')
+        this.events.emit("scene-awake");
     }
+
 
     /* START-USER-CODE */
 
@@ -199,6 +136,11 @@ export default class Hydro extends News {
 
     create() {
         super.create()
+        this.setCoins(this.shell.client.coins)
+    }
+
+    setCoins(coins) {
+        this.text = `YOUR COINS: ${coins}`
     }
 
     /* END-USER-CODE */
