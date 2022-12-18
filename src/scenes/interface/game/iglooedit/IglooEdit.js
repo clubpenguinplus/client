@@ -439,6 +439,7 @@ export default class IglooEdit extends BaseScene {
         }
 
         this.items = []
+        this.previews = []
 
         this.iglooFactory = new IglooFactory(this.shell)
 
