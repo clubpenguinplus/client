@@ -89,7 +89,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
                 this.icon.scale = 0.5
                 break
             case 'flooring':
-                this.icon.scale = 0.25
+                this.icon.scale = 0.8
                 break
         }
         this.add(this.icon)
