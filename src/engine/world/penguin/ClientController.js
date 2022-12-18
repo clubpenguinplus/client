@@ -41,18 +41,47 @@ export default class ClientController {
 
         this.ignores = typeof args[8] == 'string' ? args[8].split(',') : args[8]
         this.inventory = typeof args[9] == 'string' ? args[9].split(',') : []
+
         this.iglooInventory = typeof args[10] == 'string' ? args[10].split(',') : []
+        for (let item in this.iglooInventory) {
+            this.iglooInventory[item] = {
+                id: parseInt(this.iglooInventory[item]),
+                quantity: 1,
+                type: 'igloo',
+            }
+        }
+
         this.furnitureInventory = typeof args[11] == 'string' ? args[11].split(',') : []
         for (let item in this.furnitureInventory) {
             let temp = this.furnitureInventory[item].split(':')
             this.furnitureInventory[item] = {
                 id: parseInt(temp[0]),
                 quantity: parseInt(temp[1]),
+                type: 'furniture',
             }
         }
+
         this.stamps = typeof args[12] == 'string' ? args[12].split(',') : []
         this.postcards = typeof args[13] == 'string' ? args[13].split(',') : []
         this.pending = typeof args[14] == 'string' ? args[14].split(',') : []
+
+        this.floorInventory = typeof args[15] == 'string' ? args[15].split(',') : []
+        for (let item in this.floorInventory) {
+            this.floorInventory[item] = {
+                id: parseInt(this.floorInventory[item]),
+                quantity: 1,
+                type: 'flooring',
+            }
+        }
+
+        this.locationInventory = typeof args[16] == 'string' ? args[16].split(',') : []
+        for (let item in this.locationInventory) {
+            this.locationInventory[item] = {
+                id: parseInt(this.locationInventory[item]),
+                quantity: 1,
+                type: 'location',
+            }
+        }
 
         this.coins = this.string.coins
         this.rank = this.string.rank

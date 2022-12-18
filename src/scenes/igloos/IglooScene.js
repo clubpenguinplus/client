@@ -262,6 +262,14 @@ export default class IglooScene extends RoomScene {
         })
     }
 
+    updateLocation(location) {
+        if (this.id != this.shell.client.id || this.args.location == location) {
+            return
+        }
+
+        this.airtower.sendXt('g#al', location)
+    }
+
     updateQuantity(item) {
         this.quantities[item] = this.quantities[item] ? this.quantities[item] + 1 : 1
     }

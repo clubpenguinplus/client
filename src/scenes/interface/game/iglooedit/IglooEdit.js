@@ -278,6 +278,62 @@ export default class IglooEdit extends BaseScene {
         const plus_4 = this.add.sprite(480, 318, 'iglooedit-new', 'spinner0001')
         chooseIgloo.add(plus_4)
 
+        // title_12
+        const title_12 = this.add.text(108, 828, '', {})
+        title_12.setOrigin(0, 0.5)
+        title_12.text = 'Likes'
+        title_12.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        chooseIgloo.add(title_12)
+
+        // title_13
+        const title_13 = this.add.text(108, 853, '', {})
+        title_13.setOrigin(0, 0.5)
+        title_13.text = '0'
+        title_13.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        chooseIgloo.add(title_13)
+
+        // title_14
+        const title_14 = this.add.text(448, 853, '', {})
+        title_14.setOrigin(0, 0.5)
+        title_14.text = '0'
+        title_14.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        chooseIgloo.add(title_14)
+
+        // title_15
+        const title_15 = this.add.text(448, 828, '', {})
+        title_15.setOrigin(0, 0.5)
+        title_15.text = 'Likes'
+        title_15.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        chooseIgloo.add(title_15)
+
+        // title_16
+        const title_16 = this.add.text(788, 853, '', {})
+        title_16.setOrigin(0, 0.5)
+        title_16.text = '0'
+        title_16.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        chooseIgloo.add(title_16)
+
+        // title_17
+        const title_17 = this.add.text(788, 828, '', {})
+        title_17.setOrigin(0, 0.5)
+        title_17.text = 'Likes'
+        title_17.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        chooseIgloo.add(title_17)
+
+        // title_18
+        const title_18 = this.add.text(1127, 853, '', {})
+        title_18.setOrigin(0, 0.5)
+        title_18.text = '0'
+        title_18.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        chooseIgloo.add(title_18)
+
+        // title_19
+        const title_19 = this.add.text(1127, 828, '', {})
+        title_19.setOrigin(0, 0.5)
+        title_19.text = 'Likes'
+        title_19.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        chooseIgloo.add(title_19)
+
         // lists
         const categories = [all, location, igloos, flooring, room, wall, pets]
         const spinners = [plus, plus_1, plus_2, plus_3, plus_4]
@@ -347,6 +403,9 @@ export default class IglooEdit extends BaseScene {
         // hide (components)
         const hideLocalisedString = new LocalisedString(hide)
         hideLocalisedString.id = 'hide'
+
+        // bg (components)
+        new Interactive(bg)
 
         // choose_igloo (components)
         const choose_iglooButton = new Button(choose_igloo)
@@ -592,15 +651,65 @@ export default class IglooEdit extends BaseScene {
         }
 
         this.categories[id].setFrame(this.categories[id].frame.name + '-selected')
+        this.loadItems(id)
     }
 
     loadItems(category) {
+        for (let i = 0; i < this.items.length; i++) {
+            this.items[i].destroy()
+        }
+        this.items = []
+
         let xcoord = 85
-        for (let item of this.shell.client.furnitureInventory) {
+        let items = []
+        switch (category) {
+            case 0:
+                items = this.shell.client.furnitureInventory.concat(this.shell.client.locationInventory, this.shell.client.iglooInventory, this.shell.client.floorInventory)
+                break
+            case 1:
+                items = this.shell.client.locationInventory
+                break
+            case 2:
+                items = this.shell.client.iglooInventory
+                break
+            case 3:
+                items = this.shell.client.floorInventory
+                break
+            case 4:
+                this.shell.client.furnitureInventory.forEach((item) => {
+                    if (this.crumbs.furniture[item.id].type == 1) {
+                        items.push(item)
+                    }
+                })
+                break
+            case 5:
+                this.shell.client.furnitureInventory.forEach((item) => {
+                    if (this.crumbs.furniture[item.id].type == 2) {
+                        items.push(item)
+                    }
+                })
+                break
+            case 6:
+                this.shell.client.furnitureInventory.forEach((item) => {
+                    if (this.crumbs.furniture[item.id].type == 3) {
+                        items.push(item)
+                    }
+                })
+                break
+            case 7:
+                this.shell.client.furnitureInventory.forEach((item) => {
+                    if (this.crumbs.furniture[item.id].type == 4) {
+                        items.push(item)
+                    }
+                })
+                break
+        }
+
+        for (let item of items) {
             let sprite = new IglooItem(this, xcoord, 85)
             this.controls.add(sprite)
             this.items.push(sprite)
-            sprite.setItem('furniture', item.id, item.quantity)
+            sprite.setItem(item.type, item.id, item.quantity)
             xcoord += 120
         }
     }

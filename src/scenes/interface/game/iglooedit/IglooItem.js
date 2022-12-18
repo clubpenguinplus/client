@@ -66,6 +66,8 @@ export default class IglooItem extends Phaser.GameObjects.Container {
     /* START-USER-CODE */
 
     setItem(type, id, quantity) {
+        this.quantityText.visible = false
+        this.quantity.visible = false
         if (this.scene.textures.exists(`furniture/icon/${type}/${id}`)) {
             return this.addItem(type, id, quantity)
         }
@@ -75,11 +77,21 @@ export default class IglooItem extends Phaser.GameObjects.Container {
     }
 
     addItem(type, id, quantity) {
-        quantity = this.calculateQuantity(id, quantity)
+        quantity = this.calculateQuantity(type, id, quantity)
         this.item = {type, id, quantity}
 
         this.icon = this.scene.add.image(0, 0, `furniture/icon/${type}/${id}`)
-        this.icon.scale = 0.5
+        switch (type) {
+            case 'igloo':
+                this.icon.scale = 0.25
+                break
+            case 'furniture':
+                this.icon.scale = 0.5
+                break
+            case 'flooring':
+                this.icon.scale = 0.25
+                break
+        }
         this.add(this.icon)
 
         if (parseInt(quantity) > 1) {
@@ -100,7 +112,8 @@ export default class IglooItem extends Phaser.GameObjects.Container {
         this.bg.on('pointerdown', () => this.onClick())
     }
 
-    calculateQuantity(id, quantity) {
+    calculateQuantity(type, id, quantity) {
+        if (type != 'furniture') return quantity
         for (let f of this.scene.shell.room.furnitureSprites) {
             if (f.id == id) {
                 quantity--
@@ -125,17 +138,26 @@ export default class IglooItem extends Phaser.GameObjects.Container {
 
     onClick() {
         let pointer = this.scene.input.activePointer
-        this.furnitureLoader.loadFurniture(this.item.id, null, pointer.x, pointer.y, 1, 1, this)
 
-        this.item.quantity--
-        if (this.item.quantity > 1) {
-            this.quantityText.text = this.item.quantity
-        } else if (this.item.quantity == 1) {
-            this.quantityText.visible = false
-            this.quantity.visible = false
-        } else {
-            this.cover.visible = true
-            this.bringToTop(this.cover)
+        if (this.item.type == 'furniture') {
+            this.furnitureLoader.loadFurniture(this.item.id, null, pointer.x, pointer.y, 1, 1, this)
+
+            this.item.quantity--
+            if (this.item.quantity > 1) {
+                this.quantityText.text = this.item.quantity
+            } else if (this.item.quantity == 1) {
+                this.quantityText.visible = false
+                this.quantity.visible = false
+            } else {
+                this.cover.visible = true
+                this.bringToTop(this.cover)
+            }
+        } else if (this.item.type == 'igloo') {
+            this.scene.shell.room.updateIgloo(this.item.id)
+        } else if (this.item.type == 'flooring') {
+            this.scene.shell.room.updateFlooring(this.item.id)
+        } else if (this.item.type == 'location') {
+            this.scene.shell.room.updateLocation(this.item.id)
         }
     }
 

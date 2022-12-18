@@ -387,7 +387,9 @@
                     "type": "Image",
                     "id": "9d37d487-3da3-4609-858c-7c184f40ac73",
                     "label": "bg",
-                    "components": [],
+                    "components": [
+                        "Interactive"
+                    ],
                     "texture": {
                         "key": "iglooedit-new",
                         "frame": "bg"
@@ -719,6 +721,122 @@
                     },
                     "x": 480,
                     "y": 318
+                },
+                {
+                    "type": "Text",
+                    "id": "0c833cee-7874-43f5-8e6e-22fa107c71f8",
+                    "label": "title_12",
+                    "components": [],
+                    "x": 108,
+                    "y": 828,
+                    "originY": 0.5,
+                    "text": "Likes",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "ab20cb8d-909f-4933-9512-e646eff772fe",
+                    "label": "title_13",
+                    "components": [],
+                    "x": 108,
+                    "y": 853,
+                    "originY": 0.5,
+                    "text": "0",
+                    "fixedWidth": 100,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "e8461536-ecc0-4e38-8b84-e70255ce035b",
+                    "label": "title_14",
+                    "components": [],
+                    "x": 448,
+                    "y": 853,
+                    "originY": 0.5,
+                    "text": "0",
+                    "fixedWidth": 100,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "b1a23d25-7de5-45ef-99ff-56df7b4a5b72",
+                    "label": "title_15",
+                    "components": [],
+                    "x": 448,
+                    "y": 828,
+                    "originY": 0.5,
+                    "text": "Likes",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "b37ec322-8074-4586-a649-645a1ee420c7",
+                    "label": "title_16",
+                    "components": [],
+                    "x": 788,
+                    "y": 853,
+                    "originY": 0.5,
+                    "text": "0",
+                    "fixedWidth": 100,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "76758e86-2d82-46ed-a944-b76eb92e1772",
+                    "label": "title_17",
+                    "components": [],
+                    "x": 788,
+                    "y": 828,
+                    "originY": 0.5,
+                    "text": "Likes",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "689af786-9519-468b-8a56-ccf1db7755d4",
+                    "label": "title_18",
+                    "components": [],
+                    "x": 1127,
+                    "y": 853,
+                    "originY": 0.5,
+                    "text": "0",
+                    "fixedWidth": 100,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#3e83c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "e45917b8-4752-47ca-bf7a-e1697fbcc79c",
+                    "label": "title_19",
+                    "components": [],
+                    "x": 1127,
+                    "y": 828,
+                    "originY": 0.5,
+                    "text": "Likes",
+                    "fixedWidth": 500,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#3e83c5ff"
                 }
             ]
         }
