@@ -118,7 +118,7 @@ export default class Airtower {
 
     sendXt(action, args = '') {
         if (typeof args == 'object') args = args.join('%')
-        if (window.location.hostname == 'localhost' && localStorage.debugMode == 'true') {
+        if (localStorage.debugMode == 'true') {
             console.log('[Airtower] XT packet sent:', `%xt%s%${action}%${args}%`)
         }
         let payload = AES.encrypt(`%xt%s%${action}%${args}%`, `Client${new Date().getUTCHours()}Key`).toString()
@@ -126,7 +126,7 @@ export default class Airtower {
     }
 
     sendXml(xml) {
-        if (window.location.hostname == 'localhost' && localStorage.debugMode == 'true') {
+        if (localStorage.debugMode == 'true') {
             console.log('[Airtower] XML packet sent:', xml)
         }
         let payload = AES.encrypt(xml, `Client${new Date().getUTCHours()}Key`).toString()
