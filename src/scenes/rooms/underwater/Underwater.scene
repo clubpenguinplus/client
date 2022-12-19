@@ -1,0 +1,331 @@
+{
+    "id": "99dcc8d6-577a-46c0-aadd-33ae5e6b1c96",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/underwater/underwater-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Underwater",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "60068f0a-df10-4d97-ab31-502963b30253",
+            "label": "ocean",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "ocean"
+            },
+            "x": 760,
+            "y": 112
+        },
+        {
+            "type": "Image",
+            "id": "5df6cd87-8c17-432b-bbb7-232ffa0408c1",
+            "label": "underwaterbg",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "underwaterbg"
+            },
+            "x": 760,
+            "y": 531
+        },
+        {
+            "type": "Image",
+            "id": "74503d36-8edb-491a-a53b-a459ec4b800e",
+            "label": "rightcoral",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "rightcoral"
+            },
+            "x": 952.3865259094139,
+            "y": 683.1115202825994,
+            "originX": 0.30691385093641804,
+            "originY": 0.8131191228451875
+        },
+        {
+            "type": "Image",
+            "id": "1a5de901-5509-4283-a7fe-a7611e0f644b",
+            "label": "leftcoralback",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "leftcoralback"
+            },
+            "x": 132.7248733286268,
+            "y": 603.1269000705977,
+            "originX": 0.495259752151029,
+            "originY": 0.5675862193307338
+        },
+        {
+            "type": "Image",
+            "id": "d3b6969f-01d3-49a6-8cd8-fe5c9873c14e",
+            "label": "leftcoral",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "leftcoral"
+            },
+            "x": 330.43721856118515,
+            "y": 658.4697350358521,
+            "originX": 0.4666726716556185,
+            "originY": 0.6950122352347599
+        },
+        {
+            "type": "Image",
+            "id": "f80a5770-1227-43f5-8d6a-b75f2f2651fb",
+            "label": "wheel",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "wheel"
+            },
+            "x": 366.80198929149793,
+            "y": 738.8831828663967,
+            "originX": 0.545650934842268,
+            "originY": 0.5730414957476291
+        },
+        {
+            "type": "Image",
+            "id": "9c12e6fa-03d4-41df-ba0d-9315f7c3a28e",
+            "label": "leftkelp",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "leftkelp"
+            },
+            "x": 84,
+            "y": 657
+        },
+        {
+            "type": "Image",
+            "id": "97b11027-8db2-464d-9478-7c5018202e84",
+            "label": "frontshell",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "frontshell"
+            },
+            "x": 1330.0090214034904,
+            "y": 586.2091458315642,
+            "originX": 0.6205762029902259,
+            "originY": 0.32158545259472027
+        },
+        {
+            "type": "Image",
+            "id": "4ac4e7f3-61f4-4d7b-a6bf-310c14e68d48",
+            "label": "backshell",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "backshell"
+            },
+            "x": 1424.7209168640634,
+            "y": 652.7257311224907,
+            "originX": 0.4804816480003773,
+            "originY": 0.7160337124852396
+        },
+        {
+            "type": "Image",
+            "id": "a7f16722-4247-4abe-a2c4-032b99668e03",
+            "label": "anchor",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "anchor"
+            },
+            "x": 1339.8617648265122,
+            "y": 787.6161638493251,
+            "originX": 0.3109515286038619,
+            "originY": 0.7521166649915462
+        },
+        {
+            "type": "Image",
+            "id": "fa638b38-db88-4d01-910e-b5261266d927",
+            "label": "rightkelp",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "rightkelp"
+            },
+            "x": 1468,
+            "y": 455
+        },
+        {
+            "type": "Image",
+            "id": "38b35b81-bd7b-431d-ba99-46ac9aab5a18",
+            "label": "underwaterfg",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "underwaterfg"
+            },
+            "x": -20,
+            "y": 981,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "4e8e7065-7538-482f-a5da-cb655d48cd05",
+            "label": "mosskey",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "mosskey0001"
+            },
+            "x": 910,
+            "y": 906,
+            "originX": 0.5296327841283616,
+            "originY": 3.102879686950645
+        },
+        {
+            "type": "Container",
+            "id": "9afe4fdf-7bde-430d-ba2b-29efcfc69b02",
+            "label": "fish",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1177,
+            "y": 173,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "2cc86e9d-7178-4a5e-adca-d9bbda9d8d08",
+                    "label": "littlefishone",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "underwater",
+                        "frame": "littlefishone0001"
+                    },
+                    "x": -12.215708714301627,
+                    "y": 6.337241188179036
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5f612a4b-c8df-4bce-a821-7f6c7f1ded8e",
+                    "label": "littlefishtwo",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "underwater",
+                        "frame": "littlefishtwo0001"
+                    },
+                    "x": -26.215708714301627,
+                    "y": -8.662758811820964
+                },
+                {
+                    "type": "Sprite",
+                    "id": "7a793c93-68a4-4d72-a536-9f12b0be3d08",
+                    "label": "littlefishthree",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "underwater",
+                        "frame": "littlefishthree0001"
+                    },
+                    "x": 11.784291285698373,
+                    "y": -9.662758811820964
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e64eeb83-6dc0-4cd3-91d9-b9b4e19dee46",
+                    "label": "littlefishfour",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "underwater",
+                        "frame": "littlefishfour0001"
+                    },
+                    "x": 27.784291285698373,
+                    "y": 7.337241188179036
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "a8c06d96-b0aa-4f0c-aeab-bcacfe98ee68",
+            "label": "jellyfish",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "jellyfish0001"
+            },
+            "x": -77,
+            "y": 331
+        },
+        {
+            "type": "Sprite",
+            "id": "8df22b51-b7cc-4c26-bae3-5d343f4cee48",
+            "label": "fluffy",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "underwater",
+                "frame": "fluffy0001"
+            },
+            "x": -74,
+            "y": 112
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "2cfa95fa-6a2c-4ddd-9dac-59efeb093ff0",
+            "label": "sort",
+            "objectIds": [
+                "00dd4fe2-9390-4af0-9bbc-2d3b33d3bbd9",
+                "3e43dc67-45a3-4ef1-a419-e490e298ee70",
+                "2c482507-db51-4d43-befc-53b643d2a4d8",
+                "d52da91b-ec90-40bc-bd08-43ef6cb778d2",
+                "b153b9c6-b112-4b6c-a774-236fcef797cd",
+                "a0514ed1-80bc-490a-a7af-09d476093718",
+                "7969efd4-3546-42b7-b3af-d967ca0e8dc7",
+                "06fef59c-90ba-41a2-a9a2-6aacaf3a64fb",
+                "c2e60ce2-cb59-4e89-8c17-e453a5731c29",
+                "1191d6d0-92ea-437e-bc85-dae1ad3ad562",
+                "eef21a8f-7fe9-4f1e-8428-205aeffa75dd",
+                "079bad43-3a14-4b28-98e2-3fb0cee25540",
+                "8b967f4a-a954-4fcc-b5ca-5690e523accf",
+                "bccb0306-634b-4175-a7a1-fb1d3a50f2f7",
+                "021f6652-1521-4426-a928-2435ae7fe0b8",
+                "6a53ee49-ce80-4fcc-8fb5-48f4eb058819",
+                "0d7828a3-6dc9-40be-b47b-c6612d8071b0",
+                "3d4a2d4b-8e05-4418-ad44-b9943c47dfe6",
+                "79870c7c-0031-48e6-9b81-e7bfbeca1fd1",
+                "ce6b41e7-2d82-4f66-87a5-dbe4ae3722d7",
+                "d5c0b46e-4dc4-4752-a599-5ffb48cab229",
+                "38b35b81-bd7b-431d-ba99-46ac9aab5a18",
+                "d3b6969f-01d3-49a6-8cd8-fe5c9873c14e",
+                "1a5de901-5509-4283-a7fe-a7611e0f644b",
+                "f80a5770-1227-43f5-8d6a-b75f2f2651fb",
+                "9c12e6fa-03d4-41df-ba0d-9315f7c3a28e",
+                "74503d36-8edb-491a-a53b-a459ec4b800e",
+                "97b11027-8db2-464d-9478-7c5018202e84",
+                "4ac4e7f3-61f4-4d7b-a6bf-310c14e68d48",
+                "fa638b38-db88-4d01-910e-b5261266d927",
+                "a7f16722-4247-4abe-a2c4-032b99668e03",
+                "4e8e7065-7538-482f-a5da-cb655d48cd05"
+            ]
+        }
+    ]
+}

@@ -241,6 +241,12 @@ const rooms = {
         x: 840,
         y: 480,
     },
+    815: {
+        key: 'Underwater',
+        scene: require('@rooms/underwater/Underwater').default,
+        x: 840,
+        y: 480,
+    },
     916: {
         key: 'AquaGrabber',
         scene: require('@games/aquagrabber/AquaGrabber').default,

@@ -45,7 +45,7 @@ export default class Lake extends RoomScene {
             cavemine: () => this.triggerRoom(813, 874, 525),
             forest: () => this.triggerRoom(809, 332, 674),
             underwater: () => {
-                if (this.hasMossKey()) this.triggerRoom(815, 760, 480)
+                if (this.hasMossKey()) this.triggerRoom(815, 504, 508)
             },
             }
         this.music = '666'
@@ -74,7 +74,7 @@ export default class Lake extends RoomScene {
         this.add.image(760, 690, "lake", "walkrocks");
 
         // door
-        const door = this.add.sprite(1399.3474591632723, 639.6482953191972, "lake", "door0001");
+        const door = this.add.sprite(1399.3474591632723, 639.6482953191972, "lake", "door0011");
         door.setOrigin(0.3866359118495934, 0.8603358516209352);
 
         // walkpath

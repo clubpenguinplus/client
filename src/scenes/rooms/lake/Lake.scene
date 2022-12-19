@@ -78,7 +78,7 @@
             "SimpleButton.hoverCallback": "() => this.onDoorOver()",
             "texture": {
                 "key": "lake",
-                "frame": "door0001"
+                "frame": "door0011"
             },
             "x": 1399.3474591632723,
             "y": 639.6482953191972,
