@@ -37,6 +37,7 @@
             "id": "2147c74d-be30-4de0-bb64-56c10d927575",
             "label": "page1",
             "components": [],
+            "y": -20,
             "visible": false,
             "list": [
                 {
@@ -81,6 +82,31 @@
                     },
                     "x": 1126,
                     "y": 86
+                },
+                {
+                    "type": "Text",
+                    "id": "7c248c2e-7518-413a-b20e-3f2e267e06ce",
+                    "label": "text_title_1",
+                    "components": [],
+                    "x": 558,
+                    "y": 146,
+                    "text": "Music Catalog",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold italic",
+                    "color": "#373737ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "ed42c448-48a6-4c0f-af87-f85fc2681dd7",
+                    "label": "text_title",
+                    "components": [],
+                    "x": 555,
+                    "y": 143,
+                    "text": "Music Catalog",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold italic"
                 }
             ]
         },
@@ -89,6 +115,7 @@
             "id": "f5673b0d-a373-4e97-a1c5-2024cf12df80",
             "label": "page2",
             "components": [],
+            "y": -20,
             "visible": false,
             "list": [
                 {
@@ -164,8 +191,8 @@
                         "key": "music",
                         "frame": "button"
                     },
-                    "x": 262,
-                    "y": 480
+                    "x": 258,
+                    "y": 476
                 },
                 {
                     "type": "Image",
@@ -180,8 +207,8 @@
                         "key": "music",
                         "frame": "button"
                     },
-                    "x": 433,
-                    "y": 716
+                    "x": 426,
+                    "y": 709
                 },
                 {
                     "type": "Image",
@@ -202,6 +229,7 @@
                     "type": "Container",
                     "id": "7a9594be-3d57-43e7-9ba2-157f9f126b6a",
                     "label": "mic",
+                    "scope": "CLASS",
                     "components": [],
                     "visible": false,
                     "list": [
@@ -288,8 +316,75 @@
                             },
                             "x": 763,
                             "y": 610
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7d5e8aec-d383-4574-ab8f-9ad67c61313c",
+                            "label": "threehundred_2",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "threehundred"
+                            },
+                            "x": 772,
+                            "y": 614
                         }
                     ]
+                },
+                {
+                    "type": "Image",
+                    "id": "611561f7-5e68-45e1-90d5-4bcb44cb4811",
+                    "label": "amountspg2",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "amountspg2"
+                    },
+                    "x": 348,
+                    "y": 468
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "85d67c92-a322-4c91-9726-71d8a257ee38",
+                    "label": "sec_mic",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onMicSecret()",
+                    "x": 511,
+                    "y": 159,
+                    "scaleX": 0.6258735394714823,
+                    "scaleY": 0.6258735394714823,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "3bfd4fcf-1698-47f0-a50f-5e8d5d50f979",
+                    "label": "coinholder",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "coinholder"
+                    },
+                    "x": 897,
+                    "y": 920
+                },
+                {
+                    "type": "Text",
+                    "id": "94a11c28-1abf-4f69-a33c-00dbd5693843",
+                    "label": "text_pg2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 813,
+                    "y": 889,
+                    "angle": -7,
+                    "text": "Your Coins:\n100000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "color": "#000000ff"
                 }
             ]
         },
@@ -298,6 +393,7 @@
             "id": "4a245103-094d-42d7-bb53-90fcc52b5195",
             "label": "page3",
             "components": [],
+            "y": -20,
             "visible": false,
             "list": [
                 {
@@ -373,8 +469,8 @@
                         "key": "music",
                         "frame": "button"
                     },
-                    "x": 853,
-                    "y": 217
+                    "x": 850,
+                    "y": 216
                 },
                 {
                     "type": "Image",
@@ -420,8 +516,8 @@
                         "key": "music",
                         "frame": "button"
                     },
-                    "x": 1071,
-                    "y": 796
+                    "x": 1060,
+                    "y": 794
                 },
                 {
                     "type": "Image",
@@ -437,7 +533,7 @@
                         "frame": "button"
                     },
                     "x": 1138,
-                    "y": 448
+                    "y": 457
                 },
                 {
                     "type": "Image",
@@ -452,8 +548,8 @@
                         "key": "music",
                         "frame": "button"
                     },
-                    "x": 1051,
-                    "y": 249
+                    "x": 1063,
+                    "y": 248
                 },
                 {
                     "type": "Image",
@@ -468,13 +564,14 @@
                         "key": "music",
                         "frame": "button"
                     },
-                    "x": 1256,
-                    "y": 183
+                    "x": 1252,
+                    "y": 181
                 },
                 {
                     "type": "Container",
                     "id": "810a1a8e-af7a-45ee-93b6-f3e3425f945f",
                     "label": "violin",
+                    "scope": "CLASS",
                     "components": [],
                     "visible": false,
                     "list": [
@@ -561,8 +658,87 @@
                             },
                             "x": 763,
                             "y": 610
+                        },
+                        {
+                            "type": "Image",
+                            "id": "942ac91a-7f0e-45ca-9796-d891ff7c539c",
+                            "label": "threehundred_1",
+                            "components": [],
+                            "texture": {
+                                "key": "music",
+                                "frame": "threehundred"
+                            },
+                            "x": 772,
+                            "y": 613
                         }
                     ]
+                },
+                {
+                    "type": "Image",
+                    "id": "7894f0ab-c6ad-4424-96ec-a55c718537a9",
+                    "label": "amounts",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "amounts"
+                    },
+                    "x": 871,
+                    "y": 496
+                },
+                {
+                    "type": "Image",
+                    "id": "77e0991f-698e-427b-be9e-5747985fcb54",
+                    "label": "threehundred",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "threehundred"
+                    },
+                    "x": 319,
+                    "y": 258
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e4aee393-775d-49ba-a255-d070ac9fe60e",
+                    "label": "sec_violin",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onViolinSecret()",
+                    "x": 606,
+                    "y": 130,
+                    "scaleX": 0.6258735394714823,
+                    "scaleY": 0.6258735394714823,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "df21ba72-d7d8-4141-8151-24eaca489440",
+                    "label": "coinholder_1",
+                    "components": [],
+                    "texture": {
+                        "key": "music",
+                        "frame": "coinholder"
+                    },
+                    "x": 897,
+                    "y": 920
+                },
+                {
+                    "type": "Text",
+                    "id": "da32fa83-5641-43a3-8bcb-019fcdc7e898",
+                    "label": "text_pg3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 813,
+                    "y": 889,
+                    "angle": -7,
+                    "text": "Your Coins:\n100000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "color": "#000000ff"
                 }
             ]
         },
@@ -571,6 +747,7 @@
             "id": "d9fddddb-cca3-43df-82b7-7829ee7ac05f",
             "label": "page4",
             "components": [],
+            "y": -20,
             "visible": false,
             "list": [
                 {

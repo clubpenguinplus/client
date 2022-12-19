@@ -131,6 +131,19 @@
                     "flipX": true
                 }
             ]
+        },
+        {
+            "type": "Text",
+            "id": "58a2316e-f3f3-44a9-a337-f0c6d9bd5169",
+            "label": "text",
+            "scope": "CLASS",
+            "components": [],
+            "x": 637,
+            "y": 900,
+            "text": "Your Coins: 1000000",
+            "fontFamily": "Burbank Small",
+            "fontSize": "32px",
+            "color": "#000000ff"
         }
     ],
     "plainObjects": [],
