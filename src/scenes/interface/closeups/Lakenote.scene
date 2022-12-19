@@ -1,0 +1,71 @@
+{
+    "id": "6059189d-de0d-46ee-b2dd-1c8ff40e35bf",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/lakenote/lakenote-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Lakenote",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "f1f002df-fdf7-44b4-a18d-62f0d1031a99",
+            "label": "note_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "lakenote",
+                "frame": "note_en"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "6c658506-c0e6-4a95-9687-3211e069b6bb",
+            "label": "exit",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "exit",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "lakenote",
+                "frame": "exit"
+            },
+            "x": 1084,
+            "y": 91
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

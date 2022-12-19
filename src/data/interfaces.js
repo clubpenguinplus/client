@@ -16,6 +16,8 @@ const interfaces = {
     Stampbook: require('@scenes/interface/game/stampbook/Stampbook').default,
     Punish: require('@scenes/interface/closeups/Punish').default,
     TourQuiz: require('@scenes/interface/closeups/TourQuiz').default,
+    Lakenote: require('@scenes/interface/closeups/Lakenote').default,
+    Cavenote: require('@scenes/interface/closeups/Cavenote').default,
 }
 
 export default interfaces

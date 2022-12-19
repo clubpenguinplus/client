@@ -114,6 +114,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onSignOver()",
             "SimpleButton.hoverOutCallback": "() => this.onSignOut()",
+            "SimpleButton.callback": "() => this.onSignClick()",
             "texture": {
                 "key": "cavemine",
                 "frame": "signzone"

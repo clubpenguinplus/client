@@ -1,0 +1,779 @@
+{
+    "id": "b82d3dfd-7dd8-4be8-b1fc-39022327499c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/lake/lake-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Lake",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f81816a2-89a2-4cf4-9fb2-982356d983d8",
+            "label": "lakebg",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "lakebg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "833c4871-cd5d-406c-b033-ee1a953377d7",
+            "label": "waterfalltwo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "waterfalltwo0001"
+            },
+            "x": 1077,
+            "y": 412
+        },
+        {
+            "type": "Sprite",
+            "id": "6e02ac04-a1f4-48db-a86c-3e49b3308e04",
+            "label": "waterfallone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "waterfallone0001"
+            },
+            "x": 725,
+            "y": 410
+        },
+        {
+            "type": "Image",
+            "id": "198d3476-e240-4336-91eb-be03e645a46e",
+            "label": "walkrocks",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "walkrocks"
+            },
+            "x": 760,
+            "y": 690
+        },
+        {
+            "type": "Sprite",
+            "id": "ee4df8a7-f781-4594-ac22-a5d3b7ed50ea",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "texture": {
+                "key": "lake",
+                "frame": "door0001"
+            },
+            "x": 1399.3474591632723,
+            "y": 639.6482953191972,
+            "originX": 0.3866359118495934,
+            "originY": 0.8603358516209352
+        },
+        {
+            "type": "Image",
+            "id": "60161d8d-d891-4cd4-9ee9-040a1fe5c5c5",
+            "label": "walkpath",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "walkpath"
+            },
+            "x": 811,
+            "y": 701
+        },
+        {
+            "type": "Sprite",
+            "id": "ad767a0f-79af-4693-8896-2fe08afda121",
+            "label": "rockanimone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rockanimone0001"
+            },
+            "x": 691,
+            "y": 134
+        },
+        {
+            "type": "Sprite",
+            "id": "a83c6c6b-3f80-4cd3-8543-77c03367f8a5",
+            "label": "rockanimtwo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rockanimtwo0001"
+            },
+            "x": 747,
+            "y": 130
+        },
+        {
+            "type": "Sprite",
+            "id": "accc3178-982f-46e8-afae-7c40d80aede0",
+            "label": "rockanimthree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rockanimthree0001"
+            },
+            "x": 1060,
+            "y": 142
+        },
+        {
+            "type": "Sprite",
+            "id": "659817d7-bb33-4369-a36e-6fecdd360415",
+            "label": "rockanimfour",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rockanimfour0001"
+            },
+            "x": 1117,
+            "y": 145
+        },
+        {
+            "type": "Image",
+            "id": "799b25a0-5814-4050-8d0c-646e65345785",
+            "label": "overstairs",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "overstairs"
+            },
+            "x": 686,
+            "y": 287
+        },
+        {
+            "type": "Image",
+            "id": "da1628ef-0a42-4e83-b9ea-88a4941c8baa",
+            "label": "doorholdertwo",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "doorholdertwo"
+            },
+            "x": 1479,
+            "y": 593
+        },
+        {
+            "type": "Image",
+            "id": "96489f68-a823-416b-ae67-42b6c7bc79a3",
+            "label": "rightgold",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rightgold"
+            },
+            "x": 1249,
+            "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "831d26aa-9a8e-488d-8d41-39a9a9d51d14",
+            "label": "doorholder",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "doorholder"
+            },
+            "x": 1404,
+            "y": 311
+        },
+        {
+            "type": "Image",
+            "id": "af28513b-2c7c-43cf-b02b-6403723ea494",
+            "label": "rockbox",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rockbox"
+            },
+            "x": 756,
+            "y": 409
+        },
+        {
+            "type": "Image",
+            "id": "153d4cef-0fb8-4780-9212-fea11123eeff",
+            "label": "upperrock",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "upperrock"
+            },
+            "x": 604,
+            "y": 306
+        },
+        {
+            "type": "Image",
+            "id": "e0a8db77-a014-4ad4-a502-8e2de04fe135",
+            "label": "midrocks",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "midrocks"
+            },
+            "x": 578,
+            "y": 368
+        },
+        {
+            "type": "Image",
+            "id": "41e42f67-dc1c-467e-9327-f81f3941bcb7",
+            "label": "lowerrock",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "lowerrock"
+            },
+            "x": 522,
+            "y": 468
+        },
+        {
+            "type": "Image",
+            "id": "48d15e6d-496e-4433-8bf7-a35ec075fe04",
+            "label": "overwater",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "overwater"
+            },
+            "x": 753,
+            "y": 423
+        },
+        {
+            "type": "Image",
+            "id": "82fc01f6-8703-4a5d-b059-bfcf3595c190",
+            "label": "randomcoins",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "randomcoins"
+            },
+            "x": 331,
+            "y": 500
+        },
+        {
+            "type": "Image",
+            "id": "e6fcd6bc-9cf3-4623-bd11-4b9444725f4c",
+            "label": "moregold",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "moregold"
+            },
+            "x": 426,
+            "y": 784
+        },
+        {
+            "type": "Sprite",
+            "id": "e1dcc044-2d10-4100-b730-78326a7febd4",
+            "label": "squigglyone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "squigglyone0001"
+            },
+            "x": 720,
+            "y": 154,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "aa4d7e13-5342-4321-bc9a-7f6603c99162",
+            "label": "squigglytwo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "squigglytwo0001"
+            },
+            "x": 1073,
+            "y": 167,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Sprite",
+            "id": "c72271d7-e900-4f77-ae04-5c85f6a3c51e",
+            "label": "note",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "note",
+            "Button.callback": "() => this.onNoteClick()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lake",
+                "frame": "note"
+            },
+            "x": 1363,
+            "y": 508
+        },
+        {
+            "type": "Image",
+            "id": "43441eef-7581-4815-80cb-0b9d10347f98",
+            "label": "leftrock",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "leftrock"
+            },
+            "x": 38,
+            "y": 454
+        },
+        {
+            "type": "Image",
+            "id": "fbfe6c1a-811e-4b31-abd4-dcd78647f997",
+            "label": "leftgold",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "leftgold"
+            },
+            "x": 79,
+            "y": 642
+        },
+        {
+            "type": "Image",
+            "id": "6aed8086-354f-4c60-b46e-9f812a183f7c",
+            "label": "leftspiky",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "leftspiky"
+            },
+            "x": 45,
+            "y": 633
+        },
+        {
+            "type": "Image",
+            "id": "6ffeeb32-2a8b-4520-8462-cd519e359e85",
+            "label": "astrobarrierback",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "astrobarrierback"
+            },
+            "x": 209.1204378170316,
+            "y": 725.6382449408443,
+            "originX": 0.4547897162903879,
+            "originY": 0.3911987251043284
+        },
+        {
+            "type": "Image",
+            "id": "e0b185c6-6b7f-421f-97a1-8ec01927e9b1",
+            "label": "waterblanket",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "waterblanket"
+            },
+            "x": 948.7233611540541,
+            "y": 923.8134672837704,
+            "originX": 0.49802203401742323,
+            "originY": 1.1765205872965643
+        },
+        {
+            "type": "Image",
+            "id": "71a6cf1d-6117-4946-9975-76323192436c",
+            "label": "astrobarrier",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "astrobarrier"
+            },
+            "x": 188.44822692871094,
+            "y": 835.0333561418055,
+            "originX": 0.45903027358364146,
+            "originY": 0.734952947383642
+        },
+        {
+            "type": "Container",
+            "id": "cbf8ceab-2ff1-4d37-82f4-76fde0765f0f",
+            "label": "water",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "00dd4fe2-9390-4af0-9bbc-2d3b33d3bbd9",
+                    "label": "water_0001",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_0001"
+                    },
+                    "x": 707,
+                    "y": 492
+                },
+                {
+                    "type": "Image",
+                    "id": "3e43dc67-45a3-4ef1-a419-e490e298ee70",
+                    "label": "water_001",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_001"
+                    },
+                    "x": 839,
+                    "y": 500
+                },
+                {
+                    "type": "Image",
+                    "id": "d5c0b46e-4dc4-4752-a599-5ffb48cab229",
+                    "label": "water_002",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_002"
+                    },
+                    "x": 814,
+                    "y": 522
+                },
+                {
+                    "type": "Image",
+                    "id": "ce6b41e7-2d82-4f66-87a5-dbe4ae3722d7",
+                    "label": "water_003",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_003"
+                    },
+                    "x": 805,
+                    "y": 546
+                },
+                {
+                    "type": "Image",
+                    "id": "79870c7c-0031-48e6-9b81-e7bfbeca1fd1",
+                    "label": "water_004",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_004"
+                    },
+                    "x": 837,
+                    "y": 563
+                },
+                {
+                    "type": "Image",
+                    "id": "3d4a2d4b-8e05-4418-ad44-b9943c47dfe6",
+                    "label": "water_005",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_005"
+                    },
+                    "x": 886,
+                    "y": 579
+                },
+                {
+                    "type": "Image",
+                    "id": "0d7828a3-6dc9-40be-b47b-c6612d8071b0",
+                    "label": "water_006",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_006"
+                    },
+                    "x": 921,
+                    "y": 597
+                },
+                {
+                    "type": "Image",
+                    "id": "6a53ee49-ce80-4fcc-8fb5-48f4eb058819",
+                    "label": "water_007",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_007"
+                    },
+                    "x": 967,
+                    "y": 613
+                },
+                {
+                    "type": "Image",
+                    "id": "021f6652-1521-4426-a928-2435ae7fe0b8",
+                    "label": "water_008",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_008"
+                    },
+                    "x": 1017,
+                    "y": 630
+                },
+                {
+                    "type": "Image",
+                    "id": "bccb0306-634b-4175-a7a1-fb1d3a50f2f7",
+                    "label": "water_009",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_009"
+                    },
+                    "x": 1033,
+                    "y": 647
+                },
+                {
+                    "type": "Image",
+                    "id": "8b967f4a-a954-4fcc-b5ca-5690e523accf",
+                    "label": "water_010",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_010"
+                    },
+                    "x": 1062,
+                    "y": 665
+                },
+                {
+                    "type": "Image",
+                    "id": "079bad43-3a14-4b28-98e2-3fb0cee25540",
+                    "label": "water_011",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_011"
+                    },
+                    "x": 1054,
+                    "y": 686
+                },
+                {
+                    "type": "Image",
+                    "id": "eef21a8f-7fe9-4f1e-8428-205aeffa75dd",
+                    "label": "water_012",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_012"
+                    },
+                    "x": 1032,
+                    "y": 708
+                },
+                {
+                    "type": "Image",
+                    "id": "1191d6d0-92ea-437e-bc85-dae1ad3ad562",
+                    "label": "water_013",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_013"
+                    },
+                    "x": 1020,
+                    "y": 728
+                },
+                {
+                    "type": "Image",
+                    "id": "c2e60ce2-cb59-4e89-8c17-e453a5731c29",
+                    "label": "water_014",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_014"
+                    },
+                    "x": 1027,
+                    "y": 746
+                },
+                {
+                    "type": "Image",
+                    "id": "06fef59c-90ba-41a2-a9a2-6aacaf3a64fb",
+                    "label": "water_015",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_015"
+                    },
+                    "x": 1069,
+                    "y": 765
+                },
+                {
+                    "type": "Image",
+                    "id": "7969efd4-3546-42b7-b3af-d967ca0e8dc7",
+                    "label": "water_016",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_016"
+                    },
+                    "x": 1086,
+                    "y": 784
+                },
+                {
+                    "type": "Image",
+                    "id": "a0514ed1-80bc-490a-a7af-09d476093718",
+                    "label": "water_017",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_017"
+                    },
+                    "x": 1109,
+                    "y": 802
+                },
+                {
+                    "type": "Image",
+                    "id": "b153b9c6-b112-4b6c-a774-236fcef797cd",
+                    "label": "water_018",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_018"
+                    },
+                    "x": 1122,
+                    "y": 819
+                },
+                {
+                    "type": "Image",
+                    "id": "d52da91b-ec90-40bc-bd08-43ef6cb778d2",
+                    "label": "water_019",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_019"
+                    },
+                    "x": 1188,
+                    "y": 826
+                },
+                {
+                    "type": "Image",
+                    "id": "2c482507-db51-4d43-befc-53b643d2a4d8",
+                    "label": "water_020",
+                    "components": [],
+                    "texture": {
+                        "key": "lake",
+                        "frame": "water_020"
+                    },
+                    "x": 1291,
+                    "y": 837
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "4e2ce5a1-e816-4f05-9833-c6223af27038",
+            "label": "barrel",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "barrel"
+            },
+            "x": 286,
+            "y": 251
+        },
+        {
+            "type": "Image",
+            "id": "8ea5eb6d-389a-45be-9c50-26f12ca377e8",
+            "label": "goldrope",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "goldrope"
+            },
+            "x": 328,
+            "y": 321
+        },
+        {
+            "type": "Image",
+            "id": "e9c35123-b01b-4d6a-b4fe-ad204cd62a25",
+            "label": "topleftrock",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "topleftrock"
+            },
+            "x": 229,
+            "y": 297
+        },
+        {
+            "type": "Image",
+            "id": "aa65d4cf-8f8d-4b51-b5de-153eea9652d4",
+            "label": "rightgolrock",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "rightgolrock"
+            },
+            "x": 325,
+            "y": 357
+        },
+        {
+            "type": "Image",
+            "id": "7b6f2681-1241-4b94-911f-a1e96fc0caf4",
+            "label": "lakefg",
+            "components": [],
+            "texture": {
+                "key": "lake",
+                "frame": "lakefg"
+            },
+            "x": -22,
+            "y": 982,
+            "originX": 0,
+            "originY": 1
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "2cfa95fa-6a2c-4ddd-9dac-59efeb093ff0",
+            "label": "sort",
+            "objectIds": [
+                "831d26aa-9a8e-488d-8d41-39a9a9d51d14",
+                "71a6cf1d-6117-4946-9975-76323192436c",
+                "6ffeeb32-2a8b-4520-8462-cd519e359e85",
+                "e0a8db77-a014-4ad4-a502-8e2de04fe135",
+                "41e42f67-dc1c-467e-9327-f81f3941bcb7",
+                "153d4cef-0fb8-4780-9212-fea11123eeff",
+                "00dd4fe2-9390-4af0-9bbc-2d3b33d3bbd9",
+                "7b6f2681-1241-4b94-911f-a1e96fc0caf4",
+                "3e43dc67-45a3-4ef1-a419-e490e298ee70",
+                "2c482507-db51-4d43-befc-53b643d2a4d8",
+                "d52da91b-ec90-40bc-bd08-43ef6cb778d2",
+                "b153b9c6-b112-4b6c-a774-236fcef797cd",
+                "a0514ed1-80bc-490a-a7af-09d476093718",
+                "7969efd4-3546-42b7-b3af-d967ca0e8dc7",
+                "06fef59c-90ba-41a2-a9a2-6aacaf3a64fb",
+                "c2e60ce2-cb59-4e89-8c17-e453a5731c29",
+                "1191d6d0-92ea-437e-bc85-dae1ad3ad562",
+                "eef21a8f-7fe9-4f1e-8428-205aeffa75dd",
+                "079bad43-3a14-4b28-98e2-3fb0cee25540",
+                "8b967f4a-a954-4fcc-b5ca-5690e523accf",
+                "bccb0306-634b-4175-a7a1-fb1d3a50f2f7",
+                "021f6652-1521-4426-a928-2435ae7fe0b8",
+                "6a53ee49-ce80-4fcc-8fb5-48f4eb058819",
+                "0d7828a3-6dc9-40be-b47b-c6612d8071b0",
+                "3d4a2d4b-8e05-4418-ad44-b9943c47dfe6",
+                "79870c7c-0031-48e6-9b81-e7bfbeca1fd1",
+                "ce6b41e7-2d82-4f66-87a5-dbe4ae3722d7",
+                "d5c0b46e-4dc4-4752-a599-5ffb48cab229",
+                "e0b185c6-6b7f-421f-97a1-8ec01927e9b1"
+            ]
+        }
+    ]
+}
