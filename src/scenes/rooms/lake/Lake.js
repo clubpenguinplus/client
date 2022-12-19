@@ -44,7 +44,9 @@ export default class Lake extends RoomScene {
         this.roomTriggers = {
             cavemine: () => this.triggerRoom(813, 874, 525),
             forest: () => this.triggerRoom(809, 332, 674),
-            underwater: () => null,
+            underwater: () => {
+                if (this.hasMossKey()) this.triggerRoom(815, 760, 480)
+            },
             }
         this.music = '666'
         /* END-USER-CTR-CODE */
@@ -306,6 +308,9 @@ export default class Lake extends RoomScene {
         this.rockanimfour.play('lake-rockanimfour')
         this.waterfallone.play('lake-waterfallone')
         this.waterfalltwo.play('lake-waterfalltwo')
+        if (this.hasMossKey()) {
+            this.note.visible = false
+        }
     }
 
     hasMossKey() {
@@ -314,8 +319,8 @@ export default class Lake extends RoomScene {
 
     onDoorOver() {
         if (this.hasMossKey()) {
-            this.note.visible = false
             this.door.play('lake-door')
+            this.door.setFrame('door0027')
         } return
     }
 
