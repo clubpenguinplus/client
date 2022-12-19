@@ -134,7 +134,7 @@ export default class Hydro extends Book {
     }
 
     setCoins(coins) {
-        this.text = `YOUR COINS: ${coins}`
+        this.text.text = `YOUR COINS: ${coins}`
     }
 
     /* END-USER-CODE */
