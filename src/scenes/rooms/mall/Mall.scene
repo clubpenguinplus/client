@@ -402,7 +402,10 @@
             "type": "Image",
             "id": "3023cae1-17db-42c1-a4fe-e7b0c16dff77",
             "label": "chair_pointing_br_1",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "",
             "texture": {
                 "key": "mall",
                 "frame": "chair-pointing-br"
@@ -556,6 +559,7 @@
                 "LocalisedSprite"
             ],
             "Button.spriteName": "costumes",
+            "Button.callback": "() => this.interface.loadExternal('CostumeCatalog')",
             "Button.activeFrame": false,
             "Button.isLocalised": true,
             "texture": {
@@ -783,6 +787,7 @@
                 "LocalisedSprite"
             ],
             "Button.spriteName": "costume-trunk",
+            "Button.callback": "() => this.interface.loadExternal('CostumeCatalog')",
             "Button.activeFrame": false,
             "Button.isLocalised": true,
             "texture": {
