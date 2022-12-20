@@ -13,127 +13,124 @@ import BackPage from './prefabs/BackPage'
 /* START OF COMPILED CODE */
 
 export default class ClothingCatalog extends Book {
+    constructor() {
+        super('ClothingCatalog')
 
-	constructor() {
-		super("ClothingCatalog");
-
-		/* START-USER-CTR-CODE */
+        /* START-USER-CTR-CODE */
         // Write your code here.
         /* END-USER-CTR-CODE */
-	}
+    }
 
-	/** @returns {void} */
-	preload() {
+    /** @returns {void} */
+    preload() {
+        this.load.pack('catalogs-master-pack', 'client/media/interface/catalogs/catalogs-master-pack.json')
+        this.load.pack('clothingpack', 'client/media/interface/catalogs/clothing/clothingpack.json')
+    }
 
-		this.load.pack("catalogs-master-pack", "client/media/interface/catalogs/catalogs-master-pack.json");
-		this.load.pack("clothingpack", "client/media/interface/catalogs/clothing/clothingpack.json");
-	}
+    /** @returns {void} */
+    _create() {
+        // blocker
+        const blocker = this.add.rectangle(760, 480, 1520, 960)
 
-	/** @returns {void} */
-	_create() {
+        // container
+        const container = this.add.container(0, 0)
 
-		// blocker
-		const blocker = this.add.rectangle(760, 480, 1520, 960);
+        // page20
+        const page20 = new BackPage(this, 0, 0)
+        page20.visible = false
+        container.add(page20)
 
-		// container
-		const container = this.add.container(0, 0);
+        // page19
+        const page19 = new FlagPage(this, 0, 0)
+        page19.visible = false
+        container.add(page19)
 
-		// page20
-		const page20 = new BackPage(this, 0, 0);
-		page20.visible = false;
-		container.add(page20);
+        // page14
+        const page14 = new CustomHoodiePage(this, 0, 1)
+        page14.visible = false
+        container.add(page14)
 
-		// page19
-		const page19 = new FlagPage(this, 0, 0);
-		page19.visible = false;
-		container.add(page19);
+        // page4
+        const page4 = new BasicItemsPage(this, 0, 1)
+        page4.visible = false
+        container.add(page4)
 
-		// page14
-		const page14 = new CustomHoodiePage(this, 0, 1);
-		page14.visible = false;
-		container.add(page14);
+        // page3
+        const page3 = new BackgroundsPage(this, 0, 0)
+        page3.visible = false
+        container.add(page3)
 
-		// page4
-		const page4 = new BasicItemsPage(this, 0, 1);
-		page4.visible = false;
-		container.add(page4);
+        // page2
+        const page2 = new ColorsPage(this, 0, 0)
+        page2.visible = false
+        container.add(page2)
 
-		// page3
-		const page3 = new BackgroundsPage(this, 0, 0);
-		page3.visible = false;
-		container.add(page3);
+        // page1
+        const page1 = new FrontPage(this, 0, 0)
+        page1.visible = true
+        container.add(page1)
 
-		// page2
-		const page2 = new ColorsPage(this, 0, 0);
-		page2.visible = false;
-		container.add(page2);
+        // buttons
+        const buttons = this.add.container(999, 798)
+        buttons.visible = false
+        container.add(buttons)
 
-		// page1
-		const page1 = new FrontPage(this, 0, 0);
-		page1.visible = true;
-		container.add(page1);
+        // coinholder
+        const coinholder = this.add.image(-115.478515625, 86.20628356933594, 'constant', 'coinholder')
+        buttons.add(coinholder)
 
-		// buttons
-		const buttons = this.add.container(999, 798);
-		buttons.visible = false;
-		container.add(buttons);
+        // coins
+        const coins = this.add.text(-190.478515625, 56.20628356933594, '', {})
+        coins.angle = -7
+        coins.text = 'Your Coins:\n100000'
+        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
+        buttons.add(coins)
 
-		// coinholder
-		const coinholder = this.add.image(-115.478515625, 86.20628356933594, "constant", "coinholder");
-		buttons.add(coinholder);
+        // lists
+        const pages = [page1, page2, page3, page4, page14, page19, page20]
 
-		// coins
-		const coins = this.add.text(-190.478515625, 56.20628356933594, "", {});
-		coins.angle = -7;
-		coins.text = "Your Coins:\n100000";
-		coins.setStyle({ "align": "center", "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "24px", "fontStyle": "bold italic" });
-		buttons.add(coins);
+        // blocker (components)
+        new Interactive(blocker)
 
-		// lists
-		const pages = [page1, page2, page3, page4, page14, page19, page20];
+        this.blocker = blocker
+        this.page20 = page20
+        this.page19 = page19
+        this.page14 = page14
+        this.page4 = page4
+        this.page3 = page3
+        this.page2 = page2
+        this.page1 = page1
+        this.buttons = buttons
+        this.coins = coins
+        this.pages = pages
 
-		// blocker (components)
-		new Interactive(blocker);
+        this.events.emit('scene-awake')
+    }
 
-		this.blocker = blocker;
-		this.page20 = page20;
-		this.page19 = page19;
-		this.page14 = page14;
-		this.page4 = page4;
-		this.page3 = page3;
-		this.page2 = page2;
-		this.page1 = page1;
-		this.buttons = buttons;
-		this.coins = coins;
-		this.pages = pages;
+    /** @type {Phaser.GameObjects.Rectangle} */
+    blocker
+    /** @type {BackPage} */
+    page20
+    /** @type {FlagPage} */
+    page19
+    /** @type {CustomHoodiePage} */
+    page14
+    /** @type {BasicItemsPage} */
+    page4
+    /** @type {BackgroundsPage} */
+    page3
+    /** @type {ColorsPage} */
+    page2
+    /** @type {FrontPage} */
+    page1
+    /** @type {Phaser.GameObjects.Container} */
+    buttons
+    /** @type {Phaser.GameObjects.Text} */
+    coins
+    /** @type {Array<FrontPage|ColorsPage|BackgroundsPage|BasicItemsPage|CustomHoodiePage|FlagPage|BackPage>} */
+    pages
 
-		this.events.emit("scene-awake");
-	}
-
-	/** @type {Phaser.GameObjects.Rectangle} */
-	blocker;
-	/** @type {BackPage} */
-	page20;
-	/** @type {FlagPage} */
-	page19;
-	/** @type {CustomHoodiePage} */
-	page14;
-	/** @type {BasicItemsPage} */
-	page4;
-	/** @type {BackgroundsPage} */
-	page3;
-	/** @type {ColorsPage} */
-	page2;
-	/** @type {FrontPage} */
-	page1;
-	/** @type {Phaser.GameObjects.Container} */
-	buttons;
-	/** @type {Phaser.GameObjects.Text} */
-	coins;
-	/** @type {Array<FrontPage|ColorsPage|BackgroundsPage|BasicItemsPage|CustomHoodiePage|FlagPage|BackPage>} */
-	pages;
-
-	/* START-USER-CODE */
+    /* START-USER-CODE */
 
     create() {
         super.create()

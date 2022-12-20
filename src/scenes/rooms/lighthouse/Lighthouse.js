@@ -23,7 +23,7 @@ export default class Lighthouse extends RoomScene {
             drums: null,
         }
 
-        this.music = "588"
+        this.music = '588'
 
         /* END-USER-CTR-CODE */
     }

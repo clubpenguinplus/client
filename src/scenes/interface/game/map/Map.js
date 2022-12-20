@@ -364,12 +364,10 @@ export default class Map extends BaseContainer {
 
         // catchinwavesupgrades
         const catchinwavesupgrades = scene.add.sprite(1192, 415, 'map', 'map/shops/catchinwavesupgrades')
-        catchinwavesupgrades.visible = false
         shops_container.add(catchinwavesupgrades)
 
         // costumetrunk
         const costumetrunk = scene.add.sprite(916, 320, 'map', 'map/shops/costumetrunk')
-        costumetrunk.visible = false
         shops_container.add(costumetrunk)
 
         // hydrohopperupgrades
@@ -911,12 +909,14 @@ export default class Map extends BaseContainer {
         smoothieShowHint.text = 'smoothie'
 
         // catchinwavesupgrades (components)
-        new SimpleButton(catchinwavesupgrades)
+        const catchinwavesupgradesSimpleButton = new SimpleButton(catchinwavesupgrades)
+        catchinwavesupgradesSimpleButton.callback = () => this.onRoomClick(810)
         const catchinwavesupgradesShowHint = new ShowHint(catchinwavesupgrades)
         catchinwavesupgradesShowHint.text = 'gameupgrade'
 
         // costumetrunk (components)
-        new SimpleButton(costumetrunk)
+        const costumetrunkSimpleButton = new SimpleButton(costumetrunk)
+        costumetrunkSimpleButton.callback = () => this.onRoomClick(340)
         const costumetrunkShowHint = new ShowHint(costumetrunk)
         costumetrunkShowHint.text = 'costumecatalog'
 

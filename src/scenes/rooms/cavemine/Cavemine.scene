@@ -189,6 +189,18 @@
         },
         {
             "type": "Image",
+            "id": "f858c09f-2381-49b3-8965-92f08c4597c9",
+            "label": "backrope",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "backrope"
+            },
+            "x": 420,
+            "y": 314
+        },
+        {
+            "type": "Image",
             "id": "39556504-32eb-4b65-8dfc-b3962a65e9d2",
             "label": "table",
             "components": [],
@@ -198,6 +210,30 @@
             },
             "x": 229,
             "y": 852
+        },
+        {
+            "type": "Image",
+            "id": "f38e9f4f-b03c-4273-8d4a-4444b7a37c85",
+            "label": "backleftrope",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "backleftrope"
+            },
+            "x": 272,
+            "y": 327
+        },
+        {
+            "type": "Image",
+            "id": "694a3673-fdd0-4944-b00d-bde963d52644",
+            "label": "leftrope",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "leftrope"
+            },
+            "x": 327,
+            "y": 404
         },
         {
             "type": "Image",
@@ -394,6 +430,18 @@
             "y": 734,
             "width": 700,
             "height": 450
+        },
+        {
+            "type": "Image",
+            "id": "f3fc8292-a940-40af-b274-7cfef4a2c9e7",
+            "label": "rightrope",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "rightrope"
+            },
+            "x": 540,
+            "y": 376
         }
     ],
     "plainObjects": [],

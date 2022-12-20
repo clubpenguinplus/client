@@ -26,7 +26,7 @@ export default class Item extends Plugin {
         if (this.client.inventory[args[2]].includes(args[0])) return
 
         // Update player data
-        this.client.coins = args.coins
+        this.client.coins = args[3]
         this.client.inventory[args[2]].push(args[0])
         this.client.inventory[args[2]].sort((a, b) => a - b)
 

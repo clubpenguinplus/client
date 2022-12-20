@@ -1158,14 +1158,14 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(810)",
                             "ShowHint.text": "gameupgrade",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/shops/catchinwavesupgrades"
                             },
                             "x": 1192,
-                            "y": 415,
-                            "visible": false
+                            "y": 415
                         },
                         {
                             "type": "Sprite",
@@ -1176,14 +1176,14 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(340)",
                             "ShowHint.text": "costumecatalog",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/shops/costumetrunk"
                             },
                             "x": 916,
-                            "y": 320,
-                            "visible": false
+                            "y": 320
                         },
                         {
                             "type": "Sprite",
