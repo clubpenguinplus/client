@@ -110,6 +110,8 @@ export default class RuffleManager {
 
         let dataurl = `${this.io.uri}${this.io.engine.hostname}:${this.io.engine.port}${this.io.engine.opts.path.replace('socket/', '')}`
 
+        console.log(this.io.uri, this.io.engine.hostname, this.io.engine.port, this.io.engine.opts.path)
+
         let url = `${this.prefix}client/media/games/swf/${minigame}/HostEmulator.swf?${userdata}&time=${Date.now()}&auth=${authcode}&dataurl=${dataurl}`
 
         window.createWaflash(url, {enableFilters: true})
