@@ -9,6 +9,7 @@ const interfaces = {
     Waves: require('@scenes/interface/catalogs/waves/Waves').default,
     Fishing: require('@scenes/interface/catalogs/fishing/Fishing').default,
     WinterSports: require('@scenes/interface/catalogs/sports/winter/SportsCatalog').default,
+    SummerSports: require('@scenes/interface/catalogs/sports/summer/SportsCatalog').default,
     CostumeCatalog: require('@scenes/interface/catalogs/costume/CostumeCatalog').default,
     ModPanel: require('@scenes/interface/menus/mod/ModPanel').default,
     SafetyQuiz: require('@scenes/interface/closeups/SafetyQuiz').default,

@@ -123,7 +123,13 @@ export default class Rink extends RoomScene {
     }
 
     loadSnowSports() {
-        this.interface.loadExternal('WinterSports')
+        let currentMonth = new Date().getMonth() + 1
+
+        if (currentMonth >= 6 && currentMonth < 12) {
+          this.interface.loadExternal('SummerSports')
+        } else if (currentMonth >= 12 || currentMonth < 6) {
+          this.interface.loadExternal('WinterSports')
+        }
     }
 
     /* END-USER-CODE */
