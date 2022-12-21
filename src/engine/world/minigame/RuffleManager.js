@@ -106,11 +106,9 @@ export default class RuffleManager {
         )
 
         let userdata = `id=${this.shell.client.id}&color=${parseInt(this.crumbs.colors[this.shell.client.penguin.color], 16)}&muted=${this.shell.musicController.musicMuted ? 1 : 0}`
-        // External Interface is not supported by WAFlash, so we have to use a workaround
+        // ExternalInterface is not supported by WAFlash, so we have to use a workaround
 
-        let dataurl = `${this.io.uri}${this.io.engine.hostname}:${this.io.engine.port}${this.io.engine.opts.path.replace('socket/', '')}`
-
-        console.log(this.io.uri, this.io.engine.hostname, this.io.engine.port, this.io.engine.opts.path)
+        let dataurl = `${this.io.uri.includes('https') ? 'https://' : 'http://'}${this.io.engine.hostname}:${this.io.engine.port}${this.io.engine.opts.path.replace('socket/', '')}`
 
         let url = `${this.prefix}client/media/games/swf/${minigame}/HostEmulator.swf?${userdata}&time=${Date.now()}&auth=${authcode}&dataurl=${dataurl}`
 
