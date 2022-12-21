@@ -282,7 +282,12 @@
             "type": "Image",
             "id": "e869b6d9-daa5-4607-8df5-0d4b51b54fd0",
             "label": "catalog",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "catalog",
+            "Button.callback": "() => this.loadSnowSports()",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "rink",
                 "frame": "catalog"
