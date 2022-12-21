@@ -1,0 +1,99 @@
+{
+    "id": "c1ef4e29-a28b-4fa0-be43-376929163656",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapEnabled": true,
+        "snapWidth": 1,
+        "snapHeight": 1,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "IglooLikesWidget",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "NinePatchContainer",
+            "id": "e5aa54fd-0454-4038-bebd-68d64198fe8e",
+            "label": "likeWindow",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "like-window",
+            "texture": {
+                "key": "main",
+                "frame": "like-window"
+            },
+            "x": 1503,
+            "y": 97,
+            "width": 194,
+            "height": 60,
+            "marginLeft": 5,
+            "marginRight": 5,
+            "marginTop": 5,
+            "marginBottom": 5,
+            "ninePatchContainerOriginX": 1,
+            "ninePatchContainerOriginY": 0
+        },
+        {
+            "type": "Image",
+            "id": "1f61a9c8-9443-4c79-9309-82d996d531a1",
+            "label": "likeButton",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "like-button",
+            "texture": {
+                "key": "main",
+                "frame": "like-button"
+            },
+            "x": 1406,
+            "y": 60
+        },
+        {
+            "type": "Text",
+            "id": "83b5f665-6926-482f-bb6e-e2ad0190cc33",
+            "label": "likeTxt",
+            "components": [],
+            "x": 1365,
+            "y": 61,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Like",
+            "fontFamily": "Burbank Small",
+            "fontSize": "32px",
+            "fontStyle": "bold",
+            "color": "#ffffffff",
+            "shadow.offsetY": -1,
+            "shadow.fill": true,
+            "shadow.color": "#0e248cff",
+            "shadow.blur": 2
+        },
+        {
+            "type": "Text",
+            "id": "3bd64ca1-712a-4873-b493-51d28e8f8cbf",
+            "label": "likeNum",
+            "components": [],
+            "x": 1460,
+            "y": 61,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "999",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "color": "#ffffffff",
+            "shadow.color": "#000000ff"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

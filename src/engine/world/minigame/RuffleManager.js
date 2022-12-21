@@ -3,7 +3,7 @@ export default class RuffleManager {
         this.shell = shell
         this.RuffleHolder = RuffleHolder
         this.crumbs = crumbs
-        this.prefix = window.location.hostname == 'localhost' ? '/' : 'https://media.cpplus.pw/'
+        this.prefix = window.location.hostname == 'localhost' ? `${window.location.origin}/` : 'https://media.cpplus.pw/'
         if (window.getMyPlayerHex) return // Check if already loaded
 
         window.RufflePlayer.config = {
@@ -23,6 +23,7 @@ export default class RuffleManager {
 
         window.getMyPlayerHex = this.getMyPlayerHex.bind(this)
         window.killMinigame = this.killMinigame.bind(this)
+        window.killAS3Minigame = this.killAS3Minigame.bind(this)
         window.killSwf = this.killSwf.bind(this)
         window.onLoaderInit = this.onLoaderInit.bind(this)
         window.setCannonData = this.setCannonData.bind(this)
@@ -41,6 +42,80 @@ export default class RuffleManager {
         window.getCurrentPostcards = this.getCurrentPostcards.bind(this)
         window.startMusicById = this.startMusicById.bind(this)
         window.stampEarned = this.stampEarned.bind(this)
+    }
+
+    get io() {
+        return this.shell.airtower.client.io
+    }
+
+    handleLoadAS3Minigame(minigame, authcode) {
+        for (let i of ['marginLeft', 'marginTop', 'borderRadius', 'width', 'height']) {
+            window.waflashPlayer.style[i] = document.getElementById('game_canvas').style[i]
+        }
+
+        document.getElementById('waflashContainer').style.display = 'block'
+        window.waflashPlayer.style.position = 'absolute'
+
+        window.waflashPlayer.width = parseInt(document.getElementById('game_canvas').style.width.slice(0, -2))
+        window.waflashPlayer.height = parseInt(document.getElementById('game_canvas').style.height.slice(0, -2))
+
+        let is_mobile = /Mobi/i.test(window.navigator.userAgent)
+        if (is_mobile) {
+            function scrollToSubject() {
+                try {
+                    window.scrollTo({
+                        top: 100,
+                        left: 0,
+                        behavior: 'smooth',
+                    })
+                } catch (e) {}
+            }
+            scrollToSubject()
+            window.addEventListener('orientationchange', function () {
+                setTimeout(scrollToSubject, 100)
+            })
+        } else {
+            window.waflashPlayer.focus()
+        }
+        window.waflashPlayer.addEventListener('keydown', function (ev) {
+            ev.preventDefault()
+            ev.stopPropagation()
+        })
+        window.waflashPlayer.addEventListener('click', function () {
+            window.waflashPlayer.focus()
+        })
+        document.addEventListener(
+            'mousedown',
+            (function () {
+                const canvasElement = window.waflashPlayer
+                let focused = false
+                return function (ev) {
+                    if (ev.target == canvasElement) {
+                        if (!focused) {
+                            canvasElement.focus()
+                            focused = true
+                        }
+                    } else {
+                        if (focused) {
+                            focused = false
+                        }
+                    }
+                    return true
+                }
+            })()
+        )
+
+        let userdata = `id=${this.shell.client.id}&color=${parseInt(this.crumbs.colors[this.shell.client.penguin.color], 16)}&muted=${this.shell.musicController.musicMuted ? 1 : 0}`
+        // External Interface is not supported by WAFlash, so we have to use a workaround
+
+        let dataurl = `${this.io.uri}${this.io.engine.hostname}:${this.io.engine.port}${this.io.engine.opts.path.replace('socket/', '')}`
+
+        let url = `${this.prefix}client/media/games/swf/${minigame}/HostEmulator.swf?${userdata}&time=${Date.now()}&auth=${authcode}&dataurl=${dataurl}`
+
+        window.createWaflash(url, {enableFilters: true})
+
+        this.swf = {minigame: minigame}
+        this.shell.client.inMinigame = true
     }
 
     handleLoadMinigame(minigame) {
@@ -101,6 +176,15 @@ export default class RuffleManager {
         this.shell.client.inMinigame = false
 
         this.shell.airtower.sendXt('mi#eg', `${coins}%${game}`)
+    }
+
+    killAS3Minigame(roomid) {
+        window.waflash.pauseMainLoop()
+        document.getElementById('waflashContainer').style.display = 'none'
+        let room = this.crumbs.scenes.rooms[roomid]
+        this.shell.client.sendJoinRoom(roomid, room.key)
+
+        this.shell.client.inMinigame = false
     }
 
     killSwf() {

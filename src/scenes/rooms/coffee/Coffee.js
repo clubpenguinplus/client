@@ -29,8 +29,8 @@ export default class Coffee extends RoomScene {
         this.roomTriggers = {
             town: () => this.triggerRoom(100, 510, 475),
             book: () => this.triggerRoom(111, 1000, 500),
-            beans: null,
-            smoothie: null,
+            beans: () => this.triggerGame('beancounters', 908),
+            smoothie: () => this.triggerGame('smoothie', 908, 'as3'),
         }
 
         this.music = 429
@@ -207,7 +207,10 @@ export default class Coffee extends RoomScene {
         const smoothiezoneSimpleButton = new SimpleButton(smoothiezone)
         smoothiezoneSimpleButton.hoverCallback = () => this.onSmoothieMachineOver()
         const smoothiezoneShowHint = new ShowHint(smoothiezone)
-        smoothiezoneShowHint.text = 'smoothiesmash'
+        smoothiezoneShowHint.text = 'smoothie'
+        const smoothiezoneMoveTo = new MoveTo(smoothiezone)
+        smoothiezoneMoveTo.x = 60
+        smoothiezoneMoveTo.y = 730
 
         // towndoor (components)
         const towndoorButton = new Button(towndoor)

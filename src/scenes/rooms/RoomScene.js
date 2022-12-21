@@ -241,9 +241,9 @@ export default class RoomScene extends BaseScene {
         this.shell.client.sendJoinRoom(id, room.key, x, y)
     }
 
-    triggerGame(minigame, id, isRuffle) {
+    triggerGame(minigame, id, emu) {
         let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', 'dual', () => this.joinGame(minigame, id, isRuffle))
+        prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', 'dual', () => this.joinGame(minigame, id, emu))
     }
 
     isMiningSpot(x, y) {
@@ -292,8 +292,12 @@ export default class RoomScene extends BaseScene {
         if (this.miningTimeout) clearTimeout(this.miningTimeout)
     }
 
-    joinGame(minigame, id, isRuffle = true) {
-        if (isRuffle) this.shell.loadMinigame(minigame)
+    joinGame(minigame, id, emu = 'as2') {
+        if (emu == 'as2') {
+            this.shell.loadMinigame(minigame)
+        } else if (emu == 'as3') {
+            this.shell.loadAS3Minigame(minigame)
+        }
         let room = this.crumbs.scenes.rooms[id]
         this.shell.client.sendJoinRoom(id, room.key)
     }

@@ -139,10 +139,13 @@
             "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "ShowHint"
+                "ShowHint",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.onSmoothieMachineOver();",
-            "ShowHint.text": "smoothiesmash",
+            "ShowHint.text": "smoothie",
+            "MoveTo.x": 60,
+            "MoveTo.y": 730,
             "x": 67,
             "y": 537,
             "scaleX": 1.5080773725778969,

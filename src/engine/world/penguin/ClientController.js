@@ -355,13 +355,13 @@ export default class ClientController {
         this.airtower.sendXt('j#jp', id)
     }
 
-    stampEarned(stamp) {
+    stampEarned(stamp, isServerSide = false) {
         for (var x in this.stamps) {
             if (this.stamps[x] == stamp) return
         }
 
         this.stamps.push(stamp)
-        this.airtower.sendXt('st#sse', stamp)
+        if (!isServerSide) this.airtower.sendXt('st#sse', stamp)
         this.interface.main.stampEarnedBody.text = this.crumbs.stamps[stamp].name
         if (this.crumbs.stamps[stamp].groupid == 7) {
             this.interface.main.stampEarnedImage.setFrame(`stamps/activities000${this.crumbs.stamps[stamp].difficulty.toString()}`)

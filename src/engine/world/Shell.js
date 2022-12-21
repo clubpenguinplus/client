@@ -178,6 +178,10 @@ export default class Shell extends BaseScene {
         this.RuffleManager.handleLoadMinigame(minigame)
     }
 
+    loadAS3Minigame(minigame) {
+        this.airtower.sendXt('j#as3', minigame)
+    }
+
     arrayToObject(player, isClient = false) {
         let stringArray = player.split('|')
 

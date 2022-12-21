@@ -82,7 +82,11 @@
     </div>
     <ul class="navbar navbar-right"> </ul>
     </nav>
-    <div id="game" class="game" style="width: auto; height:85%; margin: auto;"></div>
+    <div id="game" class="game" style="width: auto; height:85%; margin: auto;">
+	<div id="waflashContainer" style="display:none;">
+	<canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
+	<div id="waflashStatus" style="display: none;">Playing...</div>
+	</div>
     </div>
     <div id="banner"></div>
     </header>
@@ -93,6 +97,21 @@
             over, or permission to use these assets </p>
     </footer>
     </div>
+	<script>
+		var ua = navigator.userAgent.toLowerCase();
+		if ( (navigator.appName == 'Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) {
+    		var waf = document.getElementById('waflashStatus');
+			waf.style.display = 'block';
+			waf.innerText = '인터넷 익스플로어(IE) 에서는 게임이 실행되지 않습니다 !\n크롬, 엣지등의 다른 브라우저를 이용해주세요.';
+		}
+	</script>
+	<script type="module" crossorigin="anonymous">
+		window.waflashPlayer = document.getElementById('canvas')
+		import {
+			createWaflash
+		} from 'https://media.cpplus.pw/client/scripts/lib/waflash/waflash-player.min.js';
+		window.createWaflash = (a, b) => createWaflash(a,b)
+	</script>
 </body>
 
 </html>

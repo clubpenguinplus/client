@@ -29,8 +29,8 @@ export default class Preload extends BaseScene {
         this.scene.add('Main', Main)
         this.scene.add('IglooEdit', IglooEdit)
 
-        document.getElementsByTagName('canvas')[0].id = 'game_canvas'
-        document.getElementsByTagName('canvas')[0].style.borderRadius = '10px'
+        document.getElementsByTagName('canvas')[1].id = 'game_canvas'
+        document.getElementsByTagName('canvas')[1].style.borderRadius = '10px'
 
         window.lowerQuality = this.lowerQuality.bind(this)
         window.raiseQuality = this.raiseQuality.bind(this)

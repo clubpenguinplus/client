@@ -289,7 +289,7 @@ export default class Map extends BaseContainer {
         games_container.add(arcade)
 
         // counters
-        const counters = scene.add.sprite(302, 379, 'map', 'map/games/beancounters')
+        const counters = scene.add.sprite(302, 339, 'map', 'map/games/beancounters')
         games_container.add(counters)
 
         // jitsu
@@ -353,8 +353,7 @@ export default class Map extends BaseContainer {
         games_container.add(sled)
 
         // smoothie
-        const smoothie = scene.add.sprite(322, 529, 'map', 'map/games/smoothiesmash')
-        smoothie.visible = false
+        const smoothie = scene.add.sprite(382, 446, 'map', 'map/games/smoothiesmash')
         games_container.add(smoothie)
 
         // shops_container
@@ -907,6 +906,8 @@ export default class Map extends BaseContainer {
         // smoothie (components)
         const smoothieShowHint = new ShowHint(smoothie)
         smoothieShowHint.text = 'smoothie'
+        const smoothieSimpleButton = new SimpleButton(smoothie)
+        smoothieSimpleButton.callback = () => this.onRoomClick(110)
 
         // catchinwavesupgrades (components)
         const catchinwavesupgradesSimpleButton = new SimpleButton(catchinwavesupgrades)

@@ -11,6 +11,9 @@ export default class MiniGame extends Plugin {
             pc: this.placeCounter,
             ct: this.changeTurn,
             eff: this.fourOver,
+            as3: this.joinAS3,
+            sse: this.stampEarned,
+            endas3: this.endAS3,
         }
     }
 
@@ -64,5 +67,17 @@ export default class MiniGame extends Plugin {
 
     fourOver(args) {
         this.interface.main.findFour.reset()
+    }
+
+    joinAS3(args) {
+        this.shell.RuffleManager.handleLoadAS3Minigame(args[0], args[1])
+    }
+
+    stampEarned(args) {
+        this.shell.client.stampEarned(args[0], true)
+    }
+
+    endAS3(args) {
+        this.shell.RuffleManager.killAS3Minigame(args[0])
     }
 }

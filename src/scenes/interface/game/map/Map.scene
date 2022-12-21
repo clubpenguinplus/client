@@ -870,7 +870,7 @@
                                 "frame": "map/games/beancounters"
                             },
                             "x": 302,
-                            "y": 379
+                            "y": 339
                         },
                         {
                             "type": "Sprite",
@@ -1126,16 +1126,17 @@
                             "label": "smoothie",
                             "scope": "CLASS",
                             "components": [
-                                "ShowHint"
+                                "ShowHint",
+                                "SimpleButton"
                             ],
                             "ShowHint.text": "smoothie",
+                            "SimpleButton.callback": "() => this.onRoomClick(110)",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/games/smoothiesmash"
                             },
-                            "x": 322,
-                            "y": 529,
-                            "visible": false
+                            "x": 382,
+                            "y": 446
                         }
                     ]
                 },
