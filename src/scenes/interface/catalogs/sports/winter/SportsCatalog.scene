@@ -12,7 +12,7 @@
             "client/client/media/interface/catalogs/sports/wintersports-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "CostumeCatalog",
+        "sceneKey": "WinterSports",
         "borderWidth": 1520,
         "borderHeight": 960
     },

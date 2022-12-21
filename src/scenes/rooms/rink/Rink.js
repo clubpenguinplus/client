@@ -169,10 +169,11 @@ export default class Rink extends RoomScene {
         const net4winter = this.add.sprite(253, 513, "winter", "net4winter");
 
         // catalog
-        const catalog = this.add.image(1418, 886, "rink", "catalog");
+        const catalog = this.add.image(1420.889239584529, 1151.8100417766711, "rink", "catalog");
+        catalog.setOrigin(0.5188839188531302, 2.8113916676232273);
 
         // lists
-        const sort = [fg, bleachers1, bleachers3_png, toprink, fgwinter];
+        const sort = [fg, bleachers1, bleachers3_png, toprink, fgwinter, catalog];
 
         // signs_en (components)
         new LocalisedSprite(signs_en);

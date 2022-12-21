@@ -7,7 +7,7 @@ import Book from '@scenes/interface/books/Book'
 export default class SportsCatalog extends Book {
 
     constructor() {
-        super("CostumeCatalog");
+        super("SummerSports");
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_722;
@@ -854,7 +854,7 @@ export default class SportsCatalog extends Book {
         buttons.add(coins);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13];
+        const pages = [page1, page2, page3, page4, page5, page6, page13, page12, page11, page10, page9, page8, page7];
 
         // block (components)
         new Interactive(block);

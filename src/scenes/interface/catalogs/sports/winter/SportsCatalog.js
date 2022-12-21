@@ -7,7 +7,7 @@ import Book from '@scenes/interface/books/Book'
 export default class SportsCatalog extends Book {
 
     constructor() {
-        super("CostumeCatalog");
+        super("WinterSports");
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_5472;

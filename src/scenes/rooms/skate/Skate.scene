@@ -171,7 +171,12 @@
             "type": "Image",
             "id": "9da192db-3e4b-4738-a1a7-e30308102dfb",
             "label": "catalog",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "catalog",
+            "Button.callback": "() => this.loadSnowSports()",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "skate",
                 "frame": "catalog"
