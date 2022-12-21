@@ -36,6 +36,7 @@ export default class BeanCounters extends RoomScene {
 
     create() {
         super.create()
+        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */

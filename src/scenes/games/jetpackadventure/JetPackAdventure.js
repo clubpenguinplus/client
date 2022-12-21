@@ -42,6 +42,7 @@ export default class JetPackAdventure extends RoomScene {
 
     create() {
         super.create()
+        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */

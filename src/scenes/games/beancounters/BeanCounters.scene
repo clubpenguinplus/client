@@ -6,9 +6,7 @@
         "exportClass": true,
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
-        "preloadPackFiles": [
-            "yukon/client/media/interface/menus/load/load-pack.json"
-        ],
+        "preloadPackFiles": [],
         "createMethodName": "_create",
         "sceneKey": "BeanCounters",
         "borderWidth": 1520,

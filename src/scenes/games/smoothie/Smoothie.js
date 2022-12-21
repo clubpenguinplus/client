@@ -4,12 +4,11 @@ import {Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class ThinIce extends RoomScene {
+export default class Smoothie extends RoomScene {
     constructor() {
-        super('ThinIce')
+        super('Smoothie')
 
         /* START-USER-CTR-CODE */
-        this.music = 'Thin_Ice_Theme'
         /* END-USER-CTR-CODE */
     }
 
@@ -24,21 +23,15 @@ export default class ThinIce extends RoomScene {
         const bg = this.add.image(0, 0, 'load', 'bg')
         bg.setOrigin(0, 0)
 
-        // lists
-        const sort = []
-
         // bg (components)
         new Interactive(bg)
-
-        this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
-    /** @type {Array<any>} */
-    sort
-
     /* START-USER-CODE */
+
+    // Write your code here
 
     create() {
         super.create()
@@ -49,3 +42,5 @@ export default class ThinIce extends RoomScene {
 }
 
 /* END OF COMPILED CODE */
+
+// You can write more code here

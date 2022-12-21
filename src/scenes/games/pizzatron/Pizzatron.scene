@@ -6,9 +6,7 @@
         "exportClass": true,
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
-        "preloadPackFiles": [
-            "cpadvanced-client/client/media/interface/menus/load/load-pack.json"
-        ],
+        "preloadPackFiles": [],
         "createMethodName": "_create",
         "sceneKey": "Pizzatron",
         "borderWidth": 1520,

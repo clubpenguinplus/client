@@ -42,6 +42,7 @@ export default class DanceContest extends RoomScene {
 
     create() {
         super.create()
+        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */
