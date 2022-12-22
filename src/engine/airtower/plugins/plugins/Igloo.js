@@ -9,6 +9,7 @@ export default class Igloo extends Plugin {
             gi: this.getIgloos,
             gid: this.getIglooData,
             gio: this.getIglooOpen,
+            gl: this.getIglooLikes,
         }
     }
 
@@ -64,5 +65,11 @@ export default class Igloo extends Plugin {
 
     getIglooData(args) {
         this.interface.iglooEdit.createPreview(args)
+    }
+
+    getIglooLikes(args) {
+        if (args[0] == this.shell.room.id) {
+            this.shell.room.likesWidget.show(args[2])
+        }
     }
 }

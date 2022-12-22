@@ -119,7 +119,16 @@ export default class IglooScene extends RoomScene {
 
         if (this.isPreview) return this.scene.bringToTop(this)
 
-        this.shell.airtower.sendXt('p#pg', this.id)
+        //this.shell.airtower.sendXt('p#pg', this.id)
+
+        this.shell.interface.loadExternal('IglooLikesWidget')
+        this.airtower.sendXt('g#il', this.id)
+
+        this.interface.showInterface()
+        this.interface.main.safetyquiz.visible = false
+        this.interface.main.moderatoricon.visible = false
+
+        this.likesWidget = this.scene.get('IglooLikesWidget')
 
         if (!this.penguins) return
 
@@ -389,6 +398,8 @@ export default class IglooScene extends RoomScene {
         for (let p in this.puffles) {
             if (this.puffles[p]) this.puffles[p].destroy()
         }
+        if (this.likesWidget) this.likesWidget.scene.stop()
+        this.shell.interface.main.showTR()
         super.stop()
     }
 }

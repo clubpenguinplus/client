@@ -845,13 +845,20 @@ export default class Main extends BaseScene {
 
         // safety quiz or mod icon
 
-        if (this.shell.client.hasItem(24042)) {
-            this.safetyquiz.visible = false
-            this.moderatoricon.visible = true
-        }
+        this.showTR()
 
         // Test mobile
         this.isMobile()
+    }
+
+    showTR() {
+        if (this.shell.client.hasItem(24042)) {
+            this.safetyquiz.visible = false
+            this.moderatoricon.visible = true
+        } else {
+            this.safetyquiz.visible = true
+            this.moderatoricon.visible = false
+        }
     }
 
     onSleep(sys, data) {

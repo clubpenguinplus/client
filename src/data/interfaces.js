@@ -18,6 +18,7 @@ const interfaces = {
     TourQuiz: require('@scenes/interface/closeups/TourQuiz').default,
     Lakenote: require('@scenes/interface/closeups/Lakenote').default,
     Cavenote: require('@scenes/interface/closeups/Cavenote').default,
+    IglooLikesWidget: require('@scenes/interface/game/likeswidget/IglooLikesWidget').default,
 }
 
 export default interfaces

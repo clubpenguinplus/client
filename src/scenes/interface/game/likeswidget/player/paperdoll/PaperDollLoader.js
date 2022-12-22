@@ -3,9 +3,9 @@ export default class PaperDollLoader {
         this.paperDoll = paperDoll
         this.scene = paperDoll.scene
 
-        this.scale = 1
-        this.photoScale = 1
-        this.flagScale = 0.18
+        this.scale = 0.6
+        this.photoScale = 0
+        this.flagScale = 0
 
         this.load = new Phaser.Loader.LoaderPlugin(this.scene)
         let suffix = '/client/media/clothing'
@@ -58,23 +58,15 @@ export default class PaperDollLoader {
 
         switch (slot) {
             case 'photo':
-                if (!this.paperDoll.parentContainer.bg) break
-                this.paperDoll.parentContainer.bg.setTexture(key)
-                this.paperDoll.parentContainer.bg.setScale(this.photoScale)
-                this.paperDoll.parentContainer.bg.visible = true
-                break
-
             case 'flag':
-                if (!this.paperDoll.parentContainer.bg) break
-                item.sprite = this.loadPaper(key, slot, item.depth, this.flagScale)
-                item.sprite.x = -28
-                item.sprite.y = -25
                 break
 
             default:
                 item.sprite = this.loadPaper(key, slot, item.depth)
                 break
         }
+
+        this.paperDoll.parentContainer.player.visible = false
     }
 
     onLoadError(file) {
@@ -99,13 +91,7 @@ export default class PaperDollLoader {
 
         if (this.paperDoll.fadeIn) this.fadeIn(paper)
 
-        if (slot == 'photo') {
-            this.scene.playerCard.photo.add(paper)
-        } else {
-            this.paperDoll.add(paper)
-        }
-
-        if (this.paperDoll.isInputEnabled) this.addInput(slot, paper)
+        this.paperDoll.add(paper)
 
         return paper
     }
@@ -120,30 +106,7 @@ export default class PaperDollLoader {
         })
     }
 
-    addInput(slot, paper) {
-        paper.setInteractive({
-            cursor: 'pointer',
-            pixelPerfect: true,
-        })
-
-        paper.on('pointerdown', () => this.onPaperClick(slot))
-    }
-
-    onPaperClick(slot) {
-        this.scene.airtower.sendXt('s#upr', slot)
-    }
-
     removeItem(slot) {
-        if (slot == 'photo') {
-            if (this.paperDoll.parentContainer.containerName == 'FriendItem') {
-                this.paperDoll.parentContainer.bg.setScale(0.2)
-                this.paperDoll.parentContainer.bg.setTexture('main', 'card-photo')
-                return
-            } else if (this.paperDoll.parentContainer.containerName == 'PlayerCard') {
-                this.paperDoll.parentContainer.card_photo.visible = false
-                return
-            }
-        }
         let item = this.paperDoll.items[slot]
         if (!item || !item.sprite) return
 

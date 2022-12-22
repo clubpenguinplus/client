@@ -49,11 +49,6 @@ export default class PaperDoll extends BaseContainer {
                 sprite = null
             }
         }
-
-        if (!this.parentContainer.bg) return
-
-        this.parentContainer.bg.setScale(0.2)
-        this.parentContainer.bg.setTexture('main', 'card-photo')
     }
 
     loadDoll(penguin, isInputEnabled = false) {
