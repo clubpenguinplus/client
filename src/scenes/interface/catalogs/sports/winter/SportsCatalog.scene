@@ -1,0 +1,3160 @@
+{
+    "id": "5302da29-9eda-4878-938d-30dcd036f27b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "client/client/media/interface/catalogs/sports/wintersports-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "WinterSports",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "0c7859bf-3140-40c7-bb0b-f95b4bc534a3",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "91f5a4fc-f734-4524-97ce-6c2141ef796a",
+            "label": "page1",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "03372dcd-1297-4625-89cd-d1bc381a6874",
+                    "label": "page1body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page1body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "0fcdc343-c9ab-4ae7-bd66-cf7b4918fab6",
+                    "label": "nextpage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1060,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "fefa753f-652c-4e78-bdb4-30af2ccdccdb",
+                    "label": "exit_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "exit"
+                    },
+                    "x": 1124,
+                    "y": 50
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3ae976a3-2c41-4b82-95cc-78312622ed08",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c2850faf-c979-417d-9a36-8b1003753b6e",
+                    "label": "page2body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page2body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f3a0cf8e-2599-4dad-b6a1-a39194681b01",
+                    "label": "buyBtn_5472",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5472)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 976,
+                    "y": 719
+                },
+                {
+                    "type": "Text",
+                    "id": "3775b43c-61d2-4885-a178-f61bf792ad42",
+                    "label": "priceNum_5472",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5472,
+                    "x": 981,
+                    "y": 719,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "70c93589-1a36-46ce-9c19-741355cdfe64",
+                    "label": "buyBtn_5473",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5473)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 979,
+                    "y": 390
+                },
+                {
+                    "type": "Text",
+                    "id": "b09f3582-fd8d-44ae-aedf-a34ea758d713",
+                    "label": "priceNum_5473",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5473,
+                    "x": 984,
+                    "y": 390,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "a5875ce4-ffbc-49c5-9588-787b343c27a1",
+                    "label": "buyBtn_1906",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1906)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 515,
+                    "y": 712
+                },
+                {
+                    "type": "Text",
+                    "id": "13e5fd49-8791-4708-96b4-55b9e40b30d6",
+                    "label": "priceNum_1906",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1906,
+                    "x": 520,
+                    "y": 712,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ff4fa7a9-54b1-4062-9c79-f6594e3e277e",
+                    "label": "buyBtn_1907",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1907)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 246,
+                    "y": 711
+                },
+                {
+                    "type": "Text",
+                    "id": "5f5490e8-dd07-4649-b81a-ca5014639158",
+                    "label": "priceNum_1907",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1907,
+                    "x": 251,
+                    "y": 711,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b17caed4-fcc5-43d8-93dc-65f5beb15fa5",
+                    "label": "buyBtn_5471",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5471)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1245,
+                    "y": 718
+                },
+                {
+                    "type": "Text",
+                    "id": "c9df0c44-3ee8-4d85-9b63-00b044c361b6",
+                    "label": "priceNum_5471",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5471,
+                    "x": 1250,
+                    "y": 718,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "35cae3d9-6fdb-4e04-a463-eed947e04477",
+                    "label": "buyBtn_5474",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5474)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1240,
+                    "y": 389
+                },
+                {
+                    "type": "Text",
+                    "id": "1b142e44-5de8-43a5-afcd-1a484e4645a6",
+                    "label": "priceNum_5474",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5474,
+                    "x": 1245,
+                    "y": 389,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "264cbcda-97aa-4723-bf61-2b60953dfb73",
+                    "label": "nextpage2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "f049de14-2941-44c5-a361-1a4deb5ebef9",
+                    "label": "backpage2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3499b762-d5cf-4506-8bce-480ba2de88ec",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "66be5197-933e-4e26-a197-3f7d0a22a98d",
+                    "label": "page3body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page3body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5fa033d3-c950-42e1-b23f-e12d010d1e0e",
+                    "label": "buyBtn_24191",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(24191)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 336,
+                    "y": 435
+                },
+                {
+                    "type": "Text",
+                    "id": "4348c02f-0156-43f6-9df9-a7946cb0818e",
+                    "label": "priceNum_24191",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 24191,
+                    "x": 341,
+                    "y": 435,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dbd9ab2e-abee-437a-8174-196b38713031",
+                    "label": "buyBtn_24204",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(24204)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 333,
+                    "y": 715
+                },
+                {
+                    "type": "Text",
+                    "id": "f110416d-58f0-464f-b25e-4bbaf351aad1",
+                    "label": "priceNum_24204",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 24204,
+                    "x": 338,
+                    "y": 715,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "7324b1e4-25dd-4757-a516-d5e90379f40f",
+                    "label": "nextpage3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "85cb351a-1dba-4318-85ed-37f62dc27b0b",
+                    "label": "backpage3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "6494f37f-1fad-439d-8e91-d3cd4220d017",
+            "label": "page4",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "79a16d38-20e6-4ca0-bd0f-b3ec4c50086b",
+                    "label": "page4body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page4body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "89fbb25e-235f-4fde-815d-58db84941561",
+                    "label": "buyBtn_1509",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1509)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 920,
+                    "y": 362
+                },
+                {
+                    "type": "Text",
+                    "id": "0756eeed-43a8-4cb5-9a1a-29e0335e4fcd",
+                    "label": "priceNum_1509",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1509,
+                    "x": 925,
+                    "y": 362,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1e5e1936-880d-411f-bd76-e31b24dc2bb5",
+                    "label": "buyBtn_5189",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5189)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 921,
+                    "y": 617
+                },
+                {
+                    "type": "Text",
+                    "id": "355be685-ce2c-42dc-8ca8-f570758f3792",
+                    "label": "priceNum_5580",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5580,
+                    "x": 926,
+                    "y": 617,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ec63db7f-9e80-4900-9e50-5bc840bdf7ae",
+                    "label": "buyBtn_4758",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4758)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1201,
+                    "y": 421
+                },
+                {
+                    "type": "Text",
+                    "id": "5efe9ed4-9da2-4879-8a72-3678d964bde9",
+                    "label": "priceNum_4758",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4758,
+                    "x": 1206,
+                    "y": 421,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "198ade10-9057-4272-9b55-028d9d255fbe",
+                    "label": "buyBtn_6143",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(6143)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1211,
+                    "y": 667
+                },
+                {
+                    "type": "Text",
+                    "id": "0fee86ba-c047-48ba-af60-0b71742b41c8",
+                    "label": "priceNum_6143",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 6143,
+                    "x": 1216,
+                    "y": 667,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "acdc987d-9c5a-4e65-943c-99f3ef6cd79f",
+                    "label": "nextpage4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "d3571bce-d36c-41e0-9039-b59a4e655e81",
+                    "label": "backpage4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2f282795-e367-4c38-aaf8-5edf05db3385",
+            "label": "page5",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "51f5ff4f-0986-4130-8365-9607642da34e",
+                    "label": "page5body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page5body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "87f6523e-34c0-4b0e-8deb-497310ead2a1",
+                    "label": "buyBtn_1508",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1508)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 250,
+                    "y": 402
+                },
+                {
+                    "type": "Text",
+                    "id": "15d2dc52-4177-4644-bc14-f2439cb0e78c",
+                    "label": "priceNum_1508",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1508,
+                    "x": 255,
+                    "y": 402,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dcb5b7c1-cca0-4454-a23e-067245fb92b3",
+                    "label": "buyBtn_5188",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5188)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 255,
+                    "y": 656
+                },
+                {
+                    "type": "Text",
+                    "id": "f678e158-7dbf-407c-b6b4-5e92aa62f9ec",
+                    "label": "priceNum_5188",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5188,
+                    "x": 260,
+                    "y": 656,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5bb154c7-4c8c-4dad-9669-2bf47b33ddea",
+                    "label": "buyBtn_6142",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(6142)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 547,
+                    "y": 657
+                },
+                {
+                    "type": "Text",
+                    "id": "ed6f9ce7-9d74-4e22-a5c6-98ac94ad6ee6",
+                    "label": "priceNum_6142",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 6142,
+                    "x": 552,
+                    "y": 657,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e622a7ce-fad1-4456-8d9b-bc0e1d42201e",
+                    "label": "buyBtn_4757",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4757)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 559,
+                    "y": 421
+                },
+                {
+                    "type": "Text",
+                    "id": "1ee168c1-057e-4846-a4c7-ae98248aaa80",
+                    "label": "priceNum_4757",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4757,
+                    "x": 564,
+                    "y": 421,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "e36236cf-68d0-41bb-b51f-f1989e336781",
+                    "label": "nextpage5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "23259eb5-0c58-4d9b-8104-f6642d595023",
+                    "label": "backpage5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "54487cba-a3d4-478c-8b1e-213d83b742c7",
+            "label": "page6",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "58db2036-2435-4d76-9ad8-16a41e3e8ce9",
+                    "label": "page6body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page6body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "10af900f-4bee-44f2-95dd-e5ec1f6b0caa",
+                    "label": "buyBtn_1510",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1510)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1111,
+                    "y": 331
+                },
+                {
+                    "type": "Text",
+                    "id": "39980d68-adc3-411d-a3bb-fda73de64d63",
+                    "label": "priceNum_1510",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1510,
+                    "x": 1116,
+                    "y": 331,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c4757145-90f3-4037-844e-2ab17d0caac9",
+                    "label": "buyBtn_4759",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4759)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1119,
+                    "y": 649
+                },
+                {
+                    "type": "Text",
+                    "id": "66d27568-5ac9-4110-ae2d-cfd5428a0101",
+                    "label": "priceNum_4759",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4759,
+                    "x": 1124,
+                    "y": 649,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "8e18ce93-afb1-479f-903d-03f29ed71c96",
+                    "label": "nextpage6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "f154650a-0efd-42b6-bb0e-01154c0b59c6",
+                    "label": "backpage6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "7d988d0b-67e8-4b8a-949b-7dd96ba12898",
+            "label": "page7",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c6959b10-aa30-4e07-a6c4-f6db7be4d1b4",
+                    "label": "page7body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page7body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "456d1ac1-23e6-4ed2-b337-df4139876718",
+                    "label": "buyBtn_1511",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1511)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 368,
+                    "y": 331
+                },
+                {
+                    "type": "Text",
+                    "id": "f233eb71-03ad-4387-86a1-c42df71f797f",
+                    "label": "priceNum_1511",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1511,
+                    "x": 373,
+                    "y": 331,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "50c25330-d357-4cb8-b8eb-f652907a4a05",
+                    "label": "buyBtn_4760",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4760)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 369,
+                    "y": 646
+                },
+                {
+                    "type": "Text",
+                    "id": "5d33aee1-3bbf-4675-bd7a-8b91c3e0c5a6",
+                    "label": "priceNum_4760",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4760,
+                    "x": 374,
+                    "y": 646,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c717e843-d258-413a-941f-4ccd09877db9",
+                    "label": "nextpage7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "30bfb739-7107-4ece-8dbf-db1a81219045",
+                    "label": "backpage7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
+            "label": "page8",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "63d6484d-05ac-4dc7-a974-64c633a74b53",
+                    "label": "page8body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page8body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "6364b5c3-6551-4078-81f5-23ca1aa0ec3d",
+                    "label": "buyBtn_4474",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4474)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1217,
+                    "y": 364
+                },
+                {
+                    "type": "Text",
+                    "id": "6120c239-ec1d-4168-a882-ae586e85bd38",
+                    "label": "priceNum_4474",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4474,
+                    "x": 1222,
+                    "y": 364,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "9ff32c50-2dba-4a26-aa3a-cd1a20ab8b7a",
+                    "label": "buyBtn_4476",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4476)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 960,
+                    "y": 364
+                },
+                {
+                    "type": "Text",
+                    "id": "ac505d4a-4e58-46ce-9235-af5c05951ea9",
+                    "label": "priceNum_4476",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4476,
+                    "x": 965,
+                    "y": 364,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4fb44469-2ef4-400b-b257-022497696c15",
+                    "label": "buyBtn_4480",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4480)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 959,
+                    "y": 613
+                },
+                {
+                    "type": "Text",
+                    "id": "f0781c5f-90fb-4fae-a869-beb048f7f3b1",
+                    "label": "priceNum_4480",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4480,
+                    "x": 964,
+                    "y": 613,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "84d951e7-add4-4749-86cb-6775b9a71d59",
+                    "label": "buyBtn_4478",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4478)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1219,
+                    "y": 613
+                },
+                {
+                    "type": "Text",
+                    "id": "d1a126de-49e7-4370-a347-2e6e775a7dcc",
+                    "label": "priceNum_4478",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4478,
+                    "x": 1224,
+                    "y": 613,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d7c69210-db37-4065-9047-7cd45f928c0d",
+                    "label": "buyBtn_277",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(277)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 267,
+                    "y": 350
+                },
+                {
+                    "type": "Text",
+                    "id": "8ec29e22-e8bf-41d2-aa53-fcaa9af2fb96",
+                    "label": "priceNum_277",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 277,
+                    "x": 272,
+                    "y": 350,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d10872bb-6f4f-4cd8-951f-719f22f65d19",
+                    "label": "buyBtn_278",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(278)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 564,
+                    "y": 350
+                },
+                {
+                    "type": "Text",
+                    "id": "73e9b723-76c9-4d71-8fed-0f46a77391c0",
+                    "label": "priceNum_278",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 278,
+                    "x": 569,
+                    "y": 350,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8891c4b6-2146-4e8a-8c57-af416fb7f051",
+                    "label": "buyBtn_4143",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4143)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 567,
+                    "y": 611
+                },
+                {
+                    "type": "Text",
+                    "id": "6ec4b30e-6ee1-47a0-9bc6-1be6e10ac87f",
+                    "label": "priceNum_4143",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4143,
+                    "x": 572,
+                    "y": 611,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "985583fa-5d3a-433d-977c-b4c2f884a6cd",
+                    "label": "buyBtn_4204",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4204)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 273,
+                    "y": 614
+                },
+                {
+                    "type": "Text",
+                    "id": "a17fc197-3215-4acb-9e09-b13aa995a652",
+                    "label": "priceNum_4204",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4204,
+                    "x": 278,
+                    "y": 614,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "89db257b-3aa2-4864-b150-d485425f3299",
+                    "label": "nextpage8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "0fb250c9-8a22-4f79-a503-cd27986aec24",
+                    "label": "backpage8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "99f95081-9560-4e15-a29e-7d5fedb71132",
+            "label": "page9",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ece414cf-c0f3-4270-865f-8899ddd12701",
+                    "label": "page9body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page9body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "50ae24e1-ea01-4022-88c7-3b51b1c5d28c",
+                    "label": "buyBtn_4144",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4144)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 277,
+                    "y": 398
+                },
+                {
+                    "type": "Text",
+                    "id": "8c836c86-f3ee-4c67-88b1-963b2c80c3e6",
+                    "label": "priceNum_4144",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4144,
+                    "x": 282,
+                    "y": 398,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "60128319-048d-4b18-abda-a4c226e48c8e",
+                    "label": "buyBtn_4475",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4475)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 973,
+                    "y": 405
+                },
+                {
+                    "type": "Text",
+                    "id": "2d0078c6-df75-45b2-80e4-cb1fea5b2761",
+                    "label": "priceNum_4475",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4475,
+                    "x": 978,
+                    "y": 405,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "78e3828e-87ef-483f-b683-730641de3558",
+                    "label": "buyBtn_4477",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4477)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1222,
+                    "y": 405
+                },
+                {
+                    "type": "Text",
+                    "id": "5b3290cb-97d6-4c48-be87-8d70d1c76329",
+                    "label": "priceNum_315",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 315,
+                    "x": 1227,
+                    "y": 405,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "866fa8f2-5e8b-4745-847b-31ffa2e91a83",
+                    "label": "buyBtn_4297",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4297)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 563,
+                    "y": 398
+                },
+                {
+                    "type": "Text",
+                    "id": "a97a0fab-5d6c-45a8-b831-b35b156e6bbf",
+                    "label": "priceNum_4297",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4297,
+                    "x": 568,
+                    "y": 398,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "2cc69c81-413b-4a7a-84c3-4ad89d67a8c1",
+                    "label": "buyBtn_4481",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4481)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 970,
+                    "y": 725
+                },
+                {
+                    "type": "Text",
+                    "id": "6b38f173-b9d2-4a3a-991f-d5916df5a235",
+                    "label": "priceNum_4481",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4481,
+                    "x": 975,
+                    "y": 725,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dab0efc8-0838-4714-9dcd-3d28155fe379",
+                    "label": "buyBtn_4479",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4479)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1223,
+                    "y": 725
+                },
+                {
+                    "type": "Text",
+                    "id": "4bab0df3-3614-43ba-87cb-f6e845018e5a",
+                    "label": "priceNum_4479",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4479,
+                    "x": 1228,
+                    "y": 725,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "07cd4316-ade6-4b76-b3ea-4e45936d8a46",
+                    "label": "buyBtn_4054",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4054)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 564,
+                    "y": 681
+                },
+                {
+                    "type": "Text",
+                    "id": "ef13e98a-b494-47ae-a166-bf8239b898ba",
+                    "label": "priceNum_4054",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4054,
+                    "x": 569,
+                    "y": 681,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "6984e2f9-de75-429d-9565-75acbe9657ab",
+                    "label": "buyBtn_4053",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4053)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 278,
+                    "y": 681
+                },
+                {
+                    "type": "Text",
+                    "id": "36e88d5e-6d66-4fc0-8985-2ca0f90dbecc",
+                    "label": "priceNum_4053",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4053,
+                    "x": 283,
+                    "y": 681,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "21f71fd0-45fa-4b96-8363-c0187668b95a",
+                    "label": "nextpage9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "1a250f3b-636c-4f0f-9ffe-5c1193a4577a",
+                    "label": "backpage9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
+            "label": "page10",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "6495ea8c-40c7-4106-805f-f12111d68c29",
+                    "label": "page10body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page10body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "312aa429-8ee8-4390-9e0f-bbe00c5cc8cd",
+                    "label": "buyBtn_4299",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4299)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 286,
+                    "y": 547
+                },
+                {
+                    "type": "Text",
+                    "id": "8ad76c9f-4b7b-484d-aa8e-ab7be7f392fc",
+                    "label": "priceNum_4299",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4299,
+                    "x": 291,
+                    "y": 547,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4162d534-a3da-4093-ba56-2be8b073b8c0",
+                    "label": "buyBtn_461",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(461)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 574,
+                    "y": 376
+                },
+                {
+                    "type": "Text",
+                    "id": "6a468d96-279e-4777-91a9-894427858ac2",
+                    "label": "priceNum_461",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 461,
+                    "x": 579,
+                    "y": 376,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "92015ae4-e8f3-47ae-89b9-3f09b3d42e21",
+                    "label": "buyBtn_1215",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1215)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 975,
+                    "y": 335
+                },
+                {
+                    "type": "Text",
+                    "id": "5cbec29c-076a-4fc5-968b-6f0a3dcf09c4",
+                    "label": "priceNum_1215",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1215,
+                    "x": 980,
+                    "y": 335,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "3b2e788b-f449-4eeb-bfac-88190345dc7c",
+                    "label": "buyBtn_560",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(560)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1267,
+                    "y": 552
+                },
+                {
+                    "type": "Text",
+                    "id": "4364f227-d2ae-4149-bff0-8d66edcbd9d0",
+                    "label": "priceNum_560",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 560,
+                    "x": 1272,
+                    "y": 552,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dd2b8446-19f3-4e8a-95f1-2149ba1209cd",
+                    "label": "buyBtn_3002",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(3002)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 572,
+                    "y": 649
+                },
+                {
+                    "type": "Text",
+                    "id": "7c9d57a5-0c1f-45c5-ae1c-71be2a07b39d",
+                    "label": "priceNum_3002",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 3002,
+                    "x": 577,
+                    "y": 649,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c0f0b73e-c665-494f-bdfb-444ff3fd212e",
+                    "label": "buyBtn_6013",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(6013)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 985,
+                    "y": 628
+                },
+                {
+                    "type": "Text",
+                    "id": "1ed38811-64be-4636-8ffa-a9247d550cb7",
+                    "label": "priceNum_6013",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 6013,
+                    "x": 990,
+                    "y": 628,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Container",
+                    "id": "9e72ef6b-0d7d-4c1f-b6b6-522deb1018c7",
+                    "label": "sec_1036",
+                    "scope": "CLASS",
+                    "components": [],
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "008a6f2c-e243-4867-bae2-07fbd8618b04",
+                            "label": "block_goalhel",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "x": 760,
+                            "y": 480,
+                            "isFilled": true,
+                            "fillColor": "#000000",
+                            "fillAlpha": 0.2,
+                            "width": 1520,
+                            "height": 960
+                        },
+                        {
+                            "type": "Image",
+                            "id": "0700133e-a3f4-4d4c-850b-5468c32a492d",
+                            "label": "secretholder_goalhel",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretholder"
+                            },
+                            "x": 769,
+                            "y": 431,
+                            "scaleX": 0.8503262048913669,
+                            "scaleY": 0.8503262048913669
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d3b5e903-e638-453d-8902-54de5c652832",
+                            "label": "secretwrap_goalhel",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretwrap"
+                            },
+                            "x": 768,
+                            "y": 436
+                        },
+                        {
+                            "type": "Image",
+                            "id": "cd264831-a84d-4bb6-8a9d-e7171deac512",
+                            "label": "secrettext_goalhel",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secrettext"
+                            },
+                            "x": 654,
+                            "y": 232,
+                            "scaleX": 0.42972712117801115,
+                            "scaleY": 0.42972712117801115
+                        },
+                        {
+                            "type": "Image",
+                            "id": "77f64360-5447-4a11-a38e-5209dfcc6fb2",
+                            "label": "exit_goalhel",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secretClose(1036)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "exit"
+                            },
+                            "x": 1024,
+                            "y": 192
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4d184624-154f-45cd-992a-b8bb68cc0cb7",
+                            "label": "sec_goalhel",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "sec_goalhel.webp"
+                            },
+                            "x": 768,
+                            "y": 404,
+                            "scaleX": 0.45,
+                            "scaleY": 0.45,
+                            "angle": -19
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "76650e0d-2420-4163-82d6-ba3a01344bda",
+                            "label": "buyBtn_1036",
+                            "scope": "CLASS",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "tag",
+                            "Button.callback": "() => this.buy(1036)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "tag"
+                            },
+                            "x": 759,
+                            "y": 524
+                        },
+                        {
+                            "type": "Text",
+                            "id": "0cf39ab5-ab54-4bbf-bfcf-4ff895fa9f98",
+                            "label": "priceNum_1036",
+                            "scope": "CLASS",
+                            "components": [
+                                "Pricetag"
+                            ],
+                            "Pricetag.id": 1036,
+                            "x": 764,
+                            "y": 524,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "350",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#4b2500ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "0abc34c9-90a7-4b59-9553-4413cb651db2",
+                            "label": "nameTag_1036",
+                            "scope": "CLASS",
+                            "components": [
+                                "Name"
+                            ],
+                            "Name.id": 1036,
+                            "x": 770,
+                            "y": 487,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Goalie Helmet",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "20px",
+                            "fontStyle": "bold",
+                            "color": "#221100ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6da91ae5-68fe-48b8-8542-0ad33d20fb12",
+                    "label": "sec_goaliehelmet",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onSecret(1036)",
+                    "x": 580,
+                    "y": 544,
+                    "scaleX": 0.6258735394714823,
+                    "scaleY": 0.6258735394714823,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Container",
+                    "id": "fe938627-2e39-4fed-aaac-aa4699d980ba",
+                    "label": "sec_5018",
+                    "scope": "CLASS",
+                    "components": [],
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "4bda4561-c7c0-468f-84ea-d5e81bc36234",
+                            "label": "block_goalstick",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "x": 760,
+                            "y": 480,
+                            "isFilled": true,
+                            "fillColor": "#000000",
+                            "fillAlpha": 0.2,
+                            "width": 1520,
+                            "height": 960
+                        },
+                        {
+                            "type": "Image",
+                            "id": "aee73d1a-6bce-4b45-b960-8fcf57719721",
+                            "label": "secretholder_goalstick",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretholder"
+                            },
+                            "x": 769,
+                            "y": 431,
+                            "scaleX": 0.8503262048913669,
+                            "scaleY": 0.8503262048913669
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7ce9ed29-1d1c-417f-af26-5ed8c6e1aeac",
+                            "label": "secretwrap_goalstick",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretwrap"
+                            },
+                            "x": 768,
+                            "y": 436
+                        },
+                        {
+                            "type": "Image",
+                            "id": "97d8dc48-cedb-409f-876e-f48ce640838f",
+                            "label": "secrettext_goalstick",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secrettext"
+                            },
+                            "x": 654,
+                            "y": 232,
+                            "scaleX": 0.42972712117801115,
+                            "scaleY": 0.42972712117801115
+                        },
+                        {
+                            "type": "Image",
+                            "id": "de48c5dc-1eaa-4e87-b484-75cd7b335a7a",
+                            "label": "exit_goalstick",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secretClose(5018)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "exit"
+                            },
+                            "x": 1024,
+                            "y": 192
+                        },
+                        {
+                            "type": "Image",
+                            "id": "03c05137-f00f-453f-ac04-fbd27c963b9c",
+                            "label": "sec_goalstick",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "sec_goal.webp"
+                            },
+                            "x": 742,
+                            "y": 378,
+                            "scaleX": 0.70931765837958,
+                            "scaleY": 0.70931765837958,
+                            "angle": 10
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "51603363-ea0e-4884-8b18-96edb00b07fe",
+                            "label": "buyBtn_5018",
+                            "scope": "CLASS",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "tag",
+                            "Button.callback": "() => this.buy(5018)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "tag"
+                            },
+                            "x": 759,
+                            "y": 524
+                        },
+                        {
+                            "type": "Text",
+                            "id": "6c394445-e649-402d-ada3-a65a417e4936",
+                            "label": "priceNum_5018",
+                            "scope": "CLASS",
+                            "components": [
+                                "Pricetag"
+                            ],
+                            "Pricetag.id": 5018,
+                            "x": 764,
+                            "y": 524,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "350",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#4b2500ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f3a521f1-bd8a-44e5-b62c-6ec481219404",
+                            "label": "nameTag_5018",
+                            "scope": "CLASS",
+                            "components": [
+                                "Name"
+                            ],
+                            "Name.id": 5018,
+                            "x": 770,
+                            "y": 487,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Goalie Hockey Stick",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "20px",
+                            "fontStyle": "bold",
+                            "color": "#221100ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3ef50368-2d24-4478-8d71-4c1a81e91198",
+                    "label": "sec_goaliestick",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onSecret(5018)",
+                    "x": 1329,
+                    "y": 464,
+                    "scaleX": 0.6258735394714823,
+                    "scaleY": 0.6258735394714823,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "ec8e2241-1574-4d6e-b4c9-1b548efb47ff",
+                    "label": "nextpage10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "c5c3c3ce-e0c6-4c8c-b60c-2761f1b736da",
+                    "label": "backpage10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "6ee0e20b-7f0a-4876-9531-765868ac97a7",
+            "label": "page11",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1e343afc-b8f7-4361-bb7d-5617121ca3f2",
+                    "label": "page11body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page11body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "57cee19a-ee0c-461a-b8e1-439d4b270d18",
+                    "label": "buyBtn_1337",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1337)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 405,
+                    "y": 389
+                },
+                {
+                    "type": "Text",
+                    "id": "8b4df924-4037-4d4f-aa55-d1734691d56e",
+                    "label": "priceNum_1337",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1337,
+                    "x": 410,
+                    "y": 389,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "01d7e4ab-1b2c-4c96-986f-5e4215cf232a",
+                    "label": "buyBtn_4483",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4483)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 406,
+                    "y": 737
+                },
+                {
+                    "type": "Text",
+                    "id": "1b5b2b59-db59-4219-aa3e-d62dd8f5ff49",
+                    "label": "priceNum_4483",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4483,
+                    "x": 411,
+                    "y": 737,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Container",
+                    "id": "f72ed02c-6335-4148-80f3-34f770d6e98e",
+                    "label": "sec_4484",
+                    "scope": "CLASS",
+                    "components": [],
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "600dce18-bab4-4df6-b1fb-dc0c5eb7319e",
+                            "label": "block_snowysky",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "x": 760,
+                            "y": 480,
+                            "isFilled": true,
+                            "fillColor": "#000000",
+                            "fillAlpha": 0.2,
+                            "width": 1520,
+                            "height": 960
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ae0076ed-5be2-43e7-b5d3-5dce7e715504",
+                            "label": "secretholder_snowysky",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretholder"
+                            },
+                            "x": 769,
+                            "y": 431,
+                            "scaleX": 0.8503262048913669,
+                            "scaleY": 0.8503262048913669
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f77de570-fa1d-44ae-b2c1-52abc7215197",
+                            "label": "secretwrap_snowysky",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretwrap"
+                            },
+                            "x": 768,
+                            "y": 436
+                        },
+                        {
+                            "type": "Image",
+                            "id": "30f0d1f1-6251-4642-aeca-387616d5e5a8",
+                            "label": "secrettext_snowysky",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secrettext"
+                            },
+                            "x": 654,
+                            "y": 232,
+                            "scaleX": 0.42972712117801115,
+                            "scaleY": 0.42972712117801115
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c434821a-ed37-4e81-b917-3048f72c053d",
+                            "label": "exit_snowysky",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secretClose(4484)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "exit"
+                            },
+                            "x": 1024,
+                            "y": 192
+                        },
+                        {
+                            "type": "Image",
+                            "id": "694f8488-5ea2-4cbf-b41d-fef8be4a235a",
+                            "label": "sec_snowysky",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "sec_snowy.webp"
+                            },
+                            "x": 760,
+                            "y": 378,
+                            "scaleX": 0.888967608646235,
+                            "scaleY": 0.888967608646235
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "ff754417-3bdc-4c4e-b35b-f1b16c7a5d0d",
+                            "label": "buyBtn_4484",
+                            "scope": "CLASS",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "tag",
+                            "Button.callback": "() => this.buy(4484)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "tag"
+                            },
+                            "x": 757,
+                            "y": 544
+                        },
+                        {
+                            "type": "Text",
+                            "id": "90e79918-9fcd-4fcb-bb0f-4f01497a1d9c",
+                            "label": "priceNum_4484",
+                            "scope": "CLASS",
+                            "components": [
+                                "Pricetag"
+                            ],
+                            "Pricetag.id": 4484,
+                            "x": 762,
+                            "y": 544,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "350",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#4b2500ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f65fc61c-3984-46bd-a172-f18a96ea38c0",
+                            "label": "nameTag_4484",
+                            "scope": "CLASS",
+                            "components": [
+                                "Name"
+                            ],
+                            "Name.id": 4484,
+                            "x": 768,
+                            "y": 507,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Snowy Sky Dress",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "20px",
+                            "fontStyle": "bold",
+                            "color": "#221100ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "b858bd92-e605-4255-8c1a-7b1307f65004",
+                    "label": "sec_snowsky",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onSecret(4484)",
+                    "x": 1175,
+                    "y": 239,
+                    "scaleX": 0.6258735394714823,
+                    "scaleY": 0.6258735394714823,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "aa7666ae-896a-4a24-9df3-927155a5f8bf",
+                    "label": "nextpage11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "fe67661f-ed27-4ac4-9cbd-d842aea4c0f8",
+                    "label": "backpage11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
+            "label": "page12",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "49d47aeb-9552-4d3a-ae31-cb155a127299",
+                    "label": "page12body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page12body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "933dc5c6-a3d2-4f5c-8da0-27ac666b5717",
+                    "label": "buyBtn_6011",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(6011)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 241,
+                    "y": 476
+                },
+                {
+                    "type": "Text",
+                    "id": "2a9ab907-3ccb-4389-9df4-bffd0a2f05b2",
+                    "label": "priceNum_6011",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 6011,
+                    "x": 246,
+                    "y": 476,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ce3460b3-7f27-464e-80d2-4aa948c7c1cd",
+                    "label": "buyBtn_4482",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4482)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 517,
+                    "y": 728
+                },
+                {
+                    "type": "Text",
+                    "id": "e12c3430-708f-4eb1-9e31-94a5d506d268",
+                    "label": "priceNum_4482",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4482,
+                    "x": 522,
+                    "y": 728,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c65d6129-92b9-4735-9b6d-b0cfe6cf975d",
+                    "label": "buyBtn_1336",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1336)",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "tag"
+                    },
+                    "x": 523,
+                    "y": 318
+                },
+                {
+                    "type": "Text",
+                    "id": "f3ab45dc-6ea1-437d-83f8-f8cf941c769c",
+                    "label": "priceNum_1336",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1336,
+                    "x": 528,
+                    "y": 318,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Container",
+                    "id": "a731112d-1f94-4cc9-b299-d9e663b679c0",
+                    "label": "sec_1338",
+                    "scope": "CLASS",
+                    "components": [],
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "f7285987-4321-4a0b-9afb-cc5557762646",
+                            "label": "block_free",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "x": 760,
+                            "y": 480,
+                            "isFilled": true,
+                            "fillColor": "#000000",
+                            "fillAlpha": 0.2,
+                            "width": 1520,
+                            "height": 960
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ff28681e-0c09-4f95-8aee-ab550b216ed7",
+                            "label": "secretholder_free",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretholder"
+                            },
+                            "x": 769,
+                            "y": 431,
+                            "scaleX": 0.8503262048913669,
+                            "scaleY": 0.8503262048913669
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e039bc41-a6ae-4739-831d-415209528d54",
+                            "label": "secretwrap_free",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secretwrap"
+                            },
+                            "x": 768,
+                            "y": 436
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ccc14adb-11d6-4381-b67c-4ff8bac09252",
+                            "label": "secrettext_free",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "secrettext"
+                            },
+                            "x": 654,
+                            "y": 232,
+                            "scaleX": 0.42972712117801115,
+                            "scaleY": 0.42972712117801115
+                        },
+                        {
+                            "type": "Image",
+                            "id": "19fb2bf2-bc51-4eb7-803d-38bd21d16c9d",
+                            "label": "exit_free",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secretClose(1338)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "exit"
+                            },
+                            "x": 1024,
+                            "y": 192
+                        },
+                        {
+                            "type": "Image",
+                            "id": "030dde11-59be-4771-a8b4-ae2c5334912c",
+                            "label": "sec_free",
+                            "components": [],
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "sec_free.webp"
+                            },
+                            "x": 767,
+                            "y": 406,
+                            "scaleX": 0.5886100600492181,
+                            "scaleY": 0.5886100600492181
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "70793c49-4748-45df-a8a4-62e7f8fc98b3",
+                            "label": "buyBtn_1338",
+                            "scope": "CLASS",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "tag",
+                            "Button.callback": "() => this.buy(1338)",
+                            "texture": {
+                                "key": "winter-sports",
+                                "frame": "tag"
+                            },
+                            "x": 759,
+                            "y": 537
+                        },
+                        {
+                            "type": "Text",
+                            "id": "522cf067-9e30-4a25-adbf-2195dbf1e427",
+                            "label": "priceNum_1338",
+                            "scope": "CLASS",
+                            "components": [
+                                "Pricetag"
+                            ],
+                            "Pricetag.id": 1338,
+                            "x": 765,
+                            "y": 538,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "350",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#4b2500ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "46b832d4-9eb5-40de-abfc-60dc550c74bd",
+                            "label": "nameTag_1338",
+                            "scope": "CLASS",
+                            "components": [
+                                "Name"
+                            ],
+                            "Name.id": 1338,
+                            "x": 768,
+                            "y": 500,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "The Free Skate",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "20px",
+                            "fontStyle": "bold",
+                            "color": "#221100ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e2a703c5-6c81-4c01-9da9-7679033e17fe",
+                    "label": "sec_frees",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onSecret(1338)",
+                    "x": 524,
+                    "y": 198,
+                    "scaleX": 0.6258735394714823,
+                    "scaleY": 0.6258735394714823,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "0bf770fd-7345-4d6b-82ca-6f14aa2c846c",
+                    "label": "nextpage12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1378,
+                    "y": 737
+                },
+                {
+                    "type": "Image",
+                    "id": "012952fe-3132-4c77-a677-5b7869c43a1e",
+                    "label": "backpage12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 138,
+                    "y": 737
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "7c9e717b-95de-42c5-8403-3fcc46ffccca",
+            "label": "page13",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ca2056dd-df1f-4b00-904a-b0d4f8b25467",
+                    "label": "page13body",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "page13body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "da4df9b3-3bc9-4167-85cb-3dce8f1790d8",
+                    "label": "backpage13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 524,
+                    "y": 741
+                },
+                {
+                    "type": "Image",
+                    "id": "0ca37fc0-1641-4d0c-9cb8-5ae63b2df67b",
+                    "label": "exit_2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "exit"
+                    },
+                    "x": 1143,
+                    "y": 79
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c0303408-3e8c-411a-a9e0-380b770a5afb",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 204,
+            "y": 59,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "28766178-fd9e-4605-ab7e-7d207c3f48dd",
+                    "label": "coinholder",
+                    "components": [],
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "coinholder"
+                    },
+                    "x": 662,
+                    "y": 833
+                },
+                {
+                    "type": "Text",
+                    "id": "d7c686fa-2a32-4c15-a1be-922efadcd68c",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 587,
+                    "y": 803,
+                    "angle": -7,
+                    "text": "Your Coins:\n100000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold italic",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "95e16017-4019-4335-a4db-e2eadde61512",
+                    "label": "exit",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "winter-sports",
+                        "frame": "exit"
+                    },
+                    "x": 1231,
+                    "y": -8
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5964968d-59ed-4f6f-b2a9-4c4deeb29dba",
+            "label": "pages",
+            "objectIds": [
+                "91f5a4fc-f734-4524-97ce-6c2141ef796a",
+                "3ae976a3-2c41-4b82-95cc-78312622ed08",
+                "3499b762-d5cf-4506-8bce-480ba2de88ec",
+                "6494f37f-1fad-439d-8e91-d3cd4220d017",
+                "2f282795-e367-4c38-aaf8-5edf05db3385",
+                "54487cba-a3d4-478c-8b1e-213d83b742c7",
+                "7d988d0b-67e8-4b8a-949b-7dd96ba12898",
+                "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
+                "99f95081-9560-4e15-a29e-7d5fedb71132",
+                "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
+                "6ee0e20b-7f0a-4876-9531-765868ac97a7",
+                "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
+                "7c9e717b-95de-42c5-8403-3fcc46ffccca"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2071 @@
+{
+    "id": "c6fee1ee-b4af-43b7-9f8f-1c72b368e62c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "client/client/media/interface/catalogs/sports/summersports-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "SummerSports",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "0c7859bf-3140-40c7-bb0b-f95b4bc534a3",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "91f5a4fc-f734-4524-97ce-6c2141ef796a",
+            "label": "page1",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "03372dcd-1297-4625-89cd-d1bc381a6874",
+                    "label": "page1body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page1body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "0fcdc343-c9ab-4ae7-bd66-cf7b4918fab6",
+                    "label": "nextpage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1096,
+                    "y": 810
+                },
+                {
+                    "type": "Image",
+                    "id": "fefa753f-652c-4e78-bdb4-30af2ccdccdb",
+                    "label": "exit_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "exit"
+                    },
+                    "x": 1156,
+                    "y": 31
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3ae976a3-2c41-4b82-95cc-78312622ed08",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c2850faf-c979-417d-9a36-8b1003753b6e",
+                    "label": "page2body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page2body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "70c93589-1a36-46ce-9c19-741355cdfe64",
+                    "label": "buyBtn_722",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(722)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 901,
+                    "y": 230
+                },
+                {
+                    "type": "Text",
+                    "id": "b09f3582-fd8d-44ae-aedf-a34ea758d713",
+                    "label": "priceNum_722",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 722,
+                    "x": 906,
+                    "y": 230,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "35cae3d9-6fdb-4e04-a463-eed947e04477",
+                    "label": "buyBtn_3002",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(3002)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 902,
+                    "y": 516
+                },
+                {
+                    "type": "Text",
+                    "id": "1b142e44-5de8-43a5-afcd-1a484e4645a6",
+                    "label": "priceNum_3002",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 3002,
+                    "x": 907,
+                    "y": 516,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "344530cc-d785-4476-b9e7-b13efbb9889c",
+                    "label": "bgholder1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "bgholder"
+                    },
+                    "x": 248,
+                    "y": 343,
+                    "scaleX": 1.209898226385165,
+                    "scaleY": 1.1943822494576013
+                },
+                {
+                    "type": "Image",
+                    "id": "8c231572-dbba-4180-86b2-777ebfa5d1e9",
+                    "label": "bgholder2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "bgholder"
+                    },
+                    "x": 496,
+                    "y": 343,
+                    "scaleX": 1.209898226385165,
+                    "scaleY": 1.1943822494576013
+                },
+                {
+                    "type": "Image",
+                    "id": "8fffeaef-d219-463b-873f-dfd7698ff7c8",
+                    "label": "bgholder3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "bgholder"
+                    },
+                    "x": 248,
+                    "y": 596,
+                    "scaleX": 1.209898226385165,
+                    "scaleY": 1.1943822494576013
+                },
+                {
+                    "type": "Image",
+                    "id": "0c4a8b55-50de-4226-9571-5fe01c28f413",
+                    "label": "bgholder4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "bgholder"
+                    },
+                    "x": 496,
+                    "y": 596,
+                    "scaleX": 1.209898226385165,
+                    "scaleY": 1.1943822494576013
+                },
+                {
+                    "type": "Image",
+                    "id": "dd4c58c7-624d-4d65-8fb9-e7c3726c1203",
+                    "label": "backgrounds",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "backgrounds"
+                    },
+                    "x": 384,
+                    "y": 457
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "5d131c66-1100-4661-b8bf-9f1859ac2ad6",
+                    "label": "rectangle",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRectangleHover(1)",
+                    "SimpleButton.hoverOutCallback": "() => this.onRectangleOut(1)",
+                    "SimpleButton.callback": "() => this.buy(958)",
+                    "x": 251,
+                    "y": 341,
+                    "scaleX": 1.735454784016281,
+                    "scaleY": 1.752622125489499,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "bdb83eed-7fec-4b1b-b48c-28e00d4ab1ec",
+                    "label": "rectangle1",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRectangleHover(2)",
+                    "SimpleButton.hoverOutCallback": "() => this.onRectangleOut(2)",
+                    "SimpleButton.callback": "() => this.buy(993)",
+                    "x": 494,
+                    "y": 341,
+                    "scaleX": 1.7103580987135203,
+                    "scaleY": 1.7103580987135203,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "31214bf0-39fd-4922-bcf9-af7cb326df68",
+                    "label": "rectangle2",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRectangleHover(3)",
+                    "SimpleButton.hoverOutCallback": "() => this.onRectangleOut(3)",
+                    "SimpleButton.callback": "() => this.buy(918)",
+                    "x": 250,
+                    "y": 592,
+                    "scaleX": 1.6912229001921724,
+                    "scaleY": 1.8134863061337667,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "25748292-5993-4c9e-a3f0-21c1ce54c951",
+                    "label": "rectangle3",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRectangleHover(4)",
+                    "SimpleButton.hoverOutCallback": "() => this.onRectangleOut(4)",
+                    "SimpleButton.callback": "() => this.buy(920)",
+                    "x": 496,
+                    "y": 594,
+                    "scaleX": 1.754356294356533,
+                    "scaleY": 1.754356294356533,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "d18b7438-8914-4145-99c5-a4cc53d9c86c",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7dedd142-876c-42bd-8156-85bcd7764594",
+                    "label": "page3body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page3body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "0ac0b3f3-9069-45d5-abee-2a93c58d0344",
+                    "label": "buyBtn_5472",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5472)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 989,
+                    "y": 814
+                },
+                {
+                    "type": "Text",
+                    "id": "74b2ea93-6e4b-44ef-b8d3-58c59888279f",
+                    "label": "priceNum_5472",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5472,
+                    "x": 994,
+                    "y": 814,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "36b59235-e868-4833-8a66-d9da08fbba9c",
+                    "label": "buyBtn_5473",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5473)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 989,
+                    "y": 421
+                },
+                {
+                    "type": "Text",
+                    "id": "71e05618-ed25-4188-9109-25b7d2b379cc",
+                    "label": "priceNum_5473",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5473,
+                    "x": 994,
+                    "y": 421,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "3dbcdd1c-dc31-4300-a6dc-73e314e7692c",
+                    "label": "buyBtn_1906",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1906)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 523,
+                    "y": 753
+                },
+                {
+                    "type": "Text",
+                    "id": "673f3354-e2aa-42c3-9648-5b8c907d09d2",
+                    "label": "priceNum_1906",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1906,
+                    "x": 528,
+                    "y": 753,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "bfdf71a9-3a11-4a79-9893-0b325ed75527",
+                    "label": "buyBtn_1907",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1907)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 258,
+                    "y": 754
+                },
+                {
+                    "type": "Text",
+                    "id": "f24ee3a8-e5ee-4f98-862f-fcea416f4be8",
+                    "label": "priceNum_1907",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1907,
+                    "x": 263,
+                    "y": 754,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8d3b0ac4-ba6a-45d2-bec2-5aefaf7b8877",
+                    "label": "buyBtn_5471",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5471)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1289,
+                    "y": 815
+                },
+                {
+                    "type": "Text",
+                    "id": "9616836f-0526-4aa7-ac18-01dedb0a164f",
+                    "label": "priceNum_5471",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5471,
+                    "x": 1294,
+                    "y": 815,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d773769f-2b9b-44ae-abc6-8f588394c641",
+                    "label": "buyBtn_5474",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5474)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1283,
+                    "y": 421
+                },
+                {
+                    "type": "Text",
+                    "id": "b6290a30-3b2a-4f49-addf-ea23ea7eebff",
+                    "label": "priceNum_5474",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5474,
+                    "x": 1288,
+                    "y": 421,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3499b762-d5cf-4506-8bce-480ba2de88ec",
+            "label": "page4",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "66be5197-933e-4e26-a197-3f7d0a22a98d",
+                    "label": "page4body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page4body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5fa033d3-c950-42e1-b23f-e12d010d1e0e",
+                    "label": "buyBtn_24191",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(24191)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 303,
+                    "y": 423
+                },
+                {
+                    "type": "Text",
+                    "id": "4348c02f-0156-43f6-9df9-a7946cb0818e",
+                    "label": "priceNum_24191",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 24191,
+                    "x": 308,
+                    "y": 423,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "250",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dbd9ab2e-abee-437a-8174-196b38713031",
+                    "label": "buyBtn_24204",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(24204)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 302,
+                    "y": 708
+                },
+                {
+                    "type": "Text",
+                    "id": "f110416d-58f0-464f-b25e-4bbaf351aad1",
+                    "label": "priceNum_24204",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 24204,
+                    "x": 307,
+                    "y": 708,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "145",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2f282795-e367-4c38-aaf8-5edf05db3385",
+            "label": "page5",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "51f5ff4f-0986-4130-8365-9607642da34e",
+                    "label": "page5body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page5body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "87f6523e-34c0-4b0e-8deb-497310ead2a1",
+                    "label": "buyBtn_4347",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4347)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 979,
+                    "y": 381
+                },
+                {
+                    "type": "Text",
+                    "id": "15d2dc52-4177-4644-bc14-f2439cb0e78c",
+                    "label": "priceNum_4347",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4347,
+                    "x": 984,
+                    "y": 381,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dcb5b7c1-cca0-4454-a23e-067245fb92b3",
+                    "label": "buyBtn_4349",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4349)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 990,
+                    "y": 742
+                },
+                {
+                    "type": "Text",
+                    "id": "f678e158-7dbf-407c-b6b4-5e92aa62f9ec",
+                    "label": "priceNum_4349",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4349,
+                    "x": 995,
+                    "y": 742,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5bb154c7-4c8c-4dad-9669-2bf47b33ddea",
+                    "label": "buyBtn_4350",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4350)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1261,
+                    "y": 744
+                },
+                {
+                    "type": "Text",
+                    "id": "ed6f9ce7-9d74-4e22-a5c6-98ac94ad6ee6",
+                    "label": "priceNum_4350",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4350,
+                    "x": 1266,
+                    "y": 744,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e622a7ce-fad1-4456-8d9b-bc0e1d42201e",
+                    "label": "buyBtn_4348",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4348)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1265,
+                    "y": 381
+                },
+                {
+                    "type": "Text",
+                    "id": "1ee168c1-057e-4846-a4c7-ae98248aaa80",
+                    "label": "priceNum_4348",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4348,
+                    "x": 1270,
+                    "y": 381,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "54487cba-a3d4-478c-8b1e-213d83b742c7",
+            "label": "page6",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "58db2036-2435-4d76-9ad8-16a41e3e8ce9",
+                    "label": "page6body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page6body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "10af900f-4bee-44f2-95dd-e5ec1f6b0caa",
+                    "label": "buyBtn_727",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(727)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 375,
+                    "y": 354
+                },
+                {
+                    "type": "Text",
+                    "id": "39980d68-adc3-411d-a3bb-fda73de64d63",
+                    "label": "priceNum_727",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 727,
+                    "x": 380,
+                    "y": 354,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c4757145-90f3-4037-844e-2ab17d0caac9",
+                    "label": "buyBtn_4091",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4091)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 377,
+                    "y": 683
+                },
+                {
+                    "type": "Text",
+                    "id": "66d27568-5ac9-4110-ae2d-cfd5428a0101",
+                    "label": "priceNum_4091",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4091,
+                    "x": 382,
+                    "y": 683,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "7d988d0b-67e8-4b8a-949b-7dd96ba12898",
+            "label": "page7",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c6959b10-aa30-4e07-a6c4-f6db7be4d1b4",
+                    "label": "page7body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page7body"
+                    },
+                    "x": 760,
+                    "y": 480
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
+            "label": "page8",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "63d6484d-05ac-4dc7-a974-64c633a74b53",
+                    "label": "page8body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page8body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "6364b5c3-6551-4078-81f5-23ca1aa0ec3d",
+                    "label": "buyBtn_329",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(329)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1232,
+                    "y": 271
+                },
+                {
+                    "type": "Text",
+                    "id": "6120c239-ec1d-4168-a882-ae586e85bd38",
+                    "label": "priceNum_329",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 329,
+                    "x": 1237,
+                    "y": 271,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "9ff32c50-2dba-4a26-aa3a-cd1a20ab8b7a",
+                    "label": "buyBtn_255",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(255)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 986,
+                    "y": 271
+                },
+                {
+                    "type": "Text",
+                    "id": "ac505d4a-4e58-46ce-9235-af5c05951ea9",
+                    "label": "priceNum_255",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 255,
+                    "x": 991,
+                    "y": 271,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4fb44469-2ef4-400b-b257-022497696c15",
+                    "label": "buyBtn_4116",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4116)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 983,
+                    "y": 542
+                },
+                {
+                    "type": "Text",
+                    "id": "f0781c5f-90fb-4fae-a869-beb048f7f3b1",
+                    "label": "priceNum_4116",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4116,
+                    "x": 988,
+                    "y": 542,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "84d951e7-add4-4749-86cb-6775b9a71d59",
+                    "label": "buyBtn_5048",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5048)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1235,
+                    "y": 542
+                },
+                {
+                    "type": "Text",
+                    "id": "d1a126de-49e7-4370-a347-2e6e775a7dcc",
+                    "label": "priceNum_5048",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5048,
+                    "x": 1240,
+                    "y": 542,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d7c69210-db37-4065-9047-7cd45f928c0d",
+                    "label": "buyBtn_658",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(658)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 263,
+                    "y": 407
+                },
+                {
+                    "type": "Text",
+                    "id": "8ec29e22-e8bf-41d2-aa53-fcaa9af2fb96",
+                    "label": "priceNum_658",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 658,
+                    "x": 268,
+                    "y": 407,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d10872bb-6f4f-4cd8-951f-719f22f65d19",
+                    "label": "buyBtn_671",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(671)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 532,
+                    "y": 408
+                },
+                {
+                    "type": "Text",
+                    "id": "73e9b723-76c9-4d71-8fed-0f46a77391c0",
+                    "label": "priceNum_671",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 671,
+                    "x": 537,
+                    "y": 408,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8891c4b6-2146-4e8a-8c57-af416fb7f051",
+                    "label": "buyBtn_5136",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5136)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1250,
+                    "y": 785
+                },
+                {
+                    "type": "Text",
+                    "id": "6ec4b30e-6ee1-47a0-9bc6-1be6e10ac87f",
+                    "label": "priceNum_5136",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5136,
+                    "x": 1255,
+                    "y": 785,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "985583fa-5d3a-433d-977c-b4c2f884a6cd",
+                    "label": "buyBtn_254",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(254)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 988,
+                    "y": 781
+                },
+                {
+                    "type": "Text",
+                    "id": "a17fc197-3215-4acb-9e09-b13aa995a652",
+                    "label": "priceNum_254",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 254,
+                    "x": 993,
+                    "y": 781,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "7152fd7f-9716-4c03-b262-8e930311cf57",
+                    "label": "buyBtn_1079",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1079)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 388,
+                    "y": 707
+                },
+                {
+                    "type": "Text",
+                    "id": "9e957daf-aa0c-4521-a11b-7e04278db419",
+                    "label": "priceNum_1079",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1079,
+                    "x": 393,
+                    "y": 707,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "99f95081-9560-4e15-a29e-7d5fedb71132",
+            "label": "page9",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ece414cf-c0f3-4270-865f-8899ddd12701",
+                    "label": "page9body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page9body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "60128319-048d-4b18-abda-a4c226e48c8e",
+                    "label": "buyBtn_462",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(462)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 985,
+                    "y": 390
+                },
+                {
+                    "type": "Text",
+                    "id": "2d0078c6-df75-45b2-80e4-cb1fea5b2761",
+                    "label": "priceNum_462",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 462,
+                    "x": 990,
+                    "y": 390,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "78e3828e-87ef-483f-b683-730641de3558",
+                    "label": "buyBtn_1078",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(1078)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1250,
+                    "y": 388
+                },
+                {
+                    "type": "Text",
+                    "id": "5b3290cb-97d6-4c48-be87-8d70d1c76329",
+                    "label": "priceNum_1078",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 1078,
+                    "x": 1255,
+                    "y": 388,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "2cc69c81-413b-4a7a-84c3-4ad89d67a8c1",
+                    "label": "buyBtn_721",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(721)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 987,
+                    "y": 748
+                },
+                {
+                    "type": "Text",
+                    "id": "6b38f173-b9d2-4a3a-991f-d5916df5a235",
+                    "label": "priceNum_721",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 721,
+                    "x": 992,
+                    "y": 748,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dab0efc8-0838-4714-9dcd-3d28155fe379",
+                    "label": "buyBtn_4115",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4115)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1266,
+                    "y": 748
+                },
+                {
+                    "type": "Text",
+                    "id": "4bab0df3-3614-43ba-87cb-f6e845018e5a",
+                    "label": "priceNum_4115",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4115,
+                    "x": 1271,
+                    "y": 748,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
+            "label": "page10",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "6495ea8c-40c7-4106-805f-f12111d68c29",
+                    "label": "page10body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page10body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "312aa429-8ee8-4390-9e0f-bbe00c5cc8cd",
+                    "label": "buyBtn_463",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(463)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 273,
+                    "y": 332
+                },
+                {
+                    "type": "Text",
+                    "id": "8ad76c9f-4b7b-484d-aa8e-ab7be7f392fc",
+                    "label": "priceNum_463",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 463,
+                    "x": 278,
+                    "y": 332,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4162d534-a3da-4093-ba56-2be8b073b8c0",
+                    "label": "buyBtn_726",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(726)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 574,
+                    "y": 336
+                },
+                {
+                    "type": "Text",
+                    "id": "6a468d96-279e-4777-91a9-894427858ac2",
+                    "label": "priceNum_726",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 726,
+                    "x": 579,
+                    "y": 336,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dd2b8446-19f3-4e8a-95f1-2149ba1209cd",
+                    "label": "buyBtn_720",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(720)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 408,
+                    "y": 720
+                },
+                {
+                    "type": "Text",
+                    "id": "7c9d57a5-0c1f-45c5-ae1c-71be2a07b39d",
+                    "label": "priceNum_720",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 720,
+                    "x": 413,
+                    "y": 720,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "6ee0e20b-7f0a-4876-9531-765868ac97a7",
+            "label": "page11",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1e343afc-b8f7-4361-bb7d-5617121ca3f2",
+                    "label": "page11body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page11body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "57cee19a-ee0c-461a-b8e1-439d4b270d18",
+                    "label": "buyBtn_5091",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5091)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 264,
+                    "y": 367
+                },
+                {
+                    "type": "Text",
+                    "id": "8b4df924-4037-4d4f-aa55-d1734691d56e",
+                    "label": "priceNum_5091",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5091,
+                    "x": 269,
+                    "y": 367,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "01d7e4ab-1b2c-4c96-986f-5e4215cf232a",
+                    "label": "buyBtn_5092",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5092)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 507,
+                    "y": 367
+                },
+                {
+                    "type": "Text",
+                    "id": "1b5b2b59-db59-4219-aa3e-d62dd8f5ff49",
+                    "label": "priceNum_5092",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5092,
+                    "x": 512,
+                    "y": 367,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "859ad852-86db-4cf1-919f-77685adc2c8a",
+                    "label": "buyBtn_5093",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5093)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 267,
+                    "y": 703
+                },
+                {
+                    "type": "Text",
+                    "id": "2f17e583-60ef-480e-93b2-d3c58dbf230c",
+                    "label": "priceNum_5093",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5093,
+                    "x": 272,
+                    "y": 703,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f54caccc-4cba-4182-b8b7-b372d913b859",
+                    "label": "buyBtn_5094",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(5094)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 510,
+                    "y": 703
+                },
+                {
+                    "type": "Text",
+                    "id": "fab6fa49-3242-406e-82d1-884ea4198229",
+                    "label": "priceNum_5094",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 5094,
+                    "x": 515,
+                    "y": 703,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "350",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
+            "label": "page12",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "49d47aeb-9552-4d3a-ae31-cb155a127299",
+                    "label": "page12body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page12body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "933dc5c6-a3d2-4f5c-8da0-27ac666b5717",
+                    "label": "buyBtn_4089",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4089)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1243,
+                    "y": 388
+                },
+                {
+                    "type": "Text",
+                    "id": "2a9ab907-3ccb-4389-9df4-bffd0a2f05b2",
+                    "label": "priceNum_4089",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4089,
+                    "x": 1248,
+                    "y": 388,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c65d6129-92b9-4735-9b6d-b0cfe6cf975d",
+                    "label": "buyBtn_4090",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(4090)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1012,
+                    "y": 388
+                },
+                {
+                    "type": "Text",
+                    "id": "f3ab45dc-6ea1-437d-83f8-f8cf941c769c",
+                    "label": "priceNum_4090",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 4090,
+                    "x": 1017,
+                    "y": 388,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "be7713d7-6108-4072-b0bb-9a9f17ff1006",
+                    "label": "buyBtn_313",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(313)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1020,
+                    "y": 739
+                },
+                {
+                    "type": "Text",
+                    "id": "290997ef-930c-4a97-ac26-f923178a0f88",
+                    "label": "priceNum_313",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 313,
+                    "x": 1025,
+                    "y": 739,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "13648514-cebf-42b1-a3eb-089d3fc917a5",
+                    "label": "buyBtn_372",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "tag",
+                    "Button.callback": "() => this.buy(372)",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "tag"
+                    },
+                    "x": 1261,
+                    "y": 739
+                },
+                {
+                    "type": "Text",
+                    "id": "58960fbd-b137-46ea-9120-9aecfd3a4a0e",
+                    "label": "priceNum_372",
+                    "scope": "CLASS",
+                    "components": [
+                        "Pricetag"
+                    ],
+                    "Pricetag.id": 372,
+                    "x": 1266,
+                    "y": 739,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "450",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "7c9e717b-95de-42c5-8403-3fcc46ffccca",
+            "label": "page13",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ca2056dd-df1f-4b00-904a-b0d4f8b25467",
+                    "label": "page13body",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "page13body"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "da4df9b3-3bc9-4167-85cb-3dce8f1790d8",
+                    "label": "backpage13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "backpage"
+                    },
+                    "x": 499,
+                    "y": 810
+                },
+                {
+                    "type": "Image",
+                    "id": "0ca37fc0-1641-4d0c-9cb8-5ae63b2df67b",
+                    "label": "exit_2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "exit"
+                    },
+                    "x": 1162,
+                    "y": 42
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c0303408-3e8c-411a-a9e0-380b770a5afb",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 204,
+            "y": 59,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "95e16017-4019-4335-a4db-e2eadde61512",
+                    "label": "exit",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "exit"
+                    },
+                    "x": 1281,
+                    "y": -26
+                },
+                {
+                    "type": "Image",
+                    "id": "e5118783-e045-4591-b0c9-d229b4f5f311",
+                    "label": "nextpage_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextpage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "nextpage"
+                    },
+                    "x": 1226,
+                    "y": 750
+                },
+                {
+                    "type": "Image",
+                    "id": "0eca21d4-3a7b-4e3d-8a07-5520b10ad8a6",
+                    "label": "backpage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "backpage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "backpage"
+                    },
+                    "x": -121,
+                    "y": 752
+                },
+                {
+                    "type": "Image",
+                    "id": "d7878c04-d1f0-427d-8fbf-51df19d309e1",
+                    "label": "coinholder",
+                    "components": [],
+                    "texture": {
+                        "key": "summer-sports",
+                        "frame": "coinholder"
+                    },
+                    "x": 712,
+                    "y": 878,
+                    "scaleX": 0.5199561211472358,
+                    "scaleY": 0.5199561211472358
+                },
+                {
+                    "type": "Text",
+                    "id": "64b97488-5f81-4a5d-a138-71170841f44b",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 596,
+                    "y": 864,
+                    "text": "Your Coins: 100000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold italic",
+                    "color": "#000000ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5964968d-59ed-4f6f-b2a9-4c4deeb29dba",
+            "label": "pages",
+            "objectIds": [
+                "91f5a4fc-f734-4524-97ce-6c2141ef796a",
+                "3ae976a3-2c41-4b82-95cc-78312622ed08",
+                "d18b7438-8914-4145-99c5-a4cc53d9c86c",
+                "3499b762-d5cf-4506-8bce-480ba2de88ec",
+                "2f282795-e367-4c38-aaf8-5edf05db3385",
+                "54487cba-a3d4-478c-8b1e-213d83b742c7",
+                "7c9e717b-95de-42c5-8403-3fcc46ffccca",
+                "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
+                "6ee0e20b-7f0a-4876-9531-765868ac97a7",
+                "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
+                "99f95081-9560-4e15-a29e-7d5fedb71132",
+                "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
+                "7d988d0b-67e8-4b8a-949b-7dd96ba12898"
+            ]
+        }
+    ]
+}

@@ -81,7 +81,7 @@ export default class Skate extends RoomScene {
         this.add.image(770, 826, 'skate', 'fg1')
 
         // catalog
-        this.add.image(1420, 885, 'skate', 'catalog')
+        const catalog = this.add.image(1420, 885, 'skate', 'catalog')
 
         // bar
         const bar = this.add.image(1261, 228, 'skate', 'bar')
@@ -101,6 +101,12 @@ export default class Skate extends RoomScene {
         skateMoveTo.x = 300
         skateMoveTo.y = 270
 
+        // catalog (components)
+        const catalogButton = new Button(catalog)
+        catalogButton.spriteName = 'catalog'
+        catalogButton.callback = () => this.loadSnowSports()
+        catalogButton.activeFrame = false
+
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -108,7 +114,19 @@ export default class Skate extends RoomScene {
 
     /* START-USER-CODE */
 
-    // Write your code here
+    create() {
+        super.create()
+    }
+
+    loadSnowSports() {
+        let currentMonth = new Date().getMonth() + 1
+
+        if (currentMonth >= 6 && currentMonth < 12) {
+            this.interface.loadExternal('SummerSports')
+        } else if (currentMonth >= 12 || currentMonth < 6) {
+            this.interface.loadExternal('WinterSports')
+        }
+    }
 
     /* END-USER-CODE */
 }

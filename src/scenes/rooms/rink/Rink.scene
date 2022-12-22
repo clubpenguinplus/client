@@ -17,9 +17,10 @@
     },
     "displayList": [
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "a9b81135-164f-4463-9b35-1c0497eed840",
             "label": "bg",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
@@ -27,6 +28,19 @@
             },
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "7b684fbc-37aa-475e-bee9-e6bb1f6221ff",
+            "label": "bgwinter",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "bgwinter"
+            },
+            "x": 721,
+            "y": 504
         },
         {
             "type": "Image",
@@ -41,9 +55,10 @@
             "y": 185
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "0f2cb92c-9cdb-4cd5-8b6d-3260013d8c4b",
             "label": "signs_en",
+            "scope": "CLASS",
             "components": [
                 "LocalisedSprite"
             ],
@@ -52,31 +67,68 @@
                 "frame": "signs-en"
             },
             "x": 762,
-            "y": 593
+            "y": 593,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
+            "id": "da261748-8f1f-4dc6-86c7-07e7c38776dc",
+            "label": "toprink",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "toprink"
+            },
+            "x": 759.0849835973836,
+            "y": 338.97318070858137,
+            "originX": 0.5024522922077771,
+            "originY": 0.16308731765416148
+        },
+        {
+            "type": "Sprite",
             "id": "387aad3a-0b13-47a0-a4ee-22e618f4e271",
             "label": "fg",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
                 "frame": "fg"
             },
-            "x": 715,
-            "y": 809
+            "x": -194,
+            "y": 978,
+            "originX": 0,
+            "originY": 1,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
+            "id": "1f65b8be-4d42-4ba9-9a8d-c03f831756c7",
+            "label": "fgwinter",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "fgwinter"
+            },
+            "x": 5.486295832113228,
+            "y": 959.7108443166364,
+            "originX": 0.11156951668462708,
+            "originY": 0.9583392138562914
+        },
+        {
+            "type": "Sprite",
             "id": "6937d4aa-c123-419a-b091-de8d448fea7a",
             "label": "gate",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
                 "frame": "gate"
             },
             "x": 756,
-            "y": 332
+            "y": 332,
+            "visible": false
         },
         {
             "type": "Image",
@@ -215,9 +267,10 @@
             "y": 377
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "e22bc8b3-dad6-449f-ad45-b140939e3e2c",
             "label": "ball",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
@@ -226,36 +279,57 @@
             "x": 768,
             "y": 539,
             "scaleX": 0.7,
-            "scaleY": 0.7
+            "scaleY": 0.7,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
+            "id": "4bd60286-7fcd-42de-a399-23d777fd7f75",
+            "label": "puck",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "puck.webp"
+            },
+            "x": 757,
+            "y": 539,
+            "scaleX": 0.23,
+            "scaleY": 0.23
+        },
+        {
+            "type": "Sprite",
             "id": "fb9d5ee6-accc-4e64-b71d-91ac150be0b2",
             "label": "net2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
                 "frame": "net2"
             },
             "x": 254,
-            "y": 498
+            "y": 498,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "384322bf-4282-4342-9f70-956a3bde27d8",
             "label": "net1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
                 "frame": "net1"
             },
             "x": 253,
-            "y": 506
+            "y": 506,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "a5eb4f74-e7b5-4a4e-ab42-d151c90741d0",
             "label": "net",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
@@ -263,12 +337,14 @@
             },
             "x": 1270,
             "y": 501,
-            "flipX": true
+            "flipX": true,
+            "visible": false
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "35c4d280-2dac-4d28-a88e-d6d73358e757",
             "label": "net_1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "rink",
@@ -276,19 +352,79 @@
             },
             "x": 1269,
             "y": 509,
-            "flipX": true
+            "flipX": true,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "86be7bde-1393-4836-9722-88cda6954f0d",
+            "label": "netwinter",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "netwinter"
+            },
+            "x": 1268,
+            "y": 508
+        },
+        {
+            "type": "Sprite",
+            "id": "9cdb4510-bbd9-4102-baca-92ebc0a7c589",
+            "label": "net2winter",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "net2winter"
+            },
+            "x": 1269,
+            "y": 515
+        },
+        {
+            "type": "Sprite",
+            "id": "2e710040-6ad5-4c39-ba5e-485b0d47da9e",
+            "label": "net3winter",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "net3winter"
+            },
+            "x": 253,
+            "y": 505
+        },
+        {
+            "type": "Sprite",
+            "id": "ac9036c4-867e-45a3-a247-02d3618d65b5",
+            "label": "net4winter",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winter",
+                "frame": "net4winter"
+            },
+            "x": 253,
+            "y": 513
         },
         {
             "type": "Image",
             "id": "e869b6d9-daa5-4607-8df5-0d4b51b54fd0",
             "label": "catalog",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "catalog",
+            "Button.callback": "() => this.loadSnowSports()",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "rink",
                 "frame": "catalog"
             },
-            "x": 1418,
-            "y": 886
+            "x": 1420.889239584529,
+            "y": 1151.8100417766711,
+            "originX": 0.5188839188531302,
+            "originY": 2.8113916676232273
         }
     ],
     "plainObjects": [],
@@ -297,5 +433,19 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "551e66bf-4c1c-4c50-b6f2-c7cb07237307",
+            "label": "sort",
+            "objectIds": [
+                "387aad3a-0b13-47a0-a4ee-22e618f4e271",
+                "f720c909-2837-45b1-aa96-e965e0fcded5",
+                "c761cc8c-426c-46ab-8aad-163b418f49a7",
+                "da261748-8f1f-4dc6-86c7-07e7c38776dc",
+                "1f65b8be-4d42-4ba9-9a8d-c03f831756c7",
+                "e869b6d9-daa5-4607-8df5-0d4b51b54fd0"
+            ]
+        }
+    ]
 }
