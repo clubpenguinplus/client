@@ -75,7 +75,7 @@
                 "SimpleButton",
                 "MoveTo"
             ],
-            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.callback": "() => this.onDoorClick()",
             "texture": {
                 "key": "lake",
                 "frame": "door0011"
