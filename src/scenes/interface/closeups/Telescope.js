@@ -353,7 +353,23 @@ export default class Telescope extends BaseScene {
     }
 
     getTelescopeState() {
-        return this.shell.rockhopper_stage
+        let now = new Date()
+        let arrival_difference = ((this.shell.rockhopper_visit.getTime() - now.getTime()) / 86400000)
+        let departure_difference = ((now.getTime() - this.shell.rockhopper_leave.getTime()) / 86400000)
+        if (arrival_difference > 7) {
+            this.state = "empty"
+        } else if (arrival_difference > 3 && arrival_difference <= 7) {
+            this.state = "comingfar"
+        } else if (arrival_difference > 1 && arrival_difference <= 3) {
+            this.state = "comingclose"
+        } else if (departure_difference > 1 && departure_difference <= 3) {
+            this.state = "leavingclose"
+        } else if (departure_difference > 3 && departure_difference <= 7) {
+            this.state = "leavingfar"
+        } else {
+            this.state = "empty"
+        }
+        return this.state
     }
 
     /* END-USER-CODE */
