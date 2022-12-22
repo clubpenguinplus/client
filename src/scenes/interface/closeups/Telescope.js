@@ -287,30 +287,21 @@ export default class Telescope extends BaseScene {
 
     create() {
         super.create()
+        for (let i of this.start) {
+            i.play("telescope-waves")
+        }
+        for (let i of this.middle) {
+            i.playAfterDelay("telescope-waves", Math.random() * 1000)
+        }
+        for (let i of this.last) {
+            i.playAfterDelay("telescope-waves", Math.random() * 2000)
+        }
         if (this.getTelescopeState() == "empty") {
             this.light.play("telescope-light")
-            for (let i of this.start) {
-                i.play("telescope-waves")
-            }
-            for (let i of this.middle) {
-                i.playAfterDelay("telescope-waves", Math.random() * 1000)
-            }
-            for (let i of this.last) {
-                i.playAfterDelay("telescope-waves", Math.random() * 2000)
-            }
         } else if (this.getTelescopeState() == "comingfar") {
             this.comingfar.visible = true
             this.empty.visible = false
             this.migrator_comingfar.play("telescope-migrator_comingfar")
-            for (let i of this.start) {
-                i.play("telescope-waves")
-            }
-            for (let i of this.middle) {
-                i.playAfterDelay("telescope-waves", Math.random() * 1000)
-            }
-            for (let i of this.last) {
-                i.playAfterDelay("telescope-waves", Math.random() * 2000)
-            }
         } else if (this.getTelescopeState() == "comingclose") {
             this.comingclose.visible = true
             this.comingfar.visible = false
@@ -329,26 +320,8 @@ export default class Telescope extends BaseScene {
             this.comingfar.visible = false
             this.empty.visible = false
             this.migrator_leavingfar.play("telescope-migrator_leavingfar")
-            for (let i of this.start) {
-                i.play("telescope-waves")
-            }
-            for (let i of this.middle) {
-                i.playAfterDelay("telescope-waves", Math.random() * 1000)
-            }
-            for (let i of this.last) {
-                i.playAfterDelay("telescope-waves", Math.random() * 2000)
-            }
         } else {
             this.light.play("telescope-light")
-            for (let i of this.start) {
-                i.play("telescope-waves")
-            }
-            for (let i of this.middle) {
-                i.playAfterDelay("telescope-waves", Math.random() * 1000)
-            }
-            for (let i of this.last) {
-                i.playAfterDelay("telescope-waves", Math.random() * 2000)
-            }
         }
     }
 

@@ -794,6 +794,14 @@
                     "y": 770
                 }
             ]
+        },
+        {
+            "type": "Container",
+            "id": "d683a6d1-b429-4288-b9ca-3f8086553a37",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
         }
     ],
     "plainObjects": [],

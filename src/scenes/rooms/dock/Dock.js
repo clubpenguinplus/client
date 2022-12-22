@@ -27,7 +27,7 @@ export default class Dock extends RoomScene {
             beach: () => this.triggerRoom(400, 950, 430),
             village: () => this.triggerRoom(200, 1300, 760),
             town: () => this.triggerRoom(100, 368, 640),
-            hydro: () => null,
+            hydro: () => this.triggerGame('hydrohopper', 924),
         }
 
         this.music = 585
