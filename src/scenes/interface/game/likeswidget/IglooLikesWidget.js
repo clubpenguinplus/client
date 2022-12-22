@@ -261,7 +261,7 @@ export default class IglooLikesWidget extends BaseScene {
         for (let i = 0; i < likes.length; i++) {
             if (!likes[i].includes('|')) {
                 delete likes[i]
-                continue
+                return this.likeWindow.visible = false
             }
             likes[i] = this.arrayToObject(likes[i].split('|'))
             if (likes[i].id == this.shell.client.id) {
