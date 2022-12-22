@@ -1326,8 +1326,7 @@
                                 "frame": "map/shops/snowandsports"
                             },
                             "x": 544,
-                            "y": 172,
-                            "visible": false
+                            "y": 172
                         }
                     ]
                 },

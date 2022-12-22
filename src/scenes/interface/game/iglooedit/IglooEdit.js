@@ -598,7 +598,7 @@ export default class IglooEdit extends BaseScene {
     }
 
     closeChooseIgloo() {
-        this.interface.showInterface()
+        this.shell.room.showLikesWidget()
         this.chooseIgloo.visible = false
 
         this.previews.forEach((preview) => preview.stop())
@@ -614,7 +614,7 @@ export default class IglooEdit extends BaseScene {
 
     onSaveClick() {
         this.saveIgloo()
-        this.interface.showInterface()
+        this.shell.room.showLikesWidget()
         this.shell.room.showPenguins()
         this.shell.room.disableFurnitureInput()
         this.hideControls()

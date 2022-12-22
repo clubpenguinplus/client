@@ -120,15 +120,7 @@ export default class IglooScene extends RoomScene {
         if (this.isPreview) return this.scene.bringToTop(this)
 
         //this.shell.airtower.sendXt('p#pg', this.id)
-
-        this.shell.interface.loadExternal('IglooLikesWidget')
-        this.airtower.sendXt('g#il', this.id)
-
-        this.interface.showInterface()
-        this.interface.main.safetyquiz.visible = false
-        this.interface.main.moderatoricon.visible = false
-
-        this.likesWidget = this.scene.get('IglooLikesWidget')
+        this.showLikesWidget()
 
         if (!this.penguins) return
 
@@ -139,6 +131,19 @@ export default class IglooScene extends RoomScene {
         if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 30) {
             this.shell.client.stampEarned(28)
         }
+    }
+
+    showLikesWidget() {
+        this.shell.interface.loadExternal('IglooLikesWidget')
+        this.airtower.sendXt('g#il', this.id)
+
+        this.interface.showInterface()
+        setTimeout(() => {
+            this.interface.main.safetyquiz.visible = false
+            this.interface.main.moderatoricon.visible = false
+        }, 100)
+
+        this.likesWidget = this.scene.get('IglooLikesWidget')
     }
 
     addCrates() {

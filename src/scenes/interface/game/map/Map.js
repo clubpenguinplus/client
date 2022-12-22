@@ -401,7 +401,6 @@ export default class Map extends BaseContainer {
 
         // snowandsports
         const snowandsports = scene.add.sprite(544, 172, 'map', 'map/shops/snowandsports')
-        snowandsports.visible = false
         shops_container.add(snowandsports)
 
         // puffle_container
