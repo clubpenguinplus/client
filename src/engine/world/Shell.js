@@ -19,6 +19,8 @@ export default class Shell extends BaseScene {
         this.muteMusic = localStorage.muteMusic == 'true' ? true : false
         this.muteAll = localStorage.muteAll == 'true' ? true : false
 
+        this.rockhopper_stage = "empty"
+
         this.itemsLoaded = []
     }
 
