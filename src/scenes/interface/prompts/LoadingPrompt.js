@@ -10,13 +10,9 @@ export default class LoadingPrompt extends BaseContainer {
 
         /** @type {NinePatchContainer} */
         this.bg
-        /** @type {Phaser.GameObjects.Container} */
+        /** @type {Phaser.GameObjects.Sprite} */
         this.bar
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.progress
-        /** @type {Phaser.GameObjects.Text} */
-        this.text
-        /** @type {Phaser.GameObjects.Image} */
+        /** @type {Phaser.GameObjects.Sprite} */
         this.spinner
 
         this.visible = false
@@ -45,31 +41,13 @@ export default class LoadingPrompt extends BaseContainer {
         this.add(blueX)
 
         // bar
-        const bar = scene.add.container(0, -21)
+        const bar = scene.add.sprite(0, -40, 'load', 'beam_0001')
         this.add(bar)
 
-        // outline
-        const outline = scene.add.rectangle(0, 0, 200, 40)
-        outline.isStroked = true
-        outline.strokeColor = 26265
-        outline.lineWidth = 4
-        bar.add(outline)
-
-        // progress
-        const progress = scene.add.rectangle(-90, 0, 180, 20)
-        progress.scaleX = 0
-        progress.setOrigin(0, 0.5)
-        progress.isFilled = true
-        bar.add(progress)
-
-        // text
-        const text = scene.add.text(0, 19, '', {})
-        text.setOrigin(0.5, 0)
-        text.setStyle({align: 'center', fixedWidth: 800, fixedHeight: 40, fontFamily: 'Burbank Small', fontSize: '32px'})
-        this.add(text)
-
         // spinner
-        const spinner = scene.add.image(0, -101, 'load', 'spinner')
+        const spinner = scene.add.sprite(-86, -40, 'load', 'load_0001')
+        spinner.scaleX = 0.35
+        spinner.scaleY = 0.35
         this.add(spinner)
 
         // block (components)
@@ -82,8 +60,6 @@ export default class LoadingPrompt extends BaseContainer {
 
         this.bg = bg
         this.bar = bar
-        this.progress = progress
-        this.text = text
         this.spinner = spinner
 
         /* START-USER-CTR-CODE */
@@ -112,30 +88,17 @@ export default class LoadingPrompt extends BaseContainer {
 
         this.externalScene = scene
 
-        // Updates prompt content
-        this.text.text = this.getString('loading', scene.sys.config)
-        this.progress.scaleX = progress
-
-        // Removes create event if it was previously added by close
-        scene.events.off('create')
-
-        scene.load.on('progress', (progress) => (this.progress.scaleX = progress))
-
-        scene.events.once('create', () => {
-            this.visible = false
-            this.scene.bringToTop()
-        })
+        this.spinner.stop('spinner')
+        this.bar.stop('bar')
+        this.spinner.play('spinner')
+        this.bar.play('bar')
 
         this.visible = true
+        scene.events.once('create', () => (this.visible = false))
     }
 
     close() {
         this.visible = false
-
-        let scene = this.externalScene
-        if (!scene) return
-
-        scene.events.once('create', () => scene.scene.stop())
     }
 
     /* END-USER-CODE */

@@ -913,16 +913,17 @@
                             "label": "waves",
                             "scope": "CLASS",
                             "components": [
-                                "ShowHint"
+                                "ShowHint",
+                                "SimpleButton"
                             ],
                             "ShowHint.text": "catchinwaves",
+                            "SimpleButton.callback": "() => this.onRoomClick(810)",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/games/catchinwaves"
                             },
                             "x": 1219,
-                            "y": 458,
-                            "visible": false
+                            "y": 458
                         },
                         {
                             "type": "Sprite",

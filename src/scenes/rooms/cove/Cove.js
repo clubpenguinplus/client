@@ -10,6 +10,8 @@ export default class Cove extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.smallcatalog
+        /** @type {Phaser.GameObjects.Image} */
+        this.catalog
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort
 
@@ -17,7 +19,7 @@ export default class Cove extends RoomScene {
 
         this.roomTriggers = {
             forest: () => this.triggerRoom(809, 1152, 720),
-            waves: () => null,
+            waves: () => this.triggerGame('catchinwaves', 912),
         }
 
         this.music = 579
@@ -192,6 +194,10 @@ export default class Cove extends RoomScene {
         rectangle_1.fillColor = 1741055
         rectangle_1.fillAlpha = 100
 
+        // catalog
+        const catalog = this.add.image(1446.011322422891, 884.01953125, 'cove', 'catalog')
+        catalog.setOrigin(0.5000905915025777, 0.5001820467068046)
+
         // lists
         const sort = [log, flame_0001, fg1, fg4, chair4, chair2, table, fence, fence3, lap, medical, container_1, fence2, waves, bino, water10, water9, water8, water7, water6, water5, water4, water3, water2, water1, water15, water14, water13, water12, water11]
 
@@ -228,14 +234,31 @@ export default class Cove extends RoomScene {
         rectangle_1SimpleButton.hoverOutCallback = () => {
             this.smallcatalog.setFrame('smallcatalog_0001')
         }
+        rectangle_1SimpleButton.callback = () => this.interface.loadExternal('Waves')
+
+        // catalog (components)
+        const catalogSimpleButton = new SimpleButton(catalog)
+        catalogSimpleButton.hoverCallback = () => {
+            this.catalog.scale = 1.1
+        }
+        catalogSimpleButton.hoverOutCallback = () => {
+            this.catalog.scale = 1
+        }
+        catalogSimpleButton.callback = () => this.interface.loadExternal('Waves')
 
         this.smallcatalog = smallcatalog
+        this.catalog = catalog
         this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
     /* START-USER-CODE */
+
+    create() {
+        super.create()
+        this.catalog.depth = 1000
+    }
 
     /* END-USER-CODE */
 }

@@ -289,8 +289,11 @@ export default class PlayerCard extends BaseContainer {
         for (var stamp in this.crumbs.stamps) {
             if (this.crumbs.stamps[stamp].groupid == category) {
                 categoryStamps.push(this.crumbs.stamps[stamp])
-                if (this.shell.client.stamps.includes(stamp)) {
-                    ownedCategoryStamps.push(this.crumbs.stamps[stamp])
+                for (let ownedStamp of this.shell.client.stamps) {
+                    if (ownedStamp == stamp) {
+                        ownedCategoryStamps.push(this.crumbs.stamps[stamp])
+                        break
+                    }
                 }
             }
         }

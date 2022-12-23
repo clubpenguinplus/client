@@ -575,6 +575,7 @@
             ],
             "SimpleButton.hoverCallback": "() => { this.smallcatalog.__Animation.play() }",
             "SimpleButton.hoverOutCallback": "() => { this.smallcatalog.setFrame(\"smallcatalog_0001\") }",
+            "SimpleButton.callback": "() => this.interface.loadExternal('Waves')",
             "x": 1013,
             "y": 268,
             "scaleX": 0.3906535211270825,
@@ -583,6 +584,26 @@
             "fillAlpha": 100,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "a744e11e-7b74-4573-83f0-dad15e295a72",
+            "label": "catalog",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => {this.catalog.scale = 1.1}",
+            "SimpleButton.hoverOutCallback": "() => {this.catalog.scale = 1}",
+            "SimpleButton.callback": "() => this.interface.loadExternal('Waves')",
+            "texture": {
+                "key": "cove",
+                "frame": "catalog"
+            },
+            "x": 1446.011322422891,
+            "y": 884.01953125,
+            "originX": 0.5000905915025777,
+            "originY": 0.5001820467068046
         }
     ],
     "plainObjects": [],

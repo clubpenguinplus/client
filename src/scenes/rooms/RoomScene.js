@@ -77,7 +77,7 @@ export default class RoomScene extends BaseScene {
             this.load.image('pin', `assets/media/clothing/icon/${this.crumbs.pin.id}.webp`)
         }
 
-        this._preload()
+        if (this._preload) this._preload()
     }
 
     sortChildren() {

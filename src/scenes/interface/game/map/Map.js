@@ -303,7 +303,6 @@ export default class Map extends BaseContainer {
 
         // waves
         const waves = scene.add.sprite(1219, 458, 'map', 'map/games/catchinwaves')
-        waves.visible = false
         games_container.add(waves)
 
         // dancecontest
@@ -839,6 +838,8 @@ export default class Map extends BaseContainer {
         // waves (components)
         const wavesShowHint = new ShowHint(waves)
         wavesShowHint.text = 'catchinwaves'
+        const wavesSimpleButton = new SimpleButton(waves)
+        wavesSimpleButton.callback = () => this.onRoomClick(810)
 
         // dancecontest (components)
         const dancecontestSimpleButton = new SimpleButton(dancecontest)

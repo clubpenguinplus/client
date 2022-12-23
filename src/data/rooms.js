@@ -291,6 +291,10 @@ const rooms = {
         key: 'BeanCounters',
         scene: require('@games/beancounters/BeanCounters').default,
     },
+    912: {
+        key: 'CatchinWaves',
+        scene: require('@games/catchinwaves/CatchinWaves').default,
+    },
     928: {
         key: 'PuffleLaunch',
         scene: require('@games/pufflelaunch/PuffleLaunch').default,

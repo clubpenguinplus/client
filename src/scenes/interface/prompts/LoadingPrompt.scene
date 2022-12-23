@@ -82,64 +82,31 @@
                     "y": -275
                 },
                 {
-                    "type": "Container",
-                    "id": "578b374e-371d-43b9-9898-9e203a556891",
+                    "type": "Sprite",
+                    "id": "8519e670-d7e4-488a-b6b3-7d83121c49ab",
                     "label": "bar",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -21,
-                    "list": [
-                        {
-                            "type": "Rectangle",
-                            "id": "0740f5e9-0961-4c9d-bbde-926a6ac50726",
-                            "label": "outline",
-                            "components": [],
-                            "strokeColor": "#006699",
-                            "lineWidth": 4,
-                            "isStroked": true,
-                            "width": 200,
-                            "height": 40
-                        },
-                        {
-                            "type": "Rectangle",
-                            "id": "6f6dacbc-3648-4ba1-955b-1638f5db2b86",
-                            "label": "progress",
-                            "scope": "CLASS",
-                            "components": [],
-                            "x": -90,
-                            "scaleX": 0,
-                            "originX": 0,
-                            "isFilled": true,
-                            "width": 180,
-                            "height": 20
-                        }
-                    ]
+                    "texture": {
+                        "key": "load",
+                        "frame": "beam_0001"
+                    },
+                    "y": -40
                 },
                 {
-                    "type": "Text",
-                    "id": "aa6732d4-6cf7-46f1-bfd1-bfae968b52f7",
-                    "label": "text",
-                    "scope": "CLASS",
-                    "components": [],
-                    "y": 19,
-                    "originX": 0.5,
-                    "fixedWidth": 800,
-                    "fixedHeight": 40,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px"
-                },
-                {
-                    "type": "Image",
-                    "id": "3249e9f3-3394-4340-be97-9c6fe1f04575",
+                    "type": "Sprite",
+                    "id": "ae9d73ab-3d48-4231-b6cd-dc4e1b88eb22",
                     "label": "spinner",
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "load",
-                        "frame": "spinner"
+                        "frame": "load_0001"
                     },
-                    "y": -101
+                    "x": -86,
+                    "y": -40,
+                    "scaleX": 0.35,
+                    "scaleY": 0.35
                 }
             ]
         }
