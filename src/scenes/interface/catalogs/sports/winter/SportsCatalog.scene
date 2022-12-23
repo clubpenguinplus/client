@@ -1809,6 +1809,7 @@
             "id": "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
             "label": "page10",
             "components": [],
+            "visible": false,
             "list": [
                 {
                     "type": "Image",
