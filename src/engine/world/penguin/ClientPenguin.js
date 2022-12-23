@@ -42,8 +42,9 @@ export default class ClientPenguin extends Penguin {
     }
 
     move(x, y, frame = null) {
-        if (this.lastMoveTime && Date.now() - this.lastMoveTime < 100) return
-        this.lastMoveTime = Date.now()
+        if (this.lastX && this.lastX == x && this.lastY && this.lastY == y) return
+        this.lastX = x
+        this.lastY = y
         if (frame) {
             this.afterMove = () => this.shell.client.sendFrame(frame)
         }
