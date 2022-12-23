@@ -252,6 +252,8 @@ export default class Penguin extends BaseContainer {
     }
 
     playAnims(frame) {
+        if (this.nowPlaying && this.nowPlaying == frame) return
+        this.nowPlaying = frame
         this.playAnim(this.bodySprite, `penguin_body_${frame}`)
         this.playAnim(this.penguinSprite, `penguin_${frame}`)
 
