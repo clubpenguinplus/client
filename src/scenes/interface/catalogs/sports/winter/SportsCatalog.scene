@@ -1809,7 +1809,6 @@
             "id": "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
             "label": "page10",
             "components": [],
-            "visible": false,
             "list": [
                 {
                     "type": "Image",
@@ -1934,13 +1933,13 @@
                 {
                     "type": "Sprite",
                     "id": "3b2e788b-f449-4eeb-bfac-88190345dc7c",
-                    "label": "buyBtn_560",
+                    "label": "buyBtn_220",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "tag",
-                    "Button.callback": "() => this.buy(560)",
+                    "Button.callback": "() => this.buy(220)",
                     "texture": {
                         "key": "winter-sports",
                         "frame": "tag"
@@ -1951,12 +1950,12 @@
                 {
                     "type": "Text",
                     "id": "4364f227-d2ae-4149-bff0-8d66edcbd9d0",
-                    "label": "priceNum_560",
+                    "label": "priceNum_220",
                     "scope": "CLASS",
                     "components": [
                         "Pricetag"
                     ],
-                    "Pricetag.id": 560,
+                    "Pricetag.id": 220,
                     "x": 1272,
                     "y": 552,
                     "originX": 0.5,
