@@ -23,6 +23,8 @@ export default class Actions extends Plugin {
             })
         }
 
+        if (this.room.penguins[args[0]].isClient) return
+
         if (this.room.penguins[args[0]]) this.room.penguins[args[0]].move(args[1], args[2])
     }
 
@@ -34,6 +36,8 @@ export default class Actions extends Plugin {
         }
 
         let penguin = this.room.penguins[args[0]]
+
+        if (penguin.isClient) return
         let callback = () => penguin.playFrame(args[1], args[2])
 
         if (penguin.isTweening) {
