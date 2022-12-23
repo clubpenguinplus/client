@@ -1,6 +1,6 @@
 {
   "name": "clubpenguinplus",
-  "version": "0.0.88",
+  "version": "0.0.89",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",
