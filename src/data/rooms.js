@@ -299,6 +299,10 @@ const rooms = {
         key: 'SoundStudio',
         scene: require('@games/soundstudio/SoundStudio').default,
     },
+    952: {
+        key: 'DanceContest',
+        scene: require('@games/dancecontest/DanceContest').default,
+    },
     959: {
         key: 'Smoothie',
         scene: require('@games/smoothie/Smoothie').default,
