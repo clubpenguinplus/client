@@ -1,0 +1,519 @@
+{
+    "id": "d16ee8e5-8504-4c22-8e54-908b333b91de",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/telescope/telescope-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Telescope",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "4913c3e5-6441-47eb-869b-d7c3e2f39663",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "telescope",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 457
+        },
+        {
+            "type": "Image",
+            "id": "5eb0b74c-cbb5-440e-9cc9-d8eef7196d88",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "telescope",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Container",
+            "id": "462a84a5-9680-43f2-b1b0-66a0e3fa393a",
+            "label": "waves",
+            "components": [],
+            "y": -23,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "6313fdee-02c5-4f77-8636-1703bfbac7e9",
+                    "label": "waves1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 546,
+                    "y": 396
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b8d5bcde-6599-4ea4-a97c-5cea1fcc597d",
+                    "label": "waves_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 572,
+                    "y": 391
+                },
+                {
+                    "type": "Sprite",
+                    "id": "054e3c9b-72cc-40be-b7a1-0518b86f10d7",
+                    "label": "waves_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 584,
+                    "y": 384
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5767740b-b77d-420b-8f3a-412adc7097d7",
+                    "label": "waves_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 604,
+                    "y": 393
+                },
+                {
+                    "type": "Sprite",
+                    "id": "7b9792c3-85f2-400f-8bbb-cc35bf694a7a",
+                    "label": "waves_4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 645,
+                    "y": 393
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c47876ae-945b-4b30-b52e-75961e2ea620",
+                    "label": "waves_5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 681,
+                    "y": 382
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1a9b4539-33bf-4347-b9f6-23776ce44dc5",
+                    "label": "waves_6",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 696,
+                    "y": 393
+                },
+                {
+                    "type": "Sprite",
+                    "id": "bc66111c-f7c6-4724-9d0e-041a0659f04e",
+                    "label": "waves_7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 741,
+                    "y": 392
+                },
+                {
+                    "type": "Sprite",
+                    "id": "aaf6a4cf-b6f7-4ce4-8ac2-de3f54c7d9e1",
+                    "label": "waves_8",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 740,
+                    "y": 379
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ad1bd2dd-a8b6-4e1b-959c-26b83b46ef0d",
+                    "label": "waves_9",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 784,
+                    "y": 395
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c97be397-c568-4a82-ab12-07b4d68bf45d",
+                    "label": "waves_10",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 856,
+                    "y": 408
+                },
+                {
+                    "type": "Sprite",
+                    "id": "fd2447e9-81e5-401b-b36b-df7bd50cafd3",
+                    "label": "waves_11",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 867,
+                    "y": 381
+                },
+                {
+                    "type": "Sprite",
+                    "id": "2f4b8333-d80e-4b59-80a3-bd2c68d98029",
+                    "label": "waves_12",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 839,
+                    "y": 374
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5aa18af0-955c-4a12-b816-c4bb11cdbfb9",
+                    "label": "waves_13",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 923,
+                    "y": 396
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8075f335-47c7-4ede-ae24-1c52958ae665",
+                    "label": "waves_14",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 943,
+                    "y": 389
+                },
+                {
+                    "type": "Sprite",
+                    "id": "efff7d24-befa-42d6-8220-74a49719711d",
+                    "label": "waves_15",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 977,
+                    "y": 397
+                },
+                {
+                    "type": "Sprite",
+                    "id": "88ee2e29-5d70-4901-b420-56e73b672a12",
+                    "label": "waves_16",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 832,
+                    "y": 404
+                },
+                {
+                    "type": "Sprite",
+                    "id": "de16e3ed-25d5-4ec9-8a6e-fc7f39aea392",
+                    "label": "waves_17",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 775,
+                    "y": 382
+                },
+                {
+                    "type": "Sprite",
+                    "id": "85babeff-a01a-45dc-aa32-885dc2cffb50",
+                    "label": "waves_18",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 744,
+                    "y": 397
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e561bcc3-f829-487f-8dc9-2e096ffd0a3e",
+                    "label": "waves_19",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "waves0001"
+                    },
+                    "x": 714,
+                    "y": 398
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "312f34c4-dbd1-4ec4-8d9f-f99f64fa45b9",
+            "label": "blue_button",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "blue-button",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "main",
+                "frame": "blue-button"
+            },
+            "x": 1376,
+            "y": 95
+        },
+        {
+            "type": "Image",
+            "id": "806dcae2-bbd3-4aed-9a17-9921bcccab49",
+            "label": "blue_x",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "blue-x"
+            },
+            "x": 1376,
+            "y": 94
+        },
+        {
+            "type": "Container",
+            "id": "0d7c52bd-7a15-4187-a943-af9c927440f8",
+            "label": "empty",
+            "scope": "CLASS",
+            "components": [],
+            "y": -23,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "8206c2dd-6005-43ea-b366-f762df1b793b",
+                    "label": "light",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "light0001"
+                    },
+                    "x": 899,
+                    "y": 357
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "8bc6acf9-5d42-469b-9b7b-d7781c1f3f36",
+            "label": "comingfar",
+            "scope": "CLASS",
+            "components": [],
+            "y": -23,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "3b207c8f-dbb1-43b7-af58-94bf79dddb45",
+                    "label": "migrator_comingfar",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "migrator_comingfar0001"
+                    },
+                    "x": 760,
+                    "y": 344
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "d6c93dfe-6237-4c72-88fe-64f84315aa78",
+            "label": "comingclose",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "c180ab4f-fea3-4996-b357-ceb3d706deed",
+                    "label": "migrator_comingclose",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "migrator_comingclose0001"
+                    },
+                    "x": 760,
+                    "y": 242
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b6d299de-84e5-4b65-a661-8fd642b628a9",
+            "label": "leavingclose",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "251deec7-971f-44e3-96e6-4408c237c334",
+                    "label": "migrator_leavingclose",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "migrator_leavingclose0001"
+                    },
+                    "x": 760,
+                    "y": 248
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "95cebfef-574b-4f95-8d24-deb8ea3e7e7a",
+            "label": "leavingfar",
+            "scope": "CLASS",
+            "components": [],
+            "y": -23,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "532ee6d6-e10f-4ca7-b03a-9faa91eacc98",
+                    "label": "migrator_leavingfar",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "telescope",
+                        "frame": "migrator_leavingfar0001"
+                    },
+                    "x": 760,
+                    "y": 344
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9be3dad8-ec8c-4380-9086-c6a55cedd154",
+            "label": "start",
+            "objectIds": [
+                "6313fdee-02c5-4f77-8636-1703bfbac7e9",
+                "b8d5bcde-6599-4ea4-a97c-5cea1fcc597d",
+                "054e3c9b-72cc-40be-b7a1-0518b86f10d7",
+                "5767740b-b77d-420b-8f3a-412adc7097d7",
+                "7b9792c3-85f2-400f-8bbb-cc35bf694a7a",
+                "c47876ae-945b-4b30-b52e-75961e2ea620",
+                "1a9b4539-33bf-4347-b9f6-23776ce44dc5",
+                "efff7d24-befa-42d6-8220-74a49719711d",
+                "8075f335-47c7-4ede-ae24-1c52958ae665",
+                "5aa18af0-955c-4a12-b816-c4bb11cdbfb9"
+            ]
+        },
+        {
+            "id": "3d04ad28-3ca0-4d3f-a9d5-cc9267573422",
+            "label": "middle",
+            "objectIds": [
+                "bc66111c-f7c6-4724-9d0e-041a0659f04e",
+                "aaf6a4cf-b6f7-4ce4-8ac2-de3f54c7d9e1",
+                "ad1bd2dd-a8b6-4e1b-959c-26b83b46ef0d",
+                "c97be397-c568-4a82-ab12-07b4d68bf45d",
+                "fd2447e9-81e5-401b-b36b-df7bd50cafd3",
+                "2f4b8333-d80e-4b59-80a3-bd2c68d98029"
+            ]
+        },
+        {
+            "id": "d49b156c-163f-4b45-ac58-714c35047cbc",
+            "label": "last",
+            "objectIds": [
+                "e561bcc3-f829-487f-8dc9-2e096ffd0a3e",
+                "85babeff-a01a-45dc-aa32-885dc2cffb50",
+                "de16e3ed-25d5-4ec9-8a6e-fc7f39aea392",
+                "88ee2e29-5d70-4901-b420-56e73b672a12"
+            ]
+        }
+    ]
+}

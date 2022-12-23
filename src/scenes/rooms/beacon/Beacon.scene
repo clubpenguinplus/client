@@ -105,6 +105,7 @@
             ],
             "Zone.hoverCallback": "() => {}",
             "Zone.hoverOutCallback": "() => {}",
+            "Zone.callback": "() => this.interface.loadExternal('Telescope')",
             "x": 320,
             "y": 373,
             "alpha": 0.5,

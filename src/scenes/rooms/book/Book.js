@@ -345,7 +345,7 @@ export default class Book extends RoomScene {
     playPrintingPress() {
         this.newspaper.play('printingpress')
         this.newssquiggle.play('newssquiggle')
-        this.shell.musicController.addSfx('book-printingpress')
+        this.shell.musicController.addSfx('book-printingpress', true)
     }
 
     CoffeeDoorOver() {
