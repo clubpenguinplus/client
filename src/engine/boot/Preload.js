@@ -129,7 +129,7 @@ export default class Preload extends BaseScene {
         }
 
         this.crumbs.getString = (key) => {
-            key = key.toString()
+            key = key.toString().toLowerCase()
             let result = this.crumbs.strings[key]
             if (key.includes(',')) {
                 result = this.crumbs.strings[key.split(',')[0]]
@@ -138,7 +138,7 @@ export default class Preload extends BaseScene {
                     result = result.replace(`{args[${i}]}`, args[i])
                 }
             }
-            if (!result) result = `localisedString.${key}`
+            if (!result) result = key
             return result
         }
 
