@@ -324,7 +324,7 @@ export default class Buttons extends BaseContainer {
         })
     }
 
-    show() {
+    showRemoveFriend() {
         let text = `Would you like to remove ${this.username}\nfrom your friend list?`
 
         this.interface.prompt.showWindow(text, 'dual', () => {

@@ -35,8 +35,11 @@ export default class Friend extends Plugin {
         let {requester, ...friend} = args
 
         this.shell.client.friends.push(friend)
+        this.shell.client.pending = this.shell.client.pending.filter((obj) => {
+            return obj.split('|')[0] != args.id
+        })
         this.interface.updateFriends()
-        this.airtower.sendXt('b#gfo', requester)
+        this.airtower.sendXt('b#gfo', args.id)
     }
 
     friendRemove(args) {

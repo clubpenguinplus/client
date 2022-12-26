@@ -176,6 +176,7 @@ export default class InterfaceController extends BaseScene {
         if (this.main.scene.isActive()) {
             this.main.playerCard.updateButtons()
             this.main.friend.showPage()
+            this.main.friendSmall.showPage()
         }
     }
 

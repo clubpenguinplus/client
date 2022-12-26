@@ -377,6 +377,15 @@ export default class FriendSmall extends BaseContainer {
             }
         }
 
+        if (this.shell.client.pending.length > 0) {
+            this.searchContainer.visible = true
+            this.requestItem.visible = true
+            this.requestItem.setItem(this.shell.client.pending[0])
+        } else {
+            this.searchContainer.visible = false
+            this.requestItem.visible = false
+        }
+
         this.airtower.sendXt('u#gbs', temp.join('%'))
     }
 
@@ -405,10 +414,12 @@ export default class FriendSmall extends BaseContainer {
 
     showFriend(friend) {
         for (let item of this.items) {
-            if (item.id == friend.id) return item.setPaperDoll(friend)
+            if (item.id != friend.id) continue
+            item.setPaperDoll(friend)
+            break
         }
-        if (this.searchItem.id == friend.id) return this.searchItem.setPaperDoll(friend)
-        if (this.requestItem.id == friend.id) return this.requestItem.setPaperDoll(friend)
+        if (this.searchItem.id == friend.id) this.searchItem.setPaperDoll(friend)
+        if (this.requestItem.id == friend.id) this.requestItem.setPaperDoll(friend)
     }
 
     onSearchEnter() {

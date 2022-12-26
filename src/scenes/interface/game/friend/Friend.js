@@ -405,6 +405,15 @@ export default class Friend extends BaseContainer {
             temp.push(this.penguins[i].id)
         }
 
+        if (this.shell.client.pending.length > 0) {
+            this.searchContainer.visible = true
+            this.requestItem.visible = true
+            this.requestItem.setItem(this.shell.client.pending[0])
+        } else {
+            this.searchContainer.visible = false
+            this.requestItem.visible = false
+        }
+
         this.airtower.sendXt('u#gbs', temp.join('%'))
 
         // Update total text
@@ -441,8 +450,12 @@ export default class Friend extends BaseContainer {
 
     showFriend(friend) {
         for (let item of this.items) {
-            if (item.id == friend.id) item.setPaperDoll(friend)
+            if (item.id != friend.id) continue
+            item.setPaperDoll(friend)
+            break
         }
+        if (this.searchItem.id == friend.id) this.searchItem.setPaperDoll(friend)
+        if (this.requestItem.id == friend.id) this.requestItem.setPaperDoll(friend)
     }
 
     onSearchEnter() {
@@ -515,12 +528,6 @@ export default class Friend extends BaseContainer {
         this.showPage()
 
         this.searchInput.__InputText.clickZone.visible = true
-
-        if (this.shell.client.pending.length > 0) {
-            this.searchContainer.visible = true
-            this.requestItem.visible = true
-            this.requestItem.setItem(this.shell.client.pending[0])
-        }
     }
 
     showSearch() {
