@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {LocalisedSprite, Seat, Button} from '@components/components'
+import {LocalisedSprite, Seat, Button, MoveTo} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class School extends RoomScene {
@@ -423,10 +423,10 @@ export default class School extends RoomScene {
         this.lockers[index].play('school-locker-close', true)
     }
 
-    update() {
+    update(time, delta) {
         this.triggers.forEach((trigger) => {
             if (trigger.label.includes('locker')) {
-                let index = parseInt(trigger.label.substring(6)) - 1
+                const index = parseInt(trigger.label.substring(6)) - 1
                 if (this.matter.containsPoint(trigger, this.client.penguin.x, this.client.penguin.y)) {
                     this.playLockerOpen(index)
                 } else if (this.lockers[index].isOpen) {
