@@ -31,8 +31,14 @@ export default class Book extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             coffee: () => this.triggerRoom(110, 760, 480),
-            printerone: () => this.playPrintingPress(),
-            printertwo: () => this.playPrintingPress(),
+            printerone: {
+                callback: () => this.playPrintingPress(),
+                offCallback: () => this.stopPrintingPress(),
+            },
+            printertwo: {
+                callback: () => this.playPrintingPress(),
+                offCallback: () => this.stopPrintingPress(),
+            },
         }
 
         this.music = 669
@@ -346,6 +352,12 @@ export default class Book extends RoomScene {
         this.newspaper.play('printingpress')
         this.newssquiggle.play('newssquiggle')
         this.shell.musicController.addSfx('book-printingpress', true)
+    }
+
+    stopPrintingPress() {
+        this.newspaper.anims.stopAfterRepeat(0)
+        this.newssquiggle.stopAfterRepeat(0)
+        this.shell.musicController.stopLoopingSfx('book-printingpress')
     }
 
     CoffeeDoorOver() {

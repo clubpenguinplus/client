@@ -219,7 +219,15 @@ export default class RoomScene extends BaseScene {
                 continue
             }
 
-            trigger.callback = this.roomTriggers[t]
+            if (!this.roomTriggers[t].callback) {
+                trigger.callback = this.roomTriggers[t]
+                triggers.push(trigger)
+                continue
+            }
+
+            trigger.callback = this.roomTriggers[t].callback
+            trigger.offCallback = this.roomTriggers[t].offCallback
+
             triggers.push(trigger)
         }
         return triggers
