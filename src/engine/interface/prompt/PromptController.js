@@ -37,34 +37,66 @@ export default class PromptController {
         this.error.show(text, buttonText, callback)
         this.setCursor()
 
-        for (let i of ['item', 'loading', 'window', 'coins']) {
+        for (let i of ['item', 'loading', 'window', 'coins', 'warn']) {
             this[i].visible = false
         }
+
+        this.interface.bringToTop(this.error)
     }
 
     showItem(item) {
         this.item.showItem(item)
         this.setCursor()
+
+        for (let i of ['error', 'loading', 'window', 'coins', 'warn']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.item)
     }
 
     showFurniture(item) {
         this.item.showFurniture(item)
         this.setCursor()
+
+        for (let i of ['error', 'loading', 'window', 'coins', 'warn']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.item)
     }
 
     showLoading(scene, progress = 0) {
         this.loading.show(scene, progress)
         this.setCursor()
+
+        for (let i of ['error', 'item', 'window', 'coins', 'warn']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.loading)
     }
 
     showWindow(text, buttonLayout = 'single', callback = () => {}, noCallback = () => (this.window.visible = false)) {
         this.window.show(text, buttonLayout, callback, noCallback)
         this.setCursor()
+
+        for (let i of ['error', 'item', 'loading', 'coins', 'warn']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.window)
     }
 
     showCoins(game, coins) {
         this.coins.show(game, coins)
         this.setCursor()
+
+        for (let i of ['error', 'item', 'loading', 'window', 'warn']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.coins)
     }
 
     showWarn(type, reason) {
@@ -79,10 +111,20 @@ export default class PromptController {
                 this.warn.showWarn('k')
                 break
         }
+
+        this.setCursor()
+
+        for (let i of ['error', 'item', 'loading', 'window', 'coins']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.warn)
     }
 
     hideAll() {
-        this.loading.visible = false
+        for (let i of ['error', 'item', 'loading', 'window', 'coins', 'warn']) {
+            this[i].visible = false
+        }
     }
 
     setCursor() {
