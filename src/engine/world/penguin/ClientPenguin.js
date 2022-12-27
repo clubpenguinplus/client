@@ -41,10 +41,16 @@ export default class ClientPenguin extends Penguin {
         this.airtower.sendXt('u#sf', `${true}%${frame}`)
     }
 
-    move(x, y, frame = null) {
+    async move(x, y, frame = null) {
         if (this.lastX && this.lastX == x && this.lastY && this.lastY == y) return
         this.lastX = x
         this.lastY = y
+
+        if (this.seatClicked) {
+            this.seatClicked = false
+            this.afterMove = null
+        }
+
         if (frame) {
             this.afterMove = () => this.shell.client.sendFrame(frame)
         }
@@ -55,6 +61,8 @@ export default class ClientPenguin extends Penguin {
             this.addMoveTween(path)
             this.airtower.sendXt('u#sp', `${x}%${y}`)
         }
+
+        return {x, y}
     }
 
     onMoveComplete() {

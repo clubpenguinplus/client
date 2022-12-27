@@ -69,16 +69,19 @@ export default class Seat extends EventComponent {
         this.gameObject.depth = this.gameObject.y
     }
 
-    onPointerUp(pointer) {
+    async onPointerUp(pointer) {
         if (pointer.button != 0) {
             return
         }
 
-        this.shell.client.penguin.move(this.gameObject.x, this.gameObject.y)
+        await this.shell.client.penguin.move(this.gameObject.x, this.gameObject.y)
+
+        this.shell.client.penguin.seatClicked = true
 
         this.shell.client.penguin.afterMove = () => {
             this.shell.client.penguin.playFrame(this.frame)
             this.shell.client.lockRotation = true
+            this.shell.client.penguin.seatClicked = false
         }
     }
 
