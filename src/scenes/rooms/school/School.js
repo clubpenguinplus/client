@@ -1,12 +1,26 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {LocalisedSprite, Seat} from '@components/components'
+import {LocalisedSprite, Seat, Button} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class School extends RoomScene {
     constructor() {
         super('School')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.floor
+        /** @type {Phaser.GameObjects.Image} */
+        this.chalk
+        /** @type {Phaser.GameObjects.Image} */
+        this.banner
+        /** @type {Phaser.GameObjects.Image} */
+        this.banner2
+        /** @type {Phaser.GameObjects.Image} */
+        this.overhang
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.rosette
+        /** @type {Phaser.GameObjects.Image} */
+        this.photo
         /** @type {Phaser.GameObjects.Sprite[]} */
         this.lockers
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
@@ -40,14 +54,21 @@ export default class School extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'school', 'bg')
+        const bg = this.add.image(-47, -69, 'school', 'bg')
         bg.setOrigin(0, 0)
 
-        // banner0001
-        this.add.image(1154, 185, 'school', 'banner0001')
+        // floor
+        const floor = this.add.image(861, 284, 'school', 'floor0001')
+        floor.setOrigin(0, 0)
 
-        // banner20001
-        this.add.image(1153, 109, 'school', 'banner20001')
+        // chalk
+        const chalk = this.add.image(512, 194, 'school', 'chalk0001')
+
+        // banner
+        const banner = this.add.image(1154, 185, 'school', 'banner0001')
+
+        // banner2
+        const banner2 = this.add.image(1153, 109, 'school', 'banner20001')
 
         // text_en
         const text_en = this.add.image(1149, 110, 'school', 'text-en')
@@ -131,13 +152,13 @@ export default class School extends RoomScene {
         chair1.setOrigin(0.5, 0.8947541085163074)
 
         // counter
-        const counter = this.add.image(1218, 290, 'school', 'counter')
+        const counter = this.add.image(1243, 277, 'school', 'counter')
 
         // cafeteria
-        const cafeteria = this.add.image(1294, 336, 'school', 'cafeteria')
+        const cafeteria = this.add.image(1319, 323, 'school', 'cafeteria')
 
-        // overhang_0001
-        const overhang_0001 = this.add.image(1347, 129, 'school', 'overhang_0001')
+        // overhang
+        const overhang = this.add.image(1347, 129, 'school', 'overhang_0001')
 
         // fg2_png_png
         const fg2_png_png = this.add.image(743, 600.3200871275012, 'school', 'fg2.png.png')
@@ -195,11 +216,11 @@ export default class School extends RoomScene {
         fg.setOrigin(0.5, 1.2350172946082631)
 
         // door
-        const door = this.add.sprite(1479, 1770.641023812042, 'school', 'door')
+        const door = this.add.sprite(1480, 2438, 'school', 'door')
         door.setOrigin(0.5, 3.925414825717541)
 
         // door_1
-        const door_1 = this.add.sprite(52, 1638.0922686853976, 'school', 'door')
+        const door_1 = this.add.sprite(46, 2228, 'school', 'door')
         door_1.setOrigin(0.5, 3.532624319662934)
         door_1.flipX = true
 
@@ -227,13 +248,13 @@ export default class School extends RoomScene {
         const chair11 = this.add.sprite(1048, 596.8390766782843, 'school', 'chair11')
         chair11.setOrigin(0.5, 0.8231497954235465)
 
-        // rosette_0001
-        const rosette_0001 = this.add.sprite(859, 1001.828228926573, 'school', 'rosette_0001')
-        rosette_0001.setOrigin(0.5, 6.955506942157839)
+        // rosette
+        const rosette = this.add.sprite(859, 1001.828228926573, 'school', 'rosette_0001')
+        rosette.setOrigin(0.5, 6.955506942157839)
 
-        // photo_0001
-        const photo_0001 = this.add.image(858, 1023.8313427344806, 'school', 'photo_0001')
-        photo_0001.setOrigin(0.5, 9.018751306119444)
+        // photo
+        const photo = this.add.image(858, 1023.8313427344806, 'school', 'photo_0001')
+        photo.setOrigin(0.5, 9.018751306119444)
 
         // hanginglights
         const hanginglights = this.add.image(1132, 7, 'school', 'hanginglights')
@@ -284,10 +305,26 @@ export default class School extends RoomScene {
 
         // lists
         const lockers = [locker_1, locker, locker_2, locker_3, locker_4, locker_5, locker_6, locker_7, locker_8, locker_9]
-        const sort = [table3, chair_4, chair_5, chair_7, chair_6, chair8, table4, table6, table5, table2, chair9, chair2, chair7, chair3, chair_3, chair_2, chair5, table1, chair_1, chair4, chair1, counter, cafeteria, overhang_0001, fg3, chair, locker_5, locker_6, locker_7, locker_8, locker_9, locker, locker_2, locker_3, locker_4, locker_1, fg, door, door_1, mic, chair10, chair13, table7, table8, chair12, chair11, hanginglights, fg2_png_png, photo_0001, rosette_0001]
+        const sort = [table3, chair_4, chair_5, chair_7, chair_6, chair8, table4, table6, table5, table2, chair9, chair2, chair7, chair3, chair_3, chair_2, chair5, table1, chair_1, chair4, chair1, counter, cafeteria, overhang, fg3, chair, locker_5, locker_6, locker_7, locker_8, locker_9, locker, locker_2, locker_3, locker_4, locker_1, fg, door, door_1, mic, chair10, chair13, table7, table8, chair12, chair11, hanginglights, fg2_png_png, photo, rosette]
 
         // text_en (components)
         new LocalisedSprite(text_en)
+
+        // door (components)
+        const doorButton = new Button(door)
+        doorButton.spriteName = 'door'
+        doorButton.activeFrame = false
+        const doorMoveTo = new MoveTo(door)
+        doorMoveTo.x = 1440
+        doorMoveTo.y = 724
+
+        // door_1 (components)
+        const door_1Button = new Button(door_1)
+        door_1Button.spriteName = 'door'
+        door_1Button.activeFrame = false
+        const door_1MoveTo = new MoveTo(door_1)
+        door_1MoveTo.x = 80
+        door_1MoveTo.y = 724
 
         // ellipse_1 (components)
         const ellipse_1Seat = new Seat(ellipse_1)
@@ -341,6 +378,13 @@ export default class School extends RoomScene {
         const ellipse_12Seat = new Seat(ellipse_12)
         ellipse_12Seat.direction = 'northeast'
 
+        this.floor = floor
+        this.chalk = chalk
+        this.banner = banner
+        this.banner2 = banner2
+        this.overhang = overhang
+        this.rosette = rosette
+        this.photo = photo
         this.lockers = lockers
         this.sort = sort
 
@@ -348,6 +392,24 @@ export default class School extends RoomScene {
     }
 
     /* START-USER-CODE */
+
+    create() {
+        super.create()
+        this.switchDays(this.shell.getPSTDay() + 1)
+    }
+
+    switchDays(day) {
+        this.chalk.setFrame(`chalk000${day}`)
+        this.overhang.setFrame(`overhang_000${day}`)
+    }
+
+    switchTeams(team) {
+        this.photo.setFrame(`photo_000${team}`)
+        this.rosette.setFrame(`rosette_000${team}`)
+        this.banner.setFrame(`banner000${team}`)
+        this.banner2.setFrame(`banner2000${team}`)
+        this.floor.setFrame(`floor000${team}`)
+    }
 
     playLockerOpen(index) {
         if (this.lockers[index].frame.name != 'locker_0001' && this.lockers[index].frame.name != 'locker_0021') return

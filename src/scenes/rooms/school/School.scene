@@ -25,13 +25,44 @@
                 "key": "school",
                 "frame": "bg"
             },
+            "x": -47,
+            "y": -69,
             "originX": 0,
             "originY": 0
         },
         {
             "type": "Image",
+            "id": "d7af18f7-70cb-44aa-add0-987445dacbcb",
+            "label": "floor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "floor0001"
+            },
+            "x": 861,
+            "y": 284,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "29ce8371-c74f-4cfc-b3e4-5ca3efbe54cf",
+            "label": "chalk",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chalk0001"
+            },
+            "x": 512,
+            "y": 194
+        },
+        {
+            "type": "Image",
             "id": "2b6f13f1-9d38-4c23-a55a-e05cf92a0e58",
-            "label": "banner0001",
+            "label": "banner",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "school",
@@ -43,7 +74,8 @@
         {
             "type": "Image",
             "id": "8a4f2a3c-f32d-4a19-b41e-666ae6f90e73",
-            "label": "banner20001",
+            "label": "banner2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "school",
@@ -342,8 +374,8 @@
                 "key": "school",
                 "frame": "counter"
             },
-            "x": 1218,
-            "y": 290
+            "x": 1243,
+            "y": 277
         },
         {
             "type": "Image",
@@ -354,13 +386,14 @@
                 "key": "school",
                 "frame": "cafeteria"
             },
-            "x": 1294,
-            "y": 336
+            "x": 1319,
+            "y": 323
         },
         {
             "type": "Image",
             "id": "ef7ad16b-755c-4021-bcaa-8d6c4be5565a",
-            "label": "overhang_0001",
+            "label": "overhang",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "school",
@@ -554,26 +587,40 @@
             "type": "Sprite",
             "id": "9351ae9a-8bc1-4425-9713-904be3e7d8c0",
             "label": "door",
-            "components": [],
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1440,
+            "MoveTo.y": 724,
             "texture": {
                 "key": "school",
                 "frame": "door"
             },
-            "x": 1479,
-            "y": 1770.641023812042,
+            "x": 1480,
+            "y": 2438,
             "originY": 3.925414825717541
         },
         {
             "type": "Sprite",
             "id": "aa72c4a7-4723-4d10-897f-4aa31f9d9294",
             "label": "door_1",
-            "components": [],
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 80,
+            "MoveTo.y": 724,
             "texture": {
                 "key": "school",
                 "frame": "door"
             },
-            "x": 52,
-            "y": 1638.0922686853976,
+            "x": 46,
+            "y": 2228,
             "originY": 3.532624319662934,
             "flipX": true
         },
@@ -669,7 +716,8 @@
         {
             "type": "Sprite",
             "id": "9a85b897-0a5a-4f63-b53d-eb096ab560de",
-            "label": "rosette_0001",
+            "label": "rosette",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "school",
@@ -682,7 +730,8 @@
         {
             "type": "Image",
             "id": "eb7b7799-0f41-4a4d-a2e2-15322a2d4667",
-            "label": "photo_0001",
+            "label": "photo",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "school",
