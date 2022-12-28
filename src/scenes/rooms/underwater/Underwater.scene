@@ -265,7 +265,8 @@
                 "frame": "jellyfish0001"
             },
             "x": -77,
-            "y": 331
+            "y": 768,
+            "originY": 5
         },
         {
             "type": "Sprite",
@@ -324,7 +325,8 @@
                 "4ac4e7f3-61f4-4d7b-a6bf-310c14e68d48",
                 "fa638b38-db88-4d01-910e-b5261266d927",
                 "a7f16722-4247-4abe-a2c4-032b99668e03",
-                "4e8e7065-7538-482f-a5da-cb655d48cd05"
+                "4e8e7065-7538-482f-a5da-cb655d48cd05",
+                "a8c06d96-b0aa-4f0c-aeab-bcacfe98ee68"
             ]
         }
     ]

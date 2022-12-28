@@ -111,13 +111,14 @@ export default class Underwater extends RoomScene {
         fish.add(littlefishfour)
 
         // jellyfish
-        const jellyfish = this.add.sprite(-77, 331, 'underwater', 'jellyfish0001')
+        const jellyfish = this.add.sprite(-77, 768, 'underwater', 'jellyfish0001')
+        jellyfish.setOrigin(0.5, 5)
 
         // fluffy
         const fluffy = this.add.sprite(-74, 112, 'underwater', 'fluffy0001')
 
         // lists
-        const sort = [underwaterfg, leftcoral, leftcoralback, wheel, leftkelp, rightcoral, frontshell, backshell, rightkelp, anchor, mosskey]
+        const sort = [underwaterfg, leftcoral, leftcoralback, wheel, leftkelp, rightcoral, frontshell, backshell, rightkelp, anchor, mosskey, jellyfish]
 
         this.mosskey = mosskey
         this.fish = fish
@@ -144,21 +145,20 @@ export default class Underwater extends RoomScene {
         this.littlefishtwo.play('underwater-littlefishtwo')
         this.littlefishthree.play('underwater-littlefishthree')
         this.littlefishfour.play('underwater-littlefishfour')
-        // this.jellyfishTween()
-        // this.fluffyTween()
-        // this.fishTween()
-        // this.jellyFishSideTween()
-        // this.fluffySideTween()
-        // this.fishSideTween()
+        this.jellyfishTween()
+        this.fluffyTween()
+        this.fishTween()
+        this.jellyFishSideTween()
+        this.fluffySideTween()
+        this.fishSideTween()
     }
 
     jellyfishTween() {
         let tween = this.tweens.add({
             targets: this.jellyfish,
-            y: 331,
-            x: -77,
-            duration: 3000,
-            delay: 0,
+            y: 748,
+            duration: 2000,
+            delay: 500,
             onComplete: () => {
                 this.onJellyfishTween()
             },
@@ -168,27 +168,26 @@ export default class Underwater extends RoomScene {
     jellyFishSideTween() {
         let tween = this.tweens.add({
             targets: this.jellyfish,
-            x: -77,
-            duration: 25000,
-            delay: 0,
+            x: 1597,
+            duration: 18000,
+            delay: 4000,
             onComplete: () => {
-                this.onJellyfishSideTwen()
+                this.onJellyfishSideTween()
             },
         })
     }
 
     onJellyfishSideTween() {
-        this.jellyfish.x = 1597
+        this.jellyfish.x = -77
         this.jellyFishSideTween()
     }
 
     onJellyfishTween() {
         let tween = this.tweens.add({
             targets: this.jellyfish,
-            y: 264,
-            x: 1597,
-            duration: 3000,
-            delay: 0,
+            y: 768,
+            duration: 2000,
+            delay: 500,
             onComplete: () => {
                 this.jellyfishTween()
             },
@@ -198,9 +197,9 @@ export default class Underwater extends RoomScene {
     fluffyTween() {
         let tween = this.tweens.add({
             targets: this.fluffy,
-            y: 112,
+            y: 150,
             duration: 3000,
-            delay: 0,
+            delay: 500,
             onComplete: () => {
                 this.onFluffyTween()
             },
@@ -210,9 +209,9 @@ export default class Underwater extends RoomScene {
     fluffySideTween() {
         let tween = this.tweens.add({
             targets: this.fluffy,
-            x: -74,
-            duration: 25000,
-            delay: 0,
+            x: 1597,
+            duration: 10000,
+            delay: 10000,
             onComplete: () => {
                 this.onFluffySideTween()
             },
@@ -220,30 +219,18 @@ export default class Underwater extends RoomScene {
     }
 
     onFluffySideTween() {
-        this.fluffy.x = 1597
+        this.fluffy.x = -77
         this.fluffySideTween()
     }
 
     onFluffyTween() {
         let tween = this.tweens.add({
             targets: this.fluffy,
-            y: 150,
+            y: 112,
             duration: 3000,
-            delay: 0,
+            delay: 500,
             onComplete: () => {
                 this.fluffyTween()
-            },
-        })
-    }
-
-    fishTween() {
-        let tween = this.tweens.add({
-            targets: this.fish,
-            y: 173,
-            duration: 3000,
-            delay: 0,
-            onComplete: () => {
-                this.onFishTween()
             },
         })
     }
@@ -251,7 +238,7 @@ export default class Underwater extends RoomScene {
     fishSideTween() {
         let tween = this.tweens.add({
             targets: this.fish,
-            x: 1177,
+            x: -77,
             duration: 25000,
             delay: 0,
             onComplete: () => {
@@ -261,20 +248,8 @@ export default class Underwater extends RoomScene {
     }
 
     onFishSideTween() {
-        this.fish.x = -77
+        this.fish.x = 1177
         this.fishSideTween()
-    }
-
-    onFishTween() {
-        let tween = this.tweens.add({
-            targets: this.fish,
-            y: 200,
-            duration: 3000,
-            delay: 0,
-            onComplete: () => {
-                this.fishTween()
-            },
-        })
     }
 
     /* END-USER-CODE */
