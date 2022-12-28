@@ -132,9 +132,37 @@ export default class Load extends BaseScene {
         }
     }
 
-    setContent(text, showBar) {
-        if (showBar) {
-            this.bar.anims.stop('bar')
+    setContent(text, showBar, isLogo) {
+        this.bar.play('bar')
+
+        if (isLogo) {
+            this.logo.visible = true
+            this.logo.play('logo-tween')
+            this.bar.y = 750
+            this.spinner.y = 750
+            this.shovel.visible = false
+            this.cart.visible = false
+            this.pizza.visible = false
+            return
+        }
+
+        this.logo.visible = false
+        this.logo.stop('logo-tween')
+        this.bar.y = 611
+        this.spinner.y = 611
+        var sprite = Phaser.Math.RND.between(0, 2)
+        if (sprite == 0) {
+            this.shovel.visible = true
+            this.cart.visible = false
+            this.pizza.visible = false
+        } else if (sprite == 1) {
+            this.shovel.visible = false
+            this.cart.visible = true
+            this.pizza.visible = false
+        } else {
+            this.shovel.visible = false
+            this.cart.visible = false
+            this.pizza.visible = true
         }
     }
 

@@ -240,7 +240,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "this.startQuiz()",
+                    "Button.callback": "() => this.startQuiz()",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -1161,6 +1161,142 @@
                     },
                     "x": 153,
                     "y": 187
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "08adca89-7601-4827-b4a2-1104a5f4207e",
+            "label": "fail",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "6785b4ea-86f7-4077-b71a-6b0fcba837f5",
+                    "label": "failtitle_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "failtitle_en"
+                    },
+                    "x": 153,
+                    "y": -43
+                },
+                {
+                    "type": "Image",
+                    "id": "fdab1665-9492-49a1-8ec0-e2807953d987",
+                    "label": "fail_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "fail_en"
+                    },
+                    "x": 153,
+                    "y": 99
+                },
+                {
+                    "type": "Image",
+                    "id": "4a00228c-03d1-4076-b8ab-285f3cdd0f00",
+                    "label": "button_fail",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 360
+                },
+                {
+                    "type": "Image",
+                    "id": "18885b40-66f9-456e-b2f4-28905d4022c4",
+                    "label": "ok_fail",
+                    "components": [],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "ok_en"
+                    },
+                    "x": 153,
+                    "y": 356
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c34d7a93-7e80-429d-b19d-afed1330e9ed",
+            "label": "success",
+            "scope": "CLASS",
+            "components": [],
+            "x": 604,
+            "y": 233,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "103f5da2-be92-4a4b-8e79-17ca585ef751",
+                    "label": "wintitle_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "congratstitle_en"
+                    },
+                    "x": 153,
+                    "y": -43
+                },
+                {
+                    "type": "Image",
+                    "id": "246cbeb0-0d90-44e8-8d65-32aea3fef950",
+                    "label": "win_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "congrats_en"
+                    },
+                    "x": 153,
+                    "y": 99
+                },
+                {
+                    "type": "Image",
+                    "id": "f3637488-e479-4fe0-8c93-a1d97dd7c3db",
+                    "label": "button_win",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "button"
+                    },
+                    "x": 153,
+                    "y": 360
+                },
+                {
+                    "type": "Image",
+                    "id": "5acd0a91-e2df-4d4b-af1c-2979bde31aca",
+                    "label": "ok_win",
+                    "components": [],
+                    "texture": {
+                        "key": "tourquiz",
+                        "frame": "ok_en"
+                    },
+                    "x": 153,
+                    "y": 356
                 }
             ]
         }

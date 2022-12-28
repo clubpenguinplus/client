@@ -32,6 +32,10 @@ export default class TourQuiz extends BaseScene {
         this.question9
         /** @type {Phaser.GameObjects.Container} */
         this.question10
+        /** @type {Phaser.GameObjects.Container} */
+        this.fail
+        /** @type {Phaser.GameObjects.Container} */
+        this.success
         /** @type {Phaser.GameObjects.Container[]} */
         this.questions
 
@@ -359,6 +363,46 @@ export default class TourQuiz extends BaseScene {
         const questions10_en = this.add.image(153, 187, 'tourquiz', 'questions10_en')
         question10.add(questions10_en)
 
+        // fail
+        const fail = this.add.container(604, 233)
+        fail.visible = false
+
+        // failtitle_en
+        const failtitle_en = this.add.image(153, -43, 'tourquiz', 'failtitle_en')
+        fail.add(failtitle_en)
+
+        // fail_en
+        const fail_en = this.add.image(153, 99, 'tourquiz', 'fail_en')
+        fail.add(fail_en)
+
+        // button_fail
+        const button_fail = this.add.image(153, 360, 'tourquiz', 'button')
+        fail.add(button_fail)
+
+        // ok_fail
+        const ok_fail = this.add.image(153, 356, 'tourquiz', 'ok_en')
+        fail.add(ok_fail)
+
+        // success
+        const success = this.add.container(604, 233)
+        success.visible = false
+
+        // wintitle_en
+        const wintitle_en = this.add.image(153, -43, 'tourquiz', 'congratstitle_en')
+        success.add(wintitle_en)
+
+        // win_en
+        const win_en = this.add.image(153, 99, 'tourquiz', 'congrats_en')
+        success.add(win_en)
+
+        // button_win
+        const button_win = this.add.image(153, 360, 'tourquiz', 'button')
+        success.add(button_win)
+
+        // ok_win
+        const ok_win = this.add.image(153, 356, 'tourquiz', 'ok_en')
+        success.add(ok_win)
+
         // lists
         const questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10]
 
@@ -401,7 +445,7 @@ export default class TourQuiz extends BaseScene {
         // button_home (components)
         const button_homeButton = new Button(button_home)
         button_homeButton.spriteName = 'button'
-        button_homeButton.callback = this.startQuiz()
+        button_homeButton.callback = () => this.startQuiz()
 
         // takequiz_en (components)
         new LocalisedSprite(takequiz_en)
@@ -646,6 +690,28 @@ export default class TourQuiz extends BaseScene {
         // questions10_en (components)
         new LocalisedSprite(questions10_en)
 
+        // failtitle_en (components)
+        new LocalisedSprite(failtitle_en)
+
+        // fail_en (components)
+        new LocalisedSprite(fail_en)
+
+        // button_fail (components)
+        const button_failButton = new Button(button_fail)
+        button_failButton.spriteName = 'button'
+        button_failButton.callback = () => this.scene.stop()
+
+        // wintitle_en (components)
+        new LocalisedSprite(wintitle_en)
+
+        // win_en (components)
+        new LocalisedSprite(win_en)
+
+        // button_win (components)
+        const button_winButton = new Button(button_win)
+        button_winButton.spriteName = 'button'
+        button_winButton.callback = () => this.scene.stop()
+
         this.already = already
         this.age = age
         this.home = home
@@ -659,6 +725,8 @@ export default class TourQuiz extends BaseScene {
         this.question8 = question8
         this.question9 = question9
         this.question10 = question10
+        this.fail = fail
+        this.success = success
         this.questions = questions
 
         this.events.emit('scene-awake')
