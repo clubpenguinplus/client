@@ -330,7 +330,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ1(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ1(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -388,7 +388,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.nextQuestion(); this.correctAnswer();",
+                    "Button.callback": "() => {this.nextQuestion(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -494,7 +494,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.nextQuestion(); this.correctAnswer();",
+                    "Button.callback": "() => {this.nextQuestion(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -552,7 +552,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ4(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ4(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -642,7 +642,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ5(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ5(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -780,7 +780,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ6(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ6(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -838,7 +838,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ7(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ7(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -944,7 +944,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ8(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ8(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -1018,7 +1018,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ9(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ9(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -1092,7 +1092,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.onQ10(); this.correctAnswer();",
+                    "Button.callback": "() => {this.onQ10(); this.correctAnswer();}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -1278,7 +1278,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.scene.stop()",
+                    "Button.callback": "() => {this.onWin(); this.scene.stop()}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
