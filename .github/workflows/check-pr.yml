@@ -15,8 +15,7 @@ jobs:
       - name: Checkout current version
         uses: actions/checkout@v2
         with:
-          repository: Club-Penguin-Plus-Official/client
-          token: ${{ secrets.MEDIA_KEY }}
+          ref: 'master'
           path: currentversion
 
       - uses: actions/setup-node@v2
