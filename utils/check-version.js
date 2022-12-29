@@ -1,9 +1,12 @@
 const path = require("path");
+const fs = require("fs");
 
-let package = path.join(__dirname, "../package.json");
-let prevVersion = path.join(__dirname, "../currentversion/package.json");
+const newPackage = JSON.parse(fs.readFileSync(path.join(__dirname, "../package.json")));
+const currentPackage = JSON.parse(fs.readFileSync(path.join(__dirname, "../currentversion/package.json")));
 
-if (package.version == prevVersion.version) {
+console.log(`Current game version is ${currentPackage.version} - PR version is ${newPackage.version}`);
+
+if (currentPackage.version == newPackage.version) {
   throw 'Version number must be updated before pushing to production';
   process.exit(1);
 }
