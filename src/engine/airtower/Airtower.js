@@ -267,11 +267,11 @@ export default class Airtower {
                     this.register.invalidKey()
                     return
                 case 'KO':
-                    if (!this.lastLoginScene) return this.scene.start('Login')
+                    if (!this.lastLoginScene) return this.game.scene.start('Login')
 
                     let scene = this.game.scene.getScene(this.lastLoginScene)
 
-                    scene.events.once('create', () => this.onLoginError('error'))
+                    scene.events.once('create', () => this.interface.prompt.showError('You are not on the latest version of the game. Please clear your cache, and refresh the page to update.', 'Reload', () => window.location.reload()))
                     this.game.scene.start(this.lastLoginScene)
                     return
                 case 'OK':
