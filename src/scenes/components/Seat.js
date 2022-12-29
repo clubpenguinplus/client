@@ -18,7 +18,7 @@ export default class Seat extends EventComponent {
         gameObject['__Seat'] = this
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        gameObject.isButton = true
         /* END-USER-CTR-CODE */
     }
 
