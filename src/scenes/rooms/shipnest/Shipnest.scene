@@ -91,18 +91,63 @@
         },
         {
             "type": "Sprite",
-            "id": "30d8e4da-7c1b-4cda-a293-e569ec8539ef",
-            "label": "cannonback",
+            "id": "edaac797-e29b-45fe-9afd-a714e6d00ce2",
+            "label": "cannon",
             "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
+            "components": [],
             "texture": {
                 "key": "shipnest",
-                "frame": "cannonback0001"
+                "frame": "cannon0001"
             },
-            "x": 277,
-            "y": 314
+            "x": 303,
+            "y": 320
+        },
+        {
+            "type": "Container",
+            "id": "2aaa5a1a-f12b-4f2c-8520-f87536b9012b",
+            "label": "basecannon",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "eecca95b-bf84-4c35-b484-e2f80663b262",
+                    "label": "cannonholderback",
+                    "components": [],
+                    "texture": {
+                        "key": "shipnest",
+                        "frame": "cannonholderback"
+                    },
+                    "x": 440,
+                    "y": 471
+                },
+                {
+                    "type": "Sprite",
+                    "id": "0bb0c49c-ba05-4569-9eec-871dbb9988ec",
+                    "label": "fuse",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "shipnest",
+                        "frame": "fuse0001"
+                    },
+                    "x": 406,
+                    "y": 398
+                },
+                {
+                    "type": "Image",
+                    "id": "efcefc5e-048a-41df-b2c1-97e2573596e9",
+                    "label": "cannonholderfront",
+                    "components": [],
+                    "texture": {
+                        "key": "shipnest",
+                        "frame": "cannonholderfront"
+                    },
+                    "x": 396,
+                    "y": 503
+                }
+            ]
         },
         {
             "type": "Image",
@@ -173,6 +218,22 @@
             },
             "x": 324,
             "y": 813
+        },
+        {
+            "type": "Rectangle",
+            "id": "4004e3b8-e9a5-4fcc-8821-2f961d82cd9a",
+            "label": "cantrig",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCannonOver()",
+            "SimpleButton.callback": "",
+            "x": 401,
+            "y": 438,
+            "scaleX": 1.9851346206740512,
+            "scaleY": 2.0904080292297627,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
