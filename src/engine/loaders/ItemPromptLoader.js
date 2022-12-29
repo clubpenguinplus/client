@@ -9,7 +9,7 @@ export default class ItemPromptLoader extends BaseLoader {
 
     get baseURL() {
         let suffix = this.prompt.type == 'furniture' ? '/client/media/furniture/icon/@5x/' : '/client/media/clothing/icon/large/'
-        return window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
+        return window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
     }
 
     get keyPrefix() {

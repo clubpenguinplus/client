@@ -56,7 +56,7 @@ const clubpenguinplus = {
     },
 
     loader: {
-        baseURL: window.location.hostname == 'localhost' ? '/' : 'https://media.cpplus.pw/',
+        baseURL: window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw/` : `${window.location.origin}/`,
         crossOrigin: 'anonymous',
     },
 
