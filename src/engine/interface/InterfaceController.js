@@ -35,8 +35,6 @@ export default class InterfaceController extends BaseScene {
             this.loading.setContent(text, showBar, isLogo)
         } else if (this.scene.isSleeping('Load')) {
             this.scene.wake('Load', {text: text, showBar: showBar, isLogo: isLogo})
-        } else {
-            this.scene.launch('Load', {text: text, showBar: showBar, isLogo: isLogo})
         }
 
         this.bringToTop('Load')

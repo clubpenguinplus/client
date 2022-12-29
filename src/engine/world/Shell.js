@@ -58,7 +58,7 @@ export default class Shell extends BaseScene {
 
     joinRoom(id, users = null) {
         if (!this.crumbs.scenes.rooms[id]) return this.airtower.sendXt('j#jr', 100) // Default to town if room will crash
-        this.interface.showLoading(this.getString('loading', this.crumbs.scenes.rooms[id].key))
+        this.interface.showLoading()
 
         if (!this.room) {
             return this.createRoom(id, users)

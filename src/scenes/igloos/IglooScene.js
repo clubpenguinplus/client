@@ -137,7 +137,7 @@ export default class IglooScene extends RoomScene {
         this.shell.interface.loadExternal('IglooLikesWidget')
         this.airtower.sendXt('g#il', this.id)
 
-        this.interface.showInterface()
+        this.interface.bringToTop('Main')
         setTimeout(() => {
             this.interface.main.safetyquiz.visible = false
             this.interface.main.moderatoricon.visible = false

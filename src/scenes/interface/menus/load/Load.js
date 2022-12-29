@@ -86,50 +86,13 @@ export default class Load extends BaseScene {
         this.pizza.play('pizza')
         this.spinner.play('spinner')
 
-        var sprite = Phaser.Math.RND.between(0, 2)
-        if (sprite == 0) {
-            this.shovel.visible = true
-        } else if (sprite == 1) {
-            this.cart.visible = true
-        } else {
-            this.pizza.visible = true
-        }
+        this.setContent(data.text, data.showBar, data.isLogo)
     }
 
     onSleep() {}
 
     onWake(sys, data) {
-        this.bar.play('bar')
-
-        if (data.isLogo) {
-            this.logo.visible = true
-            this.logo.play('logo-tween')
-            this.bar.y = 750
-            this.spinner.y = 750
-            this.shovel.visible = false
-            this.cart.visible = false
-            this.pizza.visible = false
-            return
-        }
-
-        this.logo.visible = false
-        this.logo.stop('logo-tween')
-        this.bar.y = 611
-        this.spinner.y = 611
-        var sprite = Phaser.Math.RND.between(0, 2)
-        if (sprite == 0) {
-            this.shovel.visible = true
-            this.cart.visible = false
-            this.pizza.visible = false
-        } else if (sprite == 1) {
-            this.shovel.visible = false
-            this.cart.visible = true
-            this.pizza.visible = false
-        } else {
-            this.shovel.visible = false
-            this.cart.visible = false
-            this.pizza.visible = true
-        }
+        this.setContent(data.text, data.showBar, data.isLogo)
     }
 
     setContent(text, showBar, isLogo) {
