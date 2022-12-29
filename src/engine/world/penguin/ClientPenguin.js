@@ -46,11 +46,6 @@ export default class ClientPenguin extends Penguin {
         this.lastX = x
         this.lastY = y
 
-        if (this.seatClicked) {
-            this.seatClicked = false
-            this.afterMove = null
-        }
-
         if (frame) {
             this.afterMove = () => this.shell.client.sendFrame(frame)
         }

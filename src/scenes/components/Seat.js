@@ -76,13 +76,31 @@ export default class Seat extends EventComponent {
 
         await this.shell.client.penguin.move(this.gameObject.x, this.gameObject.y)
 
-        this.shell.client.penguin.seatClicked = true
-
         this.shell.client.penguin.afterMove = () => {
+            if (!this.atSeatPosition) return
             this.shell.client.penguin.playFrame(this.frame)
             this.shell.client.lockRotation = true
-            this.shell.client.penguin.seatClicked = false
         }
+    }
+
+    get atSeatPosition() {
+        if (this.shell.client.penguin.x > this.gameObject.x + 5) {
+            return false
+        }
+
+        if (this.shell.client.penguin.x < this.gameObject.x - 5) {
+            return false
+        }
+
+        if (this.shell.client.penguin.y > this.gameObject.y + 5) {
+            return false
+        }
+
+        if (this.shell.client.penguin.y < this.gameObject.y - 5) {
+            return false
+        }
+
+        return true
     }
 
     /* END-USER-CODE */

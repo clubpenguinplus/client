@@ -194,6 +194,7 @@ export default class Preload extends BaseScene {
     onProgress(progress) {
         let frame = Math.round(progress * 58) + 1
         let prog = frame.toString().length == 1 ? `0${frame}` : frame
+        this.interface.loading.bar.anims.stop()
         this.interface.loading.bar.setFrame(`beam_00${prog}`)
     }
 
