@@ -6,7 +6,7 @@ export default class StampLoader extends BaseLoader {
         this.scene = scene
         this.stamp = stamp
         let suffix = '/client/media/interface/game/stampbook/stamps/'
-        this.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
+        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'stamps/'
     }
 

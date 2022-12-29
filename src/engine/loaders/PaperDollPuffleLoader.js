@@ -9,7 +9,7 @@ export default class PaperDollLoader extends BaseLoader {
         this.scale = 1
 
         let suffix = '/client/media/puffles/paper/'
-        this.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
+        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'puffles_paper/'
     }
 

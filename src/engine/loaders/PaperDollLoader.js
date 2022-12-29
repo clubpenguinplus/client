@@ -11,7 +11,7 @@ export default class PaperDollLoader extends BaseLoader {
         this.flagScale = 0.66
 
         let suffix = '/client/media/clothing/'
-        this.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
+        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'clothing/'
     }
 
