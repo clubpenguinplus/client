@@ -77,6 +77,7 @@ export default class Lodge extends RoomScene {
         }
         this.music = 589
         this.waddles = {}
+        this.loadSfx = ['lodge-DoorLOpen', 'lodge-DoorLClose', 'lodge-DoorROpen', 'lodge-DoorRClose', 'lodge-LightOn', 'lodge-LightOff', 'lodge-DoorMOpen', 'lodge-DoorMClose']
 
         /* END-USER-CTR-CODE */
     }

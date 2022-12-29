@@ -17,6 +17,7 @@ export default class Berg extends RoomScene {
             aqua: () => this.triggerGame('aquagrabber', 916),
         }
         this.music = 584
+        this.loadSfx = ['berg-aquagrabber']
 
         /* END-USER-CTR-CODE */
     }
@@ -89,7 +90,7 @@ export default class Berg extends RoomScene {
         if (frame <= 180 || frame >= 348) {
             this.aqua.play('berg-aqua_open')
         }
-		this.shell.musicController.addSfx('berg-aquagrabber')
+        this.shell.musicController.addSfx('berg-aquagrabber')
     }
 
     /* END-USER-CODE */

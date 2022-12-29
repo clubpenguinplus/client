@@ -19,6 +19,8 @@ export default class Village extends RoomScene {
         }
 
         this.music = 591
+
+        this.loadSfx = ['village-LodgeDoorOpen', 'village-LodgeDoorClose', 'village-EPFDoorOpen', 'village-EPFDoorClose']
         /* END-USER-CTR-CODE */
     }
 

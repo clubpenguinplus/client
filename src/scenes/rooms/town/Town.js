@@ -20,6 +20,8 @@ export default class Town extends RoomScene {
 
         this.music = 1160
 
+        this.loadSfx = ['town-DoorDiscoOpen', 'town-DoorDiscoClose', 'town-DoorShopOpen', 'town-DoorShopClose', 'town-DoorCoffeeOpen', 'town-DoorCoffeeClose']
+
         /* END-USER-CTR-CODE */
     }
 

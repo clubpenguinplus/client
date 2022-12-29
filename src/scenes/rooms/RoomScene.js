@@ -78,6 +78,10 @@ export default class RoomScene extends BaseScene {
             this.load.image('pin', `assets/media/clothing/icon/${this.crumbs.pin.id}.webp`)
         }
 
+        for (let sfx of this.loadSfx) {
+            this.load.audio(`sfx/${sfx}`, `/client/media/sounds/${sfx}.mp3`)
+        }
+
         if (this._preload) this._preload()
     }
 

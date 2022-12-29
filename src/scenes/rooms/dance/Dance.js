@@ -334,6 +334,8 @@ export default class Dance extends RoomScene {
         if (Object.keys(this.penguins).length >= 25) {
             this.shell.client.stampEarned(22)
         }
+
+        this.loadSfx = ['dance-Door', 'dance-SpeakerOpen', 'dance-SpeakerClose', 'dance-LightOn', 'dance-LightOff']
     }
 
     onSoundStudioOver() {

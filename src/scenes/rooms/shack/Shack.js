@@ -31,6 +31,8 @@ export default class Shack extends RoomScene {
         }
 
         this.music = 580
+
+        this.loadSfx = ['shack-SchoolDoorOpen', 'shack-SchoolDoorClose', 'shack-MineLightOn', 'shack-MineLightOff']
         /* END-USER-CTR-CODE */
     }
 

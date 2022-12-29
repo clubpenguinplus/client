@@ -17,6 +17,7 @@ export default class Mine extends RoomScene {
             shack: () => this.triggerRoom(807, 925, 538),
         }
         this.music = 675
+        this.loadSfx = ['mine-cart', 'mine-lighton', 'mine-lightoff', 'mine-phonering']
         /* END-USER-CTR-CODE */
     }
 

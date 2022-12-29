@@ -28,6 +28,7 @@ export default class Attic extends RoomScene {
             boxdimension: () => this.triggerRoom(811, 1180, 260),
         }
         this.music = 884
+        this.loadSfx = ['attic-HorseNeigh', 'attic-BoxOpen', 'attic-BoxClose', 'attic-BoxLoop']
 
         /* END-USER-CTR-CODE */
     }

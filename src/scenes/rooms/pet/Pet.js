@@ -18,6 +18,7 @@ export default class Pet extends RoomScene {
             launch: () => null,
         }
         this.music = 659
+        this.loadSfx = ['pet-plazadooropen', 'pet-plazadoorclose', 'pet-parkdooropen', 'pet-parkdoorclose', 'pet-hoteldooropen', 'pet-hoteldoorclose', 'pet-pufflebounce']
         /* END-USER-CTR-CODE */
     }
 
