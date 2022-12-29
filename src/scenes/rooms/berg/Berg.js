@@ -89,6 +89,7 @@ export default class Berg extends RoomScene {
         if (frame <= 180 || frame >= 348) {
             this.aqua.play('berg-aqua_open')
         }
+		this.shell.musicController.addSfx('berg-aquagrabber')
     }
 
     /* END-USER-CODE */

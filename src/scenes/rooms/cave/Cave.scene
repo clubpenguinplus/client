@@ -192,6 +192,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "door",
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('cave-dooropen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('cave-doorclosed')",
             "Button.activeFrame": false,
             "MoveTo.x": 190,
             "MoveTo.y": 600,

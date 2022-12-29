@@ -179,6 +179,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "clothesroom",
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('shop-curtainopen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('shop-curtainclose')",
             "Button.activeFrame": false,
             "texture": {
                 "key": "shop",
@@ -195,8 +197,8 @@
             "components": [
                 "SimpleButton"
             ],
-            "SimpleButton.hoverCallback": "() => this.onSpinnerOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onSpinnerOut()",
+            "SimpleButton.hoverCallback": "() => {this.onSpinnerOver(); this.shell.musicController.addSfx('shop-spinner')}",
+            "SimpleButton.hoverOutCallback": "() => {this.onSpinnerOut(); this.shell.musicController.stopLoopingSfx('shop-spinner')}",
             "texture": {
                 "key": "shop",
                 "frame": "spinner0001"
@@ -214,6 +216,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "door",
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('shop-dooropen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('shop-doorclose')",
             "Button.activeFrame": false,
             "MoveTo.x": 1100,
             "MoveTo.y": 350,
@@ -277,6 +281,8 @@
                 "Button"
             ],
             "Button.spriteName": "catalog-en",
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('book-bookopen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('book-bookclose')",
             "Button.callback": "() => this.interface.loadExternal('ClothingCatalog')",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
