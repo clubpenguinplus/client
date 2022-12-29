@@ -269,10 +269,10 @@ export default class Airtower {
                 case 'KO':
                     if (!this.lastLoginScene) return this.scene.start('Login')
 
-                    let scene = this.scene.getScene(this.lastLoginScene)
+                    let scene = this.game.scene.getScene(this.lastLoginScene)
 
                     scene.events.once('create', () => this.onLoginError('error'))
-                    this.scene.start(this.lastLoginScene)
+                    this.game.scene.start(this.lastLoginScene)
                     return
                 case 'OK':
                     if (this.password) {
