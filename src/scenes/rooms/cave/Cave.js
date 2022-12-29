@@ -207,10 +207,15 @@ export default class Cave extends RoomScene {
     create() {
         super.create()
 		this.shell.musicController.addSfx('cave-crab')
-        setInterval(function() {
+        this.crabTimeout = setInterval(function() {
             this.shell.musicController.addSfx('cave-crab')
           }, 13750);
     }
+	
+	stop(){
+		clearInterval(this.crabTimeout)
+		super.stop()
+	}
 
     onZoneClick() {
         this.shell.client.penguin.move(1266, 572)
