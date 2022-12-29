@@ -2,8 +2,6 @@
 
 npm run format
 
-npm run update-version
-
 git add *
 
 exit 0
