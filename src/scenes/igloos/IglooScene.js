@@ -72,7 +72,6 @@ export default class IglooScene extends RoomScene {
 
     preload() {
         super.preload()
-
         ;(this.load.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw/` : `${window.location.origin}/`), this.load.image(`locations/${this.args.location}`, `/client/media/igloos/locations/sprites/${this.args.location}.webp`)
 
         if (this.args.flooring && parseInt(this.args.flooring) > 1) this.loadFlooring(this.args.flooring)
