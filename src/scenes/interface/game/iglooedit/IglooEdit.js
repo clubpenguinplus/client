@@ -449,31 +449,31 @@ export default class IglooEdit extends BaseScene {
         let previewMask0 = this.add.graphics()
         previewMask0.fillStyle(0xffffff, 0)
         previewMask0.beginPath()
-        previewMask0.fillRoundedRect(181, 124, 596, 398, 22)
+        previewMask0.fillRoundedRect(181 * window.currentScale, 124 * window.currentScale, 596 * window.currentScale, 398 * window.currentScale, 22 * window.currentScale)
         this.previewMask0 = previewMask0.createGeometryMask()
 
         let previewMask1 = this.add.graphics()
         previewMask1.fillStyle(0xffffff, 0)
         previewMask1.beginPath()
-        previewMask1.fillRoundedRect(101, 627, 297, 187, 17)
+        previewMask1.fillRoundedRect(101 * window.currentScale, 627 * window.currentScale, 297 * window.currentScale, 187 * window.currentScale, 17 * window.currentScale)
         this.previewMask1 = previewMask1.createGeometryMask()
 
         let previewMask2 = this.add.graphics()
         previewMask2.fillStyle(0xffffff, 0)
         previewMask2.beginPath()
-        previewMask2.fillRoundedRect(441, 627, 297, 187, 17)
+        previewMask2.fillRoundedRect(441 * window.currentScale, 627 * window.currentScale, 297 * window.currentScale, 187 * window.currentScale, 17 * window.currentScale)
         this.previewMask2 = previewMask2.createGeometryMask()
 
         let previewMask3 = this.add.graphics()
         previewMask3.fillStyle(0xffffff, 0)
         previewMask3.beginPath()
-        previewMask3.fillRoundedRect(781, 627, 297, 187, 17)
+        previewMask3.fillRoundedRect(781 * window.currentScale, 627 * window.currentScale, 297 * window.currentScale, 187 * window.currentScale, 17 * window.currentScale)
         this.previewMask3 = previewMask3.createGeometryMask()
 
         let previewMask4 = this.add.graphics()
         previewMask4.fillStyle(0xffffff, 0)
         previewMask4.beginPath()
-        previewMask4.fillRoundedRect(1120, 627, 297, 187, 17)
+        previewMask4.fillRoundedRect(1120 * window.currentScale, 627 * window.currentScale, 297 * window.currentScale, 187 * window.currentScale, 17 * window.currentScale)
         this.previewMask4 = previewMask4.createGeometryMask()
     }
 
@@ -590,10 +590,11 @@ export default class IglooEdit extends BaseScene {
                 break
         }
 
-        preview.cameras.main.setZoom(scale)
+        preview.cameras.main.setZoom(scale * window.currentScale)
+        preview.cameras.main.trueScale = scale
         preview.cameras.main.setOrigin(0, 0)
-        preview.cameras.main.x = x
-        preview.cameras.main.y = y
+        preview.cameras.main.x = x * window.currentScale
+        preview.cameras.main.y = y * window.currentScale
         preview.cameras.main.setMask(mask)
     }
 

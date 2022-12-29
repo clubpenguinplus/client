@@ -54,7 +54,7 @@ export default class Preload extends BaseScene {
         // Control game quality
         for (let scene of this.game.scene.scenes) {
             if (!scene.cameras.main) continue
-            scene.cameras.main.setZoom(window.currentScale)
+            scene.cameras.main.setZoom(scene.cameras.trueScale ? window.currentScale * scene.cameras.trueScale : window.currentScale)
             scene.cameras.main.setOrigin(0, 0)
         }
     }

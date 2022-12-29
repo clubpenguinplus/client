@@ -66,6 +66,7 @@ export default class RoomScene extends BaseScene {
         }
 
         window.updateScaling()
+        this.interface.hideLoading()
     }
 
     preload() {

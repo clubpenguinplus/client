@@ -60,7 +60,7 @@ export default class PenguinSmall extends BaseContainer {
         this.button = penguinSmallButton
 
         let shape = scene.make.graphics()
-        shape.fillRoundedRect(0, 0, 600, 196, 20)
+        shape.fillRoundedRect(0, 0, 600 * window.currentScale, 196 * window.currentScale, 20 * window.currentScale)
 
         let mask = shape.createGeometryMask()
         paperDoll.mask = mask

@@ -213,7 +213,7 @@ export default class IglooLikesWidget extends BaseScene {
 
         let mask = this.add.graphics()
         mask.fillStyle(0xffffff, 0)
-        mask.fillRect(1243, 97, 260, 452)
+        mask.fillRect(1243 * window.currentScale, 97 * window.currentScale, 260 * window.currentScale, 452 * window.currentScale)
         this.mask = mask.createGeometryMask()
 
         this.likeContainer.setMask(this.mask)

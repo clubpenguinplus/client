@@ -292,7 +292,7 @@ export default class Friend extends BaseContainer {
         const graphics = scene.make.graphics()
         graphics.fillStyle(0xffffff, 0)
         graphics.beginPath()
-        graphics.fillRect(-192, -200, 350, 450)
+        graphics.fillRect(-192 * window.currentScale, -200 * window.currentScale, 350 * window.currentScale, 450 * window.currentScale)
         const mask = graphics.createGeometryMask()
         scene.events.on('update', () => this.updateMaskPos(mask))
 

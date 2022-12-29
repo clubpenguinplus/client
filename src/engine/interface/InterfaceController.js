@@ -31,10 +31,12 @@ export default class InterfaceController extends BaseScene {
     showLoading(text = '', showBar = false, isLogo = false) {
         this.hideInterface()
 
-        if (this.scene.isActive('Load')) {
-            this.loading.setContent(text, showBar, isLogo)
-        } else if (this.scene.isSleeping('Load')) {
-            this.scene.wake('Load', {text: text, showBar: showBar, isLogo: isLogo})
+        if (!this.scene.isActive('Load')) {
+            if (this.scene.isSleeping('Load')) {
+                this.scene.wake('Load', {text: text, showBar: showBar, isLogo: isLogo})
+            } else {
+                this.scene.launch('Load', {text: text, showBar: showBar, isLogo: isLogo})
+            }
         }
 
         this.bringToTop('Load')
@@ -47,8 +49,6 @@ export default class InterfaceController extends BaseScene {
     }
 
     showInterface() {
-        this.hideLoading()
-
         if (this.scene.isSleeping('Main')) {
             this.scene.wake('Main')
         } else if (!this.scene.isActive('Main')) {
@@ -56,6 +56,7 @@ export default class InterfaceController extends BaseScene {
         }
 
         this.bringToTop('Main')
+        this.bringToTop('Load')
     }
 
     hideInterface(clearChat = true) {
