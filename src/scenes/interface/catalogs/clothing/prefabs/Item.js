@@ -12,8 +12,6 @@ export default class Item extends BaseContainer {
 
         const item = scene.add.image(0, -45, '_MISSING')
         item.visible = false
-        item.scaleX = 0.5
-        item.scaleY = 0.5
         this.add(item)
 
         const text = scene.add.text(0, 20, '', {})
@@ -43,12 +41,12 @@ export default class Item extends BaseContainer {
         this.item = item
 
         this.loader = new PaperItemLoader(scene, this)
-        this.loader.loadItem(this.itemId)
+        this.loader.loadItem(this.itemId, 140)
     }
 
     setItem() {
         this.item.visible = true
-        this.item.setTexture(`clothing/${this.itemId}`)
+        this.item.setTexture(`paper/140/${this.itemId}`)
     }
 
     buy() {

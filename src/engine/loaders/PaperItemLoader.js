@@ -8,7 +8,7 @@ export default class PaperItemLoader extends BaseLoader {
 
         let suffix = '/client/media/clothing/paper/'
         this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
-        this.keyPrefix = 'clothing/'
+        this.keyPrefix = 'paper/'
     }
 
     loadItem(item, size = 600) {

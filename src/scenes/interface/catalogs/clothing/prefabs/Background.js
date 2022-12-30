@@ -37,12 +37,12 @@ export default class Background extends BaseContainer {
         this.hover = hover
 
         this.loader = new PaperItemLoader(scene, this)
-        this.loader.loadItem(this.itemId)
+        this.loader.loadItem(this.itemId, 600)
     }
 
     setItem() {
         this.background.visible = true
-        this.background.setTexture(`clothing/${this.itemId}`)
+        this.background.setTexture(`paper/600/${this.itemId}`)
     }
 
     buy() {
