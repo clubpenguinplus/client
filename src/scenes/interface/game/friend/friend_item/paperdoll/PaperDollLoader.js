@@ -82,6 +82,7 @@ export default class PaperDollLoader {
     }
 
     loadBack(item, parentSlot) {
+        let url = parentSlot == 'flag' ? `${this.url}/icon` : `${this.url}/paper/88`
         let key = `${this.keyPrefix}/${parentSlot}/${item}_back`
 
         if (
@@ -92,7 +93,7 @@ export default class PaperDollLoader {
             return
         }
 
-        this.load.image(key, `${this.url}/${this.keyPrefix}/${item}_back.webp`)
+        this.load.image(key, `${url}/${item}_back.webp`)
     }
 
     onFileComplete(itemId, key, slot, isBack = false) {
