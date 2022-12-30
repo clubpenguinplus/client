@@ -23,7 +23,7 @@ export default class PaperDollLoader {
                 return 'icon/'
 
             default:
-                return 'paper/'
+                return 'friendlist/'
         }
     }
 
