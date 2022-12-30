@@ -31,9 +31,13 @@ export default class PaperDoll extends BaseContainer {
         let items = {}
 
         for (let slot of this.slots) {
-            if (!slot) continue
+            if (!slot) {
+                continue
+            }
+
             items[slot] = {
-                depth: this.slots.indexOf(slot),
+                id: 0,
+                depth: this.slots.indexOf(slot) + 100
             }
         }
 
@@ -41,19 +45,34 @@ export default class PaperDoll extends BaseContainer {
     }
 
     removeItems() {
-        for (let item in this.items) {
-            let sprite = this.items[item].sprite
+        for (let item of Object.values(this.items)) {
+            this.removeItem(item)
+        }
+    }
 
-            if (this.items[item].sprite) {
-                sprite.destroy()
-                sprite = null
-            }
+    removeItem(item) {
+        item.id = 0
+
+        if (item.sprite) {
+            this.destroySprite(item)
         }
 
-        if (!this.parentContainer.bg) return
+        if (item.back) {
+            this.destroyBack(item)
+        }
 
         this.parentContainer.bg.setScale(0.2)
         this.parentContainer.bg.setTexture('main', 'card-photo')
+    }
+
+    destroySprite(item) {
+        item.sprite.destroy()
+        item.sprite = null
+    }
+
+    destroyBack(item) {
+        item.back.destroy()
+        item.back = null
     }
 
     loadDoll(penguin, isInputEnabled = false) {
@@ -64,7 +83,6 @@ export default class PaperDoll extends BaseContainer {
 
         this.paperDollLoader.loadItems(penguin)
     }
-
     /* END-USER-CODE */
 }
 
