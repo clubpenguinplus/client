@@ -60,7 +60,7 @@ export default class Book extends BaseScene {
     }
 
     setPageVisible(visible = true) {
-        this.pages[this.page].visible = visible
+        if (this.pages[this.page]) this.pages[this.page].visible = visible
     }
 
     setButtonsVisible() {

@@ -6,13 +6,13 @@ export default class PaperItemLoader extends BaseLoader {
         this.scene = scene
         this.initiator = initiator
 
-        let suffix = '/client/media/clothing/'
+        let suffix = '/client/media/clothing/paper/'
         this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'clothing/'
     }
 
-    loadItem(item) {
-        let key = this.getKey(stamp)
+    loadItem(item, size = 600) {
+        let key = this.getKey(`${size}/${item}`)
 
         if (
             this.checkComplete('image', key, () => {
@@ -22,7 +22,7 @@ export default class PaperItemLoader extends BaseLoader {
             return
         }
 
-        this.image(key, `${stamp}.webp`)
+        this.image(key, `${size}/${item}.webp`)
         this.start()
     }
 

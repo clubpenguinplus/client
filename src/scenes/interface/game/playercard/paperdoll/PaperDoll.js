@@ -7,21 +7,19 @@ import TintedImage from '@engine/utils/tint/TintedImage'
 /* START OF COMPILED CODE */
 
 export default class PaperDoll extends BaseContainer {
-
     constructor(scene, x, y) {
-        super(scene, x ?? 760, y ?? 480);
+        super(scene, x ?? 760, y ?? 480)
 
         /** @type {Phaser.GameObjects.Image} */
-        this.paperdoll;
+        this.paperdoll
         /** @type {boolean} */
-        this.fadeIn = true;
-
+        this.fadeIn = true
 
         // paperdoll
-        const paperdoll = scene.add.image(0, -7, "main", "paperdoll/paperdoll");
-        this.add(paperdoll);
+        const paperdoll = scene.add.image(0, -7, 'main', 'paperdoll/paperdoll')
+        this.add(paperdoll)
 
-        this.paperdoll = paperdoll;
+        this.paperdoll = paperdoll
 
         /* START-USER-CTR-CODE */
 
@@ -47,7 +45,6 @@ export default class PaperDoll extends BaseContainer {
         /* END-USER-CTR-CODE */
     }
 
-
     /* START-USER-CODE */
 
     setItems() {
@@ -60,7 +57,7 @@ export default class PaperDoll extends BaseContainer {
 
             items[slot] = {
                 id: 0,
-                depth: this.slots.indexOf(slot) + 100
+                depth: this.slots.indexOf(slot) + 100,
             }
         }
 
@@ -115,8 +112,8 @@ export default class PaperDoll extends BaseContainer {
      * does not include clothing items.
      */
     enableInput() {
-        this.body.setInteractive({ pixelPerfect: true })
-        this.paperdoll.setInteractive({ pixelPerfect: true })
+        this.body.setInteractive({pixelPerfect: true})
+        this.paperdoll.setInteractive({pixelPerfect: true})
     }
 
     /**

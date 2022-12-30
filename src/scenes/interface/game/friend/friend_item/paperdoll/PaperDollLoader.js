@@ -12,7 +12,6 @@ export default class PaperDollLoader {
         this.load = new Phaser.Loader.LoaderPlugin(this.scene)
         let suffix = '/client/media/clothing'
         this.url = window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
-        this.keyPrefix = 'friendlist'
 
         this.load.on('filecomplete', this.onFileComplete, this)
     }
@@ -23,7 +22,7 @@ export default class PaperDollLoader {
                 return 'icon/'
 
             default:
-                return 'friendlist/'
+                return 'paper/88/'
         }
     }
 
@@ -65,12 +64,14 @@ export default class PaperDollLoader {
             this.loadBack(item, slot)
         }
 
-        let url = (slot == 'flag') ? `${this.url}/icon` : `${this.url}/friendlist`
-        let key = `${this.keyPrefix}/${slot}/${item}`
+        let url = slot == 'flag' ? `${this.url}/icon` : `${this.url}/paper/88`
+        let key = `${this.keyPrefix}/${item}`
 
-        if (this.checkComplete('image', key, () => {
-            this.onFileComplete(item, key, slot)
-        })) {
+        if (
+            this.checkComplete('image', key, () => {
+                this.onFileComplete(item, key, slot)
+            })
+        ) {
             return
         }
 
@@ -83,9 +84,11 @@ export default class PaperDollLoader {
     loadBack(item, parentSlot) {
         let key = `${this.keyPrefix}/${parentSlot}/${item}_back`
 
-        if (this.checkComplete('image', key, () => {
-            this.onFileComplete(item, key, parentSlot, true)
-        })) {
+        if (
+            this.checkComplete('image', key, () => {
+                this.onFileComplete(item, key, parentSlot, true)
+            })
+        ) {
             return
         }
 
@@ -118,9 +121,9 @@ export default class PaperDollLoader {
         }
 
         if (slot == 'photo') {
-                this.paperDoll.parentContainer.bg.setTexture(key)
-                this.paperDoll.parentContainer.bg.setScale(this.photoScale)
-                this.paperDoll.parentContainer.bg.visible = true
+            this.paperDoll.parentContainer.bg.setTexture(key)
+            this.paperDoll.parentContainer.bg.setScale(this.photoScale)
+            this.paperDoll.parentContainer.bg.visible = true
             return
         }
 
@@ -150,8 +153,8 @@ export default class PaperDollLoader {
         paper.scale = scale
         paper.isBack = isBack
 
-         // Back sprites always on bottom
-        paper.depth = (isBack) ? depth : depth + 100
+        // Back sprites always on bottom
+        paper.depth = isBack ? depth : depth + 100
 
         this.fadeIn(paper)
 
@@ -181,15 +184,15 @@ export default class PaperDollLoader {
 
         this.scene.tweens.add({
             targets: paper,
-            alpha: { from: 0, to: 1 },
-            duration: 200
+            alpha: {from: 0, to: 1},
+            duration: 200,
         })
     }
 
     addInput(slot, paper) {
         paper.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true
+            pixelPerfect: true,
         })
 
         paper.on('pointerdown', () => this.onPaperClick(slot))
@@ -228,7 +231,7 @@ export default class PaperDollLoader {
     }
 
     getBackSprites() {
-        return this.paperDoll.list.filter(item => item.isBack)
+        return this.paperDoll.list.filter((item) => item.isBack)
     }
 
     checkComplete(type, key, callback = () => {}) {
@@ -243,5 +246,4 @@ export default class PaperDollLoader {
     textureExists(key) {
         return this.scene.textures.exists(key)
     }
-
 }

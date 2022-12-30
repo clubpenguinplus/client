@@ -30,7 +30,17 @@ export default class Pricetag extends EventComponent {
 
     start() {
         super.start()
-        this.gameObject.text = this.scene.pricetag(this.id)
+        this.gameObject.text = this.getPrice(this.id)
+    }
+
+    getPrice(id) {
+        if (this.scene.crumbs.items[id]) {
+            if (this.scene.crumbs.items[id].cost == 0) {
+                return 'Collect'
+            }
+            return this.scene.crumbs.items[id].cost
+        }
+        return 'Error'
     }
 
     /* END-USER-CODE */

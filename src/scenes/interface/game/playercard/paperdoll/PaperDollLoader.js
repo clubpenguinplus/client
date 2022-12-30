@@ -69,12 +69,14 @@ export default class PaperDollLoader {
             this.loadBack(item, slot)
         }
 
-        let url = (slot == 'flag') ? `${this.url}/icon` : `${this.url}/paper`
+        let url = slot == 'flag' ? `${this.url}/icon` : `${this.url}/paper`
         let key = `${this.keyPrefix}/${slot}/${item}`
 
-        if (this.checkComplete('image', key, () => {
-            this.onFileComplete(item, key, slot)
-        })) {
+        if (
+            this.checkComplete('image', key, () => {
+                this.onFileComplete(item, key, slot)
+            })
+        ) {
             return
         }
 
@@ -87,9 +89,11 @@ export default class PaperDollLoader {
     loadBack(item, parentSlot) {
         let key = `${this.keyPrefix}/${parentSlot}/${item}_back`
 
-        if (this.checkComplete('image', key, () => {
-            this.onFileComplete(item, key, parentSlot, true)
-        })) {
+        if (
+            this.checkComplete('image', key, () => {
+                this.onFileComplete(item, key, parentSlot, true)
+            })
+        ) {
             return
         }
 
@@ -140,12 +144,12 @@ export default class PaperDollLoader {
 
     addPaper(key, slot, depth, scale = this.scale, isBack = false) {
         let paper = this.scene.add.image(0, 0, key)
-        
+
         paper.scale = scale
         paper.isBack = isBack
 
-         // Back sprites always on bottom
-        paper.depth = (isBack) ? depth : depth + 100
+        // Back sprites always on bottom
+        paper.depth = isBack ? depth : depth + 100
 
         this.fadeIn(paper)
 
@@ -176,22 +180,22 @@ export default class PaperDollLoader {
 
         this.scene.tweens.add({
             targets: paper,
-            alpha: { from: 0, to: 1 },
-            duration: 200
+            alpha: {from: 0, to: 1},
+            duration: 200,
         })
     }
 
     addInput(slot, paper) {
         paper.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true
+            pixelPerfect: true,
         })
 
         paper.on('pointerdown', () => this.onPaperClick(slot))
     }
 
     onPaperClick(slot) {
-        this.scene.network.send('remove_item', { type: slot })
+        this.scene.network.send('remove_item', {type: slot})
     }
 
     removeItem(slot) {
@@ -227,7 +231,7 @@ export default class PaperDollLoader {
     }
 
     getBackSprites() {
-        return this.paperDoll.list.filter(item => item.isBack)
+        return this.paperDoll.list.filter((item) => item.isBack)
     }
 
     checkComplete(type, key, callback = () => {}) {
@@ -242,5 +246,4 @@ export default class PaperDollLoader {
     textureExists(key) {
         return this.scene.textures.exists(key)
     }
-
 }

@@ -30,167 +30,48 @@
         {
             "type": "Container",
             "id": "38560176-7139-4b4a-be8e-e6c104168e00",
-            "label": "container",
+            "label": "pageContainer",
+            "scope": "CLASS",
             "components": [],
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "dfc6c094-d5d9-422e-b7b2-557812d8ddd1",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 999,
+            "y": 798,
+            "visible": false,
             "list": [
                 {
-                    "prefabId": "1dbf0c2e-8339-44c0-9e81-abca94bfc31b",
-                    "id": "5751af23-35a9-4588-9aa3-5d7dc45d8e4f",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page20",
-                    "scope": "CLASS",
+                    "type": "Image",
+                    "id": "b2459840-60c4-4e8e-b7db-9df7b7e8f5c0",
+                    "label": "coinholder",
                     "components": [],
-                    "x": 0,
-                    "y": 0,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
+                    "texture": {
+                        "key": "constant",
+                        "frame": "coinholder"
+                    },
+                    "x": -115.478515625,
+                    "y": 86.20628356933594
                 },
                 {
-                    "prefabId": "ddc48c21-aba1-4401-9fc1-dc0df741b828",
-                    "id": "e87281bc-f601-4a12-bf3b-51f8f72c9232",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page19",
+                    "type": "Text",
+                    "id": "48e91ecb-d276-4383-966d-d7a252a002c7",
+                    "label": "coins",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 0,
-                    "y": 0,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
-                    "prefabId": "2b39884a-e5ce-4c49-91e6-3134d4f9d157",
-                    "id": "c1b90814-d5b2-41ae-ab85-f4c1b4ae495a",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page14",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 0,
-                    "y": 1,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
-                    "prefabId": "fc9f69f8-b836-4913-b4a3-ce95fe6dd2ae",
-                    "id": "a93da99f-2c9d-4226-811c-35341aed8e2d",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page4",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 0,
-                    "y": 1,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
-                    "prefabId": "400d77b9-1259-4060-8c5d-9c7131105239",
-                    "id": "754844d3-b2f2-45e5-9a79-f7095ab278cd",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page3",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 0,
-                    "y": 0,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
-                    "prefabId": "c6c55635-66c5-4c08-a729-65a76b1e68d5",
-                    "id": "4d03d374-689b-4070-b9f7-e438de920e45",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page2",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 0,
-                    "y": 0,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
-                    "prefabId": "1cadbefd-c316-4f60-aa90-f27c1a74dd43",
-                    "id": "f6c258f0-09c7-47d0-a009-f5d0079d25fc",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "page1",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 0,
-                    "y": 0,
-                    "visible": true,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
-                    "type": "Container",
-                    "id": "dfc6c094-d5d9-422e-b7b2-557812d8ddd1",
-                    "label": "buttons",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 999,
-                    "y": 798,
-                    "visible": false,
-                    "list": [
-                        {
-                            "type": "Image",
-                            "id": "b2459840-60c4-4e8e-b7db-9df7b7e8f5c0",
-                            "label": "coinholder",
-                            "components": [],
-                            "texture": {
-                                "key": "constant",
-                                "frame": "coinholder"
-                            },
-                            "x": -115.478515625,
-                            "y": 86.20628356933594
-                        },
-                        {
-                            "type": "Text",
-                            "id": "48e91ecb-d276-4383-966d-d7a252a002c7",
-                            "label": "coins",
-                            "scope": "CLASS",
-                            "components": [],
-                            "x": -190.478515625,
-                            "y": 56.20628356933594,
-                            "angle": -7,
-                            "text": "Your Coins:\n100000",
-                            "align": "center",
-                            "fontFamily": "Burbank Small",
-                            "fontSize": "24px",
-                            "fontStyle": "bold italic",
-                            "color": "#000000ff"
-                        }
-                    ]
+                    "x": -190.478515625,
+                    "y": 56.20628356933594,
+                    "angle": -7,
+                    "text": "Your Coins:\n100000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold italic",
+                    "color": "#000000ff"
                 }
             ]
         }
@@ -205,16 +86,7 @@
     "lists": [
         {
             "id": "276c5c60-fa64-4fcc-8cfe-1aff96642d64",
-            "label": "pages",
-            "objectIds": [
-                "f6c258f0-09c7-47d0-a009-f5d0079d25fc",
-                "4d03d374-689b-4070-b9f7-e438de920e45",
-                "754844d3-b2f2-45e5-9a79-f7095ab278cd",
-                "a93da99f-2c9d-4226-811c-35341aed8e2d",
-                "c1b90814-d5b2-41ae-ab85-f4c1b4ae495a",
-                "e87281bc-f601-4a12-bf3b-51f8f72c9232",
-                "5751af23-35a9-4588-9aa3-5d7dc45d8e4f"
-            ]
+            "label": "pages"
         }
     ]
 }

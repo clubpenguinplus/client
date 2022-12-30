@@ -10,7 +10,7 @@ export default class PaperDollLoader {
         this.load = new Phaser.Loader.LoaderPlugin(this.scene)
         let suffix = '/client/media/clothing'
         this.url = window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
-        this.prefix = 'friendlist'
+        this.prefix = 'paper/88/'
 
         this.load.on('filecomplete', this.onFileComplete, this)
         this.load.on('loaderror', this.onLoadError, this)
@@ -34,11 +34,11 @@ export default class PaperDollLoader {
     loadItem(item, slot) {
         if (item == 0) return this.removeItem(slot)
 
-        let key = `${this.prefix}/${slot}/${item}`
+        let key = `${this.prefix}/${item}`
 
-        if (this.scene.textures.exists(key)) return this.onFileComplete(key)
+        if (this.scene.textures.exists(key)) return this.onFileComplete(key, slot)
 
-        let url = slot == 'flag' ? `${this.url}/icon` : `${this.url}/friendlist`
+        let url = slot == 'flag' ? `${this.url}/icon` : `${this.url}/paper/88`
 
         this.load.image({
             key: key,
@@ -46,11 +46,10 @@ export default class PaperDollLoader {
         })
     }
 
-    onFileComplete(key) {
+    onFileComplete(key, slot) {
         if (!this.paperDoll.visible) return
         if (!this.scene.textures.exists(key)) return
 
-        let slot = key.split('/')[1]
         let item = this.paperDoll.items[slot]
 
         // Remove item if one is already equipped

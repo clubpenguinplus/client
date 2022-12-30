@@ -5,14 +5,14 @@ export default class PaperDollLoader extends BaseLoader {
         super(scene)
 
         this.paperDoll = paperDoll
-        
+
         this.flagX = -153
         this.flagY = -120
         this.flagScale = 0.66
 
         let suffix = '/client/media/clothing/'
         this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
-        this.keyPrefix = 'paper/'
+        this.keyPrefix = 'paper/600/'
     }
 
     getUrl(slot) {
@@ -21,7 +21,7 @@ export default class PaperDollLoader extends BaseLoader {
                 return 'icon/'
 
             default:
-                return 'paper/'
+                return 'paper/600/'
         }
     }
 
@@ -70,9 +70,11 @@ export default class PaperDollLoader extends BaseLoader {
         let url = this.getUrl(slot)
         let key = this.getKey(url, item)
 
-        if (this.checkComplete('image', key, () => {
-            this.onFileComplete(item, key, slot)
-        })) {
+        if (
+            this.checkComplete('image', key, () => {
+                this.onFileComplete(item, key, slot)
+            })
+        ) {
             return
         }
 
@@ -80,15 +82,17 @@ export default class PaperDollLoader extends BaseLoader {
     }
 
     loadBack(item, parentSlot) {
-        let key = this.getKey('paper/', item, '_back')
+        let key = this.getKey('paper/600/', item, '_back')
 
-        if (this.checkComplete('image', key, () => {
-            this.onFileComplete(item, key, parentSlot, true)
-        })) {
+        if (
+            this.checkComplete('image', key, () => {
+                this.onFileComplete(item, key, parentSlot, true)
+            })
+        ) {
             return
         }
 
-        this.image(key, `paper/${item}_back.webp`)
+        this.image(key, `paper/600/${item}_back.webp`)
     }
 
     onFileComplete(itemId, key, slot, isBack = false) {
@@ -138,15 +142,14 @@ export default class PaperDollLoader extends BaseLoader {
         paper.scale = scale
         paper.isBack = isBack
 
-         // Back sprites always on bottom
-        paper.depth = (isBack) ? depth : depth + 100
+        // Back sprites always on bottom
+        paper.depth = isBack ? depth : depth + 100
 
         this.fadeIn(paper)
 
         if (slot == 'photo') {
             this.scene.playerCard.photo.add(paper)
             paper.setOrigin(0)
-
         } else {
             this.paperDoll.add(paper)
         }
@@ -171,22 +174,22 @@ export default class PaperDollLoader extends BaseLoader {
 
         this.scene.tweens.add({
             targets: paper,
-            alpha: { from: 0, to: 1 },
-            duration: 200
+            alpha: {from: 0, to: 1},
+            duration: 200,
         })
     }
 
     addInput(slot, paper) {
         paper.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true
+            pixelPerfect: true,
         })
 
         paper.on('pointerdown', () => this.onPaperClick(slot))
     }
 
     onPaperClick(slot) {
-        this.network.send('remove_item', { type: slot })
+        this.network.send('remove_item', {type: slot})
     }
 
     removeItem(slot) {
@@ -222,7 +225,6 @@ export default class PaperDollLoader extends BaseLoader {
     }
 
     getBackSprites() {
-        return this.paperDoll.list.filter(item => item.isBack)
+        return this.paperDoll.list.filter((item) => item.isBack)
     }
-
 }

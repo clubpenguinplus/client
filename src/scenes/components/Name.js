@@ -31,7 +31,14 @@ export default class Name extends EventComponent {
 
     start() {
         super.start()
-        this.gameObject.text = this.scene.nametag(this.id)
+        this.gameObject.text = this.getName(this.id)
+    }
+
+    getName(id) {
+        if (this.scene.crumbs.items[id]) {
+            return this.scene.crumbs.items[id].name
+        }
+        return 'Error'
     }
 
     /* END-USER-CODE */
