@@ -2,19 +2,19 @@ import {Button} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class FloorButton extends Phaser.GameObjects.Image {
+export default class Tag1 extends Phaser.GameObjects.Image {
     constructor(scene, x, y, texture, frame) {
-        super(scene, x ?? 0, y ?? 0, texture || 'igloocatalog', frame ?? 'buy')
+        super(scene, x ?? 0, y ?? 0, texture || 'clothingcatalog', frame ?? 'buy1')
 
         /** @type {number} */
-        this.floor = 0
+        this.item = 0
 
         this.setOrigin(0, 0)
 
         // this (components)
         const thisButton = new Button(this)
-        thisButton.spriteName = 'buy'
-        thisButton.callback = () => this.scene.buyFloor(this.floor)
+        thisButton.spriteName = 'buy1'
+        thisButton.callback = () => this.scene.buy(this.item)
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */

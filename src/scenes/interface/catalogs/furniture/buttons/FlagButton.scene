@@ -1,5 +1,5 @@
 {
-    "id": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+    "id": "f8fcbb5c-0a9d-4be6-984a-48faa6951a9f",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
@@ -14,19 +14,18 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "e7e412cc-574b-4ebe-85b5-7ebb07ceea74",
-            "label": "buy",
+            "id": "94c767a4-d43a-480a-b7f6-485e10e81c5e",
+            "label": "flag",
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "big-buy0001.webp",
+            "Button.spriteName": "flag",
             "Button.callback": "() => this.scene.buy(this.item)",
+            "Button.activeFrame": false,
             "texture": {
-                "key": "Sep2005",
-                "frame": "big-buy0001.webp"
-            },
-            "originX": 0,
-            "originY": 0
+                "key": "clothingcatalog",
+                "frame": "flag"
+            }
         }
     ],
     "plainObjects": [],

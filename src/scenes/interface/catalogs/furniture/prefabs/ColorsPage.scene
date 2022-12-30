@@ -1,0 +1,391 @@
+{
+    "id": "8eddd5a1-39d1-4b3c-afb5-6184b3646cf0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "fae11c51-33e2-45ab-bd18-fd8450f7eb2c",
+            "label": "page2",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "915ff87b-900d-46b2-80ae-d83835bd747d",
+                    "label": "page2Bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "constant",
+                        "frame": "colorsPage"
+                    },
+                    "x": 760,
+                    "y": 453
+                },
+                {
+                    "type": "Text",
+                    "id": "642b12d8-cbb6-410d-a2c2-e10d8a21a257",
+                    "label": "page2_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 189,
+                    "y": 79,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Colors for\neveryone!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold italic"
+                },
+                {
+                    "type": "Text",
+                    "id": "b0dc6e34-7982-44b7-bade-66191fd4059f",
+                    "label": "colorsPrice",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 215,
+                    "y": 141,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Only 20     each!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "italic",
+                    "color": "#9dc3fcff"
+                },
+                {
+                    "type": "Image",
+                    "id": "333af346-ca9f-48e2-b783-679149741c93",
+                    "label": "coinPng",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "jan22clothing",
+                        "frame": "coin"
+                    },
+                    "x": 229,
+                    "y": 140
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "99f7af97-f817-43f5-a0f8-476afdeae779",
+                    "label": "blueHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.blueHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.blueHover)",
+                    "SimpleButton.callback": "() => this.buy(1)",
+                    "x": 299,
+                    "y": 253,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d8b49003-bab9-4d60-9ce2-6821d37aece5",
+                    "label": "greenHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.greenHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.greenHover)",
+                    "SimpleButton.callback": "() => this.buy(2)",
+                    "x": 425,
+                    "y": 253,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c7ebd13a-0ff0-468f-968a-d61a6ba64e2b",
+                    "label": "pinkHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.pinkHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.pinkHover)",
+                    "SimpleButton.callback": "() => this.buy(3)",
+                    "x": 551,
+                    "y": 253,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "90fbcb8a-3501-46a7-aad0-428d6633d32d",
+                    "label": "peachHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.peachHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.peachHover)",
+                    "SimpleButton.callback": "() => this.buy(10)",
+                    "x": 552,
+                    "y": 368,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "498197ec-3148-4565-a177-4ee2a4b89240",
+                    "label": "brownHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.brownHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.brownHover)",
+                    "SimpleButton.callback": "() => this.buy(9)",
+                    "x": 425,
+                    "y": 368,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ca23d7ee-3ebc-47e3-9893-eb54825948a8",
+                    "label": "purpleHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.purpleHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.purpleHover)",
+                    "SimpleButton.callback": "() => this.buy(8)",
+                    "x": 298,
+                    "y": 368,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4e55cc33-1d6f-4177-87cd-3bd2eab599c0",
+                    "label": "lightBlueHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.lightBlueHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.lightBlueHover)",
+                    "SimpleButton.callback": "() => this.buy(12)",
+                    "x": 299,
+                    "y": 484,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "b579ebe3-afb4-457f-a7c5-11314ca79b7a",
+                    "label": "redHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.redHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.redHover)",
+                    "SimpleButton.callback": "() => this.buy(5)",
+                    "x": 299,
+                    "y": 599,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "461b5d90-0f2e-47ae-8cef-7d0f019d6bcf",
+                    "label": "orangeHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.orangeHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.orangeHover)",
+                    "SimpleButton.callback": "() => this.buy(6)",
+                    "x": 425,
+                    "y": 599,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "cebaa6cc-f35a-4a10-a7fd-e028638fc1d9",
+                    "label": "limeHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.limeHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.limeHover)",
+                    "SimpleButton.callback": "() => this.buy(13)",
+                    "x": 425,
+                    "y": 484,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "014fe44e-3239-4aa0-86fd-0991b45a29ff",
+                    "label": "cyanHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.cyanHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.cyanHover)",
+                    "SimpleButton.callback": "() => this.buy(15)",
+                    "x": 553,
+                    "y": 484,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e3bd6b84-3d2a-44b6-ad72-09d6b884bcac",
+                    "label": "yellowHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.yellowHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.yellowHover)",
+                    "SimpleButton.callback": "() => this.buy(7)",
+                    "x": 552,
+                    "y": 599,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "dd96b5bd-2de7-4c72-b09e-c3d0b1b13636",
+                    "label": "whiteHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.whiteHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.whiteHover)",
+                    "SimpleButton.callback": "() => this.buy(16)",
+                    "x": 552,
+                    "y": 714,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a862829d-76ee-4d30-b2ce-c9b40a7d5373",
+                    "label": "blackHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.blackHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.blackHover)",
+                    "SimpleButton.callback": "() => this.buy(4)",
+                    "x": 299,
+                    "y": 714,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "55ed2299-4ea7-4ead-87fe-582c6e7e3972",
+                    "label": "darkGreenHover",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onColorOver(this.darkGreenHover)",
+                    "SimpleButton.hoverOutCallback": "() => this.onColorOut(this.darkGreenHover)",
+                    "SimpleButton.callback": "() => this.buy(11)",
+                    "x": 425,
+                    "y": 714,
+                    "lineWidth": 5,
+                    "width": 93,
+                    "height": 93
+                },
+                {
+                    "type": "Image",
+                    "id": "a2b9d71f-42d3-45cb-9ac8-45483d84bd6f",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "prevPage",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "prevPage"
+                    },
+                    "x": 139,
+                    "y": 729
+                },
+                {
+                    "type": "Image",
+                    "id": "4f9fe809-8abb-40ca-81e4-f3dc385a466e",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "nextPage",
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "nextPage"
+                    },
+                    "x": 1383,
+                    "y": 729
+                },
+                {
+                    "type": "Image",
+                    "id": "96f94ecf-aa4b-4b40-aa6b-4030efe4b76c",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "closebtn"
+                    },
+                    "x": 1441,
+                    "y": 37
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

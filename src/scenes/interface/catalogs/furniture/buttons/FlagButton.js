@@ -2,19 +2,18 @@ import {Button} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class UpgradeButton extends Phaser.GameObjects.Image {
+export default class FlagButton extends Phaser.GameObjects.Image {
     constructor(scene, x, y, texture, frame) {
-        super(scene, x ?? 0, y ?? 0, texture || 'iglooupgrade', frame ?? 'upgradebutton')
+        super(scene, x ?? 0, y ?? 0, texture || 'clothingcatalog', frame ?? 'flag')
 
         /** @type {number} */
-        this.igloo = 0
-
-        this.setOrigin(0, 0)
+        this.item = 0
 
         // this (components)
         const thisButton = new Button(this)
-        thisButton.spriteName = 'upgradebutton'
-        thisButton.callback = () => this.scene.buyIgloo(this.igloo)
+        thisButton.spriteName = 'flag'
+        thisButton.callback = () => this.scene.buy(this.item)
+        thisButton.activeFrame = false
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
