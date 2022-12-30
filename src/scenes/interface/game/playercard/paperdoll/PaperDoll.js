@@ -7,24 +7,26 @@ import TintedImage from '@engine/utils/tint/TintedImage'
 /* START OF COMPILED CODE */
 
 export default class PaperDoll extends BaseContainer {
+
     constructor(scene, x, y) {
-        super(scene, x ?? 760, y ?? 480)
+        super(scene, x ?? 760, y ?? 480);
 
         /** @type {Phaser.GameObjects.Image} */
-        this.paperdoll
+        this.paperdoll;
         /** @type {boolean} */
-        this.fadeIn = true
+        this.fadeIn = true;
+
 
         // paperdoll
-        const paperdoll = scene.add.image(0, 0, 'main', 'paperdoll/paperdoll')
-        this.add(paperdoll)
+        const paperdoll = scene.add.image(0, -7, "main", "paperdoll/paperdoll");
+        this.add(paperdoll);
 
-        this.paperdoll = paperdoll
+        this.paperdoll = paperdoll;
 
         /* START-USER-CTR-CODE */
 
         // Tinted body
-        this.body = new TintedImage(scene, 0, 0, 'main', 'paperdoll/body')
+        this.body = new TintedImage(scene, 0, -7, 'main', 'paperdoll/body')
         this.body.tint = this.crumbs.colors[0]
 
         scene.add.existing(this.body)
@@ -44,6 +46,7 @@ export default class PaperDoll extends BaseContainer {
 
         /* END-USER-CTR-CODE */
     }
+
 
     /* START-USER-CODE */
 

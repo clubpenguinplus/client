@@ -70,7 +70,8 @@
                     "components": [],
                     "x": 0,
                     "y": -7,
-                    "nestedPrefabs": []
+                    "nestedPrefabs": [],
+                    "list": []
                 },
                 {
                     "prefabId": "8808181a-7877-4aef-982e-f4ba2441da75",
@@ -86,7 +87,8 @@
                     "x": 0,
                     "y": 255,
                     "visible": false,
-                    "nestedPrefabs": []
+                    "nestedPrefabs": [],
+                    "list": []
                 },
                 {
                     "type": "Container",
@@ -230,7 +232,8 @@
                     "x": 434,
                     "y": 315,
                     "visible": false,
-                    "nestedPrefabs": []
+                    "nestedPrefabs": [],
+                    "list": []
                 },
                 {
                     "prefabId": "092e5111-82e2-4289-8f29-b8d9568e9497",
@@ -244,7 +247,8 @@
                     "components": [],
                     "x": -135,
                     "y": 33,
-                    "nestedPrefabs": []
+                    "nestedPrefabs": [],
+                    "list": []
                 },
                 {
                     "type": "Image",
