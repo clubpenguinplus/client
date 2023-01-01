@@ -70,7 +70,7 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "jan22clothing",
+                        "key": "constant",
                         "frame": "coin"
                     },
                     "x": 229,
@@ -330,38 +330,6 @@
                     "lineWidth": 5,
                     "width": 93,
                     "height": 93
-                },
-                {
-                    "type": "Image",
-                    "id": "a2b9d71f-42d3-45cb-9ac8-45483d84bd6f",
-                    "label": "prevPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "prevPage",
-                    "Button.callback": "() => this.prevPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "prevPage"
-                    },
-                    "x": 139,
-                    "y": 729
-                },
-                {
-                    "type": "Image",
-                    "id": "4f9fe809-8abb-40ca-81e4-f3dc385a466e",
-                    "label": "nextPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "nextPage",
-                    "Button.callback": "() => this.nextPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "nextPage"
-                    },
-                    "x": 1383,
-                    "y": 729
                 },
                 {
                     "type": "Image",

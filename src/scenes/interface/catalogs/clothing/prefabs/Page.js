@@ -6,7 +6,7 @@ export default class Page extends BaseContainer {
     }
 
     get releaseDate() {
-        return Date.now()
+        return this.scene.releaseDate || Date.now()
     }
 
     buy(item) {

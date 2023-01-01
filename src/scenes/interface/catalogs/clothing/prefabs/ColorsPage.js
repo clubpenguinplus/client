@@ -25,7 +25,7 @@ export default class ColorsPage extends Page {
         this.add(colorsPrice)
 
         // coinPng
-        const coinPng = scene.add.image(229, 140, 'jan22clothing', 'coin')
+        const coinPng = scene.add.image(229, 140, 'constant', 'coin')
         this.add(coinPng)
 
         // blueHover
@@ -102,14 +102,6 @@ export default class ColorsPage extends Page {
         const darkGreenHover = scene.add.ellipse(425, 714, 93, 93)
         darkGreenHover.lineWidth = 5
         this.add(darkGreenHover)
-
-        // prevPage
-        const prevPage = scene.add.image(139, 729, 'constant', 'prevPage')
-        this.add(prevPage)
-
-        // nextPage
-        const nextPage = scene.add.image(1383, 729, 'constant', 'nextPage')
-        this.add(nextPage)
 
         // closebtn
         const closebtn = scene.add.image(1441, 37, 'constant', 'closebtn')
@@ -204,16 +196,6 @@ export default class ColorsPage extends Page {
         darkGreenHoverSimpleButton.hoverCallback = () => this.onColorOver(this.darkGreenHover)
         darkGreenHoverSimpleButton.hoverOutCallback = () => this.onColorOut(this.darkGreenHover)
         darkGreenHoverSimpleButton.callback = () => this.buy(11)
-
-        // prevPage (components)
-        const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
-        prevPageButton.callback = () => this.prevPage()
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
-        nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)

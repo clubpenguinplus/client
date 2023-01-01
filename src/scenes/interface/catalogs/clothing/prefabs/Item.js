@@ -22,15 +22,14 @@ export default class Item extends BaseContainer {
         const btn = scene.add.image(0, 65, 'catalogs-master', 'buybtn')
         this.add(btn)
 
-        const price = scene.add.text(0, 65, '', {})
-        price.setStyle({fontFamily: 'Burbank Small', fontSize: '25px'})
+        const price = scene.add.text(-2, 65, '', {})
+        price.setStyle({fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold', color: '#4b2500ff'})
         price.setOrigin(0.5, 0.5)
         this.add(price)
 
         const btnButton = new Button(btn)
         btnButton.spriteName = 'buybtn'
         btnButton.callback = () => this.buy()
-        btnButton.activeFrame = false
 
         const pricetag = new Pricetag(price)
         pricetag.id = itemId

@@ -37,25 +37,47 @@ export default class ClothingCatalog extends Book {
         const pageContainer = this.add.container(0, 0)
 
         // buttons
-        const buttons = this.add.container(999, 798)
+        const buttons = this.add.container(0, 0)
         buttons.visible = false
 
         // coinholder
-        const coinholder = this.add.image(-115.478515625, 86.20628356933594, 'constant', 'coinholder')
+        const coinholder = this.add.image(883.5193256172128, 884.2068469602601, 'constant', 'coinholder')
         buttons.add(coinholder)
 
         // coins
-        const coins = this.add.text(-190.478515625, 56.20628356933594, '', {})
+        const coins = this.add.text(808.5193256172128, 854.2068469602601, '', {})
         coins.angle = -7
         coins.text = 'Your Coins:\n100000'
-        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
+        coins.setStyle({align: 'center', color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
         buttons.add(coins)
+
+        // prevPage
+        const prevPage = this.add.image(138, 729, 'constant', 'prevPage')
+        buttons.add(prevPage)
+
+        // nextPage
+        const nextPage = this.add.image(1382, 729, 'constant', 'nextPage')
+        buttons.add(nextPage)
 
         // lists
         const pages = []
 
         // blocker (components)
         new Interactive(blocker)
+
+        // prevPage (components)
+        const prevPageButton = new Button(prevPage)
+        prevPageButton.spriteName = 'prevPage'
+        prevPageButton.callback = () => this.prevPage()
+        prevPageButton.activeFrame = false
+        prevPageButton.pixelPerfect = true
+
+        // nextPage (components)
+        const nextPageButton = new Button(nextPage)
+        nextPageButton.spriteName = 'nextPage'
+        nextPageButton.callback = () => this.nextPage()
+        nextPageButton.activeFrame = false
+        nextPageButton.pixelPerfect = true
 
         this.blocker = blocker
         this.pageContainer = pageContainer
@@ -87,32 +109,22 @@ export default class ClothingCatalog extends Book {
 
     loadFromJSON(json) {
         json = {
-            releaseDate: Date.now(),
-            frontPenguin: 'penguin1',
+            releaseDate: '1970-01-01',
+            frontPenguin: 'pink-starlight-springtime',
             backgrounds: [901, 902, 903, 904, 905, 906, 907, 908],
             new: [
-                {background: 1, leftItems: [101], rightItems: [102, 103]},
-                {background: 2, leftItems: [104, 105, 106], rightItems: [107, 108, 109, 110]},
+                //{background: 1, leftItems: [101], rightItems: [102]},
             ],
-            party: [
-                {background: 3, leftItems: [1806, 1807, 1808, 1809, 1810], rightItems: [1811, 1812, 1813, 1814, 1815, 1816]},
-                {background: 4, leftItems: [1817, 1818, 1819, 1820, 1821, 1822, 1823], rightItems: [4503, 4504, 4505, 4506, 4507, 4508, 4509, 4510, 4511, 4512, 4513]},
-            ],
-            returning: [
-                {background: 5, leftItems: [4321, 4322, 4323, 4324, 4325, 4326, 4327, 4328, 4329], rightItems: [4493, 4494, 4495, 4496, 4497, 4498, 4499, 4500, 4501, 4502]},
-                {background: 6, leftItems: [1824, 1825, 1826, 1827, 1828, 1829, 1830, 1831], rightItems: [5300, 5301, 5302, 5303, 5304, 5305, 5306, 5307, 5308, 5309, 5310, 5311]},
-            ],
-            lastChance: [
-                {background: 7, leftItems: [1, 2, 3], rightItems: [4, 5, 6]},
-                {background: 8, leftItems: [7, 8, 9], rightItems: [10, 11, 12]},
-            ],
+            party: [],
+            returning: [],
+            lastChance: [],
         }
 
         this.releaseDate = new Date(json.releaseDate)
         this.pages = []
 
         this[`page${this.pages.length}`] = new FrontPage(this, 0, 0)
-        //this[`page${this.pages.length}`].loadPenguin(json.frontPenguin)
+        this[`page${this.pages.length}`].loadPenguin(json.frontPenguin)
         this.pages.push(this[`page${this.pages.length}`])
 
         this[`page${this.pages.length}`] = new ColorsPage(this, 0, 0)
@@ -127,19 +139,19 @@ export default class ClothingCatalog extends Book {
 
         json.new.forEach((item) => {
             this[`page${this.pages.length}`] = new ItemsPage(this, 0, 0)
-            this[`page${this.pages.length}`].loadFromJSON(item)
+            this[`page${this.pages.length}`].loadFromJSON(item, 'new')
             this.pages.push(this[`page${this.pages.length}`])
         })
 
         json.party.forEach((item) => {
             this[`page${this.pages.length}`] = new ItemsPage(this, 0, 0)
-            this[`page${this.pages.length}`].loadFromJSON(item)
+            this[`page${this.pages.length}`].loadFromJSON(item, 'party')
             this.pages.push(this[`page${this.pages.length}`])
         })
 
         json.returning.forEach((item) => {
             this[`page${this.pages.length}`] = new ItemsPage(this, 0, 0)
-            this[`page${this.pages.length}`].loadFromJSON(item)
+            this[`page${this.pages.length}`].loadFromJSON(item, 'returning')
             this.pages.push(this[`page${this.pages.length}`])
         })
 
@@ -148,7 +160,7 @@ export default class ClothingCatalog extends Book {
 
         json.lastChance.forEach((page) => {
             this[`page${this.pages.length}`] = new ItemsPage(this, 0, 0)
-            this[`page${this.pages.length}`].loadFromJSON(page)
+            this[`page${this.pages.length}`].loadFromJSON(page, 'lastChance')
             this.pages.push(this[`page${this.pages.length}`])
         })
 

@@ -30,7 +30,7 @@
                         "frame": "clothingPage0001"
                     },
                     "x": 760,
-                    "y": 453
+                    "y": 455.5
                 },
                 {
                     "type": "Text",
@@ -42,44 +42,12 @@
                     "y": 79,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "New items this month",
+                    "text": "Clothing items for everyone",
                     "fixedWidth": 270,
                     "fontFamily": "Burbank Small",
                     "fontSize": "25px",
                     "fontStyle": "bold italic",
                     "wordWrapWidth": 270
-                },
-                {
-                    "type": "Image",
-                    "id": "7d885a1c-11d1-4b5f-be6f-55a683fefcc2",
-                    "label": "prevPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "prevPage",
-                    "Button.callback": "() => this.prevPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "prevPage"
-                    },
-                    "x": 139,
-                    "y": 729
-                },
-                {
-                    "type": "Image",
-                    "id": "07c7201d-8dba-40dc-9f7d-99c6d941d7f6",
-                    "label": "nextPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "nextPage",
-                    "Button.callback": "() => this.nextPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "nextPage"
-                    },
-                    "x": 1383,
-                    "y": 729
                 },
                 {
                     "type": "Image",

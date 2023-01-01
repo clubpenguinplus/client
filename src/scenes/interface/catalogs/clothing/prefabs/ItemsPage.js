@@ -9,38 +9,20 @@ export default class ItemsPage extends Page {
         super(scene, x ?? 0, y ?? 0)
 
         // background
-        const background = scene.add.image(760, 453, 'constant', 'clothingPage0001')
+        const background = scene.add.image(760, 455.5, 'constant', 'clothingPage0001')
         this.add(background)
 
         // header
         const header = scene.add.text(227, 79, '', {})
         header.setOrigin(0.5, 0.5)
-        header.text = 'New items this month'
+        header.text = 'Clothing items for everyone'
         header.setStyle({fixedWidth: 270, fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold italic'})
         header.setWordWrapWidth(270)
         this.add(header)
 
-        // prevPage
-        const prevPage = scene.add.image(139, 729, 'constant', 'prevPage')
-        this.add(prevPage)
-
-        // nextPage
-        const nextPage = scene.add.image(1383, 729, 'constant', 'nextPage')
-        this.add(nextPage)
-
         // closebtn
         const closebtn = scene.add.image(1441, 37, 'constant', 'closebtn')
         this.add(closebtn)
-
-        // prevPage (components)
-        const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
-        prevPageButton.callback = () => this.prevPage()
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
-        nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)
@@ -61,7 +43,7 @@ export default class ItemsPage extends Page {
 
     /* START-USER-CODE */
 
-    loadFromJSON(json) {
+    loadFromJSON(json, pageType) {
         this.background.setFrame(`clothingPage${this.fourDigits(json.background)}`)
 
         const leftPostitions = this.calculateLeftPositions(json.leftItems.length)
@@ -79,6 +61,11 @@ export default class ItemsPage extends Page {
             itemObject.y = rightPostitions[index].y
             this.add(itemObject)
         })
+
+        this.bringToTop(this.prevPageBtn)
+        this.bringToTop(this.nextPageBtn)
+
+        this.header.text = this.scene.crumbs.getString(`clothing-${pageType}-header`)
     }
 
     fourDigits(number) {
@@ -95,60 +82,7 @@ export default class ItemsPage extends Page {
         const minWidth = 84
         const maxWidth = 752
 
-        let maxColumns, maxRows
-
-        if (itemsCount <= 3) {
-            maxColumns = 1
-            maxRows = 3
-        } else if (itemsCount <= 6) {
-            maxColumns = 2
-            maxRows = 3
-        } else if (itemsCount <= 9) {
-            maxColumns = 3
-            maxRows = 3
-        }
-
-        const scolumns = Math.min(itemsCount, maxColumns)
-        let columns = scolumns
-        let rows = Math.min(Math.ceil(itemsCount / columns), maxRows)
-
-        let positions = []
-
-        while (itemsCount > 0) {
-            const row = Math.floor(positions.length / scolumns) + 1
-            const column = (positions.length % columns) + 1
-
-            if (column + itemsCount - 1 < columns) {
-                columns = column + itemsCount - 1
-            }
-
-            let x = ((maxWidth - minWidth) / (columns + 1)) * column + minWidth
-
-            let y = ((maxHeight - minHeight) / (rows + 1)) * row + minHeight
-
-            switch (rows) {
-                case 2:
-                    y += 60 * row - 90
-                    break
-                case 3:
-                    y += 45 * row - 90
-                    break
-            }
-
-            switch (columns) {
-                case 2:
-                    x += 35 * column - 52.5
-                    break
-                case 3:
-                    x += 35 * column - 70
-                    break
-            }
-
-            positions.push({x, y})
-            itemsCount--
-        }
-
-        return positions
+        return this.calculatePosition(itemsCount, minHeight, maxHeight, minWidth, maxWidth)
     }
 
     calculateRightPositions(itemsCount) {
@@ -157,6 +91,10 @@ export default class ItemsPage extends Page {
         const minWidth = 774
         const maxWidth = 1438
 
+        return this.calculatePosition(itemsCount, minHeight, maxHeight, minWidth, maxWidth)
+    }
+
+    calculatePosition(itemsCount, minHeight, maxHeight, minWidth, maxWidth) {
         let maxColumns, maxRows
 
         if (itemsCount <= 3) {
