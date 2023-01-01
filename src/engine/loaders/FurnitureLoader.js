@@ -12,6 +12,7 @@ export default class FurnitureLoader extends BaseLoader {
     }
 
     loadFurniture(item, crate = null, x, y, rotation = 1, frame = 1, context = null) {
+        if (!item) return
         let key = this.getKey(item)
 
         if (

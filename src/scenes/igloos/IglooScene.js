@@ -101,7 +101,6 @@ export default class IglooScene extends RoomScene {
 
     create() {
         if (this.id == this.shell.client.id) {
-            this.addCrates()
             this.interface.showIglooEdit()
         }
 

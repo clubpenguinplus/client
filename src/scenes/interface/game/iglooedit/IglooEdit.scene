@@ -3,8 +3,9 @@
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
-        "snapWidth": 1000,
-        "snapHeight": 1000,
+        "snapEnabled": true,
+        "snapWidth": 1,
+        "snapHeight": 1,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "superClassName": "BaseScene",
@@ -232,6 +233,26 @@
                     },
                     "x": 777.9985859979596,
                     "y": 72.00169873052651
+                },
+                {
+                    "type": "Container",
+                    "id": "b83fd3d4-e0d7-4ee1-b6c1-f931d2f2e4e6",
+                    "label": "itemContainer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": []
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ba1f32de-a3cd-4496-be5e-9f159e23d5c8",
+                    "label": "rectangle_1",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "x": 1462,
+                    "y": 92,
+                    "width": 115.5,
+                    "height": 170
                 },
                 {
                     "type": "Image",

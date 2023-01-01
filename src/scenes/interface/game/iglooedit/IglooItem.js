@@ -77,8 +77,9 @@ export default class IglooItem extends Phaser.GameObjects.Container {
     }
 
     addItem(type, id, quantity) {
+        const trueQuantity = quantity
         quantity = this.calculateQuantity(type, id, quantity)
-        this.item = {type, id, quantity}
+        this.item = {type, id, quantity, trueQuantity}
 
         this.icon = this.scene.add.image(0, 0, `furniture/icon/${type}/${id}`)
         switch (type) {
@@ -94,15 +95,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
         }
         this.add(this.icon)
 
-        if (parseInt(quantity) > 1) {
-            this.quantityText.visible = true
-            this.quantity.visible = true
-            this.quantityText.text = quantity
-        } else {
-            this.quantityText.visible = false
-            this.quantity.visible = false
-            if (parseInt(quantity) < 1) this.cover.visible = true
-        }
+        this.updateQuantity()
 
         this.bringToTop(this.quantity)
         this.bringToTop(this.quantityText)
@@ -120,6 +113,24 @@ export default class IglooItem extends Phaser.GameObjects.Container {
             }
         }
         return quantity
+    }
+
+    updateQuantity() {
+        this.item.quantity = this.calculateQuantity(this.item.type, this.item.id, this.item.trueQuantity)
+        if (parseInt(this.item.quantity) > 1) {
+            this.quantityText.visible = true
+            this.quantity.visible = true
+            this.quantityText.text = this.item.quantity
+            this.cover.visible = false
+        } else {
+            this.quantityText.visible = false
+            this.quantity.visible = false
+            if (parseInt(this.item.quantity) < 1) {
+                this.cover.visible = true
+            } else {
+                this.cover.visible = false
+            }
+        }
     }
 
     onOver() {

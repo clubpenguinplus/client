@@ -14,12 +14,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         // Physics body that the furniture is allowed inside
         this.safeArea = this.isWall ? scene['wall'] : scene['room']
 
-        //this.validatePos()
         this.depth = this.y - 1 // - 1 to appear behind explosion
-
-        // Last safe position
-        this.safeX = this.x
-        this.safeY = this.y
 
         // Offsets based on original center vs pointer position at start of drag
         this.offsetX = 0
@@ -47,11 +42,20 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         }
         this.updateFrame(1, frame, true)
 
+        if (this.scene.isPreview) return
+
         // Set input
         this.setInteractive({draggable: true, pixelPerfect: true})
         this.on('dragend', () => this.drop())
         // Input disabled initially if not editing
-        if (!this.editing) this.disableInteractive()
+        if (!this.editing) {
+            this.disableInteractive()
+            this.validatePos()
+        }
+
+        // Last safe position
+        this.safeX = this.x
+        this.safeY = this.y
 
         if (crate) crate.drop(this)
     }
@@ -82,6 +86,12 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
     get isTrash() {
         if (this.scene.trash) {
             return this.scene.matter.containsPoint(this.scene.trash, this.x, this.y) || this.x < 0 || this.x > 1520 || this.y < 0 || this.y > 960
+        }
+    }
+
+    isSafePos(x, y) {
+        if (this.safeArea) {
+            return this.scene.matter.containsPoint(this.safeArea, x, y)
         }
     }
 
@@ -151,9 +161,15 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         this.scene.setSelected()
 
         if (!this.isSafe) {
+            if (this.isTrash) return this.sendToTrash()
+            if (!this.isSafePos(this.safeX, this.safeY)) {
+                this.sendToTrash()
+            }
+
             // Return to safe position
             this.x = this.safeX
             this.y = this.safeY
+
             this.depth = this.y
             this.alpha = 1
         }
@@ -205,6 +221,38 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         } else {
             this.alpha = 1
         }
+
+        if (this.isTrash) {
+            this.tint = 0xff2020
+            this.iglooEdit.button_box.setFrame('cardboardbox-hover')
+        } else {
+            this.tint = 0xffffff
+            this.iglooEdit.button_box.setFrame('cardboardbox')
+        }
+    }
+
+    sendToTrash() {
+        this.trashed = true
+
+        this.iglooEdit.button_box.setFrame('cardboardbox')
+
+        this.scene.tweens.add({
+            targets: this,
+            duration: 600,
+            x: 1425,
+            y: 883,
+            scale: 0.5,
+            ease: this.easeOutBack,
+            onComplete: () => this.onTrashComplete(),
+        })
+    }
+
+    onTrashComplete() {
+        const scene = this.scene
+        if (this.active) {
+            this.destroy()
+        }
+        scene.interface.iglooEdit.updateQuantities()
     }
 
     easeOutBack(value) {

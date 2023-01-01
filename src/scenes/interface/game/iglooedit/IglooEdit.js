@@ -21,6 +21,8 @@ export default class IglooEdit extends BaseScene {
         this.controls
         /** @type {Phaser.GameObjects.Image} */
         this.button_box
+        /** @type {Phaser.GameObjects.Container} */
+        this.itemContainer
         /** @type {Phaser.GameObjects.Text} */
         this.music
         /** @type {Phaser.GameObjects.Text} */
@@ -97,6 +99,14 @@ export default class IglooEdit extends BaseScene {
         // top_bar
         const top_bar = this.add.image(777.9985859979596, 72.00169873052651, 'iglooedit-new', 'top-bar')
         controls.add(top_bar)
+
+        // itemContainer
+        const itemContainer = this.add.container(0, 0)
+        controls.add(itemContainer)
+
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(1462, 92, 115.5, 170)
+        controls.add(rectangle_1)
 
         // close_btn
         const close_btn = this.add.image(1466.9985859979595, 48.00169873052651, 'iglooedit-new', 'close-btn')
@@ -391,6 +401,9 @@ export default class IglooEdit extends BaseScene {
         // top_bar (components)
         new Interactive(top_bar)
 
+        // rectangle_1 (components)
+        new Interactive(rectangle_1)
+
         // close_btn (components)
         const close_btnButton = new Button(close_btn)
         close_btnButton.spriteName = 'close-btn'
@@ -421,6 +434,7 @@ export default class IglooEdit extends BaseScene {
         this.button_backyard = button_backyard
         this.controls = controls
         this.button_box = button_box
+        this.itemContainer = itemContainer
         this.music = music
         this.hide = hide
         this.chooseIgloo = chooseIgloo
@@ -475,6 +489,13 @@ export default class IglooEdit extends BaseScene {
         previewMask4.beginPath()
         previewMask4.fillRoundedRect(1120 * window.currentScale, 627 * window.currentScale, 297 * window.currentScale, 187 * window.currentScale, 17 * window.currentScale)
         this.previewMask4 = previewMask4.createGeometryMask()
+
+        let itemsMask = this.add.graphics()
+        itemsMask.fillStyle(0xffffff, 0)
+        itemsMask.beginPath()
+        itemsMask.fillRect(0, 0, 1404.5 * window.currentScale, 182.5 * window.currentScale)
+        this.itemsMask = itemsMask.createGeometryMask()
+        this.itemContainer.setMask(this.itemsMask)
     }
 
     onSleep() {
@@ -709,10 +730,16 @@ export default class IglooEdit extends BaseScene {
 
         for (let item of items) {
             let sprite = new IglooItem(this, xcoord, 85)
-            this.controls.add(sprite)
+            this.itemContainer.add(sprite)
             this.items.push(sprite)
             sprite.setItem(item.type, item.id, item.quantity)
             xcoord += 120
+        }
+    }
+
+    updateQuantities() {
+        for (let item of this.items) {
+            item.updateQuantity()
         }
     }
 

@@ -82,8 +82,17 @@ export default class Shell extends BaseScene {
             return this.createIgloo(args)
         }
 
-        this.room.events.once('shutdown', () => this.createIgloo(args))
-        this.room.stop()
+        if (!this.room.isIgloo) {
+            this.room.events.once('shutdown', () => this.createIgloo(args))
+            this.room.stop()
+        } else {
+            this.room.events.once('shutdown', () => {
+                this.createRoom(100, [])
+                this.room.events.once('shutdown', () => this.createIgloo(args))
+                this.room.events.once('create', () => this.room.stop())
+            })
+            this.room.stop()
+        }
     }
 
     createIgloo(args) {
