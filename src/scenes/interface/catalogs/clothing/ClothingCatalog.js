@@ -91,16 +91,16 @@ export default class ClothingCatalog extends Book {
             frontPenguin: 'penguin1',
             backgrounds: [901, 902, 903, 904, 905, 906, 907, 908],
             new: [
-                {background: 1, leftItems: [101, 102, 103], rightItems: [104, 105, 106]},
-                {background: 2, leftItems: [107, 108, 109], rightItems: [110, 111, 112]},
+                {background: 1, leftItems: [101], rightItems: [102, 103]},
+                {background: 2, leftItems: [104, 105, 106], rightItems: [107, 108, 109, 110]},
             ],
             party: [
-                {background: 3, leftItems: [1, 2, 3], rightItems: [4, 5, 6]},
-                {background: 4, leftItems: [7, 8, 9], rightItems: [10, 11, 12]},
+                {background: 3, leftItems: [1806, 1807, 1808, 1809, 1810], rightItems: [1811, 1812, 1813, 1814, 1815, 1816]},
+                {background: 4, leftItems: [1817, 1818, 1819, 1820, 1821, 1822, 1823], rightItems: [4503, 4504, 4505, 4506, 4507, 4508, 4509, 4510, 4511, 4512, 4513]},
             ],
             returning: [
-                {background: 5, leftItems: [1, 2, 3], rightItems: [4, 5, 6]},
-                {background: 6, leftItems: [7, 8, 9], rightItems: [10, 11, 12]},
+                {background: 5, leftItems: [4321, 4322, 4323, 4324, 4325, 4326, 4327, 4328, 4329], rightItems: [4493, 4494, 4495, 4496, 4497, 4498, 4499, 4500, 4501, 4502]},
+                {background: 6, leftItems: [1824, 1825, 1826, 1827, 1828, 1829, 1830, 1831], rightItems: [5300, 5301, 5302, 5303, 5304, 5305, 5306, 5307, 5308, 5309, 5310, 5311]},
             ],
             lastChance: [
                 {background: 7, leftItems: [1, 2, 3], rightItems: [4, 5, 6]},

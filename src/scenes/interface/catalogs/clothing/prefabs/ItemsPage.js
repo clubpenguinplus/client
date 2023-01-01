@@ -63,16 +63,20 @@ export default class ItemsPage extends Page {
 
     loadFromJSON(json) {
         this.background.setFrame(`clothingPage${this.fourDigits(json.background)}`)
+
+        const leftPostitions = this.calculateLeftPositions(json.leftItems.length)
         json.leftItems.forEach((item, index) => {
             const itemObject = new Item(this.scene, 0, 0, item)
-            itemObject.x = 190 + 300 * index
-            itemObject.y = 200
+            itemObject.x = leftPostitions[index].x
+            itemObject.y = leftPostitions[index].y
             this.add(itemObject)
         })
+
+        const rightPostitions = this.calculateRightPositions(json.rightItems.length)
         json.rightItems.forEach((item, index) => {
             const itemObject = new Item(this.scene, 0, 0, item)
-            itemObject.x = 190 + 300 * index
-            itemObject.y = 500
+            itemObject.x = rightPostitions[index].x
+            itemObject.y = rightPostitions[index].y
             this.add(itemObject)
         })
     }
@@ -83,6 +87,130 @@ export default class ItemsPage extends Page {
             number = '0' + number
         }
         return number
+    }
+
+    calculateLeftPositions(itemsCount) {
+        const minHeight = 124
+        const maxHeight = 824
+        const minWidth = 84
+        const maxWidth = 752
+
+        let maxColumns, maxRows
+
+        if (itemsCount <= 3) {
+            maxColumns = 1
+            maxRows = 3
+        } else if (itemsCount <= 6) {
+            maxColumns = 2
+            maxRows = 3
+        } else if (itemsCount <= 9) {
+            maxColumns = 3
+            maxRows = 3
+        }
+
+        const scolumns = Math.min(itemsCount, maxColumns)
+        let columns = scolumns
+        let rows = Math.min(Math.ceil(itemsCount / columns), maxRows)
+
+        let positions = []
+
+        while (itemsCount > 0) {
+            const row = Math.floor(positions.length / scolumns) + 1
+            const column = (positions.length % columns) + 1
+
+            if (column + itemsCount - 1 < columns) {
+                columns = column + itemsCount - 1
+            }
+
+            let x = ((maxWidth - minWidth) / (columns + 1)) * column + minWidth
+
+            let y = ((maxHeight - minHeight) / (rows + 1)) * row + minHeight
+
+            switch (rows) {
+                case 2:
+                    y += 60 * row - 90
+                    break
+                case 3:
+                    y += 45 * row - 90
+                    break
+            }
+
+            switch (columns) {
+                case 2:
+                    x += 35 * column - 52.5
+                    break
+                case 3:
+                    x += 35 * column - 70
+                    break
+            }
+
+            positions.push({x, y})
+            itemsCount--
+        }
+
+        return positions
+    }
+
+    calculateRightPositions(itemsCount) {
+        const minHeight = 35
+        const maxHeight = 824
+        const minWidth = 774
+        const maxWidth = 1438
+
+        let maxColumns, maxRows
+
+        if (itemsCount <= 3) {
+            maxColumns = 1
+            maxRows = 3
+        } else if (itemsCount <= 6) {
+            maxColumns = 2
+            maxRows = 3
+        } else if (itemsCount <= 9) {
+            maxColumns = 3
+            maxRows = 3
+        }
+
+        const scolumns = Math.min(itemsCount, maxColumns)
+        let columns = scolumns
+        let rows = Math.min(Math.ceil(itemsCount / columns), maxRows)
+
+        let positions = []
+
+        while (itemsCount > 0) {
+            const row = Math.floor(positions.length / scolumns) + 1
+            const column = (positions.length % columns) + 1
+
+            if (column + itemsCount - 1 < columns) {
+                columns = column + itemsCount - 1
+            }
+
+            let x = ((maxWidth - minWidth) / (columns + 1)) * column + minWidth
+
+            let y = ((maxHeight - minHeight) / (rows + 1)) * row + minHeight
+
+            switch (rows) {
+                case 2:
+                    y += 60 * row - 90
+                    break
+                case 3:
+                    y += 45 * row - 90
+                    break
+            }
+
+            switch (columns) {
+                case 2:
+                    x += 35 * column - 52.5
+                    break
+                case 3:
+                    x += 35 * column - 70
+                    break
+            }
+
+            positions.push({x, y})
+            itemsCount--
+        }
+
+        return positions
     }
 
     /* END-USER-CODE */
