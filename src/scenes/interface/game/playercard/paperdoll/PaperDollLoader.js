@@ -195,7 +195,7 @@ export default class PaperDollLoader {
     }
 
     onPaperClick(slot) {
-        this.scene.network.send('remove_item', {type: slot})
+        this.scene.airtower.sendXt('s#upr', slot)
     }
 
     removeItem(slot) {

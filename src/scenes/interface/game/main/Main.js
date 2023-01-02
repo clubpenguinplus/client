@@ -528,7 +528,7 @@ export default class Main extends BaseScene {
         // chatInput (components)
         const chatInputInputText = new InputText(chatInput)
         chatInputInputText.charlimit = 30
-        chatInputInputText.inputfilter = /^[A-Z ]*$/i
+        chatInputInputText.inputfilter = /^[A-Z !?.,:;0-9]*$/i
         chatInputInputText.entercallback = () => this.onChatSend()
 
         // puffle_button (components)

@@ -12,6 +12,8 @@ export default class ClientPenguin extends Penguin {
         this.save = this.savedPenguins[this.username.toLowerCase()]
 
         penguinLoader.addRing(this)
+
+        this.shell.client.penguin = this
     }
 
     update(item, slot) {

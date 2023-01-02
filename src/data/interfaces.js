@@ -20,6 +20,7 @@ const interfaces = {
     Cavenote: require('@scenes/interface/closeups/Cavenote').default,
     IglooLikesWidget: require('@scenes/interface/game/likeswidget/IglooLikesWidget').default,
     Telescope: require('@scenes/interface/closeups/Telescope').default,
+    Intro: require('@scenes/interface/closeups/Intro').default,
 }
 
 export default interfaces
