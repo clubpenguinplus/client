@@ -160,10 +160,11 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
 
         this.scene.setSelected()
 
+        if (this.isTrash) return this.sendToTrash()
+
         if (!this.isSafe) {
-            if (this.isTrash) return this.sendToTrash()
             if (!this.isSafePos(this.safeX, this.safeY)) {
-                this.sendToTrash()
+                return this.sendToTrash()
             }
 
             // Return to safe position
