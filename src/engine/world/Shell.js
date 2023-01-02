@@ -205,7 +205,7 @@ export default class Shell extends BaseScene {
         let username, realUsername
         if (ua != 1) {
             username = 'P' + id
-            realUsername = isClient || this.client.penguin.rank > 2 ? `${stringArray[1]}` : 'Unknown'
+            realUsername = isClient || this.client.rank > 2 ? `${stringArray[1]}` : 'Unknown'
         } else {
             username = stringArray[1]
             realUsername = stringArray[1]

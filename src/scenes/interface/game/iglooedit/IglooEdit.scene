@@ -102,283 +102,6 @@
                     "originY": 0.584
                 },
                 {
-                    "type": "Image",
-                    "id": "10bc818a-c70f-4081-945a-60211c80aed7",
-                    "label": "music_panel",
-                    "components": [
-                        "Interactive"
-                    ],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "music-panel"
-                    },
-                    "x": 56.99858599795955,
-                    "y": 25.001698730526513
-                },
-                {
-                    "type": "Image",
-                    "id": "aa0e11f4-f6b6-4c5d-b2aa-b3b0ce255d00",
-                    "label": "all",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(0)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "all-selected"
-                    },
-                    "x": 659.9985859979596,
-                    "y": 215.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "343bc315-2de5-4c57-a3c1-3000b7212c25",
-                    "label": "location",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(1)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "location"
-                    },
-                    "x": 774.9985859979596,
-                    "y": 216.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "4b798c9d-dac5-4405-ae39-9e15b08e6b9c",
-                    "label": "igloos",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(2)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "igloos"
-                    },
-                    "x": 889.9985859979596,
-                    "y": 216.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "2ded3721-74c6-4620-bce2-d6855cc77886",
-                    "label": "flooring",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(3)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "flooring"
-                    },
-                    "x": 1004.9985859979596,
-                    "y": 216.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "f66d2822-89e9-4c71-8898-0cfd3ce6916d",
-                    "label": "room",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(4)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "room"
-                    },
-                    "x": 1119.9985859979595,
-                    "y": 216.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "f2d8c54d-b9d8-4f22-aab3-b9f4243653db",
-                    "label": "wall",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(5)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "wall"
-                    },
-                    "x": 1234.9985859979595,
-                    "y": 216.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "b4cb5805-2580-428c-8682-3fe6f7a56a22",
-                    "label": "pets",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.selectCategory(6)",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "pets"
-                    },
-                    "x": 1349.9985859979595,
-                    "y": 216.00169873052653
-                },
-                {
-                    "type": "Image",
-                    "id": "8b5ed828-be6b-4e74-9adc-142ceb706a3b",
-                    "label": "top_bar",
-                    "components": [
-                        "Interactive"
-                    ],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "top-bar"
-                    },
-                    "x": 777.9985859979596,
-                    "y": 72.00169873052651
-                },
-                {
-                    "type": "Container",
-                    "id": "b83fd3d4-e0d7-4ee1-b6c1-f931d2f2e4e6",
-                    "label": "itemContainer",
-                    "scope": "CLASS",
-                    "components": [],
-                    "list": []
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "ba1f32de-a3cd-4496-be5e-9f159e23d5c8",
-                    "label": "rectangle_1",
-                    "components": [
-                        "Interactive"
-                    ],
-                    "x": 1462,
-                    "y": 92,
-                    "width": 115.5,
-                    "height": 170
-                },
-                {
-                    "type": "Image",
-                    "id": "9d147340-cf7c-44b2-9be1-73899ee60fd9",
-                    "label": "close_btn",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "close-btn",
-                    "Button.callback": "() => this.onSaveClick()",
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "close-btn"
-                    },
-                    "x": 1466.9985859979595,
-                    "y": 48.00169873052651
-                },
-                {
-                    "type": "Image",
-                    "id": "952b33e3-6e64-46d8-a747-4815f93e25e5",
-                    "label": "x",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "x"
-                    },
-                    "x": 1466.9985859979595,
-                    "y": 47.00169873052651
-                },
-                {
-                    "type": "NinePatchContainer",
-                    "id": "eff788c7-fbe9-4749-9459-7cdfd8b0fde9",
-                    "label": "big_button",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "big-button"
-                    },
-                    "x": 91.99858599795955,
-                    "y": 271.0016987305264,
-                    "width": 80,
-                    "height": 65
-                },
-                {
-                    "type": "Image",
-                    "id": "5a3fc350-450e-4bc6-b65a-2e11832a32d8",
-                    "label": "music_icon",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "music-icon"
-                    },
-                    "x": 90.99858599795955,
-                    "y": 271.0016987305264
-                },
-                {
-                    "type": "Image",
-                    "id": "d710eb57-e424-478d-854b-516ad4763f01",
-                    "label": "arrow",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "arrow"
-                    },
-                    "x": 163.99858599795957,
-                    "y": 272.0016987305264
-                },
-                {
-                    "type": "NinePatchContainer",
-                    "id": "82cd793e-1c1b-4100-91a1-356ee5e419d8",
-                    "label": "small_btn",
-                    "components": [],
-                    "texture": {
-                        "key": "iglooedit-new",
-                        "frame": "small-btn"
-                    },
-                    "x": 106.99858599795955,
-                    "y": 353.0016987305264,
-                    "width": 150,
-                    "height": 42,
-                    "marginLeft": 30,
-                    "marginRight": 30
-                },
-                {
-                    "type": "Text",
-                    "id": "7fb482c5-a33a-495a-b5cc-a2b4265a67f4",
-                    "label": "music",
-                    "scope": "CLASS",
-                    "components": [
-                        "LocalisedString"
-                    ],
-                    "LocalisedString.id": "music",
-                    "x": 91.99858599795955,
-                    "y": 225.00169873052653,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Music",
-                    "fixedWidth": 150,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "22px",
-                    "fontStyle": "bold",
-                    "color": "#3e83c5ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "74341179-abc6-463d-a36a-fd6bc18fb7ba",
-                    "label": "hide",
-                    "scope": "CLASS",
-                    "components": [
-                        "LocalisedString"
-                    ],
-                    "LocalisedString.id": "hide",
-                    "x": 106.99858599795955,
-                    "y": 353.0016987305264,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Hide",
-                    "fixedWidth": 150,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "22px",
-                    "fontStyle": "bold",
-                    "color": "#3e83c5ff"
-                },
-                {
                     "prefabId": "d6cf4a9b-bcc7-4de0-bd9b-d33346f4fd2b",
                     "id": "4668eefa-869b-44f9-b5c8-824002752f00",
                     "unlock": [
@@ -393,6 +116,308 @@
                     "visible": false,
                     "nestedPrefabs": [],
                     "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "f87fe909-6788-4d95-b32a-daa67900853f",
+                    "label": "lower",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 56.99858594592661,
+                    "y": 25.001698585925624,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "10bc818a-c70f-4081-945a-60211c80aed7",
+                            "label": "music_panel",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "music-panel"
+                            }
+                        },
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "eff788c7-fbe9-4749-9459-7cdfd8b0fde9",
+                            "label": "big_button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "big-button",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "big-button"
+                            },
+                            "x": 35,
+                            "y": 246,
+                            "width": 80,
+                            "height": 65
+                        },
+                        {
+                            "type": "Image",
+                            "id": "5a3fc350-450e-4bc6-b65a-2e11832a32d8",
+                            "label": "music_icon",
+                            "components": [],
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "music-icon"
+                            },
+                            "x": 34,
+                            "y": 246
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d710eb57-e424-478d-854b-516ad4763f01",
+                            "label": "arrow",
+                            "components": [],
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "arrow"
+                            },
+                            "x": 107,
+                            "y": 247
+                        },
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "82cd793e-1c1b-4100-91a1-356ee5e419d8",
+                            "label": "small_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "small-btn",
+                            "Button.callback": "() => this.tweenControls()",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "small-btn"
+                            },
+                            "x": 50,
+                            "y": 328,
+                            "width": 150,
+                            "height": 42,
+                            "marginLeft": 30,
+                            "marginRight": 30
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7fb482c5-a33a-495a-b5cc-a2b4265a67f4",
+                            "label": "music",
+                            "scope": "CLASS",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "music",
+                            "x": 35,
+                            "y": 200,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Music",
+                            "fixedWidth": 150,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "22px",
+                            "fontStyle": "bold",
+                            "color": "#3e83c5ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "74341179-abc6-463d-a36a-fd6bc18fb7ba",
+                            "label": "hide",
+                            "scope": "CLASS",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "hide",
+                            "x": 50,
+                            "y": 328,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Hide",
+                            "fixedWidth": 150,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "22px",
+                            "fontStyle": "bold",
+                            "color": "#3e83c5ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "6bde4756-8a56-41e5-b3af-974cc9c6e04e",
+                    "label": "upper",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "aa0e11f4-f6b6-4c5d-b2aa-b3b0ce255d00",
+                            "label": "all",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(0)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "all-selected"
+                            },
+                            "x": 659.9985859459266,
+                            "y": 215.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "343bc315-2de5-4c57-a3c1-3000b7212c25",
+                            "label": "location",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(1)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "location"
+                            },
+                            "x": 774.9985859459266,
+                            "y": 216.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4b798c9d-dac5-4405-ae39-9e15b08e6b9c",
+                            "label": "igloos",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(2)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "igloos"
+                            },
+                            "x": 889.9985859459266,
+                            "y": 216.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "2ded3721-74c6-4620-bce2-d6855cc77886",
+                            "label": "flooring",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(3)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "flooring"
+                            },
+                            "x": 1004.9985859459266,
+                            "y": 216.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f66d2822-89e9-4c71-8898-0cfd3ce6916d",
+                            "label": "room",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(4)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "room"
+                            },
+                            "x": 1119.9985859459266,
+                            "y": 216.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f2d8c54d-b9d8-4f22-aab3-b9f4243653db",
+                            "label": "wall",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(5)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "wall"
+                            },
+                            "x": 1234.9985859459266,
+                            "y": 216.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b4cb5805-2580-428c-8682-3fe6f7a56a22",
+                            "label": "pets",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.selectCategory(6)",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "pets"
+                            },
+                            "x": 1349.9985859459266,
+                            "y": 216.00169858592562
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8b5ed828-be6b-4e74-9adc-142ceb706a3b",
+                            "label": "top_bar",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "top-bar"
+                            },
+                            "x": 777.9985859459266,
+                            "y": 72.00169858592562
+                        },
+                        {
+                            "type": "Container",
+                            "id": "b83fd3d4-e0d7-4ee1-b6c1-f931d2f2e4e6",
+                            "label": "itemContainer",
+                            "scope": "CLASS",
+                            "components": [],
+                            "list": []
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "ba1f32de-a3cd-4496-be5e-9f159e23d5c8",
+                            "label": "rectangle_1",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "x": 1462.0000507896766,
+                            "y": 91.99999723094516,
+                            "width": 115.5,
+                            "height": 170
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9d147340-cf7c-44b2-9be1-73899ee60fd9",
+                            "label": "close_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "close-btn",
+                            "Button.callback": "() => this.onSaveClick()",
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "close-btn"
+                            },
+                            "x": 1466.9985859459266,
+                            "y": 48.001698585925624
+                        },
+                        {
+                            "type": "Image",
+                            "id": "952b33e3-6e64-46d8-a747-4815f93e25e5",
+                            "label": "x",
+                            "components": [],
+                            "texture": {
+                                "key": "iglooedit-new",
+                                "frame": "x"
+                            },
+                            "x": 1466.9985859459266,
+                            "y": 47.001698585925624
+                        }
+                    ]
                 }
             ]
         },
@@ -593,7 +618,8 @@
                 {
                     "type": "Text",
                     "id": "af8baaf1-06f9-447c-ab9f-2e2f51956de7",
-                    "label": "title_3",
+                    "label": "grandTotalLikes",
+                    "scope": "CLASS",
                     "components": [],
                     "x": 870,
                     "y": 151,
@@ -705,7 +731,8 @@
                 {
                     "type": "Text",
                     "id": "da6b9a18-c3e7-4138-b933-e03ae4f658b6",
-                    "label": "title_10",
+                    "label": "currentIglooLikes",
+                    "scope": "CLASS",
                     "components": [],
                     "x": 892,
                     "y": 507,
@@ -892,6 +919,16 @@
                 "028be075-8d17-43da-aece-b2a68a1dec69",
                 "d68e1bb0-2291-4361-a441-fb05253ad14a",
                 "b5749e50-ef4e-4817-9eab-73005014302d"
+            ]
+        },
+        {
+            "id": "60ab6e92-c625-4755-8a19-2edbb0da30fe",
+            "label": "likesText",
+            "objectIds": [
+                "ab20cb8d-909f-4933-9512-e646eff772fe",
+                "e8461536-ecc0-4e38-8b84-e70255ce035b",
+                "b37ec322-8074-4586-a649-645a1ee420c7",
+                "689af786-9519-468b-8a56-ccf1db7755d4"
             ]
         }
     ]

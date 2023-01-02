@@ -352,8 +352,11 @@ export default class Dance extends RoomScene {
     }
 
     onDoorOut() {
-        this.door.stop('doorAnim')
-        this.door.setFrame('door0001')
+        if (this.door.anims.isPlaying) {
+            this.door.anims.reverse()
+        } else {
+            this.door.playReverse('dance-doorAnim')
+        }
     }
 
     onSpeakerOver() {

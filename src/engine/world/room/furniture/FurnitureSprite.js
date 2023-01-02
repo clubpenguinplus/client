@@ -85,7 +85,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
 
     get isTrash() {
         if (this.scene.trash) {
-            return this.scene.matter.containsPoint(this.scene.trash, this.x, this.y) || this.x < 0 || this.x > 1520 || this.y < 0 || this.y > 960
+            return this.scene.matter.containsPoint(this.scene.trash, this.x, this.y) || this.x < 0 || this.x > 1520 || this.y < 0 || this.y > 960 || (this.y < 200 && this.iglooEdit.controls.state == 'maximised')
         }
     }
 
@@ -178,6 +178,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         this.safeX = this.x
         this.safeY = this.y
         this.setFrame(this.frame.name.replace('_hover', ''))
+        this.iglooEdit.saveIgloo()
     }
 
     /**
@@ -254,6 +255,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
             this.destroy()
         }
         scene.interface.iglooEdit.updateQuantities()
+        scene.interface.iglooEdit.saveIgloo()
     }
 
     easeOutBack(value) {

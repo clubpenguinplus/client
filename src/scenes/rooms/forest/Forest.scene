@@ -309,7 +309,7 @@
                 "Zone"
             ],
             "Zone.hoverCallback": "() => {this.boulder.play('forest-boulder'); this.shell.musicController.addSfx('forest-boulderopen')}",
-            "Zone.hoverOutCallback": "() => {this.boulder.playReverse('forest-boulder'); this.shell.musicController.addSfx('forest-boulderclose')}",
+            "Zone.hoverOutCallback": "() => { if (this.boulder.anims.isPlaying) { this.boulder.anims.reverse() } else { this.boulder.playReverse('forest-boulder') }; this.shell.musicController.addSfx('forest-boulderclose') }",
             "Zone.callback": "() => this.shell.client.penguin.move(168, 700)",
             "x": 170,
             "y": 690,

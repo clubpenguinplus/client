@@ -61,8 +61,10 @@ export default class PaperDoll extends BaseContainer {
             this.destroyBack(item)
         }
 
-        this.parentContainer.bg.setScale(0.2)
-        this.parentContainer.bg.setTexture('main', 'card-photo')
+        if (this.parentContainer.bg) {
+            this.parentContainer.bg.setScale(0.2)
+            this.parentContainer.bg.setTexture('main', 'card-photo')
+        }
     }
 
     destroySprite(item) {

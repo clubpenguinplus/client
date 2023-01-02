@@ -10,6 +10,7 @@ export default class Igloo extends Plugin {
             gid: this.getIglooData,
             gio: this.getIglooOpen,
             gl: this.getIglooLikes,
+            uif: this.updateIglooFurniture,
         }
     }
 
@@ -71,5 +72,10 @@ export default class Igloo extends Plugin {
         if (args[0] == this.shell.room.id) {
             this.shell.room.likesWidget.show(args[2])
         }
+    }
+
+    updateIglooFurniture(args) {
+        if (!this.shell.room.isIgloo) return
+        this.shell.room.updateFurniture(args[0])
     }
 }

@@ -141,7 +141,11 @@ export default class Forest extends RoomScene {
             this.shell.musicController.addSfx('forest-boulderopen')
         }
         rectangle_1Zone.hoverOutCallback = () => {
-            this.boulder.playReverse('forest-boulder')
+            if (this.boulder.anims.isPlaying) {
+                this.boulder.anims.reverse()
+            } else {
+                this.boulder.playReverse('forest-boulder')
+            }
             this.shell.musicController.addSfx('forest-boulderclose')
         }
         rectangle_1Zone.callback = () => this.shell.client.penguin.move(168, 700)
