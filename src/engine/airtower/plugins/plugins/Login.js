@@ -49,9 +49,8 @@ export default class Login extends Plugin {
 
     unlockAuth(args) {
         this.interface.showLoading()
-        this.scene.add("Unlock", Unlock)
-        this.scene.start("Unlock")
-        this.airtower.sendXt('l#lp')
+        this.scene.add('Unlock', Unlock)
+        this.scene.start('Unlock')
     }
 
     authToken(args) {
