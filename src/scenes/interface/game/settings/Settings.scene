@@ -188,6 +188,34 @@
                 },
                 {
                     "type": "Image",
+                    "id": "e8457282-1a19-4709-b734-0246df0389ac",
+                    "label": "ignore_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => { this.onSettingsPress() }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 159,
+                    "y": 202
+                },
+                {
+                    "type": "Image",
+                    "id": "dcd0ef5a-8d3e-4787-8cb3-c4a2239663da",
+                    "label": "ignore_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "ignore-icon"
+                    },
+                    "x": 159,
+                    "y": 202
+                },
+                {
+                    "type": "Image",
                     "id": "e656c20c-78a6-4d94-917f-6cf411b1f4d4",
                     "label": "x_button",
                     "components": [
