@@ -143,14 +143,30 @@ const rooms = {
         x: 860,
         y: 580,
     },
-    /*
     430: {
         key: 'HotelLobby',
         scene: require('@rooms/hotellobby/HotelLobby').default,
         x: 800,
         y: 350,
     },
-    */
+    431: {
+        key: 'HotelSpa',
+        scene: require('@rooms/hotelspa/HotelSpa').default,
+        x: 800,
+        y: 350,
+    },
+    432: {
+        key: 'HotelRoof',
+        scene: require('@rooms/hotelroof/HotelRoof').default,
+        x: 800,
+        y: 350,
+    },
+    433: {
+        key: 'CloudForest',
+        scene: require('@rooms/cloudforest/CloudForest').default,
+        x: 800,
+        y: 350,
+    },
     435: {
         key: 'Skate',
         scene: require('@rooms/skate/Skate').default,

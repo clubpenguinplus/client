@@ -31,7 +31,7 @@ export default class Plaza extends RoomScene {
             cave: () => this.triggerRoom(806, 1242, 685),
             forts: () => this.triggerRoom(801, 1320, 460),
             forest: () => this.triggerRoom(809, 150, 320),
-            hotel: null,
+            hotel: () => this.triggerRoom(430, 800, 350),
         }
 
         this.music = 677
