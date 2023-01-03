@@ -251,6 +251,7 @@ export default class Unlock extends BaseScene {
             this.codeButtons.visible = true;
           });
           this.chest.play('unlock-start');
+          this.airtower.sendXt('c#gca', 'TEST')
     }
 
     onServerClick() {

@@ -1,8 +1,6 @@
 import BaseScene from '@scenes/base/BaseScene'
 import {Button, SimpleButton, NineSlice, LocalisedString, LocalisedSprite} from '@scenes/components/components'
 
-import Unlock from '@scenes/interface/menus/unlock/Unlock'
-
 import Server from './server/Server'
 
 /* START OF COMPILED CODE */
@@ -315,13 +313,11 @@ export default class Servers extends BaseScene {
     }
 
     onModClick() {
-        this.airtower.connectGame(this.unlockworld, this.data.username, this.data.key, 'mod')
+        this.airtower.connectGame(this.unlockworld, this.data[1], this.data[3], 'mod')
     }
 
     onUnlockClick() {
-        this.interface.showLoading()
-        this.scene.add("Unlock", Unlock)
-        this.scene.start("Unlock")
+        this.airtower.connectGame(this.unlockworld, this.data[1], this.data[3], 'unlock')
     }
 
     /* END-USER-CODE */

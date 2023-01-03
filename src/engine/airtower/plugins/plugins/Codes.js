@@ -6,6 +6,7 @@ export default class Item extends Plugin {
         this.events = {
             aci: this.addCodeItem,
             gca: this.getCodeAttrs,
+            gci: this.getCodeItems,
             rc: this.reedemCode,
         }
     }
@@ -17,6 +18,11 @@ export default class Item extends Plugin {
     getCodeAttrs(args) {
         this.shell.codes = []
         this.shell.codes.push(args)
+    }
+
+    getCodeItems(args) {
+        this.code_items = []
+        this.code_items.push(args)
     }
 
     reedemCode(args) {
