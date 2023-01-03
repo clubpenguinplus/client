@@ -179,6 +179,12 @@ export default class InterfaceController extends BaseScene {
         }
     }
 
+    updateIgnoreList() {
+        if (this.main.scene.isActive()) {
+            this.main.ignore.showPage()
+        }
+    }
+
     refreshPlayerCard() {
         if (this.main.playerCard.visible && this.main.playerCard.id == this.shell.client.id) {
             this.showCard(this.shell.client.id, true)

@@ -40,6 +40,13 @@ export default class ClientController {
         }
 
         this.ignores = typeof args[8] == 'string' ? args[8].split(',') : args[8]
+        for (let ignore in this.ignores) {
+            let temp = this.ignores[ignore].split('|')
+            this.ignores[ignore] = {
+                id: parseInt(temp[0]),
+                username: temp[1],
+            }
+        }
         this.inventory = typeof args[9] == 'string' ? args[9].split(',') : []
 
         this.iglooInventory = typeof args[10] == 'string' ? args[10].split(',') : []

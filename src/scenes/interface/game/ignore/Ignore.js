@@ -199,9 +199,7 @@ export default class Ignore extends BaseContainer {
         let page = this.ignores.slice((this.page - 1) * this.pageSize, this.page * this.pageSize)
 
         for (let [index, item] of this.items.entries()) {
-            console.log("item", item)
             let buddy = page[index]
-            console.log("Buddy", buddy)
 
             if (buddy) {
                 item.setItem(buddy)

@@ -62,8 +62,6 @@ export default class IgnoreItem extends BaseContainer {
         this.id = buddy.id
         this.username.text = buddy.username
 
-        console.log(buddy.id)
-
         let texture = `buddy/icon-ignore`
 
         this.icon.setTexture('main', texture)
@@ -93,7 +91,7 @@ export default class IgnoreItem extends BaseContainer {
         let text = `Would you like to remove ${this.username.text}\nfrom your ignore list?`
 
         this.interface.prompt.showWindow(text, 'dual', () => {
-            this.airtower.sendXt('n#rn', { id: this.id })
+            this.airtower.sendXt('n#rn', this.id)
 
             this.interface.prompt.showWindow('Done', 'single')
         })
