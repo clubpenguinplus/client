@@ -18,7 +18,7 @@ export default class Dance extends RoomScene {
             town: () => this.triggerRoom(100, 1200, 400),
         }
 
-        this.music = 1165
+        this.music = 673
 
         /* END-USER-CTR-CODE */
     }
