@@ -266,40 +266,11 @@
                     "label": "code",
                     "components": [],
                     "texture": {
-                        "key": "login",
-                        "frame": "input"
+                        "key": "unlock",
+                        "frame": "codeinput"
                     },
                     "x": 5.476440581230804,
                     "y": 10.539267711483149
-                },
-                {
-                    "type": "Container",
-                    "id": "66aef8ce-4de3-4327-8b2f-a98a1ff56f51",
-                    "label": "inputTextContainer",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": -136.5235594187692,
-                    "y": 51.53926771148315,
-                    "visible": false,
-                    "list": [
-                        {
-                            "type": "Text",
-                            "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
-                            "label": "codeInput",
-                            "scope": "CLASS",
-                            "components": [
-                                "InputText"
-                            ],
-                            "x": -30,
-                            "y": -41,
-                            "originY": 0.5,
-                            "fixedWidth": 350,
-                            "lineSpacing": 25,
-                            "fontFamily": "Burbank Small",
-                            "fontSize": "30px",
-                            "color": "#000000ff"
-                        }
-                    ]
                 },
                 {
                     "type": "Image",
@@ -309,12 +280,13 @@
                         "Button"
                     ],
                     "Button.spriteName": "codebutton",
+                    "Button.callback": "() => {this.onCodeInput()}",
                     "texture": {
                         "key": "unlock",
                         "frame": "codebutton"
                     },
                     "x": -0.5235594187691959,
-                    "y": 68.53926771148315,
+                    "y": 74.53926771148315,
                     "scaleX": 0.8,
                     "scaleY": 0.8
                 },
@@ -327,7 +299,7 @@
                     ],
                     "LocalisedString.id": "code-next",
                     "x": -3.523559418769196,
-                    "y": 69.53926771148315,
+                    "y": 75.53926771148315,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Next",
@@ -338,6 +310,33 @@
                     "color": "#ffffffff"
                 }
             ]
+        },
+        {
+            "type": "Text",
+            "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
+            "label": "codeInput",
+            "scope": "CLASS",
+            "components": [
+                "InputText"
+            ],
+            "InputText.charlimit": 12,
+            "InputText.entercallback": "() => {this.onCodeInput()}",
+            "x": 763,
+            "y": 715,
+            "scaleX": 0.5833011699932232,
+            "scaleY": 1.4730949843893046,
+            "originY": 0.5,
+            "alpha": 0.8,
+            "alphaTopLeft": 0.8,
+            "alphaTopRight": 0.8,
+            "alphaBottomLeft": 0.8,
+            "alphaBottomRight": 0.8,
+            "fixedWidth": 350,
+            "lineSpacing": 25,
+            "fontFamily": "Burbank Small",
+            "fontSize": "36px",
+            "fontStyle": "bold",
+            "color": "#000000ff"
         },
         {
             "type": "Image",
