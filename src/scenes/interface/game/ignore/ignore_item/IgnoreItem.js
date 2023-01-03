@@ -1,48 +1,45 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import { Button } from '@components/components'
-
+import {Button} from '@components/components'
 
 /* START OF COMPILED CODE */
 
 export default class IgnoreItem extends BaseContainer {
-
     constructor(scene, x, y) {
-        super(scene, x ?? 760, y ?? 480);
+        super(scene, x ?? 760, y ?? 480)
 
         /** @type {Phaser.GameObjects.Image} */
-        this.icon;
+        this.icon
         /** @type {Phaser.GameObjects.Text} */
-        this.username;
-
+        this.username
 
         // ignore_item
-        const ignore_item = scene.add.image(0, 0, "main", "buddy/item");
-        this.add(ignore_item);
+        const ignore_item = scene.add.image(0, 0, 'main', 'buddy/item')
+        this.add(ignore_item)
 
         // icon
-        const icon = scene.add.image(-137, 0, "main", "buddy/icon-ignore");
-        icon.alpha = 0.75;
-        icon.alphaTopLeft = 0.75;
-        icon.alphaTopRight = 0.75;
-        icon.alphaBottomLeft = 0.75;
-        icon.alphaBottomRight = 0.75;
-        this.add(icon);
+        const icon = scene.add.image(-137, 0, 'main', 'buddy/icon-ignore')
+        icon.alpha = 0.75
+        icon.alphaTopLeft = 0.75
+        icon.alphaTopRight = 0.75
+        icon.alphaBottomLeft = 0.75
+        icon.alphaBottomRight = 0.75
+        this.add(icon)
 
         // username
-        const username = scene.add.text(25, 0, "", {});
-        username.setOrigin(0.5, 0.5);
-        username.setStyle({ "fixedWidth":270,"fontFamily": "Arial", "fontSize": "24px" });
-        this.add(username);
+        const username = scene.add.text(25, 0, '', {})
+        username.setOrigin(0.5, 0.5)
+        username.setStyle({fixedWidth: 270, fontFamily: 'Arial', fontSize: '24px'})
+        this.add(username)
 
         // ignore_item (components)
-        const ignore_itemButton = new Button(ignore_item);
-        ignore_itemButton.spriteName = "buddy/item";
-        ignore_itemButton.callback = () => this.onClick();
-        ignore_itemButton.activeFrame = false;
+        const ignore_itemButton = new Button(ignore_item)
+        ignore_itemButton.spriteName = 'buddy/item'
+        ignore_itemButton.callback = () => this.onClick()
+        ignore_itemButton.activeFrame = false
 
-        this.icon = icon;
-        this.username = username;
+        this.icon = icon
+        this.username = username
 
         /* START-USER-CTR-CODE */
 
@@ -50,7 +47,6 @@ export default class IgnoreItem extends BaseContainer {
 
         /* END-USER-CTR-CODE */
     }
-
 
     /* START-USER-CODE */
 
