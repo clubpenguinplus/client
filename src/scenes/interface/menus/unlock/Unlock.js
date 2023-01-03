@@ -1,0 +1,271 @@
+import BaseScene from '@scenes/base/BaseScene'
+
+import {Animation, Button, SimpleButton, LocalisedString, InputText, LocalisedSprite} from '@components/components'
+
+
+/* START OF COMPILED CODE */
+
+export default class Unlock extends BaseScene {
+
+    constructor() {
+        super("Unlock");
+
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.chest;
+        /** @type {NinePatchContainer} */
+        this.options;
+        /** @type {Phaser.GameObjects.Container} */
+        this.bubblesContainer;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bubbles;
+        /** @type {Phaser.GameObjects.Container} */
+        this.baseOptions;
+        /** @type {Phaser.GameObjects.Container} */
+        this.codeButtons;
+        /** @type {Phaser.GameObjects.Container} */
+        this.codeOption;
+        /** @type {Phaser.GameObjects.Container} */
+        this.inputTextContainer;
+        /** @type {Phaser.GameObjects.Text} */
+        this.codeInput;
+
+
+        /* START-USER-CTR-CODE */
+        // Write your code here.
+        /* END-USER-CTR-CODE */
+    }
+
+    /** @returns {void} */
+    preload() {
+
+        this.load.pack("unlock-pack", "client/media/interface/menus/unlock/unlock-pack.json");
+    }
+
+    /** @returns {void} */
+    _create() {
+
+        // bg
+        const bg = this.add.image(0, 1, "main", "backgroun");
+        bg.setOrigin(0, 0);
+
+        // bgtop
+        const bgtop = this.add.image(760, 480, "unlock", "bgtop");
+        bgtop.scaleX = 3;
+        bgtop.scaleY = 3;
+        bgtop.alpha = 0.25;
+        bgtop.alphaTopLeft = 0.25;
+        bgtop.alphaTopRight = 0.25;
+        bgtop.alphaBottomLeft = 0.25;
+        bgtop.alphaBottomRight = 0.25;
+
+        // chest
+        const chest = this.add.sprite(820, 387, "unlock", "chest0001");
+        chest.scaleX = 0.9;
+        chest.scaleY = 0.9;
+
+        // backButton
+        const backButton = this.add.sprite(760, 876, "login", "small-button");
+
+        // options
+        const options = this.add.ninePatchContainer(780, 701, 567, 211, "unlock", "blackbox");
+        options.visible = false;
+
+        // bubblesContainer
+        const bubblesContainer = this.add.container(0, 0);
+        bubblesContainer.visible = false;
+
+        // bubbles
+        const bubbles = this.add.sprite(782, 387, "unlock", "bubbles0001");
+        bubblesContainer.add(bubbles);
+
+        // icon_en
+        const icon_en = this.add.image(121, 109, "unlock", "icon_en");
+        icon_en.scaleX = 0.3;
+        icon_en.scaleY = 0.3;
+
+        // baseOptions
+        const baseOptions = this.add.container(780, 699);
+        baseOptions.visible = false;
+
+        // optionText
+        const optionText = this.add.text(13.992220199009466, -1.104337977288992, "", {});
+        optionText.setOrigin(0.5, 0.5);
+        optionText.text = "Unlock your Items. Choose an option.";
+        optionText.setStyle({ "align": "right", "color": "#ffffffff", "fontFamily": "Burbank Small", "fontSize": "24px" });
+        optionText.setLineSpacing(25);
+        baseOptions.add(optionText);
+
+        // codeButtons
+        const codeButtons = this.add.container(780, 554);
+        codeButtons.visible = false;
+
+        // codebutton
+        const codebutton = this.add.image(-2.1414595825303877, -4.880653572546635, "unlock", "codebutton");
+        codebutton.scaleX = 1.25;
+        codebutton.scaleY = 1.25;
+        codeButtons.add(codebutton);
+
+        // codeText
+        const codeText = this.add.text(17.858540417469612, -4.880653572546635, "", {});
+        codeText.setOrigin(0.5, 0.5);
+        codeText.text = "I've got a Code";
+        codeText.setStyle({ "align": "right", "color": "#ffffffff", "fontFamily": "Burbank Small", "fontSize": "24px" });
+        codeText.setLineSpacing(25);
+        codeButtons.add(codeText);
+
+        // unlocked
+        const unlocked = this.add.image(-90.14145958253039, -5.880653572546635, "unlock", "unlocked");
+        unlocked.scaleX = 0.5;
+        unlocked.scaleY = 0.5;
+        codeButtons.add(unlocked);
+
+        // codeOption
+        const codeOption = this.add.container(780, 704);
+        codeOption.visible = false;
+
+        // optionTextCode
+        const optionTextCode = this.add.text(1.4764405812308041, -68.46073228851685, "", {});
+        optionTextCode.setOrigin(0.5, 0.5);
+        optionTextCode.text = "Enter your code!\nMake sure you enter it exactly as it appears.";
+        optionTextCode.setStyle({ "align": "center", "color": "#ffffffff", "fontFamily": "Burbank Small", "fontSize": "24px" });
+        optionTextCode.setLineSpacing(5);
+        codeOption.add(optionTextCode);
+
+        // code
+        const code = this.add.image(5.476440581230804, 10.539267711483149, "login", "input");
+        codeOption.add(code);
+
+        // inputTextContainer
+        const inputTextContainer = this.add.container(-136.5235594187692, 51.53926771148315);
+        inputTextContainer.visible = false;
+        codeOption.add(inputTextContainer);
+
+        // codeInput
+        const codeInput = this.add.text(-30, -41, "", {});
+        codeInput.setOrigin(0, 0.5);
+        codeInput.setStyle({ "color": "#000000ff", "fixedWidth":350,"fontFamily": "Burbank Small", "fontSize": "30px" });
+        codeInput.setLineSpacing(25);
+        inputTextContainer.add(codeInput);
+
+        // nextbutton
+        const nextbutton = this.add.image(-0.5235594187691959, 68.53926771148315, "unlock", "codebutton");
+        nextbutton.scaleX = 0.8;
+        nextbutton.scaleY = 0.8;
+        codeOption.add(nextbutton);
+
+        // nextText
+        const nextText = this.add.text(-3.523559418769196, 69.53926771148315, "", {});
+        nextText.setOrigin(0.5, 0.5);
+        nextText.text = "Next";
+        nextText.setStyle({ "align": "right", "color": "#ffffffff", "fontFamily": "Burbank Small", "fontSize": "20px" });
+        nextText.setLineSpacing(25);
+        codeOption.add(nextText);
+
+        // blue_button
+        const blue_button = this.add.image(1460, 48, "main", "blue-button");
+
+        // blue_x
+        this.add.image(1461, 46, "main", "blue-x");
+
+        // backButton (components)
+        const backButtonSimpleButton = new SimpleButton(backButton);
+        backButtonSimpleButton.callback = () => this.onBackClick();
+        const backButtonAnimation = new Animation(backButton);
+        backButtonAnimation.key = "small-button";
+        backButtonAnimation.end = 3;
+        backButtonAnimation.repeat = 0;
+        backButtonAnimation.onHover = true;
+
+        // icon_en (components)
+        new LocalisedSprite(icon_en);
+
+        // optionText (components)
+        const optionTextLocalisedString = new LocalisedString(optionText);
+        optionTextLocalisedString.id = "code-base";
+
+        // codebutton (components)
+        const codebuttonButton = new Button(codebutton);
+        codebuttonButton.spriteName = "codebutton";
+        codebuttonButton.callback = () => {this.onCodeButtonClick()};
+
+        // codeText (components)
+        const codeTextLocalisedString = new LocalisedString(codeText);
+        codeTextLocalisedString.id = "code";
+
+        // optionTextCode (components)
+        const optionTextCodeLocalisedString = new LocalisedString(optionTextCode);
+        optionTextCodeLocalisedString.id = "code-options";
+
+        // codeInput (components)
+        new InputText(codeInput);
+
+        // nextbutton (components)
+        const nextbuttonButton = new Button(nextbutton);
+        nextbuttonButton.spriteName = "codebutton";
+
+        // nextText (components)
+        const nextTextLocalisedString = new LocalisedString(nextText);
+        nextTextLocalisedString.id = "code-next";
+
+        // blue_button (components)
+        const blue_buttonButton = new Button(blue_button);
+        blue_buttonButton.spriteName = "blue-button";
+        blue_buttonButton.callback = () => {this.onServerClick()};
+
+        this.chest = chest;
+        this.options = options;
+        this.bubblesContainer = bubblesContainer;
+        this.bubbles = bubbles;
+        this.baseOptions = baseOptions;
+        this.codeButtons = codeButtons;
+        this.codeOption = codeOption;
+        this.inputTextContainer = inputTextContainer;
+        this.codeInput = codeInput;
+
+        this.events.emit("scene-awake");
+    }
+
+
+    /* START-USER-CODE */
+
+    // Write your code here
+
+    create() {
+        this._create()
+
+        this.chestStart()
+
+        // this.airtower.codes = this
+
+        // // Input
+        // this.input.keyboard.on('keydown-ENTER', () => this.onActivateSubmit())
+
+        // this.codeInput.text = window.code
+        // this.codeInput.textContent = window.code
+    }
+
+    chestStart() {
+        this.chest.on('animationcomplete', () => {
+            this.baseOptions.visible = true;
+            this.options.visible = true;
+            this.codeButtons.visible = true;
+          });
+          this.chest.play('unlock-start');
+    }
+
+    onServerClick() {
+        this.interface.showLoading()
+        this.scene.start("Servers")
+    }
+
+    onCodeButtonClick() {
+        this.baseOptions.visible = false
+        this.codeOption.visible = true
+    }
+
+    /* END-USER-CODE */
+}
+
+/* END OF COMPILED CODE */
+
+// You can write more code here

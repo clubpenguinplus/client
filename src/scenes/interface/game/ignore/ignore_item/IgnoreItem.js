@@ -62,6 +62,8 @@ export default class IgnoreItem extends BaseContainer {
         this.id = buddy.id
         this.username.text = buddy.username
 
+        console.log(buddy.id)
+
         let texture = `buddy/icon-ignore`
 
         this.icon.setTexture('main', texture)
