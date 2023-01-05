@@ -433,7 +433,7 @@ export default class Agentcom extends RoomScene {
      create() {
         super.create()
 
-        let animvid = this.add.video(760, 480, 'agentcom-video')
+        let animvid = this.add.video(760, 479, 'agentcom-video')
         this.epfanims.add(animvid)
         animvid.play(true)
 
