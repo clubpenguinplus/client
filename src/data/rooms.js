@@ -95,6 +95,12 @@ const rooms = {
         x: 810,
         y: 800,
     },
+    323: {
+        key: 'Agentcom',
+        scene: require('@rooms/agentcom/Agentcom').default,
+        x: 760,
+        y: 480,
+    },
     330: {
         key: 'Pizza',
         scene: require('@rooms/pizza/Pizza').default,

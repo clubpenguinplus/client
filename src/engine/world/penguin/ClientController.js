@@ -178,7 +178,7 @@ export default class ClientController {
     }
 
     get isEPF() {
-        return false
+        return true
     }
 
     initInventory() {
