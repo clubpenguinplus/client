@@ -29,10 +29,6 @@ export default class Item extends Plugin {
         this.code_items.push(args)
     }
 
-    reedemCode(args) {
-        this.airtower.sendXt('c#rc', args)
-    }
-
     addCodeItem(args) {
         // If item already in inventory
         if (this.client.inventory[args[2]].includes(args[0])) return
