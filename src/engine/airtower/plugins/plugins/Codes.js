@@ -7,7 +7,6 @@ export default class Item extends Plugin {
             aci: this.addCodeItem,
             gca: this.getCodeAttrs,
             gci: this.getCodeItems,
-            rc: this.reedemCode,
         }
     }
 
