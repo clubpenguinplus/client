@@ -169,6 +169,7 @@ export default class RoomScene extends BaseScene {
 
     stop() {
         this.interface.main.snowballFactory.clearBalls()
+        if (this.miningTimeout) clearTimeout(this.miningTimeout)
         //this.sound.stopAll()
         this.scene.stop()
     }
@@ -352,10 +353,5 @@ export default class RoomScene extends BaseScene {
     unimplementedPrompt() {
         let prompt = this.game.scene.getScene('InterfaceController').prompt
         prompt.showError('This feature is not yet implemented!\nClub Penguin Plus is in development, and is being\nactively updated. Check back soon!')
-    }
-
-    stop() {
-        clearTimeout(this.miningTimeout)
-        super.stop()
     }
 }

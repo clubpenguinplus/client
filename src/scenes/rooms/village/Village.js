@@ -97,14 +97,11 @@ export default class Village extends RoomScene {
         const toursign_en = this.add.sprite(235.15781421589907, 749.1208021563593, 'village', 'toursign-en')
         toursign_en.setOrigin(0.5872172481438145, 2.461207972926635)
 
-        // skichairfh
-        const skichairfh = this.add.container(221, 122)
-
         // arrow
         this.add.image(608, 375, 'village', 'arrow')
 
-        // skichairsh
-        const skichairsh = this.add.container(261.99604271365615, 410.1601804653192)
+        // skichair
+        const skichair = this.add.container(261.99604271365615, 410.1601804653192)
 
         // tourszone
         const tourszone = this.add.rectangle(211, 580, 128, 128)
@@ -114,11 +111,8 @@ export default class Village extends RoomScene {
         // phone_speaker
         this.add.image(1198, 415, 'village', 'phone_speaker')
 
-        // belt
-        const belt = this.add.sprite(440, 345, 'village', 'belt0001')
-
         // lists
-        const sort = [fg, rightarrow, toursign_en, tours, leftside, liftramp, epf_en, skichairsh, belt]
+        const sort = [fg, rightarrow, toursign_en, tours, leftside, liftramp, epf_en, skichair]
 
         // epf_en (components)
         new LocalisedSprite(epf_en)
@@ -151,10 +145,8 @@ export default class Village extends RoomScene {
         this.lodgedoor = lodgedoor
         this.tours = tours
         this.toursign_en = toursign_en
-        this.skichairfh = skichairfh
-        this.skichairsh = skichairsh
+        this.skichair = skichair
         this.tourszone = tourszone
-        this.belt = belt
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -173,13 +165,9 @@ export default class Village extends RoomScene {
     /** @type {Phaser.GameObjects.Sprite} */
     toursign_en
     /** @type {Phaser.GameObjects.Container} */
-    skichairfh
-    /** @type {Phaser.GameObjects.Container} */
-    skichairsh
+    skichair
     /** @type {Phaser.GameObjects.Rectangle} */
     tourszone
-    /** @type {Phaser.GameObjects.Sprite} */
-    belt
     /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
     sort
 
@@ -190,21 +178,16 @@ export default class Village extends RoomScene {
     create() {
         super.create()
 
-        let skichairfh = this.add.video(0, 0, 'village-skichairfh')
-        this.skichairfh.add(skichairfh)
-
         let tubelift = this.add.video(0, 0, 'village-tubelift')
         this.tubelift.add(tubelift)
 
-        let skichairsh = this.add.video(-61, -252, 'village-skichair')
-        this.skichairsh.add(skichairsh)
+        let skichair = this.add.video(-61, -282, 'village-skichair')
+        this.skichair.add(skichair)
 
-        skichairfh.play(true)
-        skichairsh.play(true)
+        skichair.play(true)
         tubelift.play(true)
 
         this.tubepile.play('village-tubepile')
-        this.belt.play('village-belt')
     }
 
     LodgeDoorOver() {
