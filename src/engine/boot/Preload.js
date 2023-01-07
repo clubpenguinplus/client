@@ -129,29 +129,37 @@ export default class Preload extends BaseScene {
         }
 
         this.crumbs.getString = (key) => {
-            key = key.toString().toLowerCase()
-            let result = this.crumbs.strings[key]
-            if (key.includes(',')) {
-                result = this.crumbs.strings[key.split(',')[0]]
-                let args = key.split(',').slice(1)
-                for (let i = 0; i < args.length; i++) {
-                    result = result.replace(`{args[${i}]}`, args[i])
-                }
+            let result = this.crumbs.strings[key.toLowerCase()]
+
+            if (!key.includes(',')) {
+                return result || key
             }
-            if (!result) result = key
-            return result
+
+            result = this.crumbs.strings[key.split(',')[0].toLowerCase()]
+            let args = key.split(',').slice(1)
+
+            for (let i = 0; i < args.length; i++) {
+                result = result.replace(`{args[${i}]}`, args[i])
+            }
+
+            return result || key
         }
 
         this.crumbs.getError = (key) => {
             key = key.toString()
             let result = this.crumbs.strings.errors[key]
-            if (key.includes(',')) {
-                result = this.crumbs.strings.errors[key.split(',')[0]]
-                let args = key.split(',').slice(1)
-                for (let i = 0; i < args.length; i++) {
-                    result = result.replace(`{args[${i}]}`, args[i])
-                }
+
+            if (!key.includes(',')) {
+                return result
             }
+
+            result = this.crumbs.strings.errors[key.split(',')[0]]
+            let args = key.split(',').slice(1)
+
+            for (let i = 0; i < args.length; i++) {
+                result = result.replace(`{args[${i}]}`, args[i])
+            }
+
             return result
         }
 

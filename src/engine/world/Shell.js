@@ -232,10 +232,12 @@ export default class Shell extends BaseScene {
             stealthMode: parseInt(stringArray[16]),
             username_approved: ua,
             walking: parseInt(stringArray[18]),
+            epfStatus: parseInt(stringArray[19]),
         }
     }
 
     get PST() {
+        // PST = UTC - 8 hours
         return new Date(Date.now() - 1000 * 60 * 60 * 8)
     }
 

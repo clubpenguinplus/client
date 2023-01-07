@@ -19,6 +19,8 @@ export default class LocalisedString extends EventComponent {
 
         /* START-USER-CTR-CODE */
 
+        this.gameObject.setString = this.setText.bind(this)
+
         /* END-USER-CTR-CODE */
     }
 
@@ -28,9 +30,17 @@ export default class LocalisedString extends EventComponent {
     }
 
     /* START-USER-CODE */
+    get text() {
+        return this.gameObject.scene.crumbs.getString(this.id) ? this.gameObject.scene.crumbs.getString(this.id) : `${this.id}`
+    }
+
     start() {
-        let text = this.gameObject.scene.crumbs.getString(this.id) ? this.gameObject.scene.crumbs.getString(this.id) : `localisedString.${this.id}`
-        this.gameObject.text = text
+        this.gameObject.text = this.text
+    }
+
+    setText(string) {
+        this.id = string
+        this.gameObject.text = this.text
     }
     /* END-USER-CODE */
 }

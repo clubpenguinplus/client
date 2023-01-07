@@ -433,18 +433,7 @@ export default class Agentlobby extends RoomScene {
         this.waterfall.open.play(true)
         this.droplets.play('agentlobby-droplets')
 
-        if (this.shell.client.isEPF) {
-            let sb = new SimpleButton(this.phone_over)
-            sb.hoverCallback = () => this.onWaterfallOver()
-            sb.hoverOutCallback = () => this.onWaterfallOut()
-        } else {
-            this.phonebox.play('agentlobby-phonebox')
-            let sb = new SimpleButton(this.phone_over)
-            sb.hoverCallback = () => this.onPhoneOver()
-            sb.hoverOutCallback = () => this.onPhoneOut()
-            sb.callback = () => this.onPhoneDown()
-            this.shell.musicController.addSfx('agentlobby-phone', true)
-        }
+        this.setEpfButton()
 
         this.setClockTime()
     }
@@ -584,6 +573,26 @@ export default class Agentlobby extends RoomScene {
 
     onPhoneTrigger() {
         clearTimeout(this.abandonTimeout)
+        this.interface.loadExternal('RecruitmentDialog')
+        this.shell.musicController.stopLoopingSfx('agentlobby-phone')
+        this.phonebox.anims.stopAfterRepeat(0)
+    }
+
+    setEpfButton() {
+        this.phone_over.removeInteractive()
+        if (this.shell.client.isEPF) {
+            this.epfButton = new SimpleButton(this.waterfall_over)
+            this.epfButton.hoverCallback = () => this.onWaterfallOver()
+            this.epfButton.hoverOutCallback = () => this.onWaterfallOut()
+        } else {
+            this.phonebox.play('agentlobby-phonebox')
+            this.epfButton = new SimpleButton(this.phone_over)
+            this.epfButton.hoverCallback = () => this.onPhoneOver()
+            this.epfButton.hoverOutCallback = () => this.onPhoneOut()
+            this.epfButton.callback = () => this.onPhoneDown()
+            this.shell.musicController.addSfx('agentlobby-phone', true)
+        }
+        this.epfButton.start()
     }
 
     /* END-USER-CODE */

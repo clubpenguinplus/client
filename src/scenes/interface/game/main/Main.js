@@ -140,6 +140,8 @@ export default class Main extends BaseScene {
         this.crosshair
         /** @type {Phaser.GameObjects.Sprite} */
         this.map_button
+        /** @type {Phaser.GameObjects.Image} */
+        this.phone_button
         /** @type {Phaser.GameObjects.Sprite} */
         this.mail_btn
         /** @type {Phaser.GameObjects.Image} */
@@ -243,7 +245,7 @@ export default class Main extends BaseScene {
         const snowball_button = this.add.image(426, 930, 'main', 'blue-button')
 
         // snowball_icon
-        const snowball_icon = this.add.image(426, 930, 'main', 'snowball-icon')
+        const snowball_icon = this.add.image(426, 929, 'main', 'snowball-icon')
 
         // chat_send_button
         const chat_send_button = this.add.image(1026, 930, 'main', 'blue-button')
@@ -411,6 +413,9 @@ export default class Main extends BaseScene {
 
         // map_button
         const map_button = this.add.sprite(90, 888, 'main', 'map-button')
+
+        // phone_button
+        const phone_button = this.add.image(85, 758, 'main', 'phone-button')
 
         // mail_btn
         const mail_btn = this.add.sprite(170, 52, 'main', 'mail-button')
@@ -701,6 +706,11 @@ export default class Main extends BaseScene {
         map_buttonButton.callback = () => this.onMapClick()
         map_buttonButton.activeFrame = false
 
+        // phone_button (components)
+        const phone_buttonButton = new Button(phone_button)
+        phone_buttonButton.spriteName = 'phone-button'
+        phone_buttonButton.callback = () => this.onPhoneClick()
+
         // mail_btn (components)
         const mail_btnButton = new Button(mail_btn)
         mail_btnButton.spriteName = 'mail-button'
@@ -782,6 +792,7 @@ export default class Main extends BaseScene {
         this.chatLog = chatLog
         this.crosshair = crosshair
         this.map_button = map_button
+        this.phone_button = phone_button
         this.mail_btn = mail_btn
         this.news_button = news_button
         this.safetyquiz = safetyquiz
@@ -855,6 +866,8 @@ export default class Main extends BaseScene {
         // safety quiz or mod icon
 
         this.showTR()
+
+        this.phone_button.visible = this.shell.client.isEPF
 
         // Test mobile
         this.isMobile()

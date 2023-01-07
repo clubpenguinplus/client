@@ -178,7 +178,7 @@ export default class ClientController {
     }
 
     get isEPF() {
-        return true
+        return this.penguin.epfStatus == 1
     }
 
     initInventory() {

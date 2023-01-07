@@ -222,7 +222,7 @@
                 "frame": "snowball-icon"
             },
             "x": 426,
-            "y": 930
+            "y": 929
         },
         {
             "type": "Image",
@@ -903,6 +903,23 @@
             },
             "x": 90,
             "y": 888
+        },
+        {
+            "type": "Image",
+            "id": "22601d52-c67a-47d4-8542-ade04d28a7dc",
+            "label": "phone_button",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "phone-button",
+            "Button.callback": "() => this.onPhoneClick()",
+            "texture": {
+                "key": "main",
+                "frame": "phone-button"
+            },
+            "x": 85,
+            "y": 758
         },
         {
             "type": "Sprite",

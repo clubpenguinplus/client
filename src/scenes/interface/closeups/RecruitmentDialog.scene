@@ -1,0 +1,280 @@
+{
+    "id": "eb31e4f6-5bb1-4639-a124-23c52f87f182",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/game/recruitment/recruitment-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "RecruitmentDialog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "6c836e4e-0b64-4f79-bda0-458aa42711c8",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "recruitment",
+                "frame": "bg"
+            },
+            "x": 772,
+            "y": 793
+        },
+        {
+            "type": "Image",
+            "id": "6903561d-ac5c-406f-8229-2ad862a8cc47",
+            "label": "no_btn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "genericbtn",
+            "Button.callback": "() => this.onNo()",
+            "texture": {
+                "key": "recruitment",
+                "frame": "genericbtn"
+            },
+            "x": 1142,
+            "y": 886
+        },
+        {
+            "type": "Text",
+            "id": "c040f56e-2c77-4e8d-92a4-8b4b16075c80",
+            "label": "no_txt",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "recruitment-no",
+            "x": 1142,
+            "y": 886,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "No",
+            "fixedWidth": 100,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#314a42ff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 100
+        },
+        {
+            "type": "Image",
+            "id": "7c924ed6-1ed2-42e3-89b1-94262cfa81ee",
+            "label": "yes_btn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "genericbtn",
+            "Button.callback": "() => this.onYes()",
+            "texture": {
+                "key": "recruitment",
+                "frame": "genericbtn"
+            },
+            "x": 1315,
+            "y": 886
+        },
+        {
+            "type": "Text",
+            "id": "af2a5118-4f9b-4d1c-a1f5-0f97863e0853",
+            "label": "yes_txt",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "recruitment-yes",
+            "x": 1315,
+            "y": 886,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Yes",
+            "fixedWidth": 100,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#314a42ff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 100
+        },
+        {
+            "type": "Image",
+            "id": "0dc92920-aad0-4c74-8cd0-c359cc847582",
+            "label": "ok_btn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "genericbtn",
+            "Button.callback": "() => this.stop()",
+            "texture": {
+                "key": "recruitment",
+                "frame": "genericbtn"
+            },
+            "x": 1315,
+            "y": 886,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "34b5edce-3f5d-48af-927e-29cdb56b5301",
+            "label": "ok_txt",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "recruitment-okay",
+            "x": 1315,
+            "y": 886,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "OK",
+            "fixedWidth": 100,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#314a42ff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 100
+        },
+        {
+            "type": "Image",
+            "id": "fd38dbca-2239-4839-8ddd-1a59755cfcb9",
+            "label": "addphone_btn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "addphonebtn",
+            "Button.callback": "() => this.addPhone()",
+            "texture": {
+                "key": "recruitment",
+                "frame": "addphonebtn"
+            },
+            "x": 1268,
+            "y": 869,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "b4aad25c-ee87-4ed7-b7d9-e0fee3e22768",
+            "label": "addphone_txt",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "recruitment-addphone",
+            "x": 1298,
+            "y": 886,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "Add phone",
+            "fixedWidth": 180,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#314a42ff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 180
+        },
+        {
+            "type": "Sprite",
+            "id": "014cf35d-178f-4bb9-8f50-f9a2ea10364e",
+            "label": "phone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "recruitment",
+                "frame": "phone0050"
+            },
+            "x": 639,
+            "y": 741,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "c9c38c42-8873-49e1-9c2e-c235e982f95d",
+            "label": "nametitle",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "recruitment-director",
+            "x": 506,
+            "y": 617,
+            "originY": 0.5,
+            "text": "The Director",
+            "lineSpacing": 5,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 550
+        },
+        {
+            "type": "Text",
+            "id": "c5c2439a-9d61-47a2-99aa-61de4af7b7f7",
+            "label": "bodytext",
+            "scope": "CLASS",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "recruitment-intro",
+            "x": 514,
+            "y": 677,
+            "text": "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "fixedWidth": 865,
+            "lineSpacing": 5,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "color": "#373737ff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 865
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

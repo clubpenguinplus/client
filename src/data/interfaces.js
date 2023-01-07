@@ -21,6 +21,7 @@ const interfaces = {
     IglooLikesWidget: require('@scenes/interface/game/likeswidget/IglooLikesWidget').default,
     Telescope: require('@scenes/interface/closeups/Telescope').default,
     Intro: require('@scenes/interface/closeups/Intro').default,
+    RecruitmentDialog: require('@scenes/interface/closeups/RecruitmentDialog').default,
 }
 
 export default interfaces
