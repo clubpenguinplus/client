@@ -454,7 +454,7 @@ export default class Agentlobby extends RoomScene {
         this.minutehand.setFrame(`minutehand${this.fourFigures(timeInMinutes)}`)
 
         let timeout = 60 - this.shell.getPSTSeconds()
-        setTimeout(() => this.setClockTime(), timeout * 1000)
+        this.clockTimeTO = setTimeout(() => this.setClockTime(), timeout * 1000)
     }
 
     fourFigures(num) {
@@ -593,6 +593,10 @@ export default class Agentlobby extends RoomScene {
             this.shell.musicController.addSfx('agentlobby-phone', true)
         }
         this.epfButton.start()
+    }
+
+    stop() {
+        clearTimeout(this.clockTimeTO)
     }
 
     /* END-USER-CODE */

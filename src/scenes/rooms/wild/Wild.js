@@ -213,13 +213,13 @@ export default class Wild extends RoomScene {
 
     bushFunction() {
         this.shell.musicController.addSfx('wild-bush')
-        setTimeout(this.bushFunction, 5000)
+        this.bushTO = setTimeout(this.bushFunction, 5000)
     }
 
     bushGrowls() {
         const rndKey = Math.floor(Math.random() * 4) + 1
         this.shell.musicController.addSfx(`wild-bushsam${rndKey}`)
-        setTimeout(this.bushGrowls, 15000)
+        this.growlTO = setTimeout(this.bushGrowls, 15000)
     }
 
     samAppears() {
@@ -231,6 +231,12 @@ export default class Wild extends RoomScene {
             this.samface.play('wild-samface')
             this.bushGrowls()
         }
+    }
+
+    stop() {
+        clearTimeout(this.bushTO)
+        clearTimeout(this.growlTO)
+        super.stop()
     }
 
     /* END-USER-CODE */
