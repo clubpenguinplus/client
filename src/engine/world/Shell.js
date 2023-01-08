@@ -23,6 +23,8 @@ export default class Shell extends BaseScene {
         this.rockhopper_leave = new Date('12/28/2022')
 
         this.itemsLoaded = []
+
+        if (window.location.hostname == 'localhost') window.shell = this
     }
 
     get language() {
@@ -37,8 +39,6 @@ export default class Shell extends BaseScene {
     create() {
         super.create()
         var RuffleHolder = this.scene.get('RuffleHolder')
-
-        if (window.location.hostname == 'localhost') window.shell = this
 
         this.musicController = this.scene.get('MusicController')
         this.penguinFactory = new PenguinFactory(this)
@@ -197,8 +197,28 @@ export default class Shell extends BaseScene {
     arrayToObject(player, isClient = false) {
         let stringArray = player.split('|')
 
-        let id = parseInt(stringArray[0])
-        let ua = parseInt(stringArray[17])
+        stringArray = stringArray.map((arg) => {
+            switch (arg) {
+                case 'true':
+                    return true
+                case 'false':
+                    return false
+                case 'undefined':
+                    return undefined
+                case 'null':
+                    return null
+                case 'NaN':
+                    return NaN
+                default:
+                    if (!isNaN(arg)) {
+                        return parseInt(arg)
+                    }
+                    return arg
+            }
+        })
+
+        let id = stringArray[0]
+        let ua = stringArray[17]
 
         isClient = isClient ? true : id == this.client.id
 
@@ -215,24 +235,26 @@ export default class Shell extends BaseScene {
             id: id,
             username: username,
             realUsername: realUsername,
-            color: parseInt(stringArray[2]),
-            head: parseInt(stringArray[3]),
-            face: parseInt(stringArray[4]),
-            neck: parseInt(stringArray[5]),
-            body: parseInt(stringArray[6]),
-            hand: parseInt(stringArray[7]),
-            feet: parseInt(stringArray[8]),
-            flag: parseInt(stringArray[9]),
-            photo: parseInt(stringArray[10]),
-            coins: parseInt(stringArray[11]),
-            x: parseInt(stringArray[12]),
-            y: parseInt(stringArray[13]),
-            frame: parseInt(stringArray[14]),
-            rank: parseInt(stringArray[15]),
-            stealthMode: parseInt(stringArray[16]),
+            color: stringArray[2],
+            head: stringArray[3],
+            face: stringArray[4],
+            neck: stringArray[5],
+            body: stringArray[6],
+            hand: stringArray[7],
+            feet: stringArray[8],
+            flag: stringArray[9],
+            photo: stringArray[10],
+            coins: stringArray[11],
+            x: stringArray[12],
+            y: stringArray[13],
+            frame: stringArray[14],
+            rank: stringArray[15],
+            stealthMode: stringArray[16],
             username_approved: ua,
-            walking: parseInt(stringArray[18]),
-            epfStatus: parseInt(stringArray[19]),
+            username_rejected: stringArray[18],
+            walking: stringArray[19],
+            epfStatus: stringArray[20],
+            joinTime: stringArray[21],
         }
     }
 

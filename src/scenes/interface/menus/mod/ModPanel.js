@@ -41,8 +41,15 @@ export default class ModPanel extends BaseScene {
         const wiretap = new WireTap(this, 1113, 655)
         this.add.existing(wiretap)
 
+        // white_x
+        const white_x = this.add.image(1481, 39, 'main', 'white-x')
+
         // bg (components)
         new Interactive(bg)
+
+        // white_x (components)
+        const white_xSimpleButton = new SimpleButton(white_x)
+        white_xSimpleButton.callback = () => this.quit()
 
         this.moderator = moderator
         this.modActions = modActions
@@ -75,6 +82,13 @@ export default class ModPanel extends BaseScene {
         this.currentDepth++
         this[widget].depth = this.currentDepth
         this[widget].visible = true
+    }
+
+    quit() {
+        this.interface.showLoading()
+        this.airtower.disconnect()
+        this.airtower.loginReconnect()
+        this.scene.stop()
     }
 
     /* END-USER-CODE */

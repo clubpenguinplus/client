@@ -320,7 +320,9 @@ export default class Unlock extends BaseScene {
 
     onServerClick() {
         this.interface.showLoading()
-        this.scene.start('Servers')
+        this.airtower.disconnect()
+        this.airtower.loginReconnect()
+        this.scene.stop()
     }
 
     onCodeButtonClick() {

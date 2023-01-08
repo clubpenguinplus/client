@@ -45,6 +45,7 @@ export default class Login extends Plugin {
 
     modAuth(args) {
         this.interface.loadExternal('ModPanel')
+        this.shell.client = {id: args[0], rank: args[1]}
     }
 
     unlockAuth(args) {

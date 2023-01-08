@@ -20,7 +20,14 @@ export default class Get extends Plugin {
     }
 
     getUnverifedUsers(args) {
-        this.interface.ModPanel.moderator.showUsers(this.shell.arrayToObject(args[0]))
+        const users = args[0].split(',').map((player) => {
+            if (!player) return
+            return {
+                id: player.split('|')[0],
+                username: player.split('|')[1],
+            }
+        })
+        this.interface.ModPanel.moderator.showUsers(users)
     }
 
     editPlayer(args) {
