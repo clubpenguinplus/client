@@ -312,6 +312,102 @@
             ]
         },
         {
+            "type": "Container",
+            "id": "513b9f36-3cad-4743-bc68-7f4d4de676b9",
+            "label": "oneItem",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "c456458d-c232-4fdd-9519-41e050f2d83d",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 692.5873784349523,
+                    "y": 589.3988548802498,
+                    "list": [
+                        {
+                            "type": "Sprite",
+                            "id": "1cba3bb0-1859-4e99-83ba-56dc2016b3a3",
+                            "label": "coinholder",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "unlock",
+                                "frame": "itemholderanim0001"
+                            },
+                            "x": 1.4126215650477434,
+                            "y": -118.39885488024981
+                        },
+                        {
+                            "type": "Image",
+                            "id": "dbfc3a1f-613c-4778-a5f2-25989eb716e5",
+                            "label": "moneybag",
+                            "components": [],
+                            "texture": {
+                                "key": "unlock",
+                                "frame": "moneybag"
+                            },
+                            "x": 2.4126215650477434,
+                            "y": -3.3988548802498144,
+                            "scaleX": 0.12,
+                            "scaleY": 0.12
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "7b67aaa5-a03c-4432-b475-7163a911f856",
+                            "label": "rectangle_1",
+                            "components": [],
+                            "y": 37,
+                            "scaleX": 0.5448025871080537,
+                            "scaleY": 0.14778083979657908,
+                            "isFilled": true,
+                            "strokeColor": "#000000",
+                            "lineWidth": 2,
+                            "isStroked": true,
+                            "width": 128,
+                            "height": 128
+                        },
+                        {
+                            "type": "Text",
+                            "id": "58318789-c82b-46b0-8e81-ccc125d1ba02",
+                            "label": "coinstext",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -18,
+                            "y": 27,
+                            "text": "1000",
+                            "fontFamily": "Burbank Small",
+                            "color": "#000000ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "b0ebda2f-2393-41f2-855a-fee086589089",
+                    "label": "item",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "2d48d5ff-657d-4a18-b7f5-9ad0c223ca56",
+                            "label": "itemholder",
+                            "components": [],
+                            "texture": {
+                                "key": "unlock",
+                                "frame": "itemholderanim0001"
+                            },
+                            "x": 877,
+                            "y": 471
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "type": "Text",
             "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
             "label": "codeInput",

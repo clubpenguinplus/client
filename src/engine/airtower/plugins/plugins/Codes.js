@@ -16,16 +16,14 @@ export default class Item extends Plugin {
 
     getCodeAttrs(args) {
         let code = args
-        console.log('client code', code)
         this.shell.codes = []
-        this.shell.codes.push(args)
+        this.shell.codes.push(code)
     }
 
     getCodeItems(args) {
         let items = args
-        console.log('client items', items)
-        this.code_items = []
-        this.code_items.push(args)
+        this.shell.code_items = []
+        this.shell.code_items.push(items)
     }
 
     addCodeItem(args) {
