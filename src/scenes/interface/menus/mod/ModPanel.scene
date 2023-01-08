@@ -86,8 +86,10 @@
                 "key": "main",
                 "frame": "white-x"
             },
-            "x": 1481,
-            "y": 39
+            "x": 1495,
+            "y": 23,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [],
