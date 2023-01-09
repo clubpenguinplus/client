@@ -308,6 +308,78 @@
             ]
         },
         {
+            "type": "Text",
+            "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
+            "label": "codeInput",
+            "scope": "CLASS",
+            "components": [
+                "InputText"
+            ],
+            "InputText.charlimit": 24,
+            "InputText.entercallback": "() => {this.onCodeInput()}",
+            "x": 780,
+            "y": 715,
+            "scaleY": 1.6,
+            "originX": 0.5,
+            "originY": 0.5,
+            "alpha": 0.8,
+            "alphaTopLeft": 0.8,
+            "alphaTopRight": 0.8,
+            "alphaBottomLeft": 0.8,
+            "alphaBottomRight": 0.8,
+            "fixedWidth": 350,
+            "lineSpacing": 25,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#000000ff"
+        },
+        {
+            "type": "Image",
+            "id": "ed6c69dc-e7e6-440e-8142-a926b89f98c9",
+            "label": "blue_button",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "blue-button",
+            "Button.callback": "() => {this.onServerClick()}",
+            "texture": {
+                "key": "main",
+                "frame": "blue-button"
+            },
+            "x": 1460,
+            "y": 48
+        },
+        {
+            "type": "Image",
+            "id": "247c3fda-f62b-4423-a157-5d82f0b4ea75",
+            "label": "blue_x",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "blue-x"
+            },
+            "x": 1461,
+            "y": 46
+        },
+        {
+            "type": "Sprite",
+            "id": "a180322f-28b3-4b21-b356-974327f83e33",
+            "label": "topchestt",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "topchestt"
+            },
+            "x": 790,
+            "y": 311,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "visible": false
+        },
+        {
             "type": "Container",
             "id": "513b9f36-3cad-4743-bc68-7f4d4de676b9",
             "label": "oneItem",
@@ -404,60 +476,36 @@
             ]
         },
         {
-            "type": "Text",
-            "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
-            "label": "codeInput",
+            "type": "Sprite",
+            "id": "e227702d-f43a-4e48-ba52-08740620111d",
+            "label": "topchest",
             "scope": "CLASS",
-            "components": [
-                "InputText"
-            ],
-            "InputText.charlimit": 24,
-            "InputText.entercallback": "() => {this.onCodeInput()}",
-            "x": 780,
-            "y": 715,
-            "scaleY": 1.6,
-            "originX": 0.5,
-            "originY": 0.5,
-            "alpha": 0.8,
-            "alphaTopLeft": 0.8,
-            "alphaTopRight": 0.8,
-            "alphaBottomLeft": 0.8,
-            "alphaBottomRight": 0.8,
-            "fixedWidth": 350,
-            "lineSpacing": 25,
-            "align": "center",
-            "fontFamily": "Burbank Small",
-            "fontSize": "28px",
-            "fontStyle": "bold",
-            "color": "#000000ff"
-        },
-        {
-            "type": "Image",
-            "id": "ed6c69dc-e7e6-440e-8142-a926b89f98c9",
-            "label": "blue_button",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "blue-button",
-            "Button.callback": "() => {this.onServerClick()}",
-            "texture": {
-                "key": "main",
-                "frame": "blue-button"
-            },
-            "x": 1460,
-            "y": 48
-        },
-        {
-            "type": "Image",
-            "id": "247c3fda-f62b-4423-a157-5d82f0b4ea75",
-            "label": "blue_x",
             "components": [],
             "texture": {
-                "key": "main",
-                "frame": "blue-x"
+                "key": "unlock",
+                "frame": "topchest"
             },
-            "x": 1461,
-            "y": 46
+            "x": 832,
+            "y": 258,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "b4137b0e-bf14-4b61-86b7-da5cf63fdc81",
+            "label": "bottomchest",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "bottomchest"
+            },
+            "x": 789,
+            "y": 697,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "visible": false
         }
     ],
     "plainObjects": [],
