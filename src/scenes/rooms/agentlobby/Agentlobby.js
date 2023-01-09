@@ -54,7 +54,7 @@ export default class Agentlobby extends RoomScene {
                 if (!this.shell.client.isEPF) this.onPhoneTrigger()
             },
         }
-        this.loadSfx = ['agentlobby-dooropen', 'agentlobby-doorclose', 'agentlobby-phone']
+        this.loadSfx = ['agentlobby-dooropen', 'agentlobby-doorclosed', 'agentlobby-phone']
         /* END-USER-CTR-CODE */
     }
 
@@ -597,6 +597,7 @@ export default class Agentlobby extends RoomScene {
 
     stop() {
         clearTimeout(this.clockTimeTO)
+        super.stop()
     }
 
     /* END-USER-CODE */
