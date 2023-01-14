@@ -345,6 +345,7 @@ export default class Agentcom extends RoomScene {
         const mission_hitSimpleButton = new SimpleButton(mission_hit)
         mission_hitSimpleButton.hoverCallback = () => this.onMissionOver()
         mission_hitSimpleButton.hoverOutCallback = () => this.onMissionOut()
+        new MoveTo(mission_hit)
 
         // agentbook (components)
         const agentbookButton = new Button(agentbook)
@@ -361,16 +362,25 @@ export default class Agentcom extends RoomScene {
         const doorhitSimpleButton = new SimpleButton(doorhit)
         doorhitSimpleButton.hoverCallback = () => this.onDoorOver()
         doorhitSimpleButton.hoverOutCallback = () => this.onDoorOut()
+        const doorhitMoveTo = new MoveTo(doorhit)
+        doorhitMoveTo.x = 1300
+        doorhitMoveTo.y = 300
 
         // systemhit (components)
         const systemhitSimpleButton = new SimpleButton(systemhit)
         systemhitSimpleButton.hoverCallback = () => this.onDefenderOver()
         systemhitSimpleButton.hoverOutCallback = () => this.onDefenderOut()
+        const systemhitMoveTo = new MoveTo(systemhit)
+        systemhitMoveTo.x = 350
+        systemhitMoveTo.y = 380
 
         // spyhit (components)
         const spyhitSimpleButton = new SimpleButton(spyhit)
         spyhitSimpleButton.hoverCallback = () => this.onDrillOver()
         spyhitSimpleButton.hoverOutCallback = () => this.onDrillOut()
+        const spyhitMoveTo = new MoveTo(spyhit)
+        spyhitMoveTo.x = 180
+        spyhitMoveTo.y = 350
 
         // moveto (components)
         const movetoSeat = new Seat(moveto)

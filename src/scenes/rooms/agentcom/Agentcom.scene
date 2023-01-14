@@ -733,7 +733,8 @@
             "id": "bd31c42a-c70e-440f-8729-428fe48f3f50",
             "label": "mission_hit",
             "components": [
-                "SimpleButton"
+                "SimpleButton",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.onMissionOver()",
             "SimpleButton.hoverOutCallback": "() => this.onMissionOut()",
@@ -879,10 +880,13 @@
             "id": "a7e2f048-c01e-4541-86fd-8417ce6dffd2",
             "label": "doorhit",
             "components": [
-                "SimpleButton"
+                "SimpleButton",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.onDoorOver()",
             "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 1300,
+            "MoveTo.y": 300,
             "texture": {
                 "key": "agentcom",
                 "frame": "doorhit"
@@ -900,10 +904,13 @@
             "id": "9aaf2c79-be49-4a12-b414-8dd59865e42a",
             "label": "systemhit",
             "components": [
-                "SimpleButton"
+                "SimpleButton",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.onDefenderOver()",
             "SimpleButton.hoverOutCallback": "() => this.onDefenderOut()",
+            "MoveTo.x": 350,
+            "MoveTo.y": 380,
             "x": 349,
             "y": 139,
             "scaleX": 1.9852271759034843,
@@ -916,10 +923,13 @@
             "id": "08e5ab7a-f14a-424b-8b21-6bc8b63b1e8d",
             "label": "spyhit",
             "components": [
-                "SimpleButton"
+                "SimpleButton",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.onDrillOver()",
             "SimpleButton.hoverOutCallback": "() => this.onDrillOut()",
+            "MoveTo.x": 180,
+            "MoveTo.y": 350,
             "texture": {
                 "key": "agentcom",
                 "frame": "spyhit"

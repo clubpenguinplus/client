@@ -33,9 +33,12 @@
             "id": "71c81e33-daa8-4ee8-894c-aa7a3a14302c",
             "label": "door",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "door",
+            "MoveTo.x": 780,
+            "MoveTo.y": 300,
             "texture": {
                 "key": "hotellobby",
                 "frame": "door"
@@ -381,9 +384,12 @@
             "id": "2dbbbe3a-8336-49eb-8b2b-7929c4bb2b29",
             "label": "petshop_door",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "petshop-door",
+            "MoveTo.x": 1440,
+            "MoveTo.y": 460,
             "texture": {
                 "key": "hotellobby",
                 "frame": "petshop-door"

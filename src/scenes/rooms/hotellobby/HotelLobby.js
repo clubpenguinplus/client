@@ -200,6 +200,9 @@ export default class HotelLobby extends RoomScene {
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        const doorMoveTo = new MoveTo(door)
+        doorMoveTo.x = 780
+        doorMoveTo.y = 300
 
         // backpod (components)
         const backpodButton = new Button(backpod)
@@ -227,6 +230,9 @@ export default class HotelLobby extends RoomScene {
         // petshop_door (components)
         const petshop_doorButton = new Button(petshop_door)
         petshop_doorButton.spriteName = 'petshop-door'
+        const petshop_doorMoveTo = new MoveTo(petshop_door)
+        petshop_doorMoveTo.x = 1440
+        petshop_doorMoveTo.y = 460
 
         // petshop_sign_en (components)
         new LocalisedSprite(petshop_sign_en)
