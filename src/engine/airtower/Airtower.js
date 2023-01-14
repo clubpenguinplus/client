@@ -239,6 +239,10 @@ export default class Airtower {
                 }
             })
 
+            while (args[args.length - 1] == '') {
+                args.pop()
+            }
+
             if (window.location.hostname == 'localhost') {
                 console.log('[Airtower] Message received:', message)
             }

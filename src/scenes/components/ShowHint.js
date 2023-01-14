@@ -40,7 +40,7 @@ export default class ShowHint {
     }
 
     onOver() {
-        let text = this.gameObject.scene.crumbs.getString(this.text) ? this.gameObject.scene.crumbs.getString(this.text) : `localisedString.${this.text}`
+        let text = this.gameObject.scene.crumbs.getString(this.text) ? this.gameObject.scene.crumbs.getString(this.text) : this.text
         this.hint.showHint(this.gameObject, text)
     }
 

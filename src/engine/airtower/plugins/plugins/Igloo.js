@@ -55,7 +55,7 @@ export default class Igloo extends Plugin {
     }
 
     getIgloos(args) {
-        this.interface.main.map.iglooMap.setIgloos(args[0])
+        this.interface.main.map.iglooMap.setIgloos(args)
     }
 
     getIglooOpen(args) {

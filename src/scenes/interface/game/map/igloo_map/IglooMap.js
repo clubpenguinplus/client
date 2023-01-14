@@ -414,6 +414,11 @@ export default class IglooMap extends BaseContainer {
             return
         }
 
+        igloos = igloos.map((igloo) => {
+            let [id, username] = igloo.split('|')
+            return {id, username}
+        })
+
         // Sort alphabetically
         this.igloos = igloos.sort((a, b) => {
             return a.username.toLowerCase().localeCompare(b.username.toLowerCase())

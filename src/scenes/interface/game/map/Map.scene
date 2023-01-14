@@ -648,7 +648,7 @@
                                 "ShowHint"
                             ],
                             "Button.spriteName": "map/places_outline/igloo_outline",
-                            "Button.callback": "() => this.shell.client.sendJoinIgloo(this.shell.client.id)",
+                            "Button.callback": "() => this.sendJoinIgloo()",
                             "Button.activeFrame": false,
                             "ShowHint.text": "urigloo",
                             "texture": {
@@ -686,7 +686,7 @@
                                 "ShowHint"
                             ],
                             "Button.spriteName": "map/places_outline/igloos_outline",
-                            "Button.callback": "() => this.iglooMap.visible = true",
+                            "Button.callback": "() => this.iglooMap.show()",
                             "Button.activeFrame": false,
                             "ShowHint.text": "igloos",
                             "texture": {

@@ -33,6 +33,8 @@ export default class IglooEdit extends BaseScene {
         this.itemContainer
         /** @type {Phaser.GameObjects.Container} */
         this.chooseIgloo
+        /** @type {Phaser.GameObjects.Image} */
+        this.toggler
         /** @type {Phaser.GameObjects.Text} */
         this.grandTotalLikes
         /** @type {Phaser.GameObjects.Text} */
@@ -453,6 +455,10 @@ export default class IglooEdit extends BaseScene {
         choose_iglooButton.spriteName = 'choose-igloo'
         choose_iglooButton.callback = () => this.onEditClick()
 
+        // toggler (components)
+        const togglerSimpleButton = new SimpleButton(toggler)
+        togglerSimpleButton.callback = () => this.toggleOpen()
+
         // close_btn_1 (components)
         const close_btn_1Button = new Button(close_btn_1)
         close_btn_1Button.spriteName = 'close-btn'
@@ -468,6 +474,7 @@ export default class IglooEdit extends BaseScene {
         this.upper = upper
         this.itemContainer = itemContainer
         this.chooseIgloo = chooseIgloo
+        this.toggler = toggler
         this.grandTotalLikes = grandTotalLikes
         this.currentIglooLikes = currentIglooLikes
         this.categories = categories
@@ -891,6 +898,29 @@ export default class IglooEdit extends BaseScene {
             duration: 500,
             ease: 'Power2',
         })
+    }
+
+    toggleOpen() {
+        if (this.shell.client.iglooOpenState == 'open') {
+            this.shell.client.iglooOpenState = 'closed'
+            this.tweens.add({
+                targets: this.toggler,
+                x: 1151,
+                duration: 200,
+                ease: 'Power2',
+            })
+            this.airtower.sendXt('g#cr')
+            return
+        }
+
+        this.shell.client.iglooOpenState = 'open'
+        this.tweens.add({
+            targets: this.toggler,
+            x: 1217,
+            duration: 200,
+            ease: 'Power2',
+        })
+        this.airtower.sendXt('g#or')
     }
 
     /* END-USER-CODE */

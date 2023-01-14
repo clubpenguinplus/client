@@ -475,7 +475,11 @@
                     "type": "Image",
                     "id": "ba72b0a2-b6e3-4f4c-b3aa-81561edaf3c2",
                     "label": "toggler",
-                    "components": [],
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.toggleOpen()",
                     "texture": {
                         "key": "iglooedit-new",
                         "frame": "toggler"
