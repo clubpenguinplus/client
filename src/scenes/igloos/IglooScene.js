@@ -48,7 +48,7 @@ export default class IglooScene extends RoomScene {
             return this.shell.arrayToObject(u)
         })
 
-        let furniture = data.args[6].split(',').map((f) => {
+        let furniture = (data.args[6] || '').split(',').map((f) => {
             let [id, furnitureId, x, y, frame, rotation] = f.split('|')
             return {id, furnitureId, x, y, frame, rotation}
         })
