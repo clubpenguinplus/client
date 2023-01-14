@@ -12,7 +12,7 @@ export default class PenguinFactory {
     createPenguin(user, room) {
         let client = this.shell.client
 
-        if (this.shell.room && this.shell.room.penguins && this.shell.room.penguins[user.id]) return this.shell.room.penguins[user.id]
+        if (room.penguins && room.penguins[user.id]) return room.penguins[user.id]
 
         for (var x in this.shell.mascots) {
             if (this.shell.mascots[x].id == user.id) user.username = this.shell.mascots[x].name
