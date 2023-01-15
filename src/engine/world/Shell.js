@@ -108,7 +108,6 @@ export default class Shell extends BaseScene {
     }
 
     addPenguins() {
-        this.room.penguins = []
         this.room.penguins = this.penguinFactory.createPenguins(this.room.waiting, this.room)
         this.room.isReady = true
 
