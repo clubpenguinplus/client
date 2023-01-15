@@ -87,7 +87,7 @@ export default class Shell extends BaseScene {
             this.room.stop()
         } else {
             this.room.events.once('shutdown', () => {
-                this.createRoom(100, [])
+                this.createRoom(2000, [])
                 this.room.events.once('shutdown', () => this.createIgloo(args))
                 this.room.events.once('create', () => this.room.stop())
             })

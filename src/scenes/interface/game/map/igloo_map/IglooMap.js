@@ -15,6 +15,8 @@ export default class IglooMap extends BaseContainer {
         this.spinner
         /** @type {Phaser.GameObjects.Container} */
         this.panel
+        /** @type {Phaser.GameObjects.Text} */
+        this.username
         /** @type {Phaser.GameObjects.Container} */
         this.down
         /** @type {Phaser.GameObjects.Image} */
@@ -359,6 +361,7 @@ export default class IglooMap extends BaseContainer {
 
         this.spinner = spinner
         this.panel = panel
+        this.username = username
         this.down = down
         this.downButton = downButton
         this.up = up
@@ -394,11 +397,15 @@ export default class IglooMap extends BaseContainer {
     }
 
     onIglooClick() {
+        this.visible = false
+        this.parentContainer.visible = false
         this.shell.client.sendJoinIgloo(this.shell.client.id)
     }
 
     show() {
         this.iglooSprites.map((igloo) => igloo.reset())
+
+        this.username = this.shell.client.penguin.username
 
         this.panel.visible = false
         this.startSpinner()

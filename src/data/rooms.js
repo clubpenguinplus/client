@@ -172,6 +172,7 @@ const rooms = {
         scene: require('@rooms/cloudforest/CloudForest').default,
         x: 800,
         y: 350,
+        preventTeleport: true,
     },
     435: {
         key: 'Skate',
@@ -272,74 +273,97 @@ const rooms = {
     916: {
         key: 'AquaGrabber',
         scene: require('@games/aquagrabber/AquaGrabber').default,
+        preventTeleport: true,
     },
     900: {
         key: 'AstroBarrier',
         scene: require('@games/astrobarrier/AstroBarrier').default,
+        preventTeleport: true,
     },
     905: {
         key: 'CartSurfer',
         scene: require('@games/cartsurfer/CartSurfer').default,
+        preventTeleport: true,
     },
     924: {
         key: 'HydroHopper',
         scene: require('@games/hydrohopper/HydroHopper').default,
+        preventTeleport: true,
     },
     904: {
         key: 'IceFishing',
         scene: require('@games/icefishing/IceFishing').default,
+        preventTeleport: true,
     },
     910: {
         key: 'Pizzatron',
         scene: require('@games/pizzatron/Pizzatron').default,
+        preventTeleport: true,
     },
     925: {
         key: 'PuffleRoundup',
         scene: require('@games/puffleroundup/PuffleRoundup').default,
+        preventTeleport: true,
     },
     926: {
         key: 'JetPackAdventure',
         scene: require('@games/jetpackadventure/JetPackAdventure').default,
+        preventTeleport: true,
     },
     927: {
         key: 'PuffleRescue',
         scene: require('@games/pufflerescue/PuffleRescue').default,
+        preventTeleport: true,
     },
     909: {
         key: 'ThinIce',
         scene: require('@games/thinice/ThinIce').default,
+        preventTeleport: true,
     },
     908: {
         key: 'BeanCounters',
         scene: require('@games/beancounters/BeanCounters').default,
+        preventTeleport: true,
     },
     912: {
         key: 'CatchinWaves',
         scene: require('@games/catchinwaves/CatchinWaves').default,
+        preventTeleport: true,
     },
     928: {
         key: 'PuffleLaunch',
         scene: require('@games/pufflelaunch/PuffleLaunch').default,
+        preventTeleport: true,
     },
     940: {
         key: 'SoundStudio',
         scene: require('@games/soundstudio/SoundStudio').default,
+        preventTeleport: true,
     },
     952: {
         key: 'DanceContest',
         scene: require('@games/dancecontest/DanceContest').default,
+        preventTeleport: true,
     },
     959: {
         key: 'Smoothie',
         scene: require('@games/smoothie/Smoothie').default,
+        preventTeleport: true,
     },
     998: {
         key: 'Card',
         scene: require('@games/card/Card').default,
+        preventTeleport: true,
     },
     999: {
         key: 'Sled',
         scene: require('@games/sled/Sled').default,
+        preventTeleport: true,
+    },
+    2000: {
+        key: 'RoomBuffer',
+        scene: require('@igloos/RoomBuffer').default,
+        preventTeleport: true,
     },
 }
 
