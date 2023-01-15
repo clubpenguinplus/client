@@ -32,6 +32,12 @@ export default class IglooEdit extends BaseScene {
         /** @type {Phaser.GameObjects.Container} */
         this.itemContainer
         /** @type {Phaser.GameObjects.Container} */
+        this.scrollBarContainer
+        /** @type {Phaser.GameObjects.Container} */
+        this.scroller
+        /** @type {NinePatchContainer} */
+        this.scrollbar
+        /** @type {Phaser.GameObjects.Container} */
         this.chooseIgloo
         /** @type {Phaser.GameObjects.Image} */
         this.toggler
@@ -64,7 +70,7 @@ export default class IglooEdit extends BaseScene {
         defaultControls.add(button_backyard)
 
         // controls
-        const controls = this.add.container(0.0014140540733933449, -0.0016985858862005642)
+        const controls = this.add.container(0, 0)
         controls.visible = false
 
         // button_furniture_catalog
@@ -172,6 +178,77 @@ export default class IglooEdit extends BaseScene {
         // x
         const x = this.add.image(1466.9985859459266, 47.001698585925624, 'iglooedit-new', 'x')
         upper.add(x)
+
+        // scrollBarContainer
+        const scrollBarContainer = this.add.container(-0.00001392595368088223, 0.0015205401127835472)
+        upper.add(scrollBarContainer)
+
+        // rounded_rect
+        const rounded_rect = this.add.ninePatchContainer(722.0000122493237, 154.99848689180524, 1300, 32, 'iglooedit-new', 'rounded_rect')
+        rounded_rect.marginLeft = 16
+        rounded_rect.marginTop = 16
+        rounded_rect.marginRight = 16
+        rounded_rect.marginBottom = 16
+        scrollBarContainer.add(rounded_rect)
+
+        // rounded_rect_1
+        const rounded_rect_1 = this.add.ninePatchContainer(722.0000122493237, 154.99848689180524, 1300, 32, 'iglooedit-new', 'rounded_rect')
+        rounded_rect_1.alpha = 0.5
+        rounded_rect_1.marginLeft = 16
+        rounded_rect_1.marginTop = 16
+        rounded_rect_1.marginRight = 16
+        rounded_rect_1.marginBottom = 16
+        rounded_rect_1.ninePatchContainerTintFill = true
+        scrollBarContainer.add(rounded_rect_1)
+
+        // circle
+        const circle = this.add.image(87.00001224932373, 154.99848689180524, 'iglooedit-new', 'circle')
+        scrollBarContainer.add(circle)
+
+        // arrow_1
+        const arrow_1 = this.add.image(85.00001224932373, 154.99848689180524, 'iglooedit-new', 'arrow')
+        arrow_1.scaleX = -1
+        scrollBarContainer.add(arrow_1)
+
+        // circle_1
+        const circle_1 = this.add.image(1356.0000122493238, 154.99848689180524, 'iglooedit-new', 'circle')
+        scrollBarContainer.add(circle_1)
+
+        // arrow_2
+        const arrow_2 = this.add.image(1358.0000122493238, 154.99848689180524, 'iglooedit-new', 'arrow')
+        scrollBarContainer.add(arrow_2)
+
+        // scroller
+        const scroller = this.add.container(168.0000122493237, 154.99848689180524)
+        scrollBarContainer.add(scroller)
+
+        // scrollbar
+        const scrollbar = this.add.ninePatchContainer(9, 0, 150, 32, 'iglooedit-new', 'rounded_rect')
+        scrollbar.marginLeft = 16
+        scrollbar.marginTop = 16
+        scrollbar.marginRight = 16
+        scrollbar.marginBottom = 16
+        scroller.add(scrollbar)
+
+        // rounded_rect_thin
+        const rounded_rect_thin = this.add.image(0, 0, 'iglooedit-new', 'rounded_rect_thin')
+        rounded_rect_thin.scaleY = 0.6
+        scroller.add(rounded_rect_thin)
+
+        // rounded_rect_thin_1
+        const rounded_rect_thin_1 = this.add.image(6, 0, 'iglooedit-new', 'rounded_rect_thin')
+        rounded_rect_thin_1.scaleY = 0.6
+        scroller.add(rounded_rect_thin_1)
+
+        // rounded_rect_thin_2
+        const rounded_rect_thin_2 = this.add.image(18, 0, 'iglooedit-new', 'rounded_rect_thin')
+        rounded_rect_thin_2.scaleY = 0.6
+        scroller.add(rounded_rect_thin_2)
+
+        // rounded_rect_thin_3
+        const rounded_rect_thin_3 = this.add.image(12, 0, 'iglooedit-new', 'rounded_rect_thin')
+        rounded_rect_thin_3.scaleY = 0.6
+        scroller.add(rounded_rect_thin_3)
 
         // chooseIgloo
         const chooseIgloo = this.add.container(0, 0)
@@ -473,6 +550,9 @@ export default class IglooEdit extends BaseScene {
         this.hide = hide
         this.upper = upper
         this.itemContainer = itemContainer
+        this.scrollBarContainer = scrollBarContainer
+        this.scroller = scroller
+        this.scrollbar = scrollbar
         this.chooseIgloo = chooseIgloo
         this.toggler = toggler
         this.grandTotalLikes = grandTotalLikes
@@ -540,6 +620,12 @@ export default class IglooEdit extends BaseScene {
         this.itemContainer.setMask(this.itemsMask)
 
         this.controls.state = 'maximised'
+
+        this.minX = 168
+        this.maxX = 1257
+
+        this.scrollbar.setInteractive()
+        this.scrollbar.on('pointerdown', (pointer) => this.onScrollerDown(pointer))
     }
 
     onSleep() {
@@ -791,6 +877,15 @@ export default class IglooEdit extends BaseScene {
             sprite.setItem(item.type, item.id, item.quantity)
             xcoord += 120
         }
+
+        this.itemContainer.x = 0
+        this.scroller.x = this.minX
+
+        if (this.items.length * 120 > this.maxX - this.minX + 100) {
+            this.scrollBarContainer.visible = true
+        } else {
+            this.scrollBarContainer.visible = false
+        }
     }
 
     updateQuantities() {
@@ -921,6 +1016,33 @@ export default class IglooEdit extends BaseScene {
             ease: 'Power2',
         })
         this.airtower.sendXt('g#or')
+    }
+
+    onScrollerDown(pointer) {
+        let x = pointer.x
+        if (x < this.minX) x = this.minX
+        if (x > this.maxX) x = this.maxX
+        this.scroller.x = x
+        this.input.on('pointermove', this.onScrollerMove, this)
+        this.input.on('pointerup', this.onScrollerUp, this)
+    }
+
+    onScrollerMove(pointer) {
+        let x = pointer.x
+        if (x < this.minX) x = this.minX
+        if (x > this.maxX) x = this.maxX
+        this.scroller.x = x
+
+        let distance = Phaser.Math.Difference(this.minX, x)
+        let width = this.items.length * 120 > this.maxX - this.minX + 100 ? this.items.length * 120 - (this.maxX - this.minX + 300) : 0
+        let xoffset = width / (this.maxX - this.minX)
+        this.itemContainer.x = -(distance * xoffset)
+    }
+
+    onScrollerUp(pointer) {
+        this.input.removeListener('pointermove', this.onScrollerMove)
+        this.input.removeListener('pointerup', this.onScrollerUp)
+        this.scrollerDown = false
     }
 
     /* END-USER-CODE */

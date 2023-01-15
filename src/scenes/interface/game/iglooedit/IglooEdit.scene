@@ -66,8 +66,6 @@
             "label": "controls",
             "scope": "CLASS",
             "components": [],
-            "x": 0.0014140540733933449,
-            "y": -0.0016985858862005642,
             "visible": false,
             "list": [
                 {
@@ -416,6 +414,180 @@
                             },
                             "x": 1466.9985859459266,
                             "y": 47.001698585925624
+                        },
+                        {
+                            "type": "Container",
+                            "id": "d51496d9-dc0c-4756-8a41-555bd0386c6f",
+                            "label": "scrollBarContainer",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -0.00001392595368088223,
+                            "y": 0.0015205401127835472,
+                            "list": [
+                                {
+                                    "type": "NinePatchContainer",
+                                    "id": "0cf4b59a-b004-4d62-9c8d-e15eab6cc415",
+                                    "label": "rounded_rect",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "iglooedit-new",
+                                        "frame": "rounded_rect"
+                                    },
+                                    "x": 722.0000122493237,
+                                    "y": 154.99848689180524,
+                                    "width": 1300,
+                                    "height": 32,
+                                    "marginLeft": 16,
+                                    "marginRight": 16,
+                                    "marginTop": 16,
+                                    "marginBottom": 16
+                                },
+                                {
+                                    "type": "NinePatchContainer",
+                                    "id": "b21ed0c4-e8fd-43af-a1a3-8f527bbaf8fe",
+                                    "label": "rounded_rect_1",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "iglooedit-new",
+                                        "frame": "rounded_rect"
+                                    },
+                                    "x": 722.0000122493237,
+                                    "y": 154.99848689180524,
+                                    "alpha": 0.5,
+                                    "width": 1300,
+                                    "height": 32,
+                                    "marginLeft": 16,
+                                    "marginRight": 16,
+                                    "marginTop": 16,
+                                    "marginBottom": 16,
+                                    "ninePatchContainerTintFill": true
+                                },
+                                {
+                                    "type": "Image",
+                                    "id": "2f904f93-c774-429b-a7ed-3c4c5e1c0695",
+                                    "label": "circle",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "iglooedit-new",
+                                        "frame": "circle"
+                                    },
+                                    "x": 87.00001224932373,
+                                    "y": 154.99848689180524
+                                },
+                                {
+                                    "type": "Image",
+                                    "id": "9f41345d-1c6e-40a8-aa7e-52e6c1a237e1",
+                                    "label": "arrow_1",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "iglooedit-new",
+                                        "frame": "arrow"
+                                    },
+                                    "x": 85.00001224932373,
+                                    "y": 154.99848689180524,
+                                    "scaleX": -1
+                                },
+                                {
+                                    "type": "Image",
+                                    "id": "f260b10b-4eb0-499b-8612-e8843b79ddaf",
+                                    "label": "circle_1",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "iglooedit-new",
+                                        "frame": "circle"
+                                    },
+                                    "x": 1356.0000122493238,
+                                    "y": 154.99848689180524
+                                },
+                                {
+                                    "type": "Image",
+                                    "id": "c4f4c1a9-d229-4871-83fd-0e75fe64c861",
+                                    "label": "arrow_2",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "iglooedit-new",
+                                        "frame": "arrow"
+                                    },
+                                    "x": 1358.0000122493238,
+                                    "y": 154.99848689180524
+                                },
+                                {
+                                    "type": "Container",
+                                    "id": "245a78db-be61-4cda-87aa-0f51f5a4c5aa",
+                                    "label": "scroller",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "x": 168.0000122493237,
+                                    "y": 154.99848689180524,
+                                    "list": [
+                                        {
+                                            "type": "NinePatchContainer",
+                                            "id": "591071ad-a275-42a2-9374-edd0cd516253",
+                                            "label": "scrollbar",
+                                            "scope": "CLASS",
+                                            "components": [],
+                                            "texture": {
+                                                "key": "iglooedit-new",
+                                                "frame": "rounded_rect"
+                                            },
+                                            "x": 9,
+                                            "width": 150,
+                                            "height": 32,
+                                            "marginLeft": 16,
+                                            "marginRight": 16,
+                                            "marginTop": 16,
+                                            "marginBottom": 16
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "id": "cc8b6570-9820-4d45-b7fa-ac2395aa399a",
+                                            "label": "rounded_rect_thin",
+                                            "components": [],
+                                            "texture": {
+                                                "key": "iglooedit-new",
+                                                "frame": "rounded_rect_thin"
+                                            },
+                                            "scaleY": 0.6
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "id": "d97bc726-acfe-4915-94c3-143dc03fe00d",
+                                            "label": "rounded_rect_thin_1",
+                                            "components": [],
+                                            "texture": {
+                                                "key": "iglooedit-new",
+                                                "frame": "rounded_rect_thin"
+                                            },
+                                            "x": 6,
+                                            "scaleY": 0.6
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "id": "ff5645b6-281b-443f-af1d-b5501349e190",
+                                            "label": "rounded_rect_thin_2",
+                                            "components": [],
+                                            "texture": {
+                                                "key": "iglooedit-new",
+                                                "frame": "rounded_rect_thin"
+                                            },
+                                            "x": 18,
+                                            "scaleY": 0.6
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "id": "1726be81-ce9f-455d-a684-748581a04a5a",
+                                            "label": "rounded_rect_thin_3",
+                                            "components": [],
+                                            "texture": {
+                                                "key": "iglooedit-new",
+                                                "frame": "rounded_rect_thin"
+                                            },
+                                            "x": 12,
+                                            "scaleY": 0.6
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
