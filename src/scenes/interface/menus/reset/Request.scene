@@ -1,5 +1,5 @@
 {
-    "id": "44266b36-9539-4fda-9926-dffbb407b024",
+    "id": "99f33b87-dd49-4aba-b02e-2254baa13dd1",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -8,7 +8,7 @@
         "superClassName": "BaseScene",
         "preloadPackFiles": [],
         "createMethodName": "_create",
-        "sceneKey": "Reset",
+        "sceneKey": "Request",
         "borderWidth": 1520,
         "borderHeight": 960
     },
@@ -160,53 +160,22 @@
         },
         {
             "type": "Text",
-            "id": "6ff586b9-fbe0-49f6-9801-71f273c1df58",
-            "label": "passwordText",
-            "components": [
-                "LocalisedString"
-            ],
-            "LocalisedString.id": "confirmNewPassword",
-            "x": 620,
-            "y": 385,
-            "originX": 1,
-            "originY": 0.5,
-            "text": "New Password:",
-            "lineSpacing": 25,
-            "align": "right",
-            "fontFamily": "Burbank Small",
-            "fontSize": "30px",
-            "color": "#000000ff"
-        },
-        {
-            "type": "Text",
             "id": "dfe772c9-e24b-4230-a416-f95f1b14b3b3",
             "label": "usernameText",
             "components": [
                 "LocalisedString"
             ],
-            "LocalisedString.id": "newPassword",
-            "x": 620,
-            "y": 309,
-            "originX": 1,
+            "LocalisedString.id": "emailOrUser",
+            "x": 760,
+            "y": 208,
+            "originX": 0.5,
             "originY": 0.5,
-            "text": "New Password:",
+            "text": "Email Address or Username:",
             "lineSpacing": 25,
-            "align": "right",
+            "align": "center",
             "fontFamily": "Burbank Small",
-            "fontSize": "30px",
+            "fontSize": "34px",
             "color": "#000000ff"
-        },
-        {
-            "type": "Image",
-            "id": "ffeb45b6-13e0-49b0-ad82-294a535c3ac4",
-            "label": "password",
-            "components": [],
-            "texture": {
-                "key": "login",
-                "frame": "input"
-            },
-            "x": 815,
-            "y": 385
         },
         {
             "type": "Image",
@@ -217,53 +186,25 @@
                 "key": "login",
                 "frame": "input"
             },
-            "x": 815,
-            "y": 309
+            "x": 760,
+            "y": 263
         },
         {
-            "type": "Container",
-            "id": "66aef8ce-4de3-4327-8b2f-a98a1ff56f51",
-            "label": "inputTextContainer",
+            "type": "Text",
+            "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
+            "label": "usernameInput",
             "scope": "CLASS",
-            "components": [],
-            "x": 635,
-            "y": 356.1357590398048,
-            "list": [
-                {
-                    "type": "Text",
-                    "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
-                    "label": "usernameInput",
-                    "scope": "CLASS",
-                    "components": [
-                        "InputText"
-                    ],
-                    "InputText.ispassword": true,
-                    "y": -48,
-                    "originY": 0.5,
-                    "fixedWidth": 350,
-                    "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "30px",
-                    "color": "#000000ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "e709b25a-fe3a-4e09-ab66-a3fdc81892c4",
-                    "label": "passwordInput",
-                    "scope": "CLASS",
-                    "components": [
-                        "InputText"
-                    ],
-                    "InputText.ispassword": true,
-                    "y": 28.86422789629154,
-                    "originY": 0.5,
-                    "fixedWidth": 350,
-                    "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "30px",
-                    "color": "#000000ff"
-                }
-            ]
+            "components": [
+                "InputText"
+            ],
+            "x": 579,
+            "y": 262,
+            "originY": 0.5,
+            "fixedWidth": 350,
+            "lineSpacing": 25,
+            "fontFamily": "Burbank Small",
+            "fontSize": "30px",
+            "color": "#000000ff"
         },
         {
             "type": "Text",
@@ -286,6 +227,26 @@
             "stroke": "#003366",
             "strokeThickness": 10,
             "shadow.color": "#000000ff"
+        },
+        {
+            "type": "Text",
+            "id": "85fc55bf-478b-4f77-930e-35171807a337",
+            "label": "registerText_1",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "resetInfo",
+            "x": 760,
+            "y": 385,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "If an account is found matching the email or username given, we'll send you (or your parent) a link to reset your password.",
+            "fixedWidth": 1000,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "35px",
+            "color": "#000000ff",
+            "wordWrapWidth": 1000
         }
     ],
     "plainObjects": [],

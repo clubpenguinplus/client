@@ -288,6 +288,12 @@ export default class Airtower {
                 case 'B#KO':
                     this.register.invalidKey()
                     return
+                case 'PR#OK':
+                    this.reset.passwordReset()
+                    return
+                case 'PR#KO':
+                    this.reset.invalidCode()
+                    return
                 case 'KO':
                     if (!this.lastLoginScene) return this.game.scene.start('Login')
 

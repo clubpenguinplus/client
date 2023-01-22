@@ -74,6 +74,7 @@
                 "SimpleButton",
                 "Animation"
             ],
+            "SimpleButton.callback": "() => this.onForgotClick()",
             "Animation.key": "small-button",
             "Animation.end": 3,
             "Animation.repeat": 0,

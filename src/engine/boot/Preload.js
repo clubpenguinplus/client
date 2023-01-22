@@ -9,6 +9,8 @@ import Main from '@scenes/interface/game/main/Main'
 import IglooEdit from '@scenes/interface/game/iglooedit/IglooEdit'
 import Activate from '@scenes/interface/menus/activate/Activate'
 import Register from '@scenes/interface/menus/register/Register'
+import Reset from '@scenes/interface/menus/reset/Reset'
+import Request from '@scenes/interface/menus/reset/Request'
 
 export default class Preload extends BaseScene {
     preload() {
@@ -28,6 +30,8 @@ export default class Preload extends BaseScene {
         this.scene.add('Servers', Servers)
         this.scene.add('Main', Main)
         this.scene.add('IglooEdit', IglooEdit)
+        this.scene.add('Reset', Reset)
+        this.scene.add('Request', Request)
 
         document.getElementsByTagName('canvas')[1].id = 'game_canvas'
         document.getElementsByTagName('canvas')[1].style.borderRadius = '10px'
@@ -188,6 +192,13 @@ export default class Preload extends BaseScene {
             let code = details.substring(details.indexOf('&') + 1, details.length)
 
             this.send2FA(id, code)
+        }
+        if (queryString.includes('reset')) {
+            window.passwordResetKey = queryString.split('=')[1]
+            this.scene.start('Reset')
+        }
+        if (queryString.includes('forgot')) {
+            this.scene.start('Request')
         }
         if (this.airtower.isSavedPenguins) return this.scene.start('PenguinSelect')
         this.scene.start('Login')

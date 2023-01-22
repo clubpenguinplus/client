@@ -213,7 +213,7 @@ export default class Register extends BaseScene {
     }
 
     onCreateClick() {
-        window.location.href = '/?create'
+        window.location.href = `/${this.shell.language}/?create`
     }
 
     onBackClick() {

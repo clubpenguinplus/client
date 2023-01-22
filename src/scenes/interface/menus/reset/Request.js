@@ -4,16 +4,12 @@ import {Animation, Button, SimpleButton, LocalisedString, InputText} from '@comp
 
 /* START OF COMPILED CODE */
 
-export default class Reset extends BaseScene {
+export default class Request extends BaseScene {
     constructor() {
-        super('Reset')
+        super('Request')
 
-        /** @type {Phaser.GameObjects.Container} */
-        this.inputTextContainer
         /** @type {Phaser.GameObjects.Text} */
         this.usernameInput
-        /** @type {Phaser.GameObjects.Text} */
-        this.passwordInput
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
@@ -62,48 +58,34 @@ export default class Reset extends BaseScene {
         loginText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '38px'})
         loginText.setLineSpacing(25)
 
-        // passwordText
-        const passwordText = this.add.text(620, 385, '', {})
-        passwordText.setOrigin(1, 0.5)
-        passwordText.text = 'New Password:'
-        passwordText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
-        passwordText.setLineSpacing(25)
-
         // usernameText
-        const usernameText = this.add.text(620, 309, '', {})
-        usernameText.setOrigin(1, 0.5)
-        usernameText.text = 'New Password:'
-        usernameText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        const usernameText = this.add.text(760, 208, '', {})
+        usernameText.setOrigin(0.5, 0.5)
+        usernameText.text = 'Email Address or Username:'
+        usernameText.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '34px'})
         usernameText.setLineSpacing(25)
 
-        // password
-        this.add.image(815, 385, 'login', 'input')
-
         // username
-        this.add.image(815, 309, 'login', 'input')
-
-        // inputTextContainer
-        const inputTextContainer = this.add.container(635, 356.1357590398048)
+        this.add.image(760, 263, 'login', 'input')
 
         // usernameInput
-        const usernameInput = this.add.text(0, -48, '', {})
+        const usernameInput = this.add.text(579, 262, '', {})
         usernameInput.setOrigin(0, 0.5)
         usernameInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '30px'})
         usernameInput.setLineSpacing(25)
-        inputTextContainer.add(usernameInput)
-
-        // passwordInput
-        const passwordInput = this.add.text(0, 28.86422789629154, '', {})
-        passwordInput.setOrigin(0, 0.5)
-        passwordInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '30px'})
-        passwordInput.setLineSpacing(25)
-        inputTextContainer.add(passwordInput)
 
         // suggested
         const suggested = this.add.text(760, 106, '', {})
         suggested.setOrigin(0.5, 0.5)
         suggested.text = 'RESET YOUR PASSWORD'
         suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'CCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
+
+        // registerText_1
+        const registerText_1 = this.add.text(760, 385, '', {})
+        registerText_1.setOrigin(0.5, 0.5)
+        registerText_1.text = "If an account is found matching the email or username given, we'll send you (or your parent) a link to reset your password."
+        registerText_1.setStyle({align: 'center', color: '#000000ff', fixedWidth: 1000, fontFamily: 'Burbank Small', fontSize: '35px'})
+        registerText_1.setWordWrapWidth(1000)
 
         // backButton (components)
         const backButtonSimpleButton = new SimpleButton(backButton)
@@ -144,29 +126,22 @@ export default class Reset extends BaseScene {
         const loginTextLocalisedString = new LocalisedString(loginText)
         loginTextLocalisedString.id = 'reset'
 
-        // passwordText (components)
-        const passwordTextLocalisedString = new LocalisedString(passwordText)
-        passwordTextLocalisedString.id = 'confirmNewPassword'
-
         // usernameText (components)
         const usernameTextLocalisedString = new LocalisedString(usernameText)
-        usernameTextLocalisedString.id = 'newPassword'
+        usernameTextLocalisedString.id = 'emailOrUser'
 
         // usernameInput (components)
-        const usernameInputInputText = new InputText(usernameInput)
-        usernameInputInputText.ispassword = true
-
-        // passwordInput (components)
-        const passwordInputInputText = new InputText(passwordInput)
-        passwordInputInputText.ispassword = true
+        new InputText(usernameInput)
 
         // suggested (components)
         const suggestedLocalisedString = new LocalisedString(suggested)
         suggestedLocalisedString.id = 'changePassword'
 
-        this.inputTextContainer = inputTextContainer
+        // registerText_1 (components)
+        const registerText_1LocalisedString = new LocalisedString(registerText_1)
+        registerText_1LocalisedString.id = 'resetInfo'
+
         this.usernameInput = usernameInput
-        this.passwordInput = passwordInput
 
         this.events.emit('scene-awake')
     }
@@ -176,42 +151,23 @@ export default class Reset extends BaseScene {
     create() {
         this._create()
 
-        this.airtower.reset = this
+        this.airtower.request = this
 
         // Input
         this.input.keyboard.on('keydown-ENTER', () => this.onResetSubmit())
     }
 
     onResetSubmit() {
-        let password = this.usernameInput.textContent
-        let confirm = this.passwordInput.textContent
+        let user = this.usernameInput.textContent
 
-        if (password.length < 6) {
-            return this.interface.prompt.showError(this.crumbs.getString('passwordTooShort'))
-        }
-
-        if (password != confirm) {
-            return this.interface.prompt.showError(this.crumbs.getString('passwordsDontMatch'))
-        }
-
-        this.interface.showLoading(this.crumbs.getString('resettingPassword'))
+        this.interface.showLoading()
 
         this.airtower.connectLogin(false, false, () => {
-            this.airtower.sendXml(`<msg t='sys'><body action='reset' r='0'><newPassword>${password}</newPassword><key>${window.passwordResetKey}</key></body></msg>`)
-        })
-    }
-
-    passwordReset() {
-        this.interface.hideLoading()
-        this.interface.prompt.showWindow(this.crumbs.getString('passwordReset'), 'single', () => {
-            document.location.reload()
-        })
-    }
-
-    invalidCode() {
-        this.interface.hideLoading()
-        this.interface.prompt.showError(this.crumbs.getString('passwordWrongKey'), 'Ok', () => {
-            window.location.href = `/${this.shell.language}/?forgot`
+            this.airtower.sendXml(`<msg t='sys'><body action='requestReset' r='0'><user>${user}</user></body></msg>`)
+            this.interface.hideLoading()
+            this.interface.prompt.showWindow(this.crumbs.getString('sendingEmail'), 'single', () => {
+                document.location.reload()
+            })
         })
     }
 

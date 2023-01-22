@@ -155,7 +155,8 @@ export default class Login extends BaseScene {
         createButtonAnimation.onHover = true
 
         // forgotButton (components)
-        new SimpleButton(forgotButton)
+        const forgotButtonSimpleButton = new SimpleButton(forgotButton)
+        forgotButtonSimpleButton.callback = () => this.onForgotClick()
         const forgotButtonAnimation = new Animation(forgotButton)
         forgotButtonAnimation.key = 'small-button'
         forgotButtonAnimation.end = 3
@@ -244,8 +245,12 @@ export default class Login extends BaseScene {
         })
     }
 
+    onForgotClick() {
+        window.location.href = `/${this.shell.language}/?forgot`
+    }
+
     onCreateClick() {
-        window.location.href = '/?create'
+        window.location.href = `/${this.shell.language}/?create`
     }
 
     onBackClick() {
