@@ -282,10 +282,10 @@ export default class Airtower {
                 case 'A#KO':
                     this.activate.invalidCode()
                     return
-                case 'R#OK':
+                case 'B#OK':
                     this.register.keyRegistered()
                     return
-                case 'R#KO':
+                case 'B#KO':
                     this.register.invalidKey()
                     return
                 case 'KO':
