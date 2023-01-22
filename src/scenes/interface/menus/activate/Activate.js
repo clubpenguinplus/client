@@ -201,7 +201,7 @@ export default class Activate extends BaseScene {
     accountActivated() {
         this.interface.hideLoading()
         this.interface.prompt.showWindow(this.crumbs.getString('accountActivated'), 'single', () => {
-            document.location.reload()
+            document.location.href = `/${this.shell.language}/`
         })
     }
 

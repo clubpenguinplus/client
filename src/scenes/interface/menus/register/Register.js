@@ -201,7 +201,7 @@ export default class Register extends BaseScene {
     keyRegistered() {
         this.interface.hideLoading()
         this.interface.prompt.showWindow(this.crumbs.getString('registerKeySuccess'), 'single', () => {
-            document.location.reload()
+            document.location.href = `/${this.shell.language}/`
         })
     }
 

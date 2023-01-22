@@ -166,7 +166,7 @@ export default class Request extends BaseScene {
             this.airtower.sendXml(`<msg t='sys'><body action='requestReset' r='0'><user>${user}</user></body></msg>`)
             this.interface.hideLoading()
             this.interface.prompt.showWindow(this.crumbs.getString('sendingEmail'), 'single', () => {
-                document.location.reload()
+                document.location.href = `/${this.shell.language}/`
             })
         })
     }

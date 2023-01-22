@@ -204,7 +204,7 @@ export default class Reset extends BaseScene {
     passwordReset() {
         this.interface.hideLoading()
         this.interface.prompt.showWindow(this.crumbs.getString('passwordReset'), 'single', () => {
-            document.location.reload()
+            document.location.href = `/${this.shell.language}/`
         })
     }
 
