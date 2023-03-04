@@ -432,6 +432,9 @@ export default class Main extends BaseScene {
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
 
+        // beta
+        const beta = this.add.image(1354, 68, 'main', 'beta')
+
         // widgetLayer
         const widgetLayer = this.add.layer()
 
@@ -736,6 +739,12 @@ export default class Main extends BaseScene {
         moderatoriconButton.spriteName = 'mod'
         moderatoriconButton.callback = () => this.onModClick()
         moderatoriconButton.activeFrame = false
+
+        // beta (components)
+        const betaButton = new Button(beta)
+        betaButton.spriteName = 'beta'
+        betaButton.callback = () => this.onBetaClick()
+        betaButton.activeFrame = false
 
         this.pinContainer = pinContainer
         this.dock = dock
@@ -1123,6 +1132,10 @@ export default class Main extends BaseScene {
             ease: 'Power2',
         })
         this.map.visible = true
+    }
+
+    onBetaClick() {
+        this.interface.loadExternal('Report')
     }
 
     /* END-USER-CODE */

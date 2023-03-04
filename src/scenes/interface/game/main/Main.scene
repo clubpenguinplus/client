@@ -997,6 +997,23 @@
             "visible": false
         },
         {
+            "type": "Image",
+            "id": "a758f2b9-3859-4cd2-ae20-f40a070251e7",
+            "label": "beta",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "beta",
+            "Button.callback": "() => this.onBetaClick()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "main",
+                "frame": "beta"
+            },
+            "x": 1354,
+            "y": 68
+        },
+        {
             "type": "Layer",
             "id": "a205badf-674d-4f0f-bb3e-e687b24d30e9",
             "label": "widgetLayer",

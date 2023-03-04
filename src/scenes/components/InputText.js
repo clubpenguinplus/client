@@ -72,7 +72,7 @@ export default class InputText extends EventComponent {
         this.clickZone.on('pointerout', () => this.onOut())
         this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
 
-        this.indicator = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, 1, this.gameObject.height, `0x${this.gameObject.style.color.substring(1, 7)}`, 1)
+        this.indicator = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, 1, this.gameObject.height, `0x${this.gameObject.style.color == '#fff' ? 'ffffff' : this.gameObject.style.color.substring(1, 7)}`, 1)
         this.indicator.setOrigin(this.gameObject.originX, this.gameObject.originY)
         this.indicator.visible = false
         if (this.gameObject.scene.inputTextContainer && !insideCustomContainer) {
