@@ -718,7 +718,7 @@ export default class Main extends BaseScene {
         const mail_btnButton = new Button(mail_btn)
         mail_btnButton.spriteName = 'mail-button'
         mail_btnButton.callback = () => {
-            this.shell.RuffleManager.handleLoadOtherSwf('mail.swf')
+            /*this.shell.RuffleManager.handleLoadOtherSwf("mail.swf")*/
         }
         mail_btnButton.activeFrame = false
 

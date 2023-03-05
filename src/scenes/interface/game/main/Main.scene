@@ -930,7 +930,7 @@
                 "Button"
             ],
             "Button.spriteName": "mail-button",
-            "Button.callback": "() => {this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")}",
+            "Button.callback": "() => {/*this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")*/}",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",

@@ -300,9 +300,9 @@ export default class Buttons extends BaseContainer {
     }
 
     onMailClick() {
-        this.shell.RuffleManager.handleLoadOtherSwf('mail.swf', {
-            username: this.parentContainer.username.text,
-        })
+        // this.shell.RuffleManager.handleLoadOtherSwf('mail.swf', {
+        //     username: this.parentContainer.username.text,
+        // })
     }
 
     onReportClick() {
