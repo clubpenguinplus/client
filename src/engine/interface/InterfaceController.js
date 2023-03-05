@@ -213,7 +213,7 @@ export default class InterfaceController extends BaseScene {
         }
     }
 
-    scaleToFixedSize(text) {
+    scaleToFixedSize(text, verticallyCenter = true, maxFontSize = 0) {
         const maxWidth = text.style.fixedWidth
         const maxHeight = text.style.fixedHeight
 
@@ -231,7 +231,7 @@ export default class InterfaceController extends BaseScene {
         text.setPadding({top: 0, bottom: 0})
 
         // Maximise font size
-        while ((maxWidth == 0 || text.width < maxWidth) && (maxHeight == 0 || text.height < maxHeight)) {
+        while ((maxWidth == 0 || text.width < maxWidth) && (maxHeight == 0 || text.height < maxHeight) && (maxFontSize == 0 || parseInt(text.style.fontSize) < maxFontSize)) {
             text.setStyle({fontSize: parseInt(text.style.fontSize) + 1 + 'px'})
         }
 
@@ -240,7 +240,7 @@ export default class InterfaceController extends BaseScene {
             text.setStyle({fontSize: parseInt(text.style.fontSize) - 1 + 'px'})
         }
 
-        if (text.height < maxHeight) {
+        if (text.height < maxHeight && verticallyCenter) {
             text.setPadding({top: (maxHeight - text.height) / 2, bottom: (maxHeight - text.height) / 2})
         }
 

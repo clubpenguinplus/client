@@ -90,6 +90,8 @@ export default class ClientController {
             }
         }
 
+        this.sessionId = args[17]
+
         this.coins = this.string.coins
         this.rank = this.string.rank
         this.id = this.string.id
