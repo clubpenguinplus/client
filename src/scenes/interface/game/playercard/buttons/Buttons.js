@@ -309,8 +309,8 @@ export default class Buttons extends BaseContainer {
         if (this.shell.client.isModerator) {
             this.showWarn()
         } else {
-            this.interface.main.snitch.visible = true
-            this.interface.main.snitch.returnToStep1(this.parentContainer.id)
+            this.interface.reportUser = this.parentContainer.username.text
+            this.interface.loadExternal('Report')
         }
     }
 

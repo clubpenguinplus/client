@@ -1,5 +1,5 @@
 import BaseScene from '@scenes/base/BaseScene'
-import {Button, SimpleButton, LocalisedString, Interactive} from '@scenes/components/components'
+import {Button, SimpleButton, LocalisedString, Interactive, InputText} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
@@ -63,8 +63,6 @@ export default class Report extends BaseScene {
         this.allButton
         /** @type {Phaser.GameObjects.Text} */
         this.nextprevpage
-        /** @type {NinePatchContainer} */
-        this.bg_1
         /** @type {Phaser.GameObjects.Container} */
         this.main
         /** @type {Phaser.GameObjects.Text} */
@@ -107,6 +105,16 @@ export default class Report extends BaseScene {
         this.updatedBodyMain
         /** @type {Phaser.GameObjects.Text} */
         this.noIssue
+        /** @type {Phaser.GameObjects.Container} */
+        this.createNew
+        /** @type {NinePatchContainer} */
+        this.bg_1
+        /** @type {Phaser.GameObjects.Text} */
+        this.text
+        /** @type {Phaser.GameObjects.Text} */
+        this.newTitle
+        /** @type {Phaser.GameObjects.Text} */
+        this.newBody
         /** @type {Phaser.GameObjects.Text[]} */
         this.keys
         /** @type {Phaser.GameObjects.Text[]} */
@@ -364,43 +372,16 @@ export default class Report extends BaseScene {
         nextprevpage.setStyle({align: 'center', color: '#642602ff', fixedWidth: 270, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         nextprevpage.setLineSpacing(5)
 
+        // rectangle_3
+        const rectangle_3 = this.add.rectangle(269, 859, 5, 50)
+        rectangle_3.isFilled = true
+        rectangle_3.fillColor = 10304001
+
         // rectangle_13
         const rectangle_13 = this.add.rectangle(181, 857, 160, 30)
 
         // rectangle_14
         const rectangle_14 = this.add.rectangle(327, 856, 100, 30)
-
-        // createNew
-        const createNew = this.add.container(760, 480)
-        createNew.visible = false
-
-        // block_1
-        const block_1 = this.add.rectangle(0, 0, 1520, 960)
-        block_1.isFilled = true
-        block_1.fillColor = 0
-        block_1.fillAlpha = 0.3
-        createNew.add(block_1)
-
-        // bg_1
-        const bg_1 = this.add.ninePatchContainer(0, 0, 840, 840, 'banning', 'banned_bg')
-        bg_1.marginLeft = 50
-        bg_1.marginTop = 50
-        bg_1.marginRight = 50
-        bg_1.marginBottom = 50
-        createNew.add(bg_1)
-
-        // rectangle_15
-        const rectangle_15 = this.add.rectangle(0, 0, 700, 500)
-        rectangle_15.isFilled = true
-        rectangle_15.isStroked = true
-        rectangle_15.strokeColor = 10304001
-        rectangle_15.lineWidth = 7
-        createNew.add(rectangle_15)
-
-        // rectangle_3
-        const rectangle_3 = this.add.rectangle(269, 859, 5, 50)
-        rectangle_3.isFilled = true
-        rectangle_3.fillColor = 10304001
 
         // main
         const main = this.add.container(400, 226)
@@ -582,6 +563,74 @@ export default class Report extends BaseScene {
         noIssue.setStyle({align: 'center', color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '50px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         noIssue.setLineSpacing(5)
 
+        // createNew
+        const createNew = this.add.container(-0.0018489741966214533, -0.00029572421983315323)
+        createNew.visible = false
+
+        // block_1
+        const block_1 = this.add.rectangle(760.0018599281885, 480.0002907075048, 1520, 960)
+        block_1.isFilled = true
+        block_1.fillColor = 0
+        block_1.fillAlpha = 0.3
+        createNew.add(block_1)
+
+        // bg_1
+        const bg_1 = this.add.ninePatchContainer(760.0018599281885, 480.0002907075048, 840, 840, 'banning', 'banned_bg')
+        bg_1.marginLeft = 50
+        bg_1.marginTop = 50
+        bg_1.marginRight = 50
+        bg_1.marginBottom = 50
+        createNew.add(bg_1)
+
+        // rectangle_15
+        const rectangle_15 = this.add.rectangle(760.0018599281885, 499.0002907075048, 700, 500)
+        rectangle_15.isFilled = true
+        rectangle_15.isStroked = true
+        rectangle_15.strokeColor = 10304001
+        rectangle_15.lineWidth = 7
+        createNew.add(rectangle_15)
+
+        // long_button
+        const long_button = this.add.image(760.0018599281885, 811.000290707505, 'banning', 'long_button')
+        createNew.add(long_button)
+
+        // text
+        const text = this.add.text(760.0018599281885, 811.000290707505, '', {})
+        text.setOrigin(0.5, 0.5)
+        text.text = 'Submit'
+        text.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text.setLineSpacing(5)
+        text.setWordWrapWidth(550)
+        createNew.add(text)
+
+        // rectangle_4
+        const rectangle_4 = this.add.rectangle(760.0018599281885, 177.0002907075049, 700, 100)
+        rectangle_4.isFilled = true
+        rectangle_4.isStroked = true
+        rectangle_4.strokeColor = 10304001
+        rectangle_4.lineWidth = 7
+        createNew.add(rectangle_4)
+
+        // newTitle
+        const newTitle = this.add.text(433.0018599281886, 178.0002907075049, '', {})
+        newTitle.setOrigin(0, 0.5)
+        newTitle.text = 'Enter a title'
+        newTitle.setStyle({color: '#642602ff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '32px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        newTitle.setLineSpacing(5)
+        createNew.add(newTitle)
+
+        // newBody
+        const newBody = this.add.text(433.0018599281886, 272.0002907075048, '', {})
+        newBody.text = 'Please give a detailed description of what occurred, what you\nexpected to happen, and how we can reproduce this. If you need to,\nyou can upload images/video to another site and link them.'
+        newBody.setStyle({color: '#642602ff', fixedWidth: 650, fixedHeight: 450, fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        createNew.add(newBody)
+
+        // white_x_1
+        const white_x_1 = this.add.image(1143, 92, 'main', 'white-x')
+        white_x_1.scaleX = 0.7
+        white_x_1.scaleY = 0.7
+        createNew.add(white_x_1)
+
         // lists
         const keys = [key1, key, key_1, key_2, key_3]
         const resolutions = [resolution1, resolution, resolution_1, resolution_2, resolution_3]
@@ -632,7 +681,7 @@ export default class Report extends BaseScene {
 
         // rectangle_11 (components)
         const rectangle_11SimpleButton = new SimpleButton(rectangle_11)
-        rectangle_11SimpleButton.callback = () => this.createNew()
+        rectangle_11SimpleButton.callback = () => this.createIssue()
 
         // rectangle_12 (components)
         const rectangle_12SimpleButton = new SimpleButton(rectangle_12)
@@ -648,6 +697,26 @@ export default class Report extends BaseScene {
 
         // block_1 (components)
         new Interactive(block_1)
+
+        // long_button (components)
+        const long_buttonButton = new Button(long_button)
+        long_buttonButton.spriteName = 'long_button'
+        long_buttonButton.callback = () => this.submitIssue()
+
+        // newTitle (components)
+        const newTitleInputText = new InputText(newTitle)
+        newTitleInputText.multiline = true
+        newTitleInputText.charlimit = 80
+
+        // newBody (components)
+        const newBodyInputText = new InputText(newBody)
+        newBodyInputText.multiline = true
+
+        // white_x_1 (components)
+        const white_x_1SimpleButton = new SimpleButton(white_x_1)
+        white_x_1SimpleButton.callback = () => {
+            this.createNew.visible = false
+        }
 
         this.bg = bg
         this.key1 = key1
@@ -677,7 +746,6 @@ export default class Report extends BaseScene {
         this.all = all
         this.allButton = allButton
         this.nextprevpage = nextprevpage
-        this.bg_1 = bg_1
         this.main = main
         this.issueKeyMain = issueKeyMain
         this.issueTitleMain = issueTitleMain
@@ -699,6 +767,11 @@ export default class Report extends BaseScene {
         this.createdBodyMain = createdBodyMain
         this.updatedBodyMain = updatedBodyMain
         this.noIssue = noIssue
+        this.createNew = createNew
+        this.bg_1 = bg_1
+        this.text = text
+        this.newTitle = newTitle
+        this.newBody = newBody
         this.keys = keys
         this.resolutions = resolutions
         this.titles = titles
@@ -734,6 +807,7 @@ export default class Report extends BaseScene {
             'Cannot Reproduce': '#92068fff',
             'Not a bug': '#97033bff',
             Open: '#0b384bff',
+            Unreviewed: '#0b384bff',
             'In Consideration': '#0b384bff',
             'In Progress': '#0b384bff',
             Reopened: '#0b384bff',
@@ -747,7 +821,13 @@ export default class Report extends BaseScene {
         this.resetIssueList()
         this.clearIssue()
 
-        this.onBugsSelect()
+        if (this.interface.reportUser) {
+            this.onReportsSelect()
+            this.createIssue(this.interface.reportUser)
+            this.interface.reportUser = null
+        } else {
+            this.onBugsSelect()
+        }
     }
 
     onBugsSelect() {
@@ -883,7 +963,60 @@ export default class Report extends BaseScene {
         }
     }
 
-    createNew() {}
+    createIssue(username) {
+        this.username = username
+        this.createNew.visible = true
+        if (this.newBody.__InputText.clickZone) this.newBody.__InputText.clickZone.visible = true
+        if (this.newTitle.__InputText.clickZone) this.newTitle.__InputText.clickZone.visible = true
+        if (this.mode == 'BUG') {
+            this.newTitle.__InputText.setDefaultText('Enter a title for your bug report')
+            this.newBody.__InputText.setDefaultText('Please give a detailed description of the bug you found, including what occured and the expected behavior. If possible, please include steps to reproduce the bug. If you have a screenshot or video of the bug, please upload it to a file hosting site (eg Imgur or YouTube) and include the link in your report.')
+        } else if (this.mode == 'SGN') {
+            this.newTitle.__InputText.setDefaultText('Enter a title for your suggestion')
+            this.newBody.__InputText.setDefaultText('Please give a detailed description of the feature you would like to see added to the game. If possible, please include any ideas you have for how the feature should work.\n\nIf this is a feature from the original Club Penguin, please first check to see if it has already been suggested, and if not, disclose that it is from the original game.')
+        } else if (this.mode == 'RPT') {
+            this.newTitle.__InputText.setDefaultText(username ? username : "Enter the player's username")
+            this.newBody.__InputText.setDefaultText('Please detail the actions of the player you are reporting. If possible, please include any evidence you have of the player breaking the rules, such as screenshots or videos. If you have a screenshot or video of the player breaking the rules, please upload it to a file hosting site (eg Imgur or YouTube) and include the link in your report.')
+        }
+    }
+
+    submitIssue() {
+        this.createNew.visible = false
+        this.newBody.__InputText.clickZone.visible = false
+        this.newTitle.__InputText.clickZone.visible = false
+
+        if (this.newTitle.text == '' || this.newBody.text == '' || !this.newBody.__InputText.userClicked || (!this.newTitle.__InputText.userClicked && this.newTitle.text != this.username)) {
+            return this.interface.prompt.showError('Please fill out all fields')
+        }
+
+        let title = this.mode == 'RPT' ? `${this.newTitle.text} Player Report` : this.newTitle.text
+
+        fetch(this.dataurl + 'createissue', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify({
+                type: this.mode,
+                title: title,
+                body: this.newBody.text,
+                sessionId: this.shell.client.sessionId,
+                version: `v${VERSION}`,
+            }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data)
+                if (data.error) {
+                    return this.interface.prompt.showError(data.error)
+                }
+                if ((this.mode = 'RPT')) {
+                    this.showYours()
+                } else {
+                    this.showAll()
+                }
+            })
+    }
 
     showYours() {
         this.resetIssueList()

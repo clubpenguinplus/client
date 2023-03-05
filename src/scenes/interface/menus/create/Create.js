@@ -1027,9 +1027,9 @@ export default class Create extends BaseScene {
         this.chooseAge()
 
         this.tosText.setInteractive({cursor: 'pointer'})
-        this.tosText.on('pointerdown', () => window.open(`https://cpplus.pw/${this.language}/privacy`, '_blank').focus())
+        this.tosText.on('pointerdown', () => window.open(`https://cpplus.pw/${this.language}/terms`, '_blank').focus())
         this.privacyText.setInteractive({cursor: 'pointer'})
-        this.privacyText.on('pointerdown', () => window.open(`https://cpplus.pw/${this.language}/terms`, '_blank').focus())
+        this.privacyText.on('pointerdown', () => window.open(`https://cpplus.pw/${this.language}/privacy`, '_blank').focus())
     }
 
     overColor(color) {
