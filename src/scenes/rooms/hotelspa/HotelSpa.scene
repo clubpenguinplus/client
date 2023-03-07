@@ -1,0 +1,31 @@
+{
+    "id": "b3f1eab7-6f7c-4eac-9847-785ef5c616e3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/hotelspa/hotelspa-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "HotelSpa",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

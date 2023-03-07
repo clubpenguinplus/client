@@ -7,11 +7,12 @@ export default class FurnitureLoader extends BaseLoader {
         super(scene)
 
         let suffix = '/client/media/furniture/sprites/'
-        this.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}${suffix}` : `https://media.cpplus.pw${suffix}`
+        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'furniture/sprites/'
     }
 
     loadFurniture(item, crate = null, x, y, rotation = 1, frame = 1, context = null) {
+        if (!item) return
         let key = this.getKey(item)
 
         if (

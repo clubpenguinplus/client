@@ -74,6 +74,10 @@ export default class SimpleButton extends EventComponent {
         this.callback()
     }
 
+    removeInteractive() {
+        this.gameObject.removeInteractive()
+    }
+
     /* END-USER-CODE */
 }
 

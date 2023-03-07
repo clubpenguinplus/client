@@ -138,14 +138,6 @@ export default class CustomHoodiePage extends Page {
         page15_step_3.setWordWrapWidth(210)
         this.add(page15_step_3)
 
-        // prevPage
-        const prevPage = scene.add.image(139, 729, 'constant', 'prevPage')
-        this.add(prevPage)
-
-        // nextPage
-        const nextPage = scene.add.image(1383, 729, 'constant', 'nextPage')
-        this.add(nextPage)
-
         // closebtn
         const closebtn = scene.add.image(1441, 37, 'constant', 'closebtn')
         this.add(closebtn)
@@ -213,16 +205,6 @@ export default class CustomHoodiePage extends Page {
         hoodie_fadeSimpleButton.hoverCallback = () => this.onCustomHoodieOver(this.hoodie_fade)
         hoodie_fadeSimpleButton.hoverOutCallback = () => this.onCustomHoodieOut(this.hoodie_fade)
         hoodie_fadeSimpleButton.callback = () => this.changePattern('fade')
-
-        // prevPage (components)
-        const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
-        prevPageButton.callback = () => this.prevPage()
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
-        nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)

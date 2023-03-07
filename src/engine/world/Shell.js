@@ -23,6 +23,8 @@ export default class Shell extends BaseScene {
         this.rockhopper_leave = new Date('12/28/2022')
 
         this.itemsLoaded = []
+
+        if (window.location.hostname == 'localhost') window.shell = this
     }
 
     get language() {
@@ -37,8 +39,6 @@ export default class Shell extends BaseScene {
     create() {
         super.create()
         var RuffleHolder = this.scene.get('RuffleHolder')
-
-        if (window.location.hostname == 'localhost') window.shell = this
 
         this.musicController = this.scene.get('MusicController')
         this.penguinFactory = new PenguinFactory(this)
@@ -82,8 +82,17 @@ export default class Shell extends BaseScene {
             return this.createIgloo(args)
         }
 
-        this.room.events.once('shutdown', () => this.createIgloo(args))
-        this.room.stop()
+        if (!this.room.isIgloo) {
+            this.room.events.once('shutdown', () => this.createIgloo(args))
+            this.room.stop()
+        } else {
+            this.room.events.once('shutdown', () => {
+                this.createRoom(2000, [])
+                this.room.events.once('shutdown', () => this.createIgloo(args))
+                this.room.events.once('create', () => this.room.stop())
+            })
+            this.room.stop()
+        }
     }
 
     createIgloo(args) {
@@ -188,15 +197,35 @@ export default class Shell extends BaseScene {
     arrayToObject(player, isClient = false) {
         let stringArray = player.split('|')
 
-        let id = parseInt(stringArray[0])
-        let ua = parseInt(stringArray[17])
+        stringArray = stringArray.map((arg) => {
+            switch (arg) {
+                case 'true':
+                    return true
+                case 'false':
+                    return false
+                case 'undefined':
+                    return undefined
+                case 'null':
+                    return null
+                case 'NaN':
+                    return NaN
+                default:
+                    if (!isNaN(arg)) {
+                        return parseInt(arg)
+                    }
+                    return arg
+            }
+        })
+
+        let id = stringArray[0]
+        let ua = stringArray[17]
 
         isClient = isClient ? true : id == this.client.id
 
         let username, realUsername
         if (ua != 1) {
             username = 'P' + id
-            realUsername = isClient || this.client.penguin.rank > 2 ? `${stringArray[1]}` : 'Unknown'
+            realUsername = isClient || this.client.rank > 2 ? `${stringArray[1]}` : 'Unknown'
         } else {
             username = stringArray[1]
             realUsername = stringArray[1]
@@ -206,27 +235,31 @@ export default class Shell extends BaseScene {
             id: id,
             username: username,
             realUsername: realUsername,
-            color: parseInt(stringArray[2]),
-            head: parseInt(stringArray[3]),
-            face: parseInt(stringArray[4]),
-            neck: parseInt(stringArray[5]),
-            body: parseInt(stringArray[6]),
-            hand: parseInt(stringArray[7]),
-            feet: parseInt(stringArray[8]),
-            flag: parseInt(stringArray[9]),
-            photo: parseInt(stringArray[10]),
-            coins: parseInt(stringArray[11]),
-            x: parseInt(stringArray[12]),
-            y: parseInt(stringArray[13]),
-            frame: parseInt(stringArray[14]),
-            rank: parseInt(stringArray[15]),
-            stealthMode: parseInt(stringArray[16]),
+            color: stringArray[2],
+            head: stringArray[3],
+            face: stringArray[4],
+            neck: stringArray[5],
+            body: stringArray[6],
+            hand: stringArray[7],
+            feet: stringArray[8],
+            flag: stringArray[9],
+            photo: stringArray[10],
+            coins: stringArray[11],
+            x: stringArray[12],
+            y: stringArray[13],
+            frame: stringArray[14],
+            rank: stringArray[15],
+            stealthMode: stringArray[16],
             username_approved: ua,
-            walking: parseInt(stringArray[18]),
+            username_rejected: stringArray[18],
+            walking: stringArray[19],
+            epfStatus: stringArray[20],
+            joinTime: stringArray[21],
         }
     }
 
     get PST() {
+        // PST = UTC - 8 hours
         return new Date(Date.now() - 1000 * 60 * 60 * 8)
     }
 
@@ -244,5 +277,63 @@ export default class Shell extends BaseScene {
 
     getPSTSeconds() {
         return this.PST.getUTCSeconds()
+    }
+
+    getTimeAgo(date) {
+        const seconds = Math.floor((new Date() - date) / 1000)
+
+        if (seconds < 5) {
+            return 'Just now'
+        } else if (seconds < 60) {
+            return `${seconds} seconds ago`
+        }
+
+        const minutes = Math.floor(seconds / 60)
+
+        if (minutes === 1) {
+            return '1 minute ago'
+        } else if (minutes < 60) {
+            return `${minutes} minutes ago`
+        }
+
+        const hours = Math.floor(minutes / 60)
+
+        if (hours === 1) {
+            return '1 hour ago'
+        } else if (hours < 24) {
+            return `${hours} hours ago`
+        }
+
+        const days = Math.floor(hours / 24)
+
+        if (days === 1) {
+            return 'yesterday'
+        } else if (days < 7) {
+            return `${days} days ago`
+        }
+
+        const weeks = Math.floor(days / 7)
+
+        if (weeks === 1) {
+            return '1 week ago'
+        } else if (weeks < 4) {
+            return `${weeks} weeks ago`
+        }
+
+        const months = Math.floor(days / 30.44)
+
+        if (months === 1) {
+            return '1 month ago'
+        } else if (months < 12) {
+            return `${months} months ago`
+        }
+
+        const years = Math.floor(days / 365)
+
+        if (years === 1) {
+            return '1 year ago'
+        }
+
+        return `${years} years ago`
     }
 }

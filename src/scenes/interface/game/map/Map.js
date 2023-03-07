@@ -740,7 +740,7 @@ export default class Map extends BaseContainer {
         // map_places_igloo_1 (components)
         const map_places_igloo_1Button = new Button(map_places_igloo_1)
         map_places_igloo_1Button.spriteName = 'map/places_outline/igloo_outline'
-        map_places_igloo_1Button.callback = () => this.shell.client.sendJoinIgloo(this.shell.client.id)
+        map_places_igloo_1Button.callback = () => this.sendJoinIgloo()
         map_places_igloo_1Button.activeFrame = false
         const map_places_igloo_1ShowHint = new ShowHint(map_places_igloo_1)
         map_places_igloo_1ShowHint.text = 'urigloo'
@@ -756,7 +756,7 @@ export default class Map extends BaseContainer {
         // map_places_igloos_1 (components)
         const map_places_igloos_1Button = new Button(map_places_igloos_1)
         map_places_igloos_1Button.spriteName = 'map/places_outline/igloos_outline'
-        map_places_igloos_1Button.callback = () => (this.iglooMap.visible = true)
+        map_places_igloos_1Button.callback = () => this.iglooMap.show()
         map_places_igloos_1Button.activeFrame = false
         const map_places_igloos_1ShowHint = new ShowHint(map_places_igloos_1)
         map_places_igloos_1ShowHint.text = 'igloos'
@@ -1155,12 +1155,18 @@ export default class Map extends BaseContainer {
     }
 
     onRoomClick(id) {
+        this.visible = false
+
         let room = this.crumbs.scenes.rooms[id]
         if (this.shell.room.key == room.key) return
 
+        this.shell.client.sendJoinRoom(id, room.key, room.x, room.y, 80)
+    }
+
+    sendJoinIgloo() {
         this.visible = false
 
-        this.shell.client.sendJoinRoom(id, room.key, room.x, room.y, 80)
+        this.shell.client.sendJoinIgloo(this.shell.client.id)
     }
 
     /* END-USER-CODE */

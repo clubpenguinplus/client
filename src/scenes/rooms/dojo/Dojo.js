@@ -16,6 +16,7 @@ export default class Dojo extends RoomScene {
             snowdojo: null,
         }
         this.music = 403
+        this.loadSfx = ['dojo-wateropen', 'dojo-waterclose', 'dojo-snowopen', 'dojo-snowclose', 'dojo-fireopen', 'dojo-fireclose']
         /* END-USER-CTR-CODE */
     }
 

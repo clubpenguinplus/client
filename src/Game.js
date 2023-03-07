@@ -37,7 +37,7 @@ window.onload = () => {
     function correctDomain() {
         let correctDomain = false
 
-        let allowedDomains = ['play.clubpenguin.plus', 'play.clubpenguinpl.us', 'play.cpplus.pw', 'localhost']
+        let allowedDomains = ['beta.cpplus.pw', 'play.cpplus.pw', 'localhost']
 
         for (let i = 0; i < allowedDomains.length; i++) {
             if (window.location.hostname == allowedDomains[i]) {

@@ -325,6 +325,24 @@
                     "list": []
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "c5de5390-8377-4bde-afbe-89a8bf705a31",
+            "label": "icon_en",
+            "components": [
+                "SimpleButton",
+                "LocalisedSprite"
+            ],
+            "SimpleButton.callback": "() => {this.onUnlockClick()}",
+            "texture": {
+                "key": "servers-unlock",
+                "frame": "icon_en"
+            },
+            "x": 144,
+            "y": 122,
+            "scaleX": 0.3,
+            "scaleY": 0.3
         }
     ],
     "plainObjects": [],

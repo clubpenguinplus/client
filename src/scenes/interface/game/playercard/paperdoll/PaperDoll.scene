@@ -30,7 +30,8 @@
                     "texture": {
                         "key": "main",
                         "frame": "paperdoll/paperdoll"
-                    }
+                    },
+                    "y": -7
                 }
             ]
         }

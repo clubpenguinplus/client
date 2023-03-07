@@ -27,7 +27,30 @@
                     "components": [],
                     "texture": {
                         "key": "constant",
-                        "frame": "front"
+                        "frame": "frontbg"
+                    },
+                    "x": 760,
+                    "y": 454
+                },
+                {
+                    "type": "Container",
+                    "id": "baad0605-f7fe-4bfd-9893-8e31e66fa94e",
+                    "label": "penguinHolder",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 785,
+                    "y": 833,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "90a13b18-de92-4112-8d08-9ec419b1305c",
+                    "label": "page1Fg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "constant",
+                        "frame": "frontfg"
                     },
                     "x": 760,
                     "y": 454
@@ -49,8 +72,9 @@
                     "fixedWidth": 650,
                     "align": "center",
                     "fontFamily": "Burbank Small",
-                    "fontSize": "80px",
-                    "fontStyle": "bold italic"
+                    "fontSize": "64px",
+                    "fontStyle": "bold italic",
+                    "color": "#cfedf3ff"
                 },
                 {
                     "type": "Text",
@@ -59,7 +83,7 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": 833,
-                    "y": 158,
+                    "y": 150,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "December 2022",
@@ -67,7 +91,8 @@
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "25px",
-                    "fontStyle": "italic"
+                    "fontStyle": "italic",
+                    "color": "#cfedf3ff"
                 },
                 {
                     "type": "Ellipse",

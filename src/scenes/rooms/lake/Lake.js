@@ -32,13 +32,6 @@ export default class Lake extends RoomScene {
         this.sort
 
         /* START-USER-CTR-CODE */
-        // if (this.shell.client.inventory.flag.includes(7016)) {
-        // this.roomTriggers = {
-        //     cavemine: () => this.triggerRoom(813, 874, 525),
-        //     forest: () => this.triggerRoom(809, 332, 674),
-        //     underwater: () => this.triggerRoom(815, 760, 480),
-        //     }
-        // } else {
         this.roomTriggers = {
             cavemine: () => this.triggerRoom(813, 874, 525),
             forest: () => this.triggerRoom(809, 332, 674),
@@ -47,6 +40,7 @@ export default class Lake extends RoomScene {
             },
         }
         this.music = '666'
+        this.loadSfx = ['lake-door']
         /* END-USER-CTR-CODE */
     }
 

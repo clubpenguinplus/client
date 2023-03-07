@@ -17,6 +17,6 @@ export default class Ignore extends Plugin {
     ignoreRemove(args) {
         // Filter ignore out of list
         this.shell.client.ignores = this.shell.client.ignores.filter((obj) => obj.id != args[0])
-        this.interface.updateFriends()
+        this.interface.updateIgnoreList()
     }
 }

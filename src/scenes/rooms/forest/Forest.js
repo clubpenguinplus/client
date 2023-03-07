@@ -23,6 +23,8 @@ export default class Forest extends RoomScene {
         }
         this.music = 586
 
+        this.loadSfx = ['forest-boulderopen', 'forest-boulderclose']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -134,8 +136,18 @@ export default class Forest extends RoomScene {
 
         // rectangle_1 (components)
         const rectangle_1Zone = new Zone(rectangle_1)
-        rectangle_1Zone.hoverCallback = () => this.boulder.play('forest-boulder')
-        rectangle_1Zone.hoverOutCallback = () => this.boulder.playReverse('forest-boulder')
+        rectangle_1Zone.hoverCallback = () => {
+            this.boulder.play('forest-boulder')
+            this.shell.musicController.addSfx('forest-boulderopen')
+        }
+        rectangle_1Zone.hoverOutCallback = () => {
+            if (this.boulder.anims.isPlaying) {
+                this.boulder.anims.reverse()
+            } else {
+                this.boulder.playReverse('forest-boulder')
+            }
+            this.shell.musicController.addSfx('forest-boulderclose')
+        }
         rectangle_1Zone.callback = () => this.shell.client.penguin.move(168, 700)
 
         this.boulder = boulder

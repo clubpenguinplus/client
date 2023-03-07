@@ -1,0 +1,1129 @@
+{
+    "id": "9556010e-a45a-4c2e-8f7e-58695fb6c05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/agentcom/agentcom-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Agentcom",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "95a0947a-ea1f-46d0-8d68-a3dbb10eee01",
+            "label": "agentcombg",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "agentcombg"
+            },
+            "x": 747,
+            "y": 476
+        },
+        {
+            "type": "Image",
+            "id": "33f014b4-5c40-438d-b014-f178b0898e38",
+            "label": "leftscreens",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "leftscreens"
+            },
+            "x": 184,
+            "y": 249
+        },
+        {
+            "type": "Container",
+            "id": "562aedca-ec48-472f-9a27-80021829f910",
+            "label": "epfanims",
+            "scope": "CLASS",
+            "components": [],
+            "y": 1,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "74c10c3d-90fd-40f8-92dc-93494202617e",
+            "label": "spytext_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "agentcom",
+                "frame": "spytext_en"
+            },
+            "x": 120,
+            "y": 272
+        },
+        {
+            "type": "Image",
+            "id": "0f9e2ecf-a3e7-4f99-9935-02c7bc3aebd2",
+            "label": "systemtext_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "agentcom",
+                "frame": "systemtext_en"
+            },
+            "x": 353,
+            "y": 203
+        },
+        {
+            "type": "Sprite",
+            "id": "7e9b4fbf-8887-4b6c-ac45-92241194ddff",
+            "label": "systemscreen",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "systemscreen0001"
+            },
+            "x": 349,
+            "y": -60
+        },
+        {
+            "type": "Sprite",
+            "id": "8d76601f-7452-41e6-82e9-511a49d0ac38",
+            "label": "drillsscreen",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "drillsscreen0001"
+            },
+            "x": 98,
+            "y": 15
+        },
+        {
+            "type": "Image",
+            "id": "02486ce9-7729-44e4-877a-7554d8ffd7d5",
+            "label": "leftstairs",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "leftstairs"
+            },
+            "x": 401,
+            "y": 358
+        },
+        {
+            "type": "Image",
+            "id": "c6fd816e-055f-40ff-89eb-fc76b133afac",
+            "label": "greentubeback",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "greentubeback"
+            },
+            "x": 1314,
+            "y": 147
+        },
+        {
+            "type": "Image",
+            "id": "5c42afd0-1bd9-4a5e-be5c-3e95854b6e17",
+            "label": "frontthings",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "frontthings"
+            },
+            "x": 1027,
+            "y": 353
+        },
+        {
+            "type": "Image",
+            "id": "c6d5688c-cb59-44c4-80a9-c500223ef65d",
+            "label": "rightstairs",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "rightstairs"
+            },
+            "x": 1131,
+            "y": 408
+        },
+        {
+            "type": "Image",
+            "id": "10904bf7-3300-4dba-a472-6aaedd198290",
+            "label": "middlescreen",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "middlescreen"
+            },
+            "x": 760,
+            "y": 186
+        },
+        {
+            "type": "Image",
+            "id": "d33b20bd-5844-49ad-9e78-bf3a751621c0",
+            "label": "epftext_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "agentcom",
+                "frame": "epftext_en"
+            },
+            "x": 778,
+            "y": 213
+        },
+        {
+            "type": "Image",
+            "id": "86c8a9f8-5f70-4ef5-a340-9877496a80e1",
+            "label": "leftaudio",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "leftaudio"
+            },
+            "x": 521,
+            "y": 240
+        },
+        {
+            "type": "Image",
+            "id": "d820c3ff-7c68-441f-a01f-86489ba69652",
+            "label": "deskthing",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "deskthing"
+            },
+            "x": 474,
+            "y": 345
+        },
+        {
+            "type": "Image",
+            "id": "25fe5fcc-067a-4cad-a2ac-72f9c06eefcd",
+            "label": "rightaudio",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "rightaudio"
+            },
+            "x": 1000,
+            "y": 240
+        },
+        {
+            "type": "Image",
+            "id": "7f689c89-81f8-4f1b-a22b-5b4a5be982b4",
+            "label": "rightdeskthing",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "rightdeskthing"
+            },
+            "x": 1049,
+            "y": 349
+        },
+        {
+            "type": "Image",
+            "id": "e05bd007-f313-4486-8204-e15dec658a61",
+            "label": "topscreens",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "topscreens"
+            },
+            "x": -123.84555746710066,
+            "y": 243.6059999309091,
+            "originX": 0.002326115639921242,
+            "originY": 1.005654929334187
+        },
+        {
+            "type": "Image",
+            "id": "4a85ebf1-88db-44c5-bb78-97ff23a699a2",
+            "label": "seat4",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "seat4"
+            },
+            "x": 922,
+            "y": 336
+        },
+        {
+            "type": "Image",
+            "id": "f1cf30eb-fa2e-498d-ab9d-344a4e5755d2",
+            "label": "seat5",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "seat5"
+            },
+            "x": 946,
+            "y": 404
+        },
+        {
+            "type": "Image",
+            "id": "17283655-8beb-4d54-9add-6d44512c44d9",
+            "label": "seat3",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "seat3"
+            },
+            "x": 604,
+            "y": 335
+        },
+        {
+            "type": "Image",
+            "id": "b2dffb8c-66f6-4b09-b299-864e1b884efa",
+            "label": "seat2",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "seat2"
+            },
+            "x": 580,
+            "y": 404
+        },
+        {
+            "type": "Image",
+            "id": "92f75079-4862-425e-81f9-b4a4d2974fbb",
+            "label": "seat1",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "seat1"
+            },
+            "x": 554,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "ffdbac40-8896-4efc-aa60-670cbcacac2c",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "table"
+            },
+            "x": 763,
+            "y": 311.6815343090492,
+            "originY": 0.029075037688458292
+        },
+        {
+            "type": "Image",
+            "id": "74d12d78-f1f5-4b64-bf23-8c36e348f5f0",
+            "label": "seat6",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "seat6"
+            },
+            "x": 973,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "94310229-80e1-4fa0-89fe-d7d405af6196",
+            "label": "greentube",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "greentube"
+            },
+            "x": 1317,
+            "y": 113
+        },
+        {
+            "type": "Image",
+            "id": "02a01494-ef68-467d-a425-f1b70bb7ffae",
+            "label": "greentubetop",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "greentubetop"
+            },
+            "x": 1333,
+            "y": -24
+        },
+        {
+            "type": "Sprite",
+            "id": "f050bdd4-d1e4-44b9-a085-8a46207cd956",
+            "label": "lobbydoor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "lobbydoor0001"
+            },
+            "x": 1310,
+            "y": 203
+        },
+        {
+            "type": "Image",
+            "id": "551a5ed8-3ce8-4ec5-8f6c-b984caf3215f",
+            "label": "lobbydoorholder",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "lobbydoorholder"
+            },
+            "x": 1296,
+            "y": 186
+        },
+        {
+            "type": "Image",
+            "id": "4ba886fb-4af5-4293-8659-0b1822f98c5b",
+            "label": "rightspeaker",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "rightspeaker"
+            },
+            "x": 1020,
+            "y": 163
+        },
+        {
+            "type": "Image",
+            "id": "52560a05-a297-469f-9f34-a0476493728b",
+            "label": "leftspeaker",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "leftspeaker"
+            },
+            "x": 501,
+            "y": 164
+        },
+        {
+            "type": "Image",
+            "id": "c2c8bd6e-b6ec-47ea-b01b-31a5f10d7af9",
+            "label": "wheelchair",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "wheelchair"
+            },
+            "x": 176.6555568268647,
+            "y": 834.1379630689054,
+            "originX": 0.40680681826004245,
+            "originY": 0.49425308712603583
+        },
+        {
+            "type": "Sprite",
+            "id": "cf013703-b829-401d-a02c-de4d9d13cf31",
+            "label": "computeranim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "computeranim0001"
+            },
+            "x": 242.20718702062268,
+            "y": 807.1515326940679,
+            "originX": 0.3286856048062333,
+            "originY": 1.1932288039627124
+        },
+        {
+            "type": "Image",
+            "id": "679cbd6c-94f3-48d6-861e-7c1ea22f3c19",
+            "label": "computer",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "computer"
+            },
+            "x": 275.29894214460785,
+            "y": 825.9518722192223,
+            "originX": 0.4384997022482866,
+            "originY": 0.7923896161339404
+        },
+        {
+            "type": "Image",
+            "id": "76b08390-5089-403c-8113-c5e5eee2e215",
+            "label": "mugthing",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "mugthing"
+            },
+            "x": 279,
+            "y": 891
+        },
+        {
+            "type": "Image",
+            "id": "33d29552-8a0d-4ce9-bbf9-a3b321500034",
+            "label": "jailcell",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "jailcell"
+            },
+            "x": 237,
+            "y": 629
+        },
+        {
+            "type": "Image",
+            "id": "7283abb6-0718-4a8e-ae20-548c40e5f604",
+            "label": "jailchain1",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "jailchain1"
+            },
+            "x": 32.33643183889809,
+            "y": 646.3550228722867,
+            "originX": 0.5186906577165608,
+            "originY": 0.5812076852512644
+        },
+        {
+            "type": "Image",
+            "id": "00022c56-b397-41e0-bfc9-23ab190780e9",
+            "label": "jailchain2",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "jailchain2"
+            },
+            "x": 175.08821497385463,
+            "y": 581.04893155337,
+            "originX": 0.6496533815839598,
+            "originY": 0.8242489934319124
+        },
+        {
+            "type": "Image",
+            "id": "e1a10e5a-a93b-45ad-96f9-2031ce6f8d48",
+            "label": "laser1",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser1"
+            },
+            "x": 53.32345071809535,
+            "y": 722.3222452737594,
+            "originX": 0.8329377551119913,
+            "originY": 0.9778448468132294
+        },
+        {
+            "type": "Image",
+            "id": "96f694c7-49fa-4d29-a4b8-9c67d5ac445f",
+            "label": "laser2",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser2"
+            },
+            "x": 98.55551146532662,
+            "y": 699.9258524422111,
+            "originX": 0.8413006530109993,
+            "originY": 0.9647068804407405
+        },
+        {
+            "type": "Image",
+            "id": "57e1b804-dd38-44b2-b3b2-5d3ff47a88f8",
+            "label": "laser3",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser3"
+            },
+            "x": 140.03063963915474,
+            "y": 681.3982035164298,
+            "originX": 0.7794804109074092,
+            "originY": 0.9698118560460727
+        },
+        {
+            "type": "Image",
+            "id": "b7ab4c93-6871-46e7-8500-5be0cf4dcfac",
+            "label": "laser4",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser4"
+            },
+            "x": 187.69352213851093,
+            "y": 655.2943624201044,
+            "originX": 0.7841170420336229,
+            "originY": 0.9408192036248804
+        },
+        {
+            "type": "Image",
+            "id": "ae4a4fc8-8650-4e7f-b47e-c555f0c34264",
+            "label": "laser5",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser5"
+            },
+            "x": 230.6035614013672,
+            "y": 635.6815897840296,
+            "originX": 0.5754454699522213,
+            "originY": 0.932804752176334
+        },
+        {
+            "type": "Image",
+            "id": "7be5c7a4-8ffd-4f8a-b25b-16b9f663ccdd",
+            "label": "laser6",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser6"
+            },
+            "x": 280.37278239241715,
+            "y": 659.4729817770218,
+            "originX": 0.5338893936406893,
+            "originY": 0.9384843908081227
+        },
+        {
+            "type": "Image",
+            "id": "b096ce3e-1501-4637-994a-6d50e1d16398",
+            "label": "laser7",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser7"
+            },
+            "x": 322,
+            "y": 677,
+            "originX": 0.33688887177871557,
+            "originY": 0.9072805305281427
+        },
+        {
+            "type": "Image",
+            "id": "e3f65dd3-6f26-4fa7-83d2-7876d759b6e6",
+            "label": "laser8",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser8"
+            },
+            "x": 365,
+            "y": 698,
+            "originX": 0.27797177189548467,
+            "originY": 0.9171439437115169
+        },
+        {
+            "type": "Image",
+            "id": "620af281-b068-4471-937d-a4e0c8c5fcdb",
+            "label": "laser9",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser9"
+            },
+            "x": 409.3565673828125,
+            "y": 721.8126220703125,
+            "originX": 0.2788834312117144,
+            "originY": 0.9265818141834239
+        },
+        {
+            "type": "Image",
+            "id": "175cfad3-29a7-4a39-a836-630ca83cfe8f",
+            "label": "laser10",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "laser10"
+            },
+            "x": 451.6152648925781,
+            "y": 735.6865844726562,
+            "originX": 0.23396912817659418,
+            "originY": 0.8869539953794989
+        },
+        {
+            "type": "Image",
+            "id": "e429c94e-2a33-4a91-88eb-89fea35055cf",
+            "label": "jailthing",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "jailthing"
+            },
+            "x": 580.4896240234375,
+            "y": 637.4884847067093,
+            "originX": 0.6324124445422442,
+            "originY": 0.5989938522425016
+        },
+        {
+            "type": "Image",
+            "id": "279d4fdf-1ea7-40f7-90f4-9b25caf1df27",
+            "label": "leftjailholder",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "leftjailholder"
+            },
+            "x": 13.276924207562814,
+            "y": 735.055592758896,
+            "originX": 0.3564689343169031,
+            "originY": 0.9055932009968676
+        },
+        {
+            "type": "Image",
+            "id": "a1d357dd-39a1-4036-b570-3d9dff978adb",
+            "label": "jailholder",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "jailholder"
+            },
+            "x": 230.46079087783306,
+            "y": 790.9413248674911,
+            "originX": 0.007195294964424159,
+            "originY": 0.9934016822675995
+        },
+        {
+            "type": "Image",
+            "id": "13d8f643-4fd7-4e99-a36b-e0f32325d57e",
+            "label": "missionscreenholder",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "missionscreenholder"
+            },
+            "x": 1321.4333830264432,
+            "y": 518.4402427095982,
+            "originX": 0.3483560027388626,
+            "originY": 0.4620493724624347
+        },
+        {
+            "type": "Image",
+            "id": "adb3d2ad-629b-4956-a93f-0ecf0b29fdb4",
+            "label": "labdivider",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "labdivider"
+            },
+            "x": 1152,
+            "y": 695
+        },
+        {
+            "type": "Image",
+            "id": "234d4e08-7fcc-475c-ab52-f05b9230fd66",
+            "label": "lab",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "lab"
+            },
+            "x": 1042,
+            "y": 690
+        },
+        {
+            "type": "Image",
+            "id": "944a6683-11e9-42ac-8c08-eba9c2703f6a",
+            "label": "missionscreen_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "agentcom",
+                "frame": "missionscreen_en"
+            },
+            "x": 1240.0497588200838,
+            "y": 624.8887447676514,
+            "originX": 0.31185760102709964,
+            "originY": 0.9896978303564614
+        },
+        {
+            "type": "Image",
+            "id": "bd31c42a-c70e-440f-8729-428fe48f3f50",
+            "label": "mission_hit",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onMissionOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onMissionOut()",
+            "texture": {
+                "key": "agentcom",
+                "frame": "mission-hit"
+            },
+            "x": 1382,
+            "y": 700.5662128760457,
+            "originY": 0.9988463108405471,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Image",
+            "id": "0db202ec-9fe3-450c-8c9a-844b86d05a88",
+            "label": "missionscreen_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "missionscreen-hover"
+            },
+            "x": 1301.3925828511567,
+            "y": 640.6815886372754,
+            "originX": 0.46428504364585993,
+            "originY": 1.0391999618700516,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "b1e09c74-7759-49d9-b72c-1a15a59264ea",
+            "label": "penguinthing",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "penguinthing"
+            },
+            "x": 1555,
+            "y": 697
+        },
+        {
+            "type": "Image",
+            "id": "1616d0ee-bf58-4264-b7b5-e904d9fd269a",
+            "label": "shoe",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "shoe"
+            },
+            "x": 1460,
+            "y": 734
+        },
+        {
+            "type": "Image",
+            "id": "892752af-cf23-4395-bef2-52390b59ade5",
+            "label": "suits",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "suits"
+            },
+            "x": 1317.5859948584148,
+            "y": 824.5287568242318,
+            "originX": 0.3413148410103978,
+            "originY": 0.32571528300803004
+        },
+        {
+            "type": "Image",
+            "id": "0ae36cb6-dbec-4dea-865c-f90a79dfca04",
+            "label": "agentcomfg",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "agentcomfg"
+            },
+            "x": -117,
+            "y": 976,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "3b62de31-876e-4f42-b1bb-3c47004711d8",
+            "label": "agentbook",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "agentbook",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "agentcom",
+                "frame": "agentbook"
+            },
+            "x": 1412.0142260705,
+            "y": 1001.1032421168442,
+            "originX": 0.5262368354816179,
+            "originY": 1.5704628876500177
+        },
+        {
+            "type": "Sprite",
+            "id": "85821d78-8d33-4e28-b2d4-b7357d263fcd",
+            "label": "defenderlights",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "agentcom",
+                "frame": "defenderlights0001"
+            },
+            "x": 1413.6971606864008,
+            "y": 986.0504836207638,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "originX": 0.4691773692730517,
+            "originY": 2.1335994285282727,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "cb66cb91-6e7a-4235-8a44-f28d3ab93769",
+            "label": "defender",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "defender",
+            "Button.hoverCallback": "() => this.onSymbolsOver()",
+            "Button.hoverOutCallback": "() => this.onSymbolsOut()",
+            "texture": {
+                "key": "agentcom",
+                "frame": "defender"
+            },
+            "x": 1420.6761572191251,
+            "y": 1005.5303069403791,
+            "originX": 0.5259821089235448,
+            "originY": 2.9599020903068594
+        },
+        {
+            "type": "Image",
+            "id": "a7e2f048-c01e-4541-86fd-8417ce6dffd2",
+            "label": "doorhit",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 1300,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "agentcom",
+                "frame": "doorhit"
+            },
+            "x": 1292,
+            "y": 221,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Rectangle",
+            "id": "9aaf2c79-be49-4a12-b414-8dd59865e42a",
+            "label": "systemhit",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDefenderOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDefenderOut()",
+            "MoveTo.x": 350,
+            "MoveTo.y": 380,
+            "x": 349,
+            "y": 139,
+            "scaleX": 1.9852271759034843,
+            "scaleY": 1.1746703859507754,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "08e5ab7a-f14a-424b-8b21-6bc8b63b1e8d",
+            "label": "spyhit",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDrillOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDrillOut()",
+            "MoveTo.x": 180,
+            "MoveTo.y": 350,
+            "texture": {
+                "key": "agentcom",
+                "frame": "spyhit"
+            },
+            "x": 101,
+            "y": 215,
+            "scaleX": 1.0312288684044242,
+            "scaleY": 1.0312288684044242,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Ellipse",
+            "id": "14db5832-b3bc-4025-8445-fd47b44f40a7",
+            "label": "moveto",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 595,
+            "y": 412,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "a143fd47-174e-41b8-bcf1-cb0e7d494be2",
+            "label": "moveto_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 572,
+            "y": 486,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "0467286e-7be5-4294-b8da-ec1e019f0605",
+            "label": "moveto_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "east",
+            "x": 614,
+            "y": 340,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "641b79f7-cb50-44b1-b833-6d0c798a89f8",
+            "label": "moveto_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 910,
+            "y": 342,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "cddfe3d8-ad64-4bce-ac65-a4f7a2a99c02",
+            "label": "moveto_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 931,
+            "y": 414,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "a241b5aa-4a80-4a3a-a801-84daf32417e0",
+            "label": "moveto_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "west",
+            "x": 953,
+            "y": 486,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "4dc0ffb9-783e-48b0-a550-11a3ed27e6ab",
+            "label": "moveto_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 66,
+            "y": 623,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "e95c4ba2-d906-4623-a2b0-053d5f9de4d4",
+            "label": "moveto_7",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 202,
+            "y": 569,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "25065776-5dc8-4447-89a7-9e511a57226a",
+            "label": "moveto_8",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 201,
+            "y": 845,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 50
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "95dbf6b8-338e-445a-94dd-18ff8a9cd3f9",
+            "label": "sort",
+            "objectIds": [
+                "ffdbac40-8896-4efc-aa60-670cbcacac2c",
+                "92f75079-4862-425e-81f9-b4a4d2974fbb",
+                "b2dffb8c-66f6-4b09-b299-864e1b884efa",
+                "17283655-8beb-4d54-9add-6d44512c44d9",
+                "4a85ebf1-88db-44c5-bb78-97ff23a699a2",
+                "f1cf30eb-fa2e-498d-ab9d-344a4e5755d2",
+                "74d12d78-f1f5-4b64-bf23-8c36e348f5f0",
+                "679cbd6c-94f3-48d6-861e-7c1ea22f3c19",
+                "76b08390-5089-403c-8113-c5e5eee2e215",
+                "c2c8bd6e-b6ec-47ea-b01b-31a5f10d7af9",
+                "0ae36cb6-dbec-4dea-865c-f90a79dfca04",
+                "e05bd007-f313-4486-8204-e15dec658a61",
+                "e429c94e-2a33-4a91-88eb-89fea35055cf",
+                "279d4fdf-1ea7-40f7-90f4-9b25caf1df27",
+                "a1d357dd-39a1-4036-b570-3d9dff978adb",
+                "e1a10e5a-a93b-45ad-96f9-2031ce6f8d48",
+                "57e1b804-dd38-44b2-b3b2-5d3ff47a88f8",
+                "b7ab4c93-6871-46e7-8500-5be0cf4dcfac",
+                "ae4a4fc8-8650-4e7f-b47e-c555f0c34264",
+                "7be5c7a4-8ffd-4f8a-b25b-16b9f663ccdd",
+                "b096ce3e-1501-4637-994a-6d50e1d16398",
+                "e3f65dd3-6f26-4fa7-83d2-7876d759b6e6",
+                "620af281-b068-4471-937d-a4e0c8c5fcdb",
+                "175cfad3-29a7-4a39-a836-630ca83cfe8f",
+                "234d4e08-7fcc-475c-ab52-f05b9230fd66",
+                "adb3d2ad-629b-4956-a93f-0ecf0b29fdb4",
+                "13d8f643-4fd7-4e99-a36b-e0f32325d57e",
+                "944a6683-11e9-42ac-8c08-eba9c2703f6a",
+                "bd31c42a-c70e-440f-8729-428fe48f3f50",
+                "0db202ec-9fe3-450c-8c9a-844b86d05a88",
+                "b1e09c74-7759-49d9-b72c-1a15a59264ea",
+                "1616d0ee-bf58-4264-b7b5-e904d9fd269a",
+                "892752af-cf23-4395-bef2-52390b59ade5",
+                "cb66cb91-6e7a-4235-8a44-f28d3ab93769",
+                "3b62de31-876e-4f42-b1bb-3c47004711d8",
+                "cf013703-b829-401d-a02c-de4d9d13cf31",
+                "96f694c7-49fa-4d29-a4b8-9c67d5ac445f",
+                "00022c56-b397-41e0-bfc9-23ab190780e9",
+                "7283abb6-0718-4a8e-ae20-548c40e5f604",
+                "85821d78-8d33-4e28-b2d4-b7357d263fcd"
+            ]
+        }
+    ]
+}

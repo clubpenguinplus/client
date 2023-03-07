@@ -43,6 +43,7 @@ export default class School extends RoomScene {
             cafe: null,
         }
         this.music = 436
+        this.loadSfx = ['school-dooropen', 'school-doorclose', 'school-lockeropen', 'school-lockerclose']
         /* END-USER-CTR-CODE */
     }
 
@@ -313,6 +314,8 @@ export default class School extends RoomScene {
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
         doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 1440
@@ -321,6 +324,8 @@ export default class School extends RoomScene {
         // door_1 (components)
         const door_1Button = new Button(door_1)
         door_1Button.spriteName = 'door'
+        door_1Button.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
+        door_1Button.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
         door_1Button.activeFrame = false
         const door_1MoveTo = new MoveTo(door_1)
         door_1MoveTo.x = 80
@@ -415,12 +420,14 @@ export default class School extends RoomScene {
         if (this.lockers[index].frame.name != 'locker_0001' && this.lockers[index].frame.name != 'locker_0021') return
         this.lockers[index].isOpen = true
         this.lockers[index].play('school-locker-open', true)
+        this.shell.musicController.addSfx('school-lockeropen')
     }
 
     playLockerClose(index) {
         if (this.lockers[index].frame.name != 'locker_0011') return
         this.lockers[index].isOpen = false
         this.lockers[index].play('school-locker-close', true)
+        this.shell.musicController.addSfx('school-lockerclose')
     }
 
     update(time, delta) {

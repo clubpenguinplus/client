@@ -12,6 +12,8 @@ export default class ClientPenguin extends Penguin {
         this.save = this.savedPenguins[this.username.toLowerCase()]
 
         penguinLoader.addRing(this)
+
+        this.shell.client.penguin = this
     }
 
     update(item, slot) {
@@ -45,11 +47,6 @@ export default class ClientPenguin extends Penguin {
         if (this.lastX && this.lastX == x && this.lastY && this.lastY == y) return
         this.lastX = x
         this.lastY = y
-
-        if (this.seatClicked) {
-            this.seatClicked = false
-            this.afterMove = null
-        }
 
         if (frame) {
             this.afterMove = () => this.shell.client.sendFrame(frame)

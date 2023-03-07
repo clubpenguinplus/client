@@ -1,0 +1,132 @@
+{
+    "id": "e276c76c-24a0-4067-86a7-1659b460ee7b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "Intro",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "8b07f6ec-8fc1-488a-a045-716433484c80",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "NinePatchContainer",
+            "id": "ce4ab160-7765-47ff-a76d-77a56a5d4087",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "banning",
+                "frame": "banned_bg"
+            },
+            "x": 760,
+            "y": 480,
+            "width": 900,
+            "height": 800,
+            "marginLeft": 40,
+            "marginRight": 40,
+            "marginTop": 40,
+            "marginBottom": 40
+        },
+        {
+            "type": "Image",
+            "id": "a37afa43-5cf6-4a7c-9b66-7ea26a165630",
+            "label": "button",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "button",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "banning",
+                "frame": "button"
+            },
+            "x": 760,
+            "y": 766
+        },
+        {
+            "type": "Text",
+            "id": "416a30eb-4623-4d37-9dd9-191948e3e2aa",
+            "label": "title",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 153,
+            "originX": 0.5,
+            "text": "Welcome to Club Penguin Plus!",
+            "fixedWidth": 800,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "48px",
+            "fontStyle": "bold",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 800
+        },
+        {
+            "type": "Text",
+            "id": "383b5e72-0039-44aa-ad7d-1647de5b39fd",
+            "label": "content",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 250,
+            "originX": 0.5,
+            "text": "Club Penguin Plus is in closed beta. This means you are one of few lucky penguins with access to the game right now!\n\nWe encourage you to test whatever you can, and actively try to break things and find bugs we can fix. \n\nYou can use the !ai command to add any item to your inventory, so you can test anything you want.\n\nThis feature will be disabled on public release and your account data will be reset to default.",
+            "fixedWidth": 800,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 800
+        },
+        {
+            "type": "Text",
+            "id": "ba53904d-c214-4d42-ae31-4bc2a5a24653",
+            "label": "okay",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 734,
+            "originX": 0.5,
+            "text": "Okay",
+            "fixedWidth": 800,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "48px",
+            "fontStyle": "bold",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 800
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

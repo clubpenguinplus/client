@@ -23,6 +23,8 @@ export default class InputText extends EventComponent {
         this.entercallback = () => {}
         /** @type {any} */
         this.userdefinedonclickfunction = () => {}
+        /** @type {boolean} */
+        this.extends = true
 
         this.gameObject = gameObject
         gameObject['__InputText'] = this
@@ -44,6 +46,7 @@ export default class InputText extends EventComponent {
 
     start() {
         this.defaultText = this.gameObject.text
+        this.gameObject.textContent = this.gameObject.text
         this.lineWidth = this.gameObject.style.fixedWidth
 
         this.clickZone = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, this.lineWidth, this.gameObject.height, 0x00ff00, localStorage.debugMode == 'true' ? 0.5 : 0)
@@ -72,7 +75,7 @@ export default class InputText extends EventComponent {
         this.clickZone.on('pointerout', () => this.onOut())
         this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
 
-        this.indicator = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, 1, this.gameObject.height, `0x${this.gameObject.style.color.substring(1, 7)}`, 1)
+        this.indicator = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, 1, this.getCharHeight('I'), `0x${this.gameObject.style.color == '#fff' ? 'ffffff' : this.gameObject.style.color.substring(1, 7)}`, 1)
         this.indicator.setOrigin(this.gameObject.originX, this.gameObject.originY)
         this.indicator.visible = false
         if (this.gameObject.scene.inputTextContainer && !insideCustomContainer) {
@@ -85,6 +88,51 @@ export default class InputText extends EventComponent {
             this.gameObject.scene.add.existing(this.indicator)
             this.gameObject.scene.add.existing(this.clickZone)
         }
+
+        this.x = this.gameObject.x
+
+        this.gameObject.setStyle({fixedWidth: 0})
+        this.wrapText()
+        this.createMask()
+    }
+
+    get trueX() {
+        let x = this.gameObject.x - this.gameObject.width * this.gameObject.originX
+        let curObject = this.gameObject
+        while (curObject.parentContainer) {
+            curObject = curObject.parentContainer
+            x += curObject.x
+        }
+        return x
+    }
+
+    get trueY() {
+        let y = this.gameObject.y - this.gameObject.height * this.gameObject.originY
+        let curObject = this.gameObject
+        while (curObject.parentContainer) {
+            curObject = curObject.parentContainer
+            y += curObject.y
+        }
+        return y
+    }
+
+    createMask() {
+        this.mask = this.gameObject.scene.add.graphics()
+        this.mask.fillStyle(0xffffff, 0)
+        this.mask.beginPath()
+        this.mask.fillRect(this.trueX, this.trueY, this.lineWidth, this.gameObject.height)
+        this.mask = this.mask.createGeometryMask()
+        this.gameObject.setMask(this.mask)
+    }
+
+    setDefaultText(text) {
+        this.defaultText = text
+        this.gameObject.text = text
+        this.gameObject.textContent = text
+
+        this.userClicked = false
+
+        this.wrapText()
     }
 
     onUp(pointer) {
@@ -132,10 +180,13 @@ export default class InputText extends EventComponent {
 
             if (this.gameObject.style.align == 'right') {
                 this.indicator.x = this.gameObject.x - charWidth
+                this.indicator.y = this.getLinePos(this.beforeCursor)
             } else if (this.gameObject.style.align == 'center') {
                 this.indicator.x = this.gameObject.x + charWidth / 2
+                this.indicator.y = this.getLinePos(this.beforeCursor)
             } else {
                 this.indicator.x = this.gameObject.x + charWidth
+                this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
             this.gameObject.setStyle({fixedWidth: prevWidth})
@@ -185,10 +236,13 @@ export default class InputText extends EventComponent {
 
             if (this.gameObject.style.align == 'right') {
                 this.indicator.x = this.gameObject.x - charWidth
+                this.indicator.y = this.getLinePos(this.beforeCursor)
             } else if (this.gameObject.style.align == 'center') {
                 this.indicator.x = this.gameObject.x + charWidth / 2
+                this.indicator.y = this.getLinePos(this.beforeCursor)
             } else {
                 this.indicator.x = this.gameObject.x + charWidth
+                this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
             this.gameObject.setStyle({fixedWidth: prevWidth})
@@ -201,11 +255,45 @@ export default class InputText extends EventComponent {
         let prevWidth = this.gameObject.style.fixedWidth
         let prevText = this.gameObject.text
         this.gameObject.setStyle({fixedWidth: 0})
-        this.gameObject.text = char
+        let arr = char.split('\n')
+        this.gameObject.text = arr[arr.length - 1]
         let width = this.gameObject.width
         this.gameObject.text = prevText
         this.gameObject.setStyle({fixedWidth: prevWidth})
         return width
+    }
+
+    getCharHeight(char) {
+        if (this.ispassword) char = char.replace(/./g, '*')
+
+        let prevHeight = this.gameObject.style.fixedHeight
+        let prevText = this.gameObject.text
+        this.gameObject.setStyle({fixedHeight: 0})
+        this.gameObject.text = char
+        let height = this.gameObject.height
+        this.gameObject.text = prevText
+        this.gameObject.setStyle({fixedHeight: prevHeight})
+        return height
+    }
+
+    getLinePos(char) {
+        if (this.ispassword) char = char.replace(/./g, '*')
+
+        let prevHeight = this.gameObject.style.fixedHeight
+        let prevText = this.gameObject.text
+        this.gameObject.setStyle({fixedHeight: 0})
+        let arr = char.split('\n')
+        this.gameObject.text = arr.pop()
+        let height = this.gameObject.height * this.gameObject.originY
+        for (let i = 0; i < arr.length; i++) {
+            this.gameObject.text = arr[i]
+            height -= this.gameObject.height * this.gameObject.originY
+        }
+        this.gameObject.text = prevText
+        this.gameObject.setStyle({fixedHeight: prevHeight})
+
+        var offset = this.gameObject.y + this.gameObject.height * this.gameObject.originY
+        return offset - height
     }
 
     onOver() {
@@ -306,6 +394,7 @@ export default class InputText extends EventComponent {
                     this.afterCursor = ''
                     this.gameObject.textContent = this.beforeCursor + this.afterCursor
                     this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
+                    this.wrapText()
                 }
             } else if (event.key == 'c') {
                 navigator.clipboard.writeText(this.gameObject.textContent)
@@ -332,26 +421,37 @@ export default class InputText extends EventComponent {
 
             if (this.gameObject.width > this.lineWidth) {
                 if (!this.multiline) {
-                    this.gameObject.textContent = this.gameObject.textContent.slice(0, -1)
-                    this.gameObject.text = this.gameObject.text.slice(0, -1)
-                } else {
-                    this.gameObject.textContent = this.gameObject.textContent.slice(0, -1) + '\n' + key
-                    // there shouldn't be a password on a multiline input but just in case
-                    if (this.ispassword) {
-                        this.gameObject.text = this.gameObject.text.slice(0, -1) + '\n*'
+                    if (!this.extends) {
+                        this.beforeCursor = this.beforeCursor.slice(0, -1)
+                        this.gameObject.textContent = this.beforeCursor + this.afterCursor
+                        this.gameObject.text = this.gameObject.textContent
                     } else {
-                        this.gameObject.text = this.gameObject.text.slice(0, -1) + '\n' + key
+                        this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
                     }
+                } else {
+                    const last30Chars = this.beforeCursor.slice(-30)
+                    const spaceIndex = last30Chars.lastIndexOf(' ')
+                    const newLineIndex = spaceIndex === -1 ? this.beforeCursor.length - 1 : this.beforeCursor.length - 30 + spaceIndex
+                    const beforeNewline = this.beforeCursor.slice(0, newLineIndex)
+                    const afterNewline = this.beforeCursor.slice(newLineIndex + 1)
+                    this.beforeCursor = beforeNewline + '\n' + afterNewline
+                    this.gameObject.textContent = this.beforeCursor + this.afterCursor
+                    this.gameObject.text = this.gameObject.textContent
                 }
+            } else if (this.extends) {
+                this.gameObject.x = this.x
             }
         }
 
         if (this.gameObject.style.align == 'right') {
             this.indicator.x = this.gameObject.x - this.getCharWidth(this.beforeCursor)
+            this.indicator.y = this.getLinePos(this.beforeCursor)
         } else if (this.gameObject.style.align == 'center') {
             this.indicator.x = this.gameObject.x + this.getCharWidth(this.beforeCursor) / 2 - this.getCharWidth(this.afterCursor) / 2
+            this.indicator.y = this.getLinePos(this.beforeCursor)
         } else {
             this.indicator.x = this.gameObject.x + this.getCharWidth(this.beforeCursor)
+            this.indicator.y = this.getLinePos(this.beforeCursor)
         }
     }
 
@@ -369,7 +469,36 @@ export default class InputText extends EventComponent {
         this.userClicked = false
         this.gameObject.text = this.defaultText
         this.gameObject.textContent = this.defaultText
+        this.gameObject.x = this.x
         this.indicator.x = this.gameObject.x
+    }
+
+    wrapText() {
+        if (this.gameObject.width > this.lineWidth) {
+            if (!this.multiline) {
+                while (this.gameObject.width > this.lineWidth) {
+                    this.gameObject.text = this.gameObject.text.slice(0, -1)
+                    this.gameObject.textContent = this.gameObject.textContent.slice(0, -1)
+                }
+            } else {
+                let textArray = this.gameObject.textContent.split(' ')
+                let text = ''
+                let line = ''
+                for (let i = 0; i < textArray.length; i++) {
+                    if (this.getCharWidth(line + textArray[i]) < this.lineWidth) {
+                        line += textArray[i] + ' '
+                    } else {
+                        text += line + '\n'
+                        line = textArray[i] + ' '
+                    }
+                }
+                text += line
+                this.beforeCursor = text
+                this.afterCursor = ''
+                this.gameObject.textContent = this.beforeCursor + this.afterCursor
+                this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
+            }
+        }
     }
 
     /* END-USER-CODE */

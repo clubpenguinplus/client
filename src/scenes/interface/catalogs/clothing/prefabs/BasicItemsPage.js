@@ -20,7 +20,7 @@ export default class BasicItemsPage extends Page {
         this.add(rollOverText)
 
         // rollOver
-        const rollOver = scene.add.sprite(955, 440, 'jan22clothing', 'rollover10001')
+        const rollOver = scene.add.sprite(955, 440, 'constant', 'rollover10001')
         this.add(rollOver)
 
         // page4_header
@@ -191,14 +191,6 @@ export default class BasicItemsPage extends Page {
         hover_653.fillAlpha = 0.5
         this.add(hover_653)
 
-        // prevPage
-        const prevPage = scene.add.image(138, 729, 'constant', 'prevPage')
-        this.add(prevPage)
-
-        // nextPage
-        const nextPage = scene.add.image(1382, 729, 'constant', 'nextPage')
-        this.add(nextPage)
-
         // closebtn
         const closebtn = scene.add.image(1441, 37, 'constant', 'closebtn')
         this.add(closebtn)
@@ -328,16 +320,6 @@ export default class BasicItemsPage extends Page {
         // hover_653 (components)
         const hover_653SimpleButton = new SimpleButton(hover_653)
         hover_653SimpleButton.hoverCallback = () => this.rollover('rollover10002')
-
-        // prevPage (components)
-        const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
-        prevPageButton.callback = () => this.prevPage()
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
-        nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)

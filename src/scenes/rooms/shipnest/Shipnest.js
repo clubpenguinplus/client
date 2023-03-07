@@ -13,6 +13,7 @@ export default class Shipnest extends RoomScene {
             ship: () => this.triggerRoom(420, 900, 600),
         }
         this.music = 492
+        this.loadSfx = ['shipnest-cannon']
         /* END-USER-CTR-CODE */
     }
 
@@ -41,8 +42,24 @@ export default class Shipnest extends RoomScene {
         // snowballs
         this.add.image(1110, 498, 'shipnest', 'snowballs')
 
-        // cannonback
-        const cannonback = this.add.sprite(277, 314, 'shipnest', 'cannonback0001')
+        // cannon
+        const cannon = this.add.sprite(303, 320, 'shipnest', 'cannon0001')
+
+        // basecannon
+        const basecannon = this.add.container(0, 0)
+        basecannon.visible = false
+
+        // cannonholderback
+        const cannonholderback = this.add.image(440, 471, 'shipnest', 'cannonholderback')
+        basecannon.add(cannonholderback)
+
+        // fuse
+        const fuse = this.add.sprite(406, 398, 'shipnest', 'fuse0001')
+        basecannon.add(fuse)
+
+        // cannonholderfront
+        const cannonholderfront = this.add.image(396, 503, 'shipnest', 'cannonholderfront')
+        basecannon.add(cannonholderfront)
 
         // leftsnowball
         this.add.image(375, 625, 'shipnest', 'leftsnowball')
@@ -61,21 +78,30 @@ export default class Shipnest extends RoomScene {
         // nestyarr
         const nestyarr = this.add.sprite(324, 813, 'shipnest', 'nestyarr0001')
 
+        // cantrig
+        const cantrig = this.add.rectangle(401, 438, 128, 128)
+        cantrig.scaleX = 1.9851346206740512
+        cantrig.scaleY = 2.0904080292297627
+
         // lists
         const sort = [frontnest, jolly]
 
         // powder_en (components)
         new LocalisedSprite(powder_en)
 
-        // cannonback (components)
-        new SimpleButton(cannonback)
-
         // jollyflag (components)
         const jollyflagSimpleButton = new SimpleButton(jollyflag)
         jollyflagSimpleButton.hoverCallback = () => this.onJollyFlagOver()
         jollyflagSimpleButton.hoverOutCallback = () => this.onJollyFlagOut()
 
-        this.cannonback = cannonback
+        // cantrig (components)
+        const cantrigSimpleButton = new SimpleButton(cantrig)
+        cantrigSimpleButton.hoverCallback = () => this.onCannonOver()
+        cantrigSimpleButton.callback
+
+        this.cannon = cannon
+        this.basecannon = basecannon
+        this.fuse = fuse
         this.jollyflag = jollyflag
         this.nestyarr = nestyarr
         this.sort = sort
@@ -84,7 +110,11 @@ export default class Shipnest extends RoomScene {
     }
 
     /** @type {Phaser.GameObjects.Sprite} */
-    cannonback
+    cannon
+    /** @type {Phaser.GameObjects.Container} */
+    basecannon
+    /** @type {Phaser.GameObjects.Sprite} */
+    fuse
     /** @type {Phaser.GameObjects.Sprite} */
     jollyflag
     /** @type {Phaser.GameObjects.Sprite} */
@@ -111,10 +141,8 @@ export default class Shipnest extends RoomScene {
     }
 
     onCannonOver() {
-        this.cannonback.play('shipnest-fuse').once('animationcomplete', () => {
-            this.cannonback.play('shipnest-cannonback')
-            this.cannonback.play('shipnest-cannonfire')
-        })
+        this.cannon.play('shipnest-cannon')
+        this.shell.musicController.addSfx('shipnest-cannon')
     }
 
     onCannonOut() {

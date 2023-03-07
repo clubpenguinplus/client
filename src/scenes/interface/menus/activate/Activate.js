@@ -201,7 +201,7 @@ export default class Activate extends BaseScene {
     accountActivated() {
         this.interface.hideLoading()
         this.interface.prompt.showWindow(this.crumbs.getString('accountActivated'), 'single', () => {
-            this.scene.start('Login')
+            document.location.href = `/${this.shell.language}/`
         })
     }
 
@@ -213,7 +213,7 @@ export default class Activate extends BaseScene {
     }
 
     onCreateClick() {
-        window.location.href = '/?create'
+        window.location.href = `/${this.shell.language}/?create`
     }
 
     onBackClick() {

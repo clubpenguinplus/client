@@ -488,6 +488,16 @@
                         "id": "expression",
                         "expressionType": "any"
                     }
+                },
+                {
+                    "name": "extends",
+                    "label": "Extends",
+                    "tooltip": "Does the text extend past the limit of the size of the text box?",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
                 }
             ]
         },

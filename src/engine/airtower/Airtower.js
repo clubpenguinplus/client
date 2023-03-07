@@ -43,6 +43,8 @@ export default class Airtower {
                 this.disconnect()
             }
         )
+
+        this.loginReconnect = () => this.connectLogin(saveUsername, savePassword, onConnect)
     }
 
     connectGame(world, username, key, mode = 'game') {
@@ -111,6 +113,7 @@ export default class Airtower {
     }
 
     disconnect() {
+        this.doNotReconnect = true
         if (this.client) {
             this.client.disconnect()
         }
@@ -221,6 +224,25 @@ export default class Airtower {
             let identifier = msgAsArray[2]
             let args = msgAsArray.slice(3)
 
+            args = args.map((arg) => {
+                switch (arg) {
+                    case 'true':
+                        return true
+                    case 'false':
+                        return false
+                    case 'undefined':
+                        return undefined
+                    case 'null':
+                        return null
+                    default:
+                        return arg
+                }
+            })
+
+            while (args[args.length - 1] == '') {
+                args.pop()
+            }
+
             if (window.location.hostname == 'localhost') {
                 console.log('[Airtower] Message received:', message)
             }
@@ -260,19 +282,25 @@ export default class Airtower {
                 case 'A#KO':
                     this.activate.invalidCode()
                     return
-                case 'R#OK':
+                case 'B#OK':
                     this.register.keyRegistered()
                     return
-                case 'R#KO':
+                case 'B#KO':
                     this.register.invalidKey()
                     return
+                case 'PR#OK':
+                    this.reset.passwordReset()
+                    return
+                case 'PR#KO':
+                    this.reset.invalidCode()
+                    return
                 case 'KO':
-                    if (!this.lastLoginScene) return this.scene.start('Login')
+                    if (!this.lastLoginScene) return this.game.scene.start('Login')
 
-                    let scene = this.scene.getScene(this.lastLoginScene)
+                    let scene = this.game.scene.getScene(this.lastLoginScene)
 
-                    scene.events.once('create', () => this.onLoginError('error'))
-                    this.scene.start(this.lastLoginScene)
+                    scene.events.once('create', () => this.interface.prompt.showError('You are not on the latest version of the game. Please clear your cache, and refresh the page to update.', 'Reload', () => window.location.reload()))
+                    this.game.scene.start(this.lastLoginScene)
                     return
                 case 'OK':
                     if (this.password) {

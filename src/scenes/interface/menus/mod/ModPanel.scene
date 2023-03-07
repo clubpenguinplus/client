@@ -73,6 +73,23 @@
             "y": 655,
             "nestedPrefabs": [],
             "list": []
+        },
+        {
+            "type": "Image",
+            "id": "6eeea266-8ade-4c59-988f-cbb711863822",
+            "label": "white_x",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.quit()",
+            "texture": {
+                "key": "main",
+                "frame": "white-x"
+            },
+            "x": 1495,
+            "y": 23,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [],

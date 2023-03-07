@@ -6,6 +6,8 @@ export default class Item extends Plugin {
         this.events = {
             up: this.updatePlayer,
             ai: this.addItem,
+            aci: this.addCodeItem,
+            ac: this.addCoins,
         }
     }
 
@@ -39,5 +41,25 @@ export default class Item extends Plugin {
         // Show prompt
         let text = `${this.crumbs.items[args[0]].name}\nhas been added to your inventory.`
         this.interface.prompt.showWindow(text, 'single')
+    }
+
+    addCodeItem(args) {
+        // If item already in inventory
+        if (this.client.inventory[args[2]].includes(args[0])) return
+
+        // Update player data
+        this.client.inventory[args[2]].push(args[0])
+        this.client.inventory[args[2]].sort((a, b) => a - b)
+    }
+
+    addCoins(args) {
+        // Update player data
+        this.client.coins = args[0]
+
+        // Update player card
+        this.interface.refreshPlayerCard()
+
+        // Update catalog coins
+        this.interface.updateCatalogCoins(args[0])
     }
 }

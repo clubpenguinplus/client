@@ -1,4 +1,11 @@
 const igloos = {
+    0: {
+        key: 'Empty',
+        scene: require('@igloos/empty/Empty').default,
+        preview: require('@igloos/empty/Empty-preview').default,
+        x: 760,
+        y: 640,
+    },
     1: {
         key: 'Basic',
         scene: require('@igloos/basic/Basic').default,

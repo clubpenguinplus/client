@@ -14,6 +14,7 @@ export default class Ship extends RoomScene {
             beach: () => this.triggerRoom(400, 700, 411),
         }
         this.music = 380
+        this.loadSfx = ['ship-ladder', 'ship-holdopen', 'ship-holdclose']
         /* END-USER-CTR-CODE */
     }
 

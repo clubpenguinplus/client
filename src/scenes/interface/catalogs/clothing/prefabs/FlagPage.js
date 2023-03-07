@@ -844,14 +844,6 @@ export default class FlagPage extends Page {
         flag_button_540.fillAlpha = 0.5
         this.add(flag_button_540)
 
-        // nextPage
-        const nextPage = scene.add.image(1382, 729, 'constant', 'nextPage')
-        this.add(nextPage)
-
-        // prevPage
-        const prevPage = scene.add.image(141, 729, 'constant', 'prevPage')
-        this.add(prevPage)
-
         // closebtn
         const closebtn = scene.add.image(1441, 37, 'constant', 'closebtn')
         this.add(closebtn)
@@ -1327,16 +1319,6 @@ export default class FlagPage extends Page {
         // flag_button_540 (components)
         const flag_button_540SimpleButton = new SimpleButton(flag_button_540)
         flag_button_540SimpleButton.callback = () => this.buy(540)
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
-        nextPageButton.callback = () => this.nextPage()
-
-        // prevPage (components)
-        const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
-        prevPageButton.callback = () => this.prevPage()
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)

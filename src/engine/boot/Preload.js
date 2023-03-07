@@ -9,6 +9,8 @@ import Main from '@scenes/interface/game/main/Main'
 import IglooEdit from '@scenes/interface/game/iglooedit/IglooEdit'
 import Activate from '@scenes/interface/menus/activate/Activate'
 import Register from '@scenes/interface/menus/register/Register'
+import Reset from '@scenes/interface/menus/reset/Reset'
+import Request from '@scenes/interface/menus/reset/Request'
 
 export default class Preload extends BaseScene {
     preload() {
@@ -28,6 +30,8 @@ export default class Preload extends BaseScene {
         this.scene.add('Servers', Servers)
         this.scene.add('Main', Main)
         this.scene.add('IglooEdit', IglooEdit)
+        this.scene.add('Reset', Reset)
+        this.scene.add('Request', Request)
 
         document.getElementsByTagName('canvas')[1].id = 'game_canvas'
         document.getElementsByTagName('canvas')[1].style.borderRadius = '10px'
@@ -129,29 +133,37 @@ export default class Preload extends BaseScene {
         }
 
         this.crumbs.getString = (key) => {
-            key = key.toString().toLowerCase()
-            let result = this.crumbs.strings[key]
-            if (key.includes(',')) {
-                result = this.crumbs.strings[key.split(',')[0]]
-                let args = key.split(',').slice(1)
-                for (let i = 0; i < args.length; i++) {
-                    result = result.replace(`{args[${i}]}`, args[i])
-                }
+            let result = this.crumbs.strings[key.toLowerCase()]
+
+            if (!key.includes(',')) {
+                return result || key
             }
-            if (!result) result = key
-            return result
+
+            result = this.crumbs.strings[key.split(',')[0].toLowerCase()]
+            let args = key.split(',').slice(1)
+
+            for (let i = 0; i < args.length; i++) {
+                result = result.replace(`{args[${i}]}`, args[i])
+            }
+
+            return result || key
         }
 
         this.crumbs.getError = (key) => {
             key = key.toString()
             let result = this.crumbs.strings.errors[key]
-            if (key.includes(',')) {
-                result = this.crumbs.strings.errors[key.split(',')[0]]
-                let args = key.split(',').slice(1)
-                for (let i = 0; i < args.length; i++) {
-                    result = result.replace(`{args[${i}]}`, args[i])
-                }
+
+            if (!key.includes(',')) {
+                return result
             }
+
+            result = this.crumbs.strings.errors[key.split(',')[0]]
+            let args = key.split(',').slice(1)
+
+            for (let i = 0; i < args.length; i++) {
+                result = result.replace(`{args[${i}]}`, args[i])
+            }
+
             return result
         }
 
@@ -181,6 +193,13 @@ export default class Preload extends BaseScene {
 
             this.send2FA(id, code)
         }
+        if (queryString.includes('reset')) {
+            window.passwordResetKey = queryString.split('=')[1]
+            this.scene.start('Reset')
+        }
+        if (queryString.includes('forgot')) {
+            this.scene.start('Request')
+        }
         if (this.airtower.isSavedPenguins) return this.scene.start('PenguinSelect')
         this.scene.start('Login')
     }
@@ -194,6 +213,7 @@ export default class Preload extends BaseScene {
     onProgress(progress) {
         let frame = Math.round(progress * 58) + 1
         let prog = frame.toString().length == 1 ? `0${frame}` : frame
+        this.interface.loading.bar.anims.stop()
         this.interface.loading.bar.setFrame(`beam_00${prog}`)
     }
 

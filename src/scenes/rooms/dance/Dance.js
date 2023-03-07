@@ -18,7 +18,7 @@ export default class Dance extends RoomScene {
             town: () => this.triggerRoom(100, 1200, 400),
         }
 
-        this.music = 1165
+        this.music = 673
 
         /* END-USER-CTR-CODE */
     }
@@ -334,6 +334,8 @@ export default class Dance extends RoomScene {
         if (Object.keys(this.penguins).length >= 25) {
             this.shell.client.stampEarned(22)
         }
+
+        this.loadSfx = ['dance-Door', 'dance-SpeakerOpen', 'dance-SpeakerClose', 'dance-LightOn', 'dance-LightOff']
     }
 
     onSoundStudioOver() {
@@ -350,8 +352,11 @@ export default class Dance extends RoomScene {
     }
 
     onDoorOut() {
-        this.door.stop('doorAnim')
-        this.door.setFrame('door0001')
+        if (this.door.anims.isPlaying) {
+            this.door.anims.reverse()
+        } else {
+            this.door.playReverse('dance-doorAnim')
+        }
     }
 
     onSpeakerOver() {

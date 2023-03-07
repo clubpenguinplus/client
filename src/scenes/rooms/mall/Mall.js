@@ -16,6 +16,8 @@ export default class Mall extends RoomScene {
 
         this.music = 749
 
+        this.loadSfx = ['mall-dooropen', 'mall-doorclose', 'mall-chestopen', 'mall-chestclose']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -189,7 +191,8 @@ export default class Mall extends RoomScene {
         fish_stand.setOrigin(0.5065352897072228, 0.90245602461396)
 
         // food_display_br
-        const food_display_br = this.add.image(1332, 620, 'mall', 'food-display-br')
+        const food_display_br = this.add.image(1296.5645047045468, 641.9944294666174, 'mall', 'food-display-br')
+        food_display_br.setOrigin(0.23944521830693374, 0.6476135398251864)
 
         // hats_costumes
         const hats_costumes = this.add.image(1478.290349838561, 394.096494065852, 'mall', 'hats-costumes')
@@ -229,6 +232,12 @@ export default class Mall extends RoomScene {
         // tree_pillar_br
         const tree_pillar_br = this.add.image(1520.8738884287548, 831.3338260936, 'mall', 'tree-pillar-br')
         tree_pillar_br.setOrigin(0.1822104818926391, 0.7115598331071208)
+
+        // glow
+        const glow = this.add.sprite(1432, 136, 'mall', 'glow')
+        glow.scaleX = 0.85
+        glow.scaleY = 0.85
+        glow.visible = false
 
         // foreground
         const foreground = this.add.image(769, 1001.0205630882047, 'mall', 'foreground')
@@ -273,6 +282,8 @@ export default class Mall extends RoomScene {
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('mall-dooropen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('mall-doorclose')
         doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 224
@@ -285,6 +296,14 @@ export default class Mall extends RoomScene {
         // costumes (components)
         const costumesButton = new Button(costumes)
         costumesButton.spriteName = 'costumes'
+        costumesButton.hoverCallback = () => {
+            this.shell.musicController.addSfx('mall-chestopen')
+            this.glow.visible = true
+        }
+        costumesButton.hoverOutCallback = () => {
+            this.shell.musicController.addSfx('mall-chestclose')
+            this.glow.visible = false
+        }
         costumesButton.callback = () => this.interface.loadExternal('CostumeCatalog')
         costumesButton.activeFrame = false
         costumesButton.isLocalised = true
@@ -343,6 +362,7 @@ export default class Mall extends RoomScene {
         this.re_four = re_four
         this.re_five = re_five
         this.fountain = fountain
+        this.glow = glow
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -370,6 +390,8 @@ export default class Mall extends RoomScene {
     re_five
     /** @type {Phaser.GameObjects.Sprite} */
     fountain
+    /** @type {Phaser.GameObjects.Sprite} */
+    glow
     /** @type {Phaser.GameObjects.Image[]} */
     sort
 

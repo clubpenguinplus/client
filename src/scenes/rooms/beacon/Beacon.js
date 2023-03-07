@@ -25,6 +25,8 @@ export default class Beacon extends RoomScene {
 
         this.music = 583
 
+        this.loadSfx = ['beacon-jetpackopen', 'beacon-jetpackclose']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -84,8 +86,14 @@ export default class Beacon extends RoomScene {
 
         // jetpackZone (components)
         const jetpackZoneSimpleButton = new SimpleButton(jetpackZone)
-        jetpackZoneSimpleButton.hoverCallback = () => this.onJetpackOver()
-        jetpackZoneSimpleButton.hoverOutCallback = () => this.onJetpackOut()
+        jetpackZoneSimpleButton.hoverCallback = () => {
+            this.onJetpackOver()
+            this.shell.musicController.addSfx('beacon-jetpackopen')
+        }
+        jetpackZoneSimpleButton.hoverOutCallback = () => {
+            this.onJetpackOut()
+            this.shell.musicController.addSfx('beacon-jetpackclose')
+        }
         jetpackZoneSimpleButton.callback = () => this.shell.client.penguin.move(1342, 565)
         const jetpackZoneShowHint = new ShowHint(jetpackZone)
         jetpackZoneShowHint.text = 'jetpackadventure'

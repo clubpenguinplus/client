@@ -20,6 +20,8 @@ export default class Pizza extends RoomScene {
         }
 
         this.music = 676
+
+        this.loadSfx = ['pizza-PlazaOpen', 'pizza-PlazaClose', 'pizza-KitchenOpen', 'pizza-KitchenClose', 'pizza-CashUp', 'pizza-CashDown']
         /* END-USER-CTR-CODE */
     }
 

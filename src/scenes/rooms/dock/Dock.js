@@ -32,6 +32,8 @@ export default class Dock extends RoomScene {
 
         this.music = 585
 
+        this.loadSfx = ['dock-tubes']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -157,6 +159,7 @@ export default class Dock extends RoomScene {
         const rectangleSimpleButton = new SimpleButton(rectangle)
         rectangleSimpleButton.hoverCallback = () => {
             this.ring.__Animation.play()
+            this.shell.musicController.addSfx('dock-tubes')
         }
         rectangleSimpleButton.hoverOutCallback = () => {}
 

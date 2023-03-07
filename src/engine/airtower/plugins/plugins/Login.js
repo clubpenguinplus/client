@@ -1,4 +1,5 @@
 import Plugin from '../Plugin'
+import Unlock from '@scenes/interface/menus/unlock/Unlock'
 
 export default class Login extends Plugin {
     constructor(airtower) {
@@ -44,10 +45,13 @@ export default class Login extends Plugin {
 
     modAuth(args) {
         this.interface.loadExternal('ModPanel')
+        this.shell.client = {id: args[0], rank: args[1]}
     }
 
     unlockAuth(args) {
-        this.airtower.sendXt('l#lp')
+        this.interface.showLoading()
+        this.scene.add('Unlock', Unlock)
+        this.scene.start('Unlock')
     }
 
     authToken(args) {

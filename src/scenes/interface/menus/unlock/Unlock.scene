@@ -1,0 +1,518 @@
+{
+    "id": "73fabb0c-d921-4191-b108-515f5961292c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/menus/unlock/unlock-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Unlock",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b0ba7909-2225-4c6d-844f-fcab09ff0a6d",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "backgroun"
+            },
+            "y": 1,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "846dbe1a-9ecd-4225-8d00-af96ab7c8eba",
+            "label": "bgtop",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "bgtop"
+            },
+            "x": 760,
+            "y": 480,
+            "scaleX": 3,
+            "scaleY": 3,
+            "alpha": 0.25,
+            "alphaTopLeft": 0.25,
+            "alphaTopRight": 0.25,
+            "alphaBottomLeft": 0.25,
+            "alphaBottomRight": 0.25
+        },
+        {
+            "type": "Sprite",
+            "id": "ccf11452-21e5-4d8c-8006-5d72174c4108",
+            "label": "chest",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "chest0001"
+            },
+            "x": 820,
+            "y": 387,
+            "scaleX": 0.9,
+            "scaleY": 0.9
+        },
+        {
+            "type": "Sprite",
+            "id": "d16ac858-4ea0-46e8-93ab-a50f3a460376",
+            "label": "backButton",
+            "components": [
+                "SimpleButton",
+                "Animation"
+            ],
+            "SimpleButton.callback": "() => this.onBackClick()",
+            "Animation.key": "small-button",
+            "Animation.end": 3,
+            "Animation.repeat": 0,
+            "Animation.onHover": true,
+            "texture": {
+                "key": "login",
+                "frame": "small-button"
+            },
+            "x": 760,
+            "y": 876
+        },
+        {
+            "type": "NinePatchContainer",
+            "id": "88b09ec0-32f9-4369-89e6-bbe5607de2a1",
+            "label": "options",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "blackbox"
+            },
+            "x": 780,
+            "y": 701,
+            "visible": false,
+            "width": 567,
+            "height": 211
+        },
+        {
+            "type": "Container",
+            "id": "064c9025-d9d1-45fb-9ac2-7bd86b71abc6",
+            "label": "bubblesContainer",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "ddadc9a0-aaf3-49b6-aac7-a41b74ab701c",
+                    "label": "bubbles",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "unlock",
+                        "frame": "bubbles0001"
+                    },
+                    "x": 782,
+                    "y": 387
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "1c8412b9-de18-4654-8bed-98898f045c72",
+            "label": "icon_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "unlock",
+                "frame": "icon_en"
+            },
+            "x": 121,
+            "y": 109,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Container",
+            "id": "24b56c66-0a51-4e9e-9348-b60168b67828",
+            "label": "baseOptions",
+            "scope": "CLASS",
+            "components": [],
+            "x": 780,
+            "y": 699,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "b82ad337-d7ea-4c5c-9975-b92b66b0a194",
+                    "label": "optionText",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "code-base",
+                    "x": 13.992220199009466,
+                    "y": -1.104337977288992,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Unlock your Items. Choose an option.",
+                    "lineSpacing": 25,
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "color": "#ffffffff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2c61705e-b7e0-420b-8f8f-362f3288cd38",
+            "label": "codeButtons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 780,
+            "y": 554,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "4c21b1b9-b106-429d-b6c1-3ebae6fbfdbb",
+                    "label": "codebutton",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "codebutton",
+                    "Button.callback": "() => {this.onCodeButtonClick()}",
+                    "texture": {
+                        "key": "unlock",
+                        "frame": "codebutton"
+                    },
+                    "x": -2.1414595825303877,
+                    "y": -4.880653572546635,
+                    "scaleX": 1.25,
+                    "scaleY": 1.25
+                },
+                {
+                    "type": "Text",
+                    "id": "15b5f497-0fa7-4d4b-b749-5d50769b2bc3",
+                    "label": "codeText",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "code",
+                    "x": 17.858540417469612,
+                    "y": -4.880653572546635,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "I've got a Code",
+                    "lineSpacing": 25,
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "f272c09a-15b8-4457-adfc-709478ee38cf",
+                    "label": "unlocked",
+                    "components": [],
+                    "texture": {
+                        "key": "unlock",
+                        "frame": "unlocked"
+                    },
+                    "x": -90.14145958253039,
+                    "y": -5.880653572546635,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f3e1fba4-f672-42d3-8518-cdf4fb5cb99b",
+            "label": "codeOption",
+            "scope": "CLASS",
+            "components": [],
+            "x": 780,
+            "y": 704,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "0af7506e-bea4-4106-9ba3-1fa5b1727e9a",
+                    "label": "optionTextCode",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "code-options",
+                    "y": -68.46073228851685,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Enter your code!\nMake sure you enter it exactly as it appears.",
+                    "lineSpacing": 5,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "f3dd63e7-4704-47f4-913d-b0daebe09d24",
+                    "label": "code",
+                    "components": [],
+                    "texture": {
+                        "key": "unlock",
+                        "frame": "codeinput"
+                    },
+                    "y": 10.539267711483149
+                },
+                {
+                    "type": "Image",
+                    "id": "0571484f-6594-4b8e-96f4-1d9195a6ee29",
+                    "label": "nextbutton",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "codebutton",
+                    "Button.callback": "() => {this.onCodeInput()}",
+                    "texture": {
+                        "key": "unlock",
+                        "frame": "codebutton"
+                    },
+                    "y": 74.53926771148315,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "type": "Text",
+                    "id": "53ae207e-e278-46e0-9d4d-cc6fb5c02e94",
+                    "label": "nextText",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "code-next",
+                    "y": 75.53926771148315,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Next",
+                    "lineSpacing": 25,
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#ffffffff"
+                }
+            ]
+        },
+        {
+            "type": "Text",
+            "id": "059939df-c3cb-4277-9f31-f05ab2b1999d",
+            "label": "codeInput",
+            "scope": "CLASS",
+            "components": [
+                "InputText"
+            ],
+            "InputText.charlimit": 24,
+            "InputText.entercallback": "() => {this.onCodeInput()}",
+            "x": 780,
+            "y": 715,
+            "scaleY": 1.6,
+            "originX": 0.5,
+            "originY": 0.5,
+            "alpha": 0.8,
+            "alphaTopLeft": 0.8,
+            "alphaTopRight": 0.8,
+            "alphaBottomLeft": 0.8,
+            "alphaBottomRight": 0.8,
+            "fixedWidth": 350,
+            "lineSpacing": 25,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#000000ff"
+        },
+        {
+            "type": "Image",
+            "id": "ed6c69dc-e7e6-440e-8142-a926b89f98c9",
+            "label": "blue_button",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "blue-button",
+            "Button.callback": "() => {this.onServerClick()}",
+            "texture": {
+                "key": "main",
+                "frame": "blue-button"
+            },
+            "x": 1460,
+            "y": 48
+        },
+        {
+            "type": "Image",
+            "id": "247c3fda-f62b-4423-a157-5d82f0b4ea75",
+            "label": "blue_x",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "blue-x"
+            },
+            "x": 1461,
+            "y": 46
+        },
+        {
+            "type": "Sprite",
+            "id": "a180322f-28b3-4b21-b356-974327f83e33",
+            "label": "topchestt",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "topchestt"
+            },
+            "x": 790,
+            "y": 311,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "513b9f36-3cad-4743-bc68-7f4d4de676b9",
+            "label": "oneItem",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "c456458d-c232-4fdd-9519-41e050f2d83d",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 692.5873784349523,
+                    "y": 589.3988548802498,
+                    "list": [
+                        {
+                            "type": "Sprite",
+                            "id": "1cba3bb0-1859-4e99-83ba-56dc2016b3a3",
+                            "label": "coinholder",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "unlock",
+                                "frame": "itemholderanim0001"
+                            },
+                            "x": 1.4126215650477434,
+                            "y": -118.39885488024981
+                        },
+                        {
+                            "type": "Image",
+                            "id": "dbfc3a1f-613c-4778-a5f2-25989eb716e5",
+                            "label": "moneybag",
+                            "components": [],
+                            "texture": {
+                                "key": "unlock",
+                                "frame": "moneybag"
+                            },
+                            "x": 2.4126215650477434,
+                            "y": -3.3988548802498144,
+                            "scaleX": 0.12,
+                            "scaleY": 0.12
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "7b67aaa5-a03c-4432-b475-7163a911f856",
+                            "label": "rectangle_1",
+                            "components": [],
+                            "y": 37,
+                            "scaleX": 0.5448025871080537,
+                            "scaleY": 0.14778083979657908,
+                            "isFilled": true,
+                            "strokeColor": "#000000",
+                            "lineWidth": 2,
+                            "isStroked": true,
+                            "width": 128,
+                            "height": 128
+                        },
+                        {
+                            "type": "Text",
+                            "id": "58318789-c82b-46b0-8e81-ccc125d1ba02",
+                            "label": "coinstext",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -18,
+                            "y": 27,
+                            "text": "1000",
+                            "fontFamily": "Burbank Small",
+                            "color": "#000000ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "b0ebda2f-2393-41f2-855a-fee086589089",
+                    "label": "item",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "2d48d5ff-657d-4a18-b7f5-9ad0c223ca56",
+                            "label": "itemholder",
+                            "components": [],
+                            "texture": {
+                                "key": "unlock",
+                                "frame": "itemholderanim0001"
+                            },
+                            "x": 877,
+                            "y": 471
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "e227702d-f43a-4e48-ba52-08740620111d",
+            "label": "topchest",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "topchest"
+            },
+            "x": 832,
+            "y": 258,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "b4137b0e-bf14-4b61-86b7-da5cf63fdc81",
+            "label": "bottomchest",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "unlock",
+                "frame": "bottomchest"
+            },
+            "x": 789,
+            "y": 697,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "visible": false
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

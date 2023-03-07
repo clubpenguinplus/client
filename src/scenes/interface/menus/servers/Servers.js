@@ -1,5 +1,5 @@
 import BaseScene from '@scenes/base/BaseScene'
-import {Button, SimpleButton, NineSlice, LocalisedString} from '@scenes/components/components'
+import {Button, SimpleButton, NineSlice, LocalisedString, LocalisedSprite} from '@scenes/components/components'
 
 import Server from './server/Server'
 
@@ -124,6 +124,11 @@ export default class Servers extends BaseScene {
         const more_server_container = this.add.container(-760, -92)
         more_servers.add(more_server_container)
 
+        // icon_en
+        const icon_en = this.add.image(144, 122, 'servers-unlock', 'icon_en')
+        icon_en.scaleX = 0.3
+        icon_en.scaleY = 0.3
+
         // text_2 (components)
         const text_2LocalisedString = new LocalisedString(text_2)
         text_2LocalisedString.id = 'safe'
@@ -172,6 +177,13 @@ export default class Servers extends BaseScene {
         const image_2_1Button = new Button(image_2_1)
         image_2_1Button.spriteName = 'blue-button'
         image_2_1Button.callback = () => this.nextPage()
+
+        // icon_en (components)
+        const icon_enSimpleButton = new SimpleButton(icon_en)
+        icon_enSimpleButton.callback = () => {
+            this.onUnlockClick()
+        }
+        new LocalisedSprite(icon_en)
 
         this.server_container = server_container
         this.mod = mod
@@ -301,7 +313,11 @@ export default class Servers extends BaseScene {
     }
 
     onModClick() {
-        this.airtower.connectGame(this.unlockworld, this.data.username, this.data.key, 'mod')
+        this.airtower.connectGame(this.unlockworld, this.data[1], this.data[3], 'mod')
+    }
+
+    onUnlockClick() {
+        this.airtower.connectGame(this.unlockworld, this.data[1], this.data[3], 'unlock')
     }
 
     /* END-USER-CODE */

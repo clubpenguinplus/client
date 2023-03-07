@@ -61,9 +61,10 @@ export default class Skate extends RoomScene {
         this.add.image(196, 209, 'skate', 'pillar2')
 
         // puffle
-        const puffle = this.add.image(27, 230, 'skate', 'puffle')
+        const puffle = this.add.image(32, 489.00000000000006, 'skate', 'puffle')
         puffle.scaleX = 0.8
         puffle.scaleY = 0.8
+        puffle.setOrigin(0.5488281242724042, 3.04921256043897)
 
         // puffle_1
         const puffle_1 = this.add.image(180, 149, 'skate', 'puffle')
@@ -91,7 +92,7 @@ export default class Skate extends RoomScene {
         railing1.setOrigin(0.4582764034671558, 0.41586599876093105)
 
         // lists
-        const sort = [bar, railing2, railing3, railing1, fg2, pillar]
+        const sort = [bar, railing2, railing3, railing1, fg2, pillar, puffle]
 
         // skate (components)
         const skateButton = new Button(skate)

@@ -179,6 +179,12 @@ export default class InterfaceController extends BaseScene {
         }
     }
 
+    updateIgnoreList() {
+        if (this.main.scene.isActive()) {
+            this.main.ignore.showPage()
+        }
+    }
+
     refreshPlayerCard() {
         if (this.main.playerCard.visible && this.main.playerCard.id == this.shell.client.id) {
             this.showCard(this.shell.client.id, true)
@@ -205,5 +211,55 @@ export default class InterfaceController extends BaseScene {
             this.main.puffle_button_disabled.visible = false
             this.main.puffle_button.visible = true
         }
+    }
+
+    scaleToFixedSize(text, verticallyCenter = true, maxFontSize = 0) {
+        const maxWidth = text.style.fixedWidth
+        const maxHeight = text.style.fixedHeight
+
+        if (maxWidth == 0 && maxHeight == 0) {
+            return console.error('[InterfaceController] Text has no fixed width or height', text)
+        } else if (maxWidth == 0) {
+            console.warn('[InterfaceController] Text has no fixed width. May cause incorrect scaling', text)
+        } else if (maxHeight == 0) {
+            console.warn('[InterfaceController] Text has no fixed height. May cause incorrect scaling', text)
+        } else if (text.originX != 0.5 || text.originY != 0.5) {
+            console.warn('[InterfaceController] Text is not centered. May cause incorrect alignment', text)
+        }
+
+        text.setStyle({fixedWidth: 0, fixedHeight: 0})
+        text.setPadding({top: 0, bottom: 0})
+
+        // Maximise font size
+        while ((maxWidth == 0 || text.width < maxWidth) && (maxHeight == 0 || text.height < maxHeight) && (maxFontSize == 0 || parseInt(text.style.fontSize) < maxFontSize)) {
+            text.setStyle({fontSize: parseInt(text.style.fontSize) + 1 + 'px'})
+        }
+
+        // Decrease font size until it fits
+        while ((maxWidth != 0 && text.width > maxWidth) || (maxHeight != 0 && text.height > maxHeight)) {
+            text.setStyle({fontSize: parseInt(text.style.fontSize) - 1 + 'px'})
+        }
+
+        if (text.height < maxHeight && verticallyCenter) {
+            text.setPadding({top: (maxHeight - text.height) / 2, bottom: (maxHeight - text.height) / 2})
+        }
+
+        text.setStyle({fixedWidth: maxWidth, fixedHeight: maxHeight})
+    }
+
+    verticallyCenterText(text) {
+        const maxHeight = text.style.fixedHeight
+        text.setStyle({fixedHeight: 0})
+        text.setPadding({top: 0, bottom: 0})
+
+        if (maxHeight == 0) {
+            console.error('[InterfaceController] Text has no fixed height. Cannot vertically center', text)
+        }
+
+        if (text.height < maxHeight) {
+            text.setPadding({top: (maxHeight - text.height) / 2, bottom: (maxHeight - text.height) / 2})
+        }
+
+        text.setStyle({fixedHeight: maxHeight})
     }
 }

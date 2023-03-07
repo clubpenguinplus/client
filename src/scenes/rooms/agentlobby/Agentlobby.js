@@ -54,6 +54,7 @@ export default class Agentlobby extends RoomScene {
                 if (!this.shell.client.isEPF) this.onPhoneTrigger()
             },
         }
+        this.loadSfx = ['agentlobby-dooropen', 'agentlobby-doorclosed', 'agentlobby-phone']
         /* END-USER-CTR-CODE */
     }
 
@@ -302,6 +303,8 @@ export default class Agentlobby extends RoomScene {
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('agentlobby-dooropen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('agentlobby-doorclosed')
         doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 168
@@ -430,17 +433,7 @@ export default class Agentlobby extends RoomScene {
         this.waterfall.open.play(true)
         this.droplets.play('agentlobby-droplets')
 
-        if (this.shell.client.isEPF) {
-            let sb = new SimpleButton(this.phone_over)
-            sb.hoverCallback = () => this.onWaterfallOver()
-            sb.hoverOutCallback = () => this.onWaterfallOut()
-        } else {
-            this.phonebox.play('agentlobby-phonebox')
-            let sb = new SimpleButton(this.phone_over)
-            sb.hoverCallback = () => this.onPhoneOver()
-            sb.hoverOutCallback = () => this.onPhoneOut()
-            sb.callback = () => this.onPhoneDown()
-        }
+        this.setEpfButton()
 
         this.setClockTime()
     }
@@ -461,7 +454,7 @@ export default class Agentlobby extends RoomScene {
         this.minutehand.setFrame(`minutehand${this.fourFigures(timeInMinutes)}`)
 
         let timeout = 60 - this.shell.getPSTSeconds()
-        setTimeout(() => this.setClockTime(), timeout * 1000)
+        this.clockTimeTO = setTimeout(() => this.setClockTime(), timeout * 1000)
     }
 
     fourFigures(num) {
@@ -580,6 +573,31 @@ export default class Agentlobby extends RoomScene {
 
     onPhoneTrigger() {
         clearTimeout(this.abandonTimeout)
+        this.interface.loadExternal('RecruitmentDialog')
+        this.shell.musicController.stopLoopingSfx('agentlobby-phone')
+        this.phonebox.anims.stopAfterRepeat(0)
+    }
+
+    setEpfButton() {
+        this.phone_over.removeInteractive()
+        if (this.shell.client.isEPF) {
+            this.epfButton = new SimpleButton(this.waterfall_over)
+            this.epfButton.hoverCallback = () => this.onWaterfallOver()
+            this.epfButton.hoverOutCallback = () => this.onWaterfallOut()
+        } else {
+            this.phonebox.play('agentlobby-phonebox')
+            this.epfButton = new SimpleButton(this.phone_over)
+            this.epfButton.hoverCallback = () => this.onPhoneOver()
+            this.epfButton.hoverOutCallback = () => this.onPhoneOut()
+            this.epfButton.callback = () => this.onPhoneDown()
+            this.shell.musicController.addSfx('agentlobby-phone', true)
+        }
+        this.epfButton.start()
+    }
+
+    stop() {
+        clearTimeout(this.clockTimeTO)
+        super.stop()
     }
 
     /* END-USER-CODE */

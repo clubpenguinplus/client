@@ -468,8 +468,10 @@ export default class TourQuiz extends BaseScene {
         // button_q1_right (components)
         const button_q1_rightButton = new Button(button_q1_right)
         button_q1_rightButton.spriteName = 'button'
-        button_q1_rightButton.callback = () => this.onQ1()
-        this.correctAnswer()
+        button_q1_rightButton.callback = () => {
+            this.onQ1()
+            this.correctAnswer()
+        }
 
         // questions1_en (components)
         new LocalisedSprite(questions1_en)
@@ -482,8 +484,10 @@ export default class TourQuiz extends BaseScene {
         // button_q2_right (components)
         const button_q2_rightButton = new Button(button_q2_right)
         button_q2_rightButton.spriteName = 'button'
-        button_q2_rightButton.callback = () => this.nextQuestion()
-        this.correctAnswer()
+        button_q2_rightButton.callback = () => {
+            this.nextQuestion()
+            this.correctAnswer()
+        }
 
         // button_q2_wrong3 (components)
         const button_q2_wrong3Button = new Button(button_q2_wrong3)
@@ -511,8 +515,10 @@ export default class TourQuiz extends BaseScene {
         // button_q3_right (components)
         const button_q3_rightButton = new Button(button_q3_right)
         button_q3_rightButton.spriteName = 'button'
-        button_q3_rightButton.callback = () => this.nextQuestion()
-        this.correctAnswer()
+        button_q3_rightButton.callback = () => {
+            this.nextQuestion()
+            this.correctAnswer()
+        }
 
         // button_q3_wrong (components)
         const button_q3_wrongButton = new Button(button_q3_wrong)
@@ -525,8 +531,10 @@ export default class TourQuiz extends BaseScene {
         // button_q4_right (components)
         const button_q4_rightButton = new Button(button_q4_right)
         button_q4_rightButton.spriteName = 'button'
-        button_q4_rightButton.callback = () => this.onQ4()
-        this.correctAnswer()
+        button_q4_rightButton.callback = () => {
+            this.onQ4()
+            this.correctAnswer()
+        }
 
         // button_q4_wrong2 (components)
         const button_q4_wrong2Button = new Button(button_q4_wrong2)
@@ -549,8 +557,10 @@ export default class TourQuiz extends BaseScene {
         // button_q5_right (components)
         const button_q5_rightButton = new Button(button_q5_right)
         button_q5_rightButton.spriteName = 'button'
-        button_q5_rightButton.callback = () => this.onQ5()
-        this.correctAnswer()
+        button_q5_rightButton.callback = () => {
+            this.onQ5()
+            this.correctAnswer()
+        }
 
         // button_q5_wrong2 (components)
         const button_q5_wrong2Button = new Button(button_q5_wrong2)
@@ -588,8 +598,10 @@ export default class TourQuiz extends BaseScene {
         // button_q6_right (components)
         const button_q6_rightButton = new Button(button_q6_right)
         button_q6_rightButton.spriteName = 'button'
-        button_q6_rightButton.callback = () => this.onQ6()
-        this.correctAnswer()
+        button_q6_rightButton.callback = () => {
+            this.onQ6()
+            this.correctAnswer()
+        }
 
         // questions6_en (components)
         new LocalisedSprite(questions6_en)
@@ -602,8 +614,10 @@ export default class TourQuiz extends BaseScene {
         // button_q7_right (components)
         const button_q7_rightButton = new Button(button_q7_right)
         button_q7_rightButton.spriteName = 'button'
-        button_q7_rightButton.callback = () => this.onQ7()
-        this.correctAnswer()
+        button_q7_rightButton.callback = () => {
+            this.onQ7()
+            this.correctAnswer()
+        }
 
         // button_q7_wrong1 (components)
         const button_q7_wrong1Button = new Button(button_q7_wrong1)
@@ -631,8 +645,10 @@ export default class TourQuiz extends BaseScene {
         // button_q8_right (components)
         const button_q8_rightButton = new Button(button_q8_right)
         button_q8_rightButton.spriteName = 'button'
-        button_q8_rightButton.callback = () => this.onQ8()
-        this.correctAnswer()
+        button_q8_rightButton.callback = () => {
+            this.onQ8()
+            this.correctAnswer()
+        }
 
         // button_q8_wrong3 (components)
         const button_q8_wrong3Button = new Button(button_q8_wrong3)
@@ -650,8 +666,10 @@ export default class TourQuiz extends BaseScene {
         // button_q9_right (components)
         const button_q9_rightButton = new Button(button_q9_right)
         button_q9_rightButton.spriteName = 'button'
-        button_q9_rightButton.callback = () => this.onQ9()
-        this.correctAnswer()
+        button_q9_rightButton.callback = () => {
+            this.onQ9()
+            this.correctAnswer()
+        }
 
         // button_q9_wrong2 (components)
         const button_q9_wrong2Button = new Button(button_q9_wrong2)
@@ -669,8 +687,10 @@ export default class TourQuiz extends BaseScene {
         // button_q10_right (components)
         const button_q10_rightButton = new Button(button_q10_right)
         button_q10_rightButton.spriteName = 'button'
-        button_q10_rightButton.callback = () => this.onQ10()
-        this.correctAnswer()
+        button_q10_rightButton.callback = () => {
+            this.onQ10()
+            this.correctAnswer()
+        }
 
         // button_q10_wrong (components)
         const button_q10_wrongButton = new Button(button_q10_wrong)
@@ -710,7 +730,10 @@ export default class TourQuiz extends BaseScene {
         // button_win (components)
         const button_winButton = new Button(button_win)
         button_winButton.spriteName = 'button'
-        button_winButton.callback = () => this.scene.stop()
+        button_winButton.callback = () => {
+            this.onWin()
+            this.scene.stop()
+        }
 
         this.already = already
         this.age = age
@@ -757,6 +780,10 @@ export default class TourQuiz extends BaseScene {
 
     isTourGuide() {
         return this.shell.client.inventory.head.includes(428)
+    }
+
+    onWin() {
+        this.interface.prompt.showItem(428)
     }
 
     shuffleQuestions(questions) {

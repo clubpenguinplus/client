@@ -155,7 +155,8 @@ export default class Login extends BaseScene {
         createButtonAnimation.onHover = true
 
         // forgotButton (components)
-        new SimpleButton(forgotButton)
+        const forgotButtonSimpleButton = new SimpleButton(forgotButton)
+        forgotButtonSimpleButton.callback = () => this.onForgotClick()
         const forgotButtonAnimation = new Animation(forgotButton)
         forgotButtonAnimation.key = 'small-button'
         forgotButtonAnimation.end = 3
@@ -237,14 +238,19 @@ export default class Login extends BaseScene {
         this.scene.stop()
 
         this.airtower.connectLogin(this.checks.username.checked, this.checks.password.checked, () => {
-            this.airtower.sendXml(`<msg t='sys'><body action='verChk' r='0'><ver v='${VERSION}' /></body></msg>`)
+            let status = document.location.host.includes('play') ? 'release' : 'beta'
+            this.airtower.sendXml(`<msg t='sys'><body action='verChk' r='0'><ver v='${VERSION}-${status}' /></body></msg>`)
             this.airtower.username = username
             this.airtower.password = password
         })
     }
 
+    onForgotClick() {
+        window.location.href = `/${this.shell.language}/?forgot`
+    }
+
     onCreateClick() {
-        window.location.href = '/?create'
+        window.location.href = `/${this.shell.language}/?create`
     }
 
     onBackClick() {

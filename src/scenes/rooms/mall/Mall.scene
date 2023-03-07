@@ -232,6 +232,8 @@
                 "MoveTo"
             ],
             "Button.spriteName": "door",
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('mall-dooropen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('mall-doorclose')",
             "Button.activeFrame": false,
             "MoveTo.x": 224,
             "MoveTo.y": 680,
@@ -559,6 +561,8 @@
                 "LocalisedSprite"
             ],
             "Button.spriteName": "costumes",
+            "Button.hoverCallback": "() => {this.shell.musicController.addSfx('mall-chestopen'); this.glow.visible=true}",
+            "Button.hoverOutCallback": "() => {this.shell.musicController.addSfx('mall-chestclose'); this.glow.visible=false}",
             "Button.callback": "() => this.interface.loadExternal('CostumeCatalog')",
             "Button.activeFrame": false,
             "Button.isLocalised": true,
@@ -594,8 +598,10 @@
                 "key": "mall",
                 "frame": "food-display-br"
             },
-            "x": 1332,
-            "y": 620
+            "x": 1296.5645047045468,
+            "y": 641.9944294666174,
+            "originX": 0.23944521830693374,
+            "originY": 0.6476135398251864
         },
         {
             "type": "Image",
@@ -734,6 +740,22 @@
             "y": 831.3338260936,
             "originX": 0.1822104818926391,
             "originY": 0.7115598331071208
+        },
+        {
+            "type": "Sprite",
+            "id": "1405ea8a-0168-4817-aba0-292dfe7a6fa8",
+            "label": "glow",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mall",
+                "frame": "glow"
+            },
+            "x": 1432,
+            "y": 136,
+            "scaleX": 0.85,
+            "scaleY": 0.85,
+            "visible": false
         },
         {
             "type": "Image",

@@ -48,7 +48,7 @@ export default class IglooScene extends RoomScene {
             return this.shell.arrayToObject(u)
         })
 
-        let furniture = data.args[6].split(',').map((f) => {
+        let furniture = (data.args[6] || '').split(',').map((f) => {
             let [id, furnitureId, x, y, frame, rotation] = f.split('|')
             return {id, furnitureId, x, y, frame, rotation}
         })
@@ -65,16 +65,14 @@ export default class IglooScene extends RoomScene {
     }
 
     argsToData() {
-        let furniture = this.args.furniture.map((f) => `${f.id}|${f.furnitureId}|${f.x}|${f.y}|${f.frame}|${f.rotation}`).join(',')
+        let furniture = this.furnitureSprites.map((f) => `${f.id}|${f.id}|${f.x}|${f.y}|${f.currentFrame[1]}|${f.currentFrame[0]}`).join(',')
 
         return [this.args.igloo, '', this.args.type, this.args.flooring, this.args.music, this.args.location, furniture]
     }
 
     preload() {
         super.preload()
-
-        this.load.baseURL = window.location.hostname == 'localhost' ? `${window.location.origin}/` : 'https://media.cpplus.pw/'
-
+        this.load.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw/` : `${window.location.origin}/`
         this.load.image(`locations/${this.args.location}`, `/client/media/igloos/locations/sprites/${this.args.location}.webp`)
 
         if (this.args.flooring && parseInt(this.args.flooring) > 1) this.loadFlooring(this.args.flooring)
@@ -104,12 +102,11 @@ export default class IglooScene extends RoomScene {
 
     create() {
         if (this.id == this.shell.client.id) {
-            this.addCrates()
             this.interface.showIglooEdit()
         }
 
         super.create()
-        this.floor.depth = -2
+        if (this.floor) this.floor.depth = -2
 
         if (this.args.flooring) this.addFlooring(this.args.flooring)
         this.addLocation()
@@ -135,12 +132,12 @@ export default class IglooScene extends RoomScene {
 
     showLikesWidget() {
         this.shell.interface.loadExternal('IglooLikesWidget')
-        this.airtower.sendXt('g#il', this.id)
 
         this.interface.showInterface()
         setTimeout(() => {
             this.interface.main.safetyquiz.visible = false
             this.interface.main.moderatoricon.visible = false
+            this.interface.main.beta.visible = false
         }, 100)
 
         this.likesWidget = this.scene.get('IglooLikesWidget')
@@ -249,6 +246,19 @@ export default class IglooScene extends RoomScene {
         this.loader.start()
     }
 
+    updateFurniture(furniture) {
+        this.furnitureSprites.forEach((sprite) => {
+            sprite.destroy()
+        })
+
+        this.args.furniture = furniture.split(',').map((f) => {
+            let [id, furnitureId, x, y, frame, rotation] = f.split('|')
+            return {id, furnitureId, x, y, frame, rotation}
+        })
+
+        this.loadAllFurniture()
+    }
+
     setSprite(sprite) {
         // Empty method to prevent errors
     }
@@ -340,7 +350,7 @@ export default class IglooScene extends RoomScene {
     onPointerMove(pointer) {
         if (this.editing && this.selected) {
             this.selected.drag(pointer)
-            if (this.selected.y < 186) {
+            if (this.selected.y < 200) {
                 this.interface.iglooEdit.showMirror(this.selected.id, this.selected.x, this.selected.y)
             } else {
                 this.interface.iglooEdit.hideMirror()
@@ -405,6 +415,7 @@ export default class IglooScene extends RoomScene {
         }
         if (this.likesWidget) this.likesWidget.scene.stop()
         this.shell.interface.main.showTR()
+        this.interface.main.beta.visible = true
         super.stop()
     }
 }

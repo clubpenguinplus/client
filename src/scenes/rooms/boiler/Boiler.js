@@ -19,6 +19,7 @@ export default class Boiler extends RoomScene {
         }
         this.music = 667
 
+        this.loadSfx = ['boiler-dooropen', 'boiler-doorclosed', 'boiler-newsopen', 'boiler-newsclose']
         /* END-USER-CTR-CODE */
     }
 
@@ -56,6 +57,8 @@ export default class Boiler extends RoomScene {
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('boiler-dooropen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('boiler-doorclosed')
         doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 600
@@ -80,10 +83,12 @@ export default class Boiler extends RoomScene {
 
     onDrawerOver() {
         this.drawer.play('boiler-drawer_open')
+        this.shell.musicController.addSfx('boiler-newsopen')
     }
 
     onDrawerOut() {
         this.drawer.play('boiler-drawer_close')
+        this.shell.musicController.addSfx('boiler-newsclose')
     }
 
     onNewspaperClick() {

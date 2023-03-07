@@ -365,8 +365,10 @@ export default class ModActions extends BaseContainer {
      * @param {object} items - Penguin items object
      */
     _showCard(penguin, bancount, activeban, items = penguin) {
+        bancount = parseInt(bancount)
+        activeban = parseInt(activeban)
         // Text
-        this.username.text = penguin.username
+        this.username.text = penguin.realUsername
 
         let jointime = new Date(penguin.joinTime)
         this.joindate_txt.text = 'join time: ' + jointime.toUTCString().substring(5)
@@ -376,11 +378,15 @@ export default class ModActions extends BaseContainer {
         if (penguin.username_approved == 0 && penguin.username_rejected == 0) this.username_status_txt.text = 'status: pending'
 
         if (activeban) {
-            let banduration = new Date(activeban.expires)
+            if (activeban == -1) {
+                this.banned_until_txt.text = 'ACCOUNT PERMANENTLY BANNED'
+                return
+            }
+            let banduration = new Date(activeban)
             this.banned_until_txt.text = 'banned until: ' + banduration.toUTCString().substring(5)
+        } else {
+            this.banned_until_txt.text = 'not currently banned'
         }
-        if (penguin.permaBan == 1) this.banned_until_txt.text = 'ACCOUNT PERMANENTLY BANNED'
-        if (penguin.permaBan == 0 && !activeban) this.banned_until_txt.text = 'not currently banned'
 
         if (!bancount || bancount == 0) {
             this.ban_count_txt.text = 'banned 0 times'

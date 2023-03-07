@@ -28,7 +28,7 @@ export default class BackgroundsPage extends Page {
         this.add(bgsPrice)
 
         // coinPng
-        const coinPng = scene.add.image(157, 140, 'jan22clothing', 'coin')
+        const coinPng = scene.add.image(157, 140, 'constant', 'coin')
         this.add(coinPng)
 
         // page2_header_1
@@ -47,30 +47,12 @@ export default class BackgroundsPage extends Page {
         this.add(bgsPrice_1)
 
         // coinPng_1
-        const coinPng_1 = scene.add.image(849, 145, 'jan22clothing', 'coin')
+        const coinPng_1 = scene.add.image(849, 145, 'constant', 'coin')
         this.add(coinPng_1)
-
-        // prevPage
-        const prevPage = scene.add.image(139, 729, 'constant', 'prevPage')
-        this.add(prevPage)
-
-        // nextPage
-        const nextPage = scene.add.image(1383, 729, 'constant', 'nextPage')
-        this.add(nextPage)
 
         // closebtn
         const closebtn = scene.add.image(1441, 37, 'constant', 'closebtn')
         this.add(closebtn)
-
-        // prevPage (components)
-        const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
-        prevPageButton.callback = () => this.prevPage()
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
-        nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)

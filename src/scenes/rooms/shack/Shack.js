@@ -31,6 +31,8 @@ export default class Shack extends RoomScene {
         }
 
         this.music = 580
+
+        this.loadSfx = ['shack-SchoolDoorOpen', 'shack-SchoolDoorClose', 'shack-MineLightOn', 'shack-MineLightOff']
         /* END-USER-CTR-CODE */
     }
 
@@ -216,7 +218,7 @@ export default class Shack extends RoomScene {
         this.hourhand.rotation = Phaser.Math.DegToRad(hourDegrees)
 
         let timeout = 60 - this.shell.getPSTSeconds()
-        setTimeout(() => this.setClockTime(), timeout * 1000)
+        this.clockTimeTO = setTimeout(() => this.setClockTime(), timeout * 1000)
     }
 
     SchoolDoorOver() {
@@ -234,6 +236,12 @@ export default class Shack extends RoomScene {
     MineDoorOut() {
         this.shell.musicController.addSfx('shack-MineLightOff')
     }
+
+    stop() {
+        clearTimeout(this.clockTimeTO)
+        super.stop()
+    }
+
     /* END-USER-CODE */
 }
 

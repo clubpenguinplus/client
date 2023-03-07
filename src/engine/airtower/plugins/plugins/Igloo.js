@@ -5,47 +5,110 @@ export default class Igloo extends Plugin {
         this.events = {
             aig: this.addIgloo,
             af: this.addFurniture,
+            afl: this.addFlooring,
             uf: this.updateFlooring,
             gi: this.getIgloos,
             gid: this.getIglooData,
             gio: this.getIglooOpen,
             gl: this.getIglooLikes,
+            uif: this.updateIglooFurniture,
+            al: this.addLocation,
         }
     }
 
     get client() {
         return this.shell.client
     }
+
     addIgloo(args) {
-        let inventory = this.client.igloos
+        let inventory = this.client.iglooInventory
 
         this.client.coins = args[1]
-        inventory.push(args[0])
-        inventory.sort((a, b) => a - b)
+
+        let existsInInventory = false
+        for (let i of inventory) {
+            if (i.id == args[0]) {
+                existsInInventory = true
+                break
+            }
+        }
+
+        if (!existsInInventory) {
+            inventory.push({id: args[0], type: 'igloo'})
+        }
 
         this.interface.refreshPlayerCard()
 
-        if (this.interface.iglooEdit.gridView.visible) {
-            this.interface.iglooEdit.showGridView()
-        }
-
-        this.interface.updateCatalogCoins(args.coins)
+        this.interface.updateCatalogCoins(args[1])
 
         let text = `${this.crumbs.igloos[args[0]].name}\nhas been added to your inventory.`
         this.interface.prompt.showWindow(text, 'single')
     }
+
     addFurniture(args) {
-        let inventory = this.client.furniture
+        let inventory = this.client.furnitureInventory
         this.client.coins = args[1]
-        inventory[args[0]] = inventory[args[0]] + 1 || 1
-        this.interface.refreshPlayerCard()
-        if (this.interface.iglooEdit.gridView.visible) {
-            this.interface.iglooEdit.showGridView()
+
+        let existsInInventory = false
+        for (let i of inventory) {
+            if (i.id == args[0]) {
+                i.quantity++
+                existsInInventory = true
+                break
+            }
         }
-        this.interface.updateCatalogCoins(args.coins)
+
+        if (!existsInInventory) {
+            inventory.push({id: args[0], quantity: 1, type: 'furniture'})
+        }
+
+        this.interface.refreshPlayerCard()
+
+        this.interface.updateCatalogCoins(args[1])
         let text = `${this.crumbs.furniture[args[0]].name}\nhas been added to your inventory.`
         this.interface.prompt.showWindow(text, 'single')
     }
+
+    addFlooring(args) {
+        let inventory = this.client.flooringInventory
+        this.client.coins = args[1]
+
+        let existsInInventory = false
+        for (let i of inventory) {
+            if (i.id == args[0]) {
+                existsInInventory = true
+                break
+            }
+        }
+
+        if (!existsInInventory) {
+            inventory.push({id: args[0], type: 'flooring'})
+        }
+
+        this.interface.refreshPlayerCard()
+
+        this.interface.updateCatalogCoins(args[1])
+        let text = `${this.crumbs.flooring[args[0]].name}\nhas been added to your inventory.`
+        this.interface.prompt.showWindow(text, 'single')
+    }
+
+    addLocation(args) {
+        let inventory = this.client.locationInventory
+        this.client.coins = args[1]
+
+        let existsInInventory = false
+        for (let i of inventory) {
+            if (i.id == args[0]) {
+                existsInInventory = true
+                break
+            }
+        }
+
+        if (!existsInInventory) {
+            inventory.push({id: args[0], type: 'location'})
+        }
+    }
+
     updateFlooring(args) {
         if (!this.shell.room.isIgloo) return
         this.shell.room.updateFlooring(args[1])
@@ -54,7 +117,7 @@ export default class Igloo extends Plugin {
     }
 
     getIgloos(args) {
-        this.interface.main.map.iglooMap.setIgloos(args[0])
+        this.interface.main.map.iglooMap.setIgloos(args)
     }
 
     getIglooOpen(args) {
@@ -71,5 +134,10 @@ export default class Igloo extends Plugin {
         if (args[0] == this.shell.room.id) {
             this.shell.room.likesWidget.show(args[2])
         }
+    }
+
+    updateIglooFurniture(args) {
+        if (!this.shell.room.isIgloo) return
+        this.shell.room.updateFurniture(args[0])
     }
 }

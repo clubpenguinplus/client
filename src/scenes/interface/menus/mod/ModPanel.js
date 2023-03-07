@@ -5,7 +5,7 @@ import ModActions from '@scenes/interface/game/modactions/ModActions'
 import WireTap from '@scenes/interface/game/wiretap/WireTap'
 import ModChatLog from '@scenes/interface/game/modchatlog/ModChatLog'
 
-import {Interactive} from '@scenes/components/components'
+import {Interactive, SimpleButton} from '@scenes/components/components'
 /* START OF COMPILED CODE */
 
 export default class ModPanel extends BaseScene {
@@ -41,8 +41,17 @@ export default class ModPanel extends BaseScene {
         const wiretap = new WireTap(this, 1113, 655)
         this.add.existing(wiretap)
 
+        // white_x
+        const white_x = this.add.image(1495, 23, 'main', 'white-x')
+        white_x.scaleX = 0.5
+        white_x.scaleY = 0.5
+
         // bg (components)
         new Interactive(bg)
+
+        // white_x (components)
+        const white_xSimpleButton = new SimpleButton(white_x)
+        white_xSimpleButton.callback = () => this.quit()
 
         this.moderator = moderator
         this.modActions = modActions
@@ -75,6 +84,13 @@ export default class ModPanel extends BaseScene {
         this.currentDepth++
         this[widget].depth = this.currentDepth
         this[widget].visible = true
+    }
+
+    quit() {
+        this.interface.showLoading()
+        this.airtower.disconnect()
+        this.airtower.loginReconnect()
+        this.scene.stop()
     }
 
     /* END-USER-CODE */

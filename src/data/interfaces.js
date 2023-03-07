@@ -1,7 +1,6 @@
 const interfaces = {
     ClothingCatalog: require('@scenes/interface/catalogs/clothing/ClothingCatalog').default,
     FurnitureCatalog: require('@scenes/interface/catalogs/furniture/FurnitureCatalog').default,
-    IglooCatalog: require('@scenes/interface/catalogs/igloo/IglooCatalog').default,
     Newspaper: require('@scenes/interface/catalogs/newspaper/Newspaper').default,
     Music: require('@scenes/interface/catalogs/music/Music').default,
     Sled: require('@scenes/interface/catalogs/sled/Sled').default,
@@ -21,6 +20,9 @@ const interfaces = {
     Cavenote: require('@scenes/interface/closeups/Cavenote').default,
     IglooLikesWidget: require('@scenes/interface/game/likeswidget/IglooLikesWidget').default,
     Telescope: require('@scenes/interface/closeups/Telescope').default,
+    Intro: require('@scenes/interface/closeups/Intro').default,
+    RecruitmentDialog: require('@scenes/interface/closeups/RecruitmentDialog').default,
+    Report: require('@scenes/interface/closeups/Report').default,
 }
 
 export default interfaces

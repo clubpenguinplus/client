@@ -1,0 +1,744 @@
+{
+    "id": "31ae4ade-f92e-4ae0-a482-b7781f1c11e5",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 10000,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/hotellobby/hotellobby-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "HotelLobby",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "4c995b63-41c1-43d2-afd5-faea019aa9f7",
+            "label": "bg_bg",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "bg-bg"
+            },
+            "x": 772,
+            "y": 519
+        },
+        {
+            "type": "Image",
+            "id": "71c81e33-daa8-4ee8-894c-aa7a3a14302c",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "MoveTo.x": 780,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "door"
+            },
+            "x": 789,
+            "y": 174
+        },
+        {
+            "type": "Image",
+            "id": "cd9dba81-780f-4734-99ca-e7afc119ff9d",
+            "label": "bg_fg",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "bg-fg"
+            },
+            "x": 798,
+            "y": 459
+        },
+        {
+            "type": "Image",
+            "id": "de3243aa-ff2f-4794-b4f8-a5744b452b62",
+            "label": "railings5",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "railings5"
+            },
+            "x": 799,
+            "y": 539.74728832789,
+            "originY": -0.5610780913065169
+        },
+        {
+            "type": "Image",
+            "id": "b00fff9b-57df-4b8c-b2d1-ddd5918cf1e1",
+            "label": "railings4",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "railings4"
+            },
+            "x": 814,
+            "y": 563.8914200978062,
+            "originY": -1.1798064444743408
+        },
+        {
+            "type": "Image",
+            "id": "59f26eec-3bd6-4c4e-9608-28ac690d2856",
+            "label": "railings3",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "railings3"
+            },
+            "x": 798,
+            "y": 589.810935645996,
+            "originY": -1.5790384728122395
+        },
+        {
+            "type": "Image",
+            "id": "aeb56333-a031-414c-a14a-c30a09d490e2",
+            "label": "railings2",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "railings2"
+            },
+            "x": 797,
+            "y": 594.9104668028282,
+            "originY": -0.4174128041371167
+        },
+        {
+            "type": "Image",
+            "id": "290c5b35-8329-4f90-a74b-932533ee21f9",
+            "label": "railings1",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "railings1"
+            },
+            "x": 796,
+            "y": 713.7919490240682,
+            "originY": -0.7540017727215338
+        },
+        {
+            "type": "Image",
+            "id": "52d6dbfd-4f86-4b5b-940d-f06d6184ccb0",
+            "label": "reception_wall",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "reception-wall"
+            },
+            "x": 234,
+            "y": 220
+        },
+        {
+            "type": "Image",
+            "id": "87ed4be2-742f-48ab-9f30-f9e89b3cb8c5",
+            "label": "backchairs",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "backchairs"
+            },
+            "x": 301.7914269305945,
+            "y": 642.9198523576362,
+            "originX": 0.3151356134847755,
+            "originY": 0.2609082520320236
+        },
+        {
+            "type": "Image",
+            "id": "96624ede-d45c-404e-897d-d906d0cd01c8",
+            "label": "backleftpanel",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "backleftpanel"
+            },
+            "x": 560.4936632299391,
+            "y": 136.15208248146274,
+            "originX": 0.5426056491455988,
+            "originY": 0.21284959753925597
+        },
+        {
+            "type": "Image",
+            "id": "a2590d5d-7d48-448f-bd4e-a93efbe6eddb",
+            "label": "backpod",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "backpod",
+            "MoveTo.x": 1372,
+            "MoveTo.y": 684,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "backpod"
+            },
+            "x": 1391.9109415599655,
+            "y": 657.9312987195858,
+            "originX": 0.48382691916212317,
+            "originY": 0.22336790089243141
+        },
+        {
+            "type": "Image",
+            "id": "d70ee8e9-3ac0-4070-8646-ad78a91d66a4",
+            "label": "toprightwall",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "toprightwall"
+            },
+            "x": 1288,
+            "y": 223
+        },
+        {
+            "type": "Image",
+            "id": "f85599ce-5abb-41f9-88f6-c9de60e3bab6",
+            "label": "backrightwall",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "backrightwall"
+            },
+            "x": 1191,
+            "y": 125
+        },
+        {
+            "type": "Image",
+            "id": "9e9efa6a-a272-43e7-98b5-fc04dceac223",
+            "label": "backtable",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBackTableOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onBackTableOut()",
+            "MoveTo.x": 300,
+            "MoveTo.y": 654,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "backtable"
+            },
+            "x": 333,
+            "y": 725
+        },
+        {
+            "type": "Image",
+            "id": "8311e7c4-9e1b-4e0c-8471-f29643975a9c",
+            "label": "coatcheck_wall",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "coatcheck-wall"
+            },
+            "x": 1199.5455915257305,
+            "y": 334.3964408143606,
+            "originX": 0.3371555428314272,
+            "originY": 0.5946947668286745
+        },
+        {
+            "type": "Image",
+            "id": "0fa3d1e5-ceb0-492f-8d64-7efd20bcba28",
+            "label": "midrailings_legs",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "midrailings_legs"
+            },
+            "x": 798,
+            "y": 486
+        },
+        {
+            "type": "Image",
+            "id": "8ac25128-dced-499f-b060-96b4600ed923",
+            "label": "midrailings",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "midrailings"
+            },
+            "x": 798,
+            "y": 567
+        },
+        {
+            "type": "Sprite",
+            "id": "5117e3eb-a4ac-4655-bfa5-69c2f693d10f",
+            "label": "fountain",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "fountain0001"
+            },
+            "x": 790.1263806898631,
+            "y": 580.0473169932136,
+            "originX": 0.38576385528632434,
+            "originY": 0.8349260125239063
+        },
+        {
+            "type": "Image",
+            "id": "e969d482-5b82-4fe9-a803-dfc691ecd835",
+            "label": "frontchairs",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "frontchairs"
+            },
+            "x": 357,
+            "y": 753,
+            "originX": 0.34296466091717487,
+            "originY": 0.25888242131166106
+        },
+        {
+            "type": "Image",
+            "id": "4e29aaea-081b-440c-a0c7-3eba1971e47f",
+            "label": "fronttable",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onFrontTableOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onFrontTableOut()",
+            "MoveTo.x": 356,
+            "MoveTo.y": 768,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "fronttable"
+            },
+            "x": 381,
+            "y": 847
+        },
+        {
+            "type": "Image",
+            "id": "1fa24346-7d96-49bb-a5d0-ff684566685a",
+            "label": "lamp",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "lamp"
+            },
+            "x": 1509,
+            "y": 841
+        },
+        {
+            "type": "Image",
+            "id": "d02a6a78-8bf9-4586-8525-02b88ae79460",
+            "label": "leftplant",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "leftplant"
+            },
+            "x": 669,
+            "y": 225
+        },
+        {
+            "type": "Image",
+            "id": "9336738a-026b-42ef-8155-221b30446c59",
+            "label": "leftpillar",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "leftpillar"
+            },
+            "x": 620.1473180805147,
+            "y": 337.11163218148175,
+            "originX": 0.5514197633838284,
+            "originY": 0.8551838128600535
+        },
+        {
+            "type": "Image",
+            "id": "04dca23d-2e0e-43e8-a0be-622ee4bab086",
+            "label": "petshop_pillar",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "petshop-pillar"
+            },
+            "x": 1447,
+            "y": 347
+        },
+        {
+            "type": "Image",
+            "id": "30bc60d5-dfec-430a-bcbc-561020f7fabc",
+            "label": "coatcheck_sign_en",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "coatcheck-sign-en"
+            },
+            "x": 1200,
+            "y": 1082.1970870940486,
+            "originY": 7.031106537046679
+        },
+        {
+            "type": "Image",
+            "id": "2dbbbe3a-8336-49eb-8b2b-7929c4bb2b29",
+            "label": "petshop_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "petshop-door",
+            "MoveTo.x": 1440,
+            "MoveTo.y": 460,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "petshop-door"
+            },
+            "x": 1476,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "4d750861-e284-450c-82a7-d5911975f71f",
+            "label": "petshop_sign_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "petshop-sign-en"
+            },
+            "x": 1459,
+            "y": 1599.585423691147,
+            "originY": 2.9520987498912143
+        },
+        {
+            "type": "Image",
+            "id": "ce1d4dc7-2d43-4ef1-b666-d9b778108c93",
+            "label": "plant",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "plant"
+            },
+            "x": 1523,
+            "y": 497
+        },
+        {
+            "type": "Image",
+            "id": "1749975f-58cc-4a6a-a69d-72aa68798b8b",
+            "label": "reception_chair",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "reception-chair"
+            },
+            "x": 400,
+            "y": 295
+        },
+        {
+            "type": "Image",
+            "id": "44b70e9a-9554-45e7-8626-a69d7d41b616",
+            "label": "reception_desk",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "reception-desk"
+            },
+            "x": 431,
+            "y": 398.78204014661566,
+            "originY": 0.8495355911284082
+        },
+        {
+            "type": "Image",
+            "id": "75736dec-1ba8-4e7d-8301-5a57f06153d9",
+            "label": "reception_sign_en",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "reception-sign-en"
+            },
+            "x": 367.658203125,
+            "y": 1066.0933081246603,
+            "originX": 0.5117929560504272,
+            "originY": 6.133688178542591
+        },
+        {
+            "type": "Sprite",
+            "id": "cad49511-e31d-4b08-84f6-0922fbe45bfe",
+            "label": "elevator",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onElevatorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onElevatorOut()",
+            "MoveTo.x": 72,
+            "MoveTo.y": 520,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "elevator0001"
+            },
+            "x": 50,
+            "y": 345
+        },
+        {
+            "type": "Image",
+            "id": "75c3d8ca-7a22-4fb0-b644-beb9bf76f75c",
+            "label": "lanterns_left",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "lanterns-left"
+            },
+            "x": 330,
+            "y": 1290.3056120067045,
+            "originY": 6.471669976184832
+        },
+        {
+            "type": "Image",
+            "id": "3963f639-c043-41ab-8ae6-d6e4a45ce6d1",
+            "label": "lanterns_right",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "lanterns-right"
+            },
+            "x": 1225,
+            "y": 1356.18703772305,
+            "originY": 6.922269302141981
+        },
+        {
+            "type": "Image",
+            "id": "f7322539-9a39-4646-a08d-016700e7f7db",
+            "label": "rightplant",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "rightplant"
+            },
+            "x": 901,
+            "y": 225
+        },
+        {
+            "type": "Image",
+            "id": "2c3e2a4d-db56-464f-bc9a-62824e4867b0",
+            "label": "rightpillar",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "rightpillar"
+            },
+            "x": 950.5989990234375,
+            "y": 337.27168959200407,
+            "originX": 0.4251728103267614,
+            "originY": 0.8555675554271374
+        },
+        {
+            "type": "Image",
+            "id": "fd5aaf5e-84fd-499b-814e-e5cd01b12a0b",
+            "label": "sofa",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "sofa"
+            },
+            "x": 797,
+            "y": 801.1760570599619,
+            "originY": 0.19895846268875514
+        },
+        {
+            "type": "Sprite",
+            "id": "67ecba96-9123-4161-8b1e-a8e424695369",
+            "label": "tasks",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onTasksOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onTasksOut()",
+            "texture": {
+                "key": "hotellobby",
+                "frame": "tasks"
+            },
+            "x": 791.567626953125,
+            "y": 694.322409353064,
+            "originX": 0.47789562306888445,
+            "originY": 0.760719951828501
+        },
+        {
+            "type": "Image",
+            "id": "48e889c8-d38a-4912-b4dd-5b2ee4bdd9f1",
+            "label": "frontpod",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "frontpod",
+            "MoveTo.x": 1232,
+            "MoveTo.y": 792,
+            "texture": {
+                "key": "hotellobby",
+                "frame": "frontpod"
+            },
+            "x": 1252.8812554132874,
+            "y": 757.6344372528041,
+            "originX": 0.4802930881018534,
+            "originY": 0.1924314107324942
+        },
+        {
+            "type": "Image",
+            "id": "a5ce8771-7d13-41c7-b3d9-345f3b06737a",
+            "label": "bar_sign",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "bar-sign"
+            },
+            "x": 197,
+            "y": 579
+        },
+        {
+            "type": "Image",
+            "id": "9885bc29-dd34-4cd8-848f-2534ee53c432",
+            "label": "bar_front",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "bar-front"
+            },
+            "x": 175,
+            "y": 673
+        },
+        {
+            "type": "Image",
+            "id": "e8efc353-0510-4faa-91d3-f4ce755fac95",
+            "label": "bar",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "bar"
+            },
+            "x": 36.9940853758483,
+            "y": 678.5883274975763,
+            "originX": 0.46873151679952596,
+            "originY": 0.5985804396468148
+        },
+        {
+            "type": "Image",
+            "id": "a8972c85-b257-4c3c-bd0c-623eba489331",
+            "label": "fruitbox",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "fruitbox"
+            },
+            "x": 69,
+            "y": 814
+        },
+        {
+            "type": "Image",
+            "id": "c86e1602-501d-494a-b81d-cdcfc2889a77",
+            "label": "fruits",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "fruits"
+            },
+            "x": 38,
+            "y": 894
+        },
+        {
+            "type": "Image",
+            "id": "acad5263-9500-4280-ae21-737fd4562e00",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "hotellobby",
+                "frame": "fg"
+            },
+            "x": 782,
+            "y": 885
+        },
+        {
+            "type": "Image",
+            "id": "b3eaefbe-c43b-4a67-b4f8-4dced2490c80",
+            "label": "taskinterface",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "interface",
+            "texture": {
+                "key": "hotellobby",
+                "frame": "interface"
+            },
+            "x": 1424,
+            "y": 1148.9899654279216,
+            "originY": 2.521666416144359
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "de3243aa-ff2f-4794-b4f8-a5744b452b62",
+                "b00fff9b-57df-4b8c-b2d1-ddd5918cf1e1",
+                "59f26eec-3bd6-4c4e-9608-28ac690d2856",
+                "aeb56333-a031-414c-a14a-c30a09d490e2",
+                "290c5b35-8329-4f90-a74b-932533ee21f9",
+                "52d6dbfd-4f86-4b5b-940d-f06d6184ccb0",
+                "87ed4be2-742f-48ab-9f30-f9e89b3cb8c5",
+                "96624ede-d45c-404e-897d-d906d0cd01c8",
+                "a2590d5d-7d48-448f-bd4e-a93efbe6eddb",
+                "d70ee8e9-3ac0-4070-8646-ad78a91d66a4",
+                "f85599ce-5abb-41f9-88f6-c9de60e3bab6",
+                "9e9efa6a-a272-43e7-98b5-fc04dceac223",
+                "8311e7c4-9e1b-4e0c-8471-f29643975a9c",
+                "0fa3d1e5-ceb0-492f-8d64-7efd20bcba28",
+                "8ac25128-dced-499f-b060-96b4600ed923",
+                "5117e3eb-a4ac-4655-bfa5-69c2f693d10f",
+                "e969d482-5b82-4fe9-a803-dfc691ecd835",
+                "4e29aaea-081b-440c-a0c7-3eba1971e47f",
+                "1fa24346-7d96-49bb-a5d0-ff684566685a",
+                "d02a6a78-8bf9-4586-8525-02b88ae79460",
+                "9336738a-026b-42ef-8155-221b30446c59",
+                "04dca23d-2e0e-43e8-a0be-622ee4bab086",
+                "30bc60d5-dfec-430a-bcbc-561020f7fabc",
+                "2dbbbe3a-8336-49eb-8b2b-7929c4bb2b29",
+                "4d750861-e284-450c-82a7-d5911975f71f",
+                "ce1d4dc7-2d43-4ef1-b666-d9b778108c93",
+                "1749975f-58cc-4a6a-a69d-72aa68798b8b",
+                "44b70e9a-9554-45e7-8626-a69d7d41b616",
+                "75736dec-1ba8-4e7d-8301-5a57f06153d9",
+                "cad49511-e31d-4b08-84f6-0922fbe45bfe",
+                "75c3d8ca-7a22-4fb0-b644-beb9bf76f75c",
+                "3963f639-c043-41ab-8ae6-d6e4a45ce6d1",
+                "f7322539-9a39-4646-a08d-016700e7f7db",
+                "2c3e2a4d-db56-464f-bc9a-62824e4867b0",
+                "fd5aaf5e-84fd-499b-814e-e5cd01b12a0b",
+                "67ecba96-9123-4161-8b1e-a8e424695369",
+                "48e889c8-d38a-4912-b4dd-5b2ee4bdd9f1",
+                "a5ce8771-7d13-41c7-b3d9-345f3b06737a",
+                "9885bc29-dd34-4cd8-848f-2534ee53c432",
+                "e8efc353-0510-4faa-91d3-f4ce755fac95",
+                "a8972c85-b257-4c3c-bd0c-623eba489331",
+                "c86e1602-501d-494a-b81d-cdcfc2889a77",
+                "acad5263-9500-4280-ae21-737fd4562e00",
+                "b3eaefbe-c43b-4a67-b4f8-4dced2490c80"
+            ]
+        }
+    ]
+}

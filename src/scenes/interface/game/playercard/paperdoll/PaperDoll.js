@@ -16,7 +16,7 @@ export default class PaperDoll extends BaseContainer {
         this.fadeIn = true
 
         // paperdoll
-        const paperdoll = scene.add.image(0, 0, 'main', 'paperdoll/paperdoll')
+        const paperdoll = scene.add.image(0, -7, 'main', 'paperdoll/paperdoll')
         this.add(paperdoll)
 
         this.paperdoll = paperdoll
@@ -24,7 +24,7 @@ export default class PaperDoll extends BaseContainer {
         /* START-USER-CTR-CODE */
 
         // Tinted body
-        this.body = new TintedImage(scene, 0, 0, 'main', 'paperdoll/body')
+        this.body = new TintedImage(scene, 0, -7, 'main', 'paperdoll/body')
         this.body.tint = this.crumbs.colors[0]
 
         scene.add.existing(this.body)
@@ -51,9 +51,13 @@ export default class PaperDoll extends BaseContainer {
         let items = {}
 
         for (let slot of this.slots) {
-            if (!slot) continue
+            if (!slot) {
+                continue
+            }
+
             items[slot] = {
-                depth: this.slots.indexOf(slot),
+                id: 0,
+                depth: this.slots.indexOf(slot) + 100,
             }
         }
 
@@ -61,14 +65,31 @@ export default class PaperDoll extends BaseContainer {
     }
 
     removeItems() {
-        for (let item in this.items) {
-            let sprite = this.items[item].sprite
-
-            if (this.items[item].sprite) {
-                sprite.destroy()
-                sprite = null
-            }
+        for (let item of Object.values(this.items)) {
+            this.removeItem(item)
         }
+    }
+
+    removeItem(item) {
+        item.id = 0
+
+        if (item.sprite) {
+            this.destroySprite(item)
+        }
+
+        if (item.back) {
+            this.destroyBack(item)
+        }
+    }
+
+    destroySprite(item) {
+        item.sprite.destroy()
+        item.sprite = null
+    }
+
+    destroyBack(item) {
+        item.back.destroy()
+        item.back = null
     }
 
     loadDoll(penguin, isInputEnabled = false) {
@@ -84,9 +105,6 @@ export default class PaperDoll extends BaseContainer {
         }
 
         this.paperDollLoader.loadItems(penguin)
-        if (penguin.puffle && penguin.puffle !== 0 && penguin.id) {
-            this.airtower.sendXt('p#pgc', `${penguin.puffle}%${penguin.id}`)
-        }
     }
 
     /**

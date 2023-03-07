@@ -1,0 +1,77 @@
+{
+    "id": "9444abb4-70e7-49fe-877d-b523149b40bb",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "fae11c51-33e2-45ab-bd18-fd8450f7eb2c",
+            "label": "page2",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "915ff87b-900d-46b2-80ae-d83835bd747d",
+                    "label": "background",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "constant",
+                        "frame": "clothingPage0001"
+                    },
+                    "x": 760,
+                    "y": 455.5
+                },
+                {
+                    "type": "Text",
+                    "id": "642b12d8-cbb6-410d-a2c2-e10d8a21a257",
+                    "label": "header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 227,
+                    "y": 79,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Clothing items for everyone",
+                    "fixedWidth": 270,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "fontStyle": "bold italic",
+                    "wordWrapWidth": 270
+                },
+                {
+                    "type": "Image",
+                    "id": "c2f0f03b-b61d-40c5-9b6f-434e453a08ac",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "constant",
+                        "frame": "closebtn"
+                    },
+                    "x": 1441,
+                    "y": 37
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

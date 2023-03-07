@@ -32,7 +32,7 @@ export default class Underwater extends RoomScene {
             mosskey: () => this.interface.prompt.showItem(7016),
         }
 
-        this.music = '671'
+        this.music = 671
         /* END-USER-CTR-CODE */
     }
 
@@ -147,7 +147,6 @@ export default class Underwater extends RoomScene {
         this.littlefishfour.play('underwater-littlefishfour')
         this.jellyfishTween()
         this.fluffyTween()
-        this.fishTween()
         this.jellyFishSideTween()
         this.fluffySideTween()
         this.fishSideTween()

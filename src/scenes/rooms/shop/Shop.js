@@ -54,7 +54,8 @@ export default class Shop extends RoomScene {
         this.roomTriggers = {
             town: () => this.triggerRoom(100, 932, 560),
         }
-        this.music = 1173
+        this.music = 345
+        this.loadSfx = ['shop-curtainopen', 'shop-curtainclose', 'shop-spinner', 'shop-dooropen', 'shop-doorclose', 'shop-bookopen', 'shop-bookclose']
 
         /* END-USER-CTR-CODE */
     }
@@ -140,17 +141,27 @@ export default class Shop extends RoomScene {
         // clothesroom (components)
         const clothesroomButton = new Button(clothesroom)
         clothesroomButton.spriteName = 'clothesroom'
+        clothesroomButton.hoverCallback = () => this.shell.musicController.addSfx('shop-curtainopen')
+        clothesroomButton.hoverOutCallback = () => this.shell.musicController.addSfx('shop-curtainclose')
         clothesroomButton.activeFrame = false
         new MoveTo(clothesroom)
 
         // spinner (components)
         const spinnerSimpleButton = new SimpleButton(spinner)
-        spinnerSimpleButton.hoverCallback = () => this.onSpinnerOver()
-        spinnerSimpleButton.hoverOutCallback = () => this.onSpinnerOut()
+        spinnerSimpleButton.hoverCallback = () => {
+            this.onSpinnerOver()
+            this.shell.musicController.addSfx('shop-spinner')
+        }
+        spinnerSimpleButton.hoverOutCallback = () => {
+            this.onSpinnerOut()
+            this.shell.musicController.stopLoopingSfx('shop-spinner')
+        }
 
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('shop-dooropen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('shop-doorclose')
         doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 1100
@@ -159,7 +170,9 @@ export default class Shop extends RoomScene {
         // catalog_en (components)
         const catalog_enButton = new Button(catalog_en)
         catalog_enButton.spriteName = 'catalog-en'
-        catalog_enButton.callback = () => this.interface.loadExternal('ClothingCatalog')
+        catalog_enButton.hoverCallback = () => this.shell.musicController.addSfx('book-bookopen')
+        catalog_enButton.hoverOutCallback = () => this.shell.musicController.addSfx('book-bookclose')
+        catalog_enButton.callback = () => this.showClothingCat()
         catalog_enButton.activeFrame = false
         catalog_enButton.pixelPerfect = true
 
@@ -202,6 +215,11 @@ export default class Shop extends RoomScene {
     onSpinnerOut() {
         this.spinner.stop('shop-spinner')
         this.spinner.setFrame('spinner0001')
+    }
+
+    showClothingCat() {
+        //this.interface.loadExternal('ClothingCatalog')
+        this.interface.prompt.showError('In Closed Beta, you can use !ai {ID} in the chat bar to obtain items. EG: !ai 413')
     }
 
     /* END-USER-CODE */

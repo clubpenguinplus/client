@@ -16,6 +16,7 @@ export default class Cavemine extends RoomScene {
             underground: () => this.triggerRoom(814, 257, 601),
         }
         this.music = 532
+        this.loadSfx = ['cavemine-lighton', 'cavemine-lightoff']
         /* END-USER-CTR-CODE */
     }
 

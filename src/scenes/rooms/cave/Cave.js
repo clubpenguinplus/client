@@ -21,6 +21,8 @@ export default class Cave extends RoomScene {
 
         this.music = 670
 
+        this.loadSfx = ['cave-dooropen', 'cave-doorclose', 'cave-crab']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -181,6 +183,8 @@ export default class Cave extends RoomScene {
         // door (components)
         const doorButton = new Button(door)
         doorButton.spriteName = 'door'
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('cave-dooropen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('cave-doorclosed')
         doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 190
@@ -196,6 +200,19 @@ export default class Cave extends RoomScene {
     }
 
     /* START-USER-CODE */
+
+    create() {
+        super.create()
+        this.shell.musicController.addSfx('cave-crab')
+        this.crabTimeout = setInterval(function () {
+            this.shell.musicController.addSfx('cave-crab')
+        }, 13750)
+    }
+
+    stop() {
+        clearInterval(this.crabTimeout)
+        super.stop()
+    }
 
     onZoneClick() {
         this.shell.client.penguin.move(1266, 572)

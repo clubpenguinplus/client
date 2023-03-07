@@ -34,6 +34,8 @@ export default class Coffee extends RoomScene {
         }
 
         this.music = 429
+
+        this.loadSfx = ['coffee-TownDoorOpen', 'coffee-BookLightOn', 'coffee-BookLightOff', 'coffee-beans', 'coffee-cashregister', 'coffee-smoothie']
         /* END-USER-CTR-CODE */
     }
 

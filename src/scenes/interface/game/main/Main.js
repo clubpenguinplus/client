@@ -22,6 +22,7 @@ import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
 import MainRequestItem from '../friend/friend_item/MainRequestItem'
 import OnlineItem from '../friend/friend_item/OnlineItem'
+import Ignore from '../ignore/Ignore'
 
 /* START OF COMPILED CODE */
 
@@ -139,6 +140,8 @@ export default class Main extends BaseScene {
         this.crosshair
         /** @type {Phaser.GameObjects.Sprite} */
         this.map_button
+        /** @type {Phaser.GameObjects.Image} */
+        this.phone_button
         /** @type {Phaser.GameObjects.Sprite} */
         this.mail_btn
         /** @type {Phaser.GameObjects.Image} */
@@ -147,6 +150,8 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
+        /** @type {Phaser.GameObjects.Image} */
+        this.beta
         /** @type {Phaser.GameObjects.Layer} */
         this.widgetLayer
         /** @type {Friend} */
@@ -155,6 +160,8 @@ export default class Main extends BaseScene {
         this.playerCard
         /** @type {FriendSmall} */
         this.friendSmall
+        /** @type {Ignore} */
+        this.ignore
         /** @type {Settings} */
         this.settings
         /** @type {ActionsMenu} */
@@ -240,7 +247,7 @@ export default class Main extends BaseScene {
         const snowball_button = this.add.image(426, 930, 'main', 'blue-button')
 
         // snowball_icon
-        const snowball_icon = this.add.image(426, 930, 'main', 'snowball-icon')
+        const snowball_icon = this.add.image(426, 929, 'main', 'snowball-icon')
 
         // chat_send_button
         const chat_send_button = this.add.image(1026, 930, 'main', 'blue-button')
@@ -409,6 +416,9 @@ export default class Main extends BaseScene {
         // map_button
         const map_button = this.add.sprite(90, 888, 'main', 'map-button')
 
+        // phone_button
+        const phone_button = this.add.image(85, 758, 'main', 'phone-button')
+
         // mail_btn
         const mail_btn = this.add.sprite(170, 52, 'main', 'mail-button')
 
@@ -423,6 +433,9 @@ export default class Main extends BaseScene {
         const moderatoricon = this.add.image(1454, 70, 'main', 'mod')
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
+
+        // beta
+        const beta = this.add.image(1354, 68, 'main', 'beta')
 
         // widgetLayer
         const widgetLayer = this.add.layer()
@@ -441,6 +454,11 @@ export default class Main extends BaseScene {
         const friendSmall = new FriendSmall(this, 1235, 475)
         friendSmall.visible = false
         widgetLayer.add(friendSmall)
+
+        // ignore
+        const ignore = new Ignore(this, 1140, 436)
+        ignore.visible = false
+        widgetLayer.add(ignore)
 
         // settings
         const settings = new Settings(this, 760, 480)
@@ -527,8 +545,8 @@ export default class Main extends BaseScene {
 
         // chatInput (components)
         const chatInputInputText = new InputText(chatInput)
-        chatInputInputText.charlimit = 30
-        chatInputInputText.inputfilter = /^[A-Z ]*$/i
+        chatInputInputText.charlimit = 80
+        chatInputInputText.inputfilter = /^[A-Z !?.,:;0-9]*$/i
         chatInputInputText.entercallback = () => this.onChatSend()
 
         // puffle_button (components)
@@ -693,11 +711,16 @@ export default class Main extends BaseScene {
         map_buttonButton.callback = () => this.onMapClick()
         map_buttonButton.activeFrame = false
 
+        // phone_button (components)
+        const phone_buttonButton = new Button(phone_button)
+        phone_buttonButton.spriteName = 'phone-button'
+        phone_buttonButton.callback = () => this.onPhoneClick()
+
         // mail_btn (components)
         const mail_btnButton = new Button(mail_btn)
         mail_btnButton.spriteName = 'mail-button'
         mail_btnButton.callback = () => {
-            this.shell.RuffleManager.handleLoadOtherSwf('mail.swf')
+            /*this.shell.RuffleManager.handleLoadOtherSwf("mail.swf")*/
         }
         mail_btnButton.activeFrame = false
 
@@ -718,6 +741,12 @@ export default class Main extends BaseScene {
         moderatoriconButton.spriteName = 'mod'
         moderatoriconButton.callback = () => this.onModClick()
         moderatoriconButton.activeFrame = false
+
+        // beta (components)
+        const betaButton = new Button(beta)
+        betaButton.spriteName = 'beta'
+        betaButton.callback = () => this.onBetaClick()
+        betaButton.activeFrame = false
 
         this.pinContainer = pinContainer
         this.dock = dock
@@ -774,14 +803,17 @@ export default class Main extends BaseScene {
         this.chatLog = chatLog
         this.crosshair = crosshair
         this.map_button = map_button
+        this.phone_button = phone_button
         this.mail_btn = mail_btn
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
+        this.beta = beta
         this.widgetLayer = widgetLayer
         this.friend = friend
         this.playerCard = playerCard
         this.friendSmall = friendSmall
+        this.ignore = ignore
         this.settings = settings
         this.actionsMenu = actionsMenu
         this.emotesMenu = emotesMenu
@@ -846,6 +878,8 @@ export default class Main extends BaseScene {
         // safety quiz or mod icon
 
         this.showTR()
+
+        this.phone_button.visible = this.shell.client.isEPF
 
         // Test mobile
         this.isMobile()
@@ -1101,6 +1135,10 @@ export default class Main extends BaseScene {
             ease: 'Power2',
         })
         this.map.visible = true
+    }
+
+    onBetaClick() {
+        this.interface.loadExternal('Report')
     }
 
     /* END-USER-CODE */

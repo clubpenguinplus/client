@@ -1,10 +1,11 @@
 {
-    "id": "dd2cf1b5-b2d6-447c-8482-206fa3c10657",
+    "id": "1a69537a-0fa6-4853-b5b7-0f2a62fd5815",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
+        "superClassName": "TintedImage",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -14,16 +15,17 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "62c8ca3f-ad63-4bb1-bb56-44f832353eeb",
-            "label": "upgrade0001",
+            "id": "142af582-cb82-4661-acbf-2ad38d82d775",
+            "label": "color_button",
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "upgradebutton",
-            "Button.callback": "() => this.scene.buyIgloo(this.igloo)",
+            "Button.spriteName": "color_button",
+            "Button.callback": "() => this.scene.buy(this.item)",
+            "Button.activeFrame": false,
             "texture": {
-                "key": "iglooupgrade",
-                "frame": "upgradebutton"
+                "key": "clothingcatalog",
+                "frame": "color_button"
             },
             "originX": 0,
             "originY": 0
@@ -38,9 +40,9 @@
     },
     "prefabProperties": [
         {
-            "name": "igloo",
-            "label": "igloo",
-            "tooltip": "igloo",
+            "name": "item",
+            "label": "item",
+            "tooltip": "item",
             "defValue": 0,
             "customDefinition": false,
             "type": {

@@ -1,5 +1,5 @@
 {
-    "id": "6e965915-678f-4e07-a0b9-422fe360b8a0",
+    "id": "943e0212-d498-47c1-aae2-fcd63b0353e4",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
@@ -14,16 +14,16 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "c0ae5321-b53a-48aa-89a0-9ece81ba7451",
-            "label": "buy",
+            "id": "2789c679-79ed-41ec-8969-e09261c40836",
+            "label": "buy1",
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "buy",
-            "Button.callback": "() => this.scene.buyFloor(this.floor)",
+            "Button.spriteName": "buy1",
+            "Button.callback": "() => this.scene.buy(this.item)",
             "texture": {
-                "key": "igloocatalog",
-                "frame": "buy"
+                "key": "clothingcatalog",
+                "frame": "buy1"
             },
             "originX": 0,
             "originY": 0
@@ -38,9 +38,9 @@
     },
     "prefabProperties": [
         {
-            "name": "floor",
-            "label": "floor",
-            "tooltip": "floor",
+            "name": "item",
+            "label": "item",
+            "tooltip": "item",
             "defValue": 0,
             "customDefinition": false,
             "type": {

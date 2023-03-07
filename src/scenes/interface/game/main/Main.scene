@@ -71,8 +71,8 @@
                     "components": [
                         "InputText"
                     ],
-                    "InputText.charlimit": 30,
-                    "InputText.inputfilter": "/^[A-Z ]*$/i",
+                    "InputText.charlimit": 80,
+                    "InputText.inputfilter": "/^[A-Z !?.,:;0-9]*$/i",
                     "InputText.entercallback": "() => this.onChatSend()",
                     "originY": 0.5,
                     "fixedWidth": 476,
@@ -222,7 +222,7 @@
                 "frame": "snowball-icon"
             },
             "x": 426,
-            "y": 930
+            "y": 929
         },
         {
             "type": "Image",
@@ -905,6 +905,23 @@
             "y": 888
         },
         {
+            "type": "Image",
+            "id": "22601d52-c67a-47d4-8542-ade04d28a7dc",
+            "label": "phone_button",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "phone-button",
+            "Button.callback": "() => this.onPhoneClick()",
+            "texture": {
+                "key": "main",
+                "frame": "phone-button"
+            },
+            "x": 85,
+            "y": 758
+        },
+        {
             "type": "Sprite",
             "id": "c77d9303-6faa-472c-83e7-725f82e2b2eb",
             "label": "mail_btn",
@@ -913,7 +930,7 @@
                 "Button"
             ],
             "Button.spriteName": "mail-button",
-            "Button.callback": "() => {this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")}",
+            "Button.callback": "() => {/*this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")*/}",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -980,6 +997,24 @@
             "visible": false
         },
         {
+            "type": "Image",
+            "id": "a758f2b9-3859-4cd2-ae20-f40a070251e7",
+            "label": "beta",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "beta",
+            "Button.callback": "() => this.onBetaClick()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "main",
+                "frame": "beta"
+            },
+            "x": 1354,
+            "y": 68
+        },
+        {
             "type": "Layer",
             "id": "a205badf-674d-4f0f-bb3e-e687b24d30e9",
             "label": "widgetLayer",
@@ -1033,6 +1068,23 @@
                     "components": [],
                     "x": 1235,
                     "y": 475,
+                    "visible": false,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "c31ea8ed-969b-4c52-8637-29c7c1258956",
+                    "id": "5a064faa-fd85-496d-bbf4-bfa47ad53856",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "ignore",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1140,
+                    "y": 436,
                     "visible": false,
                     "nestedPrefabs": [],
                     "list": []

@@ -172,6 +172,12 @@ export default class WireTap extends BaseContainer {
     }
 
     addMessage(args) {
+        args = {
+            user: args[0],
+            message: args[1],
+            room: args[2],
+            username: args[3],
+        }
         let lines = this.loggedMessages.length
         if (lines > 20) {
             this.messages.text = this.messages.text.substring(this.messages.text.indexOf('\n') + 1)
@@ -183,6 +189,12 @@ export default class WireTap extends BaseContainer {
     }
 
     addFilteredMessage(args) {
+        args = {
+            user: args[0],
+            message: args[1],
+            room: args[2],
+            username: args[3],
+        }
         let lines = this.loggedMessages.length
         if (lines > 20) {
             this.messages.text = this.messages.text.substring(this.messages.text.indexOf('\n') + 1)

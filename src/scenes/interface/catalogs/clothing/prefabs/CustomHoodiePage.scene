@@ -345,38 +345,6 @@
                 },
                 {
                     "type": "Image",
-                    "id": "0d1b402d-0efe-463d-b752-62f34d0caa56",
-                    "label": "prevPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "prevPage",
-                    "Button.callback": "() => this.prevPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "prevPage"
-                    },
-                    "x": 139,
-                    "y": 729
-                },
-                {
-                    "type": "Image",
-                    "id": "55f019b9-f5aa-49a3-8a02-86ab0dfec331",
-                    "label": "nextPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "nextPage",
-                    "Button.callback": "() => this.nextPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "nextPage"
-                    },
-                    "x": 1383,
-                    "y": 729
-                },
-                {
-                    "type": "Image",
                     "id": "b37acb2d-d99b-4332-9eb7-6e01993473ca",
                     "label": "closebtn",
                     "components": [

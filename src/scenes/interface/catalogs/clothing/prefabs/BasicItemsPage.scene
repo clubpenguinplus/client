@@ -54,7 +54,7 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "jan22clothing",
+                        "key": "constant",
                         "frame": "rollover10001"
                     },
                     "x": 955,
@@ -557,38 +557,6 @@
                     "fillAlpha": 0.5,
                     "width": 128,
                     "height": 128
-                },
-                {
-                    "type": "Image",
-                    "id": "8ff45f82-b5d6-412e-ad63-668bbda5479f",
-                    "label": "prevPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "prevPage",
-                    "Button.callback": "() => this.prevPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "prevPage"
-                    },
-                    "x": 138,
-                    "y": 729
-                },
-                {
-                    "type": "Image",
-                    "id": "c6b962b9-0eae-481f-997e-4f4aefac6158",
-                    "label": "nextPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "nextPage",
-                    "Button.callback": "() => this.nextPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "nextPage"
-                    },
-                    "x": 1382,
-                    "y": 729
                 },
                 {
                     "type": "Image",

@@ -224,6 +224,8 @@ export default class IglooLikesWidget extends BaseScene {
 
         this.minY = 167
         this.maxY = 479
+
+        this.airtower.sendXt('g#il', this.shell.room.id)
     }
 
     reset() {
@@ -256,7 +258,7 @@ export default class IglooLikesWidget extends BaseScene {
         this.likeBtn.visible = true
         this.windowBtn.visible = true
 
-        likes = likes.split(',')
+        likes = likes ? likes.split(',') : []
 
         for (let i = 0; i < likes.length; i++) {
             if (!likes[i].includes('|')) {

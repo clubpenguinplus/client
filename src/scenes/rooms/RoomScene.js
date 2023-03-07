@@ -67,6 +67,11 @@ export default class RoomScene extends BaseScene {
 
         window.updateScaling()
         this.interface.hideLoading()
+
+        if (!localStorage.seenIntro) {
+            this.interface.loadExternal('Intro')
+            localStorage.seenIntro = true
+        }
     }
 
     preload() {
@@ -76,6 +81,12 @@ export default class RoomScene extends BaseScene {
 
         if (this.crumbs.pin.id && this.crumbs.pin.room == this.id) {
             this.load.image('pin', `assets/media/clothing/icon/${this.crumbs.pin.id}.webp`)
+        }
+
+        if (this.loadSfx) {
+            this.loadSfx.forEach((sfx) => {
+                this.load.audio(`sfx/${sfx}`, `/client/media/sounds/${sfx}.mp3`)
+            })
         }
 
         if (this._preload) this._preload()
@@ -158,6 +169,7 @@ export default class RoomScene extends BaseScene {
 
     stop() {
         this.interface.main.snowballFactory.clearBalls()
+        if (this.miningTimeout) clearTimeout(this.miningTimeout)
         //this.sound.stopAll()
         this.scene.stop()
     }

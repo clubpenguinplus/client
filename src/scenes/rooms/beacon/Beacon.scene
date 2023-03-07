@@ -122,8 +122,8 @@
                 "SimpleButton",
                 "ShowHint"
             ],
-            "SimpleButton.hoverCallback": "() => this.onJetpackOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onJetpackOut()",
+            "SimpleButton.hoverCallback": "() => {this.onJetpackOver(); this.shell.musicController.addSfx('beacon-jetpackopen')}",
+            "SimpleButton.hoverOutCallback": "() => {this.onJetpackOut(); this.shell.musicController.addSfx('beacon-jetpackclose')}",
             "SimpleButton.callback": "() => this.shell.client.penguin.move(1342, 565)",
             "ShowHint.text": "jetpackadventure",
             "x": 1323,

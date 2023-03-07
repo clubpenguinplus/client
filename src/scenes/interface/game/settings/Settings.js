@@ -81,6 +81,14 @@ export default class Settings extends BaseContainer {
         checkbox.setOrigin(0.41509, 0.5849)
         this.add(checkbox)
 
+        // ignore_button
+        const ignore_button = scene.add.image(159, 202, 'main', 'blue-button')
+        this.add(ignore_button)
+
+        // ignore_icon
+        const ignore_icon = scene.add.image(159, 202, 'main', 'ignore-icon')
+        this.add(ignore_icon)
+
         // x_button
         const x_button = scene.add.image(300, -268, 'main', 'blue-button')
         this.add(x_button)
@@ -132,6 +140,13 @@ export default class Settings extends BaseContainer {
         // checkbox (components)
         const checkboxSimpleButton = new SimpleButton(checkbox)
         checkboxSimpleButton.callback = () => this.onMuteClick()
+
+        // ignore_button (components)
+        const ignore_buttonButton = new Button(ignore_button)
+        ignore_buttonButton.spriteName = 'blue-button'
+        ignore_buttonButton.callback = () => {
+            this.onSettingsPress()
+        }
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
@@ -238,6 +253,11 @@ export default class Settings extends BaseContainer {
 
     onManagePress() {
         this.interface.main.manage.show()
+        this.visible = false
+    }
+
+    onSettingsPress() {
+        this.interface.main.showWidget(this.interface.main.ignore)
         this.visible = false
     }
 

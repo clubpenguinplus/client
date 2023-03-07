@@ -9,6 +9,7 @@
             "@components/*": ["src/scenes/components/*"],
             "@rooms/*": ["src/scenes/rooms/*"],
             "@igloos/*": ["src/scenes/igloos/*"],
+            "@games/*": ["src/scenes/games/*"],
         }
     },
     "exclude": [

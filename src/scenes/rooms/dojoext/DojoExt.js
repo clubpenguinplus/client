@@ -17,6 +17,8 @@ export default class DojoExt extends RoomScene {
 
         this.music = 1166
 
+        this.loadSfx = ['dojoext-dooropen', 'dojoext-doorclose']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -86,6 +88,8 @@ export default class DojoExt extends RoomScene {
         // door0001 (components)
         const door0001Button = new Button(door0001)
         door0001Button.spriteName = 'door'
+        door0001Button.hoverCallback = () => this.shell.musicController.addSfx('dojoext-dooropen')
+        door0001Button.hoverOutCallback = () => this.shell.musicController.addSfx('dojoext-doorclose')
         door0001Button.activeFrame = false
         new MoveTo(door0001)
 
