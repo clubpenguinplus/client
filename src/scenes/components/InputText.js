@@ -476,9 +476,13 @@ export default class InputText extends EventComponent {
     wrapText() {
         if (this.gameObject.width > this.lineWidth) {
             if (!this.multiline) {
-                while (this.gameObject.width > this.lineWidth) {
-                    this.gameObject.text = this.gameObject.text.slice(0, -1)
-                    this.gameObject.textContent = this.gameObject.textContent.slice(0, -1)
+                if (!this.extends) {
+                    while (this.gameObject.width > this.lineWidth) {
+                        this.gameObject.text = this.gameObject.text.slice(0, -1)
+                        this.gameObject.textContent = this.gameObject.textContent.slice(0, -1)
+                    }
+                } else {
+                    this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
                 }
             } else {
                 let textArray = this.gameObject.textContent.split(' ')
