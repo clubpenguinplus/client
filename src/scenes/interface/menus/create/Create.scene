@@ -1390,7 +1390,7 @@
                         "InputText",
                         "LocalisedString"
                     ],
-                    "InputText.charlimit": 24,
+                    "InputText.charlimit": 50,
                     "LocalisedString.id": "emilAdr",
                     "x": 970.9857233195612,
                     "y": 599.9692119847492,
