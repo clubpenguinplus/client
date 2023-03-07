@@ -870,13 +870,7 @@ export default class IglooEdit extends BaseScene {
                 break
         }
 
-        for (let item of items) {
-            let sprite = new IglooItem(this, xcoord, 85)
-            this.itemContainer.add(sprite)
-            this.items.push(sprite)
-            sprite.setItem(item.type, item.id, item.quantity)
-            xcoord += 120
-        }
+        this.loadIglooItems(items, xcoord)
 
         this.itemContainer.x = 0
         this.scroller.x = this.minX
@@ -886,6 +880,22 @@ export default class IglooEdit extends BaseScene {
         } else {
             this.scrollBarContainer.visible = false
         }
+    }
+
+    loadIglooItems(list, xcoord) {
+        let first50 = list.slice(0, 50)
+
+        for (let item of first50) {
+            let sprite = new IglooItem(this, xcoord, 85)
+            this.itemContainer.add(sprite)
+            this.items.push(sprite)
+            sprite.setItem(item.type, item.id, item.quantity)
+            xcoord += 120
+        }
+
+        setTimeout(() => {
+            this.loadIglooItems(list.slice(50), xcoord)
+        }, 100)
     }
 
     updateQuantities() {

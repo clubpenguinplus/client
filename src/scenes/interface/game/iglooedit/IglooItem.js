@@ -116,6 +116,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
     }
 
     updateQuantity() {
+        if (!this.item) return
         this.item.quantity = this.calculateQuantity(this.item.type, this.item.id, this.item.trueQuantity)
         if (parseInt(this.item.quantity) > 1) {
             this.quantityText.visible = true
