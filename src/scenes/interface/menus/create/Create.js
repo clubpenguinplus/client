@@ -1265,6 +1265,7 @@ export default class Create extends BaseScene {
 
     submitSignup() {
         this.airtower.sendXml(`<msg t='sys'><body action='signup' r='0'><login z='w1'><nick>${this.chosenUsername}</nick><pword>${this.chosenPassword}</pword></login><email>${this.chosenEmail}</email><over13>${!this.parentSignup}</over13><color>${this.chosenColor}</color><lang>en</lang></body></msg>`)
+        this.accountCreated()
     }
 
     accountCreated() {
