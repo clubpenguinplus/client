@@ -150,6 +150,8 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
+        /** @type {Phaser.GameObjects.Image} */
+        this.beta
         /** @type {Phaser.GameObjects.Layer} */
         this.widgetLayer
         /** @type {Friend} */
@@ -543,7 +545,7 @@ export default class Main extends BaseScene {
 
         // chatInput (components)
         const chatInputInputText = new InputText(chatInput)
-        chatInputInputText.charlimit = 30
+        chatInputInputText.charlimit = 80
         chatInputInputText.inputfilter = /^[A-Z !?.,:;0-9]*$/i
         chatInputInputText.entercallback = () => this.onChatSend()
 
@@ -806,6 +808,7 @@ export default class Main extends BaseScene {
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
+        this.beta = beta
         this.widgetLayer = widgetLayer
         this.friend = friend
         this.playerCard = playerCard

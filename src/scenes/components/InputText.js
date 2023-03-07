@@ -23,6 +23,8 @@ export default class InputText extends EventComponent {
         this.entercallback = () => {}
         /** @type {any} */
         this.userdefinedonclickfunction = () => {}
+        /** @type {boolean} */
+        this.extends = true
 
         this.gameObject = gameObject
         gameObject['__InputText'] = this
@@ -73,7 +75,7 @@ export default class InputText extends EventComponent {
         this.clickZone.on('pointerout', () => this.onOut())
         this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
 
-        this.indicator = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, 1, this.getCharHeight('|'), `0x${this.gameObject.style.color == '#fff' ? 'ffffff' : this.gameObject.style.color.substring(1, 7)}`, 1)
+        this.indicator = this.gameObject.scene.add.rectangle(this.gameObject.x, this.gameObject.y, 1, this.getCharHeight('I'), `0x${this.gameObject.style.color == '#fff' ? 'ffffff' : this.gameObject.style.color.substring(1, 7)}`, 1)
         this.indicator.setOrigin(this.gameObject.originX, this.gameObject.originY)
         this.indicator.visible = false
         if (this.gameObject.scene.inputTextContainer && !insideCustomContainer) {
@@ -87,8 +89,40 @@ export default class InputText extends EventComponent {
             this.gameObject.scene.add.existing(this.clickZone)
         }
 
+        this.x = this.gameObject.x
+
         this.gameObject.setStyle({fixedWidth: 0})
         this.wrapText()
+        this.createMask()
+    }
+
+    get trueX() {
+        let x = this.gameObject.x - this.gameObject.width * this.gameObject.originX
+        let curObject = this.gameObject
+        while (curObject.parentContainer) {
+            curObject = curObject.parentContainer
+            x += curObject.x
+        }
+        return x
+    }
+
+    get trueY() {
+        let y = this.gameObject.y - this.gameObject.height * this.gameObject.originY
+        let curObject = this.gameObject
+        while (curObject.parentContainer) {
+            curObject = curObject.parentContainer
+            y += curObject.y
+        }
+        return y
+    }
+
+    createMask() {
+        this.mask = this.gameObject.scene.add.graphics()
+        this.mask.fillStyle(0xffffff, 0)
+        this.mask.beginPath()
+        this.mask.fillRect(this.trueX, this.trueY, this.lineWidth, this.gameObject.height)
+        this.mask = this.mask.createGeometryMask()
+        this.gameObject.setMask(this.mask)
     }
 
     setDefaultText(text) {
@@ -387,9 +421,13 @@ export default class InputText extends EventComponent {
 
             if (this.gameObject.width > this.lineWidth) {
                 if (!this.multiline) {
-                    this.beforeCursor = this.beforeCursor.slice(0, -1)
-                    this.gameObject.textContent = this.beforeCursor + this.afterCursor
-                    this.gameObject.text = this.gameObject.textContent
+                    if (!this.extends) {
+                        this.beforeCursor = this.beforeCursor.slice(0, -1)
+                        this.gameObject.textContent = this.beforeCursor + this.afterCursor
+                        this.gameObject.text = this.gameObject.textContent
+                    } else {
+                        this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
+                    }
                 } else {
                     const last30Chars = this.beforeCursor.slice(-30)
                     const spaceIndex = last30Chars.lastIndexOf(' ')
@@ -400,6 +438,8 @@ export default class InputText extends EventComponent {
                     this.gameObject.textContent = this.beforeCursor + this.afterCursor
                     this.gameObject.text = this.gameObject.textContent
                 }
+            } else if (this.extends) {
+                this.gameObject.x = this.x
             }
         }
 
@@ -429,6 +469,7 @@ export default class InputText extends EventComponent {
         this.userClicked = false
         this.gameObject.text = this.defaultText
         this.gameObject.textContent = this.defaultText
+        this.gameObject.x = this.x
         this.indicator.x = this.gameObject.x
     }
 

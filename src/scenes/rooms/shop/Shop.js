@@ -172,7 +172,7 @@ export default class Shop extends RoomScene {
         catalog_enButton.spriteName = 'catalog-en'
         catalog_enButton.hoverCallback = () => this.shell.musicController.addSfx('book-bookopen')
         catalog_enButton.hoverOutCallback = () => this.shell.musicController.addSfx('book-bookclose')
-        catalog_enButton.callback = () => this.interface.loadExternal('ClothingCatalog')
+        catalog_enButton.callback = () => this.showClothingCat()
         catalog_enButton.activeFrame = false
         catalog_enButton.pixelPerfect = true
 
@@ -215,6 +215,11 @@ export default class Shop extends RoomScene {
     onSpinnerOut() {
         this.spinner.stop('shop-spinner')
         this.spinner.setFrame('spinner0001')
+    }
+
+    showClothingCat() {
+        //this.interface.loadExternal('ClothingCatalog')
+        this.interface.prompt.showError('In Closed Beta, you can use !ai {ID} in the chat bar to obtain items. EG: !ai 413')
     }
 
     /* END-USER-CODE */

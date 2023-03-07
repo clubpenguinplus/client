@@ -283,7 +283,7 @@
             "Button.spriteName": "catalog-en",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('book-bookopen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('book-bookclose')",
-            "Button.callback": "() => this.interface.loadExternal('ClothingCatalog')",
+            "Button.callback": "() => this.showClothingCat()",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
             "texture": {

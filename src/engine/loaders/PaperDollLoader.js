@@ -149,7 +149,7 @@ export default class PaperDollLoader extends BaseLoader {
 
         if (slot == 'photo') {
             this.scene.playerCard.photo.add(paper)
-            paper.setOrigin(0)
+            paper.setScale(0.7)
         } else {
             this.paperDoll.add(paper)
         }

@@ -132,12 +132,12 @@ export default class IglooScene extends RoomScene {
 
     showLikesWidget() {
         this.shell.interface.loadExternal('IglooLikesWidget')
-        this.airtower.sendXt('g#il', this.id)
 
         this.interface.showInterface()
         setTimeout(() => {
             this.interface.main.safetyquiz.visible = false
             this.interface.main.moderatoricon.visible = false
+            this.interface.main.beta.visible = false
         }, 100)
 
         this.likesWidget = this.scene.get('IglooLikesWidget')
@@ -415,6 +415,7 @@ export default class IglooScene extends RoomScene {
         }
         if (this.likesWidget) this.likesWidget.scene.stop()
         this.shell.interface.main.showTR()
+        this.interface.main.beta.visible = true
         super.stop()
     }
 }

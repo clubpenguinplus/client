@@ -7,6 +7,7 @@ export default class Item extends Plugin {
             up: this.updatePlayer,
             ai: this.addItem,
             aci: this.addCodeItem,
+            ac: this.addCoins,
         }
     }
 
@@ -49,5 +50,16 @@ export default class Item extends Plugin {
         // Update player data
         this.client.inventory[args[2]].push(args[0])
         this.client.inventory[args[2]].sort((a, b) => a - b)
+    }
+
+    addCoins(args) {
+        // Update player data
+        this.client.coins = args[0]
+
+        // Update player card
+        this.interface.refreshPlayerCard()
+
+        // Update catalog coins
+        this.interface.updateCatalogCoins(args[0])
     }
 }

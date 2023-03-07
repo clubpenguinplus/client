@@ -462,7 +462,7 @@ export default class IglooEdit extends BaseScene {
         // button_furniture_catalog (components)
         const button_furniture_catalogButton = new Button(button_furniture_catalog)
         button_furniture_catalogButton.spriteName = 'catalog'
-        button_furniture_catalogButton.callback = () => this.interface.loadExternal('FurnitureCatalog')
+        button_furniture_catalogButton.callback = () => this.showFurnitureCat()
         button_furniture_catalogButton.activeFrame = false
 
         // music_panel (components)
@@ -1045,6 +1045,10 @@ export default class IglooEdit extends BaseScene {
         this.scrollerDown = false
     }
 
+    showFurnitureCat() {
+        this.interface.prompt.showError('In Closed Beta, you can use !af {ID} in the chat bar to obtain furniture. EG: !af 100 You can also use !afl {ID} to add flooring, !al {id} to add locations and !aig {ID} to add igloos, but beware many igloos have not yet been implemented.')
+        //this.interface.loadExternal('FurnitureCatalog')
+    }
     /* END-USER-CODE */
 }
 

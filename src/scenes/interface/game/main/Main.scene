@@ -71,7 +71,7 @@
                     "components": [
                         "InputText"
                     ],
-                    "InputText.charlimit": 30,
+                    "InputText.charlimit": 80,
                     "InputText.inputfilter": "/^[A-Z !?.,:;0-9]*$/i",
                     "InputText.entercallback": "() => this.onChatSend()",
                     "originY": 0.5,
@@ -1000,6 +1000,7 @@
             "type": "Image",
             "id": "a758f2b9-3859-4cd2-ae20-f40a070251e7",
             "label": "beta",
+            "scope": "CLASS",
             "components": [
                 "Button"
             ],

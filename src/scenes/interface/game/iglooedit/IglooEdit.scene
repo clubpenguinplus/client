@@ -76,7 +76,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "catalog",
-                    "Button.callback": "() => this.interface.loadExternal('FurnitureCatalog')",
+                    "Button.callback": "() => this.showFurnitureCat()",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "iglooedit-new",
