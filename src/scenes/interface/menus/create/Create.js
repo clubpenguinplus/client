@@ -878,7 +878,7 @@ export default class Create extends BaseScene {
 
         // email_text (components)
         const email_textInputText = new InputText(email_text)
-        email_textInputText.charlimit = 24
+        email_textInputText.charlimit = 50
         const email_textLocalisedString = new LocalisedString(email_text)
         email_textLocalisedString.id = 'emilAdr'
 
