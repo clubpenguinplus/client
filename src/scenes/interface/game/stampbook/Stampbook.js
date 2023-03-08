@@ -1,4 +1,4 @@
-import {SimpleButton, Button, Interactive, NineSlice} from '@components/components'
+import {SimpleButton, Button, Interactive, LocalisedString} from '@components/components'
 import BookStamp from './BookStamp'
 import PinLoader from '@engine/loaders/PinLoader'
 import BaseScene from '@scenes/base/BaseScene'
@@ -49,6 +49,46 @@ export default class Stampbook extends BaseScene {
         // page_forward
         const page_forward = this.add.image(1298, 608, 'stampbook', 'page_forward')
         bgcontainer.add(page_forward)
+
+        // sidebutton
+        const sidebutton = this.add.image(1384, 470, 'stampbook', 'sidebutton')
+        bgcontainer.add(sidebutton)
+
+        // sidebutton_1
+        const sidebutton_1 = this.add.image(1384, 290, 'stampbook', 'sidebutton')
+        bgcontainer.add(sidebutton_1)
+
+        // sidebutton_2
+        const sidebutton_2 = this.add.image(1384, 380, 'stampbook', 'sidebutton')
+        bgcontainer.add(sidebutton_2)
+
+        // sidebutton_3
+        const sidebutton_3 = this.add.image(1384, 200, 'stampbook', 'sidebutton')
+        bgcontainer.add(sidebutton_3)
+
+        // categories_9001
+        const categories_9001 = this.add.image(1382, 470, 'stampbook', 'categories/9001')
+        categories_9001.scaleX = 0.5
+        categories_9001.scaleY = 0.5
+        bgcontainer.add(categories_9001)
+
+        // categories_7
+        const categories_7 = this.add.image(1382, 290, 'stampbook', 'categories/7')
+        categories_7.scaleX = 0.5
+        categories_7.scaleY = 0.5
+        bgcontainer.add(categories_7)
+
+        // categories_8
+        const categories_8 = this.add.image(1382, 380, 'stampbook', 'categories/8')
+        categories_8.scaleX = 0.5
+        categories_8.scaleY = 0.5
+        bgcontainer.add(categories_8)
+
+        // categories_5
+        const categories_5 = this.add.image(1382, 200, 'stampbook', 'categories/5')
+        categories_5.scaleX = 0.5
+        categories_5.scaleY = 0.5
+        bgcontainer.add(categories_5)
 
         // page
         const page = this.add.container(0, 0)
@@ -910,6 +950,63 @@ export default class Stampbook extends BaseScene {
         stampHover16.fillAlpha = 0.5
         stampHovers.add(stampHover16)
 
+        // instructionsContainer
+        const instructionsContainer = this.add.container(1005, 286)
+        instructionsContainer.visible = false
+
+        // contents_instruct
+        const contents_instruct = this.add.image(161, 164, 'stampbook', 'contents-instruct')
+        instructionsContainer.add(contents_instruct)
+
+        // stampbookGuide
+        const stampbookGuide = this.add.text(0, 0, '', {})
+        stampbookGuide.setOrigin(0, 0.5)
+        stampbookGuide.text = 'Stamp Book Guide'
+        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fixedHeight: 50, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide)
+
+        // stampbookGuide_1
+        const stampbookGuide_1 = this.add.text(45, 88, '', {})
+        stampbookGuide_1.setOrigin(0, 0.5)
+        stampbookGuide_1.text = 'Easy'
+        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide_1)
+
+        // stampbookGuide_2
+        const stampbookGuide_2 = this.add.text(45, 135, '', {})
+        stampbookGuide_2.setOrigin(0, 0.5)
+        stampbookGuide_2.text = 'Medium'
+        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide_2)
+
+        // stampbookGuide_3
+        const stampbookGuide_3 = this.add.text(45, 182, '', {})
+        stampbookGuide_3.setOrigin(0, 0.5)
+        stampbookGuide_3.text = 'Hard'
+        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide_3)
+
+        // stampbookGuide_4
+        const stampbookGuide_4 = this.add.text(45, 230, '', {})
+        stampbookGuide_4.setOrigin(0, 0.5)
+        stampbookGuide_4.text = 'Extreme'
+        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide_4)
+
+        // stampbookGuide_5
+        const stampbookGuide_5 = this.add.text(45, 279, '', {})
+        stampbookGuide_5.setOrigin(0, 0.5)
+        stampbookGuide_5.text = 'Edit Stamp Book'
+        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide_5)
+
+        // stampbookGuide_6
+        const stampbookGuide_6 = this.add.text(45, 328, '', {})
+        stampbookGuide_6.setOrigin(0, 0.5)
+        stampbookGuide_6.text = 'Save Stamp Book'
+        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        instructionsContainer.add(stampbookGuide_6)
+
         // lists
         const pages = [front, page]
         const indexButtons = [aquaButton, astroButton, jitsuButton, fireJitsuButton, snowJitsuButton, waterJitsuButton, cartSurferButton, wavesButton, fishingButton, jPAButton, missionsButton, pizzatronButton, launchButton, rescueButton, pufflescapeButton, smoothieButton, sysDefButton, thinIceButton, huntButton, huntButton_1]
@@ -931,6 +1028,26 @@ export default class Stampbook extends BaseScene {
         // page_forward (components)
         const page_forwardSimpleButton = new SimpleButton(page_forward)
         page_forwardSimpleButton.callback = () => this.nextPage()
+
+        // sidebutton (components)
+        const sidebuttonButton = new Button(sidebutton)
+        sidebuttonButton.spriteName = 'sidebutton'
+        sidebuttonButton.callback = () => this.goToPage(this.crumbs.stampbook['pins'])
+
+        // sidebutton_1 (components)
+        const sidebutton_1Button = new Button(sidebutton_1)
+        sidebutton_1Button.spriteName = 'sidebutton'
+        sidebutton_1Button.callback = () => this.goToPage(this.crumbs.stampbook['activities'])
+
+        // sidebutton_2 (components)
+        const sidebutton_2Button = new Button(sidebutton_2)
+        sidebutton_2Button.spriteName = 'sidebutton'
+        sidebutton_2Button.callback = () => this.goToPage(this.crumbs.stampbook['games'])
+
+        // sidebutton_3 (components)
+        const sidebutton_3Button = new Button(sidebutton_3)
+        sidebutton_3Button.spriteName = 'sidebutton'
+        sidebutton_3Button.callback = () => this.goToPage(this.crumbs.stampbook['events'])
 
         // down_btn (components)
         const down_btnButton = new Button(down_btn)
@@ -1125,6 +1242,34 @@ export default class Stampbook extends BaseScene {
         stampHover16SimpleButton.hoverCallback = () => this.onStampOver(15)
         stampHover16SimpleButton.hoverOutCallback = () => this.onStampOut(15)
 
+        // stampbookGuide (components)
+        const stampbookGuideLocalisedString = new LocalisedString(stampbookGuide)
+        stampbookGuideLocalisedString.id = 'stampbookguide'
+
+        // stampbookGuide_1 (components)
+        const stampbookGuide_1LocalisedString = new LocalisedString(stampbookGuide_1)
+        stampbookGuide_1LocalisedString.id = 'easy'
+
+        // stampbookGuide_2 (components)
+        const stampbookGuide_2LocalisedString = new LocalisedString(stampbookGuide_2)
+        stampbookGuide_2LocalisedString.id = 'medium'
+
+        // stampbookGuide_3 (components)
+        const stampbookGuide_3LocalisedString = new LocalisedString(stampbookGuide_3)
+        stampbookGuide_3LocalisedString.id = 'hard'
+
+        // stampbookGuide_4 (components)
+        const stampbookGuide_4LocalisedString = new LocalisedString(stampbookGuide_4)
+        stampbookGuide_4LocalisedString.id = 'extreme'
+
+        // stampbookGuide_5 (components)
+        const stampbookGuide_5LocalisedString = new LocalisedString(stampbookGuide_5)
+        stampbookGuide_5LocalisedString.id = 'editstampbook'
+
+        // stampbookGuide_6 (components)
+        const stampbookGuide_6LocalisedString = new LocalisedString(stampbookGuide_6)
+        stampbookGuide_6LocalisedString.id = 'savestampbook'
+
         this.blocker = blocker
         this.editor_background = editor_background
         this.bgcontainer = bgcontainer
@@ -1229,6 +1374,14 @@ export default class Stampbook extends BaseScene {
         this.stampInfoTitle = stampInfoTitle
         this.stampInfoBody = stampInfoBody
         this.stampHovers = stampHovers
+        this.instructionsContainer = instructionsContainer
+        this.stampbookGuide = stampbookGuide
+        this.stampbookGuide_1 = stampbookGuide_1
+        this.stampbookGuide_2 = stampbookGuide_2
+        this.stampbookGuide_3 = stampbookGuide_3
+        this.stampbookGuide_4 = stampbookGuide_4
+        this.stampbookGuide_5 = stampbookGuide_5
+        this.stampbookGuide_6 = stampbookGuide_6
         this.pages = pages
         this.indexButtons = indexButtons
         this.indexIcons = indexIcons
@@ -1445,6 +1598,22 @@ export default class Stampbook extends BaseScene {
     stampInfoBody
     /** @type {Phaser.GameObjects.Container} */
     stampHovers
+    /** @type {Phaser.GameObjects.Container} */
+    instructionsContainer
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide_1
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide_2
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide_3
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide_4
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide_5
+    /** @type {Phaser.GameObjects.Text} */
+    stampbookGuide_6
     /** @type {Phaser.GameObjects.Container[]} */
     pages
     /** @type {Phaser.GameObjects.Rectangle[]} */
@@ -1457,6 +1626,17 @@ export default class Stampbook extends BaseScene {
     /* START-USER-CODE */
 
     // Write your code here
+
+    get highlightColors() {
+        return {
+            1: '#F4B851',
+            2: '#A8DA6E',
+            3: '#FFAB46',
+            4: '#00BCD2',
+            5: '#FF60D0',
+            6: '#939496',
+        }
+    }
 
     create() {
         this.interface.stampbook = this
@@ -1476,8 +1656,7 @@ export default class Stampbook extends BaseScene {
 
         this.pinLoader = new PinLoader(this)
 
-        this.pins = []
-        this.pinsOnPage = []
+        this.pins = {}
 
         this.pageIndex = 0
     }
@@ -1508,19 +1687,22 @@ export default class Stampbook extends BaseScene {
     }
 
     changePattern(id) {
-        if (id == 0) {
-            this.patternId = 1
+        if (id == 0 || id == this.patternId) {
+            this.patternId = 0
             this.pattern.visible = false
             this.patternthumb.setFrame('thumbs/color/1')
         } else {
             this.patternId = id
             this.pattern.setFrame('pattern/' + id)
+            this.pattern.visible = true
             this.patternthumb.setFrame('thumbs/pattern/' + id)
-            this.patternselect.visible = false
         }
+        this.patternselect.visible = false
     }
 
     changeColor(id) {
+        this.username.setStyle({fill: this.highlightColors[id]})
+        this.total.setStyle({fill: this.highlightColors[id]})
         this.colorId = id
         this.cover.setFrame('colour/' + id)
         this.colorthumb.setFrame('thumbs/color/' + id)
@@ -1555,7 +1737,7 @@ export default class Stampbook extends BaseScene {
     }
 
     saveStampbook() {
-        this.airtower.sendXt('save_stampbook', {color: this.colorId, pattern: this.patternId, clasp: this.claspId})
+        this.airtower.sendXt('st#sv', `${this.colorId}%${this.patternId}%${this.claspId}`)
         this.shell.client.stampbookColor = this.colorId
         this.shell.client.stampbookPattern = this.patternId
         this.shell.client.stampbookClasp = this.claspId
@@ -1566,33 +1748,11 @@ export default class Stampbook extends BaseScene {
 
     addPageStamps() {
         this.stampPage = 0
-        this.posArray = [
-            [260, 270],
-            [430, 270],
-            [600, 270],
-            [770, 270],
-            [260, 420],
-            [430, 420],
-            [600, 420],
-            [770, 420],
-            [260, 570],
-            [430, 570],
-            [600, 570],
-            [770, 570],
-            [260, 720],
-            [430, 720],
-            [600, 720],
-            [770, 720],
-        ]
 
         if (this.pageIndex == this.crumbs.stampbook.enabledPages.length - 1) {
         }
 
         this.stamps = []
-
-        for (var x in this.pins) {
-            this.pins[x].visible = false
-        }
 
         let page = this.crumbs.stampbook[this.crumbs.stampbook.enabledPages[this.pageIndex]]
         let stamps = this.getPageStamps(page)
@@ -1603,17 +1763,14 @@ export default class Stampbook extends BaseScene {
             this.stampHovers.visible = true
         }
 
-        for (var x of stamps) {
-            let posIndex = this.stamps.length
-            let stampVisibility = true
-            while (posIndex > 15) {
-                posIndex -= 16
-                stampVisibility = false
-            }
-            let id = x
-            let stamp = new BookStamp(this, this.posArray[posIndex][0], this.posArray[posIndex][1], id)
+        for (var i = 0; i < stamps.length; i++) {
+            let posIndex = i % 16
+            let stampVisibility = i < 16
+            let id = stamps[i]
+            let x = 260 + (posIndex % 4) * 170
+            let y = 270 + Math.floor(posIndex / 4) * 150
+            let stamp = new BookStamp(this, x, y, id)
             this.stampLayer.add(stamp)
-
             this.stamps.push(stamp)
             stamp.visible = stampVisibility
         }
@@ -1637,7 +1794,7 @@ export default class Stampbook extends BaseScene {
         return stamps
     }
 
-    addPin(pin, xpos, ypos) {
+    addPin(pin, xpos, ypos, visible) {
         this.pins[pin] = this.add.image(xpos, ypos, 'clothing/icon/' + pin)
         this.pins[pin].setInteractive({
             cursor: 'pointer',
@@ -1654,6 +1811,10 @@ export default class Stampbook extends BaseScene {
             if (this.stampInfoBody.height == 62) this.stampInfoTitle.y = -162
             if (this.stampInfoBody.height == 31) this.stampInfoTitle.y = -149
         })
+        this.pins[pin].on('pointerout', () => {
+            this.stampInfo.visible = false
+        })
+        this.pins[pin].visible = visible
         this.stampLayer.add(this.pins[pin])
     }
 
@@ -1699,8 +1860,8 @@ export default class Stampbook extends BaseScene {
         if (!this.stamps[index]) return
 
         this.stampInfo.visible = true
-        this.stampInfo.x = this.posArray[pos][0]
-        this.stampInfo.y = this.posArray[pos][1]
+        this.stampInfo.x = 260 + (pos % 4) * 170
+        this.stampInfo.y = 270 + Math.floor(pos / 4) * 150
 
         this.stampInfoTitle.text = this.crumbs.stamps[this.stamps[index].id].name
         this.stampInfoBody.text = this.crumbs.stamps[this.stamps[index].id].description
@@ -1751,6 +1912,8 @@ export default class Stampbook extends BaseScene {
 
         this.stampHovers.visible = false
 
+        this.stampInfo.visible = false
+
         this.up_arrow.visible = false
         this.down_arrow.visible = false
         this.up_btn.visible = false
@@ -1761,6 +1924,19 @@ export default class Stampbook extends BaseScene {
         this.bgcontainer.visible = this.pageIndex == 0 ? false : true
 
         let page = this.crumbs.stampbook[this.crumbs.stampbook.enabledPages[this.pageIndex]]
+
+        for (var x in this.pins) {
+            this.pins[x].visible = false
+        }
+
+        if (!page) return console.error('[Stampbook] Page not found')
+
+        if (page.id == 'contents') {
+            this.instructionsContainer.visible = true
+        } else {
+            this.instructionsContainer.visible = false
+        }
+
         if (page.icon) {
             this.pageicon.visible = true
             this.pageicon.setFrame(page.icon.frame)
@@ -1775,6 +1951,7 @@ export default class Stampbook extends BaseScene {
         this.pagename.y = page.title.y
 
         if (page.background) {
+            this.pagebg.visible = true
             this.pagebg.x = page.background.x
             this.pagebg.y = page.background.y
             this.pagebg.setFrame(page.background.frame)
@@ -1793,6 +1970,11 @@ export default class Stampbook extends BaseScene {
         }
 
         if (this.pageIndex !== this.crumbs.stampbook.enabledPages.length - 1) {
+            this.down_arrow.x = 882
+            this.down_btn.x = 882
+            this.up_arrow.x = 882
+            this.up_btn.x = 882
+
             let text = page.title.text[page.title.text.length - 1] == 's' ? page.title.text.substring(0, page.title.text.length - 1) : page.title.text
             this.stampcategory.text = text + ' Stamps:'
             if (page.group) {
@@ -1801,6 +1983,42 @@ export default class Stampbook extends BaseScene {
             } else if (page.id == 'contents') {
                 this.stampcategory.text = 'Total Stamps:'
                 this.stampnum.text = `${this.getTotalStamps()[1].toString()}/${this.getTotalStamps()[0].toString()}`
+
+                let counter = 0
+                let indexes = [0, 1, 5, 6, 2, 7, 10, 11, 12, 15, 16, 17]
+                this.goToPageIndex = []
+                for (let pg in page.index) {
+                    let current = indexes[counter]
+                    let pageId = this.crumbs.stampbook[page.index[pg].id]
+
+                    if (!this.crumbs.stampbook.enabledPages.includes(pageId.id)) continue
+
+                    let cur = current
+
+                    this.goToPageIndex.push(pg)
+
+                    this.indexIcons[current].visible = true
+                    this.indexIcons[current].setFrame(page.index[pg].icon)
+
+                    this.indexButtons[current].setInteractive({
+                        cursor: 'pointer',
+                    })
+                    this.indexButtons[current].on('pointerover', () => {
+                        this.indexText[cur].setStyle({color: '#3c3c3cff'})
+                    })
+                    this.indexButtons[current].on('pointerout', () => {
+                        this.indexText[cur].setStyle({color: '#5b5b5bff'})
+                    })
+                    this.indexButtons[current].on('pointerdown', () => {
+                        this.goToPage(pageId)
+                    })
+                    this.indexButtons[current].visible = true
+
+                    this.indexText[current].text = page.index[pg].name
+                    this.indexText[current].visible = true
+
+                    counter++
+                }
             } else if (page.index) {
                 let cgs = 0
                 let ownedcgs = 0
@@ -1844,89 +2062,12 @@ export default class Stampbook extends BaseScene {
                 this.stampnum.text = `${ownedcgs.toString()}/${cgs.toString()}`
             }
         } else {
-            var pinsPosArray = [
-                [260, 270],
-                [380, 270],
-                [500, 270],
-                [620, 270],
-                [740, 270],
-                [860, 270],
-                [980, 270],
-                [1100, 270],
-                [1220, 270],
-                [1340, 270],
-                [260, 390],
-                [380, 390],
-                [500, 390],
-                [620, 390],
-                [740, 390],
-                [860, 390],
-                [980, 390],
-                [1100, 390],
-                [1220, 390],
-                [1340, 390],
-                [260, 520],
-                [380, 520],
-                [500, 520],
-                [620, 520],
-                [740, 520],
-                [860, 520],
-                [980, 520],
-                [1100, 520],
-                [1220, 520],
-                [1340, 520],
-                [260, 650],
-                [380, 650],
-                [500, 650],
-                [620, 650],
-                [740, 650],
-                [860, 650],
-                [980, 650],
-                [1100, 650],
-                [1220, 650],
-                [1340, 650],
-                [260, 780],
-                [380, 780],
-                [500, 780],
-                [620, 780],
-                [740, 780],
-                [860, 780],
-                [980, 780],
-                [1100, 780],
-                [1220, 780],
-                [1340, 780],
-            ]
-            this.stampcategory.text = 'Pins Collected:'
-            this.stampnum.text = this.shell.client.inventory['flag'].length
-            for (var pin in this.shell.client.inventory['flag']) {
-                if (this.pins[this.shell.client.inventory['flag'][pin]] !== undefined) {
-                    this.pins[this.shell.client.inventory['flag'][pin]].visible = true
-                    continue
-                }
+            this.showPins()
 
-                if (!this.textures.exists(`clothing/icon/${this.shell.client.inventory['flag'][pin]}`)) {
-                    this.pinLoader.loadPin(this.shell.client.inventory['flag'][pin], pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1])
-                } else {
-                    this.pins[this.shell.client.inventory['flag'][pin]] = this.add.image(pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1], 'clothing/icon/' + this.shell.client.inventory['flag'][pin])
-                    this.pins[this.shell.client.inventory['flag'][pin]].setInteractive({
-                        cursor: 'pointer',
-                    })
-                    this.pins[this.shell.client.inventory['flag'][pin]].on('pointerover', () => {
-                        this.stampInfo.visible = true
-                        this.stampInfo.x = this.pins[this.shell.client.inventory['flag'][pin]].x
-                        this.stampInfo.y = this.pins[this.shell.client.inventory['flag'][pin]].y
-
-                        this.stampInfoTitle.text = this.crumbs.items[this.shell.client.inventory['flag'][pin]].name
-                        this.stampInfoBody.text = 'Released on: Never'
-                        this.stampInfoBg.resize(300, this.stampInfoBody.height + 65)
-                        if (this.stampInfoBody.height == 93) this.stampInfoTitle.y = -175
-                        if (this.stampInfoBody.height == 62) this.stampInfoTitle.y = -162
-                        if (this.stampInfoBody.height == 31) this.stampInfoTitle.y = -149
-                    })
-                    this.stampLayer.add(this.pins[this.shell.client.inventory['flag'][pin]])
-                }
-                this.pinsOnPage.push(this.pins[this.shell.client.inventory['flag'][pin]])
-            }
+            this.down_arrow.x = 1200
+            this.down_btn.x = 1200
+            this.up_arrow.x = 1200
+            this.up_btn.x = 1200
         }
 
         this.pagename.setStyle({fontSize: '70px'})
@@ -1944,6 +2085,11 @@ export default class Stampbook extends BaseScene {
     }
 
     nextStampPage() {
+        let page = this.crumbs.stampbook[this.crumbs.stampbook.enabledPages[this.pageIndex]]
+        if (page.id == 'pins') {
+            return this.nextPinPage()
+        }
+
         if (this.stamps.length > (this.stampPage + 1) * 16) {
             this.stampPage++
             for (let stamp in this.stamps) {
@@ -1963,6 +2109,11 @@ export default class Stampbook extends BaseScene {
     }
 
     prevStampPage() {
+        let page = this.crumbs.stampbook[this.crumbs.stampbook.enabledPages[this.pageIndex]]
+        if (page.id == 'pins') {
+            return this.prevPinPage()
+        }
+
         if (this.stampPage > 0) {
             this.stampPage--
             for (let stamp in this.stamps) {
@@ -1973,10 +2124,12 @@ export default class Stampbook extends BaseScene {
                 }
             }
         }
+
         if (this.stampPage == 0) {
             this.up_arrow.visible = false
             this.up_btn.visible = false
         }
+
         this.down_arrow.visible = true
         this.down_btn.visible = true
     }
@@ -1984,6 +2137,126 @@ export default class Stampbook extends BaseScene {
     goToPage(pageIndex) {
         this.pageIndex = this.crumbs.stampbook.enabledPages.indexOf(pageIndex.id)
         this.showPage()
+    }
+
+    showPins() {
+        const pins = this.shell.client.inventory['flag']
+        const numPins = pins.length
+
+        this.stampcategory.text = 'Pins Collected:'
+        this.stampnum.text = numPins
+
+        if (this.pins.length > 0) {
+            for (let pin in this.pins) {
+                this.pins[pin].visible = true
+            }
+            return
+        }
+
+        const pinsPerPage = 32
+        const marginX = 120
+        const marginY = 140
+        const startX = 260
+        const startY = 270
+
+        var createPin = (pinId, x, y, visible) => {
+            const pin = this.add.image(x, y, 'clothing/icon/' + pinId)
+            pin.setInteractive({
+                cursor: 'pointer',
+            })
+            pin.on('pointerout', () => {
+                this.stampInfo.visible = false
+            })
+            pin.on('pointerover', () => {
+                this.stampInfo.visible = true
+                this.stampInfo.x = pin.x
+                this.stampInfo.y = pin.y
+
+                this.stampInfoTitle.text = this.crumbs.items[pinId].name
+                this.stampInfoBody.text = 'Released on: Never'
+                this.stampInfoBg.resize(300, this.stampInfoBody.height + 65)
+                if (this.stampInfoBody.height == 93) this.stampInfoTitle.y = -175
+                if (this.stampInfoBody.height == 62) this.stampInfoTitle.y = -162
+                if (this.stampInfoBody.height == 31) this.stampInfoTitle.y = -149
+            })
+
+            pin.visible = visible
+
+            return pin
+        }
+
+        var showPage = (page) => {
+            const visible = page == 0
+
+            for (let i = 0; i < 32; i++) {
+                const pinId = pins[i + page * pinsPerPage]
+                const col = i % 8
+                const row = Math.floor(i / 8)
+                const x = startX + col * marginX
+                const y = startY + row * marginY
+
+                if (this.textures.exists(`clothing/icon/${pinId}`)) {
+                    let pin = createPin(pinId, x, y, visible)
+                    this.stampLayer.add(pin)
+                    this.pins[pinId] = pin
+                } else {
+                    this.pinLoader.loadPin(pinId, x, y, visible)
+                }
+            }
+        }
+
+        const numPages = Math.ceil(numPins / pinsPerPage)
+        for (let i = 0; i < numPages; i++) {
+            showPage(i)
+        }
+
+        if (numPages > 1) {
+            this.down_arrow.visible = true
+            this.down_btn.visible = true
+            this.pinPage = 0
+        }
+    }
+
+    nextPinPage() {
+        this.pinPage++
+
+        for (let pin in this.pins) {
+            this.pins[pin].visible = false
+        }
+
+        let pins = Object.entries(this.pins)
+        for (let i = this.pinPage * 32; i < Math.min(this.pinPage * 32 + 32, pins.length); i++) {
+            pins[i][1].visible = true
+        }
+
+        if (this.pinPage == Math.ceil(this.shell.client.inventory['flag'].length / 32) - 1) {
+            this.down_arrow.visible = false
+            this.down_btn.visible = false
+        }
+
+        this.up_arrow.visible = true
+        this.up_btn.visible = true
+    }
+
+    prevPinPage() {
+        this.pinPage--
+
+        for (let pin in this.pins) {
+            this.pins[pin].visible = false
+        }
+
+        let pins = Object.entries(this.pins)
+        for (let i = this.pinPage * 32; i < Math.min(this.pinPage * 32 + 32, pins.length); i++) {
+            pins[i][1].visible = true
+        }
+
+        if (this.pinPage == 0) {
+            this.up_arrow.visible = false
+            this.up_btn.visible = false
+        }
+
+        this.down_arrow.visible = true
+        this.down_btn.visible = true
     }
 
     /* END-USER-CODE */
