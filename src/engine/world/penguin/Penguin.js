@@ -148,8 +148,11 @@ export default class Penguin extends BaseContainer {
 
         this.playAnims(frame)
 
+        this.room.triggerAction(frame)
+
         // Frames that aren't set get set to 1
         this.frame = set ? _frame : 1
+        this.specificFrame = frame
     }
 
     createAnims(frame, isSecretFrame) {
@@ -478,5 +481,15 @@ export default class Penguin extends BaseContainer {
             this.pufflesprite.x = 60
             this.pufflesprite.y = 0
         })
+    }
+
+    wearingItem(item) {
+        let items = this.items.flat
+        for (var x in items) {
+            if (items[x] == item) {
+                return true
+            }
+            return false
+        }
     }
 }

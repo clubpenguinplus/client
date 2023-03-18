@@ -12,6 +12,8 @@ export default class Beach extends RoomScene {
         this.bucket
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort
+        /** @type {Array<any>} */
+        this.this_waterZones
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
@@ -91,6 +93,7 @@ export default class Beach extends RoomScene {
 
         // lists
         const sort = [igloo, chair, chair_fg, chair2, fg, fences, railing]
+        const this_waterZones = []
 
         // door (components)
         const doorButton = new Button(door)
@@ -106,6 +109,7 @@ export default class Beach extends RoomScene {
 
         this.bucket = bucket
         this.sort = sort
+        this.this_waterZones = this_waterZones
 
         this.events.emit('scene-awake')
     }

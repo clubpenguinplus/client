@@ -463,6 +463,56 @@
             "fillColor": "#00ff00",
             "width": 115,
             "height": 400
+        },
+        {
+            "type": "Ellipse",
+            "id": "b208ffe1-8482-4a97-8cb0-e4f26ac6727e",
+            "label": "ellipse_1",
+            "components": [],
+            "x": 807,
+            "y": 719,
+            "width": 800,
+            "height": 260
+        },
+        {
+            "type": "Ellipse",
+            "id": "777ad623-2208-4252-81a1-ff30990a5425",
+            "label": "ellipse",
+            "components": [],
+            "x": 570,
+            "y": 697,
+            "width": 300,
+            "height": 200
+        },
+        {
+            "type": "Ellipse",
+            "id": "b66c4ca4-58d5-44e1-aebf-76b9303ee69f",
+            "label": "ellipse_2",
+            "components": [],
+            "x": 1041,
+            "y": 689,
+            "width": 300,
+            "height": 200
+        },
+        {
+            "type": "Ellipse",
+            "id": "3dadc396-b5ae-4f2a-a4c7-7f4d1566599b",
+            "label": "ellipse_3",
+            "components": [],
+            "x": 1139,
+            "y": 761,
+            "width": 300,
+            "height": 200
+        },
+        {
+            "type": "Ellipse",
+            "id": "b1bb0f39-097c-43b5-a057-8be4688534dd",
+            "label": "ellipse_4",
+            "components": [],
+            "x": 495,
+            "y": 762,
+            "width": 300,
+            "height": 200
         }
     ],
     "plainObjects": [],
@@ -496,6 +546,17 @@
                 "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
                 "212e8496-11a4-430b-8277-c1b9280cc8a9",
                 "f2c508bd-8ced-400f-97d9-b45f944a94ff"
+            ]
+        },
+        {
+            "id": "d60a9628-07f3-460e-98dc-8eb3a9a55f8d",
+            "label": "waterZones",
+            "objectIds": [
+                "b208ffe1-8482-4a97-8cb0-e4f26ac6727e",
+                "b1bb0f39-097c-43b5-a057-8be4688534dd",
+                "3dadc396-b5ae-4f2a-a4c7-7f4d1566599b",
+                "b66c4ca4-58d5-44e1-aebf-76b9303ee69f",
+                "777ad623-2208-4252-81a1-ff30990a5425"
             ]
         }
     ]

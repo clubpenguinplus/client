@@ -1787,7 +1787,7 @@ export default class Stampbook extends BaseScene {
             return stamps
         }
         for (let stamp in this.crumbs.stamps) {
-            if (this.crumbs.stamps[stamp].groupid == page.group) {
+            if (this.crumbs.stamps[stamp].groupid == page.group && !this.crumbs.stamps[stamp].disabled) {
                 stamps.push(parseInt(stamp))
             }
         }
@@ -1822,7 +1822,7 @@ export default class Stampbook extends BaseScene {
         let categoryStamps = []
         let ownedCategoryStamps = []
         for (var stamp in this.crumbs.stamps) {
-            if (this.crumbs.stamps[stamp].groupid == category) {
+            if (this.crumbs.stamps[stamp].groupid == category && !this.crumbs.stamps[stamp].disabled) {
                 categoryStamps.push(this.crumbs.stamps[stamp])
                 if (this.stampsEarned.includes(parseInt(stamp))) {
                     ownedCategoryStamps.push(this.crumbs.stamps[stamp])
@@ -1975,7 +1975,7 @@ export default class Stampbook extends BaseScene {
             this.up_arrow.x = 882
             this.up_btn.x = 882
 
-            let text = page.title.text[page.title.text.length - 1] == 's' ? page.title.text.substring(0, page.title.text.length - 1) : page.title.text
+            let text = this.getSingular(page.title.text)
             this.stampcategory.text = text + ' Stamps:'
             if (page.group) {
                 this.stampnum.text = `${this.getCategoryStamps(page.group)[1].toString()}/${this.getCategoryStamps(page.group)[0].toString()}`
@@ -2257,6 +2257,17 @@ export default class Stampbook extends BaseScene {
 
         this.down_arrow.visible = true
         this.down_btn.visible = true
+    }
+
+    getSingular(text) {
+        // This is terrible as it will only work for English
+        if (text.endsWith('ies')) {
+            return text.slice(0, -3) + 'y'
+        }
+        if (text.endsWith('s')) {
+            return text.slice(0, -1)
+        }
+        return text
     }
 
     /* END-USER-CODE */

@@ -28,7 +28,10 @@ export default class Plaza extends RoomScene {
             pizza: () => this.triggerRoom(330, 760, 330),
             mall: () => this.triggerRoom(340, 250, 700),
             pet: () => this.triggerRoom(310, 828, 520),
-            cave: () => this.triggerRoom(806, 1242, 685),
+            cave: () => {
+                this.shell.client.stampEarned(10)
+                this.triggerRoom(806, 1242, 685)
+            },
             forts: () => this.triggerRoom(801, 1320, 460),
             forest: () => this.triggerRoom(809, 150, 320),
             hotel: () => this.triggerRoom(430, 800, 350),

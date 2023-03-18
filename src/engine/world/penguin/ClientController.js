@@ -9,8 +9,6 @@ export default class ClientController {
         this.crumbs = shell.crumbs
         this.getString = shell.getString
 
-        this.roomsWaddled = []
-
         for (var i = 0; i < args.length; i++) {
             if (args[i] == 'undefined' || args[i] == '') {
                 args[i] = []

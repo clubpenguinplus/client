@@ -238,6 +238,21 @@ export default class Dojo extends RoomScene {
 
         this.potdots.play('dojo-potdots')
         this.potmagic.play('dojo-potmagic')
+
+        if (!this.shell.client.stamps.includes(30)) {
+            this.ninjaMeetingInterval = setInterval(() => {
+                let ninjas = 0
+                for (let p in this.penguins) {
+                    let penguin = this.penguins[p]
+                    if (penguin.wearingItem(4033) || penguin.wearingItem(4034) || penguin.wearingItem(4075)) ninjas++
+                }
+                let p = this.shell.client.penguin
+                if (ninjas >= 10 && (p.wearingItem(4033) || p.wearingItem(4034) || p.wearingItem(4075))) {
+                    this.shell.client.stampEarned(30)
+                    clearInterval(this.ninjaMeetingInterval)
+                }
+            }, 2000)
+        }
     }
 
     waterDoorOver() {
@@ -262,6 +277,11 @@ export default class Dojo extends RoomScene {
 
     snowDoorOut() {
         this.shell.musicController.addSfx('dojo-snowclose')
+    }
+
+    stop() {
+        clearInterval(this.ninjaMeetingInterval)
+        super.stop()
     }
 
     /* END-USER-CODE */

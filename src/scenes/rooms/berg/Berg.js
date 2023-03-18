@@ -63,6 +63,18 @@ export default class Berg extends RoomScene {
 
         this.aqua.on('animationcomplete', (animation) => this.onAquaAnimComplete(animation))
         this.aqua.play('berg-aqua_float')
+        if (!this.shell.client.stamps.includes(26)) {
+            this.bergDrillInterval = setInterval(() => {
+                let drilling = 0
+                for (penguin in this.penguins) {
+                    if (penguin.specificFrame && penguin.specificFrame == 36) drilling++
+                }
+                if (drilling >= 30) {
+                    this.shell.client.stampEarned(26)
+                    clearInterval(this.bergDrillInterval)
+                }
+            }, 2000)
+        }
     }
 
     onAquaAnimComplete(animation) {
@@ -91,6 +103,11 @@ export default class Berg extends RoomScene {
             this.aqua.play('berg-aqua_open')
         }
         this.shell.musicController.addSfx('berg-aquagrabber')
+    }
+
+    stop() {
+        clearInterval(this.bergDrillInterval)
+        super.stop()
     }
 
     /* END-USER-CODE */

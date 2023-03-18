@@ -1006,7 +1006,6 @@ export default class Report extends BaseScene {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data)
                 if (data.error) {
                     return this.interface.prompt.showError(data.error)
                 }

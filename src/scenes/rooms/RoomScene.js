@@ -28,6 +28,11 @@ export default class RoomScene extends BaseScene {
         return this.shell.client
     }
 
+    get goingPlaces() {
+        if (!this.client.goingPlaces) this.client.goingPlaces = []
+        return this.client.goingPlaces
+    }
+
     init(data) {
         this.id = data.id
     }
@@ -52,18 +57,19 @@ export default class RoomScene extends BaseScene {
 
         if (this.crumbs.pin.id && this.crumbs.pin.room == this.id) this.interface.addPin()
 
-        if (!this.shell.client.roomsWaddled.includes(this.id)) {
-            this.shell.client.roomsWaddled.push(this.id)
-        }
-        if (this.shell.client.roomsWaddled.length >= 20) {
-            this.shell.client.stampEarned(15)
-        }
-
         if (this.mining_zone) {
             this.miningZone = new Phaser.Geom.Ellipse(this.mining_zone.x, this.mining_zone.y, this.mining_zone.width, this.mining_zone.height)
             this.coin = new Coin(this, 551.9600819184787, -49.143491473676306)
             this.add.existing(this.coin)
         }
+
+        if (this.waterZones) {
+            for (let zone in this.waterZones) {
+                this.waterZones[zone] = new Phaser.Geom.Ellipse(this.waterZones[zone].x, this.waterZones[zone].y, this.waterZones[zone].width, this.waterZones[zone].height)
+            }
+        }
+
+        this.worldStampInterval = setInterval(() => this.checkForWorldStamps(), 2000)
 
         window.updateScaling()
         this.interface.hideLoading()
@@ -163,12 +169,23 @@ export default class RoomScene extends BaseScene {
         }
     }
 
-    onSnowballComplete(x, y) {
+    onSnowballComplete(user, x, y) {
+        // To be overridden in derived class
+    }
+
+    triggerAction(frame) {
+        if (frame == 37 && this.isInWater(this.client.penguin.x, this.client.penguin.y)) {
+            this.shell.client.stampEarned(12)
+        }
+    }
+
+    triggerEmote(emote) {
         // To be overridden in derived class
     }
 
     stop() {
         this.interface.main.snowballFactory.clearBalls()
+        clearInterval(this.worldStampInterval)
         if (this.miningTimeout) clearTimeout(this.miningTimeout)
         //this.sound.stopAll()
         this.scene.stop()
@@ -262,6 +279,11 @@ export default class RoomScene extends BaseScene {
     }
 
     triggerRoom(id, x, y) {
+        if (!this.goingPlaces.includes(id)) {
+            this.goingPlaces.push(id)
+            if (this.goingPlaces.length == 30) this.shell.client.stampEarned(15)
+        }
+
         let room = this.crumbs.scenes.rooms[id]
         if (!room) return console.error(`Room ${id} not found`)
         this.shell.client.sendJoinRoom(id, room.key, x, y)
@@ -270,6 +292,14 @@ export default class RoomScene extends BaseScene {
     triggerGame(minigame, id, emu) {
         let prompt = this.game.scene.getScene('InterfaceController').prompt
         prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', 'dual', () => this.joinGame(minigame, id, emu))
+    }
+
+    isInWater(x, y) {
+        if (!this.waterZones) return false
+        for (let zone of this.waterZones) {
+            if (zone.contains(x, y)) return true
+        }
+        return false
     }
 
     isMiningSpot(x, y) {
@@ -330,6 +360,88 @@ export default class RoomScene extends BaseScene {
 
     triggerWaddle(id) {
         // To be overridden in derived class
+    }
+
+    checkForWorldStamps() {
+        if (!this.shell.client.stamps.includes(25)) {
+            var conditions = {
+                775: 0,
+                778: 0,
+                4088: 0,
+                4091: 0,
+                4346: 0,
+                4347: 0,
+                4348: 0,
+                4349: 0,
+                4350: 0,
+            }
+
+            for (let u in this.penguins) {
+                let user = this.penguins[u]
+                if (user.wearingItem(775) || user.wearingItem(10775)) conditions[775]++
+                if (user.wearingItem(778) || user.wearingItem(10778)) conditions[778]++
+                if (user.wearingItem(4088)) conditions[4088]++
+                if (user.wearingItem(4091)) conditions[4091]++
+                if (user.wearingItem(4346)) conditions[4346]++
+                if (user.wearingItem(4347)) conditions[4347]++
+                if (user.wearingItem(4348)) conditions[4348]++
+                if (user.wearingItem(4349)) conditions[4349]++
+                if (user.wearingItem(4350)) conditions[4350]++
+            }
+
+            for (let item in conditions) {
+                if (conditions[item] >= 5 && (this.shell.client.penguin.wearingItem(item) || this.shell.client.penguin.wearingItem(item + 10000))) this.shell.client.stampEarned(25)
+            }
+        }
+
+        if (!this.shell.client.stamps.includes(29)) {
+            var conditions = {
+                277: 0,
+                278: 0,
+                4143: 0,
+                4204: 0,
+                4474: 0,
+                4475: 0,
+                4476: 0,
+                4477: 0,
+                4478: 0,
+                4479: 0,
+                4480: 0,
+                4481: 0,
+            }
+
+            for (let u in this.penguins) {
+                let user = this.penguins[u]
+                if (user.wearingItem(277) || user.wearingItem(10277)) conditions[277]++
+                if (user.wearingItem(278)) conditions[278]++
+                if (user.wearingItem(4143) || user.wearingItem(14143)) conditions[4143]++
+                if (user.wearingItem(4204) || user.wearingItem(14204)) conditions[4204]++
+                if (user.wearingItem(4474)) conditions[4474]++
+                if (user.wearingItem(4475)) conditions[4475]++
+                if (user.wearingItem(4476)) conditions[4476]++
+                if (user.wearingItem(4477)) conditions[4477]++
+                if (user.wearingItem(4478)) conditions[4478]++
+                if (user.wearingItem(4479)) conditions[4479]++
+                if (user.wearingItem(4480)) conditions[4480]++
+                if (user.wearingItem(4481)) conditions[4481]++
+            }
+
+            for (let item in conditions) {
+                if (conditions[item] >= 5 && (this.shell.client.penguin.wearingItem(item) || this.shell.client.penguin.wearingItem(item + 10000))) this.shell.client.stampEarned(29)
+            }
+        }
+
+        if (!this.shell.client.stamps.includes(364)) {
+            let p = this.shell.client.penguin
+            if (!p.wearingItem(4174) && !p.wearingItem(14174) && !p.wearingItem(24238)) return
+
+            let trees = 0
+            for (let u in this.penguins) {
+                let user = this.penguins[u]
+                if (user.wearingItem(4174) || user.wearingItem(14174) || user.wearingItem(24238)) trees++
+            }
+            if (trees >= 10) this.shell.client.stampEarned(364)
+        }
     }
 
     /*======= Animations =======*/

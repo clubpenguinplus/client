@@ -241,6 +241,7 @@ export default class Pizza extends RoomScene {
 
     create() {
         super.create()
+        this.pizzaWaitorIterations = 0
     }
 
     onPlazaDoorOver() {
@@ -267,6 +268,15 @@ export default class Pizza extends RoomScene {
     onCashRegOut() {
         this.pizzacashreg.play('pizza-cashregdown')
         this.shell.musicController.addSfx('pizza-CashDown')
+    }
+
+    triggerEmote(emote) {
+        if (emote == 24 && (this.shell.client.penguin.wearingItem(263) || this.shell.client.penguin.wearingItem(240) || this.shell.client.penguin.wearingItem(10263))) {
+            this.pizzaWaitorIterations++
+            if (this.pizzaWaitorIterations == 5) {
+                this.shell.client.stampEarned(19)
+            }
+        }
     }
 
     /* END-USER-CODE */

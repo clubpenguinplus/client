@@ -363,7 +363,7 @@ export default class CoinsPrompt extends BaseContainer {
         let categoryStamps = []
         let ownedCategoryStamps = []
         for (var stamp in this.crumbs.stamps) {
-            if (this.crumbs.stamps[stamp].groupid == category) {
+            if (this.crumbs.stamps[stamp].groupid == category && !this.crumbs.stamps[stamp].disabled) {
                 categoryStamps.push(stamp)
                 if (this.shell.client.stamps.includes(parseInt(stamp))) ownedCategoryStamps.push(stamp)
             }

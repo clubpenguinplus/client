@@ -256,6 +256,10 @@ export default class IglooScene extends RoomScene {
             return {id, furnitureId, x, y, frame, rotation}
         })
 
+        if (this.args.furniture.length >= 99) {
+            this.shell.client.stampEarned(23)
+        }
+
         this.loadAllFurniture()
     }
 

@@ -184,6 +184,22 @@ export default class Forts extends RoomScene {
 
         this.tower.on('animationcomplete', () => this.onTowerAnimComplete())
         this.target.on('animationcomplete', () => this.onTargetAnimComplete())
+
+        if (!this.shell.client.stamps.includes(27)) {
+            this.snowFortsInterval = setInterval(() => {
+                let thrownColor = 0
+                for (let p in this.penguins) {
+                    let penguin = this.penguins[p]
+                    if (penguin.color == this.shell.client.penguin.color && penguin.hasThrownSnowball) thrownColor++
+                }
+                if (thrownColor >= 5 && this.shell.client.penguin.hasThrownSnowball) {
+                    this.shell.client.stampEarned(27)
+                    clearInterval(this.snowFortsInterval)
+                }
+            }, 2000)
+        }
+
+        this.consequtiveHits = 0
     }
 
     update() {
@@ -222,10 +238,16 @@ export default class Forts extends RoomScene {
         }
     }
 
-    onSnowballComplete(x, y) {
+    onSnowballComplete(user, x, y) {
         if (this.bounds.contains(x, y)) {
             this.tower.__Animation.play()
             this.target.__Animation.play()
+
+            if (user != this.shell.client.id) return
+            this.consequtiveHits++
+            if (this.consequtiveHits == 10) this.shell.client.stampEarned(13)
+        } else if (user == this.shell.client.id) {
+            this.consequtiveHits = 0
         }
     }
 
@@ -235,6 +257,11 @@ export default class Forts extends RoomScene {
 
     onTargetAnimComplete() {
         this.target.setFrame('target_0001')
+    }
+
+    stop() {
+        clearInterval(this.snowFortsInterval)
+        super.stop()
     }
 
     /* END-USER-CODE */
