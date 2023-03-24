@@ -1353,6 +1353,41 @@
                     "y": 480
                 },
                 {
+                    "type": "Image",
+                    "id": "2ee9142d-b296-45ec-aeb3-ff62e919664c",
+                    "label": "wordmark",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "wordmark"
+                    },
+                    "x": 1194,
+                    "y": 707,
+                    "tintTopLeft": "e47652",
+                    "tintTopRight": "e47652",
+                    "tintBottomLeft": "e47652",
+                    "tintBottomRight": "e47652",
+                    "tintFill": true
+                },
+                {
+                    "type": "Image",
+                    "id": "6ae6dd2a-447f-4ddf-9428-e4e8e0c38d77",
+                    "label": "wordmark_overlay",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "wordmark"
+                    },
+                    "x": 1194,
+                    "y": 707,
+                    "tintTopLeft": "e47652",
+                    "tintTopRight": "e47652",
+                    "tintBottomLeft": "e47652",
+                    "tintBottomRight": "e47652"
+                },
+                {
                     "type": "Sprite",
                     "id": "a47175a9-1c7c-483b-8934-fad9002bd80e",
                     "label": "pattern",
@@ -1980,7 +2015,6 @@
             "components": [],
             "x": -190,
             "y": 259,
-            "visible": false,
             "list": [
                 {
                     "type": "NinePatchContainer",
@@ -1989,13 +2023,17 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "main",
-                        "frame": "list/small"
+                        "key": "stampbook",
+                        "frame": "hover"
                     },
-                    "x": 6.518512446268176,
-                    "y": -118.87806837021839,
+                    "x": 7,
+                    "y": -112,
                     "width": 300,
-                    "height": 300
+                    "height": 170,
+                    "marginLeft": 15,
+                    "marginRight": 15,
+                    "marginTop": 10,
+                    "marginBottom": 25
                 },
                 {
                     "type": "Text",
@@ -2003,13 +2041,12 @@
                     "label": "stampInfoTitle",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 7,
-                    "y": -175,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Full House",
+                    "x": -143,
+                    "y": -182,
+                    "text": "Aunt Arctic",
                     "fixedWidth": 300,
-                    "align": "center",
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
                     "fontFamily": "Burbank Small",
                     "fontSize": "26px",
                     "fontStyle": "bold",
@@ -2021,17 +2058,16 @@
                     "label": "stampInfoBody",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 6.518512446268176,
-                    "y": -93.87806837021839,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Get all ya mates together and play in a band innit",
+                    "x": -143,
+                    "y": -147,
+                    "text": "Be in the same room as Aunt Arctic",
                     "fixedWidth": 300,
-                    "align": "center",
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
                     "fontFamily": "Burbank Small",
-                    "fontSize": "26px",
-                    "color": "#000000ff",
-                    "wordWrapWidth": 275
+                    "fontSize": "20px",
+                    "color": "#606060ff",
+                    "wordWrapWidth": 270
                 }
             ]
         },

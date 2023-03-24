@@ -621,6 +621,23 @@ export default class Stampbook extends BaseScene {
         const cover = this.add.sprite(743, 480, 'stampbook', 'colour/1')
         front.add(cover)
 
+        // wordmark
+        const wordmark = this.add.image(1194, 707, 'stampbook', 'wordmark')
+        wordmark.tintFill = true
+        wordmark.tintTopLeft = 14972498
+        wordmark.tintTopRight = 14972498
+        wordmark.tintBottomLeft = 14972498
+        wordmark.tintBottomRight = 14972498
+        front.add(wordmark)
+
+        // wordmark_overlay
+        const wordmark_overlay = this.add.image(1194, 707, 'stampbook', 'wordmark')
+        wordmark_overlay.tintTopLeft = 14972498
+        wordmark_overlay.tintTopRight = 14972498
+        wordmark_overlay.tintBottomLeft = 14972498
+        wordmark_overlay.tintBottomRight = 14972498
+        front.add(wordmark_overlay)
+
         // pattern
         const pattern = this.add.sprite(740, 480, 'stampbook', 'pattern/1')
         pattern.alpha = 0.15
@@ -829,25 +846,28 @@ export default class Stampbook extends BaseScene {
 
         // stampInfo
         const stampInfo = this.add.container(-190, 259)
-        stampInfo.visible = false
 
         // stampInfoBg
-        const stampInfoBg = this.add.ninePatchContainer(6.518512446268176, -118.87806837021839, 300, 300, 'main', 'list/small')
+        const stampInfoBg = this.add.ninePatchContainer(7, -112, 300, 170, 'stampbook', 'hover')
+        stampInfoBg.marginLeft = 15
+        stampInfoBg.marginTop = 10
+        stampInfoBg.marginRight = 15
+        stampInfoBg.marginBottom = 25
         stampInfo.add(stampInfoBg)
 
         // stampInfoTitle
-        const stampInfoTitle = this.add.text(7, -175, '', {})
-        stampInfoTitle.setOrigin(0.5, 0.5)
-        stampInfoTitle.text = 'Full House'
-        stampInfoTitle.setStyle({align: 'center', color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        const stampInfoTitle = this.add.text(-143, -182, '', {})
+        stampInfoTitle.text = 'Aunt Arctic'
+        stampInfoTitle.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        stampInfoTitle.setPadding({left: 15, right: 15})
         stampInfo.add(stampInfoTitle)
 
         // stampInfoBody
-        const stampInfoBody = this.add.text(6.518512446268176, -93.87806837021839, '', {})
-        stampInfoBody.setOrigin(0.5, 0.5)
-        stampInfoBody.text = 'Get all ya mates together and play in a band innit'
-        stampInfoBody.setStyle({align: 'center', color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '26px'})
-        stampInfoBody.setWordWrapWidth(275)
+        const stampInfoBody = this.add.text(-143, -147, '', {})
+        stampInfoBody.text = 'Be in the same room as Aunt Arctic'
+        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '20px'})
+        stampInfoBody.setPadding({left: 15, right: 15})
+        stampInfoBody.setWordWrapWidth(270)
         stampInfo.add(stampInfoBody)
 
         // stampHovers
@@ -1331,6 +1351,8 @@ export default class Stampbook extends BaseScene {
         this.dividers = dividers
         this.front = front
         this.cover = cover
+        this.wordmark = wordmark
+        this.wordmark_overlay = wordmark_overlay
         this.pattern = pattern
         this.clasp_bg = clasp_bg
         this.clasp = clasp
@@ -1512,6 +1534,10 @@ export default class Stampbook extends BaseScene {
     front
     /** @type {Phaser.GameObjects.Sprite} */
     cover
+    /** @type {Phaser.GameObjects.Image} */
+    wordmark
+    /** @type {Phaser.GameObjects.Image} */
+    wordmark_overlay
     /** @type {Phaser.GameObjects.Sprite} */
     pattern
     /** @type {Phaser.GameObjects.Sprite} */
@@ -1638,6 +1664,17 @@ export default class Stampbook extends BaseScene {
         }
     }
 
+    get tintColors() {
+        return {
+            1: 0xe47652,
+            2: 0x888be8,
+            3: 0xeddbad,
+            4: 0xd0e9ef,
+            5: 0xe2bfe3,
+            6: 0xffffff,
+        }
+    }
+
     create() {
         this.interface.stampbook = this
         this.pinLoader = new PinLoader(this)
@@ -1703,6 +1740,10 @@ export default class Stampbook extends BaseScene {
     changeColor(id) {
         this.username.setStyle({fill: this.highlightColors[id]})
         this.total.setStyle({fill: this.highlightColors[id]})
+        this.wordmark.tint = this.tintColors[id]
+        this.wordmark.tintFill = true
+        this.wordmark_overlay.tint = this.tintColors[id]
+        this.pattern.tint = this.tintColors[id]
         this.colorId = id
         this.cover.setFrame('colour/' + id)
         this.colorthumb.setFrame('thumbs/color/' + id)
@@ -1796,20 +1837,23 @@ export default class Stampbook extends BaseScene {
 
     addPin(pin, xpos, ypos, visible) {
         this.pins[pin] = this.add.image(xpos, ypos, 'clothing/icon/' + pin)
+        this.airtower.sendXt('i#gi', `items%${pin}`)
         this.pins[pin].setInteractive({
             cursor: 'pointer',
         })
         this.pins[pin].on('pointerover', () => {
             this.stampInfo.visible = true
-            this.stampInfo.x = this.pins[pin].x
-            this.stampInfo.y = this.pins[pin].y
+            this.stampInfo.x = xpos
+            this.stampInfo.y = ypos
 
             this.stampInfoTitle.text = this.crumbs.items[pin].name
-            this.stampInfoBody.text = 'Released on: Never'
-            this.stampInfoBg.resize(300, this.stampInfoBody.height + 65)
-            if (this.stampInfoBody.height == 93) this.stampInfoTitle.y = -175
-            if (this.stampInfoBody.height == 62) this.stampInfoTitle.y = -162
-            if (this.stampInfoBody.height == 31) this.stampInfoTitle.y = -149
+            let releaseDate = 'Never'
+            if (this.crumbs.items[pin].releases && this.crumbs.items[pin].releases.length > 0) {
+                let rDate = new Date(parseInt(this.crumbs.items[pin].releases[0].from))
+                let month = this.crumbs.getString(`month${rDate.getMonth()}`)
+                releaseDate = `${month} ${rDate.getDate()}/${rDate.getFullYear()}`
+            }
+            this.stampInfoBody.text = `Released: ${releaseDate}.`
         })
         this.pins[pin].on('pointerout', () => {
             this.stampInfo.visible = false
@@ -1865,12 +1909,6 @@ export default class Stampbook extends BaseScene {
 
         this.stampInfoTitle.text = this.crumbs.stamps[this.stamps[index].id].name
         this.stampInfoBody.text = this.crumbs.stamps[this.stamps[index].id].description
-
-        if (this.stampInfoBody.height == 93) this.stampInfoTitle.y = -175
-        if (this.stampInfoBody.height == 62) this.stampInfoTitle.y = -162
-        if (this.stampInfoBody.height == 31) this.stampInfoTitle.y = -149
-
-        this.stampInfoBg.resize(300, this.stampInfoBody.height + 65)
     }
 
     onStampOut() {
@@ -1946,9 +1984,11 @@ export default class Stampbook extends BaseScene {
             this.pageicon.visible = false
         }
 
-        this.pagename.text = page.title.text
-        this.pagename.x = page.title.x
-        this.pagename.y = page.title.y
+        if (page.title) {
+            this.pagename.text = page.title.text
+            this.pagename.x = page.title.x
+            this.pagename.y = page.title.y
+        }
 
         if (page.background) {
             this.pagebg.visible = true
@@ -2161,6 +2201,7 @@ export default class Stampbook extends BaseScene {
 
         var createPin = (pinId, x, y, visible) => {
             const pin = this.add.image(x, y, 'clothing/icon/' + pinId)
+            this.airtower.sendXt('i#gi', pinId)
             pin.setInteractive({
                 cursor: 'pointer',
             })
@@ -2173,11 +2214,13 @@ export default class Stampbook extends BaseScene {
                 this.stampInfo.y = pin.y
 
                 this.stampInfoTitle.text = this.crumbs.items[pinId].name
-                this.stampInfoBody.text = 'Released on: Never'
-                this.stampInfoBg.resize(300, this.stampInfoBody.height + 65)
-                if (this.stampInfoBody.height == 93) this.stampInfoTitle.y = -175
-                if (this.stampInfoBody.height == 62) this.stampInfoTitle.y = -162
-                if (this.stampInfoBody.height == 31) this.stampInfoTitle.y = -149
+                let releaseDate = 'Never'
+                if (this.crumbs.items[pinId].releases && this.crumbs.items[pinId].releases.length > 0) {
+                    let rDate = new Date(parseInt(this.crumbs.items[pinId].releases[0].from))
+                    let month = this.crumbs.getString(`month${rDate.getMonth()}`)
+                    releaseDate = `${month} ${rDate.getDate()}/${rDate.getFullYear()}`
+                }
+                this.stampInfoBody.text = `Released: ${releaseDate}.`
             })
 
             pin.visible = visible

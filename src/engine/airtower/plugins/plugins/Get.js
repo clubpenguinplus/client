@@ -12,6 +12,8 @@ export default class Get extends Plugin {
             gsb: this.getStampbook,
             gm: this.getMascots,
             on: this.getOnline,
+            gii: this.getItemInfo,
+            gic: this.getCost,
         }
     }
 
@@ -77,5 +79,25 @@ export default class Get extends Plugin {
 
     getOnline(args) {
         this.interface.main.playerCard.buttons.isOnline(args[0])
+    }
+
+    getItemInfo(args) {
+        let item = this.crumbs[args[0]][args[1]]
+        item.cost = args[3]
+        item.available = args[4]
+        item.releases = JSON.parse(args[5])
+    }
+
+    getCost(args) {
+        for (let item of args[1].split('|')) {
+            let itemInfo = item.split(':')
+
+            if (!this.crumbs[args[0]][itemInfo[0]]) {
+                console.warn('Item not in crumbs: ' + itemInfo[0])
+                continue
+            }
+
+            this.crumbs[args[0]][itemInfo[0]].cost = itemInfo[1]
+        }
     }
 }
