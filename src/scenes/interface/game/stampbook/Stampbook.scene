@@ -1353,6 +1353,28 @@
                     "y": 480
                 },
                 {
+                    "type": "Sprite",
+                    "id": "a47175a9-1c7c-483b-8934-fad9002bd80e",
+                    "label": "pattern",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "pattern/1"
+                    },
+                    "x": 740,
+                    "y": 480,
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5,
+                    "tintTopLeft": "#b35e42",
+                    "tintTopRight": "#b35e42",
+                    "tintBottomLeft": "#b35e42",
+                    "tintBottomRight": "e47652"
+                },
+                {
                     "type": "Image",
                     "id": "2ee9142d-b296-45ec-aeb3-ff62e919664c",
                     "label": "wordmark",
@@ -1386,24 +1408,6 @@
                     "tintTopRight": "e47652",
                     "tintBottomLeft": "e47652",
                     "tintBottomRight": "e47652"
-                },
-                {
-                    "type": "Sprite",
-                    "id": "a47175a9-1c7c-483b-8934-fad9002bd80e",
-                    "label": "pattern",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "stampbook",
-                        "frame": "pattern/1"
-                    },
-                    "x": 740,
-                    "y": 480,
-                    "alpha": 0.15,
-                    "alphaTopLeft": 0.15,
-                    "alphaTopRight": 0.15,
-                    "alphaBottomLeft": 0.15,
-                    "alphaBottomRight": 0.15
                 },
                 {
                     "type": "Sprite",
@@ -1996,6 +2000,69 @@
                     },
                     "x": 1463,
                     "y": 899
+                },
+                {
+                    "type": "Image",
+                    "id": "f7ed1aa0-6c3c-432f-8ba8-bdf8ad899aeb",
+                    "label": "category_icon",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onEditorCategoriesOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onEditorCategoriesOut()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/9000"
+                    },
+                    "x": 77,
+                    "y": 83
+                },
+                {
+                    "type": "Image",
+                    "id": "6080e8b8-2283-49b4-991a-89f5c9cd8685",
+                    "label": "arrow_right",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "arrow"
+                    },
+                    "x": 1386,
+                    "y": 48
+                },
+                {
+                    "type": "Image",
+                    "id": "e6c2b7c0-f46e-4f93-9771-c44d6e1514b8",
+                    "label": "arrow_left",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "arrow"
+                    },
+                    "x": 190,
+                    "y": 48,
+                    "scaleX": -1
+                },
+                {
+                    "type": "Text",
+                    "id": "b00d03c3-cdd5-4df7-abca-fff3beff283d",
+                    "label": "category_title",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 82,
+                    "y": 21,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "All Stamps",
+                    "fixedWidth": 150,
+                    "fixedHeight": 25,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff"
                 }
             ]
         },
@@ -2013,8 +2080,8 @@
             "label": "stampInfo",
             "scope": "CLASS",
             "components": [],
-            "x": -190,
-            "y": 259,
+            "x": -262,
+            "y": 75,
             "list": [
                 {
                     "type": "NinePatchContainer",

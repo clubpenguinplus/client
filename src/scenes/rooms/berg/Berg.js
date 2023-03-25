@@ -66,7 +66,7 @@ export default class Berg extends RoomScene {
         if (!this.shell.client.stamps.includes(26)) {
             this.bergDrillInterval = setInterval(() => {
                 let drilling = 0
-                for (penguin in this.penguins) {
+                for (let penguin in this.penguins) {
                     if (penguin.specificFrame && penguin.specificFrame == 36) drilling++
                 }
                 if (drilling >= 30) {

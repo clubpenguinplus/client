@@ -21,7 +21,7 @@ export default class BookStamp extends BaseContainer {
     addStamp() {
         // shadow
         const shadow = this.scene2.add.image(4, 5, `stamps/${this.id}`)
-        shadow.alpha = 0.3
+        shadow.alpha = this.scene2.stampsEarned.includes(this.id) ? 0.2 : 0.1
         shadow.tintFill = true
         shadow.tintTopLeft = 0
         shadow.tintTopRight = 0
@@ -36,7 +36,7 @@ export default class BookStamp extends BaseContainer {
         if (!this.scene2.stampsEarned.includes(this.id)) {
             // locked
             const locked = this.scene2.add.image(0, 0, `stamps/${this.id}`)
-            locked.alpha = 0.5
+            locked.alpha = 0.7
             locked.tintFill = true
             this.add(locked)
 

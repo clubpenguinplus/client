@@ -621,6 +621,19 @@ export default class Stampbook extends BaseScene {
         const cover = this.add.sprite(743, 480, 'stampbook', 'colour/1')
         front.add(cover)
 
+        // pattern
+        const pattern = this.add.sprite(740, 480, 'stampbook', 'pattern/1')
+        pattern.alpha = 0.5
+        pattern.alphaTopLeft = 0.5
+        pattern.alphaTopRight = 0.5
+        pattern.alphaBottomLeft = 0.5
+        pattern.alphaBottomRight = 0.5
+        pattern.tintTopLeft = 11755074
+        pattern.tintTopRight = 11755074
+        pattern.tintBottomLeft = 11755074
+        pattern.tintBottomRight = 14972498
+        front.add(pattern)
+
         // wordmark
         const wordmark = this.add.image(1194, 707, 'stampbook', 'wordmark')
         wordmark.tintFill = true
@@ -637,15 +650,6 @@ export default class Stampbook extends BaseScene {
         wordmark_overlay.tintBottomLeft = 14972498
         wordmark_overlay.tintBottomRight = 14972498
         front.add(wordmark_overlay)
-
-        // pattern
-        const pattern = this.add.sprite(740, 480, 'stampbook', 'pattern/1')
-        pattern.alpha = 0.15
-        pattern.alphaTopLeft = 0.15
-        pattern.alphaTopRight = 0.15
-        pattern.alphaBottomLeft = 0.15
-        pattern.alphaBottomRight = 0.15
-        front.add(pattern)
 
         // clasp_bg
         const clasp_bg = this.add.sprite(1358, 480, 'stampbook', 'clasp')
@@ -841,11 +845,32 @@ export default class Stampbook extends BaseScene {
         const save = this.add.image(1463, 899, 'stampbook', 'save')
         editor.add(save)
 
+        // category_icon
+        const category_icon = this.add.image(77, 83, 'stampbook', 'categories/9000')
+        editor.add(category_icon)
+
+        // arrow_right
+        const arrow_right = this.add.image(1386, 48, 'stampbook', 'arrow')
+        editor.add(arrow_right)
+
+        // arrow_left
+        const arrow_left = this.add.image(190, 48, 'stampbook', 'arrow')
+        arrow_left.scaleX = -1
+        editor.add(arrow_left)
+
+        // category_title
+        const category_title = this.add.text(82, 21, '', {})
+        category_title.setOrigin(0.5, 0.5)
+        category_title.text = 'All Stamps'
+        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fixedHeight: 25, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        category_title.setPadding({left: 15, right: 15})
+        editor.add(category_title)
+
         // stampLayer
         const stampLayer = this.add.container(0, 0)
 
         // stampInfo
-        const stampInfo = this.add.container(-190, 259)
+        const stampInfo = this.add.container(-262, 75)
 
         // stampInfoBg
         const stampInfoBg = this.add.ninePatchContainer(7, -112, 300, 170, 'stampbook', 'hover')
@@ -1182,6 +1207,11 @@ export default class Stampbook extends BaseScene {
         const saveSimpleButton = new SimpleButton(save)
         saveSimpleButton.callback = () => this.saveStampbook()
 
+        // category_icon (components)
+        const category_iconSimpleButton = new SimpleButton(category_icon)
+        category_iconSimpleButton.hoverCallback = () => this.onEditorCategoriesOver()
+        category_iconSimpleButton.hoverOutCallback = () => this.onEditorCategoriesOut()
+
         // stampHover1 (components)
         const stampHover1SimpleButton = new SimpleButton(stampHover1)
         stampHover1SimpleButton.hoverCallback = () => this.onStampOver(0)
@@ -1351,9 +1381,9 @@ export default class Stampbook extends BaseScene {
         this.dividers = dividers
         this.front = front
         this.cover = cover
+        this.pattern = pattern
         this.wordmark = wordmark
         this.wordmark_overlay = wordmark_overlay
-        this.pattern = pattern
         this.clasp_bg = clasp_bg
         this.clasp = clasp
         this.total = total
@@ -1390,6 +1420,8 @@ export default class Stampbook extends BaseScene {
         this.thumbs_color_5 = thumbs_color_5
         this.thumbs_color_6 = thumbs_color_6
         this.save = save
+        this.category_icon = category_icon
+        this.category_title = category_title
         this.stampLayer = stampLayer
         this.stampInfo = stampInfo
         this.stampInfoBg = stampInfoBg
@@ -1534,12 +1566,12 @@ export default class Stampbook extends BaseScene {
     front
     /** @type {Phaser.GameObjects.Sprite} */
     cover
+    /** @type {Phaser.GameObjects.Sprite} */
+    pattern
     /** @type {Phaser.GameObjects.Image} */
     wordmark
     /** @type {Phaser.GameObjects.Image} */
     wordmark_overlay
-    /** @type {Phaser.GameObjects.Sprite} */
-    pattern
     /** @type {Phaser.GameObjects.Sprite} */
     clasp_bg
     /** @type {Phaser.GameObjects.Sprite} */
@@ -1612,6 +1644,10 @@ export default class Stampbook extends BaseScene {
     thumbs_color_6
     /** @type {Phaser.GameObjects.Image} */
     save
+    /** @type {Phaser.GameObjects.Image} */
+    category_icon
+    /** @type {Phaser.GameObjects.Text} */
+    category_title
     /** @type {Phaser.GameObjects.Container} */
     stampLayer
     /** @type {Phaser.GameObjects.Container} */
@@ -1666,11 +1702,11 @@ export default class Stampbook extends BaseScene {
 
     get tintColors() {
         return {
-            1: 0xe47652,
+            1: 0xb35e42,
             2: 0x888be8,
             3: 0xeddbad,
             4: 0xd0e9ef,
-            5: 0xe2bfe3,
+            5: 0xea5fd2,
             6: 0xffffff,
         }
     }
@@ -1858,7 +1894,8 @@ export default class Stampbook extends BaseScene {
         this.pins[pin].on('pointerout', () => {
             this.stampInfo.visible = false
         })
-        this.pins[pin].visible = visible
+        let page = this.crumbs.stampbook[this.crumbs.stampbook.enabledPages[this.pageIndex]]
+        this.pins[pin].visible = visible && page.id == 'pins'
         this.stampLayer.add(this.pins[pin])
     }
 
@@ -2015,7 +2052,7 @@ export default class Stampbook extends BaseScene {
             this.up_arrow.x = 882
             this.up_btn.x = 882
 
-            let text = this.getSingular(page.title.text)
+            let text = page.title ? this.getSingular(page.title.text) : ''
             this.stampcategory.text = text + ' Stamps:'
             if (page.group) {
                 this.stampnum.text = `${this.getCategoryStamps(page.group)[1].toString()}/${this.getCategoryStamps(page.group)[0].toString()}`
@@ -2110,7 +2147,7 @@ export default class Stampbook extends BaseScene {
             this.up_btn.x = 1200
         }
 
-        this.pagename.setStyle({fontSize: '70px'})
+        this.pagename.setStyle({fontSize: '50px'})
         while (this.pagename.width > 500) {
             let fontSize = this.pagename.style.fontSize.replace('px', '')
             this.pagename.setStyle({fontSize: `${parseInt(fontSize) - 1}px`})
@@ -2311,6 +2348,193 @@ export default class Stampbook extends BaseScene {
             return text.slice(0, -1)
         }
         return text
+    }
+
+    onEditorCategoriesOver() {
+        if (!this.categorySelector) {
+            this.categorySelector = this.generateCategorySelector()
+        }
+        if (this.categorySelector.currentChild) {
+            this.categorySelector.currentChild.visible = false
+            this.categorySelector.currentChild = null
+        }
+        this.categorySelector.visible = true
+    }
+
+    onEditorCategoriesOut() {
+        this.input.addListener('pointermove', this.onEditorCategoriesMove, this)
+    }
+
+    onEditorCategoriesMove(pointer) {
+        if (pointer.x < 50 || pointer.x > this.categorySelector.maxX + 50 || pointer.y < 50 || pointer.y > this.categorySelector.maxY + 50) {
+            this.categorySelector.visible = false
+            this.input.removeListener('pointermove', this.onEditorCategoriesMove, this)
+        }
+    }
+
+    generateCategorySelector() {
+        const selector = this.add.container(0, 0)
+        selector.visible = false
+
+        const pageExists = (page, name) => {
+            if (page.text == name) return page
+            for (let child of page.children) {
+                let found = pageExists(child, name)
+                if (found) return true
+            }
+            return false
+        }
+
+        const createPage = (page) => {
+            if (page == 'contents' || page == 'front') return
+            page = this.crumbs.stampbook[page]
+            for (let p in pages) {
+                if (pages[p] && pageExists(pages[p], page.title.text)) return
+            }
+
+            let newPage = {
+                text: page.title.text,
+                icon: page.icon.frame,
+                stamps: [],
+                children: [],
+            }
+
+            if (page.group) {
+                for (let stamp of this.shell.client.stamps) {
+                    if (this.crumbs.stamps[stamp].groupid == page.group && !this.crumbs.stamps[stamp].disabled) {
+                        newPage.stamps.push(stamp)
+                    }
+                }
+            }
+
+            if (page.index) {
+                for (let child in page.index) {
+                    if (!this.crumbs.stampbook.enabledPages.includes(child)) continue
+                    let childPage = createPage(child)
+                    newPage.stamps = newPage.stamps.concat(childPage.stamps)
+                    newPage.children.push(childPage)
+                }
+            }
+
+            return newPage
+        }
+
+        let pages = []
+
+        for (let page of this.crumbs.stampbook.enabledPages) {
+            let created = createPage(page)
+            if (created) pages.push(created)
+        }
+
+        pages.push({
+            text: 'All Stamps',
+            icon: 'categories/9000',
+            stamps: this.shell.client.stamps,
+            children: [],
+        })
+
+        let graphics = this.add.graphics()
+        graphics.fillStyle(0xffffff, 0.8)
+        let mainBackground = graphics.fillRoundedRect(100, 100, 250, pages.length * 70, 20)
+        selector.add(mainBackground)
+        selector.maxY = 100 + pages.length * 70
+        selector.maxX = 350
+
+        for (let page of pages) {
+            let background = this.add.rectangle(105, 105 + pages.indexOf(page) * 70, 240, 60, 0xffffff, 0)
+            background.setOrigin(0, 0)
+            selector.add(background)
+
+            let icon = this.add.image(105, 115 + pages.indexOf(page) * 70, 'stampbook', page.icon)
+            icon.setScale(0.5)
+            icon.setOrigin(0, 0)
+            selector.add(icon)
+            let text = this.add.text(175, 125 + pages.indexOf(page) * 70, page.text, {fontFamily: 'Burbank Small', fontSize: '24px', color: '#5b5b5bff'})
+            selector.add(text)
+
+            let children = this.add.container(-15, -75)
+            children.maxY = 0
+            children.maxX = 0
+            selector.add(children)
+
+            if (page.children.length > 0) {
+                let arrow = this.add.image(330, 135 + pages.indexOf(page) * 70, 'stampbook', 'arrow')
+                arrow.setScale(0.5)
+                arrow.setOrigin(0.5, 0.5)
+                selector.add(arrow)
+
+                let subBackground = this.add.graphics()
+                subBackground.fillStyle(0xffffff, 0.8)
+                let subBackgroundRect = subBackground.fillRoundedRect(370, 100 + pages.indexOf(page) * 70 + 70, 580, Math.ceil(page.children.length / 2) * 70, 20)
+                children.add(subBackgroundRect)
+
+                for (let i = 0; i < page.children.length; i++) {
+                    let child = page.children[i]
+                    let x = i % 2 === 0 ? 375 : 695
+                    let y = 105 + pages.indexOf(page) * 70 + 70 + Math.floor(i / 2) * 70
+
+                    let childBackground = this.add.rectangle(x, y, 280, 60, 0xffffff, 0)
+                    childBackground.setOrigin(0, 0)
+                    children.add(childBackground)
+
+                    let childIcon = this.add.image(x, y + 10, 'stampbook', child.icon)
+                    childIcon.setScale(0.5)
+                    childIcon.setOrigin(0, 0)
+                    children.add(childIcon)
+
+                    let childText = this.add.text(x + 60, y + 20, child.text, {fontFamily: 'Burbank Small', fontSize: '21px', color: '#5b5b5bff'})
+                    children.add(childText)
+
+                    children.maxY = y + 70 > children.maxY ? y + 70 : children.maxY
+                    children.maxX = x + 320 > children.maxX ? x + 320 : children.maxX
+
+                    childBackground.setInteractive()
+                    childBackground.on('pointerover', () => {
+                        childText.setStyle({color: '#3c3c3cff'})
+                    })
+                    childBackground.on('pointerout', () => {
+                        childText.setStyle({color: '#5b5b5bff'})
+                    })
+                    childBackground.on('pointerdown', () => {
+                        this.showEditorStamps(child.text, child.icon, child.stamps)
+                    })
+                }
+                children.visible = false
+            }
+
+            background.setInteractive()
+            background.on('pointerover', () => {
+                text.setStyle({color: '#3c3c3cff'})
+                if (selector.currentChild) {
+                    selector.currentChild.visible = false
+                    selector.currentChild = null
+                    selector.maxX = 350
+                    selector.maxY = 100 + pages.length * 70
+                }
+                if (children) {
+                    children.visible = true
+                    selector.currentChild = children
+                    selector.maxX = selector.maxX < children.maxX ? children.maxX : selector.maxX
+                    selector.maxY = selector.maxY < children.maxY ? children.maxY : selector.maxY
+                }
+            })
+            background.on('pointerout', () => {
+                text.setStyle({color: '#5b5b5bff'})
+            })
+            background.on('pointerdown', () => {
+                this.showEditorStamps(page.text, page.icon, page.stamps)
+            })
+        }
+
+        return selector
+    }
+
+    showEditorStamps(name, icon, stamps) {
+        this.categorySelector.visible = false
+        this.input.removeListener('pointermove', this.onEditorCategoriesMove, this)
+        this.category_title.text = name
+        this.interface.scaleToFixedSize(this.category_title)
+        this.category_icon.setTexture('stampbook', icon)
     }
 
     /* END-USER-CODE */
