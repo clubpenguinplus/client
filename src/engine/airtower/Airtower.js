@@ -99,10 +99,9 @@ export default class Airtower {
 
     connect(world, onConnect, onDisconnect) {
         this.disconnect()
+        this.reconTimeout = null
         if (!onConnect) onConnect = () => {}
         if (!onDisconnect) onDisconnect = () => {}
-
-        console.log(onConnect)
 
         let config = window.location.hostname == 'localhost' ? this.crumbs.worlds.sandbox[world] : this.crumbs.worlds[world]
 
@@ -115,7 +114,6 @@ export default class Airtower {
     }
 
     disconnect() {
-        this.doNotReconnect = true
         if (this.client) {
             this.client.disconnect()
         }
@@ -155,24 +153,17 @@ export default class Airtower {
         if (this.reconTimeout || this.doNotReconnect) return
         this.disconnect()
 
-        setTimeout(() => this.checkConnection(), 1000)
+        this.reconTimeout = setTimeout(() => this.checkConnection(), 1000)
         this.runs = 0
     }
 
     checkConnection() {
-        if (!this.client.connected) {
-            this.checkConnection2()
-            this.allowSwitchRooms = 'no'
-        }
-    }
-
-    checkConnection2() {
         if (!this.creds) this.runs = 10
         if (!this.client.connected && this.runs < 10) {
             this.runs = this.runs + 1
             this.connectGame(this.creds.world, this.creds.username, this.creds.key, this.creds.mode)
             if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError('Connection was lost.\nAttempting to recconnect you.', 'Reload', () => window.location.reload())
-            this.reconTimeout = setTimeout(() => this.checkConnection2(), 3000)
+            this.reconTimeout = setTimeout(() => this.checkConnection(), 3000)
         } else if (!this.client.connected) {
             if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError('Connection was lost.\nPlease click to reload.', 'Reload', () => window.location.reload())
             if (!document.getElementsByTagName('ruffle-player')[0]) return

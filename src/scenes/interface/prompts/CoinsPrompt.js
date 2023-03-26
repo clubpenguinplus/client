@@ -4,6 +4,7 @@ import {Interactive, NineSlice, Button, SimpleButton} from '@components/componen
 
 import SingleButton from './buttons/SingleButton'
 import PromptStamp from '@scenes/interface/prompts/PromptStamp'
+import StampLoader from '@engine/loaders/StampLoader'
 
 /* START OF COMPILED CODE */
 
@@ -245,6 +246,7 @@ export default class CoinsPrompt extends BaseContainer {
 
         /* START-USER-CTR-CODE */
         this.scene = scene
+        this.scene.stampLoader = new StampLoader(this.scene)
         /* END-USER-CTR-CODE */
     }
 

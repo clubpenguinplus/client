@@ -36,12 +36,15 @@ export default class MiniGame extends Plugin {
 
     endMinigame(args) {
         if (args[0] == 'NaN') args[0] = 0
+        if (args[2] == 'NaN') args[2] = 0
         this.client.coins = args[0]
-        let prompt = this.shell.game.scene.getScene('InterfaceController').prompt
-        if (args[2] == 'NaN') {
-            args[2] = 0
-        }
-        prompt.showCoins(args[1], args[2])
+        let prompt = this.interface.prompt
+        setTimeout(() => {
+            if (!this.shell.room.isReady) {
+                this.shell.room.events.once('create', () => this.endMinigame(args), 100)
+            }
+            prompt.showCoins(args[1], args[2])
+        }, 500)
     }
 
     initFour(args) {

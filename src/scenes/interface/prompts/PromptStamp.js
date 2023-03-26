@@ -1,5 +1,4 @@
 import BaseContainer from '@scenes/base/BaseContainer'
-import StampLoader from '@engine/loaders/StampLoader'
 
 export default class PromptStamp extends BaseContainer {
     constructor(scene, x, y, id) {
@@ -7,10 +6,11 @@ export default class PromptStamp extends BaseContainer {
         this.id = id
         this.scene = scene
 
-        this.loader = new StampLoader(this.scene, this)
-
         if (!this.scene.textures.exists(`stamps/${id}`)) {
-            this.loader.loadStamp(id)
+            this.scene.stampLoader.loadStamp(id)
+            this.shell.events.once(`textureLoaded:stamps/${id}`, () => {
+                this.addStamp()
+            })
         } else {
             this.addStamp()
         }
@@ -18,8 +18,8 @@ export default class PromptStamp extends BaseContainer {
 
     addStamp() {
         // shadow
-        const shadow = this.scene.add.image(4, 5, `stamps/${this.id}`)
-        shadow.alpha = 0.3
+        const shadow = this.scene.add.image(2, 2.5, `stamps/${this.id}`)
+        shadow.alpha = this.scene.shell.client.stamps.includes(parseInt(this.id)) ? 0.2 : 0.1
         shadow.tintFill = true
         shadow.tintTopLeft = 0
         shadow.tintTopRight = 0
@@ -38,7 +38,7 @@ export default class PromptStamp extends BaseContainer {
         if (!this.scene.shell.client.stamps.includes(parseInt(this.id))) {
             // locked
             const locked = this.scene.add.image(0, 0, `stamps/${this.id}`)
-            locked.alpha = 0.5
+            locked.alpha = 0.7
             locked.tintFill = true
             locked.scaleX = 0.5
             locked.scaleY = 0.5

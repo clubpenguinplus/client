@@ -12,7 +12,7 @@ export default class BookStamp extends BaseContainer {
             this.shell.events.once(`textureLoaded:stamps/${id}`, () => {
                 this.addStamp()
             })
-            this.scene.loader.loadStamp(id)
+            this.scene.stampLoader.loadStamp(id)
         } else {
             this.addStamp()
         }

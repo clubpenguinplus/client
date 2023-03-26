@@ -175,7 +175,96 @@ export default class RuffleManager {
 
         this.shell.client.inMinigame = false
 
+        let category = this.getCategory(game.toLowerCase())
+        let categoryStamps = this.getCategoryStamps(category)
+        console.log(category, categoryStamps)
+
+        if (categoryStamps[0].length > 1 && categoryStamps[1] == categoryStamps[0].length) {
+            coins = coins * 2
+        }
+
         this.shell.airtower.sendXt('mi#eg', `${coins}%${game}`)
+    }
+
+    getCategory(game) {
+        let category
+
+        switch (game) {
+            case 'aquagrabber':
+                category = 13
+                break
+            case 'astrobarrier':
+                category = 14
+                break
+            case 'card':
+                category = 38
+                break
+            case 'cjfire':
+                category = 32
+                break
+            case 'cjsnow':
+                category = 60
+                break
+            case 'cjwater':
+                category = 34
+                break
+            case 'cartsurfer':
+                category = 28
+                break
+            case 'catchinwaves':
+                category = 15
+                break
+            case 'icefishing':
+                category = 52
+                break
+            case 'jetpackadventure':
+                category = 11
+                break
+            case 'pizzatron':
+                category = 54
+                break
+            case 'pufflelaunch':
+                category = 48
+                break
+            case 'pufflescape':
+                category = 57
+                break
+            case 'pufflerescue':
+                category = 19
+                break
+            case 'smoothie':
+                category = 58
+                break
+            case 'sysdef':
+                category = 46
+                break
+            case 'thinice':
+                category = 16
+                break
+            case 'treasurehunt':
+                category = 56
+                break
+            default:
+                category = 0
+        }
+        return category
+    }
+
+    getCategoryStamps(category) {
+        let categoryStamps = []
+        let ownedCategoryStamps = []
+        for (var stamp in this.crumbs.stamps) {
+            if (this.crumbs.stamps[stamp].groupid == category && !this.crumbs.stamps[stamp].disabled) {
+                categoryStamps.push(stamp)
+                for (var i = 0; i < this.shell.client.stamps.length; i++) {
+                    if (this.shell.client.stamps[i] == parseInt(stamp)) {
+                        ownedCategoryStamps.push(stamp)
+                        break
+                    }
+                }
+            }
+        }
+        return [categoryStamps, ownedCategoryStamps.length]
     }
 
     killAS3Minigame(roomid) {
