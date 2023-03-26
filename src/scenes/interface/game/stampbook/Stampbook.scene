@@ -2028,7 +2028,7 @@
                         "key": "stampbook",
                         "frame": "arrow"
                     },
-                    "x": 1386,
+                    "x": 1383,
                     "y": 48
                 },
                 {
@@ -2040,7 +2040,7 @@
                         "key": "stampbook",
                         "frame": "arrow"
                     },
-                    "x": 190,
+                    "x": 188,
                     "y": 48,
                     "scaleX": -1
                 },
@@ -2064,6 +2064,32 @@
                     "fontSize": "20px",
                     "fontStyle": "bold",
                     "color": "#ffffffff"
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "5c05a36f-208b-475a-9e3c-a7d9179efcb8",
+                    "label": "rectangle_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.nextEditorStampPage()",
+                    "x": 1383,
+                    "y": 47,
+                    "width": 30,
+                    "height": 100
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c70be77c-e55e-481d-b727-0721226e04e2",
+                    "label": "rectangle",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.prevEditorStampPage()",
+                    "x": 186,
+                    "y": 45,
+                    "width": 30,
+                    "height": 100
                 }
             ]
         },

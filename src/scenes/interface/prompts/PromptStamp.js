@@ -1,10 +1,11 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
 export default class PromptStamp extends BaseContainer {
-    constructor(scene, x, y, id) {
-        super(scene, x ?? 100, y ?? 100)
+    constructor(prompt, x, y, id) {
+        super(prompt.scene, x ?? 100, y ?? 100)
         this.id = id
-        this.scene = scene
+        this.prompt = prompt
+        this.scene = prompt.scene
 
         if (!this.scene.textures.exists(`stamps/${id}`)) {
             this.scene.stampLoader.loadStamp(id)
@@ -49,5 +50,13 @@ export default class PromptStamp extends BaseContainer {
 
         this.shadow = shadow
         this.stamp = stamp
+
+        this.stamp.setInteractive()
+        this.stamp.on('pointerover', () => {
+            this.prompt.onStampOver(this.id, this.x, this.y)
+        })
+        this.stamp.on('pointerout', () => {
+            this.prompt.onStampOut()
+        })
     }
 }

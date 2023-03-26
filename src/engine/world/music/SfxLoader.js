@@ -10,8 +10,6 @@ export default class SfxLoader extends Phaser.Loader.LoaderPlugin {
         this.keyPrefix = 'sfx/'
 
         this.loading = []
-
-        this.attachErrorListener()
     }
 
     get crumbs() {

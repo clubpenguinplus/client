@@ -33,12 +33,6 @@ export default class BaseLoader extends Phaser.Loader.LoaderPlugin {
         return parseInt(last)
     }
 
-    attachErrorListener() {
-        this.on('loaderror', this.onLoadError, this)
-    }
-
-    onLoadError(file) {}
-
     checkComplete(type, key, callback) {
         if (this.textureExists(key)) {
             callback()

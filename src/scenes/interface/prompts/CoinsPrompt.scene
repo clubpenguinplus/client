@@ -19,8 +19,7 @@
             "label": "container_1",
             "components": [],
             "x": 760,
-            "y": 470,
-            "visible": false,
+            "y": 480,
             "list": [
                 {
                     "type": "Rectangle",
@@ -37,7 +36,7 @@
                     "height": 960
                 },
                 {
-                    "type": "Image",
+                    "type": "NinePatchContainer",
                     "id": "b8ea7578-133a-41f6-885a-8fdee40ea010",
                     "label": "bg",
                     "scope": "CLASS",
@@ -46,7 +45,13 @@
                         "key": "endscreens",
                         "frame": "bg"
                     },
-                    "y": -40
+                    "y": -40,
+                    "width": 900,
+                    "height": 700,
+                    "marginLeft": 40,
+                    "marginRight": 40,
+                    "marginTop": 300,
+                    "marginBottom": 350
                 },
                 {
                     "type": "Image",
@@ -58,7 +63,7 @@
                         "key": "endscreens",
                         "frame": "icons/aquagrabber"
                     },
-                    "y": -336
+                    "y": -265
                 },
                 {
                     "type": "Image",
@@ -74,7 +79,7 @@
                         "key": "endscreens",
                         "frame": "close_btn"
                     },
-                    "y": 283
+                    "y": 220
                 },
                 {
                     "type": "Text",
@@ -82,7 +87,7 @@
                     "label": "totalCoins",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -160,
+                    "y": -86,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Your total coins: 8888888",
@@ -98,7 +103,7 @@
                     "label": "coinsEarned",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -195,
+                    "y": -121,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Coins Earned: 88888",
@@ -120,7 +125,7 @@
                         "frame": "coins"
                     },
                     "x": 320,
-                    "y": -185
+                    "y": -111
                 },
                 {
                     "type": "Image",
@@ -133,7 +138,7 @@
                         "frame": "coins"
                     },
                     "x": -320,
-                    "y": -185,
+                    "y": -111,
                     "scaleX": -1
                 },
                 {
@@ -142,7 +147,7 @@
                     "label": "gameName",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -290,
+                    "y": -201,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Aqua Grabber",
@@ -159,7 +164,7 @@
                     "label": "useCoins",
                     "scope": "CLASS",
                     "components": [],
-                    "y": 76,
+                    "y": 2,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Use your coins to:",
@@ -176,7 +181,7 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": -270,
-                    "y": 216,
+                    "y": 146,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Buy new clothing",
@@ -195,7 +200,7 @@
                     "label": "adoptPet",
                     "scope": "CLASS",
                     "components": [],
-                    "y": 216,
+                    "y": 146,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Adopt a pet",
@@ -215,7 +220,7 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": 270,
-                    "y": 216,
+                    "y": 146,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Decorate your igloo",
@@ -234,7 +239,7 @@
                     "label": "done",
                     "scope": "CLASS",
                     "components": [],
-                    "y": 283,
+                    "y": 220,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Done",
@@ -255,7 +260,8 @@
                         "key": "endscreens",
                         "frame": "divider"
                     },
-                    "y": -95
+                    "y": -95,
+                    "visible": false
                 },
                 {
                     "type": "Image",
@@ -268,7 +274,8 @@
                         "frame": "stamps"
                     },
                     "x": -33,
-                    "y": -95
+                    "y": -95,
+                    "visible": false
                 },
                 {
                     "type": "Text",
@@ -280,6 +287,7 @@
                     "y": -95,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "22/22",
                     "fontFamily": "Burbank Small",
                     "fontSize": "20px",
@@ -295,6 +303,7 @@
                     "components": [],
                     "x": -320,
                     "y": -180,
+                    "visible": false,
                     "list": [
                         {
                             "type": "Text",
@@ -383,6 +392,70 @@
                     "y1": 0,
                     "y2": 100,
                     "y3": 0
+                },
+                {
+                    "type": "Container",
+                    "id": "b07f1881-6f87-4bd1-84c8-e81c0c49a09e",
+                    "label": "stampInfo",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -892.9088989293418,
+                    "y": -525.656192362609,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "fdb82f24-21d8-4005-ba53-71b12c8420da",
+                            "label": "stampInfoBg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "hover"
+                            },
+                            "x": 2.908898929341774,
+                            "y": -82.343807637391,
+                            "width": 250,
+                            "height": 140,
+                            "marginLeft": 15,
+                            "marginRight": 15,
+                            "marginTop": 10,
+                            "marginBottom": 25
+                        },
+                        {
+                            "type": "Text",
+                            "id": "5caccf78-150c-41b8-ab34-adef2198e9c8",
+                            "label": "stampInfoTitle",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -122.09110107065823,
+                            "y": -141.343807637391,
+                            "text": "Aunt Arctic",
+                            "fixedWidth": 250,
+                            "paddingLeft": 15,
+                            "paddingRight": 15,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "20px",
+                            "fontStyle": "bold",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d5c11511-57b6-4e26-bfc7-9f7b788cad3e",
+                            "label": "stampInfoBody",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -122.09110107065823,
+                            "y": -106.343807637391,
+                            "text": "Be in the same room as Aunt Arctic",
+                            "fixedWidth": 250,
+                            "paddingLeft": 15,
+                            "paddingRight": 15,
+                            "fontFamily": "Burbank Small",
+                            "color": "#606060ff",
+                            "wordWrapWidth": 210
+                        }
+                    ]
                 }
             ]
         }

@@ -10,11 +10,11 @@ import StampLoader from '@engine/loaders/StampLoader'
 
 export default class CoinsPrompt extends BaseContainer {
     constructor(scene, x, y) {
-        super(scene, x ?? 760, y ?? 470)
+        super(scene, x ?? 760, y ?? 480)
 
         /** @type {Phaser.GameObjects.Rectangle} */
         this.block
-        /** @type {Phaser.GameObjects.Image} */
+        /** @type {NinePatchContainer} */
         this.bg
         /** @type {Phaser.GameObjects.Image} */
         this.icon
@@ -58,8 +58,14 @@ export default class CoinsPrompt extends BaseContainer {
         this.nextPageBtn
         /** @type {Phaser.GameObjects.Triangle} */
         this.prevPageBtn
-
-        this.visible = false
+        /** @type {Phaser.GameObjects.Container} */
+        this.stampInfo
+        /** @type {NinePatchContainer} */
+        this.stampInfoBg
+        /** @type {Phaser.GameObjects.Text} */
+        this.stampInfoTitle
+        /** @type {Phaser.GameObjects.Text} */
+        this.stampInfoBody
 
         // block
         const block = scene.add.rectangle(0, 0, 1520, 960)
@@ -69,77 +75,81 @@ export default class CoinsPrompt extends BaseContainer {
         this.add(block)
 
         // bg
-        const bg = scene.add.image(0, -40, 'endscreens', 'bg')
+        const bg = scene.add.ninePatchContainer(0, -40, 900, 700, 'endscreens', 'bg')
+        bg.marginLeft = 40
+        bg.marginTop = 300
+        bg.marginRight = 40
+        bg.marginBottom = 350
         this.add(bg)
 
         // icon
-        const icon = scene.add.image(0, -336, 'endscreens', 'icons/aquagrabber')
+        const icon = scene.add.image(0, -265, 'endscreens', 'icons/aquagrabber')
         this.add(icon)
 
         // doneBtn
-        const doneBtn = scene.add.image(0, 283, 'endscreens', 'close_btn')
+        const doneBtn = scene.add.image(0, 220, 'endscreens', 'close_btn')
         this.add(doneBtn)
 
         // totalCoins
-        const totalCoins = scene.add.text(0, -160, '', {})
+        const totalCoins = scene.add.text(0, -86, '', {})
         totalCoins.setOrigin(0.5, 0.5)
         totalCoins.text = 'Your total coins: 8888888'
         totalCoins.setStyle({color: '#005cc6ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(totalCoins)
 
         // coinsEarned
-        const coinsEarned = scene.add.text(0, -195, '', {})
+        const coinsEarned = scene.add.text(0, -121, '', {})
         coinsEarned.setOrigin(0.5, 0.5)
         coinsEarned.text = 'Coins Earned: 88888'
         coinsEarned.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
         this.add(coinsEarned)
 
         // coins_right
-        const coins_right = scene.add.image(320, -185, 'endscreens', 'coins')
+        const coins_right = scene.add.image(320, -111, 'endscreens', 'coins')
         this.add(coins_right)
 
         // coins_left
-        const coins_left = scene.add.image(-320, -185, 'endscreens', 'coins')
+        const coins_left = scene.add.image(-320, -111, 'endscreens', 'coins')
         coins_left.scaleX = -1
         this.add(coins_left)
 
         // gameName
-        const gameName = scene.add.text(0, -290, '', {})
+        const gameName = scene.add.text(0, -201, '', {})
         gameName.setOrigin(0.5, 0.5)
         gameName.text = 'Aqua Grabber'
         gameName.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '50px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 10})
         this.add(gameName)
 
         // useCoins
-        const useCoins = scene.add.text(0, 76, '', {})
+        const useCoins = scene.add.text(0, 2, '', {})
         useCoins.setOrigin(0.5, 0.5)
         useCoins.text = 'Use your coins to:'
         useCoins.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(useCoins)
 
         // buyClothes
-        const buyClothes = scene.add.text(-270, 216, '', {})
+        const buyClothes = scene.add.text(-270, 146, '', {})
         buyClothes.setOrigin(0.5, 0.5)
         buyClothes.text = 'Buy new clothing'
         buyClothes.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(buyClothes)
 
         // adoptPet
-        const adoptPet = scene.add.text(0, 216, '', {})
+        const adoptPet = scene.add.text(0, 146, '', {})
         adoptPet.setOrigin(0.5, 0.5)
         adoptPet.text = 'Adopt a pet'
         adoptPet.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(adoptPet)
 
         // decorateIgloo
-        const decorateIgloo = scene.add.text(270, 216, '', {})
+        const decorateIgloo = scene.add.text(270, 146, '', {})
         decorateIgloo.setOrigin(0.5, 0.5)
         decorateIgloo.text = 'Decorate your igloo'
         decorateIgloo.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(decorateIgloo)
 
         // done
-        const done = scene.add.text(0, 283, '', {})
+        const done = scene.add.text(0, 220, '', {})
         done.setOrigin(0.5, 0.5)
         done.text = 'Done'
         done.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
@@ -147,21 +157,25 @@ export default class CoinsPrompt extends BaseContainer {
 
         // divider
         const divider = scene.add.image(0, -95, 'endscreens', 'divider')
+        divider.visible = false
         this.add(divider)
 
         // stampIcon
         const stampIcon = scene.add.image(-33, -95, 'endscreens', 'stamps')
+        stampIcon.visible = false
         this.add(stampIcon)
 
         // stampNumber
         const stampNumber = scene.add.text(12, -95, '', {})
         stampNumber.setOrigin(0.5, 0.5)
+        stampNumber.visible = false
         stampNumber.text = '22/22'
         stampNumber.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(stampNumber)
 
         // bonus
         const bonus = scene.add.container(-320, -180)
+        bonus.visible = false
         this.add(bonus)
 
         // bonusLeft
@@ -201,6 +215,34 @@ export default class CoinsPrompt extends BaseContainer {
         prevPageBtn.visible = false
         prevPageBtn.isFilled = true
         this.add(prevPageBtn)
+
+        // stampInfo
+        const stampInfo = scene.add.container(-892.9088989293418, -525.656192362609)
+        stampInfo.visible = false
+        this.add(stampInfo)
+
+        // stampInfoBg
+        const stampInfoBg = scene.add.ninePatchContainer(2.908898929341774, -82.343807637391, 250, 140, 'endscreens', 'hover')
+        stampInfoBg.marginLeft = 15
+        stampInfoBg.marginTop = 10
+        stampInfoBg.marginRight = 15
+        stampInfoBg.marginBottom = 25
+        stampInfo.add(stampInfoBg)
+
+        // stampInfoTitle
+        const stampInfoTitle = scene.add.text(-122.09110107065823, -141.343807637391, '', {})
+        stampInfoTitle.text = 'Aunt Arctic'
+        stampInfoTitle.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        stampInfoTitle.setPadding({left: 15, right: 15})
+        stampInfo.add(stampInfoTitle)
+
+        // stampInfoBody
+        const stampInfoBody = scene.add.text(-122.09110107065823, -106.343807637391, '', {})
+        stampInfoBody.text = 'Be in the same room as Aunt Arctic'
+        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 250, fontFamily: 'Burbank Small'})
+        stampInfoBody.setPadding({left: 15, right: 15})
+        stampInfoBody.setWordWrapWidth(210)
+        stampInfo.add(stampInfoBody)
 
         // block (components)
         new Interactive(block)
@@ -243,6 +285,10 @@ export default class CoinsPrompt extends BaseContainer {
         this.stampLayer = stampLayer
         this.nextPageBtn = nextPageBtn
         this.prevPageBtn = prevPageBtn
+        this.stampInfo = stampInfo
+        this.stampInfoBg = stampInfoBg
+        this.stampInfoTitle = stampInfoTitle
+        this.stampInfoBody = stampInfoBody
 
         /* START-USER-CTR-CODE */
         this.scene = scene
@@ -339,11 +385,41 @@ export default class CoinsPrompt extends BaseContainer {
             this.stampIcon.visible = false
             this.divider.visible = false
             this.bonus.visible = false
+
+            this.done.y = 220
+            this.decorateIgloo.y = 146
+            this.adoptPet.y = 146
+            this.buyClothes.y = 146
+            this.useCoins.y = 2
+            this.gameName.y = -201
+            this.coins_left.y = -111
+            this.coins_right.y = -111
+            this.coinsEarned.y = -121
+            this.totalCoins.y = -86
+            this.doneBtn.y = 220
+            this.icon.y = -265
+
+            this.bg.resize(900, 700)
             return
         } else {
             this.stampNumber.visible = true
             this.stampIcon.visible = true
             this.divider.visible = true
+
+            this.done.y = 283
+            this.decorateIgloo.y = 216
+            this.adoptPet.y = 216
+            this.buyClothes.y = 216
+            this.useCoins.y = 76
+            this.gameName.y = -290
+            this.coins_left.y = -185
+            this.coins_right.y = -185
+            this.coinsEarned.y = -195
+            this.totalCoins.y = -160
+            this.doneBtn.y = 283
+            this.icon.y = -336
+
+            this.bg.resize(900, 850)
         }
 
         let categoryStamps = this.getCategoryStamps(category)
@@ -383,7 +459,7 @@ export default class CoinsPrompt extends BaseContainer {
             while (pos > 8) {
                 pos -= 9
             }
-            let stamp = new PromptStamp(this.scene, posArray[pos], -25, stamps[id])
+            let stamp = new PromptStamp(this, posArray[pos], -25, stamps[id])
             if (this.stamps.length > 8) {
                 stamp.visible = false
             }
@@ -427,6 +503,18 @@ export default class CoinsPrompt extends BaseContainer {
             this.prevPageBtn.visible = false
         }
         this.nextPageBtn.visible = true
+    }
+
+    onStampOver(stamp, x, y) {
+        this.stampInfo.visible = true
+        this.stampInfo.x = x
+        this.stampInfo.y = y
+        this.stampInfoTitle.text = this.crumbs.stamps[stamp].name
+        this.stampInfoBody.text = this.crumbs.stamps[stamp].description
+    }
+
+    onStampOut() {
+        this.stampInfo.visible = false
     }
 
     /* END-USER-CODE */

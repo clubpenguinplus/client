@@ -8,8 +8,6 @@ export default class GridViewLoader extends BaseLoader {
 
         this.filter
         this.page
-
-        this.attachErrorListener()
     }
 
     get baseURL() {

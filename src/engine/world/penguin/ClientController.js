@@ -62,6 +62,8 @@ export default class ClientController {
         }
 
         this.stamps = typeof args[13] == 'string' ? args[13].split(',') : []
+        this.stamps = this.stamps.map((stamp) => parseInt(stamp))
+
         this.postcards = typeof args[14] == 'string' ? args[14].split(',') : []
         this.pending = typeof args[15] == 'string' ? args[15].split(',') : []
 

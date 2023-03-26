@@ -851,11 +851,11 @@ export default class Stampbook extends BaseScene {
         editor.add(category_icon)
 
         // arrow_right
-        const arrow_right = this.add.image(1386, 48, 'stampbook', 'arrow')
+        const arrow_right = this.add.image(1383, 48, 'stampbook', 'arrow')
         editor.add(arrow_right)
 
         // arrow_left
-        const arrow_left = this.add.image(190, 48, 'stampbook', 'arrow')
+        const arrow_left = this.add.image(188, 48, 'stampbook', 'arrow')
         arrow_left.scaleX = -1
         editor.add(arrow_left)
 
@@ -866,6 +866,14 @@ export default class Stampbook extends BaseScene {
         category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fixedHeight: 25, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
         category_title.setPadding({left: 15, right: 15})
         editor.add(category_title)
+
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(1383, 47, 30, 100)
+        editor.add(rectangle_1)
+
+        // rectangle
+        const rectangle = this.add.rectangle(186, 45, 30, 100)
+        editor.add(rectangle)
 
         // stampLayer
         const stampLayer = this.add.container(0, 0)
@@ -1212,6 +1220,14 @@ export default class Stampbook extends BaseScene {
         const category_iconSimpleButton = new SimpleButton(category_icon)
         category_iconSimpleButton.hoverCallback = () => this.onEditorCategoriesOver()
         category_iconSimpleButton.hoverOutCallback = () => this.onEditorCategoriesOut()
+
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1)
+        rectangle_1SimpleButton.callback = () => this.nextEditorStampPage()
+
+        // rectangle (components)
+        const rectangleSimpleButton = new SimpleButton(rectangle)
+        rectangleSimpleButton.callback = () => this.prevEditorStampPage()
 
         // stampHover1 (components)
         const stampHover1SimpleButton = new SimpleButton(stampHover1)
@@ -2565,7 +2581,7 @@ export default class Stampbook extends BaseScene {
             return stamp
         })
 
-        this.lastEditorStamps = {name, icon, stamps}
+        this.lastEditorStamps = {name, icon, stamps, page}
 
         stamps = stamps.filter((stamp) => !stamp.includes('/disabled'))
 
@@ -2596,7 +2612,10 @@ export default class Stampbook extends BaseScene {
         })
         this.editorStamps = []
 
-        for (let i = page * 16; i < page * 16 + 16; i++) {
+        let end = page * 14 + 14 > stamps.length ? stamps.length : page * 14 + 14
+        let start = end - 14 > 0 ? end - 14 : 0
+
+        for (let i = start; i < end; i++) {
             let stamp = stamps[i]
             if (!stamp) break
             let type = stamp.split('/')[0]
@@ -2604,20 +2623,20 @@ export default class Stampbook extends BaseScene {
 
             if (type == 'pin') {
                 if (this.textures.exists(`clothing/icon/${id}`)) {
-                    this.addEditorStamp('pin', id, (i - page * 16) * 70)
+                    this.addEditorStamp('pin', id, (i - start) * 80)
                 } else {
                     this.pinLoader.loadPin(id)
                     this.shell.events.once(`textureLoaded:clothing/icon/${id}`, () => {
-                        this.addEditorStamp('pin', id, (i - page * 16) * 70)
+                        this.addEditorStamp('pin', id, (i - start) * 80)
                     })
                 }
             } else {
                 if (this.textures.exists(`stamps/${id}`)) {
-                    this.addEditorStamp('stamp', id, (i - page * 16) * 70)
+                    this.addEditorStamp('stamp', id, (i - start) * 80)
                 } else {
                     this.stampLoader.loadStamp(id)
                     this.shell.events.once(`textureLoaded:stamps/${id}`, () => {
-                        this.addEditorStamp('stamp', id, (i - page * 16) * 70)
+                        this.addEditorStamp('stamp', id, (i - start) * 80)
                     })
                 }
             }
@@ -2625,7 +2644,7 @@ export default class Stampbook extends BaseScene {
     }
 
     addEditorStamp(type, id, offset) {
-        let stamp = type == 'pin' ? this.add.image(255 + offset, 48, 'clothing/icon/' + id) : this.add.image(255 + offset, 48, 'stamps/' + id)
+        let stamp = type == 'pin' ? this.add.image(260 + offset, 48, 'clothing/icon/' + id) : this.add.image(260 + offset, 48, 'stamps/' + id)
         stamp.setScale(0.5)
         stamp.setOrigin(0.5, 0.5)
         stamp.setInteractive({draggable: true, pixelPerfect: true})
@@ -2643,7 +2662,7 @@ export default class Stampbook extends BaseScene {
         stamp.on('dragend', () => {
             if (!this.checkStampbookBounds(stamp.x, stamp.y)) {
                 stamp.destroy()
-                return this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps)
+                return this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps, this.lastEditorStamps.page)
             }
             this.addCustomisedStamp(type, id, stamp.x, stamp.y)
             stamp.destroy()
@@ -2654,7 +2673,7 @@ export default class Stampbook extends BaseScene {
                     return stamp
                 }
             })
-            this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, newStamps)
+            this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, newStamps, this.lastEditorStamps.page)
         })
         this.editor.add(stamp)
         this.editorStamps.push(stamp)
@@ -2691,7 +2710,7 @@ export default class Stampbook extends BaseScene {
                     this.lastEditorStamps.stamps.push(`${type}/${id}`)
                 }
 
-                return this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps)
+                return this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps, this.lastEditorStamps.page)
             }
             this.customStamps.forEach((customStamp, index) => {
                 if (customStamp.id == id) {
@@ -2717,6 +2736,14 @@ export default class Stampbook extends BaseScene {
 
         // In Stampbook bounds
         return x > 156 && x < 1340 && y > 190 && y < 764
+    }
+
+    nextEditorStampPage() {
+        this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps, this.lastEditorStamps.page + 1)
+    }
+
+    prevEditorStampPage() {
+        this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps, this.lastEditorStamps.page - 1 > 0 ? this.lastEditorStamps.page - 1 : 0)
     }
 
     /* END-USER-CODE */
