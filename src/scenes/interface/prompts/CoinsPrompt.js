@@ -67,6 +67,8 @@ export default class CoinsPrompt extends BaseContainer {
         /** @type {Phaser.GameObjects.Text} */
         this.stampInfoBody
 
+        this.visible = false
+
         // block
         const block = scene.add.rectangle(0, 0, 1520, 960)
         block.isFilled = true
