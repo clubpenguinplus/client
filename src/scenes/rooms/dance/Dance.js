@@ -329,7 +329,7 @@ export default class Dance extends RoomScene {
         this.loadSfx = ['dance-Door', 'dance-SpeakerOpen', 'dance-SpeakerClose', 'dance-LightOn', 'dance-LightOff']
 
         if (!this.shell.client.stamps.includes(16) && !this.shell.client.stamps.includes(22)) {
-            this.dancingStampInterval = this.setInterval(() => {
+            this.dancingStampInterval = setInterval(() => {
                 let dancing = 0
                 this.penguins.forEach((penguin) => {
                     if (penguin.frame == 26) {
@@ -341,7 +341,7 @@ export default class Dance extends RoomScene {
                 }
                 if (dancing >= 25) {
                     this.shell.client.stampEarned(22)
-                    this.clearInterval(this.dancingStampInterval)
+                    clearInterval(this.dancingStampInterval)
                 }
             }, 2000)
         }
@@ -402,7 +402,7 @@ export default class Dance extends RoomScene {
     }
 
     stop() {
-        this.clearInterval(this.dancingStampInterval)
+        clearInterval(this.dancingStampInterval)
         super.stop()
     }
     /* END-USER-CODE */

@@ -1,6 +1,7 @@
 import {SimpleButton, Button, Interactive, LocalisedString} from '@components/components'
 import BookStamp from './BookStamp'
 import PinLoader from '@engine/loaders/PinLoader'
+import StampLoader from '@engine/loaders/StampLoader'
 import BaseScene from '@scenes/base/BaseScene'
 
 /* START OF COMPILED CODE */
@@ -665,9 +666,9 @@ export default class Stampbook extends BaseScene {
         front.add(total)
 
         // username
-        const username = this.add.text(253, 639, '', {})
-        username.text = 'Loading Stampbook...'
-        username.setStyle({color: '#F4B851', fontFamily: 'Burbank Small', fontSize: '100px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        const username = this.add.text(253, 705, '', {})
+        username.setOrigin(0, 0.5)
+        username.setStyle({color: '#F4B851', fixedWidth: 700, fixedHeight: 100, fontFamily: 'Burbank Small', fontSize: '100px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(username)
 
         // edit
@@ -1320,7 +1321,6 @@ export default class Stampbook extends BaseScene {
         const stampbookGuide_6LocalisedString = new LocalisedString(stampbookGuide_6)
         stampbookGuide_6LocalisedString.id = 'savestampbook'
 
-        this.blocker = blocker
         this.editor_background = editor_background
         this.bgcontainer = bgcontainer
         this.bg = bg
@@ -1444,8 +1444,6 @@ export default class Stampbook extends BaseScene {
         this.events.emit('scene-awake')
     }
 
-    /** @type {Phaser.GameObjects.Rectangle} */
-    blocker
     /** @type {Phaser.GameObjects.Sprite} */
     editor_background
     /** @type {Phaser.GameObjects.Container} */
@@ -1714,9 +1712,18 @@ export default class Stampbook extends BaseScene {
     create() {
         this.interface.stampbook = this
         this.pinLoader = new PinLoader(this)
+        this.stampLoader = new StampLoader(this)
         this.key = 'Stampbook'
         this.id = this.interface.stampbookId
         this._create()
+
+        this.stamps = []
+        this.editorStamps = []
+        this.customStamps = []
+        this.csSprites = []
+        this.pins = {}
+
+        this.pageIndex = 0
 
         if (this.id == this.shell.client.id) {
             this.initStampbook({}, true)
@@ -1724,32 +1731,51 @@ export default class Stampbook extends BaseScene {
             this.airtower.sendXt('s#gb', this.id)
             this.edit.visible = false
         }
-
-        this.stamps = []
-
-        this.pinLoader = new PinLoader(this)
-
-        this.pins = {}
-
-        this.pageIndex = 0
     }
 
     initStampbook(args, isPlayer) {
-        this.colorId = isPlayer ? this.shell.client.stampbookColor : args.color
-        this.claspId = isPlayer ? this.shell.client.stampbookClasp : args.clasp
-        this.patternId = isPlayer ? this.shell.client.stampbookPattern : args.pattern
+        let color = isPlayer ? this.shell.client.stampbookColor : args[2]
+        let clasp = isPlayer ? this.shell.client.stampbookClasp : args[3]
+        let pattern = isPlayer ? this.shell.client.stampbookPattern : args[4]
 
-        this.changeClasp(this.claspId)
-        this.changePattern(this.patternId)
-        this.changeColor(this.colorId)
+        this.changeClasp(clasp)
+        this.changePattern(pattern)
+        this.changeColor(color)
 
-        this.stampsEarned = isPlayer ? this.shell.client.stamps : args.stamps
+        this.stampsEarned = isPlayer ? this.shell.client.stamps : args[1].split('|')
         for (let s in this.stampsEarned) {
             this.stampsEarned[s] = parseInt(this.stampsEarned[s])
         }
-        this.username.text = isPlayer ? this.shell.client.penguin.username : args.username
+        this.username.text = isPlayer ? this.shell.client.penguin.username : args[0]
+        this.interface.scaleToFixedSize(this.username)
 
         this.total.text = `Total Stamps ${this.getTotalStamps()[1]}/${this.getTotalStamps()[0]}`
+        this.pinsCollected = isPlayer ? this.shell.client.inventory['flag'] : args[5].split('|')
+        let customStamps = isPlayer ? this.shell.client.customStamps : args[6]
+        for (let cs of customStamps.split('|')) {
+            if (!cs.includes(':')) continue
+            let data = cs.split(':')
+
+            if (data[0] == 'pin') {
+                if (this.textures.exists(`clothing/icon/${data[1]}`)) {
+                    this.addCustomisedStamp(data[0], data[1], data[2], data[3])
+                } else {
+                    this.pinLoader.loadPin(data[1])
+                    this.shell.events.once(`textureLoaded:clothing/icon/${data[1]}`, () => {
+                        this.addCustomisedStamp(data[0], data[1], data[2], data[3])
+                    })
+                }
+            } else if (data[0] == 'stamp') {
+                if (this.textures.exists(`stamps/${data[1]}`)) {
+                    this.addCustomisedStamp(data[0], data[1], data[2], data[3])
+                } else {
+                    this.stampLoader.loadStamp(data[1])
+                    this.shell.events.once(`textureLoaded:stamps/${data[1]}`, () => {
+                        this.addCustomisedStamp(data[0], data[1], data[2], data[3])
+                    })
+                }
+            }
+        }
     }
 
     changeClasp(id) {
@@ -1787,18 +1813,21 @@ export default class Stampbook extends BaseScene {
     }
 
     openClasp() {
+        const visible = this.claspselect.visible
         this.hideAll()
-        this.claspselect.visible = true
+        this.claspselect.visible = !visible
     }
 
     openColour() {
+        const visible = this.colorselect.visible
         this.hideAll()
-        this.colorselect.visible = true
+        this.colorselect.visible = !visible
     }
 
     openPattern() {
+        const visible = this.patternselect.visible
         this.hideAll()
-        this.patternselect.visible = true
+        this.patternselect.visible = !visible
     }
 
     hideAll() {
@@ -1811,16 +1840,28 @@ export default class Stampbook extends BaseScene {
         this.editor_background.visible = true
         this.editor.visible = true
         this.edit.visible = false
+
+        for (let cs of this.csSprites) {
+            cs.setInteractive({draggable: true, pixelPerfect: true})
+        }
+
+        this.showEditorStamps('All Stamps', 'categories/9000', this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.shell.client.inventory['flag'].map((pin) => `pin/${pin}`)))
     }
 
     saveStampbook() {
-        this.airtower.sendXt('st#sv', `${this.colorId}%${this.patternId}%${this.claspId}`)
+        let customStamps = this.customStamps.map((s) => `${s.type}:${s.id}:${Math.round(s.x)}:${Math.round(s.y)}`).join('|')
+        this.airtower.sendXt('st#sv', `${this.colorId}%${this.claspId}%${this.patternId}%${customStamps}`)
         this.shell.client.stampbookColor = this.colorId
         this.shell.client.stampbookPattern = this.patternId
         this.shell.client.stampbookClasp = this.claspId
+        this.shell.client.customStamps = customStamps
         this.editor_background.visible = false
         this.editor.visible = false
         this.edit.visible = true
+        this.editorStamps.forEach((s) => s.destroy())
+        this.csSprites.forEach((s) => {
+            if (s.disableInteractive) s.disableInteractive()
+        })
     }
 
     addPageStamps() {
@@ -1869,34 +1910,6 @@ export default class Stampbook extends BaseScene {
             }
         }
         return stamps
-    }
-
-    addPin(pin, xpos, ypos, visible) {
-        this.pins[pin] = this.add.image(xpos, ypos, 'clothing/icon/' + pin)
-        this.airtower.sendXt('i#gi', `items%${pin}`)
-        this.pins[pin].setInteractive({
-            cursor: 'pointer',
-        })
-        this.pins[pin].on('pointerover', () => {
-            this.stampInfo.visible = true
-            this.stampInfo.x = xpos
-            this.stampInfo.y = ypos
-
-            this.stampInfoTitle.text = this.crumbs.items[pin].name
-            let releaseDate = 'Never'
-            if (this.crumbs.items[pin].releases && this.crumbs.items[pin].releases.length > 0) {
-                let rDate = new Date(parseInt(this.crumbs.items[pin].releases[0].from))
-                let month = this.crumbs.getString(`month${rDate.getMonth()}`)
-                releaseDate = `${month} ${rDate.getDate()}/${rDate.getFullYear()}`
-            }
-            this.stampInfoBody.text = `Released: ${releaseDate}.`
-        })
-        this.pins[pin].on('pointerout', () => {
-            this.stampInfo.visible = false
-        })
-        let page = this.crumbs.stampbook[this.crumbs.stampbook.enabledPages[this.pageIndex]]
-        this.pins[pin].visible = visible && page.id == 'pins'
-        this.stampLayer.add(this.pins[pin])
     }
 
     getCategoryStamps(category) {
@@ -2216,8 +2229,37 @@ export default class Stampbook extends BaseScene {
         this.showPage()
     }
 
+    createPin(pinId, x, y, visible) {
+        const pin = this.add.image(x, y, 'clothing/icon/' + pinId)
+        this.airtower.sendXt('i#gi', pinId)
+        pin.setInteractive({
+            cursor: 'pointer',
+        })
+        pin.on('pointerout', () => {
+            this.stampInfo.visible = false
+        })
+        pin.on('pointerover', () => {
+            this.stampInfo.visible = true
+            this.stampInfo.x = pin.x
+            this.stampInfo.y = pin.y
+
+            this.stampInfoTitle.text = this.crumbs.items[pinId].name
+            let releaseDate = 'Never'
+            if (this.crumbs.items[pinId].releases && this.crumbs.items[pinId].releases.length > 0) {
+                let rDate = new Date(parseInt(this.crumbs.items[pinId].releases[0].from))
+                let month = this.crumbs.getString(`month${rDate.getMonth()}`)
+                releaseDate = `${month} ${rDate.getDate()}/${rDate.getFullYear()}`
+            }
+            this.stampInfoBody.text = `Released: ${releaseDate}.`
+        })
+
+        pin.visible = visible
+
+        return pin
+    }
+
     showPins() {
-        const pins = this.shell.client.inventory['flag']
+        const pins = this.pinsCollected
         const numPins = pins.length
 
         this.stampcategory.text = 'Pins Collected:'
@@ -2236,35 +2278,6 @@ export default class Stampbook extends BaseScene {
         const startX = 260
         const startY = 270
 
-        var createPin = (pinId, x, y, visible) => {
-            const pin = this.add.image(x, y, 'clothing/icon/' + pinId)
-            this.airtower.sendXt('i#gi', pinId)
-            pin.setInteractive({
-                cursor: 'pointer',
-            })
-            pin.on('pointerout', () => {
-                this.stampInfo.visible = false
-            })
-            pin.on('pointerover', () => {
-                this.stampInfo.visible = true
-                this.stampInfo.x = pin.x
-                this.stampInfo.y = pin.y
-
-                this.stampInfoTitle.text = this.crumbs.items[pinId].name
-                let releaseDate = 'Never'
-                if (this.crumbs.items[pinId].releases && this.crumbs.items[pinId].releases.length > 0) {
-                    let rDate = new Date(parseInt(this.crumbs.items[pinId].releases[0].from))
-                    let month = this.crumbs.getString(`month${rDate.getMonth()}`)
-                    releaseDate = `${month} ${rDate.getDate()}/${rDate.getFullYear()}`
-                }
-                this.stampInfoBody.text = `Released: ${releaseDate}.`
-            })
-
-            pin.visible = visible
-
-            return pin
-        }
-
         var showPage = (page) => {
             const visible = page == 0
 
@@ -2276,11 +2289,17 @@ export default class Stampbook extends BaseScene {
                 const y = startY + row * marginY
 
                 if (this.textures.exists(`clothing/icon/${pinId}`)) {
-                    let pin = createPin(pinId, x, y, visible)
+                    let pin = this.createPin(pinId, x, y, visible)
                     this.stampLayer.add(pin)
                     this.pins[pinId] = pin
                 } else {
-                    this.pinLoader.loadPin(pinId, x, y, visible)
+                    this.pinLoader.loadPin(pinId, {pinId, x, y, visible})
+                    this.shell.events.once(`textureLoaded:clothing/icon/${pinId}`, (e) => {
+                        console.log('loaded pin', e.pinId)
+                        let pin = this.createPin(e.pinId, e.x, e.y, e.visible)
+                        this.stampLayer.add(pin)
+                        this.pins[pinId] = pin
+                    })
                 }
             }
         }
@@ -2351,7 +2370,7 @@ export default class Stampbook extends BaseScene {
     }
 
     onEditorCategoriesOver() {
-        if (!this.categorySelector) {
+        if (!this.categorySelector || this.categorySelector.scene != this) {
             this.categorySelector = this.generateCategorySelector()
         }
         if (this.categorySelector.currentChild) {
@@ -2402,8 +2421,14 @@ export default class Stampbook extends BaseScene {
             if (page.group) {
                 for (let stamp of this.shell.client.stamps) {
                     if (this.crumbs.stamps[stamp].groupid == page.group && !this.crumbs.stamps[stamp].disabled) {
-                        newPage.stamps.push(stamp)
+                        newPage.stamps.push(`stamp/${stamp}`)
                     }
+                }
+            }
+
+            if (page.id == 'pins') {
+                for (let pin of this.shell.client.inventory['flag']) {
+                    newPage.stamps.push(`pin/${pin}`)
                 }
             }
 
@@ -2429,7 +2454,7 @@ export default class Stampbook extends BaseScene {
         pages.push({
             text: 'All Stamps',
             icon: 'categories/9000',
-            stamps: this.shell.client.stamps,
+            stamps: this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.shell.client.inventory['flag'].map((pin) => `pin/${pin}`)),
             children: [],
         })
 
@@ -2529,12 +2554,170 @@ export default class Stampbook extends BaseScene {
         return selector
     }
 
-    showEditorStamps(name, icon, stamps) {
-        this.categorySelector.visible = false
+    showEditorStamps(name, icon, stamps, page = 0) {
+        stamps = stamps.map((stamp) => {
+            const [type, id] = stamp.split('/')
+            if (stamp.includes('/disabled')) return stamp
+            for (let cs of this.customStamps) {
+                if (cs.id === id && cs.type === type) {
+                    return stamp + '/disabled'
+                }
+            }
+            return stamp
+        })
+
+        this.lastEditorStamps = {name, icon, stamps}
+
+        stamps = stamps.filter((stamp) => !stamp.includes('/disabled'))
+
+        stamps = stamps.sort((a, b) => {
+            let aType = a.split('/')[0]
+            let bType = b.split('/')[0]
+            let aId = a.split('/')[1]
+            let bId = b.split('/')[1]
+            if (aType === 'stamp' && bType === 'stamp') {
+                return aId - bId
+            } else if (aType === 'pin' && bType === 'pin') {
+                return aId - bId
+            } else if (aType === 'stamp' && bType === 'pin') {
+                return -1
+            } else if (aType === 'pin' && bType === 'stamp') {
+                return 1
+            }
+        })
+
+        if (this.categorySelector) this.categorySelector.visible = false
         this.input.removeListener('pointermove', this.onEditorCategoriesMove, this)
         this.category_title.text = name
         this.interface.scaleToFixedSize(this.category_title)
         this.category_icon.setTexture('stampbook', icon)
+
+        this.editorStamps.forEach((stamp) => {
+            if (stamp && stamp.destroy) stamp.destroy()
+        })
+        this.editorStamps = []
+
+        for (let i = page * 16; i < page * 16 + 16; i++) {
+            let stamp = stamps[i]
+            if (!stamp) break
+            let type = stamp.split('/')[0]
+            let id = stamp.split('/')[1]
+
+            if (type == 'pin') {
+                if (this.textures.exists(`clothing/icon/${id}`)) {
+                    this.addEditorStamp('pin', id, (i - page * 16) * 70)
+                } else {
+                    this.pinLoader.loadPin(id)
+                    this.shell.events.once(`textureLoaded:clothing/icon/${id}`, () => {
+                        this.addEditorStamp('pin', id, (i - page * 16) * 70)
+                    })
+                }
+            } else {
+                if (this.textures.exists(`stamps/${id}`)) {
+                    this.addEditorStamp('stamp', id, (i - page * 16) * 70)
+                } else {
+                    this.stampLoader.loadStamp(id)
+                    this.shell.events.once(`textureLoaded:stamps/${id}`, () => {
+                        this.addEditorStamp('stamp', id, (i - page * 16) * 70)
+                    })
+                }
+            }
+        }
+    }
+
+    addEditorStamp(type, id, offset) {
+        let stamp = type == 'pin' ? this.add.image(255 + offset, 48, 'clothing/icon/' + id) : this.add.image(255 + offset, 48, 'stamps/' + id)
+        stamp.setScale(0.5)
+        stamp.setOrigin(0.5, 0.5)
+        stamp.setInteractive({draggable: true, pixelPerfect: true})
+        stamp.on('drag', (pointer) => {
+            if (this.checkStampbookBounds(pointer.x, pointer.y)) {
+                stamp.tint = 0xffffff
+            } else {
+                stamp.tint = 0x999999
+            }
+            stamp.x = pointer.x
+            stamp.y = pointer.y
+
+            stamp.scale = 1
+        })
+        stamp.on('dragend', () => {
+            if (!this.checkStampbookBounds(stamp.x, stamp.y)) {
+                stamp.destroy()
+                return this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps)
+            }
+            this.addCustomisedStamp(type, id, stamp.x, stamp.y)
+            stamp.destroy()
+            let newStamps = this.lastEditorStamps.stamps.map((stamp) => {
+                if (stamp.split('/')[1] === id) {
+                    return stamp + '/disabled'
+                } else {
+                    return stamp
+                }
+            })
+            this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, newStamps)
+        })
+        this.editor.add(stamp)
+        this.editorStamps.push(stamp)
+    }
+
+    addCustomisedStamp(type, id, x, y) {
+        let stamp = type == 'pin' ? this.add.image(x, y, 'clothing/icon/' + id) : this.add.image(x, y, 'stamps/' + id)
+        this.front.add(stamp)
+        this.customStamps.push({type, id, x, y})
+        this.csSprites.push(stamp)
+
+        stamp.setInteractive({draggable: true, pixelPerfect: true})
+        stamp.on('drag', (pointer) => {
+            if (this.checkStampbookBounds(pointer.x, pointer.y, id)) {
+                stamp.tint = 0xffffff
+            } else {
+                stamp.tint = 0x999999
+            }
+            stamp.x = pointer.x
+            stamp.y = pointer.y
+
+            stamp.scale = 1
+        })
+
+        stamp.on('dragend', () => {
+            if (!this.checkStampbookBounds(stamp.x, stamp.y, id)) {
+                const type = stamp.texture.key.includes('clothing') ? 'pin' : 'stamp'
+                this.csSprites = this.csSprites.filter((sprite) => sprite == stamp)
+                stamp.destroy()
+                this.customStamps = this.customStamps.filter((stamp) => stamp.id != id)
+
+                if (this.lastEditorStamps.stamps.includes(`${type}/${id}/disabled`)) {
+                    this.lastEditorStamps.stamps = this.lastEditorStamps.stamps.filter((stamp) => stamp != `${type}/${id}/disabled`)
+                    this.lastEditorStamps.stamps.push(`${type}/${id}`)
+                }
+
+                return this.showEditorStamps(this.lastEditorStamps.name, this.lastEditorStamps.icon, this.lastEditorStamps.stamps)
+            }
+            this.customStamps.forEach((customStamp, index) => {
+                if (customStamp.id == id) {
+                    this.customStamps[index] = {id, x: stamp.x, y: stamp.y, type: customStamp.type}
+                }
+            })
+        })
+
+        if (!this.editor.visible) stamp.disableInteractive()
+    }
+
+    checkStampbookBounds(x, y, id) {
+        for (let stamp of this.customStamps) {
+            if (Math.abs(stamp.x - x) < 100 && Math.abs(stamp.y - y) < 100 && stamp.id != id) {
+                return false
+            }
+        }
+
+        // Username
+        if (x > 203 && x < 1003 && y > 605 && y < 805) return false
+        // Wordmark
+        if (x > 916 && x < 1244 && y > 508 && y < 757) return false
+
+        // In Stampbook bounds
+        return x > 156 && x < 1340 && y > 190 && y < 764
     }
 
     /* END-USER-CODE */

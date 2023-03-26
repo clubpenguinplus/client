@@ -9,12 +9,12 @@ export default class PinLoader extends BaseLoader {
         this.keyPrefix = 'clothing/icon/'
     }
 
-    loadPin(pin, xpos, ypos, visible) {
+    loadPin(pin, details) {
         let key = this.getKey(pin)
 
         if (
             this.checkComplete('image', key, () => {
-                this.onFileComplete(key, pin, xpos, ypos, visible)
+                this.onFileComplete(key, pin, details)
             })
         ) {
             return
@@ -24,11 +24,11 @@ export default class PinLoader extends BaseLoader {
         this.start()
     }
 
-    onFileComplete(key, pin, xpos, ypos, visible) {
+    onFileComplete(key, pin, details) {
         if (!this.textureExists(key)) {
             return
         }
 
-        this.scene.addPin(pin, xpos, ypos, visible)
+        this.shell.events.emit(`textureLoaded:clothing/icon/${pin}`, details)
     }
 }

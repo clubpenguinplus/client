@@ -1,5 +1,4 @@
 import BaseContainer from '@scenes/base/BaseContainer'
-import StampLoader from '@engine/loaders/StampLoader'
 
 export default class BookStamp extends BaseContainer {
     constructor(scene, x, y, id) {
@@ -9,10 +8,11 @@ export default class BookStamp extends BaseContainer {
         this.scene2 = scene
         // something was making this.scene undefined and i don't know what, so i'm just doing this :)
 
-        this.loader = new StampLoader(this.scene, this)
-
         if (!this.scene2.textures.exists(`stamps/${id}`)) {
-            this.loader.loadStamp(id)
+            this.shell.events.once(`textureLoaded:stamps/${id}`, () => {
+                this.addStamp()
+            })
+            this.scene.loader.loadStamp(id)
         } else {
             this.addStamp()
         }

@@ -1,10 +1,9 @@
 import BaseLoader from './BaseLoader'
 
 export default class StampLoader extends BaseLoader {
-    constructor(scene, stamp) {
+    constructor(scene) {
         super(scene)
         this.scene = scene
-        this.stamp = stamp
         let suffix = '/client/media/interface/game/stampbook/stamps/'
         this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'stamps/'
@@ -30,6 +29,6 @@ export default class StampLoader extends BaseLoader {
             return
         }
 
-        this.stamp.addStamp()
+        this.shell.events.emit(`textureLoaded:stamps/${stamp}`)
     }
 }

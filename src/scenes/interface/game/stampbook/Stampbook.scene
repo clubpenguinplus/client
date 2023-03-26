@@ -17,7 +17,6 @@
             "type": "Rectangle",
             "id": "4a42fe8f-b0de-4719-954b-9905e257b91d",
             "label": "blocker",
-            "scope": "CLASS",
             "components": [
                 "Interactive"
             ],
@@ -1461,8 +1460,10 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": 253,
-                    "y": 639,
-                    "text": "Loading Stampbook...",
+                    "y": 705,
+                    "originY": 0.5,
+                    "fixedWidth": 700,
+                    "fixedHeight": 100,
                     "fontFamily": "Burbank Small",
                     "fontSize": "100px",
                     "fontStyle": "bold",
