@@ -2295,7 +2295,6 @@ export default class Stampbook extends BaseScene {
                 } else {
                     this.pinLoader.loadPin(pinId, {pinId, x, y, visible})
                     this.shell.events.once(`textureLoaded:clothing/icon/${pinId}`, (e) => {
-                        console.log('loaded pin', e.pinId)
                         let pin = this.createPin(e.pinId, e.x, e.y, e.visible)
                         this.stampLayer.add(pin)
                         this.pins[pinId] = pin

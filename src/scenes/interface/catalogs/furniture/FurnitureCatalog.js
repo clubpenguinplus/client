@@ -277,22 +277,6 @@ export default class FurnitureCatalog extends Book {
         button.fillAlpha = 0.01
     }
 
-    pricetag(id) {
-        if (this.crumbs.items[id]) {
-            return this.crumbs.items[id].cost
-        } else {
-            console.log('error with ' + id)
-        }
-    }
-
-    nametag(id) {
-        if (this.crumbs.items[id]) {
-            return this.crumbs.items[id].name
-        } else {
-            console.log('error with ' + id)
-        }
-    }
-
     setCoins(coins) {
         this.coins.text = `YOUR COINS:\n${coins}`
     }

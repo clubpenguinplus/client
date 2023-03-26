@@ -245,7 +245,7 @@ export default class RoomScene extends BaseScene {
         for (let t in this.roomTriggers) {
             let trigger = this.addBody(t, 0x00ff00)
             if (!trigger) {
-                console.error(`Trigger ${t} not found in physics`)
+                console.error(`[RoomScene] Trigger ${t} not found in physics`)
                 continue
             }
 
@@ -285,7 +285,7 @@ export default class RoomScene extends BaseScene {
         }
 
         let room = this.crumbs.scenes.rooms[id]
-        if (!room) return console.error(`Room ${id} not found`)
+        if (!room) return console.error(`[RoomScene] Room ${id} not found`)
         this.shell.client.sendJoinRoom(id, room.key, x, y)
     }
 

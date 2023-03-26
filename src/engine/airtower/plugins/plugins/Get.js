@@ -85,7 +85,6 @@ export default class Get extends Plugin {
             let itemInfo = item.split(':')
 
             if (!this.crumbs[args[0]][itemInfo[0]]) {
-                console.warn('Item not in crumbs: ' + itemInfo[0])
                 continue
             }
 

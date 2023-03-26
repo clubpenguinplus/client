@@ -177,7 +177,6 @@ export default class RuffleManager {
 
         let category = this.getCategory(game.toLowerCase())
         let categoryStamps = this.getCategoryStamps(category)
-        console.log(category, categoryStamps)
 
         if (categoryStamps[0].length > 1 && categoryStamps[1] == categoryStamps[0].length) {
             coins = coins * 2
@@ -347,7 +346,7 @@ export default class RuffleManager {
                     uncompressed.push(['level' + (parseInt(x) - 71) + 'turboDone', true])
                 }
             } else {
-                console.error('too much compressed cannon data, some has been ommitted!')
+                console.error('[RuffleManager] Too much compressed cannon data, some has been omitted!')
             }
         }
         return uncompressed

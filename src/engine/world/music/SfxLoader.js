@@ -44,14 +44,6 @@ export default class SfxLoader extends Phaser.Loader.LoaderPlugin {
         return parseInt(last)
     }
 
-    attachErrorListener() {
-        this.on('loaderror', (file) => this.onLoadError(file), this)
-    }
-
-    onLoadError(file) {
-        console.error('LOAD ERROR WITH', file)
-    }
-
     checkComplete(type, key, callback) {
         if (this.textureExists(key)) {
             callback()

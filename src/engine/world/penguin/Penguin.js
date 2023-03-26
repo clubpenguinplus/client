@@ -178,7 +178,7 @@ export default class Penguin extends BaseContainer {
         let animation = this.crumbs.penguin[frame]
 
         if (!animation) {
-            return console.error(`Animation ${frame} does not exist`)
+            return console.error(`[Penguin] Animation ${frame} does not exist`)
         }
 
         if (checkItem && animation.items) {

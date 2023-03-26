@@ -20,7 +20,7 @@ export default class PenguinSpriteFactory {
                 break
 
             default:
-                console.error(`Unknown penguin sprite key: ${key}`)
+                console.error(`[PenguinSpriteFactory] Unknown penguin sprite key: ${key}`)
                 if (!penguin.textures.exists(key)) {
                     return
                 }

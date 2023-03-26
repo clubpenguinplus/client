@@ -1384,22 +1384,6 @@ export default class SportsCatalog extends Book {
         this.interface.prompt.showItem(item)
     }
 
-    nametag(id) {
-        if (this.crumbs.items[id]) {
-            return this.crumbs.items[id].name
-        } else {
-            console.log('error with ' + id)
-        }
-    }
-
-    pricetag(id) {
-        if (this.crumbs.items[id]) {
-            return this.crumbs.items[id].cost
-        } else {
-            console.log('error with ' + id)
-        }
-    }
-
     onRectangleHover(number) {
         let bgholder = this[`bgholder${number}`]
         bgholder.setFrame('bgholder-hover')

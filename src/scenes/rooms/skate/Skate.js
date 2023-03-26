@@ -14,19 +14,19 @@ export default class Skate extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             shack: () => this.triggerRoom(807, 1320, 520),
-            catalog: () => console.log('triggered catalog'),
-            halfpipe_1l: () => console.log('triggered halfpipe_1l'),
-            halfpipe_1r: () => console.log('triggered halfpipe_1r'),
-            halfpipe_2l: () => console.log('triggered halfpipe_2l'),
-            halfpipe_2r: () => console.log('triggered halfpipe_2r'),
-            halfpipe_3l: () => console.log('triggered halfpipe_3l'),
-            halfpipe_3r: () => console.log('triggered halfpipe_3r'),
-            halfpipe_4l: () => console.log('triggered halfpipe_4l'),
-            halfpipe_4r: () => console.log('triggered halfpipe_4r'),
-            lowerskate: () => console.log('triggered lowerskate'),
-            railbench: () => console.log('triggered railbench'),
-            railskate: () => console.log('triggered railskate'),
-            sample: () => console.log('triggered sample'),
+            catalog: () => {},
+            halfpipe_1l: () => {},
+            halfpipe_1r: () => {},
+            halfpipe_2l: () => {},
+            halfpipe_2r: () => {},
+            halfpipe_3l: () => {},
+            halfpipe_3r: () => {},
+            halfpipe_4l: () => {},
+            halfpipe_4r: () => {},
+            lowerskate: () => {},
+            railbench: () => {},
+            railskate: () => {},
+            sample: () => {},
         }
         this.music = 754
         /* END-USER-CTR-CODE */
