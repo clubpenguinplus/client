@@ -12,6 +12,8 @@ export default class Get extends Plugin {
             gsb: this.getStampbook,
             gm: this.getMascots,
             on: this.getOnline,
+            gii: this.getItemInfo,
+            gic: this.getCost,
         }
     }
 
@@ -57,15 +59,7 @@ export default class Get extends Plugin {
     getStampbook(args) {
         if (!this.interface.stampbook) return
 
-        let a = {}
-        a.username = args[0]
-        a.stamps = args[1].split(',')
-        a.color = args[2]
-        a.clasp = args[3]
-        a.pattern = args[4]
-        a.pins = args[5].split(',')
-
-        this.interface.stampbook.initStampbook(a, false)
+        this.interface.stampbook.initStampbook(args, false)
     }
 
     getMascots(args) {
@@ -77,5 +71,24 @@ export default class Get extends Plugin {
 
     getOnline(args) {
         this.interface.main.playerCard.buttons.isOnline(args[0])
+    }
+
+    getItemInfo(args) {
+        let item = this.crumbs[args[0]][args[1]]
+        item.cost = args[3]
+        item.available = args[4]
+        item.releases = JSON.parse(args[5])
+    }
+
+    getCost(args) {
+        for (let item of args[1].split('|')) {
+            let itemInfo = item.split(':')
+
+            if (!this.crumbs[args[0]][itemInfo[0]]) {
+                continue
+            }
+
+            this.crumbs[args[0]][itemInfo[0]].cost = itemInfo[1]
+        }
     }
 }

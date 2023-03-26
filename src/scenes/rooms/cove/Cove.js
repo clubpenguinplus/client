@@ -14,6 +14,8 @@ export default class Cove extends RoomScene {
         this.catalog
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.waterZones
 
         /* START-USER-CTR-CODE */
 
@@ -114,7 +116,8 @@ export default class Cove extends RoomScene {
         bino.setOrigin(0.5101477813194247, 1.2585466536270113)
 
         // fg2
-        this.add.image(539, 878, 'cove', 'fg2')
+        const fg2 = this.add.image(539, 971.7018093054124, 'cove', 'fg2')
+        fg2.setOrigin(0.5, 0.9957769736473352)
 
         // fg3
         this.add.image(43, 669, 'cove', 'fg3')
@@ -198,8 +201,36 @@ export default class Cove extends RoomScene {
         const catalog = this.add.image(1446.011322422891, 884.01953125, 'cove', 'catalog')
         catalog.setOrigin(0.5000905915025777, 0.5001820467068046)
 
+        // ellipse_2
+        const ellipse_2 = this.add.ellipse(1042, 818, 800, 300)
+
+        // ellipse
+        const ellipse = this.add.ellipse(776, 913, 200, 100)
+
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(1413, 913, 200, 100)
+
+        // ellipse_3
+        const ellipse_3 = this.add.ellipse(1424, 824, 200, 100)
+
+        // ellipse_4
+        const ellipse_4 = this.add.ellipse(1431, 778, 200, 100)
+
+        // ellipse_5
+        const ellipse_5 = this.add.ellipse(591, 758, 200, 100)
+
+        // ellipse_6
+        const ellipse_6 = this.add.ellipse(679, 723, 200, 100)
+
+        // ellipse_7
+        const ellipse_7 = this.add.ellipse(811, 705, 200, 100)
+
+        // ellipse_8
+        const ellipse_8 = this.add.ellipse(1159, 685, 200, 100)
+
         // lists
-        const sort = [log, flame_0001, fg1, fg4, chair4, chair2, table, fence, fence3, lap, medical, container_1, fence2, waves, bino, water10, water9, water8, water7, water6, water5, water4, water3, water2, water1, water15, water14, water13, water12, water11]
+        const sort = [log, flame_0001, fg1, fg4, chair4, chair2, table, fence, fence3, lap, medical, container_1, fence2, waves, bino, water10, water9, water8, water7, water6, water5, water4, water3, water2, water1, water15, water14, water13, water12, water11, fg2]
+        const waterZones = [ellipse_8, ellipse_7, ellipse_6, ellipse_5, ellipse_4, ellipse_3, ellipse_1, ellipse, ellipse_2]
 
         // flame_0001 (components)
         const flame_0001Animation = new Animation(flame_0001)
@@ -249,6 +280,7 @@ export default class Cove extends RoomScene {
         this.smallcatalog = smallcatalog
         this.catalog = catalog
         this.sort = sort
+        this.waterZones = waterZones
 
         this.events.emit('scene-awake')
     }

@@ -88,6 +88,7 @@ export default class ModPanel extends BaseScene {
 
     quit() {
         this.interface.showLoading()
+        this.airtower.doNotReconnect = true
         this.airtower.disconnect()
         this.airtower.loginReconnect()
         this.scene.stop()

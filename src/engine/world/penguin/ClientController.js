@@ -9,14 +9,6 @@ export default class ClientController {
         this.crumbs = shell.crumbs
         this.getString = shell.getString
 
-        this.roomsWaddled = []
-
-        for (var i = 0; i < args.length; i++) {
-            if (args[i] == 'undefined' || args[i] == '') {
-                args[i] = []
-            }
-        }
-
         // Assign user attributes
 
         this.string = this.shell.arrayToObject(args[0], true)
@@ -26,9 +18,10 @@ export default class ClientController {
         this.stampbookClasp = args[3]
         this.stampbookColor = args[4]
         this.stampbookPattern = args[5]
-        this.cannonData = args[6]
+        this.customStamps = args[6]
+        this.cannonData = args[7]
 
-        this.friends = typeof args[7] == 'string' ? args[7].split(',') : args[7]
+        this.friends = typeof args[8] == 'string' ? args[8].split(',') : args[8]
         for (let friend in this.friends) {
             let temp = this.friends[friend].split('|')
             this.friends[friend] = {
@@ -39,7 +32,7 @@ export default class ClientController {
             }
         }
 
-        this.ignores = typeof args[8] == 'string' ? args[8].split(',') : args[8]
+        this.ignores = typeof args[9] == 'string' ? args[9].split(',') : args[9]
         for (let ignore in this.ignores) {
             let temp = this.ignores[ignore].split('|')
             this.ignores[ignore] = {
@@ -47,9 +40,9 @@ export default class ClientController {
                 username: temp[1],
             }
         }
-        this.inventory = typeof args[9] == 'string' ? args[9].split(',') : []
+        this.inventory = typeof args[10] == 'string' ? args[10].split(',') : []
 
-        this.iglooInventory = typeof args[10] == 'string' ? args[10].split(',') : []
+        this.iglooInventory = typeof args[11] == 'string' ? args[11].split(',') : []
         for (let item in this.iglooInventory) {
             this.iglooInventory[item] = {
                 id: parseInt(this.iglooInventory[item]),
@@ -58,7 +51,7 @@ export default class ClientController {
             }
         }
 
-        this.furnitureInventory = typeof args[11] == 'string' ? args[11].split(',') : []
+        this.furnitureInventory = typeof args[12] == 'string' ? args[12].split(',') : []
         for (let item in this.furnitureInventory) {
             let temp = this.furnitureInventory[item].split(':')
             this.furnitureInventory[item] = {
@@ -68,11 +61,13 @@ export default class ClientController {
             }
         }
 
-        this.stamps = typeof args[12] == 'string' ? args[12].split(',') : []
-        this.postcards = typeof args[13] == 'string' ? args[13].split(',') : []
-        this.pending = typeof args[14] == 'string' ? args[14].split(',') : []
+        this.stamps = typeof args[13] == 'string' ? args[13].split(',') : []
+        this.stamps = this.stamps.map((stamp) => parseInt(stamp))
 
-        this.floorInventory = typeof args[15] == 'string' ? args[15].split(',') : []
+        this.postcards = typeof args[14] == 'string' ? args[14].split(',') : []
+        this.pending = typeof args[15] == 'string' ? args[15].split(',') : []
+
+        this.floorInventory = typeof args[16] == 'string' ? args[16].split(',') : []
         for (let item in this.floorInventory) {
             this.floorInventory[item] = {
                 id: parseInt(this.floorInventory[item]),
@@ -81,7 +76,7 @@ export default class ClientController {
             }
         }
 
-        this.locationInventory = typeof args[16] == 'string' ? args[16].split(',') : []
+        this.locationInventory = typeof args[17] == 'string' ? args[17].split(',') : []
         for (let item in this.locationInventory) {
             this.locationInventory[item] = {
                 id: parseInt(this.locationInventory[item]),
@@ -90,7 +85,7 @@ export default class ClientController {
             }
         }
 
-        this.sessionId = args[17]
+        this.sessionId = args[18]
 
         this.coins = this.string.coins
         this.rank = this.string.rank
@@ -213,14 +208,12 @@ export default class ClientController {
     }
 
     onPointerUp(pointer, target) {
-        // Limit movement to once every 100ms
-
         if (pointer.button != 0 || !this.visible || this.activeSeat) {
             return
         }
 
         // Block movement when clicking a button
-        if (target[0] && target[0].isButton) {
+        if (target[0] && (target[0].isButton || target[0].isInteractive)) {
             return
         }
 

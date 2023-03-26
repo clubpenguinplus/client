@@ -17,7 +17,6 @@
             "type": "Rectangle",
             "id": "4a42fe8f-b0de-4719-954b-9905e257b91d",
             "label": "blocker",
-            "scope": "CLASS",
             "components": [
                 "Interactive"
             ],
@@ -112,6 +111,126 @@
                     },
                     "x": 1298,
                     "y": 608
+                },
+                {
+                    "type": "Image",
+                    "id": "9491ddad-7211-466d-acbb-5798e5da9af9",
+                    "label": "sidebutton",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "sidebutton",
+                    "Button.callback": "() => this.goToPage(this.crumbs.stampbook['pins'])",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "sidebutton"
+                    },
+                    "x": 1384,
+                    "y": 470
+                },
+                {
+                    "type": "Image",
+                    "id": "c41acb26-d8cd-4dbf-a432-b4b924971a16",
+                    "label": "sidebutton_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "sidebutton",
+                    "Button.callback": "() => this.goToPage(this.crumbs.stampbook['activities'])",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "sidebutton"
+                    },
+                    "x": 1384,
+                    "y": 290
+                },
+                {
+                    "type": "Image",
+                    "id": "8076f4ac-f055-4e69-a70f-67ec84cb7b8e",
+                    "label": "sidebutton_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "sidebutton",
+                    "Button.callback": "() => this.goToPage(this.crumbs.stampbook['games'])",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "sidebutton"
+                    },
+                    "x": 1384,
+                    "y": 380
+                },
+                {
+                    "type": "Image",
+                    "id": "e0f8dd64-bf5f-46b7-8e08-516fd513976f",
+                    "label": "sidebutton_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "sidebutton",
+                    "Button.callback": "() => this.goToPage(this.crumbs.stampbook['events'])",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "sidebutton"
+                    },
+                    "x": 1384,
+                    "y": 200
+                },
+                {
+                    "type": "Image",
+                    "id": "27b2f99a-4bb5-4c8a-bce2-b79b35d2c95b",
+                    "label": "categories_9001",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/9001"
+                    },
+                    "x": 1382,
+                    "y": 470,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "077319bd-863c-4950-a286-c687aa0c02b7",
+                    "label": "categories_7",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/7"
+                    },
+                    "x": 1382,
+                    "y": 290,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "9c893bd2-8fb4-4186-b4aa-1df46e744412",
+                    "label": "categories_8",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/8"
+                    },
+                    "x": 1382,
+                    "y": 380,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "a6c7fb05-917b-436a-aa19-81d53be0c0e4",
+                    "label": "categories_5",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/5"
+                    },
+                    "x": 1382,
+                    "y": 200,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
                 }
             ]
         },
@@ -1244,11 +1363,50 @@
                     },
                     "x": 740,
                     "y": 480,
-                    "alpha": 0.15,
-                    "alphaTopLeft": 0.15,
-                    "alphaTopRight": 0.15,
-                    "alphaBottomLeft": 0.15,
-                    "alphaBottomRight": 0.15
+                    "alpha": 0.5,
+                    "alphaTopLeft": 0.5,
+                    "alphaTopRight": 0.5,
+                    "alphaBottomLeft": 0.5,
+                    "alphaBottomRight": 0.5,
+                    "tintTopLeft": "#b35e42",
+                    "tintTopRight": "#b35e42",
+                    "tintBottomLeft": "#b35e42",
+                    "tintBottomRight": "e47652"
+                },
+                {
+                    "type": "Image",
+                    "id": "2ee9142d-b296-45ec-aeb3-ff62e919664c",
+                    "label": "wordmark",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "wordmark"
+                    },
+                    "x": 1194,
+                    "y": 707,
+                    "tintTopLeft": "e47652",
+                    "tintTopRight": "e47652",
+                    "tintBottomLeft": "e47652",
+                    "tintBottomRight": "e47652",
+                    "tintFill": true
+                },
+                {
+                    "type": "Image",
+                    "id": "6ae6dd2a-447f-4ddf-9428-e4e8e0c38d77",
+                    "label": "wordmark_overlay",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "wordmark"
+                    },
+                    "x": 1194,
+                    "y": 707,
+                    "tintTopLeft": "e47652",
+                    "tintTopRight": "e47652",
+                    "tintBottomLeft": "e47652",
+                    "tintBottomRight": "e47652"
                 },
                 {
                     "type": "Sprite",
@@ -1302,8 +1460,10 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": 253,
-                    "y": 639,
-                    "text": "Loading Stampbook...",
+                    "y": 705,
+                    "originY": 0.5,
+                    "fixedWidth": 700,
+                    "fixedHeight": 100,
                     "fontFamily": "Burbank Small",
                     "fontSize": "100px",
                     "fontStyle": "bold",
@@ -1841,6 +2001,95 @@
                     },
                     "x": 1463,
                     "y": 899
+                },
+                {
+                    "type": "Image",
+                    "id": "f7ed1aa0-6c3c-432f-8ba8-bdf8ad899aeb",
+                    "label": "category_icon",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onEditorCategoriesOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onEditorCategoriesOut()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/9000"
+                    },
+                    "x": 77,
+                    "y": 83
+                },
+                {
+                    "type": "Image",
+                    "id": "6080e8b8-2283-49b4-991a-89f5c9cd8685",
+                    "label": "arrow_right",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "arrow"
+                    },
+                    "x": 1383,
+                    "y": 48
+                },
+                {
+                    "type": "Image",
+                    "id": "e6c2b7c0-f46e-4f93-9771-c44d6e1514b8",
+                    "label": "arrow_left",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "arrow"
+                    },
+                    "x": 188,
+                    "y": 48,
+                    "scaleX": -1
+                },
+                {
+                    "type": "Text",
+                    "id": "b00d03c3-cdd5-4df7-abca-fff3beff283d",
+                    "label": "category_title",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 82,
+                    "y": 21,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "All Stamps",
+                    "fixedWidth": 150,
+                    "fixedHeight": 25,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "5c05a36f-208b-475a-9e3c-a7d9179efcb8",
+                    "label": "rectangle_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.nextEditorStampPage()",
+                    "x": 1383,
+                    "y": 47,
+                    "width": 30,
+                    "height": 100
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c70be77c-e55e-481d-b727-0721226e04e2",
+                    "label": "rectangle",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.prevEditorStampPage()",
+                    "x": 186,
+                    "y": 45,
+                    "width": 30,
+                    "height": 100
                 }
             ]
         },
@@ -1858,9 +2107,8 @@
             "label": "stampInfo",
             "scope": "CLASS",
             "components": [],
-            "x": -190,
-            "y": 259,
-            "visible": false,
+            "x": -262,
+            "y": 75,
             "list": [
                 {
                     "type": "NinePatchContainer",
@@ -1869,13 +2117,17 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "main",
-                        "frame": "list/small"
+                        "key": "stampbook",
+                        "frame": "hover"
                     },
-                    "x": 6.518512446268176,
-                    "y": -118.87806837021839,
+                    "x": 7,
+                    "y": -112,
                     "width": 300,
-                    "height": 300
+                    "height": 170,
+                    "marginLeft": 15,
+                    "marginRight": 15,
+                    "marginTop": 10,
+                    "marginBottom": 25
                 },
                 {
                     "type": "Text",
@@ -1883,13 +2135,12 @@
                     "label": "stampInfoTitle",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 7,
-                    "y": -175,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Full House",
+                    "x": -143,
+                    "y": -182,
+                    "text": "Aunt Arctic",
                     "fixedWidth": 300,
-                    "align": "center",
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
                     "fontFamily": "Burbank Small",
                     "fontSize": "26px",
                     "fontStyle": "bold",
@@ -1901,17 +2152,16 @@
                     "label": "stampInfoBody",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 6.518512446268176,
-                    "y": -93.87806837021839,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Get all ya mates together and play in a band innit",
+                    "x": -143,
+                    "y": -147,
+                    "text": "Be in the same room as Aunt Arctic",
                     "fixedWidth": 300,
-                    "align": "center",
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
                     "fontFamily": "Burbank Small",
-                    "fontSize": "26px",
-                    "color": "#000000ff",
-                    "wordWrapWidth": 275
+                    "fontSize": "20px",
+                    "color": "#606060ff",
+                    "wordWrapWidth": 270
                 }
             ]
         },
@@ -2172,6 +2422,168 @@
                     "fillAlpha": 0.5,
                     "width": 170,
                     "height": 150
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f2e71919-551e-46c9-bfb0-69a9c9d91ab8",
+            "label": "instructionsContainer",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1005,
+            "y": 286,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "175a4199-d06f-476a-b199-75b12032cc4a",
+                    "label": "contents_instruct",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "contents-instruct"
+                    },
+                    "x": 161,
+                    "y": 164
+                },
+                {
+                    "type": "Text",
+                    "id": "ba82d7d9-97b4-4db5-bab8-5c627a60477a",
+                    "label": "stampbookGuide",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "stampbookguide",
+                    "originY": 0.5,
+                    "text": "Stamp Book Guide",
+                    "fixedWidth": 330,
+                    "fixedHeight": 50,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "38px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "18972e9d-e90a-4fae-9ea6-3dbd8931d221",
+                    "label": "stampbookGuide_1",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "easy",
+                    "x": 45,
+                    "y": 88,
+                    "originY": 0.5,
+                    "text": "Easy",
+                    "fixedWidth": 200,
+                    "fixedHeight": 30,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f01ff6d1-d2d0-4905-97ff-2f7b536c74d1",
+                    "label": "stampbookGuide_2",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "medium",
+                    "x": 45,
+                    "y": 135,
+                    "originY": 0.5,
+                    "text": "Medium",
+                    "fixedWidth": 200,
+                    "fixedHeight": 30,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "34cbb632-a7ad-4b1b-918e-8288955d053a",
+                    "label": "stampbookGuide_3",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "hard",
+                    "x": 45,
+                    "y": 182,
+                    "originY": 0.5,
+                    "text": "Hard",
+                    "fixedWidth": 200,
+                    "fixedHeight": 30,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "6d96d0df-f8ea-476b-950a-99bd7d31eaf3",
+                    "label": "stampbookGuide_4",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "extreme",
+                    "x": 45,
+                    "y": 230,
+                    "originY": 0.5,
+                    "text": "Extreme",
+                    "fixedWidth": 200,
+                    "fixedHeight": 30,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "299f78fa-698a-4120-b3da-ad40f71273e0",
+                    "label": "stampbookGuide_5",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "editstampbook",
+                    "x": 45,
+                    "y": 279,
+                    "originY": 0.5,
+                    "text": "Edit Stamp Book",
+                    "fixedWidth": 200,
+                    "fixedHeight": 30,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "2ed6728b-da65-450c-9a9c-ead6cbc1c06a",
+                    "label": "stampbookGuide_6",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "savestampbook",
+                    "x": 45,
+                    "y": 328,
+                    "originY": 0.5,
+                    "text": "Save Stamp Book",
+                    "fixedWidth": 200,
+                    "fixedHeight": 30,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
                 }
             ]
         }

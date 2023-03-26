@@ -17,6 +17,7 @@ export default class Interactive {
             cursor: 'default',
             pixelPerfect: false,
         })
+        this.gameObject.isInteractive = true
 
         /* END-USER-CTR-CODE */
     }

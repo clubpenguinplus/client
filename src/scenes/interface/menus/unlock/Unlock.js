@@ -348,6 +348,7 @@ export default class Unlock extends BaseScene {
 
     onServerClick() {
         this.interface.showLoading()
+        this.airtower.doNotReconnect = true
         this.airtower.disconnect()
         this.airtower.loginReconnect()
         this.scene.stop()

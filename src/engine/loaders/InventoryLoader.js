@@ -14,8 +14,6 @@ export default class InventoryLoader extends BaseLoader {
         let suffix = '/client/media/clothing/icon/'
         this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
         this.keyPrefix = 'clothing/icon/'
-
-        this.attachErrorListener()
     }
 
     loadPage(page) {

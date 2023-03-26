@@ -262,6 +262,7 @@ export default class Coffee extends RoomScene {
 
     create() {
         super.create()
+        this.coffeeServerIterations = 0
     }
 
     onTownDoorOver() {
@@ -300,6 +301,15 @@ export default class Coffee extends RoomScene {
     onSmoothieMachineOver() {
         this.smoothiemachine.play('coffee-smoothiesmash')
         this.shell.musicController.addSfx('coffee-smoothie')
+    }
+
+    triggerEmote(emote) {
+        if (emote == 13 && (this.shell.client.penguin.wearingItem(262) || this.shell.client.penguin.wearingItem(10262))) {
+            this.coffeeServerIterations++
+            if (this.coffeeServerIterations == 5) {
+                this.shell.client.stampEarned(18)
+            }
+        }
     }
     /* END-USER-CODE */
 }

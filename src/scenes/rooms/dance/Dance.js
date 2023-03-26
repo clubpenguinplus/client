@@ -326,16 +326,25 @@ export default class Dance extends RoomScene {
         this.floorSpeakerbut.play('dance-floorSpeaker')
         this.neonSign.play('dance-neonSign')
 
-        if (!this.penguins) return
-
-        if (Object.keys(this.penguins).length >= 10) {
-            this.shell.client.stampEarned(16)
-        }
-        if (Object.keys(this.penguins).length >= 25) {
-            this.shell.client.stampEarned(22)
-        }
-
         this.loadSfx = ['dance-Door', 'dance-SpeakerOpen', 'dance-SpeakerClose', 'dance-LightOn', 'dance-LightOff']
+
+        if (!this.shell.client.stamps.includes(16) && !this.shell.client.stamps.includes(22)) {
+            this.dancingStampInterval = setInterval(() => {
+                let dancing = 0
+                this.penguins.forEach((penguin) => {
+                    if (penguin.frame == 26) {
+                        dancing++
+                    }
+                })
+                if (dancing >= 10) {
+                    this.shell.client.stampEarned(16)
+                }
+                if (dancing >= 25) {
+                    this.shell.client.stampEarned(22)
+                    clearInterval(this.dancingStampInterval)
+                }
+            }, 2000)
+        }
     }
 
     onSoundStudioOver() {
@@ -392,14 +401,9 @@ export default class Dance extends RoomScene {
         this.keeper.play('dance-keeperJump')
     }
 
-    addPenguin(id, penguin) {
-        super.addPenguin(id, penguin)
-        if (Object.keys(this.penguins).length >= 10) {
-            this.shell.client.stampEarned(16)
-        }
-        if (Object.keys(this.penguins).length >= 25) {
-            this.shell.client.stampEarned(22)
-        }
+    stop() {
+        clearInterval(this.dancingStampInterval)
+        super.stop()
     }
     /* END-USER-CODE */
 }

@@ -13,7 +13,7 @@ export default class Mine extends RoomScene {
             cave: () => this.triggerRoom(806, 1242, 685),
             cart: () => this.triggerGame('cartsurfer', 905),
             gold: () => this.triggerRoom(813, 350, 680),
-            rescue: () => this.triggerGame('pufflerescue', 927),
+            rescue: () => this.triggerGame('pufflerescue', 927, 'as3'),
             shack: () => this.triggerRoom(807, 925, 538),
         }
         this.music = 675

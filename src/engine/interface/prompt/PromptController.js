@@ -31,7 +31,7 @@ export default class PromptController {
             this.error.visible = false
             this.error.disconnectOverwrite = false
         },
-        disconnectOverwrite
+        disconnectOverwrite = false
     ) {
         this.error.disconnectOverwrite = disconnectOverwrite ? true : false
         this.error.show(text, buttonText, callback)

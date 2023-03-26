@@ -288,7 +288,8 @@
                 "frame": "fg2"
             },
             "x": 539,
-            "y": 878
+            "y": 971.7018093054124,
+            "originY": 0.9957769736473352
         },
         {
             "type": "Image",
@@ -604,6 +605,96 @@
             "y": 884.01953125,
             "originX": 0.5000905915025777,
             "originY": 0.5001820467068046
+        },
+        {
+            "type": "Ellipse",
+            "id": "972280ac-1e66-4466-9039-60f372dd6745",
+            "label": "ellipse_2",
+            "components": [],
+            "x": 1042,
+            "y": 818,
+            "width": 800,
+            "height": 300
+        },
+        {
+            "type": "Ellipse",
+            "id": "723191fe-6147-4e49-9202-075bda7743e3",
+            "label": "ellipse",
+            "components": [],
+            "x": 776,
+            "y": 913,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "137178ec-4c4a-4c2a-a830-5585d67a3c5b",
+            "label": "ellipse_1",
+            "components": [],
+            "x": 1413,
+            "y": 913,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "1778921c-b05d-4241-967f-619aaa194503",
+            "label": "ellipse_3",
+            "components": [],
+            "x": 1424,
+            "y": 824,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "30a5f40a-e682-40f5-8aa5-3a93c21ffad7",
+            "label": "ellipse_4",
+            "components": [],
+            "x": 1431,
+            "y": 778,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "a245d2c9-a7aa-4efc-83bc-d3573d10edb6",
+            "label": "ellipse_5",
+            "components": [],
+            "x": 591,
+            "y": 758,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "1c6a33c1-a731-46cf-8f10-aa99eee4bc57",
+            "label": "ellipse_6",
+            "components": [],
+            "x": 679,
+            "y": 723,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "7d414992-0235-4a94-91c7-969bf15a681d",
+            "label": "ellipse_7",
+            "components": [],
+            "x": 811,
+            "y": 705,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Ellipse",
+            "id": "f7f73820-f558-47b8-9ac0-f2d44cf57b3b",
+            "label": "ellipse_8",
+            "components": [],
+            "x": 1159,
+            "y": 685,
+            "width": 200,
+            "height": 100
         }
     ],
     "plainObjects": [],
@@ -647,7 +738,23 @@
                 "98b54f08-87ad-4839-a173-a743fec06bb0",
                 "4bdef37c-3bca-4fd5-b454-a3ded4a363f8",
                 "0f84c83c-3273-4c79-9abc-eb7b6c292a64",
-                "33202cf5-6cfb-45a2-ac86-fadce1decac6"
+                "33202cf5-6cfb-45a2-ac86-fadce1decac6",
+                "9b7307e5-580a-4c07-a120-87c9a2935640"
+            ]
+        },
+        {
+            "id": "faf025a6-6eac-4347-b856-50f32de4016d",
+            "label": "waterZones",
+            "objectIds": [
+                "f7f73820-f558-47b8-9ac0-f2d44cf57b3b",
+                "7d414992-0235-4a94-91c7-969bf15a681d",
+                "1c6a33c1-a731-46cf-8f10-aa99eee4bc57",
+                "a245d2c9-a7aa-4efc-83bc-d3573d10edb6",
+                "30a5f40a-e682-40f5-8aa5-3a93c21ffad7",
+                "1778921c-b05d-4241-967f-619aaa194503",
+                "137178ec-4c4a-4c2a-a830-5585d67a3c5b",
+                "723191fe-6147-4e49-9202-075bda7743e3",
+                "972280ac-1e66-4466-9039-60f372dd6745"
             ]
         }
     ]

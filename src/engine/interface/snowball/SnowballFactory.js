@@ -11,14 +11,21 @@ export default class SnowballFactory {
         this.maxHeight = 425
         this.minHeight = 350
 
-        shell.events.on('snowballcomplete', (x, y) => shell.room.onSnowballComplete(x, y))
+        shell.events.on('snowballcomplete', (user, x, y) => shell.room.onSnowballComplete(user, x, y))
+    }
+
+    get ballLimit() {
+        if (!this.shell.ballLimit) this.shell.ballLimit = 9
+        return this.shell.ballLimit
     }
 
     throwBall(id, x, y) {
         let penguin = this.shell.room.penguins[id]
         if (!penguin || penguin.isTweening) return
 
-        if (this.balls.length > 9) this.removeOldestBall()
+        penguin.hasThrownSnowball = true
+
+        if (this.balls.length > this.ballLimit) this.removeOldestBall()
 
         let ball = this.createBall(penguin)
         x += Phaser.Math.Between(-20, 20)
@@ -46,6 +53,8 @@ export default class SnowballFactory {
 
         ball.visible = false
         ball.shadow.visible = false
+
+        ball.user = penguin.id
 
         this.balls.push(ball)
         return ball
@@ -98,7 +107,7 @@ export default class SnowballFactory {
     onTweenComplete(ball) {
         if (ball.active) {
             ball.setTexture('main', 'snowball/ground')
-            this.shell.events.emit('snowballcomplete', ball.x, ball.y)
+            this.shell.events.emit('snowballcomplete', ball.user, ball.x, ball.y)
         }
     }
 

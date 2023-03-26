@@ -99,6 +99,7 @@ export default class Airtower {
 
     connect(world, onConnect, onDisconnect) {
         this.disconnect()
+        this.reconTimeout = null
         if (!onConnect) onConnect = () => {}
         if (!onDisconnect) onDisconnect = () => {}
 
@@ -113,7 +114,6 @@ export default class Airtower {
     }
 
     disconnect() {
-        this.doNotReconnect = true
         if (this.client) {
             this.client.disconnect()
         }
@@ -122,7 +122,7 @@ export default class Airtower {
     sendXt(action, args = '') {
         if (typeof args == 'object') args = args.join('%')
         if (window.location.hostname == 'localhost') {
-            console.log('[Airtower] XT packet sent:', `%xt%s%${action}%${args}%`)
+            console.info('[Airtower] XT packet sent:', `%xt%s%${action}%${args}%`)
         }
         let payload = AES.encrypt(`%xt%s%${action}%${args}%`, `Client${new Date().getUTCHours()}Key`).toString()
         this.client.emit('message', payload)
@@ -130,7 +130,7 @@ export default class Airtower {
 
     sendXml(xml) {
         if (window.location.hostname == 'localhost') {
-            console.log('[Airtower] XML packet sent:', xml)
+            console.info('[Airtower] XML packet sent:', xml)
         }
         let payload = AES.encrypt(xml, `Client${new Date().getUTCHours()}Key`).toString()
         this.client.emit('message', payload)
@@ -153,24 +153,17 @@ export default class Airtower {
         if (this.reconTimeout || this.doNotReconnect) return
         this.disconnect()
 
-        setTimeout(() => this.checkConnection(), 1000)
+        this.reconTimeout = setTimeout(() => this.checkConnection(), 1000)
         this.runs = 0
     }
 
     checkConnection() {
-        if (!this.client.connected) {
-            this.checkConnection2()
-            this.allowSwitchRooms = 'no'
-        }
-    }
-
-    checkConnection2() {
         if (!this.creds) this.runs = 10
         if (!this.client.connected && this.runs < 10) {
             this.runs = this.runs + 1
             this.connectGame(this.creds.world, this.creds.username, this.creds.key, this.creds.mode)
             if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError('Connection was lost.\nAttempting to recconnect you.', 'Reload', () => window.location.reload())
-            this.reconTimeout = setTimeout(() => this.checkConnection2(), 3000)
+            this.reconTimeout = setTimeout(() => this.checkConnection(), 3000)
         } else if (!this.client.connected) {
             if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError('Connection was lost.\nPlease click to reload.', 'Reload', () => window.location.reload())
             if (!document.getElementsByTagName('ruffle-player')[0]) return
@@ -244,7 +237,7 @@ export default class Airtower {
             }
 
             if (window.location.hostname == 'localhost') {
-                console.log('[Airtower] Message received:', message)
+                console.info('[Airtower] Message received:', message)
             }
 
             if (type == 'xt') {
@@ -313,7 +306,7 @@ export default class Airtower {
                     return
             }
         } catch (error) {
-            console.error(error)
+            console.error(`[Airtower] ${error}`)
         }
     }
 

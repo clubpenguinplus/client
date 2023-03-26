@@ -909,8 +909,6 @@ export default class Main extends BaseScene {
 
         this.waddle.activeSeat = null
 
-        this.interface.prompt.hideAll()
-
         for (let item of this.hideOnSleep) {
             item.visible = false
         }
@@ -1059,7 +1057,7 @@ export default class Main extends BaseScene {
                 penguin.nameTag.visible = false
             }
         } catch (err) {
-            console.error(err)
+            console.error(`[Interface:Main] ${err}`)
         }
     }
 
@@ -1078,7 +1076,7 @@ export default class Main extends BaseScene {
                 penguin.nameTag.visible = true
             }
         } catch (err) {
-            console.error(err)
+            console.error(`[Interface:Main] ${err}`)
         }
     }
 

@@ -20,6 +20,8 @@ export default class Dock extends RoomScene {
         this.rectangle
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort
+        /** @type {Array<any>} */
+        this.waterZones
 
         /* START-USER-CTR-CODE */
 
@@ -122,6 +124,7 @@ export default class Dock extends RoomScene {
 
         // lists
         const sort = [snow_fg, ring, pillar1, fg2, pillar2, table2, forest, bench2, bench1, container_1, tabale]
+        const waterZones = []
 
         // boat (components)
         const boatButton = new Button(boat)
@@ -169,6 +172,7 @@ export default class Dock extends RoomScene {
         this.rectangle_1 = rectangle_1
         this.rectangle = rectangle
         this.sort = sort
+        this.waterZones = waterZones
 
         this.events.emit('scene-awake')
     }
