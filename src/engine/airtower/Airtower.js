@@ -103,7 +103,19 @@ export default class Airtower {
         if (!onConnect) onConnect = () => {}
         if (!onDisconnect) onDisconnect = () => {}
 
-        let config = window.location.hostname == 'localhost' ? this.crumbs.worlds.sandbox[world] : this.crumbs.worlds[world]
+        let environment
+        switch (true) {
+            case window.location.hostname.includes('beta'):
+                environment = 'dev'
+                break
+            case window.location.hostname.includes('play'):
+                environment = 'live'
+                break
+            default:
+                environment = 'local'
+        }
+
+        let config = this.crumbs.worlds[environment][world]
 
         this.client = io.connect(config.host, {path: config.path})
 

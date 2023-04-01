@@ -199,12 +199,26 @@ export default class Servers extends BaseScene {
         this.data = data
 
         this.worlds = {}
-        for (let world in this.crumbs.worlds) {
-            if (world == 'sandbox') continue
-            if (this.crumbs.worlds[world].login) continue
-            this.worlds[world] = this.crumbs.worlds[world]
 
-            if (this.crumbs.worlds[world].unlock) {
+        let environment
+        switch (true) {
+            case window.location.hostname.includes('beta'):
+                environment = 'dev'
+                break
+            case window.location.hostname.includes('play'):
+                environment = 'live'
+                break
+            default:
+                environment = 'local'
+        }
+
+        let worlds = this.crumbs.worlds[environment]
+        for (let world in worlds) {
+            if (world == 'sandbox') continue
+            if (worlds[world].login) continue
+            this.worlds[world] = worlds[world]
+
+            if (worlds[world].unlock) {
                 this.unlockworld = world
             }
         }
