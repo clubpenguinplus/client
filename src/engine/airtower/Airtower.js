@@ -20,12 +20,55 @@ export default class Airtower {
         this.lastLoginScene = null
 
         this.worldName
+
+        this.encryptionKeys = {}
     }
 
     get interface() {
         let inf = this.game.scene.getScene('InterfaceController')
         inf.bringToTop()
         return inf
+    }
+
+    // Generate primary encryption keys
+
+    caesarCipherEncryptHex(text, key) {
+        let result = ''
+        for (let i = 0; i < text.length; i++) {
+            let char = text[i]
+            if (char.match(/[0-9a-f]/i)) {
+                let code = parseInt(char, 16)
+                code = (code + key) % 16
+                char = code.toString(16)
+            }
+            result += char
+        }
+        return result
+    }
+
+    generatePrimaryKey(caeserOffset) {
+        const now = new Date()
+
+        const hours = now.getUTCHours()
+        const date = now.getUTCDate()
+        const day = now.getUTCDay()
+
+        const keyNum = hours * date * day
+        const keyHex = keyNum.toString(16)
+
+        const key = this.caesarCipherEncryptHex(keyHex, caeserOffset)
+
+        return key
+    }
+
+    generatePrimaryServerKey() {
+        const key = this.generatePrimaryKey(3) + this.generatePrimaryKey(7) + '9yXruyv2L7PQzmAWHYQmcmNS'
+        return key
+    }
+
+    generatePrimaryClientKey() {
+        const key = this.generatePrimaryKey(5) + this.generatePrimaryKey(11) + 'KSd7zZ9bCKgxBvPcPJXUBgHV'
+        return key
     }
 
     connectLogin(saveUsername, savePassword, onConnect) {
@@ -37,6 +80,11 @@ export default class Airtower {
             'Login',
             () => {
                 this.serverWorking = true
+                this.worldName = 'Login'
+                this.encryptionKeys['Login'] = {
+                    client: this.generatePrimaryClientKey(),
+                    server: this.generatePrimaryServerKey(),
+                }
                 onConnect()
             },
             () => {
@@ -61,40 +109,27 @@ export default class Airtower {
             response[2] = token.split(':')[0]
         }
 
-        if (mode == 'game') {
-            this.connect(
-                world,
-                () => {
-                    this.sendXt('auth#g', response)
-                    this.worldName = world
-                },
-                () => {
-                    this.onConnectionLost()
-                }
-            )
-        } else if (mode == 'mod') {
-            this.connect(
-                world,
-                () => {
-                    this.sendXt('auth#m', response)
-                    this.worldName = world
-                },
-                () => {
-                    this.onConnectionLost()
-                }
-            )
-        } else if (mode == 'unlock') {
-            this.connect(
-                world,
-                () => {
-                    this.sendXt('auth#u', response)
-                    this.worldName = world
-                },
-                () => {
-                    this.onConnectionLost()
-                }
-            )
+        const messageTypes = {
+            game: 'g',
+            mod: 'm',
+            unlock: 'u',
         }
+
+        this.connect(
+            world,
+            () => {
+                this.worldName = world
+                this.encryptionKeys[world] = {
+                    client: this.generatePrimaryClientKey(),
+                    server: this.generatePrimaryServerKey(),
+                }
+                const messageType = messageTypes[mode]
+                this.sendXt(`auth#${messageType}`, response)
+            },
+            () => {
+                this.onConnectionLost()
+            }
+        )
     }
 
     connect(world, onConnect, onDisconnect) {
@@ -124,7 +159,7 @@ export default class Airtower {
         if (window.location.hostname == 'localhost') {
             console.info('[Airtower] XT packet sent:', `%xt%s%${action}%${args}%`)
         }
-        let payload = AES.encrypt(`%xt%s%${action}%${args}%`, `Client${new Date().getUTCHours()}Key`).toString()
+        let payload = AES.encrypt(`%xt%s%${action}%${args}%`, this.encryptionKeys[this.worldName].client).toString()
         this.client.emit('message', payload)
     }
 
@@ -132,14 +167,14 @@ export default class Airtower {
         if (window.location.hostname == 'localhost') {
             console.info('[Airtower] XML packet sent:', xml)
         }
-        let payload = AES.encrypt(xml, `Client${new Date().getUTCHours()}Key`).toString()
+        let payload = AES.encrypt(xml, this.encryptionKeys[this.worldName].client).toString()
         this.client.emit('message', payload)
     }
 
     // Handlers
 
     onMessage(message) {
-        let payload = AES.decrypt(message, `Server${new Date().getUTCHours()}Key`)
+        let payload = AES.decrypt(message, this.encryptionKeys[this.worldName].server)
         this.handle(payload.toString(enc))
     }
 

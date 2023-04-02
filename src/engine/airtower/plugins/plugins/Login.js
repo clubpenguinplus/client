@@ -40,6 +40,11 @@ export default class Login extends Plugin {
     }
 
     gameAuth(args) {
+        if (args[2] && args[2].length > 0) this.airtower.token = args[2]
+        this.airtower.encryptionKeys[this.airtower.worldName] = {
+            server: args[0],
+            client: args[1],
+        }
         this.airtower.sendXt('l#lp')
     }
 
