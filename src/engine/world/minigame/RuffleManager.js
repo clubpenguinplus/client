@@ -146,7 +146,6 @@ export default class RuffleManager {
         var ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
         ruffleplayer.setMediaPath(`${this.prefix}client/media/games/swf/`, `${this.prefix}client/media/swf/`)
         ruffleplayer.style.visibility = 'visible'
-        ruffleplayer.volume = 0.05
 
         ruffleplayer.shadowRoot.querySelector('canvas').style.borderRadius = '10px'
 
@@ -158,6 +157,12 @@ export default class RuffleManager {
         } else if (this.swf.path) {
             ruffleplayer.loadOtherSwf(this.swf.path, this.swf.params)
         }
+
+        if (this.volumeInterval) clearInterval(this.volumeInterval)
+        this.volumeInterval = setInterval(() => {
+            if (ruffleplayer.volume == parseFloat(localStorage.musicVolume || 0.5)) return clearInterval(this.volumeInterval)
+            ruffleplayer.volume = parseFloat(localStorage.musicVolume || 0.5)
+        }, 200)
 
         this.swf = {}
     }
@@ -183,6 +188,12 @@ export default class RuffleManager {
         }
 
         this.shell.airtower.sendXt('mi#eg', `${coins}%${game}`)
+
+        if (this.volumeInterval) clearInterval(this.volumeInterval)
+        this.volumeInterval = setInterval(() => {
+            if (ruffleplayer.volume == 0) return clearInterval(this.volumeInterval)
+            ruffleplayer.volume = 0
+        }, 200)
     }
 
     getCategory(game) {
