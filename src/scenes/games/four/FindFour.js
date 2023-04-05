@@ -217,7 +217,8 @@ export default class FindFour extends BaseContainer {
 
         this.items.map((item) => item.hideItem())
 
-        for (let [index, username] of this.activeWaddle.entries()) {
+        for (let index in this.activeWaddle.seats) {
+            username = this.activeWaddle.seats[index]
             this.items[index].setItem(username, this.seat)
         }
 

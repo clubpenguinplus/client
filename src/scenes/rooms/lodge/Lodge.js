@@ -336,14 +336,14 @@ export default class Lodge extends RoomScene {
     }
 
     triggerWaddle(id) {
-        //     if (this.world.shell.activeSeat) {
-        //         return
-        //     }
-        //     let text = 'Would you like to join this\nFind Four Game?'
-        //     this.interface.prompt.showWindow(text, 'dual', () => {
-        //         this.network.send('join_waddle', {id: id})
-        //         this.interface.prompt.window.visible = false
-        //     })
+        if (this.shell.client.activeSeat) {
+            return
+        }
+        let text = 'Would you like to join this\nFind Four Game?'
+        this.interface.prompt.showWindow(text, 'dual', () => {
+            this.airtower.sendXt('a#jt', id)
+            this.interface.prompt.window.visible = false
+        })
     }
 
     /* END-USER-CODE */

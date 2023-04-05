@@ -6,12 +6,12 @@ export default class Waddle extends Plugin {
         this.events = {
             gt: this.getWaddles,
             jt: this.joinWaddle,
-            update_waddle: this.updateWaddle,
+            ut: this.updateWaddle,
         }
     }
 
     getWaddles(args) {
-        this.shell.room.setWaddles(args[0])
+        this.shell.room.setWaddles(args)
     }
 
     joinWaddle(args) {
