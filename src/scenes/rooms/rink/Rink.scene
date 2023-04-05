@@ -213,7 +213,7 @@
             "components": [],
             "texture": {
                 "key": "rink",
-                "frame": "bleachers3.png"
+                "frame": "bleachers3"
             },
             "x": 1569,
             "y": 484

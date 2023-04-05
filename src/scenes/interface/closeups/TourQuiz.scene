@@ -527,7 +527,7 @@
                     ],
                     "texture": {
                         "key": "tourquiz",
-                        "frame": "questions3_en.png"
+                        "frame": "questions3_en"
                     },
                     "x": 153,
                     "y": 187

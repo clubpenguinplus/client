@@ -409,7 +409,7 @@
             "components": [],
             "texture": {
                 "key": "school",
-                "frame": "fg2.png.png"
+                "frame": "fg2"
             },
             "x": 743,
             "y": 600.3200871275012,

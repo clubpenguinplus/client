@@ -192,7 +192,7 @@ export default class TourQuiz extends BaseScene {
         question3.add(button_q3_wrong)
 
         // questions3_en
-        const questions3_en = this.add.image(153, 187, 'tourquiz', 'questions3_en.png')
+        const questions3_en = this.add.image(153, 187, 'tourquiz', 'questions3_en')
         question3.add(questions3_en)
 
         // question4
