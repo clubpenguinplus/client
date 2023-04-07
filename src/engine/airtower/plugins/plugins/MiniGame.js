@@ -54,7 +54,7 @@ export default class MiniGame extends Plugin {
     placeCounter(args) {
         let colour
         if (args[2] == this.shell.client.id) {
-            colour = this.interface.main.findFour.seat + 1
+            colour = parseInt(this.interface.main.findFour.seat) + 1
         } else if (this.interface.main.findFour.seat == 0) {
             colour = 2
         } else {

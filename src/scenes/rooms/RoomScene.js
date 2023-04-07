@@ -159,8 +159,8 @@ export default class RoomScene extends BaseScene {
             waddle = waddle.split('|')
             let seatsArray = waddle[1].split(',').filter((seat) => seat != '')
             let seats = {}
-            for (let [index, seat] of seatsArray) {
-                seats[index] = seat
+            for (let index in seatsArray) {
+                seats[index] = seatsArray[index]
             }
             return {
                 id: waddle[0],
@@ -173,15 +173,15 @@ export default class RoomScene extends BaseScene {
 
         for (let w in this.waddles) {
             let waddle = this.waddles[w]
-            this.setSeats(w, waddle.seats)
+            this.setSeats(waddle.id, waddle.seats)
         }
     }
 
     setSeats(id, seats) {
         for (let s in seats) {
-            seat = seats[s]
+            let seat = seats[s]
             if (seat) {
-                this.shell.room[`seats${id}`][index].visible = true
+                this.shell.room[`seats${id}`][s].visible = true
             }
         }
     }
