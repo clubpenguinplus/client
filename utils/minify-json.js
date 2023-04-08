@@ -11,7 +11,11 @@ function searchFolder(path) {
         if (file.endsWith('.json')) {
             var jsonFile = fs.readFileSync(`${path}/${file}`, 'utf8')
             var jsonData = JSON.parse(jsonFile)
-            fs.writeFileSync(`${path}/${file}`, JSON.stringify(jsonData))
+            if (path.includes('crumbs/')) {
+                fs.writeFileSync(`${path}/${file}`, JSON.stringify(jsonData, null, 4))
+            } else {
+                fs.writeFileSync(`${path}/${file}`, JSON.stringify(jsonData))
+            }            
         }
     }
 }
