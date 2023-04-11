@@ -16,6 +16,7 @@ export default class Penguin extends BaseContainer {
 
         this.puffleLoader = puffleLoader
 
+        if (this.walking) this.getPuffleSpecies()
         if (this.puffle) this.loadPuffle()
 
         this.items = new PenguinItems(this)
@@ -130,8 +131,19 @@ export default class Penguin extends BaseContainer {
         this.y = y
     }
 
+    getPuffleSpecies() {
+        if (this.walking) this.airtower.sendXt('p#pgs', `${this.walking}%${this.id}`)
+    }
+
     loadPuffle() {
         if (!this.puffle) return
+
+        // Pet shop floor
+        if (this.room.floorpuffle) {
+            let parent = this.crumbs.puffles[this.puffle].parent
+            let color = this.crumbs.puffles[parent].name.toLowerCase()
+            this.room.floorpuffle.setFrame(`floorpuffle_${color}`)
+        }
 
         if (this.shell.textures.exists(`puffles/walk/${this.puffle}`)) return this.addPuffleSprite()
 
@@ -145,41 +157,10 @@ export default class Penguin extends BaseContainer {
         this.add(this.puffleSprite)
     }
 
-    animatePuffle(animation) {
-        if (!this.puffleSprite) return
-
-        if (this.shell.textures.exists(`puffles/${animation}/${this.puffle}`)) return this.playPuffleAnim(animation)
-
-        this.shell.events.addListener(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
-        this.puffleLoader.loadPuffle(animation, this.puffle)
-    }
-
-    playPuffleAnim(animation) {
-        if (!this.anims.exists(`puffle_${animation}_${this.puffle}`)) this.generatePuffleAnim(animation)
-
-        let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
-        pAnimSprite.depth = this.puffleSprite.depth
-        this.puffleSprite.visible = false
-        pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
-        pAnimSprite.on('animationcomplete', () => {
-            pAnimSprite.destroy()
-            this.puffleSprite.visible = true
-        })
-    }
-
-    generatePuffleAnim(animation) {
-        let frameTotal = this.shell.textures.list[`puffles/${animation}/${this.puffle}`].frameTotal - 1
-        let frameArray = Phaser.Utils.Array.NumberArray(1, frameTotal).map((frame) => {
-            frame = frame.toString()
-            while (frame.length < 4) frame = '0' + frame
-            return frame
-        })
-        this.anims.create({
-            key: `puffle_${animation}_${this.puffle}`,
-            frames: this.anims.generateFrameNames(`puffles/${animation}/${this.puffle}`, {frames: frameArray}),
-            frameRate: 24,
-            repeat: 0,
-        })
+    removePuffle() {
+        this.puffle = null
+        this.puffleSprite.destroy()
+        this.puffleSprite = null
     }
 
     /*========== Animations ==========*/
@@ -400,6 +381,43 @@ export default class Penguin extends BaseContainer {
         let items = slots.map((slot) => adjustRedemptionItem(equipped[slot]))
 
         return `${frame},${items.toString()}`
+    }
+
+    playPuffleAnim(animation) {
+        if (!this.anims.exists(`puffle_${animation}_${this.puffle}`)) this.generatePuffleAnim(animation)
+
+        let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
+        pAnimSprite.depth = this.puffleSprite.depth
+        this.puffleSprite.visible = false
+        pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
+        pAnimSprite.on('animationcomplete', () => {
+            pAnimSprite.destroy()
+            this.puffleSprite.visible = true
+        })
+    }
+
+    generatePuffleAnim(animation) {
+        let frameTotal = this.shell.textures.list[`puffles/${animation}/${this.puffle}`].frameTotal - 1
+        let frameArray = Phaser.Utils.Array.NumberArray(1, frameTotal).map((frame) => {
+            frame = frame.toString()
+            while (frame.length < 4) frame = '0' + frame
+            return frame
+        })
+        this.anims.create({
+            key: `puffle_${animation}_${this.puffle}`,
+            frames: this.anims.generateFrameNames(`puffles/${animation}/${this.puffle}`, {frames: frameArray}),
+            frameRate: 24,
+            repeat: 0,
+        })
+    }
+
+    animatePuffle(animation) {
+        if (!this.puffleSprite) return
+
+        if (this.shell.textures.exists(`puffles/${animation}/${this.puffle}`)) return this.playPuffleAnim(animation)
+
+        this.shell.events.addListener(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
+        this.puffleLoader.loadPuffle(animation, this.puffle)
     }
 
     /*========== Tweening ==========*/

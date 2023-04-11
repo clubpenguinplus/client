@@ -68,6 +68,8 @@ export default class PaperDoll extends BaseContainer {
         for (let item of Object.values(this.items)) {
             this.removeItem(item)
         }
+
+        this.removePuffle()
     }
 
     removeItem(item) {
@@ -79,6 +81,13 @@ export default class PaperDoll extends BaseContainer {
 
         if (item.back) {
             this.destroyBack(item)
+        }
+    }
+
+    removePuffle() {
+        if (this.puffle) {
+            this.puffle.destroy()
+            this.puffle = null
         }
     }
 
@@ -105,6 +114,9 @@ export default class PaperDoll extends BaseContainer {
         }
 
         this.paperDollLoader.loadItems(penguin)
+        if (penguin.puffle) {
+            this.paperDollPuffleLoader.loadPuffle(penguin.puffle)
+        }
     }
 
     /**

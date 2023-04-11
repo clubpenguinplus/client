@@ -526,7 +526,8 @@
         {
             "type": "Image",
             "id": "fcd5536b-5c16-4f23-8da9-1d1798a714db",
-            "label": "floorpuffle_blue",
+            "label": "floorpuffle",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet",

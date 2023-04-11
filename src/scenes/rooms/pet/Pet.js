@@ -155,8 +155,8 @@ export default class Pet extends RoomScene {
         // floorholder
         this.add.image(760, 688, 'pet', 'floorholder')
 
-        // floorpuffle_blue
-        this.add.image(760, 894, 'pet', 'floorpuffle_blue')
+        // floorpuffle
+        const floorpuffle = this.add.image(760, 894, 'pet', 'floorpuffle_blue')
 
         // adoptbottom
         this.add.image(303, 457, 'pet', 'adoptbottom')
@@ -496,6 +496,7 @@ export default class Pet extends RoomScene {
         this.purplepuffjump = purplepuffjump
         this.pufflecareholder = pufflecareholder
         this.adopthitlight = adopthitlight
+        this.floorpuffle = floorpuffle
         this.adoptbookbase = adoptbookbase
         this.pufflecarebutton = pufflecarebutton
         this.goldtube = goldtube
@@ -566,6 +567,8 @@ export default class Pet extends RoomScene {
     pufflecareholder
     /** @type {Phaser.GameObjects.Sprite} */
     adopthitlight
+    /** @type {Phaser.GameObjects.Image} */
+    floorpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     adoptbookbase
     /** @type {Phaser.GameObjects.Sprite} */
@@ -670,6 +673,12 @@ export default class Pet extends RoomScene {
         this.bluedogblink.play('pet-bluedogblink')
         this.purplepuffblink.play('pet-purplepuffblink')
         this.white_lookaround.play('pet-whitepufflook')
+
+        if (this.client.penguin.puffle) {
+            let parent = this.crumbs.puffles[this.client.penguin.puffle].parent
+            let color = this.crumbs.puffles[parent].name.toLowerCase()
+            this.floorpuffle.setFrame(`floorpuffle_${color}`)
+        }
     }
 
     onPlazaDoorOver() {
