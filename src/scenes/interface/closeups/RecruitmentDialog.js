@@ -37,7 +37,7 @@ export default class RecruitmentDialog extends BaseScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('recruitment-pack', 'client/media/interface/game/recruitment/recruitment-pack.json')
+        this.load.pack('recruitment-pack', 'client/media/interface/closeups/recruitment/recruitment-pack.json')
     }
 
     /** @returns {void} */

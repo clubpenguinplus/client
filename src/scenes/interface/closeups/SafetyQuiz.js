@@ -124,7 +124,7 @@ export default class SafetyQuiz extends BaseScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('safetyquiz-pack', 'client/media/interface/game/safetyquiz/safetyquiz-pack.json')
+        this.load.pack('safetyquiz-pack', 'client/media/interface/closeups/safetyquiz/safetyquiz-pack.json')
     }
 
     /** @returns {void} */

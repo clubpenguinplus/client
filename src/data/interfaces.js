@@ -23,6 +23,7 @@ const interfaces = {
     Intro: require('@scenes/interface/closeups/Intro').default,
     RecruitmentDialog: require('@scenes/interface/closeups/RecruitmentDialog').default,
     Report: require('@scenes/interface/closeups/Report').default,
+    Adopt: require('@scenes/interface/closeups/Adopt').default,
 }
 
 export default interfaces

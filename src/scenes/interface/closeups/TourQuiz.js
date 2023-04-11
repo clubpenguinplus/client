@@ -46,7 +46,7 @@ export default class TourQuiz extends BaseScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('tourquiz-pack', 'client/media/interface/game/tourquiz/tourquiz-pack.json')
+        this.load.pack('tourquiz-pack', 'client/media/interface/closeups/tourquiz/tourquiz-pack.json')
     }
 
     /** @returns {void} */

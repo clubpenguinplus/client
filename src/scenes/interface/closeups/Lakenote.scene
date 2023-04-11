@@ -7,7 +7,7 @@
         "exportClass": true,
         "superClassName": "BaseScene",
         "preloadPackFiles": [
-            "client/client/media/interface/game/lakenote/lakenote-pack.json"
+            "client/client/media/interface/closeups/lakenote/lakenote-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Lakenote",

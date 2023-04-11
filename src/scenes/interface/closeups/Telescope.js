@@ -81,7 +81,7 @@ export default class Telescope extends BaseScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('telescope-pack', 'client/media/interface/game/telescope/telescope-pack.json')
+        this.load.pack('telescope-pack', 'client/media/interface/closeups/telescope/telescope-pack.json')
     }
 
     /** @returns {void} */

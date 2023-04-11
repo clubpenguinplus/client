@@ -7,7 +7,7 @@
         "exportClass": true,
         "superClassName": "BaseScene",
         "preloadPackFiles": [
-            "client/client/media/interface/game/tourquiz/tourquiz-pack.json"
+            "client/client/media/interface/closeups/tourquiz/tourquiz-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "TourQuiz",

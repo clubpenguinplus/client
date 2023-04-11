@@ -7,7 +7,7 @@
         "exportClass": true,
         "superClassName": "BaseScene",
         "preloadPackFiles": [
-            "client/client/media/interface/game/telescope/telescope-pack.json"
+            "client/client/media/interface/closeups/telescope/telescope-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Telescope",

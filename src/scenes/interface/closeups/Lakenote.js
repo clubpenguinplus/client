@@ -14,7 +14,7 @@ export default class Lakenote extends BaseScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('lakenote-pack', 'client/media/interface/game/lakenote/lakenote-pack.json')
+        this.load.pack('lakenote-pack', 'client/media/interface/closeups/lakenote/lakenote-pack.json')
     }
 
     /** @returns {void} */

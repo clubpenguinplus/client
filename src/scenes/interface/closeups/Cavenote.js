@@ -14,7 +14,7 @@ export default class Cavenote extends BaseScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('cavenote-pack', 'client/media/interface/game/cavenote/cavenote-pack.json')
+        this.load.pack('cavenote-pack', 'client/media/interface/closeups/cavenote/cavenote-pack.json')
     }
 
     /** @returns {void} */

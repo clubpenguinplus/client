@@ -6,8 +6,6 @@ import PhysicsMaskGraphics from '@engine/utils/mask/PhysicsMaskGraphics'
 import RoomCrate from './crates/RoomCrate'
 import WallCrate from './crates/WallCrate'
 
-import Puffle from '@engine/world/room/puffle/Puffle'
-
 export default class IglooScene extends RoomScene {
     constructor(key) {
         super(key)
@@ -24,9 +22,6 @@ export default class IglooScene extends RoomScene {
 
         // Selected furniture sprite
         this.selected
-
-        // List of puffles
-        this.puffles = []
     }
 
     init(data) {
@@ -385,21 +380,6 @@ export default class IglooScene extends RoomScene {
         if (this.selected && this.selected.y < 186) this.interface.iglooEdit.showMirror(this.selected.id, this.selected.x, this.selected.y)
     }
 
-    spawnPuffles(puffleArray) {
-        this.puffleArray = puffleArray
-        for (var x in this.puffleArray) {
-            new Puffle(this.puffleArray[x], this)
-        }
-    }
-
-    spawnPuffle(puffle) {
-        for (var x in this.puffleArray) {
-            if (this.puffleArray[x].id == puffle) {
-                new Puffle(this.puffleArray[x], this)
-            }
-        }
-    }
-
     addPenguin(id, penguin) {
         super.addPenguin(id, penguin)
 
@@ -414,9 +394,6 @@ export default class IglooScene extends RoomScene {
 
     stop() {
         this.created = false
-        for (let p in this.puffles) {
-            if (this.puffles[p]) this.puffles[p].destroy()
-        }
         if (this.likesWidget) this.likesWidget.scene.stop()
         this.shell.interface.main.showTR()
         this.interface.main.beta.visible = true

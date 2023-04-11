@@ -7,7 +7,7 @@
         "exportClass": true,
         "superClassName": "BaseScene",
         "preloadPackFiles": [
-            "client/client/media/interface/game/cavenote/cavenote-pack.json"
+            "client/client/media/interface/closeups/cavenote/cavenote-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Cavenote",

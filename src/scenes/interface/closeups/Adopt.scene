@@ -1,0 +1,868 @@
+{
+    "id": "cbe19657-2557-4f59-a1c9-1b52fe4ff7ef",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/client/media/interface/closeups/adopt/petshop-adopt-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Adopt",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "365e548c-21ba-43bb-9a4c-6195b775eb2d",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.5,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "d401fda8-09ec-412f-bb72-e697d325f2f4",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "bg"
+            },
+            "x": 618,
+            "y": 467
+        },
+        {
+            "type": "Image",
+            "id": "ab44aab7-9c1d-4be7-b542-44f763fd27e5",
+            "label": "goldPufflePoster",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "goldPufflePoster",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "goldPufflePoster"
+            },
+            "x": 704,
+            "y": -4
+        },
+        {
+            "type": "Image",
+            "id": "72604228-ecbf-46db-8d9c-6814ef6e419e",
+            "label": "rainbowPufflePoster",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "rainbowPufflePoster",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "rainbowPufflePoster"
+            },
+            "x": 473,
+            "y": 22
+        },
+        {
+            "type": "Image",
+            "id": "e666deeb-c388-4379-b923-0d6a2f39e8de",
+            "label": "memberpufflerug",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "memberpufflerug"
+            },
+            "x": 583,
+            "y": 743
+        },
+        {
+            "type": "Image",
+            "id": "e398a5f7-4e22-43d6-bd35-3ca960954341",
+            "label": "foodbowl",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "foodbowl"
+            },
+            "x": 795,
+            "y": 151
+        },
+        {
+            "type": "Image",
+            "id": "98643b3c-41c6-4a25-915b-548f94dd8e70",
+            "label": "tree",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "tree"
+            },
+            "x": 115,
+            "y": 124
+        },
+        {
+            "type": "Sprite",
+            "id": "bd39fd93-05ca-4173-b746-1092d5754620",
+            "label": "whitePuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(7)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "whitePuffleAnim0001"
+            },
+            "x": 130,
+            "y": 155
+        },
+        {
+            "type": "Sprite",
+            "id": "ff683fae-e60b-4279-b6ea-16586a568d45",
+            "label": "blackPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(2)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "blackPuffleAnim0001"
+            },
+            "x": 392,
+            "y": 184
+        },
+        {
+            "type": "Sprite",
+            "id": "54262fa2-d0ed-4ec7-9ec5-a321c53ce3df",
+            "label": "pinkPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(1)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "pinkPuffleAnim0001"
+            },
+            "x": 644,
+            "y": 211
+        },
+        {
+            "type": "Sprite",
+            "id": "111057dd-6335-4484-819f-1716db8cbedf",
+            "label": "purplePuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(4)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "purplePuffleAnim0001"
+            },
+            "x": 918,
+            "y": 178
+        },
+        {
+            "type": "Sprite",
+            "id": "b43c7921-7b92-4598-a709-913604612364",
+            "label": "greenPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(3)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "greenPuffleAnim0001"
+            },
+            "x": 123,
+            "y": 395
+        },
+        {
+            "type": "Sprite",
+            "id": "cef851bd-0e14-4a40-938d-1a384fce610b",
+            "label": "yellowPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(6)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "yellowPuffleAnim0001"
+            },
+            "x": 968,
+            "y": 391
+        },
+        {
+            "type": "Sprite",
+            "id": "4c94596f-1ec6-425b-8693-d3cf86e31a90",
+            "label": "orangePuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(8)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "orangePuffleAnim0001"
+            },
+            "x": 326,
+            "y": 453
+        },
+        {
+            "type": "Sprite",
+            "id": "a694322c-e563-461d-a76e-c1d37a3bd8ff",
+            "label": "brownPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(9)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "brownPuffleAnim0001"
+            },
+            "x": 713,
+            "y": 473
+        },
+        {
+            "type": "Sprite",
+            "id": "aa84a981-e956-4c3e-95bc-02083973af01",
+            "label": "dogPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(1006)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "dogPuffleAnim0001"
+            },
+            "x": 487,
+            "y": 637
+        },
+        {
+            "type": "Sprite",
+            "id": "9c0a5389-20d9-4577-8156-b2d90ca4b62c",
+            "label": "bluePuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(0)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "bluePuffleAnim0001"
+            },
+            "x": 155,
+            "y": 672
+        },
+        {
+            "type": "Sprite",
+            "id": "2bb69228-e90a-4714-8d4c-653624ffa0d3",
+            "label": "catPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(1007)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "catPuffleAnim0001"
+            },
+            "x": 684,
+            "y": 680
+        },
+        {
+            "type": "Sprite",
+            "id": "8667edd3-7287-4aab-971c-335c67c5e843",
+            "label": "redPuffle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.adoptPuffle(5)",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "redPuffleAnim0001"
+            },
+            "x": 934,
+            "y": 743
+        },
+        {
+            "type": "Sprite",
+            "id": "589fb39f-1052-43ed-a7b7-0a32633bb3d1",
+            "label": "lightAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "lightAnim0001"
+            },
+            "x": -213,
+            "y": -362
+        },
+        {
+            "type": "Image",
+            "id": "cbf450ec-1d35-4b31-8702-3ba48c62503a",
+            "label": "wood_bg",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "wood_bg"
+            },
+            "x": 815,
+            "y": 488
+        },
+        {
+            "type": "Image",
+            "id": "876f0173-b60d-4a50-ba0e-e4a107d1402e",
+            "label": "woodHorizontalLg",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "woodHorizontalLg"
+            },
+            "x": 926,
+            "y": 916
+        },
+        {
+            "type": "Image",
+            "id": "4a4bae91-8bf4-4fa6-932f-28c6195c0291",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "fg"
+            },
+            "x": 103,
+            "y": 484
+        },
+        {
+            "type": "Image",
+            "id": "93b314a1-9153-420d-8b37-be4f67c6b782",
+            "label": "clipboard",
+            "components": [],
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "clipboard"
+            },
+            "x": 1308,
+            "y": 552
+        },
+        {
+            "type": "Text",
+            "id": "4bc77ef4-d4e5-4335-9fe6-fdf6fa156af1",
+            "label": "yourPuffleNum",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1116,
+            "y": 846,
+            "angle": 3,
+            "originY": 0.5,
+            "text": "Your puffles: 0",
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "color": "#4b4b4bff"
+        },
+        {
+            "type": "Text",
+            "id": "cf71ea0b-3560-439d-b46a-d5376a551fb6",
+            "label": "yourCoinsNum",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1212,
+            "y": 925,
+            "angle": 3,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Your coins:\n0",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "24px",
+            "fontStyle": "bold",
+            "color": "#354c15ff"
+        },
+        {
+            "type": "Container",
+            "id": "c0e9fd5e-c33f-4904-be3a-ad481f924017",
+            "label": "mainPage",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1202,
+            "y": 256,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "256b0779-177d-481e-9580-697cac7bf9d7",
+                    "label": "text_1",
+                    "components": [],
+                    "x": 95,
+                    "angle": 2,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Adopt a Puffle",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#4b4b4bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c02831b8-ad0b-4073-9c6c-63035daf791b",
+                    "label": "spacer",
+                    "components": [],
+                    "texture": {
+                        "key": "petshop-adopt",
+                        "frame": "spacer"
+                    },
+                    "x": 91,
+                    "y": 48
+                },
+                {
+                    "type": "Image",
+                    "id": "53bc590b-5116-4cb0-a867-da86ba05ae50",
+                    "label": "spacer_1",
+                    "components": [],
+                    "texture": {
+                        "key": "petshop-adopt",
+                        "frame": "spacer"
+                    },
+                    "x": 83,
+                    "y": 433
+                },
+                {
+                    "type": "Container",
+                    "id": "0377781b-e1ee-4d54-8321-fb88cdc7c91f",
+                    "label": "container_1",
+                    "components": [],
+                    "x": -7,
+                    "y": 101,
+                    "angle": 2,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "0c9e7ef6-20aa-49b5-ae9a-2f2f0da88a7e",
+                            "label": "whiteIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "whiteIcon",
+                            "Button.callback": "() => this.adoptPuffle(7)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "whiteIcon"
+                            },
+                            "x": 150,
+                            "y": 255
+                        },
+                        {
+                            "type": "Image",
+                            "id": "df0f1d04-a783-4607-b1e8-993b2efeb56d",
+                            "label": "blackIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "blackIcon",
+                            "Button.callback": "() => this.adoptPuffle(2)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "blackIcon"
+                            },
+                            "x": 50,
+                            "y": 255
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e2e34767-9add-4b6f-85d9-afcd71366521",
+                            "label": "brownIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "brownIcon",
+                            "Button.callback": "() => this.adoptPuffle(9)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "brownIcon"
+                            },
+                            "x": 199,
+                            "y": 170
+                        },
+                        {
+                            "type": "Image",
+                            "id": "394e4fae-cc18-49c4-9190-1221fb8fa29f",
+                            "label": "pinkIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "pinkIcon",
+                            "Button.callback": "() => this.adoptPuffle(1)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "pinkIcon"
+                            },
+                            "x": 100,
+                            "y": 170
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9c324e51-62df-4c5a-ba20-281a47250fc8",
+                            "label": "purpleIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "purpleIcon",
+                            "Button.callback": "() => this.adoptPuffle(4)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "purpleIcon"
+                            },
+                            "y": 170
+                        },
+                        {
+                            "type": "Image",
+                            "id": "50a78396-b2e3-4837-9875-60a9c24c9013",
+                            "label": "greenIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "greenIcon",
+                            "Button.callback": "() => this.adoptPuffle(3)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "greenIcon"
+                            },
+                            "x": 200,
+                            "y": 85
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b712ad42-8ac8-4705-80a7-7cc3f4c448e2",
+                            "label": "yellowIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "yellowIcon",
+                            "Button.callback": "() => this.adoptPuffle(6)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "yellowIcon"
+                            },
+                            "x": 100,
+                            "y": 85
+                        },
+                        {
+                            "type": "Image",
+                            "id": "757ad0da-05b6-4058-973b-89c9f67c9288",
+                            "label": "orangeIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "orangeIcon",
+                            "Button.callback": "() => this.adoptPuffle(8)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "orangeIcon"
+                            },
+                            "y": 85
+                        },
+                        {
+                            "type": "Image",
+                            "id": "73c9ae46-a6f2-40d6-9ec9-16ff35785c0f",
+                            "label": "redIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "redIcon",
+                            "Button.callback": "() => this.adoptPuffle(5)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "redIcon"
+                            },
+                            "x": 150
+                        },
+                        {
+                            "type": "Image",
+                            "id": "5a2d9315-6fea-4d01-a8c6-afc51cf8f982",
+                            "label": "blueIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "blueIcon",
+                            "Button.callback": "() => this.adoptPuffle(0)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "blueIcon"
+                            },
+                            "x": 50
+                        },
+                        {
+                            "type": "Image",
+                            "id": "77e17584-e2d9-4037-85c1-c5ca989bcf2b",
+                            "label": "catIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "catIcon",
+                            "Button.callback": "() => this.adoptPuffle(1007)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "catIcon"
+                            },
+                            "x": 180,
+                            "y": 395
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7d76872b-ec0f-4fb1-afcf-fba11efb7499",
+                            "label": "dogIcon",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "dogIcon",
+                            "Button.callback": "() => this.adoptPuffle(1006)",
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "dogIcon"
+                            },
+                            "x": 40,
+                            "y": 395
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cb0fe65d-d09e-45fe-9438-dd7ce3122b5c",
+            "label": "puffleInfoPage",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1202,
+            "y": 256,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "d8dbc9df-83bb-4db7-baa0-26b203269986",
+                    "label": "speciesText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 16,
+                    "y": 3,
+                    "angle": 2,
+                    "originY": 0.5,
+                    "tintTopLeft": "#a1a1a1",
+                    "tintTopRight": "#a1a1a1",
+                    "tintBottomLeft": "#a1a1a1",
+                    "tintBottomRight": "#a1a1a1",
+                    "text": "Blue",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "38px",
+                    "fontStyle": "bold",
+                    "color": "#33ccffff",
+                    "shadow.color": "#424242ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "1e5b0e3a-cd91-4f6e-845f-b243b22c8c34",
+                    "label": "spacer_2",
+                    "components": [],
+                    "texture": {
+                        "key": "petshop-adopt",
+                        "frame": "spacer"
+                    },
+                    "x": 88,
+                    "y": 54
+                },
+                {
+                    "type": "Container",
+                    "id": "0dd381bd-2fcd-4cb5-9cd6-7d9b8bf92944",
+                    "label": "container_2",
+                    "components": [],
+                    "y": 92,
+                    "angle": 2,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "6f0e2c57-ec88-4a6d-957d-750caf0e0ea3",
+                            "label": "text_4",
+                            "components": [],
+                            "x": -63,
+                            "originY": 0.5,
+                            "text": "Personality",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#644314ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "025b7afa-c485-46ed-a8cc-b033f952f80c",
+                            "label": "text_5",
+                            "components": [],
+                            "x": -63,
+                            "y": 116,
+                            "originY": 0.5,
+                            "text": "Favorite Snack",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#644314ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3eae139c-ae16-41e5-b6cc-bd4137db6475",
+                            "label": "text_6",
+                            "components": [],
+                            "x": -63,
+                            "y": 232,
+                            "originY": 0.5,
+                            "text": "Cool Fact",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#644314ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "38130114-67a0-4804-94e7-744b8774d6cd",
+                            "label": "personalityText",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -63,
+                            "y": 39,
+                            "originY": 0.5,
+                            "tintTopLeft": "#a1a1a1",
+                            "tintTopRight": "#a1a1a1",
+                            "tintBottomLeft": "#a1a1a1",
+                            "tintBottomRight": "#a1a1a1",
+                            "text": "Loyal, team player",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "color": "#33ccffff",
+                            "shadow.color": "#424242ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8f8c103f-e661-4889-8aa2-63864978b66d",
+                            "label": "snackText",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -63,
+                            "y": 155,
+                            "originY": 0.5,
+                            "tintTopLeft": "#a1a1a1",
+                            "tintTopRight": "#a1a1a1",
+                            "tintBottomLeft": "#a1a1a1",
+                            "tintBottomRight": "#a1a1a1",
+                            "text": "Pretzels",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "color": "#33ccffff",
+                            "shadow.color": "#424242ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "4cf44553-17a6-4fb8-a131-e7f0e0af682a",
+                            "label": "factText",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": -63,
+                            "y": 271,
+                            "originY": 0.5,
+                            "tintTopLeft": "#a1a1a1",
+                            "tintTopRight": "#a1a1a1",
+                            "tintBottomLeft": "#a1a1a1",
+                            "tintBottomRight": "#a1a1a1",
+                            "text": "Can bounce really high",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "color": "#33ccffff",
+                            "shadow.color": "#424242ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "454f27c9-4e60-4672-88b8-395ddaebe1ca",
+                    "label": "speciesIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "petshop-adopt",
+                        "frame": "blueIcon"
+                    },
+                    "x": -26,
+                    "y": -1
+                },
+                {
+                    "type": "Image",
+                    "id": "2b9bca2e-474e-4c10-8538-6acb492bd22d",
+                    "label": "adoptBtn",
+                    "components": [],
+                    "texture": {
+                        "key": "petshop-adopt",
+                        "frame": "adoptBtn"
+                    },
+                    "x": 89,
+                    "y": 481
+                },
+                {
+                    "type": "Text",
+                    "id": "cff2e7f9-be8e-492a-b0ff-a6ab98886dfb",
+                    "label": "text_10",
+                    "components": [],
+                    "x": 92,
+                    "y": 482,
+                    "angle": 2,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Adopt",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "48px",
+                    "fontStyle": "bold",
+                    "color": "#644314ff"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "2166c122-5bc2-4e71-926b-ace083a90b82",
+            "label": "closeBtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "closeBtn",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "petshop-adopt",
+                "frame": "closeBtn"
+            },
+            "x": 1479,
+            "y": 39
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

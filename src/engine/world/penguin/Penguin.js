@@ -7,12 +7,16 @@ import PenguinItems from './PenguinItems'
 import adjustRedemptionItem from './frames/adjustRedemptionItem'
 
 export default class Penguin extends BaseContainer {
-    constructor(user, room, penguinLoader) {
+    constructor(user, room, penguinLoader, puffleLoader) {
         super(room, user.x, user.y)
 
         // Assign user attributes
         Object.assign(this, user)
         this.room = room
+
+        this.puffleLoader = puffleLoader
+
+        if (this.puffle) this.loadPuffle()
 
         this.items = new PenguinItems(this)
         this.itemLoader = new ItemLoader(this)
@@ -124,6 +128,58 @@ export default class Penguin extends BaseContainer {
     setPos(x, y) {
         this.x = x
         this.y = y
+    }
+
+    loadPuffle() {
+        if (!this.puffle) return
+
+        if (this.shell.textures.exists(`puffles/walk/${this.puffle}`)) return this.addPuffleSprite()
+
+        this.shell.events.addListener(`textureLoaded:puffles/walk/${this.puffle}`, () => this.addPuffleSprite())
+        this.puffleLoader.loadPuffle('walk', this.puffle)
+    }
+
+    addPuffleSprite() {
+        this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+        this.puffleSprite.depth = 999999
+        this.add(this.puffleSprite)
+    }
+
+    animatePuffle(animation) {
+        if (!this.puffleSprite) return
+
+        if (this.shell.textures.exists(`puffles/${animation}/${this.puffle}`)) return this.playPuffleAnim(animation)
+
+        this.shell.events.addListener(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
+        this.puffleLoader.loadPuffle(animation, this.puffle)
+    }
+
+    playPuffleAnim(animation) {
+        if (!this.anims.exists(`puffle_${animation}_${this.puffle}`)) this.generatePuffleAnim(animation)
+
+        let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
+        pAnimSprite.depth = this.puffleSprite.depth
+        this.puffleSprite.visible = false
+        pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
+        pAnimSprite.on('animationcomplete', () => {
+            pAnimSprite.destroy()
+            this.puffleSprite.visible = true
+        })
+    }
+
+    generatePuffleAnim(animation) {
+        let frameTotal = this.shell.textures.list[`puffles/${animation}/${this.puffle}`].frameTotal - 1
+        let frameArray = Phaser.Utils.Array.NumberArray(1, frameTotal).map((frame) => {
+            frame = frame.toString()
+            while (frame.length < 4) frame = '0' + frame
+            return frame
+        })
+        this.anims.create({
+            key: `puffle_${animation}_${this.puffle}`,
+            frames: this.anims.generateFrameNames(`puffles/${animation}/${this.puffle}`, {frames: frameArray}),
+            frameRate: 24,
+            repeat: 0,
+        })
     }
 
     /*========== Animations ==========*/
@@ -270,7 +326,7 @@ export default class Penguin extends BaseContainer {
             return (sprite.visible = false)
         }
 
-        sprite.visible = true
+        if (sprite != this.puffleSprite) sprite.visible = true
         sprite.anims.play(key)
 
         // Reset current chain queue
@@ -381,14 +437,6 @@ export default class Penguin extends BaseContainer {
             this.updateBalloon()
         }
 
-        let xoffset = this.x - this.prevX
-        let yoffset = this.y - this.prevY
-
-        if (this.pufflesprite && this.pufflesprite.animating) {
-            this.pufflesprite.x -= xoffset
-            this.pufflesprite.y -= yoffset
-        }
-
         this.prevX = this.x
         this.prevY = this.y
     }
@@ -424,63 +472,6 @@ export default class Penguin extends BaseContainer {
         if (playFrame) {
             this.playFrame(this.direction)
         }
-    }
-
-    playPuffleAnim(anim) {
-        if (!this.pufflesprite) return
-        let x
-        let y
-        switch (anim) {
-            case 'adopt':
-                x = 0
-                y = -60
-                break
-            case 'dive':
-                x = 150
-                y = 50
-                break
-            case 'eat':
-                x = 60
-                y = -80
-                break
-            case 'hydrant':
-                x = 100
-                y = 10
-                break
-            case 'maxed':
-                x = 75
-                y = -50
-                break
-            case 'jumpspin':
-                x = 60
-                y = -20
-                break
-            case 'jumpforward':
-                x = 80
-                y = -5
-                break
-            case 'roll':
-                x = 110
-                y = 0
-                break
-            case 'standonhead':
-                x = 75
-                y = -15
-                break
-            default:
-                x = 60
-                y = 0
-        }
-        this.pufflesprite.x = x
-        this.pufflesprite.y = y
-        this.pufflesprite.play(`puffle_${this.pufflesprite.color}_${anim}`)
-        this.pufflesprite.animating = true
-        this.pufflesprite.once('animationcomplete', () => {
-            this.pufflesprite.animating = false
-            this.pufflesprite.setTexture('puffle_' + this.pufflesprite.color, this.direction + '_1')
-            this.pufflesprite.x = 60
-            this.pufflesprite.y = 0
-        })
     }
 
     wearingItem(item) {

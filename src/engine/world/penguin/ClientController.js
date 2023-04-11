@@ -218,7 +218,6 @@ export default class ClientController {
         }
 
         this.penguin.move(pointer.x / window.currentScale, pointer.y / window.currentScale)
-        this.shell.interface.main.puffleCare.visible = false
     }
 
     onKeyDown(event) {
