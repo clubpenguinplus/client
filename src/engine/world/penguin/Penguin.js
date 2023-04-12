@@ -155,6 +155,12 @@ export default class Penguin extends BaseContainer {
         this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
         this.puffleSprite.depth = 999999
         this.add(this.puffleSprite)
+
+        if (this.room.isIgloo) {
+            this.puffleSprite.setInteractive({useHandCursor: true, pixelPerfect: true})
+            this.puffleSprite.on('pointerdown', () => this.interface.main.puffleCare.showPuffle(this.room.puffles[this.walking]))
+            this.puffleSprite.isButton = true
+        }
     }
 
     removePuffle() {

@@ -5,6 +5,8 @@ import FurnitureSprite from '@engine/world/room/furniture/FurnitureSprite'
 import PhysicsMaskGraphics from '@engine/utils/mask/PhysicsMaskGraphics'
 import RoomCrate from './crates/RoomCrate'
 import WallCrate from './crates/WallCrate'
+import IglooPuffle from './IglooPuffle'
+import PuffleLoader from '@engine/loaders/PuffleLoader'
 
 export default class IglooScene extends RoomScene {
     constructor(key) {
@@ -22,6 +24,8 @@ export default class IglooScene extends RoomScene {
 
         // Selected furniture sprite
         this.selected
+
+        this.puffles = {}
     }
 
     init(data) {
@@ -111,7 +115,9 @@ export default class IglooScene extends RoomScene {
 
         if (this.isPreview) return this.scene.bringToTop(this)
 
-        //this.shell.airtower.sendXt('p#pg', this.id)
+        this.puffleLoader = new PuffleLoader(this)
+
+        this.shell.airtower.sendXt('p#pg', this.id)
         this.showLikesWidget()
 
         if (!this.penguins) return
@@ -295,6 +301,10 @@ export default class IglooScene extends RoomScene {
 
     updateQuantity(item) {
         this.quantities[item] = this.quantities[item] ? this.quantities[item] + 1 : 1
+    }
+
+    addPuffle(puffle) {
+        new IglooPuffle(this, puffle)
     }
 
     /*======= Physics =======*/

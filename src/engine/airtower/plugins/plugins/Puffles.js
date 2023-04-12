@@ -7,6 +7,7 @@ export default class Puffles extends Plugin {
             pgs: this.getPuffleSpecies,
             psw: this.stopWalking,
             ppw: this.walkPuffle,
+            pgp: this.getPuffles,
         }
     }
 
@@ -28,13 +29,33 @@ export default class Puffles extends Plugin {
         if (this.interface.main.playerCard.visible && this.interface.main.playerCard.id == args[0]) {
             this.interface.main.playerCard.paperDoll.removePuffle()
         }
+
+        if (this.shell.room.isIgloo && this.shell.room.id == args[0]) {
+            if (!this.shell.room.puffles[args[1]]) return
+            this.shell.room.puffles[args[1]].loadPuffle()
+        }
     }
 
     walkPuffle(args) {
         if (!this.shell.room || !this.shell.room.penguins[args[0]]) return
 
         let penguin = this.shell.room.penguins[args[0]]
+        const prevWalking = penguin.walking
+        if (prevWalking) penguin.removePuffle()
         penguin.walking = args[1]
         penguin.getPuffleSpecies()
+
+        if (this.shell.room.isIgloo && this.shell.room.id == args[0]) {
+            if (this.shell.room.puffles[args[1]]) this.shell.room.puffles[args[1]].removePuffle()
+            if (this.shell.room.puffles[prevWalking]) this.shell.room.puffles[prevWalking].loadPuffle()
+        }
+    }
+
+    getPuffles(args) {
+        if (!this.shell.room || !this.shell.room.isIgloo) return
+
+        args.forEach((puffle) => {
+            this.shell.room.addPuffle(puffle)
+        })
     }
 }
