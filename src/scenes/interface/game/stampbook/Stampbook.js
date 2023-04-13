@@ -1,7 +1,9 @@
 import {SimpleButton, Button, Interactive, LocalisedString} from '@components/components'
 import BookStamp from './BookStamp'
+import Polaroid from './Polaroid'
 import PinLoader from '@engine/loaders/PinLoader'
 import StampLoader from '@engine/loaders/StampLoader'
+import PolaroidLoader from '@engine/loaders/PolaroidLoader'
 import BaseScene from '@scenes/base/BaseScene'
 
 /* START OF COMPILED CODE */
@@ -614,6 +616,93 @@ export default class Stampbook extends BaseScene {
         // dividers
         const dividers = this.add.image(783, 136, 'stampbook', 'dividers')
         page.add(dividers)
+
+        // polaroids
+        const polaroids = this.add.container(1066, 329)
+        polaroids.visible = false
+        page.add(polaroids)
+
+        // polaroid_shadow
+        const polaroid_shadow = this.add.image(81, 198, 'stampbook', 'polaroid_shadow')
+        polaroids.add(polaroid_shadow)
+
+        // polaroid1_bg
+        const polaroid1_bg = this.add.image(172, 0, 'stampbook', 'polaroid1-bg')
+        polaroids.add(polaroid1_bg)
+
+        // polaroid1Holder
+        const polaroid1Holder = this.add.container(172, 0)
+        polaroids.add(polaroid1Holder)
+
+        // polaroid1LockedTxt
+        const polaroid1LockedTxt = this.add.text(0, 0, '', {})
+        polaroid1LockedTxt.angle = 10.5
+        polaroid1LockedTxt.setOrigin(0.5, 0.5)
+        polaroid1LockedTxt.text = '88'
+        polaroid1LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid1LockedTxt.setPadding({left: 30, right: 10})
+        polaroid1Holder.add(polaroid1LockedTxt)
+
+        // polaroid1LockedIcon
+        const polaroid1LockedIcon = this.add.image(-24, -5, 'stampbook', 'polaroidlocked')
+        polaroid1LockedIcon.angle = 10.5
+        polaroid1Holder.add(polaroid1LockedIcon)
+
+        // polaroid1
+        const polaroid1 = this.add.image(169, 15, 'stampbook', 'polaroid1')
+        polaroids.add(polaroid1)
+
+        // polaroid2_bg
+        const polaroid2_bg = this.add.image(0, 183, 'stampbook', 'polaroid2-bg')
+        polaroids.add(polaroid2_bg)
+
+        // polaroid2Holder
+        const polaroid2Holder = this.add.container(1, 177)
+        polaroids.add(polaroid2Holder)
+
+        // polaroid2LockedIcon
+        const polaroid2LockedIcon = this.add.image(-23, 8, 'stampbook', 'polaroidlocked')
+        polaroid2LockedIcon.angle = -18.5
+        polaroid2Holder.add(polaroid2LockedIcon)
+
+        // polaroid2LockedTxt
+        const polaroid2LockedTxt = this.add.text(0, 0, '', {})
+        polaroid2LockedTxt.angle = -18.5
+        polaroid2LockedTxt.setOrigin(0.5, 0.5)
+        polaroid2LockedTxt.text = '88'
+        polaroid2LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid2LockedTxt.setPadding({left: 30, right: 10})
+        polaroid2Holder.add(polaroid2LockedTxt)
+
+        // polaroid2
+        const polaroid2 = this.add.image(6, 192, 'stampbook', 'polaroid2')
+        polaroids.add(polaroid2)
+
+        // polaroid3_bg
+        const polaroid3_bg = this.add.image(158, 376, 'stampbook', 'polaroid3-bg')
+        polaroids.add(polaroid3_bg)
+
+        // polaroid3Holder
+        const polaroid3Holder = this.add.container(158, 372)
+        polaroids.add(polaroid3Holder)
+
+        // polaroid3LockedIcon
+        const polaroid3LockedIcon = this.add.image(-23, -5, 'stampbook', 'polaroidlocked')
+        polaroid3LockedIcon.angle = 10.5
+        polaroid3Holder.add(polaroid3LockedIcon)
+
+        // polaroid3LockedTxt
+        const polaroid3LockedTxt = this.add.text(0, 0, '', {})
+        polaroid3LockedTxt.angle = 10.5
+        polaroid3LockedTxt.setOrigin(0.5, 0.5)
+        polaroid3LockedTxt.text = '88'
+        polaroid3LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid3LockedTxt.setPadding({left: 30, right: 10})
+        polaroid3Holder.add(polaroid3LockedTxt)
+
+        // polaroid3
+        const polaroid3 = this.add.image(155, 387, 'stampbook', 'polaroid3')
+        polaroids.add(polaroid3)
 
         // front
         const front = this.add.container(0, 0)
@@ -1395,6 +1484,16 @@ export default class Stampbook extends BaseScene {
         this.up_btn = up_btn
         this.up_arrow = up_arrow
         this.dividers = dividers
+        this.polaroids = polaroids
+        this.polaroid1Holder = polaroid1Holder
+        this.polaroid1LockedTxt = polaroid1LockedTxt
+        this.polaroid1LockedIcon = polaroid1LockedIcon
+        this.polaroid2Holder = polaroid2Holder
+        this.polaroid2LockedIcon = polaroid2LockedIcon
+        this.polaroid2LockedTxt = polaroid2LockedTxt
+        this.polaroid3Holder = polaroid3Holder
+        this.polaroid3LockedIcon = polaroid3LockedIcon
+        this.polaroid3LockedTxt = polaroid3LockedTxt
         this.front = front
         this.cover = cover
         this.pattern = pattern
@@ -1577,6 +1676,26 @@ export default class Stampbook extends BaseScene {
     /** @type {Phaser.GameObjects.Image} */
     dividers
     /** @type {Phaser.GameObjects.Container} */
+    polaroids
+    /** @type {Phaser.GameObjects.Container} */
+    polaroid1Holder
+    /** @type {Phaser.GameObjects.Text} */
+    polaroid1LockedTxt
+    /** @type {Phaser.GameObjects.Image} */
+    polaroid1LockedIcon
+    /** @type {Phaser.GameObjects.Container} */
+    polaroid2Holder
+    /** @type {Phaser.GameObjects.Image} */
+    polaroid2LockedIcon
+    /** @type {Phaser.GameObjects.Text} */
+    polaroid2LockedTxt
+    /** @type {Phaser.GameObjects.Container} */
+    polaroid3Holder
+    /** @type {Phaser.GameObjects.Image} */
+    polaroid3LockedIcon
+    /** @type {Phaser.GameObjects.Text} */
+    polaroid3LockedTxt
+    /** @type {Phaser.GameObjects.Container} */
     front
     /** @type {Phaser.GameObjects.Sprite} */
     cover
@@ -1729,6 +1848,7 @@ export default class Stampbook extends BaseScene {
         this.interface.stampbook = this
         this.pinLoader = new PinLoader(this)
         this.stampLoader = new StampLoader(this)
+        this.polaroidLoader = new PolaroidLoader(this)
         this.key = 'Stampbook'
         this.id = this.interface.stampbookId
         this._create()
@@ -1737,6 +1857,7 @@ export default class Stampbook extends BaseScene {
         this.editorStamps = []
         this.customStamps = []
         this.csSprites = []
+        this.polaroidList = []
         this.pins = {}
 
         this.pageIndex = 0
@@ -1913,6 +2034,23 @@ export default class Stampbook extends BaseScene {
             this.down_arrow.visible = true
             this.down_btn.visible = true
         }
+
+        if (page.polaroids) {
+            this.polaroids.visible = true
+            for (let i = 0; i < page.polaroids.length; i++) {
+                if (this.getCategoryStamps(page.group)[1] < page.polaroids[i].stamps) {
+                    this[`polaroid${i + 1}LockedTxt`].visible = true
+                    this[`polaroid${i + 1}LockedIcon`].visible = true
+                    this[`polaroid${i + 1}LockedTxt`].text = page.polaroids[i].stamps
+                    continue
+                }
+                this[`polaroid${i + 1}LockedTxt`].visible = false
+                this[`polaroid${i + 1}LockedIcon`].visible = false
+                let polaroid = new Polaroid(this, 0, 0, page.polaroids[i].id)
+                this[`polaroid${i + 1}Holder`].add(polaroid)
+                this.polaroidList.push(polaroid)
+            }
+        }
     }
 
     getPageStamps(page) {
@@ -2004,6 +2142,11 @@ export default class Stampbook extends BaseScene {
             this.stamps[x].destroy()
         }
 
+        for (var x in this.polaroidList) {
+            this.polaroidList[x].destroy()
+        }
+        this.polaroidList = []
+
         for (var txt of this.indexText) {
             txt.visible = false
         }
@@ -2022,6 +2165,8 @@ export default class Stampbook extends BaseScene {
         this.down_arrow.visible = false
         this.up_btn.visible = false
         this.down_btn.visible = false
+
+        this.polaroids.visible = false
 
         this.front.visible = this.pageIndex == 0 ? true : false
         this.page.visible = this.pageIndex == 0 ? false : true
