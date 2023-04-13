@@ -10,7 +10,7 @@ export default class Closeup extends BaseScene {
         this.load.on('filecomplete', (key, type, data) => {
             this.itemsLoaded.push({id: key, type: type})
         })
-        this._preload()
+        if (this._preload) this._preload()
     }
 
     stop() {
