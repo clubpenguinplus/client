@@ -31,7 +31,7 @@ export default class InputText extends EventComponent {
 
         /* START-USER-CTR-CODE */
         this.gameObject.textContent = ''
-        this.input = this.gameObject.scene.input
+        this.input = this.gameObject.scene.interface.input
         this.shift = this.input.keyboard.addKey('SHIFT')
         this.ctrl = this.input.keyboard.addKey('CTRL')
         /* END-USER-CTR-CODE */
@@ -209,7 +209,7 @@ export default class InputText extends EventComponent {
 
             this.input.once('pointerup', (pointer) => this.onClick(pointer))
             this.isSelected = true
-            this.gameObject.scene.shell.isInputActive = true
+            this.gameObject.scene.interface.isInputActive = true
             this.flashIndicator()
         }, 100)
     }
@@ -217,7 +217,7 @@ export default class InputText extends EventComponent {
     onClick(pointer) {
         if (!this.isOver) {
             this.isSelected = false
-            this.gameObject.scene.shell.isInputActive = false
+            this.gameObject.scene.interface.isInputActive = false
             this.indicator.visible = false
         } else {
             this.userdefinedonclickfunction()
@@ -366,7 +366,7 @@ export default class InputText extends EventComponent {
             if (this.entercallback) {
                 this.entercallback()
                 this.isSelected = false
-                this.gameObject.scene.shell.isInputActive = false
+                this.gameObject.scene.interface.isInputActive = false
                 this.indicator.visible = false
                 return
             }

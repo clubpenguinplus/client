@@ -221,7 +221,7 @@ export default class ClientController {
     }
 
     onKeyDown(event) {
-        if (this.inMinigame || this.shell.isInputActive) return
+        if (this.inMinigame || this.interface.isInputActive) return
 
         let key = event.key.toLowerCase()
 
