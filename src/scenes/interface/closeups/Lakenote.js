@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, LocalisedSprite, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Lakenote extends BaseScene {
+export default class Lakenote extends Closeup {
     constructor() {
         super('Lakenote')
 
@@ -13,7 +13,7 @@ export default class Lakenote extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
+    _preload() {
         this.load.pack('lakenote-pack', 'client/media/interface/closeups/lakenote/lakenote-pack.json')
     }
 
@@ -40,7 +40,7 @@ export default class Lakenote extends BaseScene {
         // exit (components)
         const exitButton = new Button(exit)
         exitButton.spriteName = 'exit'
-        exitButton.callback = () => this.scene.stop()
+        exitButton.callback = () => this.stop()
 
         this.events.emit('scene-awake')
     }

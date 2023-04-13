@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Intro extends BaseScene {
+export default class Intro extends Closeup {
     constructor() {
         super('Intro')
 
@@ -67,7 +67,7 @@ export default class Intro extends BaseScene {
         // button (components)
         const buttonButton = new Button(button)
         buttonButton.spriteName = 'button'
-        buttonButton.callback = () => this.scene.stop()
+        buttonButton.callback = () => this.stop()
 
         this.title = title
         this.content = content

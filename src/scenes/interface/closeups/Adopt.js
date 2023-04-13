@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, InputText, Interactive, LocalisedString} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Adopt extends BaseScene {
+export default class Adopt extends Closeup {
     constructor() {
         super('Adopt')
 
@@ -74,7 +74,7 @@ export default class Adopt extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
+    _preload() {
         this.load.pack('petshop-adopt-pack', 'client/media/interface/closeups/adopt/petshop-adopt-pack.json')
     }
 
@@ -171,7 +171,6 @@ export default class Adopt extends BaseScene {
 
         // mainPage
         const mainPage = this.add.container(1191, 212)
-        mainPage.visible = false
 
         // mainHeader
         const mainHeader = this.add.text(98, 0, '', {})
@@ -244,6 +243,7 @@ export default class Adopt extends BaseScene {
 
         // adoptionPage
         const adoptionPage = this.add.container(1191, 212)
+        adoptionPage.visible = false
 
         // speciesText
         const speciesText = this.add.text(16, 2, '', {})
@@ -544,7 +544,7 @@ export default class Adopt extends BaseScene {
         // closeBtn (components)
         const closeBtnButton = new Button(closeBtn)
         closeBtnButton.spriteName = 'closeBtn'
-        closeBtnButton.callback = () => this.scene.stop()
+        closeBtnButton.callback = () => this.stop()
 
         this.whitePuffle = whitePuffle
         this.blackPuffle = blackPuffle
@@ -689,7 +689,7 @@ export default class Adopt extends BaseScene {
         }
 
         this.airtower.sendXt('p#pn', `${this.adoptPuffleId}%${this.nameInputText.textContent}`)
-        this.scene.stop()
+        this.stop()
     }
 
     /* END-USER-CODE */

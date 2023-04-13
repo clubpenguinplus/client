@@ -5,7 +5,8 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BaseScene",
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "client/client/media/interface/closeups/adopt/petshop-adopt-pack.json"
         ],
@@ -418,7 +419,6 @@
             "components": [],
             "x": 1191,
             "y": 212,
-            "visible": false,
             "list": [
                 {
                     "type": "Text",
@@ -674,6 +674,7 @@
             "components": [],
             "x": 1191,
             "y": 212,
+            "visible": false,
             "list": [
                 {
                     "type": "Text",
@@ -995,7 +996,7 @@
                 "Button"
             ],
             "Button.spriteName": "closeBtn",
-            "Button.callback": "() => this.scene.stop()",
+            "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "closeBtn"

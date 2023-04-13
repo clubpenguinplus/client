@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, InputText, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Punish extends BaseScene {
+export default class Punish extends Closeup {
     constructor() {
         super('Punish')
 
@@ -315,7 +315,7 @@ export default class Punish extends BaseScene {
         // white_x (components)
         const white_xSimpleButton = new SimpleButton(white_x)
         white_xSimpleButton.callback = () => {
-            this.scene.stop()
+            this.stop()
         }
 
         // long_button (components)
@@ -477,7 +477,7 @@ export default class Punish extends BaseScene {
             case 'w':
                 this.airtower.sendXt('o#w', `${this.id}%${this.detailsText.textContent}`)
         }
-        this.scene.stop()
+        this.stop()
     }
 
     /* END-USER-CODE */

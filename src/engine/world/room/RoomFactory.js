@@ -30,10 +30,30 @@ export default class RoomFactory {
 
             if (Object.keys(this.shell.cache.audio.entries.entries).includes(item.id)) this.shell.room.cache.audio.remove(item.id)
 
+            if (Object.keys(this.shell.cache.video.entries.entries).includes(item.id)) this.shell.room.cache.video.remove(item.id)
+
             for (let anim in this.shell.room.anims.anims.entries) {
-                if (this.shell.room.anims.anims.entries[anim].key.includes(item.id.split('-')[0])) {
+                if (this.shell.room.anims.anims.entries[anim].key.split('-')[0] == item.id.split('-')[0]) {
                     delete this.shell.room.anims.anims.entries[anim]
                 }
+            }
+        }
+
+        for (let item of Object.keys(this.shell.room.textures.list)) {
+            if (['clothing', 'head', 'face', 'neck', 'body', 'hand', 'feet', 'puffles', 'paper'].includes(item.split('/')[0])) {
+                this.shell.room.textures.remove(item)
+            }
+        }
+
+        for (let item of Object.keys(this.shell.cache.audio.entries.entries)) {
+            if (['sfx'].includes(item.split('/')[0])) {
+                this.shell.room.cache.audio.remove(item)
+            }
+        }
+
+        for (let item in this.shell.room.anims.anims.entries) {
+            if (['head', 'face', 'neck', 'body', 'hand', 'feet', 'puffles'].includes(item.split('/')[0])) {
+                delete this.shell.room.anims.anims.entries[item]
             }
         }
 

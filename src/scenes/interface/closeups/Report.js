@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, LocalisedString, Interactive, InputText} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Report extends BaseScene {
+export default class Report extends Closeup {
     constructor() {
         super('Report')
 
@@ -661,7 +661,7 @@ export default class Report extends BaseScene {
 
         // white_x (components)
         const white_xSimpleButton = new SimpleButton(white_x)
-        white_xSimpleButton.callback = () => this.scene.stop()
+        white_xSimpleButton.callback = () => this.stop()
 
         // rectangle_2 (components)
         const rectangle_2SimpleButton = new SimpleButton(rectangle_2)

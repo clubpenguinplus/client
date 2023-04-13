@@ -5,7 +5,8 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BaseScene",
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "client/client/media/interface/closeups/tourquiz/tourquiz-pack.json"
         ],
@@ -50,7 +51,7 @@
                 "Button"
             ],
             "Button.spriteName": "exit",
-            "Button.callback": "() => this.scene.stop()",
+            "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "tourquiz",
                 "frame": "exit"
@@ -104,7 +105,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.scene.stop()",
+                    "Button.callback": "() => this.stop()",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -172,7 +173,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.scene.stop()",
+                    "Button.callback": "() => this.stop()",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -1210,7 +1211,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.scene.stop()",
+                    "Button.callback": "() => this.stop()",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"
@@ -1278,7 +1279,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => {this.onWin(); this.scene.stop()}",
+                    "Button.callback": "() => {this.onWin(); this.stop()}",
                     "texture": {
                         "key": "tourquiz",
                         "frame": "button"

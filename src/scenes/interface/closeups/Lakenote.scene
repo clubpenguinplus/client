@@ -5,7 +5,8 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BaseScene",
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "client/client/media/interface/closeups/lakenote/lakenote-pack.json"
         ],
@@ -52,7 +53,7 @@
                 "Button"
             ],
             "Button.spriteName": "exit",
-            "Button.callback": "() => this.scene.stop()",
+            "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "lakenote",
                 "frame": "exit"

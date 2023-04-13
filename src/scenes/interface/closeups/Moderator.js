@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, LocalisedString, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Moderator extends BaseScene {
+export default class Moderator extends Closeup {
     constructor() {
         super('Moderator')
 
@@ -26,7 +26,7 @@ export default class Moderator extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
+    _preload() {
         this.load.pack('safetyquiz-pack', 'client/media/interface/game/safetyquiz/safetyquiz-pack.json')
     }
 
@@ -77,7 +77,7 @@ export default class Moderator extends BaseScene {
         // white_x (components)
         const white_xSimpleButton = new SimpleButton(white_x)
         white_xSimpleButton.callback = () => {
-            this.scene.stop()
+            this.stop()
         }
 
         // text (components)
@@ -89,7 +89,7 @@ export default class Moderator extends BaseScene {
         modbuttonButton.spriteName = 'modbutton'
         modbuttonButton.callback = () => {
             this.interface.loadExternal('SafetyQuiz')
-            this.scene.stop()
+            this.stop()
         }
 
         // text_1 (components)
