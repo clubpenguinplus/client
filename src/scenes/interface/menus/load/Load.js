@@ -81,10 +81,10 @@ export default class Load extends BaseScene {
         this.events.on('sleep', this.onSleep, this)
         this.events.on('wake', this.onWake, this)
 
-        this.shovel.play('shovel')
-        this.cart.play('cart')
-        this.pizza.play('pizza')
-        this.spinner.play('spinner')
+        this.shovel.play('load-shovel')
+        this.cart.play('load-cart')
+        this.pizza.play('load-pizza')
+        this.spinner.play('load-spinner')
 
         this.setContent(data.text, data.showBar, data.isLogo)
     }
@@ -96,7 +96,7 @@ export default class Load extends BaseScene {
     }
 
     setContent(text, showBar, isLogo) {
-        this.bar.play('bar')
+        this.bar.play('load-bar')
 
         if (isLogo) {
             this.logo.visible = true

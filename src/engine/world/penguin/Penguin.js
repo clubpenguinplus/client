@@ -79,7 +79,7 @@ export default class Penguin extends BaseContainer {
     }
 
     get anims() {
-        return this.room.anims
+        return this.room.anims || {}
     }
 
     get secretFramesCache() {
@@ -102,6 +102,13 @@ export default class Penguin extends BaseContainer {
     }
 
     update(item, slot) {
+        if (item == 0) {
+            this.itemLoader.removeItem(slot)
+            if (this.playerCard.visible && this.playerCard.id == this.id) this.paperDollLoader.removeItem(slot)
+            this.items.setItem(item, slot)
+            return
+        }
+
         this.items.setItem(item, slot)
 
         if (slot == 'color' && this.bodySprite) {
@@ -504,7 +511,7 @@ export default class Penguin extends BaseContainer {
             if (items[x] == item) {
                 return true
             }
-            return false
         }
+        return false
     }
 }

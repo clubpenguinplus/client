@@ -22,6 +22,10 @@ export default class Game extends Phaser.Game {
 window.onload = () => {
     if (!correctDomain()) return window.open('https://play.clubpenguin.plus', '_self')
 
+    document.onkeydown = function (event) {
+        event.preventDefault()
+    }
+
     // if (window.location.hostname != 'localhost') {
     //     window.addEventListener('devtoolschange', (event) => {
     //         alert('Close devtools to play.')

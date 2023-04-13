@@ -194,7 +194,7 @@ export default class Shack extends RoomScene {
     create() {
         super.create()
 
-        this.shackflag.play('shackflag')
+        this.shackflag.play('shack-flag')
 
         this.setClockTime()
     }
