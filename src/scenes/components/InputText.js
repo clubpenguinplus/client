@@ -101,7 +101,7 @@ export default class InputText extends EventComponent {
     }
 
     get trueX() {
-        let x = this.gameObject.x - this.gameObject.width * this.gameObject.originX
+        let x = this.gameObject.x - this.lineWidth * this.gameObject.originX
         let curObject = this.gameObject
         while (curObject.parentContainer) {
             curObject = curObject.parentContainer
@@ -124,9 +124,21 @@ export default class InputText extends EventComponent {
         this.mask = this.gameObject.scene.add.graphics()
         this.mask.fillStyle(0xffffff, 0)
         this.mask.beginPath()
-        this.mask.fillRect(this.trueX, this.trueY, this.lineWidth, this.gameObject.height)
+        this.maskRect = this.mask.fillRect(this.trueX, this.trueY, this.lineWidth, this.gameObject.height)
         this.mask = this.mask.createGeometryMask()
         this.gameObject.setMask(this.mask)
+
+        this.firstTrueX = this.trueX
+        this.firstTrueY = this.trueY
+
+        this.update = this.updateRect
+    }
+
+    updateRect() {
+        if (this.gameObject.visible && (this.trueX - this.firstTrueX != this.maskRect.x || this.trueY - this.firstTrueY != this.maskRect.y)) {
+            this.maskRect.x = this.trueX - this.firstTrueX
+            this.maskRect.y = this.trueY - this.firstTrueY
+        }
     }
 
     setDefaultText(text) {
@@ -323,6 +335,11 @@ export default class InputText extends EventComponent {
             }
             this.gameObject.textContent = this.beforeCursor + this.afterCursor
             this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
+            if (this.gameObject.width > this.lineWidth && !this.multiline && this.extends) {
+                this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
+            } else {
+                this.gameObject.x = this.x
+            }
         } else if (event.key == 'Delete') {
             if (this.ctrl.isDown) {
                 let firstSpace = this.afterCursor.indexOf(' ')
@@ -336,6 +353,11 @@ export default class InputText extends EventComponent {
             }
             this.gameObject.textContent = this.beforeCursor + this.afterCursor
             this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
+            if (this.gameObject.width > this.lineWidth && !this.multiline && this.extends) {
+                this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
+            } else {
+                this.gameObject.x = this.x
+            }
         } else if (event.key == 'Enter') {
             if (this.shift.isDown && this.multiline) {
                 this.text += '\n'
