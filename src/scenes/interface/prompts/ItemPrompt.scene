@@ -63,7 +63,6 @@
                     "originY": 0.5,
                     "text": "You have found a party hat.\nWould you like to pick it up?",
                     "fixedWidth": 628,
-                    "fixedHeight": 136,
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",

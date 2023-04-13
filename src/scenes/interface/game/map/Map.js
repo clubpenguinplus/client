@@ -409,7 +409,6 @@ export default class Map extends BaseContainer {
 
         // map_puffles_adopt
         const map_puffles_adopt = scene.add.image(427, 190, 'map', 'map/puffles/adopt')
-        map_puffles_adopt.visible = false
         puffle_container.add(map_puffles_adopt)
 
         // map_puffles_rainbow
@@ -802,8 +801,6 @@ export default class Map extends BaseContainer {
         map_places_skivillage_1ShowHint.text = 'village'
 
         // map_places_iceberg_1 (components)
-        const map_places_iceberg_1ShowHint = new ShowHint(map_places_iceberg_1)
-        map_places_iceberg_1ShowHint.text = 'berg'
         const map_places_iceberg_1SimpleButton = new SimpleButton(map_places_iceberg_1)
         map_places_iceberg_1SimpleButton.callback = () => this.onRoomClick(805)
 
@@ -967,7 +964,8 @@ export default class Map extends BaseContainer {
         snowandsportsShowHint.text = 'sportscatalog'
 
         // map_puffles_adopt (components)
-        new SimpleButton(map_puffles_adopt)
+        const map_puffles_adoptSimpleButton = new SimpleButton(map_puffles_adopt)
+        map_puffles_adoptSimpleButton.callback = () => this.onRoomClick(310)
         const map_puffles_adoptShowHint = new ShowHint(map_puffles_adopt)
         map_puffles_adoptShowHint.text = 'puffleadopt'
 

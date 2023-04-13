@@ -12,14 +12,19 @@ export default class PuffleLoader extends BaseLoader {
     loadPuffle(animation, puffle) {
         let key = this.getKey(`${animation}/${puffle}`)
 
-        let interval = setInterval(() => {
-            if (this.textureExists(key)) {
+        if (
+            this.checkComplete('multiatlas', key, () => {
                 this.onFileComplete(key)
-                clearInterval(interval)
-            }
-        }, 100)
+            })
+        ) {
+            return
+        }
 
-        this.multiatlas(key, `${animation}/${puffle}.json`, animation)
+        this.multiatlas({
+            key: key,
+            atlasURL: `${animation}/${puffle}.json`,
+            path: animation,
+        })
         this.start()
     }
 

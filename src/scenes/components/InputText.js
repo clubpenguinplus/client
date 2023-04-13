@@ -44,6 +44,10 @@ export default class InputText extends EventComponent {
 
     /* START-USER-CODE */
 
+    get isChanged() {
+        return this.gameObject.text != this.defaultText
+    }
+
     start() {
         this.defaultText = this.gameObject.text
         this.gameObject.textContent = this.gameObject.text
@@ -91,7 +95,7 @@ export default class InputText extends EventComponent {
 
         this.x = this.gameObject.x
 
-        this.gameObject.setStyle({fixedWidth: 0})
+        this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
         this.wrapText()
         this.createMask()
     }
@@ -165,7 +169,7 @@ export default class InputText extends EventComponent {
             let text = this.gameObject.text
             if (this.gameObject.style.fixedWidth != 0) {
                 prevWidth = this.gameObject.style.fixedWidth
-                this.gameObject.setStyle({fixedWidth: 0})
+                this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
             }
             while (charPoint <= text.length && charWidth < x) {
                 this.gameObject.text = text.substring(0, charPoint)
@@ -189,7 +193,7 @@ export default class InputText extends EventComponent {
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
-            this.gameObject.setStyle({fixedWidth: prevWidth})
+            this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
 
             this.input.once('pointerup', (pointer) => this.onClick(pointer))
             this.isSelected = true
@@ -221,7 +225,7 @@ export default class InputText extends EventComponent {
             let text = this.gameObject.textContent
             if (this.gameObject.style.fixedWidth != 0) {
                 prevWidth = this.gameObject.style.fixedWidth
-                this.gameObject.setStyle({fixedWidth: 0})
+                this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
             }
             while (charPoint <= text.length && charWidth < x) {
                 this.gameObject.textContent = text.substring(0, charPoint)
@@ -245,7 +249,7 @@ export default class InputText extends EventComponent {
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
-            this.gameObject.setStyle({fixedWidth: prevWidth})
+            this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
         }
     }
 
@@ -254,12 +258,12 @@ export default class InputText extends EventComponent {
 
         let prevWidth = this.gameObject.style.fixedWidth
         let prevText = this.gameObject.text
-        this.gameObject.setStyle({fixedWidth: 0})
+        this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
         let arr = char.split('\n')
         this.gameObject.text = arr[arr.length - 1]
         let width = this.gameObject.width
         this.gameObject.text = prevText
-        this.gameObject.setStyle({fixedWidth: prevWidth})
+        this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
         return width
     }
 
@@ -268,11 +272,11 @@ export default class InputText extends EventComponent {
 
         let prevHeight = this.gameObject.style.fixedHeight
         let prevText = this.gameObject.text
-        this.gameObject.setStyle({fixedHeight: 0})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, 0)
         this.gameObject.text = char
         let height = this.gameObject.height
         this.gameObject.text = prevText
-        this.gameObject.setStyle({fixedHeight: prevHeight})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, prevHeight)
         return height
     }
 
@@ -281,7 +285,7 @@ export default class InputText extends EventComponent {
 
         let prevHeight = this.gameObject.style.fixedHeight
         let prevText = this.gameObject.text
-        this.gameObject.setStyle({fixedHeight: 0})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, 0)
         let arr = char.split('\n')
         this.gameObject.text = arr.pop()
         let height = this.gameObject.height * this.gameObject.originY
@@ -290,7 +294,7 @@ export default class InputText extends EventComponent {
             height -= this.gameObject.height * this.gameObject.originY
         }
         this.gameObject.text = prevText
-        this.gameObject.setStyle({fixedHeight: prevHeight})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, prevHeight)
 
         var offset = this.gameObject.y + this.gameObject.height * this.gameObject.originY
         return offset - height

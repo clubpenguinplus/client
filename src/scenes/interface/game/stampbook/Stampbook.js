@@ -577,15 +577,15 @@ export default class Stampbook extends BaseScene {
         // stampcategory
         const stampcategory = this.add.text(1183, 101, '', {})
         stampcategory.setOrigin(1, 0.5)
-        stampcategory.text = 'Game Stamps:'
-        stampcategory.setStyle({align: 'right', color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        stampcategory.text = 'Jet Pack Adventure Stamps:'
+        stampcategory.setStyle({align: 'right', color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         page.add(stampcategory)
 
         // pagename
         const pagename = this.add.text(329, 117, '', {})
         pagename.setOrigin(0, 0.5)
-        pagename.text = 'Games'
-        pagename.setStyle({color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '70px', fontStyle: 'bold'})
+        pagename.text = 'Jet Pack Adventure'
+        pagename.setStyle({color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '54px', fontStyle: 'bold'})
         page.add(pagename)
 
         // pageicon
@@ -751,13 +751,15 @@ export default class Stampbook extends BaseScene {
 
         // total
         const total = this.add.text(257, 754, '', {})
-        total.setStyle({color: '#F4B851', fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        total.text = 'Loading stampbook'
+        total.setStyle({color: '#F4B851', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(total)
 
         // username
         const username = this.add.text(253, 705, '', {})
         username.setOrigin(0, 0.5)
-        username.setStyle({color: '#F4B851', fixedWidth: 700, fixedHeight: 100, fontFamily: 'Burbank Small', fontSize: '100px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        username.text = 'Loading...'
+        username.setStyle({color: '#F4B851', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '64px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(username)
 
         // edit
@@ -952,7 +954,7 @@ export default class Stampbook extends BaseScene {
         const category_title = this.add.text(82, 21, '', {})
         category_title.setOrigin(0.5, 0.5)
         category_title.text = 'All Stamps'
-        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fixedHeight: 25, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
         category_title.setPadding({left: 15, right: 15})
         editor.add(category_title)
 
@@ -1105,49 +1107,49 @@ export default class Stampbook extends BaseScene {
         const stampbookGuide = this.add.text(0, 0, '', {})
         stampbookGuide.setOrigin(0, 0.5)
         stampbookGuide.text = 'Stamp Book Guide'
-        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fixedHeight: 50, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold'})
+        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide)
 
         // stampbookGuide_1
         const stampbookGuide_1 = this.add.text(45, 88, '', {})
         stampbookGuide_1.setOrigin(0, 0.5)
         stampbookGuide_1.text = 'Easy'
-        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_1)
 
         // stampbookGuide_2
         const stampbookGuide_2 = this.add.text(45, 135, '', {})
         stampbookGuide_2.setOrigin(0, 0.5)
         stampbookGuide_2.text = 'Medium'
-        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_2)
 
         // stampbookGuide_3
         const stampbookGuide_3 = this.add.text(45, 182, '', {})
         stampbookGuide_3.setOrigin(0, 0.5)
         stampbookGuide_3.text = 'Hard'
-        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_3)
 
         // stampbookGuide_4
         const stampbookGuide_4 = this.add.text(45, 230, '', {})
         stampbookGuide_4.setOrigin(0, 0.5)
         stampbookGuide_4.text = 'Extreme'
-        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_4)
 
         // stampbookGuide_5
         const stampbookGuide_5 = this.add.text(45, 279, '', {})
         stampbookGuide_5.setOrigin(0, 0.5)
         stampbookGuide_5.text = 'Edit Stamp Book'
-        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_5)
 
         // stampbookGuide_6
         const stampbookGuide_6 = this.add.text(45, 328, '', {})
         stampbookGuide_6.setOrigin(0, 0.5)
         stampbookGuide_6.text = 'Save Stamp Book'
-        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_6)
 
         // lists
@@ -1884,7 +1886,6 @@ export default class Stampbook extends BaseScene {
             this.stampsEarned[s] = parseInt(this.stampsEarned[s])
         }
         this.username.text = isPlayer ? this.shell.client.penguin.username : args[0]
-        this.interface.scaleToFixedSize(this.username)
 
         this.total.text = `Total Stamps ${this.getTotalStamps()[1]}/${this.getTotalStamps()[0]}`
         this.pinsCollected = isPlayer ? this.shell.client.inventory['flag'] : args[5].split('|')
@@ -1937,8 +1938,8 @@ export default class Stampbook extends BaseScene {
     }
 
     changeColor(id) {
-        this.username.setStyle({fill: this.highlightColors[id]})
-        this.total.setStyle({fill: this.highlightColors[id]})
+        this.username.setColor(this.highlightColors[id])
+        this.total.setColor(this.highlightColors[id])
         this.wordmark.tint = this.tintColors[id]
         this.wordmark.tintFill = true
         this.wordmark_overlay.tint = this.tintColors[id]
@@ -2096,11 +2097,11 @@ export default class Stampbook extends BaseScene {
     }
 
     btnOver(btntext) {
-        btntext.setStyle({color: '#3c3c3cff'})
+        btntext.setColor('#3c3c3cff')
     }
 
     btnOut(btntext) {
-        btntext.setStyle({color: '#5b5b5bff'})
+        btntext.setColor('#5b5b5bff')
     }
 
     onStampOver(pos) {
@@ -2255,10 +2256,10 @@ export default class Stampbook extends BaseScene {
                         cursor: 'pointer',
                     })
                     this.indexButtons[current].on('pointerover', () => {
-                        this.indexText[cur].setStyle({color: '#3c3c3cff'})
+                        this.indexText[cur].setColor('#3c3c3cff')
                     })
                     this.indexButtons[current].on('pointerout', () => {
-                        this.indexText[cur].setStyle({color: '#5b5b5bff'})
+                        this.indexText[cur].setColor('#5b5b5bff')
                     })
                     this.indexButtons[current].on('pointerdown', () => {
                         this.goToPage(pageId)
@@ -2291,10 +2292,10 @@ export default class Stampbook extends BaseScene {
                         cursor: 'pointer',
                     })
                     this.indexButtons[current].on('pointerover', () => {
-                        this.indexText[cur].setStyle({color: '#3c3c3cff'})
+                        this.indexText[cur].setColor('#3c3c3cff')
                     })
                     this.indexButtons[current].on('pointerout', () => {
-                        this.indexText[cur].setStyle({color: '#5b5b5bff'})
+                        this.indexText[cur].setColor('#5b5b5bff')
                     })
                     this.indexButtons[current].on('pointerdown', () => {
                         this.goToPage(pageId)
@@ -2321,15 +2322,15 @@ export default class Stampbook extends BaseScene {
             this.up_btn.x = 1200
         }
 
-        this.pagename.setStyle({fontSize: '50px'})
+        this.pagename.setSize(50)
         while (this.pagename.width > 500) {
             let fontSize = this.pagename.style.fontSize.replace('px', '')
-            this.pagename.setStyle({fontSize: `${parseInt(fontSize) - 1}px`})
+            this.pagename.setSize(parseInt(fontSize) - 1)
         }
-        this.stampcategory.setStyle({fontSize: '30px'})
+        this.stampcategory.setSize(30)
         while (this.stampcategory.width > 300) {
             let fontSize = this.stampcategory.style.fontSize.replace('px', '')
-            this.stampcategory.setStyle({fontSize: `${parseInt(fontSize) - 1}px`})
+            this.stampcategory.setSize(parseInt(fontSize) - 1)
         }
 
         this.pagenum.text = `Page\n${this.pageIndex} of ${this.crumbs.stampbook.enabledPages.length - 1}`
@@ -2414,7 +2415,7 @@ export default class Stampbook extends BaseScene {
             this.stampInfoBody.text = `Released: ${releaseDate}.`
         })
 
-        pin.visible = visible
+        pin.visible = visible && this.pageIndex == this.crumbs.stampbook.enabledPages.indexOf('pins')
 
         return pin
     }
@@ -2675,10 +2676,10 @@ export default class Stampbook extends BaseScene {
 
                     childBackground.setInteractive()
                     childBackground.on('pointerover', () => {
-                        childText.setStyle({color: '#3c3c3cff'})
+                        childText.setColor('#3c3c3cff')
                     })
                     childBackground.on('pointerout', () => {
-                        childText.setStyle({color: '#5b5b5bff'})
+                        childText.setColor('#5b5b5bff')
                     })
                     childBackground.on('pointerdown', () => {
                         this.showEditorStamps(child.text, child.icon, child.stamps)
@@ -2689,7 +2690,7 @@ export default class Stampbook extends BaseScene {
 
             background.setInteractive()
             background.on('pointerover', () => {
-                text.setStyle({color: '#3c3c3cff'})
+                text.setColor('#3c3c3cff')
                 if (selector.currentChild) {
                     selector.currentChild.visible = false
                     selector.currentChild = null
@@ -2704,7 +2705,7 @@ export default class Stampbook extends BaseScene {
                 }
             })
             background.on('pointerout', () => {
-                text.setStyle({color: '#5b5b5bff'})
+                text.setColor('#5b5b5bff')
             })
             background.on('pointerdown', () => {
                 this.showEditorStamps(page.text, page.icon, page.stamps)
@@ -2749,7 +2750,6 @@ export default class Stampbook extends BaseScene {
         if (this.categorySelector) this.categorySelector.visible = false
         this.input.removeListener('pointermove', this.onEditorCategoriesMove, this)
         this.category_title.text = name
-        this.interface.scaleToFixedSize(this.category_title)
         this.category_icon.setTexture('stampbook', icon)
 
         this.editorStamps.forEach((stamp) => {
@@ -2875,7 +2875,7 @@ export default class Stampbook extends BaseScene {
         }
 
         // Username
-        if (x > 203 && x < 1003 && y > 605 && y < 805) return false
+        if (x > 203 && x < 803 && y > 605 && y < 805) return false
         // Wordmark
         if (x > 916 && x < 1244 && y > 508 && y < 757) return false
 

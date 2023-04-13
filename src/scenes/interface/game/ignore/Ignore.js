@@ -92,7 +92,7 @@ export default class Ignore extends BaseContainer {
         // total
         const total = scene.add.text(-132, 273, '', {})
         total.setOrigin(0.5, 0.5)
-        total.setStyle({color: '#003366', fixedWidth: 100, fixedHeight: 64, fontFamily: 'Arial Narrow', fontSize: '24px'})
+        total.setStyle({color: '#003366', fixedWidth: 100, fontFamily: 'Arial Narrow', fontSize: '24px'})
         this.add(total)
 
         // lists

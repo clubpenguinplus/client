@@ -1,5 +1,5 @@
 import BaseScene from '@scenes/base/BaseScene'
-import {Button, SimpleButton, LocalisedSprite, Interactive} from '@scenes/components/components'
+import {Button, SimpleButton, InputText, Interactive, LocalisedString} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
@@ -39,18 +39,34 @@ export default class Adopt extends BaseScene {
         this.yourCoinsNum
         /** @type {Phaser.GameObjects.Container} */
         this.mainPage
+        /** @type {Phaser.GameObjects.Text} */
+        this.mainHeader
         /** @type {Phaser.GameObjects.Container} */
-        this.puffleInfoPage
+        this.adoptionPage
         /** @type {Phaser.GameObjects.Text} */
         this.speciesText
+        /** @type {Phaser.GameObjects.Container} */
+        this.info
+        /** @type {Phaser.GameObjects.Text} */
+        this.personalityHeader
+        /** @type {Phaser.GameObjects.Text} */
+        this.snackHeader
+        /** @type {Phaser.GameObjects.Text} */
+        this.factHeader
         /** @type {Phaser.GameObjects.Text} */
         this.personalityText
         /** @type {Phaser.GameObjects.Text} */
         this.snackText
         /** @type {Phaser.GameObjects.Text} */
         this.factText
+        /** @type {Phaser.GameObjects.Container} */
+        this.adopt
+        /** @type {Phaser.GameObjects.Text} */
+        this.nameInputText
         /** @type {Phaser.GameObjects.Image} */
         this.speciesIcon
+        /** @type {Phaser.GameObjects.Text} */
+        this.coinCost
 
         /* START-USER-CTR-CODE */
         // Write your code here.
@@ -137,32 +153,33 @@ export default class Adopt extends BaseScene {
         this.add.image(103, 484, 'petshop-adopt', 'fg')
 
         // clipboard
-        this.add.image(1308, 552, 'petshop-adopt', 'clipboard')
+        this.add.image(1297, 508, 'petshop-adopt', 'clipboard')
 
         // yourPuffleNum
-        const yourPuffleNum = this.add.text(1116, 846, '', {})
-        yourPuffleNum.angle = 3
+        const yourPuffleNum = this.add.text(1105, 802, '', {})
+        yourPuffleNum.angle = 3.0000000000000004
         yourPuffleNum.setOrigin(0, 0.5)
         yourPuffleNum.text = 'Your puffles: 0'
-        yourPuffleNum.setStyle({color: '#4b4b4bff', fontFamily: 'Burbank Small', fontSize: '28px'})
+        yourPuffleNum.setStyle({color: '#4b4b4bff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '28px'})
 
         // yourCoinsNum
-        const yourCoinsNum = this.add.text(1212, 925, '', {})
-        yourCoinsNum.angle = 3
+        const yourCoinsNum = this.add.text(1201, 881, '', {})
+        yourCoinsNum.angle = 3.0000000000000004
         yourCoinsNum.setOrigin(0.5, 0.5)
         yourCoinsNum.text = 'Your coins:\n0'
-        yourCoinsNum.setStyle({align: 'center', color: '#354c15ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        yourCoinsNum.setStyle({align: 'center', color: '#354c15ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
 
         // mainPage
-        const mainPage = this.add.container(1202, 256)
+        const mainPage = this.add.container(1191, 212)
+        mainPage.visible = false
 
-        // text_1
-        const text_1 = this.add.text(95, 0, '', {})
-        text_1.angle = 2
-        text_1.setOrigin(0.5, 0.5)
-        text_1.text = 'Adopt a Puffle'
-        text_1.setStyle({align: 'center', color: '#4b4b4bff', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
-        mainPage.add(text_1)
+        // mainHeader
+        const mainHeader = this.add.text(98, 0, '', {})
+        mainHeader.angle = 2
+        mainHeader.setOrigin(0.5, 0.5)
+        mainHeader.text = 'Adopt a Puffle'
+        mainHeader.setStyle({align: 'center', color: '#4b4b4bff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        mainPage.add(mainHeader)
 
         // spacer
         const spacer = this.add.image(91, 48, 'petshop-adopt', 'spacer')
@@ -225,12 +242,11 @@ export default class Adopt extends BaseScene {
         const dogIcon = this.add.image(40, 395, 'petshop-adopt', 'dogIcon')
         container_1.add(dogIcon)
 
-        // puffleInfoPage
-        const puffleInfoPage = this.add.container(1202, 256)
-        puffleInfoPage.visible = false
+        // adoptionPage
+        const adoptionPage = this.add.container(1191, 212)
 
         // speciesText
-        const speciesText = this.add.text(16, 3, '', {})
+        const speciesText = this.add.text(16, 2, '', {})
         speciesText.angle = 2
         speciesText.setOrigin(0, 0.5)
         speciesText.tintTopLeft = 10592673
@@ -238,79 +254,105 @@ export default class Adopt extends BaseScene {
         speciesText.tintBottomLeft = 10592673
         speciesText.tintBottomRight = 10592673
         speciesText.text = 'Blue'
-        speciesText.setStyle({color: '#33ccffff', fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold', 'shadow.color': '#424242ff'})
-        puffleInfoPage.add(speciesText)
+        speciesText.setStyle({color: '#33ccffff', fixedWidth: 230, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold', 'shadow.color': '#424242ff'})
+        speciesText.setWordWrapWidth(230)
+        adoptionPage.add(speciesText)
 
         // spacer_2
         const spacer_2 = this.add.image(88, 54, 'petshop-adopt', 'spacer')
-        puffleInfoPage.add(spacer_2)
+        adoptionPage.add(spacer_2)
 
-        // container_2
-        const container_2 = this.add.container(0, 92)
-        container_2.angle = 2
-        puffleInfoPage.add(container_2)
+        // info
+        const info = this.add.container(0, 92)
+        info.angle = 2
+        adoptionPage.add(info)
 
-        // text_4
-        const text_4 = this.add.text(-63, 0, '', {})
-        text_4.setOrigin(0, 0.5)
-        text_4.text = 'Personality'
-        text_4.setStyle({color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
-        container_2.add(text_4)
+        // personalityHeader
+        const personalityHeader = this.add.text(-63, 0, '', {})
+        personalityHeader.setOrigin(0, 0.5)
+        personalityHeader.text = 'Personality'
+        personalityHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        info.add(personalityHeader)
 
-        // text_5
-        const text_5 = this.add.text(-63, 116, '', {})
-        text_5.setOrigin(0, 0.5)
-        text_5.text = 'Favorite Snack'
-        text_5.setStyle({color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
-        container_2.add(text_5)
+        // snackHeader
+        const snackHeader = this.add.text(-63, 116, '', {})
+        snackHeader.setOrigin(0, 0.5)
+        snackHeader.text = 'Favorite Snack'
+        snackHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        info.add(snackHeader)
 
-        // text_6
-        const text_6 = this.add.text(-63, 232, '', {})
-        text_6.setOrigin(0, 0.5)
-        text_6.text = 'Cool Fact'
-        text_6.setStyle({color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
-        container_2.add(text_6)
+        // factHeader
+        const factHeader = this.add.text(-63, 232, '', {})
+        factHeader.setOrigin(0, 0.5)
+        factHeader.text = 'Cool Fact'
+        factHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        info.add(factHeader)
 
         // personalityText
-        const personalityText = this.add.text(-63, 39, '', {})
-        personalityText.setOrigin(0, 0.5)
+        const personalityText = this.add.text(-63, 21, '', {})
         personalityText.tintTopLeft = 10592673
         personalityText.tintTopRight = 10592673
         personalityText.tintBottomLeft = 10592673
         personalityText.tintBottomRight = 10592673
         personalityText.text = 'Loyal, team player'
-        personalityText.setStyle({color: '#33ccffff', fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
-        container_2.add(personalityText)
+        personalityText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
+        personalityText.setWordWrapWidth(330)
+        info.add(personalityText)
 
         // snackText
-        const snackText = this.add.text(-63, 155, '', {})
-        snackText.setOrigin(0, 0.5)
+        const snackText = this.add.text(-63, 135, '', {})
         snackText.tintTopLeft = 10592673
         snackText.tintTopRight = 10592673
         snackText.tintBottomLeft = 10592673
         snackText.tintBottomRight = 10592673
         snackText.text = 'Pretzels'
-        snackText.setStyle({color: '#33ccffff', fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
-        container_2.add(snackText)
+        snackText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
+        snackText.setWordWrapWidth(330)
+        info.add(snackText)
 
         // factText
-        const factText = this.add.text(-63, 271, '', {})
-        factText.setOrigin(0, 0.5)
+        const factText = this.add.text(-63, 250, '', {})
         factText.tintTopLeft = 10592673
         factText.tintTopRight = 10592673
         factText.tintBottomLeft = 10592673
         factText.tintBottomRight = 10592673
         factText.text = 'Can bounce really high'
-        factText.setStyle({color: '#33ccffff', fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
-        container_2.add(factText)
+        factText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
+        factText.setWordWrapWidth(330)
+        info.add(factText)
+
+        // adopt
+        const adopt = this.add.container(0, 92)
+        adopt.angle = 2
+        adopt.visible = false
+        adoptionPage.add(adopt)
+
+        // namePuffleText
+        const namePuffleText = this.add.text(95, 80, '', {})
+        namePuffleText.setOrigin(0.5, 0.5)
+        namePuffleText.text = 'Name your puffle'
+        namePuffleText.setStyle({align: 'center', color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        adopt.add(namePuffleText)
+
+        // puffleNameInput
+        const puffleNameInput = this.add.image(98, 145, 'petshop-adopt', 'puffleNameInput')
+        puffleNameInput.angle = -2
+        adopt.add(puffleNameInput)
+
+        // nameInputText
+        const nameInputText = this.add.text(97, 144, '', {})
+        nameInputText.setOrigin(0.5, 0.5)
+        nameInputText.text = 'Enter Name'
+        nameInputText.setStyle({align: 'center', color: '#38484dff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '28px'})
+        adopt.add(nameInputText)
 
         // speciesIcon
-        const speciesIcon = this.add.image(-26, -1, 'petshop-adopt', 'blueIcon')
-        puffleInfoPage.add(speciesIcon)
+        const speciesIcon = this.add.image(-37, -2, 'petshop-adopt', 'blueIcon')
+        adoptionPage.add(speciesIcon)
 
         // adoptBtn
         const adoptBtn = this.add.image(89, 481, 'petshop-adopt', 'adoptBtn')
-        puffleInfoPage.add(adoptBtn)
+        adoptionPage.add(adoptBtn)
 
         // text_10
         const text_10 = this.add.text(92, 482, '', {})
@@ -318,7 +360,20 @@ export default class Adopt extends BaseScene {
         text_10.setOrigin(0.5, 0.5)
         text_10.text = 'Adopt'
         text_10.setStyle({align: 'center', color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '48px', fontStyle: 'bold'})
-        puffleInfoPage.add(text_10)
+        adoptionPage.add(text_10)
+
+        // coinCost
+        const coinCost = this.add.text(237, 607, '', {})
+        coinCost.angle = 3.0000000000000004
+        coinCost.setOrigin(1, 0.5)
+        coinCost.text = '400'
+        coinCost.setStyle({align: 'right', color: '#644314ff', fixedWidth: 70, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#f0c351ff', 'shadow.blur': 2, 'shadow.fill': true})
+        adoptionPage.add(coinCost)
+
+        // coin
+        const coin = this.add.image(253, 608, 'petshop-adopt', 'coin')
+        coin.angle = 2
+        adoptionPage.add(coin)
 
         // closeBtn
         const closeBtn = this.add.image(1479, 39, 'petshop-adopt', 'closeBtn')
@@ -339,50 +394,66 @@ export default class Adopt extends BaseScene {
         // whitePuffle (components)
         const whitePuffleSimpleButton = new SimpleButton(whitePuffle)
         whitePuffleSimpleButton.callback = () => this.adoptPuffle(7)
+        whitePuffleSimpleButton.pixelPerfect = true
 
         // blackPuffle (components)
         const blackPuffleSimpleButton = new SimpleButton(blackPuffle)
         blackPuffleSimpleButton.callback = () => this.adoptPuffle(2)
+        blackPuffleSimpleButton.pixelPerfect = true
 
         // pinkPuffle (components)
         const pinkPuffleSimpleButton = new SimpleButton(pinkPuffle)
         pinkPuffleSimpleButton.callback = () => this.adoptPuffle(1)
+        pinkPuffleSimpleButton.pixelPerfect = true
 
         // purplePuffle (components)
         const purplePuffleSimpleButton = new SimpleButton(purplePuffle)
         purplePuffleSimpleButton.callback = () => this.adoptPuffle(4)
+        purplePuffleSimpleButton.pixelPerfect = true
 
         // greenPuffle (components)
         const greenPuffleSimpleButton = new SimpleButton(greenPuffle)
         greenPuffleSimpleButton.callback = () => this.adoptPuffle(3)
+        greenPuffleSimpleButton.pixelPerfect = true
 
         // yellowPuffle (components)
         const yellowPuffleSimpleButton = new SimpleButton(yellowPuffle)
         yellowPuffleSimpleButton.callback = () => this.adoptPuffle(6)
+        yellowPuffleSimpleButton.pixelPerfect = true
 
         // orangePuffle (components)
         const orangePuffleSimpleButton = new SimpleButton(orangePuffle)
         orangePuffleSimpleButton.callback = () => this.adoptPuffle(8)
+        orangePuffleSimpleButton.pixelPerfect = true
 
         // brownPuffle (components)
         const brownPuffleSimpleButton = new SimpleButton(brownPuffle)
         brownPuffleSimpleButton.callback = () => this.adoptPuffle(9)
+        brownPuffleSimpleButton.pixelPerfect = true
 
         // dogPuffle (components)
         const dogPuffleSimpleButton = new SimpleButton(dogPuffle)
         dogPuffleSimpleButton.callback = () => this.adoptPuffle(1006)
+        dogPuffleSimpleButton.pixelPerfect = true
 
         // bluePuffle (components)
         const bluePuffleSimpleButton = new SimpleButton(bluePuffle)
         bluePuffleSimpleButton.callback = () => this.adoptPuffle(0)
+        bluePuffleSimpleButton.pixelPerfect = true
 
         // catPuffle (components)
         const catPuffleSimpleButton = new SimpleButton(catPuffle)
         catPuffleSimpleButton.callback = () => this.adoptPuffle(1007)
+        catPuffleSimpleButton.pixelPerfect = true
 
         // redPuffle (components)
         const redPuffleSimpleButton = new SimpleButton(redPuffle)
         redPuffleSimpleButton.callback = () => this.adoptPuffle(5)
+        redPuffleSimpleButton.pixelPerfect = true
+
+        // mainHeader (components)
+        const mainHeaderLocalisedString = new LocalisedString(mainHeader)
+        mainHeaderLocalisedString.id = 'interface-closeups-adopt'
 
         // whiteIcon (components)
         const whiteIconButton = new Button(whiteIcon)
@@ -444,6 +515,32 @@ export default class Adopt extends BaseScene {
         dogIconButton.spriteName = 'dogIcon'
         dogIconButton.callback = () => this.adoptPuffle(1006)
 
+        // personalityHeader (components)
+        const personalityHeaderLocalisedString = new LocalisedString(personalityHeader)
+        personalityHeaderLocalisedString.id = 'interface-closeups-adopt-personality'
+
+        // snackHeader (components)
+        const snackHeaderLocalisedString = new LocalisedString(snackHeader)
+        snackHeaderLocalisedString.id = 'interface-closeups-adopt-snack'
+
+        // factHeader (components)
+        const factHeaderLocalisedString = new LocalisedString(factHeader)
+        factHeaderLocalisedString.id = 'interface-closeups-adopt-fact'
+
+        // nameInputText (components)
+        const nameInputTextInputText = new InputText(nameInputText)
+        nameInputTextInputText.charlimit = 12
+        nameInputTextInputText.inputfilter = /^[A-Z 0-9]*$/i
+
+        // adoptBtn (components)
+        const adoptBtnButton = new Button(adoptBtn)
+        adoptBtnButton.spriteName = 'adoptBtn'
+        adoptBtnButton.callback = () => this.onAdoptionClick()
+
+        // text_10 (components)
+        const text_10LocalisedString = new LocalisedString(text_10)
+        text_10LocalisedString.id = 'interface-closeups-adopt-adopt'
+
         // closeBtn (components)
         const closeBtnButton = new Button(closeBtn)
         closeBtnButton.spriteName = 'closeBtn'
@@ -465,12 +562,20 @@ export default class Adopt extends BaseScene {
         this.yourPuffleNum = yourPuffleNum
         this.yourCoinsNum = yourCoinsNum
         this.mainPage = mainPage
-        this.puffleInfoPage = puffleInfoPage
+        this.mainHeader = mainHeader
+        this.adoptionPage = adoptionPage
         this.speciesText = speciesText
+        this.info = info
+        this.personalityHeader = personalityHeader
+        this.snackHeader = snackHeader
+        this.factHeader = factHeader
         this.personalityText = personalityText
         this.snackText = snackText
         this.factText = factText
+        this.adopt = adopt
+        this.nameInputText = nameInputText
         this.speciesIcon = speciesIcon
+        this.coinCost = coinCost
 
         this.events.emit('scene-awake')
     }
@@ -486,8 +591,8 @@ export default class Adopt extends BaseScene {
             this[puffle + 'Puffle'].play(`petshop-adopt-${puffle}PuffleAnim`)
         }
 
-        this.yourPuffleNum.text = `Your Puffles: 0`
-        this.yourCoinsNum.text = `Your Coins:\n${this.shell.client.coins}`
+        this.yourPuffleNum.text = `${this.crumbs.getString('interface-closeups-adopt-puffles')}: 0`
+        this.yourCoinsNum.text = `${this.crumbs.getString('interface-closeups-adopt-coins')}:\n${this.shell.client.coins}`
     }
 
     getIconFromId(id) {
@@ -532,24 +637,59 @@ export default class Adopt extends BaseScene {
 
     adoptPuffle(puffleId) {
         this.mainPage.visible = false
-        this.puffleInfoPage.visible = true
+        this.adoptionPage.visible = true
+        this.adopt.visible = false
+        this.info.visible = true
+        this.nameInputText.__InputText.clickZone.visible = false
 
         this.speciesText.text = this.crumbs.puffles[puffleId].name
         this.personalityText.text = this.crumbs.getString(`puffle-${puffleId}-personality`)
-        this.snackText.text = this.crumbs.getString(`puffle-${puffleId}-snack`)
+        if (this.crumbs.getString(`puffle-${puffleId}-snack`) == `puffle-${puffleId}-snack`) {
+            this.snackText.text = this.crumbs.getString(`puffle-${puffleId}-wild`)
+            this.snackHeader.text = this.crumbs.getString('interface-closeups-adopt-wild')
+        } else {
+            this.snackText.text = this.crumbs.getString(`puffle-${puffleId}-snack`)
+            this.snackHeader.text = this.crumbs.getString('interface-closeups-adopt-snack')
+        }
         this.factText.text = this.crumbs.getString(`puffle-${puffleId}-fact`)
 
-        this.speciesText.setStyle({color: this.crumbs.puffles[puffleId].color.replace('0x', '#')})
-        this.personalityText.setStyle({color: this.crumbs.puffles[puffleId].color.replace('0x', '#')})
-        this.snackText.setStyle({color: this.crumbs.puffles[puffleId].color.replace('0x', '#')})
-        this.factText.setStyle({color: this.crumbs.puffles[puffleId].color.replace('0x', '#')})
+        this.speciesText.setColor(this.crumbs.puffles[puffleId].color.replace('0x', '#'))
+        this.personalityText.setColor(this.crumbs.puffles[puffleId].color.replace('0x', '#'))
+        this.snackText.setColor(this.crumbs.puffles[puffleId].color.replace('0x', '#'))
+        this.factText.setColor(this.crumbs.puffles[puffleId].color.replace('0x', '#'))
 
         this.speciesIcon.setFrame(this.getIconFromId(puffleId))
+
+        this.coinCost.text = this.crumbs.puffles[puffleId].cost
 
         let lightAnimPosition = this.getLightPositionFromId(puffleId)
         this.lightAnim.x = lightAnimPosition.x
         this.lightAnim.y = lightAnimPosition.y
         this.lightAnim.play('petshop-adopt-lightAnim')
+
+        this.adoptPuffleId = puffleId
+    }
+
+    onAdoptionClick() {
+        if (!this.adopt.visible) {
+            this.adopt.visible = true
+            this.info.visible = false
+            this.nameInputText.__InputText.clickZone.visible = true
+            return
+        }
+
+        if (!this.nameInputText.__InputText.isChanged || this.nameInputText.textContent.length < 1) {
+            this.interface.prompt.showError(this.crumbs.getError(52))
+            return
+        }
+
+        if (this.shell.client.coins < this.crumbs.puffles[this.adoptPuffleId].cost) {
+            this.interface.prompt.showError(this.crumbs.getError(0))
+            return
+        }
+
+        this.airtower.sendXt('p#pn', `${this.adoptPuffleId}%${this.nameInputText.textContent}`)
+        this.scene.stop()
     }
 
     /* END-USER-CODE */

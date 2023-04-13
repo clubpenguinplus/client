@@ -247,7 +247,9 @@ export default class PuffleCare extends BaseContainer {
 
         this.args = args
 
-        this.shell.input.once('pointerdown', () => this.close())
+        this.shell.input.once('pointerdown', () => {
+            this.close()
+        })
     }
 
     close() {

@@ -119,6 +119,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(7)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "whitePuffleAnim0001"
@@ -135,6 +136,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(2)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "blackPuffleAnim0001"
@@ -151,6 +153,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(1)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "pinkPuffleAnim0001"
@@ -167,6 +170,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(4)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "purplePuffleAnim0001"
@@ -183,6 +187,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(3)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "greenPuffleAnim0001"
@@ -199,6 +204,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(6)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "yellowPuffleAnim0001"
@@ -215,6 +221,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(8)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "orangePuffleAnim0001"
@@ -231,6 +238,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(9)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "brownPuffleAnim0001"
@@ -247,6 +255,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(1006)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "dogPuffleAnim0001"
@@ -263,6 +272,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(0)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "bluePuffleAnim0001"
@@ -279,6 +289,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(1007)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "catPuffleAnim0001"
@@ -295,6 +306,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.adoptPuffle(5)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "redPuffleAnim0001"
@@ -360,8 +372,8 @@
                 "key": "petshop-adopt",
                 "frame": "clipboard"
             },
-            "x": 1308,
-            "y": 552
+            "x": 1297,
+            "y": 508
         },
         {
             "type": "Text",
@@ -369,11 +381,12 @@
             "label": "yourPuffleNum",
             "scope": "CLASS",
             "components": [],
-            "x": 1116,
-            "y": 846,
-            "angle": 3,
+            "x": 1105,
+            "y": 802,
+            "angle": 3.0000000000000004,
             "originY": 0.5,
             "text": "Your puffles: 0",
+            "fixedWidth": 250,
             "fontFamily": "Burbank Small",
             "fontSize": "28px",
             "color": "#4b4b4bff"
@@ -384,12 +397,13 @@
             "label": "yourCoinsNum",
             "scope": "CLASS",
             "components": [],
-            "x": 1212,
-            "y": 925,
-            "angle": 3,
+            "x": 1201,
+            "y": 881,
+            "angle": 3.0000000000000004,
             "originX": 0.5,
             "originY": 0.5,
             "text": "Your coins:\n0",
+            "fixedWidth": 150,
             "align": "center",
             "fontFamily": "Burbank Small",
             "fontSize": "24px",
@@ -402,19 +416,25 @@
             "label": "mainPage",
             "scope": "CLASS",
             "components": [],
-            "x": 1202,
-            "y": 256,
+            "x": 1191,
+            "y": 212,
+            "visible": false,
             "list": [
                 {
                     "type": "Text",
                     "id": "256b0779-177d-481e-9580-697cac7bf9d7",
-                    "label": "text_1",
-                    "components": [],
-                    "x": 95,
+                    "label": "mainHeader",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "interface-closeups-adopt",
+                    "x": 98,
                     "angle": 2,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Adopt a Puffle",
+                    "fixedWidth": 350,
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -649,12 +669,11 @@
         {
             "type": "Container",
             "id": "cb0fe65d-d09e-45fe-9438-dd7ce3122b5c",
-            "label": "puffleInfoPage",
+            "label": "adoptionPage",
             "scope": "CLASS",
             "components": [],
-            "x": 1202,
-            "y": 256,
-            "visible": false,
+            "x": 1191,
+            "y": 212,
             "list": [
                 {
                     "type": "Text",
@@ -663,7 +682,7 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": 16,
-                    "y": 3,
+                    "y": 2,
                     "angle": 2,
                     "originY": 0.5,
                     "tintTopLeft": "#a1a1a1",
@@ -671,11 +690,13 @@
                     "tintBottomLeft": "#a1a1a1",
                     "tintBottomRight": "#a1a1a1",
                     "text": "Blue",
+                    "fixedWidth": 230,
                     "fontFamily": "Burbank Small",
                     "fontSize": "38px",
                     "fontStyle": "bold",
                     "color": "#33ccffff",
-                    "shadow.color": "#424242ff"
+                    "shadow.color": "#424242ff",
+                    "wordWrapWidth": 230
                 },
                 {
                     "type": "Image",
@@ -692,7 +713,8 @@
                 {
                     "type": "Container",
                     "id": "0dd381bd-2fcd-4cb5-9cd6-7d9b8bf92944",
-                    "label": "container_2",
+                    "label": "info",
+                    "scope": "CLASS",
                     "components": [],
                     "y": 92,
                     "angle": 2,
@@ -700,11 +722,16 @@
                         {
                             "type": "Text",
                             "id": "6f0e2c57-ec88-4a6d-957d-750caf0e0ea3",
-                            "label": "text_4",
-                            "components": [],
+                            "label": "personalityHeader",
+                            "scope": "CLASS",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "interface-closeups-adopt-personality",
                             "x": -63,
                             "originY": 0.5,
                             "text": "Personality",
+                            "fixedWidth": 330,
                             "fontFamily": "Burbank Small",
                             "fontSize": "28px",
                             "fontStyle": "bold",
@@ -713,12 +740,17 @@
                         {
                             "type": "Text",
                             "id": "025b7afa-c485-46ed-a8cc-b033f952f80c",
-                            "label": "text_5",
-                            "components": [],
+                            "label": "snackHeader",
+                            "scope": "CLASS",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "interface-closeups-adopt-snack",
                             "x": -63,
                             "y": 116,
                             "originY": 0.5,
                             "text": "Favorite Snack",
+                            "fixedWidth": 330,
                             "fontFamily": "Burbank Small",
                             "fontSize": "28px",
                             "fontStyle": "bold",
@@ -727,12 +759,17 @@
                         {
                             "type": "Text",
                             "id": "3eae139c-ae16-41e5-b6cc-bd4137db6475",
-                            "label": "text_6",
-                            "components": [],
+                            "label": "factHeader",
+                            "scope": "CLASS",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "interface-closeups-adopt-fact",
                             "x": -63,
                             "y": 232,
                             "originY": 0.5,
                             "text": "Cool Fact",
+                            "fixedWidth": 330,
                             "fontFamily": "Burbank Small",
                             "fontSize": "28px",
                             "fontStyle": "bold",
@@ -745,17 +782,18 @@
                             "scope": "CLASS",
                             "components": [],
                             "x": -63,
-                            "y": 39,
-                            "originY": 0.5,
+                            "y": 21,
                             "tintTopLeft": "#a1a1a1",
                             "tintTopRight": "#a1a1a1",
                             "tintBottomLeft": "#a1a1a1",
                             "tintBottomRight": "#a1a1a1",
                             "text": "Loyal, team player",
+                            "fixedWidth": 330,
                             "fontFamily": "Burbank Small",
                             "fontSize": "28px",
                             "color": "#33ccffff",
-                            "shadow.color": "#424242ff"
+                            "shadow.color": "#424242ff",
+                            "wordWrapWidth": 330
                         },
                         {
                             "type": "Text",
@@ -764,17 +802,18 @@
                             "scope": "CLASS",
                             "components": [],
                             "x": -63,
-                            "y": 155,
-                            "originY": 0.5,
+                            "y": 135,
                             "tintTopLeft": "#a1a1a1",
                             "tintTopRight": "#a1a1a1",
                             "tintBottomLeft": "#a1a1a1",
                             "tintBottomRight": "#a1a1a1",
                             "text": "Pretzels",
+                            "fixedWidth": 330,
                             "fontFamily": "Burbank Small",
                             "fontSize": "28px",
                             "color": "#33ccffff",
-                            "shadow.color": "#424242ff"
+                            "shadow.color": "#424242ff",
+                            "wordWrapWidth": 330
                         },
                         {
                             "type": "Text",
@@ -783,17 +822,80 @@
                             "scope": "CLASS",
                             "components": [],
                             "x": -63,
-                            "y": 271,
-                            "originY": 0.5,
+                            "y": 250,
                             "tintTopLeft": "#a1a1a1",
                             "tintTopRight": "#a1a1a1",
                             "tintBottomLeft": "#a1a1a1",
                             "tintBottomRight": "#a1a1a1",
                             "text": "Can bounce really high",
+                            "fixedWidth": 330,
                             "fontFamily": "Burbank Small",
                             "fontSize": "28px",
                             "color": "#33ccffff",
-                            "shadow.color": "#424242ff"
+                            "shadow.color": "#424242ff",
+                            "wordWrapWidth": 330
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "a2cfb599-8584-464f-b138-f61e7145b69a",
+                    "label": "adopt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 92,
+                    "angle": 2,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "75823d06-e65f-4765-bd5c-76dee45ce161",
+                            "label": "namePuffleText",
+                            "components": [],
+                            "x": 95,
+                            "y": 80,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Name your puffle",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#644314ff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e809e568-fcb1-48d3-bc73-eb40c8a400a5",
+                            "label": "puffleNameInput",
+                            "components": [],
+                            "texture": {
+                                "key": "petshop-adopt",
+                                "frame": "puffleNameInput"
+                            },
+                            "x": 98,
+                            "y": 145,
+                            "angle": -2
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1d6125bc-a762-434c-a5fe-9e40573361e1",
+                            "label": "nameInputText",
+                            "scope": "CLASS",
+                            "components": [
+                                "InputText"
+                            ],
+                            "InputText.charlimit": 12,
+                            "InputText.inputfilter": "/^[A-Z 0-9]*$/i",
+                            "x": 97,
+                            "y": 144,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Enter Name",
+                            "fixedWidth": 300,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "28px",
+                            "color": "#38484dff"
                         }
                     ]
                 },
@@ -807,14 +909,18 @@
                         "key": "petshop-adopt",
                         "frame": "blueIcon"
                     },
-                    "x": -26,
-                    "y": -1
+                    "x": -37,
+                    "y": -2
                 },
                 {
                     "type": "Image",
                     "id": "2b9bca2e-474e-4c10-8538-6acb492bd22d",
                     "label": "adoptBtn",
-                    "components": [],
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "adoptBtn",
+                    "Button.callback": "() => this.onAdoptionClick()",
                     "texture": {
                         "key": "petshop-adopt",
                         "frame": "adoptBtn"
@@ -826,7 +932,10 @@
                     "type": "Text",
                     "id": "cff2e7f9-be8e-492a-b0ff-a6ab98886dfb",
                     "label": "text_10",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "interface-closeups-adopt-adopt",
                     "x": 92,
                     "y": 482,
                     "angle": 2,
@@ -838,6 +947,43 @@
                     "fontSize": "48px",
                     "fontStyle": "bold",
                     "color": "#644314ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f2af57fa-9e3f-4c62-ac36-366b21755c49",
+                    "label": "coinCost",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 237,
+                    "y": 607,
+                    "angle": 3.0000000000000004,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "400",
+                    "fixedWidth": 70,
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#644314ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true,
+                    "shadow.color": "#f0c351ff",
+                    "shadow.blur": 2
+                },
+                {
+                    "type": "Image",
+                    "id": "4a0f3413-7516-47e7-ab35-3654ed3b39cc",
+                    "label": "coin",
+                    "components": [],
+                    "texture": {
+                        "key": "petshop-adopt",
+                        "frame": "coin"
+                    },
+                    "x": 253,
+                    "y": 608,
+                    "angle": 2
                 }
             ]
         },

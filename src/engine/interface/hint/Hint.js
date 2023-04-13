@@ -76,7 +76,7 @@ class Hint extends BaseContainer {
         this.visible = false
 
         if (this.tween) {
-            this.tween.remove()
+            this.scene.tweens.remove(this.tween)
             this.tween = null
         }
     }

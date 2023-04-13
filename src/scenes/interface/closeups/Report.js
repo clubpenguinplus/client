@@ -144,105 +144,105 @@ export default class Report extends BaseScene {
         // key1
         const key1 = this.add.text(90, 220, '', {})
         key1.setOrigin(0, 0.5)
-        key1.setStyle({color: '#642602ff', fixedWidth: 110, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key1.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key1.setLineSpacing(5)
         key1.setWordWrapWidth(225)
 
         // resolution1
         const resolution1 = this.add.text(378, 220, '', {})
         resolution1.setOrigin(1, 0.5)
-        resolution1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution1.setLineSpacing(5)
         resolution1.setWordWrapWidth(225)
 
         // title1
         const title1 = this.add.text(233, 280, '', {})
         title1.setOrigin(0.5, 0.5)
-        title1.setStyle({color: '#642602ff', fixedWidth: 285, fixedHeight: 75, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title1.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title1.setLineSpacing(-5)
         title1.setWordWrapWidth(285)
 
         // key
         const key = this.add.text(90, 348, '', {})
         key.setOrigin(0, 0.5)
-        key.setStyle({color: '#642602ff', fixedWidth: 110, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key.setLineSpacing(5)
         key.setWordWrapWidth(225)
 
         // resolution
         const resolution = this.add.text(378, 348, '', {})
         resolution.setOrigin(1, 0.5)
-        resolution.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution.setLineSpacing(5)
         resolution.setWordWrapWidth(225)
 
         // title_1
         const title_1 = this.add.text(233, 408, '', {})
         title_1.setOrigin(0.5, 0.5)
-        title_1.setStyle({color: '#642602ff', fixedWidth: 285, fixedHeight: 75, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_1.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_1.setLineSpacing(-5)
         title_1.setWordWrapWidth(285)
 
         // key_1
         const key_1 = this.add.text(90, 476, '', {})
         key_1.setOrigin(0, 0.5)
-        key_1.setStyle({color: '#642602ff', fixedWidth: 110, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key_1.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key_1.setLineSpacing(5)
         key_1.setWordWrapWidth(225)
 
         // resolution_1
         const resolution_1 = this.add.text(378, 476, '', {})
         resolution_1.setOrigin(1, 0.5)
-        resolution_1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution_1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution_1.setLineSpacing(5)
         resolution_1.setWordWrapWidth(225)
 
         // title_2
         const title_2 = this.add.text(233, 536, '', {})
         title_2.setOrigin(0.5, 0.5)
-        title_2.setStyle({color: '#642602ff', fixedWidth: 285, fixedHeight: 75, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_2.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_2.setLineSpacing(-5)
         title_2.setWordWrapWidth(285)
 
         // key_2
         const key_2 = this.add.text(90, 604, '', {})
         key_2.setOrigin(0, 0.5)
-        key_2.setStyle({color: '#642602ff', fixedWidth: 110, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key_2.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key_2.setLineSpacing(5)
         key_2.setWordWrapWidth(225)
 
         // resolution_2
         const resolution_2 = this.add.text(378, 604, '', {})
         resolution_2.setOrigin(1, 0.5)
-        resolution_2.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution_2.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution_2.setLineSpacing(5)
         resolution_2.setWordWrapWidth(225)
 
         // title_3
         const title_3 = this.add.text(233, 664, '', {})
         title_3.setOrigin(0.5, 0.5)
-        title_3.setStyle({color: '#642602ff', fixedWidth: 285, fixedHeight: 75, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_3.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_3.setLineSpacing(-5)
         title_3.setWordWrapWidth(285)
 
         // key_3
         const key_3 = this.add.text(90, 732, '', {})
         key_3.setOrigin(0, 0.5)
-        key_3.setStyle({color: '#642602ff', fixedWidth: 110, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key_3.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key_3.setLineSpacing(5)
         key_3.setWordWrapWidth(225)
 
         // resolution_3
         const resolution_3 = this.add.text(378, 732, '', {})
         resolution_3.setOrigin(1, 0.5)
-        resolution_3.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fixedHeight: 34, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution_3.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution_3.setLineSpacing(5)
         resolution_3.setWordWrapWidth(225)
 
         // title_4
         const title_4 = this.add.text(233, 792, '', {})
         title_4.setOrigin(0.5, 0.5)
-        title_4.setStyle({color: '#642602ff', fixedWidth: 285, fixedHeight: 75, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_4.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_4.setLineSpacing(-5)
         title_4.setWordWrapWidth(285)
 
@@ -290,7 +290,7 @@ export default class Report extends BaseScene {
         const title = this.add.text(760, 141, '', {})
         title.setOrigin(0.5, 0.5)
         title.text = 'BUGS'
-        title.setStyle({align: 'center', color: '#642602ff', fixedWidth: 265, fixedHeight: 58, fontFamily: 'Burbank Small', fontSize: '48px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title.setStyle({align: 'center', color: '#642602ff', fixedWidth: 265, fontFamily: 'Burbank Small', fontSize: '48px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title.setLineSpacing(5)
         title.setWordWrapWidth(265)
 
@@ -400,7 +400,7 @@ export default class Report extends BaseScene {
         const issueTitleMain = this.add.text(0, 62, '', {})
         issueTitleMain.setOrigin(0, 0.5)
         issueTitleMain.text = 'Issue Title'
-        issueTitleMain.setStyle({color: '#642602ff', fixedWidth: 600, fixedHeight: 70, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        issueTitleMain.setStyle({color: '#642602ff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         issueTitleMain.setLineSpacing(5)
         issueTitleMain.setWordWrapWidth(600)
         main.add(issueTitleMain)
@@ -417,7 +417,7 @@ export default class Report extends BaseScene {
         // descriptionBodyMain
         const descriptionBodyMain = this.add.text(0, 152, '', {})
         descriptionBodyMain.text = 'This is a more detailed description of the bug. The user will provide as much detail as possible, including where they found it, and what is meant to happen.'
-        descriptionBodyMain.setStyle({color: '#ffffffff', fixedWidth: 600, fixedHeight: 200, fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        descriptionBodyMain.setStyle({color: '#ffffffff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         descriptionBodyMain.setLineSpacing(5)
         descriptionBodyMain.setWordWrapWidth(600)
         main.add(descriptionBodyMain)
@@ -443,7 +443,7 @@ export default class Report extends BaseScene {
         // commentsBodyMain
         const commentsBodyMain = this.add.text(0, 417, '', {})
         commentsBodyMain.text = 'Octo says:\nThis is a comment. I will make notes on each report to let the user know we are working on it.\n\nJohn Says:\nOther developers can also make notes on the issue'
-        commentsBodyMain.setStyle({color: '#ffffffff', fixedWidth: 1000, fixedHeight: 200, fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        commentsBodyMain.setStyle({color: '#ffffffff', fixedWidth: 1000, fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         commentsBodyMain.setLineSpacing(5)
         commentsBodyMain.setWordWrapWidth(1000)
         main.add(commentsBodyMain)
@@ -622,7 +622,7 @@ export default class Report extends BaseScene {
         // newBody
         const newBody = this.add.text(433.0018599281886, 272.0002907075048, '', {})
         newBody.text = 'Please give a detailed description of what occurred, what you\nexpected to happen, and how we can reproduce this. If you need to,\nyou can upload images/video to another site and link them.'
-        newBody.setStyle({color: '#642602ff', fixedWidth: 650, fixedHeight: 450, fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        newBody.setStyle({color: '#642602ff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         createNew.add(newBody)
 
         // white_x_1
@@ -843,7 +843,6 @@ export default class Report extends BaseScene {
         this.page = 0
         this.main.visible = false
 
-        this.interface.scaleToFixedSize(this.title)
         this.showAll()
     }
 
@@ -860,7 +859,6 @@ export default class Report extends BaseScene {
         this.page = 0
         this.main.visible = false
 
-        this.interface.scaleToFixedSize(this.title)
         this.showAll()
     }
 
@@ -877,7 +875,6 @@ export default class Report extends BaseScene {
         this.page = 0
         this.main.visible = false
 
-        this.interface.scaleToFixedSize(this.title)
         this.showYours()
     }
 
@@ -944,14 +941,11 @@ export default class Report extends BaseScene {
     manageIssueList() {
         this.issueList.forEach((issue, index) => {
             this.keys[index].text = issue.key
-            this.interface.scaleToFixedSize(this.keys[index])
 
             this.resolutions[index].text = issue.resolution
             this.resolutions[index].setStyle({color: this.resolutionColors[issue.resolution]})
-            this.interface.scaleToFixedSize(this.resolutions[index])
 
             this.titles[index].text = issue.title
-            this.interface.verticallyCenterText(this.titles[index])
 
             this['issue' + index + 'Button'].setInteractive({
                 useHandCursor: true,
@@ -1071,7 +1065,6 @@ export default class Report extends BaseScene {
         this.clearIssue()
         this.issueKeyMain.text = issue.key
         this.issueTitleMain.text = issue.title
-        this.interface.scaleToFixedSize(this.issueTitleMain, true, 32)
         this.descriptionBodyMain.text = issue.description
 
         this.resolutionTextMain.text = issue.resolution
@@ -1178,7 +1171,6 @@ export default class Report extends BaseScene {
         if (this.issueKeyMain.text != key || !this.main.visible) return
 
         this.commentsBodyMain.text = 'Loading comments...'
-        this.interface.scaleToFixedSize(this.commentsBodyMain, false, 24)
 
         fetch(this.dataurl + 'getissuecomments', {
             method: 'POST',
@@ -1209,7 +1201,6 @@ export default class Report extends BaseScene {
                     }
                 })
                 this.commentsBodyMain.text = this.commentsBodyMain.text.trimEnd('\n')
-                this.interface.scaleToFixedSize(this.commentsBodyMain, false, 24)
             })
     }
 
