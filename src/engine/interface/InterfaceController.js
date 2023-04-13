@@ -57,6 +57,8 @@ export default class InterfaceController extends BaseScene {
 
         this.bringToTop('Main')
         this.bringToTop('Load')
+
+        this.main.onWake()
     }
 
     hideInterface(clearChat = true) {

@@ -268,7 +268,7 @@ export default class IglooLikesWidget extends BaseScene {
             likes[i] = this.arrayToObject(likes[i].split('|'))
             if (likes[i].id == this.shell.client.id) {
                 this.likeBtn.visible = false
-                this.likeTxt.setStyle({color: '#4f99deff'})
+                this.likeTxt.setColor('#4f99deff')
             }
         }
 
@@ -307,7 +307,7 @@ export default class IglooLikesWidget extends BaseScene {
     onLikeDown() {
         this.airtower.sendXt('g#li', this.shell.room.id)
         this.likeBtn.visible = false
-        this.likeTxt.setStyle({color: '#4f99deff'})
+        this.likeTxt.setColor('#4f99deff')
     }
 
     onWindowOver() {

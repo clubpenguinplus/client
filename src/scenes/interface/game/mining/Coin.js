@@ -594,11 +594,11 @@ export default class Coin extends Phaser.GameObjects.Container {
             this.texts[i].text = coins
 
             if (coins.toString().length == 1) {
-                this.texts[i].setStyle({fontSize: '24px'})
+                this.texts[i].setFontSize(24)
             } else if (coins.toString().length == 2) {
-                this.texts[i].setStyle({fontSize: '20px'})
+                this.texts[i].setFontSize(20)
             } else if (coins.toString().length == 3) {
-                this.texts[i].setStyle({fontSize: '16px'})
+                this.texts[i].setFontSize(16)
             }
         }
         this.frame = 1

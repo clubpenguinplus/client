@@ -47,7 +47,7 @@ export default class MusicItem extends BaseContainer {
         this.title.text = this.name
 
         if (this.bold) {
-            this.title.setStyle({fontStyle: 'bold'})
+            this.title.setFontStyle('bold')
         }
     }
 

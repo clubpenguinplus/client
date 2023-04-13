@@ -841,10 +841,6 @@ export default class Main extends BaseScene {
 
         this.events.on('sleep', this.onSleep, this)
 
-        //if (this.shell.client.penguin.rank >= 3) {
-        //this.mod_btn.visible = true;
-        //}
-
         this.setupWidgets()
 
         // Factories
@@ -913,6 +909,13 @@ export default class Main extends BaseScene {
             item.visible = false
         }
         this.map.iglooMap.visible = false
+    }
+
+    onWake() {
+        if (!this.moderatoricon) return
+        this.showTR()
+        if (!this.beta) return
+        this.beta.visible = true
     }
 
     setupWidgets() {
@@ -1042,10 +1045,6 @@ export default class Main extends BaseScene {
             item.visible = false
         }
 
-        if (this.shell.client.penguin.rank >= 3) {
-            this.mod_btn.visible = true
-        }
-
         this.input.keyboard.on('keydown-TAB', (event) => null)
         this.input.keyboard.on('keydown-ENTER', (event) => null)
 
@@ -1065,8 +1064,8 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = true
         }
-
-        this.mod_btn.visible = false
+        this.beta.visible = true
+        this.showTR()
 
         this.shell.client.initKeys()
 

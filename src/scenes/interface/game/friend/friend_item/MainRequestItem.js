@@ -143,6 +143,8 @@ export default class MainRequestItem extends BaseContainer {
             }
 
             this.setItem(this.shell.client.pending[0])
+
+            this.visible = false
         }
     }
 
@@ -157,6 +159,8 @@ export default class MainRequestItem extends BaseContainer {
             }
 
             this.setItem(this.shell.client.pending[0])
+
+            this.visible = false
         }
     }
 
