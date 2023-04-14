@@ -13,6 +13,7 @@ export default class HotelLobby extends RoomScene {
         this.roomTriggers = {
             plaza: () => this.triggerRoom(300, 680, 500),
             pet: () => this.triggerRoom(310, 160, 760),
+            lift: () => this.interface.loadExternal('Elevator'),
         }
 
         this.music = 362

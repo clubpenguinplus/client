@@ -230,7 +230,7 @@ export default class RecruitmentDialog extends Closeup {
             this.airtower.sendXt('epf#j')
             this.shell.room.setEpfButton()
         }
-        this.stop()
+        super.stop()
     }
 
     /* END-USER-CODE */

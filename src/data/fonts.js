@@ -10,6 +10,10 @@ const fonts = [
     {name: 'CCComiccrazy', url: '/client/fonts/CCComiccrazyRoman.woff2'},
     {name: 'CCFaceFront', weight: 'bold', style: 'italic', url: '/client/fonts/CCFaceFrontBoldItalic.woff2'},
     {name: 'CPLCD', url: '/client/fonts/CPLCD.woff2'},
+    {name: 'CatseyeW00', url: '/client/fonts/CatseyeW00Medium.woff2'},
+    {name: 'CatseyeW00', weight: 'bold', url: '/client/fonts/CatseyeW00Bold.woff2'},
+    {name: 'CatseyeW00', weight: 'bold', style: 'italic', url: '/client/fonts/CatseyeW00BoldItalic.woff2'},
+    {name: 'CatseyeW00', style: 'italic', url: '/client/fonts/CatseyeW00Italic.woff2'},
 ]
 
 export default fonts
