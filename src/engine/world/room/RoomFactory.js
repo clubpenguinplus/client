@@ -57,7 +57,7 @@ export default class RoomFactory {
         }
 
         for (let item of Object.keys(this.shell.room.textures.list)) {
-            if (['clothing', 'head', 'face', 'neck', 'body', 'hand', 'feet', 'puffles', 'paper'].includes(item.split('/')[0])) {
+            if (['clothing', 'head', 'face', 'neck', 'body', 'hand', 'feet', 'puffles', 'paper', 'secret_frames'].includes(item.split('/')[0])) {
                 this.shell.room.textures.remove(item)
                 textures++
             }
@@ -74,6 +74,17 @@ export default class RoomFactory {
             if (['head', 'face', 'neck', 'body', 'hand', 'feet', 'puffles'].includes(item.split('/')[0])) {
                 delete this.shell.room.anims.anims.entries[item]
                 anims++
+            }
+
+            // Remove secret frame animations
+            if (['penguin'].includes(item.split('_')[0])) {
+                if (item.split('/')[0].split('_')[1] == 'body' && parseInt(item.split('/')[0].split('_')[2]) > 26) {
+                    delete this.shell.room.anims.anims.entries[item]
+                    anims++
+                } else if (parseInt(item.split('/')[0].split('_')[1]) > 26) {
+                    delete this.shell.room.anims.anims.entries[item]
+                    anims++
+                }
             }
         }
 

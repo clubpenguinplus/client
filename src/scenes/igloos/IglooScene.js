@@ -405,8 +405,9 @@ export default class IglooScene extends RoomScene {
     stop() {
         this.created = false
         if (this.likesWidget) this.likesWidget.scene.stop()
-        this.shell.interface.main.showTR()
-        this.interface.main.beta.visible = true
+        for (let p in this.puffles) {
+            this.puffles[p].removePuffle()
+        }
         super.stop()
     }
 }

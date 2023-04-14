@@ -100,7 +100,7 @@ export default class Load extends BaseScene {
 
         if (isLogo) {
             this.logo.visible = true
-            this.logo.play('logo-tween')
+            this.logo.play('load-logo-tween')
             this.bar.y = 750
             this.spinner.y = 750
             this.shovel.visible = false
@@ -110,7 +110,7 @@ export default class Load extends BaseScene {
         }
 
         this.logo.visible = false
-        this.logo.stop('logo-tween')
+        this.logo.stop('load-logo-tween')
         this.bar.y = 611
         this.spinner.y = 611
         var sprite = Phaser.Math.RND.between(0, 2)

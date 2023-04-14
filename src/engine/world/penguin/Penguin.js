@@ -3,6 +3,7 @@ import BaseContainer from '@scenes/base/BaseContainer'
 import ItemLoader from './loader/ItemLoader'
 import PathEngine from './pathfinding/PathEngine'
 import PenguinItems from './PenguinItems'
+import SecretFramesLoader from '@engine/loaders/SecretFramesLoader'
 
 import adjustRedemptionItem from './frames/adjustRedemptionItem'
 
@@ -21,6 +22,7 @@ export default class Penguin extends BaseContainer {
 
         this.items = new PenguinItems(this)
         this.itemLoader = new ItemLoader(this)
+        this.secretFramesLoader = new SecretFramesLoader(this.room)
 
         this.bodySprite
         this.penguinSprite
@@ -84,6 +86,10 @@ export default class Penguin extends BaseContainer {
 
     get secretFramesCache() {
         return this.shell.secretFramesCache
+    }
+
+    get scene() {
+        return this.room
     }
 
     /**
@@ -187,6 +193,12 @@ export default class Penguin extends BaseContainer {
 
         // Get correct frame id
         let frame = [25, 26].includes(_frame) ? this.getSecretFrame(_frame) : _frame
+
+        if (frame != _frame && !this.checkSecretFrameTextures(frame)) {
+            this.shell.events.on(`textureLoaded:secret_frames/${frame}`, () => this.playFrame(_frame, set))
+            this.secretFramesLoader.loadFrame(frame)
+            frame = _frame
+        }
 
         if (this.room.miningZone && this.isClient && frame == 36) {
             this.room.isMiningSpot(this.x, this.y)
@@ -321,6 +333,7 @@ export default class Penguin extends BaseContainer {
         }
 
         if (sprite != this.puffleSprite) sprite.visible = true
+        if (!sprite.anims) return
         sprite.anims.play(key)
 
         // Reset current chain queue
@@ -377,7 +390,7 @@ export default class Penguin extends BaseContainer {
             }
         }
 
-        return secret.secret_frame in this.crumbs.penguin && this.checkSecretFrameTextures(secret.secret_frame)
+        return secret.secret_frame in this.crumbs.penguin
     }
 
     checkSecretFrameTextures(frame) {

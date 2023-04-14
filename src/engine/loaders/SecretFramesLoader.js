@@ -9,31 +9,22 @@ export default class SecretFramesLoader extends BaseLoader {
         this.keyPrefix = 'secret_frames/'
     }
 
-    loadFrames(frames, callback) {
-        for (let frame of frames) {
-            this.loadFrame(frame)
-        }
-
-        if (this.list.size == 0) {
-            return callback()
-        }
-
-        this.once('complete', () => callback())
-
-        this.start()
-    }
-
     loadFrame(frame) {
         let key = this.getKey(frame)
 
-        if (this.checkComplete('json', key)) {
+        if (
+            this.checkComplete('multiatlas', key, () => {
+                this.onFileComplete(key)
+            })
+        ) {
             return
         }
 
         this.multiatlas(key, `${frame}.json`)
+        this.start()
     }
 
-    loadComplete() {
-        super.loadComplete()
+    onFileComplete(key) {
+        this.shell.events.emit(`textureLoaded:${key}`)
     }
 }

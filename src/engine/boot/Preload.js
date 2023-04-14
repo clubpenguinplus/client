@@ -19,7 +19,6 @@ export default class Preload extends BaseScene {
         this.load.on('progress', this.onProgress, this)
 
         this.load.pack('preload', 'client/media/preload/preload-pack.json')
-        this.load.pack('secretframes', 'client/media/preload/secret-frames.json')
 
         this.scene.add('Create', Create)
         this.scene.add('Login', Login)
