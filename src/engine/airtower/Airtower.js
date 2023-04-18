@@ -4,6 +4,8 @@ import io from 'socket.io-client'
 import AES from 'crypto-js/aes'
 import enc from 'crypto-js/enc-utf8'
 
+const EventEmitter = require('events')
+
 export default class Airtower {
     constructor(game) {
         this.game = game
@@ -22,6 +24,8 @@ export default class Airtower {
         this.worldName
 
         this.encryptionKeys = {}
+
+        this.events = new EventEmitter()
     }
 
     get interface() {
@@ -353,12 +357,12 @@ export default class Airtower {
                     return
             }
         } catch (error) {
-            console.error(`[Airtower] ${error}`)
+            console.error(`[Airtower] ${error.stack}`)
         }
     }
 
     fireEvent(event, args) {
-        // Switch to a listener based system eventually
+        this.events.emit(event, args)
         this.handlers.getEvent(event, args)
     }
 }

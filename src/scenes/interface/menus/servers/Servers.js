@@ -227,8 +227,6 @@ export default class Servers extends BaseScene {
         this.createServers()
 
         if (this.data[2] == '1') return (this.mod.visible = true)
-
-        if (this.moreServers.length == 1) this.moreServers[0].button.callback()
     }
 
     createServers() {

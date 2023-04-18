@@ -15,7 +15,1714 @@
         "borderWidth": 1520,
         "borderHeight": 960
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "e33a0504-8246-45cd-a447-832943183725",
+            "label": "block",
+            "scope": "CLASS",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#332314",
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "086307f9-27db-4794-9ddc-db212f2152d6",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "bg"
+            },
+            "x": 759,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "9accbf06-2010-49f0-8451-ff2e787532ad",
+            "label": "closeBtn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "closeBtn",
+            "Button.callback": "() => this.stop()",
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "closeBtn"
+            },
+            "x": 1478,
+            "y": 54
+        },
+        {
+            "type": "Image",
+            "id": "44eed8d8-0b2c-46c8-911d-748456148b3e",
+            "label": "rainbowPuffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "puffle-locked"
+            },
+            "x": 1200,
+            "y": 748
+        },
+        {
+            "type": "Image",
+            "id": "405c1a2b-aa92-47ed-a322-2c327aeb7337",
+            "label": "rainbowPuffleBtn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "brown-btn",
+            "Button.callback": "() => this.joinRoom(432)",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "brown-btn"
+            },
+            "x": 1308,
+            "y": 800,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "43bd6c46-8f9d-4dca-b245-df354dbcd36d",
+            "label": "rainbowPuffleGoThereText",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1308,
+            "y": 800,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Go there!",
+            "align": "center",
+            "fontFamily": "CatseyeW00",
+            "fontSize": "30px",
+            "color": "#896E35",
+            "shadow.color": "#fff"
+        },
+        {
+            "type": "Image",
+            "id": "3c51a27f-8c57-463b-beac-a78d1045d489",
+            "label": "rainbowPuffleLights",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "lights0001"
+            },
+            "x": 1308,
+            "y": 740
+        },
+        {
+            "type": "Text",
+            "id": "d69b2298-4b07-4ca4-9fe0-f54df96ed33a",
+            "label": "rainbowPuffleHeader",
+            "scope": "CLASS",
+            "components": [],
+            "x": 991,
+            "y": 688,
+            "originY": 0.5,
+            "text": "Adopt a Rainbow Puffle!\nLaunch from the Rooftop cannon.",
+            "fontFamily": "CatseyeW00",
+            "fontSize": "25px",
+            "color": "#c9a04cff",
+            "shadow.offsetX": -1,
+            "shadow.offsetY": 1,
+            "shadow.fill": true,
+            "shadow.color": "#543510ff"
+        },
+        {
+            "type": "Image",
+            "id": "b5c70149-9c6e-4aea-a12e-d4888ba867bb",
+            "label": "bonus",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "bonus-item-locked"
+            },
+            "x": 1200,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "c536d63f-4013-46ca-b534-683f3da74a84",
+            "label": "bonusBtn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "brown-btn",
+            "Button.callback": "() => this.onBonusCollect()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "brown-btn"
+            },
+            "x": 1308,
+            "y": 521,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "c94dace9-13a1-4abf-8c6d-9ce8fbfd47f1",
+            "label": "bonusHeader",
+            "scope": "CLASS",
+            "components": [],
+            "x": 991,
+            "y": 422,
+            "originY": 0.5,
+            "text": "BONUS ITEM",
+            "fontFamily": "CatseyeW00",
+            "fontSize": "30px",
+            "fontStyle": "bold",
+            "color": "#c9a04cff",
+            "shadow.offsetX": -1,
+            "shadow.offsetY": 1,
+            "shadow.fill": true,
+            "shadow.color": "#543510ff"
+        },
+        {
+            "type": "Image",
+            "id": "3054d415-faef-4438-b4b9-feb6b168a4e0",
+            "label": "bonusLights",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "lights0001"
+            },
+            "x": 1308,
+            "y": 461
+        },
+        {
+            "type": "Text",
+            "id": "ebc48c5b-124f-4b79-b167-63494a67f59c",
+            "label": "bonusCollectText",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1308,
+            "y": 521,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Collect",
+            "align": "center",
+            "fontFamily": "CatseyeW00",
+            "fontSize": "30px",
+            "color": "#896E35",
+            "shadow.color": "#fff"
+        },
+        {
+            "type": "Image",
+            "id": "720cc64e-b0c3-4ef6-a323-e8755a14af30",
+            "label": "header",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "rainbowquest",
+                "frame": "header"
+            },
+            "x": 1200,
+            "y": 210
+        },
+        {
+            "type": "Text",
+            "id": "046c9d1b-9ef9-4fe6-ab37-dd86cb389b45",
+            "label": "headerText",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1003,
+            "y": 236,
+            "text": "Complete all four puffle tasks to earn your bonus!",
+            "fixedWidth": 395,
+            "fontFamily": "CatseyeW00",
+            "fontSize": "30px",
+            "color": "#3d2615ff",
+            "shadow.offsetX": -1,
+            "shadow.offsetY": 1,
+            "shadow.fill": true,
+            "shadow.color": "#ffde80ff",
+            "wordWrapWidth": 395
+        },
+        {
+            "type": "Container",
+            "id": "7ceb14b5-38e6-4f8e-b78d-148e99136ac2",
+            "label": "task4",
+            "scope": "CLASS",
+            "components": [],
+            "x": 674.3492258621212,
+            "y": 497.88931482348454,
+            "angle": 4,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d58db789-4254-4ca0-b942-b578e1894fac",
+                    "label": "task4Card",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/card-locked"
+                    },
+                    "x": 1.4417125934268142,
+                    "y": 0.17734637706678313,
+                    "angle": -4
+                },
+                {
+                    "type": "Image",
+                    "id": "3f990294-a670-4aa6-857f-8a3e2594f33f",
+                    "label": "task4Checkbox",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/checkbox"
+                    },
+                    "x": -161.55828740657319,
+                    "y": -292.8226536229332,
+                    "angle": -4,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "9b963ba8-b173-49af-ba9e-824b3dda1c32",
+                    "label": "task4Coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/coins-locked"
+                    },
+                    "x": -101.55828740657319,
+                    "y": -19.822653622933217,
+                    "angle": -4,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "5e7f44dd-3c91-4fcc-aefc-10a08861fd62",
+                    "label": "task4Item",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/item-locked"
+                    },
+                    "x": 79.44171259342681,
+                    "y": -19.822653622933217,
+                    "angle": -4,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "88d3249c-dbde-44ff-b045-c3d039b67042",
+                    "label": "task4CoinsCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task4/green-btn",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/green-btn"
+                    },
+                    "x": -101.55828740657319,
+                    "y": -47.82265362293322,
+                    "angle": -4,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "50c170ba-9e59-4338-b87d-fe854a10d391",
+                    "label": "task4CoinsCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -101.55828740657319,
+                    "y": -47.82265362293322,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "28309bd9-1c30-40b1-a2ac-36d5155d82d1",
+                    "label": "task4ItemCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task4/green-btn",
+                    "Button.callback": "() => this.collectItem4()",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/green-btn"
+                    },
+                    "x": 95.44171259342681,
+                    "y": -47.82265362293322,
+                    "angle": -4,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "e7129a5c-174c-499d-bf23-4ccce7750a58",
+                    "label": "task4ItemCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 91.44171259342681,
+                    "y": -47.82265362293322,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "cc19c296-7f83-434f-a2bf-2043d1a5e780",
+                    "label": "task4Criteria",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -200.55828740657319,
+                    "y": -218.82265362293322,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Groom your puffle",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "44eda756-14a6-4926-93d5-a04cb8d51efb",
+                    "label": "task4TaskNum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 138.44171259342681,
+                    "y": -282.8226536229332,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "TASK 4",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c9d064d4-cd7a-48b6-8f0d-5748ac101f0a",
+                    "label": "task4Preview",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/preview"
+                    },
+                    "x": 1.4417125934268142,
+                    "y": 117.17734637706678,
+                    "angle": -4,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "43a724a9-83bb-4e21-8f40-a85d810b7f20",
+                    "label": "task4GoThereBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task4/green-btn",
+                    "Button.callback": "() => this.joinRoom(432)",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/green-btn"
+                    },
+                    "x": 1.4417125934268142,
+                    "y": 287.1773463770668,
+                    "angle": -4,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "9b2f8741-d278-4bf0-b148-8a890c74f5a5",
+                    "label": "task4GoThereText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0.44171259342681424,
+                    "y": 287.1773463770668,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Go there!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#f3fcc5ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "7a7dd938-5528-4648-b8af-6a0dc0bd53d3",
+                    "label": "task4CompleteHeader",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 2.4417125934268142,
+                    "y": 48.17734637706678,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Zzzzzzz!",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "5448a79e-a0de-45ce-a229-299a65658a04",
+                    "label": "task4CompleteLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.4417125934268142,
+                    "y": 91.17734637706678,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Your puffle looks so relaxed.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "23e54361-51b3-4f14-8413-76ea53cae117",
+                    "label": "task4Icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/icon"
+                    },
+                    "x": 1.4417125934268142,
+                    "y": 212.17734637706678,
+                    "angle": -4,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "6d6986c7-04da-4d52-9ee3-9fddcfc4435f",
+                    "label": "task4LockedLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.4417125934268142,
+                    "y": 46.17734637706678,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "This puffle task isn't ready yet.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#fefad4ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#9b8b53ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f83d4022-a33a-4530-9faa-ebdb55967db2",
+                    "label": "task4LockedLine2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.4417125934268142,
+                    "y": 85.17734637706678,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Complete the previous task.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "27px",
+                    "color": "#fefad4ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#9b8b53ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "dd959ddb-141e-4bed-abdb-2f14c4e1f391",
+                    "label": "task4ClickBlocker",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCard(4)",
+                    "SimpleButton.pixelPerfect": true,
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task4/card-locked"
+                    },
+                    "x": 1.4405147883195468,
+                    "y": 0.1775351249421533,
+                    "angle": -4,
+                    "alpha": 0.2,
+                    "alphaTopLeft": 0.2,
+                    "alphaTopRight": 0.2,
+                    "alphaBottomLeft": 0.2,
+                    "alphaBottomRight": 0.2,
+                    "tintTopLeft": "#44220c",
+                    "tintTopRight": "#44220c",
+                    "tintBottomLeft": "#44220c",
+                    "tintBottomRight": "#44220c",
+                    "tintFill": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "1a8ea2a4-b946-418c-9a85-86a2b7340305",
+            "label": "task3",
+            "scope": "CLASS",
+            "components": [],
+            "x": 569.6771424727272,
+            "y": 489.8436303196966,
+            "angle": -1,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8f9d58c8-2649-487b-8417-616474367049",
+                    "label": "task3Card",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/card-locked"
+                    },
+                    "x": 1.3379708652490194,
+                    "y": -4.831174550688274,
+                    "angle": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "2ed74e8e-2df9-414d-9d19-7734a4076815",
+                    "label": "task3Checkbox",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/checkbox"
+                    },
+                    "x": -159.66202913475098,
+                    "y": -288.8311745506883,
+                    "angle": 1,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "5caf0cb9-ef3d-4d31-93e6-2ff3a6647b6e",
+                    "label": "task3Coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/coins-locked"
+                    },
+                    "x": -101.66202913475098,
+                    "y": -24.831174550688274,
+                    "angle": 1,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "44b31788-e6f2-4888-952f-795b139e4c48",
+                    "label": "task3Item",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/item-locked"
+                    },
+                    "x": 79.33797086524902,
+                    "y": -24.831174550688274,
+                    "angle": 1,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "72015be7-b7a4-4a0c-924f-bf29ba9f2a02",
+                    "label": "task3CoinsCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task3/green-btn",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/green-btn"
+                    },
+                    "x": -101.66202913475098,
+                    "y": -52.831174550688274,
+                    "angle": 1,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "a5cd1eb2-336b-419c-b994-589e58255a4b",
+                    "label": "task3CoinsCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -101.66202913475098,
+                    "y": -51.831174550688274,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "347de38e-865d-47bc-84b5-e4eebab040b1",
+                    "label": "task3ItemCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task3/green-btn",
+                    "Button.callback": "() => this.collectItem3()",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/green-btn"
+                    },
+                    "x": 95.33797086524902,
+                    "y": -52.831174550688274,
+                    "angle": 1,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "9d754034-16d8-491e-94a6-ae4d7424cdde",
+                    "label": "task3ItemCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 96.33797086524902,
+                    "y": -50.831174550688274,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "da89628d-4675-4f2e-b93a-fdf9cb3c9edf",
+                    "label": "task3Criteria",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -200.66202913475098,
+                    "y": -224.83117455068827,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Feed your puffle",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "33f16f03-3fec-43d0-b837-3ee32b992fa7",
+                    "label": "task3TaskNum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 138.33797086524902,
+                    "y": -287.8311745506883,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "TASK 3",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "51f88bd9-3133-4c0e-bc94-c8eb22c68f5d",
+                    "label": "task3Preview",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/preview"
+                    },
+                    "x": 1.3379708652490194,
+                    "y": 112.16882544931173,
+                    "angle": 1,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "1396aa0c-b975-4914-970f-7da46146e34d",
+                    "label": "task3GoThereBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task3/green-btn",
+                    "Button.callback": "() => this.joinRoom(430)",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/green-btn"
+                    },
+                    "x": 1.3379708652490194,
+                    "y": 282.1688254493117,
+                    "angle": 1,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "69d032df-a5b9-4e48-81ba-d87a2c3f7662",
+                    "label": "task3GoThereText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0.3379708652490194,
+                    "y": 282.1688254493117,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Go there!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#f3fcc5ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "11a2c299-4f35-4785-8111-f304082b30ac",
+                    "label": "task3CompleteHeader",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 2.3379708652490194,
+                    "y": 43.168825449311726,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Delicious",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "e318bb4b-2429-4ce6-990a-1fc03281432c",
+                    "label": "task3CompleteLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.3379708652490194,
+                    "y": 86.16882544931173,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Your puffle loved that snack!",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "2a082284-aba4-4fc9-9fc0-a30fc5c1ad93",
+                    "label": "task3CompleteLine2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.3379708652490194,
+                    "y": 125.16882544931173,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Come back to relax with your pet in:",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "da039b1f-d0d0-4d59-b03e-b3c42c068381",
+                    "label": "task3CompleteCountdown",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.3379708652490194,
+                    "y": 199.16882544931173,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "20 min",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#2c2a1dff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c48fcf25-49f6-4ccc-bec0-96069c577726",
+                    "label": "task3Icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/icon"
+                    },
+                    "x": 1.3379708652490194,
+                    "y": 207.16882544931173,
+                    "angle": 1,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "697bf206-0abb-4845-a18a-3d991aa57a0e",
+                    "label": "task3LockedLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.3379708652490194,
+                    "y": 41.168825449311726,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "This puffle task isn't ready yet.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#fefad4ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#9b8b53ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "c252fca0-3a78-4cd4-b9c2-e8f737211240",
+                    "label": "task3LockedLine2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1.3379708652490194,
+                    "y": 80.16882544931173,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Complete the previous task.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "27px",
+                    "color": "#fefad4ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#9b8b53ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "4925d919-8c23-4a5d-9327-5710093105e4",
+                    "label": "task3ClickBlocker",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCard(3)",
+                    "SimpleButton.pixelPerfect": true,
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task3/card-locked"
+                    },
+                    "x": 1.3363597453238754,
+                    "y": -4.831722211841907,
+                    "angle": 1,
+                    "alpha": 0.2,
+                    "alphaTopLeft": 0.2,
+                    "alphaTopRight": 0.2,
+                    "alphaBottomLeft": 0.2,
+                    "alphaBottomRight": 0.2,
+                    "tintTopLeft": "#44220c",
+                    "tintTopRight": "#44220c",
+                    "tintBottomLeft": "#44220c",
+                    "tintBottomRight": "#44220c",
+                    "tintFill": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b57bb8b4-d461-437b-b132-007a6842d03e",
+            "label": "task2",
+            "scope": "CLASS",
+            "components": [],
+            "x": 462.1502376787877,
+            "y": 500.60708271666635,
+            "angle": 2,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "36e59699-240a-469e-9bad-2817d3c374d9",
+                    "label": "task2Card",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/card-locked"
+                    },
+                    "x": -27.758865496365843,
+                    "y": 12.128989127340787,
+                    "angle": -2
+                },
+                {
+                    "type": "Image",
+                    "id": "fb9a9707-bf78-4d59-bb6d-ca5f19e76228",
+                    "label": "task2Checkbox",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/checkbox"
+                    },
+                    "x": -190.75886549636584,
+                    "y": -280.8710108726592,
+                    "angle": -2,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "a4b3e5fc-704e-4d11-a866-10781bec39eb",
+                    "label": "task2Coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/coins-locked"
+                    },
+                    "x": -130.75886549636584,
+                    "y": -7.8710108726592125,
+                    "angle": -2,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "39cb40ac-9b4b-4b4d-b88b-91b07950acca",
+                    "label": "task2Item",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/item-locked"
+                    },
+                    "x": 50.24113450363416,
+                    "y": -7.8710108726592125,
+                    "angle": -2,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "4b6275be-7475-4a7f-8f0f-da8d5da83d5e",
+                    "label": "task2CoinsCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task2/green-btn",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/green-btn"
+                    },
+                    "x": -130.75886549636584,
+                    "y": -35.87101087265921,
+                    "angle": -2,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "8858f81d-125a-419c-8fee-1473240cbddb",
+                    "label": "task2CoinsCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -130.75886549636584,
+                    "y": -35.87101087265921,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "337e1d2c-6f22-4b93-a891-6922a3c7dcb1",
+                    "label": "task2ItemCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task2/green-btn",
+                    "Button.callback": "() => this.collectItem2()",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/green-btn"
+                    },
+                    "x": 66.24113450363416,
+                    "y": -35.87101087265921,
+                    "angle": -2,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "1a5a6661-91e2-429a-b994-c72269ff07c9",
+                    "label": "task2ItemCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 62.24113450363416,
+                    "y": -35.87101087265921,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "c3ce424a-95ca-4b98-8903-21a12a9f70a3",
+                    "label": "task2Criteria",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -229.75886549636584,
+                    "y": -207.8710108726592,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Groom your puffle",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f1292407-de58-45bc-9c5d-84ffe7eb2d26",
+                    "label": "task2TaskNum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 109.24113450363416,
+                    "y": -270.8710108726592,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "TASK 2",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "f6965868-dc40-4b4a-b52b-259e985725e1",
+                    "label": "task2Preview",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/preview"
+                    },
+                    "x": -27.758865496365843,
+                    "y": 129.1289891273408,
+                    "angle": -2,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "b8c45d99-d177-4d01-98d4-879b55681977",
+                    "label": "task2GoThereBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task2/green-btn",
+                    "Button.callback": "() => this.joinRoom(431)",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/green-btn"
+                    },
+                    "x": -27.758865496365843,
+                    "y": 299.1289891273408,
+                    "angle": -2,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "1add9f8e-9cc7-4981-9ead-4482b8848eae",
+                    "label": "task2GoThereText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -28.758865496365843,
+                    "y": 299.1289891273408,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Go there!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#f3fcc5ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "3ed15663-037e-467b-abcf-95122ea20607",
+                    "label": "task2CompleteHeader",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -26.758865496365843,
+                    "y": 60.12898912734079,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Oh so shiny!",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "eeb34a1b-e699-47fb-834b-d7763b28389a",
+                    "label": "task2CompleteLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -27.758865496365843,
+                    "y": 103.12898912734079,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Your puffle looks terrific",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "d8a3985f-29c9-450b-8513-f9a219cac3e7",
+                    "label": "task2CompleteLine2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -27.758865496365843,
+                    "y": 142.1289891273408,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Come back to feed your pet in:",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "5a6ebbef-3977-4f78-9bbc-695ad1bc680d",
+                    "label": "task2CompleteCountdown",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -27.758865496365843,
+                    "y": 216.1289891273408,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "20 min",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#2c2a1dff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "1be0ad66-3c57-44de-9a68-89ac0d4245d5",
+                    "label": "task2Icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/icon"
+                    },
+                    "x": -27.758865496365843,
+                    "y": 224.1289891273408,
+                    "angle": -2,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "d267cc25-87a3-4f33-a33a-3a661e24750e",
+                    "label": "task2LockedLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -27.758865496365843,
+                    "y": 58.12898912734079,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "This puffle task isn't ready yet.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#fefad4ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#9b8b53ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "d351bb21-c386-4f0e-bea0-1eecdcb851a6",
+                    "label": "task2LockedLine2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -27.758865496365843,
+                    "y": 97.12898912734079,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Complete the previous task.",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "27px",
+                    "color": "#fefad4ff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#9b8b53ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "63c88e9e-78c6-4ddc-93d6-26e01c777214",
+                    "label": "task2ClickBlocker",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCard(2)",
+                    "SimpleButton.pixelPerfect": true,
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task2/card-locked"
+                    },
+                    "x": -27.752161659464548,
+                    "y": 12.132115800186455,
+                    "angle": -2,
+                    "alpha": 0.2,
+                    "alphaTopLeft": 0.2,
+                    "alphaTopRight": 0.2,
+                    "alphaBottomLeft": 0.2,
+                    "alphaBottomRight": 0.2,
+                    "tintTopLeft": "#44220c",
+                    "tintTopRight": "#44220c",
+                    "tintBottomLeft": "#44220c",
+                    "tintBottomRight": "#44220c",
+                    "tintFill": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0525de01-526b-48c1-8ee1-d1f46ce2a13d",
+            "label": "task1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 336.29541627424226,
+            "y": 462.1796720143937,
+            "angle": -3.7000000000000455,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "84c561dd-2de1-4be1-ab8f-a8945c331a98",
+                    "label": "task1Card",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/card"
+                    },
+                    "x": 10.7030513271622,
+                    "y": -0.05154182160691789,
+                    "angle": 3.7000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "42c8d157-485c-4d09-b294-bfb7f6d3be94",
+                    "label": "task1Checkbox",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/checkbox"
+                    },
+                    "x": -155.2969486728378,
+                    "y": -284.0515418216069,
+                    "angle": 3.7000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "f8157342-f549-4f97-af3c-2f2c19b62fe0",
+                    "label": "task1Coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/coins-locked"
+                    },
+                    "x": -92.2969486728378,
+                    "y": -20.051541821606918,
+                    "angle": 3.7000000000000455,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "b4e63f2d-acf5-4392-a96f-2661e9361007",
+                    "label": "task1Item",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/item-locked"
+                    },
+                    "x": 88.7030513271622,
+                    "y": -20.051541821606918,
+                    "angle": 3.7000000000000455,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "8836dfb5-84e2-45b8-b910-ae3acba31831",
+                    "label": "task1CoinsCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task1/green-btn",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/green-btn"
+                    },
+                    "x": -92.2969486728378,
+                    "y": -48.05154182160692,
+                    "angle": 3.7000000000000455,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "9ff2a21e-cbf0-4ea8-b3d1-5f04bfbf7176",
+                    "label": "task1CoinsCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -92.2969486728378,
+                    "y": -48.05154182160692,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "d0ad9bab-6e54-4a0f-9982-9d2725876f5a",
+                    "label": "task1ItemCollectBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task1/green-btn",
+                    "Button.callback": "() => this.collectItem1()",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/green-btn"
+                    },
+                    "x": 104.7030513271622,
+                    "y": -48.05154182160692,
+                    "angle": 3.7000000000000455,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "08363cd8-5b06-4430-bab2-85a52c8a107f",
+                    "label": "task1ItemCollectText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 107.7030513271622,
+                    "y": -48.05154182160692,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Collect",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#948863ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "ba960779-3be1-4dd3-8af2-d54ecac17316",
+                    "label": "task1Criteria",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -191.2969486728378,
+                    "y": -220.05154182160692,
+                    "originY": 0.5,
+                    "text": "Exercise your puffle",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "ee515929-9b90-4fd0-82c9-966a02f87261",
+                    "label": "task1TaskNum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 147.7030513271622,
+                    "y": -283.0515418216069,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "TASK 1",
+                    "align": "right",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "a2f55d20-0bfe-4c95-aed1-889bc58347e2",
+                    "label": "task1Preview",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/preview"
+                    },
+                    "x": 10.7030513271622,
+                    "y": 116.94845817839308,
+                    "angle": 3.7000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "ab840594-3e46-4ae5-9e68-352ee7c5b5ac",
+                    "label": "task1GoThereBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "task1/green-btn",
+                    "Button.callback": "() => this.joinRoom(431)",
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/green-btn"
+                    },
+                    "x": 10.7030513271622,
+                    "y": 286.9484581783931,
+                    "angle": 3.7000000000000455
+                },
+                {
+                    "type": "Text",
+                    "id": "6a225fdc-c30d-4499-9588-de2e4c942abc",
+                    "label": "task1GoThereText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 9.7030513271622,
+                    "y": 286.9484581783931,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Go there!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#f3fcc5ff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "99c771a6-25d9-422e-b477-7ba6f828ac04",
+                    "label": "task1CompleteHeader",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 11.7030513271622,
+                    "y": 47.94845817839308,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Feeling the burn!",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "0ed45a5b-de3b-448e-a6c6-f7a44048461c",
+                    "label": "task1CompleteLine1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 10.7030513271622,
+                    "y": 90.94845817839308,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Your puffle got a work out!",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "b388ea14-1fd2-4ca6-b2bc-30e1a37ff2ab",
+                    "label": "task1CompleteLine2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 10.7030513271622,
+                    "y": 129.94845817839308,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Come back to groom your pet in:",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "24px",
+                    "color": "#938C61",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Text",
+                    "id": "6162a4b3-3be0-4208-b941-7846b797266d",
+                    "label": "task1CompleteCountdown",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 10.7030513271622,
+                    "y": 203.94845817839308,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "20 min",
+                    "align": "center",
+                    "fontFamily": "CatseyeW00",
+                    "fontSize": "36px",
+                    "color": "#2c2a1dff",
+                    "shadow.color": "#fff"
+                },
+                {
+                    "type": "Image",
+                    "id": "050a9b27-8d84-438f-b2f6-4823ad4d6510",
+                    "label": "task1Icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/icon"
+                    },
+                    "x": 10.7030513271622,
+                    "y": 211.94845817839308,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "d29ca192-c57b-4f98-b5d5-5331ec44eaa2",
+                    "label": "task1ClickBlocker",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.selectCard(1)",
+                    "SimpleButton.pixelPerfect": true,
+                    "texture": {
+                        "key": "rainbowquest",
+                        "frame": "task1/card"
+                    },
+                    "x": 10.698554488253421,
+                    "y": -0.05320822939864911,
+                    "angle": 3.7000000000000455,
+                    "alpha": 0.2,
+                    "alphaTopLeft": 0.2,
+                    "alphaTopRight": 0.2,
+                    "alphaBottomLeft": 0.2,
+                    "alphaBottomRight": 0.2,
+                    "tintTopLeft": "#44220c",
+                    "tintTopRight": "#44220c",
+                    "tintBottomLeft": "#44220c",
+                    "tintBottomRight": "#44220c",
+                    "tintFill": true
+                }
+            ]
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",

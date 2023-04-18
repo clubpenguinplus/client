@@ -562,6 +562,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onTasksOver()",
             "SimpleButton.hoverOutCallback": "() => this.onTasksOut()",
+            "SimpleButton.callback": "() => this.interface.loadExternal('RainbowQuest')",
             "texture": {
                 "key": "hotellobby",
                 "frame": "tasks"
@@ -673,6 +674,7 @@
                 "Button"
             ],
             "Button.spriteName": "interface",
+            "Button.callback": "() => this.interface.loadExternal('RainbowQuest')",
             "texture": {
                 "key": "hotellobby",
                 "frame": "interface"

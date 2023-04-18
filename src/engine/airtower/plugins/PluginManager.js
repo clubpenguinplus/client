@@ -31,7 +31,7 @@ export default class PluginManager {
 
     getEvent(event, args) {
         try {
-            this.events[event](args)
+            if (this.events[event]) this.events[event](args)
         } catch (error) {
             error.stack = error.stack.replaceAll('.js?', '.js').replaceAll('/./', '/')
             console.error(`[PluginManager] Event (${event}) not handled: ${error.stack}`)
