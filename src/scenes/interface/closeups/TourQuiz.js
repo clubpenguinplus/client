@@ -1,8 +1,8 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, LocalisedSprite, Interactive} from '@scenes/components/components'
 /* START OF COMPILED CODE */
 
-export default class TourQuiz extends BaseScene {
+export default class TourQuiz extends Closeup {
     constructor() {
         super('TourQuiz')
 
@@ -45,8 +45,8 @@ export default class TourQuiz extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
-        this.load.pack('tourquiz-pack', 'client/media/interface/game/tourquiz/tourquiz-pack.json')
+    _preload() {
+        this.load.pack('tourquiz-pack', 'client/media/interface/closeups/tourquiz/tourquiz-pack.json')
     }
 
     /** @returns {void} */
@@ -192,7 +192,7 @@ export default class TourQuiz extends BaseScene {
         question3.add(button_q3_wrong)
 
         // questions3_en
-        const questions3_en = this.add.image(153, 187, 'tourquiz', 'questions3_en.png')
+        const questions3_en = this.add.image(153, 187, 'tourquiz', 'questions3_en')
         question3.add(questions3_en)
 
         // question4
@@ -412,7 +412,7 @@ export default class TourQuiz extends BaseScene {
         // exit (components)
         const exitButton = new Button(exit)
         exitButton.spriteName = 'exit'
-        exitButton.callback = () => this.scene.stop()
+        exitButton.callback = () => this.stop()
 
         // psst_en (components)
         new LocalisedSprite(psst_en)
@@ -423,7 +423,7 @@ export default class TourQuiz extends BaseScene {
         // button_already (components)
         const button_alreadyButton = new Button(button_already)
         button_alreadyButton.spriteName = 'button'
-        button_alreadyButton.callback = () => this.scene.stop()
+        button_alreadyButton.callback = () => this.stop()
 
         // sorry_en (components)
         new LocalisedSprite(sorry_en)
@@ -434,7 +434,7 @@ export default class TourQuiz extends BaseScene {
         // button_age (components)
         const button_ageButton = new Button(button_age)
         button_ageButton.spriteName = 'button'
-        button_ageButton.callback = () => this.scene.stop()
+        button_ageButton.callback = () => this.stop()
 
         // guidestitle_en (components)
         new LocalisedSprite(guidestitle_en)
@@ -719,7 +719,7 @@ export default class TourQuiz extends BaseScene {
         // button_fail (components)
         const button_failButton = new Button(button_fail)
         button_failButton.spriteName = 'button'
-        button_failButton.callback = () => this.scene.stop()
+        button_failButton.callback = () => this.stop()
 
         // wintitle_en (components)
         new LocalisedSprite(wintitle_en)
@@ -732,7 +732,7 @@ export default class TourQuiz extends BaseScene {
         button_winButton.spriteName = 'button'
         button_winButton.callback = () => {
             this.onWin()
-            this.scene.stop()
+            this.stop()
         }
 
         this.already = already

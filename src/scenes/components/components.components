@@ -557,6 +557,23 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "WaddleSeat",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.GameObject",
+            "properties": [
+                {
+                    "name": "sitdirection",
+                    "label": "Sit Direction",
+                    "tooltip": "Sit Direction",
+                    "defValue": "north",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                }
+            ]
         }
     ],
     "meta": {

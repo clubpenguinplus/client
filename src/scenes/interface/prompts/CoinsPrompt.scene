@@ -453,6 +453,7 @@
                             "paddingLeft": 15,
                             "paddingRight": 15,
                             "fontFamily": "Burbank Small",
+                            "fontSize": "17px",
                             "color": "#606060ff",
                             "wordWrapWidth": 210
                         }

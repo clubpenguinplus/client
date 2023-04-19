@@ -3,8 +3,8 @@ import Penguin from './Penguin'
 import PathEngine from './pathfinding/PathEngine'
 
 export default class ClientPenguin extends Penguin {
-    constructor(user, room, penguinLoader) {
-        super(user, room, penguinLoader)
+    constructor(user, room, penguinLoader, puffleLoader) {
+        super(user, room, penguinLoader, puffleLoader)
 
         this.isClient = true
 

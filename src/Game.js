@@ -13,6 +13,13 @@ export default class Game extends Phaser.Game {
         this.crumbs = config.crumbs
         this.airtower = new Airtower(this)
 
+        document.onkeydown = (event) => {
+            if (this.airtower.interface.isInputActive) {
+                event.preventDefault()
+                this.airtower.interface.input.keyboard.emit('keydown', event)
+            }
+        }
+
         registerNinePatchContainerFactory()
 
         this.scene.add('Boot', Boot, true)

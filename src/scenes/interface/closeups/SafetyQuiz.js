@@ -1,8 +1,8 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, LocalisedString, Interactive} from '@scenes/components/components'
 /* START OF COMPILED CODE */
 
-export default class SafetyQuiz extends BaseScene {
+export default class SafetyQuiz extends Closeup {
     constructor() {
         super('SafetyQuiz')
 
@@ -123,8 +123,8 @@ export default class SafetyQuiz extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
-        this.load.pack('safetyquiz-pack', 'client/media/interface/game/safetyquiz/safetyquiz-pack.json')
+    _preload() {
+        this.load.pack('safetyquiz-pack', 'client/media/interface/closeups/safetyquiz/safetyquiz-pack.json')
     }
 
     /** @returns {void} */
@@ -500,7 +500,7 @@ export default class SafetyQuiz extends BaseScene {
         // white_x (components)
         const white_xSimpleButton = new SimpleButton(white_x)
         white_xSimpleButton.callback = () => {
-            this.scene.stop()
+            this.stop()
         }
 
         // modbutton (components)
@@ -731,7 +731,7 @@ export default class SafetyQuiz extends BaseScene {
         this.interface.prompt.showItem(24042)
         this.interface.main.safetyquiz.visible = false
         this.interface.main.moderatoricon.visible = true
-        this.scene.stop()
+        this.stop()
     }
 
     /* END-USER-CODE */

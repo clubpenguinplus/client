@@ -1216,10 +1216,10 @@
                     "y": 101,
                     "originX": 1,
                     "originY": 0.5,
-                    "text": "Game Stamps:",
+                    "text": "Jet Pack Adventure Stamps:",
                     "align": "right",
                     "fontFamily": "Burbank Small",
-                    "fontSize": "30px",
+                    "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
                 },
@@ -1232,9 +1232,9 @@
                     "x": 329,
                     "y": 117,
                     "originY": 0.5,
-                    "text": "Games",
+                    "text": "Jet Pack Adventure",
                     "fontFamily": "Burbank Small",
-                    "fontSize": "70px",
+                    "fontSize": "54px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
                 },
@@ -1328,6 +1328,231 @@
                     },
                     "x": 783,
                     "y": 136
+                },
+                {
+                    "type": "Container",
+                    "id": "07413ebe-ee2c-4ccb-b982-cc4d2865001c",
+                    "label": "polaroids",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1066,
+                    "y": 329,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "c6a78c6c-b26a-471d-8552-374cdcbc3c2b",
+                            "label": "polaroid_shadow",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid_shadow"
+                            },
+                            "x": 81,
+                            "y": 198
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4580b944-5816-4f8b-b879-1c979418dbf0",
+                            "label": "polaroid1_bg",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid1-bg"
+                            },
+                            "x": 172
+                        },
+                        {
+                            "type": "Container",
+                            "id": "b8a123ad-4c88-4ba6-a9de-d12f48221e82",
+                            "label": "polaroid1Holder",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 172,
+                            "list": [
+                                {
+                                    "type": "Text",
+                                    "id": "fdfaf1ca-13ca-4f90-a379-30bc7670e08b",
+                                    "label": "polaroid1LockedTxt",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "angle": 10.5,
+                                    "originX": 0.5,
+                                    "originY": 0.5,
+                                    "text": "88",
+                                    "fixedWidth": 100,
+                                    "paddingLeft": 30,
+                                    "paddingRight": 10,
+                                    "align": "center",
+                                    "fontFamily": "Burbank Small",
+                                    "fontSize": "26px",
+                                    "fontStyle": "bold",
+                                    "color": "#424242ff"
+                                },
+                                {
+                                    "type": "Image",
+                                    "id": "d0844906-8218-4e7b-a37e-6b98211dbe77",
+                                    "label": "polaroid1LockedIcon",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "stampbook",
+                                        "frame": "polaroidlocked"
+                                    },
+                                    "x": -24,
+                                    "y": -5,
+                                    "angle": 10.5
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "id": "582e1921-b15e-44f1-b783-f0deca17a6ce",
+                            "label": "polaroid1",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid1"
+                            },
+                            "x": 169,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "a46d938d-322a-460f-9df9-f663b5f3716a",
+                            "label": "polaroid2_bg",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid2-bg"
+                            },
+                            "y": 183
+                        },
+                        {
+                            "type": "Container",
+                            "id": "60abbd9f-2cee-40e8-8793-fb126d664839",
+                            "label": "polaroid2Holder",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1,
+                            "y": 177,
+                            "list": [
+                                {
+                                    "type": "Image",
+                                    "id": "a66997b5-44b2-427a-b6ed-4d2894e9ec1a",
+                                    "label": "polaroid2LockedIcon",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "stampbook",
+                                        "frame": "polaroidlocked"
+                                    },
+                                    "x": -23,
+                                    "y": 8,
+                                    "angle": -18.5
+                                },
+                                {
+                                    "type": "Text",
+                                    "id": "3dd899f1-297b-4a22-9e23-78418676e840",
+                                    "label": "polaroid2LockedTxt",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "angle": -18.5,
+                                    "originX": 0.5,
+                                    "originY": 0.5,
+                                    "text": "88",
+                                    "fixedWidth": 100,
+                                    "paddingLeft": 30,
+                                    "paddingRight": 10,
+                                    "align": "center",
+                                    "fontFamily": "Burbank Small",
+                                    "fontSize": "26px",
+                                    "fontStyle": "bold",
+                                    "color": "#424242ff"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "id": "57d66033-c9b3-4903-949c-b368f37ada3f",
+                            "label": "polaroid2",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid2"
+                            },
+                            "x": 6,
+                            "y": 192
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e138c9c9-65a6-4d57-9bf4-a3a6e0a0c740",
+                            "label": "polaroid3_bg",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid3-bg"
+                            },
+                            "x": 158,
+                            "y": 376
+                        },
+                        {
+                            "type": "Container",
+                            "id": "cf6dc920-cfe9-4acd-a001-16bdee7a5a1e",
+                            "label": "polaroid3Holder",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 158,
+                            "y": 372,
+                            "list": [
+                                {
+                                    "type": "Image",
+                                    "id": "bbf1f723-251c-4aae-9a79-2cb972696489",
+                                    "label": "polaroid3LockedIcon",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "texture": {
+                                        "key": "stampbook",
+                                        "frame": "polaroidlocked"
+                                    },
+                                    "x": -23,
+                                    "y": -5,
+                                    "angle": 10.5
+                                },
+                                {
+                                    "type": "Text",
+                                    "id": "50186d3e-8e6b-4a2a-a1c6-514feff708c3",
+                                    "label": "polaroid3LockedTxt",
+                                    "scope": "CLASS",
+                                    "components": [],
+                                    "angle": 10.5,
+                                    "originX": 0.5,
+                                    "originY": 0.5,
+                                    "text": "88",
+                                    "fixedWidth": 100,
+                                    "paddingLeft": 30,
+                                    "paddingRight": 10,
+                                    "align": "center",
+                                    "fontFamily": "Burbank Small",
+                                    "fontSize": "26px",
+                                    "fontStyle": "bold",
+                                    "color": "#424242ff"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "id": "22c6e3a2-04b8-4132-8ecb-361bb601c407",
+                            "label": "polaroid3",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "polaroid3"
+                            },
+                            "x": 155,
+                            "y": 387
+                        }
+                    ]
                 }
             ]
         },
@@ -1445,8 +1670,9 @@
                     "components": [],
                     "x": 257,
                     "y": 754,
+                    "text": "Loading stampbook",
                     "fontFamily": "Burbank Small",
-                    "fontSize": "40px",
+                    "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#F4B851",
                     "shadow.offsetX": 3,
@@ -1462,10 +1688,10 @@
                     "x": 253,
                     "y": 705,
                     "originY": 0.5,
-                    "fixedWidth": 700,
-                    "fixedHeight": 100,
+                    "text": "Loading...",
+                    "fixedWidth": 500,
                     "fontFamily": "Burbank Small",
-                    "fontSize": "100px",
+                    "fontSize": "64px",
                     "fontStyle": "bold",
                     "color": "#F4B851",
                     "shadow.offsetX": 3,
@@ -2056,7 +2282,6 @@
                     "originY": 0.5,
                     "text": "All Stamps",
                     "fixedWidth": 150,
-                    "fixedHeight": 25,
                     "paddingLeft": 15,
                     "paddingRight": 15,
                     "align": "center",
@@ -2459,7 +2684,6 @@
                     "originY": 0.5,
                     "text": "Stamp Book Guide",
                     "fixedWidth": 330,
-                    "fixedHeight": 50,
                     "fontFamily": "Burbank Small",
                     "fontSize": "38px",
                     "fontStyle": "bold",
@@ -2479,7 +2703,6 @@
                     "originY": 0.5,
                     "text": "Easy",
                     "fixedWidth": 200,
-                    "fixedHeight": 30,
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "fontStyle": "bold",
@@ -2499,7 +2722,6 @@
                     "originY": 0.5,
                     "text": "Medium",
                     "fixedWidth": 200,
-                    "fixedHeight": 30,
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "fontStyle": "bold",
@@ -2519,7 +2741,6 @@
                     "originY": 0.5,
                     "text": "Hard",
                     "fixedWidth": 200,
-                    "fixedHeight": 30,
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "fontStyle": "bold",
@@ -2539,7 +2760,6 @@
                     "originY": 0.5,
                     "text": "Extreme",
                     "fixedWidth": 200,
-                    "fixedHeight": 30,
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "fontStyle": "bold",
@@ -2559,7 +2779,6 @@
                     "originY": 0.5,
                     "text": "Edit Stamp Book",
                     "fixedWidth": 200,
-                    "fixedHeight": 30,
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "fontStyle": "bold",
@@ -2579,7 +2798,6 @@
                     "originY": 0.5,
                     "text": "Save Stamp Book",
                     "fixedWidth": 200,
-                    "fixedHeight": 30,
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "fontStyle": "bold",

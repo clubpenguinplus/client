@@ -44,7 +44,7 @@ export default class WallCrate extends Crate {
         this.crate.scale = 1
 
         if (this.tween) {
-            this.tween.remove()
+            this.scene.tweens.remove(this.tween)
             this.tween = null
         }
 

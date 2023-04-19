@@ -13,6 +13,7 @@ export default class HotelLobby extends RoomScene {
         this.roomTriggers = {
             plaza: () => this.triggerRoom(300, 680, 500),
             pet: () => this.triggerRoom(310, 160, 760),
+            lift: () => this.interface.loadExternal('Elevator'),
         }
 
         this.music = 362
@@ -255,6 +256,7 @@ export default class HotelLobby extends RoomScene {
         const tasksSimpleButton = new SimpleButton(tasks)
         tasksSimpleButton.hoverCallback = () => this.onTasksOver()
         tasksSimpleButton.hoverOutCallback = () => this.onTasksOut()
+        tasksSimpleButton.callback = () => this.interface.loadExternal('RainbowQuest')
 
         // frontpod (components)
         const frontpodButton = new Button(frontpod)
@@ -266,6 +268,7 @@ export default class HotelLobby extends RoomScene {
         // taskinterface (components)
         const taskinterfaceButton = new Button(taskinterface)
         taskinterfaceButton.spriteName = 'interface'
+        taskinterfaceButton.callback = () => this.interface.loadExternal('RainbowQuest')
 
         this.backchairs = backchairs
         this.backtable = backtable

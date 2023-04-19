@@ -126,7 +126,7 @@ export default class Waddle extends BaseContainer {
         let sprite = this.getSeat(waddle, seat)
         sprite.visible = username != null
 
-        this.shell.room.waddles[waddle][seat] = username
+        this.shell.room.waddles[waddle].seats[seat] = username
 
         if (waddle == this.activeWaddleId) {
             this.items[seat].setItem(username)

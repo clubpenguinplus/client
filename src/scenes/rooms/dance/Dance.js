@@ -331,11 +331,11 @@ export default class Dance extends RoomScene {
         if (!this.shell.client.stamps.includes(16) && !this.shell.client.stamps.includes(22)) {
             this.dancingStampInterval = setInterval(() => {
                 let dancing = 0
-                this.penguins.forEach((penguin) => {
-                    if (penguin.frame == 26) {
+                for (let i = 0; i < this.penguins.length; i++) {
+                    if (this.penguins[i].frame == 26) {
                         dancing++
                     }
-                })
+                }
                 if (dancing >= 10) {
                     this.shell.client.stampEarned(16)
                 }

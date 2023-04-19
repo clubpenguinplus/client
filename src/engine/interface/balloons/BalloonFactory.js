@@ -41,7 +41,7 @@ export default class BalloonFactory {
             this.main.shell.musicController.addSfx('fart')
         }
 
-        this.shell.room.triggerEmote(emote)
+        this.main.shell.room.triggerEmote(emote)
 
         penguin.emoteBalloon.setContent(emote)
         this.updateBalloon(penguin, penguin.emoteBalloon)

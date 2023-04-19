@@ -109,7 +109,7 @@ export default class Rink extends RoomScene {
         const fishdogs_en = this.add.image(187, 199, 'rink', 'fishdogs-en')
 
         // bleachers3_png
-        const bleachers3_png = this.add.image(1569, 484, 'rink', 'bleachers3.png')
+        const bleachers3_png = this.add.image(1569, 484, 'rink', 'bleachers3')
 
         // bleachers2
         this.add.image(103, 374, 'rink', 'bleachers2')

@@ -12,10 +12,10 @@ export default class Pet extends RoomScene {
         this.roomTriggers = {
             plaza: () => this.triggerRoom(300, 384, 619),
             hotel: () => this.triggerRoom(430, 1370, 490),
-            park: () => this.triggerGame('PuffleRoundup', 925),
-            adopt: () => null,
+            park: () => this.triggerGame('puffleroundup', 925),
+            //adopt: () => this.interface.loadExternal('Adopt'),
             scape: () => null,
-            launch: () => this.triggerGame('PuffleLaunch', 928),
+            launch: () => this.triggerGame('pufflelaunch', 928),
         }
         this.music = 659
         this.loadSfx = ['pet-plazadooropen', 'pet-plazadoorclose', 'pet-parkdooropen', 'pet-parkdoorclose', 'pet-hoteldooropen', 'pet-hoteldoorclose', 'pet-pufflebounce']
@@ -155,8 +155,8 @@ export default class Pet extends RoomScene {
         // floorholder
         this.add.image(760, 688, 'pet', 'floorholder')
 
-        // floorpuffle_blue
-        this.add.image(760, 894, 'pet', 'floorpuffle_blue')
+        // floorpuffle
+        const floorpuffle = this.add.image(760, 894, 'pet', 'floorpuffle_blue')
 
         // adoptbottom
         this.add.image(303, 457, 'pet', 'adoptbottom')
@@ -496,6 +496,7 @@ export default class Pet extends RoomScene {
         this.purplepuffjump = purplepuffjump
         this.pufflecareholder = pufflecareholder
         this.adopthitlight = adopthitlight
+        this.floorpuffle = floorpuffle
         this.adoptbookbase = adoptbookbase
         this.pufflecarebutton = pufflecarebutton
         this.goldtube = goldtube
@@ -566,6 +567,8 @@ export default class Pet extends RoomScene {
     pufflecareholder
     /** @type {Phaser.GameObjects.Sprite} */
     adopthitlight
+    /** @type {Phaser.GameObjects.Image} */
+    floorpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     adoptbookbase
     /** @type {Phaser.GameObjects.Sprite} */
@@ -670,6 +673,12 @@ export default class Pet extends RoomScene {
         this.bluedogblink.play('pet-bluedogblink')
         this.purplepuffblink.play('pet-purplepuffblink')
         this.white_lookaround.play('pet-whitepufflook')
+
+        if (this.client.penguin.puffle) {
+            let parent = this.crumbs.puffles[this.client.penguin.puffle].parent
+            let color = this.crumbs.puffles[parent].name.toLowerCase()
+            this.floorpuffle.setFrame(`floorpuffle_${color}`)
+        }
     }
 
     onPlazaDoorOver() {
@@ -769,58 +778,78 @@ export default class Pet extends RoomScene {
     onAdoptOut() {
         this.shell.musicController.stopSfx('pet-pufflebounce')
         this.adopthitlight.visible = false
-        this.redpuffjump.stop()
-        this.redpuffjump.setFrame('redpuffjump0001')
-        this.redpuffjump.visible = false
-        this.redpuffbody.visible = true
-        this.redpuffblink.visible = true
-        this.redpuffmouth.visible = true
-        this.greenpuffjump.stop()
-        this.greenpuffjump.setFrame('greenpuffjump0001')
-        this.greenpuffjump.visible = false
-        this.greenpuffbody.visible = true
-        this.greenpuffblink.visible = true
-        this.greenpuffmouth.visible = true
-        this.yellowpuffjump.stop()
-        this.yellowpuffjump.setFrame('yellowpuffjump0001')
-        this.yellowpuffjump.visible = false
-        this.yellowpuffbody.visible = true
-        this.yellowpuffblink.visible = true
-        this.yellowpuffmouth.visible = true
-        this.brownpuffjump.stop()
-        this.brownpuffjump.setFrame('brownpuffjump0001')
-        this.brownpuffjump.visible = false
-        this.brownpuffbody.visible = true
-        this.brownpuffblink.visible = true
-        this.brownpuffmouth.visible = true
-        this.bluepuffjump.stop()
-        this.bluepuffjump.setFrame('bluepuffjump0001')
-        this.bluepuffjump.visible = false
-        this.bluepuffbody.visible = true
-        this.bluepuffblink.visible = true
-        this.bluepuffmouth.visible = true
-        this.pinkpuffjump.stop()
-        this.pinkpuffjump.setFrame('pinkpuffjump0001')
-        this.pinkpuffjump.visible = false
-        this.pinkpuffbody.visible = true
-        this.pinkpuffblink.visible = true
-        this.pinkpuffmouth.visible = true
-        this.purplepuffjump.stop()
-        this.purplepuffjump.setFrame('purplepuffjump0001')
-        this.purplepuffjump.visible = false
-        this.purplepuffbody.visible = true
-        this.purplepuffblink.visible = true
-        this.purplepuffmouth.visible = true
-        this.orangecatjump.stop()
-        this.orangecatjump.setFrame('orangecatjump0001')
-        this.orangecatjump.visible = false
-        this.orangecatblink.visible = true
-        this.bluedogjump.stop()
-        this.bluedogjump.setFrame('bluedogjump0001')
-        this.bluedogjump.visible = false
-        this.bluedogblink.visible = true
-        this.orangepuffjump.stop()
-        this.orangepuffjump.setFrame('orangepuffjump0001')
+        this.redpuffjump.once('animationrepeat', () => {
+            this.redpuffjump.stop()
+            this.redpuffjump.setFrame('redpuffjump0001')
+            this.redpuffjump.visible = false
+            this.redpuffbody.visible = true
+            this.redpuffblink.visible = true
+            this.redpuffmouth.visible = true
+        })
+        this.greenpuffjump.once('animationrepeat', () => {
+            this.greenpuffjump.stop()
+            this.greenpuffjump.setFrame('greenpuffjump0001')
+            this.greenpuffjump.visible = false
+            this.greenpuffbody.visible = true
+            this.greenpuffblink.visible = true
+            this.greenpuffmouth.visible = true
+        })
+        this.yellowpuffjump.once('animationrepeat', () => {
+            this.yellowpuffjump.stop()
+            this.yellowpuffjump.setFrame('yellowpuffjump0001')
+            this.yellowpuffjump.visible = false
+            this.yellowpuffbody.visible = true
+            this.yellowpuffblink.visible = true
+            this.yellowpuffmouth.visible = true
+        })
+        this.brownpuffjump.once('animationrepeat', () => {
+            this.brownpuffjump.stop()
+            this.brownpuffjump.setFrame('brownpuffjump0001')
+            this.brownpuffjump.visible = false
+            this.brownpuffbody.visible = true
+            this.brownpuffblink.visible = true
+            this.brownpuffmouth.visible = true
+        })
+        this.bluepuffjump.once('animationrepeat', () => {
+            this.bluepuffjump.stop()
+            this.bluepuffjump.setFrame('bluepuffjump0001')
+            this.bluepuffjump.visible = false
+            this.bluepuffbody.visible = true
+            this.bluepuffblink.visible = true
+            this.bluepuffmouth.visible = true
+        })
+        this.pinkpuffjump.once('animationrepeat', () => {
+            this.pinkpuffjump.stop()
+            this.pinkpuffjump.setFrame('pinkpuffjump0001')
+            this.pinkpuffjump.visible = false
+            this.pinkpuffbody.visible = true
+            this.pinkpuffblink.visible = true
+            this.pinkpuffmouth.visible = true
+        })
+        this.purplepuffjump.once('animationrepeat', () => {
+            this.purplepuffjump.stop()
+            this.purplepuffjump.setFrame('purplepuffjump0001')
+            this.purplepuffjump.visible = false
+            this.purplepuffbody.visible = true
+            this.purplepuffblink.visible = true
+            this.purplepuffmouth.visible = true
+        })
+        this.orangecatjump.once('animationrepeat', () => {
+            this.orangecatjump.stop()
+            this.orangecatjump.setFrame('orangecatjump0001')
+            this.orangecatjump.visible = false
+            this.orangecatblink.visible = true
+        })
+        this.bluedogjump.once('animationrepeat', () => {
+            this.bluedogjump.stop()
+            this.bluedogjump.setFrame('bluedogjump0001')
+            this.bluedogjump.visible = false
+            this.bluedogblink.visible = true
+        })
+        this.orangepuffjump.once('animationrepeat', () => {
+            this.orangepuffjump.stop()
+            this.orangepuffjump.setFrame('orangepuffjump0001')
+        })
     }
 
     onAdoptBookOver() {

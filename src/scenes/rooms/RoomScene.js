@@ -154,17 +154,34 @@ export default class RoomScene extends BaseScene {
     }
 
     setWaddles(waddles) {
-        this.waddles = waddles
+        this.waddles = {}
+        waddles = waddles.map((waddle) => {
+            waddle = waddle.split('|')
+            let seatsArray = waddle[1].split(',').filter((seat) => seat != '')
+            let seats = {}
+            for (let index in seatsArray) {
+                seats[index] = seatsArray[index]
+            }
+            return {
+                id: waddle[0],
+                seats: seats,
+            }
+        })
+        waddles.forEach((waddle) => {
+            this.waddles[waddle.id] = waddle
+        })
 
-        for (let [id, seats] of Object.entries(waddles)) {
-            this.setSeats(id, seats)
+        for (let w in this.waddles) {
+            let waddle = this.waddles[w]
+            this.setSeats(waddle.id, waddle.seats)
         }
     }
 
     setSeats(id, seats) {
-        for (let [index, seat] of seats.entries()) {
+        for (let s in seats) {
+            let seat = seats[s]
             if (seat) {
-                this.shell.room[`seats${id}`][index].visible = true
+                this.shell.room[`seats${id}`][s].visible = true
             }
         }
     }

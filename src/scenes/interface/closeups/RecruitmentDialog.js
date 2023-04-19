@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, LocalisedString, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class RecruitmentDialog extends BaseScene {
+export default class RecruitmentDialog extends Closeup {
     constructor() {
         super('RecruitmentDialog')
 
@@ -36,8 +36,8 @@ export default class RecruitmentDialog extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
-        this.load.pack('recruitment-pack', 'client/media/interface/game/recruitment/recruitment-pack.json')
+    _preload() {
+        this.load.pack('recruitment-pack', 'client/media/interface/closeups/recruitment/recruitment-pack.json')
     }
 
     /** @returns {void} */
@@ -230,7 +230,7 @@ export default class RecruitmentDialog extends BaseScene {
             this.airtower.sendXt('epf#j')
             this.shell.room.setEpfButton()
         }
-        this.scene.stop()
+        super.stop()
     }
 
     /* END-USER-CODE */

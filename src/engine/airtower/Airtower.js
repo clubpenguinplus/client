@@ -4,6 +4,8 @@ import io from 'socket.io-client'
 import AES from 'crypto-js/aes'
 import enc from 'crypto-js/enc-utf8'
 
+const EventEmitter = require('events')
+
 export default class Airtower {
     constructor(game) {
         this.game = game
@@ -22,6 +24,8 @@ export default class Airtower {
         this.worldName
 
         this.encryptionKeys = {}
+        
+        this.events = new EventEmitter()
     }
 
     get interface() {
@@ -138,7 +142,19 @@ export default class Airtower {
         if (!onConnect) onConnect = () => {}
         if (!onDisconnect) onDisconnect = () => {}
 
-        let config = window.location.hostname == 'localhost' ? this.crumbs.worlds.sandbox[world] : this.crumbs.worlds[world]
+        let environment
+        switch (true) {
+            case window.location.hostname.includes('beta'):
+                environment = 'dev'
+                break
+            case window.location.hostname.includes('play'):
+                environment = 'live'
+                break
+            default:
+                environment = 'local'
+        }
+
+        let config = this.crumbs.worlds[environment][world]
 
         this.client = io.connect(config.host, {path: config.path})
 
@@ -341,12 +357,12 @@ export default class Airtower {
                     return
             }
         } catch (error) {
-            console.error(`[Airtower] ${error}`)
+            console.error(`[Airtower] ${error.stack}`)
         }
     }
 
     fireEvent(event, args) {
-        // Switch to a listener based system eventually
+        this.events.emit(event, args)
         this.handlers.getEvent(event, args)
     }
 }

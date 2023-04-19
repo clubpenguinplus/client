@@ -215,7 +215,6 @@
                     "y": -177,
                     "originX": 0.5,
                     "fixedWidth": 500,
-                    "fixedHeight": 400,
                     "paddingLeft": 10,
                     "paddingRight": 10,
                     "fontFamily": "Burbank Small",

@@ -43,9 +43,6 @@ export default class ItemLoader extends SpriteLoader {
     onFileComplete(key) {
         if (!this.shell.textures.exists(key)) return
 
-        this.penguin.room.shell.itemsLoaded.push[key]
-        // Keeps track of the loaded items so they can be unloaded later
-
         let slot = key.split('/')[0]
         let item = this.equipped[slot]
 
@@ -72,7 +69,44 @@ export default class ItemLoader extends SpriteLoader {
         let item = this.equipped[slot]
         if (!item || !item.sprite) return
 
+        const id = item.id
+
         item.sprite.destroy()
         item.sprite = null
+
+        setTimeout(() => this.unloadItem(id, slot), 1000)
+    }
+
+    unloadItem(item, slot) {
+        let key = `${slot}/${item}`
+
+        if (!this.shell.textures.exists(key)) return
+
+        let othersWearingItem = false
+        for (let penguin of Object.values(this.penguin.room.penguins)) {
+            if (penguin.wearingItem(item)) {
+                othersWearingItem = true
+                break
+            }
+        }
+
+        if (othersWearingItem) return
+
+        this.shell.textures.remove(key)
+
+        let anims = 0
+
+        for (let anim in this.shell.anims.anims.entries) {
+            if (this.shell.anims.anims.entries[anim].key.split('_')[0] == key) {
+                anims++
+                delete this.shell.anims.anims.entries[anim]
+            }
+        }
+
+        if (anims > 0) {
+            console.info(`[MemoryManager] Unloaded 1 texture and ${anims} animation${anims > 1 ? 's' : ''}`)
+        } else {
+            console.info(`[MemoryManager] Unloaded 1 texture`)
+        }
     }
 }

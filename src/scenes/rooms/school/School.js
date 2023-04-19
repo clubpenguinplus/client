@@ -162,7 +162,7 @@ export default class School extends RoomScene {
         const overhang = this.add.image(1347, 129, 'school', 'overhang_0001')
 
         // fg2_png_png
-        const fg2_png_png = this.add.image(743, 600.3200871275012, 'school', 'fg2.png.png')
+        const fg2_png_png = this.add.image(743, 600.3200871275012, 'school', 'fg2')
         fg2_png_png.setOrigin(0.5, 0.8530579712500017)
 
         // fg3

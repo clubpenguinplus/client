@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Telescope extends BaseScene {
+export default class Telescope extends Closeup {
     constructor() {
         super('Telescope')
 
@@ -80,8 +80,8 @@ export default class Telescope extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
-        this.load.pack('telescope-pack', 'client/media/interface/game/telescope/telescope-pack.json')
+    _preload() {
+        this.load.pack('telescope-pack', 'client/media/interface/closeups/telescope/telescope-pack.json')
     }
 
     /** @returns {void} */
@@ -237,7 +237,7 @@ export default class Telescope extends BaseScene {
         // blue_button (components)
         const blue_buttonButton = new Button(blue_button)
         blue_buttonButton.spriteName = 'blue-button'
-        blue_buttonButton.callback = () => this.scene.stop()
+        blue_buttonButton.callback = () => this.stop()
 
         this.waves1 = waves1
         this.waves_1 = waves_1

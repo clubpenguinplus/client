@@ -241,7 +241,7 @@ export default class CoinsPrompt extends BaseContainer {
         // stampInfoBody
         const stampInfoBody = scene.add.text(-122.09110107065823, -106.343807637391, '', {})
         stampInfoBody.text = 'Be in the same room as Aunt Arctic'
-        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 250, fontFamily: 'Burbank Small'})
+        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '17px'})
         stampInfoBody.setPadding({left: 15, right: 15})
         stampInfoBody.setWordWrapWidth(210)
         stampInfo.add(stampInfoBody)
@@ -470,7 +470,7 @@ export default class CoinsPrompt extends BaseContainer {
         }
 
         this.page = 1
-        if (this.stamps.length > 8) {
+        if (this.stamps.length > 9) {
             this.nextPageBtn.visible = true
         }
     }

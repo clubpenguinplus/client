@@ -91,12 +91,7 @@ export default class PuffleCare extends BaseContainer {
         const name_txt = scene.add.text(0, -320.1919506096564, '', {})
         name_txt.setOrigin(0.5, 0.5)
         name_txt.text = 'Puffle Name'
-        name_txt.setStyle({
-            color: '#000000ff',
-            fontFamily: 'Burbank Small',
-            fontSize: '18px',
-            fontStyle: 'bold',
-        })
+        name_txt.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
         this.add(name_txt)
 
         // care_btn (components)
@@ -186,7 +181,7 @@ export default class PuffleCare extends BaseContainer {
 
     /* START-USER-CODE */
 
-    showPuffle(args, walking = false) {
+    showPuffle(args) {
         this.visible = true
 
         let restpos = 13 + Math.floor((100 - args.rest) * -0.67)
@@ -239,7 +234,7 @@ export default class PuffleCare extends BaseContainer {
 
         this.name_txt.text = args.name
 
-        if (args.puffleId !== this.shell.client.penguin.puffle) {
+        if (args.id != this.shell.client.penguin.walking) {
             this.swap_btn.visible = false
             this.walk_btn.visible = true
         } else {
@@ -247,21 +242,33 @@ export default class PuffleCare extends BaseContainer {
             this.walk_btn.visible = false
         }
 
+        this.x = args.x
+        this.y = args.y
+
         this.args = args
+
+        this.shell.input.once('pointerdown', () => {
+            this.close()
+        })
+    }
+
+    close() {
+        this.args = null
+        this.visible = false
     }
 
     onWalk() {
-        this.shell.airtower.sendXt('p#pw', this.args.puffleId)
-        this.visible = false
+        this.shell.airtower.sendXt('p#pw', this.args.id)
+        this.close()
     }
 
     onCare() {
-        this.visible = false
+        this.close()
     }
 
     onSwap() {
-        this.shell.airtower.sendXt('p#sw')
-        this.visible = false
+        this.shell.airtower.sendXt('p#pw', 0)
+        this.close()
     }
     /* END-USER-CODE */
 }

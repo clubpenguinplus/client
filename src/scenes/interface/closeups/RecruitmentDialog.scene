@@ -5,9 +5,10 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BaseScene",
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/client/media/interface/game/recruitment/recruitment-pack.json"
+            "client/client/media/interface/closeups/recruitment/recruitment-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "RecruitmentDialog",

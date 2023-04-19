@@ -407,65 +407,77 @@
             "id": "0525af2a-c025-4825-a322-f426cf59160b",
             "label": "findfourtable",
             "components": [
-                "Button"
+                "Button",
+                "ShowHint"
             ],
             "Button.spriteName": "findfourtable",
+            "Button.callback": "() => this.triggerWaddle(110)",
             "Button.activeFrame": false,
+            "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
                 "frame": "findfourtable"
             },
-            "x": 254,
-            "y": 593
+            "x": 248,
+            "y": 626
         },
         {
             "type": "Image",
             "id": "ea2d23ff-4243-41b8-8434-a03cac96ede9",
             "label": "findfourtable_1",
             "components": [
-                "Button"
+                "Button",
+                "ShowHint"
             ],
             "Button.spriteName": "findfourtable",
+            "Button.callback": "() => this.triggerWaddle(109)",
             "Button.activeFrame": false,
+            "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
                 "frame": "findfourtable"
             },
-            "x": 369,
-            "y": 688
-        },
-        {
-            "type": "Image",
-            "id": "ca8038d7-468f-4143-8f29-0c24a7b1f045",
-            "label": "findfourtable_2",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "findfourtable",
-            "Button.activeFrame": false,
-            "texture": {
-                "key": "attic",
-                "frame": "findfourtable"
-            },
-            "x": 560,
-            "y": 682,
-            "flipX": true
+            "x": 360,
+            "y": 698
         },
         {
             "type": "Image",
             "id": "7929f283-fac5-45ba-90ec-aa5a4eb1e845",
             "label": "findfourtable_3",
             "components": [
-                "Button"
+                "Button",
+                "ShowHint"
             ],
             "Button.spriteName": "findfourtable",
+            "Button.callback": "() => this.triggerWaddle(107)",
             "Button.activeFrame": false,
+            "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
                 "frame": "findfourtable"
             },
-            "x": 683,
-            "y": 623,
+            "x": 679,
+            "y": 633,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "ca8038d7-468f-4143-8f29-0c24a7b1f045",
+            "label": "findfourtable_2",
+            "components": [
+                "Button",
+                "ShowHint"
+            ],
+            "Button.spriteName": "findfourtable",
+            "Button.callback": "() => this.triggerWaddle(108)",
+            "Button.activeFrame": false,
+            "ShowHint.text": "four",
+            "texture": {
+                "key": "attic",
+                "frame": "findfourtable"
+            },
+            "x": 577,
+            "y": 704,
             "flipX": true
         },
         {
@@ -641,6 +653,118 @@
             "fillColor": "#ffffff",
             "width": 50,
             "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "a3162ced-a697-46de-b527-ab4a86f728f6",
+            "label": "ellipse_8",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southeast",
+            "x": 580,
+            "y": 605,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "d06194fb-f6c9-4834-89f3-f0c6e776fbe3",
+            "label": "ellipse_9",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northwest",
+            "x": 796,
+            "y": 744,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "e7f05e21-f1c1-437e-8994-933647630750",
+            "label": "ellipse_10",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northwest",
+            "x": 697,
+            "y": 806,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "931d2c55-1129-4788-b56f-ad18882f1f4e",
+            "label": "ellipse_11",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southeast",
+            "x": 505,
+            "y": 673,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "d253161d-30ad-4d74-a8cd-418d234ac9f7",
+            "label": "ellipse_12",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
+            "x": 404,
+            "y": 665,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "0a229ee6-d09a-45fa-8be9-76daa40c4606",
+            "label": "ellipse_13",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
+            "x": 220,
+            "y": 758,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "368e9356-d097-4b5d-99b9-57501edbab7d",
+            "label": "ellipse_14",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
+            "x": 309,
+            "y": 613,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "18ac4c46-e3a2-4120-8306-bfebe14c5516",
+            "label": "ellipse_15",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
+            "x": 131,
+            "y": 679,
+            "visible": false,
+            "width": 50,
+            "height": 50
         }
     ],
     "plainObjects": [],
@@ -678,6 +802,38 @@
                 "46d3517d-8533-4356-b106-84cc8f54645a",
                 "978eca94-bc31-47ed-bfab-a182897197b4",
                 "6e9740e2-b3f8-41a8-bb83-6b956c47543b"
+            ]
+        },
+        {
+            "id": "f4cf2ecf-108c-46c2-81cd-330254e03671",
+            "label": "seats107",
+            "objectIds": [
+                "a3162ced-a697-46de-b527-ab4a86f728f6",
+                "d06194fb-f6c9-4834-89f3-f0c6e776fbe3"
+            ]
+        },
+        {
+            "id": "dbdce0db-f998-48e7-8c1a-62f6f58f751c",
+            "label": "seats108",
+            "objectIds": [
+                "931d2c55-1129-4788-b56f-ad18882f1f4e",
+                "e7f05e21-f1c1-437e-8994-933647630750"
+            ]
+        },
+        {
+            "id": "9c24a3c0-ce51-4e9e-8ed2-17772238c8a8",
+            "label": "seats109",
+            "objectIds": [
+                "d253161d-30ad-4d74-a8cd-418d234ac9f7",
+                "0a229ee6-d09a-45fa-8be9-76daa40c4606"
+            ]
+        },
+        {
+            "id": "d70cfdc7-9859-40b4-a0af-0948126eea6c",
+            "label": "seats110",
+            "objectIds": [
+                "368e9356-d097-4b5d-99b9-57501edbab7d",
+                "18ac4c46-e3a2-4120-8306-bfebe14c5516"
             ]
         }
     ]

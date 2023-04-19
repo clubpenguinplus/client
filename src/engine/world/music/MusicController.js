@@ -36,6 +36,16 @@ export default class MusicController extends Phaser.Scene {
         }
 
         this.sound.stopAll()
+
+        let audio = 0
+        for (let item of Object.keys(this.shell.cache.audio.entries.entries)) {
+            if (item != `music/${track}`) {
+                this.shell.room.cache.audio.remove(item)
+                audio++
+            }
+        }
+        if (audio > 0) console.info(`[MemoryManager] Unloaded ${audio} audio file${audio > 1 ? 's' : ''}`)
+
         this.music = track
 
         if (!this.cache.audio.exists(`music/${track}`)) {

@@ -104,7 +104,7 @@ export default class WireTap extends BaseContainer {
         // messages
         const messages = scene.add.text(109, -177, '', {})
         messages.setOrigin(0.5, 0)
-        messages.setStyle({color: '#ffffffff', fixedWidth: 500, fixedHeight: 400, fontFamily: 'Burbank Small'})
+        messages.setStyle({color: '#ffffffff', fixedWidth: 500, fontFamily: 'Burbank Small'})
         messages.setPadding({left: 10, right: 10})
         this.add(messages)
 

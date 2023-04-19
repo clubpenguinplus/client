@@ -216,7 +216,7 @@ export default class Main extends BaseScene {
         // chatInput
         const chatInput = this.add.text(0, 0, '', {})
         chatInput.setOrigin(0, 0.5)
-        chatInput.setStyle({color: '#ffffffff', fixedWidth: 476, fixedHeight: 40, fontFamily: 'Burbank Small', fontSize: '24px'})
+        chatInput.setStyle({color: '#ffffffff', fixedWidth: 476, fontFamily: 'Burbank Small', fontSize: '24px'})
         chatInput.setPadding({top: 6})
         chatInput.setLineSpacing(25)
         inputTextContainer.add(chatInput)
@@ -390,7 +390,7 @@ export default class Main extends BaseScene {
         // chatInput_mobile
         const chatInput_mobile = this.add.text(2, 1, '', {})
         chatInput_mobile.setOrigin(0, 0.5)
-        chatInput_mobile.setStyle({color: '#ffffffff', fixedWidth: 650, fixedHeight: 70, fontFamily: 'Burbank Small', fontSize: '36px'})
+        chatInput_mobile.setStyle({color: '#ffffffff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '36px'})
         chatInput_mobile.setPadding({top: 6})
         chatInput_mobile.setLineSpacing(25)
         inputTextContainer_mobile.add(chatInput_mobile)
@@ -841,10 +841,6 @@ export default class Main extends BaseScene {
 
         this.events.on('sleep', this.onSleep, this)
 
-        //if (this.shell.client.penguin.rank >= 3) {
-        //this.mod_btn.visible = true;
-        //}
-
         this.setupWidgets()
 
         // Factories
@@ -913,6 +909,13 @@ export default class Main extends BaseScene {
             item.visible = false
         }
         this.map.iglooMap.visible = false
+    }
+
+    onWake() {
+        if (!this.moderatoricon) return
+        this.showTR()
+        if (!this.beta) return
+        this.beta.visible = true
     }
 
     setupWidgets() {
@@ -1042,10 +1045,6 @@ export default class Main extends BaseScene {
             item.visible = false
         }
 
-        if (this.shell.client.penguin.rank >= 3) {
-            this.mod_btn.visible = true
-        }
-
         this.input.keyboard.on('keydown-TAB', (event) => null)
         this.input.keyboard.on('keydown-ENTER', (event) => null)
 
@@ -1065,8 +1064,8 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = true
         }
-
-        this.mod_btn.visible = false
+        this.beta.visible = true
+        this.showTR()
 
         this.shell.client.initKeys()
 

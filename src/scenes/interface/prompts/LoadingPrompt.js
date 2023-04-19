@@ -88,10 +88,10 @@ export default class LoadingPrompt extends BaseContainer {
 
         this.externalScene = scene
 
-        this.spinner.stop('spinner')
-        this.bar.stop('bar')
-        this.spinner.play('spinner')
-        this.bar.play('bar')
+        this.spinner.stop('load-spinner')
+        this.bar.stop('load-bar')
+        this.spinner.play('load-spinner')
+        this.bar.play('load-bar')
 
         this.visible = true
         scene.events.once('create', () => (this.visible = false))

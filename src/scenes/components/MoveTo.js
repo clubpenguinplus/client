@@ -18,8 +18,8 @@ export default class MoveTo {
         /* START-USER-CTR-CODE */
 
         // If x/y is 0 then use gameObject coordinate
-        this.x = this.x ? this.x : gameObject.x
-        this.y = this.y ? this.y : gameObject.y
+        this.x = this.x ? this.x : this.getX()
+        this.y = this.y ? this.y : this.getY()
 
         this.gameObject.on('pointerup', (pointer) => this.onPointerUp(pointer))
 
@@ -32,6 +32,26 @@ export default class MoveTo {
     }
 
     /* START-USER-CODE */
+
+    getX() {
+        let curObject = this.gameObject
+        let x = this.gameObject.x
+        while (curObject.parentContainer) {
+            x += curObject.parentContainer.x
+            curObject = curObject.parentContainer
+        }
+        return x
+    }
+
+    getY() {
+        let curObject = this.gameObject
+        let y = this.gameObject.y
+        while (curObject.parentContainer) {
+            y += curObject.parentContainer.y
+            curObject = curObject.parentContainer
+        }
+        return y + 1 // +1 so you're below the object
+    }
 
     onPointerUp(pointer) {
         if (pointer.button != 0) {

@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {Button, MoveTo, ShowHint} from '@components/components'
+import {Button, MoveTo, ShowHint, WaddleSeat} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -261,6 +261,8 @@ export default class Lodge extends RoomScene {
         findfour_1Button.callback = () => this.triggerWaddle(104)
         findfour_1Button.activeFrame = false
         findfour_1Button.pixelPerfect = true
+        const findfour_1ShowHint = new ShowHint(findfour_1)
+        findfour_1ShowHint.text = 'four'
 
         // findfour_2 (components)
         const findfour_2Button = new Button(findfour_2)
@@ -268,6 +270,8 @@ export default class Lodge extends RoomScene {
         findfour_2Button.callback = () => this.triggerWaddle(105)
         findfour_2Button.activeFrame = false
         findfour_2Button.pixelPerfect = true
+        const findfour_2ShowHint = new ShowHint(findfour_2)
+        findfour_2ShowHint.text = 'four'
 
         // findfour_3 (components)
         const findfour_3Button = new Button(findfour_3)
@@ -275,6 +279,32 @@ export default class Lodge extends RoomScene {
         findfour_3Button.callback = () => this.triggerWaddle(106)
         findfour_3Button.activeFrame = false
         findfour_3Button.pixelPerfect = true
+        const findfour_3ShowHint = new ShowHint(findfour_3)
+        findfour_3ShowHint.text = 'four'
+
+        // ellipse (components)
+        const ellipseWaddleSeat = new WaddleSeat(ellipse)
+        ellipseWaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_1 (components)
+        const ellipse_1WaddleSeat = new WaddleSeat(ellipse_1)
+        ellipse_1WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse_2 (components)
+        const ellipse_2WaddleSeat = new WaddleSeat(ellipse_2)
+        ellipse_2WaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_3 (components)
+        const ellipse_3WaddleSeat = new WaddleSeat(ellipse_3)
+        ellipse_3WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse_4 (components)
+        const ellipse_4WaddleSeat = new WaddleSeat(ellipse_4)
+        ellipse_4WaddleSeat.sitdirection = 'southeast'
+
+        // ellipse_5 (components)
+        const ellipse_5WaddleSeat = new WaddleSeat(ellipse_5)
+        ellipse_5WaddleSeat.sitdirection = 'northwest'
 
         // catalog (components)
         const catalogButton = new Button(catalog)
@@ -336,14 +366,14 @@ export default class Lodge extends RoomScene {
     }
 
     triggerWaddle(id) {
-        //     if (this.world.shell.activeSeat) {
-        //         return
-        //     }
-        //     let text = 'Would you like to join this\nFind Four Game?'
-        //     this.interface.prompt.showWindow(text, 'dual', () => {
-        //         this.network.send('join_waddle', {id: id})
-        //         this.interface.prompt.window.visible = false
-        //     })
+        if (this.shell.client.activeSeat) {
+            return
+        }
+        let text = 'Would you like to join this\nFind Four Game?'
+        this.interface.prompt.showWindow(text, 'dual', () => {
+            this.airtower.sendXt('a#jt', id)
+            this.interface.prompt.window.visible = false
+        })
     }
 
     /* END-USER-CODE */

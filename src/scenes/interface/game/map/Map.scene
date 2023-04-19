@@ -794,10 +794,8 @@
                             "id": "e4697ea7-7118-4032-8682-bc8c27bef333",
                             "label": "map_places_iceberg_1",
                             "components": [
-                                "ShowHint",
                                 "SimpleButton"
                             ],
-                            "ShowHint.text": "berg",
                             "SimpleButton.callback": "() => this.onRoomClick(805)",
                             "texture": {
                                 "key": "map",
@@ -1349,14 +1347,14 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(310)",
                             "ShowHint.text": "puffleadopt",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/puffles/adopt"
                             },
                             "x": 427,
-                            "y": 190,
-                            "visible": false
+                            "y": 190
                         },
                         {
                             "type": "Image",

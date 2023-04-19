@@ -81,42 +81,4 @@ export default class PenguinLoader {
     onPenguinClick(id) {
         this.shell.interface.showCard(id)
     }
-
-    addPuffle(penguin, puffle) {
-        let color = this.shell.crumbs.puffles[puffle].name
-
-        this.ploader.loadPuffle(color)
-    }
-
-    loadPuffle(penguin, color) {
-        if (!penguin.puffle || !penguin.active || penguin.hasPuffle) return
-
-        penguin.pufflesprite = penguin.room.add.sprite(60, 0, `puffle_${color}`, '1_1')
-        penguin.pufflesprite.depth = 3
-
-        penguin.add(penguin.pufflesprite)
-        penguin.pufflesprite.color = color
-        penguin.hasPuffle = true
-
-        if (this.shell.client.penguin.id == this.shell.room.id) {
-            this.addPuffleInput(penguin)
-        }
-    }
-
-    addPuffleInput(penguin) {
-        // creates the hitbox to open the puffle care menu
-        penguin.pufflesprite.hitArea = new Phaser.Geom.Ellipse(25, 25, 50, 50)
-        penguin.pufflesprite.setInteractive({
-            cursor: 'pointer',
-            hitArea: penguin.pufflesprite.hitArea,
-            hitAreaCallback: Phaser.Geom.Ellipse.Contains,
-        })
-        penguin.pufflesprite.on('pointerup', () => this.onPuffleClick(penguin.puffle))
-        penguin.pufflesprite.isButton = true
-    }
-
-    onPuffleClick(puffle) {
-        // sends a packet to the server which requests the wellbeing information for the care menu to use
-        this.shell.airtower.sendXt('p#phg', puffle)
-    }
 }

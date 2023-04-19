@@ -49,7 +49,6 @@ export default class Shell extends BaseScene {
 
         this.airtower.sendXt('i#gp')
         this.airtower.sendXt('ma#g')
-        this.airtower.sendXt('p#pgc')
     }
 
     setClient(args) {

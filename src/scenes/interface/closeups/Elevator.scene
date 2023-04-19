@@ -1,0 +1,121 @@
+{
+    "id": "cab69a64-b4ce-4679-8a3c-401efcc699f6",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 1,
+        "snapHeight": 1,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/interface/closeups/elevator/elevator-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Elevator",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "954be28c-5765-450d-8c90-1febff772490",
+            "label": "bg",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "elevator",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "871fb16b-84f5-4068-881e-490e7895bf94",
+            "label": "closeBtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "closeBtn",
+            "Button.callback": "() => this.stop()",
+            "texture": {
+                "key": "elevator",
+                "frame": "closeBtn"
+            },
+            "x": 1481,
+            "y": 47
+        },
+        {
+            "type": "Image",
+            "id": "beaa4008-fb58-430c-a5b8-0715d30ba025",
+            "label": "text",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "elevator",
+                "frame": "text-en"
+            },
+            "x": 704,
+            "y": 457
+        },
+        {
+            "type": "Image",
+            "id": "da1dc9a1-5443-4b71-a34f-af2fdbad828c",
+            "label": "roofBtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "roofBtn",
+            "Button.callback": "() => this.joinRoom(432)",
+            "texture": {
+                "key": "elevator",
+                "frame": "roofBtn"
+            },
+            "x": 755,
+            "y": 320
+        },
+        {
+            "type": "Image",
+            "id": "c81ca181-897b-45c7-acbb-a7f174713401",
+            "label": "lobbyBtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "lobbyBtn",
+            "Button.callback": "() => this.joinRoom(430)",
+            "texture": {
+                "key": "elevator",
+                "frame": "lobbyBtn"
+            },
+            "x": 755,
+            "y": 760
+        },
+        {
+            "type": "Image",
+            "id": "f3d04379-08f1-4f8f-9b30-312303178854",
+            "label": "gymBtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "gymBtn",
+            "Button.callback": "() => this.joinRoom(431)",
+            "texture": {
+                "key": "elevator",
+                "frame": "gymBtn"
+            },
+            "x": 755,
+            "y": 540
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

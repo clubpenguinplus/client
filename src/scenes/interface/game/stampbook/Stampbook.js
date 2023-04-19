@@ -1,7 +1,9 @@
 import {SimpleButton, Button, Interactive, LocalisedString} from '@components/components'
 import BookStamp from './BookStamp'
+import Polaroid from './Polaroid'
 import PinLoader from '@engine/loaders/PinLoader'
 import StampLoader from '@engine/loaders/StampLoader'
+import PolaroidLoader from '@engine/loaders/PolaroidLoader'
 import BaseScene from '@scenes/base/BaseScene'
 
 /* START OF COMPILED CODE */
@@ -575,15 +577,15 @@ export default class Stampbook extends BaseScene {
         // stampcategory
         const stampcategory = this.add.text(1183, 101, '', {})
         stampcategory.setOrigin(1, 0.5)
-        stampcategory.text = 'Game Stamps:'
-        stampcategory.setStyle({align: 'right', color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        stampcategory.text = 'Jet Pack Adventure Stamps:'
+        stampcategory.setStyle({align: 'right', color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         page.add(stampcategory)
 
         // pagename
         const pagename = this.add.text(329, 117, '', {})
         pagename.setOrigin(0, 0.5)
-        pagename.text = 'Games'
-        pagename.setStyle({color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '70px', fontStyle: 'bold'})
+        pagename.text = 'Jet Pack Adventure'
+        pagename.setStyle({color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '54px', fontStyle: 'bold'})
         page.add(pagename)
 
         // pageicon
@@ -614,6 +616,93 @@ export default class Stampbook extends BaseScene {
         // dividers
         const dividers = this.add.image(783, 136, 'stampbook', 'dividers')
         page.add(dividers)
+
+        // polaroids
+        const polaroids = this.add.container(1066, 329)
+        polaroids.visible = false
+        page.add(polaroids)
+
+        // polaroid_shadow
+        const polaroid_shadow = this.add.image(81, 198, 'stampbook', 'polaroid_shadow')
+        polaroids.add(polaroid_shadow)
+
+        // polaroid1_bg
+        const polaroid1_bg = this.add.image(172, 0, 'stampbook', 'polaroid1-bg')
+        polaroids.add(polaroid1_bg)
+
+        // polaroid1Holder
+        const polaroid1Holder = this.add.container(172, 0)
+        polaroids.add(polaroid1Holder)
+
+        // polaroid1LockedTxt
+        const polaroid1LockedTxt = this.add.text(0, 0, '', {})
+        polaroid1LockedTxt.angle = 10.5
+        polaroid1LockedTxt.setOrigin(0.5, 0.5)
+        polaroid1LockedTxt.text = '88'
+        polaroid1LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid1LockedTxt.setPadding({left: 30, right: 10})
+        polaroid1Holder.add(polaroid1LockedTxt)
+
+        // polaroid1LockedIcon
+        const polaroid1LockedIcon = this.add.image(-24, -5, 'stampbook', 'polaroidlocked')
+        polaroid1LockedIcon.angle = 10.5
+        polaroid1Holder.add(polaroid1LockedIcon)
+
+        // polaroid1
+        const polaroid1 = this.add.image(169, 15, 'stampbook', 'polaroid1')
+        polaroids.add(polaroid1)
+
+        // polaroid2_bg
+        const polaroid2_bg = this.add.image(0, 183, 'stampbook', 'polaroid2-bg')
+        polaroids.add(polaroid2_bg)
+
+        // polaroid2Holder
+        const polaroid2Holder = this.add.container(1, 177)
+        polaroids.add(polaroid2Holder)
+
+        // polaroid2LockedIcon
+        const polaroid2LockedIcon = this.add.image(-23, 8, 'stampbook', 'polaroidlocked')
+        polaroid2LockedIcon.angle = -18.5
+        polaroid2Holder.add(polaroid2LockedIcon)
+
+        // polaroid2LockedTxt
+        const polaroid2LockedTxt = this.add.text(0, 0, '', {})
+        polaroid2LockedTxt.angle = -18.5
+        polaroid2LockedTxt.setOrigin(0.5, 0.5)
+        polaroid2LockedTxt.text = '88'
+        polaroid2LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid2LockedTxt.setPadding({left: 30, right: 10})
+        polaroid2Holder.add(polaroid2LockedTxt)
+
+        // polaroid2
+        const polaroid2 = this.add.image(6, 192, 'stampbook', 'polaroid2')
+        polaroids.add(polaroid2)
+
+        // polaroid3_bg
+        const polaroid3_bg = this.add.image(158, 376, 'stampbook', 'polaroid3-bg')
+        polaroids.add(polaroid3_bg)
+
+        // polaroid3Holder
+        const polaroid3Holder = this.add.container(158, 372)
+        polaroids.add(polaroid3Holder)
+
+        // polaroid3LockedIcon
+        const polaroid3LockedIcon = this.add.image(-23, -5, 'stampbook', 'polaroidlocked')
+        polaroid3LockedIcon.angle = 10.5
+        polaroid3Holder.add(polaroid3LockedIcon)
+
+        // polaroid3LockedTxt
+        const polaroid3LockedTxt = this.add.text(0, 0, '', {})
+        polaroid3LockedTxt.angle = 10.5
+        polaroid3LockedTxt.setOrigin(0.5, 0.5)
+        polaroid3LockedTxt.text = '88'
+        polaroid3LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid3LockedTxt.setPadding({left: 30, right: 10})
+        polaroid3Holder.add(polaroid3LockedTxt)
+
+        // polaroid3
+        const polaroid3 = this.add.image(155, 387, 'stampbook', 'polaroid3')
+        polaroids.add(polaroid3)
 
         // front
         const front = this.add.container(0, 0)
@@ -662,13 +751,15 @@ export default class Stampbook extends BaseScene {
 
         // total
         const total = this.add.text(257, 754, '', {})
-        total.setStyle({color: '#F4B851', fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        total.text = 'Loading stampbook'
+        total.setStyle({color: '#F4B851', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(total)
 
         // username
         const username = this.add.text(253, 705, '', {})
         username.setOrigin(0, 0.5)
-        username.setStyle({color: '#F4B851', fixedWidth: 700, fixedHeight: 100, fontFamily: 'Burbank Small', fontSize: '100px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        username.text = 'Loading...'
+        username.setStyle({color: '#F4B851', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '64px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(username)
 
         // edit
@@ -863,7 +954,7 @@ export default class Stampbook extends BaseScene {
         const category_title = this.add.text(82, 21, '', {})
         category_title.setOrigin(0.5, 0.5)
         category_title.text = 'All Stamps'
-        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fixedHeight: 25, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
         category_title.setPadding({left: 15, right: 15})
         editor.add(category_title)
 
@@ -1016,49 +1107,49 @@ export default class Stampbook extends BaseScene {
         const stampbookGuide = this.add.text(0, 0, '', {})
         stampbookGuide.setOrigin(0, 0.5)
         stampbookGuide.text = 'Stamp Book Guide'
-        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fixedHeight: 50, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold'})
+        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide)
 
         // stampbookGuide_1
         const stampbookGuide_1 = this.add.text(45, 88, '', {})
         stampbookGuide_1.setOrigin(0, 0.5)
         stampbookGuide_1.text = 'Easy'
-        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_1)
 
         // stampbookGuide_2
         const stampbookGuide_2 = this.add.text(45, 135, '', {})
         stampbookGuide_2.setOrigin(0, 0.5)
         stampbookGuide_2.text = 'Medium'
-        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_2)
 
         // stampbookGuide_3
         const stampbookGuide_3 = this.add.text(45, 182, '', {})
         stampbookGuide_3.setOrigin(0, 0.5)
         stampbookGuide_3.text = 'Hard'
-        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_3)
 
         // stampbookGuide_4
         const stampbookGuide_4 = this.add.text(45, 230, '', {})
         stampbookGuide_4.setOrigin(0, 0.5)
         stampbookGuide_4.text = 'Extreme'
-        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_4)
 
         // stampbookGuide_5
         const stampbookGuide_5 = this.add.text(45, 279, '', {})
         stampbookGuide_5.setOrigin(0, 0.5)
         stampbookGuide_5.text = 'Edit Stamp Book'
-        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_5)
 
         // stampbookGuide_6
         const stampbookGuide_6 = this.add.text(45, 328, '', {})
         stampbookGuide_6.setOrigin(0, 0.5)
         stampbookGuide_6.text = 'Save Stamp Book'
-        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fixedHeight: 30, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_6)
 
         // lists
@@ -1395,6 +1486,16 @@ export default class Stampbook extends BaseScene {
         this.up_btn = up_btn
         this.up_arrow = up_arrow
         this.dividers = dividers
+        this.polaroids = polaroids
+        this.polaroid1Holder = polaroid1Holder
+        this.polaroid1LockedTxt = polaroid1LockedTxt
+        this.polaroid1LockedIcon = polaroid1LockedIcon
+        this.polaroid2Holder = polaroid2Holder
+        this.polaroid2LockedIcon = polaroid2LockedIcon
+        this.polaroid2LockedTxt = polaroid2LockedTxt
+        this.polaroid3Holder = polaroid3Holder
+        this.polaroid3LockedIcon = polaroid3LockedIcon
+        this.polaroid3LockedTxt = polaroid3LockedTxt
         this.front = front
         this.cover = cover
         this.pattern = pattern
@@ -1577,6 +1678,26 @@ export default class Stampbook extends BaseScene {
     /** @type {Phaser.GameObjects.Image} */
     dividers
     /** @type {Phaser.GameObjects.Container} */
+    polaroids
+    /** @type {Phaser.GameObjects.Container} */
+    polaroid1Holder
+    /** @type {Phaser.GameObjects.Text} */
+    polaroid1LockedTxt
+    /** @type {Phaser.GameObjects.Image} */
+    polaroid1LockedIcon
+    /** @type {Phaser.GameObjects.Container} */
+    polaroid2Holder
+    /** @type {Phaser.GameObjects.Image} */
+    polaroid2LockedIcon
+    /** @type {Phaser.GameObjects.Text} */
+    polaroid2LockedTxt
+    /** @type {Phaser.GameObjects.Container} */
+    polaroid3Holder
+    /** @type {Phaser.GameObjects.Image} */
+    polaroid3LockedIcon
+    /** @type {Phaser.GameObjects.Text} */
+    polaroid3LockedTxt
+    /** @type {Phaser.GameObjects.Container} */
     front
     /** @type {Phaser.GameObjects.Sprite} */
     cover
@@ -1729,6 +1850,7 @@ export default class Stampbook extends BaseScene {
         this.interface.stampbook = this
         this.pinLoader = new PinLoader(this)
         this.stampLoader = new StampLoader(this)
+        this.polaroidLoader = new PolaroidLoader(this)
         this.key = 'Stampbook'
         this.id = this.interface.stampbookId
         this._create()
@@ -1737,6 +1859,7 @@ export default class Stampbook extends BaseScene {
         this.editorStamps = []
         this.customStamps = []
         this.csSprites = []
+        this.polaroidList = []
         this.pins = {}
 
         this.pageIndex = 0
@@ -1763,7 +1886,6 @@ export default class Stampbook extends BaseScene {
             this.stampsEarned[s] = parseInt(this.stampsEarned[s])
         }
         this.username.text = isPlayer ? this.shell.client.penguin.username : args[0]
-        this.interface.scaleToFixedSize(this.username)
 
         this.total.text = `Total Stamps ${this.getTotalStamps()[1]}/${this.getTotalStamps()[0]}`
         this.pinsCollected = isPlayer ? this.shell.client.inventory['flag'] : args[5].split('|')
@@ -1816,8 +1938,8 @@ export default class Stampbook extends BaseScene {
     }
 
     changeColor(id) {
-        this.username.setStyle({fill: this.highlightColors[id]})
-        this.total.setStyle({fill: this.highlightColors[id]})
+        this.username.setColor(this.highlightColors[id])
+        this.total.setColor(this.highlightColors[id])
         this.wordmark.tint = this.tintColors[id]
         this.wordmark.tintFill = true
         this.wordmark_overlay.tint = this.tintColors[id]
@@ -1913,6 +2035,23 @@ export default class Stampbook extends BaseScene {
             this.down_arrow.visible = true
             this.down_btn.visible = true
         }
+
+        if (page.polaroids) {
+            this.polaroids.visible = true
+            for (let i = 0; i < page.polaroids.length; i++) {
+                if (this.getCategoryStamps(page.group)[1] < page.polaroids[i].stamps) {
+                    this[`polaroid${i + 1}LockedTxt`].visible = true
+                    this[`polaroid${i + 1}LockedIcon`].visible = true
+                    this[`polaroid${i + 1}LockedTxt`].text = page.polaroids[i].stamps
+                    continue
+                }
+                this[`polaroid${i + 1}LockedTxt`].visible = false
+                this[`polaroid${i + 1}LockedIcon`].visible = false
+                let polaroid = new Polaroid(this, 0, 0, page.polaroids[i].id)
+                this[`polaroid${i + 1}Holder`].add(polaroid)
+                this.polaroidList.push(polaroid)
+            }
+        }
     }
 
     getPageStamps(page) {
@@ -1958,11 +2097,11 @@ export default class Stampbook extends BaseScene {
     }
 
     btnOver(btntext) {
-        btntext.setStyle({color: '#3c3c3cff'})
+        btntext.setColor('#3c3c3cff')
     }
 
     btnOut(btntext) {
-        btntext.setStyle({color: '#5b5b5bff'})
+        btntext.setColor('#5b5b5bff')
     }
 
     onStampOver(pos) {
@@ -2004,6 +2143,11 @@ export default class Stampbook extends BaseScene {
             this.stamps[x].destroy()
         }
 
+        for (var x in this.polaroidList) {
+            this.polaroidList[x].destroy()
+        }
+        this.polaroidList = []
+
         for (var txt of this.indexText) {
             txt.visible = false
         }
@@ -2022,6 +2166,8 @@ export default class Stampbook extends BaseScene {
         this.down_arrow.visible = false
         this.up_btn.visible = false
         this.down_btn.visible = false
+
+        this.polaroids.visible = false
 
         this.front.visible = this.pageIndex == 0 ? true : false
         this.page.visible = this.pageIndex == 0 ? false : true
@@ -2110,10 +2256,10 @@ export default class Stampbook extends BaseScene {
                         cursor: 'pointer',
                     })
                     this.indexButtons[current].on('pointerover', () => {
-                        this.indexText[cur].setStyle({color: '#3c3c3cff'})
+                        this.indexText[cur].setColor('#3c3c3cff')
                     })
                     this.indexButtons[current].on('pointerout', () => {
-                        this.indexText[cur].setStyle({color: '#5b5b5bff'})
+                        this.indexText[cur].setColor('#5b5b5bff')
                     })
                     this.indexButtons[current].on('pointerdown', () => {
                         this.goToPage(pageId)
@@ -2146,10 +2292,10 @@ export default class Stampbook extends BaseScene {
                         cursor: 'pointer',
                     })
                     this.indexButtons[current].on('pointerover', () => {
-                        this.indexText[cur].setStyle({color: '#3c3c3cff'})
+                        this.indexText[cur].setColor('#3c3c3cff')
                     })
                     this.indexButtons[current].on('pointerout', () => {
-                        this.indexText[cur].setStyle({color: '#5b5b5bff'})
+                        this.indexText[cur].setColor('#5b5b5bff')
                     })
                     this.indexButtons[current].on('pointerdown', () => {
                         this.goToPage(pageId)
@@ -2176,15 +2322,15 @@ export default class Stampbook extends BaseScene {
             this.up_btn.x = 1200
         }
 
-        this.pagename.setStyle({fontSize: '50px'})
+        this.pagename.setSize(50)
         while (this.pagename.width > 500) {
             let fontSize = this.pagename.style.fontSize.replace('px', '')
-            this.pagename.setStyle({fontSize: `${parseInt(fontSize) - 1}px`})
+            this.pagename.setSize(parseInt(fontSize) - 1)
         }
-        this.stampcategory.setStyle({fontSize: '30px'})
+        this.stampcategory.setSize(30)
         while (this.stampcategory.width > 300) {
             let fontSize = this.stampcategory.style.fontSize.replace('px', '')
-            this.stampcategory.setStyle({fontSize: `${parseInt(fontSize) - 1}px`})
+            this.stampcategory.setSize(parseInt(fontSize) - 1)
         }
 
         this.pagenum.text = `Page\n${this.pageIndex} of ${this.crumbs.stampbook.enabledPages.length - 1}`
@@ -2269,7 +2415,7 @@ export default class Stampbook extends BaseScene {
             this.stampInfoBody.text = `Released: ${releaseDate}.`
         })
 
-        pin.visible = visible
+        pin.visible = visible && this.pageIndex == this.crumbs.stampbook.enabledPages.indexOf('pins')
 
         return pin
     }
@@ -2530,10 +2676,10 @@ export default class Stampbook extends BaseScene {
 
                     childBackground.setInteractive()
                     childBackground.on('pointerover', () => {
-                        childText.setStyle({color: '#3c3c3cff'})
+                        childText.setColor('#3c3c3cff')
                     })
                     childBackground.on('pointerout', () => {
-                        childText.setStyle({color: '#5b5b5bff'})
+                        childText.setColor('#5b5b5bff')
                     })
                     childBackground.on('pointerdown', () => {
                         this.showEditorStamps(child.text, child.icon, child.stamps)
@@ -2544,7 +2690,7 @@ export default class Stampbook extends BaseScene {
 
             background.setInteractive()
             background.on('pointerover', () => {
-                text.setStyle({color: '#3c3c3cff'})
+                text.setColor('#3c3c3cff')
                 if (selector.currentChild) {
                     selector.currentChild.visible = false
                     selector.currentChild = null
@@ -2559,7 +2705,7 @@ export default class Stampbook extends BaseScene {
                 }
             })
             background.on('pointerout', () => {
-                text.setStyle({color: '#5b5b5bff'})
+                text.setColor('#5b5b5bff')
             })
             background.on('pointerdown', () => {
                 this.showEditorStamps(page.text, page.icon, page.stamps)
@@ -2604,7 +2750,6 @@ export default class Stampbook extends BaseScene {
         if (this.categorySelector) this.categorySelector.visible = false
         this.input.removeListener('pointermove', this.onEditorCategoriesMove, this)
         this.category_title.text = name
-        this.interface.scaleToFixedSize(this.category_title)
         this.category_icon.setTexture('stampbook', icon)
 
         this.editorStamps.forEach((stamp) => {
@@ -2730,7 +2875,7 @@ export default class Stampbook extends BaseScene {
         }
 
         // Username
-        if (x > 203 && x < 1003 && y > 605 && y < 805) return false
+        if (x > 203 && x < 803 && y > 605 && y < 805) return false
         // Wordmark
         if (x > 916 && x < 1244 && y > 508 && y < 757) return false
 

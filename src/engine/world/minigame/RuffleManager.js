@@ -32,14 +32,8 @@ export default class RuffleManager {
         window.checkIfPlayerHasStamp = this.checkIfPlayerHasStamp.bind(this)
         window.playerWearingItem = this.playerWearingItem.bind(this)
         window.getLocalizedString = this.getLocalizedString.bind(this)
-        window.getMyPuffleCount = this.getMyPuffleCount.bind(this)
         window.getMyPlayerTotalCoins = this.getMyPlayerTotalCoins.bind(this)
         window.getMyPlayerUsername = this.getMyPlayerUsername.bind(this)
-        window.adoptPuffle = this.adoptPuffle.bind(this)
-        window.getPostcards = this.getPostcards.bind(this)
-        window.deletePostcard = this.deletePostcard.bind(this)
-        window.sendPostcard = this.sendPostcard.bind(this)
-        window.getCurrentPostcards = this.getCurrentPostcards.bind(this)
         window.startMusicById = this.startMusicById.bind(this)
         window.stampEarned = this.stampEarned.bind(this)
     }
@@ -146,7 +140,6 @@ export default class RuffleManager {
         var ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
         ruffleplayer.setMediaPath(`${this.prefix}client/media/games/swf/`, `${this.prefix}client/media/swf/`)
         ruffleplayer.style.visibility = 'visible'
-        ruffleplayer.volume = 0.05
 
         ruffleplayer.shadowRoot.querySelector('canvas').style.borderRadius = '10px'
 
@@ -158,6 +151,13 @@ export default class RuffleManager {
         } else if (this.swf.path) {
             ruffleplayer.loadOtherSwf(this.swf.path, this.swf.params)
         }
+
+        if (this.volumeInterval) clearInterval(this.volumeInterval)
+        this.volumeInterval = setInterval(() => {
+            let volume = this.shell.muteAll ? 0 : parseFloat(localStorage.musicVolume || 0.5)
+            if (ruffleplayer.volume == volume) return clearInterval(this.volumeInterval)
+            ruffleplayer.volume = volume
+        }, 200)
 
         this.swf = {}
     }
@@ -183,6 +183,12 @@ export default class RuffleManager {
         }
 
         this.shell.airtower.sendXt('mi#eg', `${coins}%${game}`)
+
+        if (this.volumeInterval) clearInterval(this.volumeInterval)
+        this.volumeInterval = setInterval(() => {
+            if (ruffleplayer.volume == 0) return clearInterval(this.volumeInterval)
+            ruffleplayer.volume = 0
+        }, 200)
     }
 
     getCategory(game) {
@@ -356,145 +362,12 @@ export default class RuffleManager {
         return this.shell.getString(key)
     }
 
-    getMyPuffleCount() {
-        return this.shell.client.pufflecount
-    }
-
     getMyPlayerTotalCoins() {
         return this.shell.client.coins
     }
 
     getMyPlayerUsername() {
         return this.shell.client.penguin.username
-    }
-
-    adoptPuffle(type, name) {
-        this.shell.airtower.sendXt('p#pn', type + '%' + name)
-    }
-
-    getPostcards() {
-        return this.shell.client.postcards
-    }
-
-    deletePostcard(index) {
-        this.shell.client.postcards.splice(index, 1)
-        clearTimeout(this.postcardTimeout)
-        this.postcardTimeout = setTimeout(() => this.shell.airtower.sendXt('l#md', this.shell.client.postcards), 1000)
-    }
-
-    sendPostcard(postcard, username) {
-        this.shell.airtower.sendXt('send_postcard', `${postcard}%${username}`)
-    }
-
-    getCurrentPostcards() {
-        // this should probably be in crumbs in future. each page is one item in the array, there can be up to infinite pages of postcards
-        return [
-            {
-                title: 'Featured Postcards',
-                id1: 217,
-                name1: "Let's Explore",
-                id2: 43,
-                name2: 'Happy Puffles',
-                id3: 36,
-                name3: "You're Funny",
-                id4: 62,
-                name4: "Let's Hang Out",
-                id5: 48,
-                name5: 'Follow Me',
-                id6: 12,
-                name6: 'Welcome to Club Penguin',
-            },
-            {
-                title: 'Friendship',
-                id1: 32,
-                name1: 'Terrific Friend',
-                id2: 57,
-                name2: 'Be My Friend',
-                id3: 35,
-                name3: 'Long Time No See',
-                id4: 200,
-                name4: 'Campfire Story',
-                id5: 201,
-                name5: 'Thank You',
-                id6: 64,
-                name6: 'Stopping By',
-            },
-            {
-                title: 'Friendship',
-                id1: 56,
-                name1: 'Hey There',
-                id2: 24,
-                name2: 'Cool Name',
-                id3: 25,
-                name3: 'Awesome Outfit',
-                id4: 26,
-                name4: 'I Like Your Outfit',
-                id5: 88,
-                name5: 'My Tour',
-                id6: 219,
-                name6: 'Best Friends for Life!',
-            },
-            {
-                title: 'Puffles',
-                id1: 222,
-                name1: 'Bring your puffles!',
-                id2: 231,
-                name2: 'Cool Puffles!',
-                id3: 224,
-                name3: 'Green Puffle',
-                id4: 225,
-                name4: 'Orange Puffle',
-                id5: 220,
-                name5: 'Black Puffle',
-                id6: 221,
-                name6: 'Blue Puffle',
-            },
-            {
-                title: 'Igloo',
-                id1: 1,
-                name1: 'Re-decorated Igloo',
-                id2: 202,
-                name2: 'Check out my igloo',
-                id3: 27,
-                name3: 'Party at my iggy!',
-                id4: 61,
-                name4: 'Igloo Party',
-                id5: 17,
-                name5: 'Cool Igloo',
-                id6: 237,
-                name6: 'Thanks for my gift!',
-            },
-            {
-                title: 'Games',
-                id1: 10,
-                name1: 'Mancala',
-                id2: 19,
-                name2: 'Great Game',
-                id3: 52,
-                name3: 'Ski Hill',
-                id4: 218,
-                name4: 'My Stamp Book',
-                id5: 59,
-                name5: 'Find Four',
-                id6: 206,
-                name6: 'Stamp Book',
-            },
-            {
-                title: 'Rooms',
-                id1: 20,
-                name1: 'Snow Forts',
-                id2: 21,
-                name2: 'Pool',
-                id3: 55,
-                name3: 'Dojo',
-                id4: 29,
-                name4: 'Tip The Berg',
-                id5: 30,
-                name5: 'Hidden Lake',
-                id6: 16,
-                name6: 'Ice Rink',
-            },
-        ]
     }
 
     startMusicById(id) {

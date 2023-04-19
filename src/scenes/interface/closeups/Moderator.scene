@@ -5,7 +5,8 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BaseScene",
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "client/client/media/interface/game/safetyquiz/safetyquiz-pack.json"
         ],
@@ -64,7 +65,7 @@
             "components": [
                 "SimpleButton"
             ],
-            "SimpleButton.callback": "() => {this.scene.stop()}",
+            "SimpleButton.callback": "() => {this.stop()}",
             "texture": {
                 "key": "main",
                 "frame": "white-x"
@@ -120,7 +121,7 @@
                 "Button"
             ],
             "Button.spriteName": "modbutton",
-            "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.scene.stop() }",
+            "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.stop() }",
             "texture": {
                 "key": "safetyquiz",
                 "frame": "modbutton"

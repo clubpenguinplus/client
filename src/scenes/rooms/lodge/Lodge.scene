@@ -280,12 +280,14 @@
             "label": "findfour_1",
             "scope": "CLASS",
             "components": [
-                "Button"
+                "Button",
+                "ShowHint"
             ],
             "Button.spriteName": "findfour",
             "Button.callback": "() => this.triggerWaddle(104)",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
+            "ShowHint.text": "four",
             "texture": {
                 "key": "lodge",
                 "frame": "findfour"
@@ -315,12 +317,14 @@
             "label": "findfour_2",
             "scope": "CLASS",
             "components": [
-                "Button"
+                "Button",
+                "ShowHint"
             ],
             "Button.spriteName": "findfour",
             "Button.callback": "() => this.triggerWaddle(105)",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
+            "ShowHint.text": "four",
             "texture": {
                 "key": "lodge",
                 "frame": "findfour"
@@ -335,12 +339,14 @@
             "label": "findfour_3",
             "scope": "CLASS",
             "components": [
-                "Button"
+                "Button",
+                "ShowHint"
             ],
             "Button.spriteName": "findfour",
             "Button.callback": "() => this.triggerWaddle(106)",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
+            "ShowHint.text": "four",
             "texture": {
                 "key": "lodge",
                 "frame": "findfour"
@@ -431,7 +437,10 @@
             "type": "Ellipse",
             "id": "175ce1d0-692d-4437-a878-6bd194794dff",
             "label": "ellipse",
-            "components": [],
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
             "x": 928,
             "y": 592,
             "visible": false,
@@ -442,7 +451,10 @@
             "type": "Ellipse",
             "id": "384c371f-f36a-494b-a86d-7336befb64a0",
             "label": "ellipse_1",
-            "components": [],
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
             "x": 1084,
             "y": 510,
             "visible": false,
@@ -453,7 +465,10 @@
             "type": "Ellipse",
             "id": "e74c7087-e137-4c9e-aba7-40c2bfc12263",
             "label": "ellipse_2",
-            "components": [],
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
             "x": 821,
             "y": 750,
             "visible": false,
@@ -464,7 +479,10 @@
             "type": "Ellipse",
             "id": "f356f908-04fb-40b3-9471-7555a0d03883",
             "label": "ellipse_3",
-            "components": [],
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
             "x": 967,
             "y": 665,
             "visible": false,
@@ -475,7 +493,10 @@
             "type": "Ellipse",
             "id": "a39b341f-4789-4cb4-9856-2590fecc0527",
             "label": "ellipse_4",
-            "components": [],
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southeast",
             "x": 1053,
             "y": 632,
             "visible": false,
@@ -486,7 +507,10 @@
             "type": "Ellipse",
             "id": "aa694818-fe3d-47c9-898d-4ff08f0bee13",
             "label": "ellipse_5",
-            "components": [],
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northwest",
             "x": 1172,
             "y": 724,
             "visible": false,

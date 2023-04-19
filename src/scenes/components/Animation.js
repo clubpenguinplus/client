@@ -95,7 +95,7 @@ export default class Animation extends EventComponent {
 
     createAnim() {
         // Prevent clashing keys across scenes
-        let localKey = `${this.atlas}/${this.key}`
+        let localKey = `${this.atlas}-${this.key}`
 
         // If animation already exists
         if (this.scene.anims.exists(localKey)) {

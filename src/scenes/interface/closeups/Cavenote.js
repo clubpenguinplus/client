@@ -1,9 +1,9 @@
-import BaseScene from '@scenes/base/BaseScene'
+import Closeup from './Closeup'
 import {Button, SimpleButton, LocalisedSprite, Interactive} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
-export default class Cavenote extends BaseScene {
+export default class Cavenote extends Closeup {
     constructor() {
         super('Cavenote')
 
@@ -13,8 +13,8 @@ export default class Cavenote extends BaseScene {
     }
 
     /** @returns {void} */
-    preload() {
-        this.load.pack('cavenote-pack', 'client/media/interface/game/cavenote/cavenote-pack.json')
+    _preload() {
+        this.load.pack('cavenote-pack', 'client/media/interface/closeups/cavenote/cavenote-pack.json')
     }
 
     /** @returns {void} */
@@ -40,7 +40,7 @@ export default class Cavenote extends BaseScene {
         // exit (components)
         const exitButton = new Button(exit)
         exitButton.spriteName = 'exit'
-        exitButton.callback = () => this.scene.stop()
+        exitButton.callback = () => this.stop()
 
         this.events.emit('scene-awake')
     }

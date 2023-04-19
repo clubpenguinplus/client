@@ -31,7 +31,7 @@ export default class InputText extends EventComponent {
 
         /* START-USER-CTR-CODE */
         this.gameObject.textContent = ''
-        this.input = this.gameObject.scene.input
+        this.input = this.gameObject.scene.interface.input
         this.shift = this.input.keyboard.addKey('SHIFT')
         this.ctrl = this.input.keyboard.addKey('CTRL')
         /* END-USER-CTR-CODE */
@@ -43,6 +43,10 @@ export default class InputText extends EventComponent {
     }
 
     /* START-USER-CODE */
+
+    get isChanged() {
+        return this.gameObject.text != this.defaultText
+    }
 
     start() {
         this.defaultText = this.gameObject.text
@@ -91,13 +95,13 @@ export default class InputText extends EventComponent {
 
         this.x = this.gameObject.x
 
-        this.gameObject.setStyle({fixedWidth: 0})
+        this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
         this.wrapText()
         this.createMask()
     }
 
     get trueX() {
-        let x = this.gameObject.x - this.gameObject.width * this.gameObject.originX
+        let x = this.gameObject.x - this.lineWidth * this.gameObject.originX
         let curObject = this.gameObject
         while (curObject.parentContainer) {
             curObject = curObject.parentContainer
@@ -120,9 +124,21 @@ export default class InputText extends EventComponent {
         this.mask = this.gameObject.scene.add.graphics()
         this.mask.fillStyle(0xffffff, 0)
         this.mask.beginPath()
-        this.mask.fillRect(this.trueX, this.trueY, this.lineWidth, this.gameObject.height)
+        this.maskRect = this.mask.fillRect(this.trueX, this.trueY, this.lineWidth, this.gameObject.height)
         this.mask = this.mask.createGeometryMask()
         this.gameObject.setMask(this.mask)
+
+        this.firstTrueX = this.trueX
+        this.firstTrueY = this.trueY
+
+        this.update = this.updateRect
+    }
+
+    updateRect() {
+        if (this.gameObject.visible && (this.trueX - this.firstTrueX != this.maskRect.x || this.trueY - this.firstTrueY != this.maskRect.y)) {
+            this.maskRect.x = this.trueX - this.firstTrueX
+            this.maskRect.y = this.trueY - this.firstTrueY
+        }
     }
 
     setDefaultText(text) {
@@ -165,7 +181,7 @@ export default class InputText extends EventComponent {
             let text = this.gameObject.text
             if (this.gameObject.style.fixedWidth != 0) {
                 prevWidth = this.gameObject.style.fixedWidth
-                this.gameObject.setStyle({fixedWidth: 0})
+                this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
             }
             while (charPoint <= text.length && charWidth < x) {
                 this.gameObject.text = text.substring(0, charPoint)
@@ -189,11 +205,11 @@ export default class InputText extends EventComponent {
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
-            this.gameObject.setStyle({fixedWidth: prevWidth})
+            this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
 
             this.input.once('pointerup', (pointer) => this.onClick(pointer))
             this.isSelected = true
-            this.gameObject.scene.shell.isInputActive = true
+            this.gameObject.scene.interface.isInputActive = true
             this.flashIndicator()
         }, 100)
     }
@@ -201,7 +217,7 @@ export default class InputText extends EventComponent {
     onClick(pointer) {
         if (!this.isOver) {
             this.isSelected = false
-            this.gameObject.scene.shell.isInputActive = false
+            this.gameObject.scene.interface.isInputActive = false
             this.indicator.visible = false
         } else {
             this.userdefinedonclickfunction()
@@ -221,7 +237,7 @@ export default class InputText extends EventComponent {
             let text = this.gameObject.textContent
             if (this.gameObject.style.fixedWidth != 0) {
                 prevWidth = this.gameObject.style.fixedWidth
-                this.gameObject.setStyle({fixedWidth: 0})
+                this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
             }
             while (charPoint <= text.length && charWidth < x) {
                 this.gameObject.textContent = text.substring(0, charPoint)
@@ -245,7 +261,7 @@ export default class InputText extends EventComponent {
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
-            this.gameObject.setStyle({fixedWidth: prevWidth})
+            this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
         }
     }
 
@@ -254,12 +270,12 @@ export default class InputText extends EventComponent {
 
         let prevWidth = this.gameObject.style.fixedWidth
         let prevText = this.gameObject.text
-        this.gameObject.setStyle({fixedWidth: 0})
+        this.gameObject.setFixedSize(0, this.gameObject.style.fixedHeight)
         let arr = char.split('\n')
         this.gameObject.text = arr[arr.length - 1]
         let width = this.gameObject.width
         this.gameObject.text = prevText
-        this.gameObject.setStyle({fixedWidth: prevWidth})
+        this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
         return width
     }
 
@@ -268,11 +284,11 @@ export default class InputText extends EventComponent {
 
         let prevHeight = this.gameObject.style.fixedHeight
         let prevText = this.gameObject.text
-        this.gameObject.setStyle({fixedHeight: 0})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, 0)
         this.gameObject.text = char
         let height = this.gameObject.height
         this.gameObject.text = prevText
-        this.gameObject.setStyle({fixedHeight: prevHeight})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, prevHeight)
         return height
     }
 
@@ -281,7 +297,7 @@ export default class InputText extends EventComponent {
 
         let prevHeight = this.gameObject.style.fixedHeight
         let prevText = this.gameObject.text
-        this.gameObject.setStyle({fixedHeight: 0})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, 0)
         let arr = char.split('\n')
         this.gameObject.text = arr.pop()
         let height = this.gameObject.height * this.gameObject.originY
@@ -290,7 +306,7 @@ export default class InputText extends EventComponent {
             height -= this.gameObject.height * this.gameObject.originY
         }
         this.gameObject.text = prevText
-        this.gameObject.setStyle({fixedHeight: prevHeight})
+        this.gameObject.setFixedSize(this.gameObject.style.fixedWidth, prevHeight)
 
         var offset = this.gameObject.y + this.gameObject.height * this.gameObject.originY
         return offset - height
@@ -319,6 +335,11 @@ export default class InputText extends EventComponent {
             }
             this.gameObject.textContent = this.beforeCursor + this.afterCursor
             this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
+            if (this.gameObject.width > this.lineWidth && !this.multiline && this.extends) {
+                this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
+            } else {
+                this.gameObject.x = this.x
+            }
         } else if (event.key == 'Delete') {
             if (this.ctrl.isDown) {
                 let firstSpace = this.afterCursor.indexOf(' ')
@@ -332,6 +353,11 @@ export default class InputText extends EventComponent {
             }
             this.gameObject.textContent = this.beforeCursor + this.afterCursor
             this.gameObject.text = this.ispassword ? this.gameObject.textContent.replace(/./g, '*') : this.gameObject.textContent
+            if (this.gameObject.width > this.lineWidth && !this.multiline && this.extends) {
+                this.gameObject.x = this.x - (this.gameObject.width - this.lineWidth)
+            } else {
+                this.gameObject.x = this.x
+            }
         } else if (event.key == 'Enter') {
             if (this.shift.isDown && this.multiline) {
                 this.text += '\n'
@@ -340,7 +366,7 @@ export default class InputText extends EventComponent {
             if (this.entercallback) {
                 this.entercallback()
                 this.isSelected = false
-                this.gameObject.scene.shell.isInputActive = false
+                this.gameObject.scene.interface.isInputActive = false
                 this.indicator.visible = false
                 return
             }

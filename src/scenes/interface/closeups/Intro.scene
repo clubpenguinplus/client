@@ -5,7 +5,8 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BaseScene",
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [],
         "createMethodName": "_create",
         "sceneKey": "Intro",
@@ -54,7 +55,7 @@
                 "Button"
             ],
             "Button.spriteName": "button",
-            "Button.callback": "() => this.scene.stop()",
+            "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "banning",
                 "frame": "button"

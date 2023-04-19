@@ -211,14 +211,17 @@ export default class FindFour extends BaseContainer {
     showWaddle(waddle, seat) {
         this.activeWaddleId = waddle
 
-        this.seat = seat
+        this.seat = parseInt(seat)
 
         this.enterSeat(waddle, seat)
 
-        this.items.map((item) => item.hideItem())
+        this.items.forEach((item) => {
+            item.setItem(null)
+        })
 
-        for (let [index, username] of this.activeWaddle.entries()) {
-            this.items[index].setItem(username, this.seat)
+        for (let index in this.activeWaddle.seats) {
+            let username = this.activeWaddle.seats[index]
+            this.items[index].setItem(username, index)
         }
 
         this.visible = true
@@ -228,18 +231,21 @@ export default class FindFour extends BaseContainer {
         let sprite = this.getSeat(waddle, seat)
         sprite.visible = username != null
 
-        this.shell.room.waddles[waddle][seat] = username
+        this.shell.room.waddles[waddle].seats[seat] = username
 
         if (waddle == this.activeWaddleId) {
-            this.items[seat].setItem(username)
+            this.items[seat].setItem(username, seat)
         }
     }
 
     init(users, turn) {
         users = users.split(',')
         for (var x in users) {
-            let username = this.shell.room.penguins[users[x]][1]
+            let username = this.shell.room.penguins[users[x]].username
             this.items[x].setItem(username, x)
+            if (users[x] == this.shell.client.id) {
+                this.seat = parseInt(x)
+            }
         }
         this.map = [
             [0, 0, 0, 0, 0, 0],
@@ -300,7 +306,7 @@ export default class FindFour extends BaseContainer {
 
     placeCounter(row, column, player) {
         if (this.map[column][row] !== 0) return
-        this.map[column][row] = this.scene.add.image(this.xcoords[column], this.ycoords[row], 'four', 'counter_' + player.toString())
+        this.map[column][row] = this.scene.add.image(this.xcoords[column], this.ycoords[row], 'four', `counter_${player}`)
         this.counters.add(this.map[column][row])
     }
 

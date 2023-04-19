@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {Animation, Button, MoveTo, ShowHint, SimpleButton, Seat} from '@components/components'
+import {Animation, Button, MoveTo, ShowHint, SimpleButton, Seat, WaddleSeat} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -20,6 +20,14 @@ export default class Attic extends RoomScene {
         this.boxdimension_flaps
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
         this.sort
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats107
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats108
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats109
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats110
 
         /* START-USER-CTR-CODE */
 
@@ -28,6 +36,7 @@ export default class Attic extends RoomScene {
             boxdimension: () => this.triggerRoom(811, 1180, 260),
         }
         this.music = 884
+        this.waddles = {}
         this.loadSfx = ['attic-HorseNeigh', 'attic-BoxOpen', 'attic-BoxClose', 'attic-BoxLoop']
 
         /* END-USER-CTR-CODE */
@@ -146,18 +155,18 @@ export default class Attic extends RoomScene {
         rightstairhandle.setOrigin(0.46612723328631056, 0.3797219652131449)
 
         // findfourtable
-        const findfourtable = this.add.image(254, 593, 'attic', 'findfourtable')
+        const findfourtable = this.add.image(248, 626, 'attic', 'findfourtable')
 
         // findfourtable_1
-        const findfourtable_1 = this.add.image(369, 688, 'attic', 'findfourtable')
-
-        // findfourtable_2
-        const findfourtable_2 = this.add.image(560, 682, 'attic', 'findfourtable')
-        findfourtable_2.flipX = true
+        const findfourtable_1 = this.add.image(360, 698, 'attic', 'findfourtable')
 
         // findfourtable_3
-        const findfourtable_3 = this.add.image(683, 623, 'attic', 'findfourtable')
+        const findfourtable_3 = this.add.image(679, 633, 'attic', 'findfourtable')
         findfourtable_3.flipX = true
+
+        // findfourtable_2
+        const findfourtable_2 = this.add.image(577, 704, 'attic', 'findfourtable')
+        findfourtable_2.flipX = true
 
         // leftsoda
         const leftsoda = this.add.image(1127.0949891243745, 676.4124909369787, 'attic', 'leftsoda')
@@ -199,8 +208,44 @@ export default class Attic extends RoomScene {
         // ellipse_7
         const ellipse_7 = this.add.ellipse(1168, 609, 50, 40)
 
+        // ellipse_8
+        const ellipse_8 = this.add.ellipse(580, 605, 50, 50)
+        ellipse_8.visible = false
+
+        // ellipse_9
+        const ellipse_9 = this.add.ellipse(796, 744, 50, 50)
+        ellipse_9.visible = false
+
+        // ellipse_10
+        const ellipse_10 = this.add.ellipse(697, 806, 50, 50)
+        ellipse_10.visible = false
+
+        // ellipse_11
+        const ellipse_11 = this.add.ellipse(505, 673, 50, 50)
+        ellipse_11.visible = false
+
+        // ellipse_12
+        const ellipse_12 = this.add.ellipse(404, 665, 50, 50)
+        ellipse_12.visible = false
+
+        // ellipse_13
+        const ellipse_13 = this.add.ellipse(220, 758, 50, 50)
+        ellipse_13.visible = false
+
+        // ellipse_14
+        const ellipse_14 = this.add.ellipse(309, 613, 50, 50)
+        ellipse_14.visible = false
+
+        // ellipse_15
+        const ellipse_15 = this.add.ellipse(131, 679, 50, 50)
+        ellipse_15.visible = false
+
         // lists
         const sort = [horse, fg_left, fg_right, plantable, brownchair, frontpizzabox, boxdimension, circlestoolmirror, leftstairhandle, rightstairhandle, rug, lamp, leftbluechair, findfourtable, leftsoda, book, apple, rightsoda, boxdimension_anim, boxdimension_flaps, squarestool, circlestool, chairback]
+        const seats107 = [ellipse_8, ellipse_9]
+        const seats108 = [ellipse_11, ellipse_10]
+        const seats109 = [ellipse_12, ellipse_13]
+        const seats110 = [ellipse_14, ellipse_15]
 
         // horse (components)
         const horseSimpleButton = new SimpleButton(horse)
@@ -217,22 +262,34 @@ export default class Attic extends RoomScene {
         // findfourtable (components)
         const findfourtableButton = new Button(findfourtable)
         findfourtableButton.spriteName = 'findfourtable'
+        findfourtableButton.callback = () => this.triggerWaddle(110)
         findfourtableButton.activeFrame = false
+        const findfourtableShowHint = new ShowHint(findfourtable)
+        findfourtableShowHint.text = 'four'
 
         // findfourtable_1 (components)
         const findfourtable_1Button = new Button(findfourtable_1)
         findfourtable_1Button.spriteName = 'findfourtable'
+        findfourtable_1Button.callback = () => this.triggerWaddle(109)
         findfourtable_1Button.activeFrame = false
-
-        // findfourtable_2 (components)
-        const findfourtable_2Button = new Button(findfourtable_2)
-        findfourtable_2Button.spriteName = 'findfourtable'
-        findfourtable_2Button.activeFrame = false
+        const findfourtable_1ShowHint = new ShowHint(findfourtable_1)
+        findfourtable_1ShowHint.text = 'four'
 
         // findfourtable_3 (components)
         const findfourtable_3Button = new Button(findfourtable_3)
         findfourtable_3Button.spriteName = 'findfourtable'
+        findfourtable_3Button.callback = () => this.triggerWaddle(107)
         findfourtable_3Button.activeFrame = false
+        const findfourtable_3ShowHint = new ShowHint(findfourtable_3)
+        findfourtable_3ShowHint.text = 'four'
+
+        // findfourtable_2 (components)
+        const findfourtable_2Button = new Button(findfourtable_2)
+        findfourtable_2Button.spriteName = 'findfourtable'
+        findfourtable_2Button.callback = () => this.triggerWaddle(108)
+        findfourtable_2Button.activeFrame = false
+        const findfourtable_2ShowHint = new ShowHint(findfourtable_2)
+        findfourtable_2ShowHint.text = 'four'
 
         // ellipse_1 (components)
         const ellipse_1Seat = new Seat(ellipse_1)
@@ -266,12 +323,48 @@ export default class Attic extends RoomScene {
         const ellipse_7Seat = new Seat(ellipse_7)
         ellipse_7Seat.direction = 'southeast'
 
+        // ellipse_8 (components)
+        const ellipse_8WaddleSeat = new WaddleSeat(ellipse_8)
+        ellipse_8WaddleSeat.sitdirection = 'southeast'
+
+        // ellipse_9 (components)
+        const ellipse_9WaddleSeat = new WaddleSeat(ellipse_9)
+        ellipse_9WaddleSeat.sitdirection = 'northwest'
+
+        // ellipse_10 (components)
+        const ellipse_10WaddleSeat = new WaddleSeat(ellipse_10)
+        ellipse_10WaddleSeat.sitdirection = 'northwest'
+
+        // ellipse_11 (components)
+        const ellipse_11WaddleSeat = new WaddleSeat(ellipse_11)
+        ellipse_11WaddleSeat.sitdirection = 'southeast'
+
+        // ellipse_12 (components)
+        const ellipse_12WaddleSeat = new WaddleSeat(ellipse_12)
+        ellipse_12WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse_13 (components)
+        const ellipse_13WaddleSeat = new WaddleSeat(ellipse_13)
+        ellipse_13WaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_14 (components)
+        const ellipse_14WaddleSeat = new WaddleSeat(ellipse_14)
+        ellipse_14WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse_15 (components)
+        const ellipse_15WaddleSeat = new WaddleSeat(ellipse_15)
+        ellipse_15WaddleSeat.sitdirection = 'northeast'
+
         this.horse = horse
         this.boxdimension = boxdimension
         this.boxdimension_btn = boxdimension_btn
         this.boxdimension_anim = boxdimension_anim
         this.boxdimension_flaps = boxdimension_flaps
         this.sort = sort
+        this.seats107 = seats107
+        this.seats108 = seats108
+        this.seats109 = seats109
+        this.seats110 = seats110
 
         this.events.emit('scene-awake')
     }
@@ -302,6 +395,17 @@ export default class Attic extends RoomScene {
         this.boxdimension_flaps.visible = false
         this.shell.musicController.stopSfx('attic-BoxLoop')
         this.shell.musicController.addSfx('attic-BoxClose')
+    }
+
+    triggerWaddle(id) {
+        if (this.shell.client.activeSeat) {
+            return
+        }
+        let text = 'Would you like to join this\nFind Four Game?'
+        this.interface.prompt.showWindow(text, 'dual', () => {
+            this.airtower.sendXt('a#jt', id)
+            this.interface.prompt.window.visible = false
+        })
     }
     /* END-USER-CODE */
 }

@@ -1,6 +1,6 @@
 import BaseLoader from './BaseLoader'
 
-export default class PaperDollLoader extends BaseLoader {
+export default class PaperDollPuffleLoader extends BaseLoader {
     constructor(scene, paperDoll) {
         super(scene)
 
@@ -10,7 +10,7 @@ export default class PaperDollLoader extends BaseLoader {
 
         let suffix = '/client/media/puffles/paper/'
         this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
-        this.keyPrefix = 'puffles_paper/'
+        this.keyPrefix = 'puffles/paper/'
     }
 
     loadPuffle(puffle) {

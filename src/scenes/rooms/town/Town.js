@@ -203,24 +203,24 @@ export default class Town extends RoomScene {
     create() {
         super.create()
 
-        this.main_lights.play('town_lights')
-        this.coloured_lights.play('town_disco_lights')
+        this.main_lights.play('town-lights')
+        this.coloured_lights.play('town-disco_lights')
     }
 
     DiscoDoorOver() {
-        this.dc_door.play('town_danceclubdoor')
+        this.dc_door.play('town-danceclubdoor')
         this.shell.musicController.addSfx('town-DoorDiscoOpen')
         this.stars_anim.visible = true
-        this.stars_anim.play('town_starsanim')
+        this.stars_anim.play('town-starsanim')
     }
 
     DiscoDoorOut() {
         if (this.dc_door.anims.isPlaying) {
             this.dc_door.anims.reverse()
         } else {
-            this.dc_door.playReverse('town_danceclubdoor')
+            this.dc_door.playReverse('town-danceclubdoor')
         }
-        this.stars_anim.stop('town_starsanim')
+        this.stars_anim.stop('town-starsanim')
         this.shell.musicController.addSfx('town-DoorDiscoClose')
         this.stars_anim.visible = false
     }
