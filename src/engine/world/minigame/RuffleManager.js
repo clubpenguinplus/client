@@ -154,8 +154,9 @@ export default class RuffleManager {
 
         if (this.volumeInterval) clearInterval(this.volumeInterval)
         this.volumeInterval = setInterval(() => {
-            if (ruffleplayer.volume == parseFloat(localStorage.musicVolume || 0.5)) return clearInterval(this.volumeInterval)
-            ruffleplayer.volume = parseFloat(localStorage.musicVolume || 0.5)
+            let volume = this.shell.muteAll ? 0 : parseFloat(localStorage.musicVolume || 0.5)
+            if (ruffleplayer.volume == volume) return clearInterval(this.volumeInterval)
+            ruffleplayer.volume = volume
         }, 200)
 
         this.swf = {}

@@ -399,35 +399,35 @@ export default class HotelSpa extends RoomScene {
     }
 
     startTreadmill1() {
-        this.treadmillAnim1.play('hotelspa-treadmill-anim')
+        //this.treadmillAnim1.play('hotelspa-treadmill-anim')
     }
 
     stopTreadmill1() {
-        this.treadmillAnim1.anims.stopAfterRepeat(0)
+        //this.treadmillAnim1.anims.stopAfterRepeat(0)
     }
 
     startTreadmill2() {
-        this.treadmillAnim2.play('hotelspa-treadmill-anim')
+        //this.treadmillAnim2.play('hotelspa-treadmill-anim')
     }
 
     stopTreadmill2() {
-        this.treadmillAnim2.anims.stopAfterRepeat(0)
+        //this.treadmillAnim2.anims.stopAfterRepeat(0)
     }
 
     startMat1() {
-        this.dumbell1.play('hotelspa-dumbell')
+        //this.dumbell1.play('hotelspa-dumbell')
     }
 
     stopMat1() {
-        this.dumbell1.anims.stopAfterRepeat(0)
+        //this.dumbell1.anims.stopAfterRepeat(0)
     }
 
     startMat2() {
-        this.dumbell2.play('hotelspa-dumbell')
+        //this.dumbell2.play('hotelspa-dumbell')
     }
 
     stopMat2() {
-        this.dumbell2.anims.stopAfterRepeat(0)
+        //this.dumbell2.anims.stopAfterRepeat(0)
     }
 
     startMat3() {}
@@ -439,19 +439,19 @@ export default class HotelSpa extends RoomScene {
     stopMat4() {}
 
     startGrooming1() {
-        this.groomAnim1.play('hotelspa-groom-anim')
+        //this.groomAnim1.play('hotelspa-groom-anim')
     }
 
     startGrooming2() {
-        this.groomAnim2.play('hotelspa-groom-anim')
+        //this.groomAnim2.play('hotelspa-groom-anim')
     }
 
     startWashChair1() {
-        this.washAnim1.play('hotelspa-wash-anim')
+        //this.washAnim1.play('hotelspa-wash-anim')
     }
 
     startWashChair2() {
-        this.washAnim2.play('hotelspa-wash-anim')
+        //this.washAnim2.play('hotelspa-wash-anim')
     }
 
     /* END-USER-CODE */

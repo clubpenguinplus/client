@@ -14,7 +14,728 @@
         "borderWidth": 1520,
         "borderHeight": 960
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "64a13785-22af-4552-8f9e-8b4fb8b88512",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "bg"
+            },
+            "x": 712,
+            "y": 450,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "8d2d9a97-3ef0-46c0-99f6-6b435cec2138",
+            "label": "sleepchair_right",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "sleepchair-right",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "hotelroof",
+                "frame": "sleepchair-right"
+            },
+            "x": 1070.4922243102844,
+            "y": 313.0867004394531,
+            "originX": 0.4014761232717728,
+            "originY": 0.6983246586816024,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "70d17655-6d0f-4a84-b7ee-2995b910bf9b",
+            "label": "drinkstable",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "drinkstable"
+            },
+            "x": 978,
+            "y": 322,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "2a9ec042-8c27-463d-8440-c25edae2ebad",
+            "label": "sleepchair_left",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "sleepchair-left",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "hotelroof",
+                "frame": "sleepchair-left"
+            },
+            "x": 829.3671875,
+            "y": 314.1775027508942,
+            "originX": 0.3493676997156399,
+            "originY": 0.7041577368781204,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "de79e1b1-5615-40b2-b28a-b73f84731316",
+            "label": "toweldesk",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "toweldesk"
+            },
+            "x": 1230,
+            "y": 395,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "02a85515-1afe-495b-8823-45a64953a709",
+            "label": "ladder_back",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "ladder-back"
+            },
+            "x": 770.7037166476752,
+            "y": 546.6346901368398,
+            "originX": 0.2940918648532756,
+            "originY": 0.2734693243532173,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "10a43bbe-fe90-4ab2-a306-afccb72c31ad",
+            "label": "ladder_front",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "ladder-front"
+            },
+            "x": 813.5378761402483,
+            "y": 588.2272568414896,
+            "originX": 0.569370120397025,
+            "originY": 0.9614621052497746,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "ea276a5e-c12c-4799-bd35-9da0e00bcf49",
+            "label": "feedchair",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "feedchair",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "hotelroof",
+                "frame": "feedchair"
+            },
+            "x": 231.55581070251378,
+            "y": 382.20545493927045,
+            "originX": 0.31868562393329686,
+            "originY": 0.774425371187432,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "c3e93928-3e69-4e02-aab0-4fb29ebbbfb7",
+            "label": "feedchair_1",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "feedchair",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "hotelroof",
+                "frame": "feedchair"
+            },
+            "x": 399.0962904586799,
+            "y": 383.5417679611202,
+            "originX": 0.2964990004571579,
+            "originY": 0.7937337242331308,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "ef9c6581-cdd7-4a78-b486-4d51c2203875",
+            "label": "divider",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "divider"
+            },
+            "x": 367.33696995295435,
+            "y": 425.96751755777086,
+            "originX": 0.49409527705754847,
+            "originY": 0.28420273756699016,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "e72a2c6a-08ad-44c9-9800-8198c3b96c67",
+            "label": "foodbowl_right",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "foodbowl0001"
+            },
+            "x": 300,
+            "y": 415,
+            "originX": 0.8353862218532409,
+            "originY": 0.8559030514062657,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "f6598b8e-e68d-4220-a6f1-235bd540d564",
+            "label": "foodbowl_left",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "foodbowl0001"
+            },
+            "x": 473,
+            "y": 416,
+            "originX": 0.8353862218532409,
+            "originY": 0.8559030514062657,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "4e0ec57f-f8ef-47de-b99d-aceb59e89370",
+            "label": "dividerwindow",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "dividerwindow"
+            },
+            "x": 357.33696995295435,
+            "y": 434.4455742728648,
+            "originX": 0.493906109732161,
+            "originY": 0.7970302744781693,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "a955fab8-8b11-4a9f-b37c-49bc52bbb8f1",
+            "label": "elevator_back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "elevator-back0001"
+            },
+            "x": -4.934295093738896,
+            "y": 57.35900137998897,
+            "originX": -0.026390764930602016,
+            "originY": -0.7237233263511926,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "ab207a70-84a2-4965-bcbf-b68d9ea9a471",
+            "label": "elevator_anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "elevator-anim0001"
+            },
+            "x": 21.804430978085364,
+            "y": 143.29889137288512,
+            "originX": 0.17451333030640434,
+            "originY": -0.4498582959374953,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "db770f09-16fa-49e5-8f56-043f5f45eedd",
+            "label": "elevator_front",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "elevator-front"
+            },
+            "x": 8.204388428424352,
+            "y": 218.93074619995332,
+            "originX": 0.36353813984765443,
+            "originY": 0.05129783256679304,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "d64eb1aa-fce3-4890-addc-66b2352262d9",
+            "label": "stools",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "stools"
+            },
+            "x": 308.5250810531606,
+            "y": 447.9836994720519,
+            "originX": 0.5440153696875796,
+            "originY": -0.3613373450922989,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "369894cf-e8c7-4987-b7f2-503ca3aca43a",
+            "label": "divingboard",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "divingboard"
+            },
+            "x": 740.8805808094054,
+            "y": 425.0357895648505,
+            "originX": 0.3875328282906199,
+            "originY": 0.14795990061762399,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "e5a401ba-8ed1-4fb4-9ae9-af6a3655ff86",
+            "label": "towelwall",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "towelwall"
+            },
+            "x": 611,
+            "y": 564,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "fc3fe8f9-8ec9-47f8-81d0-08492b47bee0",
+            "label": "tilldesk",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "tilldesk"
+            },
+            "x": 196.1980995164423,
+            "y": 621.3704733930954,
+            "originX": 0.6053712352592535,
+            "originY": 0.33026803571586344,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "15bea67e-05c4-48e6-931b-aae5d846ae0b",
+            "label": "cannon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "cannon0001"
+            },
+            "x": 1422,
+            "y": 449,
+            "originX": 0.8161942895956682,
+            "originY": 0.7892841372896537,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "9d292ad4-9c0e-4409-b7f6-ab4f7abb8830",
+            "label": "railing",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "railing"
+            },
+            "x": 1549,
+            "y": 649,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "f7ca8a0c-0e23-41d0-acfb-0ad07cc59cc8",
+            "label": "bush",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "bush"
+            },
+            "x": -57,
+            "y": 751,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "cd5b9863-35fc-4565-ba94-7f007f1d2a37",
+            "label": "jug",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "jug"
+            },
+            "x": 267,
+            "y": 798,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "6feaa3fb-4955-4455-9026-76527ac3d5c4",
+            "label": "backspeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "backspeaker"
+            },
+            "x": 1245,
+            "y": 636,
+            "originX": 0.5744723937513586,
+            "originY": 0.6115979781059379,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "c0b7b53f-a5d9-4e9e-8056-780e6db39e4a",
+            "label": "dj_anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "dj-anim0001"
+            },
+            "x": 1282,
+            "y": 716,
+            "originX": 0.569577834838778,
+            "originY": 0.32820287694128913,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "5b9050fe-bb95-4ba7-b483-7407039be0b7",
+            "label": "frontspeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "frontspeaker"
+            },
+            "x": 1377,
+            "y": 833,
+            "originX": 0.46433295389567075,
+            "originY": 0.7494921685278011,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "24e38828-a863-4296-885c-830b0de95a0e",
+            "label": "backspeaker_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "backspeaker-hover"
+            },
+            "x": 1245,
+            "y": 636,
+            "originX": 0.5744723937513586,
+            "originY": 0.6115979781059379,
+            "visible": false,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "206a92dd-b05c-4806-9d4f-3c89913e1195",
+            "label": "dj_anim_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "dj-anim-hover0001"
+            },
+            "x": 1282,
+            "y": 716,
+            "originX": 0.569577834838778,
+            "originY": 0.32820287694128913,
+            "visible": false,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "4ed08eaa-69dd-4c88-b858-3b9daea21c9e",
+            "label": "frontspeaker_hover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "frontspeaker-hover"
+            },
+            "x": 1377,
+            "y": 833,
+            "originX": 0.46433295389567075,
+            "originY": 0.7494921685278011,
+            "visible": false,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "bba24734-7f00-480e-b4cd-b7888ba0c278",
+            "label": "pods",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "pods"
+            },
+            "x": 767,
+            "y": 767.1837773379076,
+            "originY": 0.20189538096723247,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "04574fe1-ad0f-4996-a026-cebdaee5a3b0",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "hotelroof",
+                "frame": "fg"
+            },
+            "x": 739,
+            "y": 1217.4565266156692,
+            "originY": 1.7443254654987839,
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "4e6bf28a-27f3-4d44-8771-80b2451a078a",
+            "label": "leftTable",
+            "components": [],
+            "x": 532.7559359065733,
+            "y": 830.1118683992743,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1b785539-34dd-4c45-ad1d-194f7ad6759d",
+                    "label": "table_left",
+                    "components": [],
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "table-left"
+                    },
+                    "x": 0.9864370905071524,
+                    "y": -3.5082981475068493,
+                    "originX": 0.5075427402471016,
+                    "originY": 0.6747023774641356,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "20c5699d-3905-4180-886b-b2bd011e2a3e",
+                    "label": "plate1",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onPlateClick(1)",
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "plate0001"
+                    },
+                    "x": -55.75593590657331,
+                    "y": -41.11186839927427,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "b9e9f407-03de-485b-97bf-08fe19dc04e6",
+                    "label": "plate2",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onPlateClick(2)",
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "plate0001"
+                    },
+                    "x": 51.24406409342669,
+                    "y": -20.11186839927427,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "a965ac0a-0561-44c6-b1f5-defa9149f4b0",
+                    "label": "glass",
+                    "components": [],
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "glass"
+                    },
+                    "x": -25.755935906573313,
+                    "y": -11.111868399274272,
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3faab00c-a1c1-4e69-b2fa-2be0e1b4707a",
+            "label": "rightTable",
+            "components": [],
+            "x": 997.5985107421875,
+            "y": 830.2070634876986,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "506b8a78-beed-4ac3-89a9-636cb5f1d744",
+                    "label": "table_right",
+                    "components": [],
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "table-right"
+                    },
+                    "x": -3.598514027768374,
+                    "y": -59.20703603397203,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "703457eb-2ad5-45fe-8cb2-275194968548",
+                    "label": "plate3",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onPlateClick(3)",
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "plate0001"
+                    },
+                    "x": -51.598514027768374,
+                    "y": -16.20703603397203,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "d6587fd6-160a-4b8a-9f5f-f78c837341f4",
+                    "label": "plate4",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.onPlateClick(4)",
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "plate0001"
+                    },
+                    "x": 53.401485972231626,
+                    "y": -45.20703603397203,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "37a299d0-5d65-4e4c-b9af-d7fe1b141aee",
+                    "label": "glass_1",
+                    "components": [],
+                    "texture": {
+                        "key": "hotelroof",
+                        "frame": "glass"
+                    },
+                    "x": 20.401485972231626,
+                    "y": -5.207036033972031,
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "49d01bdd-54ad-47f7-b205-6b8a96860640",
+            "label": "interfaceBtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "interface",
+            "Button.callback": "() => this.interface.loadExternal('RainbowQuest')",
+            "texture": {
+                "key": "hotelroof",
+                "frame": "interface"
+            },
+            "x": 1426,
+            "y": 1541.9130682216623,
+            "originY": 5.405167052401001,
+            "list": []
+        },
+        {
+            "type": "Rectangle",
+            "id": "b2c8de8c-30f4-4558-8928-36969d1f4c03",
+            "label": "eleBtn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onElevatorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onElevatorOut()",
+            "x": 119.42841286592164,
+            "y": 574.4329263558656,
+            "scaleX": 1.1902533898394643,
+            "scaleY": 2.403456683271527,
+            "originX": 0.8309984102048913,
+            "originY": 0.9207251756332915,
+            "width": 128,
+            "height": 128,
+            "list": []
+        },
+        {
+            "type": "Rectangle",
+            "id": "c48866cc-131b-4ecf-8e15-aadc6c9f6e57",
+            "label": "djBtn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDjOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDjOut()",
+            "x": 1344.8417687190517,
+            "y": 707.3125609624908,
+            "scaleX": 1.1902533898394643,
+            "scaleY": 2.403456683271527,
+            "angle": -29.000000000000004,
+            "originX": 0.8202034721941791,
+            "originY": 0.581627056849916,
+            "width": 128,
+            "height": 128,
+            "list": []
+        },
+        {
+            "type": "Rectangle",
+            "id": "4bf8154a-b1b5-48e4-8812-1425fa4421ef",
+            "label": "cannonBtn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCannonOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCannonOut()",
+            "x": 1420.5037652447522,
+            "y": 524.4359908392105,
+            "scaleX": 1.4938766717667982,
+            "scaleY": 1.6560023371223849,
+            "originX": 0.4817158041856988,
+            "originY": 0.7804003854168151,
+            "width": 128,
+            "height": 128,
+            "list": []
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
@@ -25,7 +746,38 @@
     "lists": [
         {
             "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
-            "label": "sort"
+            "label": "sort",
+            "objectIds": [
+                "02a85515-1afe-495b-8823-45a64953a709",
+                "49d01bdd-54ad-47f7-b205-6b8a96860640",
+                "04574fe1-ad0f-4996-a026-cebdaee5a3b0",
+                "37a299d0-5d65-4e4c-b9af-d7fe1b141aee",
+                "a965ac0a-0561-44c6-b1f5-defa9149f4b0",
+                "bba24734-7f00-480e-b4cd-b7888ba0c278",
+                "5b9050fe-bb95-4ba7-b483-7407039be0b7",
+                "c0b7b53f-a5d9-4e9e-8056-780e6db39e4a",
+                "6feaa3fb-4955-4455-9026-76527ac3d5c4",
+                "cd5b9863-35fc-4565-ba94-7f007f1d2a37",
+                "f7ca8a0c-0e23-41d0-acfb-0ad07cc59cc8",
+                "9d292ad4-9c0e-4409-b7f6-ab4f7abb8830",
+                "15bea67e-05c4-48e6-931b-aae5d846ae0b",
+                "fc3fe8f9-8ec9-47f8-81d0-08492b47bee0",
+                "e5a401ba-8ed1-4fb4-9ae9-af6a3655ff86",
+                "369894cf-e8c7-4987-b7f2-503ca3aca43a",
+                "4e0ec57f-f8ef-47de-b99d-aceb59e89370",
+                "f6598b8e-e68d-4220-a6f1-235bd540d564",
+                "e72a2c6a-08ad-44c9-9800-8198c3b96c67",
+                "ef9c6581-cdd7-4a78-b486-4d51c2203875",
+                "c3e93928-3e69-4e02-aab0-4fb29ebbbfb7",
+                "ea276a5e-c12c-4799-bd35-9da0e00bcf49",
+                "10a43bbe-fe90-4ab2-a306-afccb72c31ad",
+                "3faab00c-a1c1-4e69-b2fa-2be0e1b4707a",
+                "4e6bf28a-27f3-4d44-8771-80b2451a078a",
+                "d64eb1aa-fce3-4890-addc-66b2352262d9",
+                "db770f09-16fa-49e5-8f56-043f5f45eedd",
+                "ab207a70-84a2-4965-bcbf-b68d9ea9a471",
+                "a955fab8-8b11-4a9f-b37c-49bc52bbb8f1"
+            ]
         }
     ]
 }
