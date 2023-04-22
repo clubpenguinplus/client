@@ -178,7 +178,7 @@ export default class Penguin extends BaseContainer {
 
     removePuffle() {
         this.puffle = null
-        this.puffleSprite.destroy()
+        if (this.puffleSprite) this.puffleSprite.destroy()
         this.puffleSprite = null
     }
 
@@ -414,6 +414,7 @@ export default class Penguin extends BaseContainer {
 
         let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
         pAnimSprite.depth = this.puffleSprite.depth
+        pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
         this.puffleSprite.visible = false
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
         pAnimSprite.on('animationcomplete', () => {
