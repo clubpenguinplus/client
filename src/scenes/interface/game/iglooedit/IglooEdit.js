@@ -13,38 +13,38 @@ export default class IglooEdit extends BaseScene {
     constructor() {
         super('IglooEdit')
 
-        /** @type {Phaser.GameObjects.Container} */
-        this.defaultControls
         /** @type {Phaser.GameObjects.Image} */
         this.button_backyard
         /** @type {Phaser.GameObjects.Container} */
-        this.controls
+        this.defaultControls
         /** @type {Phaser.GameObjects.Image} */
         this.button_box
-        /** @type {Phaser.GameObjects.Container} */
-        this.lower
         /** @type {Phaser.GameObjects.Text} */
         this.music
         /** @type {Phaser.GameObjects.Text} */
         this.hide
         /** @type {Phaser.GameObjects.Container} */
-        this.upper
+        this.lower
         /** @type {Phaser.GameObjects.Container} */
         this.itemContainer
-        /** @type {Phaser.GameObjects.Container} */
-        this.scrollBarContainer
-        /** @type {Phaser.GameObjects.Container} */
-        this.scroller
         /** @type {NinePatchContainer} */
         this.scrollbar
         /** @type {Phaser.GameObjects.Container} */
-        this.chooseIgloo
+        this.scroller
+        /** @type {Phaser.GameObjects.Container} */
+        this.scrollBarContainer
+        /** @type {Phaser.GameObjects.Container} */
+        this.upper
+        /** @type {Phaser.GameObjects.Container} */
+        this.controls
         /** @type {Phaser.GameObjects.Image} */
         this.toggler
         /** @type {Phaser.GameObjects.Text} */
         this.grandTotalLikes
         /** @type {Phaser.GameObjects.Text} */
         this.currentIglooLikes
+        /** @type {Phaser.GameObjects.Container} */
+        this.chooseIgloo
         /** @type {Phaser.GameObjects.Image[]} */
         this.categories
         /** @type {Phaser.GameObjects.Sprite[]} */
@@ -456,6 +456,7 @@ export default class IglooEdit extends BaseScene {
         // button_backyard (components)
         const button_backyardButton = new Button(button_backyard)
         button_backyardButton.spriteName = 'backyard'
+        button_backyardButton.callback = () => this.shell.room.joinBackyard()
         const button_backyardShowHint = new ShowHint(button_backyard)
         button_backyardShowHint.text = 'backyard'
 
@@ -541,22 +542,22 @@ export default class IglooEdit extends BaseScene {
         close_btn_1Button.spriteName = 'close-btn'
         close_btn_1Button.callback = () => this.closeChooseIgloo()
 
-        this.defaultControls = defaultControls
         this.button_backyard = button_backyard
-        this.controls = controls
+        this.defaultControls = defaultControls
         this.button_box = button_box
-        this.lower = lower
         this.music = music
         this.hide = hide
-        this.upper = upper
+        this.lower = lower
         this.itemContainer = itemContainer
-        this.scrollBarContainer = scrollBarContainer
-        this.scroller = scroller
         this.scrollbar = scrollbar
-        this.chooseIgloo = chooseIgloo
+        this.scroller = scroller
+        this.scrollBarContainer = scrollBarContainer
+        this.upper = upper
+        this.controls = controls
         this.toggler = toggler
         this.grandTotalLikes = grandTotalLikes
         this.currentIglooLikes = currentIglooLikes
+        this.chooseIgloo = chooseIgloo
         this.categories = categories
         this.spinners = spinners
         this.likesText = likesText

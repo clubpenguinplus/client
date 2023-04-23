@@ -11,6 +11,8 @@ export default class Penguin extends BaseContainer {
     constructor(user, room, penguinLoader, puffleLoader) {
         super(room, user.x, user.y)
 
+        this.userInfo = user
+
         // Assign user attributes
         Object.assign(this, user)
         this.room = room

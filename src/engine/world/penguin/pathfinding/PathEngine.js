@@ -23,14 +23,14 @@ export default class PathEngine {
         let room = penguin.room.isIgloo ? penguin.crumbs.scenes.igloos[penguin.room.args.type] : penguin.crumbs.scenes.rooms[penguin.room.id]
 
         for (let i = 0; i < 25; i++) {
-            let random = this.getRandomPos(room.x, room.y, 80)
+            let random = this.getRandomPos(room ? room.x : 760, room ? room.y : 480, 80)
 
             if (!this.isBlocked(penguin, random.x, random.y)) {
                 return penguin.setPos(random.x, random.y)
             }
         }
 
-        penguin.setPos(room.x, room.y)
+        penguin.setPos(room ? room.x : 760, room ? room.y : 480)
     }
 
     /**

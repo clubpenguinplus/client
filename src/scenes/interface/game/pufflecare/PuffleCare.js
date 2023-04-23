@@ -235,11 +235,9 @@ export default class PuffleCare extends BaseContainer {
         this.name_txt.text = args.name
 
         if (args.id != this.shell.client.penguin.walking) {
-            this.swap_btn.visible = false
             this.walk_btn.visible = true
         } else {
-            this.swap_btn.visible = true
-            this.walk_btn.visible = false
+            this.swap_btn.visible = false
         }
 
         this.x = args.x
@@ -258,7 +256,7 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onWalk() {
-        this.shell.airtower.sendXt('p#pw', this.args.id)
+        this.shell.airtower.sendXt('p#pw', this.args.id != this.shell.client.penguin.walking ? this.args.id : 0)
         this.close()
     }
 
@@ -267,7 +265,7 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onSwap() {
-        this.shell.airtower.sendXt('p#pw', 0)
+        this.shell.airtower.sendXt('p#tby', `${this.args.id}%${this.shell.room.isBackyard ? 0 : 1}`)
         this.close()
     }
     /* END-USER-CODE */
