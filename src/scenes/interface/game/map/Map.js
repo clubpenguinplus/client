@@ -463,7 +463,7 @@ export default class Map extends BaseContainer {
         const places_txt = scene.add.text(-649, -327, '', {})
         places_txt.setOrigin(0.5, 0.5)
         places_txt.text = 'Places'
-        places_txt.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        places_txt.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(places_txt)
 
         // games_btn
@@ -474,7 +474,7 @@ export default class Map extends BaseContainer {
         const games_txt = scene.add.text(-520, -327, '', {})
         games_txt.setOrigin(0.5, 0.5)
         games_txt.text = 'Games'
-        games_txt.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        games_txt.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(games_txt)
 
         // shops_btn
@@ -485,7 +485,7 @@ export default class Map extends BaseContainer {
         const shops_txt = scene.add.text(-393, -327, '', {})
         shops_txt.setOrigin(0.5, 0.5)
         shops_txt.text = 'Shops'
-        shops_txt.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        shops_txt.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(shops_txt)
 
         // pets_btn
@@ -496,7 +496,7 @@ export default class Map extends BaseContainer {
         const shops_txt_1 = scene.add.text(-266, -327, '', {})
         shops_txt_1.setOrigin(0.5, 0.5)
         shops_txt_1.text = 'Pets'
-        shops_txt_1.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        shops_txt_1.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(shops_txt_1)
 
         // iglooMap

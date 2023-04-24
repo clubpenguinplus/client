@@ -25,7 +25,7 @@ export default class DualButtons extends BaseContainer {
         text_2.setStyle({
             align: 'center',
             fixedWidth: 150,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '40px',
             fontStyle: 'bold',
         })
@@ -38,7 +38,7 @@ export default class DualButtons extends BaseContainer {
         text_1.setStyle({
             align: 'center',
             fixedWidth: 150,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '40px',
             fontStyle: 'bold',
         })

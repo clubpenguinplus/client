@@ -79,7 +79,7 @@
                             "text": "Username08",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -206,7 +206,7 @@
                             "text": "Username07",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -332,7 +332,7 @@
                             "text": "Username06",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -457,7 +457,7 @@
                             "text": "Username05",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -582,7 +582,7 @@
                             "text": "Username04",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -707,7 +707,7 @@
                             "text": "Username03",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -833,7 +833,7 @@
                             "text": "Username02",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -959,7 +959,7 @@
                             "text": "Username01",
                             "fixedWidth": 600,
                             "paddingLeft": 20,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "40px"
                         },
                         {
@@ -1102,7 +1102,7 @@
                     "x": -260.00914252404726,
                     "y": 332.9949966411751,
                     "text": "Verify",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "fontStyle": "bold"
                 },
@@ -1158,7 +1158,7 @@
                     "fixedWidth": 600,
                     "paddingLeft": 20,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px"
                 },
                 {
@@ -1174,7 +1174,7 @@
                     "y": 333.9949966411751,
                     "text": "Search",
                     "fixedWidth": 300,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px"
                 }
             ]

@@ -43,7 +43,7 @@ export default class FriendSmall extends BaseContainer {
         const text = scene.add.text(-85, -233, '', {})
         text.setOrigin(0.5, 0.5)
         text.text = 'Friends'
-        text.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 420, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        text.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 420, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         this.add(text)
 
         // x_button
@@ -181,7 +181,7 @@ export default class FriendSmall extends BaseContainer {
         const searchInput = scene.add.text(26, 1, '', {})
         searchInput.setOrigin(0, 0.5)
         searchInput.text = 'Enter Name'
-        searchInput.setStyle({color: '#4c4c4cff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '14px'})
+        searchInput.setStyle({color: '#4c4c4cff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '14px'})
         searchContainer.add(searchInput)
 
         // window_button_small
@@ -199,7 +199,7 @@ export default class FriendSmall extends BaseContainer {
         const nameSearch_1 = scene.add.text(259, 1, '', {})
         nameSearch_1.setOrigin(0.5, 0.5)
         nameSearch_1.text = 'Find'
-        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '12px'})
+        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '12px'})
         searchContainer.add(nameSearch_1)
 
         // searchItem
@@ -221,7 +221,7 @@ export default class FriendSmall extends BaseContainer {
         searchError.setOrigin(0.5, 0.5)
         searchError.visible = false
         searchError.text = 'error'
-        searchError.setStyle({align: 'center', color: '#a0d3e9ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '14px'})
+        searchError.setStyle({align: 'center', color: '#a0d3e9ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '14px'})
         searchError.setWordWrapWidth(200)
         searchContainer.add(searchError)
 

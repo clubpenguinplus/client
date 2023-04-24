@@ -344,7 +344,7 @@
                             "text": "All Items",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         }

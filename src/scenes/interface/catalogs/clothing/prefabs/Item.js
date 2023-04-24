@@ -15,7 +15,7 @@ export default class Item extends BaseContainer {
         this.add(item)
 
         const text = scene.add.text(0, 20, '', {})
-        text.setStyle({fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold'})
+        text.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold'})
         text.setOrigin(0.5, 0.5)
         this.add(text)
 
@@ -23,7 +23,7 @@ export default class Item extends BaseContainer {
         this.add(btn)
 
         const price = scene.add.text(-2, 65, '', {})
-        price.setStyle({fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold', color: '#4b2500ff'})
+        price.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold', color: '#4b2500ff'})
         price.setOrigin(0.5, 0.5)
         this.add(price)
 

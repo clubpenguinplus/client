@@ -38,7 +38,7 @@
             "originY": 0.5,
             "text": "Ultimate safe chat",
             "fixedWidth": 400,
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px"
         },
         {
@@ -67,7 +67,7 @@
             "originY": 0.5,
             "text": "Amount of penguins online",
             "fixedWidth": 400,
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px"
         },
         {
@@ -95,7 +95,7 @@
             "originY": 0.5,
             "text": "Friends online",
             "fixedWidth": 300,
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px"
         },
         {
@@ -141,7 +141,7 @@
             "text": "YOUR SUGGESTED SERVERS",
             "fixedWidth": 1200,
             "align": "center",
-            "fontFamily": "CCComicrazy",
+            "fontFamily": "cpCCComicrazy",
             "fontSize": "40px",
             "fontStyle": "italic",
             "stroke": "#003366",
@@ -210,7 +210,7 @@
                     "text": "PLEASE SELECT A SERVER",
                     "fixedWidth": 1200,
                     "align": "center",
-                    "fontFamily": "CCComicrazy",
+                    "fontFamily": "cpCCComicrazy",
                     "fontSize": "40px",
                     "fontStyle": "italic",
                     "stroke": "#003366",

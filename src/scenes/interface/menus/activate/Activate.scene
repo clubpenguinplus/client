@@ -81,7 +81,7 @@
             "text": "Home",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -100,7 +100,7 @@
             "text": "Create a free account now",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "35px",
             "color": "#ffffffff"
         },
@@ -119,7 +119,7 @@
             "text": "Don't have a penguin?",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -154,7 +154,7 @@
             "text": "Activate",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "38px",
             "color": "#ffffffff"
         },
@@ -173,7 +173,7 @@
             "text": "Activation Key:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -192,7 +192,7 @@
             "text": "Email Address:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -241,7 +241,7 @@
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 },
@@ -258,7 +258,7 @@
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 }
@@ -279,7 +279,7 @@
             "text": "ACTIVATE YOUR ACCOUNT",
             "fixedWidth": 1200,
             "align": "center",
-            "fontFamily": "CCComicrazy",
+            "fontFamily": "cpCCComicrazy",
             "fontSize": "40px",
             "fontStyle": "italic",
             "stroke": "#003366",

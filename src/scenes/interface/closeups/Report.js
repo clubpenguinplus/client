@@ -144,105 +144,105 @@ export default class Report extends Closeup {
         // key1
         const key1 = this.add.text(90, 220, '', {})
         key1.setOrigin(0, 0.5)
-        key1.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key1.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key1.setLineSpacing(5)
         key1.setWordWrapWidth(225)
 
         // resolution1
         const resolution1 = this.add.text(378, 220, '', {})
         resolution1.setOrigin(1, 0.5)
-        resolution1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution1.setLineSpacing(5)
         resolution1.setWordWrapWidth(225)
 
         // title1
         const title1 = this.add.text(233, 280, '', {})
         title1.setOrigin(0.5, 0.5)
-        title1.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title1.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'cpBurbankSmall', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title1.setLineSpacing(-5)
         title1.setWordWrapWidth(285)
 
         // key
         const key = this.add.text(90, 348, '', {})
         key.setOrigin(0, 0.5)
-        key.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key.setLineSpacing(5)
         key.setWordWrapWidth(225)
 
         // resolution
         const resolution = this.add.text(378, 348, '', {})
         resolution.setOrigin(1, 0.5)
-        resolution.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution.setLineSpacing(5)
         resolution.setWordWrapWidth(225)
 
         // title_1
         const title_1 = this.add.text(233, 408, '', {})
         title_1.setOrigin(0.5, 0.5)
-        title_1.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_1.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'cpBurbankSmall', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_1.setLineSpacing(-5)
         title_1.setWordWrapWidth(285)
 
         // key_1
         const key_1 = this.add.text(90, 476, '', {})
         key_1.setOrigin(0, 0.5)
-        key_1.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key_1.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key_1.setLineSpacing(5)
         key_1.setWordWrapWidth(225)
 
         // resolution_1
         const resolution_1 = this.add.text(378, 476, '', {})
         resolution_1.setOrigin(1, 0.5)
-        resolution_1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution_1.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution_1.setLineSpacing(5)
         resolution_1.setWordWrapWidth(225)
 
         // title_2
         const title_2 = this.add.text(233, 536, '', {})
         title_2.setOrigin(0.5, 0.5)
-        title_2.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_2.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'cpBurbankSmall', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_2.setLineSpacing(-5)
         title_2.setWordWrapWidth(285)
 
         // key_2
         const key_2 = this.add.text(90, 604, '', {})
         key_2.setOrigin(0, 0.5)
-        key_2.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key_2.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key_2.setLineSpacing(5)
         key_2.setWordWrapWidth(225)
 
         // resolution_2
         const resolution_2 = this.add.text(378, 604, '', {})
         resolution_2.setOrigin(1, 0.5)
-        resolution_2.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution_2.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution_2.setLineSpacing(5)
         resolution_2.setWordWrapWidth(225)
 
         // title_3
         const title_3 = this.add.text(233, 664, '', {})
         title_3.setOrigin(0.5, 0.5)
-        title_3.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_3.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'cpBurbankSmall', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_3.setLineSpacing(-5)
         title_3.setWordWrapWidth(285)
 
         // key_3
         const key_3 = this.add.text(90, 732, '', {})
         key_3.setOrigin(0, 0.5)
-        key_3.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        key_3.setStyle({color: '#642602ff', fixedWidth: 110, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         key_3.setLineSpacing(5)
         key_3.setWordWrapWidth(225)
 
         // resolution_3
         const resolution_3 = this.add.text(378, 732, '', {})
         resolution_3.setOrigin(1, 0.5)
-        resolution_3.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolution_3.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 162, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolution_3.setLineSpacing(5)
         resolution_3.setWordWrapWidth(225)
 
         // title_4
         const title_4 = this.add.text(233, 792, '', {})
         title_4.setOrigin(0.5, 0.5)
-        title_4.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'Burbank Small', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title_4.setStyle({color: '#642602ff', fixedWidth: 285, fontFamily: 'cpBurbankSmall', fontSize: '24px', maxLines: 3, 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title_4.setLineSpacing(-5)
         title_4.setWordWrapWidth(285)
 
@@ -290,7 +290,7 @@ export default class Report extends Closeup {
         const title = this.add.text(760, 141, '', {})
         title.setOrigin(0.5, 0.5)
         title.text = 'BUGS'
-        title.setStyle({align: 'center', color: '#642602ff', fixedWidth: 265, fontFamily: 'Burbank Small', fontSize: '48px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        title.setStyle({align: 'center', color: '#642602ff', fixedWidth: 265, fontFamily: 'cpBurbankSmall', fontSize: '48px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         title.setLineSpacing(5)
         title.setWordWrapWidth(265)
 
@@ -298,7 +298,7 @@ export default class Report extends Closeup {
         const yours = this.add.text(216.8, 141, '', {})
         yours.setOrigin(0.5, 0.5)
         yours.text = 'Your reports'
-        yours.setStyle({align: 'center', color: '#642602ff', fixedWidth: 225, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        yours.setStyle({align: 'center', color: '#642602ff', fixedWidth: 225, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         yours.setLineSpacing(5)
         yours.setWordWrapWidth(225)
 
@@ -306,7 +306,7 @@ export default class Report extends Closeup {
         const newIssue = this.add.text(488.4, 141, '', {})
         newIssue.setOrigin(0.5, 0.5)
         newIssue.text = 'Report a bug'
-        newIssue.setStyle({align: 'center', color: '#642602ff', fixedWidth: 225, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        newIssue.setStyle({align: 'center', color: '#642602ff', fixedWidth: 225, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         newIssue.setLineSpacing(5)
         newIssue.setWordWrapWidth(225)
 
@@ -314,7 +314,7 @@ export default class Report extends Closeup {
         const selections = this.add.text(1303.2, 141, '', {})
         selections.setOrigin(0.5, 0.5)
         selections.text = 'Bugs\nSuggestions\nPlayer reports'
-        selections.setStyle({align: 'right', color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        selections.setStyle({align: 'right', color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         selections.setPadding({right: 35})
         selections.setLineSpacing(5)
         selections.setWordWrapWidth(550)
@@ -323,7 +323,7 @@ export default class Report extends Closeup {
         const all = this.add.text(1031.6, 141, '', {})
         all.setOrigin(0.5, 0.5)
         all.text = 'All reports'
-        all.setStyle({align: 'center', color: '#642602ff', fixedWidth: 225, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        all.setStyle({align: 'center', color: '#642602ff', fixedWidth: 225, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         all.setLineSpacing(5)
         all.setWordWrapWidth(225)
 
@@ -369,7 +369,7 @@ export default class Report extends Closeup {
         const nextprevpage = this.add.text(238, 857, '', {})
         nextprevpage.setOrigin(0.5, 0.5)
         nextprevpage.text = 'PREVIOUS       NEXT'
-        nextprevpage.setStyle({align: 'center', color: '#642602ff', fixedWidth: 270, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        nextprevpage.setStyle({align: 'center', color: '#642602ff', fixedWidth: 270, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         nextprevpage.setLineSpacing(5)
 
         // rectangle_3
@@ -391,7 +391,7 @@ export default class Report extends Closeup {
         const issueKeyMain = this.add.text(0, 0, '', {})
         issueKeyMain.setOrigin(0, 0.5)
         issueKeyMain.text = 'BUG-110'
-        issueKeyMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '32px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        issueKeyMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '32px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         issueKeyMain.setLineSpacing(5)
         issueKeyMain.setWordWrapWidth(225)
         main.add(issueKeyMain)
@@ -400,7 +400,7 @@ export default class Report extends Closeup {
         const issueTitleMain = this.add.text(0, 62, '', {})
         issueTitleMain.setOrigin(0, 0.5)
         issueTitleMain.text = 'Issue Title'
-        issueTitleMain.setStyle({color: '#642602ff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        issueTitleMain.setStyle({color: '#642602ff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         issueTitleMain.setLineSpacing(5)
         issueTitleMain.setWordWrapWidth(600)
         main.add(issueTitleMain)
@@ -409,7 +409,7 @@ export default class Report extends Closeup {
         const descriptionHeaderMain = this.add.text(0, 119, '', {})
         descriptionHeaderMain.setOrigin(0, 0.5)
         descriptionHeaderMain.text = 'Description'
-        descriptionHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        descriptionHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         descriptionHeaderMain.setLineSpacing(5)
         descriptionHeaderMain.setWordWrapWidth(225)
         main.add(descriptionHeaderMain)
@@ -417,7 +417,7 @@ export default class Report extends Closeup {
         // descriptionBodyMain
         const descriptionBodyMain = this.add.text(0, 152, '', {})
         descriptionBodyMain.text = 'This is a more detailed description of the bug. The user will provide as much detail as possible, including where they found it, and what is meant to happen.'
-        descriptionBodyMain.setStyle({color: '#ffffffff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        descriptionBodyMain.setStyle({color: '#ffffffff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         descriptionBodyMain.setLineSpacing(5)
         descriptionBodyMain.setWordWrapWidth(600)
         main.add(descriptionBodyMain)
@@ -426,7 +426,7 @@ export default class Report extends Closeup {
         const resolutionTextMain = this.add.text(1025, 3, '', {})
         resolutionTextMain.setOrigin(1, 0.5)
         resolutionTextMain.text = 'Unresolved'
-        resolutionTextMain.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 400, fontFamily: 'Burbank Small', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        resolutionTextMain.setStyle({align: 'right', color: '#c60f0fff', fixedWidth: 400, fontFamily: 'cpBurbankSmall', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         resolutionTextMain.setLineSpacing(5)
         resolutionTextMain.setWordWrapWidth(resolutionTextMain.style.wordWrapWidth, true)
         main.add(resolutionTextMain)
@@ -435,7 +435,7 @@ export default class Report extends Closeup {
         const commentsHeaderMain = this.add.text(0, 379, '', {})
         commentsHeaderMain.setOrigin(0, 0.5)
         commentsHeaderMain.text = 'Comments'
-        commentsHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        commentsHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         commentsHeaderMain.setLineSpacing(5)
         commentsHeaderMain.setWordWrapWidth(225)
         main.add(commentsHeaderMain)
@@ -443,7 +443,7 @@ export default class Report extends Closeup {
         // commentsBodyMain
         const commentsBodyMain = this.add.text(0, 417, '', {})
         commentsBodyMain.text = 'Octo says:\nThis is a comment. I will make notes on each report to let the user know we are working on it.\n\nJohn Says:\nOther developers can also make notes on the issue'
-        commentsBodyMain.setStyle({color: '#ffffffff', fixedWidth: 1000, fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        commentsBodyMain.setStyle({color: '#ffffffff', fixedWidth: 1000, fontFamily: 'cpBurbankSmall', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         commentsBodyMain.setLineSpacing(5)
         commentsBodyMain.setWordWrapWidth(1000)
         main.add(commentsBodyMain)
@@ -452,7 +452,7 @@ export default class Report extends Closeup {
         const detailsHeaderMain = this.add.text(680, 81, '', {})
         detailsHeaderMain.setOrigin(0, 0.5)
         detailsHeaderMain.text = 'Details'
-        detailsHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        detailsHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         detailsHeaderMain.setLineSpacing(5)
         detailsHeaderMain.setWordWrapWidth(225)
         main.add(detailsHeaderMain)
@@ -461,7 +461,7 @@ export default class Report extends Closeup {
         const reportVerHeaderMain = this.add.text(680, 136, '', {})
         reportVerHeaderMain.setOrigin(0, 0.5)
         reportVerHeaderMain.text = 'Found in version:'
-        reportVerHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        reportVerHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         reportVerHeaderMain.setLineSpacing(5)
         reportVerHeaderMain.setWordWrapWidth(225)
         main.add(reportVerHeaderMain)
@@ -470,7 +470,7 @@ export default class Report extends Closeup {
         const fixVerHeaderMain = this.add.text(680, 176, '', {})
         fixVerHeaderMain.setOrigin(0, 0.5)
         fixVerHeaderMain.text = 'Fixed in version:'
-        fixVerHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        fixVerHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         fixVerHeaderMain.setLineSpacing(5)
         fixVerHeaderMain.setWordWrapWidth(225)
         main.add(fixVerHeaderMain)
@@ -479,7 +479,7 @@ export default class Report extends Closeup {
         const assigneeHeaderMain = this.add.text(680, 216, '', {})
         assigneeHeaderMain.setOrigin(0, 0.5)
         assigneeHeaderMain.text = 'Assignee:'
-        assigneeHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        assigneeHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         assigneeHeaderMain.setLineSpacing(5)
         assigneeHeaderMain.setWordWrapWidth(225)
         main.add(assigneeHeaderMain)
@@ -488,7 +488,7 @@ export default class Report extends Closeup {
         const reporterHeaderMain = this.add.text(680, 256, '', {})
         reporterHeaderMain.setOrigin(0, 0.5)
         reporterHeaderMain.text = 'Reported by:'
-        reporterHeaderMain.setStyle({color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        reporterHeaderMain.setStyle({color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         reporterHeaderMain.setLineSpacing(5)
         reporterHeaderMain.setWordWrapWidth(225)
         main.add(reporterHeaderMain)
@@ -497,7 +497,7 @@ export default class Report extends Closeup {
         const reportVerBodyMain = this.add.text(1027, 136, '', {})
         reportVerBodyMain.setOrigin(1, 0.5)
         reportVerBodyMain.text = 'v0.1.0'
-        reportVerBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        reportVerBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         reportVerBodyMain.setLineSpacing(5)
         reportVerBodyMain.setWordWrapWidth(225)
         main.add(reportVerBodyMain)
@@ -506,7 +506,7 @@ export default class Report extends Closeup {
         const fixVerBodyMain = this.add.text(1027, 176, '', {})
         fixVerBodyMain.setOrigin(1, 0.5)
         fixVerBodyMain.text = 'v0.1.1'
-        fixVerBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        fixVerBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         fixVerBodyMain.setLineSpacing(5)
         fixVerBodyMain.setWordWrapWidth(225)
         main.add(fixVerBodyMain)
@@ -515,7 +515,7 @@ export default class Report extends Closeup {
         const assigneeBodyMain = this.add.text(1027, 216, '', {})
         assigneeBodyMain.setOrigin(1, 0.5)
         assigneeBodyMain.text = 'Octo'
-        assigneeBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        assigneeBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         assigneeBodyMain.setLineSpacing(5)
         assigneeBodyMain.setWordWrapWidth(225)
         main.add(assigneeBodyMain)
@@ -524,7 +524,7 @@ export default class Report extends Closeup {
         const reporterBodyMain = this.add.text(1027, 256, '', {})
         reporterBodyMain.setOrigin(1, 0.5)
         reporterBodyMain.text = 'Testpenguin'
-        reporterBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        reporterBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         reporterBodyMain.setLineSpacing(5)
         reporterBodyMain.setWordWrapWidth(225)
         main.add(reporterBodyMain)
@@ -533,7 +533,7 @@ export default class Report extends Closeup {
         const priorityMain = this.add.text(600, 119, '', {})
         priorityMain.setOrigin(1, 0.5)
         priorityMain.text = 'High Priority'
-        priorityMain.setStyle({align: 'right', color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        priorityMain.setStyle({align: 'right', color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         priorityMain.setLineSpacing(5)
         priorityMain.setWordWrapWidth(225)
         main.add(priorityMain)
@@ -542,7 +542,7 @@ export default class Report extends Closeup {
         const createdBodyMain = this.add.text(1027, 307, '', {})
         createdBodyMain.setOrigin(1, 0.5)
         createdBodyMain.text = 'Created 3 hours ago'
-        createdBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '18px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        createdBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '18px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         createdBodyMain.setLineSpacing(5)
         createdBodyMain.setWordWrapWidth(225)
         main.add(createdBodyMain)
@@ -551,7 +551,7 @@ export default class Report extends Closeup {
         const updatedBodyMain = this.add.text(1027, 333, '', {})
         updatedBodyMain.setOrigin(1, 0.5)
         updatedBodyMain.text = 'Updated 1 hour ago'
-        updatedBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '18px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        updatedBodyMain.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '18px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         updatedBodyMain.setLineSpacing(5)
         updatedBodyMain.setWordWrapWidth(225)
         main.add(updatedBodyMain)
@@ -560,7 +560,7 @@ export default class Report extends Closeup {
         const noIssue = this.add.text(906, 523, '', {})
         noIssue.setOrigin(0.5, 0.5)
         noIssue.text = 'No issue selected'
-        noIssue.setStyle({align: 'center', color: '#642602ff', fontFamily: 'Burbank Small', fontSize: '50px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        noIssue.setStyle({align: 'center', color: '#642602ff', fontFamily: 'cpBurbankSmall', fontSize: '50px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         noIssue.setLineSpacing(5)
 
         // createNew
@@ -598,7 +598,7 @@ export default class Report extends Closeup {
         const text = this.add.text(760.0018599281885, 811.000290707505, '', {})
         text.setOrigin(0.5, 0.5)
         text.text = 'Submit'
-        text.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text.setLineSpacing(5)
         text.setWordWrapWidth(550)
         createNew.add(text)
@@ -615,14 +615,14 @@ export default class Report extends Closeup {
         const newTitle = this.add.text(433.0018599281886, 178.0002907075049, '', {})
         newTitle.setOrigin(0, 0.5)
         newTitle.text = 'Enter a title'
-        newTitle.setStyle({color: '#642602ff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '32px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        newTitle.setStyle({color: '#642602ff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '32px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         newTitle.setLineSpacing(5)
         createNew.add(newTitle)
 
         // newBody
         const newBody = this.add.text(433.0018599281886, 272.0002907075048, '', {})
         newBody.text = 'Please give a detailed description of what occurred, what you\nexpected to happen, and how we can reproduce this. If you need to,\nyou can upload images/video to another site and link them.'
-        newBody.setStyle({color: '#642602ff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        newBody.setStyle({color: '#642602ff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '20px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         createNew.add(newBody)
 
         // white_x_1

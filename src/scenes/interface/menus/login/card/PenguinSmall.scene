@@ -83,7 +83,7 @@
                     "originY": 0.5,
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "CCComicrazy",
+                    "fontFamily": "cpCCComicrazy",
                     "fontSize": "48px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",

@@ -75,7 +75,7 @@ export default class Punish extends Closeup {
         const punishUser = this.add.text(760, 180, '', {})
         punishUser.setOrigin(0.5, 0)
         punishUser.text = 'Punish Player: Username'
-        punishUser.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        punishUser.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         punishUser.setLineSpacing(5)
         punishUser.setWordWrapWidth(550)
 
@@ -90,7 +90,7 @@ export default class Punish extends Closeup {
         const text = this.add.text(0, 0, '', {})
         text.setOrigin(0.5, 0.5)
         text.text = 'Warn'
-        text.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text.setLineSpacing(5)
         text.setWordWrapWidth(550)
         choosePunishment.add(text)
@@ -103,7 +103,7 @@ export default class Punish extends Closeup {
         const text_2 = this.add.text(0, 150, '', {})
         text_2.setOrigin(0.5, 0.5)
         text_2.text = 'Mute'
-        text_2.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_2.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_2.setLineSpacing(5)
         text_2.setWordWrapWidth(550)
         choosePunishment.add(text_2)
@@ -116,7 +116,7 @@ export default class Punish extends Closeup {
         const text_3 = this.add.text(0, 300, '', {})
         text_3.setOrigin(0.5, 0.5)
         text_3.text = 'Ban'
-        text_3.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_3.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_3.setLineSpacing(5)
         text_3.setWordWrapWidth(550)
         choosePunishment.add(text_3)
@@ -137,7 +137,7 @@ export default class Punish extends Closeup {
         const text1 = this.add.text(-160, 0, '', {})
         text1.setOrigin(0.5, 0.5)
         text1.text = '1 Day'
-        text1.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text1.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text1.setLineSpacing(5)
         text1.setWordWrapWidth(550)
         chooseDuration.add(text1)
@@ -150,7 +150,7 @@ export default class Punish extends Closeup {
         const text_22 = this.add.text(-160, 150, '', {})
         text_22.setOrigin(0.5, 0.5)
         text_22.text = '3 Days'
-        text_22.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_22.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_22.setLineSpacing(5)
         text_22.setWordWrapWidth(550)
         chooseDuration.add(text_22)
@@ -163,7 +163,7 @@ export default class Punish extends Closeup {
         const text_31 = this.add.text(-160, 300, '', {})
         text_31.setOrigin(0.5, 0.5)
         text_31.text = '1 Week'
-        text_31.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_31.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_31.setLineSpacing(5)
         text_31.setWordWrapWidth(550)
         chooseDuration.add(text_31)
@@ -176,7 +176,7 @@ export default class Punish extends Closeup {
         const text_41 = this.add.text(160, 0, '', {})
         text_41.setOrigin(0.5, 0.5)
         text_41.text = '3 Weeks'
-        text_41.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_41.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_41.setLineSpacing(5)
         text_41.setWordWrapWidth(550)
         chooseDuration.add(text_41)
@@ -189,7 +189,7 @@ export default class Punish extends Closeup {
         const text_51 = this.add.text(160, 150, '', {})
         text_51.setOrigin(0.5, 0.5)
         text_51.text = '3 Months'
-        text_51.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_51.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_51.setLineSpacing(5)
         text_51.setWordWrapWidth(550)
         chooseDuration.add(text_51)
@@ -202,7 +202,7 @@ export default class Punish extends Closeup {
         const text_61 = this.add.text(160, 300, '', {})
         text_61.setOrigin(0.5, 0.5)
         text_61.text = 'Permanent'
-        text_61.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_61.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_61.setLineSpacing(5)
         text_61.setWordWrapWidth(550)
         chooseDuration.add(text_61)
@@ -223,7 +223,7 @@ export default class Punish extends Closeup {
         const text10 = this.add.text(0, -30, '', {})
         text10.setOrigin(0.5, 0.5)
         text10.text = 'Offensive/Swearing'
-        text10.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text10.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text10.setLineSpacing(5)
         text10.setWordWrapWidth(550)
         chooseReason.add(text10)
@@ -236,7 +236,7 @@ export default class Punish extends Closeup {
         const text_12 = this.add.text(0, 90, '', {})
         text_12.setOrigin(0.5, 0.5)
         text_12.text = 'Personal Info'
-        text_12.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_12.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_12.setLineSpacing(5)
         text_12.setWordWrapWidth(550)
         chooseReason.add(text_12)
@@ -249,7 +249,7 @@ export default class Punish extends Closeup {
         const text_13 = this.add.text(0, 210, '', {})
         text_13.setOrigin(0.5, 0.5)
         text_13.text = 'Inappropriate Igloo'
-        text_13.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_13.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_13.setLineSpacing(5)
         text_13.setWordWrapWidth(550)
         chooseReason.add(text_13)
@@ -266,7 +266,7 @@ export default class Punish extends Closeup {
         const text_7 = this.add.text(0, 330, '', {})
         text_7.setOrigin(0.5, 0.5)
         text_7.text = 'Cheating'
-        text_7.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_7.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_7.setLineSpacing(5)
         text_7.setWordWrapWidth(550)
         chooseReason.add(text_7)
@@ -291,7 +291,7 @@ export default class Punish extends Closeup {
         const detailsText = this.add.text(0, 58, '', {})
         detailsText.setOrigin(0.5, 0.5)
         detailsText.text = 'Enter Details'
-        detailsText.setStyle({align: 'center', color: '#000000ff', fixedWidth: 550, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        detailsText.setStyle({align: 'center', color: '#000000ff', fixedWidth: 550, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         detailsText.setLineSpacing(5)
         detailsText.setWordWrapWidth(550)
         enterDetails.add(detailsText)
@@ -304,7 +304,7 @@ export default class Punish extends Closeup {
         const text_9 = this.add.text(0, 286, '', {})
         text_9.setOrigin(0.5, 0.5)
         text_9.text = 'Submit'
-        text_9.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        text_9.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         text_9.setLineSpacing(5)
         text_9.setWordWrapWidth(550)
         enterDetails.add(text_9)

@@ -395,7 +395,7 @@ export default class SoundStudio extends GameScene {
         const currentTime = this.add.text(327, 67, '', {})
         currentTime.setOrigin(0.49997517505489686, 2.2659405008227753)
         currentTime.text = '0:00'
-        currentTime.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        currentTime.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
 
         // dividers
         this.add.image(784, 568, 'soundstudio', 'dividers')
@@ -423,55 +423,55 @@ export default class SoundStudio extends GameScene {
         const record_txt = this.add.text(148, 149, '', {})
         record_txt.setOrigin(0.5, 0.5)
         record_txt.text = 'Record'
-        record_txt.setStyle({color: '#BDFFC4', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        record_txt.setStyle({color: '#BDFFC4', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // pop_txt
         const pop_txt = this.add.text(150, 356, '', {})
         pop_txt.setOrigin(0.5, 0.5)
         pop_txt.text = 'Pop'
-        pop_txt.setStyle({color: '#EEDCFF', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        pop_txt.setStyle({color: '#EEDCFF', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // record_txt_2
         const record_txt_2 = this.add.text(150, 456, '', {})
         record_txt_2.setOrigin(0.5, 0.5)
         record_txt_2.text = 'Rock'
-        record_txt_2.setStyle({color: '#D5E6FF', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        record_txt_2.setStyle({color: '#D5E6FF', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // record_txt_3
         const record_txt_3 = this.add.text(150, 556, '', {})
         record_txt_3.setOrigin(0.5, 0.5)
         record_txt_3.text = 'Dance'
-        record_txt_3.setStyle({color: '#DAFFD8', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        record_txt_3.setStyle({color: '#DAFFD8', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // record_txt_4
         const record_txt_4 = this.add.text(150, 656, '', {})
         record_txt_4.setOrigin(0.5, 0.5)
         record_txt_4.text = 'Dubstep'
-        record_txt_4.setStyle({color: '#F2E0FF', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        record_txt_4.setStyle({color: '#F2E0FF', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // record_txt_5
         const record_txt_5 = this.add.text(150, 756, '', {})
         record_txt_5.setOrigin(0.5, 0.5)
         record_txt_5.text = 'Spooky'
-        record_txt_5.setStyle({color: '#9CEBE2', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        record_txt_5.setStyle({color: '#9CEBE2', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // timeLeft
         const timeLeft = this.add.text(1446, 79, '', {})
         timeLeft.setOrigin(0.5, 0.5)
         timeLeft.text = '3:00'
-        timeLeft.setStyle({color: '#7764a0ff', fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        timeLeft.setStyle({color: '#7764a0ff', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
 
         // record_txt_5_1_2
         const record_txt_5_1_2 = this.add.text(703, 198, '', {})
         record_txt_5_1_2.setOrigin(0.5, 0.5)
         record_txt_5_1_2.text = 'LOOPS'
-        record_txt_5_1_2.setStyle({color: '#CCCCCC', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        record_txt_5_1_2.setStyle({color: '#CCCCCC', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold'})
 
         // record_txt_5_1_2_1
         const record_txt_5_1_2_1 = this.add.text(1311, 198, '', {})
         record_txt_5_1_2_1.setOrigin(0.5, 0.5)
         record_txt_5_1_2_1.text = 'ONE-SHOTS'
-        record_txt_5_1_2_1.setStyle({color: '#CCCCCC', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        record_txt_5_1_2_1.setStyle({color: '#CCCCCC', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold'})
 
         // timeIndicator
         const timeIndicator = this.add.image(327, 76, 'soundstudio', 'time_indicator')

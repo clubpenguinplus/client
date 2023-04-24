@@ -91,7 +91,7 @@ export default class PuffleCare extends BaseContainer {
         const name_txt = scene.add.text(0, -320.1919506096564, '', {})
         name_txt.setOrigin(0.5, 0.5)
         name_txt.text = 'Puffle Name'
-        name_txt.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        name_txt.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         this.add(name_txt)
 
         // care_btn (components)

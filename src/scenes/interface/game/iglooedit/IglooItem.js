@@ -21,7 +21,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
         const quantityText = scene.add.text(38, -38, '', {})
         quantityText.setOrigin(0.5, 0.5)
         quantityText.text = '99'
-        quantityText.setStyle({align: 'center', color: '#464646ff', fixedWidth: 35, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        quantityText.setStyle({align: 'center', color: '#464646ff', fixedWidth: 35, fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         this.add(quantityText)
 
         // cover

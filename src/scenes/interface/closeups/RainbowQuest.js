@@ -240,7 +240,7 @@ export default class RainbowQuest extends Closeup {
         const rainbowPuffleGoThereText = this.add.text(1308, 800, '', {})
         rainbowPuffleGoThereText.setOrigin(0.5, 0.5)
         rainbowPuffleGoThereText.text = 'Go there!'
-        rainbowPuffleGoThereText.setStyle({align: 'center', color: '#896E35', fontFamily: 'CatseyeW00', fontSize: '30px', 'shadow.color': '#fff'})
+        rainbowPuffleGoThereText.setStyle({align: 'center', color: '#896E35', fontFamily: 'cpCatseye', fontSize: '30px', 'shadow.color': '#fff'})
 
         // rainbowPuffleLights
         const rainbowPuffleLights = this.add.image(1308, 740, 'rainbowquest', 'lights0001')
@@ -249,7 +249,7 @@ export default class RainbowQuest extends Closeup {
         const rainbowPuffleHeader = this.add.text(991, 688, '', {})
         rainbowPuffleHeader.setOrigin(0, 0.5)
         rainbowPuffleHeader.text = 'Adopt a Rainbow Puffle!\nLaunch from the Rooftop cannon.'
-        rainbowPuffleHeader.setStyle({color: '#c9a04cff', fontFamily: 'CatseyeW00', fontSize: '25px', 'shadow.offsetX': -1, 'shadow.offsetY': 1, 'shadow.color': '#543510ff', 'shadow.fill': true})
+        rainbowPuffleHeader.setStyle({color: '#c9a04cff', fontFamily: 'cpCatseye', fontSize: '25px', 'shadow.offsetX': -1, 'shadow.offsetY': 1, 'shadow.color': '#543510ff', 'shadow.fill': true})
 
         // bonus
         const bonus = this.add.image(1200, 480, 'rainbowquest', 'bonus-item-locked')
@@ -262,7 +262,7 @@ export default class RainbowQuest extends Closeup {
         const bonusHeader = this.add.text(991, 422, '', {})
         bonusHeader.setOrigin(0, 0.5)
         bonusHeader.text = 'BONUS ITEM'
-        bonusHeader.setStyle({color: '#c9a04cff', fontFamily: 'CatseyeW00', fontSize: '30px', fontStyle: 'bold', 'shadow.offsetX': -1, 'shadow.offsetY': 1, 'shadow.color': '#543510ff', 'shadow.fill': true})
+        bonusHeader.setStyle({color: '#c9a04cff', fontFamily: 'cpCatseye', fontSize: '30px', fontStyle: 'bold', 'shadow.offsetX': -1, 'shadow.offsetY': 1, 'shadow.color': '#543510ff', 'shadow.fill': true})
 
         // bonusLights
         const bonusLights = this.add.image(1308, 461, 'rainbowquest', 'lights0001')
@@ -271,7 +271,7 @@ export default class RainbowQuest extends Closeup {
         const bonusCollectText = this.add.text(1308, 521, '', {})
         bonusCollectText.setOrigin(0.5, 0.5)
         bonusCollectText.text = 'Collect'
-        bonusCollectText.setStyle({align: 'center', color: '#896E35', fontFamily: 'CatseyeW00', fontSize: '30px', 'shadow.color': '#fff'})
+        bonusCollectText.setStyle({align: 'center', color: '#896E35', fontFamily: 'cpCatseye', fontSize: '30px', 'shadow.color': '#fff'})
 
         // header
         const header = this.add.image(1200, 210, 'rainbowquest', 'header')
@@ -279,7 +279,7 @@ export default class RainbowQuest extends Closeup {
         // headerText
         const headerText = this.add.text(1003, 236, '', {})
         headerText.text = 'Complete all four puffle tasks to earn your bonus!'
-        headerText.setStyle({color: '#3d2615ff', fixedWidth: 395, fontFamily: 'CatseyeW00', fontSize: '30px', 'shadow.offsetX': -1, 'shadow.offsetY': 1, 'shadow.color': '#ffde80ff', 'shadow.fill': true})
+        headerText.setStyle({color: '#3d2615ff', fixedWidth: 395, fontFamily: 'cpCatseye', fontSize: '30px', 'shadow.offsetX': -1, 'shadow.offsetY': 1, 'shadow.color': '#ffde80ff', 'shadow.fill': true})
         headerText.setWordWrapWidth(395)
 
         // task4
@@ -319,7 +319,7 @@ export default class RainbowQuest extends Closeup {
         const task4CoinsCollectText = this.add.text(-101.55828740657319, -47.82265362293322, '', {})
         task4CoinsCollectText.setOrigin(0.5, 0.5)
         task4CoinsCollectText.text = 'Collect'
-        task4CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task4CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task4.add(task4CoinsCollectText)
 
         // task4ItemCollectBtn
@@ -332,7 +332,7 @@ export default class RainbowQuest extends Closeup {
         const task4ItemCollectText = this.add.text(91.44171259342681, -47.82265362293322, '', {})
         task4ItemCollectText.setOrigin(0.5, 0.5)
         task4ItemCollectText.text = 'Collect'
-        task4ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task4ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task4.add(task4ItemCollectText)
 
         // task4Criteria
@@ -340,14 +340,14 @@ export default class RainbowQuest extends Closeup {
         task4Criteria.setOrigin(0, 0.5)
         task4Criteria.visible = false
         task4Criteria.text = 'Groom your puffle'
-        task4Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task4Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task4.add(task4Criteria)
 
         // task4TaskNum
         const task4TaskNum = this.add.text(138.44171259342681, -282.8226536229332, '', {})
         task4TaskNum.setOrigin(1, 0.5)
         task4TaskNum.text = 'TASK 4'
-        task4TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task4TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task4.add(task4TaskNum)
 
         // task4Preview
@@ -367,7 +367,7 @@ export default class RainbowQuest extends Closeup {
         task4GoThereText.setOrigin(0.5, 0.5)
         task4GoThereText.visible = false
         task4GoThereText.text = 'Go there!'
-        task4GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task4GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task4.add(task4GoThereText)
 
         // task4CompleteHeader
@@ -375,7 +375,7 @@ export default class RainbowQuest extends Closeup {
         task4CompleteHeader.setOrigin(0.5, 0.5)
         task4CompleteHeader.visible = false
         task4CompleteHeader.text = 'Zzzzzzz!'
-        task4CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task4CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task4.add(task4CompleteHeader)
 
         // task4CompleteLine1
@@ -383,7 +383,7 @@ export default class RainbowQuest extends Closeup {
         task4CompleteLine1.setOrigin(0.5, 0.5)
         task4CompleteLine1.visible = false
         task4CompleteLine1.text = 'Your puffle looks so relaxed.'
-        task4CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task4CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task4.add(task4CompleteLine1)
 
         // task4Icon
@@ -396,14 +396,14 @@ export default class RainbowQuest extends Closeup {
         const task4LockedLine1 = this.add.text(1.4417125934268142, 46.17734637706678, '', {})
         task4LockedLine1.setOrigin(0.5, 0.5)
         task4LockedLine1.text = "This puffle task isn't ready yet."
-        task4LockedLine1.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
+        task4LockedLine1.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
         task4.add(task4LockedLine1)
 
         // task4LockedLine2
         const task4LockedLine2 = this.add.text(1.4417125934268142, 85.17734637706678, '', {})
         task4LockedLine2.setOrigin(0.5, 0.5)
         task4LockedLine2.text = 'Complete the previous task.'
-        task4LockedLine2.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'CatseyeW00', fontSize: '27px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
+        task4LockedLine2.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'cpCatseye', fontSize: '27px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
         task4.add(task4LockedLine2)
 
         // task4ClickBlocker
@@ -458,7 +458,7 @@ export default class RainbowQuest extends Closeup {
         const task3CoinsCollectText = this.add.text(-101.66202913475098, -51.831174550688274, '', {})
         task3CoinsCollectText.setOrigin(0.5, 0.5)
         task3CoinsCollectText.text = 'Collect'
-        task3CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task3CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task3.add(task3CoinsCollectText)
 
         // task3ItemCollectBtn
@@ -471,7 +471,7 @@ export default class RainbowQuest extends Closeup {
         const task3ItemCollectText = this.add.text(96.33797086524902, -50.831174550688274, '', {})
         task3ItemCollectText.setOrigin(0.5, 0.5)
         task3ItemCollectText.text = 'Collect'
-        task3ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task3ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task3.add(task3ItemCollectText)
 
         // task3Criteria
@@ -479,14 +479,14 @@ export default class RainbowQuest extends Closeup {
         task3Criteria.setOrigin(0, 0.5)
         task3Criteria.visible = false
         task3Criteria.text = 'Feed your puffle'
-        task3Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task3Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task3.add(task3Criteria)
 
         // task3TaskNum
         const task3TaskNum = this.add.text(138.33797086524902, -287.8311745506883, '', {})
         task3TaskNum.setOrigin(1, 0.5)
         task3TaskNum.text = 'TASK 3'
-        task3TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task3TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task3.add(task3TaskNum)
 
         // task3Preview
@@ -506,7 +506,7 @@ export default class RainbowQuest extends Closeup {
         task3GoThereText.setOrigin(0.5, 0.5)
         task3GoThereText.visible = false
         task3GoThereText.text = 'Go there!'
-        task3GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task3GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task3.add(task3GoThereText)
 
         // task3CompleteHeader
@@ -514,7 +514,7 @@ export default class RainbowQuest extends Closeup {
         task3CompleteHeader.setOrigin(0.5, 0.5)
         task3CompleteHeader.visible = false
         task3CompleteHeader.text = 'Delicious'
-        task3CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task3CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task3.add(task3CompleteHeader)
 
         // task3CompleteLine1
@@ -522,7 +522,7 @@ export default class RainbowQuest extends Closeup {
         task3CompleteLine1.setOrigin(0.5, 0.5)
         task3CompleteLine1.visible = false
         task3CompleteLine1.text = 'Your puffle loved that snack!'
-        task3CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task3CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task3.add(task3CompleteLine1)
 
         // task3CompleteLine2
@@ -530,7 +530,7 @@ export default class RainbowQuest extends Closeup {
         task3CompleteLine2.setOrigin(0.5, 0.5)
         task3CompleteLine2.visible = false
         task3CompleteLine2.text = 'Come back to relax with your pet in:'
-        task3CompleteLine2.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task3CompleteLine2.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task3.add(task3CompleteLine2)
 
         // task3CompleteCountdown
@@ -538,7 +538,7 @@ export default class RainbowQuest extends Closeup {
         task3CompleteCountdown.setOrigin(0.5, 0.5)
         task3CompleteCountdown.visible = false
         task3CompleteCountdown.text = '20 min'
-        task3CompleteCountdown.setStyle({align: 'center', color: '#2c2a1dff', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task3CompleteCountdown.setStyle({align: 'center', color: '#2c2a1dff', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task3.add(task3CompleteCountdown)
 
         // task3Icon
@@ -551,14 +551,14 @@ export default class RainbowQuest extends Closeup {
         const task3LockedLine1 = this.add.text(1.3379708652490194, 41.168825449311726, '', {})
         task3LockedLine1.setOrigin(0.5, 0.5)
         task3LockedLine1.text = "This puffle task isn't ready yet."
-        task3LockedLine1.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
+        task3LockedLine1.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
         task3.add(task3LockedLine1)
 
         // task3LockedLine2
         const task3LockedLine2 = this.add.text(1.3379708652490194, 80.16882544931173, '', {})
         task3LockedLine2.setOrigin(0.5, 0.5)
         task3LockedLine2.text = 'Complete the previous task.'
-        task3LockedLine2.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'CatseyeW00', fontSize: '27px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
+        task3LockedLine2.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'cpCatseye', fontSize: '27px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
         task3.add(task3LockedLine2)
 
         // task3ClickBlocker
@@ -613,7 +613,7 @@ export default class RainbowQuest extends Closeup {
         const task2CoinsCollectText = this.add.text(-130.75886549636584, -35.87101087265921, '', {})
         task2CoinsCollectText.setOrigin(0.5, 0.5)
         task2CoinsCollectText.text = 'Collect'
-        task2CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task2CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task2.add(task2CoinsCollectText)
 
         // task2ItemCollectBtn
@@ -626,7 +626,7 @@ export default class RainbowQuest extends Closeup {
         const task2ItemCollectText = this.add.text(62.24113450363416, -35.87101087265921, '', {})
         task2ItemCollectText.setOrigin(0.5, 0.5)
         task2ItemCollectText.text = 'Collect'
-        task2ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task2ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task2.add(task2ItemCollectText)
 
         // task2Criteria
@@ -634,14 +634,14 @@ export default class RainbowQuest extends Closeup {
         task2Criteria.setOrigin(0, 0.5)
         task2Criteria.visible = false
         task2Criteria.text = 'Groom your puffle'
-        task2Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task2Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task2.add(task2Criteria)
 
         // task2TaskNum
         const task2TaskNum = this.add.text(109.24113450363416, -270.8710108726592, '', {})
         task2TaskNum.setOrigin(1, 0.5)
         task2TaskNum.text = 'TASK 2'
-        task2TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task2TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task2.add(task2TaskNum)
 
         // task2Preview
@@ -661,7 +661,7 @@ export default class RainbowQuest extends Closeup {
         task2GoThereText.setOrigin(0.5, 0.5)
         task2GoThereText.visible = false
         task2GoThereText.text = 'Go there!'
-        task2GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task2GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task2.add(task2GoThereText)
 
         // task2CompleteHeader
@@ -669,7 +669,7 @@ export default class RainbowQuest extends Closeup {
         task2CompleteHeader.setOrigin(0.5, 0.5)
         task2CompleteHeader.visible = false
         task2CompleteHeader.text = 'Oh so shiny!'
-        task2CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task2CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task2.add(task2CompleteHeader)
 
         // task2CompleteLine1
@@ -677,7 +677,7 @@ export default class RainbowQuest extends Closeup {
         task2CompleteLine1.setOrigin(0.5, 0.5)
         task2CompleteLine1.visible = false
         task2CompleteLine1.text = 'Your puffle looks terrific'
-        task2CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task2CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task2.add(task2CompleteLine1)
 
         // task2CompleteLine2
@@ -685,7 +685,7 @@ export default class RainbowQuest extends Closeup {
         task2CompleteLine2.setOrigin(0.5, 0.5)
         task2CompleteLine2.visible = false
         task2CompleteLine2.text = 'Come back to feed your pet in:'
-        task2CompleteLine2.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task2CompleteLine2.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task2.add(task2CompleteLine2)
 
         // task2CompleteCountdown
@@ -693,7 +693,7 @@ export default class RainbowQuest extends Closeup {
         task2CompleteCountdown.setOrigin(0.5, 0.5)
         task2CompleteCountdown.visible = false
         task2CompleteCountdown.text = '20 min'
-        task2CompleteCountdown.setStyle({align: 'center', color: '#2c2a1dff', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task2CompleteCountdown.setStyle({align: 'center', color: '#2c2a1dff', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task2.add(task2CompleteCountdown)
 
         // task2Icon
@@ -706,14 +706,14 @@ export default class RainbowQuest extends Closeup {
         const task2LockedLine1 = this.add.text(-27.758865496365843, 58.12898912734079, '', {})
         task2LockedLine1.setOrigin(0.5, 0.5)
         task2LockedLine1.text = "This puffle task isn't ready yet."
-        task2LockedLine1.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
+        task2LockedLine1.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
         task2.add(task2LockedLine1)
 
         // task2LockedLine2
         const task2LockedLine2 = this.add.text(-27.758865496365843, 97.12898912734079, '', {})
         task2LockedLine2.setOrigin(0.5, 0.5)
         task2LockedLine2.text = 'Complete the previous task.'
-        task2LockedLine2.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'CatseyeW00', fontSize: '27px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
+        task2LockedLine2.setStyle({align: 'center', color: '#fefad4ff', fontFamily: 'cpCatseye', fontSize: '27px', 'shadow.offsetX': 2, 'shadow.offsetY': 1, 'shadow.color': '#9b8b53ff', 'shadow.fill': true})
         task2.add(task2LockedLine2)
 
         // task2ClickBlocker
@@ -767,7 +767,7 @@ export default class RainbowQuest extends Closeup {
         const task1CoinsCollectText = this.add.text(-92.2969486728378, -48.05154182160692, '', {})
         task1CoinsCollectText.setOrigin(0.5, 0.5)
         task1CoinsCollectText.text = 'Collect'
-        task1CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task1CoinsCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task1.add(task1CoinsCollectText)
 
         // task1ItemCollectBtn
@@ -780,21 +780,21 @@ export default class RainbowQuest extends Closeup {
         const task1ItemCollectText = this.add.text(107.7030513271622, -48.05154182160692, '', {})
         task1ItemCollectText.setOrigin(0.5, 0.5)
         task1ItemCollectText.text = 'Collect'
-        task1ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task1ItemCollectText.setStyle({align: 'center', color: '#948863ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task1.add(task1ItemCollectText)
 
         // task1Criteria
         const task1Criteria = this.add.text(-191.2969486728378, -220.05154182160692, '', {})
         task1Criteria.setOrigin(0, 0.5)
         task1Criteria.text = 'Exercise your puffle'
-        task1Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task1Criteria.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task1.add(task1Criteria)
 
         // task1TaskNum
         const task1TaskNum = this.add.text(147.7030513271622, -283.0515418216069, '', {})
         task1TaskNum.setOrigin(1, 0.5)
         task1TaskNum.text = 'TASK 1'
-        task1TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task1TaskNum.setStyle({align: 'right', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task1.add(task1TaskNum)
 
         // task1Preview
@@ -811,7 +811,7 @@ export default class RainbowQuest extends Closeup {
         const task1GoThereText = this.add.text(9.7030513271622, 286.9484581783931, '', {})
         task1GoThereText.setOrigin(0.5, 0.5)
         task1GoThereText.text = 'Go there!'
-        task1GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
+        task1GoThereText.setStyle({align: 'center', color: '#f3fcc5ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold', 'shadow.color': '#fff'})
         task1.add(task1GoThereText)
 
         // task1CompleteHeader
@@ -819,7 +819,7 @@ export default class RainbowQuest extends Closeup {
         task1CompleteHeader.setOrigin(0.5, 0.5)
         task1CompleteHeader.visible = false
         task1CompleteHeader.text = 'Feeling the burn!'
-        task1CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task1CompleteHeader.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task1.add(task1CompleteHeader)
 
         // task1CompleteLine1
@@ -827,7 +827,7 @@ export default class RainbowQuest extends Closeup {
         task1CompleteLine1.setOrigin(0.5, 0.5)
         task1CompleteLine1.visible = false
         task1CompleteLine1.text = 'Your puffle got a work out!'
-        task1CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task1CompleteLine1.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task1.add(task1CompleteLine1)
 
         // task1CompleteLine2
@@ -835,7 +835,7 @@ export default class RainbowQuest extends Closeup {
         task1CompleteLine2.setOrigin(0.5, 0.5)
         task1CompleteLine2.visible = false
         task1CompleteLine2.text = 'Come back to groom your pet in:'
-        task1CompleteLine2.setStyle({align: 'center', color: '#938C61', fontFamily: 'CatseyeW00', fontSize: '24px', 'shadow.color': '#fff'})
+        task1CompleteLine2.setStyle({align: 'center', color: '#938C61', fontFamily: 'cpCatseye', fontSize: '24px', 'shadow.color': '#fff'})
         task1.add(task1CompleteLine2)
 
         // task1CompleteCountdown
@@ -843,7 +843,7 @@ export default class RainbowQuest extends Closeup {
         task1CompleteCountdown.setOrigin(0.5, 0.5)
         task1CompleteCountdown.visible = false
         task1CompleteCountdown.text = '20 min'
-        task1CompleteCountdown.setStyle({align: 'center', color: '#2c2a1dff', fontFamily: 'CatseyeW00', fontSize: '36px', 'shadow.color': '#fff'})
+        task1CompleteCountdown.setStyle({align: 'center', color: '#2c2a1dff', fontFamily: 'cpCatseye', fontSize: '36px', 'shadow.color': '#fff'})
         task1.add(task1CompleteCountdown)
 
         // task1Icon

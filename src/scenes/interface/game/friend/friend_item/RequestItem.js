@@ -43,14 +43,14 @@ export default class RequestItem extends BaseContainer {
         const username = scene.add.text(55, -20, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px', fontStyle: 'bold'})
+        username.setStyle({fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px', fontStyle: 'bold'})
         this.add(username)
 
         // addFriend
         const addFriend = scene.add.text(55, -2, '', {})
         addFriend.setOrigin(0.5, 0.5)
         addFriend.text = 'Wants to be your friend!'
-        addFriend.setStyle({fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px'})
+        addFriend.setStyle({fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px'})
         this.add(addFriend)
 
         // window_button_small
@@ -68,7 +68,7 @@ export default class RequestItem extends BaseContainer {
         const nameSearch_1 = scene.add.text(3, 23, '', {})
         nameSearch_1.setOrigin(0.5, 0.5)
         nameSearch_1.text = '+ Add Friend'
-        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '12px'})
+        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '12px'})
         this.add(nameSearch_1)
 
         // window_button_small_1
@@ -86,7 +86,7 @@ export default class RequestItem extends BaseContainer {
         const nameSearch = scene.add.text(93, 23, '', {})
         nameSearch.setOrigin(0.5, 0.5)
         nameSearch.text = 'No Thanks'
-        nameSearch.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '12px'})
+        nameSearch.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '12px'})
         this.add(nameSearch)
 
         // rectangle_1 (components)

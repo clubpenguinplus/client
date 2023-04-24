@@ -123,7 +123,7 @@ export default class Forts extends RoomScene {
         const am_pm = this.add.text(1177, 149, '', {})
         am_pm.setOrigin(0.5, 0.5)
         am_pm.text = 'AM'
-        am_pm.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'CPLCD', fontSize: '35px'})
+        am_pm.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'cplcd', fontSize: '35px'})
 
         // clockTime
         const clockTime = this.add.text(1097, 170, '', {})

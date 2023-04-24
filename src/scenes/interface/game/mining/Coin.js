@@ -20,7 +20,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text.scaleX = 0.6166445600432048
         text.setOrigin(0.5, 0.5)
         text.text = '100'
-        text.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame1.add(text)
 
         // frame2
@@ -37,7 +37,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_1.scaleX = 0.6166445600432048
         text_1.setOrigin(0.5, 0.5)
         text_1.text = '100'
-        text_1.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_1.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame2.add(text_1)
 
         // frame3
@@ -54,7 +54,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_2.scaleX = 0.30957740295663727
         text_2.setOrigin(0.5, 0.5)
         text_2.text = '100'
-        text_2.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_2.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame3.add(text_2)
 
         // frame4
@@ -71,7 +71,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_3.scaleX = 0.30957740295663727
         text_3.setOrigin(0.5, 0.5)
         text_3.text = '100'
-        text_3.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_3.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame4.add(text_3)
 
         // frame5
@@ -98,7 +98,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_4.scaleX = 0.2892037833316321
         text_4.setOrigin(0.5, 0.5)
         text_4.text = '100'
-        text_4.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_4.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame7.add(text_4)
 
         // frame8
@@ -115,7 +115,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_28.scaleX = 0.2892037833316321
         text_28.setOrigin(0.5, 0.5)
         text_28.text = '100'
-        text_28.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_28.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame8.add(text_28)
 
         // frame9
@@ -132,7 +132,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_6.scaleX = 0.5513511811365961
         text_6.setOrigin(0.5, 0.5)
         text_6.text = '100'
-        text_6.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_6.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame9.add(text_6)
 
         // frame10
@@ -149,7 +149,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_7.scaleX = 0.5513511811365961
         text_7.setOrigin(0.5, 0.5)
         text_7.text = '100'
-        text_7.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_7.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame10.add(text_7)
 
         // frame11
@@ -166,7 +166,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_8.scaleX = 0.7019936124483478
         text_8.setOrigin(0.5, 0.5)
         text_8.text = '100'
-        text_8.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_8.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame11.add(text_8)
 
         // frame12
@@ -183,7 +183,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_9.scaleX = 0.7019936124483478
         text_9.setOrigin(0.5, 0.5)
         text_9.text = '100'
-        text_9.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_9.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame12.add(text_9)
 
         // frame13
@@ -199,7 +199,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_10 = scene.add.text(20, 6, '', {})
         text_10.setOrigin(0.5, 0.5)
         text_10.text = '100'
-        text_10.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_10.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame13.add(text_10)
 
         // frame14
@@ -215,7 +215,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_27 = scene.add.text(20, 6, '', {})
         text_27.setOrigin(0.5, 0.5)
         text_27.text = '100'
-        text_27.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_27.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame14.add(text_27)
 
         // frame15
@@ -231,7 +231,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_26 = scene.add.text(20, 5, '', {})
         text_26.setOrigin(0.5, 0.5)
         text_26.text = '100'
-        text_26.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_26.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame15.add(text_26)
 
         // frame16
@@ -247,7 +247,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_25 = scene.add.text(20, 5, '', {})
         text_25.setOrigin(0.5, 0.5)
         text_25.text = '100'
-        text_25.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_25.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame16.add(text_25)
 
         // frame17
@@ -263,7 +263,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_24 = scene.add.text(20, 5, '', {})
         text_24.setOrigin(0.5, 0.5)
         text_24.text = '100'
-        text_24.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_24.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame17.add(text_24)
 
         // frame18
@@ -279,7 +279,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_23 = scene.add.text(20, 5, '', {})
         text_23.setOrigin(0.5, 0.5)
         text_23.text = '100'
-        text_23.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_23.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame18.add(text_23)
 
         // frame19
@@ -295,7 +295,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_22 = scene.add.text(20, 5, '', {})
         text_22.setOrigin(0.5, 0.5)
         text_22.text = '100'
-        text_22.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_22.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame19.add(text_22)
 
         // frame20
@@ -311,7 +311,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_21 = scene.add.text(20, 5, '', {})
         text_21.setOrigin(0.5, 0.5)
         text_21.text = '100'
-        text_21.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_21.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame20.add(text_21)
 
         // frame21
@@ -327,7 +327,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_20 = scene.add.text(20, 5, '', {})
         text_20.setOrigin(0.5, 0.5)
         text_20.text = '100'
-        text_20.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_20.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame21.add(text_20)
 
         // frame22
@@ -343,7 +343,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_19 = scene.add.text(20, 5, '', {})
         text_19.setOrigin(0.5, 0.5)
         text_19.text = '100'
-        text_19.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_19.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame22.add(text_19)
 
         // frame23
@@ -359,7 +359,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_18 = scene.add.text(20, 5, '', {})
         text_18.setOrigin(0.5, 0.5)
         text_18.text = '100'
-        text_18.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_18.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame23.add(text_18)
 
         // frame24
@@ -375,7 +375,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_17 = scene.add.text(20, 5, '', {})
         text_17.setOrigin(0.5, 0.5)
         text_17.text = '100'
-        text_17.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_17.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame24.add(text_17)
 
         // frame25
@@ -391,7 +391,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_16 = scene.add.text(20, 5, '', {})
         text_16.setOrigin(0.5, 0.5)
         text_16.text = '100'
-        text_16.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_16.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame25.add(text_16)
 
         // frame26
@@ -407,7 +407,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_15 = scene.add.text(20, 5, '', {})
         text_15.setOrigin(0.5, 0.5)
         text_15.text = '100'
-        text_15.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_15.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame26.add(text_15)
 
         // frame27
@@ -423,7 +423,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_14 = scene.add.text(20, 5, '', {})
         text_14.setOrigin(0.5, 0.5)
         text_14.text = '100'
-        text_14.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_14.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame27.add(text_14)
 
         // frame28
@@ -439,7 +439,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         const text_13 = scene.add.text(20, 5, '', {})
         text_13.setOrigin(0.5, 0.5)
         text_13.text = '100'
-        text_13.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_13.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame28.add(text_13)
 
         // frame29
@@ -460,7 +460,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_12.alphaBottomLeft = 0.7
         text_12.alphaBottomRight = 0.7
         text_12.text = '100'
-        text_12.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_12.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame29.add(text_12)
 
         // frame30
@@ -481,7 +481,7 @@ export default class Coin extends Phaser.GameObjects.Container {
         text_11.alphaBottomLeft = 0.5
         text_11.alphaBottomRight = 0.5
         text_11.text = '100'
-        text_11.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'Burbank Small', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
+        text_11.setStyle({align: 'center', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontStyle: 'italic', stroke: '#9c6f2fff', strokeThickness: 4})
         frame30.add(text_11)
 
         // lists

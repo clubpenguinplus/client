@@ -43,7 +43,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Colors for\neveryone!",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "fontStyle": "bold italic"
                 },
@@ -58,7 +58,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Only 20     each!",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "25px",
                     "fontStyle": "italic",
                     "color": "#9dc3fcff"

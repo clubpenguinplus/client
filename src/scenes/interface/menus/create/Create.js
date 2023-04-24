@@ -183,7 +183,7 @@ export default class Create extends BaseScene {
         // text
         const text = this.add.text(0, -6, '', {})
         text.text = 'rookie'
-        text.setStyle({color: '#474747ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        text.setStyle({color: '#474747ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         text.setWordWrapWidth(860)
         rookie_speech.add(text)
 
@@ -200,7 +200,7 @@ export default class Create extends BaseScene {
         const ok_text = this.add.text(0, 3, '', {})
         ok_text.setOrigin(0.5, 0.6)
         ok_text.text = 'OK'
-        ok_text.setStyle({align: 'center', color: '#353535ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        ok_text.setStyle({align: 'center', color: '#353535ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         ok.add(ok_text)
 
         // colorselect
@@ -582,14 +582,14 @@ export default class Create extends BaseScene {
         const text_1 = this.add.text(0, 0, '', {})
         text_1.setOrigin(0.5, 0.5)
         text_1.text = 'Under 13'
-        text_1.setStyle({align: 'center', color: '#b9daf4ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '36px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#ffffffff', 'shadow.blur': 5})
+        text_1.setStyle({align: 'center', color: '#b9daf4ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '36px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#ffffffff', 'shadow.blur': 5})
         age.add(text_1)
 
         // text_1_1
         const text_1_1 = this.add.text(430, 0, '', {})
         text_1_1.setOrigin(0.5, 0.5)
         text_1_1.text = '13 or Over'
-        text_1_1.setStyle({align: 'center', color: '#b9daf4ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '36px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#ffffffff', 'shadow.blur': 5})
+        text_1_1.setStyle({align: 'center', color: '#b9daf4ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '36px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#ffffffff', 'shadow.blur': 5})
         age.add(text_1_1)
 
         // username
@@ -612,7 +612,7 @@ export default class Create extends BaseScene {
         const username_text = this.add.text(970.9857233195612, 599.9692119847492, '', {})
         username_text.setOrigin(0.5, 0.6)
         username_text.text = 'Penguin Name'
-        username_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        username_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         username.add(username_text)
 
         // password
@@ -631,7 +631,7 @@ export default class Create extends BaseScene {
         const confirm_password_text = this.add.text(971, 646, '', {})
         confirm_password_text.setOrigin(0.5, 0.6)
         confirm_password_text.text = 'Confirm Password'
-        confirm_password_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        confirm_password_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         password.add(confirm_password_text)
 
         // mobile_chat_send0002_1
@@ -654,7 +654,7 @@ export default class Create extends BaseScene {
         const password_text = this.add.text(971, 543, '', {})
         password_text.setOrigin(0.5, 0.6)
         password_text.text = 'Password'
-        password_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        password_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         password.add(password_text)
 
         // email
@@ -677,7 +677,7 @@ export default class Create extends BaseScene {
         const email_text = this.add.text(970.9857233195612, 599.9692119847492, '', {})
         email_text.setOrigin(0.5, 0.6)
         email_text.text = 'Email Address'
-        email_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        email_text.setStyle({align: 'center', color: '#89bedaff', fixedWidth: 750, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         email.add(email_text)
 
         // tos
@@ -700,14 +700,14 @@ export default class Create extends BaseScene {
         const tosText = this.add.text(1140, 548, '', {})
         tosText.setOrigin(0.5, 0.6)
         tosText.text = 'Terms of Service'
-        tosText.setStyle({color: '#89bedaff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        tosText.setStyle({color: '#89bedaff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         tos.add(tosText)
 
         // privacyText
         const privacyText = this.add.text(1140, 648, '', {})
         privacyText.setOrigin(0.5, 0.6)
         privacyText.text = 'Privacy Policy'
-        privacyText.setStyle({color: '#89bedaff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        privacyText.setStyle({color: '#89bedaff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         tos.add(privacyText)
 
         // logo

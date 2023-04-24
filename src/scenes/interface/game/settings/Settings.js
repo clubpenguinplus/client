@@ -30,7 +30,7 @@ export default class Settings extends BaseContainer {
         const buddies = scene.add.text(-55, 202, '', {})
         buddies.setOrigin(0.5, 0.5)
         buddies.text = '88/100 Friends'
-        buddies.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '32px'})
+        buddies.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(buddies)
 
         // icon
@@ -45,35 +45,35 @@ export default class Settings extends BaseContainer {
         const account = scene.add.text(0, 95, '', {})
         account.setOrigin(0.5, 0.5)
         account.text = 'Manage Account'
-        account.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 562, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        account.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 562, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         this.add(account)
 
         // music
         const music = scene.add.text(106, -50, '', {})
         music.setOrigin(0.5, 0.5)
         music.text = 'Mute Music'
-        music.setStyle({color: '#000000ff', fixedWidth: 348, fontFamily: 'Burbank Small', fontSize: '32px'})
+        music.setStyle({color: '#000000ff', fixedWidth: 348, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(music)
 
         // age
         const age = scene.add.text(0, -108, '', {})
         age.setOrigin(0.5, 0.5)
         age.text = 'Your penguin is 0 days old'
-        age.setStyle({align: 'center', color: '#000000ff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '32px'})
+        age.setStyle({align: 'center', color: '#000000ff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(age)
 
         // server
         const server = scene.add.text(0, -156, '', {})
         server.setOrigin(0.5, 0.5)
         server.text = "You're on Server Name"
-        server.setStyle({align: 'center', color: '#000000ff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '30px'})
+        server.setStyle({align: 'center', color: '#000000ff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         this.add(server)
 
         // settings
         const settings = scene.add.text(0, -238, '', {})
         settings.setOrigin(0.5, 0.5)
         settings.text = 'SETTINGS'
-        settings.setStyle({align: 'center', fixedWidth: 600, fontFamily: 'CCComicrazy', fontSize: '40px', fontStyle: 'bold italic', stroke: '#003366', strokeThickness: 10})
+        settings.setStyle({align: 'center', fixedWidth: 600, fontFamily: 'cpCCComicrazy', fontSize: '40px', fontStyle: 'bold italic', stroke: '#003366', strokeThickness: 10})
         this.add(settings)
 
         // checkbox
@@ -106,7 +106,7 @@ export default class Settings extends BaseContainer {
         const music_1 = scene.add.text(106, 7, '', {})
         music_1.setOrigin(0.5, 0.5)
         music_1.text = 'Mute All Sounds'
-        music_1.setStyle({color: '#000000ff', fixedWidth: 348, fontFamily: 'Burbank Small', fontSize: '32px'})
+        music_1.setStyle({color: '#000000ff', fixedWidth: 348, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(music_1)
 
         // volume_down_button

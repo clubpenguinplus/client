@@ -20,7 +20,7 @@ export default class SingleButton extends BaseContainer {
         text_1.setStyle({
             align: 'center',
             fixedWidth: 280,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '40px',
             fontStyle: 'bold',
         })

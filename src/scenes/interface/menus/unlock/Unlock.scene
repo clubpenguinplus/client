@@ -162,7 +162,7 @@
                     "text": "Unlock your Items. Choose an option.",
                     "lineSpacing": 25,
                     "align": "right",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 }
@@ -211,7 +211,7 @@
                     "text": "I've got a Code",
                     "lineSpacing": 25,
                     "align": "right",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 },
@@ -255,7 +255,7 @@
                     "text": "Enter your code!\nMake sure you enter it exactly as it appears.",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 },
@@ -301,7 +301,7 @@
                     "text": "Next",
                     "lineSpacing": 25,
                     "align": "right",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#ffffffff"
                 }
@@ -330,7 +330,7 @@
             "fixedWidth": 350,
             "lineSpacing": 25,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "fontStyle": "bold",
             "color": "#000000ff"
@@ -447,7 +447,7 @@
                             "x": -18,
                             "y": 27,
                             "text": "1000",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "color": "#000000ff"
                         }
                     ]

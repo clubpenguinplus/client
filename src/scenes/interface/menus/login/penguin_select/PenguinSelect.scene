@@ -98,7 +98,7 @@
             "fixedWidth": 400,
             "lineSpacing": 25,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },

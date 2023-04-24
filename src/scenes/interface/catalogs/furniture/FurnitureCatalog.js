@@ -83,7 +83,7 @@ export default class FurnitureCatalog extends Book {
         const coins = this.add.text(-190.478515625, 56.20628356933594, '', {})
         coins.angle = -7
         coins.text = 'Your Coins:\n100000'
-        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
+        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold italic'})
         buttons.add(coins)
 
         // lists

@@ -272,7 +272,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Puffle Name",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "fontStyle": "bold",
                     "color": "#000000ff"

@@ -43,7 +43,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Create your\nown hoodie!",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "27px",
                     "fontStyle": "bold italic"
                 },
@@ -304,7 +304,7 @@
                     "angle": 2,
                     "originY": 0.5,
                     "text": "1. Pick your color",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "fontStyle": "bold",
                     "color": "#000000ff"
@@ -320,7 +320,7 @@
                     "angle": 2,
                     "originY": 0.5,
                     "text": "2. Choose your design",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "fontStyle": "bold",
                     "color": "#000000ff"
@@ -337,7 +337,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "3. Click on your hoodie to buy!",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#000000ff",

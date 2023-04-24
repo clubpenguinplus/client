@@ -338,7 +338,7 @@
             "x": 637,
             "y": 900,
             "text": "Your Coins: 1000000",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "32px",
             "color": "#000000ff"
         }

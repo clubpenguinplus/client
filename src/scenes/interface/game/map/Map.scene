@@ -1548,7 +1548,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Places",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#7f7f7fff"
@@ -1580,7 +1580,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Games",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#7f7f7fff"
@@ -1612,7 +1612,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Shops",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#7f7f7fff"
@@ -1644,7 +1644,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Pets",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#7f7f7fff"

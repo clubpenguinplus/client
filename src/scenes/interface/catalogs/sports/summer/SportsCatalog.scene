@@ -134,7 +134,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -170,7 +170,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -371,7 +371,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -407,7 +407,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -443,7 +443,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -479,7 +479,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -515,7 +515,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -551,7 +551,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -608,7 +608,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -644,7 +644,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -701,7 +701,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -737,7 +737,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -773,7 +773,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -809,7 +809,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -866,7 +866,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -902,7 +902,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -980,7 +980,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1016,7 +1016,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1052,7 +1052,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1088,7 +1088,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1124,7 +1124,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1160,7 +1160,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1196,7 +1196,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1232,7 +1232,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1268,7 +1268,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1325,7 +1325,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1361,7 +1361,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1397,7 +1397,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1433,7 +1433,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1490,7 +1490,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1526,7 +1526,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1562,7 +1562,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1619,7 +1619,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1655,7 +1655,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1691,7 +1691,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1727,7 +1727,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1784,7 +1784,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1820,7 +1820,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1856,7 +1856,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1892,7 +1892,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2032,7 +2032,7 @@
                     "y": 864,
                     "text": "Your Coins: 100000",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold italic",
                     "color": "#000000ff"

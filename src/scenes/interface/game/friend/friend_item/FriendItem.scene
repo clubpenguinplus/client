@@ -33,7 +33,7 @@
                     "text": "Username",
                     "fixedWidth": 185,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "fontStyle": "bold"
                 },
@@ -100,7 +100,7 @@
                     "text": "Offline",
                     "fixedWidth": 185,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "color": "#a7c9d5ff"
                 },

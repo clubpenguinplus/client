@@ -78,7 +78,7 @@
                     "fixedWidth": 476,
                     "paddingTop": 6,
                     "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 }
@@ -811,7 +811,7 @@
                             "fixedWidth": 650,
                             "paddingTop": 6,
                             "lineSpacing": 25,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "36px",
                             "color": "#ffffffff"
                         }
@@ -1256,7 +1256,7 @@
                     "y": 25,
                     "text": "STAMP EARNED!",
                     "fixedWidth": 380,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold italic"
                 },
@@ -1270,7 +1270,7 @@
                     "y": 80,
                     "text": "Stamp Name",
                     "fixedWidth": 380,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "35px"
                 }
             ]

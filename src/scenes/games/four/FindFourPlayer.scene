@@ -39,7 +39,7 @@
                     "originY": 0.5,
                     "text": "Waiting for Player",
                     "fixedWidth": 260,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px"
                 }
             ]

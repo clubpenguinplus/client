@@ -65,7 +65,7 @@
                     "text": "Message goes here\nMessage goes here",
                     "fixedWidth": 650,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000",
                     "wordWrapWidth": 650

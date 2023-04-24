@@ -112,7 +112,7 @@
             "fixedWidth": 400,
             "lineSpacing": 25,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -131,7 +131,7 @@
             "text": "Forget my penguin",
             "fixedWidth": 300,
             "lineSpacing": 25,
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -150,7 +150,7 @@
             "text": "Forgot your password?",
             "fixedWidth": 300,
             "lineSpacing": 25,
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -186,7 +186,7 @@
             "fixedWidth": 100,
             "lineSpacing": 25,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "38px",
             "color": "#ffffffff"
         },
@@ -204,7 +204,7 @@
             "text": "Password:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -241,7 +241,7 @@
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 }

@@ -82,7 +82,7 @@ export default class Moderator extends BaseContainer {
         const name_txt8 = scene.add.text(0, 0, '', {})
         name_txt8.setOrigin(0.5, 0.5)
         name_txt8.text = 'Username08'
-        name_txt8.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt8.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt8.setPadding({left: 20})
         player8.add(name_txt8)
 
@@ -139,7 +139,7 @@ export default class Moderator extends BaseContainer {
         const name_txt7 = scene.add.text(0, 1, '', {})
         name_txt7.setOrigin(0.5, 0.5)
         name_txt7.text = 'Username07'
-        name_txt7.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt7.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt7.setPadding({left: 20})
         player7.add(name_txt7)
 
@@ -196,7 +196,7 @@ export default class Moderator extends BaseContainer {
         const name_txt6 = scene.add.text(0, 0, '', {})
         name_txt6.setOrigin(0.5, 0.5)
         name_txt6.text = 'Username06'
-        name_txt6.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt6.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt6.setPadding({left: 20})
         player6.add(name_txt6)
 
@@ -253,7 +253,7 @@ export default class Moderator extends BaseContainer {
         const name_txt5 = scene.add.text(0, 0, '', {})
         name_txt5.setOrigin(0.5, 0.5)
         name_txt5.text = 'Username05'
-        name_txt5.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt5.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt5.setPadding({left: 20})
         player5.add(name_txt5)
 
@@ -310,7 +310,7 @@ export default class Moderator extends BaseContainer {
         const name_txt4 = scene.add.text(0, 0, '', {})
         name_txt4.setOrigin(0.5, 0.5)
         name_txt4.text = 'Username04'
-        name_txt4.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt4.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt4.setPadding({left: 20})
         player4.add(name_txt4)
 
@@ -367,7 +367,7 @@ export default class Moderator extends BaseContainer {
         const name_txt3 = scene.add.text(0, 0, '', {})
         name_txt3.setOrigin(0.5, 0.5)
         name_txt3.text = 'Username03'
-        name_txt3.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt3.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt3.setPadding({left: 20})
         player3.add(name_txt3)
 
@@ -424,7 +424,7 @@ export default class Moderator extends BaseContainer {
         const name_txt2 = scene.add.text(0, 0, '', {})
         name_txt2.setOrigin(0.5, 0.5)
         name_txt2.text = 'Username02'
-        name_txt2.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt2.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt2.setPadding({left: 20})
         player2.add(name_txt2)
 
@@ -481,7 +481,7 @@ export default class Moderator extends BaseContainer {
         const name_txt1 = scene.add.text(0, 0, '', {})
         name_txt1.setOrigin(0.5, 0.5)
         name_txt1.text = 'Username01'
-        name_txt1.setStyle({fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt1.setStyle({fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt1.setPadding({left: 20})
         player1.add(name_txt1)
 
@@ -542,7 +542,7 @@ export default class Moderator extends BaseContainer {
         // text
         const text = scene.add.text(-260.00914252404726, 332.9949966411751, '', {})
         text.text = 'Verify'
-        text.setStyle({fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        text.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold'})
         this.add(text)
 
         // small_button
@@ -567,14 +567,14 @@ export default class Moderator extends BaseContainer {
         const name_txt = scene.add.text(5.9908574759527315, -369.0050033588249, '', {})
         name_txt.setOrigin(0.5, 0.5)
         name_txt.text = 'User List'
-        name_txt.setStyle({align: 'center', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '40px'})
+        name_txt.setStyle({align: 'center', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '40px'})
         name_txt.setPadding({left: 20})
         this.add(name_txt)
 
         // search
         const search = scene.add.text(-92.00914252404726, 333.9949966411751, '', {})
         search.text = 'Search'
-        search.setStyle({fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '30px'})
+        search.setStyle({fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         this.add(search)
 
         // this (components)

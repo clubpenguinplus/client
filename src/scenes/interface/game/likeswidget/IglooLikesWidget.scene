@@ -42,7 +42,7 @@
             "originY": 0.5,
             "visible": false,
             "text": "Like",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "32px",
             "fontStyle": "bold",
             "color": "#ffffffff",
@@ -63,7 +63,7 @@
             "originY": 0.5,
             "visible": false,
             "text": "0",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "color": "#ffffffff",
             "shadow.color": "#000000ff"

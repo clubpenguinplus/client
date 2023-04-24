@@ -61,13 +61,13 @@ export default class Music extends Book {
         // text_title_1
         const text_title_1 = this.add.text(558, 146, '', {})
         text_title_1.text = 'Music Catalog'
-        text_title_1.setStyle({color: '#373737ff', fontFamily: 'Burbank Small', fontSize: '70px', fontStyle: 'bold italic'})
+        text_title_1.setStyle({color: '#373737ff', fontFamily: 'cpBurbankSmall', fontSize: '70px', fontStyle: 'bold italic'})
         page1.add(text_title_1)
 
         // text_title
         const text_title = this.add.text(555, 143, '', {})
         text_title.text = 'Music Catalog'
-        text_title.setStyle({fontFamily: 'Burbank Small', fontSize: '70px', fontStyle: 'bold italic'})
+        text_title.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '70px', fontStyle: 'bold italic'})
         page1.add(text_title)
 
         // page2
@@ -158,7 +158,7 @@ export default class Music extends Book {
         const text_pg2 = this.add.text(813, 889, '', {})
         text_pg2.angle = -7
         text_pg2.text = 'Your Coins:\n100000'
-        text_pg2.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        text_pg2.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         page2.add(text_pg2)
 
         // page3
@@ -269,7 +269,7 @@ export default class Music extends Book {
         const text_pg3 = this.add.text(813, 889, '', {})
         text_pg3.angle = -7
         text_pg3.text = 'Your Coins:\n100000'
-        text_pg3.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        text_pg3.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         page3.add(text_pg3)
 
         // page4

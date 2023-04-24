@@ -156,7 +156,7 @@ export default class Sled extends Book {
         // text
         const text = this.add.text(637, 900, '', {})
         text.text = 'Your Coins: 1000000'
-        text.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '32px'})
+        text.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '32px'})
 
         // lists
         const pages = [page1]

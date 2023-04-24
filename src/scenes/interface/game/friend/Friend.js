@@ -45,7 +45,7 @@ export default class Friend extends BaseContainer {
         const text = scene.add.text(0, -236, '', {})
         text.setOrigin(0.5, 0.5)
         text.text = 'Friends'
-        text.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 420, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        text.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 420, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         this.add(text)
 
         // x_button
@@ -72,7 +72,7 @@ export default class Friend extends BaseContainer {
         const total = scene.add.text(81, -234, '', {})
         total.setOrigin(0.5, 0.5)
         total.text = '(99)'
-        total.setStyle({color: '#144e90ff', fixedWidth: 50, fontFamily: 'Burbank Small', fontSize: '20px'})
+        total.setStyle({color: '#144e90ff', fixedWidth: 50, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(total)
 
         // buddy_scroller
@@ -120,7 +120,7 @@ export default class Friend extends BaseContainer {
         searchError.setOrigin(0.5, 0.5)
         searchError.visible = false
         searchError.text = 'error'
-        searchError.setStyle({align: 'center', color: '#a0d3e9ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '18px'})
+        searchError.setStyle({align: 'center', color: '#a0d3e9ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         searchError.setWordWrapWidth(200)
         searchContainer.add(searchError)
 
@@ -218,14 +218,14 @@ export default class Friend extends BaseContainer {
         const nameSearch_1 = scene.add.text(158, 281, '', {})
         nameSearch_1.setOrigin(0.5, 0.5)
         nameSearch_1.text = 'Find'
-        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '18px'})
+        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         this.add(nameSearch_1)
 
         // searchInput
         const searchInput = scene.add.text(-183, 282, '', {})
         searchInput.setOrigin(0, 0.5)
         searchInput.text = 'Enter Name'
-        searchInput.setStyle({color: '#696969ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '20px'})
+        searchInput.setStyle({color: '#696969ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(searchInput)
 
         // rectangle_2

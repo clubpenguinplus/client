@@ -35,21 +35,21 @@ export default class Reset extends BaseScene {
         const backText = this.add.text(760, 876, '', {})
         backText.setOrigin(0.5, 0.5)
         backText.text = 'Home'
-        backText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        backText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         backText.setLineSpacing(25)
 
         // registerText2
         const registerText2 = this.add.text(760, 747, '', {})
         registerText2.setOrigin(0.5, 0.5)
         registerText2.text = 'Create a free account now'
-        registerText2.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '35px'})
+        registerText2.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '35px'})
         registerText2.setLineSpacing(25)
 
         // registerText
         const registerText = this.add.text(760, 713, '', {})
         registerText.setOrigin(0.5, 0.5)
         registerText.text = "Don't have a penguin?"
-        registerText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        registerText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         registerText.setLineSpacing(25)
 
         // loginButton
@@ -59,21 +59,21 @@ export default class Reset extends BaseScene {
         const loginText = this.add.text(760, 546, '', {})
         loginText.setOrigin(0.5, 0.5)
         loginText.text = 'Reset'
-        loginText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '38px'})
+        loginText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '38px'})
         loginText.setLineSpacing(25)
 
         // passwordText
         const passwordText = this.add.text(620, 385, '', {})
         passwordText.setOrigin(1, 0.5)
         passwordText.text = 'New Password:'
-        passwordText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        passwordText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         passwordText.setLineSpacing(25)
 
         // usernameText
         const usernameText = this.add.text(620, 309, '', {})
         usernameText.setOrigin(1, 0.5)
         usernameText.text = 'New Password:'
-        usernameText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        usernameText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         usernameText.setLineSpacing(25)
 
         // password
@@ -88,14 +88,14 @@ export default class Reset extends BaseScene {
         // usernameInput
         const usernameInput = this.add.text(0, -48, '', {})
         usernameInput.setOrigin(0, 0.5)
-        usernameInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '30px'})
+        usernameInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         usernameInput.setLineSpacing(25)
         inputTextContainer.add(usernameInput)
 
         // passwordInput
         const passwordInput = this.add.text(0, 28.86422789629154, '', {})
         passwordInput.setOrigin(0, 0.5)
-        passwordInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '30px'})
+        passwordInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         passwordInput.setLineSpacing(25)
         inputTextContainer.add(passwordInput)
 
@@ -103,7 +103,7 @@ export default class Reset extends BaseScene {
         const suggested = this.add.text(760, 106, '', {})
         suggested.setOrigin(0.5, 0.5)
         suggested.text = 'RESET YOUR PASSWORD'
-        suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'CCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
+        suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'cpCCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
 
         // backButton (components)
         const backButtonSimpleButton = new SimpleButton(backButton)

@@ -117,14 +117,14 @@ export default class IglooEdit extends BaseScene {
         const music = this.add.text(35, 200, '', {})
         music.setOrigin(0.5, 0.5)
         music.text = 'Music'
-        music.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
+        music.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '22px', fontStyle: 'bold'})
         lower.add(music)
 
         // hide
         const hide = this.add.text(50, 328, '', {})
         hide.setOrigin(0.5, 0.5)
         hide.text = 'Hide'
-        hide.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
+        hide.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '22px', fontStyle: 'bold'})
         lower.add(hide)
 
         // upper
@@ -322,63 +322,63 @@ export default class IglooEdit extends BaseScene {
         const grandTotalLikes = this.add.text(870, 151, '', {})
         grandTotalLikes.setOrigin(0, 0.5)
         grandTotalLikes.text = '0'
-        grandTotalLikes.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        grandTotalLikes.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
         chooseIgloo.add(grandTotalLikes)
 
         // title_4
         const title_4 = this.add.text(870, 114, '', {})
         title_4.setOrigin(0, 0.5)
         title_4.text = 'Grand Total Likes:'
-        title_4.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '28px'})
+        title_4.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
         chooseIgloo.add(title_4)
 
         // title_5
         const title_5 = this.add.text(891, 263, '', {})
         title_5.setOrigin(0, 0.5)
         title_5.text = 'Your current igloo'
-        title_5.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        title_5.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         chooseIgloo.add(title_5)
 
         // title_6
         const title_6 = this.add.text(1060, 349, '', {})
         title_6.setOrigin(0.5, 0.5)
         title_6.text = 'Friends'
-        title_6.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        title_6.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         chooseIgloo.add(title_6)
 
         // title_7
         const title_7 = this.add.text(1300, 349, '', {})
         title_7.setOrigin(0.5, 0.5)
         title_7.text = 'Everyone'
-        title_7.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        title_7.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         chooseIgloo.add(title_7)
 
         // title_8
         const title_8 = this.add.text(944, 429, '', {})
         title_8.setOrigin(0.5, 0.5)
         title_8.text = 'Edit'
-        title_8.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        title_8.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         chooseIgloo.add(title_8)
 
         // title_9
         const title_9 = this.add.text(1180, 429, '', {})
         title_9.setOrigin(0.5, 0.5)
         title_9.text = 'Igloo Visitors'
-        title_9.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        title_9.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         chooseIgloo.add(title_9)
 
         // currentIglooLikes
         const currentIglooLikes = this.add.text(892, 507, '', {})
         currentIglooLikes.setOrigin(0, 0.5)
         currentIglooLikes.text = '0'
-        currentIglooLikes.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        currentIglooLikes.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         chooseIgloo.add(currentIglooLikes)
 
         // title_11
         const title_11 = this.add.text(892, 472, '', {})
         title_11.setOrigin(0, 0.5)
         title_11.text = 'Likes'
-        title_11.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '26px'})
+        title_11.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '26px'})
         chooseIgloo.add(title_11)
 
         // plus_4
@@ -389,56 +389,56 @@ export default class IglooEdit extends BaseScene {
         const title_12 = this.add.text(108, 828, '', {})
         title_12.setOrigin(0, 0.5)
         title_12.text = 'Likes'
-        title_12.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        title_12.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         chooseIgloo.add(title_12)
 
         // title_13
         const title_13 = this.add.text(108, 853, '', {})
         title_13.setOrigin(0, 0.5)
         title_13.text = '0'
-        title_13.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        title_13.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         chooseIgloo.add(title_13)
 
         // title_14
         const title_14 = this.add.text(448, 853, '', {})
         title_14.setOrigin(0, 0.5)
         title_14.text = '0'
-        title_14.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        title_14.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         chooseIgloo.add(title_14)
 
         // title_15
         const title_15 = this.add.text(448, 828, '', {})
         title_15.setOrigin(0, 0.5)
         title_15.text = 'Likes'
-        title_15.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        title_15.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         chooseIgloo.add(title_15)
 
         // title_16
         const title_16 = this.add.text(788, 853, '', {})
         title_16.setOrigin(0, 0.5)
         title_16.text = '0'
-        title_16.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        title_16.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         chooseIgloo.add(title_16)
 
         // title_17
         const title_17 = this.add.text(788, 828, '', {})
         title_17.setOrigin(0, 0.5)
         title_17.text = 'Likes'
-        title_17.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        title_17.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         chooseIgloo.add(title_17)
 
         // title_18
         const title_18 = this.add.text(1127, 853, '', {})
         title_18.setOrigin(0, 0.5)
         title_18.text = '0'
-        title_18.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        title_18.setStyle({color: '#3e83c5ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         chooseIgloo.add(title_18)
 
         // title_19
         const title_19 = this.add.text(1127, 828, '', {})
         title_19.setOrigin(0, 0.5)
         title_19.text = 'Likes'
-        title_19.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '20px'})
+        title_19.setStyle({color: '#3e83c5ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         chooseIgloo.add(title_19)
 
         // lists

@@ -5,7 +5,7 @@ class Hint extends BaseContainer {
         super(scene, x, y)
 
         this.textStyle = {
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: 24,
             color: '#000000',
             align: 'center',

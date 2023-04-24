@@ -265,7 +265,7 @@ export default class IglooMap extends BaseContainer {
         // username
         const username = scene.add.text(180, 72, '', {})
         username.setOrigin(0.5, 0.5)
-        username.setStyle({color: '#000', fixedWidth: 270, fontFamily: 'Burbank Small', fontSize: '24px'})
+        username.setStyle({color: '#000', fixedWidth: 270, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         panel.add(username)
 
         // iglooItem_7
@@ -303,7 +303,7 @@ export default class IglooMap extends BaseContainer {
         // open
         const open = scene.add.text(0, 126, '', {})
         open.text = 'Open Igloos'
-        open.setStyle({color: '#999', fontFamily: 'Burbank Small', fontSize: '22px', fontStyle: 'bold'})
+        open.setStyle({color: '#999', fontFamily: 'cpBurbankSmall', fontSize: '22px', fontStyle: 'bold'})
         panel.add(open)
 
         // down

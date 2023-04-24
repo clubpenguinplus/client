@@ -44,7 +44,7 @@
                     "originY": 0.5,
                     "text": "Clothing items for everyone",
                     "fixedWidth": 270,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "25px",
                     "fontStyle": "bold italic",
                     "wordWrapWidth": 270

@@ -47,7 +47,7 @@
                     "text": "Okay",
                     "fixedWidth": 280,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold"
                 }

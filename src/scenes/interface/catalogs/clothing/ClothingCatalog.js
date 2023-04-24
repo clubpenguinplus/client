@@ -48,7 +48,7 @@ export default class ClothingCatalog extends Book {
         const coins = this.add.text(808.5193256172128, 854.2068469602601, '', {})
         coins.angle = -7
         coins.text = 'Your Coins:\n100000'
-        coins.setStyle({align: 'center', color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
+        coins.setStyle({align: 'center', color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold italic'})
         buttons.add(coins)
 
         // prevPage

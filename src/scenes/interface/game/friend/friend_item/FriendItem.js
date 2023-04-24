@@ -32,7 +32,7 @@ export default class FriendItem extends BaseContainer {
         const username = scene.add.text(0, 60, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({align: 'center', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px', fontStyle: 'bold'})
+        username.setStyle({align: 'center', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px', fontStyle: 'bold'})
         this.add(username)
 
         // add
@@ -58,7 +58,7 @@ export default class FriendItem extends BaseContainer {
         offlineonline.setOrigin(0.5, 0.5)
         offlineonline.visible = false
         offlineonline.text = 'Offline'
-        offlineonline.setStyle({align: 'center', color: '#a7c9d5ff', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px'})
+        offlineonline.setStyle({align: 'center', color: '#a7c9d5ff', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px'})
         this.add(offlineonline)
 
         // offline

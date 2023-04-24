@@ -216,7 +216,7 @@ export default class Main extends BaseScene {
         // chatInput
         const chatInput = this.add.text(0, 0, '', {})
         chatInput.setOrigin(0, 0.5)
-        chatInput.setStyle({color: '#ffffffff', fixedWidth: 476, fontFamily: 'Burbank Small', fontSize: '24px'})
+        chatInput.setStyle({color: '#ffffffff', fixedWidth: 476, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         chatInput.setPadding({top: 6})
         chatInput.setLineSpacing(25)
         inputTextContainer.add(chatInput)
@@ -390,7 +390,7 @@ export default class Main extends BaseScene {
         // chatInput_mobile
         const chatInput_mobile = this.add.text(2, 1, '', {})
         chatInput_mobile.setOrigin(0, 0.5)
-        chatInput_mobile.setStyle({color: '#ffffffff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '36px'})
+        chatInput_mobile.setStyle({color: '#ffffffff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '36px'})
         chatInput_mobile.setPadding({top: 6})
         chatInput_mobile.setLineSpacing(25)
         inputTextContainer_mobile.add(chatInput_mobile)
@@ -514,13 +514,13 @@ export default class Main extends BaseScene {
         // stampEarnedHeader
         const stampEarnedHeader = this.add.text(88, 25, '', {})
         stampEarnedHeader.text = 'STAMP EARNED!'
-        stampEarnedHeader.setStyle({fixedWidth: 380, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold italic'})
+        stampEarnedHeader.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold italic'})
         stampEarned.add(stampEarnedHeader)
 
         // stampEarnedBody
         const stampEarnedBody = this.add.text(90, 80, '', {})
         stampEarnedBody.text = 'Stamp Name'
-        stampEarnedBody.setStyle({fixedWidth: 380, fontFamily: 'Burbank Small', fontSize: '35px'})
+        stampEarnedBody.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '35px'})
         stampEarned.add(stampEarnedBody)
 
         // puffleCare

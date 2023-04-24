@@ -27,7 +27,7 @@ export default class IglooItem extends BaseContainer {
         username.setStyle({
             color: '#000',
             fixedWidth: 270,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(username)

@@ -19,7 +19,7 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
         waiting.text = 'Waiting for Player'
         waiting.setStyle({
             fixedWidth: 260,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(waiting)

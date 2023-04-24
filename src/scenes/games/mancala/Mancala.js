@@ -202,7 +202,7 @@ export default class Mancala extends BaseContainer {
         currentArrowText.setOrigin(0.5, 0.5)
         currentArrowText.visible = false
         currentArrowText.text = '4'
-        currentArrowText.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#000000ff', 'shadow.blur': 5})
+        currentArrowText.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#000000ff', 'shadow.blur': 5})
         this.add(currentArrowText)
 
         // lists

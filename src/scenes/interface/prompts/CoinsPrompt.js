@@ -96,14 +96,14 @@ export default class CoinsPrompt extends BaseContainer {
         const totalCoins = scene.add.text(0, -86, '', {})
         totalCoins.setOrigin(0.5, 0.5)
         totalCoins.text = 'Your total coins: 8888888'
-        totalCoins.setStyle({color: '#005cc6ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
+        totalCoins.setStyle({color: '#005cc6ff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(totalCoins)
 
         // coinsEarned
         const coinsEarned = scene.add.text(0, -121, '', {})
         coinsEarned.setOrigin(0.5, 0.5)
         coinsEarned.text = 'Coins Earned: 88888'
-        coinsEarned.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
+        coinsEarned.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
         this.add(coinsEarned)
 
         // coins_right
@@ -119,42 +119,42 @@ export default class CoinsPrompt extends BaseContainer {
         const gameName = scene.add.text(0, -201, '', {})
         gameName.setOrigin(0.5, 0.5)
         gameName.text = 'Aqua Grabber'
-        gameName.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '50px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 10})
+        gameName.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '50px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 10})
         this.add(gameName)
 
         // useCoins
         const useCoins = scene.add.text(0, 2, '', {})
         useCoins.setOrigin(0.5, 0.5)
         useCoins.text = 'Use your coins to:'
-        useCoins.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
+        useCoins.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(useCoins)
 
         // buyClothes
         const buyClothes = scene.add.text(-270, 146, '', {})
         buyClothes.setOrigin(0.5, 0.5)
         buyClothes.text = 'Buy new clothing'
-        buyClothes.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
+        buyClothes.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(buyClothes)
 
         // adoptPet
         const adoptPet = scene.add.text(0, 146, '', {})
         adoptPet.setOrigin(0.5, 0.5)
         adoptPet.text = 'Adopt a pet'
-        adoptPet.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
+        adoptPet.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(adoptPet)
 
         // decorateIgloo
         const decorateIgloo = scene.add.text(270, 146, '', {})
         decorateIgloo.setOrigin(0.5, 0.5)
         decorateIgloo.text = 'Decorate your igloo'
-        decorateIgloo.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
+        decorateIgloo.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff', 'shadow.offsetX': 1, 'shadow.offsetY': 2, 'shadow.fill': true})
         this.add(decorateIgloo)
 
         // done
         const done = scene.add.text(0, 220, '', {})
         done.setOrigin(0.5, 0.5)
         done.text = 'Done'
-        done.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
+        done.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '45px', fontStyle: 'bold', stroke: '#003d7cff', strokeThickness: 8})
         this.add(done)
 
         // divider
@@ -172,7 +172,7 @@ export default class CoinsPrompt extends BaseContainer {
         stampNumber.setOrigin(0.5, 0.5)
         stampNumber.visible = false
         stampNumber.text = '22/22'
-        stampNumber.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff'})
+        stampNumber.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', stroke: '#ffffffff'})
         this.add(stampNumber)
 
         // bonus
@@ -185,7 +185,7 @@ export default class CoinsPrompt extends BaseContainer {
         bonusLeft.angle = -30
         bonusLeft.setOrigin(0.5, 0.5)
         bonusLeft.text = 'x2'
-        bonusLeft.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
+        bonusLeft.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
         bonus.add(bonusLeft)
 
         // bonusRight
@@ -193,7 +193,7 @@ export default class CoinsPrompt extends BaseContainer {
         bonusRight.angle = 30
         bonusRight.setOrigin(0.5, 0.5)
         bonusRight.text = 'x2'
-        bonusRight.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
+        bonusRight.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
         bonus.add(bonusRight)
 
         // stampLayer
@@ -234,14 +234,14 @@ export default class CoinsPrompt extends BaseContainer {
         // stampInfoTitle
         const stampInfoTitle = scene.add.text(-122.09110107065823, -141.343807637391, '', {})
         stampInfoTitle.text = 'Aunt Arctic'
-        stampInfoTitle.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        stampInfoTitle.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         stampInfoTitle.setPadding({left: 15, right: 15})
         stampInfo.add(stampInfoTitle)
 
         // stampInfoBody
         const stampInfoBody = scene.add.text(-122.09110107065823, -106.343807637391, '', {})
         stampInfoBody.text = 'Be in the same room as Aunt Arctic'
-        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '17px'})
+        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '17px'})
         stampInfoBody.setPadding({left: 15, right: 15})
         stampInfoBody.setWordWrapWidth(210)
         stampInfo.add(stampInfoBody)

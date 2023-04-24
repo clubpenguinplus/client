@@ -105,7 +105,7 @@ export default class Unlock extends BaseScene {
         const optionText = this.add.text(13.992220199009466, -1.104337977288992, '', {})
         optionText.setOrigin(0.5, 0.5)
         optionText.text = 'Unlock your Items. Choose an option.'
-        optionText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        optionText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         optionText.setLineSpacing(25)
         baseOptions.add(optionText)
 
@@ -123,7 +123,7 @@ export default class Unlock extends BaseScene {
         const codeText = this.add.text(17.858540417469612, -4.880653572546635, '', {})
         codeText.setOrigin(0.5, 0.5)
         codeText.text = "I've got a Code"
-        codeText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        codeText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         codeText.setLineSpacing(25)
         codeButtons.add(codeText)
 
@@ -141,7 +141,7 @@ export default class Unlock extends BaseScene {
         const optionTextCode = this.add.text(0, -68.46073228851685, '', {})
         optionTextCode.setOrigin(0.5, 0.5)
         optionTextCode.text = 'Enter your code!\nMake sure you enter it exactly as it appears.'
-        optionTextCode.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        optionTextCode.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         optionTextCode.setLineSpacing(5)
         codeOption.add(optionTextCode)
 
@@ -159,7 +159,7 @@ export default class Unlock extends BaseScene {
         const nextText = this.add.text(0, 75.53926771148315, '', {})
         nextText.setOrigin(0.5, 0.5)
         nextText.text = 'Next'
-        nextText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '20px'})
+        nextText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         nextText.setLineSpacing(25)
         codeOption.add(nextText)
 
@@ -172,7 +172,7 @@ export default class Unlock extends BaseScene {
         codeInput.alphaTopRight = 0.8
         codeInput.alphaBottomLeft = 0.8
         codeInput.alphaBottomRight = 0.8
-        codeInput.setStyle({align: 'center', color: '#000000ff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        codeInput.setStyle({align: 'center', color: '#000000ff', fixedWidth: 350, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         codeInput.setLineSpacing(25)
 
         // blue_button
@@ -218,7 +218,7 @@ export default class Unlock extends BaseScene {
         // coinstext
         const coinstext = this.add.text(-18, 27, '', {})
         coinstext.text = '1000'
-        coinstext.setStyle({color: '#000000ff', fontFamily: 'Burbank Small'})
+        coinstext.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall'})
         coins.add(coinstext)
 
         // item

@@ -17,7 +17,7 @@ export default class Checks extends BaseContainer {
         const text_2 = scene.add.text(34, 56, '', {})
         text_2.setOrigin(0, 0.5)
         text_2.text = 'Remember my password'
-        text_2.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        text_2.setStyle({align: 'right', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         text_2.setLineSpacing(25)
         this.add(text_2)
 
@@ -25,7 +25,7 @@ export default class Checks extends BaseContainer {
         const text_1 = scene.add.text(34, 1, '', {})
         text_1.setOrigin(0, 0.5)
         text_1.text = 'Remember me on this computer'
-        text_1.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        text_1.setStyle({align: 'right', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         text_1.setLineSpacing(25)
         this.add(text_1)
 

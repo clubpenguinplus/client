@@ -80,7 +80,7 @@
                     "originY": 0.5,
                     "text": "Username",
                     "fixedWidth": 185,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "fontStyle": "bold"
                 },
@@ -96,7 +96,7 @@
                     "originY": 0.5,
                     "text": "Wants to be your friend!",
                     "fixedWidth": 185,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px"
                 },
                 {
@@ -135,7 +135,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "+ Add Friend",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "12px",
                     "color": "#ffffffff"
                 },
@@ -175,7 +175,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "No Thanks",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "12px",
                     "color": "#ffffffff"
                 }

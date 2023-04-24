@@ -45,7 +45,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "fixedWidth": 280,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "color": "#3e83c5ff"
                 }

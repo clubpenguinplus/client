@@ -91,7 +91,7 @@
                     "x": 558,
                     "y": 146,
                     "text": "Music Catalog",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "70px",
                     "fontStyle": "bold italic",
                     "color": "#373737ff"
@@ -104,7 +104,7 @@
                     "x": 555,
                     "y": 143,
                     "text": "Music Catalog",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "70px",
                     "fontStyle": "bold italic"
                 }
@@ -382,7 +382,7 @@
                     "angle": -7,
                     "text": "Your Coins:\n100000",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 }
@@ -736,7 +736,7 @@
                     "angle": -7,
                     "text": "Your Coins:\n100000",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 }

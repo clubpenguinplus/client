@@ -111,7 +111,7 @@ export default class Inventory extends BaseContainer {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         container.add(active_text)

@@ -64,7 +64,7 @@
                     "text": "You have found a party hat.\nWould you like to pick it up?",
                     "fixedWidth": 628,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000"
                 },

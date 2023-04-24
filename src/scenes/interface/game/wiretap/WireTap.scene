@@ -53,7 +53,7 @@
                     "text": "Wiretap",
                     "fixedWidth": 360,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#ffffffff"
                 },
@@ -70,7 +70,7 @@
                     "text": "Tap a room",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#ffffffff"
                 },
@@ -107,7 +107,7 @@
                     "text": "Room ID",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#ffffffff"
                 },
@@ -124,7 +124,7 @@
                     "text": "Tap all rooms",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#ffffffff"
                 },
@@ -168,7 +168,7 @@
                     "text": "Your tapped rooms:",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#ffffffff",
                     "wordWrapWidth": 200
@@ -184,7 +184,7 @@
                     "originX": 0.5,
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "25px",
                     "color": "#ace3f6ff",
                     "wordWrapWidth": 200
@@ -217,7 +217,7 @@
                     "fixedWidth": 500,
                     "paddingLeft": 10,
                     "paddingRight": 10,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "color": "#ffffffff"
                 },
                 {

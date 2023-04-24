@@ -468,7 +468,7 @@
                     "originY": 0.5,
                     "visible": false,
                     "text": "4",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "fontStyle": "bold",
                     "color": "#000000ff",

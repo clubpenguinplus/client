@@ -779,7 +779,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "fixedWidth": 270,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000"
                         },
@@ -902,7 +902,7 @@
                             "components": [],
                             "y": 126,
                             "text": "Open Igloos",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "22px",
                             "fontStyle": "bold",
                             "color": "#999"

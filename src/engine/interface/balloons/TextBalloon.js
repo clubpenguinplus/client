@@ -12,7 +12,7 @@ export default class TextBalloon extends Balloon {
         this.paddingY = 16
 
         this.textStyle = {
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: 24,
             color: '#000000',
             align: 'center',

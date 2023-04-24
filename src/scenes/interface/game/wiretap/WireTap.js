@@ -42,14 +42,14 @@ export default class WireTap extends BaseContainer {
         const header = scene.add.text(0, -253, '', {})
         header.setOrigin(0.5, 0.5)
         header.text = 'Wiretap'
-        header.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 360, fontFamily: 'Burbank Small', fontSize: '32px'})
+        header.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 360, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(header)
 
         // header_1
         const header_1 = scene.add.text(-262, -179, '', {})
         header_1.setOrigin(0.5, 0.5)
         header_1.text = 'Tap a room'
-        header_1.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '32px'})
+        header_1.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(header_1)
 
         // ninepatchcontainer_1
@@ -62,14 +62,14 @@ export default class WireTap extends BaseContainer {
         const tap_a_room = scene.add.text(-262, -129, '', {})
         tap_a_room.setOrigin(0.5, 0.5)
         tap_a_room.text = 'Room ID'
-        tap_a_room.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '32px'})
+        tap_a_room.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(tap_a_room)
 
         // header_3
         const header_3 = scene.add.text(-259, -52, '', {})
         header_3.setOrigin(0.5, 0.5)
         header_3.text = 'Tap all rooms'
-        header_3.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '32px'})
+        header_3.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(header_3)
 
         // blue_button
@@ -84,14 +84,14 @@ export default class WireTap extends BaseContainer {
         const header_4 = scene.add.text(-261, 90, '', {})
         header_4.setOrigin(0.5, 0.5)
         header_4.text = 'Your tapped rooms:'
-        header_4.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '32px'})
+        header_4.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         header_4.setWordWrapWidth(200)
         this.add(header_4)
 
         // tapped_rooms
         const tapped_rooms = scene.add.text(-261, 139, '', {})
         tapped_rooms.setOrigin(0.5, 0)
-        tapped_rooms.setStyle({align: 'center', color: '#ace3f6ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '25px'})
+        tapped_rooms.setStyle({align: 'center', color: '#ace3f6ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '25px'})
         tapped_rooms.setWordWrapWidth(200)
         this.add(tapped_rooms)
 
@@ -104,7 +104,7 @@ export default class WireTap extends BaseContainer {
         // messages
         const messages = scene.add.text(109, -177, '', {})
         messages.setOrigin(0.5, 0)
-        messages.setStyle({color: '#ffffffff', fixedWidth: 500, fontFamily: 'Burbank Small'})
+        messages.setStyle({color: '#ffffffff', fixedWidth: 500, fontFamily: 'cpBurbankSmall'})
         messages.setPadding({left: 10, right: 10})
         this.add(messages)
 

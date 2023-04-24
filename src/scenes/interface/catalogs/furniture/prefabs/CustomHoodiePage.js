@@ -16,7 +16,7 @@ export default class CustomHoodiePage extends Page {
         const page15_header = scene.add.text(204, 82, '', {})
         page15_header.setOrigin(0.5, 0.5)
         page15_header.text = 'Create your\nown hoodie!'
-        page15_header.setStyle({fontFamily: 'Burbank Small', fontSize: '27px', fontStyle: 'bold italic'})
+        page15_header.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '27px', fontStyle: 'bold italic'})
         this.add(page15_header)
 
         // customHoodie
@@ -118,7 +118,7 @@ export default class CustomHoodiePage extends Page {
         page15_step_1.angle = 2
         page15_step_1.setOrigin(0, 0.5)
         page15_step_1.text = '1. Pick your color'
-        page15_step_1.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        page15_step_1.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold'})
         this.add(page15_step_1)
 
         // page15_step_2
@@ -126,7 +126,7 @@ export default class CustomHoodiePage extends Page {
         page15_step_2.angle = 2
         page15_step_2.setOrigin(0, 0.5)
         page15_step_2.text = '2. Choose your design'
-        page15_step_2.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        page15_step_2.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold'})
         this.add(page15_step_2)
 
         // page15_step_3
@@ -134,7 +134,7 @@ export default class CustomHoodiePage extends Page {
         page15_step_3.angle = -10
         page15_step_3.setOrigin(0.5, 0.5)
         page15_step_3.text = '3. Click on your hoodie to buy!'
-        page15_step_3.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        page15_step_3.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page15_step_3.setWordWrapWidth(210)
         this.add(page15_step_3)
 

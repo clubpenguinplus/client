@@ -43,7 +43,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Player card flags\nfor everyone",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold italic"
                 },
@@ -62,7 +62,7 @@
                     "originY": 0.5,
                     "text": "Latvia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -81,7 +81,7 @@
                     "originY": 0.5,
                     "text": "Slovenia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -100,7 +100,7 @@
                     "originY": 0.5,
                     "text": "Gibraltar",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -119,7 +119,7 @@
                     "originY": 0.5,
                     "text": "Malta",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -138,7 +138,7 @@
                     "originY": 0.5,
                     "text": "Pakistan",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -157,7 +157,7 @@
                     "originY": 0.5,
                     "text": "Czech Republic",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -176,7 +176,7 @@
                     "originY": 0.5,
                     "text": "Croatia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -195,7 +195,7 @@
                     "originY": 0.5,
                     "text": "Greece",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -214,7 +214,7 @@
                     "originY": 0.5,
                     "text": "Romania",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -233,7 +233,7 @@
                     "originY": 0.5,
                     "text": "Belgium",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -252,7 +252,7 @@
                     "originY": 0.5,
                     "text": "Austria",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -271,7 +271,7 @@
                     "originY": 0.5,
                     "text": "Australia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -290,7 +290,7 @@
                     "originY": 0.5,
                     "text": "Argentina",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -309,7 +309,7 @@
                     "originY": 0.5,
                     "text": "Netherlands",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -328,7 +328,7 @@
                     "originY": 0.5,
                     "text": "Chile",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -347,7 +347,7 @@
                     "originY": 0.5,
                     "text": "Canada",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -366,7 +366,7 @@
                     "originY": 0.5,
                     "text": "Brazil",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -385,7 +385,7 @@
                     "originY": 0.5,
                     "text": "Belize",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -404,7 +404,7 @@
                     "originY": 0.5,
                     "text": "Peru",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -423,7 +423,7 @@
                     "originY": 0.5,
                     "text": "Denmark",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -442,7 +442,7 @@
                     "originY": 0.5,
                     "text": "Costa Rica",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -461,7 +461,7 @@
                     "originY": 0.5,
                     "text": "Columbia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -480,7 +480,7 @@
                     "originY": 0.5,
                     "text": "China",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -499,7 +499,7 @@
                     "originY": 0.5,
                     "text": "Portugal",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -518,7 +518,7 @@
                     "originY": 0.5,
                     "text": "Finland",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -537,7 +537,7 @@
                     "originY": 0.5,
                     "text": "Egypt",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -556,7 +556,7 @@
                     "originY": 0.5,
                     "text": "Ecuador",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -575,7 +575,7 @@
                     "originY": 0.5,
                     "text": "Dominican Republic",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -594,7 +594,7 @@
                     "originY": 0.5,
                     "text": "Singapore",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -613,7 +613,7 @@
                     "originY": 0.5,
                     "text": "Puerto Rico",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -632,7 +632,7 @@
                     "originY": 0.5,
                     "text": "Russia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -651,7 +651,7 @@
                     "originY": 0.5,
                     "text": "South Africa",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -670,7 +670,7 @@
                     "originY": 0.5,
                     "text": "Spain",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -689,7 +689,7 @@
                     "originY": 0.5,
                     "text": "Venezuela",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -708,7 +708,7 @@
                     "originY": 0.5,
                     "text": "South Korea",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -727,7 +727,7 @@
                     "originY": 0.5,
                     "text": "Liechtenstein",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -746,7 +746,7 @@
                     "originY": 0.5,
                     "text": "Malaysia",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -765,7 +765,7 @@
                     "originY": 0.5,
                     "text": "Mexico",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -784,7 +784,7 @@
                     "originY": 0.5,
                     "text": "Uruguay",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -803,7 +803,7 @@
                     "originY": 0.5,
                     "text": "Israel",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -822,7 +822,7 @@
                     "originY": 0.5,
                     "text": "Italy",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -841,7 +841,7 @@
                     "originY": 0.5,
                     "text": "Jamaica",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -860,7 +860,7 @@
                     "originY": 0.5,
                     "text": "Japan",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -879,7 +879,7 @@
                     "originY": 0.5,
                     "text": "Switzerland",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -898,7 +898,7 @@
                     "originY": 0.5,
                     "text": "Haiti",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -917,7 +917,7 @@
                     "originY": 0.5,
                     "text": "Hungary",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -936,7 +936,7 @@
                     "originY": 0.5,
                     "text": "India",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -955,7 +955,7 @@
                     "originY": 0.5,
                     "text": "Ireland",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -974,7 +974,7 @@
                     "originY": 0.5,
                     "text": "United States",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -993,7 +993,7 @@
                     "originY": 0.5,
                     "text": "Sweden",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1012,7 +1012,7 @@
                     "originY": 0.5,
                     "text": "Guatemala",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1031,7 +1031,7 @@
                     "originY": 0.5,
                     "text": "United Kingdom",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1050,7 +1050,7 @@
                     "originY": 0.5,
                     "text": "Germany",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1069,7 +1069,7 @@
                     "originY": 0.5,
                     "text": "France",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1088,7 +1088,7 @@
                     "originY": 0.5,
                     "text": "Turkey",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1107,7 +1107,7 @@
                     "originY": 0.5,
                     "text": "Poland",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1126,7 +1126,7 @@
                     "originY": 0.5,
                     "text": "Philippines",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1145,7 +1145,7 @@
                     "originY": 0.5,
                     "text": "Norway",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },
@@ -1164,7 +1164,7 @@
                     "originY": 0.5,
                     "text": "New Zealand",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "wordWrapWidth": 125
                 },

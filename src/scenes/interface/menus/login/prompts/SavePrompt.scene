@@ -154,7 +154,7 @@
                     "text": "Save Password",
                     "fixedWidth": 300,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold"
                 },
@@ -173,7 +173,7 @@
                     "text": "Don't Save\nPassword",
                     "fixedWidth": 300,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold"
                 },
@@ -192,7 +192,7 @@
                     "text": "Learn More",
                     "fixedWidth": 300,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold"
                 }

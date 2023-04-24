@@ -5,7 +5,7 @@ export default class PenguinLoader {
         this.shell = shell
 
         this.clientNameStyle = {
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: 24,
             color: '#ffffff',
             stroke: '#3a3a3aff',
@@ -15,7 +15,7 @@ export default class PenguinLoader {
         }
 
         this.nameStyle = {
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: 24,
             color: '#000000',
             align: 'center',

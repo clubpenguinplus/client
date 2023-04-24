@@ -49,7 +49,7 @@ export default class Waddle extends BaseContainer {
             align: 'center',
             color: '#000000',
             fixedWidth: 420,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '32px',
         })
         this.add(text)

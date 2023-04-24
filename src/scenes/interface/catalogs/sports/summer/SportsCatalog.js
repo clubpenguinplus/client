@@ -241,7 +241,7 @@ export default class SportsCatalog extends Book {
         const priceNum_722 = this.add.text(906, 230, '', {})
         priceNum_722.setOrigin(0.5, 0.5)
         priceNum_722.text = '250'
-        priceNum_722.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_722.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page2.add(priceNum_722)
 
         // buyBtn_3002
@@ -252,7 +252,7 @@ export default class SportsCatalog extends Book {
         const priceNum_3002 = this.add.text(907, 516, '', {})
         priceNum_3002.setOrigin(0.5, 0.5)
         priceNum_3002.text = '250'
-        priceNum_3002.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3002.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page2.add(priceNum_3002)
 
         // bgholder1
@@ -323,7 +323,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5472 = this.add.text(994, 814, '', {})
         priceNum_5472.setOrigin(0.5, 0.5)
         priceNum_5472.text = '145'
-        priceNum_5472.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5472.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page3.add(priceNum_5472)
 
         // buyBtn_5473
@@ -334,7 +334,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5473 = this.add.text(994, 421, '', {})
         priceNum_5473.setOrigin(0.5, 0.5)
         priceNum_5473.text = '250'
-        priceNum_5473.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5473.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page3.add(priceNum_5473)
 
         // buyBtn_1906
@@ -345,7 +345,7 @@ export default class SportsCatalog extends Book {
         const priceNum_1906 = this.add.text(528, 753, '', {})
         priceNum_1906.setOrigin(0.5, 0.5)
         priceNum_1906.text = '250'
-        priceNum_1906.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1906.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page3.add(priceNum_1906)
 
         // buyBtn_1907
@@ -356,7 +356,7 @@ export default class SportsCatalog extends Book {
         const priceNum_1907 = this.add.text(263, 754, '', {})
         priceNum_1907.setOrigin(0.5, 0.5)
         priceNum_1907.text = '145'
-        priceNum_1907.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1907.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page3.add(priceNum_1907)
 
         // buyBtn_5471
@@ -367,7 +367,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5471 = this.add.text(1294, 815, '', {})
         priceNum_5471.setOrigin(0.5, 0.5)
         priceNum_5471.text = '145'
-        priceNum_5471.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5471.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page3.add(priceNum_5471)
 
         // buyBtn_5474
@@ -378,7 +378,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5474 = this.add.text(1288, 421, '', {})
         priceNum_5474.setOrigin(0.5, 0.5)
         priceNum_5474.text = '250'
-        priceNum_5474.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5474.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page3.add(priceNum_5474)
 
         // page4
@@ -397,7 +397,7 @@ export default class SportsCatalog extends Book {
         const priceNum_24191 = this.add.text(308, 423, '', {})
         priceNum_24191.setOrigin(0.5, 0.5)
         priceNum_24191.text = '250'
-        priceNum_24191.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_24191.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page4.add(priceNum_24191)
 
         // buyBtn_24204
@@ -408,7 +408,7 @@ export default class SportsCatalog extends Book {
         const priceNum_24204 = this.add.text(307, 708, '', {})
         priceNum_24204.setOrigin(0.5, 0.5)
         priceNum_24204.text = '145'
-        priceNum_24204.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_24204.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page4.add(priceNum_24204)
 
         // page5
@@ -427,7 +427,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4347 = this.add.text(984, 381, '', {})
         priceNum_4347.setOrigin(0.5, 0.5)
         priceNum_4347.text = '450'
-        priceNum_4347.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4347.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_4347)
 
         // buyBtn_4349
@@ -438,7 +438,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4349 = this.add.text(995, 742, '', {})
         priceNum_4349.setOrigin(0.5, 0.5)
         priceNum_4349.text = '350'
-        priceNum_4349.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4349.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_4349)
 
         // buyBtn_4350
@@ -449,7 +449,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4350 = this.add.text(1266, 744, '', {})
         priceNum_4350.setOrigin(0.5, 0.5)
         priceNum_4350.text = '350'
-        priceNum_4350.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4350.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_4350)
 
         // buyBtn_4348
@@ -460,7 +460,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4348 = this.add.text(1270, 381, '', {})
         priceNum_4348.setOrigin(0.5, 0.5)
         priceNum_4348.text = '350'
-        priceNum_4348.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4348.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_4348)
 
         // page6
@@ -479,7 +479,7 @@ export default class SportsCatalog extends Book {
         const priceNum_727 = this.add.text(380, 354, '', {})
         priceNum_727.setOrigin(0.5, 0.5)
         priceNum_727.text = '450'
-        priceNum_727.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_727.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page6.add(priceNum_727)
 
         // buyBtn_4091
@@ -490,7 +490,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4091 = this.add.text(382, 683, '', {})
         priceNum_4091.setOrigin(0.5, 0.5)
         priceNum_4091.text = '350'
-        priceNum_4091.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4091.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page6.add(priceNum_4091)
 
         // page7
@@ -517,7 +517,7 @@ export default class SportsCatalog extends Book {
         const priceNum_329 = this.add.text(1237, 271, '', {})
         priceNum_329.setOrigin(0.5, 0.5)
         priceNum_329.text = '450'
-        priceNum_329.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_329.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_329)
 
         // buyBtn_255
@@ -528,7 +528,7 @@ export default class SportsCatalog extends Book {
         const priceNum_255 = this.add.text(991, 271, '', {})
         priceNum_255.setOrigin(0.5, 0.5)
         priceNum_255.text = '350'
-        priceNum_255.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_255.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_255)
 
         // buyBtn_4116
@@ -539,7 +539,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4116 = this.add.text(988, 542, '', {})
         priceNum_4116.setOrigin(0.5, 0.5)
         priceNum_4116.text = '350'
-        priceNum_4116.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4116.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_4116)
 
         // buyBtn_5048
@@ -550,7 +550,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5048 = this.add.text(1240, 542, '', {})
         priceNum_5048.setOrigin(0.5, 0.5)
         priceNum_5048.text = '450'
-        priceNum_5048.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5048.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_5048)
 
         // buyBtn_658
@@ -561,7 +561,7 @@ export default class SportsCatalog extends Book {
         const priceNum_658 = this.add.text(268, 407, '', {})
         priceNum_658.setOrigin(0.5, 0.5)
         priceNum_658.text = '450'
-        priceNum_658.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_658.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_658)
 
         // buyBtn_671
@@ -572,7 +572,7 @@ export default class SportsCatalog extends Book {
         const priceNum_671 = this.add.text(537, 408, '', {})
         priceNum_671.setOrigin(0.5, 0.5)
         priceNum_671.text = '450'
-        priceNum_671.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_671.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_671)
 
         // buyBtn_5136
@@ -583,7 +583,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5136 = this.add.text(1255, 785, '', {})
         priceNum_5136.setOrigin(0.5, 0.5)
         priceNum_5136.text = '350'
-        priceNum_5136.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5136.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_5136)
 
         // buyBtn_254
@@ -594,7 +594,7 @@ export default class SportsCatalog extends Book {
         const priceNum_254 = this.add.text(993, 781, '', {})
         priceNum_254.setOrigin(0.5, 0.5)
         priceNum_254.text = '350'
-        priceNum_254.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_254.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_254)
 
         // buyBtn_1079
@@ -605,7 +605,7 @@ export default class SportsCatalog extends Book {
         const priceNum_1079 = this.add.text(393, 707, '', {})
         priceNum_1079.setOrigin(0.5, 0.5)
         priceNum_1079.text = '450'
-        priceNum_1079.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1079.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_1079)
 
         // page9
@@ -624,7 +624,7 @@ export default class SportsCatalog extends Book {
         const priceNum_462 = this.add.text(990, 390, '', {})
         priceNum_462.setOrigin(0.5, 0.5)
         priceNum_462.text = '350'
-        priceNum_462.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_462.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_462)
 
         // buyBtn_1078
@@ -635,7 +635,7 @@ export default class SportsCatalog extends Book {
         const priceNum_1078 = this.add.text(1255, 388, '', {})
         priceNum_1078.setOrigin(0.5, 0.5)
         priceNum_1078.text = '350'
-        priceNum_1078.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1078.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_1078)
 
         // buyBtn_721
@@ -646,7 +646,7 @@ export default class SportsCatalog extends Book {
         const priceNum_721 = this.add.text(992, 748, '', {})
         priceNum_721.setOrigin(0.5, 0.5)
         priceNum_721.text = '450'
-        priceNum_721.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_721.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_721)
 
         // buyBtn_4115
@@ -657,7 +657,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4115 = this.add.text(1271, 748, '', {})
         priceNum_4115.setOrigin(0.5, 0.5)
         priceNum_4115.text = '450'
-        priceNum_4115.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4115.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_4115)
 
         // page10
@@ -676,7 +676,7 @@ export default class SportsCatalog extends Book {
         const priceNum_463 = this.add.text(278, 332, '', {})
         priceNum_463.setOrigin(0.5, 0.5)
         priceNum_463.text = '350'
-        priceNum_463.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_463.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page10.add(priceNum_463)
 
         // buyBtn_726
@@ -687,7 +687,7 @@ export default class SportsCatalog extends Book {
         const priceNum_726 = this.add.text(579, 336, '', {})
         priceNum_726.setOrigin(0.5, 0.5)
         priceNum_726.text = '350'
-        priceNum_726.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_726.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page10.add(priceNum_726)
 
         // buyBtn_720
@@ -698,7 +698,7 @@ export default class SportsCatalog extends Book {
         const priceNum_720 = this.add.text(413, 720, '', {})
         priceNum_720.setOrigin(0.5, 0.5)
         priceNum_720.text = '450'
-        priceNum_720.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_720.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page10.add(priceNum_720)
 
         // page11
@@ -717,7 +717,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5091 = this.add.text(269, 367, '', {})
         priceNum_5091.setOrigin(0.5, 0.5)
         priceNum_5091.text = '450'
-        priceNum_5091.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5091.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_5091)
 
         // buyBtn_5092
@@ -728,7 +728,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5092 = this.add.text(512, 367, '', {})
         priceNum_5092.setOrigin(0.5, 0.5)
         priceNum_5092.text = '350'
-        priceNum_5092.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5092.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_5092)
 
         // buyBtn_5093
@@ -739,7 +739,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5093 = this.add.text(272, 703, '', {})
         priceNum_5093.setOrigin(0.5, 0.5)
         priceNum_5093.text = '450'
-        priceNum_5093.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5093.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_5093)
 
         // buyBtn_5094
@@ -750,7 +750,7 @@ export default class SportsCatalog extends Book {
         const priceNum_5094 = this.add.text(515, 703, '', {})
         priceNum_5094.setOrigin(0.5, 0.5)
         priceNum_5094.text = '350'
-        priceNum_5094.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5094.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_5094)
 
         // page12
@@ -769,7 +769,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4089 = this.add.text(1248, 388, '', {})
         priceNum_4089.setOrigin(0.5, 0.5)
         priceNum_4089.text = '450'
-        priceNum_4089.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4089.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_4089)
 
         // buyBtn_4090
@@ -780,7 +780,7 @@ export default class SportsCatalog extends Book {
         const priceNum_4090 = this.add.text(1017, 388, '', {})
         priceNum_4090.setOrigin(0.5, 0.5)
         priceNum_4090.text = '450'
-        priceNum_4090.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4090.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_4090)
 
         // buyBtn_313
@@ -791,7 +791,7 @@ export default class SportsCatalog extends Book {
         const priceNum_313 = this.add.text(1025, 739, '', {})
         priceNum_313.setOrigin(0.5, 0.5)
         priceNum_313.text = '450'
-        priceNum_313.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_313.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_313)
 
         // buyBtn_372
@@ -802,7 +802,7 @@ export default class SportsCatalog extends Book {
         const priceNum_372 = this.add.text(1266, 739, '', {})
         priceNum_372.setOrigin(0.5, 0.5)
         priceNum_372.text = '450'
-        priceNum_372.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_372.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_372)
 
         // page13
@@ -846,7 +846,7 @@ export default class SportsCatalog extends Book {
         // coins
         const coins = this.add.text(596, 864, '', {})
         coins.text = 'Your Coins: 100000'
-        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
+        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold italic'})
         buttons.add(coins)
 
         // lists
