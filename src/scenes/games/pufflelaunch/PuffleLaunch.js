@@ -1,10 +1,10 @@
-import RoomScene from '@scenes/rooms/RoomScene'
+import GameScene from '@scenes/games/GameScene'
 
 import {Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class PuffleLaunch extends RoomScene {
+export default class PuffleLaunch extends GameScene {
     constructor() {
         super('PuffleLaunch')
 
@@ -42,7 +42,6 @@ export default class PuffleLaunch extends RoomScene {
 
     create() {
         super.create()
-        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */

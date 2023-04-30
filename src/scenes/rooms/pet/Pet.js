@@ -12,10 +12,10 @@ export default class Pet extends RoomScene {
         this.roomTriggers = {
             plaza: () => this.triggerRoom(300, 384, 619),
             hotel: () => this.triggerRoom(430, 1370, 490),
-            park: () => this.triggerGame('puffleroundup', 925),
+            park: () => this.triggerGame('puffleroundup', 925, 'ruffle'),
             //adopt: () => this.interface.loadExternal('Adopt'),
             scape: () => null,
-            launch: () => this.triggerGame('pufflelaunch', 928),
+            launch: () => this.triggerGame('pufflelaunch', 928, 'ruffle'),
         }
         this.music = 659
         this.loadSfx = ['pet-plazadooropen', 'pet-plazadoorclose', 'pet-parkdooropen', 'pet-parkdoorclose', 'pet-hoteldooropen', 'pet-hoteldoorclose', 'pet-pufflebounce']

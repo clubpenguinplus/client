@@ -1,10 +1,10 @@
-import RoomScene from '@scenes/rooms/RoomScene'
+import GameScene from '@scenes/games/GameScene'
 
 import {Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class BeanCounters extends RoomScene {
+export default class BeanCounters extends GameScene {
     constructor() {
         super('BeanCounters')
 
@@ -36,7 +36,6 @@ export default class BeanCounters extends RoomScene {
 
     create() {
         super.create()
-        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */

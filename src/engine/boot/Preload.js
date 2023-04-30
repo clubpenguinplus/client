@@ -33,7 +33,7 @@ export default class Preload extends BaseScene {
         this.scene.add('Request', Request)
 
         document.getElementsByTagName('canvas')[1].id = 'game_canvas'
-        document.getElementsByTagName('canvas')[1].style.borderRadius = '10px'
+        document.getElementsByTagName('canvas')[1].style.borderRadius = Math.round(document.body.clientWidth * 0.01) + 'px'
 
         window.lowerQuality = this.lowerQuality.bind(this)
         window.raiseQuality = this.raiseQuality.bind(this)

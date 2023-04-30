@@ -1,10 +1,10 @@
-import RoomScene from '@scenes/rooms/RoomScene'
+import GameScene from '@scenes/games/GameScene'
 
 import {Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class AstroBarrier extends RoomScene {
+export default class AstroBarrier extends GameScene {
     constructor() {
         super('AstroBarrier')
 
@@ -41,7 +41,6 @@ export default class AstroBarrier extends RoomScene {
 
     create() {
         super.create()
-        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */

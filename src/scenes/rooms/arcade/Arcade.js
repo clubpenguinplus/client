@@ -14,7 +14,7 @@ export default class Arcade extends RoomScene {
             dance: () => this.triggerRoom(120, 1360, 544),
             thinice: () => this.triggerGame('thinice', 909),
             bitsbolts: () => null,
-            astro: () => this.triggerGame('astrobarrier', 900),
+            astro: () => this.triggerGame('astrobarrier', 900, 'ruffle'),
         }
 
         this.music = 674

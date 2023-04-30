@@ -12,6 +12,7 @@ export default class PenguinFactory {
     }
 
     createPenguin(user, room) {
+        if (room.isGame) return {}
         let client = this.shell.client
 
         if (room.penguins && room.penguins[user.id] && room.penguins[user.id].visible) return room.penguins[user.id]
