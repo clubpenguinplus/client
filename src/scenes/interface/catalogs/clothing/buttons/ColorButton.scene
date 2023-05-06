@@ -20,9 +20,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "color_button",
             "Button.callback": "() => this.scene.buy(this.item)",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "clothingcatalog",
                 "frame": "color_button"

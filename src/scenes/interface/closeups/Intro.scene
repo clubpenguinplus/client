@@ -54,7 +54,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "button",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "banning",
@@ -76,7 +75,7 @@
             "fixedWidth": 800,
             "lineSpacing": 5,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "48px",
             "fontStyle": "bold",
             "shadow.fill": true,
@@ -96,7 +95,7 @@
             "fixedWidth": 800,
             "lineSpacing": 5,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "shadow.fill": true,
             "shadow.color": "#ffffffff",
@@ -115,7 +114,7 @@
             "fixedWidth": 800,
             "lineSpacing": 5,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "48px",
             "fontStyle": "bold",
             "shadow.fill": true,

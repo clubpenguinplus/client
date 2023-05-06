@@ -13,7 +13,6 @@ export default class Tag1 extends Phaser.GameObjects.Image {
 
         // this (components)
         const thisButton = new Button(this)
-        thisButton.spriteName = 'buy1'
         thisButton.callback = () => this.scene.buy(this.item)
 
         /* START-USER-CTR-CODE */

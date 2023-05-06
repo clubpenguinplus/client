@@ -160,14 +160,14 @@ export default class Adopt extends Closeup {
         yourPuffleNum.angle = 3.0000000000000004
         yourPuffleNum.setOrigin(0, 0.5)
         yourPuffleNum.text = 'Your puffles: 0'
-        yourPuffleNum.setStyle({color: '#4b4b4bff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '28px'})
+        yourPuffleNum.setStyle({color: '#4b4b4bff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
 
         // yourCoinsNum
         const yourCoinsNum = this.add.text(1201, 881, '', {})
         yourCoinsNum.angle = 3.0000000000000004
         yourCoinsNum.setOrigin(0.5, 0.5)
         yourCoinsNum.text = 'Your coins:\n0'
-        yourCoinsNum.setStyle({align: 'center', color: '#354c15ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        yourCoinsNum.setStyle({align: 'center', color: '#354c15ff', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
 
         // mainPage
         const mainPage = this.add.container(1191, 212)
@@ -177,7 +177,7 @@ export default class Adopt extends Closeup {
         mainHeader.angle = 2
         mainHeader.setOrigin(0.5, 0.5)
         mainHeader.text = 'Adopt a Puffle'
-        mainHeader.setStyle({align: 'center', color: '#4b4b4bff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        mainHeader.setStyle({align: 'center', color: '#4b4b4bff', fixedWidth: 350, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         mainPage.add(mainHeader)
 
         // spacer
@@ -254,7 +254,7 @@ export default class Adopt extends Closeup {
         speciesText.tintBottomLeft = 10592673
         speciesText.tintBottomRight = 10592673
         speciesText.text = 'Blue'
-        speciesText.setStyle({color: '#33ccffff', fixedWidth: 230, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold', 'shadow.color': '#424242ff'})
+        speciesText.setStyle({color: '#33ccffff', fixedWidth: 230, fontFamily: 'cpBurbankSmall', fontSize: '38px', fontStyle: 'bold', 'shadow.color': '#424242ff'})
         speciesText.setWordWrapWidth(230)
         adoptionPage.add(speciesText)
 
@@ -271,21 +271,21 @@ export default class Adopt extends Closeup {
         const personalityHeader = this.add.text(-63, 0, '', {})
         personalityHeader.setOrigin(0, 0.5)
         personalityHeader.text = 'Personality'
-        personalityHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        personalityHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         info.add(personalityHeader)
 
         // snackHeader
         const snackHeader = this.add.text(-63, 116, '', {})
         snackHeader.setOrigin(0, 0.5)
         snackHeader.text = 'Favorite Snack'
-        snackHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        snackHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         info.add(snackHeader)
 
         // factHeader
         const factHeader = this.add.text(-63, 232, '', {})
         factHeader.setOrigin(0, 0.5)
         factHeader.text = 'Cool Fact'
-        factHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        factHeader.setStyle({color: '#644314ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         info.add(factHeader)
 
         // personalityText
@@ -295,7 +295,7 @@ export default class Adopt extends Closeup {
         personalityText.tintBottomLeft = 10592673
         personalityText.tintBottomRight = 10592673
         personalityText.text = 'Loyal, team player'
-        personalityText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
+        personalityText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#424242ff'})
         personalityText.setWordWrapWidth(330)
         info.add(personalityText)
 
@@ -306,7 +306,7 @@ export default class Adopt extends Closeup {
         snackText.tintBottomLeft = 10592673
         snackText.tintBottomRight = 10592673
         snackText.text = 'Pretzels'
-        snackText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
+        snackText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#424242ff'})
         snackText.setWordWrapWidth(330)
         info.add(snackText)
 
@@ -317,7 +317,7 @@ export default class Adopt extends Closeup {
         factText.tintBottomLeft = 10592673
         factText.tintBottomRight = 10592673
         factText.text = 'Can bounce really high'
-        factText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#424242ff'})
+        factText.setStyle({color: '#33ccffff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#424242ff'})
         factText.setWordWrapWidth(330)
         info.add(factText)
 
@@ -331,7 +331,7 @@ export default class Adopt extends Closeup {
         const namePuffleText = this.add.text(95, 80, '', {})
         namePuffleText.setOrigin(0.5, 0.5)
         namePuffleText.text = 'Name your puffle'
-        namePuffleText.setStyle({align: 'center', color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        namePuffleText.setStyle({align: 'center', color: '#644314ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         adopt.add(namePuffleText)
 
         // puffleNameInput
@@ -343,7 +343,7 @@ export default class Adopt extends Closeup {
         const nameInputText = this.add.text(97, 144, '', {})
         nameInputText.setOrigin(0.5, 0.5)
         nameInputText.text = 'Enter Name'
-        nameInputText.setStyle({align: 'center', color: '#38484dff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '28px'})
+        nameInputText.setStyle({align: 'center', color: '#38484dff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
         adopt.add(nameInputText)
 
         // speciesIcon
@@ -359,7 +359,7 @@ export default class Adopt extends Closeup {
         text_10.angle = 2
         text_10.setOrigin(0.5, 0.5)
         text_10.text = 'Adopt'
-        text_10.setStyle({align: 'center', color: '#644314ff', fontFamily: 'Burbank Small', fontSize: '48px', fontStyle: 'bold'})
+        text_10.setStyle({align: 'center', color: '#644314ff', fontFamily: 'cpBurbankSmall', fontSize: '48px', fontStyle: 'bold'})
         adoptionPage.add(text_10)
 
         // coinCost
@@ -367,7 +367,7 @@ export default class Adopt extends Closeup {
         coinCost.angle = 3.0000000000000004
         coinCost.setOrigin(1, 0.5)
         coinCost.text = '400'
-        coinCost.setStyle({align: 'right', color: '#644314ff', fixedWidth: 70, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#f0c351ff', 'shadow.blur': 2, 'shadow.fill': true})
+        coinCost.setStyle({align: 'right', color: '#644314ff', fixedWidth: 70, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#f0c351ff', 'shadow.blur': 2, 'shadow.fill': true})
         adoptionPage.add(coinCost)
 
         // coin
@@ -383,13 +383,9 @@ export default class Adopt extends Closeup {
 
         // goldPufflePoster (components)
         const goldPufflePosterButton = new Button(goldPufflePoster)
-        goldPufflePosterButton.spriteName = 'goldPufflePoster'
-        goldPufflePosterButton.activeFrame = false
 
         // rainbowPufflePoster (components)
         const rainbowPufflePosterButton = new Button(rainbowPufflePoster)
-        rainbowPufflePosterButton.spriteName = 'rainbowPufflePoster'
-        rainbowPufflePosterButton.activeFrame = false
 
         // whitePuffle (components)
         const whitePuffleSimpleButton = new SimpleButton(whitePuffle)
@@ -457,62 +453,50 @@ export default class Adopt extends Closeup {
 
         // whiteIcon (components)
         const whiteIconButton = new Button(whiteIcon)
-        whiteIconButton.spriteName = 'whiteIcon'
         whiteIconButton.callback = () => this.adoptPuffle(7)
 
         // blackIcon (components)
         const blackIconButton = new Button(blackIcon)
-        blackIconButton.spriteName = 'blackIcon'
         blackIconButton.callback = () => this.adoptPuffle(2)
 
         // brownIcon (components)
         const brownIconButton = new Button(brownIcon)
-        brownIconButton.spriteName = 'brownIcon'
         brownIconButton.callback = () => this.adoptPuffle(9)
 
         // pinkIcon (components)
         const pinkIconButton = new Button(pinkIcon)
-        pinkIconButton.spriteName = 'pinkIcon'
         pinkIconButton.callback = () => this.adoptPuffle(1)
 
         // purpleIcon (components)
         const purpleIconButton = new Button(purpleIcon)
-        purpleIconButton.spriteName = 'purpleIcon'
         purpleIconButton.callback = () => this.adoptPuffle(4)
 
         // greenIcon (components)
         const greenIconButton = new Button(greenIcon)
-        greenIconButton.spriteName = 'greenIcon'
         greenIconButton.callback = () => this.adoptPuffle(3)
 
         // yellowIcon (components)
         const yellowIconButton = new Button(yellowIcon)
-        yellowIconButton.spriteName = 'yellowIcon'
         yellowIconButton.callback = () => this.adoptPuffle(6)
 
         // orangeIcon (components)
         const orangeIconButton = new Button(orangeIcon)
-        orangeIconButton.spriteName = 'orangeIcon'
         orangeIconButton.callback = () => this.adoptPuffle(8)
 
         // redIcon (components)
         const redIconButton = new Button(redIcon)
-        redIconButton.spriteName = 'redIcon'
         redIconButton.callback = () => this.adoptPuffle(5)
 
         // blueIcon (components)
         const blueIconButton = new Button(blueIcon)
-        blueIconButton.spriteName = 'blueIcon'
         blueIconButton.callback = () => this.adoptPuffle(0)
 
         // catIcon (components)
         const catIconButton = new Button(catIcon)
-        catIconButton.spriteName = 'catIcon'
         catIconButton.callback = () => this.adoptPuffle(1007)
 
         // dogIcon (components)
         const dogIconButton = new Button(dogIcon)
-        dogIconButton.spriteName = 'dogIcon'
         dogIconButton.callback = () => this.adoptPuffle(1006)
 
         // personalityHeader (components)
@@ -534,7 +518,6 @@ export default class Adopt extends Closeup {
 
         // adoptBtn (components)
         const adoptBtnButton = new Button(adoptBtn)
-        adoptBtnButton.spriteName = 'adoptBtn'
         adoptBtnButton.callback = () => this.onAdoptionClick()
 
         // text_10 (components)
@@ -543,7 +526,6 @@ export default class Adopt extends Closeup {
 
         // closeBtn (components)
         const closeBtnButton = new Button(closeBtn)
-        closeBtnButton.spriteName = 'closeBtn'
         closeBtnButton.callback = () => this.stop()
 
         this.whitePuffle = whitePuffle

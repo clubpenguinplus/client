@@ -29,8 +29,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "server",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "servers",
                         "frame": "server"
@@ -131,7 +129,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "fixedWidth": 350,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "50px"
                 },
                 {

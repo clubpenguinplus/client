@@ -88,20 +88,17 @@ export default class Town extends RoomScene {
 
         // clothes_door (components)
         const clothes_doorButton = new Button(clothes_door)
-        clothes_doorButton.spriteName = 'clothes_door'
         clothes_doorButton.hoverCallback = () => this.ShopDoorOver()
         clothes_doorButton.hoverOutCallback = () => this.ShopDoorOut()
         new MoveTo(clothes_door)
 
         // coffee_door (components)
         const coffee_doorButton = new Button(coffee_door)
-        coffee_doorButton.spriteName = 'coffee_door'
         coffee_doorButton.hoverCallback = () => this.CoffeeDoorOver()
         new MoveTo(coffee_door)
 
         // dance_door (components)
         const dance_doorButton = new Button(dance_door)
-        dance_doorButton.spriteName = 'dance_door'
         dance_doorButton.hoverCallback = () => this.DiscoDoorOver()
         dance_doorButton.hoverOutCallback = () => this.DiscoDoorOut()
         new MoveTo(dance_door)

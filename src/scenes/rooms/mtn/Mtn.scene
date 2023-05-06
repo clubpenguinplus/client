@@ -354,9 +354,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "skicatbottom",
             "Button.callback": "() => this.interface.loadExternal('Sled')",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "mtn",
                 "frame": "skicatbottom"

@@ -44,7 +44,7 @@
                     "originY": 0.5,
                     "text": "Roll-over any of the\nimages above to preview",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -71,7 +71,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Clothing items\nfor everyone",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "27px",
                     "fontStyle": "bold italic"
                 },
@@ -83,9 +83,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(210)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -107,7 +105,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "300",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -126,7 +124,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Star T-Shirt",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -152,9 +150,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(405)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -176,7 +172,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "200",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -195,7 +191,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Green Ball Cap",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -221,9 +217,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(717)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -245,7 +239,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "300",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -264,7 +258,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Baseball Glove",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -290,9 +284,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(713)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -314,7 +306,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "300",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -333,7 +325,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Pink Purse",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -359,9 +351,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(192)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -383,7 +373,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "150",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -402,7 +392,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Red Bandana",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -428,9 +418,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(203)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -452,7 +440,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "200",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -471,7 +459,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Butterfly T-Shirt",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {
@@ -497,9 +485,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(653)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -521,7 +507,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "500",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -540,7 +526,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "The Funster",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px"
                 },
                 {

@@ -35,7 +35,7 @@ class SledPlayer extends BaseContainer {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 200,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         art.add(username)

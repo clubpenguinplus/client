@@ -36,7 +36,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "MoveTo.x": 780,
             "MoveTo.y": 300,
             "texture": {
@@ -172,7 +171,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "backpod",
             "MoveTo.x": 1372,
             "MoveTo.y": 684,
             "texture": {
@@ -387,7 +385,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "petshop-door",
             "MoveTo.x": 1440,
             "MoveTo.y": 460,
             "texture": {
@@ -580,7 +577,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "frontpod",
             "MoveTo.x": 1232,
             "MoveTo.y": 792,
             "texture": {
@@ -673,7 +669,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "interface",
             "Button.callback": "() => this.interface.loadExternal('RainbowQuest')",
             "texture": {
                 "key": "hotellobby",

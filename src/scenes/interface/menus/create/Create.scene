@@ -99,7 +99,7 @@
                     "components": [],
                     "y": -6,
                     "text": "rookie",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#474747ff",
@@ -122,7 +122,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "ok-btn",
                             "Button.callback": "() => this.next()",
                             "texture": {
                                 "key": "create",
@@ -140,7 +139,7 @@
                             "text": "OK",
                             "fixedWidth": 100,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "fontStyle": "bold",
                             "color": "#353535ff"
@@ -1048,7 +1047,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "login-button",
                     "Button.callback": "() => this.under13()",
                     "texture": {
                         "key": "login",
@@ -1063,7 +1061,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "login-button",
                     "Button.callback": "() => this.over13()",
                     "texture": {
                         "key": "login",
@@ -1085,7 +1082,7 @@
                     "text": "Under 13",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "36px",
                     "fontStyle": "bold",
                     "color": "#b9daf4ff",
@@ -1108,7 +1105,7 @@
                     "text": "13 or Over",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "36px",
                     "fontStyle": "bold",
                     "color": "#b9daf4ff",
@@ -1148,7 +1145,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.submitUsername()",
                     "texture": {
                         "key": "main",
@@ -1186,7 +1182,7 @@
                     "text": "Penguin Name",
                     "fixedWidth": 750,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#89bedaff"
@@ -1220,7 +1216,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.hoverOutCallback": "() => this.showConfirmPassword(false)",
                     "Button.callback": "() => this.showConfirmPassword(true)",
                     "texture": {
@@ -1249,7 +1244,7 @@
                     "text": "Confirm Password",
                     "fixedWidth": 750,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#89bedaff"
@@ -1285,7 +1280,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.hoverOutCallback": "() => this.showPassword(false)",
                     "Button.callback": "() => this.showPassword(true)",
                     "texture": {
@@ -1326,7 +1320,7 @@
                     "text": "Password",
                     "fixedWidth": 750,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#89bedaff"
@@ -1360,7 +1354,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.submitEmail()",
                     "texture": {
                         "key": "main",
@@ -1399,7 +1392,7 @@
                     "text": "Email Address",
                     "fixedWidth": 750,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#89bedaff"
@@ -1465,7 +1458,7 @@
                     "originY": 0.6,
                     "text": "Terms of Service",
                     "fixedWidth": 600,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#89bedaff"
@@ -1485,7 +1478,7 @@
                     "originY": 0.6,
                     "text": "Privacy Policy",
                     "fixedWidth": 600,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#89bedaff"

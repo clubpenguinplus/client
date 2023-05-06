@@ -7,6 +7,7 @@ import RoomCrate from './crates/RoomCrate'
 import WallCrate from './crates/WallCrate'
 import IglooPuffle from './IglooPuffle'
 import PuffleLoader from '@engine/loaders/PuffleLoader'
+import Backyard from './Backyard'
 
 export default class IglooScene extends RoomScene {
     constructor(key) {
@@ -400,6 +401,22 @@ export default class IglooScene extends RoomScene {
         if (this.id == this.shell.client.id && Object.keys(this.penguins).length >= 30) {
             this.shell.client.stampEarned(28)
         }
+    }
+
+    joinBackyard() {
+        if (!('Backyard' in this.scene.manager.keys)) {
+            // Create scene
+            this.scene.add('Backyard', Backyard, true)
+        }
+
+        if (!this.scene.isVisible('Backyard')) {
+            // Scene stopped
+            this.scene.launch('Backyard')
+        }
+
+        this.interface.bringToTop('Backyard')
+        this.interface.showLoading()
+        this.stop()
     }
 
     stop() {

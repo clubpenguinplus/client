@@ -24,7 +24,7 @@ export default class Airtower {
         this.worldName
 
         this.encryptionKeys = {}
-        
+
         this.events = new EventEmitter()
     }
 

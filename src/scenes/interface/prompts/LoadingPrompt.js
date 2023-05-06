@@ -55,7 +55,6 @@ export default class LoadingPrompt extends BaseContainer {
 
         // blueButton (components)
         const blueButtonButton = new Button(blueButton)
-        blueButtonButton.spriteName = 'blue-button'
         blueButtonButton.callback = () => this.close()
 
         this.bg = bg

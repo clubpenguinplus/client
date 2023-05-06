@@ -54,7 +54,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "closeBtn",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "rainbowquest",
@@ -84,9 +83,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "brown-btn",
             "Button.callback": "() => this.joinRoom(432)",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "rainbowquest",
                 "frame": "brown-btn"
@@ -107,7 +104,7 @@
             "originY": 0.5,
             "text": "Go there!",
             "align": "center",
-            "fontFamily": "CatseyeW00",
+            "fontFamily": "cpCatseye",
             "fontSize": "30px",
             "color": "#896E35",
             "shadow.color": "#fff"
@@ -135,7 +132,7 @@
             "y": 688,
             "originY": 0.5,
             "text": "Adopt a Rainbow Puffle!\nLaunch from the Rooftop cannon.",
-            "fontFamily": "CatseyeW00",
+            "fontFamily": "cpCatseye",
             "fontSize": "25px",
             "color": "#c9a04cff",
             "shadow.offsetX": -1,
@@ -164,9 +161,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "brown-btn",
             "Button.callback": "() => this.onBonusCollect()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "rainbowquest",
                 "frame": "brown-btn"
@@ -185,7 +180,7 @@
             "y": 422,
             "originY": 0.5,
             "text": "BONUS ITEM",
-            "fontFamily": "CatseyeW00",
+            "fontFamily": "cpCatseye",
             "fontSize": "30px",
             "fontStyle": "bold",
             "color": "#c9a04cff",
@@ -219,7 +214,7 @@
             "originY": 0.5,
             "text": "Collect",
             "align": "center",
-            "fontFamily": "CatseyeW00",
+            "fontFamily": "cpCatseye",
             "fontSize": "30px",
             "color": "#896E35",
             "shadow.color": "#fff"
@@ -247,7 +242,7 @@
             "y": 236,
             "text": "Complete all four puffle tasks to earn your bonus!",
             "fixedWidth": 395,
-            "fontFamily": "CatseyeW00",
+            "fontFamily": "cpCatseye",
             "fontSize": "30px",
             "color": "#3d2615ff",
             "shadow.offsetX": -1,
@@ -333,7 +328,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task4/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task4/green-btn"
@@ -355,7 +349,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -369,7 +363,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task4/green-btn",
                     "Button.callback": "() => this.collectItem4()",
                     "texture": {
                         "key": "rainbowquest",
@@ -392,7 +385,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -410,7 +403,7 @@
                     "visible": false,
                     "text": "Groom your puffle",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -427,7 +420,7 @@
                     "originY": 0.5,
                     "text": "TASK 4",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "fontStyle": "bold",
                     "color": "#938C61",
@@ -456,7 +449,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task4/green-btn",
                     "Button.callback": "() => this.joinRoom(432)",
                     "texture": {
                         "key": "rainbowquest",
@@ -480,7 +472,7 @@
                     "visible": false,
                     "text": "Go there!",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#f3fcc5ff",
@@ -499,7 +491,7 @@
                     "visible": false,
                     "text": "Zzzzzzz!",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -517,7 +509,7 @@
                     "visible": false,
                     "text": "Your puffle looks so relaxed.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -549,7 +541,7 @@
                     "originY": 0.5,
                     "text": "This puffle task isn't ready yet.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#fefad4ff",
                     "shadow.offsetX": 2,
@@ -569,7 +561,7 @@
                     "originY": 0.5,
                     "text": "Complete the previous task.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "27px",
                     "color": "#fefad4ff",
                     "shadow.offsetX": 2,
@@ -684,7 +676,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task3/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task3/green-btn"
@@ -706,7 +697,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -720,7 +711,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task3/green-btn",
                     "Button.callback": "() => this.collectItem3()",
                     "texture": {
                         "key": "rainbowquest",
@@ -743,7 +733,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -761,7 +751,7 @@
                     "visible": false,
                     "text": "Feed your puffle",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -778,7 +768,7 @@
                     "originY": 0.5,
                     "text": "TASK 3",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "fontStyle": "bold",
                     "color": "#938C61",
@@ -807,7 +797,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task3/green-btn",
                     "Button.callback": "() => this.joinRoom(430)",
                     "texture": {
                         "key": "rainbowquest",
@@ -831,7 +820,7 @@
                     "visible": false,
                     "text": "Go there!",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#f3fcc5ff",
@@ -850,7 +839,7 @@
                     "visible": false,
                     "text": "Delicious",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -868,7 +857,7 @@
                     "visible": false,
                     "text": "Your puffle loved that snack!",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -886,7 +875,7 @@
                     "visible": false,
                     "text": "Come back to relax with your pet in:",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -904,7 +893,7 @@
                     "visible": false,
                     "text": "20 min",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#2c2a1dff",
                     "shadow.color": "#fff"
@@ -936,7 +925,7 @@
                     "originY": 0.5,
                     "text": "This puffle task isn't ready yet.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#fefad4ff",
                     "shadow.offsetX": 2,
@@ -956,7 +945,7 @@
                     "originY": 0.5,
                     "text": "Complete the previous task.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "27px",
                     "color": "#fefad4ff",
                     "shadow.offsetX": 2,
@@ -1071,7 +1060,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task2/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task2/green-btn"
@@ -1093,7 +1081,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -1107,7 +1095,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task2/green-btn",
                     "Button.callback": "() => this.collectItem2()",
                     "texture": {
                         "key": "rainbowquest",
@@ -1130,7 +1117,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -1148,7 +1135,7 @@
                     "visible": false,
                     "text": "Groom your puffle",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1165,7 +1152,7 @@
                     "originY": 0.5,
                     "text": "TASK 2",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "fontStyle": "bold",
                     "color": "#938C61",
@@ -1194,7 +1181,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task2/green-btn",
                     "Button.callback": "() => this.joinRoom(431)",
                     "texture": {
                         "key": "rainbowquest",
@@ -1218,7 +1204,7 @@
                     "visible": false,
                     "text": "Go there!",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#f3fcc5ff",
@@ -1237,7 +1223,7 @@
                     "visible": false,
                     "text": "Oh so shiny!",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1255,7 +1241,7 @@
                     "visible": false,
                     "text": "Your puffle looks terrific",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1273,7 +1259,7 @@
                     "visible": false,
                     "text": "Come back to feed your pet in:",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1291,7 +1277,7 @@
                     "visible": false,
                     "text": "20 min",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#2c2a1dff",
                     "shadow.color": "#fff"
@@ -1323,7 +1309,7 @@
                     "originY": 0.5,
                     "text": "This puffle task isn't ready yet.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#fefad4ff",
                     "shadow.offsetX": 2,
@@ -1343,7 +1329,7 @@
                     "originY": 0.5,
                     "text": "Complete the previous task.",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "27px",
                     "color": "#fefad4ff",
                     "shadow.offsetX": 2,
@@ -1457,7 +1443,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task1/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task1/green-btn"
@@ -1479,7 +1464,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -1493,7 +1478,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task1/green-btn",
                     "Button.callback": "() => this.collectItem1()",
                     "texture": {
                         "key": "rainbowquest",
@@ -1516,7 +1500,7 @@
                     "originY": 0.5,
                     "text": "Collect",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#948863ff",
@@ -1533,7 +1517,7 @@
                     "originY": 0.5,
                     "text": "Exercise your puffle",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1550,7 +1534,7 @@
                     "originY": 0.5,
                     "text": "TASK 1",
                     "align": "right",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "fontStyle": "bold",
                     "color": "#938C61",
@@ -1578,7 +1562,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task1/green-btn",
                     "Button.callback": "() => this.joinRoom(431)",
                     "texture": {
                         "key": "rainbowquest",
@@ -1600,7 +1583,7 @@
                     "originY": 0.5,
                     "text": "Go there!",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
                     "color": "#f3fcc5ff",
@@ -1619,7 +1602,7 @@
                     "visible": false,
                     "text": "Feeling the burn!",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1637,7 +1620,7 @@
                     "visible": false,
                     "text": "Your puffle got a work out!",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1655,7 +1638,7 @@
                     "visible": false,
                     "text": "Come back to groom your pet in:",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "24px",
                     "color": "#938C61",
                     "shadow.color": "#fff"
@@ -1673,7 +1656,7 @@
                     "visible": false,
                     "text": "20 min",
                     "align": "center",
-                    "fontFamily": "CatseyeW00",
+                    "fontFamily": "cpCatseye",
                     "fontSize": "36px",
                     "color": "#2c2a1dff",
                     "shadow.color": "#fff"

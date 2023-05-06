@@ -1,6 +1,6 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {SimpleButton, Interactive, ShowHint, Button} from '@components/components'
+import {SimpleButton, Interactive, ShowHint, Button, LocalisedString} from '@components/components'
 
 import IglooMap from './igloo_map/IglooMap'
 
@@ -16,8 +16,6 @@ export default class Map extends BaseContainer {
         this.block
         /** @type {Phaser.GameObjects.Container} */
         this.places_container
-        /** @type {Phaser.GameObjects.Container} */
-        this.games_container
         /** @type {Phaser.GameObjects.Sprite} */
         this.aqua
         /** @type {Phaser.GameObjects.Sprite} */
@@ -55,7 +53,7 @@ export default class Map extends BaseContainer {
         /** @type {Phaser.GameObjects.Sprite} */
         this.smoothie
         /** @type {Phaser.GameObjects.Container} */
-        this.shops_container
+        this.games_container
         /** @type {Phaser.GameObjects.Sprite} */
         this.catchinwavesupgrades
         /** @type {Phaser.GameObjects.Sprite} */
@@ -76,6 +74,8 @@ export default class Map extends BaseContainer {
         this.sledraceupgrades
         /** @type {Phaser.GameObjects.Sprite} */
         this.snowandsports
+        /** @type {Phaser.GameObjects.Container} */
+        this.shops_container
         /** @type {Phaser.GameObjects.Container} */
         this.puffle_container
         /** @type {Phaser.GameObjects.Sprite} */
@@ -463,7 +463,7 @@ export default class Map extends BaseContainer {
         const places_txt = scene.add.text(-649, -327, '', {})
         places_txt.setOrigin(0.5, 0.5)
         places_txt.text = 'Places'
-        places_txt.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        places_txt.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(places_txt)
 
         // games_btn
@@ -474,7 +474,7 @@ export default class Map extends BaseContainer {
         const games_txt = scene.add.text(-520, -327, '', {})
         games_txt.setOrigin(0.5, 0.5)
         games_txt.text = 'Games'
-        games_txt.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        games_txt.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(games_txt)
 
         // shops_btn
@@ -485,7 +485,7 @@ export default class Map extends BaseContainer {
         const shops_txt = scene.add.text(-393, -327, '', {})
         shops_txt.setOrigin(0.5, 0.5)
         shops_txt.text = 'Shops'
-        shops_txt.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        shops_txt.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(shops_txt)
 
         // pets_btn
@@ -496,7 +496,7 @@ export default class Map extends BaseContainer {
         const shops_txt_1 = scene.add.text(-266, -327, '', {})
         shops_txt_1.setOrigin(0.5, 0.5)
         shops_txt_1.text = 'Pets'
-        shops_txt_1.setStyle({color: '#7f7f7fff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        shops_txt_1.setStyle({color: '#7f7f7fff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(shops_txt_1)
 
         // iglooMap
@@ -521,137 +521,103 @@ export default class Map extends BaseContainer {
 
         // map_places_dojo (components)
         const map_places_dojoButton = new Button(map_places_dojo)
-        map_places_dojoButton.spriteName = 'map/places/dojo'
         map_places_dojoButton.callback = () => this.onRoomClick(321)
-        map_places_dojoButton.activeFrame = false
         const map_places_dojoShowHint = new ShowHint(map_places_dojo)
         map_places_dojoShowHint.text = 'dojoext'
 
         // map_places_skihill (components)
         const map_places_skihillButton = new Button(map_places_skihill)
-        map_places_skihillButton.spriteName = 'map/places/skihill'
         map_places_skihillButton.callback = () => this.onRoomClick(230)
-        map_places_skihillButton.activeFrame = false
         const map_places_skihillShowHint = new ShowHint(map_places_skihill)
         map_places_skihillShowHint.text = 'mtn'
 
         // map_places_lighthouse (components)
         const map_places_lighthouseButton = new Button(map_places_lighthouse)
-        map_places_lighthouseButton.spriteName = 'map/places/lighthouse'
         map_places_lighthouseButton.callback = () => this.onRoomClick(400)
-        map_places_lighthouseButton.activeFrame = false
         const map_places_lighthouseShowHint = new ShowHint(map_places_lighthouse)
         map_places_lighthouseShowHint.text = 'beach'
 
         // map_places_dock (components)
         const map_places_dockButton = new Button(map_places_dock)
-        map_places_dockButton.spriteName = 'map/places/dock'
         map_places_dockButton.callback = () => this.onRoomClick(800)
-        map_places_dockButton.activeFrame = false
         const map_places_dockShowHint = new ShowHint(map_places_dock)
         map_places_dockShowHint.text = 'dock'
 
         // map_places_igloos (components)
         const map_places_igloosButton = new Button(map_places_igloos)
-        map_places_igloosButton.spriteName = 'map/places/igloos'
         map_places_igloosButton.callback = () => (this.iglooMap.visible = true)
-        map_places_igloosButton.activeFrame = false
         const map_places_igloosShowHint = new ShowHint(map_places_igloos)
         map_places_igloosShowHint.text = 'igloos'
 
         // map_places_igloo (components)
         const map_places_iglooButton = new Button(map_places_igloo)
-        map_places_iglooButton.spriteName = 'map/places/igloo'
         map_places_iglooButton.callback = () => this.shell.client.sendJoinIgloo(this.shell.client.id)
-        map_places_iglooButton.activeFrame = false
         const map_places_iglooShowHint = new ShowHint(map_places_igloo)
         map_places_iglooShowHint.text = 'urigloo'
 
         // map_places_town (components)
         const map_places_townButton = new Button(map_places_town)
-        map_places_townButton.spriteName = 'map/places/town'
         map_places_townButton.callback = () => this.onRoomClick(100)
-        map_places_townButton.activeFrame = false
         const map_places_townShowHint = new ShowHint(map_places_town)
         map_places_townShowHint.text = 'town'
 
         // map_places_pufflewild (components)
         const map_places_pufflewildButton = new Button(map_places_pufflewild)
-        map_places_pufflewildButton.spriteName = 'map/places/pufflewild'
         map_places_pufflewildButton.callback = () => this.onRoomClick(230)
-        map_places_pufflewildButton.activeFrame = false
         const map_places_pufflewildShowHint = new ShowHint(map_places_pufflewild)
         map_places_pufflewildShowHint.text = 'pufflewild'
 
         // map_places_rink (components)
         const map_places_rinkButton = new Button(map_places_rink)
-        map_places_rinkButton.spriteName = 'map/places/rink'
         map_places_rinkButton.callback = () => this.onRoomClick(802)
-        map_places_rinkButton.activeFrame = false
         const map_places_rinkShowHint = new ShowHint(map_places_rink)
         map_places_rinkShowHint.text = 'rink'
 
         // map_places_shack (components)
         const map_places_shackButton = new Button(map_places_shack)
-        map_places_shackButton.spriteName = 'map/places/shack'
         map_places_shackButton.callback = () => this.onRoomClick(807)
-        map_places_shackButton.activeFrame = false
         const map_places_shackShowHint = new ShowHint(map_places_shack)
         map_places_shackShowHint.text = 'shack'
 
         // map_places_skivillage (components)
         const map_places_skivillageButton = new Button(map_places_skivillage)
-        map_places_skivillageButton.spriteName = 'map/places/skivillage'
         map_places_skivillageButton.callback = () => this.onRoomClick(200)
-        map_places_skivillageButton.activeFrame = false
         const map_places_skivillageShowHint = new ShowHint(map_places_skivillage)
         map_places_skivillageShowHint.text = 'village'
 
         // map_places_forts (components)
         const map_places_fortsButton = new Button(map_places_forts)
-        map_places_fortsButton.spriteName = 'map/places/forts'
         map_places_fortsButton.callback = () => this.onRoomClick(801)
-        map_places_fortsButton.activeFrame = false
         const map_places_fortsShowHint = new ShowHint(map_places_forts)
         map_places_fortsShowHint.text = 'forts'
 
         // map_places_pufflepark (components)
         const map_places_puffleparkButton = new Button(map_places_pufflepark)
-        map_places_puffleparkButton.spriteName = 'map/places/pufflepark'
         map_places_puffleparkButton.callback = () => this.onRoomClick(230)
-        map_places_puffleparkButton.activeFrame = false
         const map_places_puffleparkShowHint = new ShowHint(map_places_pufflepark)
         map_places_puffleparkShowHint.text = 'park'
 
         // map_places_plaza (components)
         const map_places_plazaButton = new Button(map_places_plaza)
-        map_places_plazaButton.spriteName = 'map/places/plaza'
         map_places_plazaButton.callback = () => this.onRoomClick(300)
-        map_places_plazaButton.activeFrame = false
         const map_places_plazaShowHint = new ShowHint(map_places_plaza)
         map_places_plazaShowHint.text = 'plaza'
 
         // map_places_forest (components)
         const map_places_forestButton = new Button(map_places_forest)
-        map_places_forestButton.spriteName = 'map/places/forest'
         map_places_forestButton.callback = () => this.onRoomClick(809)
-        map_places_forestButton.activeFrame = false
         const map_places_forestShowHint = new ShowHint(map_places_forest)
         map_places_forestShowHint.text = 'forest'
 
         // map_places_skatepark (components)
         const map_places_skateparkButton = new Button(map_places_skatepark)
-        map_places_skateparkButton.spriteName = 'map/places/skatepark'
         map_places_skateparkButton.callback = () => this.onRoomClick(230)
-        map_places_skateparkButton.activeFrame = false
         const map_places_skateparkShowHint = new ShowHint(map_places_skatepark)
         map_places_skateparkShowHint.text = 'skatepark'
 
         // map_places_cove (components)
         const map_places_coveButton = new Button(map_places_cove)
-        map_places_coveButton.spriteName = 'map/places/cove'
         map_places_coveButton.callback = () => this.onRoomClick(810)
-        map_places_coveButton.activeFrame = false
         const map_places_coveShowHint = new ShowHint(map_places_cove)
         map_places_coveShowHint.text = 'cove'
 
@@ -666,137 +632,102 @@ export default class Map extends BaseContainer {
 
         // map_places_cove_1 (components)
         const map_places_cove_1Button = new Button(map_places_cove_1)
-        map_places_cove_1Button.spriteName = 'map/places_outline/cove_outline'
         map_places_cove_1Button.callback = () => this.onRoomClick(810)
-        map_places_cove_1Button.activeFrame = false
         const map_places_cove_1ShowHint = new ShowHint(map_places_cove_1)
         map_places_cove_1ShowHint.text = 'cove'
 
         // map_places_skatepark_1 (components)
         const map_places_skatepark_1Button = new Button(map_places_skatepark_1)
-        map_places_skatepark_1Button.spriteName = 'map/places_outline/skatepark_outline'
         map_places_skatepark_1Button.callback = () => this.onRoomClick(435)
-        map_places_skatepark_1Button.activeFrame = false
         const map_places_skatepark_1ShowHint = new ShowHint(map_places_skatepark_1)
         map_places_skatepark_1ShowHint.text = 'skatepark'
 
         // map_places_forest_1 (components)
         const map_places_forest_1Button = new Button(map_places_forest_1)
-        map_places_forest_1Button.spriteName = 'map/places_outline/forest_outline'
         map_places_forest_1Button.callback = () => this.onRoomClick(809)
-        map_places_forest_1Button.activeFrame = false
         const map_places_forest_1ShowHint = new ShowHint(map_places_forest_1)
         map_places_forest_1ShowHint.text = 'forest'
 
         // map_places_plaza_1 (components)
         const map_places_plaza_1Button = new Button(map_places_plaza_1)
-        map_places_plaza_1Button.spriteName = 'map/places_outline/plaza_outline'
         map_places_plaza_1Button.callback = () => this.onRoomClick(300)
-        map_places_plaza_1Button.activeFrame = false
         const map_places_plaza_1ShowHint = new ShowHint(map_places_plaza_1)
         map_places_plaza_1ShowHint.text = 'plaza'
 
         // map_places_pufflepark_1 (components)
-        const map_places_pufflepark_1Button = new Button(map_places_pufflepark_1)
-        map_places_pufflepark_1Button.spriteName = 'map/places_outline/pufflepark_outline'
-        map_places_pufflepark_1Button.callback = () => this.onRoomClick(230)
-        map_places_pufflepark_1Button.activeFrame = false
+        new Button(map_places_pufflepark_1)
         const map_places_pufflepark_1ShowHint = new ShowHint(map_places_pufflepark_1)
         map_places_pufflepark_1ShowHint.text = 'park'
 
         // map_places_forts_1 (components)
         const map_places_forts_1Button = new Button(map_places_forts_1)
-        map_places_forts_1Button.spriteName = 'map/places_outline/forts_outline'
         map_places_forts_1Button.callback = () => this.onRoomClick(801)
-        map_places_forts_1Button.activeFrame = false
         const map_places_forts_1ShowHint = new ShowHint(map_places_forts_1)
         map_places_forts_1ShowHint.text = 'forts'
 
         // map_places_shack_1 (components)
         const map_places_shack_1Button = new Button(map_places_shack_1)
-        map_places_shack_1Button.spriteName = 'map/places_outline/shack_outline'
         map_places_shack_1Button.callback = () => this.onRoomClick(807)
-        map_places_shack_1Button.activeFrame = false
         const map_places_shack_1ShowHint = new ShowHint(map_places_shack_1)
         map_places_shack_1ShowHint.text = 'shack'
 
         // map_places_pufflewild_1 (components)
         const map_places_pufflewild_1Button = new Button(map_places_pufflewild_1)
-        map_places_pufflewild_1Button.spriteName = 'map/places_outline/pufflewild_outline'
         map_places_pufflewild_1Button.callback = () => this.onRoomClick(436)
-        map_places_pufflewild_1Button.activeFrame = false
         const map_places_pufflewild_1ShowHint = new ShowHint(map_places_pufflewild_1)
         map_places_pufflewild_1ShowHint.text = 'pufflewild'
 
         // map_places_town_1 (components)
         const map_places_town_1Button = new Button(map_places_town_1)
-        map_places_town_1Button.spriteName = 'map/places_outline/town_outline'
         map_places_town_1Button.callback = () => this.onRoomClick(100)
-        map_places_town_1Button.activeFrame = false
         const map_places_town_1ShowHint = new ShowHint(map_places_town_1)
         map_places_town_1ShowHint.text = 'town'
 
         // map_places_igloo_1 (components)
         const map_places_igloo_1Button = new Button(map_places_igloo_1)
-        map_places_igloo_1Button.spriteName = 'map/places_outline/igloo_outline'
         map_places_igloo_1Button.callback = () => this.sendJoinIgloo()
-        map_places_igloo_1Button.activeFrame = false
         const map_places_igloo_1ShowHint = new ShowHint(map_places_igloo_1)
         map_places_igloo_1ShowHint.text = 'urigloo'
 
         // map_places_rink_1 (components)
         const map_places_rink_1Button = new Button(map_places_rink_1)
-        map_places_rink_1Button.spriteName = 'map/places_outline/rink_outline'
         map_places_rink_1Button.callback = () => this.onRoomClick(802)
-        map_places_rink_1Button.activeFrame = false
         const map_places_rink_1ShowHint = new ShowHint(map_places_rink_1)
         map_places_rink_1ShowHint.text = 'rink'
 
         // map_places_igloos_1 (components)
         const map_places_igloos_1Button = new Button(map_places_igloos_1)
-        map_places_igloos_1Button.spriteName = 'map/places_outline/igloos_outline'
         map_places_igloos_1Button.callback = () => this.iglooMap.show()
-        map_places_igloos_1Button.activeFrame = false
         const map_places_igloos_1ShowHint = new ShowHint(map_places_igloos_1)
         map_places_igloos_1ShowHint.text = 'igloos'
 
         // map_places_dock_1 (components)
         const map_places_dock_1Button = new Button(map_places_dock_1)
-        map_places_dock_1Button.spriteName = 'map/places_outline/dock_outline'
         map_places_dock_1Button.callback = () => this.onRoomClick(800)
-        map_places_dock_1Button.activeFrame = false
         const map_places_dock_1ShowHint = new ShowHint(map_places_dock_1)
         map_places_dock_1ShowHint.text = 'dock'
 
         // map_places_lighthouse_1 (components)
         const map_places_lighthouse_1Button = new Button(map_places_lighthouse_1)
-        map_places_lighthouse_1Button.spriteName = 'map/places_outline/lighthouse_outline'
         map_places_lighthouse_1Button.callback = () => this.onRoomClick(400)
-        map_places_lighthouse_1Button.activeFrame = false
         const map_places_lighthouse_1ShowHint = new ShowHint(map_places_lighthouse_1)
         map_places_lighthouse_1ShowHint.text = 'beach'
 
         // map_places_dojo_1 (components)
         const map_places_dojo_1Button = new Button(map_places_dojo_1)
-        map_places_dojo_1Button.spriteName = 'map/places_outline/dojo_outline'
         map_places_dojo_1Button.callback = () => this.onRoomClick(321)
-        map_places_dojo_1Button.activeFrame = false
         const map_places_dojo_1ShowHint = new ShowHint(map_places_dojo_1)
         map_places_dojo_1ShowHint.text = 'dojoext'
 
         // map_places_skihill_1 (components)
         const map_places_skihill_1Button = new Button(map_places_skihill_1)
-        map_places_skihill_1Button.spriteName = 'map/places_outline/skihill_outline'
         map_places_skihill_1Button.callback = () => this.onRoomClick(230)
-        map_places_skihill_1Button.activeFrame = false
         const map_places_skihill_1ShowHint = new ShowHint(map_places_skihill_1)
         map_places_skihill_1ShowHint.text = 'mtn'
 
         // map_places_skivillage_1 (components)
         const map_places_skivillage_1Button = new Button(map_places_skivillage_1)
-        map_places_skivillage_1Button.spriteName = 'map/places_outline/skivillage_outline'
         map_places_skivillage_1Button.callback = () => this.onRoomClick(200)
-        map_places_skivillage_1Button.activeFrame = false
         const map_places_skivillage_1ShowHint = new ShowHint(map_places_skivillage_1)
         map_places_skivillage_1ShowHint.text = 'village'
 
@@ -1021,27 +952,38 @@ export default class Map extends BaseContainer {
 
         // places_btn (components)
         const places_btnButton = new Button(places_btn)
-        places_btnButton.spriteName = 'map/overlay/places_btn'
         places_btnButton.callback = () => this.changeMode('places')
+
+        // places_txt (components)
+        const places_txtLocalisedString = new LocalisedString(places_txt)
+        places_txtLocalisedString.id = 'map-places'
 
         // games_btn (components)
         const games_btnButton = new Button(games_btn)
-        games_btnButton.spriteName = 'map/overlay/games_btn'
         games_btnButton.callback = () => this.changeMode('games')
+
+        // games_txt (components)
+        const games_txtLocalisedString = new LocalisedString(games_txt)
+        games_txtLocalisedString.id = 'map-games'
 
         // shops_btn (components)
         const shops_btnButton = new Button(shops_btn)
-        shops_btnButton.spriteName = 'map/overlay/shops_btn'
         shops_btnButton.callback = () => this.changeMode('shops')
+
+        // shops_txt (components)
+        const shops_txtLocalisedString = new LocalisedString(shops_txt)
+        shops_txtLocalisedString.id = 'map-shops'
 
         // pets_btn (components)
         const pets_btnButton = new Button(pets_btn)
-        pets_btnButton.spriteName = 'map/overlay/puffles_btn'
         pets_btnButton.callback = () => this.changeMode('puffles')
+
+        // shops_txt_1 (components)
+        const shops_txt_1LocalisedString = new LocalisedString(shops_txt_1)
+        shops_txt_1LocalisedString.id = 'map-pets'
 
         // close_btn (components)
         const close_btnButton = new Button(close_btn)
-        close_btnButton.spriteName = 'grey-button'
         close_btnButton.callback = () => {
             this.visible = false
         }
@@ -1049,7 +991,6 @@ export default class Map extends BaseContainer {
         this.bg = bg
         this.block = block
         this.places_container = places_container
-        this.games_container = games_container
         this.aqua = aqua
         this.arcade = arcade
         this.counters = counters
@@ -1068,7 +1009,7 @@ export default class Map extends BaseContainer {
         this.pufflescape = pufflescape
         this.sled = sled
         this.smoothie = smoothie
-        this.shops_container = shops_container
+        this.games_container = games_container
         this.catchinwavesupgrades = catchinwavesupgrades
         this.costumetrunk = costumetrunk
         this.hydrohopperupgrades = hydrohopperupgrades
@@ -1079,6 +1020,7 @@ export default class Map extends BaseContainer {
         this.petfurniture = petfurniture
         this.sledraceupgrades = sledraceupgrades
         this.snowandsports = snowandsports
+        this.shops_container = shops_container
         this.puffle_container = puffle_container
         this.places_btn = places_btn
         this.games_btn = games_btn

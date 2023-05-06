@@ -80,7 +80,7 @@
                     "originY": 0.5,
                     "text": "Username",
                     "fixedWidth": 185,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "fontStyle": "bold"
                 },
@@ -96,7 +96,7 @@
                     "originY": 0.5,
                     "text": "Wants to be your friend!",
                     "fixedWidth": 185,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px"
                 },
                 {
@@ -106,7 +106,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onYesClick()",
                     "texture": {
                         "key": "prompt",
@@ -135,7 +134,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "+ Add Friend",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "12px",
                     "color": "#ffffffff"
                 },
@@ -146,7 +145,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onNoClick()",
                     "texture": {
                         "key": "prompt",
@@ -175,7 +173,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "No Thanks",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "12px",
                     "color": "#ffffffff"
                 }

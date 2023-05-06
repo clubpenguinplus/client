@@ -71,7 +71,7 @@
                     "text": "Penguin Style",
                     "fixedWidth": 650,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "64px",
                     "fontStyle": "bold italic",
                     "color": "#cfedf3ff"
@@ -89,7 +89,7 @@
                     "text": "December 2022",
                     "fixedWidth": 500,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "25px",
                     "fontStyle": "italic",
                     "color": "#cfedf3ff"
@@ -114,7 +114,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextPage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "constant",

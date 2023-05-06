@@ -102,7 +102,7 @@
             "text": "If someone is breaking the rules, click on their penguin, then click the 'M' to report them to a moderator. You can also click on the skull to ignore them",
             "lineSpacing": 15,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "fontStyle": "bold",
             "shadow.offsetX": 2,
@@ -120,7 +120,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "modbutton",
             "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.stop() }",
             "texture": {
                 "key": "safetyquiz",
@@ -144,7 +143,7 @@
             "text": "Safety Quiz",
             "lineSpacing": 5,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "fontStyle": "bold",
             "shadow.fill": true,

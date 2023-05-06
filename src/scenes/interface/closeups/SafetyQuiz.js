@@ -162,7 +162,7 @@ export default class SafetyQuiz extends Closeup {
         const text = this.add.text(650, 122, '', {})
         text.setOrigin(0.5, 0)
         text.text = 'Test your online safety knowledge in this quiz and earn a FREE online safety sweater for your penguin.'
-        text.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
+        text.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
         text.setLineSpacing(5)
         text.setWordWrapWidth(550)
         page1.add(text)
@@ -171,7 +171,7 @@ export default class SafetyQuiz extends Closeup {
         const text_1 = this.add.text(658, 369, '', {})
         text_1.setOrigin(0.5, 0)
         text_1.text = 'Safety Quiz'
-        text_1.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
+        text_1.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
         text_1.setLineSpacing(5)
         text_1.setWordWrapWidth(550)
         page1.add(text_1)
@@ -205,7 +205,7 @@ export default class SafetyQuiz extends Closeup {
         // title
         const title = this.add.text(54, 0, '', {})
         title.text = 'Take the Be Cool, Be Heard, Be Safe Quiz!'
-        title.setStyle({fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
+        title.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
         title.setLineSpacing(5)
         title.setWordWrapWidth(300)
         page2.add(title)
@@ -234,7 +234,7 @@ export default class SafetyQuiz extends Closeup {
         const item = this.add.text(311, 621, '', {})
         item.setOrigin(0.5, 0)
         item.text = 'Safety Sweater'
-        item.setStyle({align: 'center', color: '#454545ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.blur': 10, 'shadow.fill': true})
+        item.setStyle({align: 'center', color: '#454545ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.blur': 10, 'shadow.fill': true})
         item.setLineSpacing(5)
         item.setWordWrapWidth(300)
         page2.add(item)
@@ -244,7 +244,7 @@ export default class SafetyQuiz extends Closeup {
         answer1.angle = 5
         answer1.setOrigin(0.5, 0.5)
         answer1.text = 'Answer'
-        answer1.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'Burbank Small', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
+        answer1.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
         answer1.setLineSpacing(5)
         page2.add(answer1)
 
@@ -253,7 +253,7 @@ export default class SafetyQuiz extends Closeup {
         answer2.angle = 5
         answer2.setOrigin(0.5, 0.5)
         answer2.text = 'Answer'
-        answer2.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'Burbank Small', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
+        answer2.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
         answer2.setLineSpacing(5)
         page2.add(answer2)
 
@@ -262,7 +262,7 @@ export default class SafetyQuiz extends Closeup {
         answer3.angle = 5
         answer3.setOrigin(0.5, 0.5)
         answer3.text = 'Answer'
-        answer3.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'Burbank Small', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
+        answer3.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
         answer3.setLineSpacing(5)
         page2.add(answer3)
 
@@ -271,7 +271,7 @@ export default class SafetyQuiz extends Closeup {
         answer4.angle = 5
         answer4.setOrigin(0.5, 0.5)
         answer4.text = 'Answer'
-        answer4.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'Burbank Small', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
+        answer4.setStyle({align: 'center', color: '#454545ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '26px', 'shadow.color': '#000000ff', 'shadow.fill': true})
         answer4.setLineSpacing(5)
         page2.add(answer4)
 
@@ -280,7 +280,7 @@ export default class SafetyQuiz extends Closeup {
         question.angle = 5
         question.setOrigin(0.5, 0.5)
         question.text = 'Question?'
-        question.setStyle({align: 'center', color: '#454545ff', fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.fill': true})
+        question.setStyle({align: 'center', color: '#454545ff', fontFamily: 'cpBurbankSmall', fontSize: '26px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.fill': true})
         question.setLineSpacing(5)
         question.setWordWrapWidth(500)
         page2.add(question)
@@ -290,7 +290,7 @@ export default class SafetyQuiz extends Closeup {
         instruction.angle = 5
         instruction.setOrigin(0.5, 0.5)
         instruction.text = '(Choose the correct answer)'
-        instruction.setStyle({align: 'center', color: '#898989ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.fill': true})
+        instruction.setStyle({align: 'center', color: '#898989ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.fill': true})
         instruction.setLineSpacing(5)
         instruction.setWordWrapWidth(600)
         page2.add(instruction)
@@ -348,7 +348,7 @@ export default class SafetyQuiz extends Closeup {
         num1.angle = 5
         num1.setOrigin(0.5, 0.5)
         num1.text = '1'
-        num1.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        num1.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         num1.setLineSpacing(5)
         num1.setWordWrapWidth(600)
         container_1.add(num1)
@@ -358,7 +358,7 @@ export default class SafetyQuiz extends Closeup {
         num1_1.angle = 5
         num1_1.setOrigin(0.5, 0.5)
         num1_1.text = '2'
-        num1_1.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        num1_1.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         num1_1.setLineSpacing(5)
         num1_1.setWordWrapWidth(600)
         container_1.add(num1_1)
@@ -368,7 +368,7 @@ export default class SafetyQuiz extends Closeup {
         num1_1_1.angle = 5
         num1_1_1.setOrigin(0.5, 0.5)
         num1_1_1.text = '4'
-        num1_1_1.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        num1_1_1.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         num1_1_1.setLineSpacing(5)
         num1_1_1.setWordWrapWidth(600)
         container_1.add(num1_1_1)
@@ -378,7 +378,7 @@ export default class SafetyQuiz extends Closeup {
         num1_2.angle = 5
         num1_2.setOrigin(0.5, 0.5)
         num1_2.text = '3'
-        num1_2.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        num1_2.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         num1_2.setLineSpacing(5)
         num1_2.setWordWrapWidth(600)
         container_1.add(num1_2)
@@ -388,7 +388,7 @@ export default class SafetyQuiz extends Closeup {
         num1_1_2.angle = 5
         num1_1_2.setOrigin(0.5, 0.5)
         num1_1_2.text = '6'
-        num1_1_2.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        num1_1_2.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         num1_1_2.setLineSpacing(5)
         num1_1_2.setWordWrapWidth(600)
         container_1.add(num1_1_2)
@@ -398,7 +398,7 @@ export default class SafetyQuiz extends Closeup {
         num1_3.angle = 5
         num1_3.setOrigin(0.5, 0.5)
         num1_3.text = '5'
-        num1_3.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        num1_3.setStyle({align: 'center', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#2e7b3aff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         num1_3.setLineSpacing(5)
         num1_3.setWordWrapWidth(600)
         container_1.add(num1_3)
@@ -428,7 +428,7 @@ export default class SafetyQuiz extends Closeup {
         const congrats_sub = this.add.text(252, 158, '', {})
         congrats_sub.setOrigin(0.5, 0)
         congrats_sub.text = 'You really know your stuff about online safety and how to be cool, be heard, and be safe!'
-        congrats_sub.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
+        congrats_sub.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
         congrats_sub.setLineSpacing(5)
         congrats_sub.setWordWrapWidth(1100)
         page3.add(congrats_sub)
@@ -437,7 +437,7 @@ export default class SafetyQuiz extends Closeup {
         const congrats_head = this.add.text(252, 33, '', {})
         congrats_head.setOrigin(0.5, 0)
         congrats_head.text = 'Congratulations!'
-        congrats_head.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '60px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
+        congrats_head.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '60px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
         congrats_head.setLineSpacing(5)
         congrats_head.setWordWrapWidth(300)
         page3.add(congrats_head)
@@ -446,7 +446,7 @@ export default class SafetyQuiz extends Closeup {
         const collect_txt = this.add.text(252, 564, '', {})
         collect_txt.setOrigin(0.5, 0)
         collect_txt.text = 'Collect Reward'
-        collect_txt.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', stroke: '#498124ff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
+        collect_txt.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', stroke: '#498124ff', strokeThickness: 6, 'shadow.color': '#000000ff', 'shadow.fill': true})
         collect_txt.setLineSpacing(5)
         collect_txt.setWordWrapWidth(1100)
         page3.add(collect_txt)
@@ -467,7 +467,7 @@ export default class SafetyQuiz extends Closeup {
         const goodtry = this.add.text(668, -83, '', {})
         goodtry.setOrigin(0.5, 0)
         goodtry.text = 'Good Try!'
-        goodtry.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '56px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
+        goodtry.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '56px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
         goodtry.setLineSpacing(5)
         goodtry.setWordWrapWidth(550)
         page4.add(goodtry)
@@ -476,7 +476,7 @@ export default class SafetyQuiz extends Closeup {
         const modbtn2text = this.add.text(683, 367, '', {})
         modbtn2text.setOrigin(0.5, 0)
         modbtn2text.text = 'Safety Quiz'
-        modbtn2text.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
+        modbtn2text.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
         modbtn2text.setLineSpacing(5)
         modbtn2text.setWordWrapWidth(550)
         page4.add(modbtn2text)
@@ -485,7 +485,7 @@ export default class SafetyQuiz extends Closeup {
         const wrongbody = this.add.text(668, 15, '', {})
         wrongbody.setOrigin(0.5, 0)
         wrongbody.text = "That wasn't quite right. Do you want to try the safety quiz again?"
-        wrongbody.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
+        wrongbody.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
         wrongbody.setLineSpacing(5)
         wrongbody.setWordWrapWidth(550)
         page4.add(wrongbody)
@@ -505,7 +505,6 @@ export default class SafetyQuiz extends Closeup {
 
         // modbutton (components)
         const modbuttonButton = new Button(modbutton)
-        modbuttonButton.spriteName = 'modbutton'
         modbuttonButton.callback = () => this.startQuiz()
 
         // text (components)
@@ -546,7 +545,6 @@ export default class SafetyQuiz extends Closeup {
 
         // greenbutton (components)
         const greenbuttonButton = new Button(greenbutton)
-        greenbuttonButton.spriteName = 'greenbutton'
         greenbuttonButton.callback = () => this.collectReward()
 
         // congrats_sub (components)
@@ -563,7 +561,6 @@ export default class SafetyQuiz extends Closeup {
 
         // modbutton2 (components)
         const modbutton2Button = new Button(modbutton2)
-        modbutton2Button.spriteName = 'modbutton'
         modbutton2Button.callback = () => this.startQuiz()
 
         // goodtry (components)
@@ -703,7 +700,7 @@ export default class SafetyQuiz extends Closeup {
             this.question.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-question`)
             this.answer1.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer1`)
             this.answer2.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer2`)
-            if (!this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`).includes('localisedString')) {
+            if (this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`) != `safetyquiz-q${this.questionNum}-answer3`) {
                 this.answer3.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`)
                 this.answer3.visible = true
                 this.answer_btn3.visible = true
@@ -711,7 +708,7 @@ export default class SafetyQuiz extends Closeup {
                 this.answer3.visible = false
                 this.answer_btn3.visible = false
             }
-            if (!this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`).includes('localisedString')) {
+            if (this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`) != `safetyquiz-q${this.questionNum}-answer4`) {
                 this.answer4.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`)
                 this.answer4.visible = true
                 this.answer_btn4.visible = true

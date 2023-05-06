@@ -28,7 +28,7 @@ export default class SearchItem extends BaseContainer {
         const username = scene.add.text(0, 48, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({align: 'center', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px'})
+        username.setStyle({align: 'center', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px'})
         this.add(username)
 
         // paperDoll
@@ -46,7 +46,7 @@ export default class SearchItem extends BaseContainer {
         const addFriend = scene.add.text(0, -47, '', {})
         addFriend.setOrigin(0.5, 0.5)
         addFriend.text = '+ Add Friend'
-        addFriend.setStyle({align: 'center', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px', fontStyle: 'bold'})
+        addFriend.setStyle({align: 'center', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px', fontStyle: 'bold'})
         this.add(addFriend)
 
         // rectangle_1 (components)

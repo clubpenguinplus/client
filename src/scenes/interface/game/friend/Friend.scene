@@ -48,7 +48,7 @@
                     "text": "Friends",
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#ffffffff"
@@ -60,7 +60,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "main",
@@ -122,7 +121,7 @@
                     "originY": 0.5,
                     "text": "(99)",
                     "fixedWidth": 50,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#144e90ff"
                 },
@@ -238,7 +237,7 @@
                             "text": "error",
                             "fixedWidth": 200,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "18px",
                             "color": "#a0d3e9ff",
                             "wordWrapWidth": 200
@@ -250,7 +249,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "blue-button",
                             "Button.callback": "() => this.hideSearch()",
                             "texture": {
                                 "key": "main",
@@ -426,7 +424,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onSearchEnter()",
                     "texture": {
                         "key": "prompt",
@@ -455,7 +452,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Find",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "color": "#ffffffff"
                 },
@@ -475,7 +472,7 @@
                     "originY": 0.5,
                     "text": "Enter Name",
                     "fixedWidth": 200,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#696969ff"
                 },

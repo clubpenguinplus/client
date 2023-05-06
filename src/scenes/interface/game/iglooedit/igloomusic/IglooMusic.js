@@ -37,21 +37,21 @@ export default class IglooMusic extends BaseContainer {
         const title = scene.add.text(-161, -297, '', {})
         title.setOrigin(0.5, 0)
         title.text = 'Igloo Music'
-        title.setStyle({color: '#3e83c5ff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        title.setStyle({color: '#3e83c5ff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         this.add(title)
 
         // title_1
         const title_1 = scene.add.text(-300, -384, '', {})
         title_1.setOrigin(0.5, 0)
         title_1.text = 'Igloo Music'
-        title_1.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        title_1.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         this.add(title_1)
 
         // title_2
         const title_2 = scene.add.text(49, -384, '', {})
         title_2.setOrigin(0.5, 0)
         title_2.text = 'SoundStudio'
-        title_2.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        title_2.setStyle({align: 'center', color: '#3e83c5ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         this.add(title_2)
 
         // block (components)
@@ -59,7 +59,6 @@ export default class IglooMusic extends BaseContainer {
 
         // blueButton (components)
         const blueButtonButton = new Button(blueButton)
-        blueButtonButton.spriteName = 'close-btn'
         blueButtonButton.callback = () => (this.visible = false)
 
         // title (components)

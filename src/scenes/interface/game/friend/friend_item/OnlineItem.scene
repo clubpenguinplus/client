@@ -69,7 +69,7 @@
                     "text": "Username",
                     "fixedWidth": 185,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "fontStyle": "bold",
                     "color": "#000000ff"
@@ -87,7 +87,7 @@
                     "text": "is online",
                     "fixedWidth": 185,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "color": "#000000ff"
                 }

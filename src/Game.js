@@ -20,6 +20,13 @@ export default class Game extends Phaser.Game {
             }
         }
 
+        document.onkeyup = (event) => {
+            if (this.airtower.interface.isInputActive) {
+                event.preventDefault()
+                this.airtower.interface.input.keyboard.emit('keyup', event)
+            }
+        }
+
         registerNinePatchContainerFactory()
 
         this.scene.add('Boot', Boot, true)
@@ -44,7 +51,7 @@ window.onload = () => {
     function correctDomain() {
         let correctDomain = false
 
-        let allowedDomains = ['beta.cpplus.pw', 'play.cpplus.pw', 'localhost']
+        let allowedDomains = ['beta.cpplus.pw', 'play.cpplus.pw', 'localhost', '192.168.0.20']
 
         for (let i = 0; i < allowedDomains.length; i++) {
             if (window.location.hostname == allowedDomains[i]) {

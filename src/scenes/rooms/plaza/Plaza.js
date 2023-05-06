@@ -56,7 +56,7 @@ export default class Plaza extends RoomScene {
         bg.setOrigin(0, 0)
 
         // parksign
-        const parksign = this.add.sprite(-45, 358, 'plaza', 'park-hover')
+        const parksign = this.add.sprite(-45, 358, 'plaza', 'park')
 
         // buildings
         this.add.image(767, 325, 'plaza', 'buildings')
@@ -104,7 +104,7 @@ export default class Plaza extends RoomScene {
         fg_1.setOrigin(0.42192926018256904, 0.20276760019732185)
 
         // pizza_sign
-        this.add.image(1254, 285, 'plaza', 'pizza_sign')
+        const pizza_sign = this.add.image(1254, 285, 'plaza', 'pizza_sign')
 
         // pole
         this.add.image(1082, 77, 'plaza', 'pole')
@@ -143,7 +143,7 @@ export default class Plaza extends RoomScene {
         rectangle.fillAlpha = 100
 
         // puffle_hotel_sign
-        this.add.image(534, 147, 'plaza', 'puffle_hotel_sign')
+        const puffle_hotel_sign = this.add.image(534, 147, 'plaza', 'puffle_hotel_sign')
 
         // rectangle_2
         const rectangle_2 = this.add.rectangle(126, 347, 128, 128)
@@ -155,14 +155,15 @@ export default class Plaza extends RoomScene {
         // lists
         const sort = [fg_2, fg_1]
 
+        // parksign (components)
+        new LocalisedSprite(parksign)
+
         // mall_sign_en (components)
         new LocalisedSprite(mall_sign_en)
 
         // pet_door0001 (components)
         const pet_door0001Button = new Button(pet_door0001)
-        pet_door0001Button.spriteName = 'pet_door'
         pet_door0001Button.hoverCallback = () => this.onPetOver()
-        pet_door0001Button.activeFrame = false
         const pet_door0001MoveTo = new MoveTo(pet_door0001)
         pet_door0001MoveTo.x = 396
         pet_door0001MoveTo.y = 492
@@ -179,33 +180,30 @@ export default class Plaza extends RoomScene {
 
         // pizza_door0001 (components)
         const pizza_door0001Button = new Button(pizza_door0001)
-        pizza_door0001Button.spriteName = 'pizza_door'
         pizza_door0001Button.hoverCallback = () => this.onPizzaOver()
         pizza_door0001Button.hoverOutCallback = () => this.onPizzaOut()
-        pizza_door0001Button.activeFrame = false
         const pizza_door0001MoveTo = new MoveTo(pizza_door0001)
         pizza_door0001MoveTo.x = 1224
         pizza_door0001MoveTo.y = 480
 
         // mall_door0001 (components)
         const mall_door0001Button = new Button(mall_door0001)
-        mall_door0001Button.spriteName = 'mall_door'
         mall_door0001Button.hoverCallback = () => this.onMallOver()
         mall_door0001Button.hoverOutCallback = () => this.onMallOut()
-        mall_door0001Button.activeFrame = false
         const mall_door0001MoveTo = new MoveTo(mall_door0001)
         mall_door0001MoveTo.x = 920
         mall_door0001MoveTo.y = 460
 
         // hotel_door0001 (components)
         const hotel_door0001Button = new Button(hotel_door0001)
-        hotel_door0001Button.spriteName = 'hotel_door'
         hotel_door0001Button.hoverCallback = () => this.onHotelOver()
         hotel_door0001Button.hoverOutCallback = () => this.onHotelOut()
-        hotel_door0001Button.activeFrame = false
         const hotel_door0001MoveTo = new MoveTo(hotel_door0001)
         hotel_door0001MoveTo.x = 644
         hotel_door0001MoveTo.y = 468
+
+        // pizza_sign (components)
+        new LocalisedSprite(pizza_sign)
 
         // flag1_0001 (components)
         const flag1_0001Animation = new Animation(flag1_0001)
@@ -240,6 +238,9 @@ export default class Plaza extends RoomScene {
         rectangleSimpleButton.hoverCallback = () => this.onHoleOver()
         rectangleSimpleButton.hoverOutCallback = () => this.onHoleOut()
         rectangleSimpleButton.callback = () => this.shell.client.penguin.move(512, 560)
+
+        // puffle_hotel_sign (components)
+        new LocalisedSprite(puffle_hotel_sign)
 
         // rectangle_2 (components)
         const rectangle_2SimpleButton = new SimpleButton(rectangle_2)

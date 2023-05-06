@@ -40,7 +40,7 @@ export default class Card extends BaseContainer {
         const power = scene.add.text(-49, -11, '', {})
         power.setOrigin(0.5, 0.5)
         power.text = '9'
-        power.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '48px', fontStyle: 'bold'})
+        power.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '48px', fontStyle: 'bold'})
         this.add(power)
 
         const disabled = scene.add.image(34, 30, 'card', 'disabled')

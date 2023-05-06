@@ -16,7 +16,7 @@ export default class BasicItemsPage extends Page {
         const rollOverText = scene.add.text(929, 637, '', {})
         rollOverText.setOrigin(0.5, 0.5)
         rollOverText.text = 'Roll-over any of the\nimages above to preview'
-        rollOverText.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '20px'})
+        rollOverText.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(rollOverText)
 
         // rollOver
@@ -27,7 +27,7 @@ export default class BasicItemsPage extends Page {
         const page4_header = scene.add.text(204, 82, '', {})
         page4_header.setOrigin(0.5, 0.5)
         page4_header.text = 'Clothing items\nfor everyone'
-        page4_header.setStyle({fontFamily: 'Burbank Small', fontSize: '27px', fontStyle: 'bold italic'})
+        page4_header.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '27px', fontStyle: 'bold italic'})
         this.add(page4_header)
 
         // buyBtn_210
@@ -38,14 +38,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_210 = scene.add.text(997, 235, '', {})
         priceNum_210.setOrigin(0.5, 0.5)
         priceNum_210.text = '300'
-        priceNum_210.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_210.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_210)
 
         // nameTag_210
         const nameTag_210 = scene.add.text(1008, 198, '', {})
         nameTag_210.setOrigin(0.5, 0.5)
         nameTag_210.text = 'Star T-Shirt'
-        nameTag_210.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_210.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_210)
 
         // hover_210
@@ -61,14 +61,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_405 = scene.add.text(1171, 235, '', {})
         priceNum_405.setOrigin(0.5, 0.5)
         priceNum_405.text = '200'
-        priceNum_405.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_405.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_405)
 
         // nameTag_405
         const nameTag_405 = scene.add.text(1179, 198, '', {})
         nameTag_405.setOrigin(0.5, 0.5)
         nameTag_405.text = 'Green Ball Cap'
-        nameTag_405.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_405.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_405)
 
         // hover_405
@@ -84,14 +84,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_717 = scene.add.text(1342, 235, '', {})
         priceNum_717.setOrigin(0.5, 0.5)
         priceNum_717.text = '300'
-        priceNum_717.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_717.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_717)
 
         // nameTag_717
         const nameTag_717 = scene.add.text(1351, 198, '', {})
         nameTag_717.setOrigin(0.5, 0.5)
         nameTag_717.text = 'Baseball Glove'
-        nameTag_717.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_717.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_717)
 
         // hover_717
@@ -107,14 +107,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_713 = scene.add.text(1342, 453, '', {})
         priceNum_713.setOrigin(0.5, 0.5)
         priceNum_713.text = '300'
-        priceNum_713.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_713.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_713)
 
         // nameTag_713
         const nameTag_713 = scene.add.text(1351, 415, '', {})
         nameTag_713.setOrigin(0.5, 0.5)
         nameTag_713.text = 'Pink Purse'
-        nameTag_713.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_713.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_713)
 
         // hover_713
@@ -130,14 +130,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_192 = scene.add.text(1171, 453, '', {})
         priceNum_192.setOrigin(0.5, 0.5)
         priceNum_192.text = '150'
-        priceNum_192.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_192.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_192)
 
         // nameTag_192
         const nameTag_192 = scene.add.text(1180, 415, '', {})
         nameTag_192.setOrigin(0.5, 0.5)
         nameTag_192.text = 'Red Bandana'
-        nameTag_192.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_192.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_192)
 
         // hover_192
@@ -153,14 +153,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_203 = scene.add.text(1336, 679, '', {})
         priceNum_203.setOrigin(0.5, 0.5)
         priceNum_203.text = '200'
-        priceNum_203.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_203.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_203)
 
         // nameTag_203
         const nameTag_203 = scene.add.text(1347, 639, '', {})
         nameTag_203.setOrigin(0.5, 0.5)
         nameTag_203.text = 'Butterfly T-Shirt'
-        nameTag_203.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_203.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_203)
 
         // hover_203
@@ -176,14 +176,14 @@ export default class BasicItemsPage extends Page {
         const priceNum_653 = scene.add.text(1171, 679, '', {})
         priceNum_653.setOrigin(0.5, 0.5)
         priceNum_653.text = '500'
-        priceNum_653.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_653.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
         this.add(priceNum_653)
 
         // nameTag_653
         const nameTag_653 = scene.add.text(1180, 639, '', {})
         nameTag_653.setOrigin(0.5, 0.5)
         nameTag_653.text = 'The Funster'
-        nameTag_653.setStyle({fontFamily: 'Burbank Small', fontSize: '20px'})
+        nameTag_653.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(nameTag_653)
 
         // hover_653
@@ -205,9 +205,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_210 (components)
         const buyBtn_210Button = new Button(buyBtn_210)
-        buyBtn_210Button.spriteName = 'buybtn'
         buyBtn_210Button.callback = () => this.buy(210)
-        buyBtn_210Button.activeFrame = false
 
         // priceNum_210 (components)
         const priceNum_210Pricetag = new Pricetag(priceNum_210)
@@ -223,9 +221,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_405 (components)
         const buyBtn_405Button = new Button(buyBtn_405)
-        buyBtn_405Button.spriteName = 'buybtn'
         buyBtn_405Button.callback = () => this.buy(405)
-        buyBtn_405Button.activeFrame = false
 
         // priceNum_405 (components)
         const priceNum_405Pricetag = new Pricetag(priceNum_405)
@@ -241,9 +237,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_717 (components)
         const buyBtn_717Button = new Button(buyBtn_717)
-        buyBtn_717Button.spriteName = 'buybtn'
         buyBtn_717Button.callback = () => this.buy(717)
-        buyBtn_717Button.activeFrame = false
 
         // priceNum_717 (components)
         const priceNum_717Pricetag = new Pricetag(priceNum_717)
@@ -259,9 +253,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_713 (components)
         const buyBtn_713Button = new Button(buyBtn_713)
-        buyBtn_713Button.spriteName = 'buybtn'
         buyBtn_713Button.callback = () => this.buy(713)
-        buyBtn_713Button.activeFrame = false
 
         // priceNum_713 (components)
         const priceNum_713Pricetag = new Pricetag(priceNum_713)
@@ -277,9 +269,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_192 (components)
         const buyBtn_192Button = new Button(buyBtn_192)
-        buyBtn_192Button.spriteName = 'buybtn'
         buyBtn_192Button.callback = () => this.buy(192)
-        buyBtn_192Button.activeFrame = false
 
         // priceNum_192 (components)
         const priceNum_192Pricetag = new Pricetag(priceNum_192)
@@ -295,9 +285,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_203 (components)
         const buyBtn_203Button = new Button(buyBtn_203)
-        buyBtn_203Button.spriteName = 'buybtn'
         buyBtn_203Button.callback = () => this.buy(203)
-        buyBtn_203Button.activeFrame = false
 
         // priceNum_203 (components)
         const priceNum_203Pricetag = new Pricetag(priceNum_203)
@@ -313,9 +301,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_653 (components)
         const buyBtn_653Button = new Button(buyBtn_653)
-        buyBtn_653Button.spriteName = 'buybtn'
         buyBtn_653Button.callback = () => this.buy(653)
-        buyBtn_653Button.activeFrame = false
 
         // priceNum_653 (components)
         const priceNum_653Pricetag = new Pricetag(priceNum_653)
@@ -331,12 +317,10 @@ export default class BasicItemsPage extends Page {
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)

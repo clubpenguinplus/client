@@ -973,7 +973,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_489 = this.add.text(407, 351, '', {})
         priceNum_489.setOrigin(0.5, 0.5)
         priceNum_489.text = '250'
-        priceNum_489.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_489.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page4.add(priceNum_489)
 
         // buyBtn_5580
@@ -984,7 +984,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_5580 = this.add.text(407, 622, '', {})
         priceNum_5580.setOrigin(0.5, 0.5)
         priceNum_5580.text = '145'
-        priceNum_5580.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5580.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page4.add(priceNum_5580)
 
         // nextpage4
@@ -1011,7 +1011,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_675 = this.add.text(966, 343, '', {})
         priceNum_675.setOrigin(0.5, 0.5)
         priceNum_675.text = '450'
-        priceNum_675.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_675.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_675)
 
         // buyBtn_834
@@ -1022,7 +1022,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_834 = this.add.text(966, 628, '', {})
         priceNum_834.setOrigin(0.5, 0.5)
         priceNum_834.text = '350'
-        priceNum_834.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_834.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_834)
 
         // buyBtn_835
@@ -1033,7 +1033,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_835 = this.add.text(1231, 714, '', {})
         priceNum_835.setOrigin(0.5, 0.5)
         priceNum_835.text = '350'
-        priceNum_835.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_835.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_835)
 
         // buyBtn_190
@@ -1044,7 +1044,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_190 = this.add.text(1231, 439, '', {})
         priceNum_190.setOrigin(0.5, 0.5)
         priceNum_190.text = '350'
-        priceNum_190.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_190.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_190)
 
         // buyBtn_126
@@ -1055,7 +1055,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_126 = this.add.text(1231, 250, '', {})
         priceNum_126.setOrigin(0.5, 0.5)
         priceNum_126.text = '350'
-        priceNum_126.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_126.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page5.add(priceNum_126)
 
         // sec_212
@@ -1104,14 +1104,14 @@ export default class CostumeCatalog extends Book {
         const priceNum_212 = this.add.text(896, 356, '', {})
         priceNum_212.setOrigin(0.5, 0.5)
         priceNum_212.text = '350'
-        priceNum_212.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_212.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         sec_212.add(priceNum_212)
 
         // nameTag_210
         const nameTag_210 = this.add.text(898, 319, '', {})
         nameTag_210.setOrigin(0.5, 0.5)
         nameTag_210.text = 'Grass Skirt'
-        nameTag_210.setStyle({color: '#221100ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        nameTag_210.setStyle({color: '#221100ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         sec_212.add(nameTag_210)
 
         // sec_skirt
@@ -1144,7 +1144,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_676 = this.add.text(903, 256, '', {})
         priceNum_676.setOrigin(0.5, 0.5)
         priceNum_676.text = '450'
-        priceNum_676.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_676.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page6.add(priceNum_676)
 
         // buyBtn_127
@@ -1155,7 +1155,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_127 = this.add.text(273, 535, '', {})
         priceNum_127.setOrigin(0.5, 0.5)
         priceNum_127.text = '350'
-        priceNum_127.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_127.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page6.add(priceNum_127)
 
         // buyBtn_128
@@ -1166,7 +1166,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_128 = this.add.text(520, 734, '', {})
         priceNum_128.setOrigin(0.5, 0.5)
         priceNum_128.text = '350'
-        priceNum_128.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_128.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page6.add(priceNum_128)
 
         // nextpage6
@@ -1193,7 +1193,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_665 = this.add.text(984, 254, '', {})
         priceNum_665.setOrigin(0.5, 0.5)
         priceNum_665.text = '450'
-        priceNum_665.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_665.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page7.add(priceNum_665)
 
         // buyBtn_786
@@ -1204,7 +1204,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_786 = this.add.text(981, 522, '', {})
         priceNum_786.setOrigin(0.5, 0.5)
         priceNum_786.text = '350'
-        priceNum_786.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_786.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page7.add(priceNum_786)
 
         // buyBtn_787
@@ -1215,7 +1215,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_787 = this.add.text(1231, 734, '', {})
         priceNum_787.setOrigin(0.5, 0.5)
         priceNum_787.text = '350'
-        priceNum_787.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_787.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page7.add(priceNum_787)
 
         // buyBtn_316
@@ -1226,7 +1226,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_316 = this.add.text(1231, 484, '', {})
         priceNum_316.setOrigin(0.5, 0.5)
         priceNum_316.text = '350'
-        priceNum_316.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_316.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page7.add(priceNum_316)
 
         // buyBtn_432
@@ -1237,7 +1237,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_432 = this.add.text(1231, 224, '', {})
         priceNum_432.setOrigin(0.5, 0.5)
         priceNum_432.text = '350'
-        priceNum_432.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_432.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page7.add(priceNum_432)
 
         // buyBtn_327
@@ -1248,7 +1248,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_327 = this.add.text(980, 715, '', {})
         priceNum_327.setOrigin(0.5, 0.5)
         priceNum_327.text = '350'
-        priceNum_327.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_327.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page7.add(priceNum_327)
 
         // sec_716
@@ -1298,14 +1298,14 @@ export default class CostumeCatalog extends Book {
         const priceNum_716 = this.add.text(768, 620, '', {})
         priceNum_716.setOrigin(0.5, 0.5)
         priceNum_716.text = '350'
-        priceNum_716.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_716.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         sec_716.add(priceNum_716)
 
         // nameTag_716
         const nameTag_716 = this.add.text(770, 583, '', {})
         nameTag_716.setOrigin(0.5, 0.5)
         nameTag_716.text = 'Crook and Flail'
-        nameTag_716.setStyle({color: '#221100ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        nameTag_716.setStyle({color: '#221100ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         sec_716.add(nameTag_716)
 
         // sec_crook
@@ -1338,7 +1338,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_666 = this.add.text(1213, 291, '', {})
         priceNum_666.setOrigin(0.5, 0.5)
         priceNum_666.text = '450'
-        priceNum_666.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_666.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_666)
 
         // buyBtn_789
@@ -1349,7 +1349,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_789 = this.add.text(955, 535, '', {})
         priceNum_789.setOrigin(0.5, 0.5)
         priceNum_789.text = '350'
-        priceNum_789.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_789.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_789)
 
         // buyBtn_788
@@ -1360,7 +1360,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_788 = this.add.text(1216, 543, '', {})
         priceNum_788.setOrigin(0.5, 0.5)
         priceNum_788.text = '350'
-        priceNum_788.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_788.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_788)
 
         // buyBtn_715
@@ -1371,7 +1371,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_715 = this.add.text(1214, 732, '', {})
         priceNum_715.setOrigin(0.5, 0.5)
         priceNum_715.text = '450'
-        priceNum_715.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_715.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page8.add(priceNum_715)
 
         // nextpage8
@@ -1398,7 +1398,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_123 = this.add.text(989, 277, '', {})
         priceNum_123.setOrigin(0.5, 0.5)
         priceNum_123.text = '450'
-        priceNum_123.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_123.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_123)
 
         // buyBtn_302
@@ -1409,7 +1409,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_302 = this.add.text(987, 480, '', {})
         priceNum_302.setOrigin(0.5, 0.5)
         priceNum_302.text = '350'
-        priceNum_302.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_302.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_302)
 
         // buyBtn_315
@@ -1420,7 +1420,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_315 = this.add.text(1236, 480, '', {})
         priceNum_315.setOrigin(0.5, 0.5)
         priceNum_315.text = '350'
-        priceNum_315.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_315.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_315)
 
         // buyBtn_124
@@ -1431,7 +1431,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_124 = this.add.text(1234, 277, '', {})
         priceNum_124.setOrigin(0.5, 0.5)
         priceNum_124.text = '450'
-        priceNum_124.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_124.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_124)
 
         // buyBtn_765
@@ -1442,7 +1442,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_765 = this.add.text(992, 701, '', {})
         priceNum_765.setOrigin(0.5, 0.5)
         priceNum_765.text = '450'
-        priceNum_765.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_765.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_765)
 
         // buyBtn_766
@@ -1453,7 +1453,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_766 = this.add.text(1245, 701, '', {})
         priceNum_766.setOrigin(0.5, 0.5)
         priceNum_766.text = '450'
-        priceNum_766.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_766.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page9.add(priceNum_766)
 
         // nextpage9
@@ -1480,7 +1480,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_767 = this.add.text(985, 451, '', {})
         priceNum_767.setOrigin(0.5, 0.5)
         priceNum_767.text = '350'
-        priceNum_767.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_767.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page10.add(priceNum_767)
 
         // buyBtn_195
@@ -1491,7 +1491,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_195 = this.add.text(1247, 504, '', {})
         priceNum_195.setOrigin(0.5, 0.5)
         priceNum_195.text = '350'
-        priceNum_195.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_195.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page10.add(priceNum_195)
 
         // buyBtn_113
@@ -1502,7 +1502,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_113 = this.add.text(1251, 258, '', {})
         priceNum_113.setOrigin(0.5, 0.5)
         priceNum_113.text = '450'
-        priceNum_113.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_113.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page10.add(priceNum_113)
 
         // nextpage10
@@ -1529,7 +1529,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4457 = this.add.text(989, 309, '', {})
         priceNum_4457.setOrigin(0.5, 0.5)
         priceNum_4457.text = '450'
-        priceNum_4457.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4457.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_4457)
 
         // buyBtn_6096
@@ -1540,7 +1540,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_6096 = this.add.text(987, 462, '', {})
         priceNum_6096.setOrigin(0.5, 0.5)
         priceNum_6096.text = '350'
-        priceNum_6096.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6096.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_6096)
 
         // buyBtn_4456
@@ -1551,7 +1551,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4456 = this.add.text(1256, 476, '', {})
         priceNum_4456.setOrigin(0.5, 0.5)
         priceNum_4456.text = '350'
-        priceNum_4456.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4456.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_4456)
 
         // buyBtn_4455
@@ -1562,7 +1562,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4455 = this.add.text(992, 771, '', {})
         priceNum_4455.setOrigin(0.5, 0.5)
         priceNum_4455.text = '450'
-        priceNum_4455.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4455.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_4455)
 
         // buyBtn_6095
@@ -1573,7 +1573,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_6095 = this.add.text(1255, 643, '', {})
         priceNum_6095.setOrigin(0.5, 0.5)
         priceNum_6095.text = '450'
-        priceNum_6095.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6095.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page11.add(priceNum_6095)
 
         // nextpage11
@@ -1600,7 +1600,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_132 = this.add.text(977, 259, '', {})
         priceNum_132.setOrigin(0.5, 0.5)
         priceNum_132.text = '450'
-        priceNum_132.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_132.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_132)
 
         // buyBtn_4113
@@ -1611,7 +1611,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4113 = this.add.text(978, 530, '', {})
         priceNum_4113.setOrigin(0.5, 0.5)
         priceNum_4113.text = '350'
-        priceNum_4113.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4113.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_4113)
 
         // buyBtn_4114
@@ -1622,7 +1622,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4114 = this.add.text(1229, 530, '', {})
         priceNum_4114.setOrigin(0.5, 0.5)
         priceNum_4114.text = '350'
-        priceNum_4114.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4114.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_4114)
 
         // buyBtn_2003
@@ -1633,7 +1633,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_2003 = this.add.text(1222, 259, '', {})
         priceNum_2003.setOrigin(0.5, 0.5)
         priceNum_2003.text = '450'
-        priceNum_2003.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_2003.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_2003)
 
         // buyBtn_364
@@ -1644,7 +1644,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_364 = this.add.text(976, 731, '', {})
         priceNum_364.setOrigin(0.5, 0.5)
         priceNum_364.text = '450'
-        priceNum_364.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_364.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_364)
 
         // buyBtn_367
@@ -1655,7 +1655,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_367 = this.add.text(1229, 731, '', {})
         priceNum_367.setOrigin(0.5, 0.5)
         priceNum_367.text = '450'
-        priceNum_367.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_367.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_367)
 
         // buyBtn_308
@@ -1666,7 +1666,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_308 = this.add.text(590, 253, '', {})
         priceNum_308.setOrigin(0.5, 0.5)
         priceNum_308.text = '450'
-        priceNum_308.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_308.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page12.add(priceNum_308)
 
         // nextpage12
@@ -1693,7 +1693,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_768 = this.add.text(206, 612, '', {})
         priceNum_768.setOrigin(0.5, 0.5)
         priceNum_768.text = '450'
-        priceNum_768.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_768.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page13.add(priceNum_768)
 
         // buyBtn_3029
@@ -1704,7 +1704,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3029 = this.add.text(615, 360, '', {})
         priceNum_3029.setOrigin(0.5, 0.5)
         priceNum_3029.text = '350'
-        priceNum_3029.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3029.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page13.add(priceNum_3029)
 
         // buyBtn_5044
@@ -1715,7 +1715,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_5044 = this.add.text(617, 538, '', {})
         priceNum_5044.setOrigin(0.5, 0.5)
         priceNum_5044.text = '350'
-        priceNum_5044.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5044.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page13.add(priceNum_5044)
 
         // buyBtn_1077
@@ -1726,7 +1726,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1077 = this.add.text(423, 516, '', {})
         priceNum_1077.setOrigin(0.5, 0.5)
         priceNum_1077.text = '450'
-        priceNum_1077.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1077.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page13.add(priceNum_1077)
 
         // buyBtn_4110
@@ -1737,7 +1737,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4110 = this.add.text(417, 733, '', {})
         priceNum_4110.setOrigin(0.5, 0.5)
         priceNum_4110.text = '450'
-        priceNum_4110.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4110.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page13.add(priceNum_4110)
 
         // buyBtn_1076
@@ -1748,7 +1748,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1076 = this.add.text(207, 371, '', {})
         priceNum_1076.setOrigin(0.5, 0.5)
         priceNum_1076.text = '450'
-        priceNum_1076.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1076.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page13.add(priceNum_1076)
 
         // nextpage13
@@ -1775,7 +1775,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4111 = this.add.text(539, 548, '', {})
         priceNum_4111.setOrigin(0.5, 0.5)
         priceNum_4111.text = '450'
-        priceNum_4111.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4111.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page14.add(priceNum_4111)
 
         // buyBtn_4112
@@ -1786,7 +1786,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4112 = this.add.text(258, 548, '', {})
         priceNum_4112.setOrigin(0.5, 0.5)
         priceNum_4112.text = '450'
-        priceNum_4112.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4112.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page14.add(priceNum_4112)
 
         // nextpage14
@@ -1813,7 +1813,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1057 = this.add.text(533, 446, '', {})
         priceNum_1057.setOrigin(0.5, 0.5)
         priceNum_1057.text = '350'
-        priceNum_1057.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1057.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page15.add(priceNum_1057)
 
         // buyBtn_4085
@@ -1824,7 +1824,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4085 = this.add.text(533, 708, '', {})
         priceNum_4085.setOrigin(0.5, 0.5)
         priceNum_4085.text = '350'
-        priceNum_4085.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4085.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page15.add(priceNum_4085)
 
         // buyBtn_4086
@@ -1835,7 +1835,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4086 = this.add.text(293, 708, '', {})
         priceNum_4086.setOrigin(0.5, 0.5)
         priceNum_4086.text = '450'
-        priceNum_4086.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4086.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page15.add(priceNum_4086)
 
         // buyBtn_1056
@@ -1846,7 +1846,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1056 = this.add.text(289, 446, '', {})
         priceNum_1056.setOrigin(0.5, 0.5)
         priceNum_1056.text = '450'
-        priceNum_1056.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1056.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page15.add(priceNum_1056)
 
         // nextpage15
@@ -1873,7 +1873,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4015 = this.add.text(1108, 440, '', {})
         priceNum_4015.setOrigin(0.5, 0.5)
         priceNum_4015.text = '350'
-        priceNum_4015.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4015.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page16.add(priceNum_4015)
 
         // buyBtn_347
@@ -1884,7 +1884,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_347 = this.add.text(1110, 630, '', {})
         priceNum_347.setOrigin(0.5, 0.5)
         priceNum_347.text = '350'
-        priceNum_347.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_347.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page16.add(priceNum_347)
 
         // buyBtn_244
@@ -1895,7 +1895,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_244 = this.add.text(627, 300, '', {})
         priceNum_244.setOrigin(0.5, 0.5)
         priceNum_244.text = 'Collect'
-        priceNum_244.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_244.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page16.add(priceNum_244)
 
         // nextpage16
@@ -1922,7 +1922,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1010 = this.add.text(956, 263, '', {})
         priceNum_1010.setOrigin(0.5, 0.5)
         priceNum_1010.text = '450'
-        priceNum_1010.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1010.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page17.add(priceNum_1010)
 
         // buyBtn_181
@@ -1933,7 +1933,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_181 = this.add.text(957, 473, '', {})
         priceNum_181.setOrigin(0.5, 0.5)
         priceNum_181.text = '350'
-        priceNum_181.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_181.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page17.add(priceNum_181)
 
         // buyBtn_4012
@@ -1944,7 +1944,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4012 = this.add.text(1226, 494, '', {})
         priceNum_4012.setOrigin(0.5, 0.5)
         priceNum_4012.text = '350'
-        priceNum_4012.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4012.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page17.add(priceNum_4012)
 
         // buyBtn_1009
@@ -1955,7 +1955,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1009 = this.add.text(1229, 260, '', {})
         priceNum_1009.setOrigin(0.5, 0.5)
         priceNum_1009.text = '450'
-        priceNum_1009.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1009.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page17.add(priceNum_1009)
 
         // buyBtn_842
@@ -1966,7 +1966,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_842 = this.add.text(948, 732, '', {})
         priceNum_842.setOrigin(0.5, 0.5)
         priceNum_842.text = '450'
-        priceNum_842.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_842.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page17.add(priceNum_842)
 
         // buyBtn_5003
@@ -1977,7 +1977,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_5003 = this.add.text(1229, 731, '', {})
         priceNum_5003.setOrigin(0.5, 0.5)
         priceNum_5003.text = '450'
-        priceNum_5003.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5003.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page17.add(priceNum_5003)
 
         // nextpage17
@@ -2004,7 +2004,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1012 = this.add.text(255, 324, '', {})
         priceNum_1012.setOrigin(0.5, 0.5)
         priceNum_1012.text = '450'
-        priceNum_1012.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1012.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page18.add(priceNum_1012)
 
         // buyBtn_3005
@@ -2015,7 +2015,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3005 = this.add.text(551, 502, '', {})
         priceNum_3005.setOrigin(0.5, 0.5)
         priceNum_3005.text = '350'
-        priceNum_3005.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3005.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page18.add(priceNum_3005)
 
         // buyBtn_4014
@@ -2026,7 +2026,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4014 = this.add.text(254, 559, '', {})
         priceNum_4014.setOrigin(0.5, 0.5)
         priceNum_4014.text = '350'
-        priceNum_4014.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4014.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page18.add(priceNum_4014)
 
         // buyBtn_1011
@@ -2037,7 +2037,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1011 = this.add.text(552, 314, '', {})
         priceNum_1011.setOrigin(0.5, 0.5)
         priceNum_1011.text = '450'
-        priceNum_1011.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1011.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page18.add(priceNum_1011)
 
         // buyBtn_6008
@@ -2048,7 +2048,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_6008 = this.add.text(251, 739, '', {})
         priceNum_6008.setOrigin(0.5, 0.5)
         priceNum_6008.text = '450'
-        priceNum_6008.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6008.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page18.add(priceNum_6008)
 
         // buyBtn_4013
@@ -2059,7 +2059,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4013 = this.add.text(545, 743, '', {})
         priceNum_4013.setOrigin(0.5, 0.5)
         priceNum_4013.text = '450'
-        priceNum_4013.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4013.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page18.add(priceNum_4013)
 
         // nextpage18
@@ -2086,7 +2086,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1025 = this.add.text(983, 259, '', {})
         priceNum_1025.setOrigin(0.5, 0.5)
         priceNum_1025.text = '450'
-        priceNum_1025.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1025.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page19.add(priceNum_1025)
 
         // buyBtn_4038
@@ -2097,7 +2097,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4038 = this.add.text(982, 515, '', {})
         priceNum_4038.setOrigin(0.5, 0.5)
         priceNum_4038.text = '350'
-        priceNum_4038.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4038.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page19.add(priceNum_4038)
 
         // buyBtn_4036
@@ -2108,7 +2108,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4036 = this.add.text(1241, 519, '', {})
         priceNum_4036.setOrigin(0.5, 0.5)
         priceNum_4036.text = '350'
-        priceNum_4036.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4036.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page19.add(priceNum_4036)
 
         // buyBtn_1023
@@ -2119,7 +2119,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1023 = this.add.text(1247, 260, '', {})
         priceNum_1023.setOrigin(0.5, 0.5)
         priceNum_1023.text = '450'
-        priceNum_1023.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1023.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page19.add(priceNum_1023)
 
         // buyBtn_3008
@@ -2130,7 +2130,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3008 = this.add.text(979, 738, '', {})
         priceNum_3008.setOrigin(0.5, 0.5)
         priceNum_3008.text = '450'
-        priceNum_3008.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3008.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page19.add(priceNum_3008)
 
         // buyBtn_301
@@ -2141,7 +2141,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_301 = this.add.text(1241, 740, '', {})
         priceNum_301.setOrigin(0.5, 0.5)
         priceNum_301.text = '450'
-        priceNum_301.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_301.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page19.add(priceNum_301)
 
         // nextpage19
@@ -2168,7 +2168,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4039 = this.add.text(947, 458, '', {})
         priceNum_4039.setOrigin(0.5, 0.5)
         priceNum_4039.text = '450'
-        priceNum_4039.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4039.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page20.add(priceNum_4039)
 
         // buyBtn_6010
@@ -2179,7 +2179,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_6010 = this.add.text(949, 632, '', {})
         priceNum_6010.setOrigin(0.5, 0.5)
         priceNum_6010.text = '350'
-        priceNum_6010.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6010.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page20.add(priceNum_6010)
 
         // buyBtn_4037
@@ -2190,7 +2190,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4037 = this.add.text(1221, 655, '', {})
         priceNum_4037.setOrigin(0.5, 0.5)
         priceNum_4037.text = '350'
-        priceNum_4037.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4037.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page20.add(priceNum_4037)
 
         // buyBtn_1024
@@ -2201,7 +2201,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1024 = this.add.text(1218, 312, '', {})
         priceNum_1024.setOrigin(0.5, 0.5)
         priceNum_1024.text = '450'
-        priceNum_1024.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1024.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page20.add(priceNum_1024)
 
         // nextpage20
@@ -2228,7 +2228,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1015 = this.add.text(995, 357, '', {})
         priceNum_1015.setOrigin(0.5, 0.5)
         priceNum_1015.text = '450'
-        priceNum_1015.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1015.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page21.add(priceNum_1015)
 
         // buyBtn_4018
@@ -2239,7 +2239,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4018 = this.add.text(990, 599, '', {})
         priceNum_4018.setOrigin(0.5, 0.5)
         priceNum_4018.text = '350'
-        priceNum_4018.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4018.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page21.add(priceNum_4018)
 
         // buyBtn_4426
@@ -2250,7 +2250,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4426 = this.add.text(1225, 504, '', {})
         priceNum_4426.setOrigin(0.5, 0.5)
         priceNum_4426.text = '450'
-        priceNum_4426.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4426.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page21.add(priceNum_4426)
 
         // nextpage21
@@ -2277,7 +2277,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_479 = this.add.text(977, 282, '', {})
         priceNum_479.setOrigin(0.5, 0.5)
         priceNum_479.text = '450'
-        priceNum_479.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_479.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page22.add(priceNum_479)
 
         // buyBtn_658
@@ -2288,7 +2288,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_658 = this.add.text(972, 515, '', {})
         priceNum_658.setOrigin(0.5, 0.5)
         priceNum_658.text = '350'
-        priceNum_658.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_658.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page22.add(priceNum_658)
 
         // buyBtn_254
@@ -2299,7 +2299,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_254 = this.add.text(1241, 519, '', {})
         priceNum_254.setOrigin(0.5, 0.5)
         priceNum_254.text = '350'
-        priceNum_254.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_254.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page22.add(priceNum_254)
 
         // buyBtn_771
@@ -2310,7 +2310,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_771 = this.add.text(1242, 284, '', {})
         priceNum_771.setOrigin(0.5, 0.5)
         priceNum_771.text = '450'
-        priceNum_771.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_771.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page22.add(priceNum_771)
 
         // buyBtn_110
@@ -2321,7 +2321,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_110 = this.add.text(974, 738, '', {})
         priceNum_110.setOrigin(0.5, 0.5)
         priceNum_110.text = '450'
-        priceNum_110.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_110.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page22.add(priceNum_110)
 
         // buyBtn_4004
@@ -2332,7 +2332,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4004 = this.add.text(1239, 737, '', {})
         priceNum_4004.setOrigin(0.5, 0.5)
         priceNum_4004.text = '450'
-        priceNum_4004.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4004.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page22.add(priceNum_4004)
 
         // nextpage22
@@ -2359,7 +2359,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_722 = this.add.text(272, 364, '', {})
         priceNum_722.setOrigin(0.5, 0.5)
         priceNum_722.text = '450'
-        priceNum_722.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_722.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page23.add(priceNum_722)
 
         // buyBtn_3002
@@ -2370,7 +2370,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3002 = this.add.text(276, 596, '', {})
         priceNum_3002.setOrigin(0.5, 0.5)
         priceNum_3002.text = '350'
-        priceNum_3002.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3002.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page23.add(priceNum_3002)
 
         // buyBtn_772
@@ -2381,7 +2381,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_772 = this.add.text(512, 700, '', {})
         priceNum_772.setOrigin(0.5, 0.5)
         priceNum_772.text = '350'
-        priceNum_772.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_772.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page23.add(priceNum_772)
 
         // buyBtn_659
@@ -2392,7 +2392,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_659 = this.add.text(517, 416, '', {})
         priceNum_659.setOrigin(0.5, 0.5)
         priceNum_659.text = '450'
-        priceNum_659.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_659.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page23.add(priceNum_659)
 
         // nextpage23
@@ -2435,7 +2435,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_122 = this.add.text(950, 277, '', {})
         priceNum_122.setOrigin(0.5, 0.5)
         priceNum_122.text = '450'
-        priceNum_122.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_122.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_122)
 
         // buyBtn_276
@@ -2446,7 +2446,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_276 = this.add.text(948, 501, '', {})
         priceNum_276.setOrigin(0.5, 0.5)
         priceNum_276.text = '350'
-        priceNum_276.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_276.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_276)
 
         // buyBtn_2004
@@ -2457,7 +2457,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_2004 = this.add.text(1230, 507, '', {})
         priceNum_2004.setOrigin(0.5, 0.5)
         priceNum_2004.text = '350'
-        priceNum_2004.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_2004.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_2004)
 
         // buyBtn_1016
@@ -2468,7 +2468,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1016 = this.add.text(1230, 292, '', {})
         priceNum_1016.setOrigin(0.5, 0.5)
         priceNum_1016.text = '450'
-        priceNum_1016.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1016.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_1016)
 
         // buyBtn_266
@@ -2479,7 +2479,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_266 = this.add.text(950, 748, '', {})
         priceNum_266.setOrigin(0.5, 0.5)
         priceNum_266.text = '450'
-        priceNum_266.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_266.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_266)
 
         // buyBtn_4021
@@ -2490,7 +2490,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4021 = this.add.text(1229, 745, '', {})
         priceNum_4021.setOrigin(0.5, 0.5)
         priceNum_4021.text = '450'
-        priceNum_4021.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4021.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_4021)
 
         // buyBtn_1199
@@ -2501,7 +2501,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1199 = this.add.text(260, 321, '', {})
         priceNum_1199.setOrigin(0.5, 0.5)
         priceNum_1199.text = '450'
-        priceNum_1199.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1199.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_1199)
 
         // buyBtn_120
@@ -2512,7 +2512,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_120 = this.add.text(539, 746, '', {})
         priceNum_120.setOrigin(0.5, 0.5)
         priceNum_120.text = '450'
-        priceNum_120.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_120.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_120)
 
         // buyBtn_245
@@ -2523,7 +2523,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_245 = this.add.text(257, 766, '', {})
         priceNum_245.setOrigin(0.5, 0.5)
         priceNum_245.text = '450'
-        priceNum_245.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_245.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_245)
 
         // buyBtn_458
@@ -2534,7 +2534,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_458 = this.add.text(540, 295, '', {})
         priceNum_458.setOrigin(0.5, 0.5)
         priceNum_458.text = '450'
-        priceNum_458.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_458.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_458)
 
         // buyBtn_268
@@ -2545,7 +2545,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_268 = this.add.text(540, 526, '', {})
         priceNum_268.setOrigin(0.5, 0.5)
         priceNum_268.text = '350'
-        priceNum_268.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_268.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_268)
 
         // buyBtn_4280
@@ -2556,7 +2556,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4280 = this.add.text(258, 545, '', {})
         priceNum_4280.setOrigin(0.5, 0.5)
         priceNum_4280.text = '350'
-        priceNum_4280.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4280.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page25.add(priceNum_4280)
 
         // nextpage25
@@ -2583,7 +2583,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1116 = this.add.text(976, 262, '', {})
         priceNum_1116.setOrigin(0.5, 0.5)
         priceNum_1116.text = '450'
-        priceNum_1116.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1116.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page26.add(priceNum_1116)
 
         // buyBtn_2016
@@ -2594,7 +2594,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_2016 = this.add.text(973, 481, '', {})
         priceNum_2016.setOrigin(0.5, 0.5)
         priceNum_2016.text = '350'
-        priceNum_2016.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_2016.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page26.add(priceNum_2016)
 
         // buyBtn_6033
@@ -2605,7 +2605,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_6033 = this.add.text(1236, 738, '', {})
         priceNum_6033.setOrigin(0.5, 0.5)
         priceNum_6033.text = '350'
-        priceNum_6033.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6033.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page26.add(priceNum_6033)
 
         // buyBtn_4190
@@ -2616,7 +2616,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4190 = this.add.text(1237, 544, '', {})
         priceNum_4190.setOrigin(0.5, 0.5)
         priceNum_4190.text = '350'
-        priceNum_4190.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4190.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page26.add(priceNum_4190)
 
         // buyBtn_1114
@@ -2627,7 +2627,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1114 = this.add.text(1239, 303, '', {})
         priceNum_1114.setOrigin(0.5, 0.5)
         priceNum_1114.text = '350'
-        priceNum_1114.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1114.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page26.add(priceNum_1114)
 
         // buyBtn_4192
@@ -2638,7 +2638,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4192 = this.add.text(970, 726, '', {})
         priceNum_4192.setOrigin(0.5, 0.5)
         priceNum_4192.text = '350'
-        priceNum_4192.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4192.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page26.add(priceNum_4192)
 
         // sec_1272
@@ -2687,14 +2687,14 @@ export default class CostumeCatalog extends Book {
         const priceNum_1272 = this.add.text(760, 520, '', {})
         priceNum_1272.setOrigin(0.5, 0.5)
         priceNum_1272.text = '350'
-        priceNum_1272.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1272.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         sec_1272.add(priceNum_1272)
 
         // nameTag_1272
         const nameTag_1272 = this.add.text(762, 483, '', {})
         nameTag_1272.setOrigin(0.5, 0.5)
         nameTag_1272.text = 'Sunset Crown'
-        nameTag_1272.setStyle({color: '#221100ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        nameTag_1272.setStyle({color: '#221100ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         sec_1272.add(nameTag_1272)
 
         // sec_sun
@@ -2727,7 +2727,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1115 = this.add.text(256, 321, '', {})
         priceNum_1115.setOrigin(0.5, 0.5)
         priceNum_1115.text = '450'
-        priceNum_1115.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1115.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_1115)
 
         // buyBtn_6034
@@ -2738,7 +2738,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_6034 = this.add.text(525, 784, '', {})
         priceNum_6034.setOrigin(0.5, 0.5)
         priceNum_6034.text = '450'
-        priceNum_6034.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6034.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_6034)
 
         // buyBtn_4191
@@ -2749,7 +2749,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4191 = this.add.text(255, 771, '', {})
         priceNum_4191.setOrigin(0.5, 0.5)
         priceNum_4191.text = '450'
-        priceNum_4191.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4191.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_4191)
 
         // buyBtn_2017
@@ -2760,7 +2760,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_2017 = this.add.text(523, 389, '', {})
         priceNum_2017.setOrigin(0.5, 0.5)
         priceNum_2017.text = '450'
-        priceNum_2017.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_2017.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_2017)
 
         // buyBtn_4194
@@ -2771,7 +2771,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4194 = this.add.text(522, 635, '', {})
         priceNum_4194.setOrigin(0.5, 0.5)
         priceNum_4194.text = '350'
-        priceNum_4194.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4194.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_4194)
 
         // buyBtn_3041
@@ -2782,7 +2782,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3041 = this.add.text(252, 535, '', {})
         priceNum_3041.setOrigin(0.5, 0.5)
         priceNum_3041.text = '350'
-        priceNum_3041.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3041.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_3041)
 
         // buyBtn_1117
@@ -2793,7 +2793,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1117 = this.add.text(529, 210, '', {})
         priceNum_1117.setOrigin(0.5, 0.5)
         priceNum_1117.text = '450'
-        priceNum_1117.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1117.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page27.add(priceNum_1117)
 
         // nextpage27
@@ -2820,7 +2820,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_367_again = this.add.text(267, 680, '', {})
         priceNum_367_again.setOrigin(0.5, 0.5)
         priceNum_367_again.text = '450'
-        priceNum_367_again.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_367_again.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page28.add(priceNum_367_again)
 
         // buyBtn_477
@@ -2831,7 +2831,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_477 = this.add.text(538, 408, '', {})
         priceNum_477.setOrigin(0.5, 0.5)
         priceNum_477.text = '450'
-        priceNum_477.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_477.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page28.add(priceNum_477)
 
         // buyBtn_762
@@ -2842,7 +2842,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_762 = this.add.text(537, 680, '', {})
         priceNum_762.setOrigin(0.5, 0.5)
         priceNum_762.text = '350'
-        priceNum_762.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_762.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page28.add(priceNum_762)
 
         // buyBtn_763
@@ -2853,7 +2853,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_763 = this.add.text(264, 490, '', {})
         priceNum_763.setOrigin(0.5, 0.5)
         priceNum_763.text = '350'
-        priceNum_763.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_763.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page28.add(priceNum_763)
 
         // nextpage28
@@ -2880,7 +2880,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_476 = this.add.text(956, 347, '', {})
         priceNum_476.setOrigin(0.5, 0.5)
         priceNum_476.text = '450'
-        priceNum_476.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_476.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page29.add(priceNum_476)
 
         // buyBtn_761
@@ -2891,7 +2891,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_761 = this.add.text(957, 641, '', {})
         priceNum_761.setOrigin(0.5, 0.5)
         priceNum_761.text = '350'
-        priceNum_761.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_761.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page29.add(priceNum_761)
 
         // buyBtn_760
@@ -2902,7 +2902,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_760 = this.add.text(1238, 663, '', {})
         priceNum_760.setOrigin(0.5, 0.5)
         priceNum_760.text = '350'
-        priceNum_760.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_760.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page29.add(priceNum_760)
 
         // buyBtn_475
@@ -2913,7 +2913,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_475 = this.add.text(1238, 393, '', {})
         priceNum_475.setOrigin(0.5, 0.5)
         priceNum_475.text = '350'
-        priceNum_475.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_475.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page29.add(priceNum_475)
 
         // sec_186
@@ -2962,14 +2962,14 @@ export default class CostumeCatalog extends Book {
         const priceNum_186 = this.add.text(760, 550, '', {})
         priceNum_186.setOrigin(0.5, 0.5)
         priceNum_186.text = '350'
-        priceNum_186.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_186.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         sec_186.add(priceNum_186)
 
         // nameTag_186
         const nameTag_186 = this.add.text(762, 513, '', {})
         nameTag_186.setOrigin(0.5, 0.5)
         nameTag_186.text = 'Ruffle Collar'
-        nameTag_186.setStyle({color: '#221100ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        nameTag_186.setStyle({color: '#221100ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         sec_186.add(nameTag_186)
 
         // sec_ruff
@@ -3018,7 +3018,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1102 = this.add.text(969, 253, '', {})
         priceNum_1102.setOrigin(0.5, 0.5)
         priceNum_1102.text = '450'
-        priceNum_1102.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1102.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_1102)
 
         // buyBtn_3037
@@ -3029,7 +3029,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3037 = this.add.text(964, 499, '', {})
         priceNum_3037.setOrigin(0.5, 0.5)
         priceNum_3037.text = '350'
-        priceNum_3037.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3037.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_3037)
 
         // buyBtn_3036
@@ -3040,7 +3040,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3036 = this.add.text(1231, 556, '', {})
         priceNum_3036.setOrigin(0.5, 0.5)
         priceNum_3036.text = '350'
-        priceNum_3036.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3036.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_3036)
 
         // buyBtn_1101
@@ -3051,7 +3051,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1101 = this.add.text(1228, 330, '', {})
         priceNum_1101.setOrigin(0.5, 0.5)
         priceNum_1101.text = '450'
-        priceNum_1101.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1101.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_1101)
 
         // buyBtn_4136
@@ -3062,7 +3062,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4136 = this.add.text(962, 726, '', {})
         priceNum_4136.setOrigin(0.5, 0.5)
         priceNum_4136.text = '450'
-        priceNum_4136.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4136.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_4136)
 
         // buyBtn_4137
@@ -3073,7 +3073,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4137 = this.add.text(1234, 762, '', {})
         priceNum_4137.setOrigin(0.5, 0.5)
         priceNum_4137.text = '450'
-        priceNum_4137.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4137.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_4137)
 
         // buyBtn_472
@@ -3084,7 +3084,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_472 = this.add.text(239, 332, '', {})
         priceNum_472.setOrigin(0.5, 0.5)
         priceNum_472.text = '450'
-        priceNum_472.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_472.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_472)
 
         // buyBtn_4135
@@ -3095,7 +3095,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4135 = this.add.text(542, 773, '', {})
         priceNum_4135.setOrigin(0.5, 0.5)
         priceNum_4135.text = '450'
-        priceNum_4135.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4135.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_4135)
 
         // buyBtn_227
@@ -3106,7 +3106,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_227 = this.add.text(240, 772, '', {})
         priceNum_227.setOrigin(0.5, 0.5)
         priceNum_227.text = '450'
-        priceNum_227.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_227.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_227)
 
         // buyBtn_4138
@@ -3117,7 +3117,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4138 = this.add.text(551, 381, '', {})
         priceNum_4138.setOrigin(0.5, 0.5)
         priceNum_4138.text = '350'
-        priceNum_4138.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4138.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_4138)
 
         // buyBtn_309
@@ -3128,7 +3128,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_309 = this.add.text(243, 551, '', {})
         priceNum_309.setOrigin(0.5, 0.5)
         priceNum_309.text = '350'
-        priceNum_309.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_309.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page31.add(priceNum_309)
 
         // sec_6020
@@ -3177,14 +3177,14 @@ export default class CostumeCatalog extends Book {
         const priceNum_6020 = this.add.text(760, 520, '', {})
         priceNum_6020.setOrigin(0.5, 0.5)
         priceNum_6020.text = '350'
-        priceNum_6020.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_6020.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         sec_6020.add(priceNum_6020)
 
         // nameTag_6020
         const nameTag_6020 = this.add.text(762, 483, '', {})
         nameTag_6020.setOrigin(0.5, 0.5)
         nameTag_6020.text = 'Pointy Shoes'
-        nameTag_6020.setStyle({color: '#221100ff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        nameTag_6020.setStyle({color: '#221100ff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         sec_6020.add(nameTag_6020)
 
         // sec_point
@@ -3217,7 +3217,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_2043 = this.add.text(949, 358, '', {})
         priceNum_2043.setOrigin(0.5, 0.5)
         priceNum_2043.text = '450'
-        priceNum_2043.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_2043.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page32.add(priceNum_2043)
 
         // buyBtn_4467
@@ -3228,7 +3228,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4467 = this.add.text(957, 651, '', {})
         priceNum_4467.setOrigin(0.5, 0.5)
         priceNum_4467.text = '350'
-        priceNum_4467.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4467.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page32.add(priceNum_4467)
 
         // buyBtn_4468
@@ -3239,7 +3239,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4468 = this.add.text(1210, 659, '', {})
         priceNum_4468.setOrigin(0.5, 0.5)
         priceNum_4468.text = '350'
-        priceNum_4468.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4468.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page32.add(priceNum_4468)
 
         // buyBtn_4466
@@ -3250,7 +3250,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4466 = this.add.text(1208, 362, '', {})
         priceNum_4466.setOrigin(0.5, 0.5)
         priceNum_4466.text = '350'
-        priceNum_4466.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4466.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page32.add(priceNum_4466)
 
         // nextpage32
@@ -3277,7 +3277,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_1106 = this.add.text(985, 282, '', {})
         priceNum_1106.setOrigin(0.5, 0.5)
         priceNum_1106.text = '450'
-        priceNum_1106.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_1106.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page33.add(priceNum_1106)
 
         // buyBtn_4146
@@ -3288,7 +3288,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_4146 = this.add.text(986, 750, '', {})
         priceNum_4146.setOrigin(0.5, 0.5)
         priceNum_4146.text = '350'
-        priceNum_4146.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_4146.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page33.add(priceNum_4146)
 
         // buyBtn_5131
@@ -3299,7 +3299,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_5131 = this.add.text(1217, 612, '', {})
         priceNum_5131.setOrigin(0.5, 0.5)
         priceNum_5131.text = '350'
-        priceNum_5131.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_5131.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page33.add(priceNum_5131)
 
         // buyBtn_3038
@@ -3310,7 +3310,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_3038 = this.add.text(1221, 386, '', {})
         priceNum_3038.setOrigin(0.5, 0.5)
         priceNum_3038.text = '350'
-        priceNum_3038.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_3038.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page33.add(priceNum_3038)
 
         // buyBtn_119
@@ -3321,7 +3321,7 @@ export default class CostumeCatalog extends Book {
         const priceNum_119 = this.add.text(976, 508, '', {})
         priceNum_119.setOrigin(0.5, 0.5)
         priceNum_119.text = '450'
-        priceNum_119.setStyle({color: '#4b2500ff', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        priceNum_119.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page33.add(priceNum_119)
 
         // nextpage33
@@ -3360,7 +3360,7 @@ export default class CostumeCatalog extends Book {
         const coins = this.add.text(587, 803, '', {})
         coins.angle = -7
         coins.text = 'Your Coins:\n100000'
-        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold italic'})
+        coins.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold italic'})
         buttons.add(coins)
 
         // exit
@@ -3375,7 +3375,6 @@ export default class CostumeCatalog extends Book {
 
         // nextpage (components)
         const nextpageButton = new Button(nextpage)
-        nextpageButton.spriteName = 'nextpage'
         nextpageButton.callback = () => this.nextPage()
 
         // exit_1 (components)
@@ -3384,12 +3383,10 @@ export default class CostumeCatalog extends Book {
 
         // nextpage2 (components)
         const nextpage2Button = new Button(nextpage2)
-        nextpage2Button.spriteName = 'nextpage'
         nextpage2Button.callback = () => this.nextPage()
 
         // backpage2 (components)
         const backpage2Button = new Button(backpage2)
-        backpage2Button.spriteName = 'backpage'
         backpage2Button.callback = () => this.prevPage()
 
         // rectangle_1 (components)
@@ -3520,17 +3517,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage3 (components)
         const nextpage3Button = new Button(nextpage3)
-        nextpage3Button.spriteName = 'nextpage'
         nextpage3Button.callback = () => this.nextPage()
 
         // backpage3 (components)
         const backpage3Button = new Button(backpage3)
-        backpage3Button.spriteName = 'backpage'
         backpage3Button.callback = () => this.prevPage()
 
         // buyBtn_489 (components)
         const buyBtn_489Button = new Button(buyBtn_489)
-        buyBtn_489Button.spriteName = 'tag'
         buyBtn_489Button.callback = () => this.buy(489)
 
         // priceNum_489 (components)
@@ -3539,7 +3533,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_5580 (components)
         const buyBtn_5580Button = new Button(buyBtn_5580)
-        buyBtn_5580Button.spriteName = 'tag'
         buyBtn_5580Button.callback = () => this.buy(5580)
 
         // priceNum_5580 (components)
@@ -3548,17 +3541,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage4 (components)
         const nextpage4Button = new Button(nextpage4)
-        nextpage4Button.spriteName = 'nextpage'
         nextpage4Button.callback = () => this.nextPage()
 
         // backpage4 (components)
         const backpage4Button = new Button(backpage4)
-        backpage4Button.spriteName = 'backpage'
         backpage4Button.callback = () => this.prevPage()
 
         // buyBtn_675 (components)
         const buyBtn_675Button = new Button(buyBtn_675)
-        buyBtn_675Button.spriteName = 'tag'
         buyBtn_675Button.callback = () => this.buy(675)
 
         // priceNum_675 (components)
@@ -3567,7 +3557,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_834 (components)
         const buyBtn_834Button = new Button(buyBtn_834)
-        buyBtn_834Button.spriteName = 'tag'
         buyBtn_834Button.callback = () => this.buy(834)
 
         // priceNum_834 (components)
@@ -3576,7 +3565,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_835 (components)
         const buyBtn_835Button = new Button(buyBtn_835)
-        buyBtn_835Button.spriteName = 'tag'
         buyBtn_835Button.callback = () => this.buy(835)
 
         // priceNum_835 (components)
@@ -3585,7 +3573,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_190 (components)
         const buyBtn_190Button = new Button(buyBtn_190)
-        buyBtn_190Button.spriteName = 'tag'
         buyBtn_190Button.callback = () => this.buy(190)
 
         // priceNum_190 (components)
@@ -3594,7 +3581,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_126 (components)
         const buyBtn_126Button = new Button(buyBtn_126)
-        buyBtn_126Button.spriteName = 'tag'
         buyBtn_126Button.callback = () => this.buy(126)
 
         // priceNum_126 (components)
@@ -3610,7 +3596,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_212 (components)
         const buyBtn_212Button = new Button(buyBtn_212)
-        buyBtn_212Button.spriteName = 'tag'
         buyBtn_212Button.callback = () => this.buy(212)
 
         // priceNum_212 (components)
@@ -3627,17 +3612,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage5 (components)
         const nextpage5Button = new Button(nextpage5)
-        nextpage5Button.spriteName = 'nextpage'
         nextpage5Button.callback = () => this.nextPage()
 
         // backpage5 (components)
         const backpage5Button = new Button(backpage5)
-        backpage5Button.spriteName = 'backpage'
         backpage5Button.callback = () => this.prevPage()
 
         // buyBtn_676 (components)
         const buyBtn_676Button = new Button(buyBtn_676)
-        buyBtn_676Button.spriteName = 'tag'
         buyBtn_676Button.callback = () => this.buy(676)
 
         // priceNum_676 (components)
@@ -3646,7 +3628,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_127 (components)
         const buyBtn_127Button = new Button(buyBtn_127)
-        buyBtn_127Button.spriteName = 'tag'
         buyBtn_127Button.callback = () => this.buy(127)
 
         // priceNum_127 (components)
@@ -3655,7 +3636,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_128 (components)
         const buyBtn_128Button = new Button(buyBtn_128)
-        buyBtn_128Button.spriteName = 'tag'
         buyBtn_128Button.callback = () => this.buy(128)
 
         // priceNum_128 (components)
@@ -3664,17 +3644,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage6 (components)
         const nextpage6Button = new Button(nextpage6)
-        nextpage6Button.spriteName = 'nextpage'
         nextpage6Button.callback = () => this.nextPage()
 
         // backpage6 (components)
         const backpage6Button = new Button(backpage6)
-        backpage6Button.spriteName = 'backpage'
         backpage6Button.callback = () => this.prevPage()
 
         // buyBtn_665 (components)
         const buyBtn_665Button = new Button(buyBtn_665)
-        buyBtn_665Button.spriteName = 'tag'
         buyBtn_665Button.callback = () => this.buy(665)
 
         // priceNum_665 (components)
@@ -3683,7 +3660,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_786 (components)
         const buyBtn_786Button = new Button(buyBtn_786)
-        buyBtn_786Button.spriteName = 'tag'
         buyBtn_786Button.callback = () => this.buy(786)
 
         // priceNum_786 (components)
@@ -3692,7 +3668,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_787 (components)
         const buyBtn_787Button = new Button(buyBtn_787)
-        buyBtn_787Button.spriteName = 'tag'
         buyBtn_787Button.callback = () => this.buy(787)
 
         // priceNum_787 (components)
@@ -3701,7 +3676,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_316 (components)
         const buyBtn_316Button = new Button(buyBtn_316)
-        buyBtn_316Button.spriteName = 'tag'
         buyBtn_316Button.callback = () => this.buy(316)
 
         // priceNum_316 (components)
@@ -3710,7 +3684,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_432 (components)
         const buyBtn_432Button = new Button(buyBtn_432)
-        buyBtn_432Button.spriteName = 'tag'
         buyBtn_432Button.callback = () => this.buy(432)
 
         // priceNum_432 (components)
@@ -3719,7 +3692,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_327 (components)
         const buyBtn_327Button = new Button(buyBtn_327)
-        buyBtn_327Button.spriteName = 'tag'
         buyBtn_327Button.callback = () => this.buy(327)
 
         // priceNum_327 (components)
@@ -3735,7 +3707,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_716 (components)
         const buyBtn_716Button = new Button(buyBtn_716)
-        buyBtn_716Button.spriteName = 'tag'
         buyBtn_716Button.callback = () => this.buy(716)
 
         // priceNum_716 (components)
@@ -3752,17 +3723,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage7 (components)
         const nextpage7Button = new Button(nextpage7)
-        nextpage7Button.spriteName = 'nextpage'
         nextpage7Button.callback = () => this.nextPage()
 
         // backpage7 (components)
         const backpage7Button = new Button(backpage7)
-        backpage7Button.spriteName = 'backpage'
         backpage7Button.callback = () => this.prevPage()
 
         // buyBtn_666 (components)
         const buyBtn_666Button = new Button(buyBtn_666)
-        buyBtn_666Button.spriteName = 'tag'
         buyBtn_666Button.callback = () => this.buy(666)
 
         // priceNum_666 (components)
@@ -3771,7 +3739,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_789 (components)
         const buyBtn_789Button = new Button(buyBtn_789)
-        buyBtn_789Button.spriteName = 'tag'
         buyBtn_789Button.callback = () => this.buy(789)
 
         // priceNum_789 (components)
@@ -3780,7 +3747,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_788 (components)
         const buyBtn_788Button = new Button(buyBtn_788)
-        buyBtn_788Button.spriteName = 'tag'
         buyBtn_788Button.callback = () => this.buy(788)
 
         // priceNum_788 (components)
@@ -3789,7 +3755,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_715 (components)
         const buyBtn_715Button = new Button(buyBtn_715)
-        buyBtn_715Button.spriteName = 'tag'
         buyBtn_715Button.callback = () => this.buy(715)
 
         // priceNum_715 (components)
@@ -3798,17 +3763,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage8 (components)
         const nextpage8Button = new Button(nextpage8)
-        nextpage8Button.spriteName = 'nextpage'
         nextpage8Button.callback = () => this.nextPage()
 
         // backpage8 (components)
         const backpage8Button = new Button(backpage8)
-        backpage8Button.spriteName = 'backpage'
         backpage8Button.callback = () => this.prevPage()
 
         // buyBtn_123 (components)
         const buyBtn_123Button = new Button(buyBtn_123)
-        buyBtn_123Button.spriteName = 'tag'
         buyBtn_123Button.callback = () => this.buy(123)
 
         // priceNum_123 (components)
@@ -3817,7 +3779,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_302 (components)
         const buyBtn_302Button = new Button(buyBtn_302)
-        buyBtn_302Button.spriteName = 'tag'
         buyBtn_302Button.callback = () => this.buy(302)
 
         // priceNum_302 (components)
@@ -3826,7 +3787,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_315 (components)
         const buyBtn_315Button = new Button(buyBtn_315)
-        buyBtn_315Button.spriteName = 'tag'
         buyBtn_315Button.callback = () => this.buy(315)
 
         // priceNum_315 (components)
@@ -3835,7 +3795,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_124 (components)
         const buyBtn_124Button = new Button(buyBtn_124)
-        buyBtn_124Button.spriteName = 'tag'
         buyBtn_124Button.callback = () => this.buy(124)
 
         // priceNum_124 (components)
@@ -3844,7 +3803,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_765 (components)
         const buyBtn_765Button = new Button(buyBtn_765)
-        buyBtn_765Button.spriteName = 'tag'
         buyBtn_765Button.callback = () => this.buy(765)
 
         // priceNum_765 (components)
@@ -3853,7 +3811,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_766 (components)
         const buyBtn_766Button = new Button(buyBtn_766)
-        buyBtn_766Button.spriteName = 'tag'
         buyBtn_766Button.callback = () => this.buy(766)
 
         // priceNum_766 (components)
@@ -3862,17 +3819,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage9 (components)
         const nextpage9Button = new Button(nextpage9)
-        nextpage9Button.spriteName = 'nextpage'
         nextpage9Button.callback = () => this.nextPage()
 
         // backpage9 (components)
         const backpage9Button = new Button(backpage9)
-        backpage9Button.spriteName = 'backpage'
         backpage9Button.callback = () => this.prevPage()
 
         // buyBtn_767 (components)
         const buyBtn_767Button = new Button(buyBtn_767)
-        buyBtn_767Button.spriteName = 'tag'
         buyBtn_767Button.callback = () => this.buy(767)
 
         // priceNum_767 (components)
@@ -3881,7 +3835,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_195 (components)
         const buyBtn_195Button = new Button(buyBtn_195)
-        buyBtn_195Button.spriteName = 'tag'
         buyBtn_195Button.callback = () => this.buy(195)
 
         // priceNum_195 (components)
@@ -3890,7 +3843,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_113 (components)
         const buyBtn_113Button = new Button(buyBtn_113)
-        buyBtn_113Button.spriteName = 'tag'
         buyBtn_113Button.callback = () => this.buy(113)
 
         // priceNum_113 (components)
@@ -3899,17 +3851,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage10 (components)
         const nextpage10Button = new Button(nextpage10)
-        nextpage10Button.spriteName = 'nextpage'
         nextpage10Button.callback = () => this.nextPage()
 
         // backpage10 (components)
         const backpage10Button = new Button(backpage10)
-        backpage10Button.spriteName = 'backpage'
         backpage10Button.callback = () => this.prevPage()
 
         // buyBtn_4457 (components)
         const buyBtn_4457Button = new Button(buyBtn_4457)
-        buyBtn_4457Button.spriteName = 'tag'
         buyBtn_4457Button.callback = () => this.buy(4457)
 
         // priceNum_4457 (components)
@@ -3918,7 +3867,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6096 (components)
         const buyBtn_6096Button = new Button(buyBtn_6096)
-        buyBtn_6096Button.spriteName = 'tag'
         buyBtn_6096Button.callback = () => this.buy(6096)
 
         // priceNum_6096 (components)
@@ -3927,7 +3875,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4456 (components)
         const buyBtn_4456Button = new Button(buyBtn_4456)
-        buyBtn_4456Button.spriteName = 'tag'
         buyBtn_4456Button.callback = () => this.buy(4456)
 
         // priceNum_4456 (components)
@@ -3936,7 +3883,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4455 (components)
         const buyBtn_4455Button = new Button(buyBtn_4455)
-        buyBtn_4455Button.spriteName = 'tag'
         buyBtn_4455Button.callback = () => this.buy(4455)
 
         // priceNum_4455 (components)
@@ -3945,7 +3891,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6095 (components)
         const buyBtn_6095Button = new Button(buyBtn_6095)
-        buyBtn_6095Button.spriteName = 'tag'
         buyBtn_6095Button.callback = () => this.buy(6095)
 
         // priceNum_6095 (components)
@@ -3954,17 +3899,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage11 (components)
         const nextpage11Button = new Button(nextpage11)
-        nextpage11Button.spriteName = 'nextpage'
         nextpage11Button.callback = () => this.nextPage()
 
         // backpage11 (components)
         const backpage11Button = new Button(backpage11)
-        backpage11Button.spriteName = 'backpage'
         backpage11Button.callback = () => this.prevPage()
 
         // buyBtn_132 (components)
         const buyBtn_132Button = new Button(buyBtn_132)
-        buyBtn_132Button.spriteName = 'tag'
         buyBtn_132Button.callback = () => this.buy(132)
 
         // priceNum_132 (components)
@@ -3973,7 +3915,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4113 (components)
         const buyBtn_4113Button = new Button(buyBtn_4113)
-        buyBtn_4113Button.spriteName = 'tag'
         buyBtn_4113Button.callback = () => this.buy(4113)
 
         // priceNum_4113 (components)
@@ -3982,7 +3923,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4114 (components)
         const buyBtn_4114Button = new Button(buyBtn_4114)
-        buyBtn_4114Button.spriteName = 'tag'
         buyBtn_4114Button.callback = () => this.buy(4114)
 
         // priceNum_4114 (components)
@@ -3991,7 +3931,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_2003 (components)
         const buyBtn_2003Button = new Button(buyBtn_2003)
-        buyBtn_2003Button.spriteName = 'tag'
         buyBtn_2003Button.callback = () => this.buy(2003)
 
         // priceNum_2003 (components)
@@ -4000,7 +3939,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_364 (components)
         const buyBtn_364Button = new Button(buyBtn_364)
-        buyBtn_364Button.spriteName = 'tag'
         buyBtn_364Button.callback = () => this.buy(364)
 
         // priceNum_364 (components)
@@ -4009,7 +3947,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_367 (components)
         const buyBtn_367Button = new Button(buyBtn_367)
-        buyBtn_367Button.spriteName = 'tag'
         buyBtn_367Button.callback = () => this.buy(367)
 
         // priceNum_367 (components)
@@ -4018,7 +3955,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_308 (components)
         const buyBtn_308Button = new Button(buyBtn_308)
-        buyBtn_308Button.spriteName = 'tag'
         buyBtn_308Button.callback = () => this.buy(308)
 
         // priceNum_308 (components)
@@ -4027,17 +3963,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage12 (components)
         const nextpage12Button = new Button(nextpage12)
-        nextpage12Button.spriteName = 'nextpage'
         nextpage12Button.callback = () => this.nextPage()
 
         // backpage12 (components)
         const backpage12Button = new Button(backpage12)
-        backpage12Button.spriteName = 'backpage'
         backpage12Button.callback = () => this.prevPage()
 
         // buyBtn_768 (components)
         const buyBtn_768Button = new Button(buyBtn_768)
-        buyBtn_768Button.spriteName = 'tag'
         buyBtn_768Button.callback = () => this.buy(768)
 
         // priceNum_768 (components)
@@ -4046,7 +3979,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3029 (components)
         const buyBtn_3029Button = new Button(buyBtn_3029)
-        buyBtn_3029Button.spriteName = 'tag'
         buyBtn_3029Button.callback = () => this.buy(3029)
 
         // priceNum_3029 (components)
@@ -4055,7 +3987,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_5044 (components)
         const buyBtn_5044Button = new Button(buyBtn_5044)
-        buyBtn_5044Button.spriteName = 'tag'
         buyBtn_5044Button.callback = () => this.buy(5044)
 
         // priceNum_5044 (components)
@@ -4064,7 +3995,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1077 (components)
         const buyBtn_1077Button = new Button(buyBtn_1077)
-        buyBtn_1077Button.spriteName = 'tag'
         buyBtn_1077Button.callback = () => this.buy(1077)
 
         // priceNum_1077 (components)
@@ -4073,7 +4003,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4110 (components)
         const buyBtn_4110Button = new Button(buyBtn_4110)
-        buyBtn_4110Button.spriteName = 'tag'
         buyBtn_4110Button.callback = () => this.buy(4110)
 
         // priceNum_4110 (components)
@@ -4082,7 +4011,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1076 (components)
         const buyBtn_1076Button = new Button(buyBtn_1076)
-        buyBtn_1076Button.spriteName = 'tag'
         buyBtn_1076Button.callback = () => this.buy(1076)
 
         // priceNum_1076 (components)
@@ -4091,17 +4019,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage13 (components)
         const nextpage13Button = new Button(nextpage13)
-        nextpage13Button.spriteName = 'nextpage'
         nextpage13Button.callback = () => this.nextPage()
 
         // backpage13 (components)
         const backpage13Button = new Button(backpage13)
-        backpage13Button.spriteName = 'backpage'
         backpage13Button.callback = () => this.prevPage()
 
         // buyBtn_4111 (components)
         const buyBtn_4111Button = new Button(buyBtn_4111)
-        buyBtn_4111Button.spriteName = 'tag'
         buyBtn_4111Button.callback = () => this.buy(4111)
 
         // priceNum_4111 (components)
@@ -4110,7 +4035,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4112 (components)
         const buyBtn_4112Button = new Button(buyBtn_4112)
-        buyBtn_4112Button.spriteName = 'tag'
         buyBtn_4112Button.callback = () => this.buy(4112)
 
         // priceNum_4112 (components)
@@ -4119,17 +4043,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage14 (components)
         const nextpage14Button = new Button(nextpage14)
-        nextpage14Button.spriteName = 'nextpage'
         nextpage14Button.callback = () => this.nextPage()
 
         // backpage14 (components)
         const backpage14Button = new Button(backpage14)
-        backpage14Button.spriteName = 'backpage'
         backpage14Button.callback = () => this.prevPage()
 
         // buyBtn_1057 (components)
         const buyBtn_1057Button = new Button(buyBtn_1057)
-        buyBtn_1057Button.spriteName = 'tag'
         buyBtn_1057Button.callback = () => this.buy(1057)
 
         // priceNum_1057 (components)
@@ -4138,7 +4059,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4085 (components)
         const buyBtn_4085Button = new Button(buyBtn_4085)
-        buyBtn_4085Button.spriteName = 'tag'
         buyBtn_4085Button.callback = () => this.buy(4085)
 
         // priceNum_4085 (components)
@@ -4147,7 +4067,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4086 (components)
         const buyBtn_4086Button = new Button(buyBtn_4086)
-        buyBtn_4086Button.spriteName = 'tag'
         buyBtn_4086Button.callback = () => this.buy(4086)
 
         // priceNum_4086 (components)
@@ -4156,7 +4075,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1056 (components)
         const buyBtn_1056Button = new Button(buyBtn_1056)
-        buyBtn_1056Button.spriteName = 'tag'
         buyBtn_1056Button.callback = () => this.buy(1056)
 
         // priceNum_1056 (components)
@@ -4165,17 +4083,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage15 (components)
         const nextpage15Button = new Button(nextpage15)
-        nextpage15Button.spriteName = 'nextpage'
         nextpage15Button.callback = () => this.nextPage()
 
         // backpage15 (components)
         const backpage15Button = new Button(backpage15)
-        backpage15Button.spriteName = 'backpage'
         backpage15Button.callback = () => this.prevPage()
 
         // buyBtn_4015 (components)
         const buyBtn_4015Button = new Button(buyBtn_4015)
-        buyBtn_4015Button.spriteName = 'tag'
         buyBtn_4015Button.callback = () => this.buy(4015)
 
         // priceNum_4015 (components)
@@ -4184,7 +4099,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_347 (components)
         const buyBtn_347Button = new Button(buyBtn_347)
-        buyBtn_347Button.spriteName = 'tag'
         buyBtn_347Button.callback = () => this.buy(347)
 
         // priceNum_347 (components)
@@ -4193,22 +4107,18 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_244 (components)
         const buyBtn_244Button = new Button(buyBtn_244)
-        buyBtn_244Button.spriteName = 'tag'
         buyBtn_244Button.callback = () => this.buy(244)
 
         // nextpage16 (components)
         const nextpage16Button = new Button(nextpage16)
-        nextpage16Button.spriteName = 'nextpage'
         nextpage16Button.callback = () => this.nextPage()
 
         // backpage16 (components)
         const backpage16Button = new Button(backpage16)
-        backpage16Button.spriteName = 'backpage'
         backpage16Button.callback = () => this.prevPage()
 
         // buyBtn_1010 (components)
         const buyBtn_1010Button = new Button(buyBtn_1010)
-        buyBtn_1010Button.spriteName = 'tag'
         buyBtn_1010Button.callback = () => this.buy(1010)
 
         // priceNum_1010 (components)
@@ -4217,7 +4127,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_181 (components)
         const buyBtn_181Button = new Button(buyBtn_181)
-        buyBtn_181Button.spriteName = 'tag'
         buyBtn_181Button.callback = () => this.buy(181)
 
         // priceNum_181 (components)
@@ -4226,7 +4135,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4012 (components)
         const buyBtn_4012Button = new Button(buyBtn_4012)
-        buyBtn_4012Button.spriteName = 'tag'
         buyBtn_4012Button.callback = () => this.buy(4012)
 
         // priceNum_4012 (components)
@@ -4235,7 +4143,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1009 (components)
         const buyBtn_1009Button = new Button(buyBtn_1009)
-        buyBtn_1009Button.spriteName = 'tag'
         buyBtn_1009Button.callback = () => this.buy(1009)
 
         // priceNum_1009 (components)
@@ -4244,7 +4151,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_842 (components)
         const buyBtn_842Button = new Button(buyBtn_842)
-        buyBtn_842Button.spriteName = 'tag'
         buyBtn_842Button.callback = () => this.buy(842)
 
         // priceNum_842 (components)
@@ -4253,7 +4159,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_5003 (components)
         const buyBtn_5003Button = new Button(buyBtn_5003)
-        buyBtn_5003Button.spriteName = 'tag'
         buyBtn_5003Button.callback = () => this.buy(5003)
 
         // priceNum_5003 (components)
@@ -4262,17 +4167,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage17 (components)
         const nextpage17Button = new Button(nextpage17)
-        nextpage17Button.spriteName = 'nextpage'
         nextpage17Button.callback = () => this.nextPage()
 
         // backpage17 (components)
         const backpage17Button = new Button(backpage17)
-        backpage17Button.spriteName = 'backpage'
         backpage17Button.callback = () => this.prevPage()
 
         // buyBtn_1012 (components)
         const buyBtn_1012Button = new Button(buyBtn_1012)
-        buyBtn_1012Button.spriteName = 'tag'
         buyBtn_1012Button.callback = () => this.buy(1012)
 
         // priceNum_1012 (components)
@@ -4281,7 +4183,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3005 (components)
         const buyBtn_3005Button = new Button(buyBtn_3005)
-        buyBtn_3005Button.spriteName = 'tag'
         buyBtn_3005Button.callback = () => this.buy(3005)
 
         // priceNum_3005 (components)
@@ -4290,7 +4191,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4014 (components)
         const buyBtn_4014Button = new Button(buyBtn_4014)
-        buyBtn_4014Button.spriteName = 'tag'
         buyBtn_4014Button.callback = () => this.buy(4014)
 
         // priceNum_4014 (components)
@@ -4299,7 +4199,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1011 (components)
         const buyBtn_1011Button = new Button(buyBtn_1011)
-        buyBtn_1011Button.spriteName = 'tag'
         buyBtn_1011Button.callback = () => this.buy(1011)
 
         // priceNum_1011 (components)
@@ -4308,7 +4207,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6008 (components)
         const buyBtn_6008Button = new Button(buyBtn_6008)
-        buyBtn_6008Button.spriteName = 'tag'
         buyBtn_6008Button.callback = () => this.buy(6008)
 
         // priceNum_6008 (components)
@@ -4317,7 +4215,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4013 (components)
         const buyBtn_4013Button = new Button(buyBtn_4013)
-        buyBtn_4013Button.spriteName = 'tag'
         buyBtn_4013Button.callback = () => this.buy(4013)
 
         // priceNum_4013 (components)
@@ -4326,17 +4223,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage18 (components)
         const nextpage18Button = new Button(nextpage18)
-        nextpage18Button.spriteName = 'nextpage'
         nextpage18Button.callback = () => this.nextPage()
 
         // backpage18 (components)
         const backpage18Button = new Button(backpage18)
-        backpage18Button.spriteName = 'backpage'
         backpage18Button.callback = () => this.prevPage()
 
         // buyBtn_1025 (components)
         const buyBtn_1025Button = new Button(buyBtn_1025)
-        buyBtn_1025Button.spriteName = 'tag'
         buyBtn_1025Button.callback = () => this.buy(1025)
 
         // priceNum_1025 (components)
@@ -4345,7 +4239,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4038 (components)
         const buyBtn_4038Button = new Button(buyBtn_4038)
-        buyBtn_4038Button.spriteName = 'tag'
         buyBtn_4038Button.callback = () => this.buy(4038)
 
         // priceNum_4038 (components)
@@ -4354,7 +4247,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4036 (components)
         const buyBtn_4036Button = new Button(buyBtn_4036)
-        buyBtn_4036Button.spriteName = 'tag'
         buyBtn_4036Button.callback = () => this.buy(4036)
 
         // priceNum_4036 (components)
@@ -4363,7 +4255,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1023 (components)
         const buyBtn_1023Button = new Button(buyBtn_1023)
-        buyBtn_1023Button.spriteName = 'tag'
         buyBtn_1023Button.callback = () => this.buy(1023)
 
         // priceNum_1023 (components)
@@ -4372,7 +4263,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3008 (components)
         const buyBtn_3008Button = new Button(buyBtn_3008)
-        buyBtn_3008Button.spriteName = 'tag'
         buyBtn_3008Button.callback = () => this.buy(3008)
 
         // priceNum_3008 (components)
@@ -4381,7 +4271,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_301 (components)
         const buyBtn_301Button = new Button(buyBtn_301)
-        buyBtn_301Button.spriteName = 'tag'
         buyBtn_301Button.callback = () => this.buy(301)
 
         // priceNum_301 (components)
@@ -4390,17 +4279,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage19 (components)
         const nextpage19Button = new Button(nextpage19)
-        nextpage19Button.spriteName = 'nextpage'
         nextpage19Button.callback = () => this.nextPage()
 
         // backpage19 (components)
         const backpage19Button = new Button(backpage19)
-        backpage19Button.spriteName = 'backpage'
         backpage19Button.callback = () => this.prevPage()
 
         // buyBtn_4039 (components)
         const buyBtn_4039Button = new Button(buyBtn_4039)
-        buyBtn_4039Button.spriteName = 'tag'
         buyBtn_4039Button.callback = () => this.buy(4039)
 
         // priceNum_4039 (components)
@@ -4409,7 +4295,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6010 (components)
         const buyBtn_6010Button = new Button(buyBtn_6010)
-        buyBtn_6010Button.spriteName = 'tag'
         buyBtn_6010Button.callback = () => this.buy(6010)
 
         // priceNum_6010 (components)
@@ -4418,7 +4303,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4037 (components)
         const buyBtn_4037Button = new Button(buyBtn_4037)
-        buyBtn_4037Button.spriteName = 'tag'
         buyBtn_4037Button.callback = () => this.buy(4037)
 
         // priceNum_4037 (components)
@@ -4427,7 +4311,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1024 (components)
         const buyBtn_1024Button = new Button(buyBtn_1024)
-        buyBtn_1024Button.spriteName = 'tag'
         buyBtn_1024Button.callback = () => this.buy(1024)
 
         // priceNum_1024 (components)
@@ -4436,17 +4319,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage20 (components)
         const nextpage20Button = new Button(nextpage20)
-        nextpage20Button.spriteName = 'nextpage'
         nextpage20Button.callback = () => this.nextPage()
 
         // backpage20 (components)
         const backpage20Button = new Button(backpage20)
-        backpage20Button.spriteName = 'backpage'
         backpage20Button.callback = () => this.prevPage()
 
         // buyBtn_1015 (components)
         const buyBtn_1015Button = new Button(buyBtn_1015)
-        buyBtn_1015Button.spriteName = 'tag'
         buyBtn_1015Button.callback = () => this.buy(1015)
 
         // priceNum_1015 (components)
@@ -4455,7 +4335,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4018 (components)
         const buyBtn_4018Button = new Button(buyBtn_4018)
-        buyBtn_4018Button.spriteName = 'tag'
         buyBtn_4018Button.callback = () => this.buy(4018)
 
         // priceNum_4018 (components)
@@ -4464,7 +4343,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4426 (components)
         const buyBtn_4426Button = new Button(buyBtn_4426)
-        buyBtn_4426Button.spriteName = 'tag'
         buyBtn_4426Button.callback = () => this.buy(4426)
 
         // priceNum_4426 (components)
@@ -4473,17 +4351,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage21 (components)
         const nextpage21Button = new Button(nextpage21)
-        nextpage21Button.spriteName = 'nextpage'
         nextpage21Button.callback = () => this.nextPage()
 
         // backpage21 (components)
         const backpage21Button = new Button(backpage21)
-        backpage21Button.spriteName = 'backpage'
         backpage21Button.callback = () => this.prevPage()
 
         // buyBtn_479 (components)
         const buyBtn_479Button = new Button(buyBtn_479)
-        buyBtn_479Button.spriteName = 'tag'
         buyBtn_479Button.callback = () => this.buy(479)
 
         // priceNum_479 (components)
@@ -4492,7 +4367,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_658 (components)
         const buyBtn_658Button = new Button(buyBtn_658)
-        buyBtn_658Button.spriteName = 'tag'
         buyBtn_658Button.callback = () => this.buy(658)
 
         // priceNum_658 (components)
@@ -4501,7 +4375,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_254 (components)
         const buyBtn_254Button = new Button(buyBtn_254)
-        buyBtn_254Button.spriteName = 'tag'
         buyBtn_254Button.callback = () => this.buy(254)
 
         // priceNum_254 (components)
@@ -4510,7 +4383,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_771 (components)
         const buyBtn_771Button = new Button(buyBtn_771)
-        buyBtn_771Button.spriteName = 'tag'
         buyBtn_771Button.callback = () => this.buy(771)
 
         // priceNum_771 (components)
@@ -4519,7 +4391,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_110 (components)
         const buyBtn_110Button = new Button(buyBtn_110)
-        buyBtn_110Button.spriteName = 'tag'
         buyBtn_110Button.callback = () => this.buy(110)
 
         // priceNum_110 (components)
@@ -4528,7 +4399,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4004 (components)
         const buyBtn_4004Button = new Button(buyBtn_4004)
-        buyBtn_4004Button.spriteName = 'tag'
         buyBtn_4004Button.callback = () => this.buy(4004)
 
         // priceNum_4004 (components)
@@ -4537,17 +4407,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage22 (components)
         const nextpage22Button = new Button(nextpage22)
-        nextpage22Button.spriteName = 'nextpage'
         nextpage22Button.callback = () => this.nextPage()
 
         // backpage22 (components)
         const backpage22Button = new Button(backpage22)
-        backpage22Button.spriteName = 'backpage'
         backpage22Button.callback = () => this.prevPage()
 
         // buyBtn_722 (components)
         const buyBtn_722Button = new Button(buyBtn_722)
-        buyBtn_722Button.spriteName = 'tag'
         buyBtn_722Button.callback = () => this.buy(722)
 
         // priceNum_722 (components)
@@ -4556,7 +4423,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3002 (components)
         const buyBtn_3002Button = new Button(buyBtn_3002)
-        buyBtn_3002Button.spriteName = 'tag'
         buyBtn_3002Button.callback = () => this.buy(3002)
 
         // priceNum_3002 (components)
@@ -4565,7 +4431,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_772 (components)
         const buyBtn_772Button = new Button(buyBtn_772)
-        buyBtn_772Button.spriteName = 'tag'
         buyBtn_772Button.callback = () => this.buy(772)
 
         // priceNum_772 (components)
@@ -4574,7 +4439,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_659 (components)
         const buyBtn_659Button = new Button(buyBtn_659)
-        buyBtn_659Button.spriteName = 'tag'
         buyBtn_659Button.callback = () => this.buy(659)
 
         // priceNum_659 (components)
@@ -4583,27 +4447,22 @@ export default class CostumeCatalog extends Book {
 
         // nextpage23 (components)
         const nextpage23Button = new Button(nextpage23)
-        nextpage23Button.spriteName = 'nextpage'
         nextpage23Button.callback = () => this.nextPage()
 
         // backpage23 (components)
         const backpage23Button = new Button(backpage23)
-        backpage23Button.spriteName = 'backpage'
         backpage23Button.callback = () => this.prevPage()
 
         // nextpage24 (components)
         const nextpage24Button = new Button(nextpage24)
-        nextpage24Button.spriteName = 'nextpage'
         nextpage24Button.callback = () => this.nextPage()
 
         // backpage24 (components)
         const backpage24Button = new Button(backpage24)
-        backpage24Button.spriteName = 'backpage'
         backpage24Button.callback = () => this.prevPage()
 
         // buyBtn_122 (components)
         const buyBtn_122Button = new Button(buyBtn_122)
-        buyBtn_122Button.spriteName = 'tag'
         buyBtn_122Button.callback = () => this.buy(122)
 
         // priceNum_122 (components)
@@ -4612,7 +4471,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_276 (components)
         const buyBtn_276Button = new Button(buyBtn_276)
-        buyBtn_276Button.spriteName = 'tag'
         buyBtn_276Button.callback = () => this.buy(276)
 
         // priceNum_276 (components)
@@ -4621,7 +4479,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_2004 (components)
         const buyBtn_2004Button = new Button(buyBtn_2004)
-        buyBtn_2004Button.spriteName = 'tag'
         buyBtn_2004Button.callback = () => this.buy(2004)
 
         // priceNum_2004 (components)
@@ -4630,7 +4487,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1016 (components)
         const buyBtn_1016Button = new Button(buyBtn_1016)
-        buyBtn_1016Button.spriteName = 'tag'
         buyBtn_1016Button.callback = () => this.buy(1016)
 
         // priceNum_1016 (components)
@@ -4639,7 +4495,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_266 (components)
         const buyBtn_266Button = new Button(buyBtn_266)
-        buyBtn_266Button.spriteName = 'tag'
         buyBtn_266Button.callback = () => this.buy(266)
 
         // priceNum_266 (components)
@@ -4648,7 +4503,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4021 (components)
         const buyBtn_4021Button = new Button(buyBtn_4021)
-        buyBtn_4021Button.spriteName = 'tag'
         buyBtn_4021Button.callback = () => this.buy(4021)
 
         // priceNum_4021 (components)
@@ -4657,7 +4511,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1199 (components)
         const buyBtn_1199Button = new Button(buyBtn_1199)
-        buyBtn_1199Button.spriteName = 'tag'
         buyBtn_1199Button.callback = () => this.buy(1199)
 
         // priceNum_1199 (components)
@@ -4666,7 +4519,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_120 (components)
         const buyBtn_120Button = new Button(buyBtn_120)
-        buyBtn_120Button.spriteName = 'tag'
         buyBtn_120Button.callback = () => this.buy(120)
 
         // priceNum_120 (components)
@@ -4675,7 +4527,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_245 (components)
         const buyBtn_245Button = new Button(buyBtn_245)
-        buyBtn_245Button.spriteName = 'tag'
         buyBtn_245Button.callback = () => this.buy(245)
 
         // priceNum_245 (components)
@@ -4684,7 +4535,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_458 (components)
         const buyBtn_458Button = new Button(buyBtn_458)
-        buyBtn_458Button.spriteName = 'tag'
         buyBtn_458Button.callback = () => this.buy(458)
 
         // priceNum_458 (components)
@@ -4693,7 +4543,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_268 (components)
         const buyBtn_268Button = new Button(buyBtn_268)
-        buyBtn_268Button.spriteName = 'tag'
         buyBtn_268Button.callback = () => this.buy(268)
 
         // priceNum_268 (components)
@@ -4702,7 +4551,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4280 (components)
         const buyBtn_4280Button = new Button(buyBtn_4280)
-        buyBtn_4280Button.spriteName = 'tag'
         buyBtn_4280Button.callback = () => this.buy(4280)
 
         // priceNum_4280 (components)
@@ -4711,17 +4559,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage25 (components)
         const nextpage25Button = new Button(nextpage25)
-        nextpage25Button.spriteName = 'nextpage'
         nextpage25Button.callback = () => this.nextPage()
 
         // backpage25 (components)
         const backpage25Button = new Button(backpage25)
-        backpage25Button.spriteName = 'backpage'
         backpage25Button.callback = () => this.prevPage()
 
         // buyBtn_1116 (components)
         const buyBtn_1116Button = new Button(buyBtn_1116)
-        buyBtn_1116Button.spriteName = 'tag'
         buyBtn_1116Button.callback = () => this.buy(1116)
 
         // priceNum_1116 (components)
@@ -4730,7 +4575,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_2016 (components)
         const buyBtn_2016Button = new Button(buyBtn_2016)
-        buyBtn_2016Button.spriteName = 'tag'
         buyBtn_2016Button.callback = () => this.buy(2016)
 
         // priceNum_2016 (components)
@@ -4739,7 +4583,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6033 (components)
         const buyBtn_6033Button = new Button(buyBtn_6033)
-        buyBtn_6033Button.spriteName = 'tag'
         buyBtn_6033Button.callback = () => this.buy(6033)
 
         // priceNum_6033 (components)
@@ -4748,7 +4591,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4190 (components)
         const buyBtn_4190Button = new Button(buyBtn_4190)
-        buyBtn_4190Button.spriteName = 'tag'
         buyBtn_4190Button.callback = () => this.buy(4190)
 
         // priceNum_4190 (components)
@@ -4757,7 +4599,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1114 (components)
         const buyBtn_1114Button = new Button(buyBtn_1114)
-        buyBtn_1114Button.spriteName = 'tag'
         buyBtn_1114Button.callback = () => this.buy(1114)
 
         // priceNum_1114 (components)
@@ -4766,7 +4607,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4192 (components)
         const buyBtn_4192Button = new Button(buyBtn_4192)
-        buyBtn_4192Button.spriteName = 'tag'
         buyBtn_4192Button.callback = () => this.buy(4192)
 
         // priceNum_4192 (components)
@@ -4782,7 +4622,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1272 (components)
         const buyBtn_1272Button = new Button(buyBtn_1272)
-        buyBtn_1272Button.spriteName = 'tag'
         buyBtn_1272Button.callback = () => this.buy(1272)
 
         // priceNum_1272 (components)
@@ -4799,17 +4638,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage26 (components)
         const nextpage26Button = new Button(nextpage26)
-        nextpage26Button.spriteName = 'nextpage'
         nextpage26Button.callback = () => this.nextPage()
 
         // backpage26 (components)
         const backpage26Button = new Button(backpage26)
-        backpage26Button.spriteName = 'backpage'
         backpage26Button.callback = () => this.prevPage()
 
         // buyBtn_1115 (components)
         const buyBtn_1115Button = new Button(buyBtn_1115)
-        buyBtn_1115Button.spriteName = 'tag'
         buyBtn_1115Button.callback = () => this.buy(1115)
 
         // priceNum_1115 (components)
@@ -4818,7 +4654,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6034 (components)
         const buyBtn_6034Button = new Button(buyBtn_6034)
-        buyBtn_6034Button.spriteName = 'tag'
         buyBtn_6034Button.callback = () => this.buy(6034)
 
         // priceNum_6034 (components)
@@ -4827,7 +4662,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4191 (components)
         const buyBtn_4191Button = new Button(buyBtn_4191)
-        buyBtn_4191Button.spriteName = 'tag'
         buyBtn_4191Button.callback = () => this.buy(4191)
 
         // priceNum_4191 (components)
@@ -4836,7 +4670,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_2017 (components)
         const buyBtn_2017Button = new Button(buyBtn_2017)
-        buyBtn_2017Button.spriteName = 'tag'
         buyBtn_2017Button.callback = () => this.buy(2017)
 
         // priceNum_2017 (components)
@@ -4845,7 +4678,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4194 (components)
         const buyBtn_4194Button = new Button(buyBtn_4194)
-        buyBtn_4194Button.spriteName = 'tag'
         buyBtn_4194Button.callback = () => this.buy(4194)
 
         // priceNum_4194 (components)
@@ -4854,7 +4686,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3041 (components)
         const buyBtn_3041Button = new Button(buyBtn_3041)
-        buyBtn_3041Button.spriteName = 'tag'
         buyBtn_3041Button.callback = () => this.buy(3041)
 
         // priceNum_3041 (components)
@@ -4863,7 +4694,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1117 (components)
         const buyBtn_1117Button = new Button(buyBtn_1117)
-        buyBtn_1117Button.spriteName = 'tag'
         buyBtn_1117Button.callback = () => this.buy(1117)
 
         // priceNum_1117 (components)
@@ -4872,17 +4702,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage27 (components)
         const nextpage27Button = new Button(nextpage27)
-        nextpage27Button.spriteName = 'nextpage'
         nextpage27Button.callback = () => this.nextPage()
 
         // backpage27 (components)
         const backpage27Button = new Button(backpage27)
-        backpage27Button.spriteName = 'backpage'
         backpage27Button.callback = () => this.prevPage()
 
         // buyBtn_367_again (components)
         const buyBtn_367_againButton = new Button(buyBtn_367_again)
-        buyBtn_367_againButton.spriteName = 'tag'
         buyBtn_367_againButton.callback = () => this.buy(367)
 
         // priceNum_367_again (components)
@@ -4891,7 +4718,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_477 (components)
         const buyBtn_477Button = new Button(buyBtn_477)
-        buyBtn_477Button.spriteName = 'tag'
         buyBtn_477Button.callback = () => this.buy(477)
 
         // priceNum_477 (components)
@@ -4900,7 +4726,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_762 (components)
         const buyBtn_762Button = new Button(buyBtn_762)
-        buyBtn_762Button.spriteName = 'tag'
         buyBtn_762Button.callback = () => this.buy(762)
 
         // priceNum_762 (components)
@@ -4909,7 +4734,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_763 (components)
         const buyBtn_763Button = new Button(buyBtn_763)
-        buyBtn_763Button.spriteName = 'tag'
         buyBtn_763Button.callback = () => this.buy(763)
 
         // priceNum_763 (components)
@@ -4918,17 +4742,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage28 (components)
         const nextpage28Button = new Button(nextpage28)
-        nextpage28Button.spriteName = 'nextpage'
         nextpage28Button.callback = () => this.nextPage()
 
         // backpage28 (components)
         const backpage28Button = new Button(backpage28)
-        backpage28Button.spriteName = 'backpage'
         backpage28Button.callback = () => this.prevPage()
 
         // buyBtn_476 (components)
         const buyBtn_476Button = new Button(buyBtn_476)
-        buyBtn_476Button.spriteName = 'tag'
         buyBtn_476Button.callback = () => this.buy(476)
 
         // priceNum_476 (components)
@@ -4937,7 +4758,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_761 (components)
         const buyBtn_761Button = new Button(buyBtn_761)
-        buyBtn_761Button.spriteName = 'tag'
         buyBtn_761Button.callback = () => this.buy(761)
 
         // priceNum_761 (components)
@@ -4946,7 +4766,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_760 (components)
         const buyBtn_760Button = new Button(buyBtn_760)
-        buyBtn_760Button.spriteName = 'tag'
         buyBtn_760Button.callback = () => this.buy(760)
 
         // priceNum_760 (components)
@@ -4955,7 +4774,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_475 (components)
         const buyBtn_475Button = new Button(buyBtn_475)
-        buyBtn_475Button.spriteName = 'tag'
         buyBtn_475Button.callback = () => this.buy(475)
 
         // priceNum_475 (components)
@@ -4971,7 +4789,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_186 (components)
         const buyBtn_186Button = new Button(buyBtn_186)
-        buyBtn_186Button.spriteName = 'tag'
         buyBtn_186Button.callback = () => this.buy(186)
 
         // priceNum_186 (components)
@@ -4988,27 +4805,22 @@ export default class CostumeCatalog extends Book {
 
         // nextpage29 (components)
         const nextpage29Button = new Button(nextpage29)
-        nextpage29Button.spriteName = 'nextpage'
         nextpage29Button.callback = () => this.nextPage()
 
         // backpage29 (components)
         const backpage29Button = new Button(backpage29)
-        backpage29Button.spriteName = 'backpage'
         backpage29Button.callback = () => this.prevPage()
 
         // nextpage30 (components)
         const nextpage30Button = new Button(nextpage30)
-        nextpage30Button.spriteName = 'nextpage'
         nextpage30Button.callback = () => this.nextPage()
 
         // backpage30 (components)
         const backpage30Button = new Button(backpage30)
-        backpage30Button.spriteName = 'backpage'
         backpage30Button.callback = () => this.prevPage()
 
         // buyBtn_1102 (components)
         const buyBtn_1102Button = new Button(buyBtn_1102)
-        buyBtn_1102Button.spriteName = 'tag'
         buyBtn_1102Button.callback = () => this.buy(1102)
 
         // priceNum_1102 (components)
@@ -5017,7 +4829,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3037 (components)
         const buyBtn_3037Button = new Button(buyBtn_3037)
-        buyBtn_3037Button.spriteName = 'tag'
         buyBtn_3037Button.callback = () => this.buy(3037)
 
         // priceNum_3037 (components)
@@ -5026,7 +4837,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3036 (components)
         const buyBtn_3036Button = new Button(buyBtn_3036)
-        buyBtn_3036Button.spriteName = 'tag'
         buyBtn_3036Button.callback = () => this.buy(3036)
 
         // priceNum_3036 (components)
@@ -5035,7 +4845,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_1101 (components)
         const buyBtn_1101Button = new Button(buyBtn_1101)
-        buyBtn_1101Button.spriteName = 'tag'
         buyBtn_1101Button.callback = () => this.buy(1101)
 
         // priceNum_1101 (components)
@@ -5044,7 +4853,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4136 (components)
         const buyBtn_4136Button = new Button(buyBtn_4136)
-        buyBtn_4136Button.spriteName = 'tag'
         buyBtn_4136Button.callback = () => this.buy(4136)
 
         // priceNum_4136 (components)
@@ -5053,7 +4861,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4137 (components)
         const buyBtn_4137Button = new Button(buyBtn_4137)
-        buyBtn_4137Button.spriteName = 'tag'
         buyBtn_4137Button.callback = () => this.buy(4137)
 
         // priceNum_4137 (components)
@@ -5062,7 +4869,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_472 (components)
         const buyBtn_472Button = new Button(buyBtn_472)
-        buyBtn_472Button.spriteName = 'tag'
         buyBtn_472Button.callback = () => this.buy(472)
 
         // priceNum_472 (components)
@@ -5071,7 +4877,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4135 (components)
         const buyBtn_4135Button = new Button(buyBtn_4135)
-        buyBtn_4135Button.spriteName = 'tag'
         buyBtn_4135Button.callback = () => this.buy(4135)
 
         // priceNum_4135 (components)
@@ -5080,7 +4885,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_227 (components)
         const buyBtn_227Button = new Button(buyBtn_227)
-        buyBtn_227Button.spriteName = 'tag'
         buyBtn_227Button.callback = () => this.buy(227)
 
         // priceNum_227 (components)
@@ -5089,7 +4893,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4138 (components)
         const buyBtn_4138Button = new Button(buyBtn_4138)
-        buyBtn_4138Button.spriteName = 'tag'
         buyBtn_4138Button.callback = () => this.buy(4138)
 
         // priceNum_4138 (components)
@@ -5098,7 +4901,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_309 (components)
         const buyBtn_309Button = new Button(buyBtn_309)
-        buyBtn_309Button.spriteName = 'tag'
         buyBtn_309Button.callback = () => this.buy(309)
 
         // priceNum_309 (components)
@@ -5114,7 +4916,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_6020 (components)
         const buyBtn_6020Button = new Button(buyBtn_6020)
-        buyBtn_6020Button.spriteName = 'tag'
         buyBtn_6020Button.callback = () => this.buy(6020)
 
         // priceNum_6020 (components)
@@ -5131,17 +4932,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage31 (components)
         const nextpage31Button = new Button(nextpage31)
-        nextpage31Button.spriteName = 'nextpage'
         nextpage31Button.callback = () => this.nextPage()
 
         // backpage31 (components)
         const backpage31Button = new Button(backpage31)
-        backpage31Button.spriteName = 'backpage'
         backpage31Button.callback = () => this.prevPage()
 
         // buyBtn_2043 (components)
         const buyBtn_2043Button = new Button(buyBtn_2043)
-        buyBtn_2043Button.spriteName = 'tag'
         buyBtn_2043Button.callback = () => this.buy(2043)
 
         // priceNum_2043 (components)
@@ -5150,7 +4948,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4467 (components)
         const buyBtn_4467Button = new Button(buyBtn_4467)
-        buyBtn_4467Button.spriteName = 'tag'
         buyBtn_4467Button.callback = () => this.buy(4467)
 
         // priceNum_4467 (components)
@@ -5159,7 +4956,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4468 (components)
         const buyBtn_4468Button = new Button(buyBtn_4468)
-        buyBtn_4468Button.spriteName = 'tag'
         buyBtn_4468Button.callback = () => this.buy(4468)
 
         // priceNum_4468 (components)
@@ -5168,7 +4964,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4466 (components)
         const buyBtn_4466Button = new Button(buyBtn_4466)
-        buyBtn_4466Button.spriteName = 'tag'
         buyBtn_4466Button.callback = () => this.buy(4466)
 
         // priceNum_4466 (components)
@@ -5177,17 +4972,14 @@ export default class CostumeCatalog extends Book {
 
         // nextpage32 (components)
         const nextpage32Button = new Button(nextpage32)
-        nextpage32Button.spriteName = 'nextpage'
         nextpage32Button.callback = () => this.nextPage()
 
         // backpage32 (components)
         const backpage32Button = new Button(backpage32)
-        backpage32Button.spriteName = 'backpage'
         backpage32Button.callback = () => this.prevPage()
 
         // buyBtn_1106 (components)
         const buyBtn_1106Button = new Button(buyBtn_1106)
-        buyBtn_1106Button.spriteName = 'tag'
         buyBtn_1106Button.callback = () => this.buy(1106)
 
         // priceNum_1106 (components)
@@ -5196,7 +4988,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_4146 (components)
         const buyBtn_4146Button = new Button(buyBtn_4146)
-        buyBtn_4146Button.spriteName = 'tag'
         buyBtn_4146Button.callback = () => this.buy(4146)
 
         // priceNum_4146 (components)
@@ -5205,7 +4996,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_5131 (components)
         const buyBtn_5131Button = new Button(buyBtn_5131)
-        buyBtn_5131Button.spriteName = 'tag'
         buyBtn_5131Button.callback = () => this.buy(5131)
 
         // priceNum_5131 (components)
@@ -5214,7 +5004,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_3038 (components)
         const buyBtn_3038Button = new Button(buyBtn_3038)
-        buyBtn_3038Button.spriteName = 'tag'
         buyBtn_3038Button.callback = () => this.buy(3038)
 
         // priceNum_3038 (components)
@@ -5223,7 +5012,6 @@ export default class CostumeCatalog extends Book {
 
         // buyBtn_119 (components)
         const buyBtn_119Button = new Button(buyBtn_119)
-        buyBtn_119Button.spriteName = 'tag'
         buyBtn_119Button.callback = () => this.buy(119)
 
         // priceNum_119 (components)
@@ -5232,12 +5020,10 @@ export default class CostumeCatalog extends Book {
 
         // nextpage33 (components)
         const nextpage33Button = new Button(nextpage33)
-        nextpage33Button.spriteName = 'nextpage'
         nextpage33Button.callback = () => this.nextPage()
 
         // backpage33 (components)
         const backpage33Button = new Button(backpage33)
-        backpage33Button.spriteName = 'backpage'
         backpage33Button.callback = () => this.prevPage()
 
         // exit_34 (components)
@@ -5246,7 +5032,6 @@ export default class CostumeCatalog extends Book {
 
         // backpage (components)
         const backpageButton = new Button(backpage)
-        backpageButton.spriteName = 'backpage'
         backpageButton.callback = () => this.prevPage()
 
         // exit (components)

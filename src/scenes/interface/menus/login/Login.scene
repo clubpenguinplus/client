@@ -113,7 +113,7 @@
             "text": "Home",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -132,7 +132,7 @@
             "text": "Create a free account now",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "35px",
             "color": "#ffffffff"
         },
@@ -151,7 +151,7 @@
             "text": "Don't have a penguin?",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -170,7 +170,7 @@
             "text": "Forgot your password?",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -181,7 +181,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "login-button",
             "Button.callback": "() => this.onLoginSubmit()",
             "texture": {
                 "key": "login",
@@ -205,7 +204,7 @@
             "text": "Login",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "38px",
             "color": "#ffffffff"
         },
@@ -224,7 +223,7 @@
             "text": "Password:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -243,7 +242,7 @@
             "text": "Penguin Name:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -308,7 +307,7 @@
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 },
@@ -325,7 +324,7 @@
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 }

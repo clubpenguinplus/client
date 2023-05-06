@@ -136,10 +136,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "plazadoor",
             "Button.hoverCallback": "() => this.onPlazaDoorOver()",
             "Button.hoverOutCallback": "() => this.onPlazaDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "pet",
                 "frame": "plazadoor"
@@ -170,10 +168,8 @@
                 "MoveTo",
                 "LocalisedSprite"
             ],
-            "Button.spriteName": "parkdoor_en",
             "Button.hoverCallback": "() => this.onParkDoorOver()",
             "Button.hoverOutCallback": "() => this.onParkDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "pet",
                 "frame": "parkdoor_en"
@@ -498,10 +494,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "hoteldoor",
             "Button.hoverCallback": "() => this.onHotelDoorOver()",
             "Button.hoverOutCallback": "() => this.onHotelDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "pet",
                 "frame": "hoteldoor"
@@ -777,8 +771,6 @@
                 "Button",
                 "LocalisedSprite"
             ],
-            "Button.spriteName": "petcat_en",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "pet",
                 "frame": "petcat_en"
@@ -795,8 +787,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "adoptbutton",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "pet",
                 "frame": "adoptbutton"

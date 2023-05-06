@@ -517,8 +517,6 @@
                 "ShowHint",
                 "MoveTo"
             ],
-            "Button.spriteName": "waves",
-            "Button.activeFrame": false,
             "ShowHint.text": "catchinwaves",
             "MoveTo.x": 1216,
             "MoveTo.y": 704,

@@ -65,7 +65,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "grey-button",
                             "Button.callback": "() => { this.nextPage() }",
                             "texture": {
                                 "key": "main",
@@ -94,7 +93,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "grey-button",
                             "Button.callback": "() => { this.prevPage() }",
                             "texture": {
                                 "key": "main",
@@ -121,9 +119,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(11) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -138,9 +134,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(10) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -155,9 +149,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(9) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -171,9 +163,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(8) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -188,9 +178,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(7) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -205,9 +193,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(6) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -221,9 +207,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(5) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -238,9 +222,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(4) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -255,9 +237,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(3) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -271,9 +251,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(2) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -288,9 +266,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(1) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -305,9 +281,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "large-box",
                             "Button.callback": "() => { this.onSlotClick(0) }",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "large-box"
@@ -321,9 +295,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "inventory/sort-button",
                             "Button.callback": "() => this.parentContainer.inventorySort.showMenu()",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "inventory/sort-button"
@@ -344,7 +316,7 @@
                             "text": "All Items",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         }

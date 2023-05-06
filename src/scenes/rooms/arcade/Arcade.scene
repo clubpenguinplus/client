@@ -491,8 +491,6 @@
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "thinice-button",
-            "Button.activeFrame": false,
             "MoveTo.x": 1093,
             "MoveTo.y": 386,
             "ShowHint.text": "thinice",
@@ -602,8 +600,6 @@
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "bitsandbolts-button",
-            "Button.activeFrame": false,
             "MoveTo.x": 306,
             "MoveTo.y": 495,
             "ShowHint.text": "bitsandbolts",
@@ -892,8 +888,6 @@
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "astro-button",
-            "Button.activeFrame": false,
             "MoveTo.x": 1181,
             "MoveTo.y": 473,
             "ShowHint.text": "astrobarrier",

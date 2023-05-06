@@ -54,10 +54,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('All Items', null)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -75,7 +73,7 @@
                     "text": "All Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -86,10 +84,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small_arrow",
                     "Button.hoverCallback": "() => other_container.visible = true",
                     "Button.callback": "() => this.filterInventory('Other Items', 'other')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small_arrow"
@@ -107,7 +103,7 @@
                     "text": "Other Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -118,10 +114,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Colors', 'color')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -139,7 +133,7 @@
                     "text": "Colors",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -150,10 +144,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Feet Items', 'feet')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -171,7 +163,7 @@
                     "text": "Feet Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -182,10 +174,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Hand Items', 'hand')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -203,7 +193,7 @@
                     "text": "Hand Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -214,10 +204,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Body Items', 'body')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -235,7 +223,7 @@
                     "text": "Body Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -246,10 +234,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Neck Items', 'neck')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -267,7 +253,7 @@
                     "text": "Neck Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -278,10 +264,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Face Items', 'face')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -299,7 +283,7 @@
                     "text": "Face Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -310,10 +294,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Head Items', 'head')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -331,7 +313,7 @@
                     "text": "Head Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -352,9 +334,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "list/small",
                             "Button.callback": "() => this.filterInventory('Pins/Flags', 'flag')",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "list/small"
@@ -367,9 +347,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "list/small",
                             "Button.callback": "() => this.filterInventory('Awards', 'award')",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "list/small"
@@ -383,9 +361,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "list/small",
                             "Button.callback": "() => this.filterInventory('Backgrounds', 'photo')",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "list/small"
@@ -402,7 +378,7 @@
                             "text": "Pins/Flags",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         },
@@ -417,7 +393,7 @@
                             "text": "Awards",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         },
@@ -432,7 +408,7 @@
                             "text": "Backgrounds",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         }

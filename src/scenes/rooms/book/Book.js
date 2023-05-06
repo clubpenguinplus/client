@@ -258,8 +258,6 @@ export default class Book extends RoomScene {
 
         // mancala_en (components)
         const mancala_enButton = new Button(mancala_en)
-        mancala_enButton.spriteName = 'mancala_en'
-        mancala_enButton.activeFrame = false
 
         // mancala_board (components)
         const mancala_boardShowHint = new ShowHint(mancala_board)
@@ -267,8 +265,6 @@ export default class Book extends RoomScene {
 
         // mancala_board4 (components)
         const mancala_board4Button = new Button(mancala_board4)
-        mancala_board4Button.spriteName = 'mancala_board'
-        mancala_board4Button.activeFrame = false
 
         // mancala_board_1 (components)
         const mancala_board_1ShowHint = new ShowHint(mancala_board_1)
@@ -276,8 +272,6 @@ export default class Book extends RoomScene {
 
         // mancala_board1 (components)
         const mancala_board1Button = new Button(mancala_board1)
-        mancala_board1Button.spriteName = 'mancala_board'
-        mancala_board1Button.activeFrame = false
 
         // mancala_board_2 (components)
         const mancala_board_2ShowHint = new ShowHint(mancala_board_2)
@@ -285,8 +279,6 @@ export default class Book extends RoomScene {
 
         // mancala_board2 (components)
         const mancala_board2Button = new Button(mancala_board2)
-        mancala_board2Button.spriteName = 'mancala_board'
-        mancala_board2Button.activeFrame = false
 
         // mancala_board_3 (components)
         const mancala_board_3ShowHint = new ShowHint(mancala_board_3)
@@ -294,8 +286,6 @@ export default class Book extends RoomScene {
 
         // mancala_board3 (components)
         const mancala_board3Button = new Button(mancala_board3)
-        mancala_board3Button.spriteName = 'mancala_board'
-        mancala_board3Button.activeFrame = false
 
         // part_frames (components)
         const part_framesSimpleButton = new SimpleButton(part_frames)
@@ -304,22 +294,16 @@ export default class Book extends RoomScene {
 
         // bookcase (components)
         const bookcaseButton = new Button(bookcase)
-        bookcaseButton.spriteName = 'bookcase'
-        bookcaseButton.activeFrame = false
 
         // tales_en (components)
         const tales_enButton = new Button(tales_en)
-        tales_enButton.spriteName = 'tales_en'
         tales_enButton.hoverCallback = () => this.BookOver()
         tales_enButton.hoverOutCallback = () => this.BookClose()
-        tales_enButton.activeFrame = false
 
         // bookdoor (components)
         const bookdoorButton = new Button(bookdoor)
-        bookdoorButton.spriteName = 'bookdoor'
         bookdoorButton.hoverCallback = () => this.CoffeeDoorOver()
         bookdoorButton.hoverOutCallback = () => this.CoffeeDoorOut()
-        bookdoorButton.activeFrame = false
         new MoveTo(bookdoor)
 
         // seatzone (components)

@@ -216,7 +216,7 @@ export default class Main extends BaseScene {
         // chatInput
         const chatInput = this.add.text(0, 0, '', {})
         chatInput.setOrigin(0, 0.5)
-        chatInput.setStyle({color: '#ffffffff', fixedWidth: 476, fontFamily: 'Burbank Small', fontSize: '24px'})
+        chatInput.setStyle({color: '#ffffffff', fixedWidth: 476, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         chatInput.setPadding({top: 6})
         chatInput.setLineSpacing(25)
         inputTextContainer.add(chatInput)
@@ -390,7 +390,7 @@ export default class Main extends BaseScene {
         // chatInput_mobile
         const chatInput_mobile = this.add.text(2, 1, '', {})
         chatInput_mobile.setOrigin(0, 0.5)
-        chatInput_mobile.setStyle({color: '#ffffffff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '36px'})
+        chatInput_mobile.setStyle({color: '#ffffffff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '36px'})
         chatInput_mobile.setPadding({top: 6})
         chatInput_mobile.setLineSpacing(25)
         inputTextContainer_mobile.add(chatInput_mobile)
@@ -514,13 +514,13 @@ export default class Main extends BaseScene {
         // stampEarnedHeader
         const stampEarnedHeader = this.add.text(88, 25, '', {})
         stampEarnedHeader.text = 'STAMP EARNED!'
-        stampEarnedHeader.setStyle({fixedWidth: 380, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold italic'})
+        stampEarnedHeader.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold italic'})
         stampEarned.add(stampEarnedHeader)
 
         // stampEarnedBody
         const stampEarnedBody = this.add.text(90, 80, '', {})
         stampEarnedBody.text = 'Stamp Name'
-        stampEarnedBody.setStyle({fixedWidth: 380, fontFamily: 'Burbank Small', fontSize: '35px'})
+        stampEarnedBody.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '35px'})
         stampEarned.add(stampEarnedBody)
 
         // puffleCare
@@ -551,61 +551,52 @@ export default class Main extends BaseScene {
 
         // puffle_button (components)
         const puffle_buttonButton = new Button(puffle_button)
-        puffle_buttonButton.spriteName = 'blue-button'
         puffle_buttonButton.callback = () => this.onPuffleClick()
 
         // emote_button (components)
         const emote_buttonButton = new Button(emote_button)
-        emote_buttonButton.spriteName = 'blue-button'
         emote_buttonButton.callback = () => (this.emotesMenu.visible = true)
         const emote_buttonShowHint = new ShowHint(emote_button)
         emote_buttonShowHint.text = 'emotes'
 
         // action_button (components)
         const action_buttonButton = new Button(action_button)
-        action_buttonButton.spriteName = 'blue-button'
         action_buttonButton.callback = () => (this.actionsMenu.visible = true)
         const action_buttonShowHint = new ShowHint(action_button)
         action_buttonShowHint.text = 'actions'
 
         // snowball_button (components)
         const snowball_buttonButton = new Button(snowball_button)
-        snowball_buttonButton.spriteName = 'blue-button'
         snowball_buttonButton.callback = () => this.onSnowballClick()
         const snowball_buttonShowHint = new ShowHint(snowball_button)
         snowball_buttonShowHint.text = 'snowball'
 
         // chat_send_button (components)
         const chat_send_buttonButton = new Button(chat_send_button)
-        chat_send_buttonButton.spriteName = 'blue-button'
         chat_send_buttonButton.callback = () => this.onChatSend()
         const chat_send_buttonShowHint = new ShowHint(chat_send_button)
         chat_send_buttonShowHint.text = 'send'
 
         // player_button (components)
         const player_buttonButton = new Button(player_button)
-        player_buttonButton.spriteName = 'blue-button'
         player_buttonButton.callback = () => this.onPlayerClick()
         const player_buttonShowHint = new ShowHint(player_button)
         player_buttonShowHint.text = 'editPlayer'
 
         // buddies_button (components)
         const buddies_buttonButton = new Button(buddies_button)
-        buddies_buttonButton.spriteName = 'blue-button'
         buddies_buttonButton.callback = () => this.onFriendClick()
         const buddies_buttonShowHint = new ShowHint(buddies_button)
         buddies_buttonShowHint.text = 'showFriendList'
 
         // igloo_button (components)
         const igloo_buttonButton = new Button(igloo_button)
-        igloo_buttonButton.spriteName = 'blue-button'
         igloo_buttonButton.callback = () => this.onIglooClick()
         const igloo_buttonShowHint = new ShowHint(igloo_button)
         igloo_buttonShowHint.text = 'yourIgloo'
 
         // help_button (components)
         const help_buttonButton = new Button(help_button)
-        help_buttonButton.spriteName = 'blue-button'
         help_buttonButton.callback = () => {
             this.settings.visible = true
         }
@@ -614,7 +605,6 @@ export default class Main extends BaseScene {
 
         // chat_button (components)
         const chat_buttonButton = new Button(chat_button)
-        chat_buttonButton.spriteName = 'blue-button'
         chat_buttonButton.callback = () => (this.safe.visible = true)
         const chat_buttonShowHint = new ShowHint(chat_button)
         chat_buttonShowHint.text = 'messages'
@@ -627,7 +617,6 @@ export default class Main extends BaseScene {
 
         // help_button_1 (components)
         const help_button_1Button = new Button(help_button_1)
-        help_button_1Button.spriteName = 'mobile/blue-button'
         help_button_1Button.callback = () => {
             this.settings.visible = true
         }
@@ -636,61 +625,52 @@ export default class Main extends BaseScene {
 
         // igloo_button_1 (components)
         const igloo_button_1Button = new Button(igloo_button_1)
-        igloo_button_1Button.spriteName = 'mobile/blue-button'
         igloo_button_1Button.callback = () => this.onIglooClick()
         const igloo_button_1ShowHint = new ShowHint(igloo_button_1)
         igloo_button_1ShowHint.text = 'yourIgloo'
 
         // buddies_button_1 (components)
         const buddies_button_1Button = new Button(buddies_button_1)
-        buddies_button_1Button.spriteName = 'mobile/blue-button'
         buddies_button_1Button.callback = () => this.onFriendClick()
         const buddies_button_1ShowHint = new ShowHint(buddies_button_1)
         buddies_button_1ShowHint.text = 'showFriendList'
 
         // player_button_1 (components)
         const player_button_1Button = new Button(player_button_1)
-        player_button_1Button.spriteName = 'mobile/blue-button'
         player_button_1Button.callback = () => this.onPlayerClick()
         const player_button_1ShowHint = new ShowHint(player_button_1)
         player_button_1ShowHint.text = 'editPlayer'
 
         // chat_send_button_1 (components)
         const chat_send_button_1Button = new Button(chat_send_button_1)
-        chat_send_button_1Button.spriteName = 'mobile/blue-button'
         chat_send_button_1Button.callback = () => this.onChatSend()
         const chat_send_button_1ShowHint = new ShowHint(chat_send_button_1)
         chat_send_button_1ShowHint.text = 'send'
 
         // snowball_button_1 (components)
         const snowball_button_1Button = new Button(snowball_button_1)
-        snowball_button_1Button.spriteName = 'mobile/blue-button'
         snowball_button_1Button.callback = () => this.onSnowballClick()
         const snowball_button_1ShowHint = new ShowHint(snowball_button_1)
         snowball_button_1ShowHint.text = 'snowball'
 
         // action_button_1 (components)
         const action_button_1Button = new Button(action_button_1)
-        action_button_1Button.spriteName = 'mobile/blue-button'
         action_button_1Button.callback = () => (this.actionsMenu.visible = true)
         const action_button_1ShowHint = new ShowHint(action_button_1)
         action_button_1ShowHint.text = 'actions'
 
         // emote_button_1 (components)
         const emote_button_1Button = new Button(emote_button_1)
-        emote_button_1Button.spriteName = 'mobile/blue-button'
         emote_button_1Button.callback = () => (this.emotesMenu.visible = true)
         const emote_button_1ShowHint = new ShowHint(emote_button_1)
         emote_button_1ShowHint.text = 'emotes'
 
         // puffle_button_1 (components)
         const puffle_button_1Button = new Button(puffle_button_1)
-        puffle_button_1Button.spriteName = 'blue-button'
         puffle_button_1Button.callback = () => this.onPuffleClick()
 
         // chat_button_1 (components)
         const chat_button_1Button = new Button(chat_button_1)
-        chat_button_1Button.spriteName = 'mobile/blue-button'
         chat_button_1Button.callback = () => (this.safe.visible = true)
         const chat_button_1ShowHint = new ShowHint(chat_button_1)
         chat_button_1ShowHint.text = 'messages'
@@ -707,46 +687,33 @@ export default class Main extends BaseScene {
 
         // map_button (components)
         const map_buttonButton = new Button(map_button)
-        map_buttonButton.spriteName = 'map-button'
         map_buttonButton.callback = () => this.onMapClick()
-        map_buttonButton.activeFrame = false
 
         // phone_button (components)
         const phone_buttonButton = new Button(phone_button)
-        phone_buttonButton.spriteName = 'phone-button'
         phone_buttonButton.callback = () => this.onPhoneClick()
 
         // mail_btn (components)
         const mail_btnButton = new Button(mail_btn)
-        mail_btnButton.spriteName = 'mail-button'
         mail_btnButton.callback = () => {
             /*this.shell.RuffleManager.handleLoadOtherSwf("mail.swf")*/
         }
-        mail_btnButton.activeFrame = false
 
         // news_button (components)
         const news_buttonButton = new Button(news_button)
-        news_buttonButton.spriteName = 'discord'
         news_buttonButton.callback = () => window.open('https://discord.gg/x3QuKfezb4', '_blank').focus()
-        news_buttonButton.activeFrame = false
 
         // safetyquiz (components)
         const safetyquizButton = new Button(safetyquiz)
-        safetyquizButton.spriteName = 'safetyquiz'
         safetyquizButton.callback = () => this.onModClick()
-        safetyquizButton.activeFrame = false
 
         // moderatoricon (components)
         const moderatoriconButton = new Button(moderatoricon)
-        moderatoriconButton.spriteName = 'mod'
         moderatoriconButton.callback = () => this.onModClick()
-        moderatoriconButton.activeFrame = false
 
         // beta (components)
         const betaButton = new Button(beta)
-        betaButton.spriteName = 'beta'
         betaButton.callback = () => this.onBetaClick()
-        betaButton.activeFrame = false
 
         this.pinContainer = pinContainer
         this.dock = dock

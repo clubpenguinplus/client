@@ -6,6 +6,8 @@ export default class ClientPenguin extends Penguin {
     constructor(user, room, penguinLoader, puffleLoader) {
         super(user, room, penguinLoader, puffleLoader)
 
+        this.shell.client.userInfo = user
+
         this.isClient = true
 
         this.savedPenguins = this.airtower.savedPenguins

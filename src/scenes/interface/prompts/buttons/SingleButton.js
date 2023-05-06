@@ -20,7 +20,7 @@ export default class SingleButton extends BaseContainer {
         text_1.setStyle({
             align: 'center',
             fixedWidth: 280,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '40px',
             fontStyle: 'bold',
         })
@@ -28,9 +28,7 @@ export default class SingleButton extends BaseContainer {
 
         // button (components)
         const buttonButton = new Button(button)
-        buttonButton.spriteName = 'window-button'
         buttonButton.callback = () => this.onClick()
-        buttonButton.activeFrame = false
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */

@@ -16,7 +16,7 @@ export default class BackgroundsPage extends Page {
         const page2_header = scene.add.text(260, 79, '', {})
         page2_header.setOrigin(0.5, 0.5)
         page2_header.text = 'Player card backgrounds for everyone'
-        page2_header.setStyle({fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold italic'})
+        page2_header.setStyle({fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold italic'})
         page2_header.setWordWrapWidth(330)
         this.add(page2_header)
 
@@ -24,7 +24,7 @@ export default class BackgroundsPage extends Page {
         const bgsPrice = scene.add.text(171, 141, '', {})
         bgsPrice.setOrigin(0.5, 0.5)
         bgsPrice.text = '60     each!'
-        bgsPrice.setStyle({color: '#9dc3fcff', fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'italic'})
+        bgsPrice.setStyle({color: '#9dc3fcff', fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'italic'})
         this.add(bgsPrice)
 
         // coinPng
@@ -35,7 +35,7 @@ export default class BackgroundsPage extends Page {
         const page2_header_1 = scene.add.text(952, 84, '', {})
         page2_header_1.setOrigin(0.5, 0.5)
         page2_header_1.text = 'Player card backgrounds for everyone'
-        page2_header_1.setStyle({fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold italic'})
+        page2_header_1.setStyle({fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold italic'})
         page2_header_1.setWordWrapWidth(330)
         this.add(page2_header_1)
 
@@ -43,7 +43,7 @@ export default class BackgroundsPage extends Page {
         const bgsPrice_1 = scene.add.text(863, 146, '', {})
         bgsPrice_1.setOrigin(0.5, 0.5)
         bgsPrice_1.text = '60     each!'
-        bgsPrice_1.setStyle({color: '#9dc3fcff', fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'italic'})
+        bgsPrice_1.setStyle({color: '#9dc3fcff', fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'italic'})
         this.add(bgsPrice_1)
 
         // coinPng_1

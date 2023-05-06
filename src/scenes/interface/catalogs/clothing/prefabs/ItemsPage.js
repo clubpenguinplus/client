@@ -16,7 +16,7 @@ export default class ItemsPage extends Page {
         const header = scene.add.text(227, 79, '', {})
         header.setOrigin(0.5, 0.5)
         header.text = 'Clothing items for everyone'
-        header.setStyle({fixedWidth: 270, fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'bold italic'})
+        header.setStyle({fixedWidth: 270, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold italic'})
         header.setWordWrapWidth(270)
         this.add(header)
 

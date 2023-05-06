@@ -32,10 +32,11 @@
                 "key": "town",
                 "frame": "danceclubdoor0001"
             },
-            "x": 852.6224744531738,
-            "y": 191.5476374205231,
+            "x": 846,
+            "y": 211,
             "originX": 0.5579637817944546,
-            "originY": -0.002307969050704048
+            "originY": -0.002307969050704048,
+            "list": []
         },
         {
             "type": "Image",
@@ -46,10 +47,9 @@
                 "key": "town",
                 "frame": "bg"
             },
-            "x": -97.80423540374727,
-            "y": 986.0732936798435,
-            "originX": 0.0006852446809371995,
-            "originY": 1.0032013740410073
+            "x": 760,
+            "y": 480,
+            "list": []
         },
         {
             "type": "Image",
@@ -61,7 +61,8 @@
                 "frame": "sidetrees"
             },
             "x": 1511,
-            "y": 613
+            "y": 613,
+            "list": []
         },
         {
             "type": "Image",
@@ -72,9 +73,11 @@
                 "key": "town",
                 "frame": "bottom_left"
             },
-            "x": 227,
-            "y": 532.0810695829088,
-            "originY": -0.0009630584300948194
+            "x": 93.21640776789215,
+            "y": 675.1955159398718,
+            "originX": 0.3045572976426323,
+            "originY": 0.3075324463521485,
+            "list": []
         },
         {
             "type": "Image",
@@ -85,10 +88,11 @@
                 "key": "town",
                 "frame": "bottom_trees"
             },
-            "x": -140.0645866423041,
-            "y": 732.6692749019403,
+            "x": -103,
+            "y": 752,
             "originX": -0.000037033625174373305,
-            "originY": 0.012728011654378707
+            "originY": 0.012728011654378707,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -101,18 +105,17 @@
             ],
             "MoveTo.x": 430,
             "MoveTo.y": 430,
-            "Button.spriteName": "coffeedoor",
             "Button.hoverCallback": "() => this.CoffeeDoorOver()",
             "Button.hoverOutCallback": "() => this.CoffeeDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "town",
                 "frame": "coffeedoor"
             },
-            "x": 425.0580922656529,
-            "y": 330.6070121767309,
+            "x": 419,
+            "y": 348,
             "originX": 0.5507261533206609,
-            "originY": -0.0027676246941171125
+            "originY": -0.0027676246941171125,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -125,18 +128,17 @@
             ],
             "MoveTo.x": 1100,
             "MoveTo.y": 400,
-            "Button.spriteName": "clothesdoor",
             "Button.hoverCallback": "() => this.ShopDoorOver()",
             "Button.hoverOutCallback": "() => this.ShopDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "town",
                 "frame": "clothesdoor"
             },
-            "x": 1113.9854670312639,
-            "y": 270.80911446172684,
+            "x": 1108,
+            "y": 291,
             "originX": 0.4877768305251397,
-            "originY": -0.01994307153677468
+            "originY": -0.01994307153677468,
+            "list": []
         },
         {
             "type": "Image",
@@ -147,10 +149,11 @@
                 "key": "town",
                 "frame": "bench_side"
             },
-            "x": 262.5309753417969,
-            "y": 528.4562288520525,
+            "x": 256,
+            "y": 548,
             "originX": 0.47839655086139365,
-            "originY": 0.7665475678359499
+            "originY": 0.7665475678359499,
+            "list": []
         },
         {
             "type": "Image",
@@ -161,10 +164,11 @@
                 "key": "town",
                 "frame": "clothesrack"
             },
-            "x": 1198.8140929688152,
-            "y": 391.8275851517446,
+            "x": 1192,
+            "y": 411,
             "originX": 0.5072043625558867,
-            "originY": 0.011544218710822484
+            "originY": 0.011544218710822484,
+            "list": []
         },
         {
             "type": "Image",
@@ -175,10 +179,11 @@
                 "key": "town",
                 "frame": "leftchari"
             },
-            "x": 552.0159298652105,
-            "y": 429.7304992897617,
+            "x": 545,
+            "y": 452,
             "originX": 0.43846826392076804,
-            "originY": 0.2992761373118083
+            "originY": 0.2992761373118083,
+            "list": []
         },
         {
             "type": "Image",
@@ -189,10 +194,11 @@
                 "key": "town",
                 "frame": "rightchair"
             },
-            "x": 702.9279176653323,
-            "y": 415.18392931025767,
+            "x": 696,
+            "y": 437,
             "originX": 0.5418277481710252,
-            "originY": 0.27855253873250896
+            "originY": 0.27855253873250896,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -204,10 +210,11 @@
                 "key": "town",
                 "frame": "disco_lights0001"
             },
-            "x": 837.7591937679998,
-            "y": -86.67256088001315,
+            "x": 833,
+            "y": -69,
             "originX": 0.49671744383068733,
-            "originY": 0.00587362442472057
+            "originY": 0.00587362442472057,
+            "list": []
         },
         {
             "type": "Image",
@@ -218,10 +225,39 @@
                 "key": "town",
                 "frame": "roof"
             },
-            "x": 854.2408062320002,
-            "y": 332.31435637599895,
+            "x": 847,
+            "y": 350,
             "originX": 0.5079538861025653,
-            "originY": 0.4574233155686223
+            "originY": 0.4574233155686223,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "9cb6d7cf-785a-4ee0-a61d-196ccb0c8222",
+            "label": "shopfronts",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "shopfronts"
+            },
+            "x": 329,
+            "y": 212,
+            "originX": -0.002646461293556528,
+            "originY": 0.007956149379252361,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "1248319a-7e6e-49df-a5c7-4521b6d5da2c",
+            "label": "giftshopsign",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "giftshopsign"
+            },
+            "x": 1067,
+            "y": 170,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -233,24 +269,11 @@
                 "key": "town",
                 "frame": "lights0001"
             },
-            "x": 587.1898850479691,
-            "y": -34.59901073601432,
+            "x": 578,
+            "y": -17,
             "originX": 0.00036237604574263714,
-            "originY": 0.009681408322522898
-        },
-        {
-            "type": "Image",
-            "id": "9cb6d7cf-785a-4ee0-a61d-196ccb0c8222",
-            "label": "shopfronts",
-            "components": [],
-            "texture": {
-                "key": "town",
-                "frame": "shopfronts"
-            },
-            "x": 337,
-            "y": 194,
-            "originX": -0.002646461293556528,
-            "originY": 0.007956149379252361
+            "originY": 0.009681408322522898,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -262,11 +285,12 @@
                 "key": "town",
                 "frame": "starsanim0001"
             },
-            "x": 791.2004946319928,
-            "y": 275.1838753599971,
+            "x": 784,
+            "y": 294,
             "originX": 0.01746424311105394,
             "originY": 0.02276683384609813,
-            "visible": false
+            "visible": false,
+            "list": []
         },
         {
             "type": "Image",
@@ -277,10 +301,11 @@
                 "key": "town",
                 "frame": "stars"
             },
-            "x": 795.9229133279932,
-            "y": 278.66548782399735,
+            "x": 789,
+            "y": 296,
             "originX": 0.016295875660959563,
-            "originY": 0.014467126608638104
+            "originY": 0.014467126608638104,
+            "list": []
         },
         {
             "type": "Image",
@@ -291,10 +316,11 @@
                 "key": "town",
                 "frame": "table"
             },
-            "x": 628.362414669051,
-            "y": 476.3085517350086,
+            "x": 621,
+            "y": 498,
             "originX": 0.5222867233277427,
-            "originY": 0.7080516274288713
+            "originY": 0.7080516274288713,
+            "list": []
         },
         {
             "type": "Image",
@@ -305,8 +331,9 @@
                 "key": "town",
                 "frame": "lights_front"
             },
-            "x": 849,
-            "y": 214
+            "x": 843,
+            "y": 227,
+            "list": []
         },
         {
             "type": "Image",
@@ -319,8 +346,9 @@
                 "key": "town",
                 "frame": "localised-en"
             },
-            "x": 770,
-            "y": 266
+            "x": 661,
+            "y": 208,
+            "list": []
         },
         {
             "type": "Ellipse",
@@ -330,11 +358,12 @@
                 "Seat"
             ],
             "Seat.direction": "southeast",
-            "x": 567,
-            "y": 456,
+            "x": 560,
+            "y": 478,
             "fillColor": "#ffffff",
             "width": 40,
-            "height": 40
+            "height": 40,
+            "list": []
         },
         {
             "type": "Ellipse",
@@ -344,11 +373,12 @@
                 "Seat"
             ],
             "Seat.direction": "southwest",
-            "x": 695,
-            "y": 449,
+            "x": 688,
+            "y": 471,
             "fillColor": "#ffffff",
             "width": 40,
-            "height": 40
+            "height": 40,
+            "list": []
         },
         {
             "type": "Ellipse",
@@ -358,11 +388,12 @@
                 "Seat"
             ],
             "Seat.direction": "southeast",
-            "x": 294,
-            "y": 501,
+            "x": 288,
+            "y": 520,
             "fillColor": "#ffffff",
             "width": 40,
-            "height": 40
+            "height": 40,
+            "list": []
         },
         {
             "type": "Ellipse",
@@ -372,11 +403,41 @@
                 "Seat"
             ],
             "Seat.direction": "southeast",
-            "x": 321,
-            "y": 477,
+            "x": 315,
+            "y": 496,
             "fillColor": "#ffffff",
             "width": 40,
-            "height": 40
+            "height": 40,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "5b18e063-f947-45d5-bbdb-65b9a7b67bf0",
+            "label": "speakers",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "speakers0001"
+            },
+            "x": 841,
+            "y": 321,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "e654a836-1b27-4118-ae7e-55fe4ccdab17",
+            "label": "barrier",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "barrier"
+            },
+            "x": 949.9629279361815,
+            "y": 438.4383708474857,
+            "originX": 0.5280418276597353,
+            "originY": 0.37359933744285717,
+            "list": []
         }
     ],
     "plainObjects": [],
@@ -394,7 +455,8 @@
                 "03b28df9-1fb3-4a93-b455-80adc9238eee",
                 "33c052ee-0d6c-4d8b-93bb-901b5ab28bac",
                 "697a7fcd-b903-41a1-8cfa-c7e88a9fd619",
-                "bd7b650f-d3db-4874-a535-671655944b1e"
+                "bd7b650f-d3db-4874-a535-671655944b1e",
+                "e654a836-1b27-4118-ae7e-55fe4ccdab17"
             ]
         }
     ]

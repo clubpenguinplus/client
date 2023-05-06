@@ -73,7 +73,7 @@ export default class Lodge extends RoomScene {
             attic: () => this.triggerRoom(221, 1140, 580),
             village: () => this.triggerRoom(200, 940, 540),
             wild: () => this.triggerRoom(436, 760, 730),
-            fishing: () => this.triggerGame('icefishing', 904),
+            fishing: () => this.triggerGame('icefishing', 904, 'ruffle'),
         }
         this.music = 589
         this.waddles = {}
@@ -225,20 +225,16 @@ export default class Lodge extends RoomScene {
 
         // maindoor (components)
         const maindoorButton = new Button(maindoor)
-        maindoorButton.spriteName = 'maindoor'
         maindoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorLOpen')
         maindoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorLClose')
-        maindoorButton.activeFrame = false
         const maindoorMoveTo = new MoveTo(maindoor)
         maindoorMoveTo.x = 140
         maindoorMoveTo.y = 490
 
         // fishingdoor (components)
         const fishingdoorButton = new Button(fishingdoor)
-        fishingdoorButton.spriteName = 'fishingdoor'
         fishingdoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorROpen')
         fishingdoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorRClose')
-        fishingdoorButton.activeFrame = false
         const fishingdoorMoveTo = new MoveTo(fishingdoor)
         fishingdoorMoveTo.x = 1000
         fishingdoorMoveTo.y = 310
@@ -247,37 +243,29 @@ export default class Lodge extends RoomScene {
 
         // atticlight (components)
         const atticlightButton = new Button(atticlight)
-        atticlightButton.spriteName = 'atticlight'
         atticlightButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-LightOn')
         atticlightButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-LightOff')
-        atticlightButton.activeFrame = false
         const atticlightMoveTo = new MoveTo(atticlight)
         atticlightMoveTo.x = 1250
         atticlightMoveTo.y = 360
 
         // findfour_1 (components)
         const findfour_1Button = new Button(findfour_1)
-        findfour_1Button.spriteName = 'findfour'
         findfour_1Button.callback = () => this.triggerWaddle(104)
-        findfour_1Button.activeFrame = false
         findfour_1Button.pixelPerfect = true
         const findfour_1ShowHint = new ShowHint(findfour_1)
         findfour_1ShowHint.text = 'four'
 
         // findfour_2 (components)
         const findfour_2Button = new Button(findfour_2)
-        findfour_2Button.spriteName = 'findfour'
         findfour_2Button.callback = () => this.triggerWaddle(105)
-        findfour_2Button.activeFrame = false
         findfour_2Button.pixelPerfect = true
         const findfour_2ShowHint = new ShowHint(findfour_2)
         findfour_2ShowHint.text = 'four'
 
         // findfour_3 (components)
         const findfour_3Button = new Button(findfour_3)
-        findfour_3Button.spriteName = 'findfour'
         findfour_3Button.callback = () => this.triggerWaddle(106)
-        findfour_3Button.activeFrame = false
         findfour_3Button.pixelPerfect = true
         const findfour_3ShowHint = new ShowHint(findfour_3)
         findfour_3ShowHint.text = 'four'
@@ -308,18 +296,14 @@ export default class Lodge extends RoomScene {
 
         // catalog (components)
         const catalogButton = new Button(catalog)
-        catalogButton.spriteName = 'catalog'
         catalogButton.callback = () => {
             this.interface.loadExternal('Fishing')
         }
-        catalogButton.activeFrame = false
 
         // wilddoor (components)
         const wilddoorButton = new Button(wilddoor)
-        wilddoorButton.spriteName = 'wilddoor'
         wilddoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorMOpen')
         wilddoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorMClose')
-        wilddoorButton.activeFrame = false
         const wilddoorMoveTo = new MoveTo(wilddoor)
         wilddoorMoveTo.x = 468
         wilddoorMoveTo.y = 324

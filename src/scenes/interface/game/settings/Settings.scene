@@ -59,7 +59,7 @@
                     "originY": 0.5,
                     "text": "88/100 Friends",
                     "fixedWidth": 300,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -82,7 +82,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "help-button",
                     "Button.callback": "() => this.onManagePress()",
                     "texture": {
                         "key": "main",
@@ -101,7 +100,7 @@
                     "text": "Manage Account",
                     "fixedWidth": 562,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#ffffffff"
@@ -117,7 +116,7 @@
                     "originY": 0.5,
                     "text": "Mute Music",
                     "fixedWidth": 348,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -132,7 +131,7 @@
                     "text": "Your penguin is 0 days old",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -147,7 +146,7 @@
                     "text": "You're on Server Name",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 },
@@ -162,7 +161,7 @@
                     "text": "SETTINGS",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "CCComicrazy",
+                    "fontFamily": "cpCCComicrazy",
                     "fontSize": "40px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",
@@ -193,7 +192,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.onSettingsPress() }",
                     "texture": {
                         "key": "main",
@@ -221,7 +219,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.visible = false }",
                     "texture": {
                         "key": "main",
@@ -271,7 +268,7 @@
                     "originY": 0.5,
                     "text": "Mute All Sounds",
                     "fixedWidth": 348,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -282,7 +279,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.shell.musicController.volumeDown()",
                     "texture": {
                         "key": "main",
@@ -310,7 +306,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.shell.musicController.volumeUp()",
                     "texture": {
                         "key": "main",

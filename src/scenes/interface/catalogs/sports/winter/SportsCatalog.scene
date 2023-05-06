@@ -58,7 +58,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -111,7 +110,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5472)",
                     "texture": {
                         "key": "winter-sports",
@@ -134,7 +132,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -147,7 +145,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5473)",
                     "texture": {
                         "key": "winter-sports",
@@ -170,7 +167,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -183,7 +180,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1906)",
                     "texture": {
                         "key": "winter-sports",
@@ -206,7 +202,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -219,7 +215,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1907)",
                     "texture": {
                         "key": "winter-sports",
@@ -242,7 +237,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -255,7 +250,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5471)",
                     "texture": {
                         "key": "winter-sports",
@@ -278,7 +272,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -291,7 +285,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5474)",
                     "texture": {
                         "key": "winter-sports",
@@ -314,7 +307,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -326,7 +319,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -342,7 +334,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -380,7 +371,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(24191)",
                     "texture": {
                         "key": "winter-sports",
@@ -403,7 +393,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -416,7 +406,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(24204)",
                     "texture": {
                         "key": "winter-sports",
@@ -439,7 +428,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -451,7 +440,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -467,7 +455,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -505,7 +492,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1509)",
                     "texture": {
                         "key": "winter-sports",
@@ -528,7 +514,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -541,7 +527,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5189)",
                     "texture": {
                         "key": "winter-sports",
@@ -564,7 +549,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -577,7 +562,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4758)",
                     "texture": {
                         "key": "winter-sports",
@@ -600,7 +584,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "250",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -613,7 +597,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6143)",
                     "texture": {
                         "key": "winter-sports",
@@ -636,7 +619,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "145",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -648,7 +631,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -664,7 +646,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -702,7 +683,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1508)",
                     "texture": {
                         "key": "winter-sports",
@@ -725,7 +705,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -738,7 +718,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5188)",
                     "texture": {
                         "key": "winter-sports",
@@ -761,7 +740,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -774,7 +753,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6142)",
                     "texture": {
                         "key": "winter-sports",
@@ -797,7 +775,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -810,7 +788,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4757)",
                     "texture": {
                         "key": "winter-sports",
@@ -833,7 +810,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -845,7 +822,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -861,7 +837,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -899,7 +874,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1510)",
                     "texture": {
                         "key": "winter-sports",
@@ -922,7 +896,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -935,7 +909,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4759)",
                     "texture": {
                         "key": "winter-sports",
@@ -958,7 +931,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -970,7 +943,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -986,7 +958,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1024,7 +995,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1511)",
                     "texture": {
                         "key": "winter-sports",
@@ -1047,7 +1017,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1060,7 +1030,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4760)",
                     "texture": {
                         "key": "winter-sports",
@@ -1083,7 +1052,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1095,7 +1064,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1111,7 +1079,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1149,7 +1116,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4474)",
                     "texture": {
                         "key": "winter-sports",
@@ -1172,7 +1138,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1185,7 +1151,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4476)",
                     "texture": {
                         "key": "winter-sports",
@@ -1208,7 +1173,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1221,7 +1186,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4480)",
                     "texture": {
                         "key": "winter-sports",
@@ -1244,7 +1208,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1257,7 +1221,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4478)",
                     "texture": {
                         "key": "winter-sports",
@@ -1280,7 +1243,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1293,7 +1256,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(277)",
                     "texture": {
                         "key": "winter-sports",
@@ -1316,7 +1278,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1329,7 +1291,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(278)",
                     "texture": {
                         "key": "winter-sports",
@@ -1352,7 +1313,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1365,7 +1326,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4143)",
                     "texture": {
                         "key": "winter-sports",
@@ -1388,7 +1348,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1401,7 +1361,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4204)",
                     "texture": {
                         "key": "winter-sports",
@@ -1424,7 +1383,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1436,7 +1395,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1452,7 +1410,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1490,7 +1447,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4144)",
                     "texture": {
                         "key": "winter-sports",
@@ -1513,7 +1469,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1526,7 +1482,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4475)",
                     "texture": {
                         "key": "winter-sports",
@@ -1549,7 +1504,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1562,7 +1517,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4477)",
                     "texture": {
                         "key": "winter-sports",
@@ -1585,7 +1539,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1598,7 +1552,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4297)",
                     "texture": {
                         "key": "winter-sports",
@@ -1621,7 +1574,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1634,7 +1587,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4481)",
                     "texture": {
                         "key": "winter-sports",
@@ -1657,7 +1609,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1670,7 +1622,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4479)",
                     "texture": {
                         "key": "winter-sports",
@@ -1693,7 +1644,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1706,7 +1657,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4054)",
                     "texture": {
                         "key": "winter-sports",
@@ -1729,7 +1679,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1742,7 +1692,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4053)",
                     "texture": {
                         "key": "winter-sports",
@@ -1765,7 +1714,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1777,7 +1726,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1793,7 +1741,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -1831,7 +1778,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4299)",
                     "texture": {
                         "key": "winter-sports",
@@ -1854,7 +1800,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1867,7 +1813,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(461)",
                     "texture": {
                         "key": "winter-sports",
@@ -1890,7 +1835,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1903,7 +1848,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1215)",
                     "texture": {
                         "key": "winter-sports",
@@ -1926,7 +1870,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1939,7 +1883,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(220)",
                     "texture": {
                         "key": "winter-sports",
@@ -1962,7 +1905,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -1975,7 +1918,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3002)",
                     "texture": {
                         "key": "winter-sports",
@@ -1998,7 +1940,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2011,7 +1953,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6013)",
                     "texture": {
                         "key": "winter-sports",
@@ -2034,7 +1975,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2140,7 +2081,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(1036)",
                             "texture": {
                                 "key": "winter-sports",
@@ -2163,7 +2103,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "350",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#4b2500ff"
@@ -2182,7 +2122,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "Goalie Helmet",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "20px",
                             "fontStyle": "bold",
                             "color": "#221100ff"
@@ -2306,7 +2246,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(5018)",
                             "texture": {
                                 "key": "winter-sports",
@@ -2329,7 +2268,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "350",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#4b2500ff"
@@ -2348,7 +2287,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "Goalie Hockey Stick",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "20px",
                             "fontStyle": "bold",
                             "color": "#221100ff"
@@ -2378,7 +2317,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -2394,7 +2332,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -2432,7 +2369,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1337)",
                     "texture": {
                         "key": "winter-sports",
@@ -2455,7 +2391,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2468,7 +2404,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4483)",
                     "texture": {
                         "key": "winter-sports",
@@ -2491,7 +2426,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "350",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2596,7 +2531,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(4484)",
                             "texture": {
                                 "key": "winter-sports",
@@ -2619,7 +2553,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "350",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#4b2500ff"
@@ -2638,7 +2572,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "Snowy Sky Dress",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "20px",
                             "fontStyle": "bold",
                             "color": "#221100ff"
@@ -2668,7 +2602,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -2684,7 +2617,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -2722,7 +2654,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6011)",
                     "texture": {
                         "key": "winter-sports",
@@ -2745,7 +2676,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2758,7 +2689,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4482)",
                     "texture": {
                         "key": "winter-sports",
@@ -2781,7 +2711,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2794,7 +2724,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1336)",
                     "texture": {
                         "key": "winter-sports",
@@ -2817,7 +2746,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "450",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#4b2500ff"
@@ -2922,7 +2851,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(1338)",
                             "texture": {
                                 "key": "winter-sports",
@@ -2945,7 +2873,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "350",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#4b2500ff"
@@ -2964,7 +2892,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "The Free Skate",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "20px",
                             "fontStyle": "bold",
                             "color": "#221100ff"
@@ -2994,7 +2922,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -3010,7 +2937,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -3047,7 +2973,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "winter-sports",
@@ -3106,7 +3031,7 @@
                     "angle": -7,
                     "text": "Your Coins:\n100000",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold italic",
                     "color": "#000000ff"

@@ -51,21 +51,21 @@ export default class SavePrompt extends BaseContainer {
         const text_1 = scene.add.text(-303, 285, '', {})
         text_1.setOrigin(0.5, 0.5)
         text_1.text = 'Save Password'
-        text_1.setStyle({align: 'center', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        text_1.setStyle({align: 'center', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         this.add(text_1)
 
         // text_2
         const text_2 = scene.add.text(21, 285, '', {})
         text_2.setOrigin(0.5, 0.5)
         text_2.text = "Don't Save\nPassword"
-        text_2.setStyle({align: 'center', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold'})
+        text_2.setStyle({align: 'center', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         this.add(text_2)
 
         // text_3
         const text_3 = scene.add.text(343, 285, '', {})
         text_3.setOrigin(0.5, 0.5)
         text_3.text = 'Learn More'
-        text_3.setStyle({align: 'center', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        text_3.setStyle({align: 'center', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         this.add(text_3)
 
         // block (components)
@@ -73,25 +73,18 @@ export default class SavePrompt extends BaseContainer {
 
         // save_button (components)
         const save_buttonButton = new Button(save_button)
-        save_buttonButton.spriteName = 'save-button'
         save_buttonButton.callback = () => this.onSaveClick()
-        save_buttonButton.activeFrame = false
 
         // no_save_button (components)
         const no_save_buttonButton = new Button(no_save_button)
-        no_save_buttonButton.spriteName = 'save-button'
         no_save_buttonButton.callback = () => this.close()
-        no_save_buttonButton.activeFrame = false
 
         // learn_button (components)
         const learn_buttonButton = new Button(learn_button)
-        learn_buttonButton.spriteName = 'learn-button'
         learn_buttonButton.callback = () => this.close()
-        learn_buttonButton.activeFrame = false
 
         // blue_button (components)
         const blue_buttonButton = new Button(blue_button)
-        blue_buttonButton.spriteName = 'blue-button'
         blue_buttonButton.callback = () => this.close()
 
         // text_1 (components)

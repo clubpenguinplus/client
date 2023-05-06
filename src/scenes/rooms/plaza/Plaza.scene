@@ -26,20 +26,24 @@
                 "frame": "bg"
             },
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Sprite",
             "id": "65a2450e-a593-4da3-a097-2b6d2cd8f8ee",
             "label": "parksign",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "plaza",
-                "frame": "park-hover"
+                "frame": "park"
             },
             "x": -45,
-            "y": 358
+            "y": 358,
+            "list": []
         },
         {
             "type": "Image",
@@ -51,7 +55,8 @@
                 "frame": "buildings"
             },
             "x": 767,
-            "y": 325
+            "y": 325,
+            "list": []
         },
         {
             "type": "Image",
@@ -65,7 +70,8 @@
                 "frame": "mall_sign-en"
             },
             "x": 894,
-            "y": 65
+            "y": 65,
+            "list": []
         },
         {
             "type": "Image",
@@ -77,7 +83,8 @@
                 "frame": "mall_fg"
             },
             "x": 914,
-            "y": 302
+            "y": 302,
+            "list": []
         },
         {
             "type": "Image",
@@ -87,9 +94,7 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "pet_door",
             "Button.hoverCallback": "() => this.onPetOver()",
-            "Button.activeFrame": false,
             "MoveTo.x": 396,
             "MoveTo.y": 492,
             "texture": {
@@ -97,7 +102,8 @@
                 "frame": "pet_door"
             },
             "x": 385,
-            "y": 431
+            "y": 431,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -116,7 +122,8 @@
                 "frame": "cannon_0001"
             },
             "x": 285,
-            "y": 433
+            "y": 433,
+            "list": []
         },
         {
             "type": "Image",
@@ -128,7 +135,8 @@
                 "frame": "buildings2"
             },
             "x": 480,
-            "y": 283
+            "y": 283,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -142,7 +150,8 @@
             },
             "x": 507,
             "y": 673.9236627496881,
-            "originY": 1.6478945983850846
+            "originY": 1.6478945983850846,
+            "list": []
         },
         {
             "type": "Image",
@@ -156,7 +165,8 @@
                 "frame": "pet_sign-en"
             },
             "x": 362,
-            "y": 292
+            "y": 292,
+            "list": []
         },
         {
             "type": "Image",
@@ -166,10 +176,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "pizza_door",
             "Button.hoverCallback": "() => this.onPizzaOver()",
             "Button.hoverOutCallback": "() => this.onPizzaOut()",
-            "Button.activeFrame": false,
             "MoveTo.x": 1224,
             "MoveTo.y": 480,
             "texture": {
@@ -177,7 +185,8 @@
                 "frame": "pizza_door"
             },
             "x": 1222,
-            "y": 417
+            "y": 417,
+            "list": []
         },
         {
             "type": "Image",
@@ -187,10 +196,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "mall_door",
             "Button.hoverCallback": "() => this.onMallOver()",
             "Button.hoverOutCallback": "() => this.onMallOut()",
-            "Button.activeFrame": false,
             "MoveTo.x": 920,
             "MoveTo.y": 460,
             "texture": {
@@ -198,7 +205,8 @@
                 "frame": "mall_door"
             },
             "x": 918,
-            "y": 404
+            "y": 404,
+            "list": []
         },
         {
             "type": "Image",
@@ -208,10 +216,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "hotel_door",
             "Button.hoverCallback": "() => this.onHotelOver()",
             "Button.hoverOutCallback": "() => this.onHotelOut()",
-            "Button.activeFrame": false,
             "MoveTo.x": 644,
             "MoveTo.y": 468,
             "texture": {
@@ -219,7 +225,8 @@
                 "frame": "hotel_door"
             },
             "x": 643,
-            "y": 409
+            "y": 409,
+            "list": []
         },
         {
             "type": "Image",
@@ -233,7 +240,8 @@
             "x": 203.14926228192448,
             "y": 755.2392501923956,
             "originX": 0.616515661435073,
-            "originY": 0.4097499303023767
+            "originY": 0.4097499303023767,
+            "list": []
         },
         {
             "type": "Image",
@@ -245,7 +253,8 @@
                 "frame": "fg_3"
             },
             "x": 1567,
-            "y": 692
+            "y": 692,
+            "list": []
         },
         {
             "type": "Image",
@@ -259,19 +268,23 @@
             "x": 1421.4777668477834,
             "y": 754.5607223603644,
             "originX": 0.42192926018256904,
-            "originY": 0.20276760019732185
+            "originY": 0.20276760019732185,
+            "list": []
         },
         {
             "type": "Image",
             "id": "add35ca5-b652-4832-b781-840728fad7ab",
             "label": "pizza_sign",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "plaza",
                 "frame": "pizza_sign"
             },
             "x": 1254,
-            "y": 285
+            "y": 285,
+            "list": []
         },
         {
             "type": "Image",
@@ -283,7 +296,8 @@
                 "frame": "pole"
             },
             "x": 1082,
-            "y": 77
+            "y": 77,
+            "list": []
         },
         {
             "type": "Image",
@@ -296,7 +310,8 @@
             },
             "x": 753,
             "y": 81,
-            "angle": -22
+            "angle": -22,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -312,7 +327,8 @@
                 "frame": "flag1_0001"
             },
             "x": 1107,
-            "y": 79
+            "y": 79,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -329,7 +345,8 @@
             },
             "x": 778,
             "y": 71,
-            "angle": -27
+            "angle": -27,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -348,7 +365,8 @@
                 "frame": "puffle_0001"
             },
             "x": -8,
-            "y": 231
+            "y": 231,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -367,7 +385,8 @@
                 "frame": "smoke_0001"
             },
             "x": 183,
-            "y": 251
+            "y": 251,
+            "list": []
         },
         {
             "type": "Rectangle",
@@ -385,7 +404,8 @@
             "fillColor": "#00b8e5",
             "fillAlpha": 100,
             "width": 128,
-            "height": 128
+            "height": 128,
+            "list": []
         },
         {
             "type": "Rectangle",
@@ -406,19 +426,23 @@
             "fillColor": "#00b8e5",
             "fillAlpha": 100,
             "width": 128,
-            "height": 128
+            "height": 128,
+            "list": []
         },
         {
             "type": "Image",
             "id": "aed321bc-5b7d-48c7-8b06-28cf3eb777e4",
             "label": "puffle_hotel_sign",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "plaza",
                 "frame": "puffle_hotel_sign"
             },
             "x": 534,
-            "y": 147
+            "y": 147,
+            "list": []
         },
         {
             "type": "Rectangle",
@@ -436,7 +460,8 @@
             "fillColor": "#00b8e5",
             "fillAlpha": 100,
             "width": 128,
-            "height": 128
+            "height": 128,
+            "list": []
         }
     ],
     "plainObjects": [],

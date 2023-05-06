@@ -97,8 +97,6 @@ export default class Beach extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 408
         doorMoveTo.y = 376

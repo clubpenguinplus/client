@@ -5,6 +5,7 @@ export default class GameScene extends RoomScene {
         super(key)
 
         this.key = key
+        this.isGame = true
     }
 
     get client() {
@@ -28,5 +29,15 @@ export default class GameScene extends RoomScene {
         this.addMusic()
 
         this.interface.hideLoading()
+        this.shell.room = this
+        this.interface.hideInterface()
+    }
+
+    addPenguins() {
+        // Empty method to prevent penguins spawning
+    }
+
+    addPenguin() {
+        // Empty method to prevent penguins spawning
     }
 }

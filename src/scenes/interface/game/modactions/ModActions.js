@@ -64,7 +64,7 @@ export default class ModActions extends BaseContainer {
         const username = scene.add.text(-156, -238, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 360, fontFamily: 'Burbank Small', fontSize: '32px'})
+        username.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 360, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(username)
 
         // badge
@@ -83,7 +83,7 @@ export default class ModActions extends BaseContainer {
         const coins = scene.add.text(237, -185, '', {})
         coins.setOrigin(0.5, 0.5)
         coins.text = 'add coins: 000000'
-        coins.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '24px'})
+        coins.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(coins)
 
         // card_coin
@@ -94,7 +94,7 @@ export default class ModActions extends BaseContainer {
         const item_txt = scene.add.text(238, -84, '', {})
         item_txt.setOrigin(0.5, 0.5)
         item_txt.text = 'add item by id'
-        item_txt.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '24px'})
+        item_txt.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(item_txt)
 
         // item_icon
@@ -105,7 +105,7 @@ export default class ModActions extends BaseContainer {
         const ban_txt = scene.add.text(238, 43, '', {})
         ban_txt.setOrigin(0.5, 0.5)
         ban_txt.text = 'ban player for\n3H  1D  3D  1W  3W PERM'
-        ban_txt.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        ban_txt.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(ban_txt)
 
         // ban_icon
@@ -116,7 +116,7 @@ export default class ModActions extends BaseContainer {
         const stamps_txt = scene.add.text(238, 136, '', {})
         stamps_txt.setOrigin(0.5, 0.5)
         stamps_txt.text = 'change username'
-        stamps_txt.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'Burbank Small', fontSize: '24px'})
+        stamps_txt.setStyle({color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(stamps_txt)
 
         // help_icon
@@ -208,49 +208,49 @@ export default class ModActions extends BaseContainer {
         const ban_count_txt = scene.add.text(150, 235, '', {})
         ban_count_txt.setOrigin(0.5, 0.5)
         ban_count_txt.text = 'banned 0 times'
-        ban_count_txt.setStyle({color: '#000000ff', fixedWidth: 180, fontFamily: 'Burbank Small', fontSize: '20px'})
+        ban_count_txt.setStyle({color: '#000000ff', fixedWidth: 180, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(ban_count_txt)
 
         // banned_until_txt
         const banned_until_txt = scene.add.text(-150, 235, '', {})
         banned_until_txt.setOrigin(0.5, 0.5)
         banned_until_txt.text = 'not currently banned'
-        banned_until_txt.setStyle({color: '#000000ff', fixedWidth: 430, fontFamily: 'Burbank Small', fontSize: '20px'})
+        banned_until_txt.setStyle({color: '#000000ff', fixedWidth: 430, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(banned_until_txt)
 
         // joindate_txt
         const joindate_txt = scene.add.text(-150, 265, '', {})
         joindate_txt.setOrigin(0.5, 0.5)
         joindate_txt.text = 'no join time recorded'
-        joindate_txt.setStyle({color: '#000000ff', fixedWidth: 430, fontFamily: 'Burbank Small', fontSize: '20px'})
+        joindate_txt.setStyle({color: '#000000ff', fixedWidth: 430, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(joindate_txt)
 
         // username_status_txt
         const username_status_txt = scene.add.text(150, 265, '', {})
         username_status_txt.setOrigin(0.5, 0.5)
         username_status_txt.text = 'status: pending'
-        username_status_txt.setStyle({color: '#000000ff', fixedWidth: 180, fontFamily: 'Burbank Small', fontSize: '20px'})
+        username_status_txt.setStyle({color: '#000000ff', fixedWidth: 180, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         this.add(username_status_txt)
 
         // coins_input
         const coins_input = scene.add.text(211, -139, '', {})
         coins_input.setOrigin(0.5, 0.5)
         coins_input.text = 'number of coins'
-        coins_input.setStyle({color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px'})
+        coins_input.setStyle({color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(coins_input)
 
         // item_input
         const item_input = scene.add.text(210, -34, '', {})
         item_input.setOrigin(0.5, 0.5)
         item_input.text = 'item id'
-        item_input.setStyle({color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px'})
+        item_input.setStyle({color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(item_input)
 
         // item_input_1
         const item_input_1 = scene.add.text(212, 178, '', {})
         item_input_1.setOrigin(0.5, 0.5)
         item_input_1.text = 'new username'
-        item_input_1.setStyle({color: '#ffffffff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px'})
+        item_input_1.setStyle({color: '#ffffffff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(item_input_1)
 
         // this (components)
@@ -262,7 +262,6 @@ export default class ModActions extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => {
             this.hide()
         }

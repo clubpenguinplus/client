@@ -39,7 +39,6 @@ export default class Lakenote extends Closeup {
 
         // exit (components)
         const exitButton = new Button(exit)
-        exitButton.spriteName = 'exit'
         exitButton.callback = () => this.stop()
 
         this.events.emit('scene-awake')

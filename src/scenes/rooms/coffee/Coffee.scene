@@ -189,10 +189,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "towndoor",
             "Button.hoverCallback": "() => this.onTownDoorOver();",
             "Button.hoverOutCallback": "() => this.onTownDoorOut();",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "coffee",
                 "frame": "towndoor"

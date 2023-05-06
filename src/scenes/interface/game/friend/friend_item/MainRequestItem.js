@@ -37,14 +37,14 @@ export default class MainRequestItem extends BaseContainer {
         const username = scene.add.text(55, -22, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({color: '#000000ff', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px', fontStyle: 'bold'})
+        username.setStyle({color: '#000000ff', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px', fontStyle: 'bold'})
         this.add(username)
 
         // addFriend
         const addFriend = scene.add.text(55, -5, '', {})
         addFriend.setOrigin(0.5, 0.5)
         addFriend.text = 'Wants to be your friend!'
-        addFriend.setStyle({color: '#000000ff', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px'})
+        addFriend.setStyle({color: '#000000ff', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px'})
         this.add(addFriend)
 
         // window_button_small
@@ -62,7 +62,7 @@ export default class MainRequestItem extends BaseContainer {
         const nameSearch_1 = scene.add.text(3, 16, '', {})
         nameSearch_1.setOrigin(0.5, 0.5)
         nameSearch_1.text = '+ Add Friend'
-        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '12px'})
+        nameSearch_1.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '12px'})
         this.add(nameSearch_1)
 
         // window_button_small_1
@@ -80,17 +80,15 @@ export default class MainRequestItem extends BaseContainer {
         const nameSearch = scene.add.text(93, 16, '', {})
         nameSearch.setOrigin(0.5, 0.5)
         nameSearch.text = 'No Thanks'
-        nameSearch.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '12px'})
+        nameSearch.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '12px'})
         this.add(nameSearch)
 
         // window_button_small (components)
         const window_button_smallButton = new Button(window_button_small)
-        window_button_smallButton.spriteName = 'window-button-small'
         window_button_smallButton.callback = () => this.onYesClick()
 
         // window_button_small_1 (components)
         const window_button_small_1Button = new Button(window_button_small_1)
-        window_button_small_1Button.spriteName = 'window-button-small'
         window_button_small_1Button.callback = () => this.onNoClick()
 
         this.outline = outline

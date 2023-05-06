@@ -349,12 +349,9 @@ export default class Agentcom extends RoomScene {
 
         // agentbook (components)
         const agentbookButton = new Button(agentbook)
-        agentbookButton.spriteName = 'agentbook'
-        agentbookButton.activeFrame = false
 
         // defender (components)
         const defenderButton = new Button(defender)
-        defenderButton.spriteName = 'defender'
         defenderButton.hoverCallback = () => this.onSymbolsOver()
         defenderButton.hoverOutCallback = () => this.onSymbolsOut()
 

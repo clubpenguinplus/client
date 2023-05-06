@@ -11,16 +11,12 @@ export default class Button extends SimpleButton {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.gameObject
-        /** @type {string} */
-        this.spriteName = ''
         /** @type {any} */
         this.hoverCallback = null
         /** @type {any} */
         this.hoverOutCallback = null
         /** @type {any} */
         this.callback = () => {}
-        /** @type {boolean} */
-        this.activeFrame = true
         /** @type {boolean} */
         this.pixelPerfect = false
         /** @type {boolean} */
@@ -40,6 +36,30 @@ export default class Button extends SimpleButton {
 
     /* START-USER-CODE */
 
+    get spriteName() {
+        let frameName = this.gameObject.frame.name
+
+        if (frameName.includes('-es-')) {
+            frameName = frameName.replace('-es-', '-')
+        } else if (frameName.includes('-pt-')) {
+            frameName = frameName.replace('-pt-', '-')
+        } else if (frameName.includes('-en-')) {
+            frameName = frameName.replace('-en-', '-')
+        }
+
+        if (frameName.includes('-hover')) {
+            frameName = frameName.replace('-hover', '')
+        } else if (frameName.includes('-active')) {
+            frameName = frameName.replace('-active', '')
+        }
+
+        return frameName
+    }
+
+    set spriteName(name) {
+        this.gameObject.setFrame(name)
+    }
+
     get textureKey() {
         if (this.gameObject.textureKey && this.gameObject.textureKey != '__DEFAULT') return this.gameObject.textureKey
         return this.gameObject.texture.key
@@ -54,26 +74,42 @@ export default class Button extends SimpleButton {
         return 'en'
     }
 
+    get overFrame() {
+        let frame = this.isLocalised ? `${this.spriteName}-${this.language}-hover` : `${this.spriteName}-hover`
+        if (this.gameObject.texture.frames[frame]) {
+            return frame
+        }
+        return this.outFrame
+    }
+
+    get outFrame() {
+        let frame = this.isLocalised ? `${this.spriteName}-${this.language}` : this.spriteName
+        if (this.gameObject.texture.frames[frame]) {
+            return frame
+        }
+        return this.spriteName
+    }
+
+    get downFrame() {
+        let frame = this.isLocalised ? `${this.spriteName}-${this.language}-active` : `${this.spriteName}-active`
+        if (this.gameObject.texture.frames[frame]) {
+            return frame
+        }
+        return this.overFrame
+    }
+
     start() {
         super.start()
         this.gameObject.on('pointerdown', (pointer) => this.onDown(pointer))
     }
 
     onOver() {
-        if (this.isLocalised) {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}-hover`, false, false)
-        } else {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-hover`, false, false)
-        }
+        this.gameObject.setTexture(this.textureKey, this.overFrame, false, false)
         super.onOver()
     }
 
     onOut() {
-        if (this.isLocalised) {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}`, false, false)
-        } else {
-            this.gameObject.setTexture(this.textureKey, this.spriteName, false, false)
-        }
+        this.gameObject.setTexture(this.textureKey, this.outFrame, false, false)
         super.onOut()
     }
 
@@ -82,11 +118,7 @@ export default class Button extends SimpleButton {
             return
         }
 
-        if (this.isLocalised) {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}-${this.activeFrame ? 'active' : 'hover'}`, false, false)
-        } else {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.activeFrame ? 'active' : 'hover'}`, false, false)
-        }
+        this.gameObject.setTexture(this.textureKey, this.downFrame, false, false)
     }
 
     onUp(pointer) {
@@ -94,11 +126,7 @@ export default class Button extends SimpleButton {
             return
         }
 
-        if (this.isLocalised) {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}-${this.language}${this.activeFrame ? '' : '-hover'}`, false, false)
-        } else {
-            this.gameObject.setTexture(this.textureKey, `${this.spriteName}${this.activeFrame ? '' : '-hover'}`, false, false)
-        }
+        this.gameObject.setTexture(this.textureKey, this.overFrame, false, false)
 
         super.onUp(pointer)
     }

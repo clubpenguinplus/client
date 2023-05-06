@@ -667,7 +667,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "grey-button",
                     "Button.callback": "() => this.visible = false",
                     "texture": {
                         "key": "main",
@@ -744,9 +743,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "igloo/item_large",
                             "Button.callback": "() => this.onIglooClick()",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "map-for-igloo",
                                 "frame": "igloo/item_large"
@@ -779,7 +776,7 @@
                             "originX": 0.5,
                             "originY": 0.5,
                             "fixedWidth": 270,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "color": "#000"
                         },
@@ -902,7 +899,7 @@
                             "components": [],
                             "y": 126,
                             "text": "Open Igloos",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "22px",
                             "fontStyle": "bold",
                             "color": "#999"
@@ -924,7 +921,6 @@
                                     "components": [
                                         "Button"
                                     ],
-                                    "Button.spriteName": "grey-button",
                                     "Button.callback": "() => this.nextPage()",
                                     "texture": {
                                         "key": "main",
@@ -962,7 +958,6 @@
                                     "components": [
                                         "Button"
                                     ],
-                                    "Button.spriteName": "grey-button",
                                     "Button.callback": "() => this.prevPage()",
                                     "texture": {
                                         "key": "main",

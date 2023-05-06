@@ -35,10 +35,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "quartersdoornokey",
             "Button.hoverCallback": "() => this.onQuartersOver()",
             "Button.hoverOutCallback": "() => this.onQuartersOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "shiphold",
                 "frame": "quartersdoornokey"
@@ -55,8 +53,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "cqkeysign",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "shiphold",
                 "frame": "cqkeysign"

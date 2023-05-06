@@ -68,7 +68,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "close-btn",
                     "Button.callback": "() => this.visible = false",
                     "texture": {
                         "key": "iglooedit-new",
@@ -102,7 +101,7 @@
                     "originX": 0.5,
                     "text": "Igloo Music",
                     "fixedWidth": 600,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#3e83c5ff"
@@ -121,7 +120,7 @@
                     "text": "Igloo Music",
                     "fixedWidth": 330,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#3e83c5ff"
@@ -140,7 +139,7 @@
                     "text": "SoundStudio",
                     "fixedWidth": 330,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#3e83c5ff"

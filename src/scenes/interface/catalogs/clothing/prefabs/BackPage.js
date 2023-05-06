@@ -25,7 +25,6 @@ export default class BackPage extends Page {
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         this.page1Bg = page1Bg

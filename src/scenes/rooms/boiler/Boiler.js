@@ -56,10 +56,8 @@ export default class Boiler extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('boiler-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('boiler-doorclosed')
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 600
         doorMoveTo.y = 525

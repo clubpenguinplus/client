@@ -24,14 +24,14 @@ export default class FrontPage extends Page {
         const titleText = scene.add.text(785, 98, '', {})
         titleText.setOrigin(0.5, 0.5)
         titleText.text = 'Penguin Style'
-        titleText.setStyle({align: 'center', color: '#cfedf3ff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '64px', fontStyle: 'bold italic'})
+        titleText.setStyle({align: 'center', color: '#cfedf3ff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '64px', fontStyle: 'bold italic'})
         this.add(titleText)
 
         // monthText
         const monthText = scene.add.text(833, 150, '', {})
         monthText.setOrigin(0.5, 0.5)
         monthText.text = 'December 2022'
-        monthText.setStyle({align: 'center', color: '#cfedf3ff', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'italic'})
+        monthText.setStyle({align: 'center', color: '#cfedf3ff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'italic'})
         this.add(monthText)
 
         // closeBtn_1
@@ -54,7 +54,6 @@ export default class FrontPage extends Page {
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)

@@ -28,9 +28,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button",
                     "Button.callback": "() => this.onClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "prompt",
                         "frame": "window-button"
@@ -47,7 +45,7 @@
                     "text": "Okay",
                     "fixedWidth": 280,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold"
                 }

@@ -182,10 +182,8 @@ export default class Cave extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('cave-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('cave-doorclosed')
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 190
         doorMoveTo.y = 600

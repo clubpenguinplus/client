@@ -8,6 +8,7 @@ export default class Puffles extends Plugin {
             psw: this.stopWalking,
             ppw: this.walkPuffle,
             pgp: this.getPuffles,
+            tby: this.toggleBackyard,
         }
     }
 
@@ -52,10 +53,28 @@ export default class Puffles extends Plugin {
     }
 
     getPuffles(args) {
-        if (!this.shell.room || !this.shell.room.isIgloo) return
+        if (!this.shell.room || !(this.shell.room.isIgloo || this.shell.room.isBackyard)) return
 
         args.forEach((puffle) => {
             this.shell.room.addPuffle(puffle)
         })
+    }
+
+    toggleBackyard(args) {
+        if (!this.shell.room || !(this.shell.room.isIgloo || this.shell.room.isBackyard)) return
+
+        if (args[1] == '0') {
+            if (this.shell.room.isIgloo) {
+                this.shell.room.addPuffle(args[2])
+            } else {
+                this.shell.room.puffles[args[0]].removePuffle()
+            }
+        } else {
+            if (this.shell.room.isBackyard) {
+                this.shell.room.addPuffle(args[2])
+            } else {
+                this.shell.room.puffles[args[0]].removePuffle()
+            }
+        }
     }
 }

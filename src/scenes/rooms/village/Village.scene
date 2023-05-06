@@ -193,10 +193,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "epfdoor",
             "Button.hoverCallback": "() => this.EpfDoorOver()",
             "Button.hoverOutCallback": "() => this.EpfDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "village",
                 "frame": "epfdoor"
@@ -215,10 +213,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "lodgedoor",
             "Button.hoverCallback": "() => this.LodgeDoorOver()",
             "Button.hoverOutCallback": "() => this.LodgeDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "village",
                 "frame": "lodgedoor"

@@ -57,7 +57,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(712)",
                     "texture": {
                         "key": "dockupgrade",
@@ -117,7 +116,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(711)",
                     "texture": {
                         "key": "dockupgrade",
@@ -183,7 +181,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "exit",
             "Button.callback": "() => this.scene.stop()",
             "texture": {
                 "key": "dockupgrade",
@@ -201,7 +198,7 @@
             "x": 637,
             "y": 900,
             "text": "Your Coins: 1000000",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "32px",
             "color": "#000000ff"
         }

@@ -13,8 +13,9 @@ export default class Dance extends RoomScene {
         this.roomTriggers = {
             arcade: () => this.triggerRoom(121, 1280, 576),
             boiler: () => this.triggerRoom(804, 1040, 580),
-            contest: () => this.triggerGame('dancecontest', 952),
-            soundstudio: () => this.triggerGame('SoundStudio', 940, false),
+            contest: () => this.triggerGame('dancecontest', 952, 'ruffle'),
+            //soundstudio: () => this.triggerGame('SoundStudio', 940),
+            soundstudio: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
             town: () => this.triggerRoom(100, 1200, 400),
         }
 

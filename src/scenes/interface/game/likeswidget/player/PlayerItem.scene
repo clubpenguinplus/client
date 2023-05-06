@@ -76,7 +76,7 @@
                     "visible": false,
                     "text": "Username",
                     "fixedWidth": 160,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "color": "#ffffffff",
                     "shadow.color": "#000000ff"

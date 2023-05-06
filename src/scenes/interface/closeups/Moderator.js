@@ -56,7 +56,7 @@ export default class Moderator extends Closeup {
         const text = this.add.text(1031, 429, '', {})
         text.setOrigin(0.5, 0)
         text.text = "If someone is breaking the rules, click on their penguin, then click the 'M' to report them to a moderator. You can also click on the skull to ignore them"
-        text.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
+        text.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 2, 'shadow.color': '#26417dff', 'shadow.blur': 3, 'shadow.fill': true})
         text.setLineSpacing(15)
         text.setWordWrapWidth(530)
 
@@ -67,7 +67,7 @@ export default class Moderator extends Closeup {
         const text_1 = this.add.text(1038, 707, '', {})
         text_1.setOrigin(0.5, 0)
         text_1.text = 'Safety Quiz'
-        text_1.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
+        text_1.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#000000ff', 'shadow.blur': 10, 'shadow.fill': true})
         text_1.setLineSpacing(5)
         text_1.setWordWrapWidth(550)
 
@@ -86,7 +86,6 @@ export default class Moderator extends Closeup {
 
         // modbutton (components)
         const modbuttonButton = new Button(modbutton)
-        modbuttonButton.spriteName = 'modbutton'
         modbuttonButton.callback = () => {
             this.interface.loadExternal('SafetyQuiz')
             this.stop()

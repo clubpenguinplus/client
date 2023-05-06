@@ -39,10 +39,8 @@
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "pizzatrondoor",
             "Button.hoverCallback": "() => this.onKitchenDoorOver();",
             "Button.hoverOutCallback": "() => this.onKitchenDoorOut();",
-            "Button.activeFrame": false,
             "ShowHint.text": "pizzatron",
             "texture": {
                 "key": "pizza",
@@ -61,10 +59,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "plazadoor",
             "Button.hoverCallback": "() => this.onPlazaDoorOver();",
             "Button.hoverOutCallback": "() => this.onPlazaDoorOut();",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "pizza",
                 "frame": "plazadoor"

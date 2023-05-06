@@ -37,10 +37,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('boiler-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('boiler-doorclosed')",
-            "Button.activeFrame": false,
             "MoveTo.x": 600,
             "MoveTo.y": 525,
             "texture": {

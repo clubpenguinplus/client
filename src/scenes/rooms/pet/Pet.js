@@ -12,10 +12,11 @@ export default class Pet extends RoomScene {
         this.roomTriggers = {
             plaza: () => this.triggerRoom(300, 384, 619),
             hotel: () => this.triggerRoom(430, 1370, 490),
-            park: () => this.triggerGame('puffleroundup', 925),
+            park: () => this.triggerGame('puffleroundup', 925, 'ruffle'),
             //adopt: () => this.interface.loadExternal('Adopt'),
-            scape: () => null,
-            launch: () => this.triggerGame('pufflelaunch', 928),
+            adopt: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
+            scape: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
+            launch: () => this.triggerGame('pufflelaunch', 928, 'ruffle'),
         }
         this.music = 659
         this.loadSfx = ['pet-plazadooropen', 'pet-plazadoorclose', 'pet-parkdooropen', 'pet-parkdoorclose', 'pet-hoteldooropen', 'pet-hoteldoorclose', 'pet-pufflebounce']
@@ -435,27 +436,21 @@ export default class Pet extends RoomScene {
 
         // plazadoor (components)
         const plazadoorButton = new Button(plazadoor)
-        plazadoorButton.spriteName = 'plazadoor'
         plazadoorButton.hoverCallback = () => this.onPlazaDoorOver()
         plazadoorButton.hoverOutCallback = () => this.onPlazaDoorOut()
-        plazadoorButton.activeFrame = false
         new MoveTo(plazadoor)
 
         // parkdoor_en (components)
         const parkdoor_enButton = new Button(parkdoor_en)
-        parkdoor_enButton.spriteName = 'parkdoor_en'
         parkdoor_enButton.hoverCallback = () => this.onParkDoorOver()
         parkdoor_enButton.hoverOutCallback = () => this.onParkDoorOut()
-        parkdoor_enButton.activeFrame = false
         new MoveTo(parkdoor_en)
         new LocalisedSprite(parkdoor_en)
 
         // hoteldoor (components)
         const hoteldoorButton = new Button(hoteldoor)
-        hoteldoorButton.spriteName = 'hoteldoor'
         hoteldoorButton.hoverCallback = () => this.onHotelDoorOver()
         hoteldoorButton.hoverOutCallback = () => this.onHotelDoorOut()
-        hoteldoorButton.activeFrame = false
         new MoveTo(hoteldoor)
 
         // adoptbookbase (components)
@@ -468,14 +463,10 @@ export default class Pet extends RoomScene {
 
         // petcat_en (components)
         const petcat_enButton = new Button(petcat_en)
-        petcat_enButton.spriteName = 'petcat_en'
-        petcat_enButton.activeFrame = false
         new LocalisedSprite(petcat_en)
 
         // adoptbutton (components)
         const adoptbuttonButton = new Button(adoptbutton)
-        adoptbuttonButton.spriteName = 'adoptbutton'
-        adoptbuttonButton.activeFrame = false
 
         // adopthit (components)
         const adopthitSimpleButton = new SimpleButton(adopthit)

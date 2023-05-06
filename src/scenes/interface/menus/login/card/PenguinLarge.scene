@@ -45,8 +45,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "player_large",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "player_large"
@@ -80,7 +78,7 @@
                     "originY": 0.5,
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "CCComicrazy",
+                    "fontFamily": "cpCCComicrazy",
                     "fontSize": "44px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",

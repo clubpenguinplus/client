@@ -83,7 +83,7 @@
                     "text": "Username",
                     "fixedWidth": 360,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#ffffffff"
                 },
@@ -107,7 +107,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.hide() }",
                     "texture": {
                         "key": "main",
@@ -140,7 +139,7 @@
                     "originY": 0.5,
                     "text": "add coins: 000000",
                     "fixedWidth": 250,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -168,7 +167,7 @@
                     "originY": 0.5,
                     "text": "add item by id",
                     "fixedWidth": 250,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -195,7 +194,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "ban player for\n3H  1D  3D  1W  3W PERM",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -223,7 +222,7 @@
                     "originY": 0.5,
                     "text": "change username",
                     "fixedWidth": 250,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -467,7 +466,7 @@
                     "originY": 0.5,
                     "text": "banned 0 times",
                     "fixedWidth": 180,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -483,7 +482,7 @@
                     "originY": 0.5,
                     "text": "not currently banned",
                     "fixedWidth": 430,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -499,7 +498,7 @@
                     "originY": 0.5,
                     "text": "no join time recorded",
                     "fixedWidth": 430,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -515,7 +514,7 @@
                     "originY": 0.5,
                     "text": "status: pending",
                     "fixedWidth": 180,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -534,7 +533,7 @@
                     "originY": 0.5,
                     "text": "number of coins",
                     "fixedWidth": 200,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 },
@@ -553,7 +552,7 @@
                     "originY": 0.5,
                     "text": "item id",
                     "fixedWidth": 200,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 },
@@ -572,7 +571,7 @@
                     "originY": 0.5,
                     "text": "new username",
                     "fixedWidth": 200,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#ffffffff"
                 }

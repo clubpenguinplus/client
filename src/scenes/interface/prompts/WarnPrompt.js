@@ -49,14 +49,14 @@ export default class WarnPrompt extends BaseContainer {
         const ok = scene.add.text(0, 229, '', {})
         ok.setOrigin(0.5, 0.5)
         ok.text = 'Ok'
-        ok.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 650, fontFamily: 'Burbank Small', fontSize: '40px', fontStyle: 'bold'})
+        ok.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         this.add(ok)
 
         // info
         const info = scene.add.text(0, 43, '', {})
         info.setOrigin(0.5, 0)
         info.text = 'This is a localised textfield'
-        info.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '30px'})
+        info.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         info.setWordWrapWidth(600)
         this.add(info)
 
@@ -64,7 +64,7 @@ export default class WarnPrompt extends BaseContainer {
         const header = scene.add.text(0, -26, '', {})
         header.setOrigin(0.5, 0.5)
         header.text = 'This is a localised textfield'
-        header.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 600, fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold'})
+        header.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 600, fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold'})
         header.setWordWrapWidth(600)
         this.add(header)
 
@@ -77,7 +77,6 @@ export default class WarnPrompt extends BaseContainer {
 
         // single (components)
         const singleButton = new Button(single)
-        singleButton.spriteName = 'button'
         singleButton.callback = () => this.onOkClick()
 
         this.bg = bg

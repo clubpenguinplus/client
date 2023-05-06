@@ -49,7 +49,7 @@ export default class Waddle extends BaseContainer {
             align: 'center',
             color: '#000000',
             fixedWidth: 420,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '32px',
         })
         this.add(text)
@@ -75,7 +75,6 @@ export default class Waddle extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.onClose()
 
         this.text = text

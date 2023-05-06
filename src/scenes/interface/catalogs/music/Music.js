@@ -61,13 +61,13 @@ export default class Music extends Book {
         // text_title_1
         const text_title_1 = this.add.text(558, 146, '', {})
         text_title_1.text = 'Music Catalog'
-        text_title_1.setStyle({color: '#373737ff', fontFamily: 'Burbank Small', fontSize: '70px', fontStyle: 'bold italic'})
+        text_title_1.setStyle({color: '#373737ff', fontFamily: 'cpBurbankSmall', fontSize: '70px', fontStyle: 'bold italic'})
         page1.add(text_title_1)
 
         // text_title
         const text_title = this.add.text(555, 143, '', {})
         text_title.text = 'Music Catalog'
-        text_title.setStyle({fontFamily: 'Burbank Small', fontSize: '70px', fontStyle: 'bold italic'})
+        text_title.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '70px', fontStyle: 'bold italic'})
         page1.add(text_title)
 
         // page2
@@ -158,7 +158,7 @@ export default class Music extends Book {
         const text_pg2 = this.add.text(813, 889, '', {})
         text_pg2.angle = -7
         text_pg2.text = 'Your Coins:\n100000'
-        text_pg2.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        text_pg2.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         page2.add(text_pg2)
 
         // page3
@@ -269,7 +269,7 @@ export default class Music extends Book {
         const text_pg3 = this.add.text(813, 889, '', {})
         text_pg3.angle = -7
         text_pg3.text = 'Your Coins:\n100000'
-        text_pg3.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '24px'})
+        text_pg3.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         page3.add(text_pg3)
 
         // page4
@@ -299,7 +299,6 @@ export default class Music extends Book {
 
         // nextpage (components)
         const nextpageButton = new Button(nextpage)
-        nextpageButton.spriteName = 'nextpage'
         nextpageButton.callback = () => this.nextPage()
 
         // exit_1 (components)
@@ -308,27 +307,22 @@ export default class Music extends Book {
 
         // nextpage1 (components)
         const nextpage1Button = new Button(nextpage1)
-        nextpage1Button.spriteName = 'nextpage'
         nextpage1Button.callback = () => this.nextPage()
 
         // backpage (components)
         const backpageButton = new Button(backpage)
-        backpageButton.spriteName = 'backpage'
         backpageButton.callback = () => this.prevPage()
 
         // button (components)
         const buttonButton = new Button(button)
-        buttonButton.spriteName = 'button'
         buttonButton.callback = () => this.interface.prompt.showItem(293)
 
         // button_1 (components)
         const button_1Button = new Button(button_1)
-        button_1Button.spriteName = 'button'
         button_1Button.callback = () => this.interface.prompt.showItem(233)
 
         // button_2 (components)
         const button_2Button = new Button(button_2)
-        button_2Button.spriteName = 'button'
         button_2Button.callback = () => this.interface.prompt.showItem(5063)
 
         // exit (components)
@@ -341,7 +335,6 @@ export default class Music extends Book {
 
         // button_10 (components)
         const button_10Button = new Button(button_10)
-        button_10Button.spriteName = 'button'
         button_10Button.callback = () => this.interface.prompt.showItem(732)
 
         // sec_mic (components)
@@ -350,27 +343,22 @@ export default class Music extends Book {
 
         // nextpage3 (components)
         const nextpage3Button = new Button(nextpage3)
-        nextpage3Button.spriteName = 'nextpage'
         nextpage3Button.callback = () => this.nextPage()
 
         // backpage3 (components)
         const backpage3Button = new Button(backpage3)
-        backpage3Button.spriteName = 'backpage'
         backpage3Button.callback = () => this.prevPage()
 
         // button2 (components)
         const button2Button = new Button(button2)
-        button2Button.spriteName = 'button'
         button2Button.callback = () => this.interface.prompt.showItem(729)
 
         // button_3 (components)
         const button_3Button = new Button(button_3)
-        button_3Button.spriteName = 'button'
         button_3Button.callback = () => this.interface.prompt.showItem(5066)
 
         // button_4 (components)
         const button_4Button = new Button(button_4)
-        button_4Button.spriteName = 'button'
         button_4Button.callback = () => this.interface.prompt.showItem(5064)
 
         // exit3 (components)
@@ -379,22 +367,18 @@ export default class Music extends Book {
 
         // button_5 (components)
         const button_5Button = new Button(button_5)
-        button_5Button.spriteName = 'button'
         button_5Button.callback = () => this.interface.prompt.showItem(234)
 
         // button_6 (components)
         const button_6Button = new Button(button_6)
-        button_6Button.spriteName = 'button'
         button_6Button.callback = () => this.interface.prompt.showItem(5014)
 
         // button_7 (components)
         const button_7Button = new Button(button_7)
-        button_7Button.spriteName = 'button'
         button_7Button.callback = () => this.interface.prompt.showItem(340)
 
         // button_8 (components)
         const button_8Button = new Button(button_8)
-        button_8Button.spriteName = 'button'
         button_8Button.callback = () => this.interface.prompt.showItem(180)
 
         // exit_2 (components)
@@ -403,7 +387,6 @@ export default class Music extends Book {
 
         // button_9 (components)
         const button_9Button = new Button(button_9)
-        button_9Button.spriteName = 'button'
         button_9Button.callback = () => this.interface.prompt.showItem(343)
 
         // sec_violin (components)
@@ -416,7 +399,6 @@ export default class Music extends Book {
 
         // backpage_1 (components)
         const backpage_1Button = new Button(backpage_1)
-        backpage_1Button.spriteName = 'backpage'
         backpage_1Button.callback = () => this.prevPage()
 
         this.mic = mic

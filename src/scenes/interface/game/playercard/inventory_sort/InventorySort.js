@@ -41,7 +41,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(all_text)
@@ -58,7 +58,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(other_text)
@@ -75,7 +75,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(colors_text)
@@ -92,7 +92,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(feet_text)
@@ -109,7 +109,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(hand_text)
@@ -126,7 +126,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(body_text)
@@ -143,7 +143,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(neck_text)
@@ -160,7 +160,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(face_text)
@@ -177,7 +177,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         this.add(head_text)
@@ -207,7 +207,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         other_container.add(pins_text)
@@ -220,7 +220,7 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         other_container.add(awards_text)
@@ -233,91 +233,67 @@ export default class InventorySort extends FloatingMenu {
             align: 'center',
             color: '#000000ff',
             fixedWidth: 268,
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '24px',
         })
         other_container.add(backgrounds_text)
 
         // all (components)
         const allButton = new Button(all)
-        allButton.spriteName = 'list/small'
         allButton.hoverCallback = () => (other_container.visible = false)
         allButton.callback = () => this.filterInventory('All Items', null)
-        allButton.activeFrame = false
 
         // other (components)
         const otherButton = new Button(other)
-        otherButton.spriteName = 'list/small_arrow'
         otherButton.hoverCallback = () => (other_container.visible = true)
         otherButton.callback = () => this.filterInventory('Other Items', 'other')
-        otherButton.activeFrame = false
 
         // colors (components)
         const colorsButton = new Button(colors)
-        colorsButton.spriteName = 'list/small'
         colorsButton.hoverCallback = () => (other_container.visible = false)
         colorsButton.callback = () => this.filterInventory('Colors', 'color')
-        colorsButton.activeFrame = false
 
         // feet (components)
         const feetButton = new Button(feet)
-        feetButton.spriteName = 'list/small'
         feetButton.hoverCallback = () => (other_container.visible = false)
         feetButton.callback = () => this.filterInventory('Feet Items', 'feet')
-        feetButton.activeFrame = false
 
         // hand (components)
         const handButton = new Button(hand)
-        handButton.spriteName = 'list/small'
         handButton.hoverCallback = () => (other_container.visible = false)
         handButton.callback = () => this.filterInventory('Hand Items', 'hand')
-        handButton.activeFrame = false
 
         // body (components)
         const bodyButton = new Button(body)
-        bodyButton.spriteName = 'list/small'
         bodyButton.hoverCallback = () => (other_container.visible = false)
         bodyButton.callback = () => this.filterInventory('Body Items', 'body')
-        bodyButton.activeFrame = false
 
         // neck (components)
         const neckButton = new Button(neck)
-        neckButton.spriteName = 'list/small'
         neckButton.hoverCallback = () => (other_container.visible = false)
         neckButton.callback = () => this.filterInventory('Neck Items', 'neck')
-        neckButton.activeFrame = false
 
         // face (components)
         const faceButton = new Button(face)
-        faceButton.spriteName = 'list/small'
         faceButton.hoverCallback = () => (other_container.visible = false)
         faceButton.callback = () => this.filterInventory('Face Items', 'face')
-        faceButton.activeFrame = false
 
         // head (components)
         const headButton = new Button(head)
-        headButton.spriteName = 'list/small'
         headButton.hoverCallback = () => (other_container.visible = false)
         headButton.callback = () => this.filterInventory('Head Items', 'head')
-        headButton.activeFrame = false
 
         // inventory_list_item_9 (components)
         const inventory_list_item_9Button = new Button(inventory_list_item_9)
-        inventory_list_item_9Button.spriteName = 'list/small'
         inventory_list_item_9Button.callback = () => this.filterInventory('Pins/Flags', 'flag')
-        inventory_list_item_9Button.activeFrame = false
 
         // inventory_list_item_10 (components)
         const inventory_list_item_10Button = new Button(inventory_list_item_10)
-        inventory_list_item_10Button.spriteName = 'list/small'
         inventory_list_item_10Button.callback = () => this.filterInventory('Awards', 'award')
-        inventory_list_item_10Button.activeFrame = false
 
         // inventory_list_item_11 (components)
         const inventory_list_item_11Button = new Button(inventory_list_item_11)
-        inventory_list_item_11Button.spriteName = 'list/small'
         inventory_list_item_11Button.callback = () => this.filterInventory('Backgrounds', 'photo')
-        inventory_list_item_11Button.activeFrame = false
 
         this.safe = safe
         this.close = close

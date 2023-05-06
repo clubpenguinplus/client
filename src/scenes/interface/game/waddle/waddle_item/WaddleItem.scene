@@ -44,7 +44,7 @@
                     "originY": 0.5,
                     "text": "Empty",
                     "fixedWidth": 270,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px"
                 }
             ]

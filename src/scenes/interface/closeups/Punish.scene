@@ -71,7 +71,7 @@
             "text": "Punish Player: Username",
             "lineSpacing": 5,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "fontStyle": "bold",
             "shadow.fill": true,
@@ -94,7 +94,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.warn()",
                     "texture": {
                         "key": "banning",
@@ -112,7 +111,7 @@
                     "text": "Warn",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -126,7 +125,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.mute()",
                     "texture": {
                         "key": "banning",
@@ -146,7 +144,7 @@
                     "text": "Mute",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -160,7 +158,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.ban()",
                     "texture": {
                         "key": "banning",
@@ -180,7 +177,7 @@
                     "text": "Ban",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -218,7 +215,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(24)",
                     "texture": {
                         "key": "banning",
@@ -238,7 +234,7 @@
                     "text": "1 Day",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -252,7 +248,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(72)",
                     "texture": {
                         "key": "banning",
@@ -274,7 +269,7 @@
                     "text": "3 Days",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -288,7 +283,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(168)",
                     "texture": {
                         "key": "banning",
@@ -310,7 +304,7 @@
                     "text": "1 Week",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -324,7 +318,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(504)",
                     "texture": {
                         "key": "banning",
@@ -344,7 +337,7 @@
                     "text": "3 Weeks",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -358,7 +351,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(2190)",
                     "texture": {
                         "key": "banning",
@@ -380,7 +372,7 @@
                     "text": "3 Months",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -394,7 +386,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(\"p\")",
                     "texture": {
                         "key": "banning",
@@ -416,7 +407,7 @@
                     "text": "Permanent",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -454,7 +445,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('c')",
                     "texture": {
                         "key": "banning",
@@ -474,7 +464,7 @@
                     "text": "Offensive/Swearing",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -488,7 +478,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('p')",
                     "texture": {
                         "key": "banning",
@@ -508,7 +497,7 @@
                     "text": "Personal Info",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -522,7 +511,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('i')",
                     "texture": {
                         "key": "banning",
@@ -542,7 +530,7 @@
                     "text": "Inappropriate Igloo",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -568,7 +556,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('m')",
                     "texture": {
                         "key": "banning",
@@ -588,7 +575,7 @@
                     "text": "Cheating",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "shadow.fill": true,
@@ -648,7 +635,7 @@
                     "fixedWidth": 550,
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#000000ff",
@@ -663,7 +650,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.submit()",
                     "texture": {
                         "key": "banning",
@@ -683,7 +669,7 @@
                     "text": "Submit",
                     "lineSpacing": 5,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "shadow.fill": true,

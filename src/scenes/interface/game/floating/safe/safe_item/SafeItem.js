@@ -20,7 +20,7 @@ export default class SafeItem extends BaseContainer {
         let nameStyle = {
             align: 'center',
             color: '#000000',
-            fontFamily: 'Burbank Small',
+            fontFamily: 'cpBurbankSmall',
             fontSize: '28px',
         }
 

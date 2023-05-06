@@ -87,16 +87,12 @@ export default class Shiphold extends RoomScene {
 
         // quartersdoornokey (components)
         const quartersdoornokeyButton = new Button(quartersdoornokey)
-        quartersdoornokeyButton.spriteName = 'quartersdoornokey'
         quartersdoornokeyButton.hoverCallback = () => this.onQuartersOver()
         quartersdoornokeyButton.hoverOutCallback = () => this.onQuartersOut()
-        quartersdoornokeyButton.activeFrame = false
         new MoveTo(quartersdoornokey)
 
         // cqkeysign (components)
         const cqkeysignButton = new Button(cqkeysign)
-        cqkeysignButton.spriteName = 'cqkeysign'
-        cqkeysignButton.activeFrame = false
 
         // pirate_en (components)
         new LocalisedSprite(pirate_en)

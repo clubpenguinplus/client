@@ -302,10 +302,8 @@ export default class Agentlobby extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('agentlobby-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('agentlobby-doorclosed')
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 168
         doorMoveTo.y = 444

@@ -38,7 +38,7 @@ export default class PlayerItem extends BaseContainer {
         username.setOrigin(0, 0.5)
         username.visible = false
         username.text = 'Username'
-        username.setStyle({color: '#ffffffff', fixedWidth: 160, fontFamily: 'Burbank Small', fontSize: '18px', 'shadow.color': '#000000ff'})
+        username.setStyle({color: '#ffffffff', fixedWidth: 160, fontFamily: 'cpBurbankSmall', fontSize: '18px', 'shadow.color': '#000000ff'})
         this.add(username)
 
         this.bg = bg

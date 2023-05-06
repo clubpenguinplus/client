@@ -326,10 +326,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "shipholddoor",
             "Button.hoverCallback": "() => this.onHoldOver()",
             "Button.hoverOutCallback": "() => this.onHoldOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "ship",
                 "frame": "shipholddoor"

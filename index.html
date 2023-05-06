@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Club Penguin Plus</title>
+    <script>
+        var lang = navigator.language || navigator.userLanguage;
+        if (lang.split("-")[0] == "pt") {
+            window.location.href = "/pt";
+        } else if (lang.split("-")[0] == "es") {
+            window.location.href = "/es";
+        } else {
+            window.location.href = "/en";
+        }
+    </script>
+    <style>
+        body {
+            background-color: #22a4f3;
+            color: #fff;
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>You should be redirected to our play page based on your browser language</h1>
+    <p>If you are not redirected, click <a href="/en">here</a>.</p>
+</body>
+</html>

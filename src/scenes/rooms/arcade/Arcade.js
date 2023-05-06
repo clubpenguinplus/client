@@ -12,9 +12,9 @@ export default class Arcade extends RoomScene {
 
         this.roomTriggers = {
             dance: () => this.triggerRoom(120, 1360, 544),
-            thinice: () => this.triggerGame('thinice', 909),
-            bitsbolts: () => null,
-            astro: () => this.triggerGame('astrobarrier', 900),
+            thinice: () => this.triggerGame('thinice', 909, 'ruffle'),
+            bitsbolts: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
+            astro: () => this.triggerGame('astrobarrier', 900, 'ruffle'),
         }
 
         this.music = 674
@@ -350,8 +350,6 @@ export default class Arcade extends RoomScene {
 
         // thinice_button (components)
         const thinice_buttonButton = new Button(thinice_button)
-        thinice_buttonButton.spriteName = 'thinice-button'
-        thinice_buttonButton.activeFrame = false
         const thinice_buttonMoveTo = new MoveTo(thinice_button)
         thinice_buttonMoveTo.x = 1093
         thinice_buttonMoveTo.y = 386
@@ -366,8 +364,6 @@ export default class Arcade extends RoomScene {
 
         // bitsandbolts_button_hover (components)
         const bitsandbolts_button_hoverButton = new Button(bitsandbolts_button_hover)
-        bitsandbolts_button_hoverButton.spriteName = 'bitsandbolts-button'
-        bitsandbolts_button_hoverButton.activeFrame = false
         const bitsandbolts_button_hoverMoveTo = new MoveTo(bitsandbolts_button_hover)
         bitsandbolts_button_hoverMoveTo.x = 306
         bitsandbolts_button_hoverMoveTo.y = 495
@@ -382,8 +378,6 @@ export default class Arcade extends RoomScene {
 
         // astro_button (components)
         const astro_buttonButton = new Button(astro_button)
-        astro_buttonButton.spriteName = 'astro-button'
-        astro_buttonButton.activeFrame = false
         const astro_buttonMoveTo = new MoveTo(astro_button)
         astro_buttonMoveTo.x = 1181
         astro_buttonMoveTo.y = 473

@@ -164,18 +164,14 @@ export default class Shack extends RoomScene {
 
         // schooldoor (components)
         const schooldoorButton = new Button(schooldoor)
-        schooldoorButton.spriteName = 'schooldoor'
         schooldoorButton.hoverCallback = () => this.SchoolDoorOver()
         schooldoorButton.hoverOutCallback = () => this.SchoolDoorOut()
-        schooldoorButton.activeFrame = false
         new MoveTo(schooldoor)
 
         // minedoor (components)
         const minedoorButton = new Button(minedoor)
-        minedoorButton.spriteName = 'minedoor'
         minedoorButton.hoverCallback = () => this.MineDoorOver()
         minedoorButton.hoverOutCallback = () => this.MineDoorOut()
-        minedoorButton.activeFrame = false
         new MoveTo(minedoor)
 
         this.shackflag = shackflag

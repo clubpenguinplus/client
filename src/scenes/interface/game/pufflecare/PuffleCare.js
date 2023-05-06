@@ -91,22 +91,19 @@ export default class PuffleCare extends BaseContainer {
         const name_txt = scene.add.text(0, -320.1919506096564, '', {})
         name_txt.setOrigin(0.5, 0.5)
         name_txt.text = 'Puffle Name'
-        name_txt.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '18px', fontStyle: 'bold'})
+        name_txt.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '18px', fontStyle: 'bold'})
         this.add(name_txt)
 
         // care_btn (components)
         const care_btnButton = new Button(care_btn)
-        care_btnButton.spriteName = 'puffle_care/care_btn'
         care_btnButton.callback = () => this.onCare()
 
         // walk_btn (components)
         const walk_btnButton = new Button(walk_btn)
-        walk_btnButton.spriteName = 'puffle_care/walk_btn'
         walk_btnButton.callback = () => this.onWalk()
 
         // swap_btn (components)
         const swap_btnButton = new Button(swap_btn)
-        swap_btnButton.spriteName = 'puffle_care/swap_btn'
         swap_btnButton.callback = () => this.onSwap()
 
         this.puffle_care_bg = puffle_care_bg
@@ -235,11 +232,9 @@ export default class PuffleCare extends BaseContainer {
         this.name_txt.text = args.name
 
         if (args.id != this.shell.client.penguin.walking) {
-            this.swap_btn.visible = false
             this.walk_btn.visible = true
         } else {
-            this.swap_btn.visible = true
-            this.walk_btn.visible = false
+            this.swap_btn.visible = false
         }
 
         this.x = args.x
@@ -258,7 +253,7 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onWalk() {
-        this.shell.airtower.sendXt('p#pw', this.args.id)
+        this.shell.airtower.sendXt('p#pw', this.args.id != this.shell.client.penguin.walking ? this.args.id : 0)
         this.close()
     }
 
@@ -267,7 +262,7 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onSwap() {
-        this.shell.airtower.sendXt('p#pw', 0)
+        this.shell.airtower.sendXt('p#tby', `${this.args.id}%${this.shell.room.isBackyard ? 0 : 1}`)
         this.close()
     }
     /* END-USER-CODE */

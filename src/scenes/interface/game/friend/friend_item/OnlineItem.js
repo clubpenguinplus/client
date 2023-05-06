@@ -33,14 +33,14 @@ export default class OnlineItem extends BaseContainer {
         const username = scene.add.text(24, -10, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px', fontStyle: 'bold'})
+        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px', fontStyle: 'bold'})
         this.add(username)
 
         // addFriend
         const addFriend = scene.add.text(24, 8, '', {})
         addFriend.setOrigin(0.5, 0.5)
         addFriend.text = 'is online'
-        addFriend.setStyle({align: 'center', color: '#000000ff', fixedWidth: 185, fontFamily: 'Burbank Small', fontSize: '13px'})
+        addFriend.setStyle({align: 'center', color: '#000000ff', fixedWidth: 185, fontFamily: 'cpBurbankSmall', fontSize: '13px'})
         this.add(addFriend)
 
         this.outline = outline

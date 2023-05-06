@@ -68,9 +68,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(16) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -85,9 +83,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(30) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -101,9 +97,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(28) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -118,9 +112,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(17) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -135,9 +127,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(10) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -151,9 +141,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(9) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -168,9 +156,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(24) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -185,9 +171,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(8) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -201,9 +185,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(7) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -218,9 +200,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(22) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -235,9 +215,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(6) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -251,9 +229,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(5) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -268,9 +244,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(18) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -285,9 +259,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(4) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -301,9 +273,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(3) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -318,9 +288,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(13) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -335,9 +303,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(2) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"
@@ -351,9 +317,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "small-box",
                     "Button.callback": "() => { this.onEmoteClick(1) }",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "small-box"

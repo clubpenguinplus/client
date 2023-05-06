@@ -112,7 +112,7 @@
                     "text": "Sled Racing",
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000"
                 },
@@ -123,7 +123,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.onClose()",
                     "texture": {
                         "key": "main",

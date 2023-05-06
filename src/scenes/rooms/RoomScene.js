@@ -365,10 +365,10 @@ export default class RoomScene extends BaseScene {
         if (this.miningTimeout) clearTimeout(this.miningTimeout)
     }
 
-    joinGame(minigame, id, emu = 'as2') {
-        if (emu == 'as2') {
+    joinGame(minigame, id, emu) {
+        if (emu == 'ruffle') {
             this.shell.loadMinigame(minigame)
-        } else if (emu == 'as3') {
+        } else if (emu == 'waflash') {
             this.shell.loadAS3Minigame(minigame)
         }
         let room = this.crumbs.scenes.rooms[id]

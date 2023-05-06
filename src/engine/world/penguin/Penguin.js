@@ -11,6 +11,8 @@ export default class Penguin extends BaseContainer {
     constructor(user, room, penguinLoader, puffleLoader) {
         super(room, user.x, user.y)
 
+        this.userInfo = user
+
         // Assign user attributes
         Object.assign(this, user)
         this.room = room
@@ -112,6 +114,8 @@ export default class Penguin extends BaseContainer {
             this.itemLoader.removeItem(slot)
             if (this.playerCard.visible && this.playerCard.id == this.id) this.paperDollLoader.removeItem(slot)
             this.items.setItem(item, slot)
+            let frame = [25, 26].includes(this.frame) ? this.getSecretFrame(this.frame) : this.frame
+            if (frame != this.specificFrame) this.playFrame(this.frame)
             return
         }
 
@@ -132,6 +136,9 @@ export default class Penguin extends BaseContainer {
             this.paperDollLoader.loadItem(item, slot)
             this.paperDollLoader.start()
         }
+
+        let frame = [25, 26].includes(this.frame) ? this.getSecretFrame(this.frame) : this.frame
+        if (frame != this.frame) this.playFrame(this.frame)
     }
 
     move(x, y) {
@@ -178,7 +185,7 @@ export default class Penguin extends BaseContainer {
 
     removePuffle() {
         this.puffle = null
-        this.puffleSprite.destroy()
+        if (this.puffleSprite) this.puffleSprite.destroy()
         this.puffleSprite = null
     }
 
@@ -414,6 +421,7 @@ export default class Penguin extends BaseContainer {
 
         let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
         pAnimSprite.depth = this.puffleSprite.depth
+        pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
         this.puffleSprite.visible = false
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
         pAnimSprite.on('animationcomplete', () => {

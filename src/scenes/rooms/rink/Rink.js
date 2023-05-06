@@ -182,9 +182,7 @@ export default class Rink extends RoomScene {
 
         // catalog (components)
         const catalogButton = new Button(catalog)
-        catalogButton.spriteName = 'catalog'
         catalogButton.callback = () => this.loadSnowSports()
-        catalogButton.activeFrame = false
 
         this.bg = bg
         this.bgwinter = bgwinter

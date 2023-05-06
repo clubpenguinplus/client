@@ -60,7 +60,7 @@
                     "text": "99",
                     "fixedWidth": 35,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "18px",
                     "fontStyle": "bold",
                     "color": "#464646ff"

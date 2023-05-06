@@ -168,8 +168,6 @@ export default class Cavemine extends RoomScene {
 
         // hats (components)
         const hatsButton = new Button(hats)
-        hatsButton.spriteName = 'hats'
-        hatsButton.activeFrame = false
         new MoveTo(hats)
 
         // minehoverhit (components)

@@ -302,7 +302,7 @@
             "originY": 0.5,
             "text": "AM",
             "align": "right",
-            "fontFamily": "CPLCD",
+            "fontFamily": "cplcd",
             "fontSize": "35px",
             "color": "#DCE8FD"
         },

@@ -47,10 +47,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "firedoor",
             "Button.hoverCallback": "() => this.fireDoorOver()",
             "Button.hoverOutCallback": "() => this.fireDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "firedoor"
@@ -92,10 +90,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "waterdoor",
             "Button.hoverCallback": "() => this.waterDoorOver()",
             "Button.hoverOutCallback": "() => this.waterDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "waterdoor"
@@ -113,10 +109,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "snowdoor",
             "Button.hoverCallback": "() => this.snowDoorOver()",
             "Button.hoverOutCallback": "() => this.snowDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "snowdoor"
@@ -219,8 +213,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "belttut",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "belttut"
@@ -249,8 +241,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "jitsutut",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "jitsutut"
@@ -267,8 +257,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "senseihit",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "senseihit"
@@ -364,8 +352,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "mat",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -381,8 +367,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "mat",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -398,8 +382,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "mat",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -416,8 +398,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "mat",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -433,8 +413,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "dojocat_en",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "dojocat_en"
@@ -451,8 +429,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "jitsucards",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "jitsucards"
@@ -470,8 +446,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "dojoext",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojo",
                 "frame": "dojoext"

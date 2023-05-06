@@ -28,9 +28,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "igloo/item_small",
                     "Button.callback": "() => this.onClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "map-for-igloo",
                         "frame": "igloo/item_small"
@@ -58,7 +56,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "fixedWidth": 270,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#000"
                 }

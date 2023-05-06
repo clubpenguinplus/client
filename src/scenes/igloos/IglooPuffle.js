@@ -96,7 +96,7 @@ export default class IglooPuffle extends BaseContainer {
     }
 
     removePuffle() {
-        this.sprite.destroy()
+        if (this.sprite) this.sprite.destroy()
         this.sprite = null
         this.xPos = null
         this.yPos = null

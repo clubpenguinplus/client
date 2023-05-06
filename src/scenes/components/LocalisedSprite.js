@@ -38,7 +38,12 @@ export default class LocalisedSprite {
         let currentFrame = this.gameObject.frame.name
         for (let lang of ['-en', '-es', '-pt']) {
             if (currentFrame.includes(lang)) {
-                return currentFrame.replace(lang, `-${this.language}`)
+                let newFrame = currentFrame.replace(lang, `-${this.language}`)
+                if (Object.keys(this.gameObject.texture.frames).includes(newFrame)) {
+                    return newFrame
+                } else {
+                    console.warn(`Localised frame ${newFrame} not found in ${this.gameObject.texture.key}`)
+                }
             }
         }
         return currentFrame

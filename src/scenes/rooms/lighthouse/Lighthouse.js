@@ -132,8 +132,6 @@ export default class Lighthouse extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 482
         doorMoveTo.y = 496
@@ -178,9 +176,7 @@ export default class Lighthouse extends RoomScene {
 
         // book (components)
         const bookButton = new Button(book)
-        bookButton.spriteName = 'book'
         bookButton.callback = () => this.interface.loadExternal('Music')
-        bookButton.activeFrame = false
 
         this.instruments = instruments
         this.sign = sign

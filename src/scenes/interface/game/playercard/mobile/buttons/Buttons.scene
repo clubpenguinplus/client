@@ -30,7 +30,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onReportClick()",
                     "ShowHint.text": "reportPlayer",
                     "texture": {
@@ -48,7 +47,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onIgnoreClick()",
                     "ShowHint.text": "ignorePlayer",
                     "texture": {
@@ -67,7 +65,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onStampClick()",
                     "ShowHint.text": "viewStampbook",
                     "texture": {
@@ -86,7 +83,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onIglooClick()",
                     "ShowHint.text": "visitIgloo",
                     "texture": {
@@ -104,7 +100,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onMailClick()",
                     "ShowHint.text": "sendPostcard",
                     "texture": {
@@ -124,7 +119,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onFindClick()",
                     "ShowHint.text": "findPlayer",
                     "texture": {
@@ -143,7 +137,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onFriendClick()",
                     "ShowHint.text": "addFriend",
                     "texture": {

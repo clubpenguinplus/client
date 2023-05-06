@@ -185,7 +185,7 @@
                             "angle": -7,
                             "text": "Your Coins:\n100000",
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "24px",
                             "fontStyle": "bold italic",
                             "color": "#000000ff"

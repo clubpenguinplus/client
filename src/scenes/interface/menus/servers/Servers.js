@@ -32,7 +32,7 @@ export default class Servers extends BaseScene {
         const text_2 = this.add.text(1095, 908, '', {})
         text_2.setOrigin(0, 0.5)
         text_2.text = 'Ultimate safe chat'
-        text_2.setStyle({fixedWidth: 400, fontFamily: 'Burbank Small', fontSize: '28px'})
+        text_2.setStyle({fixedWidth: 400, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
 
         // safe_small
         const safe_small = this.add.image(1070, 908, 'servers', 'safe_small')
@@ -42,7 +42,7 @@ export default class Servers extends BaseScene {
         const text_1 = this.add.text(645, 908, '', {})
         text_1.setOrigin(0, 0.5)
         text_1.text = 'Amount of penguins online'
-        text_1.setStyle({fixedWidth: 400, fontFamily: 'Burbank Small', fontSize: '28px'})
+        text_1.setStyle({fixedWidth: 400, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
 
         // bar_full_small
         this.add.image(620, 908, 'servers', 'bar_full_small')
@@ -51,7 +51,7 @@ export default class Servers extends BaseScene {
         const text = this.add.text(277, 908, '', {})
         text.setOrigin(0, 0.5)
         text.text = 'Friends online'
-        text.setStyle({fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '28px'})
+        text.setStyle({fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
 
         // online_small
         this.add.image(252, 908, 'main', 'buddies-icon')
@@ -64,7 +64,7 @@ export default class Servers extends BaseScene {
         const suggested = this.add.text(760, 85, '', {})
         suggested.setOrigin(0.5, 0.5)
         suggested.text = 'YOUR SUGGESTED SERVERS'
-        suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'CCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
+        suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'cpCCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
 
         // server_container
         const server_container = this.add.container(0, 0)
@@ -86,7 +86,7 @@ export default class Servers extends BaseScene {
         const more_text = this.add.text(0, -3, '', {})
         more_text.setOrigin(0.5, 0.5)
         more_text.text = 'PLEASE SELECT A SERVER'
-        more_text.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'CCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
+        more_text.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'cpCCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
         more_servers.add(more_text)
 
         // image
@@ -163,19 +163,16 @@ export default class Servers extends BaseScene {
 
         // image (components)
         const imageButton = new Button(image)
-        imageButton.spriteName = 'blue-button'
         imageButton.callback = () => {
             this.more_servers.visible = false
         }
 
         // image_2 (components)
         const image_2Button = new Button(image_2)
-        image_2Button.spriteName = 'blue-button'
         image_2Button.callback = () => this.prevPage()
 
         // image_2_1 (components)
         const image_2_1Button = new Button(image_2_1)
-        image_2_1Button.spriteName = 'blue-button'
         image_2_1Button.callback = () => this.nextPage()
 
         // icon_en (components)

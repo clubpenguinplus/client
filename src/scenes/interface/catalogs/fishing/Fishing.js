@@ -72,7 +72,7 @@ export default class Fishing extends Book {
         // text
         const text = this.add.text(637, 900, '', {})
         text.text = 'Your Coins: 1000000'
-        text.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '32px'})
+        text.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '32px'})
 
         // lists
         const pages = [page1]
@@ -82,12 +82,10 @@ export default class Fishing extends Book {
 
         // exit (components)
         const exitButton = new Button(exit)
-        exitButton.spriteName = 'exit'
         exitButton.callback = () => this.scene.stop()
 
         // tag (components)
         const tagButton = new Button(tag)
-        tagButton.spriteName = 'tag'
         tagButton.callback = () => this.interface.prompt.showItem(321)
 
         this.text = text

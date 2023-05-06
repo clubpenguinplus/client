@@ -42,7 +42,7 @@
             "originY": 0.5,
             "visible": false,
             "text": "Like",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "32px",
             "fontStyle": "bold",
             "color": "#ffffffff",
@@ -63,7 +63,7 @@
             "originY": 0.5,
             "visible": false,
             "text": "0",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "color": "#ffffffff",
             "shadow.color": "#000000ff"
@@ -76,7 +76,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "like-window",
             "texture": {
                 "key": "main",
                 "frame": "like-window"
@@ -310,7 +309,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.onWindowDown()",
                     "texture": {
                         "key": "main",

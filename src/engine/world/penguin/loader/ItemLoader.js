@@ -44,13 +44,14 @@ export default class ItemLoader extends SpriteLoader {
         if (!this.shell.textures.exists(key)) return
 
         let slot = key.split('/')[0]
+        let id = key.split('/')[1]
         let item = this.equipped[slot]
 
         // Remove item if one is already equipped
         if (item.sprite) this.removeItem(slot)
 
         // item.depth + 1 to ensure items are loaded on top of penguin body
-        item.sprite = this.loadSprite(this.penguin, key, item.depth + 1)
+        item.sprite = this.loadSprite(this.penguin, key, this.penguin.crumbs.items[id].depth || item.depth)
     }
 
     onLoadError(file) {

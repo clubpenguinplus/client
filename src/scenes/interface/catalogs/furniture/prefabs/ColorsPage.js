@@ -14,14 +14,14 @@ export default class ColorsPage extends Page {
         const page2_header = scene.add.text(189, 79, '', {})
         page2_header.setOrigin(0.5, 0.5)
         page2_header.text = 'Colors for\neveryone!'
-        page2_header.setStyle({fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold italic'})
+        page2_header.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold italic'})
         this.add(page2_header)
 
         // colorsPrice
         const colorsPrice = scene.add.text(215, 141, '', {})
         colorsPrice.setOrigin(0.5, 0.5)
         colorsPrice.text = 'Only 20     each!'
-        colorsPrice.setStyle({color: '#9dc3fcff', fontFamily: 'Burbank Small', fontSize: '25px', fontStyle: 'italic'})
+        colorsPrice.setStyle({color: '#9dc3fcff', fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'italic'})
         this.add(colorsPrice)
 
         // coinPng
@@ -207,12 +207,10 @@ export default class ColorsPage extends Page {
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)

@@ -36,8 +36,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "sleepchair-right",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelroof",
                 "frame": "sleepchair-right"
@@ -69,8 +67,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "sleepchair-left",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelroof",
                 "frame": "sleepchair-left"
@@ -132,8 +128,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "feedchair",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelroof",
                 "frame": "feedchair"
@@ -152,8 +146,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "feedchair",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelroof",
                 "frame": "feedchair"
@@ -663,7 +655,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "interface",
             "Button.callback": "() => this.interface.loadExternal('RainbowQuest')",
             "texture": {
                 "key": "hotelroof",

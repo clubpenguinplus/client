@@ -107,7 +107,7 @@ export default class Stampbook extends BaseScene {
         aquaText.setOrigin(0, 0.5)
         aquaText.visible = false
         aquaText.text = 'Aqua Grabber'
-        aquaText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        aquaText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         aquaText.setWordWrapWidth(140)
         page.add(aquaText)
 
@@ -130,7 +130,7 @@ export default class Stampbook extends BaseScene {
         astroText.setOrigin(0, 0.5)
         astroText.visible = false
         astroText.text = 'Astro Barrier'
-        astroText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        astroText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         astroText.setWordWrapWidth(140)
         page.add(astroText)
 
@@ -153,7 +153,7 @@ export default class Stampbook extends BaseScene {
         jitsuText.setOrigin(0, 0.5)
         jitsuText.visible = false
         jitsuText.text = 'Card-Jitsu'
-        jitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        jitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         jitsuText.setWordWrapWidth(140)
         page.add(jitsuText)
 
@@ -176,7 +176,7 @@ export default class Stampbook extends BaseScene {
         fireJitsuText.setOrigin(0, 0.5)
         fireJitsuText.visible = false
         fireJitsuText.text = 'Card-Jitsu Fire'
-        fireJitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        fireJitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         fireJitsuText.setWordWrapWidth(140)
         page.add(fireJitsuText)
 
@@ -199,7 +199,7 @@ export default class Stampbook extends BaseScene {
         snowJitsuText.setOrigin(0, 0.5)
         snowJitsuText.visible = false
         snowJitsuText.text = 'Card-Jitsu Snow'
-        snowJitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        snowJitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         snowJitsuText.setWordWrapWidth(160)
         page.add(snowJitsuText)
 
@@ -222,7 +222,7 @@ export default class Stampbook extends BaseScene {
         waterJitsuText.setOrigin(0, 0.5)
         waterJitsuText.visible = false
         waterJitsuText.text = 'Card-Jitsu Water'
-        waterJitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        waterJitsuText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         waterJitsuText.setWordWrapWidth(140)
         page.add(waterJitsuText)
 
@@ -245,7 +245,7 @@ export default class Stampbook extends BaseScene {
         cartSurferText.setOrigin(0, 0.5)
         cartSurferText.visible = false
         cartSurferText.text = 'Cart Surfer'
-        cartSurferText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        cartSurferText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         cartSurferText.setWordWrapWidth(140)
         page.add(cartSurferText)
 
@@ -268,7 +268,7 @@ export default class Stampbook extends BaseScene {
         wavesText.setOrigin(0, 0.5)
         wavesText.visible = false
         wavesText.text = 'Catchin Waves'
-        wavesText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        wavesText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         wavesText.setWordWrapWidth(140)
         page.add(wavesText)
 
@@ -291,7 +291,7 @@ export default class Stampbook extends BaseScene {
         fishingText.setOrigin(0, 0.5)
         fishingText.visible = false
         fishingText.text = 'Ice Fishing'
-        fishingText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        fishingText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         fishingText.setWordWrapWidth(140)
         page.add(fishingText)
 
@@ -314,7 +314,7 @@ export default class Stampbook extends BaseScene {
         jPAText.setOrigin(0, 0.5)
         jPAText.visible = false
         jPAText.text = 'Jet Pack Adventure'
-        jPAText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        jPAText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         jPAText.setWordWrapWidth(160)
         page.add(jPAText)
 
@@ -337,7 +337,7 @@ export default class Stampbook extends BaseScene {
         missionsText.setOrigin(0, 0.5)
         missionsText.visible = false
         missionsText.text = 'Missions'
-        missionsText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        missionsText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         missionsText.setWordWrapWidth(140)
         page.add(missionsText)
 
@@ -360,7 +360,7 @@ export default class Stampbook extends BaseScene {
         pizzatronText.setOrigin(0, 0.5)
         pizzatronText.visible = false
         pizzatronText.text = 'Pizzatron 3000'
-        pizzatronText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        pizzatronText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         pizzatronText.setWordWrapWidth(140)
         page.add(pizzatronText)
 
@@ -383,7 +383,7 @@ export default class Stampbook extends BaseScene {
         launchText.setOrigin(0, 0.5)
         launchText.visible = false
         launchText.text = 'Puffle Launch'
-        launchText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        launchText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         launchText.setWordWrapWidth(140)
         page.add(launchText)
 
@@ -406,7 +406,7 @@ export default class Stampbook extends BaseScene {
         rescueText.setOrigin(0, 0.5)
         rescueText.visible = false
         rescueText.text = 'Puffle Rescue'
-        rescueText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        rescueText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         rescueText.setWordWrapWidth(140)
         page.add(rescueText)
 
@@ -429,7 +429,7 @@ export default class Stampbook extends BaseScene {
         pufflescapeText.setOrigin(0, 0.5)
         pufflescapeText.visible = false
         pufflescapeText.text = 'Pufflescape'
-        pufflescapeText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        pufflescapeText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         pufflescapeText.setWordWrapWidth(160)
         page.add(pufflescapeText)
 
@@ -452,7 +452,7 @@ export default class Stampbook extends BaseScene {
         smoothieText.setOrigin(0, 0.5)
         smoothieText.visible = false
         smoothieText.text = 'Smoothie Smash'
-        smoothieText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        smoothieText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         smoothieText.setWordWrapWidth(140)
         page.add(smoothieText)
 
@@ -475,7 +475,7 @@ export default class Stampbook extends BaseScene {
         sysDefText.setOrigin(0, 0.5)
         sysDefText.visible = false
         sysDefText.text = 'System Defender'
-        sysDefText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        sysDefText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         sysDefText.setWordWrapWidth(140)
         page.add(sysDefText)
 
@@ -498,7 +498,7 @@ export default class Stampbook extends BaseScene {
         thinIceText.setOrigin(0, 0.5)
         thinIceText.visible = false
         thinIceText.text = 'Thin Ice'
-        thinIceText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        thinIceText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         thinIceText.setWordWrapWidth(140)
         page.add(thinIceText)
 
@@ -521,7 +521,7 @@ export default class Stampbook extends BaseScene {
         huntText.setOrigin(0, 0.5)
         huntText.visible = false
         huntText.text = 'Treasure Hunt'
-        huntText.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        huntText.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         huntText.setWordWrapWidth(140)
         page.add(huntText)
 
@@ -544,7 +544,7 @@ export default class Stampbook extends BaseScene {
         huntText_1.setOrigin(0, 0.5)
         huntText_1.visible = false
         huntText_1.text = 'Treasure Hunt'
-        huntText_1.setStyle({color: '#5b5b5bff', fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        huntText_1.setStyle({color: '#5b5b5bff', fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         huntText_1.setWordWrapWidth(140)
         page.add(huntText_1)
 
@@ -565,27 +565,27 @@ export default class Stampbook extends BaseScene {
         // pagenum
         const pagenum = this.add.text(1225, 95, '', {})
         pagenum.text = 'Page\n6 of 29'
-        pagenum.setStyle({color: '#585858ff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '25px'})
+        pagenum.setStyle({color: '#585858ff', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '25px'})
         page.add(pagenum)
 
         // stampnum
         const stampnum = this.add.text(880, 120, '', {})
         stampnum.text = '100/100'
-        stampnum.setStyle({align: 'right', color: '#585858ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '35px', fontStyle: 'bold'})
+        stampnum.setStyle({align: 'right', color: '#585858ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
         page.add(stampnum)
 
         // stampcategory
         const stampcategory = this.add.text(1183, 101, '', {})
         stampcategory.setOrigin(1, 0.5)
         stampcategory.text = 'Jet Pack Adventure Stamps:'
-        stampcategory.setStyle({align: 'right', color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampcategory.setStyle({align: 'right', color: '#585858ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         page.add(stampcategory)
 
         // pagename
         const pagename = this.add.text(329, 117, '', {})
         pagename.setOrigin(0, 0.5)
         pagename.text = 'Jet Pack Adventure'
-        pagename.setStyle({color: '#585858ff', fontFamily: 'Burbank Small', fontSize: '54px', fontStyle: 'bold'})
+        pagename.setStyle({color: '#585858ff', fontFamily: 'cpBurbankSmall', fontSize: '54px', fontStyle: 'bold'})
         page.add(pagename)
 
         // pageicon
@@ -639,7 +639,7 @@ export default class Stampbook extends BaseScene {
         polaroid1LockedTxt.angle = 10.5
         polaroid1LockedTxt.setOrigin(0.5, 0.5)
         polaroid1LockedTxt.text = '88'
-        polaroid1LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid1LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '26px', fontStyle: 'bold'})
         polaroid1LockedTxt.setPadding({left: 30, right: 10})
         polaroid1Holder.add(polaroid1LockedTxt)
 
@@ -670,7 +670,7 @@ export default class Stampbook extends BaseScene {
         polaroid2LockedTxt.angle = -18.5
         polaroid2LockedTxt.setOrigin(0.5, 0.5)
         polaroid2LockedTxt.text = '88'
-        polaroid2LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid2LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '26px', fontStyle: 'bold'})
         polaroid2LockedTxt.setPadding({left: 30, right: 10})
         polaroid2Holder.add(polaroid2LockedTxt)
 
@@ -696,7 +696,7 @@ export default class Stampbook extends BaseScene {
         polaroid3LockedTxt.angle = 10.5
         polaroid3LockedTxt.setOrigin(0.5, 0.5)
         polaroid3LockedTxt.text = '88'
-        polaroid3LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        polaroid3LockedTxt.setStyle({align: 'center', color: '#424242ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '26px', fontStyle: 'bold'})
         polaroid3LockedTxt.setPadding({left: 30, right: 10})
         polaroid3Holder.add(polaroid3LockedTxt)
 
@@ -752,14 +752,14 @@ export default class Stampbook extends BaseScene {
         // total
         const total = this.add.text(257, 754, '', {})
         total.text = 'Loading stampbook'
-        total.setStyle({color: '#F4B851', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        total.setStyle({color: '#F4B851', fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(total)
 
         // username
         const username = this.add.text(253, 705, '', {})
         username.setOrigin(0, 0.5)
         username.text = 'Loading...'
-        username.setStyle({color: '#F4B851', fixedWidth: 500, fontFamily: 'Burbank Small', fontSize: '64px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
+        username.setStyle({color: '#F4B851', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '64px', fontStyle: 'bold', 'shadow.offsetX': 3, 'shadow.offsetY': 3, 'shadow.fill': true})
         front.add(username)
 
         // edit
@@ -954,7 +954,7 @@ export default class Stampbook extends BaseScene {
         const category_title = this.add.text(82, 21, '', {})
         category_title.setOrigin(0.5, 0.5)
         category_title.text = 'All Stamps'
-        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fontFamily: 'Burbank Small', fontSize: '20px', fontStyle: 'bold'})
+        category_title.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
         category_title.setPadding({left: 15, right: 15})
         editor.add(category_title)
 
@@ -983,14 +983,14 @@ export default class Stampbook extends BaseScene {
         // stampInfoTitle
         const stampInfoTitle = this.add.text(-143, -182, '', {})
         stampInfoTitle.text = 'Aunt Arctic'
-        stampInfoTitle.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '26px', fontStyle: 'bold'})
+        stampInfoTitle.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '26px', fontStyle: 'bold'})
         stampInfoTitle.setPadding({left: 15, right: 15})
         stampInfo.add(stampInfoTitle)
 
         // stampInfoBody
         const stampInfoBody = this.add.text(-143, -147, '', {})
         stampInfoBody.text = 'Be in the same room as Aunt Arctic'
-        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '20px'})
+        stampInfoBody.setStyle({color: '#606060ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         stampInfoBody.setPadding({left: 15, right: 15})
         stampInfoBody.setWordWrapWidth(270)
         stampInfo.add(stampInfoBody)
@@ -1107,49 +1107,49 @@ export default class Stampbook extends BaseScene {
         const stampbookGuide = this.add.text(0, 0, '', {})
         stampbookGuide.setOrigin(0, 0.5)
         stampbookGuide.text = 'Stamp Book Guide'
-        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '38px', fontStyle: 'bold'})
+        stampbookGuide.setStyle({color: '#585858ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '38px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide)
 
         // stampbookGuide_1
         const stampbookGuide_1 = this.add.text(45, 88, '', {})
         stampbookGuide_1.setOrigin(0, 0.5)
         stampbookGuide_1.text = 'Easy'
-        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_1.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_1)
 
         // stampbookGuide_2
         const stampbookGuide_2 = this.add.text(45, 135, '', {})
         stampbookGuide_2.setOrigin(0, 0.5)
         stampbookGuide_2.text = 'Medium'
-        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_2.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_2)
 
         // stampbookGuide_3
         const stampbookGuide_3 = this.add.text(45, 182, '', {})
         stampbookGuide_3.setOrigin(0, 0.5)
         stampbookGuide_3.text = 'Hard'
-        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_3.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_3)
 
         // stampbookGuide_4
         const stampbookGuide_4 = this.add.text(45, 230, '', {})
         stampbookGuide_4.setOrigin(0, 0.5)
         stampbookGuide_4.text = 'Extreme'
-        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_4.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_4)
 
         // stampbookGuide_5
         const stampbookGuide_5 = this.add.text(45, 279, '', {})
         stampbookGuide_5.setOrigin(0, 0.5)
         stampbookGuide_5.text = 'Edit Stamp Book'
-        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_5.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_5)
 
         // stampbookGuide_6
         const stampbookGuide_6 = this.add.text(45, 328, '', {})
         stampbookGuide_6.setOrigin(0, 0.5)
         stampbookGuide_6.text = 'Save Stamp Book'
-        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'Burbank Small', fontSize: '24px', fontStyle: 'bold'})
+        stampbookGuide_6.setStyle({color: '#585858ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
         instructionsContainer.add(stampbookGuide_6)
 
         // lists
@@ -1163,7 +1163,6 @@ export default class Stampbook extends BaseScene {
 
         // close (components)
         const closeButton = new Button(close)
-        closeButton.spriteName = 'close'
         closeButton.callback = () => this.scene.stop()
 
         // page_back (components)
@@ -1176,32 +1175,26 @@ export default class Stampbook extends BaseScene {
 
         // sidebutton (components)
         const sidebuttonButton = new Button(sidebutton)
-        sidebuttonButton.spriteName = 'sidebutton'
         sidebuttonButton.callback = () => this.goToPage(this.crumbs.stampbook['pins'])
 
         // sidebutton_1 (components)
         const sidebutton_1Button = new Button(sidebutton_1)
-        sidebutton_1Button.spriteName = 'sidebutton'
         sidebutton_1Button.callback = () => this.goToPage(this.crumbs.stampbook['activities'])
 
         // sidebutton_2 (components)
         const sidebutton_2Button = new Button(sidebutton_2)
-        sidebutton_2Button.spriteName = 'sidebutton'
         sidebutton_2Button.callback = () => this.goToPage(this.crumbs.stampbook['games'])
 
         // sidebutton_3 (components)
         const sidebutton_3Button = new Button(sidebutton_3)
-        sidebutton_3Button.spriteName = 'sidebutton'
         sidebutton_3Button.callback = () => this.goToPage(this.crumbs.stampbook['events'])
 
         // down_btn (components)
         const down_btnButton = new Button(down_btn)
-        down_btnButton.spriteName = 'grey-button'
         down_btnButton.callback = () => this.nextStampPage()
 
         // up_btn (components)
         const up_btnButton = new Button(up_btn)
-        up_btnButton.spriteName = 'grey-button'
         up_btnButton.callback = () => this.prevStampPage()
 
         // clasp_bg (components)
@@ -1210,13 +1203,10 @@ export default class Stampbook extends BaseScene {
 
         // edit (components)
         const editButton = new Button(edit)
-        editButton.spriteName = 'edit'
         editButton.callback = () => this.editStampbook()
-        editButton.activeFrame = false
 
         // grey_button (components)
         const grey_buttonButton = new Button(grey_button)
-        grey_buttonButton.spriteName = 'grey-button'
         grey_buttonButton.callback = () => this.scene.stop('Stampbook')
 
         // claspthumb (components)
@@ -2635,7 +2625,7 @@ export default class Stampbook extends BaseScene {
             icon.setScale(0.5)
             icon.setOrigin(0, 0)
             selector.add(icon)
-            let text = this.add.text(175, 125 + pages.indexOf(page) * 70, page.text, {fontFamily: 'Burbank Small', fontSize: '24px', color: '#5b5b5bff'})
+            let text = this.add.text(175, 125 + pages.indexOf(page) * 70, page.text, {fontFamily: 'cpBurbankSmall', fontSize: '24px', color: '#5b5b5bff'})
             selector.add(text)
 
             let children = this.add.container(-15, -75)
@@ -2668,7 +2658,7 @@ export default class Stampbook extends BaseScene {
                     childIcon.setOrigin(0, 0)
                     children.add(childIcon)
 
-                    let childText = this.add.text(x + 60, y + 20, child.text, {fontFamily: 'Burbank Small', fontSize: '21px', color: '#5b5b5bff'})
+                    let childText = this.add.text(x + 60, y + 20, child.text, {fontFamily: 'cpBurbankSmall', fontSize: '21px', color: '#5b5b5bff'})
                     children.add(childText)
 
                     children.maxY = y + 70 > children.maxY ? y + 70 : children.maxY

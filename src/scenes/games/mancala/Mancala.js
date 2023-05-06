@@ -202,7 +202,7 @@ export default class Mancala extends BaseContainer {
         currentArrowText.setOrigin(0.5, 0.5)
         currentArrowText.visible = false
         currentArrowText.text = '4'
-        currentArrowText.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px', fontStyle: 'bold', stroke: '#000000ff', 'shadow.blur': 5})
+        currentArrowText.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'bold', stroke: '#000000ff', 'shadow.blur': 5})
         this.add(currentArrowText)
 
         // lists
@@ -215,7 +215,6 @@ export default class Mancala extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.onClose()
 
         // end_hitbox0004 (components)

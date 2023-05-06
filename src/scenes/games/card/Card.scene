@@ -4,9 +4,11 @@
     "settings": {
         "compilerInsertSpaces": true,
         "exportClass": true,
-        "superClassName": "RoomScene",
+        "superClassName": "GameScene",
         "preloadMethodName": "_preload",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "client/client/media/games/card/card-pack.json"
+        ],
         "createMethodName": "_create",
         "sceneKey": "Card",
         "borderWidth": 1520,
@@ -15,17 +17,89 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "c808c39c-6ee3-4a56-96de-e4c00015a226",
-            "label": "bg",
-            "components": [
-                "Interactive"
-            ],
+            "id": "1236bbbd-ce87-4dff-9ddf-a4970f432e5c",
+            "label": "background",
+            "components": [],
             "texture": {
-                "key": "load",
-                "frame": "bg"
+                "key": "game",
+                "frame": "background"
             },
-            "originX": 0,
-            "originY": 0
+            "x": 760,
+            "y": 480,
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "99416053-0f77-4a6b-8cfa-3f43bb52f905",
+            "label": "rightPenguinContainer",
+            "scope": "CLASS",
+            "components": [],
+            "scaleX": 2,
+            "scaleY": 2,
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "eeba55ea-caa9-43ee-ab68-57d690bec590",
+            "label": "leftPenguinContainer",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1520,
+            "scaleX": -2,
+            "scaleY": 2,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "9e9380ae-ec05-4400-8d0b-661b24a9000f",
+            "label": "dock",
+            "components": [],
+            "texture": {
+                "key": "game",
+                "frame": "dock"
+            },
+            "x": 760,
+            "y": 797,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "5e6de2bd-39e9-403e-bca4-f9192c9785be",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "game",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 480,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "585bc766-5c3a-46c6-bbea-2a5e71faed0d",
+            "label": "timer0001",
+            "components": [],
+            "texture": {
+                "key": "game",
+                "frame": "timer0001"
+            },
+            "x": 760,
+            "y": 656,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "1813aff4-1bd9-40dc-8aaa-f69c4d86da6c",
+            "label": "help",
+            "components": [],
+            "texture": {
+                "key": "game",
+                "frame": "help"
+            },
+            "x": 760,
+            "y": -204,
+            "list": []
         }
     ],
     "plainObjects": [],

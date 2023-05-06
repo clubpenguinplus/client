@@ -50,8 +50,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "goldPufflePoster",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "goldPufflePoster"
@@ -66,8 +64,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "rainbowPufflePoster",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "rainbowPufflePoster"
@@ -388,7 +384,7 @@
             "originY": 0.5,
             "text": "Your puffles: 0",
             "fixedWidth": 250,
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "28px",
             "color": "#4b4b4bff"
         },
@@ -406,7 +402,7 @@
             "text": "Your coins:\n0",
             "fixedWidth": 150,
             "align": "center",
-            "fontFamily": "Burbank Small",
+            "fontFamily": "cpBurbankSmall",
             "fontSize": "24px",
             "fontStyle": "bold",
             "color": "#354c15ff"
@@ -436,7 +432,7 @@
                     "text": "Adopt a Puffle",
                     "fixedWidth": 350,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#4b4b4bff"
@@ -481,7 +477,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "whiteIcon",
                             "Button.callback": "() => this.adoptPuffle(7)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -497,7 +492,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "blackIcon",
                             "Button.callback": "() => this.adoptPuffle(2)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -513,7 +507,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "brownIcon",
                             "Button.callback": "() => this.adoptPuffle(9)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -529,7 +522,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "pinkIcon",
                             "Button.callback": "() => this.adoptPuffle(1)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -545,7 +537,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "purpleIcon",
                             "Button.callback": "() => this.adoptPuffle(4)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -560,7 +551,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "greenIcon",
                             "Button.callback": "() => this.adoptPuffle(3)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -576,7 +566,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "yellowIcon",
                             "Button.callback": "() => this.adoptPuffle(6)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -592,7 +581,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "orangeIcon",
                             "Button.callback": "() => this.adoptPuffle(8)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -607,7 +595,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "redIcon",
                             "Button.callback": "() => this.adoptPuffle(5)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -622,7 +609,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "blueIcon",
                             "Button.callback": "() => this.adoptPuffle(0)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -637,7 +623,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "catIcon",
                             "Button.callback": "() => this.adoptPuffle(1007)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -653,7 +638,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "dogIcon",
                             "Button.callback": "() => this.adoptPuffle(1006)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -692,7 +676,7 @@
                     "tintBottomRight": "#a1a1a1",
                     "text": "Blue",
                     "fixedWidth": 230,
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "38px",
                     "fontStyle": "bold",
                     "color": "#33ccffff",
@@ -733,7 +717,7 @@
                             "originY": 0.5,
                             "text": "Personality",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#644314ff"
@@ -752,7 +736,7 @@
                             "originY": 0.5,
                             "text": "Favorite Snack",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#644314ff"
@@ -771,7 +755,7 @@
                             "originY": 0.5,
                             "text": "Cool Fact",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#644314ff"
@@ -790,7 +774,7 @@
                             "tintBottomRight": "#a1a1a1",
                             "text": "Loyal, team player",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "color": "#33ccffff",
                             "shadow.color": "#424242ff",
@@ -810,7 +794,7 @@
                             "tintBottomRight": "#a1a1a1",
                             "text": "Pretzels",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "color": "#33ccffff",
                             "shadow.color": "#424242ff",
@@ -830,7 +814,7 @@
                             "tintBottomRight": "#a1a1a1",
                             "text": "Can bounce really high",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "color": "#33ccffff",
                             "shadow.color": "#424242ff",
@@ -859,7 +843,7 @@
                             "originY": 0.5,
                             "text": "Name your puffle",
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "fontStyle": "bold",
                             "color": "#644314ff"
@@ -894,7 +878,7 @@
                             "text": "Enter Name",
                             "fixedWidth": 300,
                             "align": "center",
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "28px",
                             "color": "#38484dff"
                         }
@@ -920,7 +904,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "adoptBtn",
                     "Button.callback": "() => this.onAdoptionClick()",
                     "texture": {
                         "key": "petshop-adopt",
@@ -944,7 +927,7 @@
                     "originY": 0.5,
                     "text": "Adopt",
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "48px",
                     "fontStyle": "bold",
                     "color": "#644314ff"
@@ -963,7 +946,7 @@
                     "text": "400",
                     "fixedWidth": 70,
                     "align": "right",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "28px",
                     "fontStyle": "bold",
                     "color": "#644314ff",
@@ -995,7 +978,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "closeBtn",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "petshop-adopt",

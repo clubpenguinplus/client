@@ -77,14 +77,14 @@ export default class PlayerCard extends BaseContainer {
         const coins = scene.add.text(60, 2, '', {})
         coins.setOrigin(0.5, 0.5)
         coins.text = 'Your Coins: 000000'
-        coins.setStyle({color: '#000000ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '30px'})
+        coins.setStyle({color: '#000000ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         stats.add(coins)
 
         // stamps
         const stamps = scene.add.text(60, 78, '', {})
         stamps.setOrigin(0.5, 0.5)
         stamps.text = 'Your Stamps: 690/420'
-        stamps.setStyle({color: '#000000ff', fixedWidth: 330, fontFamily: 'Burbank Small', fontSize: '30px'})
+        stamps.setStyle({color: '#000000ff', fixedWidth: 330, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         stats.add(stamps)
 
         // card_stamp
@@ -95,7 +95,7 @@ export default class PlayerCard extends BaseContainer {
         const username = scene.add.text(0, -238, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 360, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 360, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         this.add(username)
 
         // blue_x
@@ -156,7 +156,6 @@ export default class PlayerCard extends BaseContainer {
 
         // stamps_btn (components)
         const stamps_btnButton = new Button(stamps_btn)
-        stamps_btnButton.spriteName = 'mobile/blue-button'
         stamps_btnButton.callback = () => {
             this.interface.loadExternal('Stampbook')
             this.interface.stampbookId = this.id
@@ -170,7 +169,6 @@ export default class PlayerCard extends BaseContainer {
 
         // edit_player_button (components)
         const edit_player_buttonButton = new Button(edit_player_button)
-        edit_player_buttonButton.spriteName = 'edit_player_button'
         edit_player_buttonButton.callback = () => this.editPlayer()
 
         this.photo = photo

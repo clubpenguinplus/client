@@ -4,7 +4,7 @@
     "settings": {
         "compilerInsertSpaces": true,
         "exportClass": true,
-        "superClassName": "RoomScene",
+        "superClassName": "GameScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [],
         "createMethodName": "_create",

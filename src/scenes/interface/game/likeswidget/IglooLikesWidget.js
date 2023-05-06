@@ -63,14 +63,14 @@ export default class IglooLikesWidget extends BaseScene {
         likeTxt.setOrigin(0.5, 0.5)
         likeTxt.visible = false
         likeTxt.text = 'Like'
-        likeTxt.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetY': -1, 'shadow.color': '#0e248cff', 'shadow.blur': 2, 'shadow.fill': true})
+        likeTxt.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetY': -1, 'shadow.color': '#0e248cff', 'shadow.blur': 2, 'shadow.fill': true})
 
         // likeNum
         const likeNum = this.add.text(1460, 61, '', {})
         likeNum.setOrigin(0.5, 0.5)
         likeNum.visible = false
         likeNum.text = '0'
-        likeNum.setStyle({color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#000000ff'})
+        likeNum.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#000000ff'})
 
         // likeWindow
         const likeWindow = this.add.ninePatchContainer(1503, 97, 194, 60, 'main', 'like-window')
@@ -161,7 +161,6 @@ export default class IglooLikesWidget extends BaseScene {
 
         // likeWindow (components)
         const likeWindowButton = new Button(likeWindow)
-        likeWindowButton.spriteName = 'like-window'
 
         // likeBtn (components)
         const likeBtnSimpleButton = new SimpleButton(likeBtn)
@@ -177,7 +176,6 @@ export default class IglooLikesWidget extends BaseScene {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.onWindowDown()
 
         this.likeButton = likeButton

@@ -8,9 +8,9 @@
         "client/media/game_configs",
         "client/media/music",
         "client/media/sounds",
-        "client/media/puffles",
         "client/media/interface/game/stampbook/stamps",
-        "client/media/games/card/cards"
+        "client/media/games/card/cards",
+        "client/media/puffles/"
     ],
     "playUrl": "http://localhost:8888/en/"
 }

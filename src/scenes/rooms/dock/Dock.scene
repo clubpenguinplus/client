@@ -104,8 +104,6 @@
                 "ShowHint",
                 "MoveTo"
             ],
-            "Button.spriteName": "boat",
-            "Button.activeFrame": false,
             "ShowHint.text": "hydrohopper",
             "texture": {
                 "key": "dock",

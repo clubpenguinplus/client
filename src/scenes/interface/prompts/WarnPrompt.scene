@@ -60,7 +60,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.onOkClick()",
                     "texture": {
                         "key": "banning",
@@ -82,7 +81,7 @@
                     "text": "Ok",
                     "fixedWidth": 650,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#ffffffff"
@@ -98,7 +97,7 @@
                     "text": "This is a localised textfield",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "color": "#ffffffff",
                     "wordWrapWidth": 600
@@ -115,7 +114,7 @@
                     "text": "This is a localised textfield",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
                     "fontStyle": "bold",
                     "color": "#ffffffff",

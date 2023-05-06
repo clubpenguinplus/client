@@ -16,7 +16,7 @@ export default class Pizza extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             plaza: () => this.triggerRoom(300, 1200, 500),
-            pizzatron: () => this.triggerGame('pizzatron', 910),
+            pizzatron: () => this.triggerGame('pizzatron', 910, 'ruffle'),
         }
 
         this.music = 676
@@ -177,20 +177,16 @@ export default class Pizza extends RoomScene {
 
         // pizzatrondoor (components)
         const pizzatrondoorButton = new Button(pizzatrondoor)
-        pizzatrondoorButton.spriteName = 'pizzatrondoor'
         pizzatrondoorButton.hoverCallback = () => this.onKitchenDoorOver()
         pizzatrondoorButton.hoverOutCallback = () => this.onKitchenDoorOut()
-        pizzatrondoorButton.activeFrame = false
         new MoveTo(pizzatrondoor)
         const pizzatrondoorShowHint = new ShowHint(pizzatrondoor)
         pizzatrondoorShowHint.text = 'pizzatron'
 
         // plazadoor (components)
         const plazadoorButton = new Button(plazadoor)
-        plazadoorButton.spriteName = 'plazadoor'
         plazadoorButton.hoverCallback = () => this.onPlazaDoorOver()
         plazadoorButton.hoverOutCallback = () => this.onPlazaDoorOut()
-        plazadoorButton.activeFrame = false
         new MoveTo(plazadoor)
 
         // pizzacashreg (components)

@@ -41,7 +41,7 @@ export default class PenguinItems {
         for (let slot of this.slots) {
             all[slot] = {
                 id: this.penguin[slot],
-                depth: this.slots.indexOf(slot),
+                depth: this.penguin.crumbs.items[this.penguin[slot]] && this.penguin.crumbs.items[this.penguin[slot]].depth ? this.penguin.crumbs.items[this.penguin[slot]].depth : (this.slots.indexOf(slot) + 2) * 1000,
             }
         }
 

@@ -33,7 +33,7 @@ export default class Preload extends BaseScene {
         this.scene.add('Request', Request)
 
         document.getElementsByTagName('canvas')[1].id = 'game_canvas'
-        document.getElementsByTagName('canvas')[1].style.borderRadius = '10px'
+        document.getElementsByTagName('canvas')[1].style.borderRadius = Math.round(document.body.clientWidth * 0.01) + 'px'
 
         window.lowerQuality = this.lowerQuality.bind(this)
         window.raiseQuality = this.raiseQuality.bind(this)
@@ -92,10 +92,15 @@ export default class Preload extends BaseScene {
 
     async create() {
         this.fontsLoaded = 0
+        this.abandonFontsTimeout = setTimeout(() => {
+            console.warn(`Abandoning font loading after 10 seconds. Loaded ${this.fontsLoaded} fonts.`)
+            this._create()
+        }, 10000)
         for (let font of this.crumbs.fonts) {
             this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal').then(() => {
                 this.fontsLoaded++
                 if (this.fontsLoaded == this.crumbs.fonts.length) {
+                    clearTimeout(this.abandonFontsTimeout)
                     this._create()
                 }
             })
@@ -221,8 +226,14 @@ export default class Preload extends BaseScene {
             style: style,
             weight: weight,
         })
-        let loaded = await newFont.load()
-        document.fonts.add(loaded)
-        return true
+        newFont.load().then(
+            (loaded) => {
+                document.fonts.add(newFont)
+                return true
+            },
+            () => {
+                return false
+            }
+        )
     }
 }

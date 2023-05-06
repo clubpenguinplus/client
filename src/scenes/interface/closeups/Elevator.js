@@ -42,7 +42,6 @@ export default class Elevator extends Closeup {
 
         // closeBtn (components)
         const closeBtnButton = new Button(closeBtn)
-        closeBtnButton.spriteName = 'closeBtn'
         closeBtnButton.callback = () => this.stop()
 
         // text (components)
@@ -50,17 +49,14 @@ export default class Elevator extends Closeup {
 
         // roofBtn (components)
         const roofBtnButton = new Button(roofBtn)
-        roofBtnButton.spriteName = 'roofBtn'
         roofBtnButton.callback = () => this.joinRoom(432)
 
         // lobbyBtn (components)
         const lobbyBtnButton = new Button(lobbyBtn)
-        lobbyBtnButton.spriteName = 'lobbyBtn'
         lobbyBtnButton.callback = () => this.joinRoom(430)
 
         // gymBtn (components)
         const gymBtnButton = new Button(gymBtn)
-        gymBtnButton.spriteName = 'gymBtn'
         gymBtnButton.callback = () => this.joinRoom(431)
 
         this.events.emit('scene-awake')

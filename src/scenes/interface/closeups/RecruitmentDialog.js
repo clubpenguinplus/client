@@ -58,7 +58,7 @@ export default class RecruitmentDialog extends Closeup {
         const no_txt = this.add.text(1142, 886, '', {})
         no_txt.setOrigin(0.5, 0.5)
         no_txt.text = 'No'
-        no_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        no_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         no_txt.setLineSpacing(5)
         no_txt.setWordWrapWidth(100)
 
@@ -69,7 +69,7 @@ export default class RecruitmentDialog extends Closeup {
         const yes_txt = this.add.text(1315, 886, '', {})
         yes_txt.setOrigin(0.5, 0.5)
         yes_txt.text = 'Yes'
-        yes_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        yes_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         yes_txt.setLineSpacing(5)
         yes_txt.setWordWrapWidth(100)
 
@@ -82,7 +82,7 @@ export default class RecruitmentDialog extends Closeup {
         ok_txt.setOrigin(0.5, 0.5)
         ok_txt.visible = false
         ok_txt.text = 'OK'
-        ok_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 100, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        ok_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         ok_txt.setLineSpacing(5)
         ok_txt.setWordWrapWidth(100)
 
@@ -95,7 +95,7 @@ export default class RecruitmentDialog extends Closeup {
         addphone_txt.setOrigin(0.5, 0.5)
         addphone_txt.visible = false
         addphone_txt.text = 'Add phone'
-        addphone_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 180, fontFamily: 'Burbank Small', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        addphone_txt.setStyle({align: 'center', color: '#314a42ff', fixedWidth: 180, fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         addphone_txt.setLineSpacing(5)
         addphone_txt.setWordWrapWidth(180)
 
@@ -107,14 +107,14 @@ export default class RecruitmentDialog extends Closeup {
         const nametitle = this.add.text(506, 617, '', {})
         nametitle.setOrigin(0, 0.5)
         nametitle.text = 'The Director'
-        nametitle.setStyle({fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        nametitle.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         nametitle.setLineSpacing(5)
         nametitle.setWordWrapWidth(550)
 
         // bodytext
         const bodytext = this.add.text(514, 677, '', {})
         bodytext.text = 'Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        bodytext.setStyle({color: '#373737ff', fixedWidth: 865, fontFamily: 'Burbank Small', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
+        bodytext.setStyle({color: '#373737ff', fixedWidth: 865, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         bodytext.setLineSpacing(5)
         bodytext.setWordWrapWidth(865)
 
@@ -123,7 +123,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // no_btn (components)
         const no_btnButton = new Button(no_btn)
-        no_btnButton.spriteName = 'genericbtn'
         no_btnButton.callback = () => this.onNo()
 
         // no_txt (components)
@@ -132,7 +131,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // yes_btn (components)
         const yes_btnButton = new Button(yes_btn)
-        yes_btnButton.spriteName = 'genericbtn'
         yes_btnButton.callback = () => this.onYes()
 
         // yes_txt (components)
@@ -141,7 +139,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // ok_btn (components)
         const ok_btnButton = new Button(ok_btn)
-        ok_btnButton.spriteName = 'genericbtn'
         ok_btnButton.callback = () => this.stop()
 
         // ok_txt (components)
@@ -150,7 +147,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // addphone_btn (components)
         const addphone_btnButton = new Button(addphone_btn)
-        addphone_btnButton.spriteName = 'addphonebtn'
         addphone_btnButton.callback = () => this.addPhone()
 
         // addphone_txt (components)

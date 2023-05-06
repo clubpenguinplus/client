@@ -34,9 +34,7 @@ export default class IgnoreItem extends BaseContainer {
 
         // ignore_item (components)
         const ignore_itemButton = new Button(ignore_item)
-        ignore_itemButton.spriteName = 'buddy/item'
         ignore_itemButton.callback = () => this.onClick()
-        ignore_itemButton.activeFrame = false
 
         this.icon = icon
         this.username = username

@@ -53,9 +53,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "wait-button",
                     "Button.callback": "() => this.onYesClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "wait-button"
@@ -70,9 +68,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "wait-button",
                     "Button.callback": "() => this.onYesClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "wait-button"
@@ -94,7 +90,7 @@
                     "text": "WAIT!\nDo other people use this\ncomputer?",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "36px",
                     "fontStyle": "bold"
                 },
@@ -113,7 +109,7 @@
                     "text": "Yes",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "36px",
                     "fontStyle": "bold"
                 },
@@ -132,7 +128,7 @@
                     "text": "No",
                     "fixedWidth": 200,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "36px",
                     "fontStyle": "bold"
                 }

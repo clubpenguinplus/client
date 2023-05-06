@@ -1,10 +1,10 @@
-import RoomScene from '@scenes/rooms/RoomScene'
+import GameScene from '@scenes/games/GameScene'
 
 import {Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class HydroHopper extends RoomScene {
+export default class HydroHopper extends GameScene {
     constructor() {
         super('HydroHopper')
 
@@ -42,7 +42,6 @@ export default class HydroHopper extends RoomScene {
 
     create() {
         super.create()
-        this.interface.hideInterface(false)
     }
 
     /* END-USER-CODE */

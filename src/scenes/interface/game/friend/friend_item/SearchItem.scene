@@ -46,7 +46,7 @@
                     "text": "Username",
                     "fixedWidth": 185,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px"
                 },
                 {
@@ -95,7 +95,7 @@
                     "text": "+ Add Friend",
                     "fixedWidth": 185,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "13px",
                     "fontStyle": "bold"
                 }

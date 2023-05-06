@@ -11,9 +11,7 @@ export default class FlagButton extends Phaser.GameObjects.Image {
 
         // this (components)
         const thisButton = new Button(this)
-        thisButton.spriteName = 'flag'
         thisButton.callback = () => this.scene.buy(this.item)
-        thisButton.activeFrame = false
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */

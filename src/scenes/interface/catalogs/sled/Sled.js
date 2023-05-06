@@ -156,7 +156,7 @@ export default class Sled extends Book {
         // text
         const text = this.add.text(637, 900, '', {})
         text.text = 'Your Coins: 1000000'
-        text.setStyle({color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '32px'})
+        text.setStyle({color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '32px'})
 
         // lists
         const pages = [page1]
@@ -166,22 +166,18 @@ export default class Sled extends Book {
 
         // tag (components)
         const tagButton = new Button(tag)
-        tagButton.spriteName = 'tag'
         tagButton.callback = () => this.interface.prompt.showItem(5021)
 
         // tag_1 (components)
         const tag_1Button = new Button(tag_1)
-        tag_1Button.spriteName = 'tag'
         tag_1Button.callback = () => this.interface.prompt.showItem(5047)
 
         // tag_2 (components)
         const tag_2Button = new Button(tag_2)
-        tag_2Button.spriteName = 'tag'
         tag_2Button.callback = () => this.interface.prompt.showItem(5046)
 
         // exit (components)
         const exitButton = new Button(exit)
-        exitButton.spriteName = 'exit'
         exitButton.callback = () => this.scene.stop()
 
         this.text = text

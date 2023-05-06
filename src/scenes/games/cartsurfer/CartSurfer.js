@@ -1,10 +1,10 @@
-import RoomScene from '@scenes/rooms/RoomScene'
+import GameScene from '@scenes/games/GameScene'
 
 import {Interactive} from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class CartSurfer extends RoomScene {
+export default class CartSurfer extends GameScene {
     constructor() {
         super('CartSurfer')
 

@@ -211,6 +211,8 @@ export default class InputText extends EventComponent {
             this.isSelected = true
             this.gameObject.scene.interface.isInputActive = true
             this.flashIndicator()
+
+            document.getElementById('dummyForMobileKeyboard').focus()
         }, 100)
     }
 
@@ -262,6 +264,8 @@ export default class InputText extends EventComponent {
             }
 
             this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
+
+            document.getElementById('dummyForMobileKeyboard').focus()
         }
     }
 

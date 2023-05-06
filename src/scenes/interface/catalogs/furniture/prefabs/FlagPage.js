@@ -15,14 +15,14 @@ export default class FlagPage extends Page {
         const page20_header = scene.add.text(184, 82, '', {})
         page20_header.setOrigin(0.5, 0.5)
         page20_header.text = 'Player card flags\nfor everyone'
-        page20_header.setStyle({fontFamily: 'Burbank Small', fontSize: '23px', fontStyle: 'bold italic'})
+        page20_header.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold italic'})
         this.add(page20_header)
 
         // flag_name_7186
         const flag_name_7186 = scene.add.text(325, 163, '', {})
         flag_name_7186.setOrigin(0.5, 0.5)
         flag_name_7186.text = 'Latvia'
-        flag_name_7186.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7186.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7186.setWordWrapWidth(125)
         this.add(flag_name_7186)
 
@@ -30,7 +30,7 @@ export default class FlagPage extends Page {
         const flag_name_7187 = scene.add.text(430, 164, '', {})
         flag_name_7187.setOrigin(0.5, 0.5)
         flag_name_7187.text = 'Slovenia'
-        flag_name_7187.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7187.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7187.setWordWrapWidth(125)
         this.add(flag_name_7187)
 
@@ -38,7 +38,7 @@ export default class FlagPage extends Page {
         const flag_name_7188 = scene.add.text(545, 165, '', {})
         flag_name_7188.setOrigin(0.5, 0.5)
         flag_name_7188.text = 'Gibraltar'
-        flag_name_7188.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7188.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7188.setWordWrapWidth(125)
         this.add(flag_name_7188)
 
@@ -46,7 +46,7 @@ export default class FlagPage extends Page {
         const flag_name_7189 = scene.add.text(659, 164, '', {})
         flag_name_7189.setOrigin(0.5, 0.5)
         flag_name_7189.text = 'Malta'
-        flag_name_7189.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7189.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7189.setWordWrapWidth(125)
         this.add(flag_name_7189)
 
@@ -54,7 +54,7 @@ export default class FlagPage extends Page {
         const flag_name_7185 = scene.add.text(203, 284, '', {})
         flag_name_7185.setOrigin(0.5, 0.5)
         flag_name_7185.text = 'Pakistan'
-        flag_name_7185.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7185.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7185.setWordWrapWidth(125)
         this.add(flag_name_7185)
 
@@ -62,7 +62,7 @@ export default class FlagPage extends Page {
         const flag_name_7184 = scene.add.text(318, 292, '', {})
         flag_name_7184.setOrigin(0.5, 0.5)
         flag_name_7184.text = 'Czech Republic'
-        flag_name_7184.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7184.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7184.setWordWrapWidth(125)
         this.add(flag_name_7184)
 
@@ -70,7 +70,7 @@ export default class FlagPage extends Page {
         const flag_name_7183 = scene.add.text(432, 284, '', {})
         flag_name_7183.setOrigin(0.5, 0.5)
         flag_name_7183.text = 'Croatia'
-        flag_name_7183.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7183.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7183.setWordWrapWidth(125)
         this.add(flag_name_7183)
 
@@ -78,7 +78,7 @@ export default class FlagPage extends Page {
         const flag_name_7182 = scene.add.text(538, 284, '', {})
         flag_name_7182.setOrigin(0.5, 0.5)
         flag_name_7182.text = 'Greece'
-        flag_name_7182.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7182.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7182.setWordWrapWidth(125)
         this.add(flag_name_7182)
 
@@ -86,7 +86,7 @@ export default class FlagPage extends Page {
         const flag_name_7148 = scene.add.text(652, 284, '', {})
         flag_name_7148.setOrigin(0.5, 0.5)
         flag_name_7148.text = 'Romania'
-        flag_name_7148.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7148.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7148.setWordWrapWidth(125)
         this.add(flag_name_7148)
 
@@ -94,7 +94,7 @@ export default class FlagPage extends Page {
         const flag_name_504 = scene.add.text(652, 406, '', {})
         flag_name_504.setOrigin(0.5, 0.5)
         flag_name_504.text = 'Belgium'
-        flag_name_504.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_504.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_504.setWordWrapWidth(125)
         this.add(flag_name_504)
 
@@ -102,7 +102,7 @@ export default class FlagPage extends Page {
         const flag_name_7096 = scene.add.text(538, 406, '', {})
         flag_name_7096.setOrigin(0.5, 0.5)
         flag_name_7096.text = 'Austria'
-        flag_name_7096.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7096.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7096.setWordWrapWidth(125)
         this.add(flag_name_7096)
 
@@ -110,7 +110,7 @@ export default class FlagPage extends Page {
         const flag_name_502 = scene.add.text(430, 406, '', {})
         flag_name_502.setOrigin(0.5, 0.5)
         flag_name_502.text = 'Australia'
-        flag_name_502.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_502.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_502.setWordWrapWidth(125)
         this.add(flag_name_502)
 
@@ -118,7 +118,7 @@ export default class FlagPage extends Page {
         const flag_name_533 = scene.add.text(318, 406, '', {})
         flag_name_533.setOrigin(0.5, 0.5)
         flag_name_533.text = 'Argentina'
-        flag_name_533.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_533.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_533.setWordWrapWidth(125)
         this.add(flag_name_533)
 
@@ -126,7 +126,7 @@ export default class FlagPage extends Page {
         const flag_name_514 = scene.add.text(203, 406, '', {})
         flag_name_514.setOrigin(0.5, 0.5)
         flag_name_514.text = 'Netherlands'
-        flag_name_514.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_514.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_514.setWordWrapWidth(125)
         this.add(flag_name_514)
 
@@ -134,7 +134,7 @@ export default class FlagPage extends Page {
         const flag_name_535 = scene.add.text(653, 532, '', {})
         flag_name_535.setOrigin(0.5, 0.5)
         flag_name_535.text = 'Chile'
-        flag_name_535.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_535.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_535.setWordWrapWidth(125)
         this.add(flag_name_535)
 
@@ -142,7 +142,7 @@ export default class FlagPage extends Page {
         const flag_name_500 = scene.add.text(539, 532, '', {})
         flag_name_500.setOrigin(0.5, 0.5)
         flag_name_500.text = 'Canada'
-        flag_name_500.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_500.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_500.setWordWrapWidth(125)
         this.add(flag_name_500)
 
@@ -150,7 +150,7 @@ export default class FlagPage extends Page {
         const flag_name_505 = scene.add.text(429, 532, '', {})
         flag_name_505.setOrigin(0.5, 0.5)
         flag_name_505.text = 'Brazil'
-        flag_name_505.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_505.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_505.setWordWrapWidth(125)
         this.add(flag_name_505)
 
@@ -158,7 +158,7 @@ export default class FlagPage extends Page {
         const flag_name_529 = scene.add.text(314, 532, '', {})
         flag_name_529.setOrigin(0.5, 0.5)
         flag_name_529.text = 'Belize'
-        flag_name_529.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_529.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_529.setWordWrapWidth(125)
         this.add(flag_name_529)
 
@@ -166,7 +166,7 @@ export default class FlagPage extends Page {
         const flag_name_538 = scene.add.text(204, 532, '', {})
         flag_name_538.setOrigin(0.5, 0.5)
         flag_name_538.text = 'Peru'
-        flag_name_538.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_538.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_538.setWordWrapWidth(125)
         this.add(flag_name_538)
 
@@ -174,7 +174,7 @@ export default class FlagPage extends Page {
         const flag_name_507 = scene.add.text(651, 659, '', {})
         flag_name_507.setOrigin(0.5, 0.5)
         flag_name_507.text = 'Denmark'
-        flag_name_507.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_507.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_507.setWordWrapWidth(125)
         this.add(flag_name_507)
 
@@ -182,7 +182,7 @@ export default class FlagPage extends Page {
         const flag_name_540 = scene.add.text(537, 659, '', {})
         flag_name_540.setOrigin(0.5, 0.5)
         flag_name_540.text = 'Costa Rica'
-        flag_name_540.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_540.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_540.setWordWrapWidth(125)
         this.add(flag_name_540)
 
@@ -190,7 +190,7 @@ export default class FlagPage extends Page {
         const flag_name_536 = scene.add.text(431, 659, '', {})
         flag_name_536.setOrigin(0.5, 0.5)
         flag_name_536.text = 'Columbia'
-        flag_name_536.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_536.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_536.setWordWrapWidth(125)
         this.add(flag_name_536)
 
@@ -198,7 +198,7 @@ export default class FlagPage extends Page {
         const flag_name_506 = scene.add.text(317, 659, '', {})
         flag_name_506.setOrigin(0.5, 0.5)
         flag_name_506.text = 'China'
-        flag_name_506.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_506.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_506.setWordWrapWidth(125)
         this.add(flag_name_506)
 
@@ -206,7 +206,7 @@ export default class FlagPage extends Page {
         const flag_name_525 = scene.add.text(202, 659, '', {})
         flag_name_525.setOrigin(0.5, 0.5)
         flag_name_525.text = 'Portugal'
-        flag_name_525.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_525.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_525.setWordWrapWidth(125)
         this.add(flag_name_525)
 
@@ -214,7 +214,7 @@ export default class FlagPage extends Page {
         const flag_name_508 = scene.add.text(651, 790, '', {})
         flag_name_508.setOrigin(0.5, 0.5)
         flag_name_508.text = 'Finland'
-        flag_name_508.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_508.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_508.setWordWrapWidth(125)
         this.add(flag_name_508)
 
@@ -222,7 +222,7 @@ export default class FlagPage extends Page {
         const flag_name_530 = scene.add.text(537, 790, '', {})
         flag_name_530.setOrigin(0.5, 0.5)
         flag_name_530.text = 'Egypt'
-        flag_name_530.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_530.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_530.setWordWrapWidth(125)
         this.add(flag_name_530)
 
@@ -230,7 +230,7 @@ export default class FlagPage extends Page {
         const flag_name_548 = scene.add.text(431, 790, '', {})
         flag_name_548.setOrigin(0.5, 0.5)
         flag_name_548.text = 'Ecuador'
-        flag_name_548.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_548.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_548.setWordWrapWidth(125)
         this.add(flag_name_548)
 
@@ -238,7 +238,7 @@ export default class FlagPage extends Page {
         const flag_name_546 = scene.add.text(317, 792, '', {})
         flag_name_546.setOrigin(0.5, 0.5)
         flag_name_546.text = 'Dominican Republic'
-        flag_name_546.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_546.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_546.setWordWrapWidth(125)
         this.add(flag_name_546)
 
@@ -246,7 +246,7 @@ export default class FlagPage extends Page {
         const flag_name_542 = scene.add.text(205, 792, '', {})
         flag_name_542.setOrigin(0.5, 0.5)
         flag_name_542.text = 'Singapore'
-        flag_name_542.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_542.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_542.setWordWrapWidth(125)
         this.add(flag_name_542)
 
@@ -254,7 +254,7 @@ export default class FlagPage extends Page {
         const flag_name_537 = scene.add.text(874, 790, '', {})
         flag_name_537.setOrigin(0.5, 0.5)
         flag_name_537.text = 'Puerto Rico'
-        flag_name_537.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_537.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_537.setWordWrapWidth(125)
         this.add(flag_name_537)
 
@@ -262,7 +262,7 @@ export default class FlagPage extends Page {
         const flag_name_517 = scene.add.text(989, 790, '', {})
         flag_name_517.setOrigin(0.5, 0.5)
         flag_name_517.text = 'Russia'
-        flag_name_517.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_517.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_517.setWordWrapWidth(125)
         this.add(flag_name_517)
 
@@ -270,7 +270,7 @@ export default class FlagPage extends Page {
         const flag_name_526 = scene.add.text(1100, 790, '', {})
         flag_name_526.setOrigin(0.5, 0.5)
         flag_name_526.text = 'South Africa'
-        flag_name_526.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_526.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_526.setWordWrapWidth(125)
         this.add(flag_name_526)
 
@@ -278,7 +278,7 @@ export default class FlagPage extends Page {
         const flag_name_518 = scene.add.text(1208, 791, '', {})
         flag_name_518.setOrigin(0.5, 0.5)
         flag_name_518.text = 'Spain'
-        flag_name_518.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_518.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_518.setWordWrapWidth(125)
         this.add(flag_name_518)
 
@@ -286,7 +286,7 @@ export default class FlagPage extends Page {
         const flag_name_539 = scene.add.text(1315, 790, '', {})
         flag_name_539.setOrigin(0.5, 0.5)
         flag_name_539.text = 'Venezuela'
-        flag_name_539.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_539.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_539.setWordWrapWidth(125)
         this.add(flag_name_539)
 
@@ -294,7 +294,7 @@ export default class FlagPage extends Page {
         const flag_name_513 = scene.add.text(879, 659, '', {})
         flag_name_513.setOrigin(0.5, 0.5)
         flag_name_513.text = 'South Korea'
-        flag_name_513.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_513.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_513.setWordWrapWidth(125)
         this.add(flag_name_513)
 
@@ -302,7 +302,7 @@ export default class FlagPage extends Page {
         const flag_name_7095 = scene.add.text(993, 659, '', {})
         flag_name_7095.setOrigin(0.5, 0.5)
         flag_name_7095.text = 'Liechtenstein'
-        flag_name_7095.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_7095.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_7095.setWordWrapWidth(125)
         this.add(flag_name_7095)
 
@@ -310,7 +310,7 @@ export default class FlagPage extends Page {
         const flag_name_543 = scene.add.text(1103, 659, '', {})
         flag_name_543.setOrigin(0.5, 0.5)
         flag_name_543.text = 'Malaysia'
-        flag_name_543.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_543.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_543.setWordWrapWidth(125)
         this.add(flag_name_543)
 
@@ -318,7 +318,7 @@ export default class FlagPage extends Page {
         const flag_name_522 = scene.add.text(1207, 659, '', {})
         flag_name_522.setOrigin(0.5, 0.5)
         flag_name_522.text = 'Mexico'
-        flag_name_522.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_522.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_522.setWordWrapWidth(125)
         this.add(flag_name_522)
 
@@ -326,7 +326,7 @@ export default class FlagPage extends Page {
         const flag_name_547 = scene.add.text(1316, 659, '', {})
         flag_name_547.setOrigin(0.5, 0.5)
         flag_name_547.text = 'Uruguay'
-        flag_name_547.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_547.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_547.setWordWrapWidth(125)
         this.add(flag_name_547)
 
@@ -334,7 +334,7 @@ export default class FlagPage extends Page {
         const flag_name_511 = scene.add.text(884, 536, '', {})
         flag_name_511.setOrigin(0.5, 0.5)
         flag_name_511.text = 'Israel'
-        flag_name_511.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_511.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_511.setWordWrapWidth(125)
         this.add(flag_name_511)
 
@@ -342,7 +342,7 @@ export default class FlagPage extends Page {
         const flag_name_528 = scene.add.text(991, 533, '', {})
         flag_name_528.setOrigin(0.5, 0.5)
         flag_name_528.text = 'Italy'
-        flag_name_528.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_528.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_528.setWordWrapWidth(125)
         this.add(flag_name_528)
 
@@ -350,7 +350,7 @@ export default class FlagPage extends Page {
         const flag_name_534 = scene.add.text(1102, 533, '', {})
         flag_name_534.setOrigin(0.5, 0.5)
         flag_name_534.text = 'Jamaica'
-        flag_name_534.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_534.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_534.setWordWrapWidth(125)
         this.add(flag_name_534)
 
@@ -358,7 +358,7 @@ export default class FlagPage extends Page {
         const flag_name_512 = scene.add.text(1207, 533, '', {})
         flag_name_512.setOrigin(0.5, 0.5)
         flag_name_512.text = 'Japan'
-        flag_name_512.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_512.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_512.setWordWrapWidth(125)
         this.add(flag_name_512)
 
@@ -366,7 +366,7 @@ export default class FlagPage extends Page {
         const flag_name_520 = scene.add.text(1319, 533, '', {})
         flag_name_520.setOrigin(0.5, 0.5)
         flag_name_520.text = 'Switzerland'
-        flag_name_520.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_520.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_520.setWordWrapWidth(125)
         this.add(flag_name_520)
 
@@ -374,7 +374,7 @@ export default class FlagPage extends Page {
         const flag_name_545 = scene.add.text(885, 407, '', {})
         flag_name_545.setOrigin(0.5, 0.5)
         flag_name_545.text = 'Haiti'
-        flag_name_545.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_545.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_545.setWordWrapWidth(125)
         this.add(flag_name_545)
 
@@ -382,7 +382,7 @@ export default class FlagPage extends Page {
         const flag_name_531 = scene.add.text(990, 407, '', {})
         flag_name_531.setOrigin(0.5, 0.5)
         flag_name_531.text = 'Hungary'
-        flag_name_531.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_531.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_531.setWordWrapWidth(125)
         this.add(flag_name_531)
 
@@ -390,7 +390,7 @@ export default class FlagPage extends Page {
         const flag_name_527 = scene.add.text(1102, 407, '', {})
         flag_name_527.setOrigin(0.5, 0.5)
         flag_name_527.text = 'India'
-        flag_name_527.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_527.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_527.setWordWrapWidth(125)
         this.add(flag_name_527)
 
@@ -398,7 +398,7 @@ export default class FlagPage extends Page {
         const flag_name_524 = scene.add.text(1204, 407, '', {})
         flag_name_524.setOrigin(0.5, 0.5)
         flag_name_524.text = 'Ireland'
-        flag_name_524.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_524.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_524.setWordWrapWidth(125)
         this.add(flag_name_524)
 
@@ -406,7 +406,7 @@ export default class FlagPage extends Page {
         const flag_name_501 = scene.add.text(1317, 407, '', {})
         flag_name_501.setOrigin(0.5, 0.5)
         flag_name_501.text = 'United States'
-        flag_name_501.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_501.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_501.setWordWrapWidth(125)
         this.add(flag_name_501)
 
@@ -414,7 +414,7 @@ export default class FlagPage extends Page {
         const flag_name_519 = scene.add.text(1317, 285, '', {})
         flag_name_519.setOrigin(0.5, 0.5)
         flag_name_519.text = 'Sweden'
-        flag_name_519.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_519.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_519.setWordWrapWidth(125)
         this.add(flag_name_519)
 
@@ -422,7 +422,7 @@ export default class FlagPage extends Page {
         const flag_name_541 = scene.add.text(1213, 285, '', {})
         flag_name_541.setOrigin(0.5, 0.5)
         flag_name_541.text = 'Guatemala'
-        flag_name_541.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_541.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_541.setWordWrapWidth(125)
         this.add(flag_name_541)
 
@@ -430,7 +430,7 @@ export default class FlagPage extends Page {
         const flag_name_503 = scene.add.text(1098, 285, '', {})
         flag_name_503.setOrigin(0.5, 0.5)
         flag_name_503.text = 'United Kingdom'
-        flag_name_503.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_503.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_503.setWordWrapWidth(125)
         this.add(flag_name_503)
 
@@ -438,7 +438,7 @@ export default class FlagPage extends Page {
         const flag_name_510 = scene.add.text(988, 285, '', {})
         flag_name_510.setOrigin(0.5, 0.5)
         flag_name_510.text = 'Germany'
-        flag_name_510.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_510.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_510.setWordWrapWidth(125)
         this.add(flag_name_510)
 
@@ -446,7 +446,7 @@ export default class FlagPage extends Page {
         const flag_name_509 = scene.add.text(884, 285, '', {})
         flag_name_509.setOrigin(0.5, 0.5)
         flag_name_509.text = 'France'
-        flag_name_509.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_509.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_509.setWordWrapWidth(125)
         this.add(flag_name_509)
 
@@ -454,7 +454,7 @@ export default class FlagPage extends Page {
         const flag_name_521 = scene.add.text(1315, 161, '', {})
         flag_name_521.setOrigin(0.5, 0.5)
         flag_name_521.text = 'Turkey'
-        flag_name_521.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_521.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_521.setWordWrapWidth(125)
         this.add(flag_name_521)
 
@@ -462,7 +462,7 @@ export default class FlagPage extends Page {
         const flag_name_516 = scene.add.text(1207, 161, '', {})
         flag_name_516.setOrigin(0.5, 0.5)
         flag_name_516.text = 'Poland'
-        flag_name_516.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_516.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_516.setWordWrapWidth(125)
         this.add(flag_name_516)
 
@@ -470,7 +470,7 @@ export default class FlagPage extends Page {
         const flag_name_544 = scene.add.text(1097, 161, '', {})
         flag_name_544.setOrigin(0.5, 0.5)
         flag_name_544.text = 'Philippines'
-        flag_name_544.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_544.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_544.setWordWrapWidth(125)
         this.add(flag_name_544)
 
@@ -478,7 +478,7 @@ export default class FlagPage extends Page {
         const flag_name_515 = scene.add.text(992, 158, '', {})
         flag_name_515.setOrigin(0.5, 0.5)
         flag_name_515.text = 'Norway'
-        flag_name_515.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_515.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_515.setWordWrapWidth(125)
         this.add(flag_name_515)
 
@@ -486,7 +486,7 @@ export default class FlagPage extends Page {
         const flag_name_523 = scene.add.text(883, 157, '', {})
         flag_name_523.setOrigin(0.5, 0.5)
         flag_name_523.text = 'New Zealand'
-        flag_name_523.setStyle({align: 'center', fontFamily: 'Burbank Small', fontSize: '18px'})
+        flag_name_523.setStyle({align: 'center', fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         flag_name_523.setWordWrapWidth(125)
         this.add(flag_name_523)
 
@@ -1330,12 +1330,10 @@ export default class FlagPage extends Page {
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         // closebtn (components)

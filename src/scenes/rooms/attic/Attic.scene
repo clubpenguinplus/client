@@ -410,9 +410,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfourtable",
             "Button.callback": "() => this.triggerWaddle(110)",
-            "Button.activeFrame": false,
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -429,9 +427,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfourtable",
             "Button.callback": "() => this.triggerWaddle(109)",
-            "Button.activeFrame": false,
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -448,9 +444,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfourtable",
             "Button.callback": "() => this.triggerWaddle(107)",
-            "Button.activeFrame": false,
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -468,9 +462,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfourtable",
             "Button.callback": "() => this.triggerWaddle(108)",
-            "Button.activeFrame": false,
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",

@@ -39,13 +39,11 @@ export default class PenguinSmall extends BaseContainer {
         // username
         const username = scene.add.text(90, 0, '', {})
         username.setOrigin(0.5, 0.5)
-        username.setStyle({align: 'center', fixedWidth: 420, fontFamily: 'CCComicrazy', fontSize: '48px', fontStyle: 'bold italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
+        username.setStyle({align: 'center', fixedWidth: 420, fontFamily: 'cpCCComicrazy', fontSize: '48px', fontStyle: 'bold italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
         this.add(username)
 
         // penguinSmall (components)
         const penguinSmallButton = new Button(penguinSmall)
-        penguinSmallButton.spriteName = 'player_small'
-        penguinSmallButton.activeFrame = false
 
         // paperDoll (prefab fields)
         paperDoll.fadeIn = false

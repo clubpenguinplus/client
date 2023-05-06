@@ -261,33 +261,25 @@ export default class Attic extends RoomScene {
 
         // findfourtable (components)
         const findfourtableButton = new Button(findfourtable)
-        findfourtableButton.spriteName = 'findfourtable'
         findfourtableButton.callback = () => this.triggerWaddle(110)
-        findfourtableButton.activeFrame = false
         const findfourtableShowHint = new ShowHint(findfourtable)
         findfourtableShowHint.text = 'four'
 
         // findfourtable_1 (components)
         const findfourtable_1Button = new Button(findfourtable_1)
-        findfourtable_1Button.spriteName = 'findfourtable'
         findfourtable_1Button.callback = () => this.triggerWaddle(109)
-        findfourtable_1Button.activeFrame = false
         const findfourtable_1ShowHint = new ShowHint(findfourtable_1)
         findfourtable_1ShowHint.text = 'four'
 
         // findfourtable_3 (components)
         const findfourtable_3Button = new Button(findfourtable_3)
-        findfourtable_3Button.spriteName = 'findfourtable'
         findfourtable_3Button.callback = () => this.triggerWaddle(107)
-        findfourtable_3Button.activeFrame = false
         const findfourtable_3ShowHint = new ShowHint(findfourtable_3)
         findfourtable_3ShowHint.text = 'four'
 
         // findfourtable_2 (components)
         const findfourtable_2Button = new Button(findfourtable_2)
-        findfourtable_2Button.spriteName = 'findfourtable'
         findfourtable_2Button.callback = () => this.triggerWaddle(108)
-        findfourtable_2Button.activeFrame = false
         const findfourtable_2ShowHint = new ShowHint(findfourtable_2)
         findfourtable_2ShowHint.text = 'four'
 

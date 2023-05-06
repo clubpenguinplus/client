@@ -826,8 +826,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "agentbook",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "agentcom",
                 "frame": "agentbook"
@@ -863,7 +861,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "defender",
             "Button.hoverCallback": "() => this.onSymbolsOver()",
             "Button.hoverOutCallback": "() => this.onSymbolsOut()",
             "texture": {

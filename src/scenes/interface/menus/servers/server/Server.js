@@ -60,7 +60,7 @@ export default class Server extends BaseContainer {
         // name
         const name = scene.add.text(-125, 0, '', {})
         name.setOrigin(0.5, 0.5)
-        name.setStyle({fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '50px'})
+        name.setStyle({fixedWidth: 350, fontFamily: 'cpBurbankSmall', fontSize: '50px'})
         this.add(name)
 
         // full
@@ -74,8 +74,6 @@ export default class Server extends BaseContainer {
 
         // server (components)
         const serverButton = new Button(server)
-        serverButton.spriteName = 'server'
-        serverButton.activeFrame = false
 
         this.server = server
         this.safe = safe

@@ -106,7 +106,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "mobile/blue-button",
                             "Button.callback": "() => { this.interface.loadExternal('Stampbook'); this.interface.stampbookId = this.id }",
                             "texture": {
                                 "key": "main",
@@ -141,7 +140,7 @@
                             "originY": 0.5,
                             "text": "Your Coins: 000000",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "30px",
                             "color": "#000000ff"
                         },
@@ -157,7 +156,7 @@
                             "originY": 0.5,
                             "text": "Your Stamps: 690/420",
                             "fixedWidth": 330,
-                            "fontFamily": "Burbank Small",
+                            "fontFamily": "cpBurbankSmall",
                             "fontSize": "30px",
                             "color": "#000000ff"
                         },
@@ -187,7 +186,7 @@
                     "text": "Username",
                     "fixedWidth": 360,
                     "align": "center",
-                    "fontFamily": "Burbank Small",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#000000ff"
@@ -247,7 +246,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "edit_player_button",
                     "Button.callback": "() => this.editPlayer()",
                     "texture": {
                         "key": "main",

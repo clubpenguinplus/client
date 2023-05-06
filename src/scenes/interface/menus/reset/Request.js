@@ -31,21 +31,21 @@ export default class Request extends BaseScene {
         const backText = this.add.text(760, 876, '', {})
         backText.setOrigin(0.5, 0.5)
         backText.text = 'Home'
-        backText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        backText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         backText.setLineSpacing(25)
 
         // registerText2
         const registerText2 = this.add.text(760, 747, '', {})
         registerText2.setOrigin(0.5, 0.5)
         registerText2.text = 'Create a free account now'
-        registerText2.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '35px'})
+        registerText2.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '35px'})
         registerText2.setLineSpacing(25)
 
         // registerText
         const registerText = this.add.text(760, 713, '', {})
         registerText.setOrigin(0.5, 0.5)
         registerText.text = "Don't have a penguin?"
-        registerText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '30px'})
+        registerText.setStyle({align: 'right', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         registerText.setLineSpacing(25)
 
         // loginButton
@@ -55,14 +55,14 @@ export default class Request extends BaseScene {
         const loginText = this.add.text(760, 546, '', {})
         loginText.setOrigin(0.5, 0.5)
         loginText.text = 'Reset'
-        loginText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'Burbank Small', fontSize: '38px'})
+        loginText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '38px'})
         loginText.setLineSpacing(25)
 
         // usernameText
         const usernameText = this.add.text(760, 208, '', {})
         usernameText.setOrigin(0.5, 0.5)
         usernameText.text = 'Email Address or Username:'
-        usernameText.setStyle({align: 'center', color: '#000000ff', fontFamily: 'Burbank Small', fontSize: '34px'})
+        usernameText.setStyle({align: 'center', color: '#000000ff', fontFamily: 'cpBurbankSmall', fontSize: '34px'})
         usernameText.setLineSpacing(25)
 
         // username
@@ -71,20 +71,20 @@ export default class Request extends BaseScene {
         // usernameInput
         const usernameInput = this.add.text(579, 262, '', {})
         usernameInput.setOrigin(0, 0.5)
-        usernameInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'Burbank Small', fontSize: '30px'})
+        usernameInput.setStyle({color: '#000000ff', fixedWidth: 350, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         usernameInput.setLineSpacing(25)
 
         // suggested
         const suggested = this.add.text(760, 106, '', {})
         suggested.setOrigin(0.5, 0.5)
         suggested.text = 'RESET YOUR PASSWORD'
-        suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'CCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
+        suggested.setStyle({align: 'center', fixedWidth: 1200, fontFamily: 'cpCCComicrazy', fontSize: '40px', fontStyle: 'italic', stroke: '#003366', strokeThickness: 10, 'shadow.color': '#000000ff'})
 
         // registerText_1
         const registerText_1 = this.add.text(760, 385, '', {})
         registerText_1.setOrigin(0.5, 0.5)
         registerText_1.text = "If an account is found matching the email or username given, we'll send you (or your parent) a link to reset your password."
-        registerText_1.setStyle({align: 'center', color: '#000000ff', fixedWidth: 1000, fontFamily: 'Burbank Small', fontSize: '35px'})
+        registerText_1.setStyle({align: 'center', color: '#000000ff', fixedWidth: 1000, fontFamily: 'cpBurbankSmall', fontSize: '35px'})
         registerText_1.setWordWrapWidth(1000)
 
         // backButton (components)
@@ -119,7 +119,6 @@ export default class Request extends BaseScene {
 
         // loginButton (components)
         const loginButtonButton = new Button(loginButton)
-        loginButtonButton.spriteName = 'login-button'
         loginButtonButton.callback = () => this.onResetSubmit()
 
         // loginText (components)

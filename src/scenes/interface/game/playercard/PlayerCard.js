@@ -75,14 +75,14 @@ export default class PlayerCard extends BaseContainer {
         const coins = scene.add.text(50, -27, '', {})
         coins.setOrigin(0.5, 0.5)
         coins.text = 'Your Coins: 000000'
-        coins.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '24px'})
+        coins.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         stats.add(coins)
 
         // stamps
         const stamps = scene.add.text(50, 23, '', {})
         stamps.setOrigin(0.5, 0.5)
         stamps.text = 'Your Stamps: 69/420'
-        stamps.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'Burbank Small', fontSize: '24px'})
+        stamps.setStyle({color: '#000000ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         stats.add(stamps)
 
         // card_stamp
@@ -93,7 +93,7 @@ export default class PlayerCard extends BaseContainer {
         const username = scene.add.text(0, -238, '', {})
         username.setOrigin(0.5, 0.5)
         username.text = 'Username'
-        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 360, fontFamily: 'Burbank Small', fontSize: '32px', fontStyle: 'bold'})
+        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 360, fontFamily: 'cpBurbankSmall', fontSize: '32px', fontStyle: 'bold'})
         this.add(username)
 
         // x_button
@@ -156,7 +156,6 @@ export default class PlayerCard extends BaseContainer {
 
         // stamps_btn (components)
         const stamps_btnButton = new Button(stamps_btn)
-        stamps_btnButton.spriteName = 'blue-button'
         stamps_btnButton.callback = () => {
             this.interface.loadExternal('Stampbook')
             this.interface.stampbookId = this.id
@@ -164,14 +163,12 @@ export default class PlayerCard extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => {
             this.visible = false
         }
 
         // edit_player_button (components)
         const edit_player_buttonButton = new Button(edit_player_button)
-        edit_player_buttonButton.spriteName = 'edit_player_button'
         edit_player_buttonButton.callback = () => this.editPlayer()
 
         this.photo = photo

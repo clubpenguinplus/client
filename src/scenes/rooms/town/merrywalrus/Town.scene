@@ -35,7 +35,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "clothes_door",
             "Button.hoverCallback": "() => this.ShopDoorOver()",
             "Button.hoverOutCallback": "() => this.ShopDoorOut()",
             "texture": {
@@ -53,7 +52,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "coffee_door",
             "Button.hoverCallback": "() => this.CoffeeDoorOver()",
             "texture": {
                 "key": "town-merrywalrus",
@@ -70,7 +68,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "dance_door",
             "Button.hoverCallback": "() => this.DiscoDoorOver()",
             "Button.hoverOutCallback": "() => this.DiscoDoorOut()",
             "texture": {
