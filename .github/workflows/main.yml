@@ -38,13 +38,14 @@ jobs:
                   SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
 
             - name: Push play page to CDN
-              uses: nebula-dev/spaces-sync-action@master
+              uses: nebula-dev/spaces-sync-action@literal
               env:
                   SOURCE_DIR: './play/'
                   SPACE_REGION: 'nyc3'
                   SPACE_NAME: ${{ secrets.SPACE_NAME }}
                   SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
                   SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
+                  FILE_PATH: 'play'
 
     create-archive:
         runs-on: ubuntu-latest
