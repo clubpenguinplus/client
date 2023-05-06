@@ -14,7 +14,8 @@ export default class Pet extends RoomScene {
             hotel: () => this.triggerRoom(430, 1370, 490),
             park: () => this.triggerGame('puffleroundup', 925, 'ruffle'),
             //adopt: () => this.interface.loadExternal('Adopt'),
-            scape: () => null,
+            adopt: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
+            scape: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
             launch: () => this.triggerGame('pufflelaunch', 928, 'ruffle'),
         }
         this.music = 659
