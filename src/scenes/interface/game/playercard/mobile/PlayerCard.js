@@ -156,7 +156,6 @@ export default class PlayerCard extends BaseContainer {
 
         // stamps_btn (components)
         const stamps_btnButton = new Button(stamps_btn)
-        stamps_btnButton.spriteName = 'mobile/blue-button'
         stamps_btnButton.callback = () => {
             this.interface.loadExternal('Stampbook')
             this.interface.stampbookId = this.id
@@ -170,7 +169,6 @@ export default class PlayerCard extends BaseContainer {
 
         // edit_player_button (components)
         const edit_player_buttonButton = new Button(edit_player_button)
-        edit_player_buttonButton.spriteName = 'edit_player_button'
         edit_player_buttonButton.callback = () => this.editPlayer()
 
         this.photo = photo

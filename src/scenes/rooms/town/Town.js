@@ -33,97 +33,106 @@ export default class Town extends RoomScene {
     /** @returns {void} */
     _create() {
         // dc_door
-        const dc_door = this.add.sprite(852.6224744531738, 191.5476374205231, 'town', 'danceclubdoor0001')
+        const dc_door = this.add.sprite(846, 211, 'town', 'danceclubdoor0001')
         dc_door.setOrigin(0.5579637817944546, -0.002307969050704048)
 
         // bg
-        const bg = this.add.image(-97.80423540374727, 986.0732936798435, 'town', 'bg')
-        bg.setOrigin(0.0006852446809371995, 1.0032013740410073)
+        this.add.image(760, 480, 'town', 'bg')
 
         // image
         this.add.image(1511, 613, 'town', 'sidetrees')
 
         // noticeboard
-        const noticeboard = this.add.image(227, 532.0810695829088, 'town', 'bottom_left')
-        noticeboard.setOrigin(0.5, -0.0009630584300948194)
+        const noticeboard = this.add.image(93.21640776789215, 675.1955159398718, 'town', 'bottom_left')
+        noticeboard.setOrigin(0.3045572976426323, 0.3075324463521485)
 
         // front_trees
-        const front_trees = this.add.image(-140.0645866423041, 732.6692749019403, 'town', 'bottom_trees')
+        const front_trees = this.add.image(-103, 752, 'town', 'bottom_trees')
         front_trees.setOrigin(-0.000037033625174373305, 0.012728011654378707)
 
         // coffee_door
-        const coffee_door = this.add.sprite(425.0580922656529, 330.6070121767309, 'town', 'coffeedoor')
+        const coffee_door = this.add.sprite(419, 348, 'town', 'coffeedoor')
         coffee_door.setOrigin(0.5507261533206609, -0.0027676246941171125)
 
         // clothes_door
-        const clothes_door = this.add.sprite(1113.9854670312639, 270.80911446172684, 'town', 'clothesdoor')
+        const clothes_door = this.add.sprite(1108, 291, 'town', 'clothesdoor')
         clothes_door.setOrigin(0.4877768305251397, -0.01994307153677468)
 
         // bench_arm
-        const bench_arm = this.add.image(262.5309753417969, 528.4562288520525, 'town', 'bench_side')
+        const bench_arm = this.add.image(256, 548, 'town', 'bench_side')
         bench_arm.setOrigin(0.47839655086139365, 0.7665475678359499)
 
         // clothes_rack
-        const clothes_rack = this.add.image(1198.8140929688152, 391.8275851517446, 'town', 'clothesrack')
+        const clothes_rack = this.add.image(1192, 411, 'town', 'clothesrack')
         clothes_rack.setOrigin(0.5072043625558867, 0.011544218710822484)
 
         // left_chair
-        const left_chair = this.add.image(552.0159298652105, 429.7304992897617, 'town', 'leftchari')
+        const left_chair = this.add.image(545, 452, 'town', 'leftchari')
         left_chair.setOrigin(0.43846826392076804, 0.2992761373118083)
 
         // right_chair
-        const right_chair = this.add.image(702.9279176653323, 415.18392931025767, 'town', 'rightchair')
+        const right_chair = this.add.image(696, 437, 'town', 'rightchair')
         right_chair.setOrigin(0.5418277481710252, 0.27855253873250896)
 
         // coloured_lights
-        const coloured_lights = this.add.sprite(837.7591937679998, -86.67256088001315, 'town', 'disco_lights0001')
+        const coloured_lights = this.add.sprite(833, -69, 'town', 'disco_lights0001')
         coloured_lights.setOrigin(0.49671744383068733, 0.00587362442472057)
 
         // dance_cover
-        const dance_cover = this.add.image(854.2408062320002, 332.31435637599895, 'town', 'roof')
+        const dance_cover = this.add.image(847, 350, 'town', 'roof')
         dance_cover.setOrigin(0.5079538861025653, 0.4574233155686223)
 
-        // main_lights
-        const main_lights = this.add.sprite(587.1898850479691, -34.59901073601432, 'town', 'lights0001')
-        main_lights.setOrigin(0.00036237604574263714, 0.009681408322522898)
-
         // shopfronts
-        const shopfronts = this.add.image(337, 194, 'town', 'shopfronts')
+        const shopfronts = this.add.image(329, 212, 'town', 'shopfronts')
         shopfronts.setOrigin(-0.002646461293556528, 0.007956149379252361)
 
+        // giftshopsign
+        this.add.image(1067, 170, 'town', 'giftshopsign')
+
+        // main_lights
+        const main_lights = this.add.sprite(578, -17, 'town', 'lights0001')
+        main_lights.setOrigin(0.00036237604574263714, 0.009681408322522898)
+
         // stars_anim
-        const stars_anim = this.add.sprite(791.2004946319928, 275.1838753599971, 'town', 'starsanim0001')
+        const stars_anim = this.add.sprite(784, 294, 'town', 'starsanim0001')
         stars_anim.setOrigin(0.01746424311105394, 0.02276683384609813)
         stars_anim.visible = false
 
         // stars
-        const stars = this.add.image(795.9229133279932, 278.66548782399735, 'town', 'stars')
+        const stars = this.add.image(789, 296, 'town', 'stars')
         stars.setOrigin(0.016295875660959563, 0.014467126608638104)
 
         // table
-        const table = this.add.image(628.362414669051, 476.3085517350086, 'town', 'table')
+        const table = this.add.image(621, 498, 'town', 'table')
         table.setOrigin(0.5222867233277427, 0.7080516274288713)
 
         // lights_front
-        this.add.image(849, 214, 'town', 'lights_front')
+        this.add.image(843, 227, 'town', 'lights_front')
 
         // localisation
-        const localisation = this.add.image(770, 266, 'town', 'localised-en')
+        const localisation = this.add.image(661, 208, 'town', 'localised-en')
 
         // ellipse_1
-        const ellipse_1 = this.add.ellipse(567, 456, 40, 40)
+        const ellipse_1 = this.add.ellipse(560, 478, 40, 40)
 
         // ellipse
-        const ellipse = this.add.ellipse(695, 449, 40, 40)
+        const ellipse = this.add.ellipse(688, 471, 40, 40)
 
         // ellipse_2
-        const ellipse_2 = this.add.ellipse(294, 501, 40, 40)
+        const ellipse_2 = this.add.ellipse(288, 520, 40, 40)
 
         // ellipse_3
-        const ellipse_3 = this.add.ellipse(321, 477, 40, 40)
+        const ellipse_3 = this.add.ellipse(315, 496, 40, 40)
+
+        // speakers
+        const speakers = this.add.sprite(841, 321, 'town', 'speakers0001')
+
+        // barrier
+        const barrier = this.add.image(949.9629279361815, 438.4383708474857, 'town', 'barrier')
+        barrier.setOrigin(0.5280418276597353, 0.37359933744285717)
 
         // lists
-        const sort = [bench_arm, left_chair, right_chair, table]
+        const sort = [bench_arm, left_chair, right_chair, table, barrier]
 
         // dc_door (components)
         const dc_doorSimpleButton = new SimpleButton(dc_door)
@@ -138,20 +147,16 @@ export default class Town extends RoomScene {
         coffee_doorMoveTo.x = 430
         coffee_doorMoveTo.y = 430
         const coffee_doorButton = new Button(coffee_door)
-        coffee_doorButton.spriteName = 'coffeedoor'
         coffee_doorButton.hoverCallback = () => this.CoffeeDoorOver()
         coffee_doorButton.hoverOutCallback = () => this.CoffeeDoorOut()
-        coffee_doorButton.activeFrame = false
 
         // clothes_door (components)
         const clothes_doorMoveTo = new MoveTo(clothes_door)
         clothes_doorMoveTo.x = 1100
         clothes_doorMoveTo.y = 400
         const clothes_doorButton = new Button(clothes_door)
-        clothes_doorButton.spriteName = 'clothesdoor'
         clothes_doorButton.hoverCallback = () => this.ShopDoorOver()
         clothes_doorButton.hoverOutCallback = () => this.ShopDoorOut()
-        clothes_doorButton.activeFrame = false
 
         // localisation (components)
         new LocalisedSprite(localisation)
@@ -178,6 +183,7 @@ export default class Town extends RoomScene {
         this.coloured_lights = coloured_lights
         this.main_lights = main_lights
         this.stars_anim = stars_anim
+        this.speakers = speakers
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -195,6 +201,8 @@ export default class Town extends RoomScene {
     main_lights
     /** @type {Phaser.GameObjects.Sprite} */
     stars_anim
+    /** @type {Phaser.GameObjects.Sprite} */
+    speakers
     /** @type {Phaser.GameObjects.Image[]} */
     sort
 
@@ -205,6 +213,7 @@ export default class Town extends RoomScene {
 
         this.main_lights.play('town-lights')
         this.coloured_lights.play('town-disco_lights')
+        this.speakers.play('town-speakers')
     }
 
     DiscoDoorOver() {

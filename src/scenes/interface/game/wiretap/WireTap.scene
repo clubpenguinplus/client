@@ -135,7 +135,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.tapAllRooms()",
                     "texture": {
                         "key": "main",
@@ -227,7 +226,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.hide() }",
                     "texture": {
                         "key": "main",

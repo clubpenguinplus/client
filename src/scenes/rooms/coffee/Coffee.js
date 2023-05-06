@@ -216,10 +216,8 @@ export default class Coffee extends RoomScene {
 
         // towndoor (components)
         const towndoorButton = new Button(towndoor)
-        towndoorButton.spriteName = 'towndoor'
         towndoorButton.hoverCallback = () => this.onTownDoorOver()
         towndoorButton.hoverOutCallback = () => this.onTownDoorOut()
-        towndoorButton.activeFrame = false
         new MoveTo(towndoor)
 
         // cashregister_coffee (components)

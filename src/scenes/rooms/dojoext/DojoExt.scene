@@ -80,10 +80,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('dojoext-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('dojoext-doorclose')",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojoext",
                 "frame": "door"
@@ -186,8 +184,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "card",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "dojoext",
                 "frame": "card"

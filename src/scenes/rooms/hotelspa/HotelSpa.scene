@@ -421,8 +421,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "chair-left",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelspa",
                 "frame": "chair-left"
@@ -441,8 +439,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "chair-right",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelspa",
                 "frame": "chair-right"
@@ -500,8 +496,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "washchair-left",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "hotelspa",
                 "frame": "washchair-left"
@@ -594,7 +588,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "interface",
             "Button.callback": "() => this.interface.loadExternal('RainbowQuest')",
             "texture": {
                 "key": "hotelspa",

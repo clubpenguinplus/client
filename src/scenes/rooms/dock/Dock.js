@@ -128,8 +128,6 @@ export default class Dock extends RoomScene {
 
         // boat (components)
         const boatButton = new Button(boat)
-        boatButton.spriteName = 'boat'
-        boatButton.activeFrame = false
         const boatShowHint = new ShowHint(boat)
         boatShowHint.text = 'hydrohopper'
         new MoveTo(boat)

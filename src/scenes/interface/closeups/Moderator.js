@@ -86,7 +86,6 @@ export default class Moderator extends Closeup {
 
         // modbutton (components)
         const modbuttonButton = new Button(modbutton)
-        modbuttonButton.spriteName = 'modbutton'
         modbuttonButton.callback = () => {
             this.interface.loadExternal('SafetyQuiz')
             this.stop()

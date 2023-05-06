@@ -33,7 +33,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "edit-btn",
                     "Button.callback": "() => this.chooseIglooButton()",
                     "ShowHint.text": "editIgloo",
                     "texture": {
@@ -52,7 +51,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "backyard",
                     "Button.callback": "() => this.shell.room.joinBackyard()",
                     "ShowHint.text": "backyard",
                     "texture": {
@@ -78,9 +76,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "catalog",
                     "Button.callback": "() => this.showFurnitureCat()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "iglooedit-new",
                         "frame": "catalog"
@@ -149,7 +145,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "big-button",
                             "texture": {
                                 "key": "iglooedit-new",
                                 "frame": "big-button"
@@ -193,7 +188,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "small-btn",
                             "Button.callback": "() => this.tweenControls()",
                             "texture": {
                                 "key": "iglooedit-new",
@@ -415,7 +409,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "close-btn",
                             "Button.callback": "() => this.onSaveClick()",
                             "texture": {
                                 "key": "iglooedit-new",
@@ -657,7 +650,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "choose-igloo",
                     "Button.callback": "() => this.onEditClick()",
                     "texture": {
                         "key": "iglooedit-new",
@@ -816,7 +808,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "close-btn",
                     "Button.callback": "() => this.closeChooseIgloo()",
                     "texture": {
                         "key": "iglooedit-new",

@@ -58,7 +58,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "summer-sports",
@@ -111,7 +110,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(722)",
                     "texture": {
                         "key": "summer-sports",
@@ -147,7 +145,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3002)",
                     "texture": {
                         "key": "summer-sports",
@@ -348,7 +345,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5472)",
                     "texture": {
                         "key": "summer-sports",
@@ -384,7 +380,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5473)",
                     "texture": {
                         "key": "summer-sports",
@@ -420,7 +415,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1906)",
                     "texture": {
                         "key": "summer-sports",
@@ -456,7 +450,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1907)",
                     "texture": {
                         "key": "summer-sports",
@@ -492,7 +485,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5471)",
                     "texture": {
                         "key": "summer-sports",
@@ -528,7 +520,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5474)",
                     "texture": {
                         "key": "summer-sports",
@@ -585,7 +576,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(24191)",
                     "texture": {
                         "key": "summer-sports",
@@ -621,7 +611,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(24204)",
                     "texture": {
                         "key": "summer-sports",
@@ -678,7 +667,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4347)",
                     "texture": {
                         "key": "summer-sports",
@@ -714,7 +702,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4349)",
                     "texture": {
                         "key": "summer-sports",
@@ -750,7 +737,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4350)",
                     "texture": {
                         "key": "summer-sports",
@@ -786,7 +772,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4348)",
                     "texture": {
                         "key": "summer-sports",
@@ -843,7 +828,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(727)",
                     "texture": {
                         "key": "summer-sports",
@@ -879,7 +863,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4091)",
                     "texture": {
                         "key": "summer-sports",
@@ -957,7 +940,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(329)",
                     "texture": {
                         "key": "summer-sports",
@@ -993,7 +975,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(255)",
                     "texture": {
                         "key": "summer-sports",
@@ -1029,7 +1010,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4116)",
                     "texture": {
                         "key": "summer-sports",
@@ -1065,7 +1045,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5048)",
                     "texture": {
                         "key": "summer-sports",
@@ -1101,7 +1080,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(658)",
                     "texture": {
                         "key": "summer-sports",
@@ -1137,7 +1115,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(671)",
                     "texture": {
                         "key": "summer-sports",
@@ -1173,7 +1150,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5136)",
                     "texture": {
                         "key": "summer-sports",
@@ -1209,7 +1185,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(254)",
                     "texture": {
                         "key": "summer-sports",
@@ -1245,7 +1220,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1079)",
                     "texture": {
                         "key": "summer-sports",
@@ -1302,7 +1276,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(462)",
                     "texture": {
                         "key": "summer-sports",
@@ -1338,7 +1311,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1078)",
                     "texture": {
                         "key": "summer-sports",
@@ -1374,7 +1346,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(721)",
                     "texture": {
                         "key": "summer-sports",
@@ -1410,7 +1381,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4115)",
                     "texture": {
                         "key": "summer-sports",
@@ -1467,7 +1437,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(463)",
                     "texture": {
                         "key": "summer-sports",
@@ -1503,7 +1472,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(726)",
                     "texture": {
                         "key": "summer-sports",
@@ -1539,7 +1507,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(720)",
                     "texture": {
                         "key": "summer-sports",
@@ -1596,7 +1563,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5091)",
                     "texture": {
                         "key": "summer-sports",
@@ -1632,7 +1598,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5092)",
                     "texture": {
                         "key": "summer-sports",
@@ -1668,7 +1633,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5093)",
                     "texture": {
                         "key": "summer-sports",
@@ -1704,7 +1668,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5094)",
                     "texture": {
                         "key": "summer-sports",
@@ -1761,7 +1724,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4089)",
                     "texture": {
                         "key": "summer-sports",
@@ -1797,7 +1759,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4090)",
                     "texture": {
                         "key": "summer-sports",
@@ -1833,7 +1794,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(313)",
                     "texture": {
                         "key": "summer-sports",
@@ -1869,7 +1829,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(372)",
                     "texture": {
                         "key": "summer-sports",
@@ -1925,7 +1884,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "summer-sports",
@@ -1983,7 +1941,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "summer-sports",
@@ -1999,7 +1956,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "summer-sports",

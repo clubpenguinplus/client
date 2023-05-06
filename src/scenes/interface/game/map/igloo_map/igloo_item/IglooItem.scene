@@ -28,9 +28,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "igloo/item_small",
                     "Button.callback": "() => this.onClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "map-for-igloo",
                         "frame": "igloo/item_small"

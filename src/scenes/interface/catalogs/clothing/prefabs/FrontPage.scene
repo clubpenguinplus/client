@@ -114,7 +114,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextPage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "constant",

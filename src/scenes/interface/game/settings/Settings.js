@@ -134,7 +134,6 @@ export default class Settings extends BaseContainer {
 
         // button (components)
         const buttonButton = new Button(button)
-        buttonButton.spriteName = 'help-button'
         buttonButton.callback = () => this.onManagePress()
 
         // checkbox (components)
@@ -143,14 +142,12 @@ export default class Settings extends BaseContainer {
 
         // ignore_button (components)
         const ignore_buttonButton = new Button(ignore_button)
-        ignore_buttonButton.spriteName = 'blue-button'
         ignore_buttonButton.callback = () => {
             this.onSettingsPress()
         }
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => {
             this.visible = false
         }
@@ -161,12 +158,10 @@ export default class Settings extends BaseContainer {
 
         // volume_down_button (components)
         const volume_down_buttonButton = new Button(volume_down_button)
-        volume_down_buttonButton.spriteName = 'blue-button'
         volume_down_buttonButton.callback = () => this.shell.musicController.volumeDown()
 
         // volume_up_button (components)
         const volume_up_buttonButton = new Button(volume_up_button)
-        volume_up_buttonButton.spriteName = 'blue-button'
         volume_up_buttonButton.callback = () => this.shell.musicController.volumeUp()
 
         this.checkbox = checkbox

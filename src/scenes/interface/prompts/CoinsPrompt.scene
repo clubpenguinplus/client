@@ -74,7 +74,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "close_btn",
                     "Button.callback": "() => { this.visible = false }",
                     "texture": {
                         "key": "endscreens",

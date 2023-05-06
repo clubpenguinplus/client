@@ -54,7 +54,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "button",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "banning",

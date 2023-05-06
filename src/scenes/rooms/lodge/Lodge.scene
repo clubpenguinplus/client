@@ -38,10 +38,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "maindoor",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('lodge-DoorLOpen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lodge-DoorLClose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 140,
             "MoveTo.y": 490,
             "texture": {
@@ -61,10 +59,8 @@
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "fishingdoor",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('lodge-DoorROpen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lodge-DoorRClose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 1000,
             "MoveTo.y": 310,
             "ShowHint.text": "icefishing",
@@ -167,10 +163,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "atticlight",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('lodge-LightOn')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lodge-LightOff')",
-            "Button.activeFrame": false,
             "MoveTo.x": 1250,
             "MoveTo.y": 360,
             "texture": {
@@ -283,9 +277,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfour",
             "Button.callback": "() => this.triggerWaddle(104)",
-            "Button.activeFrame": false,
             "Button.pixelPerfect": true,
             "ShowHint.text": "four",
             "texture": {
@@ -320,9 +312,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfour",
             "Button.callback": "() => this.triggerWaddle(105)",
-            "Button.activeFrame": false,
             "Button.pixelPerfect": true,
             "ShowHint.text": "four",
             "texture": {
@@ -342,9 +332,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "findfour",
             "Button.callback": "() => this.triggerWaddle(106)",
-            "Button.activeFrame": false,
             "Button.pixelPerfect": true,
             "ShowHint.text": "four",
             "texture": {
@@ -524,9 +512,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "catalog",
             "Button.callback": "() => {this.interface.loadExternal('Fishing')}",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "lodge",
                 "frame": "catalog"
@@ -545,10 +531,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "wilddoor",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('lodge-DoorMOpen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lodge-DoorMClose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 468,
             "MoveTo.y": 324,
             "texture": {

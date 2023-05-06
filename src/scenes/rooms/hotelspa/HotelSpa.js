@@ -257,20 +257,14 @@ export default class HotelSpa extends RoomScene {
 
         // chair_left (components)
         const chair_leftButton = new Button(chair_left)
-        chair_leftButton.spriteName = 'chair-left'
-        chair_leftButton.activeFrame = false
         new MoveTo(chair_left)
 
         // chair_right (components)
         const chair_rightButton = new Button(chair_right)
-        chair_rightButton.spriteName = 'chair-right'
-        chair_rightButton.activeFrame = false
         new MoveTo(chair_right)
 
         // washchair_left (components)
         const washchair_leftButton = new Button(washchair_left)
-        washchair_leftButton.spriteName = 'washchair-left'
-        washchair_leftButton.activeFrame = false
         new MoveTo(washchair_left)
 
         // washchair_right (components)
@@ -281,7 +275,6 @@ export default class HotelSpa extends RoomScene {
 
         // interfaceBtn (components)
         const interfaceBtnButton = new Button(interfaceBtn)
-        interfaceBtnButton.spriteName = 'interface'
         interfaceBtnButton.callback = () => this.interface.loadExternal('RainbowQuest')
 
         this.elevatorAnim = elevatorAnim

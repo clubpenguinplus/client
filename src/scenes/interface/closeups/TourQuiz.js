@@ -411,7 +411,6 @@ export default class TourQuiz extends Closeup {
 
         // exit (components)
         const exitButton = new Button(exit)
-        exitButton.spriteName = 'exit'
         exitButton.callback = () => this.stop()
 
         // psst_en (components)
@@ -422,7 +421,6 @@ export default class TourQuiz extends Closeup {
 
         // button_already (components)
         const button_alreadyButton = new Button(button_already)
-        button_alreadyButton.spriteName = 'button'
         button_alreadyButton.callback = () => this.stop()
 
         // sorry_en (components)
@@ -433,7 +431,6 @@ export default class TourQuiz extends Closeup {
 
         // button_age (components)
         const button_ageButton = new Button(button_age)
-        button_ageButton.spriteName = 'button'
         button_ageButton.callback = () => this.stop()
 
         // guidestitle_en (components)
@@ -444,7 +441,6 @@ export default class TourQuiz extends Closeup {
 
         // button_home (components)
         const button_homeButton = new Button(button_home)
-        button_homeButton.spriteName = 'button'
         button_homeButton.callback = () => this.startQuiz()
 
         // takequiz_en (components)
@@ -452,22 +448,18 @@ export default class TourQuiz extends Closeup {
 
         // button_q1_wrong1 (components)
         const button_q1_wrong1Button = new Button(button_q1_wrong1)
-        button_q1_wrong1Button.spriteName = 'button'
         button_q1_wrong1Button.callback = () => this.onQ1()
 
         // button_q1_wrong2 (components)
         const button_q1_wrong2Button = new Button(button_q1_wrong2)
-        button_q1_wrong2Button.spriteName = 'button'
         button_q1_wrong2Button.callback = () => this.onQ1()
 
         // button_q1_wrong3 (components)
         const button_q1_wrong3Button = new Button(button_q1_wrong3)
-        button_q1_wrong3Button.spriteName = 'button'
         button_q1_wrong3Button.callback = () => this.onQ1()
 
         // button_q1_right (components)
         const button_q1_rightButton = new Button(button_q1_right)
-        button_q1_rightButton.spriteName = 'button'
         button_q1_rightButton.callback = () => {
             this.onQ1()
             this.correctAnswer()
@@ -478,12 +470,10 @@ export default class TourQuiz extends Closeup {
 
         // button_q2_wrong2 (components)
         const button_q2_wrong2Button = new Button(button_q2_wrong2)
-        button_q2_wrong2Button.spriteName = 'button'
         button_q2_wrong2Button.callback = () => this.nextQuestion()
 
         // button_q2_right (components)
         const button_q2_rightButton = new Button(button_q2_right)
-        button_q2_rightButton.spriteName = 'button'
         button_q2_rightButton.callback = () => {
             this.nextQuestion()
             this.correctAnswer()
@@ -491,12 +481,10 @@ export default class TourQuiz extends Closeup {
 
         // button_q2_wrong3 (components)
         const button_q2_wrong3Button = new Button(button_q2_wrong3)
-        button_q2_wrong3Button.spriteName = 'button'
         button_q2_wrong3Button.callback = () => this.nextQuestion()
 
         // button_q2_wrong (components)
         const button_q2_wrongButton = new Button(button_q2_wrong)
-        button_q2_wrongButton.spriteName = 'button'
         button_q2_wrongButton.callback = () => this.nextQuestion()
 
         // questions2_en (components)
@@ -504,17 +492,14 @@ export default class TourQuiz extends Closeup {
 
         // button_q3_wrong1 (components)
         const button_q3_wrong1Button = new Button(button_q3_wrong1)
-        button_q3_wrong1Button.spriteName = 'button'
         button_q3_wrong1Button.callback = () => this.nextQuestion()
 
         // button_q3_wrong2 (components)
         const button_q3_wrong2Button = new Button(button_q3_wrong2)
-        button_q3_wrong2Button.spriteName = 'button'
         button_q3_wrong2Button.callback = () => this.nextQuestion()
 
         // button_q3_right (components)
         const button_q3_rightButton = new Button(button_q3_right)
-        button_q3_rightButton.spriteName = 'button'
         button_q3_rightButton.callback = () => {
             this.nextQuestion()
             this.correctAnswer()
@@ -522,7 +507,6 @@ export default class TourQuiz extends Closeup {
 
         // button_q3_wrong (components)
         const button_q3_wrongButton = new Button(button_q3_wrong)
-        button_q3_wrongButton.spriteName = 'button'
         button_q3_wrongButton.callback = () => this.nextQuestion()
 
         // questions3_en (components)
@@ -530,7 +514,6 @@ export default class TourQuiz extends Closeup {
 
         // button_q4_right (components)
         const button_q4_rightButton = new Button(button_q4_right)
-        button_q4_rightButton.spriteName = 'button'
         button_q4_rightButton.callback = () => {
             this.onQ4()
             this.correctAnswer()
@@ -538,17 +521,14 @@ export default class TourQuiz extends Closeup {
 
         // button_q4_wrong2 (components)
         const button_q4_wrong2Button = new Button(button_q4_wrong2)
-        button_q4_wrong2Button.spriteName = 'button'
         button_q4_wrong2Button.callback = () => this.onQ4()
 
         // button_q4_wrong1 (components)
         const button_q4_wrong1Button = new Button(button_q4_wrong1)
-        button_q4_wrong1Button.spriteName = 'button'
         button_q4_wrong1Button.callback = () => this.onQ4()
 
         // button_q4_wrong (components)
         const button_q4_wrongButton = new Button(button_q4_wrong)
-        button_q4_wrongButton.spriteName = 'button'
         button_q4_wrongButton.callback = () => this.onQ4()
 
         // questions4_en (components)
@@ -556,7 +536,6 @@ export default class TourQuiz extends Closeup {
 
         // button_q5_right (components)
         const button_q5_rightButton = new Button(button_q5_right)
-        button_q5_rightButton.spriteName = 'button'
         button_q5_rightButton.callback = () => {
             this.onQ5()
             this.correctAnswer()
@@ -564,17 +543,14 @@ export default class TourQuiz extends Closeup {
 
         // button_q5_wrong2 (components)
         const button_q5_wrong2Button = new Button(button_q5_wrong2)
-        button_q5_wrong2Button.spriteName = 'button'
         button_q5_wrong2Button.callback = () => this.onQ5()
 
         // button_q5_wrong1 (components)
         const button_q5_wrong1Button = new Button(button_q5_wrong1)
-        button_q5_wrong1Button.spriteName = 'button'
         button_q5_wrong1Button.callback = () => this.onQ5()
 
         // button_q5_wrong (components)
         const button_q5_wrongButton = new Button(button_q5_wrong)
-        button_q5_wrongButton.spriteName = 'button'
         button_q5_wrongButton.callback = () => this.onQ5()
 
         // questions5_en (components)
@@ -582,22 +558,18 @@ export default class TourQuiz extends Closeup {
 
         // button_q6_wrong (components)
         const button_q6_wrongButton = new Button(button_q6_wrong)
-        button_q6_wrongButton.spriteName = 'button'
         button_q6_wrongButton.callback = () => this.onQ6()
 
         // button_q6_wrong2 (components)
         const button_q6_wrong2Button = new Button(button_q6_wrong2)
-        button_q6_wrong2Button.spriteName = 'button'
         button_q6_wrong2Button.callback = () => this.onQ6()
 
         // button_q6_wrong1 (components)
         const button_q6_wrong1Button = new Button(button_q6_wrong1)
-        button_q6_wrong1Button.spriteName = 'button'
         button_q6_wrong1Button.callback = () => this.onQ6()
 
         // button_q6_right (components)
         const button_q6_rightButton = new Button(button_q6_right)
-        button_q6_rightButton.spriteName = 'button'
         button_q6_rightButton.callback = () => {
             this.onQ6()
             this.correctAnswer()
@@ -608,12 +580,10 @@ export default class TourQuiz extends Closeup {
 
         // button_q7_wrong (components)
         const button_q7_wrongButton = new Button(button_q7_wrong)
-        button_q7_wrongButton.spriteName = 'button'
         button_q7_wrongButton.callback = () => this.onQ7()
 
         // button_q7_right (components)
         const button_q7_rightButton = new Button(button_q7_right)
-        button_q7_rightButton.spriteName = 'button'
         button_q7_rightButton.callback = () => {
             this.onQ7()
             this.correctAnswer()
@@ -621,12 +591,10 @@ export default class TourQuiz extends Closeup {
 
         // button_q7_wrong1 (components)
         const button_q7_wrong1Button = new Button(button_q7_wrong1)
-        button_q7_wrong1Button.spriteName = 'button'
         button_q7_wrong1Button.callback = () => this.onQ7()
 
         // button_q7_wrong3 (components)
         const button_q7_wrong3Button = new Button(button_q7_wrong3)
-        button_q7_wrong3Button.spriteName = 'button'
         button_q7_wrong3Button.callback = () => this.onQ7()
 
         // questions7_en (components)
@@ -634,17 +602,14 @@ export default class TourQuiz extends Closeup {
 
         // button_q8_wrong (components)
         const button_q8_wrongButton = new Button(button_q8_wrong)
-        button_q8_wrongButton.spriteName = 'button'
         button_q8_wrongButton.callback = () => this.onQ8()
 
         // button_q8_wrong2 (components)
         const button_q8_wrong2Button = new Button(button_q8_wrong2)
-        button_q8_wrong2Button.spriteName = 'button'
         button_q8_wrong2Button.callback = () => this.onQ8()
 
         // button_q8_right (components)
         const button_q8_rightButton = new Button(button_q8_right)
-        button_q8_rightButton.spriteName = 'button'
         button_q8_rightButton.callback = () => {
             this.onQ8()
             this.correctAnswer()
@@ -652,7 +617,6 @@ export default class TourQuiz extends Closeup {
 
         // button_q8_wrong3 (components)
         const button_q8_wrong3Button = new Button(button_q8_wrong3)
-        button_q8_wrong3Button.spriteName = 'button'
         button_q8_wrong3Button.callback = () => this.onQ8()
 
         // questions8_en (components)
@@ -660,12 +624,10 @@ export default class TourQuiz extends Closeup {
 
         // button_q9_wrong (components)
         const button_q9_wrongButton = new Button(button_q9_wrong)
-        button_q9_wrongButton.spriteName = 'button'
         button_q9_wrongButton.callback = () => this.onQ9()
 
         // button_q9_right (components)
         const button_q9_rightButton = new Button(button_q9_right)
-        button_q9_rightButton.spriteName = 'button'
         button_q9_rightButton.callback = () => {
             this.onQ9()
             this.correctAnswer()
@@ -673,12 +635,10 @@ export default class TourQuiz extends Closeup {
 
         // button_q9_wrong2 (components)
         const button_q9_wrong2Button = new Button(button_q9_wrong2)
-        button_q9_wrong2Button.spriteName = 'button'
         button_q9_wrong2Button.callback = () => this.onQ9()
 
         // button_q9_wrong3 (components)
         const button_q9_wrong3Button = new Button(button_q9_wrong3)
-        button_q9_wrong3Button.spriteName = 'button'
         button_q9_wrong3Button.callback = () => this.onQ9()
 
         // questions9_en (components)
@@ -686,7 +646,6 @@ export default class TourQuiz extends Closeup {
 
         // button_q10_right (components)
         const button_q10_rightButton = new Button(button_q10_right)
-        button_q10_rightButton.spriteName = 'button'
         button_q10_rightButton.callback = () => {
             this.onQ10()
             this.correctAnswer()
@@ -694,17 +653,14 @@ export default class TourQuiz extends Closeup {
 
         // button_q10_wrong (components)
         const button_q10_wrongButton = new Button(button_q10_wrong)
-        button_q10_wrongButton.spriteName = 'button'
         button_q10_wrongButton.callback = () => this.onQ10()
 
         // button_q10_wrong2 (components)
         const button_q10_wrong2Button = new Button(button_q10_wrong2)
-        button_q10_wrong2Button.spriteName = 'button'
         button_q10_wrong2Button.callback = () => this.onQ10()
 
         // button_q10_wrong3 (components)
         const button_q10_wrong3Button = new Button(button_q10_wrong3)
-        button_q10_wrong3Button.spriteName = 'button'
         button_q10_wrong3Button.callback = () => this.onQ10()
 
         // questions10_en (components)
@@ -718,7 +674,6 @@ export default class TourQuiz extends Closeup {
 
         // button_fail (components)
         const button_failButton = new Button(button_fail)
-        button_failButton.spriteName = 'button'
         button_failButton.callback = () => this.stop()
 
         // wintitle_en (components)
@@ -729,7 +684,6 @@ export default class TourQuiz extends Closeup {
 
         // button_win (components)
         const button_winButton = new Button(button_win)
-        button_winButton.spriteName = 'button'
         button_winButton.callback = () => {
             this.onWin()
             this.stop()

@@ -96,17 +96,14 @@ export default class PuffleCare extends BaseContainer {
 
         // care_btn (components)
         const care_btnButton = new Button(care_btn)
-        care_btnButton.spriteName = 'puffle_care/care_btn'
         care_btnButton.callback = () => this.onCare()
 
         // walk_btn (components)
         const walk_btnButton = new Button(walk_btn)
-        walk_btnButton.spriteName = 'puffle_care/walk_btn'
         walk_btnButton.callback = () => this.onWalk()
 
         // swap_btn (components)
         const swap_btnButton = new Button(swap_btn)
-        swap_btnButton.spriteName = 'puffle_care/swap_btn'
         swap_btnButton.callback = () => this.onSwap()
 
         this.puffle_care_bg = puffle_care_bg

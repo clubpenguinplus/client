@@ -383,13 +383,9 @@ export default class Adopt extends Closeup {
 
         // goldPufflePoster (components)
         const goldPufflePosterButton = new Button(goldPufflePoster)
-        goldPufflePosterButton.spriteName = 'goldPufflePoster'
-        goldPufflePosterButton.activeFrame = false
 
         // rainbowPufflePoster (components)
         const rainbowPufflePosterButton = new Button(rainbowPufflePoster)
-        rainbowPufflePosterButton.spriteName = 'rainbowPufflePoster'
-        rainbowPufflePosterButton.activeFrame = false
 
         // whitePuffle (components)
         const whitePuffleSimpleButton = new SimpleButton(whitePuffle)
@@ -457,62 +453,50 @@ export default class Adopt extends Closeup {
 
         // whiteIcon (components)
         const whiteIconButton = new Button(whiteIcon)
-        whiteIconButton.spriteName = 'whiteIcon'
         whiteIconButton.callback = () => this.adoptPuffle(7)
 
         // blackIcon (components)
         const blackIconButton = new Button(blackIcon)
-        blackIconButton.spriteName = 'blackIcon'
         blackIconButton.callback = () => this.adoptPuffle(2)
 
         // brownIcon (components)
         const brownIconButton = new Button(brownIcon)
-        brownIconButton.spriteName = 'brownIcon'
         brownIconButton.callback = () => this.adoptPuffle(9)
 
         // pinkIcon (components)
         const pinkIconButton = new Button(pinkIcon)
-        pinkIconButton.spriteName = 'pinkIcon'
         pinkIconButton.callback = () => this.adoptPuffle(1)
 
         // purpleIcon (components)
         const purpleIconButton = new Button(purpleIcon)
-        purpleIconButton.spriteName = 'purpleIcon'
         purpleIconButton.callback = () => this.adoptPuffle(4)
 
         // greenIcon (components)
         const greenIconButton = new Button(greenIcon)
-        greenIconButton.spriteName = 'greenIcon'
         greenIconButton.callback = () => this.adoptPuffle(3)
 
         // yellowIcon (components)
         const yellowIconButton = new Button(yellowIcon)
-        yellowIconButton.spriteName = 'yellowIcon'
         yellowIconButton.callback = () => this.adoptPuffle(6)
 
         // orangeIcon (components)
         const orangeIconButton = new Button(orangeIcon)
-        orangeIconButton.spriteName = 'orangeIcon'
         orangeIconButton.callback = () => this.adoptPuffle(8)
 
         // redIcon (components)
         const redIconButton = new Button(redIcon)
-        redIconButton.spriteName = 'redIcon'
         redIconButton.callback = () => this.adoptPuffle(5)
 
         // blueIcon (components)
         const blueIconButton = new Button(blueIcon)
-        blueIconButton.spriteName = 'blueIcon'
         blueIconButton.callback = () => this.adoptPuffle(0)
 
         // catIcon (components)
         const catIconButton = new Button(catIcon)
-        catIconButton.spriteName = 'catIcon'
         catIconButton.callback = () => this.adoptPuffle(1007)
 
         // dogIcon (components)
         const dogIconButton = new Button(dogIcon)
-        dogIconButton.spriteName = 'dogIcon'
         dogIconButton.callback = () => this.adoptPuffle(1006)
 
         // personalityHeader (components)
@@ -534,7 +518,6 @@ export default class Adopt extends Closeup {
 
         // adoptBtn (components)
         const adoptBtnButton = new Button(adoptBtn)
-        adoptBtnButton.spriteName = 'adoptBtn'
         adoptBtnButton.callback = () => this.onAdoptionClick()
 
         // text_10 (components)
@@ -543,7 +526,6 @@ export default class Adopt extends Closeup {
 
         // closeBtn (components)
         const closeBtnButton = new Button(closeBtn)
-        closeBtnButton.spriteName = 'closeBtn'
         closeBtnButton.callback = () => this.stop()
 
         this.whitePuffle = whitePuffle

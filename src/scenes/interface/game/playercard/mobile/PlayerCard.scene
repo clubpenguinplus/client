@@ -106,7 +106,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "mobile/blue-button",
                             "Button.callback": "() => { this.interface.loadExternal('Stampbook'); this.interface.stampbookId = this.id }",
                             "texture": {
                                 "key": "main",
@@ -247,7 +246,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "edit_player_button",
                     "Button.callback": "() => this.editPlayer()",
                     "texture": {
                         "key": "main",

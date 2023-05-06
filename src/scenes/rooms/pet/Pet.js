@@ -436,27 +436,21 @@ export default class Pet extends RoomScene {
 
         // plazadoor (components)
         const plazadoorButton = new Button(plazadoor)
-        plazadoorButton.spriteName = 'plazadoor'
         plazadoorButton.hoverCallback = () => this.onPlazaDoorOver()
         plazadoorButton.hoverOutCallback = () => this.onPlazaDoorOut()
-        plazadoorButton.activeFrame = false
         new MoveTo(plazadoor)
 
         // parkdoor_en (components)
         const parkdoor_enButton = new Button(parkdoor_en)
-        parkdoor_enButton.spriteName = 'parkdoor_en'
         parkdoor_enButton.hoverCallback = () => this.onParkDoorOver()
         parkdoor_enButton.hoverOutCallback = () => this.onParkDoorOut()
-        parkdoor_enButton.activeFrame = false
         new MoveTo(parkdoor_en)
         new LocalisedSprite(parkdoor_en)
 
         // hoteldoor (components)
         const hoteldoorButton = new Button(hoteldoor)
-        hoteldoorButton.spriteName = 'hoteldoor'
         hoteldoorButton.hoverCallback = () => this.onHotelDoorOver()
         hoteldoorButton.hoverOutCallback = () => this.onHotelDoorOut()
-        hoteldoorButton.activeFrame = false
         new MoveTo(hoteldoor)
 
         // adoptbookbase (components)
@@ -469,14 +463,10 @@ export default class Pet extends RoomScene {
 
         // petcat_en (components)
         const petcat_enButton = new Button(petcat_en)
-        petcat_enButton.spriteName = 'petcat_en'
-        petcat_enButton.activeFrame = false
         new LocalisedSprite(petcat_en)
 
         // adoptbutton (components)
         const adoptbuttonButton = new Button(adoptbutton)
-        adoptbuttonButton.spriteName = 'adoptbutton'
-        adoptbuttonButton.activeFrame = false
 
         // adopthit (components)
         const adopthitSimpleButton = new SimpleButton(adopthit)

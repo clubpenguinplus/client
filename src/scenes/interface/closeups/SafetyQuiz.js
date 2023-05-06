@@ -505,7 +505,6 @@ export default class SafetyQuiz extends Closeup {
 
         // modbutton (components)
         const modbuttonButton = new Button(modbutton)
-        modbuttonButton.spriteName = 'modbutton'
         modbuttonButton.callback = () => this.startQuiz()
 
         // text (components)
@@ -546,7 +545,6 @@ export default class SafetyQuiz extends Closeup {
 
         // greenbutton (components)
         const greenbuttonButton = new Button(greenbutton)
-        greenbuttonButton.spriteName = 'greenbutton'
         greenbuttonButton.callback = () => this.collectReward()
 
         // congrats_sub (components)
@@ -563,7 +561,6 @@ export default class SafetyQuiz extends Closeup {
 
         // modbutton2 (components)
         const modbutton2Button = new Button(modbutton2)
-        modbutton2Button.spriteName = 'modbutton'
         modbutton2Button.callback = () => this.startQuiz()
 
         // goodtry (components)
@@ -703,7 +700,7 @@ export default class SafetyQuiz extends Closeup {
             this.question.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-question`)
             this.answer1.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer1`)
             this.answer2.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer2`)
-            if (!this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`).includes('localisedString')) {
+            if (this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`) != `safetyquiz-q${this.questionNum}-answer3`) {
                 this.answer3.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer3`)
                 this.answer3.visible = true
                 this.answer_btn3.visible = true
@@ -711,7 +708,7 @@ export default class SafetyQuiz extends Closeup {
                 this.answer3.visible = false
                 this.answer_btn3.visible = false
             }
-            if (!this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`).includes('localisedString')) {
+            if (this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`) != `safetyquiz-q${this.questionNum}-answer4`) {
                 this.answer4.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-answer4`)
                 this.answer4.visible = true
                 this.answer_btn4.visible = true

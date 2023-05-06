@@ -58,7 +58,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.visible = false }",
                     "texture": {
                         "key": "main",
@@ -98,7 +97,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "main",
@@ -114,7 +112,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "main",

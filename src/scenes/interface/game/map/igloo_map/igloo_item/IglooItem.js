@@ -34,9 +34,7 @@ export default class IglooItem extends BaseContainer {
 
         // friend_item (components)
         const friend_itemButton = new Button(friend_item)
-        friend_itemButton.spriteName = 'igloo/item_small'
         friend_itemButton.callback = () => this.onClick()
-        friend_itemButton.activeFrame = false
 
         this.icon = icon
         this.username = username

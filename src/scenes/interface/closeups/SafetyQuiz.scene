@@ -91,7 +91,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "modbutton",
                     "Button.callback": "() => this.startQuiz()",
                     "texture": {
                         "key": "safetyquiz",
@@ -797,7 +796,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "greenbutton",
                     "Button.callback": "() => this.collectReward()",
                     "texture": {
                         "key": "safetyquiz",
@@ -920,7 +918,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "modbutton",
                     "Button.callback": "() => this.startQuiz()",
                     "texture": {
                         "key": "safetyquiz",

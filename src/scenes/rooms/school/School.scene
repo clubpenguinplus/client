@@ -591,10 +591,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('school-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('school-doorclose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 1440,
             "MoveTo.y": 724,
             "texture": {
@@ -613,10 +611,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('school-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('school-doorclose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 80,
             "MoveTo.y": 724,
             "texture": {

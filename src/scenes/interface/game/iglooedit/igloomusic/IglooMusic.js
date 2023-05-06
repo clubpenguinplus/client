@@ -59,7 +59,6 @@ export default class IglooMusic extends BaseContainer {
 
         // blueButton (components)
         const blueButtonButton = new Button(blueButton)
-        blueButtonButton.spriteName = 'close-btn'
         blueButtonButton.callback = () => (this.visible = false)
 
         // title (components)

@@ -140,82 +140,56 @@ export default class Dojo extends RoomScene {
 
         // firedoor (components)
         const firedoorButton = new Button(firedoor)
-        firedoorButton.spriteName = 'firedoor'
         firedoorButton.hoverCallback = () => this.fireDoorOver()
         firedoorButton.hoverOutCallback = () => this.fireDoorOut()
-        firedoorButton.activeFrame = false
         new MoveTo(firedoor)
 
         // waterdoor (components)
         const waterdoorButton = new Button(waterdoor)
-        waterdoorButton.spriteName = 'waterdoor'
         waterdoorButton.hoverCallback = () => this.waterDoorOver()
         waterdoorButton.hoverOutCallback = () => this.waterDoorOut()
-        waterdoorButton.activeFrame = false
         new MoveTo(waterdoor)
 
         // snowdoor (components)
         const snowdoorButton = new Button(snowdoor)
-        snowdoorButton.spriteName = 'snowdoor'
         snowdoorButton.hoverCallback = () => this.snowDoorOver()
         snowdoorButton.hoverOutCallback = () => this.snowDoorOut()
-        snowdoorButton.activeFrame = false
         new MoveTo(snowdoor)
 
         // belttut (components)
         const belttutButton = new Button(belttut)
-        belttutButton.spriteName = 'belttut'
-        belttutButton.activeFrame = false
 
         // jitsutut (components)
         const jitsututButton = new Button(jitsutut)
-        jitsututButton.spriteName = 'jitsutut'
-        jitsututButton.activeFrame = false
 
         // senseihit (components)
         const senseihitButton = new Button(senseihit)
-        senseihitButton.spriteName = 'senseihit'
-        senseihitButton.activeFrame = false
         new MoveTo(senseihit)
 
         // mat (components)
         const matButton = new Button(mat)
-        matButton.spriteName = 'mat'
-        matButton.activeFrame = false
         new MoveTo(mat)
 
         // mat_1 (components)
         const mat_1Button = new Button(mat_1)
-        mat_1Button.spriteName = 'mat'
-        mat_1Button.activeFrame = false
         new MoveTo(mat_1)
 
         // mat_2 (components)
         const mat_2Button = new Button(mat_2)
-        mat_2Button.spriteName = 'mat'
-        mat_2Button.activeFrame = false
         new MoveTo(mat_2)
 
         // mat_3 (components)
         const mat_3Button = new Button(mat_3)
-        mat_3Button.spriteName = 'mat'
-        mat_3Button.activeFrame = false
         new MoveTo(mat_3)
 
         // dojocat_en (components)
         const dojocat_enButton = new Button(dojocat_en)
-        dojocat_enButton.spriteName = 'dojocat_en'
-        dojocat_enButton.activeFrame = false
 
         // jitsucards (components)
         const jitsucardsButton = new Button(jitsucards)
-        jitsucardsButton.spriteName = 'jitsucards'
-        jitsucardsButton.activeFrame = false
 
         // dojoext (components)
         const dojoextButton = new Button(dojoext)
-        dojoextButton.spriteName = 'dojoext'
-        dojoextButton.activeFrame = false
         new MoveTo(dojoext)
 
         this.potdots = potdots

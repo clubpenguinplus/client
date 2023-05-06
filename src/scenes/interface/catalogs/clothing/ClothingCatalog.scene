@@ -78,9 +78,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "prevPage",
                     "Button.callback": "() => this.prevPage()",
-                    "Button.activeFrame": false,
                     "Button.pixelPerfect": true,
                     "texture": {
                         "key": "constant",
@@ -96,9 +94,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextPage",
                     "Button.callback": "() => this.nextPage()",
-                    "Button.activeFrame": false,
                     "Button.pixelPerfect": true,
                     "texture": {
                         "key": "constant",

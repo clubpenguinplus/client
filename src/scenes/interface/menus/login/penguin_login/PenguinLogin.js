@@ -153,7 +153,6 @@ export default class PenguinLogin extends BaseScene {
 
         // loginButton (components)
         const loginButtonButton = new Button(loginButton)
-        loginButtonButton.spriteName = 'login-button'
         loginButtonButton.callback = () => this.onLoginSubmit()
 
         // loginText (components)

@@ -45,7 +45,6 @@ export default class FrontPage extends Page {
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)

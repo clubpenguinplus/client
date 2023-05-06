@@ -695,14 +695,11 @@ export default class Moderator extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.close()
 
         // verify_btn (components)
         const verify_btnButton = new Button(verify_btn)
-        verify_btnButton.spriteName = 'save-button'
         verify_btnButton.callback = () => this.airtower.sendXt('o#gu')
-        verify_btnButton.activeFrame = false
 
         // search (components)
         const searchInputText = new InputText(search)

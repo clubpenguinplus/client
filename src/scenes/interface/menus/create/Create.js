@@ -724,7 +724,6 @@ export default class Create extends BaseScene {
 
         // ok_btn (components)
         const ok_btnButton = new Button(ok_btn)
-        ok_btnButton.spriteName = 'ok-btn'
         ok_btnButton.callback = () => this.next()
 
         // color_highlight_1 (components)
@@ -819,12 +818,10 @@ export default class Create extends BaseScene {
 
         // login_button (components)
         const login_buttonButton = new Button(login_button)
-        login_buttonButton.spriteName = 'login-button'
         login_buttonButton.callback = () => this.under13()
 
         // login_button_1 (components)
         const login_button_1Button = new Button(login_button_1)
-        login_button_1Button.spriteName = 'login-button'
         login_button_1Button.callback = () => this.over13()
 
         // text_1 (components)
@@ -837,7 +834,6 @@ export default class Create extends BaseScene {
 
         // mobile_blue_button (components)
         const mobile_blue_buttonButton = new Button(mobile_blue_button)
-        mobile_blue_buttonButton.spriteName = 'mobile/blue-button'
         mobile_blue_buttonButton.callback = () => this.submitUsername()
 
         // username_text (components)
@@ -847,7 +843,6 @@ export default class Create extends BaseScene {
 
         // mobile_blue_button2_1 (components)
         const mobile_blue_button2_1Button = new Button(mobile_blue_button2_1)
-        mobile_blue_button2_1Button.spriteName = 'mobile/blue-button'
         mobile_blue_button2_1Button.hoverOutCallback = () => this.showConfirmPassword(false)
         mobile_blue_button2_1Button.callback = () => this.showConfirmPassword(true)
 
@@ -860,7 +855,6 @@ export default class Create extends BaseScene {
 
         // mobile_blue_button2 (components)
         const mobile_blue_button2Button = new Button(mobile_blue_button2)
-        mobile_blue_button2Button.spriteName = 'mobile/blue-button'
         mobile_blue_button2Button.hoverOutCallback = () => this.showPassword(false)
         mobile_blue_button2Button.callback = () => this.showPassword(true)
 
@@ -873,7 +867,6 @@ export default class Create extends BaseScene {
 
         // mobile_blue_button4 (components)
         const mobile_blue_button4Button = new Button(mobile_blue_button4)
-        mobile_blue_button4Button.spriteName = 'mobile/blue-button'
         mobile_blue_button4Button.callback = () => this.submitEmail()
 
         // email_text (components)

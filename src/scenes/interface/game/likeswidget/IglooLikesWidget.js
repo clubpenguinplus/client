@@ -161,7 +161,6 @@ export default class IglooLikesWidget extends BaseScene {
 
         // likeWindow (components)
         const likeWindowButton = new Button(likeWindow)
-        likeWindowButton.spriteName = 'like-window'
 
         // likeBtn (components)
         const likeBtnSimpleButton = new SimpleButton(likeBtn)
@@ -177,7 +176,6 @@ export default class IglooLikesWidget extends BaseScene {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.onWindowDown()
 
         this.likeButton = likeButton

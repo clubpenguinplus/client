@@ -73,7 +73,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "close",
                     "Button.callback": "() => this.scene.stop()",
                     "texture": {
                         "key": "stampbook",
@@ -119,7 +118,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "sidebutton",
                     "Button.callback": "() => this.goToPage(this.crumbs.stampbook['pins'])",
                     "texture": {
                         "key": "stampbook",
@@ -135,7 +133,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "sidebutton",
                     "Button.callback": "() => this.goToPage(this.crumbs.stampbook['activities'])",
                     "texture": {
                         "key": "stampbook",
@@ -151,7 +148,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "sidebutton",
                     "Button.callback": "() => this.goToPage(this.crumbs.stampbook['games'])",
                     "texture": {
                         "key": "stampbook",
@@ -167,7 +163,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "sidebutton",
                     "Button.callback": "() => this.goToPage(this.crumbs.stampbook['events'])",
                     "texture": {
                         "key": "stampbook",
@@ -1259,7 +1254,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "grey-button",
                     "Button.callback": "() => this.nextStampPage()",
                     "texture": {
                         "key": "main",
@@ -1292,7 +1286,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "grey-button",
                     "Button.callback": "() => this.prevStampPage()",
                     "texture": {
                         "key": "main",
@@ -1706,9 +1699,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "edit",
                     "Button.callback": "() => this.editStampbook()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "stampbook",
                         "frame": "edit"
@@ -1723,7 +1714,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "grey-button",
                     "Button.callback": "() => this.scene.stop(\"Stampbook\")",
                     "texture": {
                         "key": "main",

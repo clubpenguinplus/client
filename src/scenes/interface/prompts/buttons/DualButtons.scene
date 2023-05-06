@@ -29,9 +29,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onNoClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "prompt",
                         "frame": "window-button-small"
@@ -46,9 +44,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onYesClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "prompt",
                         "frame": "window-button-small"

@@ -83,9 +83,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(210)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -152,9 +150,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(405)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -221,9 +217,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(717)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -290,9 +284,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(713)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -359,9 +351,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(192)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -428,9 +418,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(203)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -497,9 +485,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.buy(653)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"

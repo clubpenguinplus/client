@@ -163,19 +163,16 @@ export default class Servers extends BaseScene {
 
         // image (components)
         const imageButton = new Button(image)
-        imageButton.spriteName = 'blue-button'
         imageButton.callback = () => {
             this.more_servers.visible = false
         }
 
         // image_2 (components)
         const image_2Button = new Button(image_2)
-        image_2Button.spriteName = 'blue-button'
         image_2Button.callback = () => this.prevPage()
 
         // image_2_1 (components)
         const image_2_1Button = new Button(image_2_1)
-        image_2_1Button.spriteName = 'blue-button'
         image_2_1Button.callback = () => this.nextPage()
 
         // icon_en (components)

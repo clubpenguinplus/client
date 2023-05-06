@@ -448,34 +448,28 @@ export default class IglooEdit extends BaseScene {
 
         // button_edit (components)
         const button_editButton = new Button(button_edit)
-        button_editButton.spriteName = 'edit-btn'
         button_editButton.callback = () => this.chooseIglooButton()
         const button_editShowHint = new ShowHint(button_edit)
         button_editShowHint.text = 'editIgloo'
 
         // button_backyard (components)
         const button_backyardButton = new Button(button_backyard)
-        button_backyardButton.spriteName = 'backyard'
         button_backyardButton.callback = () => this.shell.room.joinBackyard()
         const button_backyardShowHint = new ShowHint(button_backyard)
         button_backyardShowHint.text = 'backyard'
 
         // button_furniture_catalog (components)
         const button_furniture_catalogButton = new Button(button_furniture_catalog)
-        button_furniture_catalogButton.spriteName = 'catalog'
         button_furniture_catalogButton.callback = () => this.showFurnitureCat()
-        button_furniture_catalogButton.activeFrame = false
 
         // music_panel (components)
         new Interactive(music_panel)
 
         // big_button (components)
         const big_buttonButton = new Button(big_button)
-        big_buttonButton.spriteName = 'big-button'
 
         // small_btn (components)
         const small_btnButton = new Button(small_btn)
-        small_btnButton.spriteName = 'small-btn'
         small_btnButton.callback = () => this.tweenControls()
 
         // music (components)
@@ -522,7 +516,6 @@ export default class IglooEdit extends BaseScene {
 
         // close_btn (components)
         const close_btnButton = new Button(close_btn)
-        close_btnButton.spriteName = 'close-btn'
         close_btnButton.callback = () => this.onSaveClick()
 
         // bg (components)
@@ -530,7 +523,6 @@ export default class IglooEdit extends BaseScene {
 
         // choose_igloo (components)
         const choose_iglooButton = new Button(choose_igloo)
-        choose_iglooButton.spriteName = 'choose-igloo'
         choose_iglooButton.callback = () => this.onEditClick()
 
         // toggler (components)
@@ -539,7 +531,6 @@ export default class IglooEdit extends BaseScene {
 
         // close_btn_1 (components)
         const close_btn_1Button = new Button(close_btn_1)
-        close_btn_1Button.spriteName = 'close-btn'
         close_btn_1Button.callback = () => this.closeChooseIgloo()
 
         this.button_backyard = button_backyard

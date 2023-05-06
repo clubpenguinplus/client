@@ -52,7 +52,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "exit",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "cavenote",

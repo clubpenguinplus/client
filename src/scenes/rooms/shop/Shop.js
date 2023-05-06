@@ -140,10 +140,8 @@ export default class Shop extends RoomScene {
 
         // clothesroom (components)
         const clothesroomButton = new Button(clothesroom)
-        clothesroomButton.spriteName = 'clothesroom'
         clothesroomButton.hoverCallback = () => this.shell.musicController.addSfx('shop-curtainopen')
         clothesroomButton.hoverOutCallback = () => this.shell.musicController.addSfx('shop-curtainclose')
-        clothesroomButton.activeFrame = false
         new MoveTo(clothesroom)
 
         // spinner (components)
@@ -159,21 +157,17 @@ export default class Shop extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('shop-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('shop-doorclose')
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 1100
         doorMoveTo.y = 350
 
         // catalog_en (components)
         const catalog_enButton = new Button(catalog_en)
-        catalog_enButton.spriteName = 'catalog-en'
         catalog_enButton.hoverCallback = () => this.shell.musicController.addSfx('book-bookopen')
         catalog_enButton.hoverOutCallback = () => this.shell.musicController.addSfx('book-bookclose')
         catalog_enButton.callback = () => this.showClothingCat()
-        catalog_enButton.activeFrame = false
         catalog_enButton.pixelPerfect = true
 
         this.bg = bg

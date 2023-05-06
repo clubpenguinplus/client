@@ -1054,7 +1054,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "main",
@@ -1082,9 +1081,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "save-button",
                     "Button.callback": "() => this.airtower.sendXt('o#gu')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "save-button"

@@ -355,10 +355,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "rescuetable",
             "Button.hoverCallback": "() => this.onRescueOver()",
             "Button.hoverOutCallback": "() => this.onRescueOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "mine",
                 "frame": "rescuetable"

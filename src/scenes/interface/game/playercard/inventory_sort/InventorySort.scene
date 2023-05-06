@@ -54,10 +54,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('All Items', null)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -86,10 +84,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small_arrow",
                     "Button.hoverCallback": "() => other_container.visible = true",
                     "Button.callback": "() => this.filterInventory('Other Items', 'other')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small_arrow"
@@ -118,10 +114,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Colors', 'color')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -150,10 +144,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Feet Items', 'feet')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -182,10 +174,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Hand Items', 'hand')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -214,10 +204,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Body Items', 'body')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -246,10 +234,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Neck Items', 'neck')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -278,10 +264,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Face Items', 'face')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -310,10 +294,8 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "list/small",
                     "Button.hoverCallback": "() => other_container.visible = false",
                     "Button.callback": "() => this.filterInventory('Head Items', 'head')",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "list/small"
@@ -352,9 +334,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "list/small",
                             "Button.callback": "() => this.filterInventory('Pins/Flags', 'flag')",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "list/small"
@@ -367,9 +347,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "list/small",
                             "Button.callback": "() => this.filterInventory('Awards', 'award')",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "list/small"
@@ -383,9 +361,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "list/small",
                             "Button.callback": "() => this.filterInventory('Backgrounds', 'photo')",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "main",
                                 "frame": "list/small"

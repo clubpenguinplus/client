@@ -171,10 +171,8 @@ export default class Ship extends RoomScene {
 
         // shipholddoor (components)
         const shipholddoorButton = new Button(shipholddoor)
-        shipholddoorButton.spriteName = 'shipholddoor'
         shipholddoorButton.hoverCallback = () => this.onHoldOver()
         shipholddoorButton.hoverOutCallback = () => this.onHoldOut()
-        shipholddoorButton.activeFrame = false
         new MoveTo(shipholddoor)
 
         // uparrow (components)

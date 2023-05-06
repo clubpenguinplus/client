@@ -264,9 +264,7 @@ export default class Lake extends RoomScene {
 
         // note (components)
         const noteButton = new Button(note)
-        noteButton.spriteName = 'note'
         noteButton.callback = () => this.onNoteClick()
-        noteButton.activeFrame = false
 
         this.waterfalltwo = waterfalltwo
         this.waterfallone = waterfallone

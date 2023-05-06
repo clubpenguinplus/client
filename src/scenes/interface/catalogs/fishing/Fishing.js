@@ -82,12 +82,10 @@ export default class Fishing extends Book {
 
         // exit (components)
         const exitButton = new Button(exit)
-        exitButton.spriteName = 'exit'
         exitButton.callback = () => this.scene.stop()
 
         // tag (components)
         const tagButton = new Button(tag)
-        tagButton.spriteName = 'tag'
         tagButton.callback = () => this.interface.prompt.showItem(321)
 
         this.text = text

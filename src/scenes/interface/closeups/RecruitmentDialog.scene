@@ -51,7 +51,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "genericbtn",
             "Button.callback": "() => this.onNo()",
             "texture": {
                 "key": "recruitment",
@@ -93,7 +92,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "genericbtn",
             "Button.callback": "() => this.onYes()",
             "texture": {
                 "key": "recruitment",
@@ -135,7 +133,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "genericbtn",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "recruitment",
@@ -179,7 +176,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "addphonebtn",
             "Button.callback": "() => this.addPhone()",
             "texture": {
                 "key": "recruitment",

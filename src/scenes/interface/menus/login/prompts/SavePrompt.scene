@@ -67,9 +67,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "save-button",
                     "Button.callback": "() => this.onSaveClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "save-button"
@@ -84,9 +82,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "save-button",
                     "Button.callback": "() => this.close()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "save-button"
@@ -101,9 +97,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "learn-button",
                     "Button.callback": "() => this.close()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "learn-button"
@@ -118,7 +112,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "main",

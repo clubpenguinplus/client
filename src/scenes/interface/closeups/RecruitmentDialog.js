@@ -123,7 +123,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // no_btn (components)
         const no_btnButton = new Button(no_btn)
-        no_btnButton.spriteName = 'genericbtn'
         no_btnButton.callback = () => this.onNo()
 
         // no_txt (components)
@@ -132,7 +131,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // yes_btn (components)
         const yes_btnButton = new Button(yes_btn)
-        yes_btnButton.spriteName = 'genericbtn'
         yes_btnButton.callback = () => this.onYes()
 
         // yes_txt (components)
@@ -141,7 +139,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // ok_btn (components)
         const ok_btnButton = new Button(ok_btn)
-        ok_btnButton.spriteName = 'genericbtn'
         ok_btnButton.callback = () => this.stop()
 
         // ok_txt (components)
@@ -150,7 +147,6 @@ export default class RecruitmentDialog extends Closeup {
 
         // addphone_btn (components)
         const addphone_btnButton = new Button(addphone_btn)
-        addphone_btnButton.spriteName = 'addphonebtn'
         addphone_btnButton.callback = () => this.addPhone()
 
         // addphone_txt (components)

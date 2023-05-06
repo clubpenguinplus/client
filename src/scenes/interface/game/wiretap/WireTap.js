@@ -127,12 +127,10 @@ export default class WireTap extends BaseContainer {
 
         // blue_button (components)
         const blue_buttonButton = new Button(blue_button)
-        blue_buttonButton.spriteName = 'blue-button'
         blue_buttonButton.callback = () => this.tapAllRooms()
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => {
             this.hide()
         }

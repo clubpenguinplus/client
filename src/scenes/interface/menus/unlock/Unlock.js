@@ -259,7 +259,6 @@ export default class Unlock extends BaseScene {
 
         // codebutton (components)
         const codebuttonButton = new Button(codebutton)
-        codebuttonButton.spriteName = 'codebutton'
         codebuttonButton.callback = () => {
             this.onCodeButtonClick()
         }
@@ -274,7 +273,6 @@ export default class Unlock extends BaseScene {
 
         // nextbutton (components)
         const nextbuttonButton = new Button(nextbutton)
-        nextbuttonButton.spriteName = 'codebutton'
         nextbuttonButton.callback = () => {
             this.onCodeInput()
         }
@@ -292,7 +290,6 @@ export default class Unlock extends BaseScene {
 
         // blue_button (components)
         const blue_buttonButton = new Button(blue_button)
-        blue_buttonButton.spriteName = 'blue-button'
         blue_buttonButton.callback = () => {
             this.onServerClick()
         }

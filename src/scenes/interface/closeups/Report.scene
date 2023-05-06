@@ -1220,7 +1220,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.submitIssue()",
                     "texture": {
                         "key": "banning",

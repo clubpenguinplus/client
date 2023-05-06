@@ -185,7 +185,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "codebutton",
                     "Button.callback": "() => {this.onCodeButtonClick()}",
                     "texture": {
                         "key": "unlock",
@@ -277,7 +276,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "codebutton",
                     "Button.callback": "() => {this.onCodeInput()}",
                     "texture": {
                         "key": "unlock",
@@ -342,7 +340,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => {this.onServerClick()}",
             "texture": {
                 "key": "main",

@@ -235,26 +235,18 @@ export default class HotelRoof extends RoomScene {
 
         // sleepchair_right (components)
         const sleepchair_rightButton = new Button(sleepchair_right)
-        sleepchair_rightButton.spriteName = 'sleepchair-right'
-        sleepchair_rightButton.activeFrame = false
         new MoveTo(sleepchair_right)
 
         // sleepchair_left (components)
         const sleepchair_leftButton = new Button(sleepchair_left)
-        sleepchair_leftButton.spriteName = 'sleepchair-left'
-        sleepchair_leftButton.activeFrame = false
         new MoveTo(sleepchair_left)
 
         // feedchair (components)
         const feedchairButton = new Button(feedchair)
-        feedchairButton.spriteName = 'feedchair'
-        feedchairButton.activeFrame = false
         new MoveTo(feedchair)
 
         // feedchair_1 (components)
         const feedchair_1Button = new Button(feedchair_1)
-        feedchair_1Button.spriteName = 'feedchair'
-        feedchair_1Button.activeFrame = false
         new MoveTo(feedchair_1)
 
         // plate1 (components)
@@ -275,7 +267,6 @@ export default class HotelRoof extends RoomScene {
 
         // interfaceBtn (components)
         const interfaceBtnButton = new Button(interfaceBtn)
-        interfaceBtnButton.spriteName = 'interface'
         interfaceBtnButton.callback = () => this.interface.loadExternal('RainbowQuest')
 
         // eleBtn (components)

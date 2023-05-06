@@ -67,16 +67,12 @@ export default class ClothingCatalog extends Book {
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
-        prevPageButton.activeFrame = false
         prevPageButton.pixelPerfect = true
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
-        nextPageButton.activeFrame = false
         nextPageButton.pixelPerfect = true
 
         this.blocker = blocker

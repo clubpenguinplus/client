@@ -251,7 +251,6 @@ export default class CoinsPrompt extends BaseContainer {
 
         // doneBtn (components)
         const doneBtnButton = new Button(doneBtn)
-        doneBtnButton.spriteName = 'close_btn'
         doneBtnButton.callback = () => {
             this.visible = false
         }

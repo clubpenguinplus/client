@@ -331,7 +331,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "main",

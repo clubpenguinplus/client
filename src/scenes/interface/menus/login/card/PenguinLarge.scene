@@ -45,8 +45,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "player_large",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "login",
                         "frame": "player_large"

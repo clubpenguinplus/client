@@ -29,7 +29,6 @@ export default class MusicItem extends BaseContainer {
 
         // item (components)
         const itemButton = new Button(item)
-        itemButton.spriteName = 'play'
         itemButton.callback = () => this.onClick()
 
         this.title = title

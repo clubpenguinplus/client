@@ -106,7 +106,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onYesClick()",
                     "texture": {
                         "key": "prompt",
@@ -146,7 +145,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "window-button-small",
                     "Button.callback": "() => this.onNoClick()",
                     "texture": {
                         "key": "prompt",

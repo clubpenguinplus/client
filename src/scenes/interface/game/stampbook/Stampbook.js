@@ -1163,7 +1163,6 @@ export default class Stampbook extends BaseScene {
 
         // close (components)
         const closeButton = new Button(close)
-        closeButton.spriteName = 'close'
         closeButton.callback = () => this.scene.stop()
 
         // page_back (components)
@@ -1176,32 +1175,26 @@ export default class Stampbook extends BaseScene {
 
         // sidebutton (components)
         const sidebuttonButton = new Button(sidebutton)
-        sidebuttonButton.spriteName = 'sidebutton'
         sidebuttonButton.callback = () => this.goToPage(this.crumbs.stampbook['pins'])
 
         // sidebutton_1 (components)
         const sidebutton_1Button = new Button(sidebutton_1)
-        sidebutton_1Button.spriteName = 'sidebutton'
         sidebutton_1Button.callback = () => this.goToPage(this.crumbs.stampbook['activities'])
 
         // sidebutton_2 (components)
         const sidebutton_2Button = new Button(sidebutton_2)
-        sidebutton_2Button.spriteName = 'sidebutton'
         sidebutton_2Button.callback = () => this.goToPage(this.crumbs.stampbook['games'])
 
         // sidebutton_3 (components)
         const sidebutton_3Button = new Button(sidebutton_3)
-        sidebutton_3Button.spriteName = 'sidebutton'
         sidebutton_3Button.callback = () => this.goToPage(this.crumbs.stampbook['events'])
 
         // down_btn (components)
         const down_btnButton = new Button(down_btn)
-        down_btnButton.spriteName = 'grey-button'
         down_btnButton.callback = () => this.nextStampPage()
 
         // up_btn (components)
         const up_btnButton = new Button(up_btn)
-        up_btnButton.spriteName = 'grey-button'
         up_btnButton.callback = () => this.prevStampPage()
 
         // clasp_bg (components)
@@ -1210,13 +1203,10 @@ export default class Stampbook extends BaseScene {
 
         // edit (components)
         const editButton = new Button(edit)
-        editButton.spriteName = 'edit'
         editButton.callback = () => this.editStampbook()
-        editButton.activeFrame = false
 
         // grey_button (components)
         const grey_buttonButton = new Button(grey_button)
-        grey_buttonButton.spriteName = 'grey-button'
         grey_buttonButton.callback = () => this.scene.stop('Stampbook')
 
         // claspthumb (components)

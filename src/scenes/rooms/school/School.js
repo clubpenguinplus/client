@@ -313,20 +313,16 @@ export default class School extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 1440
         doorMoveTo.y = 724
 
         // door_1 (components)
         const door_1Button = new Button(door_1)
-        door_1Button.spriteName = 'door'
         door_1Button.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
         door_1Button.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
-        door_1Button.activeFrame = false
         const door_1MoveTo = new MoveTo(door_1)
         door_1MoveTo.x = 80
         door_1MoveTo.y = 724

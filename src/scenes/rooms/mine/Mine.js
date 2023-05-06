@@ -194,10 +194,8 @@ export default class Mine extends RoomScene {
 
         // rescuetable (components)
         const rescuetableButton = new Button(rescuetable)
-        rescuetableButton.spriteName = 'rescuetable'
         rescuetableButton.hoverCallback = () => this.onRescueOver()
         rescuetableButton.hoverOutCallback = () => this.onRescueOut()
-        rescuetableButton.activeFrame = false
         new MoveTo(rescuetable)
 
         // stairhit (components)

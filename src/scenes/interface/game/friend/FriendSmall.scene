@@ -68,7 +68,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "main",
@@ -401,7 +400,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "window-button-small",
                             "Button.callback": "() => this.onSearchEnter()",
                             "texture": {
                                 "key": "prompt",
@@ -502,7 +500,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "blue-button",
                             "Button.callback": "() => this.hideSearch()",
                             "texture": {
                                 "key": "main",

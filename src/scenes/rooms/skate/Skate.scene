@@ -132,8 +132,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "skate",
-            "Button.activeFrame": false,
             "MoveTo.x": 300,
             "MoveTo.y": 270,
             "texture": {
@@ -176,9 +174,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "catalog",
             "Button.callback": "() => this.loadSnowSports()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "skate",
                 "frame": "catalog"

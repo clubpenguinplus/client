@@ -54,7 +54,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "closeBtn",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "rainbowquest",
@@ -84,9 +83,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "brown-btn",
             "Button.callback": "() => this.joinRoom(432)",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "rainbowquest",
                 "frame": "brown-btn"
@@ -164,9 +161,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "brown-btn",
             "Button.callback": "() => this.onBonusCollect()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "rainbowquest",
                 "frame": "brown-btn"
@@ -333,7 +328,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task4/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task4/green-btn"
@@ -369,7 +363,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task4/green-btn",
                     "Button.callback": "() => this.collectItem4()",
                     "texture": {
                         "key": "rainbowquest",
@@ -456,7 +449,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task4/green-btn",
                     "Button.callback": "() => this.joinRoom(432)",
                     "texture": {
                         "key": "rainbowquest",
@@ -684,7 +676,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task3/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task3/green-btn"
@@ -720,7 +711,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task3/green-btn",
                     "Button.callback": "() => this.collectItem3()",
                     "texture": {
                         "key": "rainbowquest",
@@ -807,7 +797,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task3/green-btn",
                     "Button.callback": "() => this.joinRoom(430)",
                     "texture": {
                         "key": "rainbowquest",
@@ -1071,7 +1060,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task2/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task2/green-btn"
@@ -1107,7 +1095,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task2/green-btn",
                     "Button.callback": "() => this.collectItem2()",
                     "texture": {
                         "key": "rainbowquest",
@@ -1194,7 +1181,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task2/green-btn",
                     "Button.callback": "() => this.joinRoom(431)",
                     "texture": {
                         "key": "rainbowquest",
@@ -1457,7 +1443,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task1/green-btn",
                     "texture": {
                         "key": "rainbowquest",
                         "frame": "task1/green-btn"
@@ -1493,7 +1478,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task1/green-btn",
                     "Button.callback": "() => this.collectItem1()",
                     "texture": {
                         "key": "rainbowquest",
@@ -1578,7 +1562,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "task1/green-btn",
                     "Button.callback": "() => this.joinRoom(431)",
                     "texture": {
                         "key": "rainbowquest",

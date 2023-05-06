@@ -57,7 +57,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(5021)",
                     "texture": {
                         "key": "upmtn",
@@ -187,7 +186,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(5047)",
                     "texture": {
                         "key": "upmtn",
@@ -251,7 +249,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.interface.prompt.showItem(5046)",
                     "texture": {
                         "key": "upmtn",
@@ -320,7 +317,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "exit",
             "Button.callback": "() => this.scene.stop()",
             "texture": {
                 "key": "upmtn",

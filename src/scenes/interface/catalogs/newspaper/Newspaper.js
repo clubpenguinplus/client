@@ -248,118 +248,87 @@ export default class Newspaper extends News {
 
         // exit_1_1_1_1_1 (components)
         const exit_1_1_1_1_1Button = new Button(exit_1_1_1_1_1)
-        exit_1_1_1_1_1Button.spriteName = 'exit'
         exit_1_1_1_1_1Button.callback = () => this.close()
 
         // back_button_1_1_1_1 (components)
         const back_button_1_1_1_1Button = new Button(back_button_1_1_1_1)
-        back_button_1_1_1_1Button.spriteName = 'back-button'
         back_button_1_1_1_1Button.callback = () => this.firstPage()
 
         // next_2_1 (components)
         const next_2_1Button = new Button(next_2_1)
-        next_2_1Button.spriteName = 'next'
         next_2_1Button.callback = () => this.firstPage()
-        next_2_1Button.activeFrame = false
 
         // back_button_1_1_1 (components)
         const back_button_1_1_1Button = new Button(back_button_1_1_1)
-        back_button_1_1_1Button.spriteName = 'back-button'
         back_button_1_1_1Button.callback = () => this.firstPage()
 
         // exit_1_1_1_1 (components)
         const exit_1_1_1_1Button = new Button(exit_1_1_1_1)
-        exit_1_1_1_1Button.spriteName = 'exit'
         exit_1_1_1_1Button.callback = () => this.close()
 
         // next_2 (components)
         const next_2Button = new Button(next_2)
-        next_2Button.spriteName = 'next'
         next_2Button.callback = () => this.nextPage()
-        next_2Button.activeFrame = false
 
         // exit_1_1_1 (components)
         const exit_1_1_1Button = new Button(exit_1_1_1)
-        exit_1_1_1Button.spriteName = 'exit'
         exit_1_1_1Button.callback = () => this.close()
 
         // back_button_1_1 (components)
         const back_button_1_1Button = new Button(back_button_1_1)
-        back_button_1_1Button.spriteName = 'back-button'
         back_button_1_1Button.callback = () => this.firstPage()
 
         // next (components)
         const nextButton = new Button(next)
-        nextButton.spriteName = 'next'
         nextButton.callback = () => this.nextPage()
-        nextButton.activeFrame = false
 
         // exit_1_1 (components)
         const exit_1_1Button = new Button(exit_1_1)
-        exit_1_1Button.spriteName = 'exit'
         exit_1_1Button.callback = () => this.close()
 
         // back_button_1 (components)
         const back_button_1Button = new Button(back_button_1)
-        back_button_1Button.spriteName = 'back-button'
         back_button_1Button.callback = () => this.firstPage()
 
         // next_1 (components)
         const next_1Button = new Button(next_1)
-        next_1Button.spriteName = 'next'
         next_1Button.callback = () => this.nextPage()
-        next_1Button.activeFrame = false
 
         // exit_1 (components)
         const exit_1Button = new Button(exit_1)
-        exit_1Button.spriteName = 'exit'
         exit_1Button.callback = () => this.close()
 
         // back_button (components)
         const back_buttonButton = new Button(back_button)
-        back_buttonButton.spriteName = 'back-button'
         back_buttonButton.callback = () => this.prevPage()
 
         // next_1_1 (components)
         const next_1_1Button = new Button(next_1_1)
-        next_1_1Button.spriteName = 'next'
         next_1_1Button.callback = () => this.nextPage()
-        next_1_1Button.activeFrame = false
 
         // exit (components)
         const exitButton = new Button(exit)
-        exitButton.spriteName = 'exit'
         exitButton.callback = () => this.close()
 
         // events (components)
         const eventsButton = new Button(events)
-        eventsButton.spriteName = 'events'
         eventsButton.callback = () => this.eventPage()
-        eventsButton.activeFrame = false
 
         // featured (components)
         const featuredButton = new Button(featured)
-        featuredButton.spriteName = 'featured'
         featuredButton.callback = () => this.featuredPage()
-        featuredButton.activeFrame = false
 
         // jokes (components)
         const jokesButton = new Button(jokes)
-        jokesButton.spriteName = 'jokes'
         jokesButton.callback = () => this.jokesPage()
-        jokesButton.activeFrame = false
 
         // comics (components)
         const comicsButton = new Button(comics)
-        comicsButton.spriteName = 'comics'
         comicsButton.callback = () => this.comicsPage()
-        comicsButton.activeFrame = false
 
         // need (components)
         const needButton = new Button(need)
-        needButton.spriteName = 'need'
         needButton.callback = () => this.needPage()
-        needButton.activeFrame = false
 
         this.pages = pages
 

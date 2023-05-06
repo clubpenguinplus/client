@@ -122,9 +122,7 @@ export default class Mtn extends RoomScene {
 
         // skicatbottom (components)
         const skicatbottomButton = new Button(skicatbottom)
-        skicatbottomButton.spriteName = 'skicatbottom'
         skicatbottomButton.callback = () => this.interface.loadExternal('Sled')
-        skicatbottomButton.activeFrame = false
 
         this.skichairback = skichairback
         this.skichairfront = skichairfront
@@ -167,6 +165,12 @@ export default class Mtn extends RoomScene {
 
     onSkiCatOut() {
         this.ski_cat.setFrame('ski_cat0001')
+    }
+
+    triggerAction(frame) {
+        if (frame == 48) {
+            this.shell.client.stampEarned(11)
+        }
     }
 
     /* END-USER-CODE */

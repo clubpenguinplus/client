@@ -94,7 +94,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.warn()",
                     "texture": {
                         "key": "banning",
@@ -126,7 +125,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.mute()",
                     "texture": {
                         "key": "banning",
@@ -160,7 +158,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.ban()",
                     "texture": {
                         "key": "banning",
@@ -218,7 +215,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(24)",
                     "texture": {
                         "key": "banning",
@@ -252,7 +248,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(72)",
                     "texture": {
                         "key": "banning",
@@ -288,7 +283,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(168)",
                     "texture": {
                         "key": "banning",
@@ -324,7 +318,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(504)",
                     "texture": {
                         "key": "banning",
@@ -358,7 +351,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(2190)",
                     "texture": {
                         "key": "banning",
@@ -394,7 +386,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.setDuration(\"p\")",
                     "texture": {
                         "key": "banning",
@@ -454,7 +445,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('c')",
                     "texture": {
                         "key": "banning",
@@ -488,7 +478,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('p')",
                     "texture": {
                         "key": "banning",
@@ -522,7 +511,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('i')",
                     "texture": {
                         "key": "banning",
@@ -568,7 +556,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "long_button",
                     "Button.callback": "() => this.setReason('m')",
                     "texture": {
                         "key": "banning",
@@ -663,7 +650,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "button",
                     "Button.callback": "() => this.submit()",
                     "texture": {
                         "key": "banning",

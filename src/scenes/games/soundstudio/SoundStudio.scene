@@ -779,7 +779,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "start_btn",
             "Button.callback": "() => this.onRecordPress()",
             "texture": {
                 "key": "soundstudio",
@@ -1579,7 +1578,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "menu/big_btn",
                     "Button.callback": "() => this.startGame()",
                     "texture": {
                         "key": "soundstudio",
@@ -1597,7 +1595,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "close_btn",
             "Button.callback": "() => this.quit()",
             "texture": {
                 "key": "soundstudio",

@@ -120,7 +120,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "modbutton",
             "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.stop() }",
             "texture": {
                 "key": "safetyquiz",

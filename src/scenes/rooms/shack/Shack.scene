@@ -161,10 +161,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "schooldoor",
             "Button.hoverCallback": "() => this.SchoolDoorOver()",
             "Button.hoverOutCallback": "() => this.SchoolDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "shack",
                 "frame": "schooldoor"
@@ -319,10 +317,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "minedoor",
             "Button.hoverCallback": "() => this.MineDoorOver()",
             "Button.hoverOutCallback": "() => this.MineDoorOut()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "shack",
                 "frame": "minedoor"

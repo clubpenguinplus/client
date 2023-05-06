@@ -71,7 +71,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "exit",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "newspaper",
@@ -87,7 +86,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "back-button",
                     "Button.callback": "() => this.firstPage()",
                     "texture": {
                         "key": "newspaper",
@@ -103,9 +101,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "next",
                     "Button.callback": "() => this.firstPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "next"
@@ -167,7 +163,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "back-button",
                     "Button.callback": "() => this.firstPage()",
                     "texture": {
                         "key": "newspaper",
@@ -183,7 +178,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "exit",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "newspaper",
@@ -199,9 +193,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "next",
                     "Button.callback": "() => this.nextPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "next"
@@ -264,7 +256,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "exit",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "newspaper",
@@ -280,7 +271,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "back-button",
                     "Button.callback": "() => this.firstPage()",
                     "texture": {
                         "key": "newspaper",
@@ -296,9 +286,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "next",
                     "Button.callback": "() => this.nextPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "next"
@@ -360,7 +348,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "exit",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "newspaper",
@@ -376,7 +363,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "back-button",
                     "Button.callback": "() => this.firstPage()",
                     "texture": {
                         "key": "newspaper",
@@ -392,9 +378,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "next",
                     "Button.callback": "() => this.nextPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "next"
@@ -456,7 +440,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "exit",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "newspaper",
@@ -472,7 +455,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "back-button",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "newspaper",
@@ -488,9 +470,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "next",
                     "Button.callback": "() => this.nextPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "next"
@@ -540,7 +520,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "exit",
                     "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "newspaper",
@@ -556,9 +535,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "events",
                     "Button.callback": "() => this.eventPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "events"
@@ -598,9 +575,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "featured",
                     "Button.callback": "() => this.featuredPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "featured"
@@ -628,9 +603,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "jokes",
                     "Button.callback": "() => this.jokesPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "jokes"
@@ -658,9 +631,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "comics",
                     "Button.callback": "() => this.comicsPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "comics"
@@ -676,9 +647,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "need",
                     "Button.callback": "() => this.needPage()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "newspaper",
                         "frame": "need"

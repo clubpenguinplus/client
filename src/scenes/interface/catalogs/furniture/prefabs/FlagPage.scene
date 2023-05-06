@@ -2060,7 +2060,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextPage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "constant",
@@ -2076,7 +2075,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "prevPage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "constant",

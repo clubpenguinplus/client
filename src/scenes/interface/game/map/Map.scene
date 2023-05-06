@@ -32,7 +32,8 @@
                     "texture": {
                         "key": "map",
                         "frame": "map/bg"
-                    }
+                    },
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -42,16 +43,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/dojo",
                     "Button.callback": "() => this.onRoomClick(321)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "dojoext",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/dojo"
                     },
                     "x": 160,
-                    "y": -214
+                    "y": -214,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -63,7 +63,8 @@
                         "frame": "map/fg"
                     },
                     "x": 3,
-                    "y": 100
+                    "y": 100,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -73,16 +74,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/skihill",
                     "Button.callback": "() => this.onRoomClick(230)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "mtn",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/skihill"
                     },
                     "x": -442,
-                    "y": -121
+                    "y": -121,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -94,7 +94,8 @@
                         "frame": "map/left_snow"
                     },
                     "x": -610,
-                    "y": 51
+                    "y": 51,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -106,7 +107,8 @@
                         "frame": "map/snow_mound"
                     },
                     "x": -279,
-                    "y": -34
+                    "y": -34,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -118,7 +120,8 @@
                         "frame": "map/snow"
                     },
                     "x": -194,
-                    "y": 47
+                    "y": 47,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -128,16 +131,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/lighthouse",
                     "Button.callback": "() => this.onRoomClick(400)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "beach",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/lighthouse"
                     },
                     "x": -691,
-                    "y": 124
+                    "y": 124,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -147,16 +149,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/dock",
                     "Button.callback": "() => this.onRoomClick(800)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "dock",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/dock"
                     },
                     "x": -460,
-                    "y": 319
+                    "y": 319,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -166,16 +167,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/igloos",
                     "Button.callback": "() => this.iglooMap.visible = true",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "igloos",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/igloos"
                     },
                     "x": -152,
-                    "y": 263
+                    "y": 263,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -185,16 +185,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/igloo",
                     "Button.callback": "() => this.shell.client.sendJoinIgloo(this.shell.client.id)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "urigloo",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/igloo"
                     },
                     "x": -25,
-                    "y": 184
+                    "y": 184,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -204,16 +203,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/town",
                     "Button.callback": "() => this.onRoomClick(100)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "town",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/town"
                     },
                     "x": -186,
-                    "y": 92
+                    "y": 92,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -223,16 +221,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/pufflewild",
                     "Button.callback": "() => this.onRoomClick(230)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "pufflewild",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/pufflewild"
                     },
                     "x": -231,
-                    "y": -102
+                    "y": -102,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -242,16 +239,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/rink",
                     "Button.callback": "() => this.onRoomClick(802)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "rink",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/rink"
                     },
                     "x": -99,
-                    "y": -92
+                    "y": -92,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -263,7 +259,8 @@
                         "frame": "map/left_trees"
                     },
                     "x": -179,
-                    "y": -11
+                    "y": -11,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -273,16 +270,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/shack",
                     "Button.callback": "() => this.onRoomClick(807)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "shack",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/shack"
                     },
                     "x": 409,
-                    "y": -10
+                    "y": -10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -294,7 +290,8 @@
                         "frame": "map/right_trees"
                     },
                     "x": 330,
-                    "y": 20
+                    "y": 20,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -304,16 +301,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/skivillage",
                     "Button.callback": "() => this.onRoomClick(200)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "village",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/skivillage"
                     },
                     "x": -329,
-                    "y": -10
+                    "y": -10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -323,16 +319,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/forts",
                     "Button.callback": "() => this.onRoomClick(801)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "forts",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/forts"
                     },
                     "x": 12,
-                    "y": 47
+                    "y": 47,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -342,16 +337,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/pufflepark",
                     "Button.callback": "() => this.onRoomClick(230)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "park",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/pufflepark"
                     },
                     "x": 163,
-                    "y": -16
+                    "y": -16,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -361,16 +355,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/plaza",
                     "Button.callback": "() => this.onRoomClick(300)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "plaza",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/plaza"
                     },
                     "x": 228,
-                    "y": 107
+                    "y": 107,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -380,16 +373,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/forest",
                     "Button.callback": "() => this.onRoomClick(809)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "forest",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/forest"
                     },
                     "x": 421,
-                    "y": 136
+                    "y": 136,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -399,16 +391,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/skatepark",
                     "Button.callback": "() => this.onRoomClick(230)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "skatepark",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/skatepark"
                     },
                     "x": 618,
-                    "y": 7
+                    "y": 7,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -418,16 +409,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "map/places/cove",
                     "Button.callback": "() => this.onRoomClick(810)",
-                    "Button.activeFrame": false,
                     "ShowHint.text": "cove",
                     "texture": {
                         "key": "map",
                         "frame": "map/places/cove"
                     },
                     "x": 657,
-                    "y": 164
+                    "y": 164,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -444,7 +434,8 @@
                         "frame": "map/places/iceberg"
                     },
                     "x": 674,
-                    "y": -62
+                    "y": -62,
+                    "list": []
                 },
                 {
                     "type": "Rectangle",
@@ -457,7 +448,8 @@
                     "alpha": 0.4,
                     "isFilled": true,
                     "width": 1520,
-                    "height": 960
+                    "height": 960,
+                    "list": []
                 },
                 {
                     "type": "Container",
@@ -476,16 +468,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/cove_outline",
                             "Button.callback": "() => this.onRoomClick(810)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "cove",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/cove_outline"
                             },
                             "x": 1349,
-                            "y": 385
+                            "y": 385,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -495,16 +486,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/skatepark_outline",
                             "Button.callback": "() => this.onRoomClick(435)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "skatepark",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/skatepark_outline"
                             },
                             "x": 1309,
-                            "y": 221
+                            "y": 221,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -514,16 +504,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/forest_outline",
                             "Button.callback": "() => this.onRoomClick(809)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "forest",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/forest_outline"
                             },
                             "x": 1110,
-                            "y": 349
+                            "y": 349,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -533,16 +522,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/plaza_outline",
                             "Button.callback": "() => this.onRoomClick(300)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "plaza",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/plaza_outline"
                             },
                             "x": 919.5,
-                            "y": 321
+                            "y": 321,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -552,16 +540,14 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/pufflepark_outline",
-                            "Button.callback": "() => this.onRoomClick(230)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "park",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/pufflepark_outline"
                             },
                             "x": 853,
-                            "y": 200
+                            "y": 200,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -571,16 +557,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/forts_outline",
                             "Button.callback": "() => this.onRoomClick(801)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "forts",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/forts_outline"
                             },
                             "x": 703,
-                            "y": 261
+                            "y": 261,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -590,16 +575,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/shack_outline",
                             "Button.callback": "() => this.onRoomClick(807)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "shack",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/shack_outline"
                             },
                             "x": 1100,
-                            "y": 203
+                            "y": 203,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -609,16 +593,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/pufflewild_outline",
                             "Button.callback": "() => this.onRoomClick(436)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "pufflewild",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/pufflewild_outline"
                             },
                             "x": 461,
-                            "y": 117
+                            "y": 117,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -628,16 +611,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/town_outline",
                             "Button.callback": "() => this.onRoomClick(100)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "town",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/town_outline"
                             },
                             "x": 506,
-                            "y": 306.5
+                            "y": 306.5,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -647,16 +629,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/igloo_outline",
                             "Button.callback": "() => this.sendJoinIgloo()",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "urigloo",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/igloo_outline"
                             },
                             "x": 676,
-                            "y": 400
+                            "y": 400,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -666,16 +647,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/rink_outline",
                             "Button.callback": "() => this.onRoomClick(802)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "rink",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/rink_outline"
                             },
                             "x": 593,
-                            "y": 123
+                            "y": 123,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -685,16 +665,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/igloos_outline",
                             "Button.callback": "() => this.iglooMap.show()",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "igloos",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/igloos_outline"
                             },
                             "x": 540,
-                            "y": 475
+                            "y": 475,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -704,16 +683,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/dock_outline",
                             "Button.callback": "() => this.onRoomClick(800)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "dock",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/dock_outline"
                             },
                             "x": 232,
-                            "y": 531
+                            "y": 531,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -723,15 +701,14 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/lighthouse_outline",
                             "Button.callback": "() => this.onRoomClick(400)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "beach",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/lighthouse_outline"
                             },
-                            "y": 337
+                            "y": 337,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -741,15 +718,14 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/dojo_outline",
                             "Button.callback": "() => this.onRoomClick(321)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "dojoext",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/dojo_outline"
                             },
-                            "x": 851
+                            "x": 851,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -759,16 +735,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/skihill_outline",
                             "Button.callback": "() => this.onRoomClick(230)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "mtn",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/skihill_outline"
                             },
                             "x": 261.5,
-                            "y": 92.5
+                            "y": 92.5,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -778,16 +753,15 @@
                                 "Button",
                                 "ShowHint"
                             ],
-                            "Button.spriteName": "map/places_outline/skivillage_outline",
                             "Button.callback": "() => this.onRoomClick(200)",
-                            "Button.activeFrame": false,
                             "ShowHint.text": "village",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/skivillage_outline"
                             },
                             "x": 363,
-                            "y": 205
+                            "y": 205,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -802,7 +776,8 @@
                                 "frame": "map/places/iceberg"
                             },
                             "x": 1365,
-                            "y": 152
+                            "y": 152,
+                            "list": []
                         }
                     ]
                 },
@@ -832,7 +807,8 @@
                                 "frame": "map/games/aquagrabber"
                             },
                             "x": 1230,
-                            "y": 204
+                            "y": 204,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -850,7 +826,8 @@
                                 "frame": "map/games/arcadegames"
                             },
                             "x": 450,
-                            "y": 309
+                            "y": 309,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -868,7 +845,8 @@
                                 "frame": "map/games/beancounters"
                             },
                             "x": 302,
-                            "y": 339
+                            "y": 339,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -885,7 +863,8 @@
                             },
                             "x": 789,
                             "y": 50,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -903,7 +882,8 @@
                                 "frame": "map/games/cartsurfer"
                             },
                             "x": 1071,
-                            "y": 227
+                            "y": 227,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -921,7 +901,8 @@
                                 "frame": "map/games/catchinwaves"
                             },
                             "x": 1219,
-                            "y": 458
+                            "y": 458,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -939,7 +920,8 @@
                                 "frame": "map/games/dancecontest"
                             },
                             "x": 558,
-                            "y": 373
+                            "y": 373,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -956,7 +938,8 @@
                             },
                             "x": 448,
                             "y": 444,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -974,7 +957,8 @@
                                 "frame": "map/games/hydrohopper"
                             },
                             "x": 124,
-                            "y": 577
+                            "y": 577,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -992,7 +976,8 @@
                                 "frame": "map/games/icefishing"
                             },
                             "x": 182,
-                            "y": 225
+                            "y": 225,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1010,7 +995,8 @@
                                 "frame": "map/games/jetpackadventure"
                             },
                             "x": 6,
-                            "y": 341
+                            "y": 341,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1028,7 +1014,8 @@
                                 "frame": "map/games/pizzatron"
                             },
                             "x": 954,
-                            "y": 394
+                            "y": 394,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1046,7 +1033,8 @@
                                 "frame": "map/games/pufflelaunch"
                             },
                             "x": 749,
-                            "y": 423
+                            "y": 423,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1064,7 +1052,8 @@
                                 "frame": "map/games/pufflerescue"
                             },
                             "x": 916,
-                            "y": 240
+                            "y": 240,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1082,7 +1071,8 @@
                                 "frame": "map/games/puffleroundup"
                             },
                             "x": 740,
-                            "y": 285
+                            "y": 285,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1099,7 +1089,8 @@
                             },
                             "x": 855,
                             "y": 491,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1117,7 +1108,8 @@
                                 "frame": "map/games/sledracing"
                             },
                             "x": 153,
-                            "y": 89
+                            "y": 89,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1135,7 +1127,8 @@
                                 "frame": "map/games/smoothiesmash"
                             },
                             "x": 382,
-                            "y": 446
+                            "y": 446,
+                            "list": []
                         }
                     ]
                 },
@@ -1165,7 +1158,8 @@
                                 "frame": "map/shops/catchinwavesupgrades"
                             },
                             "x": 1192,
-                            "y": 415
+                            "y": 415,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1183,7 +1177,8 @@
                                 "frame": "map/shops/costumetrunk"
                             },
                             "x": 916,
-                            "y": 320
+                            "y": 320,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1201,7 +1196,8 @@
                                 "frame": "map/shops/hydrohopperupgrades"
                             },
                             "x": 172,
-                            "y": 514
+                            "y": 514,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1219,7 +1215,8 @@
                                 "frame": "map/shops/icefishingupgrades"
                             },
                             "x": 170,
-                            "y": 241
+                            "y": 241,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1237,7 +1234,8 @@
                             },
                             "x": 746,
                             "y": 33,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1254,7 +1252,8 @@
                                 "key": "map",
                                 "frame": "map/shops/musiccatalog"
                             },
-                            "y": 386
+                            "y": 386,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1272,7 +1271,8 @@
                                 "frame": "map/shops/penguinstyle"
                             },
                             "x": 505,
-                            "y": 349
+                            "y": 349,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1290,7 +1290,8 @@
                             },
                             "x": 747,
                             "y": 311,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1308,7 +1309,8 @@
                                 "frame": "map/shops/sledracerupgrades"
                             },
                             "x": 123,
-                            "y": 71
+                            "y": 71,
+                            "list": []
                         },
                         {
                             "type": "Sprite",
@@ -1325,7 +1327,8 @@
                                 "frame": "map/shops/snowandsports"
                             },
                             "x": 544,
-                            "y": 172
+                            "y": 172,
+                            "list": []
                         }
                     ]
                 },
@@ -1354,7 +1357,8 @@
                                 "frame": "map/puffles/adopt"
                             },
                             "x": 427,
-                            "y": 190
+                            "y": 190,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1371,7 +1375,8 @@
                             },
                             "x": 559,
                             "y": 193,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1388,7 +1393,8 @@
                                 "frame": "map/puffles/rescue"
                             },
                             "x": 534,
-                            "y": 58
+                            "y": 58,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1405,7 +1411,8 @@
                                 "frame": "map/puffles/roundup"
                             },
                             "x": 333,
-                            "y": 75
+                            "y": 75,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1420,7 +1427,8 @@
                             "texture": {
                                 "key": "map",
                                 "frame": "map/puffles/wild"
-                            }
+                            },
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1437,7 +1445,8 @@
                                 "frame": "map/puffles/arcade"
                             },
                             "x": 84,
-                            "y": 119
+                            "y": 119,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1454,7 +1463,8 @@
                                 "frame": "map/puffles/launch"
                             },
                             "x": 281,
-                            "y": 208
+                            "y": 208,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1471,7 +1481,8 @@
                             },
                             "x": 371,
                             "y": 314,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1488,7 +1499,8 @@
                             },
                             "x": 511,
                             "y": 308,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         },
                         {
                             "type": "Image",
@@ -1505,7 +1517,8 @@
                             },
                             "x": 147,
                             "y": 371,
-                            "visible": false
+                            "visible": false,
+                            "list": []
                         }
                     ]
                 },
@@ -1519,7 +1532,8 @@
                         "frame": "map/overlay/categories_bg"
                     },
                     "x": -467,
-                    "y": -383
+                    "y": -383,
+                    "list": []
                 },
                 {
                     "type": "Sprite",
@@ -1529,20 +1543,23 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "map/overlay/places_btn",
                     "Button.callback": "() => this.changeMode(\"places\")",
                     "texture": {
                         "key": "map",
                         "frame": "map/overlay/places_btn"
                     },
                     "x": -649,
-                    "y": -401
+                    "y": -401,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "77ff6992-8b41-46c2-8fd1-452cbbc97a5d",
                     "label": "places_txt",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "map-places",
                     "x": -649,
                     "y": -327,
                     "originX": 0.5,
@@ -1551,7 +1568,8 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
-                    "color": "#7f7f7fff"
+                    "color": "#7f7f7fff",
+                    "list": []
                 },
                 {
                     "type": "Sprite",
@@ -1561,20 +1579,23 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "map/overlay/games_btn",
                     "Button.callback": "() => this.changeMode(\"games\")",
                     "texture": {
                         "key": "map",
                         "frame": "map/overlay/games_btn"
                     },
                     "x": -520,
-                    "y": -401
+                    "y": -401,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "27576876-8dba-4ca9-8526-bdc9d8a0dbbb",
                     "label": "games_txt",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "map-games",
                     "x": -520,
                     "y": -327,
                     "originX": 0.5,
@@ -1583,7 +1604,8 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
-                    "color": "#7f7f7fff"
+                    "color": "#7f7f7fff",
+                    "list": []
                 },
                 {
                     "type": "Sprite",
@@ -1593,20 +1615,23 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "map/overlay/shops_btn",
                     "Button.callback": "() => this.changeMode(\"shops\")",
                     "texture": {
                         "key": "map",
                         "frame": "map/overlay/shops_btn"
                     },
                     "x": -393,
-                    "y": -401
+                    "y": -401,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "45a44884-0d73-496b-a8ba-4d197331bba3",
                     "label": "shops_txt",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "map-shops",
                     "x": -393,
                     "y": -327,
                     "originX": 0.5,
@@ -1615,7 +1640,8 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
-                    "color": "#7f7f7fff"
+                    "color": "#7f7f7fff",
+                    "list": []
                 },
                 {
                     "type": "Sprite",
@@ -1625,20 +1651,23 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "map/overlay/puffles_btn",
                     "Button.callback": "() => this.changeMode(\"puffles\")",
                     "texture": {
                         "key": "map",
                         "frame": "map/overlay/puffles_btn"
                     },
                     "x": -266,
-                    "y": -401
+                    "y": -401,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "c3d437bf-8a48-4d53-afce-23d1323de9b2",
                     "label": "shops_txt_1",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "map-pets",
                     "x": -266,
                     "y": -327,
                     "originX": 0.5,
@@ -1647,7 +1676,8 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "fontStyle": "bold",
-                    "color": "#7f7f7fff"
+                    "color": "#7f7f7fff",
+                    "list": []
                 },
                 {
                     "prefabId": "9f793ade-93a8-4ab2-bd68-ccd899fb9179",
@@ -1675,7 +1705,8 @@
                     "texture": {
                         "key": "map",
                         "frame": "map/overlay/overlay"
-                    }
+                    },
+                    "list": []
                 },
                 {
                     "type": "Sprite",
@@ -1685,14 +1716,14 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "grey-button",
                     "Button.callback": "() => { this.visible = false }",
                     "texture": {
                         "key": "main",
                         "frame": "grey-button"
                     },
                     "x": 717,
-                    "y": -439
+                    "y": -439,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -1704,7 +1735,8 @@
                         "frame": "grey-x"
                     },
                     "x": 717,
-                    "y": -441
+                    "y": -441,
+                    "list": []
                 }
             ]
         }

@@ -50,8 +50,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
-            "Button.activeFrame": false,
             "MoveTo.x": 482,
             "MoveTo.y": 496,
             "texture": {
@@ -259,9 +257,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "book",
             "Button.callback": "() => this.interface.loadExternal(\"Music\")",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "lighthouse",
                 "frame": "book"

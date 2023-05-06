@@ -857,7 +857,6 @@ export default class SportsCatalog extends Book {
 
         // nextpage (components)
         const nextpageButton = new Button(nextpage)
-        nextpageButton.spriteName = 'nextpage'
         nextpageButton.callback = () => this.nextPage()
 
         // exit_1 (components)
@@ -866,7 +865,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_722 (components)
         const buyBtn_722Button = new Button(buyBtn_722)
-        buyBtn_722Button.spriteName = 'tag'
         buyBtn_722Button.callback = () => this.buy(722)
 
         // priceNum_722 (components)
@@ -875,7 +873,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_3002 (components)
         const buyBtn_3002Button = new Button(buyBtn_3002)
-        buyBtn_3002Button.spriteName = 'tag'
         buyBtn_3002Button.callback = () => this.buy(3002)
 
         // priceNum_3002 (components)
@@ -908,7 +905,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5472 (components)
         const buyBtn_5472Button = new Button(buyBtn_5472)
-        buyBtn_5472Button.spriteName = 'tag'
         buyBtn_5472Button.callback = () => this.buy(5472)
 
         // priceNum_5472 (components)
@@ -917,7 +913,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5473 (components)
         const buyBtn_5473Button = new Button(buyBtn_5473)
-        buyBtn_5473Button.spriteName = 'tag'
         buyBtn_5473Button.callback = () => this.buy(5473)
 
         // priceNum_5473 (components)
@@ -926,7 +921,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_1906 (components)
         const buyBtn_1906Button = new Button(buyBtn_1906)
-        buyBtn_1906Button.spriteName = 'tag'
         buyBtn_1906Button.callback = () => this.buy(1906)
 
         // priceNum_1906 (components)
@@ -935,7 +929,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_1907 (components)
         const buyBtn_1907Button = new Button(buyBtn_1907)
-        buyBtn_1907Button.spriteName = 'tag'
         buyBtn_1907Button.callback = () => this.buy(1907)
 
         // priceNum_1907 (components)
@@ -944,7 +937,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5471 (components)
         const buyBtn_5471Button = new Button(buyBtn_5471)
-        buyBtn_5471Button.spriteName = 'tag'
         buyBtn_5471Button.callback = () => this.buy(5471)
 
         // priceNum_5471 (components)
@@ -953,7 +945,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5474 (components)
         const buyBtn_5474Button = new Button(buyBtn_5474)
-        buyBtn_5474Button.spriteName = 'tag'
         buyBtn_5474Button.callback = () => this.buy(5474)
 
         // priceNum_5474 (components)
@@ -962,7 +953,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_24191 (components)
         const buyBtn_24191Button = new Button(buyBtn_24191)
-        buyBtn_24191Button.spriteName = 'tag'
         buyBtn_24191Button.callback = () => this.buy(24191)
 
         // priceNum_24191 (components)
@@ -971,7 +961,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_24204 (components)
         const buyBtn_24204Button = new Button(buyBtn_24204)
-        buyBtn_24204Button.spriteName = 'tag'
         buyBtn_24204Button.callback = () => this.buy(24204)
 
         // priceNum_24204 (components)
@@ -980,7 +969,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4347 (components)
         const buyBtn_4347Button = new Button(buyBtn_4347)
-        buyBtn_4347Button.spriteName = 'tag'
         buyBtn_4347Button.callback = () => this.buy(4347)
 
         // priceNum_4347 (components)
@@ -989,7 +977,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4349 (components)
         const buyBtn_4349Button = new Button(buyBtn_4349)
-        buyBtn_4349Button.spriteName = 'tag'
         buyBtn_4349Button.callback = () => this.buy(4349)
 
         // priceNum_4349 (components)
@@ -998,7 +985,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4350 (components)
         const buyBtn_4350Button = new Button(buyBtn_4350)
-        buyBtn_4350Button.spriteName = 'tag'
         buyBtn_4350Button.callback = () => this.buy(4350)
 
         // priceNum_4350 (components)
@@ -1007,7 +993,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4348 (components)
         const buyBtn_4348Button = new Button(buyBtn_4348)
-        buyBtn_4348Button.spriteName = 'tag'
         buyBtn_4348Button.callback = () => this.buy(4348)
 
         // priceNum_4348 (components)
@@ -1016,7 +1001,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_727 (components)
         const buyBtn_727Button = new Button(buyBtn_727)
-        buyBtn_727Button.spriteName = 'tag'
         buyBtn_727Button.callback = () => this.buy(727)
 
         // priceNum_727 (components)
@@ -1025,7 +1009,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4091 (components)
         const buyBtn_4091Button = new Button(buyBtn_4091)
-        buyBtn_4091Button.spriteName = 'tag'
         buyBtn_4091Button.callback = () => this.buy(4091)
 
         // priceNum_4091 (components)
@@ -1034,7 +1017,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_329 (components)
         const buyBtn_329Button = new Button(buyBtn_329)
-        buyBtn_329Button.spriteName = 'tag'
         buyBtn_329Button.callback = () => this.buy(329)
 
         // priceNum_329 (components)
@@ -1043,7 +1025,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_255 (components)
         const buyBtn_255Button = new Button(buyBtn_255)
-        buyBtn_255Button.spriteName = 'tag'
         buyBtn_255Button.callback = () => this.buy(255)
 
         // priceNum_255 (components)
@@ -1052,7 +1033,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4116 (components)
         const buyBtn_4116Button = new Button(buyBtn_4116)
-        buyBtn_4116Button.spriteName = 'tag'
         buyBtn_4116Button.callback = () => this.buy(4116)
 
         // priceNum_4116 (components)
@@ -1061,7 +1041,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5048 (components)
         const buyBtn_5048Button = new Button(buyBtn_5048)
-        buyBtn_5048Button.spriteName = 'tag'
         buyBtn_5048Button.callback = () => this.buy(5048)
 
         // priceNum_5048 (components)
@@ -1070,7 +1049,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_658 (components)
         const buyBtn_658Button = new Button(buyBtn_658)
-        buyBtn_658Button.spriteName = 'tag'
         buyBtn_658Button.callback = () => this.buy(658)
 
         // priceNum_658 (components)
@@ -1079,7 +1057,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_671 (components)
         const buyBtn_671Button = new Button(buyBtn_671)
-        buyBtn_671Button.spriteName = 'tag'
         buyBtn_671Button.callback = () => this.buy(671)
 
         // priceNum_671 (components)
@@ -1088,7 +1065,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5136 (components)
         const buyBtn_5136Button = new Button(buyBtn_5136)
-        buyBtn_5136Button.spriteName = 'tag'
         buyBtn_5136Button.callback = () => this.buy(5136)
 
         // priceNum_5136 (components)
@@ -1097,7 +1073,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_254 (components)
         const buyBtn_254Button = new Button(buyBtn_254)
-        buyBtn_254Button.spriteName = 'tag'
         buyBtn_254Button.callback = () => this.buy(254)
 
         // priceNum_254 (components)
@@ -1106,7 +1081,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_1079 (components)
         const buyBtn_1079Button = new Button(buyBtn_1079)
-        buyBtn_1079Button.spriteName = 'tag'
         buyBtn_1079Button.callback = () => this.buy(1079)
 
         // priceNum_1079 (components)
@@ -1115,7 +1089,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_462 (components)
         const buyBtn_462Button = new Button(buyBtn_462)
-        buyBtn_462Button.spriteName = 'tag'
         buyBtn_462Button.callback = () => this.buy(462)
 
         // priceNum_462 (components)
@@ -1124,7 +1097,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_1078 (components)
         const buyBtn_1078Button = new Button(buyBtn_1078)
-        buyBtn_1078Button.spriteName = 'tag'
         buyBtn_1078Button.callback = () => this.buy(1078)
 
         // priceNum_1078 (components)
@@ -1133,7 +1105,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_721 (components)
         const buyBtn_721Button = new Button(buyBtn_721)
-        buyBtn_721Button.spriteName = 'tag'
         buyBtn_721Button.callback = () => this.buy(721)
 
         // priceNum_721 (components)
@@ -1142,7 +1113,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4115 (components)
         const buyBtn_4115Button = new Button(buyBtn_4115)
-        buyBtn_4115Button.spriteName = 'tag'
         buyBtn_4115Button.callback = () => this.buy(4115)
 
         // priceNum_4115 (components)
@@ -1151,7 +1121,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_463 (components)
         const buyBtn_463Button = new Button(buyBtn_463)
-        buyBtn_463Button.spriteName = 'tag'
         buyBtn_463Button.callback = () => this.buy(463)
 
         // priceNum_463 (components)
@@ -1160,7 +1129,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_726 (components)
         const buyBtn_726Button = new Button(buyBtn_726)
-        buyBtn_726Button.spriteName = 'tag'
         buyBtn_726Button.callback = () => this.buy(726)
 
         // priceNum_726 (components)
@@ -1169,7 +1137,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_720 (components)
         const buyBtn_720Button = new Button(buyBtn_720)
-        buyBtn_720Button.spriteName = 'tag'
         buyBtn_720Button.callback = () => this.buy(720)
 
         // priceNum_720 (components)
@@ -1178,7 +1145,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5091 (components)
         const buyBtn_5091Button = new Button(buyBtn_5091)
-        buyBtn_5091Button.spriteName = 'tag'
         buyBtn_5091Button.callback = () => this.buy(5091)
 
         // priceNum_5091 (components)
@@ -1187,7 +1153,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5092 (components)
         const buyBtn_5092Button = new Button(buyBtn_5092)
-        buyBtn_5092Button.spriteName = 'tag'
         buyBtn_5092Button.callback = () => this.buy(5092)
 
         // priceNum_5092 (components)
@@ -1196,7 +1161,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5093 (components)
         const buyBtn_5093Button = new Button(buyBtn_5093)
-        buyBtn_5093Button.spriteName = 'tag'
         buyBtn_5093Button.callback = () => this.buy(5093)
 
         // priceNum_5093 (components)
@@ -1205,7 +1169,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_5094 (components)
         const buyBtn_5094Button = new Button(buyBtn_5094)
-        buyBtn_5094Button.spriteName = 'tag'
         buyBtn_5094Button.callback = () => this.buy(5094)
 
         // priceNum_5094 (components)
@@ -1214,7 +1177,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4089 (components)
         const buyBtn_4089Button = new Button(buyBtn_4089)
-        buyBtn_4089Button.spriteName = 'tag'
         buyBtn_4089Button.callback = () => this.buy(4089)
 
         // priceNum_4089 (components)
@@ -1223,7 +1185,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_4090 (components)
         const buyBtn_4090Button = new Button(buyBtn_4090)
-        buyBtn_4090Button.spriteName = 'tag'
         buyBtn_4090Button.callback = () => this.buy(4090)
 
         // priceNum_4090 (components)
@@ -1232,7 +1193,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_313 (components)
         const buyBtn_313Button = new Button(buyBtn_313)
-        buyBtn_313Button.spriteName = 'tag'
         buyBtn_313Button.callback = () => this.buy(313)
 
         // priceNum_313 (components)
@@ -1241,7 +1201,6 @@ export default class SportsCatalog extends Book {
 
         // buyBtn_372 (components)
         const buyBtn_372Button = new Button(buyBtn_372)
-        buyBtn_372Button.spriteName = 'tag'
         buyBtn_372Button.callback = () => this.buy(372)
 
         // priceNum_372 (components)
@@ -1250,7 +1209,6 @@ export default class SportsCatalog extends Book {
 
         // backpage13 (components)
         const backpage13Button = new Button(backpage13)
-        backpage13Button.spriteName = 'backpage'
         backpage13Button.callback = () => this.prevPage()
 
         // exit_2 (components)
@@ -1263,12 +1221,10 @@ export default class SportsCatalog extends Book {
 
         // nextpage_1 (components)
         const nextpage_1Button = new Button(nextpage_1)
-        nextpage_1Button.spriteName = 'nextpage'
         nextpage_1Button.callback = () => this.nextPage()
 
         // backpage (components)
         const backpageButton = new Button(backpage)
-        backpageButton.spriteName = 'backpage'
         backpageButton.callback = () => this.prevPage()
 
         this.buyBtn_722 = buyBtn_722

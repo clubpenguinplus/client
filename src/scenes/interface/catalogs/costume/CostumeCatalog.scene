@@ -58,7 +58,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -110,7 +109,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -126,7 +124,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -743,7 +740,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -759,7 +755,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -797,7 +792,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(489)",
                     "texture": {
                         "key": "stagecat",
@@ -833,7 +827,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5580)",
                     "texture": {
                         "key": "stagecat",
@@ -868,7 +861,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -884,7 +876,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -922,7 +913,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(675)",
                     "texture": {
                         "key": "stagecat",
@@ -958,7 +948,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(834)",
                     "texture": {
                         "key": "stagecat",
@@ -994,7 +983,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(835)",
                     "texture": {
                         "key": "stagecat",
@@ -1030,7 +1018,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(190)",
                     "texture": {
                         "key": "stagecat",
@@ -1066,7 +1053,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(126)",
                     "texture": {
                         "key": "stagecat",
@@ -1194,7 +1180,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(212)",
                             "texture": {
                                 "key": "stagecat",
@@ -1266,7 +1251,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -1282,7 +1266,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -1320,7 +1303,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(676)",
                     "texture": {
                         "key": "stagecat",
@@ -1356,7 +1338,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(127)",
                     "texture": {
                         "key": "stagecat",
@@ -1392,7 +1373,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(128)",
                     "texture": {
                         "key": "stagecat",
@@ -1427,7 +1407,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -1443,7 +1422,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -1481,7 +1459,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(665)",
                     "texture": {
                         "key": "stagecat",
@@ -1517,7 +1494,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(786)",
                     "texture": {
                         "key": "stagecat",
@@ -1553,7 +1529,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(787)",
                     "texture": {
                         "key": "stagecat",
@@ -1589,7 +1564,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(316)",
                     "texture": {
                         "key": "stagecat",
@@ -1625,7 +1599,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(432)",
                     "texture": {
                         "key": "stagecat",
@@ -1661,7 +1634,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(327)",
                     "texture": {
                         "key": "stagecat",
@@ -1790,7 +1762,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(716)",
                             "texture": {
                                 "key": "stagecat",
@@ -1862,7 +1833,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -1878,7 +1848,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -1916,7 +1885,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(666)",
                     "texture": {
                         "key": "stagecat",
@@ -1952,7 +1920,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(789)",
                     "texture": {
                         "key": "stagecat",
@@ -1988,7 +1955,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(788)",
                     "texture": {
                         "key": "stagecat",
@@ -2024,7 +1990,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(715)",
                     "texture": {
                         "key": "stagecat",
@@ -2059,7 +2024,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2075,7 +2039,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2113,7 +2076,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(123)",
                     "texture": {
                         "key": "stagecat",
@@ -2149,7 +2111,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(302)",
                     "texture": {
                         "key": "stagecat",
@@ -2185,7 +2146,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(315)",
                     "texture": {
                         "key": "stagecat",
@@ -2221,7 +2181,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(124)",
                     "texture": {
                         "key": "stagecat",
@@ -2257,7 +2216,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(765)",
                     "texture": {
                         "key": "stagecat",
@@ -2293,7 +2251,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(766)",
                     "texture": {
                         "key": "stagecat",
@@ -2328,7 +2285,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2344,7 +2300,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2382,7 +2337,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(767)",
                     "texture": {
                         "key": "stagecat",
@@ -2418,7 +2372,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(195)",
                     "texture": {
                         "key": "stagecat",
@@ -2454,7 +2407,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(113)",
                     "texture": {
                         "key": "stagecat",
@@ -2489,7 +2441,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2505,7 +2456,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2543,7 +2493,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4457)",
                     "texture": {
                         "key": "stagecat",
@@ -2579,7 +2528,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6096)",
                     "texture": {
                         "key": "stagecat",
@@ -2615,7 +2563,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4456)",
                     "texture": {
                         "key": "stagecat",
@@ -2651,7 +2598,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4455)",
                     "texture": {
                         "key": "stagecat",
@@ -2687,7 +2633,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6095)",
                     "texture": {
                         "key": "stagecat",
@@ -2722,7 +2667,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2738,7 +2682,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -2776,7 +2719,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(132)",
                     "texture": {
                         "key": "stagecat",
@@ -2812,7 +2754,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4113)",
                     "texture": {
                         "key": "stagecat",
@@ -2848,7 +2789,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4114)",
                     "texture": {
                         "key": "stagecat",
@@ -2884,7 +2824,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(2003)",
                     "texture": {
                         "key": "stagecat",
@@ -2920,7 +2859,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(364)",
                     "texture": {
                         "key": "stagecat",
@@ -2956,7 +2894,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(367)",
                     "texture": {
                         "key": "stagecat",
@@ -2992,7 +2929,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(308)",
                     "texture": {
                         "key": "stagecat",
@@ -3027,7 +2963,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3043,7 +2978,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3081,7 +3015,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(768)",
                     "texture": {
                         "key": "stagecat",
@@ -3117,7 +3050,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3029)",
                     "texture": {
                         "key": "stagecat",
@@ -3153,7 +3085,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5044)",
                     "texture": {
                         "key": "stagecat",
@@ -3189,7 +3120,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1077)",
                     "texture": {
                         "key": "stagecat",
@@ -3225,7 +3155,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4110)",
                     "texture": {
                         "key": "stagecat",
@@ -3261,7 +3190,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1076)",
                     "texture": {
                         "key": "stagecat",
@@ -3296,7 +3224,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3312,7 +3239,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3350,7 +3276,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4111)",
                     "texture": {
                         "key": "stagecat",
@@ -3386,7 +3311,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4112)",
                     "texture": {
                         "key": "stagecat",
@@ -3421,7 +3345,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3437,7 +3360,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3475,7 +3397,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1057)",
                     "texture": {
                         "key": "stagecat",
@@ -3511,7 +3432,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4085)",
                     "texture": {
                         "key": "stagecat",
@@ -3547,7 +3467,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4086)",
                     "texture": {
                         "key": "stagecat",
@@ -3583,7 +3502,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1056)",
                     "texture": {
                         "key": "stagecat",
@@ -3618,7 +3536,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3634,7 +3551,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3672,7 +3588,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4015)",
                     "texture": {
                         "key": "stagecat",
@@ -3708,7 +3623,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(347)",
                     "texture": {
                         "key": "stagecat",
@@ -3744,7 +3658,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(244)",
                     "texture": {
                         "key": "stagecat",
@@ -3776,7 +3689,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3792,7 +3704,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -3830,7 +3741,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1010)",
                     "texture": {
                         "key": "stagecat",
@@ -3866,7 +3776,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(181)",
                     "texture": {
                         "key": "stagecat",
@@ -3902,7 +3811,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4012)",
                     "texture": {
                         "key": "stagecat",
@@ -3938,7 +3846,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1009)",
                     "texture": {
                         "key": "stagecat",
@@ -3974,7 +3881,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(842)",
                     "texture": {
                         "key": "stagecat",
@@ -4010,7 +3916,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5003)",
                     "texture": {
                         "key": "stagecat",
@@ -4045,7 +3950,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4061,7 +3965,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4099,7 +4002,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1012)",
                     "texture": {
                         "key": "stagecat",
@@ -4135,7 +4037,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3005)",
                     "texture": {
                         "key": "stagecat",
@@ -4171,7 +4072,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4014)",
                     "texture": {
                         "key": "stagecat",
@@ -4207,7 +4107,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1011)",
                     "texture": {
                         "key": "stagecat",
@@ -4243,7 +4142,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6008)",
                     "texture": {
                         "key": "stagecat",
@@ -4279,7 +4177,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4013)",
                     "texture": {
                         "key": "stagecat",
@@ -4314,7 +4211,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4330,7 +4226,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4368,7 +4263,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1025)",
                     "texture": {
                         "key": "stagecat",
@@ -4404,7 +4298,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4038)",
                     "texture": {
                         "key": "stagecat",
@@ -4440,7 +4333,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4036)",
                     "texture": {
                         "key": "stagecat",
@@ -4476,7 +4368,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1023)",
                     "texture": {
                         "key": "stagecat",
@@ -4512,7 +4403,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3008)",
                     "texture": {
                         "key": "stagecat",
@@ -4548,7 +4438,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(301)",
                     "texture": {
                         "key": "stagecat",
@@ -4583,7 +4472,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4599,7 +4487,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4637,7 +4524,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4039)",
                     "texture": {
                         "key": "stagecat",
@@ -4673,7 +4559,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6010)",
                     "texture": {
                         "key": "stagecat",
@@ -4709,7 +4594,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4037)",
                     "texture": {
                         "key": "stagecat",
@@ -4745,7 +4629,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1024)",
                     "texture": {
                         "key": "stagecat",
@@ -4780,7 +4663,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4796,7 +4678,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4834,7 +4715,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1015)",
                     "texture": {
                         "key": "stagecat",
@@ -4870,7 +4750,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4018)",
                     "texture": {
                         "key": "stagecat",
@@ -4906,7 +4785,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4426)",
                     "texture": {
                         "key": "stagecat",
@@ -4941,7 +4819,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4957,7 +4834,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -4995,7 +4871,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(479)",
                     "texture": {
                         "key": "stagecat",
@@ -5031,7 +4906,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(658)",
                     "texture": {
                         "key": "stagecat",
@@ -5067,7 +4941,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(254)",
                     "texture": {
                         "key": "stagecat",
@@ -5103,7 +4976,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(771)",
                     "texture": {
                         "key": "stagecat",
@@ -5139,7 +5011,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(110)",
                     "texture": {
                         "key": "stagecat",
@@ -5175,7 +5046,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4004)",
                     "texture": {
                         "key": "stagecat",
@@ -5210,7 +5080,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5226,7 +5095,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5264,7 +5132,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(722)",
                     "texture": {
                         "key": "stagecat",
@@ -5300,7 +5167,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3002)",
                     "texture": {
                         "key": "stagecat",
@@ -5336,7 +5202,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(772)",
                     "texture": {
                         "key": "stagecat",
@@ -5372,7 +5237,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(659)",
                     "texture": {
                         "key": "stagecat",
@@ -5407,7 +5271,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5423,7 +5286,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5460,7 +5322,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5476,7 +5337,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5514,7 +5374,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(122)",
                     "texture": {
                         "key": "stagecat",
@@ -5550,7 +5409,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(276)",
                     "texture": {
                         "key": "stagecat",
@@ -5586,7 +5444,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(2004)",
                     "texture": {
                         "key": "stagecat",
@@ -5622,7 +5479,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1016)",
                     "texture": {
                         "key": "stagecat",
@@ -5658,7 +5514,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(266)",
                     "texture": {
                         "key": "stagecat",
@@ -5694,7 +5549,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4021)",
                     "texture": {
                         "key": "stagecat",
@@ -5730,7 +5584,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1199)",
                     "texture": {
                         "key": "stagecat",
@@ -5766,7 +5619,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(120)",
                     "texture": {
                         "key": "stagecat",
@@ -5802,7 +5654,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(245)",
                     "texture": {
                         "key": "stagecat",
@@ -5838,7 +5689,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(458)",
                     "texture": {
                         "key": "stagecat",
@@ -5874,7 +5724,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(268)",
                     "texture": {
                         "key": "stagecat",
@@ -5910,7 +5759,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4280)",
                     "texture": {
                         "key": "stagecat",
@@ -5945,7 +5793,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5961,7 +5808,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -5999,7 +5845,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1116)",
                     "texture": {
                         "key": "stagecat",
@@ -6035,7 +5880,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(2016)",
                     "texture": {
                         "key": "stagecat",
@@ -6071,7 +5915,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6033)",
                     "texture": {
                         "key": "stagecat",
@@ -6107,7 +5950,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4190)",
                     "texture": {
                         "key": "stagecat",
@@ -6143,7 +5985,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1114)",
                     "texture": {
                         "key": "stagecat",
@@ -6179,7 +6020,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4192)",
                     "texture": {
                         "key": "stagecat",
@@ -6307,7 +6147,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(1272)",
                             "texture": {
                                 "key": "stagecat",
@@ -6379,7 +6218,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -6395,7 +6233,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -6433,7 +6270,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1115)",
                     "texture": {
                         "key": "stagecat",
@@ -6469,7 +6305,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(6034)",
                     "texture": {
                         "key": "stagecat",
@@ -6505,7 +6340,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4191)",
                     "texture": {
                         "key": "stagecat",
@@ -6541,7 +6375,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(2017)",
                     "texture": {
                         "key": "stagecat",
@@ -6577,7 +6410,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4194)",
                     "texture": {
                         "key": "stagecat",
@@ -6613,7 +6445,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3041)",
                     "texture": {
                         "key": "stagecat",
@@ -6649,7 +6480,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1117)",
                     "texture": {
                         "key": "stagecat",
@@ -6684,7 +6514,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -6700,7 +6529,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -6738,7 +6566,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(367)",
                     "texture": {
                         "key": "stagecat",
@@ -6774,7 +6601,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(477)",
                     "texture": {
                         "key": "stagecat",
@@ -6810,7 +6636,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(762)",
                     "texture": {
                         "key": "stagecat",
@@ -6846,7 +6671,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(763)",
                     "texture": {
                         "key": "stagecat",
@@ -6881,7 +6705,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -6897,7 +6720,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -6935,7 +6757,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(476)",
                     "texture": {
                         "key": "stagecat",
@@ -6971,7 +6792,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(761)",
                     "texture": {
                         "key": "stagecat",
@@ -7007,7 +6827,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(760)",
                     "texture": {
                         "key": "stagecat",
@@ -7043,7 +6862,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(475)",
                     "texture": {
                         "key": "stagecat",
@@ -7171,7 +6989,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(186)",
                             "texture": {
                                 "key": "stagecat",
@@ -7243,7 +7060,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -7259,7 +7075,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -7296,7 +7111,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -7312,7 +7126,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -7350,7 +7163,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1102)",
                     "texture": {
                         "key": "stagecat",
@@ -7386,7 +7198,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3037)",
                     "texture": {
                         "key": "stagecat",
@@ -7422,7 +7233,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3036)",
                     "texture": {
                         "key": "stagecat",
@@ -7458,7 +7268,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1101)",
                     "texture": {
                         "key": "stagecat",
@@ -7494,7 +7303,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4136)",
                     "texture": {
                         "key": "stagecat",
@@ -7530,7 +7338,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4137)",
                     "texture": {
                         "key": "stagecat",
@@ -7566,7 +7373,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(472)",
                     "texture": {
                         "key": "stagecat",
@@ -7602,7 +7408,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4135)",
                     "texture": {
                         "key": "stagecat",
@@ -7638,7 +7443,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(227)",
                     "texture": {
                         "key": "stagecat",
@@ -7674,7 +7478,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4138)",
                     "texture": {
                         "key": "stagecat",
@@ -7710,7 +7513,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(309)",
                     "texture": {
                         "key": "stagecat",
@@ -7838,7 +7640,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "tag",
                             "Button.callback": "() => this.buy(6020)",
                             "texture": {
                                 "key": "stagecat",
@@ -7910,7 +7711,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -7926,7 +7726,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -7964,7 +7763,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(2043)",
                     "texture": {
                         "key": "stagecat",
@@ -8000,7 +7798,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4467)",
                     "texture": {
                         "key": "stagecat",
@@ -8036,7 +7833,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4468)",
                     "texture": {
                         "key": "stagecat",
@@ -8072,7 +7868,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4466)",
                     "texture": {
                         "key": "stagecat",
@@ -8107,7 +7902,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -8123,7 +7917,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -8161,7 +7954,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(1106)",
                     "texture": {
                         "key": "stagecat",
@@ -8197,7 +7989,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(4146)",
                     "texture": {
                         "key": "stagecat",
@@ -8233,7 +8024,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(5131)",
                     "texture": {
                         "key": "stagecat",
@@ -8269,7 +8059,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(3038)",
                     "texture": {
                         "key": "stagecat",
@@ -8305,7 +8094,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "tag",
                     "Button.callback": "() => this.buy(119)",
                     "texture": {
                         "key": "stagecat",
@@ -8340,7 +8128,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "nextpage",
                     "Button.callback": "() => this.nextPage()",
                     "texture": {
                         "key": "stagecat",
@@ -8356,7 +8143,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",
@@ -8408,7 +8194,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "backpage",
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
                         "key": "stagecat",

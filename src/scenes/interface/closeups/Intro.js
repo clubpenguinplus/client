@@ -66,7 +66,6 @@ export default class Intro extends Closeup {
 
         // button (components)
         const buttonButton = new Button(button)
-        buttonButton.spriteName = 'button'
         buttonButton.callback = () => this.stop()
 
         this.title = title

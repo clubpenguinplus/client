@@ -137,7 +137,6 @@ export default class Activate extends BaseScene {
 
         // loginButton (components)
         const loginButtonButton = new Button(loginButton)
-        loginButtonButton.spriteName = 'login-button'
         loginButtonButton.callback = () => this.onActivateSubmit()
 
         // loginText (components)

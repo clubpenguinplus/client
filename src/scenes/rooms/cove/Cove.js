@@ -246,8 +246,6 @@ export default class Cove extends RoomScene {
 
         // waves (components)
         const wavesButton = new Button(waves)
-        wavesButton.spriteName = 'waves'
-        wavesButton.activeFrame = false
         const wavesShowHint = new ShowHint(waves)
         wavesShowHint.text = 'catchinwaves'
         const wavesMoveTo = new MoveTo(waves)

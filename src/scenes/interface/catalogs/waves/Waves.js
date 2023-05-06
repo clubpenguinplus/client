@@ -117,15 +117,11 @@ export default class Waves extends News {
 
         // buy_wake1 (components)
         const buy_wake1Button = new Button(buy_wake1)
-        buy_wake1Button.spriteName = 'buybtn'
         buy_wake1Button.callback = () => this.interface.prompt.showItem(702)
-        buy_wake1Button.activeFrame = false
 
         // buy_wake2 (components)
         const buy_wake2Button = new Button(buy_wake2)
-        buy_wake2Button.spriteName = 'buybtn'
         buy_wake2Button.callback = () => this.interface.prompt.showItem(701)
-        buy_wake2Button.activeFrame = false
 
         // hidden_btn (components)
         const hidden_btnSimpleButton = new SimpleButton(hidden_btn)

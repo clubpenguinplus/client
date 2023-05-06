@@ -19,7 +19,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "buy1",
             "Button.callback": "() => this.scene.buy(this.item)",
             "texture": {
                 "key": "clothingcatalog",

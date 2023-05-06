@@ -28,7 +28,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "play",
                     "Button.callback": "() => this.onClick()",
                     "texture": {
                         "key": "iglooedit-new",

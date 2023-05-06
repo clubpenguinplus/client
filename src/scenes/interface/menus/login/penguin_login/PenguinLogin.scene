@@ -161,7 +161,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "login-button",
             "Button.callback": "() => this.onLoginSubmit()",
             "texture": {
                 "key": "login",

@@ -122,7 +122,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "ok-btn",
                             "Button.callback": "() => this.next()",
                             "texture": {
                                 "key": "create",
@@ -1048,7 +1047,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "login-button",
                     "Button.callback": "() => this.under13()",
                     "texture": {
                         "key": "login",
@@ -1063,7 +1061,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "login-button",
                     "Button.callback": "() => this.over13()",
                     "texture": {
                         "key": "login",
@@ -1148,7 +1145,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.submitUsername()",
                     "texture": {
                         "key": "main",
@@ -1220,7 +1216,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.hoverOutCallback": "() => this.showConfirmPassword(false)",
                     "Button.callback": "() => this.showConfirmPassword(true)",
                     "texture": {
@@ -1285,7 +1280,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.hoverOutCallback": "() => this.showPassword(false)",
                     "Button.callback": "() => this.showPassword(true)",
                     "texture": {
@@ -1360,7 +1354,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.submitEmail()",
                     "texture": {
                         "key": "main",

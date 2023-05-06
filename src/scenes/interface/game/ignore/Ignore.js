@@ -104,19 +104,16 @@ export default class Ignore extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => {
             this.visible = false
         }
 
         // down_button (components)
         const down_buttonButton = new Button(down_button)
-        down_buttonButton.spriteName = 'blue-button'
         down_buttonButton.callback = () => this.nextPage()
 
         // up_button (components)
         const up_buttonButton = new Button(up_button)
-        up_buttonButton.spriteName = 'blue-button'
         up_buttonButton.callback = () => this.prevPage()
 
         this.text = text

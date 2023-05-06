@@ -96,17 +96,13 @@ export default class Skate extends RoomScene {
 
         // skate (components)
         const skateButton = new Button(skate)
-        skateButton.spriteName = 'skate'
-        skateButton.activeFrame = false
         const skateMoveTo = new MoveTo(skate)
         skateMoveTo.x = 300
         skateMoveTo.y = 270
 
         // catalog (components)
         const catalogButton = new Button(catalog)
-        catalogButton.spriteName = 'catalog'
         catalogButton.callback = () => this.loadSnowSports()
-        catalogButton.activeFrame = false
 
         this.sort = sort
 

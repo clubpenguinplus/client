@@ -673,7 +673,6 @@ export default class SoundStudio extends GameScene {
 
         // recordBtn (components)
         const recordBtnButton = new Button(recordBtn)
-        recordBtnButton.spriteName = 'start_btn'
         recordBtnButton.callback = () => this.onRecordPress()
 
         // pop_btn (components)
@@ -733,12 +732,10 @@ export default class SoundStudio extends GameScene {
 
         // menu_big_btn (components)
         const menu_big_btnButton = new Button(menu_big_btn)
-        menu_big_btnButton.spriteName = 'menu/big_btn'
         menu_big_btnButton.callback = () => this.startGame()
 
         // close (components)
         const closeButton = new Button(close)
-        closeButton.spriteName = 'close_btn'
         closeButton.callback = () => this.quit()
 
         this.waveforms = waveforms

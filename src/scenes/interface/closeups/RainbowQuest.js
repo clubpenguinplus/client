@@ -874,33 +874,25 @@ export default class RainbowQuest extends Closeup {
 
         // closeBtn (components)
         const closeBtnButton = new Button(closeBtn)
-        closeBtnButton.spriteName = 'closeBtn'
         closeBtnButton.callback = () => this.stop()
 
         // rainbowPuffleBtn (components)
         const rainbowPuffleBtnButton = new Button(rainbowPuffleBtn)
-        rainbowPuffleBtnButton.spriteName = 'brown-btn'
         rainbowPuffleBtnButton.callback = () => this.joinRoom(432)
-        rainbowPuffleBtnButton.activeFrame = false
 
         // bonusBtn (components)
         const bonusBtnButton = new Button(bonusBtn)
-        bonusBtnButton.spriteName = 'brown-btn'
         bonusBtnButton.callback = () => this.onBonusCollect()
-        bonusBtnButton.activeFrame = false
 
         // task4CoinsCollectBtn (components)
         const task4CoinsCollectBtnButton = new Button(task4CoinsCollectBtn)
-        task4CoinsCollectBtnButton.spriteName = 'task4/green-btn'
 
         // task4ItemCollectBtn (components)
         const task4ItemCollectBtnButton = new Button(task4ItemCollectBtn)
-        task4ItemCollectBtnButton.spriteName = 'task4/green-btn'
         task4ItemCollectBtnButton.callback = () => this.collectItem4()
 
         // task4GoThereBtn (components)
         const task4GoThereBtnButton = new Button(task4GoThereBtn)
-        task4GoThereBtnButton.spriteName = 'task4/green-btn'
         task4GoThereBtnButton.callback = () => this.joinRoom(432)
 
         // task4ClickBlocker (components)
@@ -910,16 +902,13 @@ export default class RainbowQuest extends Closeup {
 
         // task3CoinsCollectBtn (components)
         const task3CoinsCollectBtnButton = new Button(task3CoinsCollectBtn)
-        task3CoinsCollectBtnButton.spriteName = 'task3/green-btn'
 
         // task3ItemCollectBtn (components)
         const task3ItemCollectBtnButton = new Button(task3ItemCollectBtn)
-        task3ItemCollectBtnButton.spriteName = 'task3/green-btn'
         task3ItemCollectBtnButton.callback = () => this.collectItem3()
 
         // task3GoThereBtn (components)
         const task3GoThereBtnButton = new Button(task3GoThereBtn)
-        task3GoThereBtnButton.spriteName = 'task3/green-btn'
         task3GoThereBtnButton.callback = () => this.joinRoom(430)
 
         // task3ClickBlocker (components)
@@ -929,16 +918,13 @@ export default class RainbowQuest extends Closeup {
 
         // task2CoinsCollectBtn (components)
         const task2CoinsCollectBtnButton = new Button(task2CoinsCollectBtn)
-        task2CoinsCollectBtnButton.spriteName = 'task2/green-btn'
 
         // task2ItemCollectBtn (components)
         const task2ItemCollectBtnButton = new Button(task2ItemCollectBtn)
-        task2ItemCollectBtnButton.spriteName = 'task2/green-btn'
         task2ItemCollectBtnButton.callback = () => this.collectItem2()
 
         // task2GoThereBtn (components)
         const task2GoThereBtnButton = new Button(task2GoThereBtn)
-        task2GoThereBtnButton.spriteName = 'task2/green-btn'
         task2GoThereBtnButton.callback = () => this.joinRoom(431)
 
         // task2ClickBlocker (components)
@@ -948,16 +934,13 @@ export default class RainbowQuest extends Closeup {
 
         // task1CoinsCollectBtn (components)
         const task1CoinsCollectBtnButton = new Button(task1CoinsCollectBtn)
-        task1CoinsCollectBtnButton.spriteName = 'task1/green-btn'
 
         // task1ItemCollectBtn (components)
         const task1ItemCollectBtnButton = new Button(task1ItemCollectBtn)
-        task1ItemCollectBtnButton.spriteName = 'task1/green-btn'
         task1ItemCollectBtnButton.callback = () => this.collectItem1()
 
         // task1GoThereBtn (components)
         const task1GoThereBtnButton = new Button(task1GoThereBtn)
-        task1GoThereBtnButton.spriteName = 'task1/green-btn'
         task1GoThereBtnButton.callback = () => this.joinRoom(431)
 
         // task1ClickBlocker (components)

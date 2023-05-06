@@ -22,29 +22,6 @@ export default class WaddleSeat {
         /* END-USER-CTR-CODE */
     }
 
-    get frame() {
-        switch (this.sitdirection) {
-            case 'south':
-                return 17
-            case 'southwest':
-                return 18
-            case 'west':
-                return 19
-            case 'northwest':
-                return 20
-            case 'north':
-                return 21
-            case 'northeast':
-                return 22
-            case 'east':
-                return 23
-            case 'southeast':
-                return 24
-            default:
-                return 17
-        }
-    }
-
     /** @returns {WaddleSeat} */
     static getComponent(gameObject) {
         return gameObject['__WaddleSeat']

@@ -414,9 +414,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "catalog",
             "Button.callback": "() => this.loadSnowSports()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "rink",
                 "frame": "catalog"

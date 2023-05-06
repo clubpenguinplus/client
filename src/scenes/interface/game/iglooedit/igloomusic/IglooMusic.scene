@@ -68,7 +68,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "close-btn",
                     "Button.callback": "() => this.visible = false",
                     "texture": {
                         "key": "iglooedit-new",

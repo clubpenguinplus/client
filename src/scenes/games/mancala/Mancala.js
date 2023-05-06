@@ -215,7 +215,6 @@ export default class Mancala extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.onClose()
 
         // end_hitbox0004 (components)

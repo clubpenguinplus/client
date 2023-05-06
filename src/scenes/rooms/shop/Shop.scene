@@ -178,10 +178,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "clothesroom",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('shop-curtainopen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('shop-curtainclose')",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "shop",
                 "frame": "clothesroom"
@@ -215,10 +213,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('shop-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('shop-doorclose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 1100,
             "MoveTo.y": 350,
             "texture": {
@@ -280,11 +276,9 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "catalog-en",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('book-bookopen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('book-bookclose')",
             "Button.callback": "() => this.showClothingCat()",
-            "Button.activeFrame": false,
             "Button.pixelPerfect": true,
             "texture": {
                 "key": "shop",

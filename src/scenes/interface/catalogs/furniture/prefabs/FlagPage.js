@@ -1330,12 +1330,10 @@ export default class FlagPage extends Page {
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         // closebtn (components)

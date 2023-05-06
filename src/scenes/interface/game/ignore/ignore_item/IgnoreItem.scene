@@ -28,9 +28,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buddy/item",
                     "Button.callback": "() => this.onClick()",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
                         "frame": "buddy/item"

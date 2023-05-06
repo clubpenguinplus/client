@@ -177,8 +177,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
-            "Button.activeFrame": false,
             "MoveTo.x": 408,
             "MoveTo.y": 376,
             "texture": {

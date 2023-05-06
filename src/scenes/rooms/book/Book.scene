@@ -109,8 +109,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "mancala_en",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "book",
                 "frame": "mancala_en"
@@ -164,8 +162,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mancala_board",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -208,8 +204,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mancala_board",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -252,8 +246,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mancala_board",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -296,8 +288,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "mancala_board",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -484,8 +474,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "bookcase",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "book",
                 "frame": "bookcase"
@@ -675,10 +663,8 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "tales_en",
             "Button.hoverCallback": "() => this.BookOver();",
             "Button.hoverOutCallback": "() => this.BookClose();",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "book",
                 "frame": "tales_en"
@@ -695,10 +681,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "bookdoor",
             "Button.hoverCallback": "() => this.CoffeeDoorOver();",
             "Button.hoverOutCallback": "() => this.CoffeeDoorOut();",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "book",
                 "frame": "bookdoor"

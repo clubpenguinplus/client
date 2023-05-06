@@ -114,6 +114,8 @@ export default class Penguin extends BaseContainer {
             this.itemLoader.removeItem(slot)
             if (this.playerCard.visible && this.playerCard.id == this.id) this.paperDollLoader.removeItem(slot)
             this.items.setItem(item, slot)
+            let frame = [25, 26].includes(this.frame) ? this.getSecretFrame(this.frame) : this.frame
+            if (frame != this.specificFrame) this.playFrame(this.frame)
             return
         }
 
@@ -134,6 +136,9 @@ export default class Penguin extends BaseContainer {
             this.paperDollLoader.loadItem(item, slot)
             this.paperDollLoader.start()
         }
+
+        let frame = [25, 26].includes(this.frame) ? this.getSecretFrame(this.frame) : this.frame
+        if (frame != this.frame) this.playFrame(this.frame)
     }
 
     move(x, y) {

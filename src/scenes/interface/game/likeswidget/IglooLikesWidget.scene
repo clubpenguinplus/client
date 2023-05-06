@@ -76,7 +76,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "like-window",
             "texture": {
                 "key": "main",
                 "frame": "like-window"
@@ -310,7 +309,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.onWindowDown()",
                     "texture": {
                         "key": "main",

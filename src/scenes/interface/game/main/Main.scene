@@ -105,7 +105,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.onPuffleClick()",
             "texture": {
                 "key": "main",
@@ -137,7 +136,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.emotesMenu.visible = true",
             "ShowHint.text": "emotes",
             "texture": {
@@ -168,7 +166,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.actionsMenu.visible = true",
             "ShowHint.text": "actions",
             "texture": {
@@ -200,7 +197,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.onSnowballClick()",
             "ShowHint.text": "snowball",
             "texture": {
@@ -232,7 +228,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.onChatSend()",
             "ShowHint.text": "send",
             "texture": {
@@ -264,7 +259,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.onPlayerClick()",
             "ShowHint.text": "editPlayer",
             "texture": {
@@ -296,7 +290,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.onFriendClick()",
             "ShowHint.text": "showFriendList",
             "texture": {
@@ -328,7 +321,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.onIglooClick()",
             "ShowHint.text": "yourIgloo",
             "texture": {
@@ -360,7 +352,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => { this.settings.visible = true }",
             "ShowHint.text": "settings",
             "texture": {
@@ -392,7 +383,6 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.spriteName": "blue-button",
             "Button.callback": "() => this.safe.visible = true",
             "ShowHint.text": "messages",
             "texture": {
@@ -464,7 +454,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => { this.settings.visible = true }",
                     "ShowHint.text": "settings",
                     "texture": {
@@ -496,7 +485,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onIglooClick()",
                     "ShowHint.text": "yourIgloo",
                     "texture": {
@@ -528,7 +516,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onFriendClick()",
                     "ShowHint.text": "showFriendList",
                     "texture": {
@@ -560,7 +547,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onPlayerClick()",
                     "ShowHint.text": "editPlayer",
                     "texture": {
@@ -592,7 +578,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onChatSend()",
                     "ShowHint.text": "send",
                     "texture": {
@@ -624,7 +609,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.onSnowballClick()",
                     "ShowHint.text": "snowball",
                     "texture": {
@@ -656,7 +640,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.actionsMenu.visible = true",
                     "ShowHint.text": "actions",
                     "texture": {
@@ -688,7 +671,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.emotesMenu.visible = true",
                     "ShowHint.text": "emotes",
                     "texture": {
@@ -718,7 +700,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.onPuffleClick()",
                     "texture": {
                         "key": "main",
@@ -762,7 +743,6 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.spriteName": "mobile/blue-button",
                     "Button.callback": "() => this.safe.visible = true",
                     "ShowHint.text": "messages",
                     "texture": {
@@ -892,9 +872,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "map-button",
             "Button.callback": "() => this.onMapClick()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "main",
                 "frame": "map-button"
@@ -910,7 +888,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "phone-button",
             "Button.callback": "() => this.onPhoneClick()",
             "texture": {
                 "key": "main",
@@ -927,9 +904,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "mail-button",
             "Button.callback": "() => {/*this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")*/}",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "main",
                 "frame": "mail-button"
@@ -945,9 +920,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "discord",
             "Button.callback": "() => window.open('https://discord.gg/x3QuKfezb4', '_blank').focus();",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "main",
                 "frame": "discord"
@@ -963,9 +936,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "safetyquiz",
             "Button.callback": "() => this.onModClick()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "main",
                 "frame": "safetyquiz"
@@ -982,9 +953,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "mod",
             "Button.callback": "() => this.onModClick()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "main",
                 "frame": "mod"
@@ -1002,9 +971,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "beta",
             "Button.callback": "() => this.onBetaClick()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "main",
                 "frame": "beta"

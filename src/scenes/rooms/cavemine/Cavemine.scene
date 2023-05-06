@@ -134,8 +134,6 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "hats",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "cavemine",
                 "frame": "hats"

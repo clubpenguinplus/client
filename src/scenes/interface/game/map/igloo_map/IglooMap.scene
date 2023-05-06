@@ -667,7 +667,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "grey-button",
                     "Button.callback": "() => this.visible = false",
                     "texture": {
                         "key": "main",
@@ -744,9 +743,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "igloo/item_large",
                             "Button.callback": "() => this.onIglooClick()",
-                            "Button.activeFrame": false,
                             "texture": {
                                 "key": "map-for-igloo",
                                 "frame": "igloo/item_large"
@@ -924,7 +921,6 @@
                                     "components": [
                                         "Button"
                                     ],
-                                    "Button.spriteName": "grey-button",
                                     "Button.callback": "() => this.nextPage()",
                                     "texture": {
                                         "key": "main",
@@ -962,7 +958,6 @@
                                     "components": [
                                         "Button"
                                     ],
-                                    "Button.spriteName": "grey-button",
                                     "Button.callback": "() => this.prevPage()",
                                     "texture": {
                                         "key": "main",

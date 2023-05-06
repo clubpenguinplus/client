@@ -243,17 +243,14 @@ export default class Friend extends BaseContainer {
 
         // x_button (components)
         const x_buttonButton = new Button(x_button)
-        x_buttonButton.spriteName = 'blue-button'
         x_buttonButton.callback = () => this.close()
 
         // x_button_1 (components)
         const x_button_1Button = new Button(x_button_1)
-        x_button_1Button.spriteName = 'blue-button'
         x_button_1Button.callback = () => this.hideSearch()
 
         // window_button_small (components)
         const window_button_smallButton = new Button(window_button_small)
-        window_button_smallButton.spriteName = 'window-button-small'
         window_button_smallButton.callback = () => this.onSearchEnter()
 
         // nameSearch_1 (components)

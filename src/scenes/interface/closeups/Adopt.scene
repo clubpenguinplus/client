@@ -50,8 +50,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "goldPufflePoster",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "goldPufflePoster"
@@ -66,8 +64,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "rainbowPufflePoster",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "petshop-adopt",
                 "frame": "rainbowPufflePoster"
@@ -481,7 +477,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "whiteIcon",
                             "Button.callback": "() => this.adoptPuffle(7)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -497,7 +492,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "blackIcon",
                             "Button.callback": "() => this.adoptPuffle(2)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -513,7 +507,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "brownIcon",
                             "Button.callback": "() => this.adoptPuffle(9)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -529,7 +522,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "pinkIcon",
                             "Button.callback": "() => this.adoptPuffle(1)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -545,7 +537,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "purpleIcon",
                             "Button.callback": "() => this.adoptPuffle(4)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -560,7 +551,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "greenIcon",
                             "Button.callback": "() => this.adoptPuffle(3)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -576,7 +566,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "yellowIcon",
                             "Button.callback": "() => this.adoptPuffle(6)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -592,7 +581,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "orangeIcon",
                             "Button.callback": "() => this.adoptPuffle(8)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -607,7 +595,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "redIcon",
                             "Button.callback": "() => this.adoptPuffle(5)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -622,7 +609,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "blueIcon",
                             "Button.callback": "() => this.adoptPuffle(0)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -637,7 +623,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "catIcon",
                             "Button.callback": "() => this.adoptPuffle(1007)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -653,7 +638,6 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.spriteName": "dogIcon",
                             "Button.callback": "() => this.adoptPuffle(1006)",
                             "texture": {
                                 "key": "petshop-adopt",
@@ -920,7 +904,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "adoptBtn",
                     "Button.callback": "() => this.onAdoptionClick()",
                     "texture": {
                         "key": "petshop-adopt",
@@ -995,7 +978,6 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "closeBtn",
             "Button.callback": "() => this.stop()",
             "texture": {
                 "key": "petshop-adopt",

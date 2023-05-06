@@ -700,7 +700,6 @@ export default class Report extends Closeup {
 
         // long_button (components)
         const long_buttonButton = new Button(long_button)
-        long_buttonButton.spriteName = 'long_button'
         long_buttonButton.callback = () => this.submitIssue()
 
         // newTitle (components)

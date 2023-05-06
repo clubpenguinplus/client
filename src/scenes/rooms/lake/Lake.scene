@@ -320,9 +320,7 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "note",
             "Button.callback": "() => this.onNoteClick()",
-            "Button.activeFrame": false,
             "texture": {
                 "key": "lake",
                 "frame": "note"

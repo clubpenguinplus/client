@@ -205,9 +205,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_210 (components)
         const buyBtn_210Button = new Button(buyBtn_210)
-        buyBtn_210Button.spriteName = 'buybtn'
         buyBtn_210Button.callback = () => this.buy(210)
-        buyBtn_210Button.activeFrame = false
 
         // priceNum_210 (components)
         const priceNum_210Pricetag = new Pricetag(priceNum_210)
@@ -223,9 +221,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_405 (components)
         const buyBtn_405Button = new Button(buyBtn_405)
-        buyBtn_405Button.spriteName = 'buybtn'
         buyBtn_405Button.callback = () => this.buy(405)
-        buyBtn_405Button.activeFrame = false
 
         // priceNum_405 (components)
         const priceNum_405Pricetag = new Pricetag(priceNum_405)
@@ -241,9 +237,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_717 (components)
         const buyBtn_717Button = new Button(buyBtn_717)
-        buyBtn_717Button.spriteName = 'buybtn'
         buyBtn_717Button.callback = () => this.buy(717)
-        buyBtn_717Button.activeFrame = false
 
         // priceNum_717 (components)
         const priceNum_717Pricetag = new Pricetag(priceNum_717)
@@ -259,9 +253,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_713 (components)
         const buyBtn_713Button = new Button(buyBtn_713)
-        buyBtn_713Button.spriteName = 'buybtn'
         buyBtn_713Button.callback = () => this.buy(713)
-        buyBtn_713Button.activeFrame = false
 
         // priceNum_713 (components)
         const priceNum_713Pricetag = new Pricetag(priceNum_713)
@@ -277,9 +269,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_192 (components)
         const buyBtn_192Button = new Button(buyBtn_192)
-        buyBtn_192Button.spriteName = 'buybtn'
         buyBtn_192Button.callback = () => this.buy(192)
-        buyBtn_192Button.activeFrame = false
 
         // priceNum_192 (components)
         const priceNum_192Pricetag = new Pricetag(priceNum_192)
@@ -295,9 +285,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_203 (components)
         const buyBtn_203Button = new Button(buyBtn_203)
-        buyBtn_203Button.spriteName = 'buybtn'
         buyBtn_203Button.callback = () => this.buy(203)
-        buyBtn_203Button.activeFrame = false
 
         // priceNum_203 (components)
         const priceNum_203Pricetag = new Pricetag(priceNum_203)
@@ -313,9 +301,7 @@ export default class BasicItemsPage extends Page {
 
         // buyBtn_653 (components)
         const buyBtn_653Button = new Button(buyBtn_653)
-        buyBtn_653Button.spriteName = 'buybtn'
         buyBtn_653Button.callback = () => this.buy(653)
-        buyBtn_653Button.activeFrame = false
 
         // priceNum_653 (components)
         const priceNum_653Pricetag = new Pricetag(priceNum_653)
@@ -331,12 +317,10 @@ export default class BasicItemsPage extends Page {
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)

@@ -28,7 +28,6 @@ export default class Item extends BaseContainer {
         this.add(price)
 
         const btnButton = new Button(btn)
-        btnButton.spriteName = 'buybtn'
         btnButton.callback = () => this.buy()
 
         const pricetag = new Pricetag(price)

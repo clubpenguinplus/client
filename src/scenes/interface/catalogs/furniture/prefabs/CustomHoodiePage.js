@@ -216,12 +216,10 @@ export default class CustomHoodiePage extends Page {
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
-        prevPageButton.spriteName = 'prevPage'
         prevPageButton.callback = () => this.prevPage()
 
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
-        nextPageButton.spriteName = 'nextPage'
         nextPageButton.callback = () => this.nextPage()
 
         // closebtn (components)

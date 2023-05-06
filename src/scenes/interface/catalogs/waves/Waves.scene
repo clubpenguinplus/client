@@ -72,9 +72,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(702)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"
@@ -103,9 +101,7 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(701)",
-                    "Button.activeFrame": false,
                     "texture": {
                         "key": "catalogs-master",
                         "frame": "buybtn"

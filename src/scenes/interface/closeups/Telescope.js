@@ -236,7 +236,6 @@ export default class Telescope extends Closeup {
 
         // blue_button (components)
         const blue_buttonButton = new Button(blue_button)
-        blue_buttonButton.spriteName = 'blue-button'
         blue_buttonButton.callback = () => this.stop()
 
         this.waves1 = waves1

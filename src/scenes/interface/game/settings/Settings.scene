@@ -82,7 +82,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "help-button",
                     "Button.callback": "() => this.onManagePress()",
                     "texture": {
                         "key": "main",
@@ -193,7 +192,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.onSettingsPress() }",
                     "texture": {
                         "key": "main",
@@ -221,7 +219,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => { this.visible = false }",
                     "texture": {
                         "key": "main",
@@ -282,7 +279,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.shell.musicController.volumeDown()",
                     "texture": {
                         "key": "main",
@@ -310,7 +306,6 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
                     "Button.callback": "() => this.shell.musicController.volumeUp()",
                     "texture": {
                         "key": "main",

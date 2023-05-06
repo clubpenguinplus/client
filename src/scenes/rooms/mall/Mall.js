@@ -281,10 +281,8 @@ export default class Mall extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
-        doorButton.spriteName = 'door'
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('mall-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('mall-doorclose')
-        doorButton.activeFrame = false
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 224
         doorMoveTo.y = 680
@@ -295,7 +293,6 @@ export default class Mall extends RoomScene {
 
         // costumes (components)
         const costumesButton = new Button(costumes)
-        costumesButton.spriteName = 'costumes'
         costumesButton.hoverCallback = () => {
             this.shell.musicController.addSfx('mall-chestopen')
             this.glow.visible = true
@@ -305,7 +302,6 @@ export default class Mall extends RoomScene {
             this.glow.visible = false
         }
         costumesButton.callback = () => this.interface.loadExternal('CostumeCatalog')
-        costumesButton.activeFrame = false
         costumesButton.isLocalised = true
         new LocalisedSprite(costumes)
 
@@ -317,9 +313,7 @@ export default class Mall extends RoomScene {
 
         // costume_trunk_en (components)
         const costume_trunk_enButton = new Button(costume_trunk_en)
-        costume_trunk_enButton.spriteName = 'costume-trunk'
         costume_trunk_enButton.callback = () => this.interface.loadExternal('CostumeCatalog')
-        costume_trunk_enButton.activeFrame = false
         costume_trunk_enButton.isLocalised = true
         new LocalisedSprite(costume_trunk_en)
 

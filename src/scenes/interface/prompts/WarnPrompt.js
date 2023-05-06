@@ -77,7 +77,6 @@ export default class WarnPrompt extends BaseContainer {
 
         // single (components)
         const singleButton = new Button(single)
-        singleButton.spriteName = 'button'
         singleButton.callback = () => this.onOkClick()
 
         this.bg = bg

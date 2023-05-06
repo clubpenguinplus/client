@@ -320,67 +320,54 @@ export default class Punish extends Closeup {
 
         // long_button (components)
         const long_buttonButton = new Button(long_button)
-        long_buttonButton.spriteName = 'long_button'
         long_buttonButton.callback = () => this.warn()
 
         // long_button_1 (components)
         const long_button_1Button = new Button(long_button_1)
-        long_button_1Button.spriteName = 'long_button'
         long_button_1Button.callback = () => this.mute()
 
         // long_button_2 (components)
         const long_button_2Button = new Button(long_button_2)
-        long_button_2Button.spriteName = 'long_button'
         long_button_2Button.callback = () => this.ban()
 
         // long_button1 (components)
         const long_button1Button = new Button(long_button1)
-        long_button1Button.spriteName = 'button'
         long_button1Button.callback = () => this.setDuration(24)
 
         // long_button_22 (components)
         const long_button_22Button = new Button(long_button_22)
-        long_button_22Button.spriteName = 'button'
         long_button_22Button.callback = () => this.setDuration(72)
 
         // long_button_21 (components)
         const long_button_21Button = new Button(long_button_21)
-        long_button_21Button.spriteName = 'button'
         long_button_21Button.callback = () => this.setDuration(168)
 
         // long_button_31 (components)
         const long_button_31Button = new Button(long_button_31)
-        long_button_31Button.spriteName = 'button'
         long_button_31Button.callback = () => this.setDuration(504)
 
         // long_button_41 (components)
         const long_button_41Button = new Button(long_button_41)
-        long_button_41Button.spriteName = 'button'
         long_button_41Button.callback = () => this.setDuration(2190)
 
         // long_button_51 (components)
         const long_button_51Button = new Button(long_button_51)
-        long_button_51Button.spriteName = 'button'
         long_button_51Button.callback = () => this.setDuration('p')
 
         // long_button10 (components)
         const long_button10Button = new Button(long_button10)
-        long_button10Button.spriteName = 'long_button'
         long_button10Button.callback = () => this.setReason('c')
 
         // long_button_11 (components)
         const long_button_11Button = new Button(long_button_11)
-        long_button_11Button.spriteName = 'long_button'
         long_button_11Button.callback = () => this.setReason('p')
 
         // long_button_12 (components)
         const long_button_12Button = new Button(long_button_12)
-        long_button_12Button.spriteName = 'long_button'
         long_button_12Button.callback = () => this.setReason('i')
 
         // long_button_6 (components)
         const long_button_6Button = new Button(long_button_6)
-        long_button_6Button.spriteName = 'long_button'
         long_button_6Button.callback = () => this.setReason('m')
 
         // detailsText (components)
@@ -389,7 +376,6 @@ export default class Punish extends Closeup {
 
         // long_button_7 (components)
         const long_button_7Button = new Button(long_button_7)
-        long_button_7Button.spriteName = 'button'
         long_button_7Button.callback = () => this.submit()
 
         this.white_x = white_x

@@ -95,12 +95,10 @@ export default class RequestItem extends BaseContainer {
 
         // window_button_small (components)
         const window_button_smallButton = new Button(window_button_small)
-        window_button_smallButton.spriteName = 'window-button-small'
         window_button_smallButton.callback = () => this.onYesClick()
 
         // window_button_small_1 (components)
         const window_button_small_1Button = new Button(window_button_small_1)
-        window_button_small_1Button.spriteName = 'window-button-small'
         window_button_small_1Button.callback = () => this.onNoClick()
 
         this.paperDoll = paperDoll

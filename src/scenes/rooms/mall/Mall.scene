@@ -231,10 +231,8 @@
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('mall-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('mall-doorclose')",
-            "Button.activeFrame": false,
             "MoveTo.x": 224,
             "MoveTo.y": 680,
             "texture": {
@@ -560,11 +558,9 @@
                 "Button",
                 "LocalisedSprite"
             ],
-            "Button.spriteName": "costumes",
             "Button.hoverCallback": "() => {this.shell.musicController.addSfx('mall-chestopen'); this.glow.visible=true}",
             "Button.hoverOutCallback": "() => {this.shell.musicController.addSfx('mall-chestclose'); this.glow.visible=false}",
             "Button.callback": "() => this.interface.loadExternal('CostumeCatalog')",
-            "Button.activeFrame": false,
             "Button.isLocalised": true,
             "texture": {
                 "key": "mall",
@@ -808,9 +804,7 @@
                 "Button",
                 "LocalisedSprite"
             ],
-            "Button.spriteName": "costume-trunk",
             "Button.callback": "() => this.interface.loadExternal('CostumeCatalog')",
-            "Button.activeFrame": false,
             "Button.isLocalised": true,
             "texture": {
                 "key": "mall",

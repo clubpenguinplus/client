@@ -119,18 +119,14 @@ export default class Village extends RoomScene {
 
         // epfdoor (components)
         const epfdoorButton = new Button(epfdoor)
-        epfdoorButton.spriteName = 'epfdoor'
         epfdoorButton.hoverCallback = () => this.EpfDoorOver()
         epfdoorButton.hoverOutCallback = () => this.EpfDoorOut()
-        epfdoorButton.activeFrame = false
         new MoveTo(epfdoor)
 
         // lodgedoor (components)
         const lodgedoorButton = new Button(lodgedoor)
-        lodgedoorButton.spriteName = 'lodgedoor'
         lodgedoorButton.hoverCallback = () => this.LodgeDoorOver()
         lodgedoorButton.hoverOutCallback = () => this.LodgeDoorOut()
-        lodgedoorButton.activeFrame = false
         new MoveTo(lodgedoor)
 
         // tourszone (components)
