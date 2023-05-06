@@ -227,8 +227,8 @@ export default class Preload extends BaseScene {
             weight: weight,
         })
         newFont.load().then(
-            () => {
-                document.fonts.add(loaded)
+            (loaded) => {
+                document.fonts.add(newFont)
                 return true
             },
             () => {
