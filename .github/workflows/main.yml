@@ -38,7 +38,7 @@ jobs:
                   SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
 
             - name: Push play page to CDN
-              uses: nebula-dev/spaces-sync-action@literal
+              uses: Club-Penguin-Plus-Official/spaces-sync-action@literal
               env:
                   SOURCE_DIR: './play/'
                   SPACE_REGION: 'nyc3'
