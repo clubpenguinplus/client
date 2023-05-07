@@ -61,6 +61,20 @@ export default class Plaza extends RoomScene {
         // buildings
         this.add.image(767, 325, 'plaza', 'buildings')
 
+        // pole
+        this.add.image(1082, 77, 'plaza', 'pole')
+
+        // pole_1
+        const pole_1 = this.add.image(753, 81, 'plaza', 'pole')
+        pole_1.angle = -22
+
+        // flag1_0001
+        const flag1_0001 = this.add.sprite(1107, 79, 'plaza', 'flag1_0001')
+
+        // flag
+        const flag = this.add.sprite(778, 71, 'plaza', 'flag1_0001')
+        flag.angle = -27
+
         // mall_sign_en
         const mall_sign_en = this.add.image(894, 65, 'plaza', 'mall_sign-en')
 
@@ -106,20 +120,6 @@ export default class Plaza extends RoomScene {
         // pizza_sign
         const pizza_sign = this.add.image(1254, 285, 'plaza', 'pizza_sign')
 
-        // pole
-        this.add.image(1082, 77, 'plaza', 'pole')
-
-        // pole_1
-        const pole_1 = this.add.image(753, 81, 'plaza', 'pole')
-        pole_1.angle = -22
-
-        // flag1_0001
-        const flag1_0001 = this.add.sprite(1107, 79, 'plaza', 'flag1_0001')
-
-        // flag
-        const flag = this.add.sprite(778, 71, 'plaza', 'flag1_0001')
-        flag.angle = -27
-
         // puffle
         const puffle = this.add.sprite(-8, 231, 'plaza', 'puffle_0001')
 
@@ -157,6 +157,16 @@ export default class Plaza extends RoomScene {
 
         // parksign (components)
         new LocalisedSprite(parksign)
+
+        // flag1_0001 (components)
+        const flag1_0001Animation = new Animation(flag1_0001)
+        flag1_0001Animation.key = 'flag1_'
+        flag1_0001Animation.end = 15
+
+        // flag (components)
+        const flagAnimation = new Animation(flag)
+        flagAnimation.key = 'flag1_'
+        flagAnimation.end = 15
 
         // mall_sign_en (components)
         new LocalisedSprite(mall_sign_en)
@@ -204,16 +214,6 @@ export default class Plaza extends RoomScene {
 
         // pizza_sign (components)
         new LocalisedSprite(pizza_sign)
-
-        // flag1_0001 (components)
-        const flag1_0001Animation = new Animation(flag1_0001)
-        flag1_0001Animation.key = 'flag1_'
-        flag1_0001Animation.end = 15
-
-        // flag (components)
-        const flagAnimation = new Animation(flag)
-        flagAnimation.key = 'flag1_'
-        flagAnimation.end = 15
 
         // puffle (components)
         const puffleAnimation = new Animation(puffle)

@@ -4,6 +4,8 @@ cd ..
 
 npm run build-crumbs
 
+npm run minify-json
+
 cd client
 
 git add *

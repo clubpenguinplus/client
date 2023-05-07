@@ -13,8 +13,10 @@ export default class Closeup extends BaseScene {
         if (this._preload) this._preload()
     }
 
-    stop() {
+    stop(unload = true) {
         this.scene.stop()
+
+        if (!unload) return
 
         for (let item of this.itemsLoaded) {
             if (Object.keys(this.textures.list).includes(item.id)) this.textures.remove(item.id)

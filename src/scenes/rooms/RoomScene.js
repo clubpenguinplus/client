@@ -308,7 +308,8 @@ export default class RoomScene extends BaseScene {
 
     triggerGame(minigame, id, emu) {
         let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', 'dual', () => this.joinGame(minigame, id, emu))
+        let text = this.crumbs.getString(`game-confirmation,${this.crumbs.getString(minigame)}`)
+        prompt.showWindow(text, 'dual', () => this.joinGame(minigame, id, emu))
     }
 
     isInWater(x, y) {
@@ -481,6 +482,6 @@ export default class RoomScene extends BaseScene {
 
     unimplementedPrompt() {
         let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showError('This feature is not yet implemented!\nClub Penguin Plus is in development, and is being\nactively updated. Check back soon!')
+        prompt.showError(this.crumbs.getError('54'))
     }
 }

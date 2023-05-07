@@ -70,7 +70,7 @@ export default class ItemPrompt extends BaseContainer {
 
     showItem(item) {
         if (this.inventoryIncludes(item)) {
-            return this.interface.prompt.showError('You already have this item.')
+            return this.interface.prompt.showError(this.shell.crumbs.getError('1'))
         }
 
         this.show(item, this.crumbs.items[item], 'clothing')
@@ -101,9 +101,9 @@ export default class ItemPrompt extends BaseContainer {
 
     getText(name, cost) {
         if (cost < 1) {
-            return `You have found a ${name}.\nWould you like to pick it up?`
+            return this.crumbs.getString(`free-item-popup,${name}`)
         } else {
-            return `Would you like to buy ${name} for ${cost} coins. You currently have ${this.shell.client.coins} coins.`
+            return this.crumbs.getString(`free-item-popup,${name},${cost},${this.shell.client.coins}`)
         }
     }
 

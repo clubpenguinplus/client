@@ -206,7 +206,7 @@ export default class Activate extends BaseScene {
 
     invalidCode() {
         this.interface.hideLoading()
-        this.interface.prompt.showError(this.crumbs.getString('activationFail'), 'Ok', () => {
+        this.interface.prompt.showError(this.crumbs.getString('activationFail'), this.crumbs.getString('okay'), () => {
             document.location.reload()
         })
     }

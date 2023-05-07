@@ -196,7 +196,7 @@ export default class Airtower {
 
     onConnectionLost() {
         if (!this.serverWorking) {
-            this.interface.prompt.showError('There appears to be an issue with our servers. Please try again later!', 'Reload', () => window.location.reload())
+            this.interface.prompt.showError(this.crumbs.getError('55'), this.crumbs.getString(this.crumbs.getString('reload')), () => window.location.reload())
             this.interface.prompt.error.disconnectOverwrite = true
             this.doNotReconnect = true
             return
@@ -213,10 +213,10 @@ export default class Airtower {
         if (!this.client.connected && this.runs < 10) {
             this.runs = this.runs + 1
             this.connectGame(this.creds.world, this.creds.username, this.creds.key, this.creds.mode)
-            if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError('Connection was lost.\nAttempting to recconnect you.', 'Reload', () => window.location.reload())
+            if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError(this.crumbs.getError('56'), this.crumbs.getString('reload'), () => window.location.reload())
             this.reconTimeout = setTimeout(() => this.checkConnection(), 3000)
         } else if (!this.client.connected) {
-            if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError('Connection was lost.\nPlease click to reload.', 'Reload', () => window.location.reload())
+            if (!this.interface.prompt.error.disconnectOverwrite) this.interface.prompt.showError(this.crumbs.getError('57'), this.crumbs.getString('reload'), () => window.location.reload())
             if (!document.getElementsByTagName('ruffle-player')[0]) return
             document.getElementsByTagName('ruffle-player')[0].onDisconnect()
         } else {
@@ -297,10 +297,10 @@ export default class Airtower {
 
             switch (message) {
                 case 'A#OK':
-                    this.interface.prompt.showError('You can now login with this device', 'Ok', () => (this.interface.prompt.error.visible = false))
+                    this.interface.prompt.showError(this.crumbs.getError('58'), this.crumbs.getString('okay'), () => (this.interface.prompt.error.visible = false))
                     return
                 case 'A#KO':
-                    this.interface.prompt.showError('There was an error allowing your device. Please try again, and contact support if the issue persists.', 'Ok', () => (this.interface.prompt.error.visible = false))
+                    this.interface.prompt.showError(this.crumbs.getError('59'), this.crumbs.getString('okay'), () => (this.interface.prompt.error.visible = false))
                     return
                 case 'U#KO':
                     this.creation.invalidUsername()
@@ -343,7 +343,7 @@ export default class Airtower {
 
                     let scene = this.game.scene.getScene(this.lastLoginScene)
 
-                    scene.events.once('create', () => this.interface.prompt.showError('You are not on the latest version of the game. Please clear your cache, and refresh the page to update.', 'Reload', () => window.location.reload()))
+                    scene.events.once('create', () => this.interface.prompt.showError(this.crumbs.getError('60'), this.crumbs.getString('reload'), () => window.location.reload()))
                     this.game.scene.start(this.lastLoginScene)
                     return
                 case 'OK':

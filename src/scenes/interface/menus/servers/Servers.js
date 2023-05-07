@@ -313,7 +313,7 @@ export default class Servers extends BaseScene {
 
     onServerClick(world, username, key, isFull) {
         if (isFull) {
-            return this.interface.prompt.showError('Sorry this server is full. Please select another server.')
+            return this.interface.prompt.showError(this.crumbs.getError('63'))
         }
 
         this.interface.showLoading(`${this.getString('joining')} ${world}`, true, true)

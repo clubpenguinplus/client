@@ -94,12 +94,12 @@ export default class SearchItem extends BaseContainer {
 
     onClick() {
         if (this.id) {
-            let text = `Would you like to add ${this.username.text}\nto your friend list?`
+            let text = this.crumbs.getString(`add-friend-prompt,${this.username.text}`)
 
             this.interface.prompt.showWindow(text, 'dual', () => {
                 this.airtower.sendXt('b#br', this.id)
 
-                this.interface.prompt.showWindow('Request Sent', 'single')
+                this.interface.prompt.showWindow(this.crumbs.getString('request-sent'), 'single')
                 if (this.interface.main.friendSmall.visible) {
                     this.interface.main.friendSmall.hideSearch()
                 } else {

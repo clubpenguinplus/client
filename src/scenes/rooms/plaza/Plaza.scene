@@ -60,6 +60,68 @@
         },
         {
             "type": "Image",
+            "id": "338f6e52-0a36-47a5-b11e-a0a4d4269513",
+            "label": "pole",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "pole"
+            },
+            "x": 1082,
+            "y": 77,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "d1c65a28-a44b-463d-afd9-bc3796292074",
+            "label": "pole_1",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "pole"
+            },
+            "x": 753,
+            "y": 81,
+            "angle": -22,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "68792625-7307-423a-a393-e843f7817ba8",
+            "label": "flag1_0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flag1_",
+            "Animation.end": 15,
+            "texture": {
+                "key": "plaza",
+                "frame": "flag1_0001"
+            },
+            "x": 1107,
+            "y": 79,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "167f61fb-7b43-497d-a16f-6db19b205115",
+            "label": "flag",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flag1_",
+            "Animation.end": 15,
+            "texture": {
+                "key": "plaza",
+                "frame": "flag1_0001"
+            },
+            "x": 778,
+            "y": 71,
+            "angle": -27,
+            "list": []
+        },
+        {
+            "type": "Image",
             "id": "4ea07296-3796-49c7-a204-845ae48d338e",
             "label": "mall_sign_en",
             "components": [
@@ -284,68 +346,6 @@
             },
             "x": 1254,
             "y": 285,
-            "list": []
-        },
-        {
-            "type": "Image",
-            "id": "338f6e52-0a36-47a5-b11e-a0a4d4269513",
-            "label": "pole",
-            "components": [],
-            "texture": {
-                "key": "plaza",
-                "frame": "pole"
-            },
-            "x": 1082,
-            "y": 77,
-            "list": []
-        },
-        {
-            "type": "Image",
-            "id": "d1c65a28-a44b-463d-afd9-bc3796292074",
-            "label": "pole_1",
-            "components": [],
-            "texture": {
-                "key": "plaza",
-                "frame": "pole"
-            },
-            "x": 753,
-            "y": 81,
-            "angle": -22,
-            "list": []
-        },
-        {
-            "type": "Sprite",
-            "id": "68792625-7307-423a-a393-e843f7817ba8",
-            "label": "flag1_0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "flag1_",
-            "Animation.end": 15,
-            "texture": {
-                "key": "plaza",
-                "frame": "flag1_0001"
-            },
-            "x": 1107,
-            "y": 79,
-            "list": []
-        },
-        {
-            "type": "Sprite",
-            "id": "167f61fb-7b43-497d-a16f-6db19b205115",
-            "label": "flag",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "flag1_",
-            "Animation.end": 15,
-            "texture": {
-                "key": "plaza",
-                "frame": "flag1_0001"
-            },
-            "x": 778,
-            "y": 71,
-            "angle": -27,
             "list": []
         },
         {

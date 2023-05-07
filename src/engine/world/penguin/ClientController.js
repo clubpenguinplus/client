@@ -324,7 +324,7 @@ export default class ClientController {
         this.shell.musicController.stopLoopingSfx()
 
         if (this.activeSeat) {
-            return this.interface.prompt.showError('Please exit your game before leaving the room')
+            return this.interface.prompt.showError(this.crumbs.getError('61'))
         }
 
         this.newRoom = [id, name, x, y, randomRange]
@@ -346,7 +346,7 @@ export default class ClientController {
         }
 
         if (this.activeSeat) {
-            return this.interface.prompt.showError('Please exit your game before leaving the room')
+            return this.interface.prompt.showError(this.crumbs.getError('61'))
         }
 
         this.interface.showLoading(this.getString('joining', 'igloo'))

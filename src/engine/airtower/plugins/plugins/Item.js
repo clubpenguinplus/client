@@ -39,7 +39,7 @@ export default class Item extends Plugin {
         this.interface.updateCatalogCoins(args[3])
 
         // Show prompt
-        let text = `${this.crumbs.items[args[0]].name}\nhas been added to your inventory.`
+        let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.items[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
     }
 

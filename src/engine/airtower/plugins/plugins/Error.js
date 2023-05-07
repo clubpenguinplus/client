@@ -37,15 +37,15 @@ export default class Error extends Plugin {
     }
 
     stealthEnabled() {
-        this.interface.prompt.showError('Stealth mode enabled\nPlease relogin.', 'Reload', () => window.location.reload())
+        this.interface.prompt.showError('Stealth mode enabled\nPlease relogin.', this.crumbs.getString('reload'), () => window.location.reload())
     }
 
     stealthDisabled() {
-        this.interface.prompt.showError('Stealth mode disabled\nPlease relogin.', 'Reload', () => window.location.reload())
+        this.interface.prompt.showError('Stealth mode disabled\nPlease relogin.', this.crumbs.getString('reload'), () => window.location.reload())
     }
 
     closeWithError(args) {
-        this.interface.prompt.showError(this.shell.crumbs.getError(args[0]), 'Reload', () => window.location.reload(), true)
+        this.interface.prompt.showError(this.shell.crumbs.getError(args[0]), this.crumbs.getString('reload'), () => window.location.reload(), true)
         this.airtower.doNotReconnect = true
     }
 

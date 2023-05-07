@@ -33,13 +33,17 @@
                         "key": "prompt",
                         "frame": "window-button"
                     },
-                    "originY": 0.5047619047619047
+                    "originY": 0.5047619047619047,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "7cebd0b7-9243-4401-8fde-0d271502364a",
                     "label": "text_1",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "okay",
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Okay",
@@ -47,7 +51,8 @@
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
-                    "fontStyle": "bold"
+                    "fontStyle": "bold",
+                    "list": []
                 }
             ]
         }
