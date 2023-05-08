@@ -282,7 +282,7 @@ export default class IglooScene extends RoomScene {
             return
         }
 
-        let text = 'Are you sure you want to change your igloo? \nYour flooring will be lost. \nIgloo items will be saved in your inventory.'
+        let text = this.crumbs.getString('confirm-igloo-change')
 
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.interface.showLoading(this.getString('joining', 'igloo'))

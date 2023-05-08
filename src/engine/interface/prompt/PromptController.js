@@ -26,7 +26,7 @@ export default class PromptController {
 
     showError(
         text,
-        buttonText = 'Okay',
+        buttonText = this.interface.crumbs.getString('okay'),
         callback = () => {
             this.error.visible = false
             this.error.disconnectOverwrite = false

@@ -41,7 +41,7 @@ export default class Igloo extends Plugin {
 
         this.interface.updateCatalogCoins(args[1])
 
-        let text = `${this.crumbs.igloos[args[0]].name}\nhas been added to your inventory.`
+        let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.igloos[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
     }
 
@@ -65,7 +65,7 @@ export default class Igloo extends Plugin {
         this.interface.refreshPlayerCard()
 
         this.interface.updateCatalogCoins(args[1])
-        let text = `${this.crumbs.furniture[args[0]].name}\nhas been added to your inventory.`
+        let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.furniture[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
     }
 
@@ -88,7 +88,7 @@ export default class Igloo extends Plugin {
         this.interface.refreshPlayerCard()
 
         this.interface.updateCatalogCoins(args[1])
-        let text = `${this.crumbs.flooring[args[0]].name}\nhas been added to your inventory.`
+        let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.flooring[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
     }
 

@@ -979,7 +979,7 @@ export default class Report extends Closeup {
         this.newTitle.__InputText.clickZone.visible = false
 
         if (this.newTitle.text == '' || this.newBody.text == '' || !this.newBody.__InputText.userClicked || (!this.newTitle.__InputText.userClicked && this.newTitle.text != this.username)) {
-            return this.interface.prompt.showError('Please fill out all fields')
+            return this.interface.prompt.showError(this.crumbs.getError('62'))
         }
 
         let title = this.mode == 'RPT' ? `${this.newTitle.text} Player Report` : this.newTitle.text

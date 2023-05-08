@@ -82,12 +82,12 @@ export default class IgnoreItem extends BaseContainer {
     }
 
     showRemoveIgnore() {
-        let text = `Would you like to remove ${this.username.text}\nfrom your ignore list?`
+        let text = this.crumbs.getString(`remove-ignore,${this.username.text}`)
 
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.airtower.sendXt('n#rn', this.id)
 
-            this.interface.prompt.showWindow('Done', 'single')
+            this.interface.prompt.showWindow(this.crumbs.getString('done'), 'single')
         })
     }
 

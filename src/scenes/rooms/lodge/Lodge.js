@@ -353,7 +353,9 @@ export default class Lodge extends RoomScene {
         if (this.shell.client.activeSeat) {
             return
         }
-        let text = 'Would you like to join this\nFind Four Game?'
+        let four = this.crumbs.getString('four')
+        let game = this.crumbs.getString('game')
+        let text = this.crumbs.getString(`join-multiplayer,${four + ' ' + game}`)
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.airtower.sendXt('a#jt', id)
             this.interface.prompt.window.visible = false

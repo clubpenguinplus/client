@@ -1,6 +1,6 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {Button} from '@components/components'
+import {Button, LocalisedString} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -22,26 +22,14 @@ export default class DualButtons extends BaseContainer {
         const text_2 = scene.add.text(110, 0, '', {})
         text_2.setOrigin(0.5, 0.5)
         text_2.text = 'No'
-        text_2.setStyle({
-            align: 'center',
-            fixedWidth: 150,
-            fontFamily: 'cpBurbankSmall',
-            fontSize: '40px',
-            fontStyle: 'bold',
-        })
+        text_2.setStyle({align: 'center', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         this.add(text_2)
 
         // text_1
         const text_1 = scene.add.text(-110, 0, '', {})
         text_1.setOrigin(0.5, 0.5)
         text_1.text = 'Yes'
-        text_1.setStyle({
-            align: 'center',
-            fixedWidth: 150,
-            fontFamily: 'cpBurbankSmall',
-            fontSize: '40px',
-            fontStyle: 'bold',
-        })
+        text_1.setStyle({align: 'center', fixedWidth: 150, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         this.add(text_1)
 
         // no_button (components)
@@ -51,6 +39,14 @@ export default class DualButtons extends BaseContainer {
         // yes_button (components)
         const yes_buttonButton = new Button(yes_button)
         yes_buttonButton.callback = () => this.onYesClick()
+
+        // text_2 (components)
+        const text_2LocalisedString = new LocalisedString(text_2)
+        text_2LocalisedString.id = 'no'
+
+        // text_1 (components)
+        const text_1LocalisedString = new LocalisedString(text_1)
+        text_1LocalisedString.id = 'yes'
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */

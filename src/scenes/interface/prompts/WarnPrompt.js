@@ -48,7 +48,7 @@ export default class WarnPrompt extends BaseContainer {
         // ok
         const ok = scene.add.text(0, 229, '', {})
         ok.setOrigin(0.5, 0.5)
-        ok.text = 'Ok'
+        ok.text = this.crumbs.getString('okay')
         ok.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
         this.add(ok)
 

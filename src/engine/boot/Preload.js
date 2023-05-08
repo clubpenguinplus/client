@@ -115,19 +115,7 @@ export default class Preload extends BaseScene {
             document.activeElement.blur()
         }
 
-        let lang = 'pt'
-
-        if (window.location.pathname.includes('en')) {
-            lang = 'en'
-        } else if (window.location.pathname.includes('es')) {
-            lang = 'es'
-        } else if (window.location.pathname.includes('de')) {
-            lang = 'de'
-        } else if (window.location.pathname.includes('fr')) {
-            lang = 'fr'
-        } else if (window.location.pathname.includes('ru')) {
-            lang = 'ru'
-        }
+        let lang = window.location.pathname.split('/')[1]
 
         // Set crumbs
         let crumbs = this.cache.json.get(`crumbs-${lang}`)

@@ -206,7 +206,7 @@ export default class Register extends BaseScene {
 
     invalidKey() {
         this.interface.hideLoading()
-        this.interface.prompt.showError(this.crumbs.getString('registerKeyFail'), 'Ok', () => {
+        this.interface.prompt.showError(this.crumbs.getString('registerKeyFail'), this.crumbs.getString('okay'), () => {
             document.location.reload()
         })
     }

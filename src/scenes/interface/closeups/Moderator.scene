@@ -8,7 +8,7 @@
         "superClassName": "Closeup",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/client/media/interface/game/safetyquiz/safetyquiz-pack.json"
+            "client/client/media/interface/closeups/safetyquiz/safetyquiz-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Moderator",
@@ -29,7 +29,8 @@
             "fillColor": "#000000",
             "fillAlpha": 0.3,
             "width": 1520,
-            "height": 960
+            "height": 960,
+            "list": []
         },
         {
             "type": "Image",
@@ -42,7 +43,8 @@
                 "frame": "bg"
             },
             "x": 760,
-            "y": 480
+            "y": 480,
+            "list": []
         },
         {
             "type": "Image",
@@ -55,7 +57,8 @@
                 "frame": "penguins"
             },
             "x": 381,
-            "y": 527
+            "y": 527,
+            "list": []
         },
         {
             "type": "Image",
@@ -73,7 +76,8 @@
             "x": 1439,
             "y": 77,
             "scaleX": 0.8,
-            "scaleY": 0.8
+            "scaleY": 0.8,
+            "list": []
         },
         {
             "type": "Image",
@@ -85,7 +89,8 @@
                 "frame": "mod"
             },
             "x": 1031,
-            "y": 272
+            "y": 272,
+            "list": []
         },
         {
             "type": "Text",
@@ -110,7 +115,8 @@
             "shadow.fill": true,
             "shadow.color": "#26417dff",
             "shadow.blur": 3,
-            "wordWrapWidth": 530
+            "wordWrapWidth": 530,
+            "list": []
         },
         {
             "type": "Image",
@@ -120,13 +126,14 @@
             "components": [
                 "Button"
             ],
-            "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.stop() }",
+            "Button.callback": "() => { this.interface.loadExternal('SafetyQuiz'); this.stop(false) }",
             "texture": {
                 "key": "safetyquiz",
                 "frame": "modbutton"
             },
             "x": 1016,
-            "y": 725
+            "y": 725,
+            "list": []
         },
         {
             "type": "Text",
@@ -149,7 +156,8 @@
             "shadow.fill": true,
             "shadow.color": "#000000ff",
             "shadow.blur": 10,
-            "wordWrapWidth": 550
+            "wordWrapWidth": 550,
+            "list": []
         }
     ],
     "plainObjects": [],

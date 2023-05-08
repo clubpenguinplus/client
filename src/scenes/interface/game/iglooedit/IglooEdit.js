@@ -634,7 +634,7 @@ export default class IglooEdit extends BaseScene {
             return
         }
 
-        let text = 'Would you like to open your igloo?\nThis will add your igloo to the map.'
+        let text = this.crumbs.getString('igloo-open-confirm')
 
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.shell.client.iglooOpen = true

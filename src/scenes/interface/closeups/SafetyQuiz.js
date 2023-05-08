@@ -654,7 +654,7 @@ export default class SafetyQuiz extends Closeup {
         this.answer3.text = this.shell.crumbs.getString('safetyquiz-q0-answer3')
         this.answer4.text = this.shell.crumbs.getString('safetyquiz-q0-answer4')
 
-        this.brownpuffle.play('sq-thinking')
+        this.brownpuffle.play('safetyquiz-thinking')
 
         this.questionNum = 0
     }
@@ -665,11 +665,11 @@ export default class SafetyQuiz extends Closeup {
             this[button].setFrame('module_button-hover')
             let cross = `cross${index}`
             this[cross].visible = true
-            this.brownpuffle.play('sq-incorrect')
+            this.brownpuffle.play('safetyquiz-incorrect')
             setTimeout(() => {
                 this.page2.visible = false
                 this.page4.visible = true
-                this.brownpuffleanimwrong.play('sq-tryagain')
+                this.brownpuffleanimwrong.play('safetyquiz-tryagain')
                 this[cross].visible = false
                 this[button].setFrame('module_button')
                 this.module_bg.setFrame('module_bg1')
@@ -681,8 +681,8 @@ export default class SafetyQuiz extends Closeup {
         if (this.questionNum == 5) {
             this.page2.visible = false
             this.page3.visible = true
-            this.item_anim.play('sq-item_anim')
-            this.reward_anim.play('sq-reward_anim')
+            this.item_anim.play('safetyquiz-item_anim')
+            this.reward_anim.play('safetyquiz-reward_anim')
             return
         }
 
@@ -694,7 +694,7 @@ export default class SafetyQuiz extends Closeup {
         let checkmark = `tick${index}`
         this[checkmark].visible = true
 
-        this.brownpuffle.play('sq-correct')
+        this.brownpuffle.play('safetyquiz-correct')
 
         setTimeout(() => {
             this.question.text = this.shell.crumbs.getString(`safetyquiz-q${this.questionNum}-question`)
@@ -718,7 +718,7 @@ export default class SafetyQuiz extends Closeup {
             }
             this[button].setFrame('module_button')
             this[checkmark].visible = false
-            this.brownpuffle.play('sq-thinking')
+            this.brownpuffle.play('safetyquiz-thinking')
             this.module_bg.setFrame(`module_bg${this.questionNum + 1}`)
             this.progress_rotated.setTexture('safetyquiz', `progress-rotated000${this.questionNum + 1}`)
         }, 1000)

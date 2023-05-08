@@ -209,7 +209,7 @@ export default class Reset extends BaseScene {
 
     invalidCode() {
         this.interface.hideLoading()
-        this.interface.prompt.showError(this.crumbs.getString('passwordWrongKey'), 'Ok', () => {
+        this.interface.prompt.showError(this.crumbs.getString('passwordWrongKey'), this.crumbs.getString('okay'), () => {
             window.location.href = `/${this.shell.language}/?forgot`
         })
     }

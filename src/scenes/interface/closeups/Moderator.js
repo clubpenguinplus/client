@@ -27,7 +27,7 @@ export default class Moderator extends Closeup {
 
     /** @returns {void} */
     _preload() {
-        this.load.pack('safetyquiz-pack', 'client/media/interface/game/safetyquiz/safetyquiz-pack.json')
+        this.load.pack('safetyquiz-pack', 'client/media/interface/closeups/safetyquiz/safetyquiz-pack.json')
     }
 
     /** @returns {void} */
@@ -88,7 +88,7 @@ export default class Moderator extends Closeup {
         const modbuttonButton = new Button(modbutton)
         modbuttonButton.callback = () => {
             this.interface.loadExternal('SafetyQuiz')
-            this.stop()
+            this.stop(false)
         }
 
         // text_1 (components)

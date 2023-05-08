@@ -946,7 +946,7 @@ export default class Main extends BaseScene {
     }
 
     showAccept(request) {
-        let text = `${request.username} is now your friend!`
+        let text = this.crumbs.getString(`friend-request-accepted,${request.username}`)
 
         this.interface.prompt.showWindow(text, 'single')
     }
@@ -1004,7 +1004,7 @@ export default class Main extends BaseScene {
 
     unimplementedPrompt() {
         let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showError('This feature is not yet implemented!\nClub Penguin Plus is in development, and is being\nactively updated. Check back soon!')
+        prompt.showError(this.crumbs.getError('54'))
     }
 
     hide() {
