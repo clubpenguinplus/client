@@ -44,10 +44,6 @@ const clubpenguinplus = {
         },
     },
 
-    plugins: {
-        global: [NineSlice.Plugin.DefaultCfg],
-    },
-
     scale: {
         parent: 'game',
         mode: Phaser.Scale.NONE,

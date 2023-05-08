@@ -7,7 +7,7 @@ export default class RuffleManager {
         if (window.getMyPlayerHex) return // Check if already loaded
 
         window.RufflePlayer.config = {
-            publicPath: `${this.prefix}client/scripts/lib/ruffle`,
+            publicPath: 'https://unpkg.com/@ruffle-rs/ruffle',
         }
 
         this.ruffle = window.RufflePlayer.newest()
