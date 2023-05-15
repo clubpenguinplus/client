@@ -25,306 +25,1515 @@
                     "type": "Rectangle",
                     "id": "9d274e25-df95-406f-883b-f4102166d431",
                     "label": "block",
+                    "scope": "CLASS",
                     "components": [
                         "Interactive"
                     ],
                     "isFilled": true,
                     "fillColor": "#000000",
-                    "fillAlpha": 0.2,
+                    "fillAlpha": 0.3,
                     "width": 1520,
-                    "height": 960
+                    "height": 960,
+                    "list": []
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "4e000c0f-ca29-40d6-955a-108ebfdb90f7",
-                    "label": "rectangle",
-                    "components": [
-                        "NineSlice"
-                    ],
-                    "NineSlice.corner": 50,
-                    "y": -22,
-                    "isFilled": true,
-                    "fillColor": "#0280CD",
-                    "width": 708,
-                    "height": 600
-                },
-                {
-                    "type": "Text",
-                    "id": "8d1cc4d7-9fc2-476a-9a7f-1f4a77c03434",
-                    "label": "buddies",
-                    "components": [],
-                    "x": -55,
-                    "y": 202,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "88/100 Friends",
-                    "fixedWidth": 300,
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
-                },
-                {
-                    "type": "Image",
-                    "id": "03a270a0-f16e-4e4d-914b-61bfd7ab3bf2",
-                    "label": "icon",
+                    "type": "NinePatchContainer",
+                    "id": "20e1d045-1fad-4129-8219-9e89e3000d92",
+                    "label": "bg",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "main",
-                        "frame": "buddies-icon"
+                        "key": "banning",
+                        "frame": "banned_bg"
                     },
-                    "x": -231,
-                    "y": 203
-                },
-                {
-                    "type": "Image",
-                    "id": "601cc5f2-06bb-4a01-a439-462f0b4932d6",
-                    "label": "button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.onManagePress()",
-                    "texture": {
-                        "key": "main",
-                        "frame": "help-button"
-                    },
-                    "y": 96
-                },
-                {
-                    "type": "Text",
-                    "id": "d8459f02-8216-49b8-9a56-e9a7ff51b303",
-                    "label": "account",
-                    "components": [],
-                    "y": 95,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Manage Account",
-                    "fixedWidth": 562,
-                    "align": "center",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "40px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff"
-                },
-                {
-                    "type": "Text",
-                    "id": "8bb0b24c-3cd7-434d-8d31-c69ac4ae9981",
-                    "label": "music",
-                    "components": [],
-                    "x": 106,
-                    "y": -50,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Mute Music",
-                    "fixedWidth": 348,
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
+                    "width": 1200,
+                    "height": 840,
+                    "marginLeft": 50,
+                    "marginRight": 50,
+                    "marginTop": 50,
+                    "marginBottom": 50,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "0a157de1-3931-40c1-89c2-df8717cc7928",
                     "label": "age",
+                    "scope": "CLASS",
                     "components": [],
-                    "y": -108,
+                    "x": -320,
+                    "y": -260,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Your penguin is 0 days old",
-                    "fixedWidth": 600,
+                    "text": "Your penguin is 365 days old",
+                    "fixedWidth": 500,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
+                    "fontSize": "28px",
+                    "color": "#642602ff",
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "502ffa53-fbc7-4cf2-bc81-43262b4d1979",
                     "label": "server",
+                    "scope": "CLASS",
                     "components": [],
-                    "y": -156,
+                    "x": -320,
+                    "y": -295,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "You're on Server Name",
-                    "fixedWidth": 600,
+                    "text": "You're on Blizzard",
+                    "fixedWidth": 500,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "30px",
-                    "color": "#000000ff"
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
                 },
                 {
                     "type": "Text",
                     "id": "049efdf7-a9e9-4774-81b7-5a3c6b0e7c7e",
                     "label": "settings",
+                    "scope": "CLASS",
                     "components": [],
-                    "y": -238,
+                    "y": -352,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "SETTINGS",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "cpCCComicrazy",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
-                    "fontStyle": "bold italic",
-                    "stroke": "#003366",
-                    "strokeThickness": 10
+                    "fontStyle": "bold",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 8,
+                    "list": []
                 },
                 {
                     "type": "Image",
-                    "id": "3723c077-1983-4f49-8883-847b483312d2",
-                    "label": "checkbox",
+                    "id": "84c6bf12-b083-4050-bde7-a4d5267f22ca",
+                    "label": "white_x",
                     "scope": "CLASS",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.onMuteClick()",
-                    "texture": {
-                        "key": "login",
-                        "frame": "checkbox"
-                    },
-                    "x": -101,
-                    "y": -52,
-                    "originX": 0.41509,
-                    "originY": 0.5849
-                },
-                {
-                    "type": "Image",
-                    "id": "e8457282-1a19-4709-b734-0246df0389ac",
-                    "label": "ignore_button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => { this.onSettingsPress() }",
+                    "SimpleButton.callback": "() => {this.visible = false}",
                     "texture": {
                         "key": "main",
-                        "frame": "blue-button"
+                        "frame": "white-x"
                     },
-                    "x": 159,
-                    "y": 202
-                },
-                {
-                    "type": "Image",
-                    "id": "dcd0ef5a-8d3e-4787-8cb3-c4a2239663da",
-                    "label": "ignore_icon",
-                    "components": [],
-                    "texture": {
-                        "key": "main",
-                        "frame": "ignore-icon"
-                    },
-                    "x": 159,
-                    "y": 202
-                },
-                {
-                    "type": "Image",
-                    "id": "e656c20c-78a6-4d94-917f-6cf411b1f4d4",
-                    "label": "x_button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => { this.visible = false }",
-                    "texture": {
-                        "key": "main",
-                        "frame": "blue-button"
-                    },
-                    "x": 300,
-                    "y": -268
-                },
-                {
-                    "type": "Image",
-                    "id": "56d93af1-ac83-4be9-a548-efd7ba743bf2",
-                    "label": "blue_x",
-                    "components": [],
-                    "texture": {
-                        "key": "main",
-                        "frame": "blue-x"
-                    },
-                    "x": 300,
-                    "y": -270
-                },
-                {
-                    "type": "Image",
-                    "id": "8f646040-65fa-4f9f-ba76-fe607e2eb7bc",
-                    "label": "checkbox_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.onMuteAllClick()",
-                    "texture": {
-                        "key": "login",
-                        "frame": "checkbox"
-                    },
-                    "x": -101,
-                    "y": 5,
-                    "originX": 0.41509,
-                    "originY": 0.5849
+                    "x": 571,
+                    "y": -395,
+                    "list": []
                 },
                 {
                     "type": "Text",
-                    "id": "5fb12333-9c6c-4b61-891d-e8c8f2e5d768",
-                    "label": "music_1",
+                    "id": "8a7eb095-8c78-4e0c-8a6f-e2cf5f6e7c20",
+                    "label": "vq_header",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": 106,
-                    "y": 7,
+                    "x": -320,
+                    "y": -197,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Mute All Sounds",
-                    "fixedWidth": 348,
+                    "text": "Visual Quality",
+                    "fixedWidth": 500,
+                    "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "26bf8ff3-dd17-4ce8-82c1-765b2de6dfe9",
+                    "label": "vq_switcher",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -449,
+                    "y": -142,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "6a1350ad-b76b-4710-b2de-d385dc01e52f",
+                            "label": "vq_switch1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.setLowQuality()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-unselected"
+                            },
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "fca1e9a8-bce2-4910-9c4f-e12ef5c1c11f",
+                            "label": "vq_switch2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.setMedQuality()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-borderless"
+                            },
+                            "x": 130,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "519ee546-66b2-4374-98a5-9731f9ca859e",
+                            "label": "vq_switch3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.setHighQuality()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-selected"
+                            },
+                            "x": 260,
+                            "list": []
+                        }
+                    ]
                 },
                 {
                     "type": "Image",
-                    "id": "db08563c-adc0-4c34-bee3-7e3d68d3d395",
-                    "label": "volume_down_button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.shell.musicController.volumeDown()",
+                    "id": "a263ad5d-42d0-4877-b2ac-632105cc2beb",
+                    "label": "vq_div1",
+                    "scope": "CLASS",
+                    "components": [],
                     "texture": {
                         "key": "main",
-                        "frame": "blue-button"
+                        "frame": "switcher-divider"
                     },
-                    "x": -162,
-                    "y": 8
+                    "x": -384,
+                    "y": -142,
+                    "list": []
                 },
                 {
                     "type": "Image",
-                    "id": "2596a2bc-532e-4604-88ca-cf8202724728",
-                    "label": "volume_down_icon",
+                    "id": "f873f442-872d-4578-86de-23c3f34892b4",
+                    "label": "vq_div2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-divider"
+                    },
+                    "x": -254,
+                    "y": -141,
+                    "visible": false,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "b269d614-c818-4448-8797-901992874338",
+                    "label": "vq_text1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -449,
+                    "y": -142,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Low",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "26px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "7b5e1e76-fe5a-4d0a-9917-b4d6381d0e1d",
+                    "label": "vq_text2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -319,
+                    "y": -142,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Medium",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "26px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "2702626b-2fed-4636-81ad-22b6242b7aea",
+                    "label": "vq_text3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -189,
+                    "y": -142,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "High",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "26px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "49832091-6b38-49f1-ba14-81fbd50c6095",
+                    "label": "mv_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -320,
+                    "y": -74,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Music Volume",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "53a20ffa-01aa-487c-ae1c-068a4e3b5304",
+                    "label": "mv_slilder",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "slider"
+                    },
+                    "x": -320,
+                    "y": -31,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "b74e5af4-83ca-47df-9ce6-df5f11969192",
+                    "label": "mv_mute",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "volume-down"
                     },
-                    "x": -159,
-                    "y": 6
+                    "x": -480,
+                    "y": -31,
+                    "list": []
                 },
                 {
                     "type": "Image",
-                    "id": "32085549-97d1-4df0-af45-69b3871c1170",
-                    "label": "volume_up_button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.shell.musicController.volumeUp()",
-                    "texture": {
-                        "key": "main",
-                        "frame": "blue-button"
-                    },
-                    "x": -162,
-                    "y": -58
-                },
-                {
-                    "type": "Image",
-                    "id": "d6022761-3f37-45fb-ba34-00ae985504d8",
-                    "label": "volume_up_icon",
+                    "id": "a9f469a7-3f57-48de-8643-82ef156acdeb",
+                    "label": "mv_loud",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "volume-up"
                     },
-                    "x": -162,
-                    "y": -60
+                    "x": -160,
+                    "y": -31,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "3e33620f-1c1d-4a43-a1dc-d1a618bca1c0",
+                    "label": "mv_ball",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "snowball-icon"
+                    },
+                    "x": -246,
+                    "y": -31.5,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "d9472c9c-f5c9-4478-a6b7-507115419c9c",
+                    "label": "sv_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -320,
+                    "y": 36,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "SFX Volume",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "5353f52e-ad1d-4adb-b17e-22e091e91b2b",
+                    "label": "sv_slilder",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "slider"
+                    },
+                    "x": -320,
+                    "y": 79,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "8f2937ed-d881-47a9-8b64-26f7b738fd30",
+                    "label": "sv_mute",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "volume-down"
+                    },
+                    "x": -480,
+                    "y": 79,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "88f4e3eb-2322-4791-a331-0ad8f8e330e0",
+                    "label": "sv_loud",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "volume-up"
+                    },
+                    "x": -160,
+                    "y": 79,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "ca0b53bd-0a33-40da-89e1-e01b78aed9ca",
+                    "label": "sv_ball",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "snowball-icon"
+                    },
+                    "x": -246,
+                    "y": 79.5,
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "4e5cb864-8c80-4a62-bb06-7c53b0981421",
+                    "label": "cf_switcher",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -449,
+                    "y": 202,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "0265b370-8802-4338-a3d9-bf66783ac54e",
+                            "label": "cf_switch1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.setFilterLenient()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-unselected"
+                            },
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "a699b6d0-2e1d-4a0b-b7c2-69d512650557",
+                            "label": "cf_switch2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.setFilterStandard()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-borderless"
+                            },
+                            "x": 130,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "caee0c2a-eda3-4b40-a5de-14b8b5aa3e95",
+                            "label": "cf_switch3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.setFilterUltimate()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-selected"
+                            },
+                            "x": 260,
+                            "list": []
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "58210c39-c661-4b0e-af8a-82c0ec1a771f",
+                    "label": "cf_div1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-divider"
+                    },
+                    "x": -254,
+                    "y": 203,
+                    "visible": false,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "9318b9fe-4fb7-4f2a-81fa-67046982d749",
+                    "label": "cf_div2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-divider"
+                    },
+                    "x": -384,
+                    "y": 202,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "9a10c819-1e9a-4b2b-8cf4-53c3f6b6cf4a",
+                    "label": "cf_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -320,
+                    "y": 147,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Chat Filter Tier",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "a5f9a0f3-fe46-43c9-b6f9-15a974cae064",
+                    "label": "cf_text1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -449,
+                    "y": 203,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Lenient",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "2a46ce60-88d3-4d90-ae42-745aa0ad6ae5",
+                    "label": "cf_text2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -319,
+                    "y": 203,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Standard",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "d54babba-e99b-4c9c-8dd0-909e4f76e07f",
+                    "label": "cf_text3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -189,
+                    "y": 203,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Ultimate",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "de28e7e1-45e9-4ac6-bfe7-c0a128f8d148",
+                    "label": "h_switch1",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.hideInterface()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-unselected"
+                    },
+                    "x": -465,
+                    "y": 328,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "84eeb0fe-66c1-4113-9cca-52b3d081dd8b",
+                    "label": "h_switch3",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.hideNames()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-unselected"
+                    },
+                    "x": -175,
+                    "y": 328,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "40104625-3737-4e49-a573-349463df6c4b",
+                    "label": "h_switch2",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.hideOthers()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-unselected"
+                    },
+                    "x": -320,
+                    "y": 328,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "cb46748f-0589-4ba8-8544-bfe2975546a1",
+                    "label": "h_text3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -175,
+                    "y": 329,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Names",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "69849bb6-f0a0-496d-8684-8fe490f9f41f",
+                    "label": "h_text2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -320,
+                    "y": 329,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Others",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "5a300888-bfba-4260-bc59-95b4127ab1ea",
+                    "label": "h_text1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -465,
+                    "y": 329,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Interface",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "7a535ffd-bd3e-4336-887c-84541641dd19",
+                    "label": "h_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -320,
+                    "y": 273,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Hide",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "b860b478-1853-47a9-baaa-bc41dab1e92b",
+                    "label": "aid_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "text_bg"
+                    },
+                    "x": 405,
+                    "y": -280,
+                    "width": 300,
+                    "height": 60,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "21cc2f32-3f00-480b-864d-06e67d59f9b9",
+                    "label": "aid_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": -280,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Account ID:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "31d8d88d-1f04-4407-82a5-50bf3fa731ae",
+                    "label": "uname_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "text_bg"
+                    },
+                    "x": 405,
+                    "y": -215,
+                    "width": 300,
+                    "height": 60,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "7819d9fe-dbf7-4dd1-bc32-dbcf86fc996f",
+                    "label": "uname_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": -215,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "56044d4b-0be9-4160-84d5-db1f28d927b5",
+                    "label": "em_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "text_bg"
+                    },
+                    "x": 405,
+                    "y": -150,
+                    "width": 300,
+                    "height": 60,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "ababd660-f2d6-48cb-903a-d7c5248a81d6",
+                    "label": "em_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": -150,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Email:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "f973ea54-129b-4d74-adca-3bd2568d221c",
+                    "label": "cp_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 291,
+                    "y": -92,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Change Password",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ad056bec-40ce-4bce-b08b-8f193b31be05",
+                    "label": "cp_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.showPChange()",
+                    "x": 291.7286376953125,
+                    "y": -90.0626220703125,
+                    "width": 500,
+                    "height": 50,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "648e71d2-35d8-4eaa-80c2-406e3812b078",
+                    "label": "aid_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 405,
+                    "y": -280,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "fixedWidth": 280,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "34px",
+                    "color": "#642602ff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "075df57f-93c1-486e-a098-5eda2892131d",
+                    "label": "uname_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 405,
+                    "y": -215,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "fixedWidth": 280,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "34px",
+                    "color": "#642602ff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "05064903-2895-4772-8bf7-e4b71f1a715d",
+                    "label": "em_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 405,
+                    "y": -150,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "fixedWidth": 280,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "color": "#642602ff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "fa3d8014-4ce8-48b5-b87d-d3508dfb11c3",
+                    "label": "mfa_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": 23,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "2FA:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "17046acc-fc60-4529-816d-ce6299bf1062",
+                    "label": "mfa_switcher",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 406,
+                    "y": 21,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "bd6587e5-b0f3-43ec-9436-66bf1b385c3e",
+                            "label": "mfa_switch2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.enable2FA()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-unselected"
+                            },
+                            "x": 65,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "bdbd9442-d6af-4488-a055-68a5d9fd4235",
+                            "label": "mfa_switch1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.disable2FA()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-selected"
+                            },
+                            "x": -65,
+                            "list": []
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "7a0b78d5-856b-43d2-8845-3811f82ca450",
+                    "label": "mfa_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 471,
+                    "y": 21,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Enabled",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "c3a467ce-6309-422f-9d3f-cd18c1b42e81",
+                    "label": "mfa_text1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 341,
+                    "y": 21,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Disabled",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "9f9905b3-58e5-4ea6-a2ec-e6b3a2bf8d94",
+                    "label": "uage_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": 94,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Age:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "6b394df1-b0a6-4537-a763-3f19a79fc953",
+                    "label": "uage_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "text_bg"
+                    },
+                    "x": 405,
+                    "y": 94,
+                    "width": 300,
+                    "height": 60,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "b6b63d3c-46d7-43ba-a4c6-a4f027f76030",
+                    "label": "uage_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 405,
+                    "y": 94,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Under 16",
+                    "fixedWidth": 280,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "color": "#642602ff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "a3f93139-016d-45d9-a10e-68c5b8a12434",
+                    "label": "pc_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 291,
+                    "y": 193,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Parental Controls",
+                    "fixedWidth": 500,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "36px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "fdd61090-1401-48b3-9fc2-0657d102aa15",
+                    "label": "in_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": 334,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Infraction Notifications:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "wordWrapWidth": 250,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "abe37347-85dd-4b4e-b88a-58f37641e25c",
+                    "label": "in_switch1",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.disableInfractionNotifs()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-unselected"
+                    },
+                    "x": 341,
+                    "y": 332,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "059cf9f2-2919-41f8-b627-346057faa8fc",
+                    "label": "in_text1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 341,
+                    "y": 332,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Disabled",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "a46ce52b-2f8c-4b98-8463-7bc30a7ee669",
+                    "label": "in_switch2",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.enableInfractionNotifs()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "switcher-selected"
+                    },
+                    "x": 471,
+                    "y": 332,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "260dd82e-9148-49a4-8d8f-a57bb98772c1",
+                    "label": "in_text2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 471,
+                    "y": 332,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Enabled",
+                    "fixedWidth": 120,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#642602ff",
+                    "stroke": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "b848edd7-1728-4b4c-8610-8d67cefd19db",
+                    "label": "plimit_header",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 95,
+                    "y": 254,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Playtime Limit:",
+                    "fixedWidth": 300,
+                    "align": "right",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "24px",
+                    "color": "#ffffffff",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 6,
+                    "wordWrapWidth": 250,
+                    "list": []
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "7bde7856-9c87-4c05-88aa-1d6a8a3e1f8b",
+                    "label": "plimit_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "banning",
+                        "frame": "text_bg"
+                    },
+                    "x": 405,
+                    "y": 254,
+                    "width": 300,
+                    "height": 60,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "4f455dcf-0b78-402f-a6ea-a38f2f270093",
+                    "label": "plimit_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 405,
+                    "y": 254,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "2 hours",
+                    "fixedWidth": 280,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "color": "#642602ff",
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "912c59b0-2fb2-40a0-912b-64e33815a369",
+                    "label": "pchange",
+                    "scope": "CLASS",
+                    "components": [],
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "75ce69fc-4095-4f72-a426-e33d807ed665",
+                            "label": "pchange_block",
+                            "scope": "CLASS",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "isFilled": true,
+                            "fillColor": "#000000",
+                            "fillAlpha": 0.5,
+                            "width": 1520,
+                            "height": 960,
+                            "list": []
+                        },
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "f0308d15-11e4-4977-8d5e-86956dc7bb22",
+                            "label": "pchange_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "banning",
+                                "frame": "banned_bg"
+                            },
+                            "y": -20,
+                            "width": 500,
+                            "height": 650,
+                            "marginLeft": 50,
+                            "marginRight": 50,
+                            "marginTop": 50,
+                            "marginBottom": 50,
+                            "list": []
+                        },
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "593ff811-28b1-42fc-8d7c-12998fc4613e",
+                            "label": "pchange_cur_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "banning",
+                                "frame": "text_bg"
+                            },
+                            "y": -135,
+                            "width": 370,
+                            "height": 60,
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1857d902-624d-4128-95b1-af759668d305",
+                            "label": "pchange_cur_text",
+                            "scope": "CLASS",
+                            "components": [
+                                "InputText"
+                            ],
+                            "InputText.ispassword": true,
+                            "InputText.charlimit": 48,
+                            "InputText.extends": false,
+                            "y": -135,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "fixedWidth": 350,
+                            "fixedHeight": 34,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "28px",
+                            "color": "#642602ff",
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "2a04c8f5-9980-42fd-bd71-20a9396261ee",
+                            "label": "pchange_cur_header",
+                            "scope": "CLASS",
+                            "components": [],
+                            "y": -196,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Current Password:",
+                            "fixedWidth": 400,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "36px",
+                            "color": "#ffffffff",
+                            "stroke": "#642602ff",
+                            "strokeThickness": 6,
+                            "list": []
+                        },
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "6295ef20-7407-4db1-94a6-25e72f94b5e2",
+                            "label": "pchange_new_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "banning",
+                                "frame": "text_bg"
+                            },
+                            "y": -5,
+                            "width": 370,
+                            "height": 60,
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9fd10300-a668-4458-8fb5-85ea27597cf8",
+                            "label": "pchange_new_text",
+                            "scope": "CLASS",
+                            "components": [
+                                "InputText"
+                            ],
+                            "InputText.ispassword": true,
+                            "InputText.charlimit": 48,
+                            "InputText.extends": false,
+                            "y": -5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "fixedWidth": 350,
+                            "fixedHeight": 34,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "28px",
+                            "color": "#642602ff",
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "fbb0bda3-0a27-4910-abc6-3554077e37b9",
+                            "label": "pchange_new_header",
+                            "scope": "CLASS",
+                            "components": [],
+                            "y": -66,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "New Password:",
+                            "fixedWidth": 400,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "36px",
+                            "color": "#ffffffff",
+                            "stroke": "#642602ff",
+                            "strokeThickness": 6,
+                            "list": []
+                        },
+                        {
+                            "type": "NinePatchContainer",
+                            "id": "532c9fab-08eb-42fb-a8ea-38d413765566",
+                            "label": "pchange_confirm_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "banning",
+                                "frame": "text_bg"
+                            },
+                            "y": 135,
+                            "width": 370,
+                            "height": 60,
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3fe44d11-e8f8-4ae7-8c5a-ecb720fe7307",
+                            "label": "pchange_confirm_text",
+                            "scope": "CLASS",
+                            "components": [
+                                "InputText"
+                            ],
+                            "InputText.ispassword": true,
+                            "InputText.charlimit": 48,
+                            "InputText.extends": false,
+                            "y": 135,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "fixedWidth": 350,
+                            "fixedHeight": 34,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "28px",
+                            "color": "#642602ff",
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f0db5d6f-e243-4763-bd82-0e309f2f9677",
+                            "label": "pchange_confirm_header",
+                            "scope": "CLASS",
+                            "components": [],
+                            "y": 74,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Confirm New Password:",
+                            "fixedWidth": 400,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "36px",
+                            "color": "#ffffffff",
+                            "stroke": "#642602ff",
+                            "strokeThickness": 6,
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "fd067fe6-0d77-4785-b281-a71111addb4d",
+                            "label": "pchange_header",
+                            "scope": "CLASS",
+                            "components": [],
+                            "y": -261,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "CHANGE PASSWORD",
+                            "fixedWidth": 400,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "40px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#642602ff",
+                            "strokeThickness": 8,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "305c24f1-d59a-4bfc-98b5-5158adceb3b4",
+                            "label": "pchange_submit",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePasswordSubmit()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "switcher-unselected"
+                            },
+                            "y": 220,
+                            "list": []
+                        },
+                        {
+                            "type": "Text",
+                            "id": "996438c8-904f-484e-b59d-e0128c1ef3ec",
+                            "label": "pchange_submit_text",
+                            "scope": "CLASS",
+                            "components": [],
+                            "y": 220,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Change",
+                            "fixedWidth": 400,
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "26px",
+                            "color": "#642602ff",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7ceb4f5d-10d6-4177-90bd-172319eef6f9",
+                            "label": "pchange_quit",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.cancelPChange()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "white-x"
+                            },
+                            "x": 218,
+                            "y": -320,
+                            "list": []
+                        }
+                    ]
                 }
             ]
         }

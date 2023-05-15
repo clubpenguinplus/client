@@ -2009,6 +2009,7 @@ export default class Stampbook extends BaseScene {
             this.stampHovers.visible = true
         }
 
+        stamps = stamps.sort((a, b) => this.crumbs.stamps[a].difficulty - this.crumbs.stamps[b].difficulty)
         for (var i = 0; i < stamps.length; i++) {
             let posIndex = i % 16
             let stampVisibility = i < 16

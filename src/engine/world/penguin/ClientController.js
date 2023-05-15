@@ -229,6 +229,11 @@ export default class ClientController {
             window.lowerQuality()
         } else if (key == '=') {
             window.raiseQuality()
+        } else if (key == 'escape') {
+            if (this.shell.settings.hi) {
+                this.shell.settings.hi = false
+                this.interface.main.show()
+            }
         }
 
         if (this.emoteKeyPressed) {

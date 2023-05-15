@@ -195,6 +195,12 @@ export default class Servers extends BaseScene {
     create(data) {
         this.data = data
 
+        if (this.airtower.saveUsername) {
+            this.airtower.savePlayer(data)
+        } else {
+            this.airtower.unsavePlayer(data)
+        }
+
         this.worlds = {}
 
         let environment

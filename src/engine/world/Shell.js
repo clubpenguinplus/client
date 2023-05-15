@@ -16,12 +16,6 @@ export default class Shell extends BaseScene {
 
         this.secretFramesCache = {}
 
-        this.muteMusic = localStorage.muteMusic == 'true' ? true : false
-        this.muteAll = localStorage.muteAll == 'true' ? true : false
-
-        this.rockhopper_visit = new Date('12/25/2022')
-        this.rockhopper_leave = new Date('12/28/2022')
-
         this.itemsLoaded = []
 
         if (window.location.hostname == 'localhost') window.shell = this
@@ -34,6 +28,38 @@ export default class Shell extends BaseScene {
             }
         }
         return 'en'
+    }
+
+    get settings() {
+        if (!localStorage.settings) {
+            localStorage.settings = JSON.stringify({
+                vq: 3,
+                cf: 2,
+                hi: false,
+                hn: false,
+                ho: false,
+                mv: 0.7,
+                sv: 0.7,
+            })
+        }
+
+        const updateSettings = (settings, property, value) => {
+            const updatedSettings = {...settings, [property]: value}
+            localStorage.settings = JSON.stringify(updatedSettings)
+        }
+
+        const settingsProxy = new Proxy(JSON.parse(localStorage.settings), {
+            set: function (target, property, value) {
+                updateSettings(target, property, value)
+                return true
+            },
+        })
+
+        return settingsProxy
+    }
+
+    set settings(settings) {
+        localStorage.settings = JSON.stringify(settings)
     }
 
     create() {

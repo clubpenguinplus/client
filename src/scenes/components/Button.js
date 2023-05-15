@@ -37,7 +37,7 @@ export default class Button extends SimpleButton {
     /* START-USER-CODE */
 
     get spriteName() {
-        let frameName = this.gameObject.frame.name
+        let frameName = this.gameObject.frame ? this.gameObject.frame.name : this.gameObject.textureFrame
 
         if (frameName.includes('-es-')) {
             frameName = frameName.replace('-es-', '-')
@@ -65,6 +65,11 @@ export default class Button extends SimpleButton {
         return this.gameObject.texture.key
     }
 
+    get texture() {
+        if (this.gameObject.texture) return this.gameObject.texture
+        return this.gameObject.scene.shell.textures.get(this.textureKey)
+    }
+
     get language() {
         for (let lang of ['en', 'es', 'pt']) {
             if (window.location.pathname.includes(lang)) {
@@ -76,7 +81,7 @@ export default class Button extends SimpleButton {
 
     get overFrame() {
         let frame = this.isLocalised ? `${this.spriteName}-${this.language}-hover` : `${this.spriteName}-hover`
-        if (this.gameObject.texture.frames[frame]) {
+        if (this.texture.frames[frame]) {
             return frame
         }
         return this.outFrame
@@ -84,7 +89,7 @@ export default class Button extends SimpleButton {
 
     get outFrame() {
         let frame = this.isLocalised ? `${this.spriteName}-${this.language}` : this.spriteName
-        if (this.gameObject.texture.frames[frame]) {
+        if (this.texture.frames[frame]) {
             return frame
         }
         return this.spriteName
@@ -92,7 +97,7 @@ export default class Button extends SimpleButton {
 
     get downFrame() {
         let frame = this.isLocalised ? `${this.spriteName}-${this.language}-active` : `${this.spriteName}-active`
-        if (this.gameObject.texture.frames[frame]) {
+        if (this.texture.frames[frame]) {
             return frame
         }
         return this.overFrame

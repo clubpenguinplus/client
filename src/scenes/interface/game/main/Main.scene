@@ -37,7 +37,8 @@
                 "frame": "dock"
             },
             "x": 760,
-            "y": 924
+            "y": 924,
+            "list": []
         },
         {
             "type": "Image",
@@ -52,7 +53,8 @@
                 "frame": "chat-box"
             },
             "x": 748,
-            "y": 929
+            "y": 929,
+            "list": []
         },
         {
             "type": "Container",
@@ -80,7 +82,8 @@
                     "lineSpacing": 25,
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
-                    "color": "#ffffffff"
+                    "color": "#ffffffff",
+                    "list": []
                 }
             ]
         },
@@ -95,7 +98,8 @@
                 "frame": "blue-button-disabled"
             },
             "x": 246,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -112,7 +116,8 @@
             },
             "x": 246,
             "y": 930,
-            "visible": false
+            "visible": false,
+            "list": []
         },
         {
             "type": "Image",
@@ -125,7 +130,8 @@
                 "frame": "puffle-icon-disabled"
             },
             "x": 245,
-            "y": 929
+            "y": 929,
+            "list": []
         },
         {
             "type": "Image",
@@ -143,7 +149,8 @@
                 "frame": "blue-button"
             },
             "x": 306,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -155,7 +162,8 @@
                 "frame": "emote-icon"
             },
             "x": 306,
-            "y": 928
+            "y": 928,
+            "list": []
         },
         {
             "type": "Image",
@@ -173,7 +181,8 @@
                 "frame": "blue-button"
             },
             "x": 366,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -186,7 +195,8 @@
                 "frame": "action-icon"
             },
             "x": 366,
-            "y": 926
+            "y": 926,
+            "list": []
         },
         {
             "type": "Image",
@@ -204,7 +214,8 @@
                 "frame": "blue-button"
             },
             "x": 426,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -217,7 +228,8 @@
                 "frame": "snowball-icon"
             },
             "x": 426,
-            "y": 929
+            "y": 929,
+            "list": []
         },
         {
             "type": "Image",
@@ -235,7 +247,8 @@
                 "frame": "blue-button"
             },
             "x": 1026,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -248,7 +261,8 @@
                 "frame": "chat-send0001"
             },
             "x": 1027,
-            "y": 928
+            "y": 928,
+            "list": []
         },
         {
             "type": "Image",
@@ -266,7 +280,8 @@
                 "frame": "blue-button"
             },
             "x": 1086,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -279,7 +294,8 @@
                 "frame": "badge-member"
             },
             "x": 1086,
-            "y": 927
+            "y": 927,
+            "list": []
         },
         {
             "type": "Image",
@@ -297,7 +313,8 @@
                 "frame": "blue-button"
             },
             "x": 1146,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -310,7 +327,8 @@
                 "frame": "buddies-icon"
             },
             "x": 1146,
-            "y": 928
+            "y": 928,
+            "list": []
         },
         {
             "type": "Image",
@@ -328,7 +346,8 @@
                 "frame": "blue-button"
             },
             "x": 1206,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -341,7 +360,8 @@
                 "frame": "igloo-icon"
             },
             "x": 1206,
-            "y": 928
+            "y": 928,
+            "list": []
         },
         {
             "type": "Image",
@@ -352,14 +372,15 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.callback": "() => { this.settings.visible = true }",
+            "Button.callback": "() => { this.settings.show() }",
             "ShowHint.text": "settings",
             "texture": {
                 "key": "main",
                 "frame": "blue-button"
             },
             "x": 1266,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -372,7 +393,8 @@
                 "frame": "help-icon"
             },
             "x": 1266,
-            "y": 928
+            "y": 928,
+            "list": []
         },
         {
             "type": "Image",
@@ -390,7 +412,8 @@
                 "frame": "blue-button"
             },
             "x": 486,
-            "y": 930
+            "y": 930,
+            "list": []
         },
         {
             "type": "Image",
@@ -403,7 +426,8 @@
                 "frame": "chat-icon"
             },
             "x": 486,
-            "y": 929
+            "y": 929,
+            "list": []
         },
         {
             "type": "Container",
@@ -427,7 +451,8 @@
                         "key": "main",
                         "frame": "mobile/dock"
                     },
-                    "x": 713
+                    "x": 713,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -443,7 +468,8 @@
                     },
                     "x": 710,
                     "y": 10,
-                    "scaleX": 0.9
+                    "scaleX": 0.9,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -454,14 +480,15 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.callback": "() => { this.settings.visible = true }",
+                    "Button.callback": "() => { this.settings.show() }",
                     "ShowHint.text": "settings",
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button"
                     },
                     "x": 1426,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -474,7 +501,8 @@
                         "frame": "mobile/help-icon"
                     },
                     "x": 1426,
-                    "y": 7
+                    "y": 7,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -492,7 +520,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1340,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -505,7 +534,8 @@
                         "frame": "mobile/igloo-icon"
                     },
                     "x": 1340,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -523,7 +553,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1254,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -536,7 +567,8 @@
                         "frame": "mobile/buddies-icon"
                     },
                     "x": 1254,
-                    "y": 8
+                    "y": 8,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -554,7 +586,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1168,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -567,7 +600,8 @@
                         "frame": "mobile/badge-member"
                     },
                     "x": 1168,
-                    "y": 8
+                    "y": 8,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -585,7 +619,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1079,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -598,7 +633,8 @@
                         "frame": "mobile/chat_send0001"
                     },
                     "x": 1082,
-                    "y": 7
+                    "y": 7,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -616,7 +652,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 259,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -629,7 +666,8 @@
                         "frame": "mobile/snowball-icon"
                     },
                     "x": 259,
-                    "y": 8
+                    "y": 8,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -647,7 +685,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 173,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -660,7 +699,8 @@
                         "frame": "mobile/action-icon"
                     },
                     "x": 173,
-                    "y": 5
+                    "y": 5,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -678,7 +718,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 87,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -690,7 +731,8 @@
                         "frame": "mobile/emote-icon"
                     },
                     "x": 87,
-                    "y": 7
+                    "y": 7,
+                    "list": []
                 },
                 {
                     "type": "Sprite",
@@ -707,7 +749,8 @@
                     },
                     "x": 199,
                     "y": 36,
-                    "visible": false
+                    "visible": false,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -720,7 +763,8 @@
                         "frame": "mobile/blue-button-disabled"
                     },
                     "x": 1,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -732,7 +776,8 @@
                         "key": "main",
                         "frame": "mobile/puffle0001"
                     },
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -750,7 +795,8 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 349,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -763,7 +809,8 @@
                         "frame": "mobile/chat-icon"
                     },
                     "x": 350,
-                    "y": 10
+                    "y": 10,
+                    "list": []
                 },
                 {
                     "type": "Container",
@@ -793,7 +840,8 @@
                             "lineSpacing": 25,
                             "fontFamily": "cpBurbankSmall",
                             "fontSize": "36px",
-                            "color": "#ffffffff"
+                            "color": "#ffffffff",
+                            "list": []
                         }
                     ]
                 }
@@ -862,7 +910,8 @@
                 "frame": "crosshair"
             },
             "y": 1100,
-            "visible": false
+            "visible": false,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -878,7 +927,8 @@
                 "frame": "map-button"
             },
             "x": 90,
-            "y": 888
+            "y": 888,
+            "list": []
         },
         {
             "type": "Image",
@@ -894,7 +944,8 @@
                 "frame": "phone-button"
             },
             "x": 85,
-            "y": 758
+            "y": 758,
+            "list": []
         },
         {
             "type": "Sprite",
@@ -910,7 +961,8 @@
                 "frame": "mail-button"
             },
             "x": 170,
-            "y": 52
+            "y": 52,
+            "list": []
         },
         {
             "type": "Image",
@@ -926,7 +978,8 @@
                 "frame": "discord"
             },
             "x": 70,
-            "y": 65
+            "y": 65,
+            "list": []
         },
         {
             "type": "Image",
@@ -943,7 +996,8 @@
             },
             "x": 1461,
             "y": 65,
-            "originY": 0.5047169811320755
+            "originY": 0.5047169811320755,
+            "list": []
         },
         {
             "type": "Image",
@@ -961,7 +1015,8 @@
             "x": 1454,
             "y": 70,
             "originY": 0.5047169811320755,
-            "visible": false
+            "visible": false,
+            "list": []
         },
         {
             "type": "Image",
@@ -977,7 +1032,8 @@
                 "frame": "beta"
             },
             "x": 1354,
-            "y": 68
+            "y": 68,
+            "list": []
         },
         {
             "type": "Layer",
@@ -1199,7 +1255,8 @@
                     "alphaTopLeft": 0.7,
                     "alphaTopRight": 0.7,
                     "alphaBottomLeft": 0.7,
-                    "alphaBottomRight": 0.7
+                    "alphaBottomRight": 0.7,
+                    "list": []
                 },
                 {
                     "type": "Image",
@@ -1211,7 +1268,8 @@
                         "key": "main",
                         "frame": "stamps/activities0001"
                     },
-                    "y": 70
+                    "y": 70,
+                    "list": []
                 },
                 {
                     "type": "Text",
@@ -1225,7 +1283,8 @@
                     "fixedWidth": 380,
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
-                    "fontStyle": "bold italic"
+                    "fontStyle": "bold italic",
+                    "list": []
                 },
                 {
                     "type": "Text",
@@ -1238,7 +1297,8 @@
                     "text": "Stamp Name",
                     "fixedWidth": 380,
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "35px"
+                    "fontSize": "35px",
+                    "list": []
                 }
             ]
         },
@@ -1322,7 +1382,14 @@
                 "6dca3f2a-91a7-4ed4-8cf2-5a0ddf89d4c9",
                 "4040e412-ba63-4812-bbe9-fc4ba0f76672",
                 "5e4ed4ed-00af-41ab-80e5-0f59836474bc",
-                "099b4f2f-3b22-49b1-84c9-e39997ce7f85"
+                "099b4f2f-3b22-49b1-84c9-e39997ce7f85",
+                "22601d52-c67a-47d4-8542-ade04d28a7dc",
+                "1336b11c-fc2a-4b8c-8db0-9b3244d95b57",
+                "980ed16f-2969-4e44-ad27-f3f28486ae8f",
+                "c77d9303-6faa-472c-83e7-725f82e2b2eb",
+                "a758f2b9-3859-4cd2-ae20-f40a070251e7",
+                "dc1387ce-b9fd-415b-9587-ce066fc1f396",
+                "fe8d6749-68cf-47c6-b41c-01807204bcde"
             ]
         }
     ]
