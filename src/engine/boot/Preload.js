@@ -154,6 +154,14 @@ export default class Preload extends BaseScene {
             return result
         }
 
+        this.crumbs.roomList = []
+        for (let room in this.crumbs.scenes.rooms) {
+            this.crumbs.scenes.rooms[room].name = this.crumbs.getString(this.crumbs.scenes.rooms[room].key)
+            let roomObj = this.crumbs.scenes.rooms[room]
+            roomObj.id = room
+            this.crumbs.roomList.push(roomObj)
+        }
+
         // Start
         this.interface.hideLoading()
         this.scene.start('InterfaceController')

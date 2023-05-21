@@ -1085,6 +1085,10 @@ export default class Main extends BaseScene {
         this.interface.loadExternal('Report')
     }
 
+    onPhoneClick() {
+        this.interface.loadExternal('EPFPhone')
+    }
+
     /* END-USER-CODE */
 }
 
