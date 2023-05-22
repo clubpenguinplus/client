@@ -1,6 +1,6 @@
 {
   "name": "clubpenguinplus",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Club-Penguin-Plus-Official/client.git"
+    "url": "git+https://github.com/clubpenguinplus/client.git"
   },
   "author": "Club Penguin Plus",
   "bugs": {
-    "url": "https://github.com/Club-Penguin-Plus-Official/client/issues"
+    "url": "https://clubpenguinplus.atlassian.net/browse/BUG"
   },
   "homepage": "https://www.cpplus.pw",
   "devDependencies": {
