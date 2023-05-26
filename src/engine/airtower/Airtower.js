@@ -275,6 +275,8 @@ export default class Airtower {
     unsavePlayer(args) {
         let savedPenguins = this.savedPenguins
 
+        console.log(args)
+
         if (args[4].split('|')[1].toLowerCase() in savedPenguins) {
             delete savedPenguins[args[0].split('|')[1].toLowerCase()]
             localStorage.setItem('saved_penguins', JSON.stringify(savedPenguins))

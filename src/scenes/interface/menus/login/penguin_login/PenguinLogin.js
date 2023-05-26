@@ -198,11 +198,9 @@ export default class PenguinLogin extends BaseScene {
 
         // Token
         let token = this.airtower.getToken(this.penguin.username)
-        this.passwordEdited = false
 
         if (token) {
-            this.passwordInput.text = '********'
-            this.input.keyboard.once('keydown', () => (this.passwordEdited = true))
+            this.passwordInput.__InputText.setDefaultText('********')
 
             this.checks.enable(this.checks.password)
         }
@@ -220,7 +218,7 @@ export default class PenguinLogin extends BaseScene {
         this.interface.showLoading(`Logging in ${username}`)
         this.scene.stop()
 
-        if (token && !this.passwordEdited) {
+        if (token && !this.passwordInput.__InputText.isChanged) {
             this.airtower.connectLogin(this.checks.username.checked, this.checks.password.checked, () => {
                 let status = document.location.host.includes('play') ? 'release' : 'beta'
                 this.airtower.sendXml(`<msg t='sys'><body action='verChk' r='0'><ver v='${VERSION}-${status}' /></body></msg>`)

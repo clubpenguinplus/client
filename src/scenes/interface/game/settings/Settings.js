@@ -1,6 +1,6 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {Button, Interactive, InputText, SimpleButton} from '@components/components'
+import {LocalisedString, Interactive, InputText, SimpleButton} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -140,10 +140,12 @@ export default class Settings extends BaseContainer {
         this.in_header
         /** @type {Phaser.GameObjects.Image} */
         this.in_switch1
-        /** @type {Phaser.GameObjects.Text} */
-        this.in_text1
         /** @type {Phaser.GameObjects.Image} */
         this.in_switch2
+        /** @type {Phaser.GameObjects.Container} */
+        this.in_switcher
+        /** @type {Phaser.GameObjects.Text} */
+        this.in_text1
         /** @type {Phaser.GameObjects.Text} */
         this.in_text2
         /** @type {Phaser.GameObjects.Text} */
@@ -545,9 +547,17 @@ export default class Settings extends BaseContainer {
         in_header.setWordWrapWidth(250)
         this.add(in_header)
 
+        // in_switcher
+        const in_switcher = scene.add.container(341, 332)
+        this.add(in_switcher)
+
         // in_switch1
-        const in_switch1 = scene.add.image(341, 332, 'main', 'switcher-unselected')
-        this.add(in_switch1)
+        const in_switch1 = scene.add.image(0, 0, 'main', 'switcher-unselected')
+        in_switcher.add(in_switch1)
+
+        // in_switch2
+        const in_switch2 = scene.add.image(130, 0, 'main', 'switcher-selected')
+        in_switcher.add(in_switch2)
 
         // in_text1
         const in_text1 = scene.add.text(341, 332, '', {})
@@ -555,10 +565,6 @@ export default class Settings extends BaseContainer {
         in_text1.text = 'Disabled'
         in_text1.setStyle({align: 'center', color: '#642602ff', fixedWidth: 120, fontFamily: 'cpBurbankSmall', fontSize: '24px', stroke: '#ffffffff'})
         this.add(in_text1)
-
-        // in_switch2
-        const in_switch2 = scene.add.image(471, 332, 'main', 'switcher-selected')
-        this.add(in_switch2)
 
         // in_text2
         const in_text2 = scene.add.text(471, 332, '', {})
@@ -682,11 +688,19 @@ export default class Settings extends BaseContainer {
         // block (components)
         new Interactive(block)
 
+        // settings (components)
+        const settingsLocalisedString = new LocalisedString(settings)
+        settingsLocalisedString.id = 'settings-title'
+
         // white_x (components)
         const white_xSimpleButton = new SimpleButton(white_x)
         white_xSimpleButton.callback = () => {
             this.visible = false
         }
+
+        // vq_header (components)
+        const vq_headerLocalisedString = new LocalisedString(vq_header)
+        vq_headerLocalisedString.id = 'settings-quality'
 
         // vq_switch1 (components)
         const vq_switch1SimpleButton = new SimpleButton(vq_switch1)
@@ -700,6 +714,26 @@ export default class Settings extends BaseContainer {
         const vq_switch3SimpleButton = new SimpleButton(vq_switch3)
         vq_switch3SimpleButton.callback = () => this.setHighQuality()
 
+        // vq_text1 (components)
+        const vq_text1LocalisedString = new LocalisedString(vq_text1)
+        vq_text1LocalisedString.id = 'settings-qlow'
+
+        // vq_text2 (components)
+        const vq_text2LocalisedString = new LocalisedString(vq_text2)
+        vq_text2LocalisedString.id = 'settings-qmed'
+
+        // vq_text3 (components)
+        const vq_text3LocalisedString = new LocalisedString(vq_text3)
+        vq_text3LocalisedString.id = 'settings-qhigh'
+
+        // mv_header (components)
+        const mv_headerLocalisedString = new LocalisedString(mv_header)
+        mv_headerLocalisedString.id = 'settings-mvolume'
+
+        // sv_header (components)
+        const sv_headerLocalisedString = new LocalisedString(sv_header)
+        sv_headerLocalisedString.id = 'settings-svolume'
+
         // cf_switch1 (components)
         const cf_switch1SimpleButton = new SimpleButton(cf_switch1)
         cf_switch1SimpleButton.callback = () => this.setFilterLenient()
@@ -711,6 +745,22 @@ export default class Settings extends BaseContainer {
         // cf_switch3 (components)
         const cf_switch3SimpleButton = new SimpleButton(cf_switch3)
         cf_switch3SimpleButton.callback = () => this.setFilterUltimate()
+
+        // cf_header (components)
+        const cf_headerLocalisedString = new LocalisedString(cf_header)
+        cf_headerLocalisedString.id = 'settings-filtertier'
+
+        // cf_text1 (components)
+        const cf_text1LocalisedString = new LocalisedString(cf_text1)
+        cf_text1LocalisedString.id = 'settings-ft-low'
+
+        // cf_text2 (components)
+        const cf_text2LocalisedString = new LocalisedString(cf_text2)
+        cf_text2LocalisedString.id = 'settings-ft-med'
+
+        // cf_text3 (components)
+        const cf_text3LocalisedString = new LocalisedString(cf_text3)
+        cf_text3LocalisedString.id = 'settings-ft-high'
 
         // h_switch1 (components)
         const h_switch1SimpleButton = new SimpleButton(h_switch1)
@@ -724,9 +774,45 @@ export default class Settings extends BaseContainer {
         const h_switch2SimpleButton = new SimpleButton(h_switch2)
         h_switch2SimpleButton.callback = () => this.hideOthers()
 
+        // h_text3 (components)
+        const h_text3LocalisedString = new LocalisedString(h_text3)
+        h_text3LocalisedString.id = 'settings-hnametags'
+
+        // h_text2 (components)
+        const h_text2LocalisedString = new LocalisedString(h_text2)
+        h_text2LocalisedString.id = 'settings-hpenguins'
+
+        // h_text1 (components)
+        const h_text1LocalisedString = new LocalisedString(h_text1)
+        h_text1LocalisedString.id = 'settings-hinterface'
+
+        // h_header (components)
+        const h_headerLocalisedString = new LocalisedString(h_header)
+        h_headerLocalisedString.id = 'settings-hide'
+
+        // aid_header (components)
+        const aid_headerLocalisedString = new LocalisedString(aid_header)
+        aid_headerLocalisedString.id = 'settings-accountid'
+
+        // uname_header (components)
+        const uname_headerLocalisedString = new LocalisedString(uname_header)
+        uname_headerLocalisedString.id = 'settings-username'
+
+        // em_header (components)
+        const em_headerLocalisedString = new LocalisedString(em_header)
+        em_headerLocalisedString.id = 'settings-email'
+
+        // cp_text (components)
+        const cp_textLocalisedString = new LocalisedString(cp_text)
+        cp_textLocalisedString.id = 'settings-cpassword'
+
         // cp_button (components)
         const cp_buttonSimpleButton = new SimpleButton(cp_button)
         cp_buttonSimpleButton.callback = () => this.showPChange()
+
+        // mfa_header (components)
+        const mfa_headerLocalisedString = new LocalisedString(mfa_header)
+        mfa_headerLocalisedString.id = 'settings-2fa'
 
         // mfa_switch2 (components)
         const mfa_switch2SimpleButton = new SimpleButton(mfa_switch2)
@@ -736,6 +822,26 @@ export default class Settings extends BaseContainer {
         const mfa_switch1SimpleButton = new SimpleButton(mfa_switch1)
         mfa_switch1SimpleButton.callback = () => this.disable2FA()
 
+        // mfa_text (components)
+        const mfa_textLocalisedString = new LocalisedString(mfa_text)
+        mfa_textLocalisedString.id = 'settings-enabled'
+
+        // mfa_text1 (components)
+        const mfa_text1LocalisedString = new LocalisedString(mfa_text1)
+        mfa_text1LocalisedString.id = 'settings-disabled'
+
+        // uage_header (components)
+        const uage_headerLocalisedString = new LocalisedString(uage_header)
+        uage_headerLocalisedString.id = 'settings-age'
+
+        // pc_header (components)
+        const pc_headerLocalisedString = new LocalisedString(pc_header)
+        pc_headerLocalisedString.id = 'settings-pcontrol'
+
+        // in_header (components)
+        const in_headerLocalisedString = new LocalisedString(in_header)
+        in_headerLocalisedString.id = 'settings-ifnotifs'
+
         // in_switch1 (components)
         const in_switch1SimpleButton = new SimpleButton(in_switch1)
         in_switch1SimpleButton.callback = () => this.disableInfractionNotifs()
@@ -743,6 +849,18 @@ export default class Settings extends BaseContainer {
         // in_switch2 (components)
         const in_switch2SimpleButton = new SimpleButton(in_switch2)
         in_switch2SimpleButton.callback = () => this.enableInfractionNotifs()
+
+        // in_text1 (components)
+        const in_text1LocalisedString = new LocalisedString(in_text1)
+        in_text1LocalisedString.id = 'settings-disabled'
+
+        // in_text2 (components)
+        const in_text2LocalisedString = new LocalisedString(in_text2)
+        in_text2LocalisedString.id = 'settings-enabled'
+
+        // plimit_header (components)
+        const plimit_headerLocalisedString = new LocalisedString(plimit_header)
+        plimit_headerLocalisedString.id = 'settings-playtimelimit'
 
         // pchange_block (components)
         new Interactive(pchange_block)
@@ -753,11 +871,19 @@ export default class Settings extends BaseContainer {
         pchange_cur_textInputText.charlimit = 48
         pchange_cur_textInputText.extends = false
 
+        // pchange_cur_header (components)
+        const pchange_cur_headerLocalisedString = new LocalisedString(pchange_cur_header)
+        pchange_cur_headerLocalisedString.id = 'settings-pchange-oldpass'
+
         // pchange_new_text (components)
         const pchange_new_textInputText = new InputText(pchange_new_text)
         pchange_new_textInputText.ispassword = true
         pchange_new_textInputText.charlimit = 48
         pchange_new_textInputText.extends = false
+
+        // pchange_new_header (components)
+        const pchange_new_headerLocalisedString = new LocalisedString(pchange_new_header)
+        pchange_new_headerLocalisedString.id = 'settings-pchange-newpass'
 
         // pchange_confirm_text (components)
         const pchange_confirm_textInputText = new InputText(pchange_confirm_text)
@@ -765,9 +891,21 @@ export default class Settings extends BaseContainer {
         pchange_confirm_textInputText.charlimit = 48
         pchange_confirm_textInputText.extends = false
 
+        // pchange_confirm_header (components)
+        const pchange_confirm_headerLocalisedString = new LocalisedString(pchange_confirm_header)
+        pchange_confirm_headerLocalisedString.id = 'settings-pchange-confirm'
+
+        // pchange_header (components)
+        const pchange_headerLocalisedString = new LocalisedString(pchange_header)
+        pchange_headerLocalisedString.id = 'settings-pchange-title'
+
         // pchange_submit (components)
         const pchange_submitSimpleButton = new SimpleButton(pchange_submit)
         pchange_submitSimpleButton.callback = () => this.changePasswordSubmit()
+
+        // pchange_submit_text (components)
+        const pchange_submit_textLocalisedString = new LocalisedString(pchange_submit_text)
+        pchange_submit_textLocalisedString.id = 'settings-pchange-submit'
 
         // pchange_quit (components)
         const pchange_quitSimpleButton = new SimpleButton(pchange_quit)
@@ -839,8 +977,9 @@ export default class Settings extends BaseContainer {
         this.pc_header = pc_header
         this.in_header = in_header
         this.in_switch1 = in_switch1
-        this.in_text1 = in_text1
         this.in_switch2 = in_switch2
+        this.in_switcher = in_switcher
+        this.in_text1 = in_text1
         this.in_text2 = in_text2
         this.plimit_header = plimit_header
         this.plimit_bg = plimit_bg
@@ -877,21 +1016,48 @@ export default class Settings extends BaseContainer {
 
     /* START-USER-CODE */
     show() {
+        this.data = {}
         this.airtower.events.once('gsi', (args) => {
-            this.aid_text.text = args[0]
-            this.uname_text.text = args[1]
-            this.em_text.text = args[2]
-            this.uage_text.text = args[3] == '1' ? 'Over 13' : 'Under 13'
-            this.plimit_text.text = parseInt(args[4]) > 0 ? `${args[4]} minutes` : 'Unlimited'
+            this.data.penguinId = args[0]
+            this.aid_text.text = this.data.penguinId
+
+            this.data.username = args[1]
+            this.uname_text.text = this.data.username
+
+            this.data.email = args[2]
+            this.em_text.text = this.data.email
+
+            this.data.over13 = args[3] == '1'
+            this.uage_text.text = this.data.over13 ? this.crumbs.getString('settings-13over') : this.crumbs.getString('settings-13under')
+
+            this.data.forceChatTier = parseInt(args[4])
+            if (this.shell.settings.cf < this.data.forceChatTier) this.shell.settings.cf = this.data.forceChatTier
+
+            this.data.playtimeLimit = parseInt(args[5])
+            this.plimit_text.text = this.data.playtimeLimit > 0 ? `${this.data.playtimeLimit} ${this.crumbs.getString('minutes')}` : this.crumbs.getString('settings-unlimited')
+
+            this.data.infractionNotifications = args[6] == '1'
+            if (this.data.infractionNotifications) {
+                this.enableInfractionNotifs()
+            } else {
+                this.disableInfractionNotifs()
+            }
+
+            this.data.mfa = args[7] == '1'
+            if (this.data.mfa) {
+                this.enable2FA()
+            } else {
+                this.disable2FA()
+            }
         })
-        this.airtower.sendXt('u#si')
+        this.airtower.sendXt('sett#getsettings')
 
         let oneDay = 1000 * 60 * 60 * 24
         let timeDiff = Date.now() - Date.parse(this.shell.client.joinTime)
         let daysDiff = Math.round(timeDiff / oneDay)
 
-        this.server.text = `You're on ${this.airtower.worldName}`
-        this.age.text = `Your penguin is ${daysDiff} days old`
+        this.server.text = this.crumbs.getString(`settings-onserver,${this.airtower.worldName}`)
+        this.age.text = this.crumbs.getString(`settings-daysold,${daysDiff}`)
 
         switch (this.shell.settings.vq) {
             case 1:
@@ -972,6 +1138,16 @@ export default class Settings extends BaseContainer {
     }
 
     setFilterLenient() {
+        if (!this.data.over13) {
+            let text = this.crumbs.getString('settings-safeguarding')
+            this.interface.prompt.showError(text)
+            return
+        }
+        if (this.data.forceChatTier > 1) {
+            let text = this.crumbs.getString('settings-pcontrolblocks')
+            this.interface.prompt.showError(text)
+            return
+        }
         if (this.shell.settings.cf == 1) {
             this.cf_switch1.setFrame('switcher-selected')
             this.cf_switch2.setFrame('switcher-borderless')
@@ -982,7 +1158,7 @@ export default class Settings extends BaseContainer {
             this.cf_switcher.bringToTop(this.cf_switch1)
             return
         }
-        let text = 'This filter level blocks words from a list of profanity, and so some users may try to abuse it to send offensive messages. Whilst we have live moderators, they are unable to monitor every message sent, and for this reason we recommend that you use the Standard or Ultimate filter levels. Are you sure you want to use this filter level?'
+        let text = this.crumbs.getString('settings-filterdisclaimer')
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.shell.settings.cf = 1
             this.cf_switch1.setFrame('switcher-selected')
@@ -996,6 +1172,11 @@ export default class Settings extends BaseContainer {
     }
 
     setFilterStandard() {
+        if (this.data.forceChatTier > 2) {
+            let text = this.crumbs.getString('settings-pcontrolblocks')
+            this.interface.prompt.showError(text)
+            return
+        }
         this.shell.settings.cf = 2
         this.cf_switch1.setFrame('switcher-unselected')
         this.cf_switch2.setFrame('switcher-selected')
@@ -1018,13 +1199,13 @@ export default class Settings extends BaseContainer {
 
     hideInterface() {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            let text = 'You cannot hide the interface on mobile devices.'
+            let text = this.crumbs.getString('settings-mobile')
             this.interface.prompt.showWindow(text, 'single', () => {})
             return
         }
 
         if (!this.shell.settings.hi) {
-            let text = 'Press ESC to open the interface again.'
+            let text = this.crumbs.getString('settings-hideinterface')
             this.interface.prompt.showWindow(text, 'single', () => {})
             this.interface.main.hide()
         } else {
@@ -1066,13 +1247,45 @@ export default class Settings extends BaseContainer {
         this.shell.musicController.setMusicVolume(percent)
     }
 
-    enable2FA() {}
+    enable2FA() {
+        this.mfa_switch2.setFrame('switcher-selected')
+        this.mfa_switch1.setFrame('switcher-unselected')
+        this.mfa_switcher.bringToTop(this.mfa_switch2)
+        if (!this.data.twoFactorEnabled) {
+            this.airtower.sendXt('sett#enable2fa')
+        }
+    }
 
-    disable2FA() {}
+    disable2FA() {
+        this.mfa_switch1.setFrame('switcher-selected')
+        this.mfa_switch2.setFrame('switcher-unselected')
+        this.mfa_switcher.bringToTop(this.mfa_switch1)
+        if (this.data.twoFactorEnabled) {
+            this.airtower.sendXt('sett#disable2fa')
+        }
+    }
 
-    enableInfractionNotifs() {}
+    enableInfractionNotifs() {
+        if (this.data.infractionNotifications) {
+            this.in_switch2.setFrame('switcher-selected')
+            this.in_switch1.setFrame('switcher-unselected')
+            this.in_switcher.bringToTop(this.in_switch2)
+            return
+        }
+        let text = this.crumbs.getString('settings-parentonly')
+        this.interface.prompt.showError(text)
+    }
 
-    disableInfractionNotifs() {}
+    disableInfractionNotifs() {
+        if (!this.data.infractionNotifications) {
+            this.in_switch1.setFrame('switcher-selected')
+            this.in_switch2.setFrame('switcher-unselected')
+            this.in_switcher.bringToTop(this.in_switch1)
+            return
+        }
+        let text = this.crumbs.getString('settings-parentonly')
+        this.interface.prompt.showError(text)
+    }
 
     showPChange() {
         this.pchange.visible = true
@@ -1097,9 +1310,31 @@ export default class Settings extends BaseContainer {
         let confirm = this.pchange_confirm_text.textContent
 
         if (newPass != confirm) {
-            let text = 'The new password and confirmation do not match.'
+            let text = this.crumbs.getString('settings-newpassnomatch')
             this.interface.prompt.showError(text)
+            return
         }
+
+        if (newPass.length < 4) {
+            let text = this.crumbs.getString('settings-newpasstooshort')
+            this.interface.prompt.showError(text)
+            return
+        }
+
+        this.airtower.sendXt('sett#changepass', `${current}%${newPass}`)
+        this.airtower.events.once('passchng', () => {
+            let text = this.crumbs.getString('settings-passchanged')
+            this.interface.prompt.showWindow(text, 'single', () => {})
+            let penguins = this.airtower.savedPenguins
+            for (let p in penguins) {
+                let penguin = penguins[p]
+                if (penguin.username == this.data.username) {
+                    delete penguin.token
+                    localStorage.setItem('saved_penguins', JSON.stringify(penguins))
+                }
+            }
+        })
+        this.cancelPChange()
     }
     /* END-USER-CODE */
 }
