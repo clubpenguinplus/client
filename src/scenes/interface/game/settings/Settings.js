@@ -1168,6 +1168,7 @@ export default class Settings extends BaseContainer {
             this.cf_div1.visible = true
             this.cf_switcher.bringToTop(this.cf_switch2)
             this.cf_switcher.bringToTop(this.cf_switch1)
+            this.interface.main.showChatbar()
         })
     }
 
@@ -1184,6 +1185,7 @@ export default class Settings extends BaseContainer {
         this.cf_div2.visible = false
         this.cf_div1.visible = false
         this.cf_switcher.bringToTop(this.cf_switch2)
+        this.interface.main.showChatbar()
     }
 
     setFilterUltimate() {
@@ -1195,6 +1197,7 @@ export default class Settings extends BaseContainer {
         this.cf_div1.visible = false
         this.cf_switcher.bringToTop(this.cf_switch2)
         this.cf_switcher.bringToTop(this.cf_switch3)
+        this.interface.main.hideChatbar()
     }
 
     hideInterface() {

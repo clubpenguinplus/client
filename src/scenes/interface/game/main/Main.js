@@ -850,6 +850,10 @@ export default class Main extends BaseScene {
         if (this.shell.settings.hi) {
             this.hide()
         }
+
+        if (this.shell.settings.cf > 2) {
+            this.hideChatbar()
+        }
     }
 
     showTR() {
@@ -1087,6 +1091,22 @@ export default class Main extends BaseScene {
 
     onPhoneClick() {
         this.interface.loadExternal('EPFPhone')
+    }
+
+    hideChatbar() {
+        this.chatInput.visible = false
+        if (this.chatInput.__InputText.clickZone) this.chatInput.__InputText.clickZone.visible = false
+        this.chat_box.visible = false
+        this.chat_send_button.visible = false
+        this.chat_send_icon.visible = false
+    }
+
+    showChatbar() {
+        this.chatInput.visible = true
+        if (this.chatInput.__InputText.clickZone) this.chatInput.__InputText.clickZone.visible = true
+        this.chat_box.visible = true
+        this.chat_send_button.visible = true
+        this.chat_send_icon.visible = true
     }
 
     /* END-USER-CODE */
