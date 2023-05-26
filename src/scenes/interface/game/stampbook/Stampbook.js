@@ -4,6 +4,7 @@ import Polaroid from './Polaroid'
 import PinLoader from '@engine/loaders/PinLoader'
 import StampLoader from '@engine/loaders/StampLoader'
 import PolaroidLoader from '@engine/loaders/PolaroidLoader'
+import StampbookCoverLoader from '@engine/loaders/StampbookCoverLoader'
 import BaseScene from '@scenes/base/BaseScene'
 
 /* START OF COMPILED CODE */
@@ -708,38 +709,8 @@ export default class Stampbook extends BaseScene {
         const front = this.add.container(0, 0)
 
         // cover
-        const cover = this.add.sprite(743, 480, 'stampbook', 'colour/1')
+        const cover = this.add.sprite(762, 480, 'stampbook-color1-pattern0')
         front.add(cover)
-
-        // pattern
-        const pattern = this.add.sprite(740, 480, 'stampbook', 'pattern/1')
-        pattern.alpha = 0.5
-        pattern.alphaTopLeft = 0.5
-        pattern.alphaTopRight = 0.5
-        pattern.alphaBottomLeft = 0.5
-        pattern.alphaBottomRight = 0.5
-        pattern.tintTopLeft = 11755074
-        pattern.tintTopRight = 11755074
-        pattern.tintBottomLeft = 11755074
-        pattern.tintBottomRight = 14972498
-        front.add(pattern)
-
-        // wordmark
-        const wordmark = this.add.image(1194, 707, 'stampbook', 'wordmark')
-        wordmark.tintFill = true
-        wordmark.tintTopLeft = 14972498
-        wordmark.tintTopRight = 14972498
-        wordmark.tintBottomLeft = 14972498
-        wordmark.tintBottomRight = 14972498
-        front.add(wordmark)
-
-        // wordmark_overlay
-        const wordmark_overlay = this.add.image(1194, 707, 'stampbook', 'wordmark')
-        wordmark_overlay.tintTopLeft = 14972498
-        wordmark_overlay.tintTopRight = 14972498
-        wordmark_overlay.tintBottomLeft = 14972498
-        wordmark_overlay.tintBottomRight = 14972498
-        front.add(wordmark_overlay)
 
         // clasp_bg
         const clasp_bg = this.add.sprite(1358, 480, 'stampbook', 'clasp')
@@ -1419,12 +1390,11 @@ export default class Stampbook extends BaseScene {
         stampbookGuide_6LocalisedString.id = 'savestampbook'
 
         this.editor_background = editor_background
-        this.bgcontainer = bgcontainer
         this.bg = bg
         this.close = close
         this.page_back = page_back
         this.page_forward = page_forward
-        this.page = page
+        this.bgcontainer = bgcontainer
         this.pagebg = pagebg
         this.aquaText = aquaText
         this.aquaIcon = aquaIcon
@@ -1476,31 +1446,27 @@ export default class Stampbook extends BaseScene {
         this.up_btn = up_btn
         this.up_arrow = up_arrow
         this.dividers = dividers
-        this.polaroids = polaroids
-        this.polaroid1Holder = polaroid1Holder
         this.polaroid1LockedTxt = polaroid1LockedTxt
         this.polaroid1LockedIcon = polaroid1LockedIcon
-        this.polaroid2Holder = polaroid2Holder
+        this.polaroid1Holder = polaroid1Holder
         this.polaroid2LockedIcon = polaroid2LockedIcon
         this.polaroid2LockedTxt = polaroid2LockedTxt
-        this.polaroid3Holder = polaroid3Holder
+        this.polaroid2Holder = polaroid2Holder
         this.polaroid3LockedIcon = polaroid3LockedIcon
         this.polaroid3LockedTxt = polaroid3LockedTxt
-        this.front = front
+        this.polaroid3Holder = polaroid3Holder
+        this.polaroids = polaroids
+        this.page = page
         this.cover = cover
-        this.pattern = pattern
-        this.wordmark = wordmark
-        this.wordmark_overlay = wordmark_overlay
         this.clasp_bg = clasp_bg
         this.clasp = clasp
         this.total = total
         this.username = username
         this.edit = edit
-        this.editor = editor
+        this.front = front
         this.editor_top = editor_top
         this.editor_side = editor_side
         this.claspthumb = claspthumb
-        this.claspselect = claspselect
         this.claspselect_bg = claspselect_bg
         this.thumbs_clasp_1 = thumbs_clasp_1
         this.thumbs_clasp_2 = thumbs_clasp_2
@@ -1508,8 +1474,8 @@ export default class Stampbook extends BaseScene {
         this.thumbs_clasp_4 = thumbs_clasp_4
         this.thumbs_clasp_5 = thumbs_clasp_5
         this.thumbs_clasp_6 = thumbs_clasp_6
+        this.claspselect = claspselect
         this.patternthumb = patternthumb
-        this.patternselect = patternselect
         this.patternselect_bg = patternselect_bg
         this.thumbs_pattern_1 = thumbs_pattern_1
         this.thumbs_pattern_2 = thumbs_pattern_2
@@ -1517,8 +1483,8 @@ export default class Stampbook extends BaseScene {
         this.thumbs_pattern_4 = thumbs_pattern_4
         this.thumbs_pattern_5 = thumbs_pattern_5
         this.thumbs_pattern_6 = thumbs_pattern_6
+        this.patternselect = patternselect
         this.colorthumb = colorthumb
-        this.colorselect = colorselect
         this.colorselect_bg = colorselect_bg
         this.thumbs_color_1 = thumbs_color_1
         this.thumbs_color_2 = thumbs_color_2
@@ -1526,16 +1492,17 @@ export default class Stampbook extends BaseScene {
         this.thumbs_color_4 = thumbs_color_4
         this.thumbs_color_5 = thumbs_color_5
         this.thumbs_color_6 = thumbs_color_6
+        this.colorselect = colorselect
         this.save = save
         this.category_icon = category_icon
         this.category_title = category_title
+        this.editor = editor
         this.stampLayer = stampLayer
-        this.stampInfo = stampInfo
         this.stampInfoBg = stampInfoBg
         this.stampInfoTitle = stampInfoTitle
         this.stampInfoBody = stampInfoBody
+        this.stampInfo = stampInfo
         this.stampHovers = stampHovers
-        this.instructionsContainer = instructionsContainer
         this.stampbookGuide = stampbookGuide
         this.stampbookGuide_1 = stampbookGuide_1
         this.stampbookGuide_2 = stampbookGuide_2
@@ -1543,6 +1510,7 @@ export default class Stampbook extends BaseScene {
         this.stampbookGuide_4 = stampbookGuide_4
         this.stampbookGuide_5 = stampbookGuide_5
         this.stampbookGuide_6 = stampbookGuide_6
+        this.instructionsContainer = instructionsContainer
         this.pages = pages
         this.indexButtons = indexButtons
         this.indexIcons = indexIcons
@@ -1553,8 +1521,6 @@ export default class Stampbook extends BaseScene {
 
     /** @type {Phaser.GameObjects.Sprite} */
     editor_background
-    /** @type {Phaser.GameObjects.Container} */
-    bgcontainer
     /** @type {Phaser.GameObjects.Image} */
     bg
     /** @type {Phaser.GameObjects.Image} */
@@ -1564,7 +1530,7 @@ export default class Stampbook extends BaseScene {
     /** @type {Phaser.GameObjects.Image} */
     page_forward
     /** @type {Phaser.GameObjects.Container} */
-    page
+    bgcontainer
     /** @type {Phaser.GameObjects.Image} */
     pagebg
     /** @type {Phaser.GameObjects.Text} */
@@ -1667,36 +1633,30 @@ export default class Stampbook extends BaseScene {
     up_arrow
     /** @type {Phaser.GameObjects.Image} */
     dividers
-    /** @type {Phaser.GameObjects.Container} */
-    polaroids
-    /** @type {Phaser.GameObjects.Container} */
-    polaroid1Holder
     /** @type {Phaser.GameObjects.Text} */
     polaroid1LockedTxt
     /** @type {Phaser.GameObjects.Image} */
     polaroid1LockedIcon
     /** @type {Phaser.GameObjects.Container} */
-    polaroid2Holder
+    polaroid1Holder
     /** @type {Phaser.GameObjects.Image} */
     polaroid2LockedIcon
     /** @type {Phaser.GameObjects.Text} */
     polaroid2LockedTxt
     /** @type {Phaser.GameObjects.Container} */
-    polaroid3Holder
+    polaroid2Holder
     /** @type {Phaser.GameObjects.Image} */
     polaroid3LockedIcon
     /** @type {Phaser.GameObjects.Text} */
     polaroid3LockedTxt
     /** @type {Phaser.GameObjects.Container} */
-    front
+    polaroid3Holder
+    /** @type {Phaser.GameObjects.Container} */
+    polaroids
+    /** @type {Phaser.GameObjects.Container} */
+    page
     /** @type {Phaser.GameObjects.Sprite} */
     cover
-    /** @type {Phaser.GameObjects.Sprite} */
-    pattern
-    /** @type {Phaser.GameObjects.Image} */
-    wordmark
-    /** @type {Phaser.GameObjects.Image} */
-    wordmark_overlay
     /** @type {Phaser.GameObjects.Sprite} */
     clasp_bg
     /** @type {Phaser.GameObjects.Sprite} */
@@ -1708,15 +1668,13 @@ export default class Stampbook extends BaseScene {
     /** @type {Phaser.GameObjects.Sprite} */
     edit
     /** @type {Phaser.GameObjects.Container} */
-    editor
+    front
     /** @type {Phaser.GameObjects.Sprite} */
     editor_top
     /** @type {Phaser.GameObjects.Sprite} */
     editor_side
     /** @type {Phaser.GameObjects.Sprite} */
     claspthumb
-    /** @type {Phaser.GameObjects.Container} */
-    claspselect
     /** @type {Phaser.GameObjects.Image} */
     claspselect_bg
     /** @type {Phaser.GameObjects.Image} */
@@ -1731,10 +1689,10 @@ export default class Stampbook extends BaseScene {
     thumbs_clasp_5
     /** @type {Phaser.GameObjects.Image} */
     thumbs_clasp_6
+    /** @type {Phaser.GameObjects.Container} */
+    claspselect
     /** @type {Phaser.GameObjects.Sprite} */
     patternthumb
-    /** @type {Phaser.GameObjects.Container} */
-    patternselect
     /** @type {Phaser.GameObjects.Image} */
     patternselect_bg
     /** @type {Phaser.GameObjects.Image} */
@@ -1749,10 +1707,10 @@ export default class Stampbook extends BaseScene {
     thumbs_pattern_5
     /** @type {Phaser.GameObjects.Image} */
     thumbs_pattern_6
+    /** @type {Phaser.GameObjects.Container} */
+    patternselect
     /** @type {Phaser.GameObjects.Sprite} */
     colorthumb
-    /** @type {Phaser.GameObjects.Container} */
-    colorselect
     /** @type {Phaser.GameObjects.Image} */
     colorselect_bg
     /** @type {Phaser.GameObjects.Image} */
@@ -1767,6 +1725,8 @@ export default class Stampbook extends BaseScene {
     thumbs_color_5
     /** @type {Phaser.GameObjects.Image} */
     thumbs_color_6
+    /** @type {Phaser.GameObjects.Container} */
+    colorselect
     /** @type {Phaser.GameObjects.Image} */
     save
     /** @type {Phaser.GameObjects.Image} */
@@ -1774,9 +1734,9 @@ export default class Stampbook extends BaseScene {
     /** @type {Phaser.GameObjects.Text} */
     category_title
     /** @type {Phaser.GameObjects.Container} */
-    stampLayer
+    editor
     /** @type {Phaser.GameObjects.Container} */
-    stampInfo
+    stampLayer
     /** @type {NinePatchContainer} */
     stampInfoBg
     /** @type {Phaser.GameObjects.Text} */
@@ -1784,9 +1744,9 @@ export default class Stampbook extends BaseScene {
     /** @type {Phaser.GameObjects.Text} */
     stampInfoBody
     /** @type {Phaser.GameObjects.Container} */
-    stampHovers
+    stampInfo
     /** @type {Phaser.GameObjects.Container} */
-    instructionsContainer
+    stampHovers
     /** @type {Phaser.GameObjects.Text} */
     stampbookGuide
     /** @type {Phaser.GameObjects.Text} */
@@ -1801,6 +1761,8 @@ export default class Stampbook extends BaseScene {
     stampbookGuide_5
     /** @type {Phaser.GameObjects.Text} */
     stampbookGuide_6
+    /** @type {Phaser.GameObjects.Container} */
+    instructionsContainer
     /** @type {Phaser.GameObjects.Container[]} */
     pages
     /** @type {Phaser.GameObjects.Rectangle[]} */
@@ -1825,22 +1787,12 @@ export default class Stampbook extends BaseScene {
         }
     }
 
-    get tintColors() {
-        return {
-            1: 0xb35e42,
-            2: 0x888be8,
-            3: 0xeddbad,
-            4: 0xd0e9ef,
-            5: 0xea5fd2,
-            6: 0xffffff,
-        }
-    }
-
     create() {
         this.interface.stampbook = this
         this.pinLoader = new PinLoader(this)
         this.stampLoader = new StampLoader(this)
         this.polaroidLoader = new PolaroidLoader(this)
+        this.stampbookCoverLoader = new StampbookCoverLoader(this)
         this.key = 'Stampbook'
         this.id = this.interface.stampbookId
         this._create()
@@ -1853,6 +1805,10 @@ export default class Stampbook extends BaseScene {
         this.pins = {}
 
         this.pageIndex = 0
+
+        delete this.patternId
+        delete this.claspId
+        delete this.colorId
 
         if (this.id == this.shell.client.id) {
             this.initStampbook({}, true)
@@ -1914,30 +1870,32 @@ export default class Stampbook extends BaseScene {
     }
 
     changePattern(id) {
-        if (id == 0 || id == this.patternId) {
-            this.patternId = 0
-            this.pattern.visible = false
-            this.patternthumb.setFrame('thumbs/color/1')
-        } else {
-            this.patternId = id
-            this.pattern.setFrame('pattern/' + id)
-            this.pattern.visible = true
-            this.patternthumb.setFrame('thumbs/pattern/' + id)
-        }
+        if (id == this.patternId) id = 0
+        this.patternId = id
+        this.setCover(this.colorId, id)
+        this.patternthumb.setFrame(id == 0 ? 'thumbs/color/1' : 'thumbs/pattern/' + id)
         this.patternselect.visible = false
     }
 
     changeColor(id) {
         this.username.setColor(this.highlightColors[id])
         this.total.setColor(this.highlightColors[id])
-        this.wordmark.tint = this.tintColors[id]
-        this.wordmark.tintFill = true
-        this.wordmark_overlay.tint = this.tintColors[id]
-        this.pattern.tint = this.tintColors[id]
         this.colorId = id
-        this.cover.setFrame('colour/' + id)
+        this.setCover(id, this.patternId)
         this.colorthumb.setFrame('thumbs/color/' + id)
         this.colorselect.visible = false
+    }
+
+    setCover(color = this.colorId, pattern = this.patternId) {
+        let key = `stampbook-color${color}-pattern${pattern}`
+        if (!this.textures.exists(key)) {
+            this.stampbookCoverLoader.loadTexture(color, pattern)
+            this.shell.events.once(`textureLoaded:${key}`, () => {
+                this.cover.setTexture(key)
+            })
+            return
+        }
+        this.cover.setTexture(`stampbook-color${color}-pattern${pattern}`)
     }
 
     openClasp() {
@@ -2009,6 +1967,7 @@ export default class Stampbook extends BaseScene {
             this.stampHovers.visible = true
         }
 
+        stamps = stamps.sort((a, b) => this.crumbs.stamps[a].difficulty - this.crumbs.stamps[b].difficulty)
         for (var i = 0; i < stamps.length; i++) {
             let posIndex = i % 16
             let stampVisibility = i < 16

@@ -33,7 +33,6 @@
             "id": "a98d34df-f6ca-4b2f-b738-49d035c24272",
             "label": "editor_background",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "stampbook",
                 "frame": "editor_background"
@@ -47,7 +46,6 @@
             "id": "152a2b8a-5c2f-4cdd-aec8-b2456be8681e",
             "label": "bgcontainer",
             "scope": "CLASS",
-            "components": [],
             "x": 95,
             "y": 152,
             "visible": false,
@@ -57,7 +55,6 @@
                     "id": "57911d95-2246-4a11-b761-df32a6a8325f",
                     "label": "bg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "bg"
@@ -175,7 +172,6 @@
                     "type": "Image",
                     "id": "27b2f99a-4bb5-4c8a-bce2-b79b35d2c95b",
                     "label": "categories_9001",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/9001"
@@ -189,7 +185,6 @@
                     "type": "Image",
                     "id": "077319bd-863c-4950-a286-c687aa0c02b7",
                     "label": "categories_7",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/7"
@@ -203,7 +198,6 @@
                     "type": "Image",
                     "id": "9c893bd2-8fb4-4186-b4aa-1df46e744412",
                     "label": "categories_8",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/8"
@@ -217,7 +211,6 @@
                     "type": "Image",
                     "id": "a6c7fb05-917b-436a-aa19-81d53be0c0e4",
                     "label": "categories_5",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/5"
@@ -234,7 +227,6 @@
             "id": "66245614-483c-49c9-a6d9-a1890abaef48",
             "label": "page",
             "scope": "CLASS",
-            "components": [],
             "visible": false,
             "list": [
                 {
@@ -242,7 +234,6 @@
                     "id": "21dd6a9b-d19f-4785-886a-b86e4dec9000",
                     "label": "pagebg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "pagebgs/games"
@@ -256,7 +247,6 @@
                     "id": "fd148cc5-090b-4faf-a6eb-4bfe7f2f88de",
                     "label": "aquaText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 275,
                     "y": 231,
                     "originY": 0.5,
@@ -273,7 +263,6 @@
                     "id": "24defd74-d395-4b04-bdb0-bd2b88c64107",
                     "label": "aquaIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/13"
@@ -288,7 +277,6 @@
                     "type": "Rectangle",
                     "id": "cc3bd707-d338-4e99-a85e-77a88347ebaf",
                     "label": "aquaButton",
-                    "components": [],
                     "x": 314,
                     "y": 231,
                     "visible": false,
@@ -302,7 +290,6 @@
                     "id": "87a9a949-913d-440c-94c2-bbc50a3ce614",
                     "label": "astroText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 514,
                     "y": 231,
                     "originY": 0.5,
@@ -319,7 +306,6 @@
                     "id": "8c73ab39-efa4-406e-9e01-88a13c9caaed",
                     "label": "astroIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/14"
@@ -334,7 +320,6 @@
                     "type": "Rectangle",
                     "id": "baba9164-fbfb-4807-aa93-6edbd6d5df23",
                     "label": "astroButton",
-                    "components": [],
                     "x": 554,
                     "y": 231,
                     "visible": false,
@@ -348,7 +333,6 @@
                     "id": "92508b45-b9ba-4916-acda-9cdcaf6ab1d9",
                     "label": "jitsuText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 754,
                     "y": 231,
                     "originY": 0.5,
@@ -365,7 +349,6 @@
                     "id": "6534b95f-bef0-4981-9b6a-b834d6364d10",
                     "label": "jitsuIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/38"
@@ -380,7 +363,6 @@
                     "type": "Rectangle",
                     "id": "96549528-6db3-445e-b4a9-00172f1ebdb0",
                     "label": "jitsuButton",
-                    "components": [],
                     "x": 794,
                     "y": 231,
                     "visible": false,
@@ -394,7 +376,6 @@
                     "id": "0cc81dd7-7239-4157-b363-694038f76cc3",
                     "label": "fireJitsuText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 994,
                     "y": 231,
                     "originY": 0.5,
@@ -411,7 +392,6 @@
                     "id": "2512d64b-55bc-4164-b027-4488c66b3be5",
                     "label": "fireJitsuIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/32"
@@ -426,7 +406,6 @@
                     "type": "Rectangle",
                     "id": "fbdc33b3-1d7c-481c-83b4-7f902935cd4f",
                     "label": "fireJitsuButton",
-                    "components": [],
                     "x": 1034,
                     "y": 231,
                     "visible": false,
@@ -440,7 +419,6 @@
                     "id": "d017a5f9-ac36-43f1-9fab-21a821198ec0",
                     "label": "snowJitsuText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1230,
                     "y": 231,
                     "originY": 0.5,
@@ -457,7 +435,6 @@
                     "id": "58fdc08b-daae-43f6-9da7-8d2db09760db",
                     "label": "snowJitsuIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/60"
@@ -472,7 +449,6 @@
                     "type": "Rectangle",
                     "id": "9ba99e04-2a28-4816-aebc-012ca53f0220",
                     "label": "snowJitsuButton",
-                    "components": [],
                     "x": 1274,
                     "y": 231,
                     "visible": false,
@@ -486,7 +462,6 @@
                     "id": "84038d20-d4fe-44ee-a7f1-86b26b5e9e96",
                     "label": "waterJitsuText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 275,
                     "y": 306,
                     "originY": 0.5,
@@ -503,7 +478,6 @@
                     "id": "3ea0d83a-62a4-4065-8fcb-10f411df1543",
                     "label": "waterJistuIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/34"
@@ -518,7 +492,6 @@
                     "type": "Rectangle",
                     "id": "d02a0a85-7624-4084-b420-1eb53bb0e20d",
                     "label": "waterJitsuButton",
-                    "components": [],
                     "x": 314,
                     "y": 306,
                     "visible": false,
@@ -532,7 +505,6 @@
                     "id": "e0c747fb-bc4a-4b71-867a-03a5ab5b7510",
                     "label": "cartSurferText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 514,
                     "y": 306,
                     "originY": 0.5,
@@ -549,7 +521,6 @@
                     "id": "3a02fbba-e4bd-42a9-bf5e-b645caec6263",
                     "label": "cartSurferIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/28"
@@ -564,7 +535,6 @@
                     "type": "Rectangle",
                     "id": "d3b01726-9c8c-43fb-8d6b-2e6a8b872d09",
                     "label": "cartSurferButton",
-                    "components": [],
                     "x": 554,
                     "y": 306,
                     "visible": false,
@@ -578,7 +548,6 @@
                     "id": "822c71f9-f65a-4dd2-8af4-2e8509b2ebba",
                     "label": "wavesText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 754,
                     "y": 306,
                     "originY": 0.5,
@@ -595,7 +564,6 @@
                     "id": "9e2638d4-bf51-46c5-ad63-736a8c8d3051",
                     "label": "wavesIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/15"
@@ -610,7 +578,6 @@
                     "type": "Rectangle",
                     "id": "7ad11ac3-c7c5-403c-9665-d84853e07b00",
                     "label": "wavesButton",
-                    "components": [],
                     "x": 794,
                     "y": 306,
                     "visible": false,
@@ -624,7 +591,6 @@
                     "id": "eb409ad4-bcf1-470c-8802-ee745faf49d1",
                     "label": "fishingText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 994,
                     "y": 306,
                     "originY": 0.5,
@@ -641,7 +607,6 @@
                     "id": "50d695ee-3a1b-4215-b037-b3bf2602e4b5",
                     "label": "fishingIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/52"
@@ -656,7 +621,6 @@
                     "type": "Rectangle",
                     "id": "2742601c-a1da-47fa-b1ed-71f4049b311a",
                     "label": "fishingButton",
-                    "components": [],
                     "x": 1034,
                     "y": 306,
                     "visible": false,
@@ -670,7 +634,6 @@
                     "id": "f4f9e0ec-293c-483c-9db8-4ebef97321a0",
                     "label": "jPAText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1230,
                     "y": 306,
                     "originY": 0.5,
@@ -687,7 +650,6 @@
                     "id": "2da2052c-885b-4180-8695-d1dc0b750c9e",
                     "label": "jPAIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/11"
@@ -702,7 +664,6 @@
                     "type": "Rectangle",
                     "id": "f1be6da8-0a34-4c74-9995-f0c6cefeb414",
                     "label": "jPAButton",
-                    "components": [],
                     "x": 1274,
                     "y": 306,
                     "visible": false,
@@ -716,7 +677,6 @@
                     "id": "741afd78-53d7-4e2d-b1f4-8ad9a005ab98",
                     "label": "missionsText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 275,
                     "y": 382,
                     "originY": 0.5,
@@ -733,7 +693,6 @@
                     "id": "263e758f-6f77-4ff3-a72a-00c8ebf27e32",
                     "label": "missionsIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/22"
@@ -748,7 +707,6 @@
                     "type": "Rectangle",
                     "id": "6902fbe1-1322-4cff-99b2-1cf90938f3ef",
                     "label": "missionsButton",
-                    "components": [],
                     "x": 314,
                     "y": 382,
                     "visible": false,
@@ -762,7 +720,6 @@
                     "id": "b05fc877-05c8-4a7d-90cd-38357e947b83",
                     "label": "pizzatronText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 514,
                     "y": 382,
                     "originY": 0.5,
@@ -779,7 +736,6 @@
                     "id": "0cd000f8-18e2-482c-b74a-ff6772526a67",
                     "label": "pizzatronIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/54"
@@ -794,7 +750,6 @@
                     "type": "Rectangle",
                     "id": "57a3df71-6ab3-43cb-9edc-1c2ba00244fd",
                     "label": "pizzatronButton",
-                    "components": [],
                     "x": 554,
                     "y": 382,
                     "visible": false,
@@ -808,7 +763,6 @@
                     "id": "f643f440-7f87-4f12-b804-365ab57af30a",
                     "label": "launchText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 754,
                     "y": 382,
                     "originY": 0.5,
@@ -825,7 +779,6 @@
                     "id": "b07b2986-d0ec-44d6-81d7-9baebd2fd4e0",
                     "label": "launchIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/48"
@@ -840,7 +793,6 @@
                     "type": "Rectangle",
                     "id": "ffa90515-2df6-45eb-afa8-5f78cf9ec2fe",
                     "label": "launchButton",
-                    "components": [],
                     "x": 794,
                     "y": 382,
                     "visible": false,
@@ -854,7 +806,6 @@
                     "id": "d1e5a5ca-befe-4296-aaab-561ad9721bcd",
                     "label": "rescueText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 994,
                     "y": 382,
                     "originY": 0.5,
@@ -871,7 +822,6 @@
                     "id": "82f8cee7-5cbb-4305-a1b4-cc34a467aedd",
                     "label": "rescueIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/19"
@@ -886,7 +836,6 @@
                     "type": "Rectangle",
                     "id": "62bf7ea1-c4e4-4f73-b24b-6c6a33fab05e",
                     "label": "rescueButton",
-                    "components": [],
                     "x": 1034,
                     "y": 382,
                     "visible": false,
@@ -900,7 +849,6 @@
                     "id": "6f7da7c5-7661-44f7-8055-1fa6105a8bd6",
                     "label": "pufflescapeText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1230,
                     "y": 382,
                     "originY": 0.5,
@@ -917,7 +865,6 @@
                     "id": "13ae4bd9-be74-4314-9dfd-d64478735292",
                     "label": "pufflescapeIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/57"
@@ -932,7 +879,6 @@
                     "type": "Rectangle",
                     "id": "027096e1-7c81-4d4f-8a0c-a529b24fd9d6",
                     "label": "pufflescapeButton",
-                    "components": [],
                     "x": 1274,
                     "y": 382,
                     "visible": false,
@@ -946,7 +892,6 @@
                     "id": "5ab2595e-a558-4531-a5dd-feefc8f8c631",
                     "label": "smoothieText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 275,
                     "y": 457,
                     "originY": 0.5,
@@ -963,7 +908,6 @@
                     "id": "9d4d2e56-efc1-4a95-afdf-9e26e42e0087",
                     "label": "smoothieIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/58"
@@ -978,7 +922,6 @@
                     "type": "Rectangle",
                     "id": "aad01117-fcd0-4f21-92f2-9c6ea82cad23",
                     "label": "smoothieButton",
-                    "components": [],
                     "x": 314,
                     "y": 457,
                     "visible": false,
@@ -992,7 +935,6 @@
                     "id": "a12ec10c-cc62-4a76-957c-017e53d24019",
                     "label": "sysDefText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 514,
                     "y": 457,
                     "originY": 0.5,
@@ -1009,7 +951,6 @@
                     "id": "4da3dcf1-56d0-4bbb-957d-778f7cb43700",
                     "label": "sysDefIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/46"
@@ -1024,7 +965,6 @@
                     "type": "Rectangle",
                     "id": "695e5cf3-e824-4376-97f6-b4652ada6d52",
                     "label": "sysDefButton",
-                    "components": [],
                     "x": 554,
                     "y": 457,
                     "visible": false,
@@ -1038,7 +978,6 @@
                     "id": "279b4d36-aba5-4fb3-95a4-f7ad8f723473",
                     "label": "thinIceText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 754,
                     "y": 457,
                     "originY": 0.5,
@@ -1055,7 +994,6 @@
                     "id": "a7de7815-b6a3-4744-ae64-b79c50f66235",
                     "label": "thinIceIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/16"
@@ -1070,7 +1008,6 @@
                     "type": "Rectangle",
                     "id": "b5ffac05-e3f4-4997-925c-841faae47f26",
                     "label": "thinIceButton",
-                    "components": [],
                     "x": 794,
                     "y": 457,
                     "visible": false,
@@ -1084,7 +1021,6 @@
                     "id": "d1bf6af6-7d61-4c36-8cd4-d37052bbe7d0",
                     "label": "huntText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 994,
                     "y": 457,
                     "originY": 0.5,
@@ -1101,7 +1037,6 @@
                     "id": "034fe730-8194-4c94-a9b5-24d468939750",
                     "label": "huntIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/56"
@@ -1116,7 +1051,6 @@
                     "type": "Rectangle",
                     "id": "2cb64d1a-1a33-469b-aa76-865943d9825c",
                     "label": "huntButton",
-                    "components": [],
                     "x": 1034,
                     "y": 457,
                     "visible": false,
@@ -1130,7 +1064,6 @@
                     "id": "0ae396f0-e41b-4038-86f5-b09ae485631e",
                     "label": "huntText_1",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1234,
                     "y": 457,
                     "originY": 0.5,
@@ -1147,7 +1080,6 @@
                     "id": "0c0f2347-fdc3-45a9-a36e-b9d2249f752a",
                     "label": "huntIcon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/56"
@@ -1162,7 +1094,6 @@
                     "type": "Rectangle",
                     "id": "bfcce4c1-5382-4228-8fbd-0e892b8d3a39",
                     "label": "huntButton_1",
-                    "components": [],
                     "x": 1274,
                     "y": 457,
                     "visible": false,
@@ -1176,7 +1107,6 @@
                     "id": "0fd8f806-250d-4224-a4f6-3a05212e16a2",
                     "label": "pagenum",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1225,
                     "y": 95,
                     "text": "Page\n6 of 29",
@@ -1190,7 +1120,6 @@
                     "id": "cfc822ec-ef35-4c42-a63e-938957fb234f",
                     "label": "stampnum",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 880,
                     "y": 120,
                     "text": "100/100",
@@ -1206,7 +1135,6 @@
                     "id": "e06eae0b-b4ee-43df-bb09-7974587d6ff4",
                     "label": "stampcategory",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1183,
                     "y": 101,
                     "originX": 1,
@@ -1223,7 +1151,6 @@
                     "id": "3481eb31-0396-44ef-aefd-dd88c85cf53b",
                     "label": "pagename",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 329,
                     "y": 117,
                     "originY": 0.5,
@@ -1238,7 +1165,6 @@
                     "id": "fcfdec94-cc97-4eb3-bc5b-f7dde4be3608",
                     "label": "pageicon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "categories/8"
@@ -1268,7 +1194,6 @@
                     "id": "a6079431-8c38-4d35-8fab-c5818b29633f",
                     "label": "down_arrow",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "grey-arrow"
@@ -1300,7 +1225,6 @@
                     "id": "9ff4757d-ed67-4a58-84cf-944e9c14d77e",
                     "label": "up_arrow",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "grey-arrow"
@@ -1314,7 +1238,6 @@
                     "id": "cd903c45-59ce-4241-85ab-4fbfca1c7dd5",
                     "label": "dividers",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "dividers"
@@ -1327,7 +1250,6 @@
                     "id": "07413ebe-ee2c-4ccb-b982-cc4d2865001c",
                     "label": "polaroids",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1066,
                     "y": 329,
                     "visible": false,
@@ -1336,7 +1258,6 @@
                             "type": "Image",
                             "id": "c6a78c6c-b26a-471d-8552-374cdcbc3c2b",
                             "label": "polaroid_shadow",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid_shadow"
@@ -1348,7 +1269,6 @@
                             "type": "Image",
                             "id": "4580b944-5816-4f8b-b879-1c979418dbf0",
                             "label": "polaroid1_bg",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid1-bg"
@@ -1360,7 +1280,6 @@
                             "id": "b8a123ad-4c88-4ba6-a9de-d12f48221e82",
                             "label": "polaroid1Holder",
                             "scope": "CLASS",
-                            "components": [],
                             "x": 172,
                             "list": [
                                 {
@@ -1368,7 +1287,6 @@
                                     "id": "fdfaf1ca-13ca-4f90-a379-30bc7670e08b",
                                     "label": "polaroid1LockedTxt",
                                     "scope": "CLASS",
-                                    "components": [],
                                     "angle": 10.5,
                                     "originX": 0.5,
                                     "originY": 0.5,
@@ -1387,7 +1305,6 @@
                                     "id": "d0844906-8218-4e7b-a37e-6b98211dbe77",
                                     "label": "polaroid1LockedIcon",
                                     "scope": "CLASS",
-                                    "components": [],
                                     "texture": {
                                         "key": "stampbook",
                                         "frame": "polaroidlocked"
@@ -1402,7 +1319,6 @@
                             "type": "Image",
                             "id": "582e1921-b15e-44f1-b783-f0deca17a6ce",
                             "label": "polaroid1",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid1"
@@ -1414,7 +1330,6 @@
                             "type": "Image",
                             "id": "a46d938d-322a-460f-9df9-f663b5f3716a",
                             "label": "polaroid2_bg",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid2-bg"
@@ -1426,7 +1341,6 @@
                             "id": "60abbd9f-2cee-40e8-8793-fb126d664839",
                             "label": "polaroid2Holder",
                             "scope": "CLASS",
-                            "components": [],
                             "x": 1,
                             "y": 177,
                             "list": [
@@ -1435,7 +1349,6 @@
                                     "id": "a66997b5-44b2-427a-b6ed-4d2894e9ec1a",
                                     "label": "polaroid2LockedIcon",
                                     "scope": "CLASS",
-                                    "components": [],
                                     "texture": {
                                         "key": "stampbook",
                                         "frame": "polaroidlocked"
@@ -1449,7 +1362,6 @@
                                     "id": "3dd899f1-297b-4a22-9e23-78418676e840",
                                     "label": "polaroid2LockedTxt",
                                     "scope": "CLASS",
-                                    "components": [],
                                     "angle": -18.5,
                                     "originX": 0.5,
                                     "originY": 0.5,
@@ -1469,7 +1381,6 @@
                             "type": "Image",
                             "id": "57d66033-c9b3-4903-949c-b368f37ada3f",
                             "label": "polaroid2",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid2"
@@ -1481,7 +1392,6 @@
                             "type": "Image",
                             "id": "e138c9c9-65a6-4d57-9bf4-a3a6e0a0c740",
                             "label": "polaroid3_bg",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid3-bg"
@@ -1494,7 +1404,6 @@
                             "id": "cf6dc920-cfe9-4acd-a001-16bdee7a5a1e",
                             "label": "polaroid3Holder",
                             "scope": "CLASS",
-                            "components": [],
                             "x": 158,
                             "y": 372,
                             "list": [
@@ -1503,7 +1412,6 @@
                                     "id": "bbf1f723-251c-4aae-9a79-2cb972696489",
                                     "label": "polaroid3LockedIcon",
                                     "scope": "CLASS",
-                                    "components": [],
                                     "texture": {
                                         "key": "stampbook",
                                         "frame": "polaroidlocked"
@@ -1517,7 +1425,6 @@
                                     "id": "50186d3e-8e6b-4a2a-a1c6-514feff708c3",
                                     "label": "polaroid3LockedTxt",
                                     "scope": "CLASS",
-                                    "components": [],
                                     "angle": 10.5,
                                     "originX": 0.5,
                                     "originY": 0.5,
@@ -1537,7 +1444,6 @@
                             "type": "Image",
                             "id": "22c6e3a2-04b8-4132-8ecb-361bb601c407",
                             "label": "polaroid3",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "polaroid3"
@@ -1554,77 +1460,17 @@
             "id": "2fcff564-ee36-42e1-9159-6f0a39be2390",
             "label": "front",
             "scope": "CLASS",
-            "components": [],
             "list": [
                 {
                     "type": "Sprite",
                     "id": "7278d4d5-3c80-4720-8911-ec30f1edd7c4",
                     "label": "cover",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
-                        "key": "stampbook",
-                        "frame": "colour/1"
+                        "key": "sb_color1_pattern0"
                     },
-                    "x": 743,
+                    "x": 762,
                     "y": 480
-                },
-                {
-                    "type": "Sprite",
-                    "id": "a47175a9-1c7c-483b-8934-fad9002bd80e",
-                    "label": "pattern",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "stampbook",
-                        "frame": "pattern/1"
-                    },
-                    "x": 740,
-                    "y": 480,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5,
-                    "tintTopLeft": "#b35e42",
-                    "tintTopRight": "#b35e42",
-                    "tintBottomLeft": "#b35e42",
-                    "tintBottomRight": "e47652"
-                },
-                {
-                    "type": "Image",
-                    "id": "2ee9142d-b296-45ec-aeb3-ff62e919664c",
-                    "label": "wordmark",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "stampbook",
-                        "frame": "wordmark"
-                    },
-                    "x": 1194,
-                    "y": 707,
-                    "tintTopLeft": "e47652",
-                    "tintTopRight": "e47652",
-                    "tintBottomLeft": "e47652",
-                    "tintBottomRight": "e47652",
-                    "tintFill": true
-                },
-                {
-                    "type": "Image",
-                    "id": "6ae6dd2a-447f-4ddf-9428-e4e8e0c38d77",
-                    "label": "wordmark_overlay",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "stampbook",
-                        "frame": "wordmark"
-                    },
-                    "x": 1194,
-                    "y": 707,
-                    "tintTopLeft": "e47652",
-                    "tintTopRight": "e47652",
-                    "tintBottomLeft": "e47652",
-                    "tintBottomRight": "e47652"
                 },
                 {
                     "type": "Sprite",
@@ -1647,7 +1493,6 @@
                     "id": "ca5a8ef7-0f92-45f7-9974-53f42c05b06f",
                     "label": "clasp",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "clasp/1"
@@ -1660,7 +1505,6 @@
                     "id": "66690e3a-abe7-4ffa-af25-524c7bcaaa47",
                     "label": "total",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 257,
                     "y": 754,
                     "text": "Loading stampbook",
@@ -1677,7 +1521,6 @@
                     "id": "069ab41d-8d51-4d03-a1c5-93e279faa937",
                     "label": "username",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 253,
                     "y": 705,
                     "originY": 0.5,
@@ -1726,7 +1569,6 @@
                     "type": "Image",
                     "id": "a1f5cc01-fe51-4dad-b4e0-40b82dcea799",
                     "label": "grey_x",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "grey-x"
@@ -1741,7 +1583,6 @@
             "id": "52b1d16f-c5db-455d-8a2c-f3a89b06f663",
             "label": "editor",
             "scope": "CLASS",
-            "components": [],
             "visible": false,
             "list": [
                 {
@@ -1749,7 +1590,6 @@
                     "id": "c89e0bf3-300d-4c99-a7d0-7c23161f0490",
                     "label": "editor_top",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "editor_top"
@@ -1762,7 +1602,6 @@
                     "id": "ee16e781-2112-4c40-a044-51886c91bea4",
                     "label": "editor_side",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "editor_side"
@@ -1791,7 +1630,6 @@
                     "id": "07ab8038-7fc3-4f70-a683-e919a45bdc39",
                     "label": "claspselect",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 205,
                     "y": 375,
                     "visible": false,
@@ -1801,7 +1639,6 @@
                             "id": "416f0886-a968-4c4b-ab42-affbf38ecc13",
                             "label": "claspselect_bg",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "editor_options"
@@ -1935,7 +1772,6 @@
                     "id": "5d60401d-1aeb-4468-ba4b-d088173ff8f0",
                     "label": "patternselect",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 205,
                     "y": 261,
                     "visible": false,
@@ -1945,7 +1781,6 @@
                             "id": "e5201611-9559-4dd4-9bf3-ad2b803acaa8",
                             "label": "patternselect_bg",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "editor_options"
@@ -2079,7 +1914,6 @@
                     "id": "915a0bf9-6622-49ef-9047-307bb8688701",
                     "label": "colorselect",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 205,
                     "y": 145,
                     "visible": false,
@@ -2089,7 +1923,6 @@
                             "id": "038de595-b1cb-405a-a63e-9b678d67bc1f",
                             "label": "colorselect_bg",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "stampbook",
                                 "frame": "editor_options"
@@ -2239,7 +2072,6 @@
                     "type": "Image",
                     "id": "6080e8b8-2283-49b4-991a-89f5c9cd8685",
                     "label": "arrow_right",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "arrow"
@@ -2251,7 +2083,6 @@
                     "type": "Image",
                     "id": "e6c2b7c0-f46e-4f93-9771-c44d6e1514b8",
                     "label": "arrow_left",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "arrow"
@@ -2265,7 +2096,6 @@
                     "id": "b00d03c3-cdd5-4df7-abca-fff3beff283d",
                     "label": "category_title",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 82,
                     "y": 21,
                     "originX": 0.5,
@@ -2312,16 +2142,13 @@
             "type": "Container",
             "id": "bf9f2082-0805-4061-981e-508f96765900",
             "label": "stampLayer",
-            "scope": "CLASS",
-            "components": [],
-            "list": []
+            "scope": "CLASS"
         },
         {
             "type": "Container",
             "id": "f131a004-7964-4155-b27e-b28e2441add3",
             "label": "stampInfo",
             "scope": "CLASS",
-            "components": [],
             "x": -262,
             "y": 75,
             "list": [
@@ -2330,7 +2157,6 @@
                     "id": "bf8c8808-5d07-477f-a35f-ed8c8e0dd8e8",
                     "label": "stampInfoBg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "hover"
@@ -2349,7 +2175,6 @@
                     "id": "6e765939-af14-43fd-94f6-46772311fd38",
                     "label": "stampInfoTitle",
                     "scope": "CLASS",
-                    "components": [],
                     "x": -143,
                     "y": -182,
                     "text": "Aunt Arctic",
@@ -2366,7 +2191,6 @@
                     "id": "1d72cc0d-a7b6-4855-b5aa-beb24f3c4265",
                     "label": "stampInfoBody",
                     "scope": "CLASS",
-                    "components": [],
                     "x": -143,
                     "y": -147,
                     "text": "Be in the same room as Aunt Arctic",
@@ -2385,7 +2209,6 @@
             "id": "0524b342-9899-4e09-adfa-6a8f29ca84db",
             "label": "stampHovers",
             "scope": "CLASS",
-            "components": [],
             "x": 260,
             "y": 270,
             "visible": false,
@@ -2645,7 +2468,6 @@
             "id": "f2e71919-551e-46c9-bfb0-69a9c9d91ab8",
             "label": "instructionsContainer",
             "scope": "CLASS",
-            "components": [],
             "x": 1005,
             "y": 286,
             "visible": false,
@@ -2654,7 +2476,6 @@
                     "type": "Image",
                     "id": "175a4199-d06f-476a-b199-75b12032cc4a",
                     "label": "contents_instruct",
-                    "components": [],
                     "texture": {
                         "key": "stampbook",
                         "frame": "contents-instruct"
@@ -2801,7 +2622,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

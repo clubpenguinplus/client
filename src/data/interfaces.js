@@ -26,6 +26,7 @@ const interfaces = {
     Adopt: require('@scenes/interface/closeups/Adopt').default,
     Elevator: require('@scenes/interface/closeups/Elevator').default,
     RainbowQuest: require('@scenes/interface/closeups/RainbowQuest').default,
+    EPFPhone: require('@scenes/interface/closeups/EPFPhone').default,
 }
 
 export default interfaces

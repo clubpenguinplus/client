@@ -15,12 +15,18 @@ export default class Chat extends Plugin {
 
     sendMessage(args) {
         if (this.shell.room.isReady) {
+            if (parseInt(args[2]) < this.shell.settings.cf && args[0] != this.shell.client.id) {
+                if (this.shell.client.rank >= 3) {
+                    this.filteredMessage(args)
+                }
+                return
+            }
             this.interface.showTextBalloon(args[0], args[1])
         }
     }
 
     filteredMessage(args) {
-        if (this.shell.room.isReady && (this.shell.client.rank >= 3 || args.id == this.shell.client.id)) {
+        if (this.shell.room.isReady) {
             this.interface.showTextBalloon(args[0], args[1], true)
         }
     }

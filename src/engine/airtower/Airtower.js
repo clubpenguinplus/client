@@ -249,6 +249,40 @@ export default class Airtower {
         }
     }
 
+    // Saves a player to local storage
+    savePlayer(args) {
+        let savedPenguins = this.savedPenguins
+
+        if (Object.keys(savedPenguins).length > 6 && !(args[0].split('|')[1] in savedPenguins)) return
+
+        let penguin = {}
+        let arr = args[5].split('|')
+
+        penguin.username = arr[1]
+        penguin.color = arr[2]
+        penguin.head = arr[3]
+        penguin.face = arr[4]
+        penguin.neck = arr[5]
+        penguin.body = arr[6]
+        penguin.hand = arr[7]
+        penguin.feet = arr[8]
+
+        savedPenguins[penguin.username.toLowerCase()] = penguin
+        localStorage.setItem('saved_penguins', JSON.stringify(savedPenguins))
+    }
+
+    // Deletes a player from local storage
+    unsavePlayer(args) {
+        let savedPenguins = this.savedPenguins
+
+        console.log(args)
+
+        if (args[4].split('|')[1].toLowerCase() in savedPenguins) {
+            delete savedPenguins[args[0].split('|')[1].toLowerCase()]
+            localStorage.setItem('saved_penguins', JSON.stringify(savedPenguins))
+        }
+    }
+
     getToken(username) {
         let save = this.savedPenguins[username.toLowerCase()]
 
@@ -348,10 +382,10 @@ export default class Airtower {
                     return
                 case 'OK':
                     if (this.password) {
-                        this.sendXml(`<msg t='sys'><body action='login' r='0'><login z='w1'><nick><!${this.username}></nick><pword><!${this.password}></pword></login></body></msg>`)
+                        this.sendXml(`<msg t='sys'><body action='login' r='0'><login z='w1'><nick><!${this.username}></nick><pword><!${this.password}></pword><saveToken><!${this.savePassword ? 'true' : 'false'}></saveToken></login></body></msg>`)
                         this.password = null
                     } else {
-                        this.sendXml(`<msg t='sys'><body action='token_login' r='0'><login z='w1'><nick><!${this.username}></nick><token><!${this.token}></token></login></body></msg>`)
+                        this.sendXml(`<msg t='sys'><body action='token_login' r='0'><login z='w1'><nick><!${this.username}></nick><token><!${this.token}></token><saveToken><!${this.savePassword ? 'true' : 'false'}></saveToken></login></body></msg>`)
                         this.token = null
                     }
                     return

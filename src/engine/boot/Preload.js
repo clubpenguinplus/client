@@ -45,6 +45,7 @@ export default class Preload extends BaseScene {
     }
 
     updateScaling() {
+        this.scale.setGameSize(1520 * window.currentScale, 960 * window.currentScale)
         let heightMultiplier = document.getElementById('game').clientHeight / (window.currentScale * 960)
         let widthMultiplier = document.getElementById('game').clientWidth / (window.currentScale * 1520)
 
@@ -63,30 +64,24 @@ export default class Preload extends BaseScene {
     }
 
     lowerQuality() {
-        if (localStorage.quality == 'high') {
-            localStorage.quality = 'medium'
+        if (this.shell.settings.vq >= 3) {
+            this.shell.settings.vq = 2
             window.currentScale = 0.7
-        } else if (localStorage.quality == 'medium') {
-            localStorage.quality = 'low'
+        } else if (this.shell.settings.vq == 2) {
+            this.shell.settings.vq = 1
             window.currentScale = 0.4
-        } else {
-            return
         }
-        this.scale.setGameSize(1520 * window.currentScale, 960 * window.currentScale)
         window.updateScaling()
     }
 
     raiseQuality() {
-        if (localStorage.quality == 'low') {
-            localStorage.quality = 'medium'
+        if (this.shell.settings.vq <= 1) {
+            this.shell.settings.vq = 2
             window.currentScale = 0.7
-        } else if (localStorage.quality == 'medium') {
-            localStorage.quality = 'high'
+        } else if (this.shell.settings.vq == 2) {
+            this.shell.settings.vq = 3
             window.currentScale = 1
-        } else {
-            return
         }
-        this.scale.setGameSize(1520 * window.currentScale, 960 * window.currentScale)
         window.updateScaling()
     }
 
@@ -157,6 +152,14 @@ export default class Preload extends BaseScene {
             }
 
             return result
+        }
+
+        this.crumbs.roomList = []
+        for (let room in this.crumbs.scenes.rooms) {
+            this.crumbs.scenes.rooms[room].name = this.crumbs.getString(this.crumbs.scenes.rooms[room].key)
+            let roomObj = this.crumbs.scenes.rooms[room]
+            roomObj.id = room
+            this.crumbs.roomList.push(roomObj)
         }
 
         // Start

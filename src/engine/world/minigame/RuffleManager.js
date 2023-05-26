@@ -7,7 +7,7 @@ export default class RuffleManager {
         if (window.getMyPlayerHex) return // Check if already loaded
 
         window.RufflePlayer.config = {
-            publicPath: `${this.prefix}client/scripts/lib/ruffle`,
+            publicPath: 'https://unpkg.com/@ruffle-rs/ruffle',
         }
 
         this.ruffle = window.RufflePlayer.newest()
@@ -154,7 +154,7 @@ export default class RuffleManager {
 
         if (this.volumeInterval) clearInterval(this.volumeInterval)
         this.volumeInterval = setInterval(() => {
-            let volume = this.shell.muteAll ? 0 : parseFloat(localStorage.musicVolume || 0.5)
+            let volume = parseFloat(this.shell.settings.mv || 0.7)
             if (ruffleplayer.volume == volume) return clearInterval(this.volumeInterval)
             ruffleplayer.volume = volume
         }, 200)

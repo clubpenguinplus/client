@@ -38,7 +38,7 @@ jobs:
                   SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
 
             - name: Push play page to CDN
-              uses: Club-Penguin-Plus-Official/spaces-sync-action@literal
+              uses: clubpenguinplus/spaces-sync-action@literal
               env:
                   SOURCE_DIR: './play/'
                   SPACE_REGION: 'nyc3'
@@ -67,7 +67,7 @@ jobs:
             - name: Checkout server
               uses: actions/checkout@v2
               with:
-                  repository: Club-Penguin-Plus-Official/server
+                  repository: clubpenguinplus/server
                   token: ${{ secrets.MEDIA_KEY }}
                   path: server
 
@@ -84,7 +84,7 @@ jobs:
               run: zip -qq -r archive/${{ steps.package-version.outputs.current-version }}.zip server client
 
             - name: Upload archive
-              uses: Club-Penguin-Plus-Official/spaces-sync-action@archive
+              uses: clubpenguinplus/spaces-sync-action@archive
               env:
                   SOURCE_DIR: './archive/'
                   SPACE_REGION: 'nyc3'

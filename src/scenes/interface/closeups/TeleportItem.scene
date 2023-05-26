@@ -1,0 +1,75 @@
+{
+    "id": "8b815858-f4b1-485d-a6c2-87160ed484a5",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "2270175f-64b5-4967-bed9-636efe505240",
+            "label": "container_1",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "49a77aa4-69fb-4be8-8725-fa14dba0a022",
+                    "label": "txt",
+                    "scope": "CLASS",
+                    "originY": 0.5,
+                    "alpha": 0.8,
+                    "alphaTopLeft": 0.8,
+                    "alphaTopRight": 0.8,
+                    "alphaBottomLeft": 0.8,
+                    "alphaBottomRight": 0.8,
+                    "text": "Town Center",
+                    "fontFamily": "cpRasterGothTwentyEightCnd",
+                    "fontSize": "36px",
+                    "fontStyle": "bold",
+                    "color": "#7eecdeff"
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c470489b-3120-45cb-b65b-8d3193ebf54f",
+                    "label": "btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onOut()",
+                    "SimpleButton.callback": "() => this.teleport()",
+                    "originX": 0,
+                    "width": 130,
+                    "height": 50
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "roomId",
+            "label": "Room ID",
+            "tooltip": "The ID of the room it will take you to",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}

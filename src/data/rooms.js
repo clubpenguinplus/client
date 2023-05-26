@@ -136,18 +136,21 @@ const rooms = {
         scene: require('@rooms/ship/Ship').default,
         x: 900,
         y: 600,
+        preventTeleport: true,
     },
     421: {
         key: 'Shiphold',
         scene: require('@rooms/shiphold/Shiphold').default,
         x: 1120,
         y: 730,
+        preventTeleport: true,
     },
     423: {
         key: 'Shipnest',
         scene: require('@rooms/shipnest/Shipnest').default,
         x: 860,
         y: 580,
+        preventTeleport: true,
     },
     430: {
         key: 'HotelLobby',
@@ -269,6 +272,7 @@ const rooms = {
         scene: require('@rooms/underwater/Underwater').default,
         x: 840,
         y: 480,
+        preventTeleport: true,
     },
     916: {
         key: 'AquaGrabber',
