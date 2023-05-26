@@ -63,6 +63,10 @@ export default class WindowPrompt extends BaseContainer {
         this.dual = dual
 
         /* START-USER-CTR-CODE */
+        this.defaultBGHeight = bg.height
+        this.defaultButtonPosition = single.y
+        this.defaultBGPosition = bg.y
+        this.defaultTextPosition = text.y
         /* END-USER-CTR-CODE */
     }
 
@@ -80,6 +84,21 @@ export default class WindowPrompt extends BaseContainer {
         this.callback = callback
         // Callback on no button
         this.noCallback = noCallback
+
+        if (this.text.height > 100) {
+            this.bg.resize(this.bg.width, this.defaultBGHeight + this.text.height - 100)
+            let offset = this.text.height - 100
+            this.single.y = this.defaultButtonPosition + (offset * 3) / 4
+            this.dual.y = this.defaultButtonPosition + (offset * 3) / 4
+            this.text.y = this.defaultTextPosition + (offset * 1) / 4
+            this.bg.y = this.defaultBGPosition + (offset * 1) / 4
+        } else {
+            this.bg.resize(this.bg.width, this.defaultBGHeight)
+            this.single.y = this.defaultButtonPosition
+            this.dual.y = this.defaultButtonPosition
+            this.text.y = this.defaultTextPosition
+            this.bg.y = this.defaultBGPosition
+        }
 
         this.visible = true
     }

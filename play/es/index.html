@@ -47,14 +47,11 @@
       gtag('config', 'G-K8PKTKP676');
    </script>
    <script src="https://media.cpplus.pw/client/scripts/lib/webfont.js"></script>
-   <script src="https://media.cpplus.pw/client/scripts/lib/phaser.min.js"></script>
-   <script src="https://media.cpplus.pw/client/scripts/lib/nineslice.min.js"></script>
-   <script src="https://media.cpplus.pw/client/scripts/lib/phaser-cachebuster.min.js"></script>
    <script>
       var script = document.createElement("script");
       script.src = `${window.location.hostname == 'play.cpplus.pw' ? 'https://media.cpplus.pw/client/scripts/client/clubpenguinplus.min.js' : '/client/scripts/client/clubpenguinplus.min.js'}?v=${Date.now().toString()}`, document.getElementsByTagName("HEAD")[0].appendChild(script)
    </script>
-   <script src="https://media.cpplus.pw/client/scripts/lib/ruffle/ruffle.js"></script>
+   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
 
 <body class="html not-front not-logged-in page-play full-page-flow i18n-en context-play snowball">

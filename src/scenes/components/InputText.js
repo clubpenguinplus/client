@@ -32,8 +32,6 @@ export default class InputText extends EventComponent {
         /* START-USER-CTR-CODE */
         this.gameObject.textContent = ''
         this.input = this.gameObject.scene.interface.input
-        this.shift = this.input.keyboard.addKey('SHIFT')
-        this.ctrl = this.input.keyboard.addKey('CTRL')
         /* END-USER-CTR-CODE */
     }
 
@@ -327,7 +325,7 @@ export default class InputText extends EventComponent {
     async onKeyDown(event) {
         if (!this.isSelected) return
         if (event.key == 'Backspace') {
-            if (this.ctrl.isDown) {
+            if (event.ctrlKey) {
                 let lastSpace = this.beforeCursor.lastIndexOf(' ')
                 if (lastSpace == -1) {
                     this.beforeCursor = ''
@@ -345,7 +343,7 @@ export default class InputText extends EventComponent {
                 this.gameObject.x = this.x
             }
         } else if (event.key == 'Delete') {
-            if (this.ctrl.isDown) {
+            if (event.ctrlKey) {
                 let firstSpace = this.afterCursor.indexOf(' ')
                 if (firstSpace == -1) {
                     this.afterCursor = ''
@@ -363,7 +361,7 @@ export default class InputText extends EventComponent {
                 this.gameObject.x = this.x
             }
         } else if (event.key == 'Enter') {
-            if (this.shift.isDown && this.multiline) {
+            if (event.shiftKey && this.multiline) {
                 this.text += '\n'
                 return
             }
@@ -376,7 +374,7 @@ export default class InputText extends EventComponent {
             }
         } else if (event.key == 'ArrowLeft') {
             if (this.beforeCursor.length > 0) {
-                if (this.ctrl.isDown) {
+                if (event.ctrlKey) {
                     let lastSpace = this.beforeCursor.substring(0, this.beforeCursor.length - 1).lastIndexOf(' ')
                     if (lastSpace == -1) {
                         this.afterCursor = this.beforeCursor + this.afterCursor
@@ -392,7 +390,7 @@ export default class InputText extends EventComponent {
             }
         } else if (event.key == 'ArrowRight') {
             if (this.afterCursor.length > 0) {
-                if (this.ctrl.isDown) {
+                if (event.ctrlKey) {
                     let firstSpace = this.afterCursor.substring(0, this.afterCursor.length).indexOf(' ') + 1
                     if (firstSpace == 0) {
                         this.beforeCursor += this.afterCursor
@@ -406,7 +404,7 @@ export default class InputText extends EventComponent {
                     this.afterCursor = this.afterCursor.slice(1)
                 }
             }
-        } else if (this.ctrl.isDown) {
+        } else if (event.ctrlKey) {
             if (event.key == 'v') {
                 let text = await navigator.clipboard.readText()
                 if (text) {
@@ -435,7 +433,7 @@ export default class InputText extends EventComponent {
             return
         } else {
             let key = event.key
-            if (this.shift.isDown || event.getModifierState('CapsLock')) {
+            if (event.shiftKey || event.getModifierState('CapsLock')) {
                 key = key.toUpperCase()
             }
             if (this.inputfilter && !this.inputfilter.test(key)) {

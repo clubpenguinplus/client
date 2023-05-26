@@ -62,7 +62,6 @@ export default class PenguinLoader {
         }
 
         nameTag.depth = penguin.depth + 2000 // Keep nametag above everything else
-
         return nameTag
     }
 

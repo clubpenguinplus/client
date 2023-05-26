@@ -11,6 +11,7 @@ export default class Ignore extends Plugin {
 
     ignoreAdd(args) {
         this.shell.client.ignores.push({id: args[0], username: args[1]})
+        this.interface.updateIgnoreList()
         this.interface.updateFriends()
     }
 
@@ -18,5 +19,6 @@ export default class Ignore extends Plugin {
         // Filter ignore out of list
         this.shell.client.ignores = this.shell.client.ignores.filter((obj) => obj.id != args[0])
         this.interface.updateIgnoreList()
+        this.interface.updateFriends()
     }
 }

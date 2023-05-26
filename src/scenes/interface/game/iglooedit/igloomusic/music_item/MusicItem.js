@@ -1,6 +1,6 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {Button} from '@components/components'
+import {Button, SimpleButton} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -27,9 +27,21 @@ export default class MusicItem extends BaseContainer {
         title.setStyle({color: '#3e83c5ff', fixedWidth: 280, fontFamily: 'cpBurbankSmall', fontSize: '18px'})
         this.add(title)
 
+        // play-btn
+        const play_btn = scene.add.ellipse(-144, 0, 128, 128)
+        play_btn.scaleX = 0.33164760526295156
+        play_btn.scaleY = 0.33164760526295156
+        play_btn.fillColor = 1820429
+        play_btn.fillAlpha = 0.5
+        this.add(play_btn)
+
         // item (components)
         const itemButton = new Button(item)
         itemButton.callback = () => this.onClick()
+
+        // play_btn (components)
+        const play_btnSimpleButton = new SimpleButton(play_btn)
+        play_btnSimpleButton.callback = () => this.previewTrack()
 
         this.title = title
 
@@ -47,12 +59,21 @@ export default class MusicItem extends BaseContainer {
 
         if (this.bold) {
             this.title.setFontStyle('bold')
+        } else {
+            this.title.setFontStyle('normal')
         }
     }
 
     onClick() {
-        this.airtower.sendXt('g#um', this.musicId)
-        this.parentContainer.visible = false
+        this.parentContainer.musicIsPreview = false
+        this.parentContainer.updateMusic(this.musicId)
+        this.bold = true
+        this.onAwake()
+    }
+
+    previewTrack() {
+        this.parentContainer.musicIsPreview = true
+        this.shell.musicController.addMusic(this.musicId)
     }
 
     /* END-USER-CODE */

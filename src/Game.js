@@ -1,7 +1,8 @@
 import Boot from '@engine/boot/Boot'
 import Airtower from '@engine/airtower/Airtower'
 import registerNinePatchContainerFactory from '@engine/utils/ninepatch/registerNinePatchContainerFactory'
-
+import Phaser from 'phaser'
+import CacheBustedLoader from '@engine/utils/cachebuster/phaser-cachebuster.min.js'
 import clubpenguinplus from './data/game'
 
 import devtools from 'devtools-detect'

@@ -5,10 +5,8 @@ export default class BookStamp extends BaseContainer {
         super(scene, x ?? 100, y ?? 100)
         this.id = id
         this.scene = scene
-        this.scene2 = scene
-        // something was making this.scene undefined and i don't know what, so i'm just doing this :)
 
-        if (!this.scene2.textures.exists(`stamps/${id}`)) {
+        if (!this.scene.textures.exists(`stamps/${id}`)) {
             this.shell.events.once(`textureLoaded:stamps/${id}`, () => {
                 this.addStamp()
             })
@@ -20,8 +18,8 @@ export default class BookStamp extends BaseContainer {
 
     addStamp() {
         // shadow
-        const shadow = this.scene2.add.image(4, 5, `stamps/${this.id}`)
-        shadow.alpha = this.scene2.stampsEarned.includes(this.id) ? 0.2 : 0.1
+        const shadow = this.scene.add.image(4, 5, `stamps/${this.id}`)
+        shadow.alpha = this.scene.stampsEarned.includes(this.id) ? 0.2 : 0.1
         shadow.tintFill = true
         shadow.tintTopLeft = 0
         shadow.tintTopRight = 0
@@ -30,12 +28,12 @@ export default class BookStamp extends BaseContainer {
         this.add(shadow)
 
         // stamp
-        const stamp = this.scene2.add.image(0, 0, `stamps/${this.id}`)
+        const stamp = this.scene.add.image(0, 0, `stamps/${this.id}`)
         this.add(stamp)
 
-        if (!this.scene2.stampsEarned.includes(this.id)) {
+        if (!this.scene.stampsEarned.includes(this.id)) {
             // locked
-            const locked = this.scene2.add.image(0, 0, `stamps/${this.id}`)
+            const locked = this.scene.add.image(0, 0, `stamps/${this.id}`)
             locked.alpha = 0.7
             locked.tintFill = true
             this.add(locked)

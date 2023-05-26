@@ -414,7 +414,6 @@ export default class Agentlobby extends RoomScene {
         this.stairs.add(this.stairs.closing)
         this.stairs.add(this.stairs.opening)
         this.stairs.closing.visible = false
-
         this.waterfall.opening = this.add.video(0, 0, 'agentlobby-waterfall_opening')
         this.waterfall.open = this.add.video(0, 0, 'agentlobby-waterfall_open')
         this.waterfall.closing = this.add.video(0, 0, 'agentlobby-waterfall_closing')
@@ -429,6 +428,7 @@ export default class Agentlobby extends RoomScene {
 
         this.waterfall.closed.play(true)
         this.waterfall.open.play(true)
+        this.stairs.opening.play(false, 0, 0.1)
         this.droplets.play('agentlobby-droplets')
 
         this.setEpfButton()

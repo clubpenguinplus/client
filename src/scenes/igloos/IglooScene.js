@@ -34,6 +34,7 @@ export default class IglooScene extends RoomScene {
 
         this.id = this.args.igloo
         this.music = this.args.music
+        if (!this.isPreview) this.updateMusic(this.music)
 
         this.loader = new FurnitureLoader(this)
 
@@ -220,24 +221,7 @@ export default class IglooScene extends RoomScene {
     }
 
     updateMusic(music) {
-        this.stopMusic()
-
-        this.music = music
-
-        if (!music) {
-            return
-        }
-
-        if (this.cache.audio.exists(music)) {
-            return this.addMusic()
-        }
-
-        this.load.audio(music, `client/media/music/${music}.mp3`)
-        this.load.start()
-
-        this.load.once(`filecomplete-audio-${music}`, () => {
-            this.addMusic()
-        })
+        this.shell.musicController.addMusic(music)
     }
 
     loadAllFurniture() {

@@ -60,6 +60,10 @@ export default class Login extends Plugin {
     }
 
     authToken(args) {
-        if (args[0]) this.airtower.token = args[0]
+        if (this.airtower.savedPenguins[args[0]]) {
+            let penguins = this.airtower.savedPenguins
+            penguins[args[0]].token = args[1]
+            localStorage.setItem('saved_penguins', JSON.stringify(penguins))
+        }
     }
 }

@@ -36,10 +36,10 @@ export default class Main extends BaseScene {
         this.dock
         /** @type {Phaser.GameObjects.Image} */
         this.chat_box
-        /** @type {Phaser.GameObjects.Container} */
-        this.inputTextContainer
         /** @type {Phaser.GameObjects.Text} */
         this.chatInput
+        /** @type {Phaser.GameObjects.Container} */
+        this.inputTextContainer
         /** @type {Phaser.GameObjects.Image} */
         this.puffle_button_disabled
         /** @type {Phaser.GameObjects.Sprite} */
@@ -80,8 +80,6 @@ export default class Main extends BaseScene {
         this.chat_button
         /** @type {Phaser.GameObjects.Image} */
         this.chat_icon
-        /** @type {Phaser.GameObjects.Container} */
-        this.mobileUi
         /** @type {Phaser.GameObjects.Image} */
         this.dock_1
         /** @type {Phaser.GameObjects.Image} */
@@ -126,10 +124,12 @@ export default class Main extends BaseScene {
         this.chat_button_1
         /** @type {Phaser.GameObjects.Image} */
         this.chat_icon_1
-        /** @type {Phaser.GameObjects.Container} */
-        this.inputTextContainer_mobile
         /** @type {Phaser.GameObjects.Text} */
         this.chatInput_mobile
+        /** @type {Phaser.GameObjects.Container} */
+        this.inputTextContainer_mobile
+        /** @type {Phaser.GameObjects.Container} */
+        this.mobileUi
         /** @type {MainRequestItem} */
         this.mainRequestItem
         /** @type {OnlineItem} */
@@ -152,8 +152,6 @@ export default class Main extends BaseScene {
         this.moderatoricon
         /** @type {Phaser.GameObjects.Image} */
         this.beta
-        /** @type {Phaser.GameObjects.Layer} */
-        this.widgetLayer
         /** @type {Friend} */
         this.friend
         /** @type {PlayerCard} */
@@ -162,6 +160,8 @@ export default class Main extends BaseScene {
         this.friendSmall
         /** @type {Ignore} */
         this.ignore
+        /** @type {Phaser.GameObjects.Layer} */
+        this.widgetLayer
         /** @type {Settings} */
         this.settings
         /** @type {ActionsMenu} */
@@ -176,8 +176,6 @@ export default class Main extends BaseScene {
         this.findFour
         /** @type {Mancala} */
         this.mancala
-        /** @type {Phaser.GameObjects.Container} */
-        this.stampEarned
         /** @type {Phaser.GameObjects.Image} */
         this.stampEarnedBg
         /** @type {Phaser.GameObjects.Image} */
@@ -186,6 +184,8 @@ export default class Main extends BaseScene {
         this.stampEarnedHeader
         /** @type {Phaser.GameObjects.Text} */
         this.stampEarnedBody
+        /** @type {Phaser.GameObjects.Container} */
+        this.stampEarned
         /** @type {PuffleCare} */
         this.puffleCare
         /** @type {Map} */
@@ -535,7 +535,7 @@ export default class Main extends BaseScene {
 
         // lists
         const hideOnSleep = [playerCard, friend]
-        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, chatLog, badge_member, emote_icon]
+        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, chatLog, badge_member, emote_icon, phone_button, chat_button, chat_icon, mail_btn, beta, safetyquiz, moderatoricon]
 
         // dock (components)
         new Interactive(dock)
@@ -598,7 +598,7 @@ export default class Main extends BaseScene {
         // help_button (components)
         const help_buttonButton = new Button(help_button)
         help_buttonButton.callback = () => {
-            this.settings.visible = true
+            this.settings.show()
         }
         const help_buttonShowHint = new ShowHint(help_button)
         help_buttonShowHint.text = 'settings'
@@ -618,7 +618,7 @@ export default class Main extends BaseScene {
         // help_button_1 (components)
         const help_button_1Button = new Button(help_button_1)
         help_button_1Button.callback = () => {
-            this.settings.visible = true
+            this.settings.show()
         }
         const help_button_1ShowHint = new ShowHint(help_button_1)
         help_button_1ShowHint.text = 'settings'
@@ -718,8 +718,8 @@ export default class Main extends BaseScene {
         this.pinContainer = pinContainer
         this.dock = dock
         this.chat_box = chat_box
-        this.inputTextContainer = inputTextContainer
         this.chatInput = chatInput
+        this.inputTextContainer = inputTextContainer
         this.puffle_button_disabled = puffle_button_disabled
         this.puffle_button = puffle_button
         this.puffle_icon = puffle_icon
@@ -740,7 +740,6 @@ export default class Main extends BaseScene {
         this.help_icon = help_icon
         this.chat_button = chat_button
         this.chat_icon = chat_icon
-        this.mobileUi = mobileUi
         this.dock_1 = dock_1
         this.chat_box_1 = chat_box_1
         this.help_button_1 = help_button_1
@@ -763,8 +762,9 @@ export default class Main extends BaseScene {
         this.puffle_icon_1 = puffle_icon_1
         this.chat_button_1 = chat_button_1
         this.chat_icon_1 = chat_icon_1
-        this.inputTextContainer_mobile = inputTextContainer_mobile
         this.chatInput_mobile = chatInput_mobile
+        this.inputTextContainer_mobile = inputTextContainer_mobile
+        this.mobileUi = mobileUi
         this.mainRequestItem = mainRequestItem
         this.onlineItem = onlineItem
         this.chatLog = chatLog
@@ -776,11 +776,11 @@ export default class Main extends BaseScene {
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
         this.beta = beta
-        this.widgetLayer = widgetLayer
         this.friend = friend
         this.playerCard = playerCard
         this.friendSmall = friendSmall
         this.ignore = ignore
+        this.widgetLayer = widgetLayer
         this.settings = settings
         this.actionsMenu = actionsMenu
         this.emotesMenu = emotesMenu
@@ -788,11 +788,11 @@ export default class Main extends BaseScene {
         this.waddle = waddle
         this.findFour = findFour
         this.mancala = mancala
-        this.stampEarned = stampEarned
         this.stampEarnedBg = stampEarnedBg
         this.stampEarnedImage = stampEarnedImage
         this.stampEarnedHeader = stampEarnedHeader
         this.stampEarnedBody = stampEarnedBody
+        this.stampEarned = stampEarned
         this.puffleCare = puffleCare
         this.map = map
         this.hideOnSleep = hideOnSleep
@@ -846,6 +846,10 @@ export default class Main extends BaseScene {
 
         // Test mobile
         this.isMobile()
+
+        if (this.shell.settings.hi) {
+            this.hide()
+        }
     }
 
     showTR() {
@@ -1011,20 +1015,7 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = false
         }
-
-        this.input.keyboard.on('keydown-TAB', (event) => null)
-        this.input.keyboard.on('keydown-ENTER', (event) => null)
-
-        this.shell.client.blockKeys()
-
-        try {
-            for (let penguin of Object.values(this.shell.room.penguins)) {
-                penguin.visible = false
-                penguin.nameTag.visible = false
-            }
-        } catch (err) {
-            console.error(`[Interface:Main] ${err}`)
-        }
+        this.beta.visible = false
     }
 
     show() {
@@ -1033,17 +1024,6 @@ export default class Main extends BaseScene {
         }
         this.beta.visible = true
         this.showTR()
-
-        this.shell.client.initKeys()
-
-        try {
-            for (let penguin of Object.values(this.shell.room.penguins)) {
-                penguin.visible = true
-                penguin.nameTag.visible = true
-            }
-        } catch (err) {
-            console.error(`[Interface:Main] ${err}`)
-        }
     }
 
     stampTween() {
@@ -1103,6 +1083,10 @@ export default class Main extends BaseScene {
 
     onBetaClick() {
         this.interface.loadExternal('Report')
+    }
+
+    onPhoneClick() {
+        this.interface.loadExternal('EPFPhone')
     }
 
     /* END-USER-CODE */

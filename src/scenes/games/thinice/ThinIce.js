@@ -2293,6 +2293,11 @@ export default class ThinIce extends GameScene {
         this.levelTxt.visible = true
         this.completionTxt.visible = true
         this.createLevel()
+
+        this.events.on('shutdown', () => {
+            this.interface.input.keyboard.off('keydown', undefined, this)
+            this.interface.input.keyboard.off('keyup', undefined, this)
+        })
     }
 
     createLevel() {

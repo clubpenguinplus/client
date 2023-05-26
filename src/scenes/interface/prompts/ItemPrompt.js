@@ -103,7 +103,7 @@ export default class ItemPrompt extends BaseContainer {
         if (cost < 1) {
             return this.crumbs.getString(`free-item-popup,${name}`)
         } else {
-            return this.crumbs.getString(`free-item-popup,${name},${cost},${this.shell.client.coins}`)
+            return this.crumbs.getString(`paid-item-popup,${name},${cost},${this.shell.client.coins}`)
         }
     }
 

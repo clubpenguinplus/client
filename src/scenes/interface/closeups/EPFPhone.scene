@@ -1,0 +1,378 @@
+{
+    "id": "d8aee01a-5063-4782-a3cc-3c3b615caa05",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/interface/closeups/phone/phone-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "EPFPhone",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "ff94b1de-d900-4c52-9199-9cf535f4541e",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "cf02db47-fcd8-43de-b89d-330a86f85faa",
+            "label": "phone_container",
+            "scope": "CLASS",
+            "x": 760,
+            "y": 460,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d028cfdb-d552-4be7-aa53-7a6b0ed7e331",
+                    "label": "bg",
+                    "texture": {
+                        "key": "epfphone",
+                        "frame": "bg"
+                    },
+                    "x": -0.01738439992061558,
+                    "y": -0.026804403675726007
+                },
+                {
+                    "type": "Image",
+                    "id": "71566725-96dd-436c-90e1-254390e83383",
+                    "label": "home_btn",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.goToHQ()",
+                    "texture": {
+                        "key": "epfphone",
+                        "frame": "home-btn"
+                    },
+                    "x": 0.4826156000793844,
+                    "y": 363.9731955963243
+                },
+                {
+                    "type": "Container",
+                    "id": "27d4de44-72a9-4854-aefd-e91ecf69cd0c",
+                    "label": "teleport_page",
+                    "scope": "CLASS",
+                    "x": -149,
+                    "y": -246,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "72f415a5-a564-435f-998a-26f2f0d08c4c",
+                            "label": "teleport",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "teleport"
+                            },
+                            "x": -174,
+                            "y": 246
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "34a7ff93-19ac-4f25-8262-415fcae78f6b",
+                            "label": "tp_anim",
+                            "scope": "CLASS",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "anim0001"
+                            },
+                            "x": 140,
+                            "y": 256,
+                            "visible": false
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3ee5ed24-ee7c-4f02-8f71-bb58bef17dc4",
+                            "label": "tp_text",
+                            "scope": "CLASS",
+                            "x": 140,
+                            "y": 364,
+                            "originX": 0.5,
+                            "visible": false,
+                            "text": "TELEPORTING TO\nPLACE",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "30px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "ec7da8f4-3a96-4533-ae87-6507772e87f8",
+                            "label": "tpitem_container",
+                            "scope": "CLASS"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7a6d56f3-8306-49dc-ac21-c5967b554c2a",
+                            "label": "bar",
+                            "scope": "CLASS",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "bar"
+                            },
+                            "x": 316.5,
+                            "y": 126
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "2870e93b-1dac-4c98-8da1-226f9770520a",
+                    "label": "select_page",
+                    "scope": "CLASS",
+                    "x": -90.01738439992062,
+                    "y": -205.02680440367573,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "71490d14-b2c3-4d1c-9acc-7d4e25c567d8",
+                            "label": "gear_txt",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "epfphone-gear",
+                            "y": 80,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "GEAR",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7a63c7a8-9c5d-46f3-b5c6-5087c1fa2fa1",
+                            "label": "gear_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.showGearPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "gear-btn"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Text",
+                            "id": "07aa1508-da98-4646-8b12-d51c387090c6",
+                            "label": "missions_txt",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "epfphone-missions",
+                            "x": 180,
+                            "y": 80,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "MISSIONS",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "23b93e0c-6c99-4e4d-9016-d4e8f3c36d06",
+                            "label": "missions_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.showMissionsPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "missions-btn"
+                            },
+                            "x": 180,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9b189f96-a021-4607-85f9-a7b9e3b9cf8b",
+                            "label": "teleport_txt",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "epfphone-teleport",
+                            "y": 260,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "TELEPORT",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d091da97-50e3-4c7e-8553-5c4c56380799",
+                            "label": "teleport_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.showTeleportPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "teleport-btn"
+                            },
+                            "y": 180,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3fe86700-be04-4aa2-ac7e-a5295c84df51",
+                            "label": "messages_txt",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "epfphone-messages",
+                            "x": 180,
+                            "y": 260,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "MESSAGES",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "79aa69c3-237f-4189-b9f3-a857a4ccb92c",
+                            "label": "messages_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.showMessagesPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "messages-btn"
+                            },
+                            "x": 180,
+                            "y": 180,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Text",
+                            "id": "23eb3a1c-0bf5-40ec-bf1b-a67c69bcbd6e",
+                            "label": "gadgets_txt",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "epfphone-gadgets",
+                            "y": 440,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "GADGETS",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d04e46cf-12fb-4fb9-822c-fad0655bc7ab",
+                            "label": "gadgets_button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.showGadgetsPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "gadgets-button"
+                            },
+                            "y": 360,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f25e9aed-3cc2-4531-ad78-40674f9b87d1",
+                            "label": "puffle_txt",
+                            "components": [
+                                "LocalisedString"
+                            ],
+                            "LocalisedString.id": "epfphone-elitepuffle",
+                            "x": 180,
+                            "y": 440,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "visible": false,
+                            "text": "ELITE PUFFLE",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "28px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "19a4f10b-6de0-4b12-a38e-ce4f1a8fc061",
+                            "label": "puffle_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.showElitePufflePage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "puffle-btn"
+                            },
+                            "x": 180,
+                            "y": 360,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "04c85812-745b-4893-9b59-34e1d1fd17f0",
+                    "label": "white_x",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.stop()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 238,
+                    "y": -387,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

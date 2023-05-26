@@ -35,6 +35,8 @@ export default class IglooEdit extends BaseScene {
         this.scrollBarContainer
         /** @type {Phaser.GameObjects.Container} */
         this.upper
+        /** @type {IglooMusic} */
+        this.iglooMusic
         /** @type {Phaser.GameObjects.Container} */
         this.controls
         /** @type {Phaser.GameObjects.Image} */
@@ -81,11 +83,6 @@ export default class IglooEdit extends BaseScene {
         const button_box = this.add.image(1424.9985859979595, 883.0016987305266, 'iglooedit-new', 'cardboardbox')
         button_box.setOrigin(0.5, 0.584)
         controls.add(button_box)
-
-        // iglooMusic
-        const iglooMusic = new IglooMusic(this, 759.9985859979596, 480.0016987305264)
-        iglooMusic.visible = false
-        controls.add(iglooMusic)
 
         // lower
         const lower = this.add.container(56.99858594592661, 25.001698585925624)
@@ -249,6 +246,11 @@ export default class IglooEdit extends BaseScene {
         const rounded_rect_thin_3 = this.add.image(12, 0, 'iglooedit-new', 'rounded_rect_thin')
         rounded_rect_thin_3.scaleY = 0.6
         scroller.add(rounded_rect_thin_3)
+
+        // iglooMusic
+        const iglooMusic = new IglooMusic(this, 759.9985859979596, 480.0016987305264)
+        iglooMusic.visible = false
+        controls.add(iglooMusic)
 
         // chooseIgloo
         const chooseIgloo = this.add.container(0, 0)
@@ -467,6 +469,7 @@ export default class IglooEdit extends BaseScene {
 
         // big_button (components)
         const big_buttonButton = new Button(big_button)
+        big_buttonButton.callback = () => (this.iglooMusic.visible = true)
 
         // small_btn (components)
         const small_btnButton = new Button(small_btn)
@@ -544,6 +547,7 @@ export default class IglooEdit extends BaseScene {
         this.scroller = scroller
         this.scrollBarContainer = scrollBarContainer
         this.upper = upper
+        this.iglooMusic = iglooMusic
         this.controls = controls
         this.toggler = toggler
         this.grandTotalLikes = grandTotalLikes

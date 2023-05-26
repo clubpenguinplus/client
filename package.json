@@ -1,6 +1,6 @@
 {
   "name": "clubpenguinplus",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Club-Penguin-Plus-Official/client.git"
+    "url": "git+https://github.com/clubpenguinplus/client.git"
   },
   "author": "Club Penguin Plus",
   "bugs": {
-    "url": "https://github.com/Club-Penguin-Plus-Official/client/issues"
+    "url": "https://clubpenguinplus.atlassian.net/browse/BUG"
   },
   "homepage": "https://www.cpplus.pw",
   "devDependencies": {
@@ -28,11 +28,11 @@
     "babel-plugin-transform-remove-console": "^6.9.4",
     "core-js": "^3.30.2",
     "javascript-obfuscator": "^4.0.2",
-    "phasereditor2d-launcher": "^3.60.3",
+    "phasereditor2d-launcher": "^3.61.0",
     "phasereditor2d-ninepatch-plugin": "^1.2.0",
     "socket.io-client": "^4.6.1",
-    "webpack": "^5.82.0",
-    "webpack-cli": "^5.1.0",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0",
     "webpack-obfuscator": "^3.5.1"
   },
@@ -41,6 +41,7 @@
     "@analytics/google-analytics": "^1.0.5",
     "analytics": "^0.8.1",
     "crypto-js": "^4.1.1",
-    "devtools-detect": "^4.0.1"
+    "devtools-detect": "^4.0.1",
+    "phaser": "^3.60.0"
   }
 }

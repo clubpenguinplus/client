@@ -11,12 +11,10 @@ if (!localStorage.getItem('debugMode')) {
     localStorage.setItem('debugMode', 'false')
 }
 
-if (localStorage.quality == 'low') {
-    window.currentScale = 0.4
-} else if (localStorage.quality == 'medium') {
-    window.currentScale = 0.7
+let settings = JSON.parse(localStorage.getItem('settings'))
+if (settings) {
+    window.currentScale = settings.vq == 1 ? 0.4 : settings.vq == 2 ? 0.7 : 1
 } else {
-    localStorage.quality = 'high'
     window.currentScale = 1
 }
 
@@ -42,10 +40,6 @@ const clubpenguinplus = {
             },
             gravity: false,
         },
-    },
-
-    plugins: {
-        global: [NineSlice.Plugin.DefaultCfg],
     },
 
     scale: {

@@ -1,3 +1,4 @@
+import Phaser from 'phaser'
 export default class BaseScene extends Phaser.Scene {
     get crumbs() {
         return this.game.crumbs

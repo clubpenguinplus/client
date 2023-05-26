@@ -35,6 +35,7 @@ export default class Penguin extends BaseContainer {
         this.direction
 
         this.nameTag = penguinLoader.addName(this)
+        this.nameTag.visible = !this.shell.settings.hn
 
         // Active balloon
         this.balloon
@@ -50,6 +51,8 @@ export default class Penguin extends BaseContainer {
         this.afterMove
 
         this.load()
+
+        this.visible = !this.shell.settings.ho || this.id == this.shell.client.id
     }
 
     get isTweening() {

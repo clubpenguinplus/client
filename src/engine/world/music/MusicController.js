@@ -14,11 +14,11 @@ export default class MusicController extends Phaser.Scene {
     }
 
     get musicMuted() {
-        return this.shell.muteMusic
+        return this.shell.settings.mv == 0
     }
 
     get sfxMuted() {
-        return this.shell.muteAll
+        return this.shell.settings.sv == 0
     }
 
     addMusic(track, fileExtension = 'mp3') {
@@ -26,16 +26,18 @@ export default class MusicController extends Phaser.Scene {
             this.sound.stopAll()
             this.music = null
             this.musicPlaying = null
+            this.mtrack = null
             return
         }
-
-        if (this.musicMuted) return
 
         if (track == this.music || `music/${track}` == this.musicPlaying) {
             return
         }
 
         this.sound.stopAll()
+        this.mtrack = null
+
+        if (this.musicMuted) return
 
         let audio = 0
         for (let item of Object.keys(this.shell.cache.audio.entries.entries)) {
@@ -69,7 +71,7 @@ export default class MusicController extends Phaser.Scene {
             return
         }
 
-        this.mtrack = this.sound.add(key, {loop: true, volume: localStorage.musicVolume || 0.5})
+        this.mtrack = this.sound.add(key, {loop: true, volume: this.shell.settings.mv})
         this.mtrack.play()
         this.musicPlaying = key
     }
@@ -78,7 +80,7 @@ export default class MusicController extends Phaser.Scene {
         // Rate limit to 20 sounds per second
         if (this.lastPlayed[key] && Date.now() - this.lastPlayed[key] < 50) return
         this.lastPlayed[key] = Date.now()
-        this.sound.add(key, {loop: loop, volume: localStorage.musicVolume || 0.5}).play()
+        this.sound.add(key, {loop: loop, volume: this.shell.settings.sv}).play()
         if (loop) {
             this.sfxLooping.push(key)
         }
@@ -124,17 +126,21 @@ export default class MusicController extends Phaser.Scene {
         }, 20000)
     }
 
-    volumeUp() {
-        if (!localStorage.musicVolume) localStorage.musicVolume = 0.5
-        localStorage.musicVolume = parseFloat(localStorage.musicVolume) + 0.1 <= 1 ? parseFloat(localStorage.musicVolume) + 0.1 : 1
-
-        if (this.mtrack) this.mtrack.setVolume(localStorage.musicVolume)
+    setMusicVolume(volume) {
+        this.shell.settings.mv = volume
+        if (this.mtrack) {
+            this.mtrack.setVolume(volume)
+        } else if (this.shell.room.music) {
+            this.addMusic(this.shell.room.music)
+        }
     }
 
-    volumeDown() {
-        if (!localStorage.musicVolume) localStorage.musicVolume = 0.5
-        localStorage.musicVolume = parseFloat(localStorage.musicVolume) - 0.1 >= 0.1 ? parseFloat(localStorage.musicVolume) - 0.1 : 0.1
-
-        if (this.mtrack) this.mtrack.setVolume(localStorage.musicVolume)
+    setSfxVolume(volume) {
+        this.shell.settings.sv = volume
+        if (this.sfxLooping) {
+            this.sfxLooping.forEach((key) => {
+                this.sound.setVolume(volume, key)
+            })
+        }
     }
 }
