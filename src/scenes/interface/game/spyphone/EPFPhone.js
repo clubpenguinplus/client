@@ -1,5 +1,6 @@
-import Closeup from './Closeup'
+import Closeup from '@scenes/interface/closeups/Closeup'
 import TeleportItem from './TeleportItem'
+import MissionItem from './MissionItem'
 import {Button, LocalisedString, Interactive, SimpleButton} from '@components/components'
 
 /* START OF COMPILED CODE */
@@ -18,10 +19,26 @@ export default class EPFPhone extends Closeup {
         this.bar
         /** @type {Phaser.GameObjects.Container} */
         this.teleport_page
+        /** @type {MissionItem} */
+        this.weekly_m2
+        /** @type {MissionItem} */
+        this.weekly_m1
+        /** @type {MissionItem} */
+        this.daily_m3
+        /** @type {MissionItem} */
+        this.daily_m2
+        /** @type {MissionItem} */
+        this.daily_m1
+        /** @type {Phaser.GameObjects.Container} */
+        this.missions_page
         /** @type {Phaser.GameObjects.Container} */
         this.select_page
         /** @type {Phaser.GameObjects.Container} */
         this.phone_container
+        /** @type {MissionItem[]} */
+        this.dailyMissionsList
+        /** @type {MissionItem[]} */
+        this.weeklyMissionsList
 
         /* START-USER-CTR-CODE */
         // Write your code here.
@@ -81,6 +98,71 @@ export default class EPFPhone extends Closeup {
         // bar
         const bar = this.add.image(316.5, 126, 'epfphone', 'bar')
         teleport_page.add(bar)
+
+        // tp_header
+        const tp_header = this.add.text(147.2984619140625, -12.323165893554688, '', {})
+        tp_header.setOrigin(0.5, 0.5)
+        tp_header.text = 'TELEPORT'
+        tp_header.setStyle({color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '36px', fontStyle: 'bold'})
+        teleport_page.add(tp_header)
+
+        // tp_goBack_btn
+        const tp_goBack_btn = this.add.rectangle(-7, -12, 50, 50)
+        teleport_page.add(tp_goBack_btn)
+
+        // missions_page
+        const missions_page = this.add.container(-452, -27)
+        missions_page.visible = false
+        phone_container.add(missions_page)
+
+        // missions
+        const missions = this.add.image(0, 0, 'epfphone', 'missions')
+        missions_page.add(missions)
+
+        // weekly_m2
+        const weekly_m2 = new MissionItem(this, 272, 260)
+        missions_page.add(weekly_m2)
+
+        // weekly_m1
+        const weekly_m1 = new MissionItem(this, 272, 170)
+        missions_page.add(weekly_m1)
+
+        // missions_weekly
+        const missions_weekly = this.add.text(270, 140, '', {})
+        missions_weekly.setOrigin(0, 0.5)
+        missions_weekly.text = 'WEEKLY'
+        missions_weekly.setStyle({color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '36px', fontStyle: 'bold'})
+        missions_page.add(missions_weekly)
+
+        // daily_m3
+        const daily_m3 = new MissionItem(this, 272, 40)
+        missions_page.add(daily_m3)
+
+        // daily_m2
+        const daily_m2 = new MissionItem(this, 272, -50)
+        missions_page.add(daily_m2)
+
+        // daily_m1
+        const daily_m1 = new MissionItem(this, 270, -140)
+        missions_page.add(daily_m1)
+
+        // missions_daily
+        const missions_daily = this.add.text(270, -165, '', {})
+        missions_daily.setOrigin(0, 0.5)
+        missions_daily.text = 'DAILY'
+        missions_daily.setStyle({color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '36px', fontStyle: 'bold'})
+        missions_page.add(missions_daily)
+
+        // missions_header
+        const missions_header = this.add.text(440, -235, '', {})
+        missions_header.setOrigin(0.5, 0.5)
+        missions_header.text = 'MISSIONS'
+        missions_header.setStyle({color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '36px', fontStyle: 'bold'})
+        missions_page.add(missions_header)
+
+        // m_goBack_btn
+        const m_goBack_btn = this.add.rectangle(292, -235, 50, 50)
+        missions_page.add(m_goBack_btn)
 
         // select_page
         const select_page = this.add.container(-90.01738439992062, -205.02680440367573)
@@ -172,12 +254,40 @@ export default class EPFPhone extends Closeup {
         white_x.scaleY = 0.6
         phone_container.add(white_x)
 
+        // lists
+        const dailyMissionsList = [daily_m1, daily_m2, daily_m3]
+        const weeklyMissionsList = [weekly_m1, weekly_m2]
+
         // block (components)
         new Interactive(block)
 
         // home_btn (components)
         const home_btnButton = new Button(home_btn)
         home_btnButton.callback = () => this.goToHQ()
+
+        // tp_header (components)
+        const tp_headerLocalisedString = new LocalisedString(tp_header)
+        tp_headerLocalisedString.id = 'epfphone-teleport'
+
+        // tp_goBack_btn (components)
+        const tp_goBack_btnSimpleButton = new SimpleButton(tp_goBack_btn)
+        tp_goBack_btnSimpleButton.callback = () => this.showSelectPage()
+
+        // missions_weekly (components)
+        const missions_weeklyLocalisedString = new LocalisedString(missions_weekly)
+        missions_weeklyLocalisedString.id = 'epfphone-missions'
+
+        // missions_daily (components)
+        const missions_dailyLocalisedString = new LocalisedString(missions_daily)
+        missions_dailyLocalisedString.id = 'epfphone-missions'
+
+        // missions_header (components)
+        const missions_headerLocalisedString = new LocalisedString(missions_header)
+        missions_headerLocalisedString.id = 'epfphone-missions'
+
+        // m_goBack_btn (components)
+        const m_goBack_btnSimpleButton = new SimpleButton(m_goBack_btn)
+        m_goBack_btnSimpleButton.callback = () => this.showSelectPage()
 
         // gear_txt (components)
         const gear_txtLocalisedString = new LocalisedString(gear_txt)
@@ -236,8 +346,16 @@ export default class EPFPhone extends Closeup {
         this.tpitem_container = tpitem_container
         this.bar = bar
         this.teleport_page = teleport_page
+        this.weekly_m2 = weekly_m2
+        this.weekly_m1 = weekly_m1
+        this.daily_m3 = daily_m3
+        this.daily_m2 = daily_m2
+        this.daily_m1 = daily_m1
+        this.missions_page = missions_page
         this.select_page = select_page
         this.phone_container = phone_container
+        this.dailyMissionsList = dailyMissionsList
+        this.weeklyMissionsList = weeklyMissionsList
 
         this.events.emit('scene-awake')
     }
@@ -298,11 +416,19 @@ export default class EPFPhone extends Closeup {
         this.shell.client.sendJoinRoom(id, room.key, room.x, room.y, 80)
     }
 
-    showSelectPage() {}
+    showSelectPage() {
+        for (let page of ['teleport_page', 'select_page', 'gear_page', 'messages_page', 'gadgets_page', 'puffle_page']) {
+            if (this[page]) this[page].visible = false
+        }
+        this.select_page.visible = true
+    }
 
     showGearPage() {}
 
-    showMissionsPage() {}
+    showMissionsPage() {
+        this.select_page.visible = false
+        this.missions_page.visible = true
+    }
 
     showTeleportPage() {
         this.teleport_page.visible = true

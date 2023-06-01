@@ -1,0 +1,121 @@
+{
+    "id": "8b815858-f4b1-485d-a6c2-87160ed484a5",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "2270175f-64b5-4967-bed9-636efe505240",
+            "label": "container_1",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "93783817-0863-4792-80b8-574278d470e4",
+                    "label": "completion",
+                    "scope": "CLASS",
+                    "x": 365,
+                    "y": 61,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "alpha": 0.8,
+                    "alphaTopLeft": 0.8,
+                    "alphaTopRight": 0.8,
+                    "alphaBottomLeft": 0.8,
+                    "alphaBottomRight": 0.8,
+                    "text": "88/888",
+                    "fixedWidth": 365,
+                    "align": "right",
+                    "fontFamily": "cpRasterGothTwentyEightCnd",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7eecdeff"
+                },
+                {
+                    "type": "Text",
+                    "id": "49a77aa4-69fb-4be8-8725-fa14dba0a022",
+                    "label": "title",
+                    "scope": "CLASS",
+                    "alpha": 0.8,
+                    "alphaTopLeft": 0.8,
+                    "alphaTopRight": 0.8,
+                    "alphaBottomLeft": 0.8,
+                    "alphaBottomRight": 0.8,
+                    "text": "Challenge goes here. Explain challenge clearly but concisely.",
+                    "fixedWidth": 365,
+                    "fontFamily": "cpRasterGothTwentyEightCnd",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7eecdeff",
+                    "wordWrapWidth": 365
+                },
+                {
+                    "type": "Text",
+                    "id": "ccede1c5-ae09-4381-9840-d5123421630b",
+                    "label": "reward",
+                    "scope": "CLASS",
+                    "y": 61,
+                    "originY": 0.5,
+                    "alpha": 0.8,
+                    "alphaTopLeft": 0.8,
+                    "alphaTopRight": 0.8,
+                    "alphaBottomLeft": 0.8,
+                    "alphaBottomRight": 0.8,
+                    "text": "5",
+                    "fixedWidth": 365,
+                    "paddingLeft": 23,
+                    "fontFamily": "cpRasterGothTwentyEightCnd",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#7eecdeff"
+                },
+                {
+                    "type": "Image",
+                    "id": "000cad67-1962-42fb-8eb8-8e0cb67f3394",
+                    "label": "currency_icon",
+                    "texture": {
+                        "key": "epfphone",
+                        "frame": "gear-btn-hover"
+                    },
+                    "x": 10,
+                    "y": 62,
+                    "scaleX": 0.12166123706214643,
+                    "scaleY": 0.12166123706214643,
+                    "alpha": 0.8,
+                    "alphaTopLeft": 0.8,
+                    "alphaTopRight": 0.8,
+                    "alphaBottomLeft": 0.8,
+                    "alphaBottomRight": 0.8
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "challengeID",
+            "label": "Challenge ID",
+            "tooltip": "The ID of the challenge",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}
