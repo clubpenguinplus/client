@@ -116,6 +116,16 @@
             "type": {
                 "id": "number"
             }
+        },
+        {
+            "name": "isGlobal",
+            "label": "is global?",
+            "tooltip": "Is a weekly (global) challenge",
+            "defValue": false,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
         }
     ]
 }

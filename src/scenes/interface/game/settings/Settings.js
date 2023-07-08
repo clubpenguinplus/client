@@ -1254,7 +1254,7 @@ export default class Settings extends BaseContainer {
         this.mfa_switch2.setFrame('switcher-selected')
         this.mfa_switch1.setFrame('switcher-unselected')
         this.mfa_switcher.bringToTop(this.mfa_switch2)
-        if (!this.data.twoFactorEnabled) {
+        if (!this.data.mfa) {
             this.airtower.sendXt('sett#enable2fa')
         }
     }
@@ -1263,7 +1263,7 @@ export default class Settings extends BaseContainer {
         this.mfa_switch1.setFrame('switcher-selected')
         this.mfa_switch2.setFrame('switcher-unselected')
         this.mfa_switcher.bringToTop(this.mfa_switch1)
-        if (this.data.twoFactorEnabled) {
+        if (this.data.mfa) {
             this.airtower.sendXt('sett#disable2fa')
         }
     }

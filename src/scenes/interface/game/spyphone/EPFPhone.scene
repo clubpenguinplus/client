@@ -188,10 +188,12 @@
                             "id": "7c1cb8c0-ed1f-4629-aa84-f9d17eb03f84",
                             "unlock": [
                                 "x",
-                                "y"
+                                "y",
+                                "isGlobal"
                             ],
                             "label": "weekly_m2",
                             "scope": "CLASS",
+                            "isGlobal": true,
                             "x": 272,
                             "y": 260
                         },
@@ -200,10 +202,12 @@
                             "id": "e7f2d40e-aecc-4131-9123-32b441bdef06",
                             "unlock": [
                                 "x",
-                                "y"
+                                "y",
+                                "isGlobal"
                             ],
                             "label": "weekly_m1",
                             "scope": "CLASS",
+                            "isGlobal": true,
                             "x": 272,
                             "y": 170
                         },
@@ -214,7 +218,7 @@
                             "components": [
                                 "LocalisedString"
                             ],
-                            "LocalisedString.id": "epfphone-missions",
+                            "LocalisedString.id": "epfphone-missions-weekly",
                             "x": 270,
                             "y": 140,
                             "originY": 0.5,
@@ -267,7 +271,7 @@
                             "components": [
                                 "LocalisedString"
                             ],
-                            "LocalisedString.id": "epfphone-missions",
+                            "LocalisedString.id": "epfphone-missions-daily",
                             "x": 270,
                             "y": -165,
                             "originY": 0.5,
