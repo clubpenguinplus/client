@@ -279,7 +279,8 @@ export default class Shell extends BaseScene {
             username_rejected: stringArray[18],
             walking: stringArray[19],
             epfStatus: stringArray[20],
-            joinTime: stringArray[21]
+            joinTime: stringArray[21],
+            medals: stringArray[22]
         }
     }
 

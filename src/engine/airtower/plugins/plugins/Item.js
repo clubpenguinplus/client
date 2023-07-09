@@ -7,7 +7,8 @@ export default class Item extends Plugin {
             up: this.updatePlayer,
             ai: this.addItem,
             aci: this.addCodeItem,
-            ac: this.addCoins
+            ac: this.addCoins,
+            sepfm: this.setMedals
         }
     }
 
@@ -61,5 +62,9 @@ export default class Item extends Plugin {
 
         // Update catalog coins
         this.interface.updateCatalogCoins(args[0])
+    }
+
+    setMedals(args) {
+        this.client.medals = args[0]
     }
 }

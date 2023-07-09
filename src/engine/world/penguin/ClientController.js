@@ -12,16 +12,16 @@ export default class ClientController {
         // Assign user attributes
 
         this.string = this.shell.arrayToObject(args[0], true)
+        Object.assign(this, this.string)
 
         this.room = args[1]
-        this.joinTime = args[2]
-        this.stampbookClasp = args[3]
-        this.stampbookColor = args[4]
-        this.stampbookPattern = args[5]
-        this.customStamps = args[6]
-        this.cannonData = args[7]
+        this.stampbookClasp = args[2]
+        this.stampbookColor = args[3]
+        this.stampbookPattern = args[4]
+        this.customStamps = args[5]
+        this.cannonData = args[6]
 
-        this.friends = typeof args[8] == 'string' ? args[8].split(',').filter((e) => e != '') : args[8]
+        this.friends = typeof args[7] == 'string' ? args[7].split(',').filter((e) => e != '') : args[7]
         for (let friend in this.friends) {
             let temp = this.friends[friend].split('|')
             this.friends[friend] = {
@@ -32,7 +32,7 @@ export default class ClientController {
             }
         }
 
-        this.ignores = typeof args[9] == 'string' ? args[9].split(',').filter((e) => e != '') : args[9]
+        this.ignores = typeof args[8] == 'string' ? args[8].split(',').filter((e) => e != '') : args[8]
         for (let ignore in this.ignores) {
             let temp = this.ignores[ignore].split('|')
             this.ignores[ignore] = {
@@ -40,9 +40,9 @@ export default class ClientController {
                 username: temp[1]
             }
         }
-        this.inventory = typeof args[10] == 'string' ? args[10].split(',').filter((e) => e != '') : []
+        this.inventory = typeof args[9] == 'string' ? args[9].split(',').filter((e) => e != '') : []
 
-        this.iglooInventory = typeof args[11] == 'string' ? args[11].split(',').filter((e) => e != '') : []
+        this.iglooInventory = typeof args[10] == 'string' ? args[10].split(',').filter((e) => e != '') : []
         for (let item in this.iglooInventory) {
             this.iglooInventory[item] = {
                 id: parseInt(this.iglooInventory[item]),
@@ -51,7 +51,7 @@ export default class ClientController {
             }
         }
 
-        this.furnitureInventory = typeof args[12] == 'string' ? args[12].split(',').filter((e) => e != '') : []
+        this.furnitureInventory = typeof args[11] == 'string' ? args[11].split(',').filter((e) => e != '') : []
         for (let item in this.furnitureInventory) {
             let temp = this.furnitureInventory[item].split(':')
             this.furnitureInventory[item] = {
@@ -61,13 +61,13 @@ export default class ClientController {
             }
         }
 
-        this.stamps = typeof args[13] == 'string' ? args[13].split(',').filter((e) => e != '') : []
+        this.stamps = typeof args[12] == 'string' ? args[12].split(',').filter((e) => e != '') : []
         this.stamps = this.stamps.map((stamp) => parseInt(stamp))
 
-        this.postcards = typeof args[14] == 'string' ? args[14].split(',').filter((e) => e != '') : []
-        this.pending = typeof args[15] == 'string' ? args[15].split(',').filter((e) => e != '') : []
+        this.postcards = typeof args[13] == 'string' ? args[13].split(',').filter((e) => e != '') : []
+        this.pending = typeof args[14] == 'string' ? args[14].split(',').filter((e) => e != '') : []
 
-        this.floorInventory = typeof args[16] == 'string' ? args[16].split(',').filter((e) => e != '') : []
+        this.floorInventory = typeof args[15] == 'string' ? args[15].split(',').filter((e) => e != '') : []
         for (let item in this.floorInventory) {
             this.floorInventory[item] = {
                 id: parseInt(this.floorInventory[item]),
@@ -76,7 +76,7 @@ export default class ClientController {
             }
         }
 
-        this.locationInventory = typeof args[17] == 'string' ? args[17].split(',').filter((e) => e != '') : []
+        this.locationInventory = typeof args[16] == 'string' ? args[16].split(',').filter((e) => e != '') : []
         for (let item in this.locationInventory) {
             this.locationInventory[item] = {
                 id: parseInt(this.locationInventory[item]),
@@ -85,11 +85,7 @@ export default class ClientController {
             }
         }
 
-        this.sessionId = args[18]
-
-        this.coins = this.string.coins
-        this.rank = this.string.rank
-        this.id = this.string.id
+        this.sessionId = args[17]
 
         this.iglooOpen = false
 

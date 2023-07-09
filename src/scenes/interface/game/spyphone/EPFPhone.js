@@ -531,6 +531,8 @@ export default class EPFPhone extends Closeup {
             let cPrefab = this.dailyMissionsList[c]
             if (cPrefab && challenge.id) {
                 cPrefab.challengeID = challenge.id
+                cPrefab.challengeCompletion = challenge.progress
+                cPrefab.isComplete = challenge.complete
                 cPrefab.createItem()
             }
         }
@@ -539,6 +541,8 @@ export default class EPFPhone extends Closeup {
             let cPrefab = this.weeklyMissionsList[c]
             if (cPrefab && challenge.id) {
                 cPrefab.challengeID = challenge.id
+                cPrefab.challengeCompletion = challenge.progress
+                cPrefab.isComplete = challenge.complete
                 cPrefab.createItem()
             }
         }

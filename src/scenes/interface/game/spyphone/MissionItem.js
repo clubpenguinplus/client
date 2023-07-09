@@ -81,7 +81,7 @@ export default class MissionItem extends BaseContainer {
     createItem() {
         let challenge = this.crumbs.challenges[this.isGlobal ? 'global' : 'daily'][this.challengeID]
         this.title.text = challenge.info
-        this.completion.text = `${0}/${challenge.completion}`
+        this.completion.text = `${this.isComplete ? challenge.completion : this.challengeCompletion}/${challenge.completion}`
         this.reward.text = challenge.reward
         this.visible = true
     }
