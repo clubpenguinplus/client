@@ -210,8 +210,8 @@ const rooms = {
     804: {
         key: 'Boiler',
         scene: require('@rooms/boiler/Boiler').default,
-        x: 770,
-        y: 400,
+        x: 610,
+        y: 620,
     },
     805: {
         key: 'Berg',
