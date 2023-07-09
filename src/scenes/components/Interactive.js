@@ -15,7 +15,7 @@ export default class Interactive {
 
         this.gameObject.setInteractive({
             cursor: 'default',
-            pixelPerfect: false,
+            pixelPerfect: false
         })
         this.gameObject.isInteractive = true
 

@@ -96,7 +96,7 @@ export default class BackgroundsPage extends Page {
         {x: 975, y: 350},
         {x: 1235, y: 350},
         {x: 975, y: 610},
-        {x: 1235, y: 610},
+        {x: 1235, y: 610}
     ]
 
     setBackgrounds(bgArray) {

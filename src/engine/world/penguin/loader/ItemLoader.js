@@ -36,7 +36,7 @@ export default class ItemLoader extends SpriteLoader {
         this.load.multiatlas({
             key: key,
             atlasURL: `${this.url}/${item}.json`,
-            path: `${this.url}`,
+            path: `${this.url}`
         })
     }
 

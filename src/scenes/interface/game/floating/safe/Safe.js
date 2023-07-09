@@ -51,7 +51,7 @@ export default class Safe extends FloatingMenu {
         this.cellHeight = 64
         this.cellWidth = {
             1: 268,
-            2: 532,
+            2: 532
         }
 
         this.timer

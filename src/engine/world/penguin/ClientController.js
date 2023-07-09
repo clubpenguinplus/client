@@ -28,7 +28,7 @@ export default class ClientController {
                 id: parseInt(temp[0]),
                 username: temp[1],
                 online: temp[2] == '1' ? true : false,
-                isBff: temp[3] == '1' ? 1 : 0,
+                isBff: temp[3] == '1' ? 1 : 0
             }
         }
 
@@ -37,7 +37,7 @@ export default class ClientController {
             let temp = this.ignores[ignore].split('|')
             this.ignores[ignore] = {
                 id: parseInt(temp[0]),
-                username: temp[1],
+                username: temp[1]
             }
         }
         this.inventory = typeof args[10] == 'string' ? args[10].split(',').filter((e) => e != '') : []
@@ -47,7 +47,7 @@ export default class ClientController {
             this.iglooInventory[item] = {
                 id: parseInt(this.iglooInventory[item]),
                 quantity: 1,
-                type: 'igloo',
+                type: 'igloo'
             }
         }
 
@@ -57,7 +57,7 @@ export default class ClientController {
             this.furnitureInventory[item] = {
                 id: parseInt(temp[0]),
                 quantity: parseInt(temp[1]),
-                type: 'furniture',
+                type: 'furniture'
             }
         }
 
@@ -72,7 +72,7 @@ export default class ClientController {
             this.floorInventory[item] = {
                 id: parseInt(this.floorInventory[item]),
                 quantity: 1,
-                type: 'flooring',
+                type: 'flooring'
             }
         }
 
@@ -81,7 +81,7 @@ export default class ClientController {
             this.locationInventory[item] = {
                 id: parseInt(this.locationInventory[item]),
                 quantity: 1,
-                type: 'location',
+                type: 'location'
             }
         }
 
@@ -119,7 +119,7 @@ export default class ClientController {
 
             emote_key: () => (this.emoteKeyPressed = true),
             send_emote: (id) => this.sendEmote(id),
-            send_safe: (id) => this.sendSafe(id),
+            send_safe: (id) => this.sendSafe(id)
         }
 
         this.lockRotation = false

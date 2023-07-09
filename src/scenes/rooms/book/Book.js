@@ -33,12 +33,12 @@ export default class Book extends RoomScene {
             coffee: () => this.triggerRoom(110, 760, 480),
             printerone: {
                 callback: () => this.playPrintingPress(),
-                offCallback: () => this.stopPrintingPress(),
+                offCallback: () => this.stopPrintingPress()
             },
             printertwo: {
                 callback: () => this.playPrintingPress(),
-                offCallback: () => this.stopPrintingPress(),
-            },
+                offCallback: () => this.stopPrintingPress()
+            }
         }
 
         this.loadSfx = ['book-printingpress', 'book-doorlighton', 'book-doorlightoff', 'book-bookopen', 'book-bookclose']

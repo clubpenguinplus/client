@@ -5,7 +5,7 @@ export default class Item extends Plugin {
         super(airtower)
         this.events = {
             gca: this.getCodeAttrs,
-            gci: this.getCodeItems,
+            gci: this.getCodeItems
         }
     }
 

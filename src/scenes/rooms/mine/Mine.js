@@ -14,7 +14,7 @@ export default class Mine extends RoomScene {
             cart: () => this.triggerGame('cartsurfer', 905, 'ruffle'),
             gold: () => this.triggerRoom(813, 350, 680),
             rescue: () => this.triggerGame('pufflerescue', 927, 'ruffle'),
-            shack: () => this.triggerRoom(807, 925, 538),
+            shack: () => this.triggerRoom(807, 925, 538)
         }
         this.music = 675
         this.loadSfx = ['mine-cart', 'mine-lighton', 'mine-lightoff', 'mine-phonering']

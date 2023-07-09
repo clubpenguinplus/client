@@ -8,7 +8,7 @@ export default class Puffles extends Plugin {
             psw: this.stopWalking,
             ppw: this.walkPuffle,
             pgp: this.getPuffles,
-            tby: this.toggleBackyard,
+            tby: this.toggleBackyard
         }
     }
 

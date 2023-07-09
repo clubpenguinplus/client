@@ -5,7 +5,7 @@ export default class Postcard extends Plugin {
         super(airtower)
         this.events = {
             upo: this.updatePostcards,
-            send_postcard: this.sendPostcard,
+            send_postcard: this.sendPostcard
         }
     }
 
@@ -16,7 +16,7 @@ export default class Postcard extends Plugin {
             postcards.push({
                 id: args[i][0],
                 sender: args[i][1],
-                details: args[i][2],
+                details: args[i][2]
             })
         }
 

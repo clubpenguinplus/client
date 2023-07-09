@@ -1783,7 +1783,7 @@ export default class Stampbook extends BaseScene {
             3: '#FFAB46',
             4: '#00BCD2',
             5: '#FF60D0',
-            6: '#939496',
+            6: '#939496'
         }
     }
 
@@ -2202,7 +2202,7 @@ export default class Stampbook extends BaseScene {
                     this.indexIcons[current].setFrame(page.index[pg].icon)
 
                     this.indexButtons[current].setInteractive({
-                        cursor: 'pointer',
+                        cursor: 'pointer'
                     })
                     this.indexButtons[current].on('pointerover', () => {
                         this.indexText[cur].setColor('#3c3c3cff')
@@ -2238,7 +2238,7 @@ export default class Stampbook extends BaseScene {
                     this.indexIcons[current].setFrame(page.index[pg].icon)
 
                     this.indexButtons[current].setInteractive({
-                        cursor: 'pointer',
+                        cursor: 'pointer'
                     })
                     this.indexButtons[current].on('pointerover', () => {
                         this.indexText[cur].setColor('#3c3c3cff')
@@ -2344,7 +2344,7 @@ export default class Stampbook extends BaseScene {
         const pin = this.add.image(x, y, 'clothing/icon/' + pinId)
         this.airtower.sendXt('i#gi', pinId)
         pin.setInteractive({
-            cursor: 'pointer',
+            cursor: 'pointer'
         })
         pin.on('pointerout', () => {
             this.stampInfo.visible = false
@@ -2525,7 +2525,7 @@ export default class Stampbook extends BaseScene {
                 text: page.title.text,
                 icon: page.icon.frame,
                 stamps: [],
-                children: [],
+                children: []
             }
 
             if (page.group) {
@@ -2565,7 +2565,7 @@ export default class Stampbook extends BaseScene {
             text: 'All Stamps',
             icon: 'categories/9000',
             stamps: this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.shell.client.inventory['flag'].map((pin) => `pin/${pin}`)),
-            children: [],
+            children: []
         })
 
         let graphics = this.add.graphics()

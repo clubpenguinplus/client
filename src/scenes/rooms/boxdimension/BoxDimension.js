@@ -20,7 +20,7 @@ export default class BoxDimension extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            attic: () => this.triggerRoom(221, 940, 700),
+            attic: () => this.triggerRoom(221, 940, 700)
         }
 
         this.music = 372

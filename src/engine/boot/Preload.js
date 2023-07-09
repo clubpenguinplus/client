@@ -214,7 +214,7 @@ export default class Preload extends BaseScene {
     async loadFont(name, url, style = 'normal', weight = 'normal') {
         var newFont = new FontFace(name, `url('${url}')`, {
             style: style,
-            weight: weight,
+            weight: weight
         })
         await newFont.load()
         document.fonts.add(newFont)

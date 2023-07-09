@@ -16,7 +16,7 @@ export default class Pet extends RoomScene {
             //adopt: () => this.interface.loadExternal('Adopt'),
             adopt: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
             scape: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
-            launch: () => this.triggerGame('pufflelaunch', 928, 'ruffle'),
+            launch: () => this.triggerGame('pufflelaunch', 928, 'ruffle')
         }
         this.music = 659
         this.loadSfx = ['pet-plazadooropen', 'pet-plazadoorclose', 'pet-parkdooropen', 'pet-parkdoorclose', 'pet-hoteldooropen', 'pet-hoteldoorclose', 'pet-pufflebounce']

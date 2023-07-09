@@ -13,7 +13,7 @@ export default class Dojo extends RoomScene {
             dojoext: () => this.triggerRoom(321, 760, 480),
             firedojo: null,
             waterdojo: null,
-            snowdojo: null,
+            snowdojo: null
         }
         this.music = 403
         this.loadSfx = ['dojo-wateropen', 'dojo-waterclose', 'dojo-snowopen', 'dojo-snowclose', 'dojo-fireopen', 'dojo-fireclose']

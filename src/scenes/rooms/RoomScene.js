@@ -164,7 +164,7 @@ export default class RoomScene extends BaseScene {
             }
             return {
                 id: waddle[0],
-                seats: seats,
+                seats: seats
             }
         })
         waddles.forEach((waddle) => {
@@ -391,7 +391,7 @@ export default class RoomScene extends BaseScene {
                 4347: 0,
                 4348: 0,
                 4349: 0,
-                4350: 0,
+                4350: 0
             }
 
             for (let u in this.penguins) {
@@ -425,7 +425,7 @@ export default class RoomScene extends BaseScene {
                 4478: 0,
                 4479: 0,
                 4480: 0,
-                4481: 0,
+                4481: 0
             }
 
             for (let u in this.penguins) {

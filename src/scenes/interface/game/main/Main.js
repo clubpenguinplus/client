@@ -971,7 +971,7 @@ export default class Main extends BaseScene {
 
         this.time.addEvent({
             delay: 10000,
-            callback: () => (this.mainRequestItem.visible = false),
+            callback: () => (this.mainRequestItem.visible = false)
         })
     }
 
@@ -984,7 +984,7 @@ export default class Main extends BaseScene {
         // Hide popup after 10 seconds
         this.time.addEvent({
             delay: 10000,
-            callback: () => (this.onlineItem.visible = false),
+            callback: () => (this.onlineItem.visible = false)
         })
     }
 
@@ -995,10 +995,10 @@ export default class Main extends BaseScene {
             targets: gameObject,
             y: {
                 from: gameObject.startY + from,
-                to: gameObject.startY,
+                to: gameObject.startY
             },
             ease: 'Bounce',
-            duration: 200,
+            duration: 200
         })
     }
 
@@ -1036,7 +1036,7 @@ export default class Main extends BaseScene {
             y: 0,
             delay: 1000,
             duration: 300,
-            onComplete: () => this.onStampTweenComplete(),
+            onComplete: () => this.onStampTweenComplete()
         })
     }
 
@@ -1045,7 +1045,7 @@ export default class Main extends BaseScene {
             targets: this.stampEarned,
             y: -150,
             delay: 1500,
-            duration: 300,
+            duration: 300
         })
     }
 
@@ -1080,7 +1080,7 @@ export default class Main extends BaseScene {
             scaleX: 1,
             scaleY: 1,
             duration: 150,
-            ease: 'Power2',
+            ease: 'Power2'
         })
         this.map.visible = true
     }

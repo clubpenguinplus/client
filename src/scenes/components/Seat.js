@@ -59,7 +59,7 @@ export default class Seat extends EventComponent {
     start() {
         this.gameObject.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: this.pixelPerfect,
+            pixelPerfect: this.pixelPerfect
         })
         this.gameObject.on('pointerup', (pointer) => this.onPointerUp(pointer))
 

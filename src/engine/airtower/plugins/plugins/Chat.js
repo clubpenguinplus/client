@@ -9,7 +9,7 @@ export default class Chat extends Plugin {
             se: this.sendEmote,
             fm: this.filteredMessage,
             owt: this.wiretapChat,
-            owf: this.wiretapFiltered,
+            owf: this.wiretapFiltered
         }
     }
 

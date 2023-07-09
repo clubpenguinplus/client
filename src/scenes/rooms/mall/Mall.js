@@ -11,7 +11,7 @@ export default class Mall extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            plaza: () => this.triggerRoom(300, 924, 504),
+            plaza: () => this.triggerRoom(300, 924, 504)
         }
 
         this.music = 749

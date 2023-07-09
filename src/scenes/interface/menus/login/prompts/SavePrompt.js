@@ -110,7 +110,7 @@ export default class SavePrompt extends BaseContainer {
             callback: this.nextIllustration,
             callbackScope: this,
             loop: true,
-            paused: true,
+            paused: true
         }
 
         this.timer = scene.time.addEvent(this.timerConfig)

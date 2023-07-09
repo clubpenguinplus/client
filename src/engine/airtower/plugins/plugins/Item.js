@@ -7,7 +7,7 @@ export default class Item extends Plugin {
             up: this.updatePlayer,
             ai: this.addItem,
             aci: this.addCodeItem,
-            ac: this.addCoins,
+            ac: this.addCoins
         }
     }
 

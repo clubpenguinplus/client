@@ -37,7 +37,7 @@ const fonts = [
     {name: 'cpRasterGothTwelveCnd', weight: 'bold', url: 'https://media.cpplus.pw/client/fonts/cpRasterGothTwelveCnd-Bold.woff2'},
     {name: 'cpRasterGothTwelveCnd', url: 'https://media.cpplus.pw/client/fonts/cpRasterGothTwelveCnd-Regular.woff2'},
     {name: 'cpRasterGothTwentyEightCnd', weight: 'bold', url: 'https://media.cpplus.pw/client/fonts/cpRasterGothTwentyEightCnd-Bold.woff2'},
-    {name: 'cpRasterGothTwentyEightCnd', url: 'https://media.cpplus.pw/client/fonts/cpRasterGothTwentyEightCnd-Regular.woff2'},
+    {name: 'cpRasterGothTwentyEightCnd', url: 'https://media.cpplus.pw/client/fonts/cpRasterGothTwentyEightCnd-Regular.woff2'}
 ]
 
 export default fonts

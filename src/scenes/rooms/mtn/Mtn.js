@@ -11,7 +11,7 @@ export default class Mtn extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             village: () => this.triggerRoom(200, 760, 480),
-            unknown: () => this.triggerRoom(200, 760, 480),
+            unknown: () => this.triggerRoom(200, 760, 480)
         }
 
         this.music = 590

@@ -36,7 +36,7 @@ export default class WaddleItem extends BaseContainer {
             angle: {from: 0, to: 180},
             duration: 900,
             repeat: -1,
-            ease: 'Cubic',
+            ease: 'Cubic'
         })
 
         /* END-USER-CTR-CODE */

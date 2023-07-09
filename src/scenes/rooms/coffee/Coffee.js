@@ -30,7 +30,7 @@ export default class Coffee extends RoomScene {
             town: () => this.triggerRoom(100, 510, 475),
             book: () => this.triggerRoom(111, 1000, 500),
             beans: () => this.triggerGame('beancounters', 908, 'ruffle'),
-            smoothie: () => this.triggerGame('smoothie', 959, 'waflash'),
+            smoothie: () => this.triggerGame('smoothie', 959, 'waflash')
         }
 
         this.music = 429

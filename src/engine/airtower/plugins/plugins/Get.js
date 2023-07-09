@@ -13,7 +13,7 @@ export default class Get extends Plugin {
             gm: this.getMascots,
             on: this.getOnline,
             gii: this.getItemInfo,
-            gic: this.getCost,
+            gic: this.getCost
         }
     }
 
@@ -26,7 +26,7 @@ export default class Get extends Plugin {
             if (!player) return
             return {
                 id: player.split('|')[0],
-                username: player.split('|')[1],
+                username: player.split('|')[1]
             }
         })
         this.interface.ModPanel.moderator.showUsers(users)

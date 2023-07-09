@@ -12,7 +12,7 @@ export default class Igloo extends Plugin {
             gio: this.getIglooOpen,
             gl: this.getIglooLikes,
             uif: this.updateIglooFurniture,
-            al: this.addLocation,
+            al: this.addLocation
         }
     }
 

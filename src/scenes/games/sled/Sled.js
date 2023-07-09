@@ -143,7 +143,7 @@ class Sled extends GameScene {
             angle: {from: 0, to: 180},
             duration: 900,
             repeat: -1,
-            ease: 'Cubic',
+            ease: 'Cubic'
         })
 
         this.startGame()
@@ -305,7 +305,7 @@ class Sled extends GameScene {
             duration: 100,
             ease: Phaser.Math.Easing.Back.InOut,
 
-            onComplete: () => (this.note.visible = false),
+            onComplete: () => (this.note.visible = false)
         })
     }
 

@@ -32,7 +32,7 @@ export default class Agentcom extends RoomScene {
             lobby: () => this.triggerRoom(212, 760, 480),
             missions: () => null,
             spy: () => null,
-            system: () => null,
+            system: () => null
         }
         this.music = 642
         this.loadSfx = ['agentcom-doorclose', 'agentcom-dooropen', 'agentcom-psa', 'agentcom-spyout', 'agentcom-spyover', 'agentcom-systemout', 'agentcom-systemover']

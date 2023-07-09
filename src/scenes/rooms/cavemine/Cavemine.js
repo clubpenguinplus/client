@@ -13,7 +13,7 @@ export default class Cavemine extends RoomScene {
             gold: () => null,
             hardhat: () => this.interface.prompt.showItem(429),
             mine: () => this.triggerRoom(808, 1000, 650),
-            underground: () => this.triggerRoom(814, 257, 601),
+            underground: () => this.triggerRoom(814, 257, 601)
         }
         this.music = 532
         this.loadSfx = ['cavemine-lighton', 'cavemine-lightoff']

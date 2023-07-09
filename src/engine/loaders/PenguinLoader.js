@@ -11,7 +11,7 @@ export default class PenguinLoader {
             stroke: '#3a3a3aff',
             strokeThickness: 8,
             align: 'center',
-            fixedWidth: 250,
+            fixedWidth: 250
         }
 
         this.nameStyle = {
@@ -19,7 +19,7 @@ export default class PenguinLoader {
             fontSize: 24,
             color: '#000000',
             align: 'center',
-            fixedWidth: 250,
+            fixedWidth: 250
         }
     }
 
@@ -71,7 +71,7 @@ export default class PenguinLoader {
         penguin.setInteractive({
             cursor: 'pointer',
             hitArea: hitArea,
-            hitAreaCallback: Phaser.Geom.Ellipse.Contains,
+            hitAreaCallback: Phaser.Geom.Ellipse.Contains
         })
 
         penguin.on('pointerup', () => this.onPenguinClick(penguin.id))

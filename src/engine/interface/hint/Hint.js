@@ -8,7 +8,7 @@ class Hint extends BaseContainer {
             fontFamily: 'cpBurbankSmall',
             fontSize: 24,
             color: '#000000',
-            align: 'center',
+            align: 'center'
         }
 
         this.hint = this.createHint()
@@ -68,7 +68,7 @@ class Hint extends BaseContainer {
             ease: 'Linear',
             onComplete: () => {
                 this.text.visible = true
-            },
+            }
         })
     }
 

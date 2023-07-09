@@ -87,7 +87,7 @@ export default class Airtower {
                 this.worldName = 'Login'
                 this.encryptionKeys['Login'] = {
                     client: this.generatePrimaryClientKey(),
-                    server: this.generatePrimaryServerKey(),
+                    server: this.generatePrimaryServerKey()
                 }
                 onConnect()
             },
@@ -116,7 +116,7 @@ export default class Airtower {
         const messageTypes = {
             game: 'g',
             mod: 'm',
-            unlock: 'u',
+            unlock: 'u'
         }
 
         this.connect(
@@ -125,7 +125,7 @@ export default class Airtower {
                 this.worldName = world
                 this.encryptionKeys[world] = {
                     client: this.generatePrimaryClientKey(),
-                    server: this.generatePrimaryServerKey(),
+                    server: this.generatePrimaryServerKey()
                 }
                 const messageType = messageTypes[mode]
                 this.sendXt(`auth#${messageType}`, response)

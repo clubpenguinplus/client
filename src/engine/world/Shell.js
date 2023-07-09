@@ -39,7 +39,7 @@ export default class Shell extends BaseScene {
                 hn: false,
                 ho: false,
                 mv: 0.7,
-                sv: 0.7,
+                sv: 0.7
             })
         }
 
@@ -52,7 +52,7 @@ export default class Shell extends BaseScene {
             set: function (target, property, value) {
                 updateSettings(target, property, value)
                 return true
-            },
+            }
         })
 
         return settingsProxy
@@ -279,7 +279,7 @@ export default class Shell extends BaseScene {
             username_rejected: stringArray[18],
             walking: stringArray[19],
             epfStatus: stringArray[20],
-            joinTime: stringArray[21],
+            joinTime: stringArray[21]
         }
     }
 

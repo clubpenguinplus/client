@@ -5,7 +5,7 @@ export default class MiniGame extends Plugin {
         super(users, rooms)
         this.events = {
             mining_error: this.miningError,
-            reset_mining: this.resetMiningError,
+            reset_mining: this.resetMiningError
         }
     }
 

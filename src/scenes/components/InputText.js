@@ -70,7 +70,7 @@ export default class InputText extends EventComponent {
 
         this.clickZone.setInteractive({
             cursor: 'text',
-            pixelPerfect: false,
+            pixelPerfect: false
         })
         this.clickZone.on('pointerup', (pointer) => this.onUp(pointer))
         this.clickZone.on('pointerover', () => this.onOver())

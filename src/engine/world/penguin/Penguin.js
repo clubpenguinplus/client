@@ -263,7 +263,7 @@ export default class Penguin extends BaseContainer {
             key: key,
             frames: frames,
             frameRate: 24,
-            repeat: animation.repeat || 0,
+            repeat: animation.repeat || 0
         })
 
         if (animation.chain) {
@@ -290,7 +290,7 @@ export default class Penguin extends BaseContainer {
 
         let config = {
             prefix: `${prefix}${frame}_`,
-            frames: frames,
+            frames: frames
         }
 
         let textureFrames = this.textures.get(textureKey).getFrameNames(false)
@@ -317,7 +317,7 @@ export default class Penguin extends BaseContainer {
                 key: chainKey,
                 frames: frames,
                 frameRate: 24,
-                repeat: chain.repeat || 0,
+                repeat: chain.repeat || 0
             })
 
             chainKeys.push(chainKey)
@@ -444,7 +444,7 @@ export default class Penguin extends BaseContainer {
             key: `puffle_${animation}_${this.puffle}`,
             frames: this.anims.generateFrameNames(`puffles/${animation}/${this.puffle}`, {frames: frameArray}),
             frameRate: 24,
-            repeat: 0,
+            repeat: 0
         })
     }
 
@@ -474,7 +474,7 @@ export default class Penguin extends BaseContainer {
             y: Math.round(path.target.y),
 
             onUpdate: () => this.onMoveUpdate(),
-            onComplete: () => this.onMoveComplete(),
+            onComplete: () => this.onMoveComplete()
         })
 
         this.prevX = this.x
