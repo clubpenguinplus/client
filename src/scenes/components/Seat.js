@@ -84,23 +84,7 @@ export default class Seat extends EventComponent {
     }
 
     get atSeatPosition() {
-        if (this.shell.client.penguin.x > this.gameObject.x + 5) {
-            return false
-        }
-
-        if (this.shell.client.penguin.x < this.gameObject.x - 5) {
-            return false
-        }
-
-        if (this.shell.client.penguin.y > this.gameObject.y + 5) {
-            return false
-        }
-
-        if (this.shell.client.penguin.y < this.gameObject.y - 5) {
-            return false
-        }
-
-        return true
+        return this.shell.isNearPos(this.gameObject.x, this.gameObject.y)
     }
 
     /* END-USER-CODE */

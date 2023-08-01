@@ -199,13 +199,14 @@ export default class HotelLobby extends RoomScene {
         const sort = [railings5, railings4, railings3, railings2, railings1, reception_wall, backchairs, backleftpanel, backpod, toprightwall, backrightwall, backtable, coatcheck_wall, midrailings_legs, midrailings, fountain, frontchairs, fronttable, lamp, leftplant, leftpillar, petshop_pillar, coatcheck_sign_en, petshop_door, petshop_sign_en, plant, reception_chair, reception_desk, reception_sign_en, elevator, lanterns_left, lanterns_right, rightplant, rightpillar, sofa, tasks, frontpod, bar_sign, bar_front, bar, fruitbox, fruits, fg, taskinterface]
 
         // door (components)
-        const doorButton = new Button(door)
+        new Button(door)
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 780
         doorMoveTo.y = 300
 
         // backpod (components)
         const backpodButton = new Button(backpod)
+        backpodButton.callback = () => this.puffleSleep(this.backpod)
         const backpodMoveTo = new MoveTo(backpod)
         backpodMoveTo.x = 1372
         backpodMoveTo.y = 684
@@ -214,6 +215,7 @@ export default class HotelLobby extends RoomScene {
         const backtableSimpleButton = new SimpleButton(backtable)
         backtableSimpleButton.hoverCallback = () => this.onBackTableOver()
         backtableSimpleButton.hoverOutCallback = () => this.onBackTableOut()
+        backtableSimpleButton.callback = () => this.puffleEat()
         const backtableMoveTo = new MoveTo(backtable)
         backtableMoveTo.x = 300
         backtableMoveTo.y = 654
@@ -222,12 +224,13 @@ export default class HotelLobby extends RoomScene {
         const fronttableSimpleButton = new SimpleButton(fronttable)
         fronttableSimpleButton.hoverCallback = () => this.onFrontTableOver()
         fronttableSimpleButton.hoverOutCallback = () => this.onFrontTableOut()
+        fronttableSimpleButton.callback = () => this.puffleEat()
         const fronttableMoveTo = new MoveTo(fronttable)
         fronttableMoveTo.x = 356
         fronttableMoveTo.y = 768
 
         // petshop_door (components)
-        const petshop_doorButton = new Button(petshop_door)
+        new Button(petshop_door)
         const petshop_doorMoveTo = new MoveTo(petshop_door)
         petshop_doorMoveTo.x = 1440
         petshop_doorMoveTo.y = 460
@@ -257,6 +260,7 @@ export default class HotelLobby extends RoomScene {
 
         // frontpod (components)
         const frontpodButton = new Button(frontpod)
+        frontpodButton.callback = () => this.puffleSleep(this.frontpod)
         const frontpodMoveTo = new MoveTo(frontpod)
         frontpodMoveTo.x = 1232
         frontpodMoveTo.y = 792
@@ -266,12 +270,14 @@ export default class HotelLobby extends RoomScene {
         taskinterfaceButton.callback = () => this.interface.loadExternal('RainbowQuest')
 
         this.backchairs = backchairs
+        this.backpod = backpod
         this.backtable = backtable
         this.fountain = fountain
         this.frontchairs = frontchairs
         this.fronttable = fronttable
         this.elevator = elevator
         this.tasks = tasks
+        this.frontpod = frontpod
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -279,6 +285,8 @@ export default class HotelLobby extends RoomScene {
 
     /** @type {Phaser.GameObjects.Image} */
     backchairs
+    /** @type {Phaser.GameObjects.Image} */
+    backpod
     /** @type {Phaser.GameObjects.Image} */
     backtable
     /** @type {Phaser.GameObjects.Sprite} */
@@ -291,6 +299,8 @@ export default class HotelLobby extends RoomScene {
     elevator
     /** @type {Phaser.GameObjects.Sprite} */
     tasks
+    /** @type {Phaser.GameObjects.Image} */
+    frontpod
     /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
     sort
 
@@ -344,6 +354,30 @@ export default class HotelLobby extends RoomScene {
     onBackTableOut() {
         this.backtable.setFrame('backtable')
         this.backchairs.setFrame('backchairs')
+    }
+
+    puffleEat() {}
+
+    puffleSleep(gameObject) {
+        let x = gameObject.__MoveTo.x
+        let y = gameObject.__MoveTo.y
+        this.shell.client.penguin.afterMove = () => {
+            if (this.shell.isNearPos(x, y)) {
+                // Play puffle sleep animation
+                setTimeout(() => {
+                    this.increasePuffleRest(x, y)
+                }, 1000)
+            }
+        }
+    }
+
+    increasePuffleRest(x, y) {
+        if (!this.shell.isNearPos(x, y)) return
+
+        this.carePopup.x = this.shell.client.penguin.x
+        this.carePopup.y = this.shell.client.penguin.y
+
+        this.carePopup.showPopup('rest', 30, 70)
     }
 
     /* END-USER-CODE */

@@ -1,5 +1,6 @@
 import BaseScene from '@scenes/base/BaseScene'
 import Coin from '@scenes/interface/game/mining/Coin'
+import CarePopup from '@scenes/interface/game/pufflecare/CarePopup'
 
 export default class RoomScene extends BaseScene {
     constructor(key) {
@@ -62,6 +63,10 @@ export default class RoomScene extends BaseScene {
             this.coin = new Coin(this, 551.9600819184787, -49.143491473676306)
             this.add.existing(this.coin)
         }
+
+        this.carePopup = new CarePopup(this, 0, 0)
+        this.add.existing(this.carePopup)
+        this.carePopup.setDepth(99999999)
 
         if (this.waterZones) {
             for (let zone in this.waterZones) {

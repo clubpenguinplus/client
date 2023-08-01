@@ -75,6 +75,15 @@ export default class Shell extends BaseScene {
 
         this.airtower.sendXt('i#gp')
         this.airtower.sendXt('ma#g')
+
+        const emit = this.events.emit.bind(this.events)
+        this.events.emit = (event, ...args) => {
+            emit(event, ...args)
+            if (document.location.hostname == 'localhost') {
+                if (['preupdate', 'update', 'postupdate', 'prerender', 'render'].includes(event)) return
+                console.log(`[Shell] ${event}`, args)
+            }
+        }
     }
 
     setClient(args) {
@@ -361,5 +370,25 @@ export default class Shell extends BaseScene {
         }
 
         return `${years} years ago`
+    }
+
+    isNearPos(x, y) {
+        if (this.client.penguin.x > x + 5) {
+            return false
+        }
+
+        if (this.client.penguin.x < x - 5) {
+            return false
+        }
+
+        if (this.client.penguin.y > y + 5) {
+            return false
+        }
+
+        if (this.client.penguin.y < y - 5) {
+            return false
+        }
+
+        return true
     }
 }
