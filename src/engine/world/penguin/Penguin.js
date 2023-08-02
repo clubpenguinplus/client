@@ -429,7 +429,7 @@ export default class Penguin extends BaseContainer {
         if (!this.anims.exists(`puffle_${animation}_${this.puffle}`)) this.generatePuffleAnim(animation)
 
         let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
-        pAnimSprite.depth = this.puffleSprite.depth
+        pAnimSprite.depth = 9999
         pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
         this.puffleSprite.visible = false
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)

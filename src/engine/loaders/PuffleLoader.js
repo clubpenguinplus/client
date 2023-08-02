@@ -10,7 +10,6 @@ export default class PuffleLoader extends BaseLoader {
     }
 
     loadPuffle(animation, puffle) {
-        console.log('loadPuffle', animation, puffle)
         let key = this.getKey(`${animation}/${puffle}`)
 
         if (
