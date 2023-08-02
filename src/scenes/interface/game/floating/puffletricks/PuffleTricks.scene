@@ -1,0 +1,258 @@
+{
+    "id": "e737fd1d-9af5-48a8-93e7-c386428972ac",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "FloatingMenu",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "d6623608-b2dc-4728-bd7f-d52fd1c818d7",
+            "label": "container_1",
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "a448f33d-239a-46fc-ac7e-292b87be9c3a",
+                    "label": "safe",
+                    "scope": "CLASS",
+                    "y": -165,
+                    "isFilled": true,
+                    "fillColor": "#00ffff",
+                    "fillAlpha": 0.5,
+                    "width": 200,
+                    "height": 390
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "55fdf621-dcdc-4854-88d5-673953e35b64",
+                    "label": "close",
+                    "scope": "CLASS",
+                    "y": 61,
+                    "isFilled": true,
+                    "fillColor": "#00ffff",
+                    "fillAlpha": 0.5,
+                    "width": 80,
+                    "height": 80
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "2b65127e-bd41-4d5b-9976-e7ab5e2a5b58",
+                    "label": "bg",
+                    "texture": {
+                        "key": "main",
+                        "frame": "actions"
+                    },
+                    "y": -166,
+                    "width": 140,
+                    "height": 340
+                },
+                {
+                    "type": "Image",
+                    "id": "0916e4ba-ef95-45fe-aec2-c1c6f1249870",
+                    "label": "digBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.dig()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "large-box"
+                    },
+                    "y": -70
+                },
+                {
+                    "type": "Image",
+                    "id": "2ff17070-bf89-4936-8123-5979259bda75",
+                    "label": "spin",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.playAnim('jumpspin')",
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 32,
+                    "y": -167
+                },
+                {
+                    "type": "Image",
+                    "id": "fbd60784-f33f-4c90-8925-0d7ee8ac0957",
+                    "label": "roll",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.playAnim('roll')",
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": -32,
+                    "y": -167
+                },
+                {
+                    "type": "Image",
+                    "id": "ed9c58e3-0664-467b-b9b1-732f5663d69a",
+                    "label": "standOnHead",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.playAnim('standonhead')",
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 32,
+                    "y": -231
+                },
+                {
+                    "type": "Image",
+                    "id": "e9f39988-46fb-49e1-844d-459685ea93e9",
+                    "label": "jump",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.playAnim('jumpforward')",
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": -32,
+                    "y": -231
+                },
+                {
+                    "type": "Image",
+                    "id": "57b79627-6780-4f3c-bf8f-f7e9b7ce241f",
+                    "label": "speak",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.playAnim('speak')",
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 32,
+                    "y": -295
+                },
+                {
+                    "type": "Image",
+                    "id": "146c6046-b404-4601-9373-de3a3d370b3d",
+                    "label": "nuzzle",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.playAnim('nuzzle')",
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": -32,
+                    "y": -295
+                },
+                {
+                    "type": "Image",
+                    "id": "c2094579-92a5-465a-9e4c-59d730d78c44",
+                    "label": "puffletricks_coinbag",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/coinbag"
+                    },
+                    "y": -69
+                },
+                {
+                    "type": "Image",
+                    "id": "ac57d21e-83cb-4e2d-8860-75c67c87f482",
+                    "label": "puffletricks_nuzzle",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/nuzzle"
+                    },
+                    "x": -32,
+                    "y": -294
+                },
+                {
+                    "type": "Image",
+                    "id": "84f402e7-22b8-4e8c-838c-69db3b5c6bdc",
+                    "label": "puffletricks_speak",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/speak"
+                    },
+                    "x": 33,
+                    "y": -295
+                },
+                {
+                    "type": "Image",
+                    "id": "02cc90c6-f17b-4cec-b225-0310f8fd05e1",
+                    "label": "puffletricks_jumpforward",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/jumpforward"
+                    },
+                    "x": -33,
+                    "y": -229
+                },
+                {
+                    "type": "Image",
+                    "id": "469e5987-8664-4c97-a44b-1d60e4e19934",
+                    "label": "puffletricks_standonhead",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/standonhead"
+                    },
+                    "x": 33,
+                    "y": -229
+                },
+                {
+                    "type": "Image",
+                    "id": "13e4b66f-999b-437c-851e-bef23b97b23c",
+                    "label": "puffletricks_roll",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/roll"
+                    },
+                    "x": -32,
+                    "y": -167
+                },
+                {
+                    "type": "Image",
+                    "id": "067ae444-869b-4461-b75f-3f8e2da04240",
+                    "label": "puffletricks_jumpspin",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffletricks/jumpspin"
+                    },
+                    "x": 33,
+                    "y": -168
+                },
+                {
+                    "type": "Container",
+                    "id": "a0ce9f7c-9f7d-4124-a575-baeffc8283af",
+                    "label": "cooldown_cntr",
+                    "scope": "CLASS",
+                    "y": -70,
+                    "alpha": 0.5
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

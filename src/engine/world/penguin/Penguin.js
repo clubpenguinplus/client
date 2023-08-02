@@ -32,7 +32,7 @@ export default class Penguin extends BaseContainer {
         PathEngine.setStartPos(this)
         this.depth = this.y
         this.tween
-        this.direction
+        this.direction = 1
 
         this.nameTag = penguinLoader.addName(this)
         this.nameTag.visible = !this.shell.settings.hn
@@ -162,11 +162,12 @@ export default class Penguin extends BaseContainer {
         if (!this.puffle) return
 
         // Pet shop floor
+        let parent = this.crumbs.puffles[this.puffle].parent
+        let color = this.crumbs.puffles[parent].name.toLowerCase()
         if (this.room.floorpuffle) {
-            let parent = this.crumbs.puffles[this.puffle].parent
-            let color = this.crumbs.puffles[parent].name.toLowerCase()
             this.room.floorpuffle.setFrame(`floorpuffle_${color}`)
         }
+        this.interface.main.setPuffleColor(color)
 
         if (this.shell.textures.exists(`puffles/walk/${this.puffle}`)) return this.addPuffleSprite()
 
@@ -175,8 +176,13 @@ export default class Penguin extends BaseContainer {
     }
 
     addPuffleSprite() {
+        if (this.puffleSprite) {
+            this.puffleSprite.destroy()
+            this.puffleSprite = null
+        }
+
         this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
-        this.puffleSprite.depth = 999999
+        this.puffleSprite.depth = 0
         this.add(this.puffleSprite)
 
         if (this.room.isIgloo) {
@@ -427,9 +433,14 @@ export default class Penguin extends BaseContainer {
         pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
         this.puffleSprite.visible = false
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
+        this.playFrame(8)
+        this.airtower.sendXt('u#sf', `${false}%8`)
+        this.puffleIsAnimating = true
         pAnimSprite.on('animationcomplete', () => {
             pAnimSprite.destroy()
             this.puffleSprite.visible = true
+            this.puffleIsAnimating = false
+            this.playFrame(this.direction)
         })
     }
 

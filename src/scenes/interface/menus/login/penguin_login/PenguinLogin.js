@@ -15,10 +15,10 @@ export default class PenguinLogin extends BaseScene {
 
         /** @type {PenguinLarge} */
         this.container
-        /** @type {Phaser.GameObjects.Container} */
-        this.inputTextContainer
         /** @type {Phaser.GameObjects.Text} */
         this.passwordInput
+        /** @type {Phaser.GameObjects.Container} */
+        this.inputTextContainer
         /** @type {Checks} */
         this.checks
         /** @type {SavePrompt} */
@@ -166,10 +166,11 @@ export default class PenguinLogin extends BaseScene {
         // passwordInput (components)
         const passwordInputInputText = new InputText(passwordInput)
         passwordInputInputText.ispassword = true
+        passwordInputInputText.entercallback = () => this.onLoginSubmit()
 
         this.container = container
-        this.inputTextContainer = inputTextContainer
         this.passwordInput = passwordInput
+        this.inputTextContainer = inputTextContainer
         this.checks = checks
         this.savePrompt = savePrompt
         this.waitPrompt = waitPrompt

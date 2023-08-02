@@ -23,6 +23,7 @@ import Settings from '../settings/Settings'
 import MainRequestItem from '../friend/friend_item/MainRequestItem'
 import OnlineItem from '../friend/friend_item/OnlineItem'
 import Ignore from '../ignore/Ignore'
+import PuffleTricks from '../floating/puffletricks/PuffleTricks'
 
 /* START OF COMPILED CODE */
 
@@ -168,6 +169,8 @@ export default class Main extends BaseScene {
         this.actionsMenu
         /** @type {EmotesMenu} */
         this.emotesMenu
+        /** @type {PuffleTricks} */
+        this.puffleTricks
         /** @type {Safe} */
         this.safe
         /** @type {Waddle} */
@@ -474,6 +477,11 @@ export default class Main extends BaseScene {
         const emotesMenu = new EmotesMenu(this, 306, 902)
         this.add.existing(emotesMenu)
         emotesMenu.visible = false
+
+        // puffleTricks
+        const puffleTricks = new PuffleTricks(this, 246, 872)
+        this.add.existing(puffleTricks)
+        puffleTricks.visible = false
 
         // safe
         const safe = new Safe(this, 244, 933)
@@ -784,6 +792,7 @@ export default class Main extends BaseScene {
         this.settings = settings
         this.actionsMenu = actionsMenu
         this.emotesMenu = emotesMenu
+        this.puffleTricks = puffleTricks
         this.safe = safe
         this.waddle = waddle
         this.findFour = findFour
@@ -931,6 +940,10 @@ export default class Main extends BaseScene {
         let text = this.chatInput.textContent
 
         this.chatInput.__InputText.clearText()
+        let fakePointer = {
+            button: 0
+        }
+        this.chatInput.__InputText.onUp(fakePointer)
 
         this.airtower.sendXt('m#sm', text)
     }
@@ -1059,7 +1072,9 @@ export default class Main extends BaseScene {
         this.party_interface.scaleY = 0.4
     }
 
-    onPuffleClick() {}
+    onPuffleClick() {
+        this.puffleTricks.visible = true
+    }
 
     isMobile() {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -1107,6 +1122,19 @@ export default class Main extends BaseScene {
         this.chat_box.visible = true
         this.chat_send_button.visible = true
         this.chat_send_icon.visible = true
+    }
+
+    setPuffleColor(color) {
+        if (!color) {
+            this.puffle_icon.setFrame('puffle-icon-disabled')
+            this.puffle_button.visible = false
+            this.puffle_button_disabled.visible = true
+            return
+        }
+
+        this.puffle_icon.setFrame(`puffle-icon-${color}`)
+        this.puffle_button.visible = true
+        this.puffle_button_disabled.visible = false
     }
 
     /* END-USER-CODE */
