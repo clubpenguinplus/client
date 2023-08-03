@@ -103,6 +103,7 @@ export default class Penguin extends BaseContainer {
      */
     onDestroy() {
         delete this.body
+        this.puffleSprite = null
     }
 
     load() {
@@ -177,13 +178,11 @@ export default class Penguin extends BaseContainer {
 
     addPuffleSprite() {
         if (this.puffleSprite) {
-            this.puffleSprite.destroy()
-            this.puffleSprite = null
+            this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+        } else {
+            this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+            this.add(this.puffleSprite)
         }
-
-        this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
-        this.puffleSprite.depth = 0
-        this.add(this.puffleSprite)
 
         if (this.room.isIgloo) {
             this.puffleSprite.setInteractive({useHandCursor: true, pixelPerfect: true})
@@ -193,8 +192,8 @@ export default class Penguin extends BaseContainer {
     }
 
     removePuffle() {
-        this.puffle = null
-        if (this.puffleSprite) this.puffleSprite.destroy()
+        this.puffle = 0
+        if (this.puffleSprite) this.remove(this.puffleSprite, true)
         this.puffleSprite = null
     }
 
@@ -548,5 +547,11 @@ export default class Penguin extends BaseContainer {
             }
         }
         return false
+    }
+
+    remove(child, destroy) {
+        super.remove(child, destroy)
+
+        console.log(this.list)
     }
 }
