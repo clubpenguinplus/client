@@ -81,7 +81,7 @@ export default class Shell extends BaseScene {
             emit(event, ...args)
             if (document.location.hostname == 'localhost') {
                 if (['preupdate', 'update', 'postupdate', 'prerender', 'render'].includes(event)) return
-                console.log(`[Shell] ${event}`, args)
+                console.info(`[Shell] ${event}`, args)
             }
         }
     }

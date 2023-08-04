@@ -551,7 +551,5 @@ export default class Penguin extends BaseContainer {
 
     remove(child, destroy) {
         super.remove(child, destroy)
-
-        console.log(this.list)
     }
 }

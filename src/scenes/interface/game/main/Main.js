@@ -703,13 +703,11 @@ export default class Main extends BaseScene {
 
         // mail_btn (components)
         const mail_btnButton = new Button(mail_btn)
-        mail_btnButton.callback = () => {
-            /*this.shell.RuffleManager.handleLoadOtherSwf("mail.swf")*/
-        }
+        mail_btnButton.callback = () => this.unimplementedPrompt()
 
         // news_button (components)
         const news_buttonButton = new Button(news_button)
-        news_buttonButton.callback = () => window.open('https://discord.gg/x3QuKfezb4', '_blank').focus()
+        news_buttonButton.callback = () => window.open('https://discord.gg/bm28TJfvWr', '_blank').focus()
 
         // safetyquiz (components)
         const safetyquizButton = new Button(safetyquiz)

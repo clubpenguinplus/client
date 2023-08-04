@@ -457,16 +457,19 @@ export default class Pet extends RoomScene {
         const adoptbookbaseSimpleButton = new SimpleButton(adoptbookbase)
         adoptbookbaseSimpleButton.hoverCallback = () => this.onAdoptBookOver()
         adoptbookbaseSimpleButton.hoverOutCallback = () => this.onAdoptBookOut()
+        adoptbookbaseSimpleButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // adopttext_en (components)
         new LocalisedSprite(adopttext_en)
 
         // petcat_en (components)
         const petcat_enButton = new Button(petcat_en)
+        petcat_enButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
         new LocalisedSprite(petcat_en)
 
         // adoptbutton (components)
         const adoptbuttonButton = new Button(adoptbutton)
+        adoptbuttonButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // adopthit (components)
         const adopthitSimpleButton = new SimpleButton(adopthit)
@@ -480,11 +483,11 @@ export default class Pet extends RoomScene {
         this.white_lookaround = white_lookaround
         this.pufflesanim = pufflesanim
         this.parkdoor_bottom = parkdoor_bottom
-        this.purplepuffle = purplepuffle
         this.purplepuffbody = purplepuffbody
         this.purplepuffblink = purplepuffblink
         this.purplepuffmouth = purplepuffmouth
         this.purplepuffjump = purplepuffjump
+        this.purplepuffle = purplepuffle
         this.pufflecareholder = pufflecareholder
         this.adopthitlight = adopthitlight
         this.floorpuffle = floorpuffle
@@ -492,40 +495,40 @@ export default class Pet extends RoomScene {
         this.pufflecarebutton = pufflecarebutton
         this.goldtube = goldtube
         this.blackpuffblink = blackpuffblink
-        this.greenpuffle = greenpuffle
         this.greenpuffbody = greenpuffbody
         this.greenpuffblink = greenpuffblink
         this.greenpuffmouth = greenpuffmouth
         this.greenpuffjump = greenpuffjump
-        this.brownpuffle = brownpuffle
+        this.greenpuffle = greenpuffle
         this.brownpuffbody = brownpuffbody
         this.brownpuffblink = brownpuffblink
         this.brownpuffmouth = brownpuffmouth
         this.brownpuffjump = brownpuffjump
-        this.yellowpuffle = yellowpuffle
+        this.brownpuffle = brownpuffle
         this.yellowpuffbody = yellowpuffbody
         this.yellowpuffblink = yellowpuffblink
         this.yellowpuffmouth = yellowpuffmouth
         this.yellowpuffjump = yellowpuffjump
+        this.yellowpuffle = yellowpuffle
         this.bluedogblink = bluedogblink
         this.bluedogjump = bluedogjump
-        this.bluepuffle = bluepuffle
         this.bluepuffbody = bluepuffbody
         this.bluepuffblink = bluepuffblink
         this.bluepuffmouth = bluepuffmouth
         this.bluepuffjump = bluepuffjump
+        this.bluepuffle = bluepuffle
         this.orangecatblink = orangecatblink
         this.orangecatjump = orangecatjump
-        this.redpuffle = redpuffle
         this.redpuffbody = redpuffbody
         this.redpuffblink = redpuffblink
         this.redpuffmouth = redpuffmouth
         this.redpuffjump = redpuffjump
-        this.pinkpuffle = pinkpuffle
+        this.redpuffle = redpuffle
         this.pinkpuffbody = pinkpuffbody
         this.pinkpuffblink = pinkpuffblink
         this.pinkpuffmouth = pinkpuffmouth
         this.pinkpuffjump = pinkpuffjump
+        this.pinkpuffle = pinkpuffle
         this.orangepuffjump = orangepuffjump
         this.sort = sort
 
@@ -544,8 +547,6 @@ export default class Pet extends RoomScene {
     pufflesanim
     /** @type {Phaser.GameObjects.Image} */
     parkdoor_bottom
-    /** @type {Phaser.GameObjects.Container} */
-    purplepuffle
     /** @type {Phaser.GameObjects.Sprite} */
     purplepuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -554,6 +555,8 @@ export default class Pet extends RoomScene {
     purplepuffmouth
     /** @type {Phaser.GameObjects.Sprite} */
     purplepuffjump
+    /** @type {Phaser.GameObjects.Container} */
+    purplepuffle
     /** @type {Phaser.GameObjects.Sprite} */
     pufflecareholder
     /** @type {Phaser.GameObjects.Sprite} */
@@ -568,8 +571,6 @@ export default class Pet extends RoomScene {
     goldtube
     /** @type {Phaser.GameObjects.Sprite} */
     blackpuffblink
-    /** @type {Phaser.GameObjects.Container} */
-    greenpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     greenpuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -579,7 +580,7 @@ export default class Pet extends RoomScene {
     /** @type {Phaser.GameObjects.Sprite} */
     greenpuffjump
     /** @type {Phaser.GameObjects.Container} */
-    brownpuffle
+    greenpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     brownpuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -589,7 +590,7 @@ export default class Pet extends RoomScene {
     /** @type {Phaser.GameObjects.Sprite} */
     brownpuffjump
     /** @type {Phaser.GameObjects.Container} */
-    yellowpuffle
+    brownpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     yellowpuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -598,12 +599,12 @@ export default class Pet extends RoomScene {
     yellowpuffmouth
     /** @type {Phaser.GameObjects.Sprite} */
     yellowpuffjump
+    /** @type {Phaser.GameObjects.Container} */
+    yellowpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     bluedogblink
     /** @type {Phaser.GameObjects.Sprite} */
     bluedogjump
-    /** @type {Phaser.GameObjects.Container} */
-    bluepuffle
     /** @type {Phaser.GameObjects.Sprite} */
     bluepuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -612,12 +613,12 @@ export default class Pet extends RoomScene {
     bluepuffmouth
     /** @type {Phaser.GameObjects.Sprite} */
     bluepuffjump
+    /** @type {Phaser.GameObjects.Container} */
+    bluepuffle
     /** @type {Phaser.GameObjects.Sprite} */
     orangecatblink
     /** @type {Phaser.GameObjects.Sprite} */
     orangecatjump
-    /** @type {Phaser.GameObjects.Container} */
-    redpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     redpuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -627,7 +628,7 @@ export default class Pet extends RoomScene {
     /** @type {Phaser.GameObjects.Sprite} */
     redpuffjump
     /** @type {Phaser.GameObjects.Container} */
-    pinkpuffle
+    redpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     pinkpuffbody
     /** @type {Phaser.GameObjects.Sprite} */
@@ -636,6 +637,8 @@ export default class Pet extends RoomScene {
     pinkpuffmouth
     /** @type {Phaser.GameObjects.Sprite} */
     pinkpuffjump
+    /** @type {Phaser.GameObjects.Container} */
+    pinkpuffle
     /** @type {Phaser.GameObjects.Sprite} */
     orangepuffjump
     /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */

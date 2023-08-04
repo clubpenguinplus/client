@@ -655,7 +655,8 @@ export default class Map extends BaseContainer {
         map_places_plaza_1ShowHint.text = 'plaza'
 
         // map_places_pufflepark_1 (components)
-        new Button(map_places_pufflepark_1)
+        const map_places_pufflepark_1Button = new Button(map_places_pufflepark_1)
+        map_places_pufflepark_1Button.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
         const map_places_pufflepark_1ShowHint = new ShowHint(map_places_pufflepark_1)
         map_places_pufflepark_1ShowHint.text = 'park'
 

@@ -301,7 +301,7 @@ export default class EPFPhone extends Closeup {
 
         // gear_btn (components)
         const gear_btnButton = new Button(gear_btn)
-        gear_btnButton.callback = () => this.showGearPage()
+        gear_btnButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // missions_txt (components)
         const missions_txtLocalisedString = new LocalisedString(missions_txt)
@@ -309,7 +309,7 @@ export default class EPFPhone extends Closeup {
 
         // missions_btn (components)
         const missions_btnButton = new Button(missions_btn)
-        missions_btnButton.callback = () => this.showMissionsPage()
+        missions_btnButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // teleport_txt (components)
         const teleport_txtLocalisedString = new LocalisedString(teleport_txt)
@@ -325,7 +325,7 @@ export default class EPFPhone extends Closeup {
 
         // messages_btn (components)
         const messages_btnButton = new Button(messages_btn)
-        messages_btnButton.callback = () => this.showMessagesPage()
+        messages_btnButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // gadgets_txt (components)
         const gadgets_txtLocalisedString = new LocalisedString(gadgets_txt)
@@ -333,7 +333,7 @@ export default class EPFPhone extends Closeup {
 
         // gadgets_button (components)
         const gadgets_buttonButton = new Button(gadgets_button)
-        gadgets_buttonButton.callback = () => this.showGadgetsPage()
+        gadgets_buttonButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // puffle_txt (components)
         const puffle_txtLocalisedString = new LocalisedString(puffle_txt)

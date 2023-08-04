@@ -868,7 +868,7 @@
             "components": [
                 "Button"
             ],
-            "Button.callback": "() => {/*this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")*/}",
+            "Button.callback": "() => this.unimplementedPrompt()",
             "texture": {
                 "key": "main",
                 "frame": "mail-button"
@@ -884,7 +884,7 @@
             "components": [
                 "Button"
             ],
-            "Button.callback": "() => window.open('https://discord.gg/x3QuKfezb4', '_blank').focus();",
+            "Button.callback": "() => window.open('https://discord.gg/bm28TJfvWr', '_blank').focus();",
             "texture": {
                 "key": "main",
                 "frame": "discord"

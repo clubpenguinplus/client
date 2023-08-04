@@ -30,9 +30,9 @@ export default class Agentcom extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             lobby: () => this.triggerRoom(212, 760, 480),
-            missions: () => null,
-            spy: () => null,
-            system: () => null
+            missions: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
+            spy: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
+            system: () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
         }
         this.music = 642
         this.loadSfx = ['agentcom-doorclose', 'agentcom-dooropen', 'agentcom-psa', 'agentcom-spyout', 'agentcom-spyover', 'agentcom-systemout', 'agentcom-systemover']
@@ -349,11 +349,13 @@ export default class Agentcom extends RoomScene {
 
         // agentbook (components)
         const agentbookButton = new Button(agentbook)
+        agentbookButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // defender (components)
         const defenderButton = new Button(defender)
         defenderButton.hoverCallback = () => this.onSymbolsOver()
         defenderButton.hoverOutCallback = () => this.onSymbolsOut()
+        defenderButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
 
         // doorhit (components)
         const doorhitSimpleButton = new SimpleButton(doorhit)
@@ -369,7 +371,7 @@ export default class Agentcom extends RoomScene {
         systemhitSimpleButton.hoverOutCallback = () => this.onDefenderOut()
         const systemhitMoveTo = new MoveTo(systemhit)
         systemhitMoveTo.x = 350
-        systemhitMoveTo.y = 380
+        systemhitMoveTo.y = 280
 
         // spyhit (components)
         const spyhitSimpleButton = new SimpleButton(spyhit)

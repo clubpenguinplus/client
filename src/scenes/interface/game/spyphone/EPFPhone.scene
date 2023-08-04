@@ -346,7 +346,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.showGearPage()",
+                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "gear-btn"
@@ -379,7 +379,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.showMissionsPage()",
+                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "missions-btn"
@@ -446,7 +446,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.showMessagesPage()",
+                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "messages-btn"
@@ -480,7 +480,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.showGadgetsPage()",
+                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "gadgets-button"

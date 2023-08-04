@@ -25,6 +25,7 @@ export default class Item extends Plugin {
     }
 
     addItem(args) {
+        args[0] = parseInt(args[0])
         // If item already in inventory
         if (this.client.inventory[args[2]].includes(args[0])) return
 
@@ -45,6 +46,7 @@ export default class Item extends Plugin {
     }
 
     addCodeItem(args) {
+        args[0] = parseInt(args[0])
         // If item already in inventory
         if (this.client.inventory[args[2]].includes(args[0])) return
 

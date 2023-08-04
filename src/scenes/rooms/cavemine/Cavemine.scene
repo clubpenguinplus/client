@@ -19,7 +19,6 @@
             "type": "Image",
             "id": "32c01632-b9d5-4fc0-a9d3-1080f44fc33e",
             "label": "goldminebg",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "goldminebg"
@@ -32,7 +31,6 @@
             "id": "f301d465-17d6-41bd-804f-613fbda7b68c",
             "label": "sign_hover",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "sign-hover"
@@ -59,7 +57,6 @@
             "type": "Image",
             "id": "9c4e6144-2892-4665-91b2-c4691d604ce4",
             "label": "waterground",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "waterground"
@@ -72,7 +69,6 @@
             "id": "da6ff664-f6e4-4b09-87e0-68fe0ed5bd68",
             "label": "waterdoor_hover",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "waterdoor-hover"
@@ -147,7 +143,6 @@
             "type": "Image",
             "id": "b8a1199a-d148-4572-b73c-4f3fb4b414e5",
             "label": "fg",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "fg"
@@ -161,7 +156,6 @@
             "type": "Image",
             "id": "950fcf24-2030-40c6-82cf-dd3fac408b0a",
             "label": "chairone",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "chairone"
@@ -175,7 +169,6 @@
             "type": "Image",
             "id": "8e16df0f-56ab-4b12-865e-a56af6e3330b",
             "label": "chairtwo",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "chairtwo"
@@ -189,7 +182,6 @@
             "type": "Image",
             "id": "f858c09f-2381-49b3-8965-92f08c4597c9",
             "label": "backrope",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "backrope"
@@ -201,7 +193,6 @@
             "type": "Image",
             "id": "39556504-32eb-4b65-8dfc-b3962a65e9d2",
             "label": "table",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "table"
@@ -213,7 +204,6 @@
             "type": "Image",
             "id": "f38e9f4f-b03c-4273-8d4a-4444b7a37c85",
             "label": "backleftrope",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "backleftrope"
@@ -225,7 +215,6 @@
             "type": "Image",
             "id": "694a3673-fdd0-4944-b00d-bde963d52644",
             "label": "leftrope",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "leftrope"
@@ -237,7 +226,6 @@
             "type": "Image",
             "id": "6a2c61b2-d11c-4711-a423-93e03a817244",
             "label": "roick",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "roick"
@@ -249,7 +237,6 @@
             "type": "Image",
             "id": "25d8d04c-36f7-41cf-a984-65f73a3d6bb7",
             "label": "minestairs",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "minestairs"
@@ -262,7 +249,6 @@
             "id": "74ce45cc-39fe-4ad0-9fbe-90247c271d6c",
             "label": "minehover",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "minehoverhit0002"
@@ -275,7 +261,6 @@
             "type": "Image",
             "id": "0501d425-9a45-4531-b45c-936d2fb254a7",
             "label": "mineholder",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "mineholder"
@@ -289,7 +274,6 @@
             "type": "Image",
             "id": "06cf0646-d478-4482-8fb6-2cca2c823fcd",
             "label": "otherfg",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "otherfg"
@@ -327,7 +311,6 @@
             "type": "Image",
             "id": "e62cf99c-e025-4133-b754-51573666db82",
             "label": "otherock",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "otherock"
@@ -342,7 +325,6 @@
             "id": "e091ee59-0a00-4fb8-b237-95d15721ad02",
             "label": "pufflezone_hover",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "pufflezone-hover"
@@ -361,12 +343,12 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onPuffleZoneOver()",
             "SimpleButton.hoverOutCallback": "() => this.onPuffleZoneOut()",
-            "x": 406.7590265080627,
-            "y": 374.53705619099435,
+            "x": 394.7240446867677,
+            "y": 356.0547445468666,
             "scaleX": 3.7698710378503946,
             "scaleY": 2.819358984993884,
-            "originX": 0.5886117575128106,
-            "originY": 0.9864166714177861,
+            "originX": 0.5636710240309615,
+            "originY": 0.9352018402807609,
             "width": 128,
             "height": 128
         },
@@ -374,7 +356,6 @@
             "type": "Image",
             "id": "206f5c21-f64e-491a-b201-f6d54e834846",
             "label": "lantern",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "lantern"
@@ -423,7 +404,6 @@
             "id": "6887708e-9940-459b-ab16-3fa3a1423ccf",
             "label": "mining_zone",
             "scope": "CLASS",
-            "components": [],
             "x": 621,
             "y": 734,
             "width": 700,
@@ -433,7 +413,6 @@
             "type": "Image",
             "id": "f3fc8292-a940-40af-b274-7cfef4a2c9e7",
             "label": "rightrope",
-            "components": [],
             "texture": {
                 "key": "cavemine",
                 "frame": "rightrope"
@@ -447,7 +426,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

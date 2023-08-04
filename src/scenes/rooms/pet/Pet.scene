@@ -19,7 +19,6 @@
             "type": "Image",
             "id": "077bd112-8061-4e44-83a0-a95015ac3c04",
             "label": "outsidebgs",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "outsidebgs"
@@ -31,7 +30,6 @@
             "type": "Image",
             "id": "ed8cd354-6e3d-4f91-8d49-88f0d45bacc2",
             "label": "scapebg",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "scapebg"
@@ -63,7 +61,6 @@
             "type": "Image",
             "id": "23231cd8-3ec9-4f3a-8476-bd5f0dc471b3",
             "label": "scapetubefront",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "scapetubefront"
@@ -76,7 +73,6 @@
             "id": "e7094f5b-873d-453c-a0ae-fab1dd999729",
             "label": "launchwindow",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "launchwindow0001"
@@ -88,7 +84,6 @@
             "type": "Image",
             "id": "6c410b14-9495-40fa-9572-f357d683d160",
             "label": "launchbg",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "launchbg"
@@ -120,7 +115,6 @@
             "type": "Image",
             "id": "3a38590c-6ac0-4ebd-b213-3f5ca7785053",
             "label": "petbg",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "petbg"
@@ -151,7 +145,6 @@
             "type": "Image",
             "id": "cdaa0253-06a3-4ba9-9ccf-d10db2a8855a",
             "label": "launchtube",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "launchtube"
@@ -183,7 +176,6 @@
             "type": "Image",
             "id": "f4cee9e1-ff34-4460-9c57-fb04d1431dfb",
             "label": "adoptbg",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adoptbg"
@@ -196,7 +188,6 @@
             "id": "32c9c425-cd9c-459e-b99f-eef89bbd7ae5",
             "label": "white_lookaround",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "white_lookaround0001"
@@ -208,7 +199,6 @@
             "type": "Image",
             "id": "ed5ae5c9-f31a-4f5d-b84d-a37cdfdb04d8",
             "label": "adoptsillright",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adoptsillright"
@@ -220,7 +210,6 @@
             "type": "Image",
             "id": "9b92e7cd-6288-4528-8bcf-01cb6fd9215d",
             "label": "arch",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "arch"
@@ -232,7 +221,6 @@
             "type": "Image",
             "id": "a2f18742-a093-4335-902e-907ad41766f8",
             "label": "arch_1",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "parkdoor-arch"
@@ -244,16 +232,13 @@
             "type": "Container",
             "id": "f8cc8ede-93a1-416b-8432-9c0acfbfc249",
             "label": "pufflesanim",
-            "scope": "CLASS",
-            "components": [],
-            "list": []
+            "scope": "CLASS"
         },
         {
             "type": "Image",
             "id": "424c3a91-601f-496d-a874-a0fbd6a8e33c",
             "label": "parkdoor_bottom",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "parkdoor-bottom"
@@ -265,7 +250,6 @@
             "type": "Image",
             "id": "e109dfca-7fa9-4b85-9ea7-62b8822a5127",
             "label": "tubesagain",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "tubesagain"
@@ -278,7 +262,6 @@
             "id": "a383e9b0-4051-4a83-ac43-3a0c7833d411",
             "label": "purplepuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 285,
             "y": 276,
             "allowPickChildren": false,
@@ -288,7 +271,6 @@
                     "id": "5475f821-591e-427e-ba00-344818b20271",
                     "label": "purplepuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "purppuffbody"
@@ -301,7 +283,6 @@
                     "id": "88cabd6e-527c-4c94-94ad-9db7310cdebd",
                     "label": "purplepuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "purplepuffblink0001"
@@ -313,7 +294,6 @@
                     "id": "1cb8d68d-7259-4dde-8c43-aa3cb8c53c84",
                     "label": "purplepuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "purppuffmouth"
@@ -326,7 +306,6 @@
                     "id": "a2c17f1c-7717-4818-9118-e58922f98aeb",
                     "label": "purplepuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "purplepuffjump0001"
@@ -342,7 +321,6 @@
             "id": "b5a7f561-a13e-487c-9895-17f29d7d0ec5",
             "label": "pufflecareholder",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "pufflecareholder0001"
@@ -354,7 +332,6 @@
             "type": "Image",
             "id": "d1db04f3-ef81-4c44-aca6-8da372403be3",
             "label": "launchrail",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "launchrail"
@@ -366,7 +343,6 @@
             "type": "Image",
             "id": "61d44dce-dd10-47d9-b42b-23fd502e7ff0",
             "label": "tubes",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "tubes"
@@ -378,7 +354,6 @@
             "type": "Image",
             "id": "2daed35c-721c-49da-bf3f-2325d73d9442",
             "label": "leftplazarail",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "leftplazarail"
@@ -390,7 +365,6 @@
             "type": "Image",
             "id": "7d21376a-626d-46d6-8cd1-1c2a4a021748",
             "label": "exittext_en",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "exittext_en"
@@ -402,7 +376,6 @@
             "type": "Image",
             "id": "d77fce3f-af7e-4d42-afcb-9cc70ef985ac",
             "label": "fgtubebg",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "fgtubebg"
@@ -415,7 +388,6 @@
             "id": "bdfdb762-a376-4890-8dca-bf6f09c4e1b9",
             "label": "adopthitlight",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adopthitlight"
@@ -428,7 +400,6 @@
             "type": "Image",
             "id": "b31fc7e6-9735-43cc-8c61-9d2f15e5c40b",
             "label": "pufflecarefoot",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "pufflecarefoot"
@@ -440,7 +411,6 @@
             "type": "Image",
             "id": "46a94be4-b96b-42f5-bc47-f60c4e9a73fb",
             "label": "adoptholder",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adoptholder"
@@ -452,7 +422,6 @@
             "type": "Image",
             "id": "56167174-6dab-462d-bf1d-5e47ee06ed59",
             "label": "adoptledge",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adoptledge"
@@ -464,7 +433,6 @@
             "type": "Image",
             "id": "7d61b00d-cfa7-4380-8fe0-1fcd40d96be1",
             "label": "fgtubes",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "fgtubes"
@@ -478,7 +446,6 @@
             "type": "Image",
             "id": "cb7394f9-cefb-4461-a924-a87c2b856fe6",
             "label": "hoteldoorouter",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "hoteldoorouter"
@@ -509,7 +476,6 @@
             "type": "Image",
             "id": "d5ec75c7-7774-4179-b393-5cde045b77af",
             "label": "floorholder",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "floorholder"
@@ -522,7 +488,6 @@
             "id": "fcd5536b-5c16-4f23-8da9-1d1798a714db",
             "label": "floorpuffle",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "floorpuffle_blue"
@@ -534,7 +499,6 @@
             "type": "Image",
             "id": "c111f4db-01be-4cd5-8fb6-6b4737f564e4",
             "label": "adoptbottom",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adoptbottom"
@@ -552,6 +516,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onAdoptBookOver()",
             "SimpleButton.hoverOutCallback": "() => this.onAdoptBookOut()",
+            "SimpleButton.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
             "texture": {
                 "key": "pet",
                 "frame": "adoptbookbase"
@@ -581,7 +546,6 @@
             "type": "Image",
             "id": "007724e4-c2ad-494a-9bf8-192d5b21c4ee",
             "label": "ball",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "ball"
@@ -594,7 +558,6 @@
             "type": "Image",
             "id": "66613364-c897-41d1-8409-cc1c7bfaf12e",
             "label": "hotelholder",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "hotelholder"
@@ -606,7 +569,6 @@
             "type": "Image",
             "id": "bfc97a75-f2af-49b9-991b-174c0de39c46",
             "label": "art",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "art"
@@ -620,7 +582,6 @@
             "type": "Image",
             "id": "6e305a40-67b2-4cac-945d-e66e03a73322",
             "label": "pinkbowl",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "pinkbowl"
@@ -634,7 +595,6 @@
             "type": "Image",
             "id": "7fe8415b-2414-4b34-8a3e-24fb329130f3",
             "label": "bed",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "bed"
@@ -648,7 +608,6 @@
             "type": "Image",
             "id": "1a41c9f4-0261-4d46-a009-918b2583632d",
             "label": "foodbowl",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "foodbowl"
@@ -661,7 +620,6 @@
             "type": "Image",
             "id": "bbfd6fb1-0dee-44d1-bda4-24d2cda0c200",
             "label": "parkrailright",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "parkrailright"
@@ -673,7 +631,6 @@
             "type": "Image",
             "id": "598c27ad-c70d-4728-bdc0-efdc879d8cbb",
             "label": "surf",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "surf"
@@ -685,7 +642,6 @@
             "type": "Image",
             "id": "98cc3db3-2ce5-420b-9264-1cac1e56b350",
             "label": "bluebackpost",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "bluebackpost"
@@ -697,7 +653,6 @@
             "type": "Image",
             "id": "d8e0fe66-fd45-49f3-be0e-ff1cfe27c7ad",
             "label": "bluefrontpost",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "bluefrontpost"
@@ -711,7 +666,6 @@
             "type": "Image",
             "id": "f6ab4380-f912-48b5-8968-8e51ce9a90a3",
             "label": "petfg",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "petfg"
@@ -725,7 +679,6 @@
             "type": "Image",
             "id": "3f3f3862-fde9-4e7e-99d3-58f915a8a64a",
             "label": "post",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "post"
@@ -739,7 +692,6 @@
             "type": "Image",
             "id": "3d717eea-88f2-4f17-b4ce-e01f8c8fcd38",
             "label": "postright",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "postright"
@@ -753,7 +705,6 @@
             "type": "Image",
             "id": "a9454758-1d6e-4d4a-b83d-98b782bdafa5",
             "label": "skateboard",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "skateboard"
@@ -771,6 +722,7 @@
                 "Button",
                 "LocalisedSprite"
             ],
+            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
             "texture": {
                 "key": "pet",
                 "frame": "petcat_en"
@@ -787,6 +739,7 @@
             "components": [
                 "Button"
             ],
+            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
             "texture": {
                 "key": "pet",
                 "frame": "adoptbutton"
@@ -800,7 +753,6 @@
             "type": "Image",
             "id": "12e4b809-45c8-45fe-800c-a3bc8b0b0332",
             "label": "greenwagonback",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "greenwagonback"
@@ -814,7 +766,6 @@
             "type": "Image",
             "id": "ab3b33dc-2a11-4235-8a75-e86ad7e8e227",
             "label": "greenwagonfront",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "greenwagonfront"
@@ -828,7 +779,6 @@
             "type": "Image",
             "id": "d6992fe8-afe7-4e73-947d-868f2c957101",
             "label": "parkrailleft",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "parkrailleft"
@@ -843,7 +793,6 @@
             "id": "fc4ed74a-4a09-4863-a2ed-5b7f0cabe606",
             "label": "pufflecarebutton",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "pufflecarebutton0001"
@@ -856,7 +805,6 @@
             "id": "0f67f82a-45ac-4dfe-98c7-b5e3713cb57a",
             "label": "goldtube",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "goldtube0001"
@@ -868,7 +816,6 @@
             "type": "Image",
             "id": "3d23f124-873b-4bf6-8d81-8304850335fe",
             "label": "adoptsign",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "adoptsign"
@@ -880,7 +827,6 @@
             "type": "Image",
             "id": "275556a4-d8b4-43fd-95ae-9a636d4f30d6",
             "label": "rightplazarails",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "rightplazarails"
@@ -892,7 +838,6 @@
             "type": "Image",
             "id": "1022929b-6c1b-42b3-9ac8-d98fc63dae23",
             "label": "rightbackplazarails",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "rightbackplazarails"
@@ -904,7 +849,6 @@
             "type": "Image",
             "id": "d412ecad-208f-421e-b46c-1c48b582c54f",
             "label": "plazarail",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "plazarail"
@@ -940,7 +884,6 @@
             "id": "7e7d3aaf-340b-47d2-b40e-f128c8658318",
             "label": "blackpuffblink",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "blackpuffblink0001"
@@ -953,7 +896,6 @@
             "id": "a50388ea-c40c-4572-ae61-a1bb393cca1b",
             "label": "greenpuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 224,
             "y": 348,
             "allowPickChildren": false,
@@ -963,7 +905,6 @@
                     "id": "6767b5c0-2f37-46f9-bbbe-e7bc12fb5c40",
                     "label": "greenpuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "greenpuffbody"
@@ -976,7 +917,6 @@
                     "id": "1e30cc70-463d-4d1b-909e-09f049e6e657",
                     "label": "greenpuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "greenpuffblink0001"
@@ -988,7 +928,6 @@
                     "id": "2d7ff3bf-f6f7-4bdc-a05d-cff8c47ee53d",
                     "label": "greenpuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "greenpuffmouth"
@@ -1001,7 +940,6 @@
                     "id": "2b96c61c-e1f1-40b9-a1c9-27e44d9b7206",
                     "label": "greenpuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "greenpuffjump0001"
@@ -1017,7 +955,6 @@
             "id": "b6ff294b-e425-462f-83a9-4167b7a1b0bb",
             "label": "brownpuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 287,
             "y": 332,
             "allowPickChildren": false,
@@ -1027,7 +964,6 @@
                     "id": "1ba9dfd4-2f6b-4e13-8400-781cc4f23e5e",
                     "label": "brownpuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "brownpuffbody"
@@ -1040,7 +976,6 @@
                     "id": "461c915c-c1b2-4346-9586-cf5530e6355c",
                     "label": "brownpuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "brownpuffblink0001"
@@ -1052,7 +987,6 @@
                     "id": "fc95b8e4-7590-4707-83c4-0ed317de6fc8",
                     "label": "brownpuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "brownpuffmouth"
@@ -1065,7 +999,6 @@
                     "id": "e1f38908-20dd-4704-b9b8-36cce20e9b5a",
                     "label": "brownpuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "brownpuffjump0001"
@@ -1081,7 +1014,6 @@
             "id": "5bf4fa4e-bc9d-4cd3-8f0e-734740328f52",
             "label": "yellowpuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 345,
             "y": 330,
             "allowPickChildren": false,
@@ -1091,7 +1023,6 @@
                     "id": "bd287f06-0c94-4d29-afcd-538093d354f6",
                     "label": "yellowpuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "yellowpuffbody"
@@ -1104,7 +1035,6 @@
                     "id": "e2ac7614-f100-4b86-8f3e-1e32ad2cfd3c",
                     "label": "yellowpuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "yellowpuffblink0001"
@@ -1116,7 +1046,6 @@
                     "id": "41bb4dea-e9fa-4857-8368-3c87a76e8bb1",
                     "label": "yellowpuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "yellowpuffmouth"
@@ -1129,7 +1058,6 @@
                     "id": "951b3457-4e3c-40b0-a769-813534c81200",
                     "label": "yellowpuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "yellowpuffjump0001"
@@ -1145,7 +1073,6 @@
             "id": "5fa17b8a-b57a-4f93-a22d-74862d474c92",
             "label": "bluedogblink",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "bluedogblink0001"
@@ -1158,7 +1085,6 @@
             "id": "5ccbc681-e8a4-49cb-ac3a-eecdbf293660",
             "label": "bluedogjump",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "bluedogjump0001"
@@ -1172,7 +1098,6 @@
             "id": "13dc606e-d72b-4c6a-b884-9ee5698ac0de",
             "label": "bluepuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 218.7750712280227,
             "y": 406.2965608520422,
             "allowPickChildren": false,
@@ -1182,7 +1107,6 @@
                     "id": "6c74cb3b-25b0-4789-b40e-9bee57b8c526",
                     "label": "bluepuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "bluepuffbody"
@@ -1195,7 +1119,6 @@
                     "id": "9d1f7950-7572-4aa7-b5a8-399434f73d99",
                     "label": "bluepuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "bluepuffblink0001"
@@ -1208,7 +1131,6 @@
                     "id": "99d9f0f0-0506-4ba5-91a3-b0253d04255e",
                     "label": "bluepuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "bluepuffmouth"
@@ -1221,7 +1143,6 @@
                     "id": "942544a4-cc4a-4fcb-b951-75d8c4e5f144",
                     "label": "bluepuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "bluepuffjump0001"
@@ -1237,7 +1158,6 @@
             "id": "99ae0797-cdd3-41b6-b9e7-7055aa636b9b",
             "label": "orangecatblink",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "orangecatblink0001"
@@ -1250,7 +1170,6 @@
             "id": "9ed4a584-e4bc-4efc-a324-c6ae7d8fafc0",
             "label": "orangecatjump",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "orangecatjump0001"
@@ -1264,7 +1183,6 @@
             "id": "9121e50c-4f40-4376-9e41-88d74d1304ef",
             "label": "redpuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 377,
             "y": 368,
             "allowPickChildren": false,
@@ -1274,7 +1192,6 @@
                     "id": "1f888a3f-17bd-48f7-a490-a60ed2fee8d2",
                     "label": "redpuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "redpuffbody"
@@ -1287,7 +1204,6 @@
                     "id": "126c44f7-d7aa-478d-b995-cf83ce8e77e9",
                     "label": "redpuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "redpuffeyes0001"
@@ -1299,7 +1215,6 @@
                     "id": "a73c7123-ddde-47bc-bf0a-566a795bd75c",
                     "label": "redpuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "redpuffmouth"
@@ -1312,7 +1227,6 @@
                     "id": "4d473ce8-828a-4810-84a6-464c14bd7b4c",
                     "label": "redpuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "redpuffjump0001"
@@ -1328,7 +1242,6 @@
             "id": "0f9abc41-90d1-4a5d-8468-2b30904134e6",
             "label": "pinkpuffle",
             "scope": "CLASS",
-            "components": [],
             "x": 243.00000424592668,
             "y": 1334.8267444114267,
             "allowPickChildren": false,
@@ -1338,7 +1251,6 @@
                     "id": "7685fbb3-d9c9-4829-93bf-29d2354018e2",
                     "label": "pinkpuffbody",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "pinkpuffbody"
@@ -1351,7 +1263,6 @@
                     "id": "3ef3fc97-0019-413f-b844-5e3e67221b01",
                     "label": "pinkpuffblink",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "pinkpuffblink0001"
@@ -1364,7 +1275,6 @@
                     "id": "904b0919-fc0b-45f3-a31e-9da301ebeed0",
                     "label": "pinkpuffmouth",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "pinkpuffmouth"
@@ -1377,7 +1287,6 @@
                     "id": "598e585c-014e-4c14-a7cc-f0605ad19e74",
                     "label": "pinkpuffjump",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "pet",
                         "frame": "pinkpuffjump0001"
@@ -1393,7 +1302,6 @@
             "id": "4bafbd03-befe-49ae-ab0a-2eebfaaf0b1d",
             "label": "orangepuffjump",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "orangepuffjump0001"
@@ -1407,7 +1315,6 @@
             "type": "Image",
             "id": "bb8427b0-5b6f-4904-8f83-b921c62b3887",
             "label": "discoball",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "discoball"
@@ -1420,7 +1327,6 @@
             "type": "Image",
             "id": "77dfbb6d-e653-446c-bad1-4e34147f3b4b",
             "label": "foodbowlgreen",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "foodbowlgreen"
@@ -1432,7 +1338,6 @@
             "type": "Image",
             "id": "809af997-cc54-42ca-bb1c-a6bfd3143616",
             "label": "foodbowlyellow",
-            "components": [],
             "texture": {
                 "key": "pet",
                 "frame": "foodbowlyellow"
@@ -1446,7 +1351,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

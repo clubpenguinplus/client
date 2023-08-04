@@ -2169,7 +2169,7 @@ export default class ThinIce extends GameScene {
 
         this.coinBagsCollected = 0
 
-        this.startGame()
+        // this.startGame()
     }
 
     startGame() {

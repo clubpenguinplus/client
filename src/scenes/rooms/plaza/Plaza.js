@@ -34,7 +34,8 @@ export default class Plaza extends RoomScene {
             },
             forts: () => this.triggerRoom(801, 1320, 460),
             forest: () => this.triggerRoom(809, 150, 320),
-            hotel: () => this.triggerRoom(430, 800, 350)
+            hotel: () => this.triggerRoom(430, 800, 350),
+            park: () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
         }
 
         this.music = 677
@@ -146,9 +147,10 @@ export default class Plaza extends RoomScene {
         const puffle_hotel_sign = this.add.image(534, 147, 'plaza', 'puffle_hotel_sign')
 
         // rectangle_2
-        const rectangle_2 = this.add.rectangle(126, 347, 128, 128)
+        const rectangle_2 = this.add.rectangle(144.52093192533204, 498.8023298133302, 128, 128)
         rectangle_2.scaleX = 1.569424637449067
         rectangle_2.scaleY = 2.2133166412822716
+        rectangle_2.setOrigin(0.5921960685294967, 1.0358273910455558)
         rectangle_2.fillColor = 47333
         rectangle_2.fillAlpha = 100
 
@@ -246,6 +248,7 @@ export default class Plaza extends RoomScene {
         const rectangle_2SimpleButton = new SimpleButton(rectangle_2)
         rectangle_2SimpleButton.hoverCallback = () => this.parksign.setFrame('park-hover')
         rectangle_2SimpleButton.hoverOutCallback = () => this.parksign.setFrame('park')
+        new MoveTo(rectangle_2)
 
         this.parksign = parksign
         this.cannon = cannon
