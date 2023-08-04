@@ -1072,7 +1072,7 @@ export default class Create extends BaseScene {
 
     over13() {
         this.airtower.connectLogin(false, false)
-        this.parentSignup = true
+        this.parentSignup = false
         this.rookie_talk.visible = false
         this.rookie_stand.visible = true
         this.age.visible = false
