@@ -77,7 +77,7 @@ export default class PaperDollLoader {
 
         this.load.image({
             key: key,
-            url: `${url}/${item}.webp`,
+            url: `${url}/${item}.webp`
         })
     }
 
@@ -186,14 +186,14 @@ export default class PaperDollLoader {
         this.scene.tweens.add({
             targets: paper,
             alpha: {from: 0, to: 1},
-            duration: 200,
+            duration: 200
         })
     }
 
     addInput(slot, paper) {
         paper.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true,
+            pixelPerfect: true
         })
 
         paper.on('pointerdown', () => this.onPaperClick(slot))

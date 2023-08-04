@@ -66,14 +66,14 @@ export default class PaperDollPuffleLoader extends BaseLoader {
         this.scene.tweens.add({
             targets: puffle,
             alpha: {from: 0, to: 1},
-            duration: 200,
+            duration: 200
         })
     }
 
     addInput(puffle) {
         puffle.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true,
+            pixelPerfect: true
         })
 
         puffle.on('pointerdown', () => this.onPuffleClick())

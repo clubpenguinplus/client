@@ -95,8 +95,7 @@ export default class ItemPrompt extends BaseContainer {
     }
 
     inventoryIncludes(item) {
-        let flat = Object.values(this.shell.client.inventory).flat()
-        return flat.includes(item)
+        return this.shell.client.hasItem(item)
     }
 
     getText(name, cost) {

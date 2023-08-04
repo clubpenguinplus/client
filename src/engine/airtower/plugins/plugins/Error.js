@@ -8,14 +8,14 @@ export default class Error extends Plugin {
             cwe: this.closeWithError,
             w: this.warning,
             k: this.kick,
-            b: this.ban,
+            b: this.ban
         }
 
         // Todo: use error ids instead
         this.customHandlers = {
             'Sorry this room is currently full': () => this.fullRoom(),
             'Stealth mode enabled\nPlease relogin.': () => this.stealthEnabled(),
-            'Stealth mode disabled\nPlease relogin.': () => this.stealthDisabled(),
+            'Stealth mode disabled\nPlease relogin.': () => this.stealthDisabled()
         }
     }
 

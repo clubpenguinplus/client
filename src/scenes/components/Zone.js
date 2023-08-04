@@ -40,7 +40,7 @@ export default class Zone extends SimpleButton {
         zone.angle = this.gameObject.angle
 
         zone.setInteractive({
-            cursor: 'pointer',
+            cursor: 'pointer'
         })
 
         zone.on('pointerover', () => this.onOver())

@@ -947,11 +947,11 @@ export default class SoundStudio extends GameScene {
                                 this.record_txt.text = 'Recording...'
                                 this.record_txt.alpha = 1
                                 this.startRecording()
-                            },
+                            }
                         })
-                    },
+                    }
                 })
-            },
+            }
         })
     }
 

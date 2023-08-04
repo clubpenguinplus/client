@@ -132,7 +132,8 @@ function getCrumb(file, item) {
                 'color': item.color,
                 'value': parseInt(item.value),
                 'description': item.description,
-                'powerId': parseInt(item.power_id)
+                'powerId': parseInt(item.power_id),
+                'element': item.element,
             }
         case 'furniture_items.json':
             return {

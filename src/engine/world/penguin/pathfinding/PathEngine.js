@@ -54,7 +54,7 @@ export default class PathEngine {
 
             return {
                 target: safe,
-                duration: duration,
+                duration: duration
             }
         }
     }

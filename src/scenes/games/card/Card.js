@@ -142,14 +142,14 @@ export default class Card extends GameScene {
                 }
                 return {
                     key: `battles/${anim}`,
-                    frame: `${key}_${frameString}`,
+                    frame: `${key}_${frameString}`
                 }
             })
             this.anims.create({
                 key: `${anim}_${key}`,
                 frames: frames,
                 frameRate: 24,
-                repeat: anim == 'ambient' ? -1 : 0,
+                repeat: anim == 'ambient' ? -1 : 0
             })
         }
     }

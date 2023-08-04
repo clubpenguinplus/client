@@ -26,7 +26,7 @@ export default class FriendIcon extends BaseContainer {
                 button: button,
                 icon: icon,
                 buttonTexture: 'blue-button',
-                iconTexture: iconTexture,
+                iconTexture: iconTexture
             }
         }
 

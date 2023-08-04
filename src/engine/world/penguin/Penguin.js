@@ -32,7 +32,7 @@ export default class Penguin extends BaseContainer {
         PathEngine.setStartPos(this)
         this.depth = this.y
         this.tween
-        this.direction
+        this.direction = 1
 
         this.nameTag = penguinLoader.addName(this)
         this.nameTag.visible = !this.shell.settings.hn
@@ -103,6 +103,7 @@ export default class Penguin extends BaseContainer {
      */
     onDestroy() {
         delete this.body
+        this.puffleSprite = null
     }
 
     load() {
@@ -162,11 +163,12 @@ export default class Penguin extends BaseContainer {
         if (!this.puffle) return
 
         // Pet shop floor
+        let parent = this.crumbs.puffles[this.puffle].parent
+        let color = this.crumbs.puffles[parent].name.toLowerCase()
         if (this.room.floorpuffle) {
-            let parent = this.crumbs.puffles[this.puffle].parent
-            let color = this.crumbs.puffles[parent].name.toLowerCase()
             this.room.floorpuffle.setFrame(`floorpuffle_${color}`)
         }
+        this.interface.main.setPuffleColor(color)
 
         if (this.shell.textures.exists(`puffles/walk/${this.puffle}`)) return this.addPuffleSprite()
 
@@ -175,9 +177,12 @@ export default class Penguin extends BaseContainer {
     }
 
     addPuffleSprite() {
-        this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
-        this.puffleSprite.depth = 999999
-        this.add(this.puffleSprite)
+        if (this.puffleSprite) {
+            this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+        } else {
+            this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+            this.add(this.puffleSprite)
+        }
 
         if (this.room.isIgloo) {
             this.puffleSprite.setInteractive({useHandCursor: true, pixelPerfect: true})
@@ -187,8 +192,8 @@ export default class Penguin extends BaseContainer {
     }
 
     removePuffle() {
-        this.puffle = null
-        if (this.puffleSprite) this.puffleSprite.destroy()
+        this.puffle = 0
+        if (this.puffleSprite) this.remove(this.puffleSprite, true)
         this.puffleSprite = null
     }
 
@@ -263,7 +268,7 @@ export default class Penguin extends BaseContainer {
             key: key,
             frames: frames,
             frameRate: 24,
-            repeat: animation.repeat || 0,
+            repeat: animation.repeat || 0
         })
 
         if (animation.chain) {
@@ -290,7 +295,7 @@ export default class Penguin extends BaseContainer {
 
         let config = {
             prefix: `${prefix}${frame}_`,
-            frames: frames,
+            frames: frames
         }
 
         let textureFrames = this.textures.get(textureKey).getFrameNames(false)
@@ -317,7 +322,7 @@ export default class Penguin extends BaseContainer {
                 key: chainKey,
                 frames: frames,
                 frameRate: 24,
-                repeat: chain.repeat || 0,
+                repeat: chain.repeat || 0
             })
 
             chainKeys.push(chainKey)
@@ -423,13 +428,18 @@ export default class Penguin extends BaseContainer {
         if (!this.anims.exists(`puffle_${animation}_${this.puffle}`)) this.generatePuffleAnim(animation)
 
         let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
-        pAnimSprite.depth = this.puffleSprite.depth
+        pAnimSprite.depth = 9999
         pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
         this.puffleSprite.visible = false
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
+        this.playFrame(8)
+        this.airtower.sendXt('u#sf', `${false}%8`)
+        this.puffleIsAnimating = true
         pAnimSprite.on('animationcomplete', () => {
             pAnimSprite.destroy()
             this.puffleSprite.visible = true
+            this.puffleIsAnimating = false
+            this.playFrame(this.direction)
         })
     }
 
@@ -444,7 +454,7 @@ export default class Penguin extends BaseContainer {
             key: `puffle_${animation}_${this.puffle}`,
             frames: this.anims.generateFrameNames(`puffles/${animation}/${this.puffle}`, {frames: frameArray}),
             frameRate: 24,
-            repeat: 0,
+            repeat: 0
         })
     }
 
@@ -474,7 +484,7 @@ export default class Penguin extends BaseContainer {
             y: Math.round(path.target.y),
 
             onUpdate: () => this.onMoveUpdate(),
-            onComplete: () => this.onMoveComplete(),
+            onComplete: () => this.onMoveComplete()
         })
 
         this.prevX = this.x
@@ -537,5 +547,9 @@ export default class Penguin extends BaseContainer {
             }
         }
         return false
+    }
+
+    remove(child, destroy) {
+        super.remove(child, destroy)
     }
 }

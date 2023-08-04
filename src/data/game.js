@@ -27,7 +27,7 @@ const clubpenguinplus = {
     roundPixels: true,
 
     dom: {
-        createContainer: true,
+        createContainer: true
     },
 
     physics: {
@@ -36,22 +36,22 @@ const clubpenguinplus = {
             debug: {
                 renderFill: localStorage.getItem('debugMode') == 'true' ? true : false,
                 renderLine: localStorage.getItem('debugMode') == 'true' ? true : false,
-                showInternalEdges: true,
+                showInternalEdges: true
             },
-            gravity: false,
-        },
+            gravity: false
+        }
     },
 
     scale: {
         parent: 'game',
         mode: Phaser.Scale.NONE,
         autoRound: true,
-        autoCenter: Phaser.Scale.CENTER_BOTH,
+        autoCenter: Phaser.Scale.CENTER_BOTH
     },
 
     loader: {
         baseURL: window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw/` : `${window.location.origin}/`,
-        crossOrigin: 'anonymous',
+        crossOrigin: 'anonymous'
     },
 
     crumbs: {
@@ -60,10 +60,10 @@ const clubpenguinplus = {
         scenes: {
             igloos: igloos,
             interfaces: interfaces,
-            rooms: rooms,
+            rooms: rooms
         },
-        iglooIdOffset: 2000,
-    },
+        iglooIdOffset: 2000
+    }
 }
 
 export default clubpenguinplus

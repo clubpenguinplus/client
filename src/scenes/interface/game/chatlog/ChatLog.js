@@ -51,7 +51,7 @@ export default class ChatLog extends BaseContainer {
             fontSize: 24,
             color: '#000000',
             align: 'left',
-            fixedWidth: 720,
+            fixedWidth: 720
         }
 
         this.messages = []
@@ -107,7 +107,7 @@ export default class ChatLog extends BaseContainer {
         this.messages.unshift({
             id: id,
             message: `${username}: ${message}`,
-            filtered: filtered,
+            filtered: filtered
         })
         this.updateMessages()
     }

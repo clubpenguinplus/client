@@ -1051,7 +1051,7 @@ export default class Create extends BaseScene {
                 this.penguin_body.tintBottomLeft = this.color
                 this.penguin_body.tintBottomRight = this.color
                 this.penguin_body_1.alpha = 0
-            },
+            }
         })
 
         for (let i = 1; i <= 16; i++) {

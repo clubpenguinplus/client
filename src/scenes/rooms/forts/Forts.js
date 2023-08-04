@@ -28,7 +28,7 @@ export default class Forts extends RoomScene {
         this.roomTriggers = {
             town: () => this.triggerRoom(100, 1240, 660),
             rink: () => this.triggerRoom(802, 780, 340),
-            plaza: () => this.triggerRoom(300, 340, 660),
+            plaza: () => this.triggerRoom(300, 340, 660)
         }
 
         this.music = 587

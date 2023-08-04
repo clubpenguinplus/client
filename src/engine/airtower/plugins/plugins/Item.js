@@ -8,6 +8,7 @@ export default class Item extends Plugin {
             ai: this.addItem,
             aci: this.addCodeItem,
             ac: this.addCoins,
+            sepfm: this.setMedals
         }
     }
 
@@ -24,6 +25,7 @@ export default class Item extends Plugin {
     }
 
     addItem(args) {
+        args[0] = parseInt(args[0])
         // If item already in inventory
         if (this.client.inventory[args[2]].includes(args[0])) return
 
@@ -44,6 +46,7 @@ export default class Item extends Plugin {
     }
 
     addCodeItem(args) {
+        args[0] = parseInt(args[0])
         // If item already in inventory
         if (this.client.inventory[args[2]].includes(args[0])) return
 
@@ -61,5 +64,9 @@ export default class Item extends Plugin {
 
         // Update catalog coins
         this.interface.updateCatalogCoins(args[0])
+    }
+
+    setMedals(args) {
+        this.client.medals = args[0]
     }
 }

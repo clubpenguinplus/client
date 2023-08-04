@@ -35,7 +35,7 @@ export default class SnowballFactory {
 
         this.shell.room.time.addEvent({
             delay: 833,
-            callback: () => this.addTween(ball, x, y),
+            callback: () => this.addTween(ball, x, y)
         })
     }
 
@@ -84,7 +84,7 @@ export default class SnowballFactory {
 
             onStart: () => this.onTweenStart(ball),
             onUpdate: () => this.onTweenUpdate(ball, curve),
-            onComplete: () => this.onTweenComplete(ball),
+            onComplete: () => this.onTweenComplete(ball)
         })
     }
 
@@ -119,7 +119,7 @@ export default class SnowballFactory {
     getMidPoint([x1, y1], [x2, y2]) {
         return {
             x: (x1 + x2) / 2,
-            y: (y1 + y2) / 2,
+            y: (y1 + y2) / 2
         }
     }
 

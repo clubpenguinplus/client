@@ -12,7 +12,7 @@ export default class Friend extends Plugin {
             fo: this.friendOnline,
             of: this.friendOffline,
             fs: this.friendSearch,
-            fse: this.searchError,
+            fse: this.searchError
         }
     }
 

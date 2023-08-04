@@ -4,7 +4,7 @@ export default class Postcard extends Plugin {
     constructor(airtower) {
         super(airtower)
         this.events = {
-            mc: this.mining,
+            mc: this.mining
         }
     }
 

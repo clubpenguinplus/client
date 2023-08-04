@@ -6,7 +6,7 @@ export default class Waddle extends Plugin {
         this.events = {
             gt: this.getWaddles,
             jt: this.joinWaddle,
-            ut: this.updateWaddle,
+            ut: this.updateWaddle
         }
     }
 

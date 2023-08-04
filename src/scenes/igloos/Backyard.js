@@ -7,7 +7,7 @@ export default class Backyard extends SoloRoom {
         super('Backyard')
         this.isBackyard = true
         this.roomTriggers = {
-            igloo: () => this.joinIgloo(),
+            igloo: () => this.joinIgloo()
         }
         this.puffles = {}
     }

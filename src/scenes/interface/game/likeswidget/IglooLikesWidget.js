@@ -409,7 +409,7 @@ export default class IglooLikesWidget extends BaseScene {
             body: array[5],
             hand: array[6],
             feet: array[7],
-            color: array[8],
+            color: array[8]
         }
     }
 

@@ -39,7 +39,7 @@ export default class Shell extends BaseScene {
                 hn: false,
                 ho: false,
                 mv: 0.7,
-                sv: 0.7,
+                sv: 0.7
             })
         }
 
@@ -52,7 +52,7 @@ export default class Shell extends BaseScene {
             set: function (target, property, value) {
                 updateSettings(target, property, value)
                 return true
-            },
+            }
         })
 
         return settingsProxy
@@ -75,6 +75,15 @@ export default class Shell extends BaseScene {
 
         this.airtower.sendXt('i#gp')
         this.airtower.sendXt('ma#g')
+
+        const emit = this.events.emit.bind(this.events)
+        this.events.emit = (event, ...args) => {
+            emit(event, ...args)
+            if (document.location.hostname == 'localhost') {
+                if (['preupdate', 'update', 'postupdate', 'prerender', 'render'].includes(event)) return
+                console.info(`[Shell] ${event}`, args)
+            }
+        }
     }
 
     setClient(args) {
@@ -280,6 +289,7 @@ export default class Shell extends BaseScene {
             walking: stringArray[19],
             epfStatus: stringArray[20],
             joinTime: stringArray[21],
+            medals: stringArray[22]
         }
     }
 
@@ -360,5 +370,25 @@ export default class Shell extends BaseScene {
         }
 
         return `${years} years ago`
+    }
+
+    isNearPos(x, y) {
+        if (this.client.penguin.x > x + 5) {
+            return false
+        }
+
+        if (this.client.penguin.x < x - 5) {
+            return false
+        }
+
+        if (this.client.penguin.y > y + 5) {
+            return false
+        }
+
+        if (this.client.penguin.y < y - 5) {
+            return false
+        }
+
+        return true
     }
 }

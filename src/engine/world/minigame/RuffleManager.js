@@ -7,7 +7,7 @@ export default class RuffleManager {
         if (window.getMyPlayerHex) return // Check if already loaded
 
         window.RufflePlayer.config = {
-            publicPath: 'https://unpkg.com/@ruffle-rs/ruffle',
+            publicPath: 'https://unpkg.com/@ruffle-rs/ruffle'
         }
 
         this.ruffle = window.RufflePlayer.newest()
@@ -60,7 +60,7 @@ export default class RuffleManager {
                     window.scrollTo({
                         top: 100,
                         left: 0,
-                        behavior: 'smooth',
+                        behavior: 'smooth'
                     })
                 } catch (e) {}
             }
@@ -117,7 +117,7 @@ export default class RuffleManager {
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
             quality: 'low',
-            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error',
+            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error'
         })
         this.swf = {minigame: minigame}
 
@@ -129,7 +129,7 @@ export default class RuffleManager {
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
             quality: 'low',
-            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error',
+            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error'
         })
         this.swf = {path: path, params: params}
 

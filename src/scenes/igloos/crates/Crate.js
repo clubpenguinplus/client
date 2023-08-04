@@ -33,10 +33,10 @@ export default class Crate extends Phaser.GameObjects.Container {
                 prefix: 'crate/explode',
                 start: 1,
                 end: 8,
-                zeroPad: 4,
+                zeroPad: 4
             }),
             frameRate: 24,
-            hideOnComplete: true,
+            hideOnComplete: true
         })
 
         /* END-USER-CTR-CODE */

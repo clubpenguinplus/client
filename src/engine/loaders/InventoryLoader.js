@@ -53,7 +53,7 @@ export default class InventoryLoader extends BaseLoader {
             angle: {from: 0, to: 180},
             duration: 900,
             repeat: -1,
-            ease: 'Cubic',
+            ease: 'Cubic'
         })
 
         slot.spinner = spinner

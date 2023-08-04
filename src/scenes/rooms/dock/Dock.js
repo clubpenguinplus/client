@@ -29,7 +29,7 @@ export default class Dock extends RoomScene {
             beach: () => this.triggerRoom(400, 950, 430),
             village: () => this.triggerRoom(200, 1300, 760),
             town: () => this.triggerRoom(100, 368, 640),
-            hydro: () => this.triggerGame('hydrohopper', 924, 'ruffle'),
+            hydro: () => this.triggerGame('hydrohopper', 924, 'ruffle')
         }
 
         this.music = 585
@@ -185,7 +185,7 @@ export default class Dock extends RoomScene {
         this.time.addEvent({
             delay: 1500,
             callback: () => this.floatBoat(),
-            loop: true,
+            loop: true
         })
     }
 

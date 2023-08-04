@@ -40,7 +40,7 @@ export default class SimpleButton extends EventComponent {
     start() {
         this.gameObject.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: this.pixelPerfect,
+            pixelPerfect: this.pixelPerfect
         })
 
         if (!this.hoverCallback) {

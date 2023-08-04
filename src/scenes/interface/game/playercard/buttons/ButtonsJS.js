@@ -19,7 +19,7 @@ export default class ButtonsJS extends BaseContainer {
                 icon: icon,
                 buttonTexture: 'blue-button',
                 iconTexture: iconTexture,
-                hint: hint,
+                hint: hint
             }
         }
 

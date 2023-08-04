@@ -37,7 +37,7 @@ export default class Lake extends RoomScene {
             forest: () => this.triggerRoom(809, 332, 674),
             underwater: () => {
                 if (this.hasMossKey()) this.triggerRoom(815, 504, 508)
-            },
+            }
         }
         this.music = '666'
         this.loadSfx = ['lake-door']

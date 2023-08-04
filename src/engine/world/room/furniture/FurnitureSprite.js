@@ -24,7 +24,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
             // Item frames (rotations)
             this.getFrameCount(0),
             // Art frames (variations)
-            this.getFrameCount(1),
+            this.getFrameCount(1)
         ]
 
         // Set animations
@@ -245,7 +245,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
             y: 883,
             scale: 0.5,
             ease: this.easeOutBack,
-            onComplete: () => this.onTrashComplete(),
+            onComplete: () => this.onTrashComplete()
         })
     }
 
@@ -299,10 +299,10 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
             frames: this.scene.anims.generateFrameNames(this.texture.key, {
                 prefix: `${frame}_`,
                 start: 1,
-                end: num,
+                end: num
             }),
             frameRate: 24,
-            repeat: -1,
+            repeat: -1
         })
     }
 
@@ -345,7 +345,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Sprite {
         return {
             key: frame,
             anim: this._anims ? this._anims[frame] : null,
-            num: num,
+            num: num
         }
     }
 }

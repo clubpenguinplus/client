@@ -9,6 +9,7 @@ export default class Puffles extends Plugin {
             ppw: this.walkPuffle,
             pgp: this.getPuffles,
             tby: this.toggleBackyard,
+            pplayanim: this.playPuffleAnimation
         }
     }
 
@@ -76,5 +77,12 @@ export default class Puffles extends Plugin {
                 this.shell.room.puffles[args[0]].removePuffle()
             }
         }
+    }
+
+    playPuffleAnimation(args) {
+        let penguin = this.shell.room.penguins[args[0]]
+        if (!penguin) return
+
+        penguin.animatePuffle(args[1])
     }
 }

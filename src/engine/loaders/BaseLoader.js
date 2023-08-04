@@ -1,6 +1,11 @@
 export default class BaseLoader extends Phaser.Loader.LoaderPlugin {
     constructor(scene) {
         super(scene)
+
+        // Shell sometimes doesn't send update events. Not sure why. This is a workaround.
+        setInterval(() => {
+            this.update()
+        }, 1000 / 20)
     }
 
     get crumbs() {

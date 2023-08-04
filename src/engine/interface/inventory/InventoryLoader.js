@@ -45,7 +45,7 @@ export default class InventoryLoader {
             angle: {from: 0, to: 180},
             duration: 900,
             repeat: -1,
-            ease: 'Cubic',
+            ease: 'Cubic'
         })
 
         slot.spinner = spinner
@@ -58,7 +58,7 @@ export default class InventoryLoader {
 
         this.load.image({
             key: key,
-            url: `${this.url}/${item}.webp`,
+            url: `${this.url}/${item}.webp`
         })
     }
 

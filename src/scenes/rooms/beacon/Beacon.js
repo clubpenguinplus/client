@@ -20,7 +20,7 @@ export default class Beacon extends RoomScene {
 
         this.roomTriggers = {
             light: () => this.triggerRoom(410, 454, 185, 5),
-            jetpack: () => this.triggerGame('jetpackadventure', 906, 'ruffle'),
+            jetpack: () => this.triggerGame('jetpackadventure', 906, 'ruffle')
         }
 
         this.music = 583

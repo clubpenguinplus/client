@@ -1,0 +1,102 @@
+{
+    "id": "22b1a706-9082-44c1-ba2a-5edd7ba66fb0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "bd6986fd-3673-442f-905b-e180ade662cb",
+            "label": "cont",
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "b1100df9-392d-4889-8872-5b560117d07e",
+                    "label": "cntr",
+                    "scope": "CLASS",
+                    "x": 61,
+                    "y": -41,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "94b6aa35-2f1c-4cf4-a058-bb3815a9d2a5",
+                            "label": "dummy",
+                            "scope": "CLASS",
+                            "x": 13,
+                            "width": 128,
+                            "height": 128
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e0a4f561-f732-43b5-82bf-718319c0242e",
+                            "label": "bg",
+                            "scope": "CLASS",
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar_back"
+                            },
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ddac2d2c-f849-4890-a82d-e36a3f5fbf61",
+                            "label": "bar",
+                            "scope": "CLASS",
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar"
+                            },
+                            "x": 13,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "631ec745-2dc6-428e-8fee-c723ee12fa19",
+                            "label": "icon",
+                            "scope": "CLASS",
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/food_icon"
+                            },
+                            "x": 22,
+                            "scaleX": 1.66666666667,
+                            "scaleY": 1.66666666667
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7cfb9e38-3080-4c4c-a5d7-23dd41f749dd",
+                            "label": "plus",
+                            "scope": "CLASS",
+                            "x": -24,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "+",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "45px",
+                            "fontStyle": "bold",
+                            "color": "#B3E37A",
+                            "stroke": "#3D531F",
+                            "strokeThickness": 8
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

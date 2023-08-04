@@ -253,7 +253,7 @@ export default class FindFour extends BaseContainer {
             [0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0]
         ]
         this.xcoords = [-145, -97, -49, 0, 49, 97, 145]
         this.ycoords = [121, 73, 24, -24, -73, -121]

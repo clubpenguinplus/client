@@ -26,9 +26,9 @@ export default class WallCrate extends Crate {
                 prefix: 'crate/wall_box',
                 start: 1,
                 end: 14,
-                zeroPad: 4,
+                zeroPad: 4
             }),
-            frameRate: 24,
+            frameRate: 24
         })
 
         /* END-USER-CTR-CODE */
@@ -59,7 +59,7 @@ export default class WallCrate extends Crate {
             onComplete: () => {
                 this.crate.visible = false
                 this.explode()
-            },
+            }
         })
     }
 

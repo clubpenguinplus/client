@@ -20,7 +20,7 @@ export default class Lighthouse extends RoomScene {
         this.roomTriggers = {
             beach: () => this.triggerRoom(400, 510, 450),
             beacon: () => this.triggerRoom(411, 273, 717),
-            drums: null,
+            drums: null
         }
 
         this.music = '588'

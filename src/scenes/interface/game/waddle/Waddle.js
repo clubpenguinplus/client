@@ -50,7 +50,7 @@ export default class Waddle extends BaseContainer {
             color: '#000000',
             fixedWidth: 420,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '32px',
+            fontSize: '32px'
         })
         this.add(text)
 
