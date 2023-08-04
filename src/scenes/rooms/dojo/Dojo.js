@@ -11,9 +11,9 @@ export default class Dojo extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             dojoext: () => this.triggerRoom(321, 760, 480),
-            firedojo: null,
-            waterdojo: null,
-            snowdojo: null,
+            firedojo: () => this.unimplementedPrompt(),
+            waterdojo: () => this.unimplementedPrompt(),
+            snowdojo: () => this.unimplementedPrompt()
         }
         this.music = 403
         this.loadSfx = ['dojo-wateropen', 'dojo-waterclose', 'dojo-snowopen', 'dojo-snowclose', 'dojo-fireopen', 'dojo-fireclose']

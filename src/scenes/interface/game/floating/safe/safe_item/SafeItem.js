@@ -21,7 +21,7 @@ export default class SafeItem extends BaseContainer {
             align: 'center',
             color: '#000000',
             fontFamily: 'cpBurbankSmall',
-            fontSize: '28px',
+            fontSize: '28px'
         }
 
         // name

@@ -14,12 +14,12 @@ export default class Login extends BaseScene {
 
         /** @type {Checks} */
         this.checks
-        /** @type {Phaser.GameObjects.Container} */
-        this.inputTextContainer
         /** @type {Phaser.GameObjects.Text} */
         this.usernameInput
         /** @type {Phaser.GameObjects.Text} */
         this.passwordInput
+        /** @type {Phaser.GameObjects.Container} */
+        this.inputTextContainer
         /** @type {WaitPrompt} */
         this.waitPrompt
         /** @type {SavePrompt} */
@@ -203,11 +203,12 @@ export default class Login extends BaseScene {
         // passwordInput (components)
         const passwordInputInputText = new InputText(passwordInput)
         passwordInputInputText.ispassword = true
+        passwordInputInputText.entercallback = () => this.onLoginSubmit()
 
         this.checks = checks
-        this.inputTextContainer = inputTextContainer
         this.usernameInput = usernameInput
         this.passwordInput = passwordInput
+        this.inputTextContainer = inputTextContainer
         this.waitPrompt = waitPrompt
         this.savePrompt = savePrompt
 

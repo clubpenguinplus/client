@@ -16,6 +16,8 @@ export default class ClientPenguin extends Penguin {
         penguinLoader.addRing(this)
 
         this.shell.client.penguin = this
+
+        this.lastRotatePacket = 0
     }
 
     update(item, slot) {
@@ -31,9 +33,17 @@ export default class ClientPenguin extends Penguin {
     rotate(x, y) {
         let angle = PathEngine.getAngle(this.pos, {x: x, y: y + 80})
         let direction = PathEngine.getDirection(angle)
+        if (this.direction == direction) return
         this.direction = direction
 
+        if (this.puffleIsAnimating) return
+
         this.playFrame(direction)
+
+        if (Date.now() - this.lastRotatePacket < 100) return
+
+        this.airtower.sendXt('u#sf', `${false}%${direction}`)
+        this.lastRotatePacket = Date.now()
     }
 
     sit(x, y) {

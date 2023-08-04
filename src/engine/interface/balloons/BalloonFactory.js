@@ -95,7 +95,7 @@ export default class BalloonFactory {
     addTimer(penguin, balloon) {
         let config = {
             delay: this.delay,
-            callback: () => this.removeBalloon(penguin, balloon),
+            callback: () => this.removeBalloon(penguin, balloon)
         }
 
         if (penguin.balloonTimer) {

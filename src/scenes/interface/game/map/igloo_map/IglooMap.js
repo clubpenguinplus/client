@@ -372,7 +372,7 @@ export default class IglooMap extends BaseContainer {
             duration: 900,
             repeat: -1,
             ease: 'Cubic',
-            paused: true,
+            paused: true
         })
 
         this.igloos

@@ -29,7 +29,7 @@ export default class Underwater extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             lake: () => this.triggerRoom(814, 1288, 700),
-            mosskey: () => this.interface.prompt.showItem(7016),
+            mosskey: () => this.interface.prompt.showItem(7016)
         }
 
         this.music = 671
@@ -160,7 +160,7 @@ export default class Underwater extends RoomScene {
             delay: 500,
             onComplete: () => {
                 this.onJellyfishTween()
-            },
+            }
         })
     }
 
@@ -172,7 +172,7 @@ export default class Underwater extends RoomScene {
             delay: 4000,
             onComplete: () => {
                 this.onJellyfishSideTween()
-            },
+            }
         })
     }
 
@@ -189,7 +189,7 @@ export default class Underwater extends RoomScene {
             delay: 500,
             onComplete: () => {
                 this.jellyfishTween()
-            },
+            }
         })
     }
 
@@ -201,7 +201,7 @@ export default class Underwater extends RoomScene {
             delay: 500,
             onComplete: () => {
                 this.onFluffyTween()
-            },
+            }
         })
     }
 
@@ -213,7 +213,7 @@ export default class Underwater extends RoomScene {
             delay: 10000,
             onComplete: () => {
                 this.onFluffySideTween()
-            },
+            }
         })
     }
 
@@ -230,7 +230,7 @@ export default class Underwater extends RoomScene {
             delay: 500,
             onComplete: () => {
                 this.fluffyTween()
-            },
+            }
         })
     }
 
@@ -242,7 +242,7 @@ export default class Underwater extends RoomScene {
             delay: 0,
             onComplete: () => {
                 this.onFishSideTween()
-            },
+            }
         })
     }
 

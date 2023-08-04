@@ -18,7 +18,7 @@ export default class TextBalloon extends Balloon {
             align: 'center',
             fixedWidth: textWidth,
             wordWrap: {width: textWidth, useAdvancedWrap: true},
-            lineSpacing: -5,
+            lineSpacing: -5
         }
 
         this.text = this.addText()

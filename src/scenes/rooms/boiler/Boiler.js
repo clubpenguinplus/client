@@ -15,7 +15,7 @@ export default class Boiler extends RoomScene {
 
         this.roomTriggers = {
             dance: () => this.triggerRoom(120, 935, 520),
-            cave: () => this.triggerRoom(806, 285, 630),
+            cave: () => this.triggerRoom(806, 285, 630)
         }
         this.music = 667
 

@@ -14,32 +14,32 @@ export default class HotelSpa extends RoomScene {
             elevator: () => this.interface.loadExternal('Elevator'),
             treadmill1: {
                 callback: () => this.startTreadmill1(),
-                offCallback: () => this.stopTreadmill1(),
+                offCallback: () => this.stopTreadmill1()
             },
             treadmill2: {
                 callback: () => this.startTreadmill2(),
-                offCallback: () => this.stopTreadmill2(),
+                offCallback: () => this.stopTreadmill2()
             },
             mat1: {
                 callback: () => this.startMat1(),
-                offCallback: () => this.stopMat1(),
+                offCallback: () => this.stopMat1()
             },
             mat2: {
                 callback: () => this.startMat2(),
-                offCallback: () => this.stopMat2(),
+                offCallback: () => this.stopMat2()
             },
             mat3: {
                 callback: () => this.startMat3(),
-                offCallback: () => this.stopMat3(),
+                offCallback: () => this.stopMat3()
             },
             mat4: {
                 callback: () => this.startMat4(),
-                offCallback: () => this.stopMat4(),
+                offCallback: () => this.stopMat4()
             },
             chair1: () => this.startGrooming1(),
             chair2: () => this.startGrooming2(),
             washchair1: () => this.startWashChair1(),
-            washchair2: () => this.startWashChair2(),
+            washchair2: () => this.startWashChair2()
         }
 
         this.music = 361

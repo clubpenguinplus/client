@@ -810,7 +810,7 @@ export default class Report extends Closeup {
             'In Consideration': '#0b384bff',
             'In Progress': '#0b384bff',
             Reopened: '#0b384bff',
-            'Looking Into': '#0b384bff',
+            'Looking Into': '#0b384bff'
         }
     }
 
@@ -904,15 +904,15 @@ export default class Report extends Closeup {
         fetch(this.dataurl + 'getissues', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: JSON.stringify({
                 type: this.mode,
                 reporter: 'all',
                 limit: 5,
                 from: this.page * 5,
-                sessionId: this.shell.client.sessionId,
-            }),
+                sessionId: this.shell.client.sessionId
+            })
         })
             .then((response) => response.json())
             .then((data) => {
@@ -947,7 +947,7 @@ export default class Report extends Closeup {
             this.titles[index].text = issue.title
 
             this['issue' + index + 'Button'].setInteractive({
-                useHandCursor: true,
+                useHandCursor: true
             })
         })
 
@@ -987,15 +987,15 @@ export default class Report extends Closeup {
         fetch(this.dataurl + 'createissue', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: JSON.stringify({
                 type: this.mode,
                 title: title,
                 body: this.newBody.text,
                 sessionId: this.shell.client.sessionId,
-                version: `v${VERSION}`,
-            }),
+                version: `v${VERSION}`
+            })
         })
             .then((response) => response.json())
             .then((data) => {
@@ -1027,15 +1027,15 @@ export default class Report extends Closeup {
         fetch(this.dataurl + 'getissues', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: JSON.stringify({
                 type: this.mode,
                 reporter: this.shell.client.id,
                 limit: 5,
                 from: this.page * 5,
-                sessionId: this.shell.client.sessionId,
-            }),
+                sessionId: this.shell.client.sessionId
+            })
         })
             .then((response) => response.json())
             .then((data) => {
@@ -1073,7 +1073,7 @@ export default class Report extends Closeup {
             this.resolutionTextMain.text += ` of ${issue.duplicates}`
 
             this.resolutionTextMain.setInteractive({
-                useHandCursor: true,
+                useHandCursor: true
             })
             this.resolutionTextMain.on('pointerdown', () => {
                 this.getIssue(issue.duplicates)
@@ -1129,12 +1129,12 @@ export default class Report extends Closeup {
         fetch(this.dataurl + 'getissue', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: JSON.stringify({
                 key: key,
-                sessionId: this.shell.client.sessionId,
-            }),
+                sessionId: this.shell.client.sessionId
+            })
         })
             .then((response) => response.json())
             .then((data) => {
@@ -1174,12 +1174,12 @@ export default class Report extends Closeup {
         fetch(this.dataurl + 'getissuecomments', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: JSON.stringify({
                 id: id,
-                sessionId: this.shell.client.sessionId,
-            }),
+                sessionId: this.shell.client.sessionId
+            })
         })
             .then((response) => response.json())
             .then((data) => {

@@ -52,7 +52,7 @@ export default class Agentlobby extends RoomScene {
             },
             phone: () => {
                 if (!this.shell.client.isEPF) this.onPhoneTrigger()
-            },
+            }
         }
         this.loadSfx = ['agentlobby-dooropen', 'agentlobby-doorclosed', 'agentlobby-phone']
         /* END-USER-CTR-CODE */

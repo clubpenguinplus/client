@@ -10,7 +10,7 @@ export default class Shiphold extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             quarters: () => null,
-            ship: () => this.triggerRoom(420, 900, 600),
+            ship: () => this.triggerRoom(420, 900, 600)
         }
         this.music = 491
         this.loadSfx = ['shiphold-quartersopen', 'shiphold-quartersclose']

@@ -52,7 +52,7 @@ export default class Shop extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            town: () => this.triggerRoom(100, 932, 560),
+            town: () => this.triggerRoom(100, 932, 560)
         }
         this.music = 345
         this.loadSfx = ['shop-curtainopen', 'shop-curtainclose', 'shop-spinner', 'shop-dooropen', 'shop-doorclose', 'shop-bookopen', 'shop-bookclose']
@@ -213,7 +213,7 @@ export default class Shop extends RoomScene {
 
     showClothingCat() {
         //this.interface.loadExternal('ClothingCatalog')
-        this.interface.prompt.showError('In Closed Beta, you can use !ai {ID} in the chat bar to obtain items. EG: !ai 413')
+        this.interface.prompt.showError('Use !ai {ID} in the chat bar to obtain items. EG: !ai 413')
     }
 
     /* END-USER-CODE */

@@ -35,10 +35,10 @@ export default class RoomCrate extends Crate {
                 prefix: 'crate/spinner',
                 start: 1,
                 end: 20,
-                zeroPad: 4,
+                zeroPad: 4
             }),
             repeat: -1,
-            frameRate: 24,
+            frameRate: 24
         })
         spinner.anims.play('crate_spinner')
 
@@ -65,7 +65,7 @@ export default class RoomCrate extends Crate {
             y: {from: this.defaultY - 700, to: this.defaultY},
             duration: 800,
             ease: 'Cubic',
-            onComplete: () => this.onComplete(),
+            onComplete: () => this.onComplete()
         })
     }
 
@@ -78,7 +78,7 @@ export default class RoomCrate extends Crate {
                 this.spinner.visible = false
                 this.crate.visible = false
                 this.explode()
-            },
+            }
         })
     }
 

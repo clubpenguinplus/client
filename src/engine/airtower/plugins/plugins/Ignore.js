@@ -5,7 +5,7 @@ export default class Ignore extends Plugin {
         super(airtower)
         this.events = {
             ia: this.ignoreAdd,
-            ir: this.ignoreRemove,
+            ir: this.ignoreRemove
         }
     }
 

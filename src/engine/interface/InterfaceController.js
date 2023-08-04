@@ -117,7 +117,7 @@ export default class InterfaceController extends BaseScene {
 
         this.pin.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true,
+            pixelPerfect: true
         })
 
         this.pin.on('pointerup', () => this.interface.prompt.showItem(this.crumbs.pin.id))

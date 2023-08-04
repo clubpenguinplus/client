@@ -42,7 +42,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(all_text)
 
@@ -59,7 +59,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(other_text)
 
@@ -76,7 +76,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(colors_text)
 
@@ -93,7 +93,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(feet_text)
 
@@ -110,7 +110,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(hand_text)
 
@@ -127,7 +127,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(body_text)
 
@@ -144,7 +144,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(neck_text)
 
@@ -161,7 +161,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(face_text)
 
@@ -178,7 +178,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(head_text)
 
@@ -208,7 +208,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         other_container.add(pins_text)
 
@@ -221,7 +221,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         other_container.add(awards_text)
 
@@ -234,7 +234,7 @@ export default class InventorySort extends FloatingMenu {
             color: '#000000ff',
             fixedWidth: 268,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         other_container.add(backgrounds_text)
 

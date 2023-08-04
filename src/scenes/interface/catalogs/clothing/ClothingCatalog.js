@@ -113,7 +113,7 @@ export default class ClothingCatalog extends Book {
             ],
             party: [],
             returning: [],
-            lastChance: [],
+            lastChance: []
         }
 
         this.releaseDate = new Date(json.releaseDate)

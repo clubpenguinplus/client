@@ -10,7 +10,7 @@ export default class Join extends Plugin {
             jg: this.joinGame,
             ji: this.joinIgloo,
             ap: this.addPlayer,
-            rp: this.removePlayer,
+            rp: this.removePlayer
         }
     }
 

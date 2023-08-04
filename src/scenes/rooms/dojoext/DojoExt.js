@@ -12,7 +12,7 @@ export default class DojoExt extends RoomScene {
 
         this.roomTriggers = {
             shack: () => this.triggerRoom(807, 750, 400),
-            dojo: () => this.triggerRoom(320, 760, 800),
+            dojo: () => this.triggerRoom(320, 760, 800)
         }
 
         this.music = 1166

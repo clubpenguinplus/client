@@ -74,7 +74,7 @@ export default class MetricsManager {
             this.metrics[key] = {
                 ascent: 0,
                 descent: 0,
-                fontSize: 0,
+                fontSize: 0
             }
         } else {
             this.metrics[key] = text.getTextMetrics()

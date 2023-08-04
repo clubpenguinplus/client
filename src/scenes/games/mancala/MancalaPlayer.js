@@ -20,7 +20,7 @@ export default class MancalaPlayer extends Phaser.GameObjects.Container {
         waiting.setStyle({
             fixedWidth: 260,
             fontFamily: 'cpBurbankSmall',
-            fontSize: '24px',
+            fontSize: '24px'
         })
         this.add(waiting)
 
@@ -35,7 +35,7 @@ export default class MancalaPlayer extends Phaser.GameObjects.Container {
             angle: {from: 0, to: 180},
             duration: 900,
             repeat: -1,
-            ease: 'Cubic',
+            ease: 'Cubic'
         })
 
         /* END-USER-CTR-CODE */

@@ -20,14 +20,12 @@
             "type": "Image",
             "id": "990c5549-c224-4ebd-915c-2092458cd35b",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "bg"
             },
             "originX": 0,
-            "originY": 0,
-            "list": []
+            "originY": 0
         },
         {
             "type": "Sprite",
@@ -42,48 +40,41 @@
                 "frame": "park"
             },
             "x": -45,
-            "y": 358,
-            "list": []
+            "y": 358
         },
         {
             "type": "Image",
             "id": "50b8efec-5fe2-427c-a689-eebdba356534",
             "label": "buildings",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "buildings"
             },
             "x": 767,
-            "y": 325,
-            "list": []
+            "y": 325
         },
         {
             "type": "Image",
             "id": "338f6e52-0a36-47a5-b11e-a0a4d4269513",
             "label": "pole",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "pole"
             },
             "x": 1082,
-            "y": 77,
-            "list": []
+            "y": 77
         },
         {
             "type": "Image",
             "id": "d1c65a28-a44b-463d-afd9-bc3796292074",
             "label": "pole_1",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "pole"
             },
             "x": 753,
             "y": 81,
-            "angle": -22,
-            "list": []
+            "angle": -22
         },
         {
             "type": "Sprite",
@@ -99,8 +90,7 @@
                 "frame": "flag1_0001"
             },
             "x": 1107,
-            "y": 79,
-            "list": []
+            "y": 79
         },
         {
             "type": "Sprite",
@@ -117,8 +107,7 @@
             },
             "x": 778,
             "y": 71,
-            "angle": -27,
-            "list": []
+            "angle": -27
         },
         {
             "type": "Image",
@@ -132,21 +121,18 @@
                 "frame": "mall_sign-en"
             },
             "x": 894,
-            "y": 65,
-            "list": []
+            "y": 65
         },
         {
             "type": "Image",
             "id": "9a9589bb-496f-4654-9eb4-2626095d3159",
             "label": "mall_fg",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "mall_fg"
             },
             "x": 914,
-            "y": 302,
-            "list": []
+            "y": 302
         },
         {
             "type": "Image",
@@ -164,8 +150,7 @@
                 "frame": "pet_door"
             },
             "x": 385,
-            "y": 431,
-            "list": []
+            "y": 431
         },
         {
             "type": "Sprite",
@@ -184,36 +169,31 @@
                 "frame": "cannon_0001"
             },
             "x": 285,
-            "y": 433,
-            "list": []
+            "y": 433
         },
         {
             "type": "Image",
             "id": "a44e7560-cbf1-49dd-854a-ba2ca096b6cf",
             "label": "buildings2",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "buildings2"
             },
             "x": 480,
-            "y": 283,
-            "list": []
+            "y": 283
         },
         {
             "type": "Sprite",
             "id": "ad1ba330-8d4c-4b32-ad72-26a56e99944a",
             "label": "cover",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "cover_0001"
             },
             "x": 507,
             "y": 673.9236627496881,
-            "originY": 1.6478945983850846,
-            "list": []
+            "originY": 1.6478945983850846
         },
         {
             "type": "Image",
@@ -227,8 +207,7 @@
                 "frame": "pet_sign-en"
             },
             "x": 362,
-            "y": 292,
-            "list": []
+            "y": 292
         },
         {
             "type": "Image",
@@ -247,8 +226,7 @@
                 "frame": "pizza_door"
             },
             "x": 1222,
-            "y": 417,
-            "list": []
+            "y": 417
         },
         {
             "type": "Image",
@@ -267,8 +245,7 @@
                 "frame": "mall_door"
             },
             "x": 918,
-            "y": 404,
-            "list": []
+            "y": 404
         },
         {
             "type": "Image",
@@ -287,14 +264,12 @@
                 "frame": "hotel_door"
             },
             "x": 643,
-            "y": 409,
-            "list": []
+            "y": 409
         },
         {
             "type": "Image",
             "id": "e75510db-f862-40c5-a2a6-d7c9dbe846e7",
             "label": "fg_2",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "fg_2"
@@ -302,27 +277,23 @@
             "x": 203.14926228192448,
             "y": 755.2392501923956,
             "originX": 0.616515661435073,
-            "originY": 0.4097499303023767,
-            "list": []
+            "originY": 0.4097499303023767
         },
         {
             "type": "Image",
             "id": "c4c851f5-2787-468a-9b63-6eebaba379d5",
             "label": "fg_3",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "fg_3"
             },
             "x": 1567,
-            "y": 692,
-            "list": []
+            "y": 692
         },
         {
             "type": "Image",
             "id": "c14a07fe-e42d-40e8-bb18-b2517e63f7b7",
             "label": "fg_1",
-            "components": [],
             "texture": {
                 "key": "plaza",
                 "frame": "fg_1"
@@ -330,8 +301,7 @@
             "x": 1421.4777668477834,
             "y": 754.5607223603644,
             "originX": 0.42192926018256904,
-            "originY": 0.20276760019732185,
-            "list": []
+            "originY": 0.20276760019732185
         },
         {
             "type": "Image",
@@ -345,8 +315,7 @@
                 "frame": "pizza_sign"
             },
             "x": 1254,
-            "y": 285,
-            "list": []
+            "y": 285
         },
         {
             "type": "Sprite",
@@ -365,8 +334,7 @@
                 "frame": "puffle_0001"
             },
             "x": -8,
-            "y": 231,
-            "list": []
+            "y": 231
         },
         {
             "type": "Sprite",
@@ -385,8 +353,7 @@
                 "frame": "smoke_0001"
             },
             "x": 183,
-            "y": 251,
-            "list": []
+            "y": 251
         },
         {
             "type": "Rectangle",
@@ -404,8 +371,7 @@
             "fillColor": "#00b8e5",
             "fillAlpha": 100,
             "width": 128,
-            "height": 128,
-            "list": []
+            "height": 128
         },
         {
             "type": "Rectangle",
@@ -426,8 +392,7 @@
             "fillColor": "#00b8e5",
             "fillAlpha": 100,
             "width": 128,
-            "height": 128,
-            "list": []
+            "height": 128
         },
         {
             "type": "Image",
@@ -441,27 +406,28 @@
                 "frame": "puffle_hotel_sign"
             },
             "x": 534,
-            "y": 147,
-            "list": []
+            "y": 147
         },
         {
             "type": "Rectangle",
             "id": "b9e6b316-51cc-41a3-bc7c-4096215ee840",
             "label": "rectangle_2",
             "components": [
-                "SimpleButton"
+                "SimpleButton",
+                "MoveTo"
             ],
             "SimpleButton.hoverCallback": "() => this.parksign.setFrame(\"park-hover\")",
             "SimpleButton.hoverOutCallback": "() => this.parksign.setFrame(\"park\")",
-            "x": 126,
-            "y": 347,
+            "x": 144.52093192533204,
+            "y": 498.8023298133302,
             "scaleX": 1.569424637449067,
             "scaleY": 2.2133166412822716,
+            "originX": 0.5921960685294967,
+            "originY": 1.0358273910455558,
             "fillColor": "#00b8e5",
             "fillAlpha": 100,
             "width": 128,
-            "height": 128,
-            "list": []
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -469,7 +435,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

@@ -20,9 +20,7 @@
             "type": "Container",
             "id": "756ef120-de12-49f2-9f24-52db327a62bf",
             "label": "pinContainer",
-            "scope": "CLASS",
-            "components": [],
-            "list": []
+            "scope": "CLASS"
         },
         {
             "type": "Image",
@@ -37,8 +35,7 @@
                 "frame": "dock"
             },
             "x": 760,
-            "y": 924,
-            "list": []
+            "y": 924
         },
         {
             "type": "Image",
@@ -53,15 +50,13 @@
                 "frame": "chat-box"
             },
             "x": 748,
-            "y": 929,
-            "list": []
+            "y": 929
         },
         {
             "type": "Container",
             "id": "3ef4d126-f1e0-4578-8609-3b5acff49325",
             "label": "inputTextContainer",
             "scope": "CLASS",
-            "components": [],
             "x": 518,
             "y": 929,
             "list": [
@@ -82,8 +77,7 @@
                     "lineSpacing": 25,
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
-                    "color": "#ffffffff",
-                    "list": []
+                    "color": "#ffffffff"
                 }
             ]
         },
@@ -92,14 +86,12 @@
             "id": "6791cf27-2369-4375-b006-df8d483ad73a",
             "label": "puffle_button_disabled",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "blue-button-disabled"
             },
             "x": 246,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Sprite",
@@ -116,22 +108,19 @@
             },
             "x": 246,
             "y": 930,
-            "visible": false,
-            "list": []
+            "visible": false
         },
         {
             "type": "Image",
             "id": "aa9caccb-a731-4b3b-bfe5-984fe2f6d4ac",
             "label": "puffle_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "puffle-icon-disabled"
             },
             "x": 245,
-            "y": 929,
-            "list": []
+            "y": 929
         },
         {
             "type": "Image",
@@ -149,21 +138,18 @@
                 "frame": "blue-button"
             },
             "x": 306,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "099b4f2f-3b22-49b1-84c9-e39997ce7f85",
             "label": "emote_icon",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "emote-icon"
             },
             "x": 306,
-            "y": 928,
-            "list": []
+            "y": 928
         },
         {
             "type": "Image",
@@ -181,22 +167,19 @@
                 "frame": "blue-button"
             },
             "x": 366,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "e48d913a-1f46-4bcc-ae4b-2bb6b5e7add7",
             "label": "action_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "action-icon"
             },
             "x": 366,
-            "y": 926,
-            "list": []
+            "y": 926
         },
         {
             "type": "Image",
@@ -214,22 +197,19 @@
                 "frame": "blue-button"
             },
             "x": 426,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "0b686bbe-3796-4b9d-b965-ee59d7380e1f",
             "label": "snowball_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "snowball-icon"
             },
             "x": 426,
-            "y": 929,
-            "list": []
+            "y": 929
         },
         {
             "type": "Image",
@@ -247,22 +227,19 @@
                 "frame": "blue-button"
             },
             "x": 1026,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "9891188b-feea-49f2-8a70-4d5e85546a7c",
             "label": "chat_send_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "chat-send0001"
             },
             "x": 1027,
-            "y": 928,
-            "list": []
+            "y": 928
         },
         {
             "type": "Image",
@@ -280,22 +257,19 @@
                 "frame": "blue-button"
             },
             "x": 1086,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "5e4ed4ed-00af-41ab-80e5-0f59836474bc",
             "label": "badge_member",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "badge-member"
             },
             "x": 1086,
-            "y": 927,
-            "list": []
+            "y": 927
         },
         {
             "type": "Image",
@@ -313,22 +287,19 @@
                 "frame": "blue-button"
             },
             "x": 1146,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "9fe13e03-fd99-450c-81f6-cf6220c3c28c",
             "label": "buddies_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "buddies-icon"
             },
             "x": 1146,
-            "y": 928,
-            "list": []
+            "y": 928
         },
         {
             "type": "Image",
@@ -346,22 +317,19 @@
                 "frame": "blue-button"
             },
             "x": 1206,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "c3de3562-d313-43a0-b5c1-fa0cc197473a",
             "label": "igloo_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "igloo-icon"
             },
             "x": 1206,
-            "y": 928,
-            "list": []
+            "y": 928
         },
         {
             "type": "Image",
@@ -379,22 +347,19 @@
                 "frame": "blue-button"
             },
             "x": 1266,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "2dd95bb8-62eb-4d8a-916e-734bc44b3c9d",
             "label": "help_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "help-icon"
             },
             "x": 1266,
-            "y": 928,
-            "list": []
+            "y": 928
         },
         {
             "type": "Image",
@@ -412,29 +377,25 @@
                 "frame": "blue-button"
             },
             "x": 486,
-            "y": 930,
-            "list": []
+            "y": 930
         },
         {
             "type": "Image",
             "id": "980ed16f-2969-4e44-ad27-f3f28486ae8f",
             "label": "chat_icon",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "chat-icon"
             },
             "x": 486,
-            "y": 929,
-            "list": []
+            "y": 929
         },
         {
             "type": "Container",
             "id": "d7b70910-8e6c-47f8-8b84-6adc172cd14b",
             "label": "mobileUi",
             "scope": "CLASS",
-            "components": [],
             "x": 47,
             "y": 893,
             "visible": false,
@@ -451,8 +412,7 @@
                         "key": "main",
                         "frame": "mobile/dock"
                     },
-                    "x": 713,
-                    "list": []
+                    "x": 713
                 },
                 {
                     "type": "Image",
@@ -468,8 +428,7 @@
                     },
                     "x": 710,
                     "y": 10,
-                    "scaleX": 0.9,
-                    "list": []
+                    "scaleX": 0.9
                 },
                 {
                     "type": "Image",
@@ -487,22 +446,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1426,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "0d5a627f-c590-4423-b610-cb50b92d1c55",
                     "label": "help_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/help-icon"
                     },
                     "x": 1426,
-                    "y": 7,
-                    "list": []
+                    "y": 7
                 },
                 {
                     "type": "Image",
@@ -520,22 +476,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1340,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "cce27100-199a-413b-8a89-e108cf7acccb",
                     "label": "igloo_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/igloo-icon"
                     },
                     "x": 1340,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
@@ -553,22 +506,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1254,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "22c074b9-4a39-443d-a4ba-7754208e6a32",
                     "label": "buddies_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/buddies-icon"
                     },
                     "x": 1254,
-                    "y": 8,
-                    "list": []
+                    "y": 8
                 },
                 {
                     "type": "Image",
@@ -586,22 +536,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1168,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "7fad3494-91cb-48fd-a5ca-94aa5010c841",
                     "label": "badge_member_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/badge-member"
                     },
                     "x": 1168,
-                    "y": 8,
-                    "list": []
+                    "y": 8
                 },
                 {
                     "type": "Image",
@@ -619,22 +566,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 1079,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "03c2b57e-ae89-47f3-b066-5344359ac06b",
                     "label": "chat_send_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/chat_send0001"
                     },
                     "x": 1082,
-                    "y": 7,
-                    "list": []
+                    "y": 7
                 },
                 {
                     "type": "Image",
@@ -652,22 +596,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 259,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "29148bdb-1f35-4a86-9488-966b5ad22c28",
                     "label": "snowball_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/snowball-icon"
                     },
                     "x": 259,
-                    "y": 8,
-                    "list": []
+                    "y": 8
                 },
                 {
                     "type": "Image",
@@ -685,22 +626,19 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 173,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "3e00f558-3543-44df-9234-769b7dc01f7c",
                     "label": "action_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/action-icon"
                     },
                     "x": 173,
-                    "y": 5,
-                    "list": []
+                    "y": 5
                 },
                 {
                     "type": "Image",
@@ -718,21 +656,18 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 87,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "dcc200d9-4f70-428d-884f-81ec340f4f93",
                     "label": "emote_icon_1",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/emote-icon"
                     },
                     "x": 87,
-                    "y": 7,
-                    "list": []
+                    "y": 7
                 },
                 {
                     "type": "Sprite",
@@ -749,35 +684,30 @@
                     },
                     "x": 199,
                     "y": 36,
-                    "visible": false,
-                    "list": []
+                    "visible": false
                 },
                 {
                     "type": "Image",
                     "id": "e9435159-063b-4cfd-afdb-27c5f3faff22",
                     "label": "puffle_button_disabled_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/blue-button-disabled"
                     },
                     "x": 1,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "f5781251-b5dd-428c-baa8-c3f7bc3668a7",
                     "label": "puffle_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/puffle0001"
                     },
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
@@ -795,29 +725,25 @@
                         "frame": "mobile/blue-button"
                     },
                     "x": 349,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Image",
                     "id": "cf54686b-186e-4367-b8d8-297d1d9addb0",
                     "label": "chat_icon_1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "mobile/chat-icon"
                     },
                     "x": 350,
-                    "y": 10,
-                    "list": []
+                    "y": 10
                 },
                 {
                     "type": "Container",
                     "id": "1c407792-f56c-4215-8d7e-ef3e55ca2060",
                     "label": "inputTextContainer_mobile",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 387,
                     "y": 10,
                     "list": [
@@ -840,8 +766,7 @@
                             "lineSpacing": 25,
                             "fontFamily": "cpBurbankSmall",
                             "fontSize": "36px",
-                            "color": "#ffffffff",
-                            "list": []
+                            "color": "#ffffffff"
                         }
                     ]
                 }
@@ -857,12 +782,9 @@
             ],
             "label": "mainRequestItem",
             "scope": "CLASS",
-            "components": [],
             "x": 1152,
             "y": 840,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "7774cb3f-550a-4bfa-9130-4e16f9b5a70e",
@@ -874,12 +796,9 @@
             ],
             "label": "onlineItem",
             "scope": "CLASS",
-            "components": [],
             "x": 1178,
             "y": 840,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "cd6b92e2-56e2-4e72-a90d-c4edead84679",
@@ -890,11 +809,8 @@
             ],
             "label": "chatLog",
             "scope": "CLASS",
-            "components": [],
             "x": 760,
-            "y": 2,
-            "nestedPrefabs": [],
-            "list": []
+            "y": 2
         },
         {
             "type": "Image",
@@ -910,8 +826,7 @@
                 "frame": "crosshair"
             },
             "y": 1100,
-            "visible": false,
-            "list": []
+            "visible": false
         },
         {
             "type": "Sprite",
@@ -927,8 +842,7 @@
                 "frame": "map-button"
             },
             "x": 90,
-            "y": 888,
-            "list": []
+            "y": 888
         },
         {
             "type": "Image",
@@ -944,8 +858,7 @@
                 "frame": "phone-button"
             },
             "x": 85,
-            "y": 758,
-            "list": []
+            "y": 758
         },
         {
             "type": "Sprite",
@@ -955,14 +868,13 @@
             "components": [
                 "Button"
             ],
-            "Button.callback": "() => {/*this.shell.RuffleManager.handleLoadOtherSwf(\"mail.swf\")*/}",
+            "Button.callback": "() => this.unimplementedPrompt()",
             "texture": {
                 "key": "main",
                 "frame": "mail-button"
             },
             "x": 170,
-            "y": 52,
-            "list": []
+            "y": 52
         },
         {
             "type": "Image",
@@ -972,14 +884,13 @@
             "components": [
                 "Button"
             ],
-            "Button.callback": "() => window.open('https://discord.gg/x3QuKfezb4', '_blank').focus();",
+            "Button.callback": "() => window.open('https://discord.gg/bm28TJfvWr', '_blank').focus();",
             "texture": {
                 "key": "main",
                 "frame": "discord"
             },
             "x": 70,
-            "y": 65,
-            "list": []
+            "y": 65
         },
         {
             "type": "Image",
@@ -996,8 +907,7 @@
             },
             "x": 1461,
             "y": 65,
-            "originY": 0.5047169811320755,
-            "list": []
+            "originY": 0.5047169811320755
         },
         {
             "type": "Image",
@@ -1015,8 +925,7 @@
             "x": 1454,
             "y": 70,
             "originY": 0.5047169811320755,
-            "visible": false,
-            "list": []
+            "visible": false
         },
         {
             "type": "Image",
@@ -1032,15 +941,13 @@
                 "frame": "beta"
             },
             "x": 1354,
-            "y": 68,
-            "list": []
+            "y": 68
         },
         {
             "type": "Layer",
             "id": "a205badf-674d-4f0f-bb3e-e687b24d30e9",
             "label": "widgetLayer",
             "scope": "CLASS",
-            "components": [],
             "list": [
                 {
                     "prefabId": "27889184-8ae4-4103-ab57-1cbad21b7401",
@@ -1052,12 +959,9 @@
                     ],
                     "label": "friend",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1140,
                     "y": 436,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
+                    "visible": false
                 },
                 {
                     "prefabId": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
@@ -1069,12 +973,9 @@
                     ],
                     "label": "playerCard",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 446,
                     "y": 436,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
+                    "visible": false
                 },
                 {
                     "prefabId": "3b9487f3-aeb8-4bac-95f7-1b1b4fae4a70",
@@ -1086,12 +987,9 @@
                     ],
                     "label": "friendSmall",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1235,
                     "y": 475,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
+                    "visible": false
                 },
                 {
                     "prefabId": "c31ea8ed-969b-4c52-8637-29c7c1258956",
@@ -1103,12 +1001,9 @@
                     ],
                     "label": "ignore",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1140,
                     "y": 436,
-                    "visible": false,
-                    "nestedPrefabs": [],
-                    "list": []
+                    "visible": false
                 }
             ]
         },
@@ -1122,12 +1017,9 @@
             ],
             "label": "settings",
             "scope": "CLASS",
-            "components": [],
             "x": 760,
             "y": 480,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "c0278f51-86ed-479c-93d8-d832408669c2",
@@ -1139,12 +1031,9 @@
             ],
             "label": "actionsMenu",
             "scope": "CLASS",
-            "components": [],
             "x": 366,
             "y": 872,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "0dee3174-7c8b-4158-b686-0fbea0d0c1f1",
@@ -1156,12 +1045,23 @@
             ],
             "label": "emotesMenu",
             "scope": "CLASS",
-            "components": [],
             "x": 306,
             "y": 902,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
+        },
+        {
+            "prefabId": "e737fd1d-9af5-48a8-93e7-c386428972ac",
+            "id": "0335770f-78ef-4824-8433-2d703cf1e0d5",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "puffleTricks",
+            "scope": "CLASS",
+            "x": 246,
+            "y": 872,
+            "visible": false
         },
         {
             "prefabId": "847139cb-5cc3-48bc-be0b-14aabf820c56",
@@ -1173,12 +1073,9 @@
             ],
             "label": "safe",
             "scope": "CLASS",
-            "components": [],
             "x": 244,
             "y": 933,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "032db1d9-1eac-4321-b4b3-ef359e514589",
@@ -1190,12 +1087,9 @@
             ],
             "label": "waddle",
             "scope": "CLASS",
-            "components": [],
             "x": 733,
             "y": 422,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "c497abe9-ef5b-4e05-9576-c628bc1df794",
@@ -1207,12 +1101,9 @@
             ],
             "label": "findFour",
             "scope": "CLASS",
-            "components": [],
             "x": 736,
             "y": 472,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "ce0a15ab-d3a1-4e2d-bac2-8a202f2a25a7",
@@ -1224,19 +1115,15 @@
             ],
             "label": "mancala",
             "scope": "CLASS",
-            "components": [],
             "x": 529,
             "y": 365,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "type": "Container",
             "id": "4ebfebfd-2b69-47e0-8c23-bd9afe26ced4",
             "label": "stampEarned",
             "scope": "CLASS",
-            "components": [],
             "x": 933,
             "y": -150,
             "list": [
@@ -1245,7 +1132,6 @@
                     "id": "86f4e8dd-431a-4a8e-8955-af32bc98fde7",
                     "label": "stampEarnedBg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "stamps/bg"
@@ -1255,50 +1141,43 @@
                     "alphaTopLeft": 0.7,
                     "alphaTopRight": 0.7,
                     "alphaBottomLeft": 0.7,
-                    "alphaBottomRight": 0.7,
-                    "list": []
+                    "alphaBottomRight": 0.7
                 },
                 {
                     "type": "Image",
                     "id": "0c12af78-4df0-4f97-93eb-e54628e3292f",
                     "label": "stampEarnedImage",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "stamps/activities0001"
                     },
-                    "y": 70,
-                    "list": []
+                    "y": 70
                 },
                 {
                     "type": "Text",
                     "id": "4731c1b6-725e-4ae0-a29e-293a414fcf30",
                     "label": "stampEarnedHeader",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 88,
                     "y": 25,
                     "text": "STAMP EARNED!",
                     "fixedWidth": 380,
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "40px",
-                    "fontStyle": "bold italic",
-                    "list": []
+                    "fontStyle": "bold italic"
                 },
                 {
                     "type": "Text",
                     "id": "3f5865ae-8907-41fc-96d5-dc2a982c711a",
                     "label": "stampEarnedBody",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 90,
                     "y": 80,
                     "text": "Stamp Name",
                     "fixedWidth": 380,
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "35px",
-                    "list": []
+                    "fontSize": "35px"
                 }
             ]
         },
@@ -1312,12 +1191,9 @@
             ],
             "label": "puffleCare",
             "scope": "CLASS",
-            "components": [],
             "x": 500,
             "y": 583,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "dc649c7a-1824-4b21-8431-e3d1168a4506",
@@ -1329,12 +1205,9 @@
             ],
             "label": "map",
             "scope": "CLASS",
-            "components": [],
             "x": 760,
             "y": 480,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         }
     ],
     "plainObjects": [],
@@ -1342,7 +1215,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

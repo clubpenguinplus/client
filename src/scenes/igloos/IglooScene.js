@@ -61,7 +61,7 @@ export default class IglooScene extends RoomScene {
             flooring: data.args[3],
             music: data.args[4],
             location: data.args[5],
-            furniture: furniture,
+            furniture: furniture
         }
     }
 
@@ -200,7 +200,7 @@ export default class IglooScene extends RoomScene {
         this.load.multiatlas({
             key: `flooring/${flooring}`,
             atlasURL: `${path}/${flooring}.json`,
-            path: path,
+            path: path
         })
     }
 

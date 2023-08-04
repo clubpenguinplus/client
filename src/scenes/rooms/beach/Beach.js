@@ -20,7 +20,7 @@ export default class Beach extends RoomScene {
             dock: () => this.triggerRoom(800, 400, 320),
             village: () => this.triggerRoom(200, 1300, 760),
             light: () => this.triggerRoom(410, 456, 492),
-            migrator: () => this.triggerRoom(420, 900, 600),
+            migrator: () => this.triggerRoom(420, 900, 600)
         }
 
         this.music = 582

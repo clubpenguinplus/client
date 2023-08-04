@@ -10,10 +10,10 @@ export default class Cavemine extends RoomScene {
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
-            gold: () => null,
+            gold: () => this.unimplementedPrompt(),
             hardhat: () => this.interface.prompt.showItem(429),
             mine: () => this.triggerRoom(808, 1000, 650),
-            underground: () => this.triggerRoom(814, 257, 601),
+            underground: () => this.triggerRoom(814, 257, 601)
         }
         this.music = 532
         this.loadSfx = ['cavemine-lighton', 'cavemine-lightoff']
@@ -122,10 +122,10 @@ export default class Cavemine extends RoomScene {
         pufflezone_hover.visible = false
 
         // puffhit
-        const puffhit = this.add.ellipse(406.7590265080627, 374.53705619099435, 128, 128)
+        const puffhit = this.add.ellipse(394.7240446867677, 356.0547445468666, 128, 128)
         puffhit.scaleX = 3.7698710378503946
         puffhit.scaleY = 2.819358984993884
-        puffhit.setOrigin(0.5886117575128106, 0.9864166714177861)
+        puffhit.setOrigin(0.5636710240309615, 0.9352018402807609)
 
         // lantern
         this.add.image(809, 342, 'cavemine', 'lantern')
@@ -167,7 +167,7 @@ export default class Cavemine extends RoomScene {
         signzoneSimpleButton.callback = () => this.onSignClick()
 
         // hats (components)
-        const hatsButton = new Button(hats)
+        new Button(hats)
         new MoveTo(hats)
 
         // minehoverhit (components)

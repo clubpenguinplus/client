@@ -27,7 +27,7 @@ export default class Shack extends RoomScene {
             school: () => this.triggerRoom(122, 1320, 760),
             dojo: () => this.triggerRoom(321, 760, 700),
             volleyone: null,
-            volleytwo: null,
+            volleytwo: null
         }
 
         this.music = 580

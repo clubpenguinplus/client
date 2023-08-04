@@ -26,7 +26,7 @@ export default class Skate extends RoomScene {
             lowerskate: () => {},
             railbench: () => {},
             railskate: () => {},
-            sample: () => {},
+            sample: () => {}
         }
         this.music = 754
         /* END-USER-CTR-CODE */

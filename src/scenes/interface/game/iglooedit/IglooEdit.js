@@ -971,13 +971,13 @@ export default class IglooEdit extends BaseScene {
             ease: 'Power2',
             onComplete: () => {
                 this.controls.state = 'minimised'
-            },
+            }
         })
         this.tweens.add({
             targets: this.lower,
             y: -279,
             duration: 500,
-            ease: 'Power2',
+            ease: 'Power2'
         })
     }
 
@@ -991,13 +991,13 @@ export default class IglooEdit extends BaseScene {
             ease: 'Power2',
             onComplete: () => {
                 this.controls.state = 'maximised'
-            },
+            }
         })
         this.tweens.add({
             targets: this.lower,
             y: 25,
             duration: 500,
-            ease: 'Power2',
+            ease: 'Power2'
         })
     }
 
@@ -1008,7 +1008,7 @@ export default class IglooEdit extends BaseScene {
                 targets: this.toggler,
                 x: 1151,
                 duration: 200,
-                ease: 'Power2',
+                ease: 'Power2'
             })
             this.airtower.sendXt('g#cr')
             return
@@ -1019,7 +1019,7 @@ export default class IglooEdit extends BaseScene {
             targets: this.toggler,
             x: 1217,
             duration: 200,
-            ease: 'Power2',
+            ease: 'Power2'
         })
         this.airtower.sendXt('g#or')
     }
@@ -1052,7 +1052,7 @@ export default class IglooEdit extends BaseScene {
     }
 
     showFurnitureCat() {
-        this.interface.prompt.showError('In Closed Beta, you can use !af {ID} in the chat bar to obtain furniture. EG: !af 100 You can also use !afl {ID} to add flooring, !al {id} to add locations and !aig {ID} to add igloos, but beware many igloos have not yet been implemented.')
+        this.interface.prompt.showError('Use !af {ID} in the chat bar to obtain furniture. EG: !af 100 You can also use !afl {ID} to add flooring, !al {id} to add locations and !aig {ID} to add igloos, but beware many igloos have not yet been implemented.')
         //this.interface.loadExternal('FurnitureCatalog')
     }
     /* END-USER-CODE */

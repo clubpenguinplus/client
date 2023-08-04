@@ -32,6 +32,11 @@ export default class InputText extends EventComponent {
         /* START-USER-CTR-CODE */
         this.gameObject.textContent = ''
         this.input = this.gameObject.scene.interface.input
+
+        if (!this.gameObject.scene.__InputTextList) {
+            this.gameObject.scene.__InputTextList = []
+        }
+        this.gameObject.scene.__InputTextList.push(this)
         /* END-USER-CTR-CODE */
     }
 
@@ -70,7 +75,7 @@ export default class InputText extends EventComponent {
 
         this.clickZone.setInteractive({
             cursor: 'text',
-            pixelPerfect: false,
+            pixelPerfect: false
         })
         this.clickZone.on('pointerup', (pointer) => this.onUp(pointer))
         this.clickZone.on('pointerover', () => this.onOver())
@@ -152,7 +157,7 @@ export default class InputText extends EventComponent {
     onUp(pointer) {
         // If there are multiple input fields, these listeners would be removed straight away by the other one, so we add them with a 0.1 second delay
         setTimeout(() => {
-            if (pointer.button != 0 || this.isSelected) {
+            if ((pointer && pointer.button != 0) || this.isSelected) {
                 return
             }
 
@@ -171,7 +176,7 @@ export default class InputText extends EventComponent {
                 curObject = curObject.parentContainer
                 offset += curObject.x
             }
-            let x = pointer.x - offset
+            let x = pointer ? pointer.x : 1520 - offset
 
             let charPoint = 0
             let charWidth = 0
@@ -229,7 +234,7 @@ export default class InputText extends EventComponent {
                 curObject = curObject.parentContainer
                 offset += curObject.x
             }
-            let x = pointer.x - offset
+            let x = pointer ? pointer.x : 1520 - offset
 
             let charPoint = 0
             let charWidth = 0
@@ -427,6 +432,19 @@ export default class InputText extends EventComponent {
             } else if (event.key == 'c') {
                 navigator.clipboard.writeText(this.gameObject.textContent)
             }
+        } else if (event.key == 'Tab') {
+            this.isSelected = false
+            this.gameObject.scene.interface.isInputActive = false
+            this.indicator.visible = false
+
+            let inputTexts = this.gameObject.scene.__InputTextList.filter((inputText) => inputText.clickZone.visible).sort((a, b) => a.trueY - b.trueY)
+            let index = inputTexts.indexOf(this)
+            if (index == inputTexts.length - 1) {
+                inputTexts[0].onUp()
+            } else {
+                inputTexts[index + 1].onUp()
+            }
+            return
         } else if (event.key.length != 1) {
             return
         } else if (this.charlimit > 0 && (this.gameObject.text + event.key).length > this.charlimit) {

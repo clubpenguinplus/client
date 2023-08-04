@@ -154,7 +154,7 @@ export default class PenguinSelect extends BaseScene {
             height: height,
             cellWidth: cellWidth,
             cellHeight: cellHeight,
-            position: Phaser.Display.Align.CENTER,
+            position: Phaser.Display.Align.CENTER
         })
 
         // Centers container

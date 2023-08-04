@@ -15,14 +15,14 @@ export default class Prompt extends BaseContainer {
             fontSize: 32,
             color: '#000000',
             align: 'center',
-            fixedWidth: 626,
+            fixedWidth: 626
         }
 
         this.buttonTextStyle = {
             fontFamily: 'cpBurbankSmall',
             fontSize: 40,
             color: '#ffffff',
-            align: 'center',
+            align: 'center'
         }
     }
 

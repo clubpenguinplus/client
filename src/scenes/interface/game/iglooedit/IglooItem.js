@@ -51,6 +51,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
         /* START-USER-CTR-CODE */
         this.loader = new FurnitureIconLoader(scene)
         this.furnitureLoader = new FurnitureLoader(scene)
+        this.scene = scene
         /* END-USER-CTR-CODE */
     }
 
@@ -106,6 +107,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
     }
 
     calculateQuantity(type, id, quantity) {
+        if (!this.scene) return 0
         if (type != 'furniture') return quantity
         for (let f of this.scene.shell.room.furnitureSprites) {
             if (f.id == id) {

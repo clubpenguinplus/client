@@ -109,13 +109,13 @@ export default class Animation extends EventComponent {
                 prefix: `${this.key}`,
                 start: this.start,
                 end: this.end,
-                zeroPad: 4,
+                zeroPad: 4
             }),
             frameRate: this.frameRate,
             repeat: this.repeat,
             repeatDelay: this.repeatDelay,
             showOnStart: this.showOnStart,
-            hideOnComplete: this.hideOnComplete,
+            hideOnComplete: this.hideOnComplete
         })
     }
 

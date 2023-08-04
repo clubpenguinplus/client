@@ -17,7 +17,6 @@
             "type": "Image",
             "id": "385f13f1-fb27-4bc9-8d86-2ea5ae428468",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "main",
                 "frame": "backgroun"
@@ -34,11 +33,8 @@
             ],
             "label": "container",
             "scope": "CLASS",
-            "components": [],
             "x": 470,
-            "y": 430,
-            "nestedPrefabs": [],
-            "list": []
+            "y": 430
         },
         {
             "type": "Sprite",
@@ -103,7 +99,6 @@
             "type": "Text",
             "id": "78099562-cddb-4cc7-8fc5-29bb4ba6fb42",
             "label": "backText",
-            "components": [],
             "x": 760,
             "y": 876,
             "originX": 0.5,
@@ -211,7 +206,6 @@
             "type": "Image",
             "id": "475b6711-c774-497a-8474-54d19949497c",
             "label": "input",
-            "components": [],
             "texture": {
                 "key": "login",
                 "frame": "input"
@@ -224,7 +218,6 @@
             "id": "a10f421b-fd6c-4bfa-bbb8-e2ae546cbf2f",
             "label": "inputTextContainer",
             "scope": "CLASS",
-            "components": [],
             "x": 791,
             "y": 249,
             "list": [
@@ -237,6 +230,7 @@
                         "InputText"
                     ],
                     "InputText.ispassword": true,
+                    "InputText.entercallback": "() => this.onLoginSubmit()",
                     "originY": 0.5,
                     "fixedWidth": 350,
                     "lineSpacing": 25,
@@ -250,7 +244,6 @@
             "type": "Image",
             "id": "fe0fb835-ffd2-4d00-a7f3-f729e0826de1",
             "label": "note",
-            "components": [],
             "texture": {
                 "key": "login",
                 "frame": "note"
@@ -267,11 +260,8 @@
             ],
             "label": "checks",
             "scope": "CLASS",
-            "components": [],
             "x": 806,
-            "y": 330,
-            "nestedPrefabs": [],
-            "list": []
+            "y": 330
         },
         {
             "prefabId": "4a66782f-1b3a-41da-b0c3-3d9d3c24217c",
@@ -283,12 +273,9 @@
             ],
             "label": "savePrompt",
             "scope": "CLASS",
-            "components": [],
             "x": 760,
             "y": 480,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "b1f49bb5-b7f5-4eb9-81d7-21aa125e487f",
@@ -300,12 +287,9 @@
             ],
             "label": "waitPrompt",
             "scope": "CLASS",
-            "components": [],
             "x": 760,
             "y": 480,
-            "visible": false,
-            "nestedPrefabs": [],
-            "list": []
+            "visible": false
         }
     ],
     "plainObjects": [],
@@ -313,6 +297,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

@@ -13,7 +13,7 @@ export default class MiniGame extends Plugin {
             eff: this.fourOver,
             as3: this.joinAS3,
             sse: this.stampEarned,
-            endas3: this.endAS3,
+            endas3: this.endAS3
         }
     }
 

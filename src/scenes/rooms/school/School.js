@@ -40,7 +40,7 @@ export default class School extends RoomScene {
             locker8: null,
             locker9: null,
             locker10: null,
-            cafe: null,
+            cafe: null
         }
         this.music = 436
         this.loadSfx = ['school-dooropen', 'school-doorclose', 'school-lockeropen', 'school-lockerclose']

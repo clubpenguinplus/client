@@ -174,7 +174,7 @@ export default class WireTap extends BaseContainer {
             user: args[0],
             message: args[1],
             room: args[2],
-            username: args[3],
+            username: args[3]
         }
         let lines = this.loggedMessages.length
         if (lines > 20) {
@@ -191,7 +191,7 @@ export default class WireTap extends BaseContainer {
             user: args[0],
             message: args[1],
             room: args[2],
-            username: args[3],
+            username: args[3]
         }
         let lines = this.loggedMessages.length
         if (lines > 20) {

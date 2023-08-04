@@ -48,7 +48,7 @@ export default class Intro extends Closeup {
         // content
         const content = this.add.text(760, 250, '', {})
         content.setOrigin(0.5, 0)
-        content.text = 'Club Penguin Plus is in closed beta. This means you are one of few lucky penguins with access to the game right now!\n\nWe encourage you to test whatever you can, and actively try to break things and find bugs we can fix. \n\nYou can use the !ai command to add any item to your inventory, so you can test anything you want.\n\nThis feature will be disabled on public release and your account data will be reset to default.'
+        content.text = 'Club Penguin Plus is in beta for a few more weeks\n\nWe encourage you to test whatever you can, and actively try to break things and find bugs we can fix. \n\nYou can use the !ai command to add any item to your inventory, so you can test anything you want.\n\nThis feature will be disabled on the full release and your account data will be reset to default.'
         content.setStyle({align: 'center', fixedWidth: 800, fontFamily: 'cpBurbankSmall', fontSize: '28px', 'shadow.color': '#ffffffff', 'shadow.fill': true})
         content.setLineSpacing(5)
         content.setWordWrapWidth(800)

@@ -20,11 +20,7 @@ export default class PuffleLoader extends BaseLoader {
             return
         }
 
-        this.multiatlas({
-            key: key,
-            atlasURL: `${animation}/${puffle}.json`,
-            path: animation,
-        })
+        this.multiatlas(key, `${animation}/${puffle}.json`, animation)
         this.start()
     }
 

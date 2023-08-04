@@ -60,7 +60,7 @@ export default class GridViewLoader {
 
         this.load.image({
             key: key,
-            url: url,
+            url: url
         })
     }
 

@@ -6,7 +6,7 @@ export default class Actions extends Plugin {
         this.events = {
             sp: this.sendPosition,
             sf: this.sendFrame,
-            sb: this.snowball,
+            sb: this.snowball
         }
     }
 
@@ -19,7 +19,7 @@ export default class Actions extends Plugin {
             return this.room.updateWaiting(args[0], {
                 x: args[1],
                 y: args[2],
-                frame: 1,
+                frame: 1
             })
         }
 
@@ -31,7 +31,7 @@ export default class Actions extends Plugin {
     sendFrame(args) {
         if (!this.room.isReady) {
             return this.room.updateWaiting(args[0], {
-                frame: args[2] ? args[1] : 1,
+                frame: args[2] ? args[1] : 1
             })
         }
 

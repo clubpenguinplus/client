@@ -45,12 +45,12 @@ export default class PromptController {
     }
 
     showItem(item) {
-        this.item.showItem(item)
-        this.setCursor()
-
         for (let i of ['error', 'loading', 'window', 'coins', 'warn']) {
             this[i].visible = false
         }
+
+        this.item.showItem(item)
+        this.setCursor()
 
         this.interface.bringToTop(this.item)
     }

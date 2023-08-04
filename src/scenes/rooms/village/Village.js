@@ -15,7 +15,7 @@ export default class Village extends RoomScene {
             epf: () => this.triggerRoom(212, 370, 530),
             lodge: () => this.triggerRoom(220, 330, 450),
             mountain: () => this.triggerRoom(230, 1036, 520),
-            pufflewild: () => this.triggerRoom(436, 760, 730),
+            pufflewild: () => this.triggerRoom(436, 760, 730)
         }
 
         this.music = 591

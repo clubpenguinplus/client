@@ -22,12 +22,12 @@ export default class HotelRoof extends RoomScene {
                 offCallback: () => {
                     this.dj_anim.anims.stopAfterRepeat(0)
                     this.dj_anim_hover.anims.stopAfterRepeat(0)
-                },
+                }
             },
             leftchair: () => this.eat(1),
             rightchair: () => this.eat(2),
             leftsleeper: () => this.sleep(),
-            rightsleeper: () => this.sleep(),
+            rightsleeper: () => this.sleep()
         }
 
         this.music = 360

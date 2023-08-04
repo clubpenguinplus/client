@@ -57,7 +57,7 @@ export default class PaperDoll extends BaseContainer {
 
             items[slot] = {
                 id: 0,
-                depth: this.slots.indexOf(slot) + 100,
+                depth: this.slots.indexOf(slot) + 100
             }
         }
 

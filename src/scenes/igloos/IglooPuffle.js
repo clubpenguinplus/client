@@ -90,9 +90,12 @@ export default class IglooPuffle extends BaseContainer {
             this.interface.main.puffleCare.showPuffle(this)
         })
 
-        setTimeout(() => {
-            this.move()
-        }, Phaser.Math.Between(20000, 30000))
+        setTimeout(
+            () => {
+                this.move()
+            },
+            Phaser.Math.Between(20000, 30000)
+        )
     }
 
     removePuffle() {
@@ -106,14 +109,20 @@ export default class IglooPuffle extends BaseContainer {
         if (!this.sprite) return
 
         if (this.animating)
-            return setTimeout(() => {
-                this.move()
-            }, Phaser.Math.Between(20000, 30000))
+            return setTimeout(
+                () => {
+                    this.move()
+                },
+                Phaser.Math.Between(20000, 30000)
+            )
 
         if (this.interface.main.puffleCare.args == this)
-            return setTimeout(() => {
-                this.move()
-            }, Phaser.Math.Between(20000, 30000))
+            return setTimeout(
+                () => {
+                    this.move()
+                },
+                Phaser.Math.Between(20000, 30000)
+            )
 
         let pos = this.generateRandomPosition()
         let path = PathEngine.getPath(this, pos)
@@ -144,15 +153,18 @@ export default class IglooPuffle extends BaseContainer {
             onComplete: () => {
                 this.playFrame(1)
                 this.animating = false
-            },
+            }
         })
 
         this.prevX = this.x
         this.prevY = this.y
 
-        setTimeout(() => {
-            this.move()
-        }, Phaser.Math.Between(20000, 30000))
+        setTimeout(
+            () => {
+                this.move()
+            },
+            Phaser.Math.Between(20000, 30000)
+        )
     }
 
     removeTween(destroy = true) {
@@ -176,7 +188,7 @@ export default class IglooPuffle extends BaseContainer {
             key: `puffle/igloo/${this.species}/${frame}`,
             frames: frames.map((f) => ({key: `puffles/igloo/${this.species}`, frame: f})),
             frameRate: 24,
-            repeat: repeat,
+            repeat: repeat
         })
     }
 

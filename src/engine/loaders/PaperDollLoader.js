@@ -175,14 +175,14 @@ export default class PaperDollLoader extends BaseLoader {
         this.scene.tweens.add({
             targets: paper,
             alpha: {from: 0, to: 1},
-            duration: 200,
+            duration: 200
         })
     }
 
     addInput(slot, paper) {
         paper.setInteractive({
             cursor: 'pointer',
-            pixelPerfect: true,
+            pixelPerfect: true
         })
 
         paper.on('pointerdown', () => this.onPaperClick(slot))
