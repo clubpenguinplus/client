@@ -21,7 +21,6 @@
             "id": "0f6fe0ab-5847-48c8-9f4d-ffc53a9b81b8",
             "label": "bg",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "bg"
@@ -34,7 +33,6 @@
             "id": "246db7d8-dd44-452b-908a-a1d5ee23d5a6",
             "label": "rail",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "rail"
@@ -47,7 +45,6 @@
             "id": "f1bc8b1a-ad5c-481e-b127-45102e638997",
             "label": "speakers",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "speakers0001"
@@ -60,7 +57,6 @@
             "id": "518abe88-668d-4610-919e-64e852a89337",
             "label": "chairBody",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "chairBody"
@@ -73,7 +69,6 @@
             "id": "b2290f7c-b762-45dd-9b80-8c904c3b0dfe",
             "label": "chairArm",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "chairArm"
@@ -86,7 +81,6 @@
             "id": "fb69f112-3dbc-4f08-8a1a-dbeaec08534f",
             "label": "chairBody_1",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "chairBody"
@@ -99,7 +93,6 @@
             "id": "51cefb19-f416-41c3-831f-00260702a087",
             "label": "chairArm_1",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "chairArm"
@@ -112,7 +105,6 @@
             "id": "9b597891-27a5-40ba-b16f-c3e1fd53b72c",
             "label": "deskChair",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "chair"
@@ -124,7 +116,6 @@
             "type": "Container",
             "id": "d2d7764b-16e7-4f12-9916-1fb5e00eec4e",
             "label": "desk_container",
-            "components": [],
             "x": 1337.3141623444612,
             "y": 415.3218257529371,
             "list": [
@@ -133,7 +124,6 @@
                     "id": "7057c1fb-d5d6-4adf-9afa-65d3c1d1b128",
                     "label": "desk",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "shop",
                         "frame": "desk"
@@ -146,7 +136,6 @@
                     "id": "95dca7d3-d9f2-4c70-b3f7-f49a4ada0c8a",
                     "label": "chest",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "shop",
                         "frame": "chest"
@@ -159,7 +148,6 @@
                     "id": "f96aae91-1544-4534-ac8e-9c16c961f5d4",
                     "label": "register",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "shop",
                         "frame": "register0001"
@@ -229,7 +217,6 @@
             "id": "59433cdd-ad0f-4718-b647-1f946cb10ee1",
             "label": "circularStool",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "circularStool"
@@ -244,7 +231,6 @@
             "id": "90e4f212-6161-4e69-89ae-d8585ff4f8f7",
             "label": "squareStool",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "squareStool"
@@ -259,7 +245,6 @@
             "id": "8d2f885f-611e-42a9-b908-4efe197cfe28",
             "label": "fg",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "fg"
@@ -280,6 +265,7 @@
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('book-bookclose')",
             "Button.callback": "() => this.showClothingCat()",
             "Button.pixelPerfect": true,
+            "Button.isLocalised": true,
             "texture": {
                 "key": "shop",
                 "frame": "catalog-en"
@@ -294,7 +280,6 @@
             "id": "e7339a83-166c-40e4-b067-e100e2c7a5dd",
             "label": "unlock",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shop",
                 "frame": "unlock"
@@ -309,7 +294,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

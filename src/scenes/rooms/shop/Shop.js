@@ -169,6 +169,7 @@ export default class Shop extends RoomScene {
         catalog_enButton.hoverOutCallback = () => this.shell.musicController.addSfx('book-bookclose')
         catalog_enButton.callback = () => this.showClothingCat()
         catalog_enButton.pixelPerfect = true
+        catalog_enButton.isLocalised = true
 
         this.bg = bg
         this.rail = rail
