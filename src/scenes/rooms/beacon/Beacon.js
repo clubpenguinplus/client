@@ -61,7 +61,8 @@ export default class Beacon extends RoomScene {
         railing_2.setOrigin(0.8421959359650598, 0.3415237313641213)
 
         // telescopeZone
-        const telescopeZone = this.add.rectangle(320, 373, 50, 50)
+        const telescopeZone = this.add.rectangle(255, 300, 235, 110)
+        telescopeZone.angle = 46
         telescopeZone.alpha = 0.5
         telescopeZone.isFilled = true
         telescopeZone.fillColor = 65280

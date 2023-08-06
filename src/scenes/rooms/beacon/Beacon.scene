@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "a665fdbb-2a30-479a-a9c0-447ec4773f69",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "lightroof",
                 "frame": "bg"
@@ -32,7 +31,6 @@
             "type": "Image",
             "id": "4208daaf-aea2-45d3-9406-371b27af5251",
             "label": "light",
-            "components": [],
             "texture": {
                 "key": "lightroof",
                 "frame": "light"
@@ -47,7 +45,6 @@
             "id": "dc4ec1d2-430c-4216-9733-c5e02826b9d3",
             "label": "launch",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "lightroof",
                 "frame": "launch"
@@ -60,7 +57,6 @@
             "id": "c0af4c55-a43d-4505-8748-92460573d137",
             "label": "launchActive",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "lightroof",
                 "frame": "launch/launch0001"
@@ -73,7 +69,6 @@
             "type": "Image",
             "id": "09eaf95e-f381-4922-922f-a45cf7948855",
             "label": "railing",
-            "components": [],
             "texture": {
                 "key": "lightroof",
                 "frame": "railing"
@@ -86,7 +81,6 @@
             "type": "Image",
             "id": "9522205a-6203-411e-b7a4-316ebf83d25d",
             "label": "railing_2",
-            "components": [],
             "texture": {
                 "key": "lightroof",
                 "frame": "railing_2"
@@ -106,13 +100,14 @@
             "Zone.hoverCallback": "() => {}",
             "Zone.hoverOutCallback": "() => {}",
             "Zone.callback": "() => this.interface.loadExternal('Telescope')",
-            "x": 320,
-            "y": 373,
+            "x": 255,
+            "y": 300,
+            "angle": 46,
             "alpha": 0.5,
             "isFilled": true,
             "fillColor": "#00ff00",
-            "width": 50,
-            "height": 50
+            "width": 235,
+            "height": 110
         },
         {
             "type": "Rectangle",
@@ -138,10 +133,8 @@
             "type": "Container",
             "id": "7e83ea08-f4b8-451f-9bdd-8281717a1ef3",
             "label": "snow",
-            "components": [],
             "x": 5,
-            "y": 1722,
-            "list": []
+            "y": 1722
         }
     ],
     "plainObjects": [],
@@ -149,7 +142,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
