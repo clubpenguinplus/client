@@ -11,12 +11,17 @@ export default class Mall extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            plaza: () => this.triggerRoom(300, 924, 504)
+            plaza: () => this.triggerRoom(300, 924, 504),
+            costumes: () => this.interface.loadExternal('CostumeCatalog'),
+            upescalator: () => this.escalateUp(),
+            downescalator: () => this.escalateDown()
         }
 
         this.music = 749
 
         this.loadSfx = ['mall-dooropen', 'mall-doorclose', 'mall-chestopen', 'mall-chestclose']
+
+        this.lastTweenUpdate = Date.now()
 
         /* END-USER-CTR-CODE */
     }
@@ -405,6 +410,52 @@ export default class Mall extends RoomScene {
         this.re_three.play('mall-re-three')
         this.re_four.play('mall-re-four')
         this.re_five.play('mall-re-five')
+    }
+
+    escalateUp() {
+        let penguin = this.shell.client.penguin
+        penguin.x = 548
+        penguin.y = 684
+        penguin.updateNameTag()
+        this.shell.client.blockMovement = true
+        this.tweens.add({
+            targets: penguin,
+            x: 604,
+            y: 360,
+            duration: 11000,
+            onComplete: () => {
+                this.shell.client.blockMovement = false
+            },
+            onUpdate: () => {
+                penguin.updateNameTag()
+                if (Date.now() - this.lastTweenUpdate < 100) return
+                this.airtower.sendXt('u#tsp', `${penguin.x}%${penguin.y}`)
+                this.lastTweenUpdate = Date.now()
+            }
+        })
+    }
+
+    escalateDown() {
+        let penguin = this.shell.client.penguin
+        penguin.x = 928
+        penguin.y = 364
+        penguin.updateNameTag()
+        this.shell.client.blockMovement = true
+        this.tweens.add({
+            targets: penguin,
+            x: 992,
+            y: 688,
+            duration: 11000,
+            onComplete: () => {
+                this.shell.client.blockMovement = false
+            },
+            onUpdate: () => {
+                penguin.updateNameTag()
+                if (Date.now() - this.lastTweenUpdate < 100) return
+                this.airtower.sendXt('u#tsp', `${penguin.x}%${penguin.y}`)
+                this.lastTweenUpdate = Date.now()
+            }
+        })
     }
 
     /* END-USER-CODE */

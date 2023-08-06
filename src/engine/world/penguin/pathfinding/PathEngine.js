@@ -135,6 +135,18 @@ export default class PathEngine {
     }
 
     static isBlocked(penguin, x = penguin.x, y = penguin.y) {
-        return penguin.room.matter.containsPoint(penguin.room.block, x, y)
+        let targetIsPenguin = x == penguin.x && y == penguin.y
+        let penguinBlocked = penguin.room.matter.containsPoint(penguin.room.block, penguin.x, penguin.y)
+        let targetBlocked = penguin.room.matter.containsPoint(penguin.room.block, x, y)
+
+        if (targetIsPenguin) {
+            return penguinBlocked
+        }
+
+        if (penguinBlocked) {
+            return false
+        }
+
+        return targetBlocked
     }
 }

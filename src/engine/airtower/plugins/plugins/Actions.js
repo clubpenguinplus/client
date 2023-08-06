@@ -5,6 +5,7 @@ export default class Actions extends Plugin {
         super(airtower)
         this.events = {
             sp: this.sendPosition,
+            tsp: this.sendTeleportPosition,
             sf: this.sendFrame,
             sb: this.snowball
         }
@@ -26,6 +27,25 @@ export default class Actions extends Plugin {
         if (this.room.penguins[args[0]].isClient) return
 
         if (this.room.penguins[args[0]]) this.room.penguins[args[0]].move(args[1], args[2])
+    }
+
+    sendTeleportPosition(args) {
+        if (!this.room.isReady) {
+            return this.room.updateWaiting(args[0], {
+                x: args[1],
+                y: args[2],
+                frame: 1
+            })
+        }
+
+        if (this.room.penguins[args[0]].isClient) return
+
+        if (this.room.penguins[args[0]]) {
+            this.room.penguins[args[0]].x = parseFloat(args[1])
+            this.room.penguins[args[0]].y = parseFloat(args[2])
+            this.room.penguins[args[0]].frame = 1
+            this.room.penguins[args[0]].updateNameTag()
+        }
     }
 
     sendFrame(args) {
