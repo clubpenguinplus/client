@@ -452,7 +452,7 @@
                                 "ShowHint"
                             ],
                             "Button.callback": "() => this.onRoomClick(435)",
-                            "ShowHint.text": "skatepark",
+                            "ShowHint.text": "skate",
                             "texture": {
                                 "key": "map",
                                 "frame": "map/places_outline/skatepark_outline"

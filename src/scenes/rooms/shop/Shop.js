@@ -204,11 +204,16 @@ export default class Shop extends RoomScene {
     }
 
     onSpinnerOver() {
+        if (this.spinner.anims.isPlaying) return
         this.spinner.play('shop-spinner')
     }
 
     onSpinnerOut() {
-        this.spinner.stop('shop-spinner')
+        this.spinner.once('animationcomplete', this.stopSpinner, this)
+    }
+
+    stopSpinner() {
+        this.spinner.stop()
         this.spinner.setFrame('spinner0001')
     }
 

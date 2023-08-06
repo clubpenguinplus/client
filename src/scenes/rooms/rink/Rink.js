@@ -70,7 +70,8 @@ export default class Rink extends RoomScene {
         this.add.image(1207, 185, 'rink', 'door')
 
         // signs_en
-        const signs_en = this.add.sprite(762, 593, 'rink', 'signs-en')
+        const signs_en = this.add.sprite(762, 340.65702075425986, 'rink', 'signs-en')
+        signs_en.setOrigin(0.5, 0.08834750228483197)
         signs_en.visible = false
 
         // toprink
@@ -87,7 +88,8 @@ export default class Rink extends RoomScene {
         fgwinter.setOrigin(0.11156951668462708, 0.9583392138562914)
 
         // gate
-        const gate = this.add.sprite(756, 332, 'rink', 'gate')
+        const gate = this.add.sprite(756, 334.4948898817683, 'rink', 'gate')
+        gate.setOrigin(0.5, 0.5293516456678624)
         gate.visible = false
 
         // lightsoff
@@ -169,7 +171,7 @@ export default class Rink extends RoomScene {
         catalog.setOrigin(0.5188839188531302, 2.8113916676232273)
 
         // lists
-        const sort = [fg, bleachers1, bleachers3_png, toprink, fgwinter, catalog]
+        const sort = [fg, bleachers1, bleachers3_png, toprink, fgwinter, catalog, signs_en, gate]
 
         // signs_en (components)
         new LocalisedSprite(signs_en)

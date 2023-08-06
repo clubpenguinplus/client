@@ -640,7 +640,7 @@ export default class Map extends BaseContainer {
         const map_places_skatepark_1Button = new Button(map_places_skatepark_1)
         map_places_skatepark_1Button.callback = () => this.onRoomClick(435)
         const map_places_skatepark_1ShowHint = new ShowHint(map_places_skatepark_1)
-        map_places_skatepark_1ShowHint.text = 'skatepark'
+        map_places_skatepark_1ShowHint.text = 'skate'
 
         // map_places_forest_1 (components)
         const map_places_forest_1Button = new Button(map_places_forest_1)

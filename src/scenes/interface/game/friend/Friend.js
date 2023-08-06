@@ -319,17 +319,15 @@ export default class Friend extends BaseContainer {
      * @readonly
      */
     get friends() {
-        return this.shell.client.friends.sort((a, b) => {
-            if (!a.online) a.online = false
-            if (!b.online) b.online = false
-            if (!a.isBff) a.isBff = false
-            if (!b.isBff) b.isBff = false
-            return (
-                -(a.isBff - b.isBff) ||
-                -(a.online - b.online) || // Reverse: true before false
-                a.username.toLowerCase().localeCompare(b.username.toLowerCase())
-            )
+        let friends = this.shell.client.friends
+        let alphabetically = friends.sort((a, b) => {
+            a.username.toLowerCase().localeCompare(b.username.toLowerCase())
         })
+        let onlineBffs = alphabetically.filter((penguin) => penguin.online && penguin.bff)
+        let online = alphabetically.filter((penguin) => penguin.online && !penguin.bff)
+        let offlineBffs = alphabetically.filter((penguin) => !penguin.online && penguin.bff)
+        let offline = alphabetically.filter((penguin) => !penguin.online && !penguin.bff)
+        return onlineBffs.concat(online, offlineBffs, offline)
     }
 
     /**
