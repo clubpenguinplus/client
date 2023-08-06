@@ -144,7 +144,7 @@ export default class Airtower {
 
         let environment
         switch (true) {
-            case window.location.hostname.includes('beta'):
+            case window.location.hostname.includes('beta') || localStorage.joinProd == 'true':
                 environment = 'dev'
                 break
             case window.location.hostname.includes('play'):

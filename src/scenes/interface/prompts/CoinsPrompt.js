@@ -1,6 +1,6 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import {Interactive, NineSlice, Button, SimpleButton} from '@components/components'
+import {Interactive, LocalisedString, Button, SimpleButton} from '@components/components'
 
 import SingleButton from './buttons/SingleButton'
 import PromptStamp from '@scenes/interface/prompts/PromptStamp'
@@ -46,26 +46,26 @@ export default class CoinsPrompt extends BaseContainer {
         this.stampIcon
         /** @type {Phaser.GameObjects.Text} */
         this.stampNumber
-        /** @type {Phaser.GameObjects.Container} */
-        this.bonus
         /** @type {Phaser.GameObjects.Text} */
         this.bonusLeft
         /** @type {Phaser.GameObjects.Text} */
         this.bonusRight
+        /** @type {Phaser.GameObjects.Container} */
+        this.bonus
         /** @type {Phaser.GameObjects.Container} */
         this.stampLayer
         /** @type {Phaser.GameObjects.Triangle} */
         this.nextPageBtn
         /** @type {Phaser.GameObjects.Triangle} */
         this.prevPageBtn
-        /** @type {Phaser.GameObjects.Container} */
-        this.stampInfo
         /** @type {NinePatchContainer} */
         this.stampInfoBg
         /** @type {Phaser.GameObjects.Text} */
         this.stampInfoTitle
         /** @type {Phaser.GameObjects.Text} */
         this.stampInfoBody
+        /** @type {Phaser.GameObjects.Container} */
+        this.stampInfo
 
         this.visible = false
 
@@ -182,7 +182,7 @@ export default class CoinsPrompt extends BaseContainer {
 
         // bonusLeft
         const bonusLeft = scene.add.text(21, -7, '', {})
-        bonusLeft.angle = -30
+        bonusLeft.angle = -29.999999999999996
         bonusLeft.setOrigin(0.5, 0.5)
         bonusLeft.text = 'x2'
         bonusLeft.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
@@ -190,7 +190,7 @@ export default class CoinsPrompt extends BaseContainer {
 
         // bonusRight
         const bonusRight = scene.add.text(621, -9, '', {})
-        bonusRight.angle = 30
+        bonusRight.angle = 29.999999999999996
         bonusRight.setOrigin(0.5, 0.5)
         bonusRight.text = 'x2'
         bonusRight.setStyle({color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '45px', fontStyle: 'bold', stroke: '#7c5900ff', strokeThickness: 8})
@@ -255,6 +255,26 @@ export default class CoinsPrompt extends BaseContainer {
             this.visible = false
         }
 
+        // useCoins (components)
+        const useCoinsLocalisedString = new LocalisedString(useCoins)
+        useCoinsLocalisedString.id = 'mgprompt-usecoins'
+
+        // buyClothes (components)
+        const buyClothesLocalisedString = new LocalisedString(buyClothes)
+        buyClothesLocalisedString.id = 'mgprompt-buyclothing'
+
+        // adoptPet (components)
+        const adoptPetLocalisedString = new LocalisedString(adoptPet)
+        adoptPetLocalisedString.id = 'mgprompt-adoptpet'
+
+        // decorateIgloo (components)
+        const decorateIglooLocalisedString = new LocalisedString(decorateIgloo)
+        decorateIglooLocalisedString.id = 'mgprompt-decorateigloo'
+
+        // done (components)
+        const doneLocalisedString = new LocalisedString(done)
+        doneLocalisedString.id = 'mgprompt-okay'
+
         // nextPageBtn (components)
         const nextPageBtnSimpleButton = new SimpleButton(nextPageBtn)
         nextPageBtnSimpleButton.callback = () => this.nextPage()
@@ -280,16 +300,16 @@ export default class CoinsPrompt extends BaseContainer {
         this.divider = divider
         this.stampIcon = stampIcon
         this.stampNumber = stampNumber
-        this.bonus = bonus
         this.bonusLeft = bonusLeft
         this.bonusRight = bonusRight
+        this.bonus = bonus
         this.stampLayer = stampLayer
         this.nextPageBtn = nextPageBtn
         this.prevPageBtn = prevPageBtn
-        this.stampInfo = stampInfo
         this.stampInfoBg = stampInfoBg
         this.stampInfoTitle = stampInfoTitle
         this.stampInfoBody = stampInfoBody
+        this.stampInfo = stampInfo
 
         /* START-USER-CTR-CODE */
         this.scene = scene
@@ -374,8 +394,8 @@ export default class CoinsPrompt extends BaseContainer {
             this.gameName.text = this.shell.getString(game)
         }
 
-        this.coinsEarned.text = `Coins earned: ${coins.toString()}`
-        this.totalCoins.text = `Your total coins: ${this.shell.client.coins.toString()}`
+        this.coinsEarned.text = this.shell.getString('mgprompt-coinsearned', coins.toString())
+        this.totalCoins.text = this.shell.getString('mgprompt-coinstotal', this.shell.client.coins.toString())
         this.visible = true
 
         this.nextPageBtn.visible = false

@@ -320,7 +320,7 @@ export default class Telescope extends Closeup {
     }
 
     getTelescopeState() {
-        let now = new Date()
+        let now = this.shell.PST
         let arrival_difference = (this.shell.rockhopper_visit.getTime() - now.getTime()) / 86400000
         let departure_difference = (now.getTime() - this.shell.rockhopper_leave.getTime()) / 86400000
         if (arrival_difference > 7) {

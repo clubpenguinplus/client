@@ -17,7 +17,6 @@
             "type": "Container",
             "id": "bb4d2198-5ce9-4999-b83f-8ab252d88b7e",
             "label": "container_1",
-            "components": [],
             "x": 760,
             "y": 480,
             "visible": false,
@@ -41,7 +40,6 @@
                     "id": "b8ea7578-133a-41f6-885a-8fdee40ea010",
                     "label": "bg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "endscreens",
                         "frame": "bg"
@@ -59,7 +57,6 @@
                     "id": "e876c474-d5ad-42a6-b1fa-fddf2428d811",
                     "label": "icon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "endscreens",
                         "frame": "icons/aquagrabber"
@@ -86,7 +83,6 @@
                     "id": "1c699115-86df-45b2-bb50-da2f9e60fbc5",
                     "label": "totalCoins",
                     "scope": "CLASS",
-                    "components": [],
                     "y": -86,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -102,7 +98,6 @@
                     "id": "98c814e8-cb59-4b96-a356-a8cde0ff3ed4",
                     "label": "coinsEarned",
                     "scope": "CLASS",
-                    "components": [],
                     "y": -121,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -119,7 +114,6 @@
                     "id": "d77d5587-fff7-449c-9743-424a748c096b",
                     "label": "coins_right",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "endscreens",
                         "frame": "coins"
@@ -132,7 +126,6 @@
                     "id": "76078d26-9042-41ec-aec4-50b75fddc7c1",
                     "label": "coins_left",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "endscreens",
                         "frame": "coins"
@@ -146,7 +139,6 @@
                     "id": "6e0cee01-ef23-4b60-a851-1deb13edf990",
                     "label": "gameName",
                     "scope": "CLASS",
-                    "components": [],
                     "y": -201,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -163,7 +155,10 @@
                     "id": "4515ebc2-9419-4255-8d61-9c46e9af1489",
                     "label": "useCoins",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "mgprompt-usecoins",
                     "y": 2,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -179,7 +174,10 @@
                     "id": "c7e8b155-495e-4352-9178-decc6ff79126",
                     "label": "buyClothes",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "mgprompt-buyclothing",
                     "x": -270,
                     "y": 146,
                     "originX": 0.5,
@@ -199,7 +197,10 @@
                     "id": "600cfbd5-d562-484d-bc97-c05c30468901",
                     "label": "adoptPet",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "mgprompt-adoptpet",
                     "y": 146,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -218,7 +219,10 @@
                     "id": "33b43521-fd66-4e7f-9137-8a682bcc8bc7",
                     "label": "decorateIgloo",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "mgprompt-decorateigloo",
                     "x": 270,
                     "y": 146,
                     "originX": 0.5,
@@ -238,7 +242,10 @@
                     "id": "03a2dcf2-5753-4812-8c88-c7aa1d53fefe",
                     "label": "done",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "mgprompt-okay",
                     "y": 220,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -255,7 +262,6 @@
                     "id": "739f63d5-438f-4831-a96f-f81463bcfd81",
                     "label": "divider",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "endscreens",
                         "frame": "divider"
@@ -268,7 +274,6 @@
                     "id": "0592dfa5-527e-4c8a-8c70-4e844287a2b7",
                     "label": "stampIcon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "endscreens",
                         "frame": "stamps"
@@ -282,7 +287,6 @@
                     "id": "5224aeb7-3de7-415f-a72b-be0dca4e0cf7",
                     "label": "stampNumber",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 12,
                     "y": -95,
                     "originX": 0.5,
@@ -300,7 +304,6 @@
                     "id": "5b97816d-6804-48cc-a605-94a5fb438ace",
                     "label": "bonus",
                     "scope": "CLASS",
-                    "components": [],
                     "x": -320,
                     "y": -180,
                     "visible": false,
@@ -310,10 +313,9 @@
                             "id": "4715ace7-60c5-496a-bb9b-20cf6e269a2d",
                             "label": "bonusLeft",
                             "scope": "CLASS",
-                            "components": [],
                             "x": 21,
                             "y": -7,
-                            "angle": -30,
+                            "angle": -29.999999999999996,
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "x2",
@@ -329,10 +331,9 @@
                             "id": "65a199cf-86a2-4288-90e6-85cf928292f6",
                             "label": "bonusRight",
                             "scope": "CLASS",
-                            "components": [],
                             "x": 621,
                             "y": -9,
-                            "angle": 30,
+                            "angle": 29.999999999999996,
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "x2",
@@ -349,9 +350,7 @@
                     "type": "Container",
                     "id": "8ea677ef-28ca-458e-98af-6b4fc63acbc6",
                     "label": "stampLayer",
-                    "scope": "CLASS",
-                    "components": [],
-                    "list": []
+                    "scope": "CLASS"
                 },
                 {
                     "type": "Triangle",
@@ -398,7 +397,6 @@
                     "id": "b07f1881-6f87-4bd1-84c8-e81c0c49a09e",
                     "label": "stampInfo",
                     "scope": "CLASS",
-                    "components": [],
                     "x": -892.9088989293418,
                     "y": -525.656192362609,
                     "visible": false,
@@ -408,7 +406,6 @@
                             "id": "fdb82f24-21d8-4005-ba53-71b12c8420da",
                             "label": "stampInfoBg",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "endscreens",
                                 "frame": "hover"
@@ -427,7 +424,6 @@
                             "id": "5caccf78-150c-41b8-ab34-adef2198e9c8",
                             "label": "stampInfoTitle",
                             "scope": "CLASS",
-                            "components": [],
                             "x": -122.09110107065823,
                             "y": -141.343807637391,
                             "text": "Aunt Arctic",
@@ -444,7 +440,6 @@
                             "id": "d5c11511-57b6-4e26-bfc7-9f7b788cad3e",
                             "label": "stampInfoBody",
                             "scope": "CLASS",
-                            "components": [],
                             "x": -122.09110107065823,
                             "y": -106.343807637391,
                             "text": "Be in the same room as Aunt Arctic",
@@ -466,6 +461,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

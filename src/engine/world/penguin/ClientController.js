@@ -125,7 +125,7 @@ export default class ClientController {
         this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
 
         let oneDay = 1000 * 60 * 60 * 24
-        let timeDiff = Date.now() - Date.parse(this.joinTime)
+        let timeDiff = Date.now() - this.joinTime
         let daysDiff = Math.round(timeDiff / oneDay)
 
         if (daysDiff >= 365) {
@@ -204,7 +204,7 @@ export default class ClientController {
     }
 
     onPointerUp(pointer, target) {
-        if (pointer.button != 0 || !this.visible || this.activeSeat) {
+        if (pointer.button != 0 || !this.visible || this.activeSeat || this.blockMovement) {
             return
         }
 

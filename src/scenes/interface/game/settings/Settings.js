@@ -1053,7 +1053,7 @@ export default class Settings extends BaseContainer {
         this.airtower.sendXt('sett#getsettings')
 
         let oneDay = 1000 * 60 * 60 * 24
-        let timeDiff = Date.now() - Date.parse(this.shell.client.joinTime)
+        let timeDiff = Date.now() - this.shell.client.joinTime
         let daysDiff = Math.round(timeDiff / oneDay)
 
         this.server.text = this.crumbs.getString(`settings-onserver,${this.airtower.worldName}`)

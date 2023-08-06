@@ -391,4 +391,12 @@ export default class Shell extends BaseScene {
 
         return true
     }
+
+    get rockhopper_visit() {
+        return new Date('2050-01-01T00:00:00.000Z')
+    }
+
+    get rockhopper_leave() {
+        return new Date('2000-01-01T00:00:00.000Z')
+    }
 }

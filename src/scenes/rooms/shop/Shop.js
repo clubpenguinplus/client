@@ -169,6 +169,7 @@ export default class Shop extends RoomScene {
         catalog_enButton.hoverOutCallback = () => this.shell.musicController.addSfx('book-bookclose')
         catalog_enButton.callback = () => this.showClothingCat()
         catalog_enButton.pixelPerfect = true
+        catalog_enButton.isLocalised = true
 
         this.bg = bg
         this.rail = rail
@@ -203,11 +204,16 @@ export default class Shop extends RoomScene {
     }
 
     onSpinnerOver() {
+        if (this.spinner.anims.isPlaying) return
         this.spinner.play('shop-spinner')
     }
 
     onSpinnerOut() {
-        this.spinner.stop('shop-spinner')
+        this.spinner.once('animationcomplete', this.stopSpinner, this)
+    }
+
+    stopSpinner() {
+        this.spinner.stop()
         this.spinner.setFrame('spinner0001')
     }
 

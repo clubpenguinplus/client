@@ -146,6 +146,7 @@ export default class Penguin extends BaseContainer {
     }
 
     move(x, y) {
+        console.log('move', x, y)
         let path = PathEngine.getPath(this, {x: x, y: y})
         if (path) this.addMoveTween(path)
     }

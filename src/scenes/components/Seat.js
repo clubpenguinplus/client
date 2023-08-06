@@ -79,6 +79,7 @@ export default class Seat extends EventComponent {
         this.shell.client.penguin.afterMove = () => {
             if (!this.atSeatPosition) return
             this.shell.client.penguin.playFrame(this.frame)
+            this.shell.airtower.sendXt('u#sf', `${true}%${this.frame}`)
             this.shell.client.lockRotation = true
         }
     }

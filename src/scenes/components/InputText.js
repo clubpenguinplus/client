@@ -208,9 +208,7 @@ export default class InputText extends EventComponent {
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
-            this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
-
-            this.input.once('pointerup', (pointer) => this.onClick(pointer))
+            this.input.once('pointerup', this.onClick, this, pointer)
             this.isSelected = true
             this.gameObject.scene.interface.isInputActive = true
             this.flashIndicator()
@@ -225,8 +223,10 @@ export default class InputText extends EventComponent {
             this.gameObject.scene.interface.isInputActive = false
             this.indicator.visible = false
         } else {
+            if (this.gameObject.scene == undefined) return
+
             this.userdefinedonclickfunction()
-            this.input.once('pointerup', (pointer) => this.onClick(pointer))
+            this.input.once('pointerup', this.onClick, this, pointer)
 
             let offset = 0
             let curObject = this.gameObject
@@ -265,6 +265,8 @@ export default class InputText extends EventComponent {
                 this.indicator.x = this.gameObject.x + charWidth
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
+
+            console.log(this.gameObject)
 
             this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
 
@@ -375,6 +377,7 @@ export default class InputText extends EventComponent {
                 this.isSelected = false
                 this.gameObject.scene.interface.isInputActive = false
                 this.indicator.visible = false
+                this.input.removeListener('pointerup', this.onClick, this)
                 return
             }
         } else if (event.key == 'ArrowLeft') {
