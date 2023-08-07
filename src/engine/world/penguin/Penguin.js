@@ -9,6 +9,8 @@ import adjustRedemptionItem from './frames/adjustRedemptionItem'
 
 export default class Penguin extends BaseContainer {
     constructor(user, room, penguinLoader, puffleLoader) {
+        if (!user.x || user.x == NaN) user.x = 0
+        if (!user.y || user.y == NaN) user.y = 0
         super(room, user.x, user.y)
 
         this.userInfo = user
