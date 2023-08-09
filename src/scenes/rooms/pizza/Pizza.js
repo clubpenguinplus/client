@@ -8,6 +8,8 @@ export default class Pizza extends RoomScene {
     constructor() {
         super('Pizza')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.pizzatrondoor
         /** @type {Phaser.GameObjects.Sprite} */
         this.pizzacashreg
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
@@ -172,27 +174,24 @@ export default class Pizza extends RoomScene {
         // moveto_6
         const moveto_6 = this.add.ellipse(1036, 502, 70, 50)
 
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(351, 367, 80, 100)
+
+        // moveto_7
+        const moveto_7 = this.add.ellipse(1284, 457, 70, 50)
+
+        // pizzatrondoor_1
+        const pizzatrondoor_1 = this.add.rectangle(334.96463342153527, 307.7158751611203, 160, 130)
+        pizzatrondoor_1.setOrigin(0.4737473354656633, 1.1365875462187123)
+
         // lists
         const sort = [topbar, bottombar, lefttable, leftleftchair, leftrightchair, righttable, rightleftchair, rightrightchair, pianocurtain, mic, topbarstool, midbarstool, bottombarstool, pizzafg, frontlights, stagespeaker, tables, lowrighttablefront, pizzarail, barmoveto_3, pizzacashreg, hostdesk]
-
-        // pizzatrondoor (components)
-        const pizzatrondoorButton = new Button(pizzatrondoor)
-        pizzatrondoorButton.hoverCallback = () => this.onKitchenDoorOver()
-        pizzatrondoorButton.hoverOutCallback = () => this.onKitchenDoorOut()
-        new MoveTo(pizzatrondoor)
-        const pizzatrondoorShowHint = new ShowHint(pizzatrondoor)
-        pizzatrondoorShowHint.text = 'pizzatron'
 
         // plazadoor (components)
         const plazadoorButton = new Button(plazadoor)
         plazadoorButton.hoverCallback = () => this.onPlazaDoorOver()
         plazadoorButton.hoverOutCallback = () => this.onPlazaDoorOut()
         new MoveTo(plazadoor)
-
-        // pizzacashreg (components)
-        const pizzacashregSimpleButton = new SimpleButton(pizzacashreg)
-        pizzacashregSimpleButton.hoverCallback = () => this.onCashRegOver()
-        pizzacashregSimpleButton.hoverOutCallback = () => this.onCashRegOut()
 
         // barmoveto_3 (components)
         new MoveTo(barmoveto_3)
@@ -225,6 +224,24 @@ export default class Pizza extends RoomScene {
         // moveto_6 (components)
         new Seat(moveto_6)
 
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1)
+        rectangle_1SimpleButton.hoverCallback = () => this.onCashRegOver()
+        rectangle_1SimpleButton.hoverOutCallback = () => this.onCashRegOut()
+
+        // moveto_7 (components)
+        const moveto_7Seat = new Seat(moveto_7)
+        moveto_7Seat.direction = 'northeast'
+
+        // pizzatrondoor_1 (components)
+        new MoveTo(pizzatrondoor_1)
+        const pizzatrondoor_1ShowHint = new ShowHint(pizzatrondoor_1)
+        pizzatrondoor_1ShowHint.text = 'pizzatron'
+        const pizzatrondoor_1SimpleButton = new SimpleButton(pizzatrondoor_1)
+        pizzatrondoor_1SimpleButton.hoverCallback = () => this.onKitchenDoorOver()
+        pizzatrondoor_1SimpleButton.hoverOutCallback = () => this.onKitchenDoorOut()
+
+        this.pizzatrondoor = pizzatrondoor
         this.pizzacashreg = pizzacashreg
         this.sort = sort
 
@@ -249,10 +266,12 @@ export default class Pizza extends RoomScene {
     }
 
     onKitchenDoorOver() {
+        this.pizzatrondoor.setFrame('pizzatrondoor-hover')
         this.shell.musicController.addSfx('pizza-KitchenOpen')
     }
 
     onKitchenDoorOut() {
+        this.pizzatrondoor.setFrame('pizzatrondoor')
         this.shell.musicController.addSfx('pizza-KitchenClose')
     }
 

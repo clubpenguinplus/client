@@ -107,6 +107,8 @@ export default class SnowballFactory {
     onTweenComplete(ball) {
         if (ball.active) {
             ball.setTexture('main', 'snowball/ground')
+            ball.x = ball.shadow.x
+            ball.y = ball.shadow.y
             this.shell.events.emit('snowballcomplete', ball.user, ball.x, ball.y)
         }
     }
