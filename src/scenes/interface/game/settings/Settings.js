@@ -1049,48 +1049,49 @@ export default class Settings extends BaseContainer {
             } else {
                 this.disable2FA()
             }
+
+            let oneDay = 1000 * 60 * 60 * 24
+            let timeDiff = Date.now() - this.shell.client.joinTime
+            let daysDiff = Math.round(timeDiff / oneDay)
+
+            this.server.text = this.crumbs.getString(`settings-onserver,${this.airtower.worldName}`)
+            this.age.text = this.crumbs.getString(`settings-daysold,${daysDiff}`)
+
+            switch (this.shell.settings.vq) {
+                case 1:
+                    this.setLowQuality()
+                    break
+                case 2:
+                    this.setMedQuality()
+                    break
+                default:
+                    this.setHighQuality()
+                    break
+            }
+
+            switch (this.shell.settings.cf) {
+                case 1:
+                    this.setFilterLenient()
+                    break
+                case 2:
+                    this.setFilterStandard()
+                    break
+                default:
+                    this.setFilterUltimate()
+                    break
+            }
+
+            this.h_switch1.setFrame(this.shell.settings.hi ? 'switcher-selected' : 'switcher-unselected')
+            this.h_switch2.setFrame(this.shell.settings.ho ? 'switcher-selected' : 'switcher-unselected')
+            this.h_switch3.setFrame(this.shell.settings.hn ? 'switcher-selected' : 'switcher-unselected')
+            this.visible = true
+
+            let siderWidth = this.maxSliderX - this.minSliderX
+            this.mv_ball.x = this.minSliderX + siderWidth * this.shell.settings.mv
+            this.sv_ball.x = this.minSliderX + siderWidth * this.shell.settings.sv
         })
+
         this.airtower.sendXt('sett#getsettings')
-
-        let oneDay = 1000 * 60 * 60 * 24
-        let timeDiff = Date.now() - this.shell.client.joinTime
-        let daysDiff = Math.round(timeDiff / oneDay)
-
-        this.server.text = this.crumbs.getString(`settings-onserver,${this.airtower.worldName}`)
-        this.age.text = this.crumbs.getString(`settings-daysold,${daysDiff}`)
-
-        switch (this.shell.settings.vq) {
-            case 1:
-                this.setLowQuality()
-                break
-            case 2:
-                this.setMedQuality()
-                break
-            default:
-                this.setHighQuality()
-                break
-        }
-
-        switch (this.shell.settings.cf) {
-            case 1:
-                this.setFilterLenient()
-                break
-            case 2:
-                this.setFilterStandard()
-                break
-            default:
-                this.setFilterUltimate()
-                break
-        }
-
-        this.h_switch1.setFrame(this.shell.settings.hi ? 'switcher-selected' : 'switcher-unselected')
-        this.h_switch2.setFrame(this.shell.settings.ho ? 'switcher-selected' : 'switcher-unselected')
-        this.h_switch3.setFrame(this.shell.settings.hn ? 'switcher-selected' : 'switcher-unselected')
-        this.visible = true
-
-        let siderWidth = this.maxSliderX - this.minSliderX
-        this.mv_ball.x = this.minSliderX + siderWidth * this.shell.settings.mv
-        this.sv_ball.x = this.minSliderX + siderWidth * this.shell.settings.sv
     }
 
     setLowQuality() {
