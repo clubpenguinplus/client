@@ -127,7 +127,7 @@ export default class Dock extends RoomScene {
         const waterZones = []
 
         // boat (components)
-        const boatButton = new Button(boat)
+        new Button(boat)
         const boatShowHint = new ShowHint(boat)
         boatShowHint.text = 'hydrohopper'
         new MoveTo(boat)
@@ -152,6 +152,7 @@ export default class Dock extends RoomScene {
             this.smallcatalog.__Animation.play()
         }
         rectangle_1SimpleButton.hoverOutCallback = () => {
+            this.smallcatalog.__Animation.stop()
             this.smallcatalog.setFrame('catalog0001')
         }
         rectangle_1SimpleButton.callback = () => this.interface.loadExternal('Hydro')

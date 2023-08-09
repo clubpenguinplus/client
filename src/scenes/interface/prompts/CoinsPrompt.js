@@ -394,8 +394,8 @@ export default class CoinsPrompt extends BaseContainer {
             this.gameName.text = this.shell.getString(game)
         }
 
-        this.coinsEarned.text = this.shell.getString('mgprompt-coinsearned', coins.toString())
-        this.totalCoins.text = this.shell.getString('mgprompt-coinstotal', this.shell.client.coins.toString())
+        this.coinsEarned.text = this.shell.getString(`mgprompt-coinsearned,${coins.toString()}`)
+        this.totalCoins.text = this.shell.getString(`mgprompt-coinstotal,${this.shell.client.coins.toString()}`)
         this.visible = true
 
         this.nextPageBtn.visible = false
