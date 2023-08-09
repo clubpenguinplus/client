@@ -18,6 +18,8 @@ export default class Shell extends BaseScene {
 
         this.itemsLoaded = []
 
+        this.puffleCache = {}
+
         if (window.location.hostname == 'localhost') window.shell = this
     }
 

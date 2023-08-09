@@ -158,7 +158,14 @@ export default class Penguin extends BaseContainer {
     }
 
     getPuffleSpecies() {
-        if (this.walking) this.airtower.sendXt('p#pgs', `${this.walking}%${this.id}`)
+        if (!this.walking) return
+
+        if (this.shell.puffleCache[this.walking]) {
+            this.puffle = this.shell.puffleCache[this.walking]
+            this.loadPuffle()
+        } else {
+            this.airtower.sendXt('p#pgs', `${this.walking}%${this.id}`)
+        }
     }
 
     loadPuffle() {
@@ -174,12 +181,13 @@ export default class Penguin extends BaseContainer {
 
         if (this.shell.textures.exists(`puffles/walk/${this.puffle}`)) return this.addPuffleSprite()
 
-        this.shell.events.addListener(`textureLoaded:puffles/walk/${this.puffle}`, () => this.addPuffleSprite())
+        this.shell.events.once(`textureLoaded:puffles/walk/${this.puffle}`, () => this.addPuffleSprite())
         this.puffleLoader.loadPuffle('walk', this.puffle)
     }
 
     addPuffleSprite() {
         if (this.puffleSprite) {
+            console.log(this.puffleSprite, this)
             this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
         } else {
             this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
@@ -465,7 +473,7 @@ export default class Penguin extends BaseContainer {
 
         if (this.shell.textures.exists(`puffles/${animation}/${this.puffle}`)) return this.playPuffleAnim(animation)
 
-        this.shell.events.addListener(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
+        this.shell.events.once(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
         this.puffleLoader.loadPuffle(animation, this.puffle)
     }
 
@@ -552,6 +560,7 @@ export default class Penguin extends BaseContainer {
     }
 
     remove(child, destroy) {
+        return
         super.remove(child, destroy)
     }
 }

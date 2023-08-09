@@ -4,7 +4,6 @@ export default class RuffleManager {
         this.RuffleHolder = RuffleHolder
         this.crumbs = crumbs
         this.prefix = window.location.hostname == 'localhost' ? `${window.location.origin}/` : 'https://media.cpplus.pw/'
-        if (window.getMyPlayerHex) return // Check if already loaded
 
         window.RufflePlayer.config = {
             publicPath: 'https://unpkg.com/@ruffle-rs/ruffle'
@@ -309,11 +308,34 @@ export default class RuffleManager {
     }
 
     playerWearingItem(item) {
-        let items = this.shell.client.penguin.items.equippedFlat
-        for (var x in items) {
-            if (items[x] == item) {
-                return true
-            }
+        switch (item) {
+            case 750:
+                return this.shell.puffleCache[this.shell.client.walking] == 0
+            case 751:
+                return this.shell.puffleCache[this.shell.client.walking] == 1
+            case 752:
+                return this.shell.puffleCache[this.shell.client.walking] == 2
+            case 753:
+                return this.shell.puffleCache[this.shell.client.walking] == 3
+            case 754:
+                return this.shell.puffleCache[this.shell.client.walking] == 4
+            case 755:
+                return this.shell.puffleCache[this.shell.client.walking] == 5
+            case 756:
+                return this.shell.puffleCache[this.shell.client.walking] == 6
+            case 757:
+                return this.shell.puffleCache[this.shell.client.walking] == 7
+            case 758:
+                return this.shell.puffleCache[this.shell.client.walking] == 8
+            case 759:
+                return this.shell.puffleCache[this.shell.client.walking] == 9
+            default:
+                let items = this.shell.client.penguin.items.equippedFlat
+                for (var x in items) {
+                    if (items[x] == item) {
+                        return true
+                    }
+                }
         }
     }
 
