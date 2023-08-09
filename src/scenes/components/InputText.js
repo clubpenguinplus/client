@@ -266,8 +266,6 @@ export default class InputText extends EventComponent {
                 this.indicator.y = this.getLinePos(this.beforeCursor)
             }
 
-            console.log(this.gameObject)
-
             this.gameObject.setFixedSize(prevWidth, this.gameObject.style.fixedHeight)
 
             document.getElementById('dummyForMobileKeyboard').focus()

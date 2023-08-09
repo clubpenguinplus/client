@@ -1819,15 +1819,16 @@ export default class Stampbook extends BaseScene {
     }
 
     initStampbook(args, isPlayer) {
-        let color = isPlayer ? this.shell.client.stampbookColor : args[2]
-        let clasp = isPlayer ? this.shell.client.stampbookClasp : args[3]
-        let pattern = isPlayer ? this.shell.client.stampbookPattern : args[4]
+        this.penguinColor = isPlayer ? this.shell.client.color : args[1]
+        let color = isPlayer ? this.shell.client.stampbookColor : args[3]
+        let clasp = isPlayer ? this.shell.client.stampbookClasp : args[4]
+        let pattern = isPlayer ? this.shell.client.stampbookPattern : args[5]
 
         this.changeClasp(clasp)
         this.changePattern(pattern)
         this.changeColor(color)
 
-        this.stampsEarned = isPlayer ? this.shell.client.stamps : args[1].split('|')
+        this.stampsEarned = isPlayer ? this.shell.client.stamps : args[2].split('|')
         for (let s in this.stampsEarned) {
             this.stampsEarned[s] = parseInt(this.stampsEarned[s])
         }
@@ -1996,7 +1997,7 @@ export default class Stampbook extends BaseScene {
                 }
                 this[`polaroid${i + 1}LockedTxt`].visible = false
                 this[`polaroid${i + 1}LockedIcon`].visible = false
-                let polaroid = new Polaroid(this, 0, 0, page.polaroids[i].id)
+                let polaroid = new Polaroid(this, 0, 0, page.polaroids[i].id, this.penguinColor)
                 this[`polaroid${i + 1}Holder`].add(polaroid)
                 this.polaroidList.push(polaroid)
             }

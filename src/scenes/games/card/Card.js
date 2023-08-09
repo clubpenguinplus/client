@@ -131,7 +131,6 @@ export default class Card extends GameScene {
                 }
             }
             if (lastFrame > overallLastFrame) {
-                console.log(lastFrame)
                 overallLastFrame = lastFrame
             }
             let frames = Phaser.Utils.Array.NumberArray(1, lastFrame)

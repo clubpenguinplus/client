@@ -15,7 +15,9 @@ export default class Join extends Plugin {
     }
 
     loadPlayer(args) {
-        this.scene.start('Shell')
+        if (!this.shell.scene.isActive()) {
+            this.scene.start('Shell')
+        }
         this.shell.setClient(args)
 
         this.airtower.sendXt('j#js')
