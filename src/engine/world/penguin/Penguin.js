@@ -186,11 +186,11 @@ export default class Penguin extends BaseContainer {
     }
 
     addPuffleSprite() {
+        let frame = this.bodySprite ? this.bodySprite.frame.name.split('/')[1] : '1_1'
         if (this.puffleSprite) {
-            console.log(this.puffleSprite, this)
-            this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+            this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, frame)
         } else {
-            this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+            this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, frame)
             this.add(this.puffleSprite)
         }
 
@@ -440,17 +440,53 @@ export default class Penguin extends BaseContainer {
         let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
         pAnimSprite.depth = 9999
         pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
+
         this.puffleSprite.visible = false
+
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
+
         this.playFrame(8)
+
         this.airtower.sendXt('u#sf', `${false}%8`)
+
         this.puffleIsAnimating = true
+
         pAnimSprite.on('animationcomplete', () => {
             pAnimSprite.destroy()
             this.puffleSprite.visible = true
             this.puffleIsAnimating = false
             this.playFrame(this.direction)
         })
+
+        this.playPuffleSounds(animation)
+    }
+
+    playPuffleSounds(animation) {
+        switch (animation) {
+            case 'tricks/standonhead':
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-headstand-up'), 900)
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-headstand-down'), 3400)
+                break
+            case 'tricks/jumpforward':
+                this.shell.musicController.addSfx('puffle-all-jumpforward')
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-jumpforward'), 2200)
+                break
+            case 'tricks/jumpspin':
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-jumpspin'), 600)
+                break
+            case 'tricks/nuzzle':
+                this.shell.musicController.addSfx('puffle-all-nuzzle-come')
+                setTimeout(() => this.shell.musicController.addSfx(`puffle-${this.puffle}-nuzzle-moan`), 300)
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-nuzzle-go'), 2000)
+                break
+            case 'tricks/roll':
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-roll-away'), 800)
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-roll-return'), 2000)
+                break
+            case 'tricks/speak':
+                this.shell.musicController.addSfx(`puffle-${this.puffle}-speak`)
+                break
+        }
     }
 
     generatePuffleAnim(animation) {
@@ -469,7 +505,7 @@ export default class Penguin extends BaseContainer {
     }
 
     animatePuffle(animation) {
-        if (!this.puffleSprite) return
+        if (!this.puffleSprite || this.puffleIsAnimating) return
 
         if (this.shell.textures.exists(`puffles/${animation}/${this.puffle}`)) return this.playPuffleAnim(animation)
 
@@ -560,7 +596,6 @@ export default class Penguin extends BaseContainer {
     }
 
     remove(child, destroy) {
-        return
         super.remove(child, destroy)
     }
 }

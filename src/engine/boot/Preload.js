@@ -92,12 +92,7 @@ export default class Preload extends BaseScene {
             this._create()
         }, 10000)
         for (let font of this.crumbs.fonts) {
-            await this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal')
-            this.fontsLoaded++
-            if (this.fontsLoaded == this.crumbs.fonts.length) {
-                clearTimeout(this.abandonFontsTimeout)
-                this._create()
-            }
+            this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal')
         }
     }
 
@@ -218,6 +213,10 @@ export default class Preload extends BaseScene {
         })
         await newFont.load()
         document.fonts.add(newFont)
-        return true
+        this.fontsLoaded++
+        if (this.fontsLoaded == this.crumbs.fonts.length) {
+            clearTimeout(this.abandonFontsTimeout)
+            this._create()
+        }
     }
 }
