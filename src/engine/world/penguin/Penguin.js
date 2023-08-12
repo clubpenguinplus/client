@@ -342,29 +342,27 @@ export default class Penguin extends BaseContainer {
     }
 
     playAnims(frame) {
-        this.playAnim(this.bodySprite, `penguin_body_${frame}`)
-        this.playAnim(this.penguinSprite, `penguin_${frame}`)
+        this.playAnim(this.bodySprite, 'penguin_body', frame)
+        this.playAnim(this.penguinSprite, 'penguin', frame)
 
         for (let sprite of this.equippedSprites) {
-            let key = `${sprite.texture.key}_${frame}`
-
-            this.playAnim(sprite, key)
+            this.playAnim(sprite, sprite.texture.key, frame)
         }
     }
 
-    playAnim(sprite, key) {
-        if (!this.checkAnim(key)) {
-            return (sprite.visible = false)
+    playAnim(sprite, key, frame) {
+        if (!this.checkAnim(`${key}_${frame}`)) {
+            return sprite.anims.play(`${key}_1`)
         }
 
         if (sprite != this.puffleSprite) sprite.visible = true
         if (!sprite.anims) return
-        sprite.anims.play(key)
+        sprite.anims.play(`${key}_${frame}`)
 
         // Reset current chain queue
         sprite.chain()
 
-        let anim = this.anims.get(key)
+        let anim = this.anims.get(`${key}_${frame}`)
 
         if (anim.chainKeys) {
             this.playChain(sprite, anim)

@@ -363,10 +363,24 @@ export default class HotelLobby extends RoomScene {
         let y = gameObject.__MoveTo.y
         this.shell.client.penguin.afterMove = () => {
             if (this.shell.isNearPos(x, y)) {
-                // Play puffle sleep animation
+                this.shell.client.penguin.playFrame(79)
+                this.shell.client.lockRotation = true
+                this.airtower.events.once('phg', (args) => {
+                    if (args[0] == this.shell.client.penguin.walking) {
+                        this.puffleHealth = {
+                            clean: args[1],
+                            food: args[2],
+                            play: args[3],
+                            rest: args[4]
+                        }
+                    }
+                })
+
+                this.airtower.sendXt('p#phg', this.shell.client.penguin.walking)
                 setTimeout(() => {
                     this.increasePuffleRest(x, y)
-                }, 1000)
+                    this.shell.client.lockRotation = false
+                }, 5000)
             }
         }
     }
@@ -377,7 +391,12 @@ export default class HotelLobby extends RoomScene {
         this.carePopup.x = this.shell.client.penguin.x
         this.carePopup.y = this.shell.client.penguin.y
 
-        this.carePopup.showPopup('rest', 30, 70)
+        const oldRest = this.puffleHealth.rest
+        this.puffleHealth.rest += 20
+        if (this.puffleHealth.rest > 100) this.puffleHealth.rest = 100
+
+        this.carePopup.showPopup('rest', oldRest, this.puffleHealth.rest)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.rest}`)
     }
 
     /* END-USER-CODE */
