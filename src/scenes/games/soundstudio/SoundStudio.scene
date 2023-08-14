@@ -1474,10 +1474,15 @@
                     "type": "Image",
                     "id": "febaca67-85ac-403a-9c29-c3d2ad74d0b9",
                     "label": "logo_en",
+                    "components": [
+                        "LocalisedSprite"
+                    ],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "logo-en"
-                    }
+                    },
+                    "x": -215,
+                    "y": 99
                 },
                 {
                     "type": "Image",
@@ -1491,8 +1496,116 @@
                         "key": "soundstudio",
                         "frame": "menu/big_btn"
                     },
-                    "x": 10,
+                    "x": -217,
                     "y": 317
+                },
+                {
+                    "type": "Text",
+                    "id": "e477b1fd-512e-41b6-adc3-4ec655f83ffd",
+                    "label": "record_txt_1",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "soundstudio_makemusic",
+                    "x": -217,
+                    "y": 313,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Make Music",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "48px",
+                    "fontStyle": "bold",
+                    "color": "#69e5c5ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "ea90148e-3cec-436e-b907-588a8e7733f3",
+                    "label": "menu_shared_bg",
+                    "texture": {
+                        "key": "soundstudio",
+                        "frame": "menu/shared_bg"
+                    },
+                    "x": 500,
+                    "y": 310
+                },
+                {
+                    "type": "Image",
+                    "id": "3ee5e1f9-c4ca-4b32-b479-23767bc9fe59",
+                    "label": "menu_little_btn",
+                    "texture": {
+                        "key": "soundstudio",
+                        "frame": "menu/little_btn"
+                    },
+                    "x": -217,
+                    "y": 450
+                },
+                {
+                    "type": "Image",
+                    "id": "cf6ac45e-3f99-4ad9-a3eb-148d7143e018",
+                    "label": "menu_little_btn_1",
+                    "texture": {
+                        "key": "soundstudio",
+                        "frame": "menu/little_btn"
+                    },
+                    "x": -217,
+                    "y": 552
+                },
+                {
+                    "type": "Text",
+                    "id": "878d5a30-00ea-4d48-8581-ba139794ccd3",
+                    "label": "record_txt_6",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "soundstudio_makemusic",
+                    "x": -217,
+                    "y": 450,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Instructions",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "34px",
+                    "fontStyle": "bold",
+                    "color": "#69e5c5ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "342a78ba-b9bb-4e4a-aaab-90836ac69f50",
+                    "label": "record_txt_7",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "soundstudio_makemusic",
+                    "x": -217,
+                    "y": 550,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Saved Tracks",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "34px",
+                    "fontStyle": "bold",
+                    "color": "#e0d06dff"
+                },
+                {
+                    "type": "Text",
+                    "id": "4c45713a-a376-4898-8ea0-a1e02273ea79",
+                    "label": "record_txt_8",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "soundstudio_makemusic",
+                    "x": 500,
+                    "y": -108,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Shared Tracks",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "44px",
+                    "fontStyle": "bold",
+                    "color": "#7fd67bff",
+                    "shadow.offsetX": 2,
+                    "shadow.offsetY": 3,
+                    "shadow.fill": true
                 }
             ]
         },
@@ -1510,6 +1623,50 @@
             },
             "x": 1491,
             "y": 22
+        },
+        {
+            "type": "Image",
+            "id": "3d21fbed-b506-49b1-9043-668da1dee1aa",
+            "label": "menu_scrollbar",
+            "texture": {
+                "key": "soundstudio",
+                "frame": "menu/scrollbar"
+            },
+            "x": 1429,
+            "y": 544
+        },
+        {
+            "type": "Image",
+            "id": "37ac67b1-b24b-4295-adf8-b08fcea48e64",
+            "label": "menu_bottom_btn",
+            "texture": {
+                "key": "soundstudio",
+                "frame": "menu/bottom_btn"
+            },
+            "x": 1429,
+            "y": 892
+        },
+        {
+            "type": "Image",
+            "id": "cb1cc27d-fcfe-455e-8318-8619a3ef5577",
+            "label": "menu_top_btn",
+            "texture": {
+                "key": "soundstudio",
+                "frame": "menu/top_btn"
+            },
+            "x": 1430,
+            "y": 195
+        },
+        {
+            "type": "Image",
+            "id": "dc426b6b-f1d0-4553-b5f5-7760872ad7fc",
+            "label": "menu_scroller",
+            "texture": {
+                "key": "soundstudio",
+                "frame": "menu/scroller"
+            },
+            "x": 1429,
+            "y": 240
         }
     ],
     "plainObjects": [],

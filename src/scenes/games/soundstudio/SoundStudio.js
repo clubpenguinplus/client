@@ -9,6 +9,8 @@ export default class SoundStudio extends GameScene {
 
         /* START-USER-CTR-CODE */
         this.music = 'soundstudio-menu'
+
+        this.hdthsecs = 0
         /* END-USER-CTR-CODE */
     }
 
@@ -656,15 +658,67 @@ export default class SoundStudio extends GameScene {
         menu.add(menu_bg)
 
         // logo_en
-        const logo_en = this.add.image(0, 0, 'soundstudio', 'logo-en')
+        const logo_en = this.add.image(-215, 99, 'soundstudio', 'logo-en')
         menu.add(logo_en)
 
         // menu_big_btn
-        const menu_big_btn = this.add.image(10, 317, 'soundstudio', 'menu/big_btn')
+        const menu_big_btn = this.add.image(-217, 317, 'soundstudio', 'menu/big_btn')
         menu.add(menu_big_btn)
+
+        // record_txt_1
+        const record_txt_1 = this.add.text(-217, 313, '', {})
+        record_txt_1.setOrigin(0.5, 0.5)
+        record_txt_1.text = 'Make Music'
+        record_txt_1.setStyle({color: '#69e5c5ff', fontFamily: 'cpBurbankSmall', fontSize: '48px', fontStyle: 'bold'})
+        menu.add(record_txt_1)
+
+        // menu_shared_bg
+        const menu_shared_bg = this.add.image(500, 310, 'soundstudio', 'menu/shared_bg')
+        menu.add(menu_shared_bg)
+
+        // menu_little_btn
+        const menu_little_btn = this.add.image(-217, 450, 'soundstudio', 'menu/little_btn')
+        menu.add(menu_little_btn)
+
+        // menu_little_btn_1
+        const menu_little_btn_1 = this.add.image(-217, 552, 'soundstudio', 'menu/little_btn')
+        menu.add(menu_little_btn_1)
+
+        // record_txt_6
+        const record_txt_6 = this.add.text(-217, 450, '', {})
+        record_txt_6.setOrigin(0.5, 0.5)
+        record_txt_6.text = 'Instructions'
+        record_txt_6.setStyle({color: '#69e5c5ff', fontFamily: 'cpBurbankSmall', fontSize: '34px', fontStyle: 'bold'})
+        menu.add(record_txt_6)
+
+        // record_txt_7
+        const record_txt_7 = this.add.text(-217, 550, '', {})
+        record_txt_7.setOrigin(0.5, 0.5)
+        record_txt_7.text = 'Saved Tracks'
+        record_txt_7.setStyle({color: '#e0d06dff', fontFamily: 'cpBurbankSmall', fontSize: '34px', fontStyle: 'bold'})
+        menu.add(record_txt_7)
+
+        // record_txt_8
+        const record_txt_8 = this.add.text(500, -108, '', {})
+        record_txt_8.setOrigin(0.5, 0.5)
+        record_txt_8.text = 'Shared Tracks'
+        record_txt_8.setStyle({color: '#7fd67bff', fontFamily: 'cpBurbankSmall', fontSize: '44px', fontStyle: 'bold', 'shadow.offsetX': 2, 'shadow.offsetY': 3, 'shadow.fill': true})
+        menu.add(record_txt_8)
 
         // close
         const close = this.add.image(1491, 22, 'soundstudio', 'close_btn')
+
+        // menu_scrollbar
+        this.add.image(1429, 544, 'soundstudio', 'menu/scrollbar')
+
+        // menu_bottom_btn
+        this.add.image(1429, 892, 'soundstudio', 'menu/bottom_btn')
+
+        // menu_top_btn
+        this.add.image(1430, 195, 'soundstudio', 'menu/top_btn')
+
+        // menu_scroller
+        this.add.image(1429, 240, 'soundstudio', 'menu/scroller')
 
         // lists
         const loopButtons = [sfx_lightblue0001, sfx_purple0001, sfx_green0001, sfx_yellow0001, sfx_pink0001, sfx_lightblue0001_2, sfx_purple0001_2, sfx_green0001_2, sfx_yellow0001_3, sfx_pink0001_2, sfx_lightblue0001_2_1, sfx_purple0001_2_1, sfx_green0001_2_1, sfx_yellow0001_3_1, sfx_pink0001_2_1, sfx_lightblue0001_2_1_1, sfx_purple0001_2_1_1, sfx_green0001_2_1_1, sfx_yellow0001_3_1_1, sfx_pink0001_2_1_1, sfx_lightblue0001_2_1_2, sfx_purple0001_2_1_2, sfx_green0001_2_1_2, sfx_yellow0001_3_1_2, sfx_pink0001_2_1_2]
@@ -730,9 +784,28 @@ export default class SoundStudio extends GameScene {
         // menu_bg (components)
         new Interactive(menu_bg)
 
+        // logo_en (components)
+        new LocalisedSprite(logo_en)
+
         // menu_big_btn (components)
         const menu_big_btnButton = new Button(menu_big_btn)
         menu_big_btnButton.callback = () => this.startGame()
+
+        // record_txt_1 (components)
+        const record_txt_1LocalisedString = new LocalisedString(record_txt_1)
+        record_txt_1LocalisedString.id = 'soundstudio_makemusic'
+
+        // record_txt_6 (components)
+        const record_txt_6LocalisedString = new LocalisedString(record_txt_6)
+        record_txt_6LocalisedString.id = 'soundstudio_makemusic'
+
+        // record_txt_7 (components)
+        const record_txt_7LocalisedString = new LocalisedString(record_txt_7)
+        record_txt_7LocalisedString.id = 'soundstudio_makemusic'
+
+        // record_txt_8 (components)
+        const record_txt_8LocalisedString = new LocalisedString(record_txt_8)
+        record_txt_8LocalisedString.id = 'soundstudio_makemusic'
 
         // close (components)
         const closeButton = new Button(close)
@@ -814,11 +887,13 @@ export default class SoundStudio extends GameScene {
 
     startGame() {
         this.menu.visible = false
+        this.shell.musicController.addMusic(0)
         this.changeMode('pop')
     }
 
     changeMode(mode) {
         this.sound.stopAll()
+        const prevPlaying = this.nowPlaying
         this.nowPlaying = []
         for (let button of this.loopButtons) {
             button.setFrame(button.frame.name.slice(0, -1) + '1')
@@ -852,9 +927,6 @@ export default class SoundStudio extends GameScene {
         this.soundsToRestart = []
 
         for (let sound in this.sounds) {
-            if (!this.sounds[sound].mute && this.recording) {
-                this.soundsToRestart.push(sound)
-            }
             this.sounds[sound].stop()
         }
 
@@ -865,8 +937,10 @@ export default class SoundStudio extends GameScene {
             this.sounds[i].play()
         }
 
-        for (let sound of this.soundsToRestart) {
-            this.playLoop(sound)
+        if (!this.recording) return
+
+        for (let sound of prevPlaying) {
+            this.playLoop(parseInt(sound.split('_')[1]) - 1)
         }
     }
 
@@ -937,6 +1011,10 @@ export default class SoundStudio extends GameScene {
     onRecordPress() {
         if (this.recording) return this.stopRecording()
 
+        for (let sound in this.sounds) {
+            this.sounds[sound].stop()
+        }
+
         this.record_txt.text = '3'
         this.tweens.add({
             targets: this.record_txt,
@@ -959,7 +1037,7 @@ export default class SoundStudio extends GameScene {
                             onComplete: () => {
                                 this.record_txt.text = 'Stop'
                                 this.record_txt.alpha = 1
-                                this.record_txt.setColor('#5f0404')
+                                this.record_txt.setColor('#ffbdbd')
                                 this.recordBtn.setFrame('stop_btn')
                                 this.startRecording()
                             }
@@ -982,7 +1060,6 @@ export default class SoundStudio extends GameScene {
     }
 
     updateTimer() {
-        if (!this.hdthsecs) this.hdthsecs = 0
         this.hdthsecs++
 
         this.currentTime.x = 327 + (this.hdthsecs / 18000) * 1168
@@ -992,7 +1069,7 @@ export default class SoundStudio extends GameScene {
         this.currentTime.text = `${this.secondsToTime(Math.floor(this.hdthsecs / 100))}`
         this.timeLeft.text = `${this.secondsToTime(180 - Math.floor(this.hdthsecs / 100))}`
 
-        if (this.hdthsecs >= 18000) clearInterval(this.timerInterval)
+        if (this.hdthsecs >= 18000) this.stopRecording()
     }
 
     secondsToTime(secs) {
@@ -1016,6 +1093,7 @@ export default class SoundStudio extends GameScene {
             this.triggerRoom(120, 694, 300)
             this.stop()
         } else {
+            this.addMusic()
             this.menu.visible = true
         }
     }
@@ -1053,6 +1131,11 @@ export default class SoundStudio extends GameScene {
     }
 
     stopRecording() {
+        const sounds = this.nowPlaying.length
+        for (let sound = 0; sound < sounds; sound++) {
+            let split = this.nowPlaying[0].split('_')
+            this.playLoop(parseInt(split[1]) - 1)
+        }
         console.log(this.soundsRecorded)
         for (let wf of this.wfList) {
             wf.stop()
@@ -1070,6 +1153,23 @@ export default class SoundStudio extends GameScene {
         this.record_txt.text = 'Record'
         this.record_txt.setColor('#BDFFC4')
         this.recordBtn.setFrame('start_btn')
+    }
+
+    playbackFromList(list) {
+        for (let sound of list) {
+            let split = sound.split(':')
+            switch (split[0]) {
+                case 'playloop':
+                    setTimeout(() => this.playLoop(parseInt(split[1].split('_')[1]) - 1), parseInt(split[2]) * 10)
+                    break
+                case 'stoploop':
+                    setTimeout(() => this.playLoop(parseInt(split[1].split('_')[1]) - 1), parseInt(split[2]) * 10)
+                    break
+                case 'playsfx':
+                    setTimeout(() => this.playSfx(parseInt(split[1].split('_')[2]) - 1), parseInt(split[2]) * 10)
+                    break
+            }
+        }
     }
 
     /* END-USER-CODE */
