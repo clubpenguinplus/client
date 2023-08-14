@@ -849,14 +849,24 @@ export default class SoundStudio extends GameScene {
         }
         this.mode = mode
 
+        this.soundsToRestart = []
+
         for (let sound in this.sounds) {
+            if (!this.sounds[sound].mute && this.recording) {
+                this.soundsToRestart.push(sound)
+            }
             this.sounds[sound].stop()
         }
 
         this.sounds = {}
         for (let i = 0; i < this.loopButtons.length; i++) {
             this.sounds[i] = this.sound.add(`${mode}_${i + 1}`, {loop: true, mute: true})
+            this.sounds[i].setVolume(this.shell.settings.sv)
             this.sounds[i].play()
+        }
+
+        for (let sound of this.soundsToRestart) {
+            this.playLoop(sound)
         }
     }
 
@@ -894,14 +904,14 @@ export default class SoundStudio extends GameScene {
             this.nowPlaying.splice(this.nowPlaying.indexOf(`${this.mode}_${index + 1}`), 1)
 
             if (!this.recording) return
-            this.sounds.push(`stoploop:${this.mode}_${index + 1}:${this.hdthsecs}`)
+            this.soundsRecorded.push(`stoploop:${this.mode}_${index + 1}:${this.hdthsecs}`)
         } else {
             this.sounds[index].setMute(false)
             this.loopButtons[index].setFrame(this.loopButtons[index].frame.name.slice(0, -1) + '2')
             this.nowPlaying.push(`${this.mode}_${index + 1}`)
 
             if (!this.recording) return
-            this.sounds.push(`playloop:${this.mode}_${index + 1}:${this.hdthsecs}`)
+            this.soundsRecorded.push(`playloop:${this.mode}_${index + 1}:${this.hdthsecs}`)
         }
     }
 
@@ -916,14 +926,17 @@ export default class SoundStudio extends GameScene {
         } else {
             this.sound.stopByKey(`${this.mode}_sfx_${index + 1}`)
         }
+        this.sfx[`${this.mode}_sfx_${index + 1}`].setVolume(this.shell.settings.sv)
         this.sfx[`${this.mode}_sfx_${index + 1}`].play()
 
         if (!this.recording) return
 
-        this.sounds.push(`playsfx:${this.mode}_sfx_${index + 1}:${this.hdthsecs}`)
+        this.soundsRecorded.push(`playsfx:${this.mode}_sfx_${index + 1}:${this.hdthsecs}`)
     }
 
     onRecordPress() {
+        if (this.recording) return this.stopRecording()
+
         this.record_txt.text = '3'
         this.tweens.add({
             targets: this.record_txt,
@@ -944,8 +957,10 @@ export default class SoundStudio extends GameScene {
                             alpha: 0,
                             duration: 1000,
                             onComplete: () => {
-                                this.record_txt.text = 'Recording...'
+                                this.record_txt.text = 'Stop'
                                 this.record_txt.alpha = 1
+                                this.record_txt.setColor('#5f0404')
+                                this.recordBtn.setFrame('stop_btn')
                                 this.startRecording()
                             }
                         })
@@ -957,12 +972,13 @@ export default class SoundStudio extends GameScene {
 
     startRecording() {
         this.recording = true
-        this.sounds = []
+        this.soundsRecorded = []
         for (let wf of this.wfList) {
             wf.play(`soundstudio-${wf.frame.name.slice(0, -4)}`)
         }
         this.timerInterval = setInterval(() => this.updateTimer(), 10)
-        setInterval(() => this.updateWaveforms(), 170)
+        this.wfInterval = setInterval(() => this.updateWaveforms(), 170)
+        this.changeMode(this.mode)
     }
 
     updateTimer() {
@@ -987,6 +1003,8 @@ export default class SoundStudio extends GameScene {
     }
 
     quit() {
+        if (this.recording) this.stopRecording()
+
         for (let sound in this.sounds) {
             this.sounds[sound].stop()
         }
@@ -996,6 +1014,7 @@ export default class SoundStudio extends GameScene {
         if (this.menu.visible) {
             // return to dance club
             this.triggerRoom(120, 694, 300)
+            this.stop()
         } else {
             this.menu.visible = true
         }
@@ -1033,7 +1052,25 @@ export default class SoundStudio extends GameScene {
         }
     }
 
-    stopRecording() {}
+    stopRecording() {
+        console.log(this.soundsRecorded)
+        for (let wf of this.wfList) {
+            wf.stop()
+            wf.setFrame(`${wf.frame.name.slice(0, -4)}0001`)
+        }
+        this.recording = false
+        this.currentTime.x = 327
+        this.waveforms.x = 327
+        this.timeIndicator.x = 327
+        this.hdthsecs = 0
+        clearInterval(this.timerInterval)
+        clearInterval(this.wfInterval)
+        this.currentTime.text = '0:00'
+        this.timeLeft.text = '3:00'
+        this.record_txt.text = 'Record'
+        this.record_txt.setColor('#BDFFC4')
+        this.recordBtn.setFrame('start_btn')
+    }
 
     /* END-USER-CODE */
 }

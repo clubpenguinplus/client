@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "628b1419-d363-448c-bdc1-2f2380f03b59",
             "label": "waveforms_bg",
-            "components": [],
             "texture": {
                 "key": "soundstudio",
                 "frame": "timer"
@@ -33,7 +32,6 @@
             "id": "37ea22ac-2b88-4715-abbd-20e39452ab03",
             "label": "waveforms",
             "scope": "CLASS",
-            "components": [],
             "x": 327,
             "y": 73,
             "list": [
@@ -41,7 +39,6 @@
                     "type": "Sprite",
                     "id": "97eb60cd-552e-4271-8100-074caf90f7ad",
                     "label": "waveforms_one0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/one0001"
@@ -58,7 +55,6 @@
                     "type": "Sprite",
                     "id": "88bb2384-26c5-4e0c-baa8-99304e03cf38",
                     "label": "waveforms_two0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/two0001"
@@ -75,7 +71,6 @@
                     "type": "Sprite",
                     "id": "5f71f4ed-ea06-41c9-a12a-7e7131fbb6ad",
                     "label": "waveforms_three0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/three0001"
@@ -92,7 +87,6 @@
                     "type": "Sprite",
                     "id": "666d1009-6e80-4848-91aa-c33ec1d65d14",
                     "label": "waveforms_four0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/four0001"
@@ -109,7 +103,6 @@
                     "type": "Sprite",
                     "id": "0c824c35-578e-45d9-85d9-0a49125969d4",
                     "label": "waveforms_five0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/five0001"
@@ -126,7 +119,6 @@
                     "type": "Sprite",
                     "id": "4ccd3dad-e494-4033-82e9-ce415b7b0dfd",
                     "label": "waveforms_six0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/six0001"
@@ -143,7 +135,6 @@
                     "type": "Sprite",
                     "id": "ddff0edd-8372-462f-b4d0-cd62a9ab72b4",
                     "label": "waveforms_seven0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/seven0001"
@@ -160,7 +151,6 @@
                     "type": "Sprite",
                     "id": "a031ee7a-08a0-4ced-8c75-787b1960c231",
                     "label": "waveforms_eight0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/eight0001"
@@ -177,7 +167,6 @@
                     "type": "Sprite",
                     "id": "f8a45235-3466-414b-9d96-0c7042dd48f3",
                     "label": "waveforms_nine0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/nine0001"
@@ -194,7 +183,6 @@
                     "type": "Sprite",
                     "id": "764bc758-afe2-4368-b183-306f69b19d6f",
                     "label": "waveforms_ten0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/ten0001"
@@ -211,7 +199,6 @@
                     "type": "Sprite",
                     "id": "f4975794-958b-4b23-879a-f175515ad6b8",
                     "label": "waveforms_eleven0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/eleven0001"
@@ -228,7 +215,6 @@
                     "type": "Sprite",
                     "id": "8f99791b-f0c8-4417-b6e6-93528b8882a8",
                     "label": "waveforms_twelve0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twelve0001"
@@ -245,7 +231,6 @@
                     "type": "Sprite",
                     "id": "e66bbf1d-b4a9-445f-ad82-e3b9231ec20e",
                     "label": "waveforms_thirteen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirteen0001"
@@ -262,7 +247,6 @@
                     "type": "Sprite",
                     "id": "8e0cf336-31d9-4104-b12a-036345ec4d8b",
                     "label": "waveforms_fourteen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/fourteen0001"
@@ -279,7 +263,6 @@
                     "type": "Sprite",
                     "id": "3d045bc9-a0a5-4da0-a07a-f71e1495c356",
                     "label": "waveforms_fifteen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/fifteen0001"
@@ -296,7 +279,6 @@
                     "type": "Sprite",
                     "id": "b3add049-973b-4c93-8550-a807dc1813ac",
                     "label": "waveforms_sixteen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/sixteen0001"
@@ -313,7 +295,6 @@
                     "type": "Sprite",
                     "id": "43264343-4459-4248-b66f-0d82c9b50204",
                     "label": "waveforms_seventeen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/seventeen0001"
@@ -330,7 +311,6 @@
                     "type": "Sprite",
                     "id": "d9e485a4-a431-4622-a5a6-c4b07a134c41",
                     "label": "waveforms_eighteen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/eighteen0001"
@@ -347,7 +327,6 @@
                     "type": "Sprite",
                     "id": "0f90c85a-c4f4-4b43-99b7-4a487895dcac",
                     "label": "waveforms_nineteen0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/nineteen0001"
@@ -364,7 +343,6 @@
                     "type": "Sprite",
                     "id": "518b511c-23e1-4fe9-b3f2-6298c2886387",
                     "label": "waveforms_twenty0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twenty0001"
@@ -381,7 +359,6 @@
                     "type": "Sprite",
                     "id": "190688d2-e3bc-4ba1-b730-cd148376023b",
                     "label": "waveforms_twentyone0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentyone0001"
@@ -398,7 +375,6 @@
                     "type": "Sprite",
                     "id": "243bf852-7d89-474d-99ff-3ea66f519769",
                     "label": "waveforms_twentytwo0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentytwo0001"
@@ -415,7 +391,6 @@
                     "type": "Sprite",
                     "id": "4db64bd1-7b9b-4e18-8844-36b57c360689",
                     "label": "waveforms_twentythree0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentythree0001"
@@ -432,7 +407,6 @@
                     "type": "Sprite",
                     "id": "8d3fb081-dc86-4c83-9481-1584caad9f9c",
                     "label": "waveforms_twentyfour0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentyfour0001"
@@ -449,7 +423,6 @@
                     "type": "Sprite",
                     "id": "1bde01be-9880-4d83-8357-2a4f4b30de0e",
                     "label": "waveforms_twentyfive0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentyfive0001"
@@ -466,7 +439,6 @@
                     "type": "Sprite",
                     "id": "83559f0c-afdb-4861-8fce-504694a59d5a",
                     "label": "waveforms_twentysix0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentysix0001"
@@ -483,7 +455,6 @@
                     "type": "Sprite",
                     "id": "d6f4ccad-3658-4ed1-845b-f6e923b4b738",
                     "label": "waveforms_twentyseven0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentyseven0001"
@@ -500,7 +471,6 @@
                     "type": "Sprite",
                     "id": "4b836e17-1416-4084-9c87-71a5a9ffc7de",
                     "label": "waveforms_twentyeight0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentyeight0001"
@@ -517,7 +487,6 @@
                     "type": "Sprite",
                     "id": "32c49e35-83fc-4ef1-91ba-0b75f2c61c8a",
                     "label": "waveforms_twentynine0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/twentynine0001"
@@ -534,7 +503,6 @@
                     "type": "Sprite",
                     "id": "f920eefd-4130-4715-83f0-620d353a1d52",
                     "label": "waveforms_thirty0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirty0001"
@@ -551,7 +519,6 @@
                     "type": "Sprite",
                     "id": "0b557918-ed56-48c2-a819-9d4674c7209f",
                     "label": "waveforms_thirtyone0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyone0001"
@@ -568,7 +535,6 @@
                     "type": "Sprite",
                     "id": "49378b55-7065-4494-9147-a11dc0229dcf",
                     "label": "waveforms_thirtytwo0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtytwo0001"
@@ -585,7 +551,6 @@
                     "type": "Sprite",
                     "id": "51c01033-52a5-4187-9a09-b11c127d9d6f",
                     "label": "waveforms_thirtythree0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtythree0001"
@@ -602,7 +567,6 @@
                     "type": "Sprite",
                     "id": "8baf1221-59a6-4f0d-a6ac-798ece03653e",
                     "label": "waveforms_thirtyfour0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyfour0001"
@@ -619,7 +583,6 @@
                     "type": "Sprite",
                     "id": "4a6ba352-cd96-4ba7-95ac-4ef29a212b8e",
                     "label": "waveforms_thirtyfive0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyfive0001"
@@ -636,7 +599,6 @@
                     "type": "Sprite",
                     "id": "d393221f-076a-415d-877a-cee0e224294f",
                     "label": "waveforms_thirtysix0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtysix0001"
@@ -653,7 +615,6 @@
                     "type": "Sprite",
                     "id": "c437eca6-bb8f-41be-a659-8b1651d01343",
                     "label": "waveforms_thirtyseven0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyseven0001"
@@ -670,7 +631,6 @@
                     "type": "Sprite",
                     "id": "258cc9f4-d453-48e6-8a44-645587df1109",
                     "label": "waveforms_thirtyeight0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtyeight0001"
@@ -687,7 +647,6 @@
                     "type": "Sprite",
                     "id": "8e858d20-4889-460a-b192-2fc2ab0d7ae3",
                     "label": "waveforms_thirtynine0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/thirtynine0001"
@@ -704,7 +663,6 @@
                     "type": "Sprite",
                     "id": "73703914-182d-4ac9-81e0-a401eb113cc9",
                     "label": "waveforms_forty0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "waveforms/forty0001"
@@ -723,7 +681,6 @@
             "type": "Image",
             "id": "93d930b3-5c73-4ef5-bae5-285e0b6d52ad",
             "label": "overlay",
-            "components": [],
             "texture": {
                 "key": "soundstudio",
                 "frame": "overlay"
@@ -735,7 +692,6 @@
             "type": "Image",
             "id": "116f6cd5-6cd4-428c-935f-5fcff8f5c51d",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "soundstudio",
                 "frame": "bg"
@@ -748,7 +704,6 @@
             "id": "8434e5b3-8c33-4b48-a740-11ab39b823c0",
             "label": "currentTime",
             "scope": "CLASS",
-            "components": [],
             "x": 327,
             "y": 67,
             "originX": 0.49997517505489686,
@@ -763,7 +718,6 @@
             "type": "Image",
             "id": "44d7133f-8c45-4afd-8cb1-a81735cd3ab2",
             "label": "dividers",
-            "components": [],
             "texture": {
                 "key": "soundstudio",
                 "frame": "dividers"
@@ -982,7 +936,6 @@
             "id": "d23cf1f0-355e-4616-a2b1-4530ebb71a57",
             "label": "timeLeft",
             "scope": "CLASS",
-            "components": [],
             "x": 1446,
             "y": 79,
             "originX": 0.5,
@@ -1034,7 +987,6 @@
             "id": "ca99363d-eda5-4e0d-8b6e-fd285dd1be6a",
             "label": "timeIndicator",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "soundstudio",
                 "frame": "time_indicator"
@@ -1051,7 +1003,6 @@
             "type": "Container",
             "id": "3d8640f6-4e2e-4ab7-bf02-a19dfd355800",
             "label": "buttons",
-            "components": [],
             "x": 406,
             "y": 291,
             "list": [
@@ -1059,7 +1010,6 @@
                     "type": "Image",
                     "id": "14073f7e-6fbd-4b96-a289-19074a2b1fee",
                     "label": "sfx_lightblue0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1069,7 +1019,6 @@
                     "type": "Image",
                     "id": "c96ba610-843b-4d74-8907-e682f5c0c276",
                     "label": "sfx_purple0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1080,7 +1029,6 @@
                     "type": "Image",
                     "id": "63128481-987d-4226-b66e-cb137e7c3534",
                     "label": "sfx_green0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1091,7 +1039,6 @@
                     "type": "Image",
                     "id": "a7b113c6-3421-4b20-966c-620fb7e439b0",
                     "label": "sfx_yellow0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1102,7 +1049,6 @@
                     "type": "Image",
                     "id": "3498e39f-b8cf-4cde-831d-970916b13910",
                     "label": "sfx_pink0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1113,7 +1059,6 @@
                     "type": "Image",
                     "id": "17c86a79-1bbc-436b-9f74-1f85b6007783",
                     "label": "sfx_darkblue_0001",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_darkblue_0001"
@@ -1125,7 +1070,6 @@
                     "type": "Image",
                     "id": "956446c1-455f-46e6-a68d-e14ea5582839",
                     "label": "sfx_yellow0001_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1136,7 +1080,6 @@
                     "type": "Image",
                     "id": "d98a530a-5e6a-4e39-9a66-7b5789bfbfa4",
                     "label": "sfx_pink0001_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1147,7 +1090,6 @@
                     "type": "Image",
                     "id": "a20ffef7-2f83-45b3-ae76-9f7e031b9856",
                     "label": "sfx_purple0001_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1158,7 +1100,6 @@
                     "type": "Image",
                     "id": "bcddf009-c506-49d8-83f9-fdcd4a99283b",
                     "label": "sfx_green0001_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1170,7 +1111,6 @@
                     "type": "Image",
                     "id": "d37c7cb4-6c73-4c85-8972-f8945e3410b6",
                     "label": "sfx_yellow0001_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1182,7 +1122,6 @@
                     "type": "Image",
                     "id": "30635be3-d613-427d-b4af-728ff9bf475f",
                     "label": "sfx_darkblue_0001_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_darkblue_0001"
@@ -1194,7 +1133,6 @@
                     "type": "Image",
                     "id": "732834e3-ac85-47a9-a095-d8251be2d34e",
                     "label": "sfx_lightblue0001_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1206,7 +1144,6 @@
                     "type": "Image",
                     "id": "b66e357c-07bd-4e66-8a08-184d47e65a8d",
                     "label": "sfx_lightblue0001_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1217,7 +1154,6 @@
                     "type": "Image",
                     "id": "3aff1f22-24f4-481f-ae96-90ffe6a8a689",
                     "label": "sfx_purple0001_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1229,7 +1165,6 @@
                     "type": "Image",
                     "id": "c79bb248-2fc0-4416-b2cb-ef96e8172407",
                     "label": "sfx_green0001_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1241,7 +1176,6 @@
                     "type": "Image",
                     "id": "53342af8-229c-4c5e-9afc-902fa34ddea9",
                     "label": "sfx_yellow0001_3",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1253,7 +1187,6 @@
                     "type": "Image",
                     "id": "60e76489-45ab-4508-b12a-cd134ce9c189",
                     "label": "sfx_pink0001_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1265,7 +1198,6 @@
                     "type": "Image",
                     "id": "d3962f0c-13a8-4484-88e9-2f76283b973c",
                     "label": "sfx_pink0001_2_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1277,7 +1209,6 @@
                     "type": "Image",
                     "id": "5bc92a62-91ae-4f09-9904-450b398aa8de",
                     "label": "sfx_yellow0001_3_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1289,7 +1220,6 @@
                     "type": "Image",
                     "id": "c1095531-18bd-4778-8c19-83390c85db6c",
                     "label": "sfx_green0001_2_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1301,7 +1231,6 @@
                     "type": "Image",
                     "id": "31ca59aa-1030-484f-ba97-d8c2ef3deee0",
                     "label": "sfx_purple0001_2_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1313,7 +1242,6 @@
                     "type": "Image",
                     "id": "8710109a-628a-44ae-9ba0-962260b55b88",
                     "label": "sfx_lightblue0001_2_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1324,7 +1252,6 @@
                     "type": "Image",
                     "id": "c539c707-95b1-4673-8f3d-004ebd638cbb",
                     "label": "sfx_pink0001_2_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1336,7 +1263,6 @@
                     "type": "Image",
                     "id": "e4f5af72-0ba7-4930-9696-d285df6184b7",
                     "label": "sfx_yellow0001_3_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1348,7 +1274,6 @@
                     "type": "Image",
                     "id": "f1373397-f0d2-442d-810d-58cbced5c79e",
                     "label": "sfx_green0001_2_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1360,7 +1285,6 @@
                     "type": "Image",
                     "id": "a5ea32c2-806a-4600-9ad2-7d0326f4b8d1",
                     "label": "sfx_purple0001_2_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1372,7 +1296,6 @@
                     "type": "Image",
                     "id": "3eeec646-4231-4e2a-a141-c66cebed5337",
                     "label": "sfx_lightblue0001_2_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1383,7 +1306,6 @@
                     "type": "Image",
                     "id": "5d16cfed-c6e5-4fb0-8f32-f28fe1999c5a",
                     "label": "sfx_pink0001_2_1_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1395,7 +1317,6 @@
                     "type": "Image",
                     "id": "a760328a-b734-4313-bc75-c14add000d34",
                     "label": "sfx_yellow0001_3_1_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1407,7 +1328,6 @@
                     "type": "Image",
                     "id": "a2c1048b-0464-4f93-859e-5fec473dbc34",
                     "label": "sfx_green0001_2_1_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1419,7 +1339,6 @@
                     "type": "Image",
                     "id": "016f6166-ec78-4954-9011-303655d80532",
                     "label": "sfx_purple0001_2_1_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1431,7 +1350,6 @@
                     "type": "Image",
                     "id": "598a8717-466c-4872-9be4-8f94bd317530",
                     "label": "sfx_lightblue0001_2_1_2",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1442,7 +1360,6 @@
                     "type": "Image",
                     "id": "0cfdc650-ed23-4bbe-aad4-883fb4ac6080",
                     "label": "sfx_purple0001_2_1_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1454,7 +1371,6 @@
                     "type": "Image",
                     "id": "e302e534-4671-408d-b140-353e2737d805",
                     "label": "sfx_lightblue0001_2_1_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1466,7 +1382,6 @@
                     "type": "Image",
                     "id": "fac25ab1-e32c-4096-bfbd-92300b93253a",
                     "label": "sfx_purple0001_2_1_1_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_purple0001"
@@ -1478,7 +1393,6 @@
                     "type": "Image",
                     "id": "f767a802-e228-496f-b0d8-0143a5897b39",
                     "label": "sfx_pink0001_2_1_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_pink0001"
@@ -1490,7 +1404,6 @@
                     "type": "Image",
                     "id": "891b8870-0a0f-4dfc-9734-4f7a866af4ae",
                     "label": "sfx_green0001_2_1_2_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_green0001"
@@ -1502,7 +1415,6 @@
                     "type": "Image",
                     "id": "d3a1c338-a4be-4bf6-b152-1855b3e6d513",
                     "label": "sfx_lightblue0001_2_1_1_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_lightblue0001"
@@ -1514,7 +1426,6 @@
                     "type": "Image",
                     "id": "801c5e60-22fa-43c0-8f23-40cbe3518497",
                     "label": "sfx_yellow0001_3_1_1_1",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "sfx_yellow0001"
@@ -1529,7 +1440,6 @@
             "id": "d18db0ad-f2b7-4e55-ae58-b91c12fb4671",
             "label": "icons",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "soundstudio",
                 "frame": "pop_icons"
@@ -1542,7 +1452,6 @@
             "id": "11b1966f-c338-48e0-b33a-9b1ed2ca4820",
             "label": "menu",
             "scope": "CLASS",
-            "components": [],
             "x": 750,
             "y": 165,
             "visible": false,
@@ -1565,7 +1474,6 @@
                     "type": "Image",
                     "id": "febaca67-85ac-403a-9c29-c3d2ad74d0b9",
                     "label": "logo_en",
-                    "components": [],
                     "texture": {
                         "key": "soundstudio",
                         "frame": "logo-en"
@@ -1609,7 +1517,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
