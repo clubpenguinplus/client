@@ -6,24 +6,383 @@
         "exportClass": true,
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "client/client/media/rooms/cloudforest/cloudforest-pack.json"
+        ],
         "createMethodName": "_create",
         "sceneKey": "CloudForest",
         "borderWidth": 1520,
         "borderHeight": 960
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b2e132d7-73a0-497e-8402-7d3ab8d8c42d",
+            "label": "bg",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "bg"
+            },
+            "x": 733,
+            "y": 536
+        },
+        {
+            "type": "Image",
+            "id": "66899bf8-1a90-4dcb-8978-4b2fa24edb0b",
+            "label": "island_hover",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "island_hover"
+            },
+            "x": 800.49995,
+            "y": 476,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "7d1fcb27-d15c-409d-af26-a0e644051c01",
+            "label": "big_tree",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "big_tree0001"
+            },
+            "x": 397,
+            "y": 62,
+            "tintTopLeft": "#383838",
+            "tintBottomLeft": "#383838"
+        },
+        {
+            "type": "Sprite",
+            "id": "31542e40-42f8-4655-a933-dd88c2f1048f",
+            "label": "puffle6",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0011"
+            },
+            "x": 626,
+            "y": 187,
+            "tintTopLeft": "#383838",
+            "tintTopRight": "#383838",
+            "tintBottomLeft": "#383838"
+        },
+        {
+            "type": "Sprite",
+            "id": "79a18ea8-b4a4-418a-bc17-91df05c94577",
+            "label": "puffle7",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0014"
+            },
+            "x": 604,
+            "y": 192,
+            "tintTopLeft": "#383838",
+            "tintTopRight": "#383838",
+            "tintBottomLeft": "#383838"
+        },
+        {
+            "type": "Sprite",
+            "id": "6e133481-0e67-4358-ac35-e7532623d156",
+            "label": "puffle3",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0005"
+            },
+            "x": 589,
+            "y": 227,
+            "tintTopLeft": "#383838",
+            "tintTopRight": "#383838",
+            "tintBottomLeft": "#383838"
+        },
+        {
+            "type": "Sprite",
+            "id": "d5b832a3-0717-4e2f-bba9-c1d4d2e61d57",
+            "label": "puffle5",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0009"
+            },
+            "x": 634,
+            "y": 243
+        },
+        {
+            "type": "Sprite",
+            "id": "3851c680-3501-48b6-b345-37343146a0e5",
+            "label": "puffle8",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0001"
+            },
+            "x": 689,
+            "y": 212
+        },
+        {
+            "type": "Sprite",
+            "id": "86591f3d-fec8-4554-b892-d306838a6b9a",
+            "label": "puffle2",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0003"
+            },
+            "x": 652,
+            "y": 226
+        },
+        {
+            "type": "Sprite",
+            "id": "eda30225-a5e1-45e2-b6fd-30dd63a9c958",
+            "label": "puffle1",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0001"
+            },
+            "x": 610,
+            "y": 239
+        },
+        {
+            "type": "Sprite",
+            "id": "b175cc3f-dd47-4d8d-bd8d-98a268cd4f33",
+            "label": "puffle4",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "puffle_jumping0007"
+            },
+            "x": 719,
+            "y": 237
+        },
+        {
+            "type": "Image",
+            "id": "b521a2d9-908e-4114-9a9b-774d3199e0ab",
+            "label": "cave",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "cave"
+            },
+            "x": 655,
+            "y": 216,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "a62c5793-7ecb-47c3-aa26-e1e0e4a615d3",
+            "label": "mound",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "mound"
+            },
+            "x": 602,
+            "y": 210
+        },
+        {
+            "type": "Image",
+            "id": "97ec219b-fead-4f89-a626-553581b1f18d",
+            "label": "moundtop",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "moundtop"
+            },
+            "x": 535,
+            "y": 211
+        },
+        {
+            "type": "Sprite",
+            "id": "2c60c9ad-eb2b-4629-a508-022f3d66a9e0",
+            "label": "big_tree0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "big_tree",
+            "Animation.end": 155,
+            "texture": {
+                "key": "cloudforest",
+                "frame": "big_tree0001"
+            },
+            "x": 230,
+            "y": 230,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "5fa25179-d773-46ce-a4ee-ac2c16ea8cce",
+            "label": "smaller_tree0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "smaller_tree",
+            "Animation.end": 90,
+            "texture": {
+                "key": "cloudforest",
+                "frame": "smaller_tree0001"
+            },
+            "x": 353.3033026097205,
+            "y": 624.7970652557142,
+            "originX": 0.44580667423107395,
+            "originY": 0.8700192513779678
+        },
+        {
+            "type": "Image",
+            "id": "0763cb19-b76f-4211-8979-d0733e95ed3a",
+            "label": "fruittree_left",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "fruittree_left"
+            },
+            "x": 952.9430091376721,
+            "y": 337.4585868078849,
+            "originX": 0.5433012706138886,
+            "originY": 0.8629002378298216
+        },
+        {
+            "type": "Image",
+            "id": "b9229c61-18cb-477a-a1e8-7bd67931ca5f",
+            "label": "fruittree_righttop",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "fruittree_righttop"
+            },
+            "x": 1291.971504568836,
+            "y": 321.7150456883605,
+            "originX": 0.5380956533816178,
+            "originY": 0.8367876603302439
+        },
+        {
+            "type": "Image",
+            "id": "508d5ae4-c8d5-44d6-9751-972ac03e6760",
+            "label": "fruittree_rightbottom",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "fruittree_rightbottom"
+            },
+            "x": 1317.514247715582,
+            "y": 654.7150456883604,
+            "originX": 0.4809521733091917,
+            "originY": 0.8367876603302435
+        },
+        {
+            "type": "Sprite",
+            "id": "cb768e8a-8dae-4628-b30d-d13192c91c6d",
+            "label": "stump",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "texture": {
+                "key": "cloudforest",
+                "frame": "stump0001"
+            },
+            "x": 852.9201887275359,
+            "y": 399.6385289895749,
+            "originX": 0.5170839705686032,
+            "originY": 0.20625770007416333
+        },
+        {
+            "type": "Sprite",
+            "id": "07c6c5b1-bea8-4210-b666-e56570078d57",
+            "label": "waterfall0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "waterfall",
+            "Animation.end": 10,
+            "texture": {
+                "key": "cloudforest",
+                "frame": "waterfall0001"
+            },
+            "x": 859,
+            "y": 626
+        },
+        {
+            "type": "Ellipse",
+            "id": "c9806a19-bcfa-4082-b5c8-30501f07cc6e",
+            "label": "puffleZone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.puffleZoneHover()",
+            "Zone.hoverOutCallback": "() => this.puffleZoneHoverOut()",
+            "x": 658,
+            "y": 230,
+            "scaleX": 1.869130351872199,
+            "scaleY": 1.467606439736543,
+            "isFilled": true,
+            "fillAlpha": 0.5,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "205d0cb3-8aa9-4352-ab17-eb352e099ce7",
+            "label": "arrow",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cloudforest",
+                "frame": "arrow"
+            },
+            "x": 849,
+            "y": 681,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "d4369a3f-5dfe-475a-901e-443203019329",
+            "label": "exitZone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.exitHover()",
+            "Zone.hoverOutCallback": "() => this.exitHoverOut()",
+            "Zone.callback": "() => this.shell.client.penguin.move(850, 625)",
+            "x": 830,
+            "y": 685,
+            "scaleX": 1.946306945873399,
+            "scaleY": 1.0588731653743269,
+            "isFilled": true,
+            "fillAlpha": 0.5,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "prefabId": "dc649c7a-1824-4b21-8431-e3d1168a4506",
+            "id": "914b48bd-4534-44ad-ad8b-35c60771cb97",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "map",
+            "scope": "CLASS",
+            "x": 760,
+            "y": 480,
+            "visible": false
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
             "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
-            "label": "sort"
+            "label": "sort",
+            "objectIds": [
+                "5fa25179-d773-46ce-a4ee-ac2c16ea8cce",
+                "cb768e8a-8dae-4628-b30d-d13192c91c6d",
+                "0763cb19-b76f-4211-8979-d0733e95ed3a",
+                "b9229c61-18cb-477a-a1e8-7bd67931ca5f",
+                "508d5ae4-c8d5-44d6-9751-972ac03e6760",
+                "914b48bd-4534-44ad-ad8b-35c60771cb97"
+            ]
         }
     ]
 }
