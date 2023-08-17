@@ -24,6 +24,8 @@ export default class Beach extends RoomScene {
         }
 
         this.music = 582
+
+        this.loadSfx = ['beach-LightDoorOpen', 'beach-LightDoorClose']
         /* END-USER-CTR-CODE */
     }
 
@@ -97,6 +99,8 @@ export default class Beach extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('beach-LightDoorOpen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('beach-LightDoorClose')
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 408
         doorMoveTo.y = 376

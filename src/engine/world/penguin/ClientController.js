@@ -112,6 +112,7 @@ export default class ClientController {
             send_sit: () => this.sendSit(this.input.mousePointer),
 
             show_crosshair: () => this.showCrosshair(),
+            cancel_snowball: () => this.hideCrosshair(),
 
             emote_key: () => (this.emoteKeyPressed = true),
             send_emote: (id) => this.sendEmote(id),
@@ -313,6 +314,14 @@ export default class ClientController {
         }
 
         this.interface.main.onSnowballClick()
+    }
+
+    hideCrosshair() {
+        if (!this.visible || !this.interface.main) {
+            return
+        }
+
+        this.interface.main.stopCrosshair()
     }
 
     sendJoinRoom(id, name, x, y, randomRange = 40) {

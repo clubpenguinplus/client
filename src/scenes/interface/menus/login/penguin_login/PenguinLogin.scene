@@ -99,6 +99,10 @@
             "type": "Text",
             "id": "78099562-cddb-4cc7-8fc5-29bb4ba6fb42",
             "label": "backText",
+            "components": [
+                "LocalisedString"
+            ],
+            "LocalisedString.id": "differentPeng",
             "x": 760,
             "y": 876,
             "originX": 0.5,
@@ -177,7 +181,7 @@
             "originX": 0.5,
             "originY": 0.5,
             "text": "Login",
-            "fixedWidth": 100,
+            "fixedWidth": 300,
             "lineSpacing": 25,
             "align": "center",
             "fontFamily": "cpBurbankSmall",
@@ -244,9 +248,12 @@
             "type": "Image",
             "id": "fe0fb835-ffd2-4d00-a7f3-f729e0826de1",
             "label": "note",
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "login",
-                "frame": "note"
+                "frame": "note-en"
             },
             "x": 1258,
             "y": 760

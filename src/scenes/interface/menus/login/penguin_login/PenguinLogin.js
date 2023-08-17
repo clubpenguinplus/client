@@ -1,6 +1,6 @@
 import BaseScene from '@scenes/base/BaseScene'
 
-import {Animation, Button, SimpleButton, LocalisedString, InputText} from '@components/components'
+import {Animation, Button, SimpleButton, LocalisedString, InputText, LocalisedSprite} from '@components/components'
 
 import Checks from '../checks/Checks'
 import PenguinLarge from '../card/PenguinLarge'
@@ -77,7 +77,7 @@ export default class PenguinLogin extends BaseScene {
         const loginText = this.add.text(935, 487, '', {})
         loginText.setOrigin(0.5, 0.5)
         loginText.text = 'Login'
-        loginText.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '38px'})
+        loginText.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '38px'})
         loginText.setLineSpacing(25)
 
         // passwordText
@@ -101,7 +101,7 @@ export default class PenguinLogin extends BaseScene {
         inputTextContainer.add(passwordInput)
 
         // note
-        this.add.image(1258, 760, 'login', 'note')
+        const note = this.add.image(1258, 760, 'login', 'note-en')
 
         // checks
         const checks = new Checks(this, 806, 330)
@@ -143,6 +143,10 @@ export default class PenguinLogin extends BaseScene {
         forgotButtonAnimation.repeat = 0
         forgotButtonAnimation.onHover = true
 
+        // backText (components)
+        const backTextLocalisedString = new LocalisedString(backText)
+        backTextLocalisedString.id = 'differentPeng'
+
         // forgotText_1 (components)
         const forgotText_1LocalisedString = new LocalisedString(forgotText_1)
         forgotText_1LocalisedString.id = 'forgetMe'
@@ -167,6 +171,9 @@ export default class PenguinLogin extends BaseScene {
         const passwordInputInputText = new InputText(passwordInput)
         passwordInputInputText.ispassword = true
         passwordInputInputText.entercallback = () => this.onLoginSubmit()
+
+        // note (components)
+        new LocalisedSprite(note)
 
         this.container = container
         this.passwordInput = passwordInput

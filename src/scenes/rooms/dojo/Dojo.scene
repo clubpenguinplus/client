@@ -19,7 +19,6 @@
             "type": "Image",
             "id": "2876af3a-0a6d-4af6-a2a5-4e3260b463dd",
             "label": "dojobg",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "dojobg"
@@ -31,7 +30,6 @@
             "type": "Image",
             "id": "00b1a7aa-74e9-4a96-82b6-9038a4ff31ec",
             "label": "dojowindows",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "dojowindows"
@@ -62,7 +60,6 @@
             "type": "Image",
             "id": "47987cd1-2a14-4b28-a1ff-9f1dd0edc2bf",
             "label": "firedoorholder",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "firedoorholder"
@@ -74,7 +71,6 @@
             "type": "Image",
             "id": "0923af8e-037f-460b-924a-d9d7ff293a10",
             "label": "firestatue",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "firestatue"
@@ -124,7 +120,6 @@
             "type": "Image",
             "id": "ad3a6391-2c75-4b43-ac93-9e3210b1a53f",
             "label": "snowdoorholder",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "snowdoorholder"
@@ -136,7 +131,6 @@
             "type": "Image",
             "id": "e3706463-54a2-4aa4-895e-86b3d80a357e",
             "label": "snowstatue",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "snowstatue"
@@ -148,7 +142,6 @@
             "type": "Image",
             "id": "3b0d18c1-60f1-448a-94b5-615e63feb8c4",
             "label": "dojofg",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "dojofg"
@@ -162,7 +155,6 @@
             "type": "Image",
             "id": "635280d1-b84c-494d-b94a-f01e73c7ee44",
             "label": "waterdoorholder",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "waterdoorholder"
@@ -174,7 +166,6 @@
             "type": "Image",
             "id": "468ce3ef-069c-4f70-8d3b-72c36867389b",
             "label": "waterstatues",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "waterstatues"
@@ -186,7 +177,6 @@
             "type": "Image",
             "id": "eb96513b-3b80-4beb-b8f5-e5c9e4cdc2e3",
             "label": "leftcolumn",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "leftcolumn"
@@ -198,7 +188,6 @@
             "type": "Image",
             "id": "7c420cd4-8f8a-4d49-af30-b20d878969fa",
             "label": "rightcolumn",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "rightcolumn"
@@ -224,7 +213,6 @@
             "type": "Image",
             "id": "4125a177-15cb-4ffa-ae21-9bdc4f609776",
             "label": "bonsai",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "bonsai"
@@ -270,7 +258,6 @@
             "type": "Image",
             "id": "da508c3b-a704-40ca-88ab-8b4d24a9bd80",
             "label": "senseiholder_en",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "senseiholder_en"
@@ -283,7 +270,6 @@
             "type": "Image",
             "id": "7a3f3527-9d1b-4515-9ad3-5f83031c597b",
             "label": "backpot",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "backpot"
@@ -296,7 +282,6 @@
             "id": "759e7e31-4cd2-4125-adc8-8c58c4fbe703",
             "label": "potdots",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "potdots0001"
@@ -309,7 +294,6 @@
             "id": "b270ec51-0cbd-4ac1-87e5-d54a0a971702",
             "label": "potmagic",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "potmagic0001"
@@ -322,7 +306,6 @@
             "type": "Image",
             "id": "ef58fb84-6d76-4320-8aae-c0039f162dfa",
             "label": "frontpot",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "frontpot"
@@ -334,7 +317,6 @@
             "type": "Image",
             "id": "8797a9da-dc9a-4adf-9bb9-4735e4b9bcd4",
             "label": "light",
-            "components": [],
             "texture": {
                 "key": "dojo",
                 "frame": "light"
@@ -350,8 +332,10 @@
             "label": "mat",
             "components": [
                 "Button",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
+            "ShowHint.text": "cjmat-earnbelts",
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -365,8 +349,10 @@
             "label": "mat_1",
             "components": [
                 "Button",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
+            "ShowHint.text": "cjmat-earnbelts",
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -380,8 +366,10 @@
             "label": "mat_2",
             "components": [
                 "Button",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
+            "ShowHint.text": "cjmat-earnbelts",
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -396,8 +384,10 @@
             "label": "mat_3",
             "components": [
                 "Button",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
+            "ShowHint.text": "cjmat-earnbelts",
             "texture": {
                 "key": "dojo",
                 "frame": "mat"
@@ -461,7 +451,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

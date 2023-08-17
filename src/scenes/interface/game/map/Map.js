@@ -563,7 +563,7 @@ export default class Map extends BaseContainer {
 
         // map_places_pufflewild (components)
         const map_places_pufflewildButton = new Button(map_places_pufflewild)
-        map_places_pufflewildButton.callback = () => this.onRoomClick(230)
+        map_places_pufflewildButton.callback = () => this.onRoomClick(436)
         const map_places_pufflewildShowHint = new ShowHint(map_places_pufflewild)
         map_places_pufflewildShowHint.text = 'pufflewild'
 
@@ -593,7 +593,7 @@ export default class Map extends BaseContainer {
 
         // map_places_pufflepark (components)
         const map_places_puffleparkButton = new Button(map_places_pufflepark)
-        map_places_puffleparkButton.callback = () => this.onRoomClick(230)
+        map_places_puffleparkButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
         const map_places_puffleparkShowHint = new ShowHint(map_places_pufflepark)
         map_places_puffleparkShowHint.text = 'park'
 
@@ -611,7 +611,7 @@ export default class Map extends BaseContainer {
 
         // map_places_skatepark (components)
         const map_places_skateparkButton = new Button(map_places_skatepark)
-        map_places_skateparkButton.callback = () => this.onRoomClick(230)
+        map_places_skateparkButton.callback = () => this.onRoomClick(435)
         const map_places_skateparkShowHint = new ShowHint(map_places_skatepark)
         map_places_skateparkShowHint.text = 'skatepark'
 

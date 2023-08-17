@@ -1,6 +1,6 @@
 import BaseScene from '@scenes/base/BaseScene'
 
-import {Animation, Button, SimpleButton, LocalisedString, InputText} from '@components/components'
+import {Animation, Button, SimpleButton, LocalisedString, InputText, LocalisedSprite} from '@components/components'
 
 import Checks from './checks/Checks'
 import WaitPrompt from './prompts/WaitPrompt'
@@ -45,7 +45,7 @@ export default class Login extends BaseScene {
         const forgotButton = this.add.sprite(760, 604, 'login', 'small-button')
 
         // note
-        this.add.image(1182, 556, 'login', 'note')
+        const note = this.add.image(1182, 556, 'login', 'note-en')
 
         // backText
         const backText = this.add.text(760, 876, '', {})
@@ -82,7 +82,7 @@ export default class Login extends BaseScene {
         const loginText = this.add.text(760, 483, '', {})
         loginText.setOrigin(0.5, 0.5)
         loginText.text = 'Login'
-        loginText.setStyle({align: 'right', color: '#ffffffff', fontFamily: 'cpBurbankSmall', fontSize: '38px'})
+        loginText.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '38px'})
         loginText.setLineSpacing(25)
 
         // passwordText
@@ -162,6 +162,9 @@ export default class Login extends BaseScene {
         forgotButtonAnimation.end = 3
         forgotButtonAnimation.repeat = 0
         forgotButtonAnimation.onHover = true
+
+        // note (components)
+        new LocalisedSprite(note)
 
         // backText (components)
         const backTextLocalisedString = new LocalisedString(backText)

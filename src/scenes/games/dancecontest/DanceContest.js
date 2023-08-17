@@ -10,6 +10,8 @@ export default class DanceContest extends GameScene {
 
         /* START-USER-CTR-CODE */
 
+        this.music = 5
+
         /* END-USER-CTR-CODE */
     }
 

@@ -59,6 +59,9 @@ export default class Plaza extends RoomScene {
         // parksign
         const parksign = this.add.sprite(-45, 358, 'plaza', 'park')
 
+        // signText_en
+        const signText_en = this.add.image(147, 261, 'plaza', 'signText-en')
+
         // buildings
         this.add.image(767, 325, 'plaza', 'buildings')
 
@@ -144,7 +147,7 @@ export default class Plaza extends RoomScene {
         rectangle.fillAlpha = 100
 
         // puffle_hotel_sign
-        const puffle_hotel_sign = this.add.image(534, 147, 'plaza', 'puffle_hotel_sign')
+        const puffle_hotel_sign = this.add.image(534, 147, 'plaza', 'puffle_hotel_sign-en')
 
         // rectangle_2
         const rectangle_2 = this.add.rectangle(144.52093192533204, 498.8023298133302, 128, 128)
@@ -159,6 +162,9 @@ export default class Plaza extends RoomScene {
 
         // parksign (components)
         new LocalisedSprite(parksign)
+
+        // signText_en (components)
+        new LocalisedSprite(signText_en)
 
         // flag1_0001 (components)
         const flag1_0001Animation = new Animation(flag1_0001)

@@ -89,9 +89,12 @@
             "type": "Image",
             "id": "b92b7009-e006-476e-a579-f883f6ec6feb",
             "label": "note",
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "login",
-                "frame": "note"
+                "frame": "note-en"
             },
             "x": 1182,
             "y": 556
@@ -200,8 +203,9 @@
             "originX": 0.5,
             "originY": 0.5,
             "text": "Login",
+            "fixedWidth": 300,
             "lineSpacing": 25,
-            "align": "right",
+            "align": "center",
             "fontFamily": "cpBurbankSmall",
             "fontSize": "38px",
             "color": "#ffffffff"

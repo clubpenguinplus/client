@@ -204,7 +204,7 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.callback": "() => this.onRoomClick(436)",
                     "ShowHint.text": "pufflewild",
                     "texture": {
                         "key": "map",
@@ -311,7 +311,7 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
                     "ShowHint.text": "park",
                     "texture": {
                         "key": "map",
@@ -362,7 +362,7 @@
                         "Button",
                         "ShowHint"
                     ],
-                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.callback": "() => this.onRoomClick(435)",
                     "ShowHint.text": "skatepark",
                     "texture": {
                         "key": "map",

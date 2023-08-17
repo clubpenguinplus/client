@@ -44,6 +44,20 @@
         },
         {
             "type": "Image",
+            "id": "2f063f34-4a8d-4ddb-bdbe-f9c5544ecbbb",
+            "label": "signText_en",
+            "components": [
+                "LocalisedSprite"
+            ],
+            "texture": {
+                "key": "plaza",
+                "frame": "signText-en"
+            },
+            "x": 147,
+            "y": 261
+        },
+        {
+            "type": "Image",
             "id": "50b8efec-5fe2-427c-a689-eebdba356534",
             "label": "buildings",
             "texture": {
@@ -403,7 +417,7 @@
             ],
             "texture": {
                 "key": "plaza",
-                "frame": "puffle_hotel_sign"
+                "frame": "puffle_hotel_sign-en"
             },
             "x": 534,
             "y": 147
