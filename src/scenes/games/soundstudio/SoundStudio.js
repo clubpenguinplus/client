@@ -1,5 +1,5 @@
 import GameScene from '../GameScene'
-import {SimpleButton, Button, LocalisedString, Interactive} from '@scenes/components/components'
+import {SimpleButton, Button, LocalisedString, Interactive, LocalisedSprite, InputText} from '@scenes/components/components'
 
 /* START OF COMPILED CODE */
 
@@ -17,6 +17,11 @@ export default class SoundStudio extends GameScene {
     /** @returns {void} */
     preload() {
         this.load.pack('soundstudio-pack', 'client/media/games/soundstudio/soundstudio-pack.json')
+        this.load.pack('soundstudio-dance-pack', 'client/media/games/soundstudio/audio/soundstudio-dance-pack.json')
+        this.load.pack('soundstudio-dubstep-pack', 'client/media/games/soundstudio/audio/soundstudio-dubstep-pack.json')
+        this.load.pack('soundstudio-pop-pack', 'client/media/games/soundstudio/audio/soundstudio-pop-pack.json')
+        this.load.pack('soundstudio-rock-pack', 'client/media/games/soundstudio/audio/soundstudio-rock-pack.json')
+        this.load.pack('soundstudio-spooky-pack', 'client/media/games/soundstudio/audio/soundstudio-spooky-pack.json')
     }
 
     /** @returns {void} */
@@ -646,8 +651,8 @@ export default class SoundStudio extends GameScene {
         const sfx_yellow0001_3_1_1_1 = this.add.image(906, 577, 'soundstudio', 'sfx_yellow0001')
         buttons.add(sfx_yellow0001_3_1_1_1)
 
-        // icons
-        const icons = this.add.image(922, 572, 'soundstudio', 'pop_icons')
+        // icons_cntr
+        const icons_cntr = this.add.container(397, 272)
 
         // menu
         const menu = this.add.container(750, 165)
@@ -708,17 +713,65 @@ export default class SoundStudio extends GameScene {
         // close
         const close = this.add.image(1491, 22, 'soundstudio', 'close_btn')
 
-        // menu_scrollbar
-        this.add.image(1429, 544, 'soundstudio', 'menu/scrollbar')
+        // prompt_cntr
+        const prompt_cntr = this.add.container(0, 0)
+        prompt_cntr.visible = false
 
-        // menu_bottom_btn
-        this.add.image(1429, 892, 'soundstudio', 'menu/bottom_btn')
+        // prompts_block
+        const prompts_block = this.add.rectangle(750, 480, 1520, 960)
+        prompts_block.isFilled = true
+        prompts_block.fillColor = 0
+        prompts_block.fillAlpha = 0.2
+        prompt_cntr.add(prompts_block)
 
-        // menu_top_btn
-        this.add.image(1430, 195, 'soundstudio', 'menu/top_btn')
+        // save_cntr
+        const save_cntr = this.add.container(760.0018920898438, 479.9929139334627)
+        prompt_cntr.add(save_cntr)
 
-        // menu_scroller
-        this.add.image(1429, 240, 'soundstudio', 'menu/scroller')
+        // prompts_save_bg
+        const prompts_save_bg = this.add.image(-0.00187262684369216, 0.007055388416858932, 'soundstudio', 'prompts/save/bg')
+        save_cntr.add(prompts_save_bg)
+
+        // prompts_save_songNameInput
+        const prompts_save_songNameInput = this.add.image(-0.00187262684369216, 75.00705538841686, 'soundstudio', 'prompts/save/songNameInput')
+        save_cntr.add(prompts_save_songNameInput)
+
+        // prompts_save_button
+        const prompts_save_button = this.add.image(-165.0018726268437, 175.00705538841686, 'soundstudio', 'prompts/save/button')
+        save_cntr.add(prompts_save_button)
+
+        // prompts_save_button_1
+        const prompts_save_button_1 = this.add.image(164.9981273731563, 176.00705538841686, 'soundstudio', 'prompts/save/button')
+        save_cntr.add(prompts_save_button_1)
+
+        // prompts_save_inputTxt
+        const prompts_save_inputTxt = this.add.text(0, 75.00705538841686, '', {})
+        prompts_save_inputTxt.setOrigin(0.5, 0.5)
+        prompts_save_inputTxt.text = 'Name Your Track'
+        prompts_save_inputTxt.setStyle({align: 'center', color: '#fff3dcff', fixedWidth: 650, fixedHeight: 42, fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
+        save_cntr.add(prompts_save_inputTxt)
+
+        // prompts_save_cancelTxt
+        const prompts_save_cancelTxt = this.add.text(-167.0018726268437, 175.00705538841686, '', {})
+        prompts_save_cancelTxt.setOrigin(0.5, 0.5)
+        prompts_save_cancelTxt.text = 'Cancel'
+        prompts_save_cancelTxt.setStyle({color: '#c3b8ceff', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
+        save_cntr.add(prompts_save_cancelTxt)
+
+        // prompts_save_saveTxt
+        const prompts_save_saveTxt = this.add.text(169.9981273731563, 175.00705538841686, '', {})
+        prompts_save_saveTxt.setOrigin(0.5, 0.5)
+        prompts_save_saveTxt.text = 'Save'
+        prompts_save_saveTxt.setStyle({color: '#f8f2ffff', fontFamily: 'cpBurbankSmall', fontSize: '35px', fontStyle: 'bold'})
+        save_cntr.add(prompts_save_saveTxt)
+
+        // prompts_save_close_btn
+        const prompts_save_close_btn = this.add.image(334.9981273731563, -235.99294461158314, 'soundstudio', 'prompts/save/close-btn')
+        save_cntr.add(prompts_save_close_btn)
+
+        // prompts_save_playBtn
+        const prompts_save_playBtn = this.add.image(-0.00189208984375, -99.992919921875, 'soundstudio', 'prompts/save/playBtn')
+        save_cntr.add(prompts_save_playBtn)
 
         // lists
         const loopButtons = [sfx_lightblue0001, sfx_purple0001, sfx_green0001, sfx_yellow0001, sfx_pink0001, sfx_lightblue0001_2, sfx_purple0001_2, sfx_green0001_2, sfx_yellow0001_3, sfx_pink0001_2, sfx_lightblue0001_2_1, sfx_purple0001_2_1, sfx_green0001_2_1, sfx_yellow0001_3_1, sfx_pink0001_2_1, sfx_lightblue0001_2_1_1, sfx_purple0001_2_1_1, sfx_green0001_2_1_1, sfx_yellow0001_3_1_1, sfx_pink0001_2_1_1, sfx_lightblue0001_2_1_2, sfx_purple0001_2_1_2, sfx_green0001_2_1_2, sfx_yellow0001_3_1_2, sfx_pink0001_2_1_2]
@@ -793,23 +846,61 @@ export default class SoundStudio extends GameScene {
 
         // record_txt_1 (components)
         const record_txt_1LocalisedString = new LocalisedString(record_txt_1)
-        record_txt_1LocalisedString.id = 'soundstudio_makemusic'
+        record_txt_1LocalisedString.id = 'soundstudio_play'
+
+        // menu_little_btn (components)
+        new Button(menu_little_btn)
+
+        // menu_little_btn_1 (components)
+        new Button(menu_little_btn_1)
 
         // record_txt_6 (components)
         const record_txt_6LocalisedString = new LocalisedString(record_txt_6)
-        record_txt_6LocalisedString.id = 'soundstudio_makemusic'
+        record_txt_6LocalisedString.id = 'soundstudio_instructions'
 
         // record_txt_7 (components)
         const record_txt_7LocalisedString = new LocalisedString(record_txt_7)
-        record_txt_7LocalisedString.id = 'soundstudio_makemusic'
+        record_txt_7LocalisedString.id = 'soundstudio_savedts'
 
         // record_txt_8 (components)
         const record_txt_8LocalisedString = new LocalisedString(record_txt_8)
-        record_txt_8LocalisedString.id = 'soundstudio_makemusic'
+        record_txt_8LocalisedString.id = 'soundstudio_sharedtracks'
 
         // close (components)
         const closeButton = new Button(close)
         closeButton.callback = () => this.quit()
+
+        // prompts_block (components)
+        new Interactive(prompts_block)
+
+        // prompts_save_button (components)
+        const prompts_save_buttonButton = new Button(prompts_save_button)
+        prompts_save_buttonButton.callback = () => this.cancelSave()
+
+        // prompts_save_button_1 (components)
+        const prompts_save_button_1Button = new Button(prompts_save_button_1)
+        prompts_save_button_1Button.callback = () => this.saveCurrentRecording()
+
+        // prompts_save_inputTxt (components)
+        const prompts_save_inputTxtLocalisedString = new LocalisedString(prompts_save_inputTxt)
+        prompts_save_inputTxtLocalisedString.id = 'soundstudio_name'
+        new InputText(prompts_save_inputTxt)
+
+        // prompts_save_cancelTxt (components)
+        const prompts_save_cancelTxtLocalisedString = new LocalisedString(prompts_save_cancelTxt)
+        prompts_save_cancelTxtLocalisedString.id = 'soundstudio_cancel'
+
+        // prompts_save_saveTxt (components)
+        const prompts_save_saveTxtLocalisedString = new LocalisedString(prompts_save_saveTxt)
+        prompts_save_saveTxtLocalisedString.id = 'soundstudio_save'
+
+        // prompts_save_close_btn (components)
+        const prompts_save_close_btnButton = new Button(prompts_save_close_btn)
+        prompts_save_close_btnButton.callback = () => this.cancelSave()
+
+        // prompts_save_playBtn (components)
+        const prompts_save_playBtnButton = new Button(prompts_save_playBtn)
+        prompts_save_playBtnButton.callback = () => this.playbackCurrentRecording()
 
         this.waveforms = waveforms
         this.currentTime = currentTime
@@ -822,8 +913,12 @@ export default class SoundStudio extends GameScene {
         this.record_txt = record_txt
         this.timeLeft = timeLeft
         this.timeIndicator = timeIndicator
-        this.icons = icons
+        this.icons_cntr = icons_cntr
         this.menu = menu
+        this.prompts_save_inputTxt = prompts_save_inputTxt
+        this.prompts_save_playBtn = prompts_save_playBtn
+        this.save_cntr = save_cntr
+        this.prompt_cntr = prompt_cntr
         this.loopButtons = loopButtons
         this.wfList = wfList
         this.sfxButtons = sfxButtons
@@ -853,10 +948,18 @@ export default class SoundStudio extends GameScene {
     timeLeft
     /** @type {Phaser.GameObjects.Image} */
     timeIndicator
-    /** @type {Phaser.GameObjects.Image} */
-    icons
+    /** @type {Phaser.GameObjects.Container} */
+    icons_cntr
     /** @type {Phaser.GameObjects.Container} */
     menu
+    /** @type {Phaser.GameObjects.Text} */
+    prompts_save_inputTxt
+    /** @type {Phaser.GameObjects.Image} */
+    prompts_save_playBtn
+    /** @type {Phaser.GameObjects.Container} */
+    save_cntr
+    /** @type {Phaser.GameObjects.Container} */
+    prompt_cntr
     /** @type {Phaser.GameObjects.Image[]} */
     loopButtons
     /** @type {Phaser.GameObjects.Sprite[]} */
@@ -895,34 +998,35 @@ export default class SoundStudio extends GameScene {
         this.sound.stopAll()
         const prevPlaying = this.nowPlaying
         this.nowPlaying = []
-        for (let button of this.loopButtons) {
-            button.setFrame(button.frame.name.slice(0, -1) + '1')
+        for (let i = 0; i < this.loopButtons.length; i++) {
+            this.pushLoopButtonUp(i)
         }
+
+        this.mode = mode
 
         this.resetButtons()
         switch (mode) {
             case 'pop':
                 this.pop_btn.setFrame('pop_btn0002')
-                this.icons.setFrame('pop_icons')
+                this.switchIcons('pop')
                 break
             case 'rock':
                 this.rock_btn.setFrame('rock_btn0002')
-                this.icons.setFrame('rock_icons')
+                this.switchIcons('rock')
                 break
             case 'dance':
                 this.dance_btn.setFrame('dance_btn0002')
-                this.icons.setFrame('dance_icons')
+                this.switchIcons('dance')
                 break
             case 'dubstep':
                 this.dubstep_btn.setFrame('dubstep_btn0002')
-                this.icons.setFrame('dubstep_icons')
+                this.switchIcons('dubstep')
                 break
             case 'spooky':
                 this.spooky_btn.setFrame('spooky_btn0002')
-                this.icons.setFrame('spooky_icons')
+                this.switchIcons('spooky')
                 break
         }
-        this.mode = mode
 
         this.soundsToRestart = []
 
@@ -941,6 +1045,23 @@ export default class SoundStudio extends GameScene {
 
         for (let sound of prevPlaying) {
             this.playLoop(parseInt(sound.split('_')[1]) - 1)
+        }
+    }
+
+    switchIcons(mode) {
+        this.icons_cntr.list.forEach((icon) => (icon.visible = false))
+        for (let i = 0; i <= 7; i++) {
+            for (let j = 0; j <= 4; j++) {
+                if (this[`${this.mode}_icon_${i}_${j}`] && this[`${this.mode}_icon_${i}_${j}`].scene == this) {
+                    this[`${this.mode}_icon_${i}_${j}`].visible = true
+                    continue
+                }
+                let icon = this.add.image(0, 0, 'soundstudio', `icons/${mode}/${i}_${j}`)
+                icon.x = 150 * i
+                icon.y = 150 * j
+                this.icons_cntr.add(icon)
+                this[`${this.mode}_icon_${i}_${j}`] = icon
+            }
         }
     }
 
@@ -966,34 +1087,36 @@ export default class SoundStudio extends GameScene {
             }
             if (this.nowPlaying.includes(`${this.mode}_${forType + 1}`)) {
                 this.sounds[forType].setMute(true)
-                this.loopButtons[forType].setFrame(this.loopButtons[forType].frame.name.slice(0, -1) + '1')
+                this.pushLoopButtonUp(forType)
                 this.nowPlaying.splice(this.nowPlaying.indexOf(`${this.mode}_${forType + 1}`), 1)
+                if (!this.recording) return
+                this.soundsRecorded.push(`f:${forType}:${this.hdthsecs}`)
             }
             forType += 5
         }
         // If the loop is not playing, play it, otherwise, stop it
         if (this.nowPlaying.includes(`${this.mode}_${index + 1}`)) {
             this.sounds[index].setMute(true)
-            this.loopButtons[index].setFrame(this.loopButtons[index].frame.name.slice(0, -1) + '1')
+            this.pushLoopButtonUp(index)
             this.nowPlaying.splice(this.nowPlaying.indexOf(`${this.mode}_${index + 1}`), 1)
 
             if (!this.recording) return
-            this.soundsRecorded.push(`stoploop:${this.mode}_${index + 1}:${this.hdthsecs}`)
+            this.soundsRecorded.push(`f:${index}:${this.hdthsecs}`)
         } else {
             this.sounds[index].setMute(false)
-            this.loopButtons[index].setFrame(this.loopButtons[index].frame.name.slice(0, -1) + '2')
+            this.pushLoopButtonDown(index)
             this.nowPlaying.push(`${this.mode}_${index + 1}`)
 
             if (!this.recording) return
-            this.soundsRecorded.push(`playloop:${this.mode}_${index + 1}:${this.hdthsecs}`)
+            this.soundsRecorded.push(`l:${index}:${this.hdthsecs}`)
         }
     }
 
     playSfx(index) {
         // rate limits to once every 100ms
         if (this.sfxButtons[index].frame.name.slice(-1) == '2') return
-        this.sfxButtons[index].setFrame(this.sfxButtons[index].frame.name.slice(0, -1) + '2')
-        setTimeout(() => this.sfxButtons[index].setFrame(this.sfxButtons[index].frame.name.slice(0, -1) + '1'), 100)
+        this.pushSfxButtonDown(index)
+        setTimeout(() => this.pushSfxButtonUp(index), 100)
 
         if (!this.sfx[`${this.mode}_sfx_${index + 1}`]) {
             this.sfx[`${this.mode}_sfx_${index + 1}`] = this.sound.add(`${this.mode}_sfx_${index + 1}`)
@@ -1005,7 +1128,7 @@ export default class SoundStudio extends GameScene {
 
         if (!this.recording) return
 
-        this.soundsRecorded.push(`playsfx:${this.mode}_sfx_${index + 1}:${this.hdthsecs}`)
+        this.soundsRecorded.push(`s:${index + 1}:${this.hdthsecs}`)
     }
 
     onRecordPress() {
@@ -1081,6 +1204,7 @@ export default class SoundStudio extends GameScene {
 
     quit() {
         if (this.recording) this.stopRecording()
+        if (this.isPlayingBack) this.stopPlayback()
 
         for (let sound in this.sounds) {
             this.sounds[sound].stop()
@@ -1136,7 +1260,12 @@ export default class SoundStudio extends GameScene {
             let split = this.nowPlaying[0].split('_')
             this.playLoop(parseInt(split[1]) - 1)
         }
-        console.log(this.soundsRecorded)
+        this.trackRecorded = {
+            name: '',
+            mode: this.mode,
+            sounds: this.soundsRecorded.join(','),
+            lengthInMs: this.hdthsecs * 10
+        }
         for (let wf of this.wfList) {
             wf.stop()
             wf.setFrame(`${wf.frame.name.slice(0, -4)}0001`)
@@ -1153,23 +1282,144 @@ export default class SoundStudio extends GameScene {
         this.record_txt.text = 'Record'
         this.record_txt.setColor('#BDFFC4')
         this.recordBtn.setFrame('start_btn')
+
+        this.showSavePrompt()
+    }
+
+    playbackFromCSList(list) {
+        this.playbackFromList(list.split(','))
     }
 
     playbackFromList(list) {
+        this.playbackTimeouts = []
         for (let sound of list) {
             let split = sound.split(':')
             switch (split[0]) {
-                case 'playloop':
-                    setTimeout(() => this.playLoop(parseInt(split[1].split('_')[1]) - 1), parseInt(split[2]) * 10)
+                case 'l':
+                    this.playRecordedLoop(parseInt(split[1]), parseInt(split[2]) * 10)
                     break
-                case 'stoploop':
-                    setTimeout(() => this.playLoop(parseInt(split[1].split('_')[1]) - 1), parseInt(split[2]) * 10)
+                case 'f':
+                    this.stopRecordedLoop(parseInt(split[1]), parseInt(split[2]) * 10)
                     break
-                case 'playsfx':
-                    setTimeout(() => this.playSfx(parseInt(split[1].split('_')[2]) - 1), parseInt(split[2]) * 10)
+                case 's':
+                    this.playRecordedSfx(parseInt(split[1]), parseInt(split[2]) * 10)
                     break
             }
         }
+    }
+
+    playRecordedLoop(index, delay) {
+        this.playbackTimeouts.push(
+            setTimeout(() => {
+                this.sounds[index].setMute(false)
+            }, delay)
+        )
+    }
+
+    stopRecordedLoop(index, delay) {
+        this.playbackTimeouts.push(
+            setTimeout(() => {
+                this.sounds[index].setMute(true)
+            }, delay)
+        )
+    }
+
+    playRecordedSfx(index, delay) {
+        this.playbackTimeouts.push(
+            setTimeout(() => {
+                this.sound.add(`${this.mode}_sfx_${index}`).play()
+            }, delay)
+        )
+    }
+
+    pushLoopButtonDown(buttonIndex) {
+        let frame = this.loopButtons[buttonIndex].frame.name.slice(0, -1) + '2'
+        if (this.loopButtons[buttonIndex].frame.name == frame) return
+        this.loopButtons[buttonIndex].setFrame(frame)
+        let x = buttonIndex % 5
+        let y = Math.floor(buttonIndex / 5)
+        this[`${this.mode}_icon_${x}_${y}`].y += 3
+    }
+
+    pushLoopButtonUp(buttonIndex) {
+        let frame = this.loopButtons[buttonIndex].frame.name.slice(0, -1) + '1'
+        if (this.loopButtons[buttonIndex].frame.name == frame) return
+        this.loopButtons[buttonIndex].setFrame(frame)
+        let x = buttonIndex % 5
+        let y = Math.floor(buttonIndex / 5)
+        this[`${this.mode}_icon_${x}_${y}`].y -= 3
+    }
+
+    pushSfxButtonDown(buttonIndex) {
+        let frame = this.sfxButtons[buttonIndex].frame.name.slice(0, -1) + '2'
+        if (this.sfxButtons[buttonIndex].frame.name == frame) return
+        this.sfxButtons[buttonIndex].setFrame(frame)
+        let y = buttonIndex % 5
+        let x = Math.floor(buttonIndex / 5) + 5
+        this[`${this.mode}_icon_${x}_${y}`].y += 3
+    }
+
+    pushSfxButtonUp(buttonIndex) {
+        let frame = this.sfxButtons[buttonIndex].frame.name.slice(0, -1) + '1'
+        if (this.sfxButtons[buttonIndex].frame.name == frame) return
+        this.sfxButtons[buttonIndex].setFrame(frame)
+        let y = buttonIndex % 5
+        let x = Math.floor(buttonIndex / 5) + 5
+        this[`${this.mode}_icon_${x}_${y}`].y -= 3
+    }
+
+    showSavePrompt() {
+        this.prompt_cntr.visible = true
+        this.save_cntr.scale = 0.7
+        this.save_cntr.alpha = 0
+        this.tweens.add({
+            targets: this.save_cntr,
+            alpha: 1,
+            scale: 1.1,
+            duration: 80,
+            onComplete: () => {
+                this.tweens.add({
+                    targets: this.save_cntr,
+                    scale: 1,
+                    duration: 20
+                })
+            }
+        })
+        this.prompts_save_inputTxt.__InputText.clickZone.visible = true
+    }
+
+    saveCurrentRecording() {
+        this.trackRecorded.name = this.prompts_save_inputTxt.textContent
+        if (this.trackRecorded.name == '') return
+        this.prompts_save_inputTxt.__InputText.clearText()
+        this.airtower.sendXt('ss#st', `${this.trackRecorded.name}%${this.trackRecorded.mode}%${this.trackRecorded.sounds}%${this.trackRecorded.lengthInMs}}`)
+        this.cancelSave()
+        // go to saved tracks
+        this.quit()
+    }
+
+    cancelSave() {
+        this.prompt_cntr.visible = false
+        this.soundsRecorded = []
+    }
+
+    playbackCurrentRecording() {
+        if (this.isPlayingBack) return this.stopPlayback()
+        this.isPlayingBack = true
+        this.playbackFromList(this.soundsRecorded)
+        this.prompts_save_playBtn.setFrame('prompts/save/pauseBtn')
+        this.stopPlaybackTimeout = setTimeout(() => this.stopPlayback(), this.trackRecorded.lengthInMs)
+    }
+
+    stopPlayback() {
+        this.isPlayingBack = false
+        for (let timeout of this.playbackTimeouts) {
+            clearTimeout(timeout)
+        }
+        this.playbackTimeouts = []
+        this.sound.stopAll()
+        this.prompts_save_playBtn.setFrame('prompts/save/playBtn')
+        clearTimeout(this.stopPlaybackTimeout)
     }
 
     /* END-USER-CODE */

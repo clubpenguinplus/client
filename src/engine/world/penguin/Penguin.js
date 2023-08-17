@@ -511,6 +511,32 @@ export default class Penguin extends BaseContainer {
         this.puffleLoader.loadPuffle(animation, this.puffle)
     }
 
+    generatePuffleFrame(frame) {
+        let frameTotal = this.crumbs.puffles[this.puffle].frames[frame].end
+        let frameArray = Phaser.Utils.Array.NumberArray(1, frameTotal)
+        frameArray = frameArray.map((f) => {
+            return `${frame}_${f}`
+        })
+        this.anims.create({
+            key: `puffle_walk_${this.puffle}_${frame}`,
+            frames: this.anims.generateFrameNames(`puffles/walk/${this.puffle}`, {frames: frameArray}),
+            frameRate: 24,
+            repeat: 0
+        })
+    }
+
+    playPuffleFrame(frame) {
+        if (!this.puffleSprite) return
+
+        if (!this.anims.exists(`puffle_walk_${this.puffle}_${frame}`)) this.generatePuffleFrame(frame)
+
+        this.puffleSprite.play(`puffle_walk_${this.puffle}_${frame}`)
+
+        this.puffleSprite.once('animationcomplete', () => {
+            this.playFrame(this.direction)
+        })
+    }
+
     /*========== Tweening ==========*/
 
     addMoveTween(path) {

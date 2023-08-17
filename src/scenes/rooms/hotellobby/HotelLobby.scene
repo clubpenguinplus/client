@@ -35,6 +35,8 @@
                 "Button",
                 "MoveTo"
             ],
+            "Button.hoverCallback": "() => this.onPlazaDoorOver()",
+            "Button.hoverOutCallback": "() => this.onPlazaDoorOut()",
             "MoveTo.x": 780,
             "MoveTo.y": 300,
             "texture": {
@@ -207,15 +209,17 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onBackTableOver()",
             "SimpleButton.hoverOutCallback": "() => this.onBackTableOut()",
-            "SimpleButton.callback": "() => this.puffleEat()",
+            "SimpleButton.callback": "() => this.puffleEat(this.backtable, this.smoothieAnimBack)",
             "MoveTo.x": 300,
             "MoveTo.y": 654,
             "texture": {
                 "key": "hotellobby",
                 "frame": "backtable"
             },
-            "x": 333,
-            "y": 725
+            "x": 336.7696190896114,
+            "y": 734.4240477240285,
+            "originX": 0.5231264974822786,
+            "originY": 0.5753923817922277
         },
         {
             "type": "Image",
@@ -267,6 +271,20 @@
             "originY": 0.8349260125239063
         },
         {
+            "type": "Sprite",
+            "id": "2ff4d0fe-7e15-4644-840b-1f85ebe2b1b9",
+            "label": "smoothieAnimBack",
+            "scope": "CLASS",
+            "texture": {
+                "key": "hotellobby",
+                "frame": "smoothieAnim0001"
+            },
+            "x": 344.92781053712554,
+            "y": 743.1704145970912,
+            "originX": 0.5070599004829879,
+            "originY": 0.8010352111035999
+        },
+        {
             "type": "Image",
             "id": "e969d482-5b82-4fe9-a803-dfc691ecd835",
             "label": "frontchairs",
@@ -291,7 +309,7 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onFrontTableOver()",
             "SimpleButton.hoverOutCallback": "() => this.onFrontTableOut()",
-            "SimpleButton.callback": "() => this.puffleEat()",
+            "SimpleButton.callback": "() => this.puffleEat(this.fronttable, this.smoothieAnimFront)",
             "MoveTo.x": 356,
             "MoveTo.y": 768,
             "texture": {
@@ -300,6 +318,20 @@
             },
             "x": 381,
             "y": 847
+        },
+        {
+            "type": "Sprite",
+            "id": "e930ce0d-7cf7-4926-9522-89126b8a30e0",
+            "label": "smoothieAnimFront",
+            "scope": "CLASS",
+            "texture": {
+                "key": "hotellobby",
+                "frame": "smoothieAnim0001"
+            },
+            "x": 390,
+            "y": 884,
+            "originX": 0.4825300981231506,
+            "originY": 0.8727461889099736
         },
         {
             "type": "Image",
@@ -351,6 +383,9 @@
             "type": "Image",
             "id": "30bc60d5-dfec-430a-bcbc-561020f7fabc",
             "label": "coatcheck_sign_en",
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "hotellobby",
                 "frame": "coatcheck-sign-en"
@@ -367,6 +402,8 @@
                 "Button",
                 "MoveTo"
             ],
+            "Button.hoverCallback": "() => this.onPetDoorOver()",
+            "Button.hoverOutCallback": "() => this.onPetDoorOut()",
             "MoveTo.x": 1440,
             "MoveTo.y": 460,
             "texture": {
@@ -429,6 +466,9 @@
             "type": "Image",
             "id": "75736dec-1ba8-4e7d-8301-5a57f06153d9",
             "label": "reception_sign_en",
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "hotellobby",
                 "frame": "reception-sign-en"
@@ -443,14 +483,6 @@
             "id": "cad49511-e31d-4b08-84f6-0922fbe45bfe",
             "label": "elevator",
             "scope": "CLASS",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onElevatorOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onElevatorOut()",
-            "MoveTo.x": 72,
-            "MoveTo.y": 520,
             "texture": {
                 "key": "hotellobby",
                 "frame": "elevator0001"
@@ -648,6 +680,24 @@
             "x": 1424,
             "y": 1148.9899654279216,
             "originY": 2.521666416144359
+        },
+        {
+            "type": "Polygon",
+            "id": "b5c86b59-6b68-41e5-a474-ed65a0fba018",
+            "label": "elevator_hover",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onElevatorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onElevatorOut()",
+            "MoveTo.x": 72,
+            "MoveTo.y": 520,
+            "x": 55,
+            "y": 392,
+            "angle": -3.0000000000000004,
+            "points": "7.722707253016722 343.961481110895 -0.6112598538895355 48.88754820478039 155.5508869925773 8.204166623943507 164.5029594644402 260.6414520828263"
         }
     ],
     "plainObjects": [],
@@ -705,7 +755,9 @@
                 "a8972c85-b257-4c3c-bd0c-623eba489331",
                 "c86e1602-501d-494a-b81d-cdcfc2889a77",
                 "acad5263-9500-4280-ae21-737fd4562e00",
-                "b3eaefbe-c43b-4a67-b4f8-4dced2490c80"
+                "b3eaefbe-c43b-4a67-b4f8-4dced2490c80",
+                "e930ce0d-7cf7-4926-9522-89126b8a30e0",
+                "2ff4d0fe-7e15-4644-840b-1f85ebe2b1b9"
             ]
         }
     ]

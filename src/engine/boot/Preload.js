@@ -114,20 +114,24 @@ export default class Preload extends BaseScene {
         }
 
         this.crumbs.getString = (key) => {
-            let result = this.crumbs.strings[key.toLowerCase()]
+            let result = this.crumbs.strings[key.split(',')[0].toLowerCase()]
 
-            if (!key.includes(',')) {
-                return result || key
+            if (!result) {
+                console.warn(`Missing localised string: ${key}`)
+                return key
             }
 
-            result = this.crumbs.strings[key.split(',')[0].toLowerCase()]
+            if (!key.includes(',')) {
+                return result
+            }
+
             let args = key.split(',').slice(1)
 
             for (let i = 0; i < args.length; i++) {
                 result = result.replace(`{args[${i}]}`, args[i])
             }
 
-            return result || key
+            return result
         }
 
         this.crumbs.getError = (key) => {
