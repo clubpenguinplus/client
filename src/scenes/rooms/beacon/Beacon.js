@@ -1,7 +1,6 @@
 import RoomScene from '../RoomScene'
-import Main from '@scenes/interface/game/main/Main'
 
-import {Animation, Button, MoveTo, Pin, SimpleButton, ShowHint, Zone} from '@components/components'
+import {SimpleButton, ShowHint, Zone} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -111,7 +110,7 @@ export default class Beacon extends RoomScene {
     onJetpackOver() {
         this.launch.setVisible(false)
         this.launchActive.setVisible(true)
-        this.launchActive.play('launch-active')
+        this.launchActive.play('beacon-launch-active')
     }
 
     onJetpackOut() {

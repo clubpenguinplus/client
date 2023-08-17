@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "40a2c59f-e5f8-45a4-b772-2002979cb5ed",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "bg"
@@ -32,7 +31,6 @@
             "type": "Image",
             "id": "4e33385a-a883-47bf-ac18-580d5aae503b",
             "label": "island",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "island"
@@ -46,7 +44,6 @@
             "type": "Rectangle",
             "id": "54bf1fe0-0f8d-449c-9139-c1011ba00681",
             "label": "rectangle_1",
-            "components": [],
             "x": 952,
             "y": 508,
             "scaleX": 0.3153064952199348,
@@ -60,7 +57,6 @@
             "type": "Image",
             "id": "98e250da-f819-41c6-b01c-82da01ebbdd5",
             "label": "fg",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "fg"
@@ -72,7 +68,6 @@
             "type": "Image",
             "id": "1b64a90e-8231-4434-bc79-802c9adab646",
             "label": "fences",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "fences"
@@ -84,7 +79,6 @@
             "type": "Image",
             "id": "45b96b23-fa0b-4ba2-a434-bb4f7c9f25f8",
             "label": "rock2",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "rock2"
@@ -96,7 +90,6 @@
             "type": "Image",
             "id": "43ce4bef-10cf-4777-b0b4-d0e305ec53d8",
             "label": "rock1",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "rock1"
@@ -108,7 +101,6 @@
             "type": "Image",
             "id": "39386826-2f1d-4955-a285-7795d95e9b08",
             "label": "chair",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "chair"
@@ -120,7 +112,6 @@
             "type": "Image",
             "id": "ec30cc48-ae85-47ec-80e1-b1e0948b41b1",
             "label": "chair2",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "chair2"
@@ -132,7 +123,6 @@
             "type": "Image",
             "id": "9190d51f-18fd-47c5-90e2-bfc332ff4af0",
             "label": "chair_fg",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "chair_fg"
@@ -147,7 +137,6 @@
             "id": "35e4ceda-f1eb-46ae-90f5-6e2013d21620",
             "label": "bucket",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "bucket/bucket0001"
@@ -159,7 +148,6 @@
             "type": "Image",
             "id": "634debda-0980-4147-a932-58769a30b970",
             "label": "igloo",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "igloo"
@@ -177,6 +165,8 @@
                 "Button",
                 "MoveTo"
             ],
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('beach-LightDoorOpen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('beach-LightDoorClose')",
             "MoveTo.x": 408,
             "MoveTo.y": 376,
             "texture": {
@@ -190,7 +180,6 @@
             "type": "Image",
             "id": "b54a408b-7313-48bc-9d3c-548a71682a8b",
             "label": "railing",
-            "components": [],
             "texture": {
                 "key": "beach",
                 "frame": "railing"
@@ -221,7 +210,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

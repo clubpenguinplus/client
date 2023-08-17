@@ -76,20 +76,20 @@ export default class HotelSpa extends RoomScene {
         const lowwall = this.add.image(903, 615, 'hotelspa', 'lowwall')
 
         // mat4
-        const mat4 = this.add.image(422.07954716397467, 361.3863647759831, 'hotelspa', 'mat')
-        mat4.setOrigin(0.3732921801385819, 0.2998132161093577)
+        const mat4 = this.add.image(414.2860991608071, 358.98836479587334, 'hotelspa', 'mat')
+        mat4.setOrigin(0.32824327744861215, 0.26696406894238284)
 
         // mat3
-        const mat3 = this.add.image(260.9554213775118, 497.94842766921454, 'hotelspa', 'mat')
-        mat3.setOrigin(0.3667943432226116, 0.30751270779745943)
+        const mat3 = this.add.image(262.0078485085004, 489.1781362084603, 'hotelspa', 'mat')
+        mat3.setOrigin(0.3728777807378776, 0.18737176143432963)
 
         // mat1
-        const mat1 = this.add.image(357.33479244519765, 579.8243018827517, 'hotelspa', 'mat')
-        mat1.setOrigin(0.334305158642761, 0.29211372442125594)
+        const mat1 = this.add.image(355.9315315785099, 574.5621063344512, 'hotelspa', 'mat')
+        mat1.setOrigin(0.3261939086224065, 0.22002915660337835)
 
         // mat2
-        const mat2 = this.add.image(537.0209811248919, 504.07255345567734, 'hotelspa', 'mat')
-        mat2.setOrigin(0.34405191401671636, 0.32291169117366214)
+        const mat2 = this.add.image(533.4240144789662, 495.6795831820411, 'hotelspa', 'mat')
+        mat2.setOrigin(0.3232601127751917, 0.20793967608925065)
 
         // dumbell2
         const dumbell2 = this.add.sprite(588, 484, 'hotelspa', 'dumbell0001')
@@ -107,8 +107,8 @@ export default class HotelSpa extends RoomScene {
         const treadmill2Container = this.add.container(511.3021313660537, 668.6457833793041)
 
         // treadmill2
-        const treadmill2 = this.add.image(-86.56244437247108, 62.62293184326427, 'hotelspa', 'treadmill')
-        treadmill2.setOrigin(0.2170877337106148, 0.6250703545637872)
+        const treadmill2 = this.add.image(-59.87973567064097, 60.27918020121638, 'hotelspa', 'treadmill')
+        treadmill2.setOrigin(0.3423586794541648, 0.616259258019287)
         treadmill2Container.add(treadmill2)
 
         // treadmillAnim2
@@ -123,8 +123,8 @@ export default class HotelSpa extends RoomScene {
         const treadmill1Container = this.add.container(231, 694)
 
         // treadmill1
-        const treadmill1 = this.add.image(-60.33976564954716, 35.48172281205552, 'hotelspa', 'treadmill')
-        treadmill1.setOrigin(0.21671471371734244, 0.6221117384779349)
+        const treadmill1 = this.add.image(-37.31596049062716, 28.557270562715416, 'hotelspa', 'treadmill')
+        treadmill1.setOrigin(0.324807704165359, 0.5960799594452846)
         treadmill1Container.add(treadmill1)
 
         // treadmillAnim1
@@ -151,12 +151,12 @@ export default class HotelSpa extends RoomScene {
         const bottle = this.add.image(375, 501, 'hotelspa', 'bottle')
 
         // chair_left
-        const chair_left = this.add.image(1039.7666620413545, 389.37671115102614, 'hotelspa', 'chair-left')
-        chair_left.setOrigin(0.21849814308436535, 0.6226374123482667)
+        const chair_left = this.add.image(1042.84001715263, 389.376708984375, 'hotelspa', 'chair-left')
+        chair_left.setOrigin(0.2353850419312336, 0.6226374123482667)
 
         // chair_right
-        const chair_right = this.add.image(1222.5572863233251, 388.65928113602314, 'hotelspa', 'chair-right')
-        chair_right.setOrigin(0.21342779411653068, 0.6117676021267288)
+        const chair_right = this.add.image(1225.6306665666925, 388.6592712402344, 'hotelspa', 'chair-right')
+        chair_right.setOrigin(0.23022241482762373, 0.6117676021267288)
 
         // divider
         const divider = this.add.image(1390, 294, 'hotelspa', 'divider')
@@ -168,12 +168,12 @@ export default class HotelSpa extends RoomScene {
         const bubbles = this.add.image(1241, 659, 'hotelspa', 'bubbles')
 
         // washchair_left
-        const washchair_left = this.add.image(990.917266870359, 712.0340295067676, 'hotelspa', 'washchair-left')
-        washchair_left.setOrigin(0.2463636107875937, 0.6637104182559236)
+        const washchair_left = this.add.image(1017.9695046382153, 709.2161193593819, 'hotelspa', 'washchair-left')
+        washchair_left.setOrigin(0.36449552028512233, 0.6505424824717851)
 
         // washchair_right
-        const washchair_right = this.add.image(1299.2148001745934, 700.2194814491494, 'hotelspa', 'washchair-right')
-        washchair_right.setOrigin(0.2673588793205299, 0.5447547643162591)
+        const washchair_right = this.add.image(1311.0501844327837, 710.6458539757558, 'hotelspa', 'washchair-right')
+        washchair_right.setOrigin(0.32266420961391157, 0.5953682184613116)
 
         // washchair_arm
         const washchair_arm = this.add.image(1427, 722, 'hotelspa', 'washchair-arm')
@@ -256,15 +256,15 @@ export default class HotelSpa extends RoomScene {
         new MoveTo(treadmill1)
 
         // chair_left (components)
-        const chair_leftButton = new Button(chair_left)
+        new Button(chair_left)
         new MoveTo(chair_left)
 
         // chair_right (components)
-        const chair_rightButton = new Button(chair_right)
+        new Button(chair_right)
         new MoveTo(chair_right)
 
         // washchair_left (components)
-        const washchair_leftButton = new Button(washchair_left)
+        new Button(washchair_left)
         new MoveTo(washchair_left)
 
         // washchair_right (components)

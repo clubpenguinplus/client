@@ -9,6 +9,8 @@ import adjustRedemptionItem from './frames/adjustRedemptionItem'
 
 export default class Penguin extends BaseContainer {
     constructor(user, room, penguinLoader, puffleLoader) {
+        if (!user.x || user.x == NaN) user.x = 0
+        if (!user.y || user.y == NaN) user.y = 0
         super(room, user.x, user.y)
 
         this.userInfo = user
@@ -146,7 +148,6 @@ export default class Penguin extends BaseContainer {
     }
 
     move(x, y) {
-        console.log('move', x, y)
         let path = PathEngine.getPath(this, {x: x, y: y})
         if (path) this.addMoveTween(path)
     }
@@ -157,7 +158,14 @@ export default class Penguin extends BaseContainer {
     }
 
     getPuffleSpecies() {
-        if (this.walking) this.airtower.sendXt('p#pgs', `${this.walking}%${this.id}`)
+        if (!this.walking) return
+
+        if (this.shell.puffleCache[this.walking]) {
+            this.puffle = this.shell.puffleCache[this.walking]
+            this.loadPuffle()
+        } else {
+            this.airtower.sendXt('p#pgs', `${this.walking}%${this.id}`)
+        }
     }
 
     loadPuffle() {
@@ -173,15 +181,16 @@ export default class Penguin extends BaseContainer {
 
         if (this.shell.textures.exists(`puffles/walk/${this.puffle}`)) return this.addPuffleSprite()
 
-        this.shell.events.addListener(`textureLoaded:puffles/walk/${this.puffle}`, () => this.addPuffleSprite())
+        this.shell.events.once(`textureLoaded:puffles/walk/${this.puffle}`, () => this.addPuffleSprite())
         this.puffleLoader.loadPuffle('walk', this.puffle)
     }
 
     addPuffleSprite() {
+        let frame = this.bodySprite ? this.bodySprite.frame.name.split('/')[1] : '1_1'
         if (this.puffleSprite) {
-            this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+            this.puffleSprite.setTexture(`puffles/walk/${this.puffle}`, frame)
         } else {
-            this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, this.bodySprite.frame.name.split('/')[1])
+            this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, frame)
             this.add(this.puffleSprite)
         }
 
@@ -333,29 +342,27 @@ export default class Penguin extends BaseContainer {
     }
 
     playAnims(frame) {
-        this.playAnim(this.bodySprite, `penguin_body_${frame}`)
-        this.playAnim(this.penguinSprite, `penguin_${frame}`)
+        this.playAnim(this.bodySprite, 'penguin_body', frame)
+        this.playAnim(this.penguinSprite, 'penguin', frame)
 
         for (let sprite of this.equippedSprites) {
-            let key = `${sprite.texture.key}_${frame}`
-
-            this.playAnim(sprite, key)
+            this.playAnim(sprite, sprite.texture.key, frame)
         }
     }
 
-    playAnim(sprite, key) {
-        if (!this.checkAnim(key)) {
-            return (sprite.visible = false)
+    playAnim(sprite, key, frame) {
+        if (!this.checkAnim(`${key}_${frame}`)) {
+            return sprite.anims.play(`${key}_1`)
         }
 
         if (sprite != this.puffleSprite) sprite.visible = true
         if (!sprite.anims) return
-        sprite.anims.play(key)
+        sprite.anims.play(`${key}_${frame}`)
 
         // Reset current chain queue
         sprite.chain()
 
-        let anim = this.anims.get(key)
+        let anim = this.anims.get(`${key}_${frame}`)
 
         if (anim.chainKeys) {
             this.playChain(sprite, anim)
@@ -431,17 +438,53 @@ export default class Penguin extends BaseContainer {
         let pAnimSprite = this.room.add.sprite(this.x, this.y, `puffles/${animation}/${this.puffle}`)
         pAnimSprite.depth = 9999
         pAnimSprite.setOrigin(this.crumbs.puffles[this.puffle].anims[animation].originX, this.crumbs.puffles[this.puffle].anims[animation].originY)
+
         this.puffleSprite.visible = false
+
         pAnimSprite.play(`puffle_${animation}_${this.puffle}`)
+
         this.playFrame(8)
+
         this.airtower.sendXt('u#sf', `${false}%8`)
+
         this.puffleIsAnimating = true
+
         pAnimSprite.on('animationcomplete', () => {
             pAnimSprite.destroy()
             this.puffleSprite.visible = true
             this.puffleIsAnimating = false
             this.playFrame(this.direction)
         })
+
+        this.playPuffleSounds(animation)
+    }
+
+    playPuffleSounds(animation) {
+        switch (animation) {
+            case 'tricks/standonhead':
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-headstand-up'), 900)
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-headstand-down'), 3400)
+                break
+            case 'tricks/jumpforward':
+                this.shell.musicController.addSfx('puffle-all-jumpforward')
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-jumpforward'), 2200)
+                break
+            case 'tricks/jumpspin':
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-jumpspin'), 600)
+                break
+            case 'tricks/nuzzle':
+                this.shell.musicController.addSfx('puffle-all-nuzzle-come')
+                setTimeout(() => this.shell.musicController.addSfx(`puffle-${this.puffle}-nuzzle-moan`), 300)
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-nuzzle-go'), 2000)
+                break
+            case 'tricks/roll':
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-roll-away'), 800)
+                setTimeout(() => this.shell.musicController.addSfx('puffle-all-roll-return'), 2000)
+                break
+            case 'tricks/speak':
+                this.shell.musicController.addSfx(`puffle-${this.puffle}-speak`)
+                break
+        }
     }
 
     generatePuffleAnim(animation) {
@@ -460,12 +503,38 @@ export default class Penguin extends BaseContainer {
     }
 
     animatePuffle(animation) {
-        if (!this.puffleSprite) return
+        if (!this.puffleSprite || this.puffleIsAnimating) return
 
         if (this.shell.textures.exists(`puffles/${animation}/${this.puffle}`)) return this.playPuffleAnim(animation)
 
-        this.shell.events.addListener(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
+        this.shell.events.once(`textureLoaded:puffles/${animation}/${this.puffle}`, () => this.playPuffleAnim(animation))
         this.puffleLoader.loadPuffle(animation, this.puffle)
+    }
+
+    generatePuffleFrame(frame) {
+        let frameTotal = this.crumbs.puffles[this.puffle].frames[frame].end
+        let frameArray = Phaser.Utils.Array.NumberArray(1, frameTotal)
+        frameArray = frameArray.map((f) => {
+            return `${frame}_${f}`
+        })
+        this.anims.create({
+            key: `puffle_walk_${this.puffle}_${frame}`,
+            frames: this.anims.generateFrameNames(`puffles/walk/${this.puffle}`, {frames: frameArray}),
+            frameRate: 24,
+            repeat: 0
+        })
+    }
+
+    playPuffleFrame(frame) {
+        if (!this.puffleSprite) return
+
+        if (!this.anims.exists(`puffle_walk_${this.puffle}_${frame}`)) this.generatePuffleFrame(frame)
+
+        this.puffleSprite.play(`puffle_walk_${this.puffle}_${frame}`)
+
+        this.puffleSprite.once('animationcomplete', () => {
+            this.playFrame(this.direction)
+        })
     }
 
     /*========== Tweening ==========*/

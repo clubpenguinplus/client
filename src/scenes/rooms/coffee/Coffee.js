@@ -118,7 +118,7 @@ export default class Coffee extends RoomScene {
         smoothiesmashsign.setOrigin(0.2556756505989983, 1.3167318550863913)
 
         // smoothiesmashtext_en
-        const smoothiesmashtext_en = this.add.image(36.63584766109379, 631.3118499324878, 'coffee', 'smoothiesmashtext_en')
+        const smoothiesmashtext_en = this.add.image(36.63584766109379, 631.3118499324878, 'coffee', 'smoothiesmashtext-de')
         smoothiesmashtext_en.scaleX = 0.4068530157718546
         smoothiesmashtext_en.scaleY = 0.4068530157718546
         smoothiesmashtext_en.setOrigin(0.0034519961301153947, 2.623818522325409)
@@ -185,7 +185,7 @@ export default class Coffee extends RoomScene {
         bookroomlight.visible = false
 
         // clubpenguintimes_en
-        const clubpenguintimes_en = this.add.image(1315, 219, 'coffee', 'clubpenguintimes_en')
+        const clubpenguintimes_en = this.add.image(1315, 219, 'coffee', 'clubpenguintimes-en')
         clubpenguintimes_en.scaleX = 0.4368656034442943
         clubpenguintimes_en.scaleY = 0.4368656034442943
 
@@ -224,6 +224,9 @@ export default class Coffee extends RoomScene {
         const cashregister_coffeeSimpleButton = new SimpleButton(cashregister_coffee)
         cashregister_coffeeSimpleButton.hoverCallback = () => this.onCoffeeCashRegisterOver()
 
+        // smoothiesmashtext_en (components)
+        new LocalisedSprite(smoothiesmashtext_en)
+
         // cashregister_smoothie (components)
         const cashregister_smoothieSimpleButton = new SimpleButton(cashregister_smoothie)
         cashregister_smoothieSimpleButton.hoverCallback = () => this.onSmoothieCashRegisterOver()
@@ -233,6 +236,9 @@ export default class Coffee extends RoomScene {
         bookroomdoorSimpleButton.hoverCallback = () => this.onBookRoomOver()
         bookroomdoorSimpleButton.hoverOutCallback = () => this.onBookRoomOut()
         new MoveTo(bookroomdoor)
+
+        // clubpenguintimes_en (components)
+        new LocalisedSprite(clubpenguintimes_en)
 
         // ellipse_1 (components)
         const ellipse_1Seat = new Seat(ellipse_1)

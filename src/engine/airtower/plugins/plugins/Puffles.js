@@ -19,6 +19,8 @@ export default class Puffles extends Plugin {
         let penguin = this.shell.room.penguins[args[0]]
         penguin.puffle = args[1]
         penguin.loadPuffle()
+
+        this.shell.puffleCache[penguin.walking] = args[1]
     }
 
     stopWalking(args) {

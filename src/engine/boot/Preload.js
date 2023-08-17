@@ -92,12 +92,7 @@ export default class Preload extends BaseScene {
             this._create()
         }, 10000)
         for (let font of this.crumbs.fonts) {
-            await this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal')
-            this.fontsLoaded++
-            if (this.fontsLoaded == this.crumbs.fonts.length) {
-                clearTimeout(this.abandonFontsTimeout)
-                this._create()
-            }
+            this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal')
         }
     }
 
@@ -119,20 +114,24 @@ export default class Preload extends BaseScene {
         }
 
         this.crumbs.getString = (key) => {
-            let result = this.crumbs.strings[key.toLowerCase()]
+            let result = this.crumbs.strings[key.split(',')[0].toLowerCase()]
 
-            if (!key.includes(',')) {
-                return result || key
+            if (!result) {
+                console.warn(`Missing localised string: ${key}`)
+                return key
             }
 
-            result = this.crumbs.strings[key.split(',')[0].toLowerCase()]
+            if (!key.includes(',')) {
+                return result
+            }
+
             let args = key.split(',').slice(1)
 
             for (let i = 0; i < args.length; i++) {
                 result = result.replace(`{args[${i}]}`, args[i])
             }
 
-            return result || key
+            return result
         }
 
         this.crumbs.getError = (key) => {
@@ -218,6 +217,10 @@ export default class Preload extends BaseScene {
         })
         await newFont.load()
         document.fonts.add(newFont)
-        return true
+        this.fontsLoaded++
+        if (this.fontsLoaded == this.crumbs.fonts.length) {
+            clearTimeout(this.abandonFontsTimeout)
+            this._create()
+        }
     }
 }

@@ -18,6 +18,8 @@ export default class Shell extends BaseScene {
 
         this.itemsLoaded = []
 
+        this.puffleCache = {}
+
         if (window.location.hostname == 'localhost') window.shell = this
     }
 
@@ -72,6 +74,7 @@ export default class Shell extends BaseScene {
         this.iglooFactory = new IglooFactory(this)
         this.RuffleManager = new RuffleManager(this, RuffleHolder, this.crumbs)
         this.party = new PartyController(this)
+        this.soundStudioLoader = new Phaser.Loader.LoaderPlugin(this)
 
         this.airtower.sendXt('i#gp')
         this.airtower.sendXt('ma#g')
@@ -398,5 +401,84 @@ export default class Shell extends BaseScene {
 
     get rockhopper_leave() {
         return new Date('2000-01-01T00:00:00.000Z')
+    }
+
+    // SoundStudio Tracks
+
+    addSSTrack(track) {
+        if (shell.cache.json.entries.keys().includes(`soundstudio-${track.mode}-pack`)) return this.playbackSSTrack(track)
+
+        this.soundStudioLoader.pack(`soundstudio-${track.mode}-pack`, `client/media/games/soundstudio/audio/soundstudio-${track.mode}-pack.json`)
+
+        this.soundStudioLoader.on('complete', () => {
+            this.playbackSSTrack(track)
+        })
+
+        this.soundStudioLoader.start()
+    }
+
+    playbackSSTrack(track) {
+        if (this.soundStudioSounds) {
+            for (let i = 0; i < 25; i++) {
+                this.soundStudioSounds[i].stop()
+            }
+        }
+        this.soundStudioSounds = {}
+        this.soundStudioMode = track.mode
+        for (let i = 0; i < 25; i++) {
+            this.soundStudioSounds[i] = this.sound.add(`${track.mode}_${i + 1}`, {loop: true, mute: true})
+            this.soundStudioSounds[i].setVolume(this.shell.settings.mv)
+            this.soundStudioSounds[i].play()
+        }
+        setTimeout(() => {
+            this.events.emit('soundstudio-song-finished')
+        }, track.lengthInMs)
+        this.playbackFromCSList(track.sounds)
+    }
+
+    playbackFromCSList(list) {
+        this.playbackFromList(list.split(','))
+    }
+
+    playbackFromList(list) {
+        this.playbackTimeouts = []
+        for (let sound of list) {
+            let split = sound.split(':')
+            switch (split[0]) {
+                case 'l':
+                    this.playRecordedLoop(parseInt(split[1]), parseInt(split[2]) * 10)
+                    break
+                case 'f':
+                    this.stopRecordedLoop(parseInt(split[1]), parseInt(split[2]) * 10)
+                    break
+                case 's':
+                    this.playRecordedSfx(parseInt(split[1]), parseInt(split[2]) * 10)
+                    break
+            }
+        }
+    }
+
+    playRecordedLoop(index, delay) {
+        this.playbackTimeouts.push(
+            setTimeout(() => {
+                this.soundStudioSounds[index].setMute(false)
+            }, delay)
+        )
+    }
+
+    stopRecordedLoop(index, delay) {
+        this.playbackTimeouts.push(
+            setTimeout(() => {
+                this.soundStudioSounds[index].setMute(true)
+            }, delay)
+        )
+    }
+
+    playRecordedSfx(index, delay) {
+        this.playbackTimeouts.push(
+            setTimeout(() => {
+                this.sound.add(`${this.soundStudioMode}_sfx_${index}`).play()
+            }, delay)
+        )
     }
 }

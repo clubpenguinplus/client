@@ -309,7 +309,7 @@ const rooms = {
         scene: require('@games/puffleroundup/PuffleRoundup').default,
         preventTeleport: true
     },
-    926: {
+    906: {
         key: 'JetPackAdventure',
         scene: require('@games/jetpackadventure/JetPackAdventure').default,
         preventTeleport: true

@@ -888,10 +888,13 @@ export default class IglooEdit extends BaseScene {
             sprite.setItem(item.type, item.id, item.quantity)
             xcoord += 120
         }
-
-        setTimeout(() => {
-            this.loadIglooItems(list.slice(50), xcoord)
-        }, 100)
+        if (list.length > 50) {
+            this.nextIglooItems = () => {
+                this.loadIglooItems(list.slice(50), xcoord)
+            }
+        } else {
+            this.nextIglooItems = null
+        }
     }
 
     updateQuantities() {
@@ -1043,6 +1046,18 @@ export default class IglooEdit extends BaseScene {
         let width = this.items.length * 120 > this.maxX - this.minX + 100 ? this.items.length * 120 - (this.maxX - this.minX + 300) : 0
         let xoffset = width / (this.maxX - this.minX)
         this.itemContainer.x = -(distance * xoffset)
+
+        const prevLength = this.items.length
+
+        if (distance > 700 && this.nextIglooItems) {
+            this.nextIglooItems()
+            let diffPerc = (this.items.length - prevLength) / this.items.length
+            distance = distance * (1 - diffPerc)
+            this.scroller.x = this.minX + distance
+            width = this.items.length * 120 > this.maxX - this.minX + 100 ? this.items.length * 120 - (this.maxX - this.minX + 300) : 0
+            xoffset = width / (this.maxX - this.minX)
+            this.itemContainer.x = -(distance * xoffset)
+        }
     }
 
     onScrollerUp(pointer) {

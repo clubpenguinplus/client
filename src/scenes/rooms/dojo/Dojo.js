@@ -13,7 +13,11 @@ export default class Dojo extends RoomScene {
             dojoext: () => this.triggerRoom(321, 760, 480),
             firedojo: () => this.unimplementedPrompt(),
             waterdojo: () => this.unimplementedPrompt(),
-            snowdojo: () => this.unimplementedPrompt()
+            snowdojo: () => this.unimplementedPrompt(),
+            mat1: () => this.unimplementedPrompt(),
+            mat2: () => this.unimplementedPrompt(),
+            mat3: () => this.unimplementedPrompt(),
+            mat4: () => this.unimplementedPrompt()
         }
         this.music = 403
         this.loadSfx = ['dojo-wateropen', 'dojo-waterclose', 'dojo-snowopen', 'dojo-snowclose', 'dojo-fireopen', 'dojo-fireclose']
@@ -157,39 +161,47 @@ export default class Dojo extends RoomScene {
         new MoveTo(snowdoor)
 
         // belttut (components)
-        const belttutButton = new Button(belttut)
+        new Button(belttut)
 
         // jitsutut (components)
-        const jitsututButton = new Button(jitsutut)
+        new Button(jitsutut)
 
         // senseihit (components)
-        const senseihitButton = new Button(senseihit)
+        new Button(senseihit)
         new MoveTo(senseihit)
 
         // mat (components)
-        const matButton = new Button(mat)
+        new Button(mat)
         new MoveTo(mat)
+        const matShowHint = new ShowHint(mat)
+        matShowHint.text = 'cjmat-earnbelts'
 
         // mat_1 (components)
-        const mat_1Button = new Button(mat_1)
+        new Button(mat_1)
         new MoveTo(mat_1)
+        const mat_1ShowHint = new ShowHint(mat_1)
+        mat_1ShowHint.text = 'cjmat-earnbelts'
 
         // mat_2 (components)
-        const mat_2Button = new Button(mat_2)
+        new Button(mat_2)
         new MoveTo(mat_2)
+        const mat_2ShowHint = new ShowHint(mat_2)
+        mat_2ShowHint.text = 'cjmat-earnbelts'
 
         // mat_3 (components)
-        const mat_3Button = new Button(mat_3)
+        new Button(mat_3)
         new MoveTo(mat_3)
+        const mat_3ShowHint = new ShowHint(mat_3)
+        mat_3ShowHint.text = 'cjmat-earnbelts'
 
         // dojocat_en (components)
-        const dojocat_enButton = new Button(dojocat_en)
+        new Button(dojocat_en)
 
         // jitsucards (components)
-        const jitsucardsButton = new Button(jitsucards)
+        new Button(jitsucards)
 
         // dojoext (components)
-        const dojoextButton = new Button(dojoext)
+        new Button(dojoext)
         new MoveTo(dojoext)
 
         this.potdots = potdots

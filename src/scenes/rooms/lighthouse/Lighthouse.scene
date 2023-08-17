@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "50df9ab4-e7db-4cda-b997-78d41eec7461",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "bg"
@@ -32,7 +31,6 @@
             "type": "Image",
             "id": "49b130c2-5e05-42c1-947a-2b959b4f3cdb",
             "label": "railing",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "railing"
@@ -50,6 +48,8 @@
                 "Button",
                 "MoveTo"
             ],
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('lighthouse-LightDoorOpen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lighthouse-LightDoorClose')",
             "MoveTo.x": 482,
             "MoveTo.y": 496,
             "texture": {
@@ -113,7 +113,6 @@
             "type": "Image",
             "id": "3def2487-64d5-4656-86d9-1e4b1fc7038d",
             "label": "pole",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "pole"
@@ -144,7 +143,6 @@
             "id": "7b62f6e7-488d-4929-8c44-122a670cd996",
             "label": "instruments",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "instruments"
@@ -218,7 +216,6 @@
             "type": "Image",
             "id": "4aace61a-00d6-4b7f-a1df-14fa1a905d4d",
             "label": "piano",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "piano"
@@ -230,7 +227,6 @@
             "type": "Image",
             "id": "879bd016-199b-4db4-826d-14630c47741e",
             "label": "microphone",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "microphone"
@@ -242,7 +238,6 @@
             "type": "Image",
             "id": "54780c1a-77fb-4094-b45d-8822836dddda",
             "label": "drums_0001",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "drums_0001"
@@ -270,7 +265,6 @@
             "type": "Image",
             "id": "f4fc273b-8d40-4514-8f3a-28f8ec59fdc5",
             "label": "chair1",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair1"
@@ -282,7 +276,6 @@
             "type": "Image",
             "id": "3a486ae8-3274-4202-8977-a06371899eeb",
             "label": "chair_1",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair1"
@@ -294,7 +287,6 @@
             "type": "Image",
             "id": "c6382ba5-85f0-4515-8bba-099eb3478384",
             "label": "chair_2",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair1"
@@ -306,7 +298,6 @@
             "type": "Image",
             "id": "7cadd1fb-07f6-4296-bebd-c5b74b37cc36",
             "label": "chair3_bottom_2",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair3-bottom"
@@ -318,7 +309,6 @@
             "type": "Image",
             "id": "6fa4d2d4-e022-4553-b1c5-efa3e94e09eb",
             "label": "chair2_bottom",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair2-bottom"
@@ -330,7 +320,6 @@
             "type": "Image",
             "id": "73a67dcf-e748-4134-b5af-7c4dfe9d0315",
             "label": "chair2",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair2"
@@ -342,7 +331,6 @@
             "type": "Image",
             "id": "be00f0d3-3b37-4ab8-b984-6cf583bd3116",
             "label": "chair_3",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair3"
@@ -354,7 +342,6 @@
             "type": "Image",
             "id": "8d852029-a7fc-4662-9d4f-420597dc308d",
             "label": "chair2_bottom_1",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair2-bottom"
@@ -366,7 +353,6 @@
             "type": "Image",
             "id": "39c21931-11cc-4556-9bc5-f892c0b86b2f",
             "label": "chair",
-            "components": [],
             "texture": {
                 "key": "lighthouse",
                 "frame": "chair2"
@@ -380,7 +366,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

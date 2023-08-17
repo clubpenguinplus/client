@@ -22,6 +22,8 @@ export default class MusicController extends Phaser.Scene {
     }
 
     addMusic(track, fileExtension = 'mp3') {
+        console.log(`[MusicController] Adding music: ${track}`)
+
         if (track == 0) {
             this.sound.stopAll()
             this.music = null
@@ -40,12 +42,12 @@ export default class MusicController extends Phaser.Scene {
         if (this.musicMuted) return
 
         let audio = 0
-        for (let item of Object.keys(this.shell.cache.audio.entries.entries)) {
-            if (item != `music/${track}`) {
-                this.shell.room.cache.audio.remove(item)
-                audio++
-            }
-        }
+        // for (let item of Object.keys(this.shell.cache.audio.entries.entries)) {
+        //     if (item != `music/${track}`) {
+        //         this.shell.room.cache.audio.remove(item)
+        //         audio++
+        //     }
+        // }
         if (audio > 0) console.info(`[MemoryManager] Unloaded ${audio} audio file${audio > 1 ? 's' : ''}`)
 
         this.music = track

@@ -136,7 +136,24 @@ export default class PathEngine {
 
     static isBlocked(penguin, x = penguin.x, y = penguin.y) {
         let targetIsPenguin = x == penguin.x && y == penguin.y
-        let penguinBlocked = penguin.room.matter.containsPoint(penguin.room.block, penguin.x, penguin.y)
+        let allAround = [
+            [-1, -1],
+            [-1, 0],
+            [-1, 1],
+            [0, -1],
+            [0, 0],
+            [0, 1],
+            [1, -1],
+            [1, 0],
+            [1, 1]
+        ]
+        let penguinBlocked = true
+        for (let pos of allAround) {
+            if (!penguin.room.matter.containsPoint(penguin.room.block, penguin.x + pos[0], penguin.y + pos[1])) {
+                penguinBlocked = false
+                break
+            }
+        }
         let targetBlocked = penguin.room.matter.containsPoint(penguin.room.block, x, y)
 
         if (targetIsPenguin) {

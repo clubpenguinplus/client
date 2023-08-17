@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "901b67b3-90b1-479f-bfd0-8026cd3c7d84",
             "label": "coffeebg",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeebg"
@@ -53,7 +52,6 @@
             "type": "Image",
             "id": "66e16610-3c24-4a30-863a-67437f104d0c",
             "label": "coffeecouch_left_arm",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeecouch-left-arm"
@@ -66,7 +64,6 @@
             "type": "Image",
             "id": "ea0bd71e-64f8-4035-b8f9-dba07f69c77d",
             "label": "coffee_footrest",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffee-footrest"
@@ -80,7 +77,6 @@
             "type": "Image",
             "id": "8c90e327-f899-4aac-a477-91a3e3daee31",
             "label": "rail",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "rail"
@@ -93,7 +89,6 @@
             "type": "Image",
             "id": "870c36c6-7417-4f90-b37f-8897344ad14c",
             "label": "smoothiebartop",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "smoothiebartop"
@@ -107,7 +102,6 @@
             "type": "Image",
             "id": "334c5052-3fe0-49f1-8067-2fe6a8ab47c0",
             "label": "smoothiebarbottom",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "smoothiebarbottom"
@@ -122,7 +116,6 @@
             "id": "9f359898-b88d-400a-af1e-a8b1bd399fd5",
             "label": "smoothiemachine",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "smoothiemachine0001"
@@ -157,7 +150,6 @@
             "type": "Image",
             "id": "c29208c0-88a0-463c-bb95-93b4bd632e6b",
             "label": "tikihut",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "tikihut"
@@ -171,7 +163,6 @@
             "type": "Image",
             "id": "df6ecea0-3aeb-4bbb-bc7c-46335fff9d13",
             "label": "coffeefg",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeefg"
@@ -204,7 +195,6 @@
             "type": "Image",
             "id": "7adfb06e-61c7-4812-8289-bb470f9927c4",
             "label": "coffeecouch_top",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeecouch-top"
@@ -218,7 +208,6 @@
             "type": "Image",
             "id": "0edcb6e7-d500-499c-a935-a2c6ada92e6c",
             "label": "coffeetable",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeetable"
@@ -232,7 +221,6 @@
             "type": "Image",
             "id": "9c43047e-4d30-4c26-a177-8dbde07b2366",
             "label": "coffeebar",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeebar"
@@ -264,7 +252,6 @@
             "type": "Image",
             "id": "307c0cff-69e5-4785-afbb-2dbbaf291103",
             "label": "smoothiesmashsign",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "smoothiesmashsign"
@@ -280,10 +267,12 @@
             "type": "Image",
             "id": "7a9d7a9b-fc2a-4395-82bb-677948aee27b",
             "label": "smoothiesmashtext_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "coffee",
-                "frame": "smoothiesmashtext_en"
+                "frame": "smoothiesmashtext-de"
             },
             "x": 36.63584766109379,
             "y": 631.3118499324878,
@@ -296,7 +285,6 @@
             "type": "Image",
             "id": "6258e672-e06b-4d36-8b94-ceb351cfc251",
             "label": "fruitbox",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "fruitbox"
@@ -310,7 +298,6 @@
             "type": "Image",
             "id": "09498860-ef42-4a3a-9a8e-fc50ef291507",
             "label": "fgfruit",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "fgfruit"
@@ -342,7 +329,6 @@
             "type": "Image",
             "id": "695bdaae-316d-474d-88a0-5df5a60663eb",
             "label": "smoothiechair",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "smoothiechair"
@@ -356,7 +342,6 @@
             "type": "Image",
             "id": "4c703869-3d4d-4258-b410-575bfe92b418",
             "label": "smoothiechair_1",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "smoothiechair"
@@ -370,7 +355,6 @@
             "type": "Image",
             "id": "ee73ca43-b3b1-4ce1-bbaf-20c63404b5d1",
             "label": "fruittable",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "fruittable"
@@ -384,7 +368,6 @@
             "type": "Container",
             "id": "f1976481-5487-4151-9fa7-e9f23ccd98cc",
             "label": "bottomcoffee",
-            "components": [],
             "x": 711.3267781138305,
             "y": 737.2605668992305,
             "list": [
@@ -392,7 +375,6 @@
                     "type": "Image",
                     "id": "5b3e4a77-ff93-4ade-88bc-9bb0f4a996c9",
                     "label": "bottomcoffeechaircush_1",
-                    "components": [],
                     "texture": {
                         "key": "coffee",
                         "frame": "bottomcoffeechaircush"
@@ -404,7 +386,6 @@
                     "type": "Image",
                     "id": "f0e071ac-c371-42ef-98a3-26e3a5dfe29e",
                     "label": "bottomcoffeechairback_1",
-                    "components": [],
                     "texture": {
                         "key": "coffee",
                         "frame": "bottomcoffeechairback"
@@ -418,7 +399,6 @@
             "type": "Image",
             "id": "e9fc72bc-90bd-4f82-b462-262696517878",
             "label": "bottomcoffeechairarm",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "bottomcoffeechairarm"
@@ -431,7 +411,6 @@
             "type": "Image",
             "id": "7704c684-ebc4-4b2c-83b2-3ad61e945c45",
             "label": "bottomcoffeecouchback",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "bottomcoffeecouchback"
@@ -443,7 +422,6 @@
             "type": "Image",
             "id": "5cd99cf2-a2cb-4ca8-b0d3-1a4def0af4f7",
             "label": "coffeebeanleft",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "coffeebeanleft"
@@ -455,7 +433,6 @@
             "type": "Image",
             "id": "db815184-addf-481d-af7b-ef327d0122f1",
             "label": "bottomcoffeecouchfront",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "bottomcoffeecouchfront"
@@ -490,7 +467,6 @@
             "id": "52026608-6bd7-4db0-b4f9-9b112bcfd983",
             "label": "bookroomlight",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "coffee",
                 "frame": "bookroomlight"
@@ -505,10 +481,12 @@
             "type": "Image",
             "id": "19b06774-89c8-4bfe-803c-e3aa05350fd8",
             "label": "clubpenguintimes_en",
-            "components": [],
+            "components": [
+                "LocalisedSprite"
+            ],
             "texture": {
                 "key": "coffee",
-                "frame": "clubpenguintimes_en"
+                "frame": "clubpenguintimes-en"
             },
             "x": 1315,
             "y": 219,
@@ -549,7 +527,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

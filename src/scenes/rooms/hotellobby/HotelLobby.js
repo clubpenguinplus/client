@@ -18,7 +18,7 @@ export default class HotelLobby extends RoomScene {
 
         this.music = 362
 
-        this.loadSfx = []
+        this.loadSfx = ['hotellobby-smoothie-slurp', 'hotellobby-snoring', 'hotellobby-smoothie-appear', 'hotellobby-smoothie-disappear', 'hotellobby-board', 'hotellobby-elevator-close', 'hotellobby-elevator-open', 'hotellobby-petdoor-close', 'hotellobby-petdoor-open', 'hotellobby-plazadoor-close', 'hotellobby-plazadoor-open']
 
         /* END-USER-CTR-CODE */
     }
@@ -81,7 +81,8 @@ export default class HotelLobby extends RoomScene {
         const backrightwall = this.add.image(1191, 125, 'hotellobby', 'backrightwall')
 
         // backtable
-        const backtable = this.add.image(333, 725, 'hotellobby', 'backtable')
+        const backtable = this.add.image(336.7696190896114, 734.4240477240285, 'hotellobby', 'backtable')
+        backtable.setOrigin(0.5231264974822786, 0.5753923817922277)
 
         // coatcheck_wall
         const coatcheck_wall = this.add.image(1199.5455915257305, 334.3964408143606, 'hotellobby', 'coatcheck-wall')
@@ -97,12 +98,20 @@ export default class HotelLobby extends RoomScene {
         const fountain = this.add.sprite(790.1263806898631, 580.0473169932136, 'hotellobby', 'fountain0001')
         fountain.setOrigin(0.38576385528632434, 0.8349260125239063)
 
+        // smoothieAnimBack
+        const smoothieAnimBack = this.add.sprite(344.92781053712554, 743.1704145970912, 'hotellobby', 'smoothieAnim0001')
+        smoothieAnimBack.setOrigin(0.5070599004829879, 0.8010352111035999)
+
         // frontchairs
         const frontchairs = this.add.image(357, 753, 'hotellobby', 'frontchairs')
         frontchairs.setOrigin(0.34296466091717487, 0.25888242131166106)
 
         // fronttable
         const fronttable = this.add.image(381, 847, 'hotellobby', 'fronttable')
+
+        // smoothieAnimFront
+        const smoothieAnimFront = this.add.sprite(390, 884, 'hotellobby', 'smoothieAnim0001')
+        smoothieAnimFront.setOrigin(0.4825300981231506, 0.8727461889099736)
 
         // lamp
         const lamp = this.add.image(1509, 841, 'hotellobby', 'lamp')
@@ -195,11 +204,17 @@ export default class HotelLobby extends RoomScene {
         const taskinterface = this.add.image(1424, 1148.9899654279216, 'hotellobby', 'interface')
         taskinterface.setOrigin(0.5, 2.521666416144359)
 
+        // elevator_hover
+        const elevator_hover = this.add.polygon(55, 392, '7.722707253016722 343.961481110895 -0.6112598538895355 48.88754820478039 155.5508869925773 8.204166623943507 164.5029594644402 260.6414520828263')
+        elevator_hover.angle = -3.0000000000000004
+
         // lists
-        const sort = [railings5, railings4, railings3, railings2, railings1, reception_wall, backchairs, backleftpanel, backpod, toprightwall, backrightwall, backtable, coatcheck_wall, midrailings_legs, midrailings, fountain, frontchairs, fronttable, lamp, leftplant, leftpillar, petshop_pillar, coatcheck_sign_en, petshop_door, petshop_sign_en, plant, reception_chair, reception_desk, reception_sign_en, elevator, lanterns_left, lanterns_right, rightplant, rightpillar, sofa, tasks, frontpod, bar_sign, bar_front, bar, fruitbox, fruits, fg, taskinterface]
+        const sort = [railings5, railings4, railings3, railings2, railings1, reception_wall, backchairs, backleftpanel, backpod, toprightwall, backrightwall, backtable, coatcheck_wall, midrailings_legs, midrailings, fountain, frontchairs, fronttable, lamp, leftplant, leftpillar, petshop_pillar, coatcheck_sign_en, petshop_door, petshop_sign_en, plant, reception_chair, reception_desk, reception_sign_en, elevator, lanterns_left, lanterns_right, rightplant, rightpillar, sofa, tasks, frontpod, bar_sign, bar_front, bar, fruitbox, fruits, fg, taskinterface, smoothieAnimFront, smoothieAnimBack]
 
         // door (components)
-        new Button(door)
+        const doorButton = new Button(door)
+        doorButton.hoverCallback = () => this.onPlazaDoorOver()
+        doorButton.hoverOutCallback = () => this.onPlazaDoorOut()
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 780
         doorMoveTo.y = 300
@@ -215,7 +230,7 @@ export default class HotelLobby extends RoomScene {
         const backtableSimpleButton = new SimpleButton(backtable)
         backtableSimpleButton.hoverCallback = () => this.onBackTableOver()
         backtableSimpleButton.hoverOutCallback = () => this.onBackTableOut()
-        backtableSimpleButton.callback = () => this.puffleEat()
+        backtableSimpleButton.callback = () => this.puffleEat(this.backtable, this.smoothieAnimBack)
         const backtableMoveTo = new MoveTo(backtable)
         backtableMoveTo.x = 300
         backtableMoveTo.y = 654
@@ -224,13 +239,18 @@ export default class HotelLobby extends RoomScene {
         const fronttableSimpleButton = new SimpleButton(fronttable)
         fronttableSimpleButton.hoverCallback = () => this.onFrontTableOver()
         fronttableSimpleButton.hoverOutCallback = () => this.onFrontTableOut()
-        fronttableSimpleButton.callback = () => this.puffleEat()
+        fronttableSimpleButton.callback = () => this.puffleEat(this.fronttable, this.smoothieAnimFront)
         const fronttableMoveTo = new MoveTo(fronttable)
         fronttableMoveTo.x = 356
         fronttableMoveTo.y = 768
 
+        // coatcheck_sign_en (components)
+        new LocalisedSprite(coatcheck_sign_en)
+
         // petshop_door (components)
-        new Button(petshop_door)
+        const petshop_doorButton = new Button(petshop_door)
+        petshop_doorButton.hoverCallback = () => this.onPetDoorOver()
+        petshop_doorButton.hoverOutCallback = () => this.onPetDoorOut()
         const petshop_doorMoveTo = new MoveTo(petshop_door)
         petshop_doorMoveTo.x = 1440
         petshop_doorMoveTo.y = 460
@@ -238,13 +258,8 @@ export default class HotelLobby extends RoomScene {
         // petshop_sign_en (components)
         new LocalisedSprite(petshop_sign_en)
 
-        // elevator (components)
-        const elevatorSimpleButton = new SimpleButton(elevator)
-        elevatorSimpleButton.hoverCallback = () => this.onElevatorOver()
-        elevatorSimpleButton.hoverOutCallback = () => this.onElevatorOut()
-        const elevatorMoveTo = new MoveTo(elevator)
-        elevatorMoveTo.x = 72
-        elevatorMoveTo.y = 520
+        // reception_sign_en (components)
+        new LocalisedSprite(reception_sign_en)
 
         // lanterns_left (components)
         new LocalisedSprite(lanterns_left)
@@ -269,15 +284,26 @@ export default class HotelLobby extends RoomScene {
         const taskinterfaceButton = new Button(taskinterface)
         taskinterfaceButton.callback = () => this.interface.loadExternal('RainbowQuest')
 
+        // elevator_hover (components)
+        const elevator_hoverSimpleButton = new SimpleButton(elevator_hover)
+        elevator_hoverSimpleButton.hoverCallback = () => this.onElevatorOver()
+        elevator_hoverSimpleButton.hoverOutCallback = () => this.onElevatorOut()
+        const elevator_hoverMoveTo = new MoveTo(elevator_hover)
+        elevator_hoverMoveTo.x = 72
+        elevator_hoverMoveTo.y = 520
+
         this.backchairs = backchairs
         this.backpod = backpod
         this.backtable = backtable
         this.fountain = fountain
+        this.smoothieAnimBack = smoothieAnimBack
         this.frontchairs = frontchairs
         this.fronttable = fronttable
+        this.smoothieAnimFront = smoothieAnimFront
         this.elevator = elevator
         this.tasks = tasks
         this.frontpod = frontpod
+        this.elevator_hover = elevator_hover
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -291,16 +317,22 @@ export default class HotelLobby extends RoomScene {
     backtable
     /** @type {Phaser.GameObjects.Sprite} */
     fountain
+    /** @type {Phaser.GameObjects.Sprite} */
+    smoothieAnimBack
     /** @type {Phaser.GameObjects.Image} */
     frontchairs
     /** @type {Phaser.GameObjects.Image} */
     fronttable
+    /** @type {Phaser.GameObjects.Sprite} */
+    smoothieAnimFront
     /** @type {Phaser.GameObjects.Sprite} */
     elevator
     /** @type {Phaser.GameObjects.Sprite} */
     tasks
     /** @type {Phaser.GameObjects.Image} */
     frontpod
+    /** @type {Phaser.GameObjects.Polygon} */
+    elevator_hover
     /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
     sort
 
@@ -317,6 +349,7 @@ export default class HotelLobby extends RoomScene {
         } else {
             this.elevator.play('hotellobby-elevator')
         }
+        this.shell.musicController.addSfx('hotellobby-elevator-open')
     }
 
     onElevatorOut() {
@@ -325,10 +358,12 @@ export default class HotelLobby extends RoomScene {
         } else {
             this.elevator.playReverse('hotellobby-elevator')
         }
+        this.shell.musicController.addSfx('hotellobby-elevator-close')
     }
 
     onTasksOver() {
         this.tasks.play('hotellobby-tasks')
+        this.shell.musicController.addSfx('hotellobby-board')
     }
 
     onTasksOut() {
@@ -356,18 +391,90 @@ export default class HotelLobby extends RoomScene {
         this.backchairs.setFrame('backchairs')
     }
 
-    puffleEat() {}
+    onPetDoorOver() {
+        this.shell.musicController.addSfx('hotellobby-petdoor-open')
+    }
 
-    puffleSleep(gameObject) {
+    onPetDoorOut() {
+        this.shell.musicController.addSfx('hotellobby-petdoor-close')
+    }
+
+    onPlazaDoorOver() {
+        this.shell.musicController.addSfx('hotellobby-plazadoor-open')
+    }
+
+    onPlazaDoorOut() {
+        this.shell.musicController.addSfx('hotellobby-plazadoor-close')
+    }
+
+    puffleEat(gameObject, animation) {
+        if (!this.shell.client.penguin.puffleSprite) return
         let x = gameObject.__MoveTo.x
         let y = gameObject.__MoveTo.y
         this.shell.client.penguin.afterMove = () => {
-            if (this.shell.isNearPos(x, y)) {
-                // Play puffle sleep animation
-                setTimeout(() => {
-                    this.increasePuffleRest(x, y)
-                }, 1000)
-            }
+            if (!this.shell.isNearPos(x, y)) return
+
+            this.shell.client.penguin.playFrame(1)
+            this.shell.client.lockRotation = true
+            this.shell.musicController.addSfx('hotellobby-smoothie-appear')
+            this.airtower.events.once('phg', (args) => {
+                if (args[0] == this.shell.client.penguin.walking) {
+                    this.puffleHealth = {
+                        clean: args[1],
+                        food: args[2],
+                        play: args[3],
+                        rest: args[4]
+                    }
+                }
+            })
+
+            this.airtower.sendXt('p#phg', this.shell.client.penguin.walking)
+
+            animation.play('hotellobby-smoothieAnim')
+
+            setTimeout(() => {
+                this.shell.musicController.addSfx('hotellobby-smoothie-slurp')
+            }, 1000)
+
+            setTimeout(() => {
+                this.shell.musicController.addSfx('hotellobby-smoothie-disappear')
+                this.increasePuffleFood(x, y)
+            }, 2000)
+
+            animation.on('animationcomplete', () => {
+                this.shell.client.lockRotation = false
+                animation.anims.stop()
+                animation.setFrame('smoothieAnim0001')
+            })
+        }
+    }
+
+    puffleSleep(gameObject) {
+        if (!this.shell.client.penguin.puffleSprite) return
+        let x = gameObject.__MoveTo.x
+        let y = gameObject.__MoveTo.y
+        this.shell.client.penguin.afterMove = () => {
+            if (!this.shell.isNearPos(x, y)) return
+            this.shell.client.penguin.playPuffleFrame(79)
+            this.shell.musicController.addSfx('hotellobby-snoring', true)
+            this.shell.client.lockRotation = true
+            this.airtower.events.once('phg', (args) => {
+                if (args[0] == this.shell.client.penguin.walking) {
+                    this.puffleHealth = {
+                        clean: args[1],
+                        food: args[2],
+                        play: args[3],
+                        rest: args[4]
+                    }
+                }
+            })
+
+            this.airtower.sendXt('p#phg', this.shell.client.penguin.walking)
+            setTimeout(() => {
+                this.increasePuffleRest(x, y)
+                this.shell.client.lockRotation = false
+                this.shell.musicController.stopLoopingSfx()
+            }, 8750)
         }
     }
 
@@ -377,7 +484,26 @@ export default class HotelLobby extends RoomScene {
         this.carePopup.x = this.shell.client.penguin.x
         this.carePopup.y = this.shell.client.penguin.y
 
-        this.carePopup.showPopup('rest', 30, 70)
+        const oldRest = this.puffleHealth.rest
+        this.puffleHealth.rest += 20
+        if (this.puffleHealth.rest > 100) this.puffleHealth.rest = 100
+
+        this.carePopup.showPopup('rest', oldRest, this.puffleHealth.rest)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.rest}`)
+    }
+
+    increasePuffleFood(x, y) {
+        if (!this.shell.isNearPos(x, y)) return
+
+        this.carePopup.x = this.shell.client.penguin.x
+        this.carePopup.y = this.shell.client.penguin.y
+
+        const oldFood = this.puffleHealth.food
+        this.puffleHealth.food += 20
+        if (this.puffleHealth.food > 100) this.puffleHealth.food = 100
+
+        this.carePopup.showPopup('food', oldFood, this.puffleHealth.food)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.rest}`)
     }
 
     /* END-USER-CODE */

@@ -25,6 +25,8 @@ export default class Lighthouse extends RoomScene {
 
         this.music = '588'
 
+        this.loadSfx = ['lighthouse-LightDoorOpen', 'lighthouse-LightDoorClose']
+
         /* END-USER-CTR-CODE */
     }
 
@@ -132,6 +134,8 @@ export default class Lighthouse extends RoomScene {
 
         // door (components)
         const doorButton = new Button(door)
+        doorButton.hoverCallback = () => this.shell.musicController.addSfx('lighthouse-LightDoorOpen')
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lighthouse-LightDoorClose')
         const doorMoveTo = new MoveTo(door)
         doorMoveTo.x = 482
         doorMoveTo.y = 496
