@@ -19,14 +19,12 @@
             "type": "Image",
             "id": "833892a0-7e19-4a4f-84aa-765d9d57e120",
             "label": "bg_bg",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "bg_bg"
             },
             "x": 780,
-            "y": 502,
-            "list": []
+            "y": 502
         },
         {
             "type": "Sprite",
@@ -46,60 +44,51 @@
             "x": 85.35979609018158,
             "y": 433.25580454045144,
             "originX": 0.6997355005932998,
-            "originY": 0.834068403851872,
-            "list": []
+            "originY": 0.834068403851872
         },
         {
             "type": "Image",
             "id": "a485c450-b6ee-4fc8-b64d-a4eabb8d9370",
             "label": "elevator_body0001",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "elevator_body0001"
             },
             "x": 45,
-            "y": 329,
-            "list": []
+            "y": 329
         },
         {
             "type": "Image",
             "id": "99ae6086-6fa7-4a83-88b3-7490fd01e41a",
             "label": "bg_fg",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "bg_fg"
             },
             "x": 664,
-            "y": 258,
-            "list": []
+            "y": 258
         },
         {
             "type": "Image",
             "id": "dce9bcb0-5daa-4551-a71b-9218dcb5af09",
             "label": "leftsupport",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "leftsupport"
             },
             "x": 679,
-            "y": 256,
-            "list": []
+            "y": 256
         },
         {
             "type": "Image",
             "id": "56f26dbb-47de-4060-ad17-1d5d288210bc",
             "label": "lowwall",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "lowwall"
             },
             "x": 903,
-            "y": 615,
-            "list": []
+            "y": 615
         },
         {
             "type": "Image",
@@ -113,11 +102,10 @@
                 "key": "hotelspa",
                 "frame": "mat"
             },
-            "x": 422.07954716397467,
-            "y": 361.3863647759831,
-            "originX": 0.3732921801385819,
-            "originY": 0.2998132161093577,
-            "list": []
+            "x": 414.2860991608071,
+            "y": 358.98836479587334,
+            "originX": 0.32824327744861215,
+            "originY": 0.26696406894238284
         },
         {
             "type": "Image",
@@ -131,11 +119,10 @@
                 "key": "hotelspa",
                 "frame": "mat"
             },
-            "x": 260.9554213775118,
-            "y": 497.94842766921454,
-            "originX": 0.3667943432226116,
-            "originY": 0.30751270779745943,
-            "list": []
+            "x": 262.0078485085004,
+            "y": 489.1781362084603,
+            "originX": 0.3728777807378776,
+            "originY": 0.18737176143432963
         },
         {
             "type": "Image",
@@ -149,11 +136,10 @@
                 "key": "hotelspa",
                 "frame": "mat"
             },
-            "x": 357.33479244519765,
-            "y": 579.8243018827517,
-            "originX": 0.334305158642761,
-            "originY": 0.29211372442125594,
-            "list": []
+            "x": 355.9315315785099,
+            "y": 574.5621063344512,
+            "originX": 0.3261939086224065,
+            "originY": 0.22002915660337835
         },
         {
             "type": "Image",
@@ -167,71 +153,61 @@
                 "key": "hotelspa",
                 "frame": "mat"
             },
-            "x": 537.0209811248919,
-            "y": 504.07255345567734,
-            "originX": 0.34405191401671636,
-            "originY": 0.32291169117366214,
-            "list": []
+            "x": 533.4240144789662,
+            "y": 495.6795831820411,
+            "originX": 0.3232601127751917,
+            "originY": 0.20793967608925065
         },
         {
             "type": "Sprite",
             "id": "6e86f596-1332-4ddc-9aef-d51d882cdbe7",
             "label": "dumbell2",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "dumbell0001"
             },
             "x": 588,
-            "y": 484,
-            "list": []
+            "y": 484
         },
         {
             "type": "Sprite",
             "id": "b923081a-f9ea-4ee8-b38e-c0d6baec4474",
             "label": "dumbell1",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "dumbell0001"
             },
             "x": 413,
-            "y": 560,
-            "list": []
+            "y": 560
         },
         {
             "type": "Image",
             "id": "fbb20e68-41bf-466d-87da-daae08a67199",
             "label": "railing",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "railing"
             },
             "x": 287,
-            "y": 662,
-            "list": []
+            "y": 662
         },
         {
             "type": "Image",
             "id": "6fa62ff5-ac9d-42d5-9264-ccf332c8841b",
             "label": "stuff",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "stuff"
             },
             "x": 283,
-            "y": 364,
-            "list": []
+            "y": 364
         },
         {
             "type": "Container",
             "id": "219239ea-e346-4614-b22b-5e9e6c1f92a7",
             "label": "treadmill2Container",
-            "components": [],
             "x": 511.3021313660537,
             "y": 668.6457833793041,
             "list": [
@@ -251,39 +227,34 @@
                         "key": "hotelspa",
                         "frame": "treadmill"
                     },
-                    "x": -86.56244437247108,
-                    "y": 62.62293184326427,
-                    "originX": 0.2170877337106148,
-                    "originY": 0.6250703545637872,
-                    "list": []
+                    "x": -59.87973567064097,
+                    "y": 60.27918020121638,
+                    "originX": 0.3423586794541648,
+                    "originY": 0.616259258019287
                 },
                 {
                     "type": "Sprite",
                     "id": "0bc85662-a5cf-4766-b84f-7e76af6f66e3",
                     "label": "treadmillAnim2",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "hotelspa",
                         "frame": "treadmill-anim0001"
                     },
                     "x": -13.302131366053686,
-                    "y": 88.35421662069587,
-                    "list": []
+                    "y": 88.35421662069587
                 },
                 {
                     "type": "Image",
                     "id": "656e14ad-edc6-498b-9ae9-b876cfb73ed9",
                     "label": "treadmillArm2",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "hotelspa",
                         "frame": "treadmill-arm"
                     },
                     "x": 46.697868633946314,
-                    "y": 27.354216620695865,
-                    "list": []
+                    "y": 27.354216620695865
                 }
             ]
         },
@@ -291,7 +262,6 @@
             "type": "Container",
             "id": "81c3f6e7-2f81-43d6-a94d-f55bce5a773a",
             "label": "treadmill1Container",
-            "components": [],
             "x": 231,
             "y": 694,
             "list": [
@@ -311,38 +281,33 @@
                         "key": "hotelspa",
                         "frame": "treadmill"
                     },
-                    "x": -60.33976564954716,
-                    "y": 35.48172281205552,
-                    "originX": 0.21671471371734244,
-                    "originY": 0.6221117384779349,
-                    "list": []
+                    "x": -37.31596049062716,
+                    "y": 28.557270562715416,
+                    "originX": 0.324807704165359,
+                    "originY": 0.5960799594452846
                 },
                 {
                     "type": "Sprite",
                     "id": "faaeb20d-4e10-45c6-8bed-99606d09ad79",
                     "label": "treadmillAnim1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "hotelspa",
                         "frame": "treadmill-anim0001"
                     },
                     "x": 13,
-                    "y": 62,
-                    "list": []
+                    "y": 62
                 },
                 {
                     "type": "Image",
                     "id": "6d004f98-6ef0-45c5-a9b3-dc3eb5a8d7e2",
                     "label": "treadmillArm1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "hotelspa",
                         "frame": "treadmill-arm"
                     },
-                    "x": 72,
-                    "list": []
+                    "x": 72
                 }
             ]
         },
@@ -350,68 +315,58 @@
             "type": "Image",
             "id": "45bafcfb-704f-4634-93b3-0596d45bd2cc",
             "label": "punching_bag",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "punching-bag"
             },
             "x": -3,
-            "y": 701,
-            "list": []
+            "y": 701
         },
         {
             "type": "Sprite",
             "id": "a9a22e9f-26f0-41a4-9536-9395f1f2b532",
             "label": "speakerLeftAnim",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "speaker_left0001"
             },
             "x": 216,
-            "y": 187,
-            "list": []
+            "y": 187
         },
         {
             "type": "Sprite",
             "id": "9943677c-68db-497e-b973-90348363af5b",
             "label": "speakerRightAnim",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "speaker_right0001"
             },
             "x": 587,
-            "y": 188,
-            "list": []
+            "y": 188
         },
         {
             "type": "Image",
             "id": "524de7dc-a8b7-4732-ae85-c14b02a9f4b3",
             "label": "dunmbells",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "dunmbells"
             },
             "x": 741,
-            "y": 887,
-            "list": []
+            "y": 887
         },
         {
             "type": "Image",
             "id": "162ca25c-2f09-413a-bb37-b545f62afd90",
             "label": "bottle",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "bottle"
             },
             "x": 375,
-            "y": 501,
-            "list": []
+            "y": 501
         },
         {
             "type": "Image",
@@ -425,11 +380,10 @@
                 "key": "hotelspa",
                 "frame": "chair-left"
             },
-            "x": 1039.7666620413545,
-            "y": 389.37671115102614,
-            "originX": 0.21849814308436535,
-            "originY": 0.6226374123482667,
-            "list": []
+            "x": 1042.84001715263,
+            "y": 389.376708984375,
+            "originX": 0.2353850419312336,
+            "originY": 0.6226374123482667
         },
         {
             "type": "Image",
@@ -443,50 +397,43 @@
                 "key": "hotelspa",
                 "frame": "chair-right"
             },
-            "x": 1222.5572863233251,
-            "y": 388.65928113602314,
-            "originX": 0.21342779411653068,
-            "originY": 0.6117676021267288,
-            "list": []
+            "x": 1225.6306665666925,
+            "y": 388.6592712402344,
+            "originX": 0.23022241482762373,
+            "originY": 0.6117676021267288
         },
         {
             "type": "Image",
             "id": "36e16de5-aae6-4ea8-83f6-353c318547e4",
             "label": "divider",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "divider"
             },
             "x": 1390,
-            "y": 294,
-            "list": []
+            "y": 294
         },
         {
             "type": "Image",
             "id": "bc490291-4425-4757-b7fc-9d3a37948d76",
             "label": "products",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "products"
             },
             "x": 1545,
-            "y": 722,
-            "list": []
+            "y": 722
         },
         {
             "type": "Image",
             "id": "5c9ad6e1-6759-4366-8ba2-4ca1f2639bb8",
             "label": "bubbles",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "bubbles"
             },
             "x": 1241,
-            "y": 659,
-            "list": []
+            "y": 659
         },
         {
             "type": "Image",
@@ -500,11 +447,10 @@
                 "key": "hotelspa",
                 "frame": "washchair-left"
             },
-            "x": 990.917266870359,
-            "y": 712.0340295067676,
-            "originX": 0.2463636107875937,
-            "originY": 0.6637104182559236,
-            "list": []
+            "x": 1017.9695046382153,
+            "y": 709.2161193593819,
+            "originX": 0.36449552028512233,
+            "originY": 0.6505424824717851
         },
         {
             "type": "Image",
@@ -521,65 +467,56 @@
                 "key": "hotelspa",
                 "frame": "washchair-right"
             },
-            "x": 1299.2148001745934,
-            "y": 700.2194814491494,
-            "originX": 0.2673588793205299,
-            "originY": 0.5447547643162591,
-            "list": []
+            "x": 1311.0501844327837,
+            "y": 710.6458539757558,
+            "originX": 0.32266420961391157,
+            "originY": 0.5953682184613116
         },
         {
             "type": "Image",
             "id": "ffc7b7d4-61ea-423a-ac03-a36b40b8f15a",
             "label": "washchair_arm",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "washchair-arm"
             },
             "x": 1427,
-            "y": 722,
-            "list": []
+            "y": 722
         },
         {
             "type": "Image",
             "id": "c4b35e7f-498e-4ba4-b7bb-979c51aace42",
             "label": "cloth",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "cloth"
             },
             "x": 1433,
-            "y": 831,
-            "list": []
+            "y": 831
         },
         {
             "type": "Image",
             "id": "bb410c7c-1322-4622-91a0-5153af1053b3",
             "label": "otherbottle",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "otherbottle"
             },
             "x": 311,
-            "y": 799,
-            "list": []
+            "y": 799
         },
         {
             "type": "Image",
             "id": "f408a4eb-eb0c-42f0-ba1f-034194d76cac",
             "label": "fg",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "fg"
             },
             "x": 847,
             "y": 1209.67275803794,
-            "originY": 2.1360856567311566,
-            "list": []
+            "originY": 2.1360856567311566
         },
         {
             "type": "Image",
@@ -595,30 +532,26 @@
             },
             "x": 1429,
             "y": 1463.1743877493623,
-            "originY": 4.776625998183785,
-            "list": []
+            "originY": 4.776625998183785
         },
         {
             "type": "Sprite",
             "id": "125b557d-13bf-4d52-9c62-579f275668ea",
             "label": "groomAnim1",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "groom-anim0001"
             },
             "x": 1094,
             "y": 1016.2585891146189,
-            "originY": 2.0161833982000315,
-            "list": []
+            "originY": 2.0161833982000315
         },
         {
             "type": "Sprite",
             "id": "bf5ee231-56fd-458f-9b26-4432250be273",
             "label": "groomAnim2",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "groom-anim0001"
@@ -626,30 +559,26 @@
             "x": 1302,
             "y": 1023.0814144065191,
             "scaleX": -1,
-            "originY": 2.0274981996791364,
-            "list": []
+            "originY": 2.0274981996791364
         },
         {
             "type": "Sprite",
             "id": "3b92c7ea-fd96-4cab-9509-a7bf357c5df5",
             "label": "washAnim1",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "wash-anim0001"
             },
             "x": 1085,
             "y": 1117.970074905756,
-            "originY": 1.2454243570842058,
-            "list": []
+            "originY": 1.2454243570842058
         },
         {
             "type": "Sprite",
             "id": "2cbaae32-db3c-4df4-93d6-46b051cea2fc",
             "label": "washAnim2",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "wash-anim0001"
@@ -657,34 +586,29 @@
             "x": 1344,
             "y": 1172.552677240957,
             "scaleX": -1,
-            "originY": 1.385739530182409,
-            "list": []
+            "originY": 1.385739530182409
         },
         {
             "type": "Image",
             "id": "7b095c8d-a4e5-4f40-8008-c47dedeec274",
             "label": "rightsupport",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "rightsupport"
             },
             "x": 872,
-            "y": 256,
-            "list": []
+            "y": 256
         },
         {
             "type": "Image",
             "id": "613d7a9f-1374-48c0-a1c1-2f50c06c322f",
             "label": "stool",
-            "components": [],
             "texture": {
                 "key": "hotelspa",
                 "frame": "stool"
             },
             "x": 774,
-            "y": 401,
-            "list": []
+            "y": 401
         }
     ],
     "plainObjects": [],
@@ -692,7 +616,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

@@ -108,10 +108,8 @@ export default class ClothingCatalog extends Book {
             releaseDate: '1970-01-01',
             frontPenguin: 'pink-starlight-springtime',
             backgrounds: [901, 902, 903, 904, 905, 906, 907, 908],
-            new: [
-                //{background: 1, leftItems: [101], rightItems: [102]},
-            ],
-            party: [],
+            new: [{background: 1, leftItems: [101], rightItems: [102]}],
+            party: [{background: 3, leftItems: [413], rightItems: [4200, 87]}],
             returning: [],
             lastChance: []
         }

@@ -408,6 +408,7 @@ export default class HotelLobby extends RoomScene {
     }
 
     puffleEat(gameObject, animation) {
+        if (!this.shell.client.penguin.puffleSprite) return
         let x = gameObject.__MoveTo.x
         let y = gameObject.__MoveTo.y
         this.shell.client.penguin.afterMove = () => {
@@ -449,6 +450,7 @@ export default class HotelLobby extends RoomScene {
     }
 
     puffleSleep(gameObject) {
+        if (!this.shell.client.penguin.puffleSprite) return
         let x = gameObject.__MoveTo.x
         let y = gameObject.__MoveTo.y
         this.shell.client.penguin.afterMove = () => {
