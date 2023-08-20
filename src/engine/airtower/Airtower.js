@@ -34,6 +34,15 @@ export default class Airtower {
         return inf
     }
 
+    get language() {
+        for (let lang of ['en', 'es', 'pt']) {
+            if (window.location.pathname.includes(lang)) {
+                return lang
+            }
+        }
+        return 'en'
+    }
+
     // Generate primary encryption keys
 
     caesarCipherEncryptHex(text, key) {
@@ -103,7 +112,7 @@ export default class Airtower {
         this.creds = {world: world, username: username, key: key, mode: mode}
         // Only create token if save password is checked and space is available
         let createToken = this.savePassword && Object.keys(this.savedPenguins).length <= 6
-        let response = [username, key, '', createToken]
+        let response = [username, key, '', createToken, this.language]
 
         // If a token exists for the user add the token selector to response,
         // so that the token can be deleted/refreshed by the server
