@@ -77,8 +77,8 @@ export default class ClothingCatalog extends Book {
 
         this.blocker = blocker
         this.pageContainer = pageContainer
-        this.buttons = buttons
         this.coins = coins
+        this.buttons = buttons
         this.pages = pages
 
         this.events.emit('scene-awake')
@@ -88,32 +88,34 @@ export default class ClothingCatalog extends Book {
     blocker
     /** @type {Phaser.GameObjects.Container} */
     pageContainer
-    /** @type {Phaser.GameObjects.Container} */
-    buttons
     /** @type {Phaser.GameObjects.Text} */
     coins
+    /** @type {Phaser.GameObjects.Container} */
+    buttons
     /** @type {Array<any>} */
     pages
 
     /* START-USER-CODE */
 
-    create() {
-        super.create()
-        this.setCoins(this.shell.client.coins)
-        this.loadFromJSON({})
-    }
-
-    loadFromJSON(json) {
-        json = {
-            releaseDate: '1970-01-01',
+    get catJson() {
+        return {
+            releaseDate: '2023-09-01',
             frontPenguin: 'pink-starlight-springtime',
             backgrounds: [901, 902, 903, 904, 905, 906, 907, 908],
             new: [{background: 1, leftItems: [101], rightItems: [102]}],
-            party: [{background: 3, leftItems: [413], rightItems: [4200, 87]}],
+            party: [{background: 3, leftItems: [413], rightItems: [4200, 187]}],
             returning: [],
             lastChance: []
         }
+    }
 
+    create() {
+        super.create()
+        this.setCoins(this.shell.client.coins)
+        this.loadFromJSON(this.catJson)
+    }
+
+    loadFromJSON(json) {
         this.releaseDate = new Date(json.releaseDate)
         this.pages = []
 

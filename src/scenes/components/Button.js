@@ -39,12 +39,12 @@ export default class Button extends SimpleButton {
     get spriteName() {
         let frameName = this.gameObject.frame ? this.gameObject.frame.name : this.gameObject.textureFrame
 
-        if (frameName.includes('-es-')) {
-            frameName = frameName.replace('-es-', '-')
-        } else if (frameName.includes('-pt-')) {
-            frameName = frameName.replace('-pt-', '-')
-        } else if (frameName.includes('-en-')) {
-            frameName = frameName.replace('-en-', '-')
+        if (frameName.includes('-es')) {
+            frameName = frameName.replace('-es', '')
+        } else if (frameName.includes('-pt')) {
+            frameName = frameName.replace('-pt', '')
+        } else if (frameName.includes('-en')) {
+            frameName = frameName.replace('-en', '')
         }
 
         if (frameName.includes('-hover')) {
