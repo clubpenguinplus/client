@@ -193,6 +193,11 @@ export default class InterfaceController extends BaseScene {
         }
     }
 
+    updateEPFMedals(medals) {
+        if (!this.book) return
+        this.book.setMedals(medals)
+    }
+
     updateCatalogCoins(coins) {
         if (!this.book) return
         this.book.setCoins(coins)

@@ -76,7 +76,6 @@ export default class EPFPhone extends Closeup {
         this.weeklyMissionsList
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
         /* END-USER-CTR-CODE */
     }
 
@@ -618,6 +617,7 @@ export default class EPFPhone extends Closeup {
     }
 
     create() {
+        this.shell.interface.book = this
         super.create()
         this.interface.main.phone_button.visible = false
         this.phone_container.x = 86
@@ -897,6 +897,10 @@ export default class EPFPhone extends Closeup {
         this.selector.x -= 53.5
 
         this.showGearPenguin()
+    }
+
+    setMedals(medals) {
+        this.your_medals.text = `x${medals}`
     }
 
     /* END-USER-CODE */
