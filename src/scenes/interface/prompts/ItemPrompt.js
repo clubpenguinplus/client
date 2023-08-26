@@ -72,8 +72,17 @@ export default class ItemPrompt extends BaseContainer {
         if (this.inventoryIncludes(item)) {
             return this.interface.prompt.showError(this.shell.crumbs.getError('1'))
         }
+        this.airtower.sendXt('i#gi', `items%${item}`)
+        this.airtower.events.once('gii', this.showAfterEvent.bind(this))
+    }
 
-        this.show(item, this.crumbs.items[item], 'clothing')
+    showAfterEvent(args) {
+        let crumb = {
+            name: this.crumbs.items[args[1]].name,
+            cost: args[3],
+            available: args[4]
+        }
+        this.show(args[1], crumb, 'clothing')
     }
 
     showFurniture(item) {
@@ -83,6 +92,10 @@ export default class ItemPrompt extends BaseContainer {
     show(item, crumb, type) {
         if (!crumb) {
             return
+        }
+
+        if (!crumb.available) {
+            return this.interface.prompt.showError(this.crumbs.getError('2'))
         }
 
         this.item = item

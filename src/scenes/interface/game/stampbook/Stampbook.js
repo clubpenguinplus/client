@@ -1836,6 +1836,7 @@ export default class Stampbook extends BaseScene {
 
         this.total.text = `Total Stamps ${this.getTotalStamps()[1]}/${this.getTotalStamps()[0]}`
         this.pinsCollected = isPlayer ? this.shell.client.inventory['flag'] : args[5].split('|')
+        this.pinsCollected = this.pinsCollected.filter((pin) => ![7186, 7187, 7188, 7189, 7185, 7184, 7183, 7182, 7148, 504, 7096, 502, 533, 514, 535, 500, 505, 529, 538, 507, 540, 536, 506, 525, 508, 530, 548, 546, 542, 537, 517, 526, 518, 539, 513, 7095, 543, 522, 547, 511, 528, 534, 512, 520, 545, 531, 527, 524, 501, 519, 541, 503, 510, 509, 521, 516, 544, 515, 523].includes(pin))
         let customStamps = isPlayer ? this.shell.client.customStamps : args[6]
         for (let cs of customStamps.split('|')) {
             if (!cs.includes(':')) continue
@@ -1932,7 +1933,7 @@ export default class Stampbook extends BaseScene {
             cs.setInteractive({draggable: true, pixelPerfect: true})
         }
 
-        this.showEditorStamps('All Stamps', 'categories/9000', this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.shell.client.inventory['flag'].map((pin) => `pin/${pin}`)))
+        this.showEditorStamps('All Stamps', 'categories/9000', this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.pinsCollected.map((pin) => `pin/${pin}`)))
     }
 
     saveStampbook() {
@@ -2343,7 +2344,7 @@ export default class Stampbook extends BaseScene {
 
     createPin(pinId, x, y, visible) {
         const pin = this.add.image(x, y, 'clothing/icon/' + pinId)
-        this.airtower.sendXt('i#gi', pinId)
+        this.airtower.sendXt('i#gi', `items%${pinId}`)
         pin.setInteractive({
             cursor: 'pointer'
         })
@@ -2358,7 +2359,7 @@ export default class Stampbook extends BaseScene {
             this.stampInfoTitle.text = this.crumbs.items[pinId].name
             let releaseDate = 'Never'
             if (this.crumbs.items[pinId].releases && this.crumbs.items[pinId].releases.length > 0) {
-                let rDate = new Date(parseInt(this.crumbs.items[pinId].releases[0].from))
+                let rDate = new Date(this.crumbs.items[pinId].releases[0].releaseDate)
                 let month = this.crumbs.getString(`month${rDate.getMonth()}`)
                 releaseDate = `${month} ${rDate.getDate()}/${rDate.getFullYear()}`
             }
@@ -2439,7 +2440,7 @@ export default class Stampbook extends BaseScene {
             pins[i][1].visible = true
         }
 
-        if (this.pinPage == Math.ceil(this.shell.client.inventory['flag'].length / 32) - 1) {
+        if (this.pinPage == Math.ceil(this.pinsCollected.length / 32) - 1) {
             this.down_arrow.visible = false
             this.down_btn.visible = false
         }
@@ -2538,7 +2539,7 @@ export default class Stampbook extends BaseScene {
             }
 
             if (page.id == 'pins') {
-                for (let pin of this.shell.client.inventory['flag']) {
+                for (let pin of this.pinsCollected) {
                     newPage.stamps.push(`pin/${pin}`)
                 }
             }
@@ -2565,7 +2566,7 @@ export default class Stampbook extends BaseScene {
         pages.push({
             text: 'All Stamps',
             icon: 'categories/9000',
-            stamps: this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.shell.client.inventory['flag'].map((pin) => `pin/${pin}`)),
+            stamps: this.shell.client.stamps.map((stamp) => `stamp/${stamp}`).concat(this.pinsCollected.map((pin) => `pin/${pin}`)),
             children: []
         })
 
