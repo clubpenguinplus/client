@@ -368,12 +368,12 @@
                             "id": "b321f0ff-14f5-42e6-a496-66d1cf4318fe",
                             "label": "your_medals",
                             "scope": "CLASS",
-                            "x": 92,
+                            "x": 155,
                             "y": 68,
-                            "originX": 0.5,
+                            "originX": 1,
                             "originY": 0.5,
                             "text": "x88888",
-                            "align": "center",
+                            "align": "right",
                             "fontFamily": "cpRasterGothTwentyEightCnd",
                             "fontSize": "50px",
                             "fontStyle": "bold",
@@ -401,12 +401,13 @@
                             "label": "gearPenguin",
                             "scope": "CLASS",
                             "x": 156,
-                            "y": 236
+                            "y": 216
                         },
                         {
                             "type": "Image",
                             "id": "018d9b79-0ad7-4d18-b095-38e974dd5b24",
                             "label": "body_item_trace",
+                            "scope": "CLASS",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "body-item-trace"
@@ -418,6 +419,7 @@
                             "type": "Image",
                             "id": "9eb556d4-c6f4-47a3-97d5-fda2ab585494",
                             "label": "face_item_trace",
+                            "scope": "CLASS",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "face-item-trace"
@@ -429,6 +431,7 @@
                             "type": "Image",
                             "id": "83be943d-c619-4f5f-b4c6-eb3a782bbc96",
                             "label": "feet_item_trace",
+                            "scope": "CLASS",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "feet-item-trace"
@@ -440,6 +443,7 @@
                             "type": "Image",
                             "id": "218a4557-8e2c-4ebd-ba0e-cc5403c87f1c",
                             "label": "head_item_trace",
+                            "scope": "CLASS",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "head-item-trace"
@@ -451,6 +455,7 @@
                             "type": "Image",
                             "id": "b51a6111-4ae0-44ac-add5-9aef3c1b4318",
                             "label": "buy_head_item",
+                            "scope": "CLASS",
                             "components": [
                                 "Button"
                             ],
@@ -466,6 +471,7 @@
                             "type": "Image",
                             "id": "ec53903a-1c76-4e66-a6fa-f7dd757c6b9a",
                             "label": "buy_body_item",
+                            "scope": "CLASS",
                             "components": [
                                 "Button"
                             ],
@@ -481,6 +487,7 @@
                             "type": "Image",
                             "id": "54a322dd-1ce6-4c25-8dcc-0fc76d52f8f3",
                             "label": "buy_face_item",
+                            "scope": "CLASS",
                             "components": [
                                 "Button"
                             ],
@@ -496,6 +503,7 @@
                             "type": "Image",
                             "id": "52120b4e-3315-4fb4-adcf-36e36d7d5adf",
                             "label": "buy_feet_item",
+                            "scope": "CLASS",
                             "components": [
                                 "Button"
                             ],
@@ -641,6 +649,7 @@
                             "type": "Image",
                             "id": "3f38ce00-bbee-4ca1-af2d-2186d01ec9d6",
                             "label": "selector",
+                            "scope": "CLASS",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "selector"

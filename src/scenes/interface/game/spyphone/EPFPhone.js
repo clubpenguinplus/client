@@ -36,6 +36,22 @@ export default class EPFPhone extends Closeup {
         this.your_medals
         /** @type {GearPenguin} */
         this.gearPenguin
+        /** @type {Phaser.GameObjects.Image} */
+        this.body_item_trace
+        /** @type {Phaser.GameObjects.Image} */
+        this.face_item_trace
+        /** @type {Phaser.GameObjects.Image} */
+        this.feet_item_trace
+        /** @type {Phaser.GameObjects.Image} */
+        this.head_item_trace
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_head_item
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_body_item
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_face_item
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_feet_item
         /** @type {Phaser.GameObjects.Text} */
         this.head_item_price
         /** @type {Phaser.GameObjects.Text} */
@@ -46,6 +62,8 @@ export default class EPFPhone extends Closeup {
         this.feet_item_price
         /** @type {Phaser.GameObjects.Text} */
         this.refil_timer
+        /** @type {Phaser.GameObjects.Image} */
+        this.selector
         /** @type {Phaser.GameObjects.Container} */
         this.gear_page
         /** @type {Phaser.GameObjects.Container} */
@@ -201,10 +219,10 @@ export default class EPFPhone extends Closeup {
         gear_page.add(gear_title)
 
         // your_medals
-        const your_medals = this.add.text(92, 68, '', {})
-        your_medals.setOrigin(0.5, 0.5)
+        const your_medals = this.add.text(155, 68, '', {})
+        your_medals.setOrigin(1, 0.5)
         your_medals.text = 'x88888'
-        your_medals.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
+        your_medals.setStyle({align: 'right', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
         gear_page.add(your_medals)
 
         // your_medals_icon
@@ -214,7 +232,7 @@ export default class EPFPhone extends Closeup {
         gear_page.add(your_medals_icon)
 
         // gearPenguin
-        const gearPenguin = new GearPenguin(this, 156, 236)
+        const gearPenguin = new GearPenguin(this, 156, 216)
         gear_page.add(gearPenguin)
 
         // body_item_trace
@@ -539,11 +557,20 @@ export default class EPFPhone extends Closeup {
         this.missions_page = missions_page
         this.your_medals = your_medals
         this.gearPenguin = gearPenguin
+        this.body_item_trace = body_item_trace
+        this.face_item_trace = face_item_trace
+        this.feet_item_trace = feet_item_trace
+        this.head_item_trace = head_item_trace
+        this.buy_head_item = buy_head_item
+        this.buy_body_item = buy_body_item
+        this.buy_face_item = buy_face_item
+        this.buy_feet_item = buy_feet_item
         this.head_item_price = head_item_price
         this.body_item_price = body_item_price
         this.face_item_price = face_item_price
         this.feet_item_price = feet_item_price
         this.refil_timer = refil_timer
+        this.selector = selector
         this.gear_page = gear_page
         this.select_page = select_page
         this.phone_container = phone_container
@@ -555,7 +582,40 @@ export default class EPFPhone extends Closeup {
 
     /* START-USER-CODE */
 
-    // Write your code here
+    get gearPenguinItems() {
+        return [
+            {
+                head: {id: 1149, cost: 14},
+                face: {id: 2021, cost: 10},
+                body: {id: 4223, cost: 18},
+                feet: {id: 6042, cost: 8}
+            },
+            {
+                head: {id: 1150, cost: 10},
+                face: {id: 2022, cost: 10},
+                body: {id: 4224, cost: 18},
+                feet: {id: 6043, cost: 8}
+            },
+            {
+                head: {id: 0, cost: 0},
+                face: {id: 1217, cost: 12},
+                body: {id: 4300, cost: 10},
+                feet: {id: 0, cost: 0}
+            },
+            {
+                head: {id: 1201, cost: 14},
+                face: {id: 0, cost: 0},
+                body: {id: 4282, cost: 20},
+                feet: {id: 6057, cost: 16}
+            },
+            {
+                head: {id: 0, cost: 0},
+                face: {id: 0, cost: 0},
+                body: {id: 4258, cost: 20},
+                feet: {id: 6049, cost: 20}
+            }
+        ]
+    }
 
     create() {
         super.create()
@@ -582,6 +642,23 @@ export default class EPFPhone extends Closeup {
         this.airtower.events.once('epfgc', (args) => this.onGetMissions(args))
         this.airtower.sendXt('epf#gc')
         this.showSelectPage()
+
+        const refillDate = new Date(2023, 10, 1, 8)
+        const now = new Date()
+        const diff = refillDate - now
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+        const hours = Math.floor(diff / (1000 * 60 * 60)) % 24
+        const minutes = Math.floor(diff / (1000 * 60)) % 60
+
+        if (days > 0) {
+            this.refil_timer.text = `${days} days`
+        } else if (hours > 0) {
+            this.refil_timer.text = `${hours} hours`
+        } else if (minutes > 0) {
+            this.refil_timer.text = `${minutes} minutes`
+        } else {
+            this.refil_timer.text = 'Soon'
+        }
     }
 
     stop() {
@@ -631,6 +708,35 @@ export default class EPFPhone extends Closeup {
     showGearPage() {
         this.select_page.visible = false
         this.gear_page.visible = true
+
+        this.selector.x = 55
+        this.gearPageNum = 1
+
+        this.your_medals.text = `x${this.shell.client.medals}`
+
+        this.showGearPenguin()
+    }
+
+    showGearPenguin() {
+        let penguinObject = {}
+
+        for (let s of ['head', 'face', 'body', 'feet']) {
+            let item = this.gearPenguinItems[this.gearPageNum - 1][s]
+            if (item.id > 0) {
+                penguinObject[s] = item.id
+                this[`${s}_item_price`].text = `x${item.cost}`
+
+                this[`${s}_item_price`].visible = true
+                this[`buy_${s}_item`].visible = true
+                this[`${s}_item_trace`].visible = true
+            } else {
+                this[`${s}_item_price`].visible = false
+                this[`buy_${s}_item`].visible = false
+                this[`${s}_item_trace`].visible = false
+            }
+        }
+
+        this.gearPenguin.loadDoll(penguinObject)
     }
 
     showMissionsPage() {
@@ -759,6 +865,38 @@ export default class EPFPhone extends Closeup {
                 cPrefab.createItem()
             }
         }
+    }
+
+    purchaseCurrentBodyItem() {
+        this.interface.prompt.showItem(this.gearPenguinItems[this.gearPageNum - 1].body.id, true)
+    }
+
+    purchaseCurrentHeadItem() {
+        this.interface.prompt.showItem(this.gearPenguinItems[this.gearPageNum - 1].head.id, true)
+    }
+
+    purchaseCurrentFaceItem() {
+        this.interface.prompt.showItem(this.gearPenguinItems[this.gearPageNum - 1].face.id, true)
+    }
+
+    purchaseCurrentFeetItem() {
+        this.interface.prompt.showItem(this.gearPenguinItems[this.gearPageNum - 1].feet.id, true)
+    }
+
+    nextItemsPage() {
+        if (this.gearPageNum == 5) return
+        this.gearPageNum++
+        this.selector.x += 53.5
+
+        this.showGearPenguin()
+    }
+
+    prevItemsPage() {
+        if (this.gearPageNum == 1) return
+        this.gearPageNum--
+        this.selector.x -= 53.5
+
+        this.showGearPenguin()
     }
 
     /* END-USER-CODE */

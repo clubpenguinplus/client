@@ -4,9 +4,18 @@ import PaperDollLoader from '@engine/loaders/PaperDollLoader'
 
 /* START OF COMPILED CODE */
 
-export default class GearPenguin extends Phaser.GameObjects.Image {
-    constructor(scene, x, y, texture, frame) {
-        super(scene, x ?? 0, y ?? 0, texture || 'epfphone', frame ?? 'agentpenguin')
+export default class GearPenguin extends BaseContainer {
+    constructor(scene, x, y) {
+        super(scene, x ?? 0, y ?? 0)
+
+        this.scaleX = 0.782608694
+        this.scaleY = 0.782608694
+
+        // agentpenguin
+        const agentpenguin = scene.add.image(0, 20, 'epfphone', 'agentpenguin')
+        agentpenguin.scaleX = 1.27777778
+        agentpenguin.scaleY = 1.27777778
+        this.add(agentpenguin)
 
         /* START-USER-CTR-CODE */
 
@@ -83,23 +92,9 @@ export default class GearPenguin extends Phaser.GameObjects.Image {
         this.paperDollLoader.loadItems(penguin)
     }
 
-    /**
-     * Enables input on body and paperdoll sprites,
-     * does not include clothing items.
-     */
-    enableInput() {
-        this.body.setInteractive({pixelPerfect: true})
-        this.paperdoll.setInteractive({pixelPerfect: true})
-    }
+    disableInput() {}
 
-    /**
-     * Disables input on body and paperdoll sprites,
-     * does not include clothing items.
-     */
-    disableInput() {
-        this.body.removeInteractive()
-        this.paperdoll.removeInteractive()
-    }
+    enableInput() {}
 
     /* END-USER-CODE */
 }

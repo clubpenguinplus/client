@@ -68,11 +68,11 @@ export default class ItemPrompt extends BaseContainer {
 
     /* START-USER-CODE */
 
-    showItem(item) {
+    showItem(item, isMedals = false) {
         if (this.inventoryIncludes(item)) {
             return this.interface.prompt.showError(this.shell.crumbs.getError('1'))
         }
-        this.airtower.sendXt('i#gi', `items%${item}`)
+        this.airtower.sendXt('i#gi', `items%${item}%${isMedals ? 1 : 0}`)
         this.airtower.events.once('gii', this.showAfterEvent.bind(this))
     }
 
@@ -80,7 +80,8 @@ export default class ItemPrompt extends BaseContainer {
         let crumb = {
             name: this.crumbs.items[args[1]].name,
             cost: args[3],
-            available: args[4]
+            available: args[4],
+            medals: args[6]
         }
         this.show(args[1], crumb, 'clothing')
     }
@@ -100,8 +101,9 @@ export default class ItemPrompt extends BaseContainer {
 
         this.item = item
         this.type = type
+        this.medals = crumb.medals || 0
 
-        this.text.text = this.getText(crumb.name, crumb.cost)
+        this.text.text = this.getText(crumb.name, crumb.cost, crumb.medals)
         this.visible = true
 
         this.loader.loadIcon(item)
@@ -111,8 +113,10 @@ export default class ItemPrompt extends BaseContainer {
         return this.shell.client.hasItem(item)
     }
 
-    getText(name, cost) {
-        if (cost < 1) {
+    getText(name, cost, medals) {
+        if (medals > 0) {
+            return this.crumbs.getString(`medals-item-popup,${name},${medals},${this.shell.client.medals}`)
+        } else if (cost < 1) {
             return this.crumbs.getString(`free-item-popup,${name}`)
         } else {
             return this.crumbs.getString(`paid-item-popup,${name},${cost},${this.shell.client.coins}`)
@@ -121,7 +125,11 @@ export default class ItemPrompt extends BaseContainer {
 
     callback() {
         if (this.item) {
-            this.sendAddItem()
+            if (this.medals > 0) {
+                this.airtower.sendXt('i#aim', this.item)
+            } else {
+                this.sendAddItem()
+            }
         }
 
         this.visible = false

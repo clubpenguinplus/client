@@ -101,9 +101,18 @@ export default class ClothingCatalog extends Book {
         return {
             releaseDate: '2023-09-01',
             frontPenguin: 'pink-starlight-springtime',
-            backgrounds: [901, 902, 903, 904, 905, 906, 907, 908],
-            new: [{background: 1, leftItems: [101], rightItems: [102]}],
-            party: [{background: 3, leftItems: [413], rightItems: [4200, 187]}],
+            backgrounds: [901, 985, 9275, 904, 905, 926, 907, 908],
+            new: [
+                {background: 1, leftItems: [1690, 1689, 1655, 4945, 4944, 4908, 5349, 3215, 6155], rightItems: [1657, 4909, 6181, 1227, 24194, 6109, 417, 243], comments: 'the cool page'},
+                {background: 16, leftItems: [1007, 3004, 1911, 4311, 24196, 352, 6233], rightItems: [24199], comments: 'agentg'},
+                {background: 4, leftItems: [3227, 3225, 3226, 3221], rightItems: [3222, 5489, 5506, 5491], comments: 'nov2014 assorted items'},
+                {background: 10, leftItems: [1125, 101, 214, 294, 334, 358, 423, 261], rightItems: [1040, 119, 3015, 4065, 323, 6015], comments: 'fancy schmancy'},
+                {background: 20, leftItems: [446, 103, 172, 265, 346, 5196, 351], rightItems: [24280, 201, 202, 4808, 366], comments: 'my page (the jeff the rock page :trol:)'},
+                {background: 2, leftItems: [221, 4046, 222, 223, 4108, 4009, 4259], rightItems: [3109, 3111, 3115, 3112, 3078, 3110, 3114, 3108, 3113], comments: 'hoodies n boas'},
+                {background: 18, leftItems: [176, 187, 167, 188], rightItems: [3238, 3005, 189, 177], comments: 'ties'},
+                {background: 16, leftItems: [131, 139, 135, 132, 382, 367], rightItems: [1663, 4199, 21090, 763, 239, 364, 362], comments: 'snorkels and tourdude'}
+            ],
+            party: [],
             returning: [],
             lastChance: []
         }

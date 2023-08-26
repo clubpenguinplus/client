@@ -4,6 +4,7 @@
     "settings": {
         "compilerInsertSpaces": true,
         "exportClass": true,
+        "superClassName": "BaseContainer",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -12,13 +13,25 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "c9de864f-c303-4b25-a130-640c90c55892",
-            "label": "agentpenguin",
-            "texture": {
-                "key": "epfphone",
-                "frame": "agentpenguin"
-            }
+            "type": "Container",
+            "id": "a41710f8-2b1d-4293-94c4-737fce0a33ec",
+            "label": "container_1",
+            "scaleX": 0.782608694,
+            "scaleY": 0.782608694,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c9de864f-c303-4b25-a130-640c90c55892",
+                    "label": "agentpenguin",
+                    "texture": {
+                        "key": "epfphone",
+                        "frame": "agentpenguin"
+                    },
+                    "y": 20,
+                    "scaleX": 1.27777778,
+                    "scaleY": 1.27777778
+                }
+            ]
         }
     ],
     "plainObjects": [],
