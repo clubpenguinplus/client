@@ -69,7 +69,7 @@
                         "InputText"
                     ],
                     "InputText.charlimit": 80,
-                    "InputText.inputfilter": "/^[A-Z !?.,:;0-9]*$/i",
+                    "InputText.inputfilter": "/^[a-zA-ZÀ-ÿÁáÉéÍíÓóÚúÜüÑñÇç !?.,:;0-9]*$/i",
                     "InputText.entercallback": "() => this.onChatSend()",
                     "originY": 0.5,
                     "fixedWidth": 476,
