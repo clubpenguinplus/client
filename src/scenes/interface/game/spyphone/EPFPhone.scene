@@ -48,22 +48,7 @@
                         "frame": "bg"
                     },
                     "x": -0.01738439992061558,
-                    "y": -0.026804403675726007
-                },
-                {
-                    "type": "Image",
-                    "id": "71566725-96dd-436c-90e1-254390e83383",
-                    "label": "home_btn",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.goToHQ()",
-                    "texture": {
-                        "key": "epfphone",
-                        "frame": "home-btn"
-                    },
-                    "x": 0.4826156000793844,
-                    "y": 363.9731955963243
+                    "y": 3.973195596324274
                 },
                 {
                     "type": "Container",
@@ -316,11 +301,376 @@
                 },
                 {
                     "type": "Container",
+                    "id": "890e8e13-a742-49cb-9ee7-68c789e82f35",
+                    "label": "gear_page",
+                    "scope": "CLASS",
+                    "x": -161,
+                    "y": -238,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "99d86a22-97b9-4bd6-85ba-0c32710a63b3",
+                            "label": "shop",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "shop"
+                            },
+                            "x": 161,
+                            "y": 243
+                        },
+                        {
+                            "type": "Image",
+                            "id": "580b9190-8e94-4e6b-a02d-b06f9b1c8486",
+                            "label": "right_button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.nextItemsPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "left-arrow"
+                            },
+                            "x": 328,
+                            "y": 520
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9066dc0f-01ce-4375-aa3d-8fb82b255c20",
+                            "label": "left_button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.prevItemsPage()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "right-arrow"
+                            },
+                            "x": 4,
+                            "y": 520
+                        },
+                        {
+                            "type": "Text",
+                            "id": "771a824a-1313-417f-8a3e-1e86e7ffc7df",
+                            "label": "gear_title",
+                            "x": 185,
+                            "y": -18,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "EQUIPMENT SHOP",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "b321f0ff-14f5-42e6-a496-66d1cf4318fe",
+                            "label": "your_medals",
+                            "scope": "CLASS",
+                            "x": 92,
+                            "y": 68,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "x88888",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ac250175-4729-4e94-a719-c22ba608691d",
+                            "label": "your_medals_icon",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "gear-btn-hover"
+                            },
+                            "y": 68,
+                            "scaleX": 0.2706229658470357,
+                            "scaleY": 0.2706229658470357
+                        },
+                        {
+                            "prefabId": "2babe67f-aac6-40eb-a1ea-3ae6c1600c6b",
+                            "id": "e569a5e7-be99-4727-a20a-70960be741e5",
+                            "unlock": [
+                                "x",
+                                "y"
+                            ],
+                            "label": "gearPenguin",
+                            "scope": "CLASS",
+                            "x": 156,
+                            "y": 236
+                        },
+                        {
+                            "type": "Image",
+                            "id": "018d9b79-0ad7-4d18-b095-38e974dd5b24",
+                            "label": "body_item_trace",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "body-item-trace"
+                            },
+                            "x": 216,
+                            "y": 226
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9eb556d4-c6f4-47a3-97d5-fda2ab585494",
+                            "label": "face_item_trace",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "face-item-trace"
+                            },
+                            "x": 98,
+                            "y": 169
+                        },
+                        {
+                            "type": "Image",
+                            "id": "83be943d-c619-4f5f-b4c6-eb3a782bbc96",
+                            "label": "feet_item_trace",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "feet-item-trace"
+                            },
+                            "x": 53,
+                            "y": 320
+                        },
+                        {
+                            "type": "Image",
+                            "id": "218a4557-8e2c-4ebd-ba0e-cc5403c87f1c",
+                            "label": "head_item_trace",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "head-item-trace"
+                            },
+                            "x": 232,
+                            "y": 119
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b51a6111-4ae0-44ac-add5-9aef3c1b4318",
+                            "label": "buy_head_item",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.purchaseCurrentHeadItem()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "buy-btn"
+                            },
+                            "x": 274,
+                            "y": 78
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ec53903a-1c76-4e66-a6fa-f7dd757c6b9a",
+                            "label": "buy_body_item",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.purchaseCurrentBodyItem()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "buy-btn"
+                            },
+                            "x": 262,
+                            "y": 161
+                        },
+                        {
+                            "type": "Image",
+                            "id": "54a322dd-1ce6-4c25-8dcc-0fc76d52f8f3",
+                            "label": "buy_face_item",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.purchaseCurrentFaceItem()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "buy-btn"
+                            },
+                            "x": 58,
+                            "y": 146
+                        },
+                        {
+                            "type": "Image",
+                            "id": "52120b4e-3315-4fb4-adcf-36e36d7d5adf",
+                            "label": "buy_feet_item",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.callback": "() => this.purchaseCurrentFeetItem()",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "buy-btn"
+                            },
+                            "x": 9,
+                            "y": 275
+                        },
+                        {
+                            "type": "Text",
+                            "id": "70c725a0-79cd-4556-a3fa-d4a35d55750f",
+                            "label": "head_item_price",
+                            "scope": "CLASS",
+                            "x": 289,
+                            "y": 78,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "x8",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "32px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff",
+                            "shadow.offsetX": 1,
+                            "shadow.offsetY": 1,
+                            "shadow.fill": true,
+                            "shadow.color": "#033a37ff",
+                            "shadow.blur": 3
+                        },
+                        {
+                            "type": "Text",
+                            "id": "6da8e686-2b08-4c98-91bb-6fedac999104",
+                            "label": "body_item_price",
+                            "scope": "CLASS",
+                            "x": 277,
+                            "y": 161,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "x8",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "32px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff",
+                            "shadow.offsetX": 1,
+                            "shadow.offsetY": 1,
+                            "shadow.fill": true,
+                            "shadow.color": "#033a37ff",
+                            "shadow.blur": 3
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1e372f76-16a4-41e7-8ce6-88dfcf9da053",
+                            "label": "face_item_price",
+                            "scope": "CLASS",
+                            "x": 72,
+                            "y": 146,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "x8",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "32px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff",
+                            "shadow.offsetX": 1,
+                            "shadow.offsetY": 1,
+                            "shadow.fill": true,
+                            "shadow.color": "#033a37ff",
+                            "shadow.blur": 3
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c10fddfd-b09a-4db8-b839-96a9b6506672",
+                            "label": "feet_item_price",
+                            "scope": "CLASS",
+                            "x": 26,
+                            "y": 275,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "x8",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "32px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff",
+                            "shadow.offsetX": 1,
+                            "shadow.offsetY": 1,
+                            "shadow.fill": true,
+                            "shadow.color": "#033a37ff",
+                            "shadow.blur": 3
+                        },
+                        {
+                            "type": "Text",
+                            "id": "155c9077-94e7-40dc-b333-d0272381b39f",
+                            "label": "refill_text",
+                            "x": 156,
+                            "y": 411,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "NEW ITEMS IN:",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "2d4dafa8-435b-4962-923b-7bdeb717d775",
+                            "label": "refil_timer",
+                            "scope": "CLASS",
+                            "x": 156,
+                            "y": 454,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "24 days",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "b57d6f4c-9562-4976-bd00-f7824996ff30",
+                            "label": "pages",
+                            "x": 163,
+                            "y": 521,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "1   2   3   4   5",
+                            "align": "center",
+                            "fontFamily": "cpRasterGothTwentyEightCnd",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#7eecdeff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3f38ce00-bbee-4ca1-af2d-2186d01ec9d6",
+                            "label": "selector",
+                            "texture": {
+                                "key": "epfphone",
+                                "frame": "selector"
+                            },
+                            "x": 55,
+                            "y": 522
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "5abe3429-4ae6-4e4b-a386-84d9b62e2b29",
+                            "label": "g_goBack_btn",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.showSelectPage()",
+                            "x": 5,
+                            "y": -17,
+                            "width": 50,
+                            "height": 50
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
                     "id": "2870e93b-1dac-4c98-8da1-226f9770520a",
                     "label": "select_page",
                     "scope": "CLASS",
-                    "x": -90.01738439992062,
+                    "x": -91.01738439992062,
                     "y": -205.02680440367573,
+                    "visible": false,
                     "list": [
                         {
                             "type": "Text",
@@ -346,7 +696,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
+                            "Button.callback": "() => this.showGearPage()",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "gear-btn"
@@ -379,7 +729,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
+                            "Button.callback": "() => this.showMissionsPage()",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "missions-btn"
@@ -446,7 +796,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
+                            "Button.callback": "() => this.showMessagesPage()",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "messages-btn"
@@ -480,7 +830,7 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.interface.prompt.showError(this.shell.crumbs.getError(54))",
+                            "Button.callback": "() => this.showGadgetsPage()",
                             "texture": {
                                 "key": "epfphone",
                                 "frame": "gadgets-button"
@@ -530,8 +880,34 @@
                 },
                 {
                     "type": "Image",
+                    "id": "65826f5e-c998-4cb3-a1c1-f784439196fe",
+                    "label": "fg",
+                    "texture": {
+                        "key": "epfphone",
+                        "frame": "fg"
+                    },
+                    "x": -0.03729248046875,
+                    "y": 0.1182861328125
+                },
+                {
+                    "type": "Image",
+                    "id": "71566725-96dd-436c-90e1-254390e83383",
+                    "label": "home_btn",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.goToHQ()",
+                    "texture": {
+                        "key": "epfphone",
+                        "frame": "home-btn"
+                    },
+                    "x": 0.4826156000793844,
+                    "y": 363.9731955963243
+                },
+                {
+                    "type": "Image",
                     "id": "04c85812-745b-4893-9b59-34e1d1fd17f0",
-                    "label": "white_x",
+                    "label": "exit",
                     "components": [
                         "SimpleButton"
                     ],

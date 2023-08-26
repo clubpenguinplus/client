@@ -1,6 +1,7 @@
 import Closeup from '@scenes/interface/closeups/Closeup'
 import TeleportItem from './TeleportItem'
 import MissionItem from './MissionItem'
+import GearPenguin from './GearPenguin'
 import {Button, LocalisedString, Interactive, SimpleButton} from '@components/components'
 
 /* START OF COMPILED CODE */
@@ -31,6 +32,22 @@ export default class EPFPhone extends Closeup {
         this.daily_m1
         /** @type {Phaser.GameObjects.Container} */
         this.missions_page
+        /** @type {Phaser.GameObjects.Text} */
+        this.your_medals
+        /** @type {GearPenguin} */
+        this.gearPenguin
+        /** @type {Phaser.GameObjects.Text} */
+        this.head_item_price
+        /** @type {Phaser.GameObjects.Text} */
+        this.body_item_price
+        /** @type {Phaser.GameObjects.Text} */
+        this.face_item_price
+        /** @type {Phaser.GameObjects.Text} */
+        this.feet_item_price
+        /** @type {Phaser.GameObjects.Text} */
+        this.refil_timer
+        /** @type {Phaser.GameObjects.Container} */
+        this.gear_page
         /** @type {Phaser.GameObjects.Container} */
         this.select_page
         /** @type {Phaser.GameObjects.Container} */
@@ -62,12 +79,8 @@ export default class EPFPhone extends Closeup {
         const phone_container = this.add.container(760, 460)
 
         // bg
-        const bg = this.add.image(-0.01738439992061558, -0.026804403675726007, 'epfphone', 'bg')
+        const bg = this.add.image(-0.01738439992061558, 3.973195596324274, 'epfphone', 'bg')
         phone_container.add(bg)
-
-        // home_btn
-        const home_btn = this.add.image(0.4826156000793844, 363.9731955963243, 'epfphone', 'home-btn')
-        phone_container.add(home_btn)
 
         // teleport_page
         const teleport_page = this.add.container(-149, -246)
@@ -164,8 +177,138 @@ export default class EPFPhone extends Closeup {
         const m_goBack_btn = this.add.rectangle(292, -235, 50, 50)
         missions_page.add(m_goBack_btn)
 
+        // gear_page
+        const gear_page = this.add.container(-161, -238)
+        phone_container.add(gear_page)
+
+        // shop
+        const shop = this.add.image(161, 243, 'epfphone', 'shop')
+        gear_page.add(shop)
+
+        // right_button
+        const right_button = this.add.image(328, 520, 'epfphone', 'left-arrow')
+        gear_page.add(right_button)
+
+        // left_button
+        const left_button = this.add.image(4, 520, 'epfphone', 'right-arrow')
+        gear_page.add(left_button)
+
+        // gear_title
+        const gear_title = this.add.text(185, -18, '', {})
+        gear_title.setOrigin(0.5, 0.5)
+        gear_title.text = 'EQUIPMENT SHOP'
+        gear_title.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
+        gear_page.add(gear_title)
+
+        // your_medals
+        const your_medals = this.add.text(92, 68, '', {})
+        your_medals.setOrigin(0.5, 0.5)
+        your_medals.text = 'x88888'
+        your_medals.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
+        gear_page.add(your_medals)
+
+        // your_medals_icon
+        const your_medals_icon = this.add.image(0, 68, 'epfphone', 'gear-btn-hover')
+        your_medals_icon.scaleX = 0.2706229658470357
+        your_medals_icon.scaleY = 0.2706229658470357
+        gear_page.add(your_medals_icon)
+
+        // gearPenguin
+        const gearPenguin = new GearPenguin(this, 156, 236)
+        gear_page.add(gearPenguin)
+
+        // body_item_trace
+        const body_item_trace = this.add.image(216, 226, 'epfphone', 'body-item-trace')
+        gear_page.add(body_item_trace)
+
+        // face_item_trace
+        const face_item_trace = this.add.image(98, 169, 'epfphone', 'face-item-trace')
+        gear_page.add(face_item_trace)
+
+        // feet_item_trace
+        const feet_item_trace = this.add.image(53, 320, 'epfphone', 'feet-item-trace')
+        gear_page.add(feet_item_trace)
+
+        // head_item_trace
+        const head_item_trace = this.add.image(232, 119, 'epfphone', 'head-item-trace')
+        gear_page.add(head_item_trace)
+
+        // buy_head_item
+        const buy_head_item = this.add.image(274, 78, 'epfphone', 'buy-btn')
+        gear_page.add(buy_head_item)
+
+        // buy_body_item
+        const buy_body_item = this.add.image(262, 161, 'epfphone', 'buy-btn')
+        gear_page.add(buy_body_item)
+
+        // buy_face_item
+        const buy_face_item = this.add.image(58, 146, 'epfphone', 'buy-btn')
+        gear_page.add(buy_face_item)
+
+        // buy_feet_item
+        const buy_feet_item = this.add.image(9, 275, 'epfphone', 'buy-btn')
+        gear_page.add(buy_feet_item)
+
+        // head_item_price
+        const head_item_price = this.add.text(289, 78, '', {})
+        head_item_price.setOrigin(0.5, 0.5)
+        head_item_price.text = 'x8'
+        head_item_price.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#033a37ff', 'shadow.blur': 3, 'shadow.fill': true})
+        gear_page.add(head_item_price)
+
+        // body_item_price
+        const body_item_price = this.add.text(277, 161, '', {})
+        body_item_price.setOrigin(0.5, 0.5)
+        body_item_price.text = 'x8'
+        body_item_price.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#033a37ff', 'shadow.blur': 3, 'shadow.fill': true})
+        gear_page.add(body_item_price)
+
+        // face_item_price
+        const face_item_price = this.add.text(72, 146, '', {})
+        face_item_price.setOrigin(0.5, 0.5)
+        face_item_price.text = 'x8'
+        face_item_price.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#033a37ff', 'shadow.blur': 3, 'shadow.fill': true})
+        gear_page.add(face_item_price)
+
+        // feet_item_price
+        const feet_item_price = this.add.text(26, 275, '', {})
+        feet_item_price.setOrigin(0.5, 0.5)
+        feet_item_price.text = 'x8'
+        feet_item_price.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '32px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#033a37ff', 'shadow.blur': 3, 'shadow.fill': true})
+        gear_page.add(feet_item_price)
+
+        // refill_text
+        const refill_text = this.add.text(156, 411, '', {})
+        refill_text.setOrigin(0.5, 0.5)
+        refill_text.text = 'NEW ITEMS IN:'
+        refill_text.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
+        gear_page.add(refill_text)
+
+        // refil_timer
+        const refil_timer = this.add.text(156, 454, '', {})
+        refil_timer.setOrigin(0.5, 0.5)
+        refil_timer.text = '24 days'
+        refil_timer.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
+        gear_page.add(refil_timer)
+
+        // pages
+        const pages = this.add.text(163, 521, '', {})
+        pages.setOrigin(0.5, 0.5)
+        pages.text = '1   2   3   4   5'
+        pages.setStyle({align: 'center', color: '#7eecdeff', fontFamily: 'cpRasterGothTwentyEightCnd', fontSize: '50px', fontStyle: 'bold'})
+        gear_page.add(pages)
+
+        // selector
+        const selector = this.add.image(55, 522, 'epfphone', 'selector')
+        gear_page.add(selector)
+
+        // g_goBack_btn
+        const g_goBack_btn = this.add.rectangle(5, -17, 50, 50)
+        gear_page.add(g_goBack_btn)
+
         // select_page
-        const select_page = this.add.container(-90.01738439992062, -205.02680440367573)
+        const select_page = this.add.container(-91.01738439992062, -205.02680440367573)
+        select_page.visible = false
         phone_container.add(select_page)
 
         // gear_txt
@@ -248,11 +391,19 @@ export default class EPFPhone extends Closeup {
         puffle_btn.visible = false
         select_page.add(puffle_btn)
 
-        // white_x
-        const white_x = this.add.image(238, -387, 'main', 'white-x')
-        white_x.scaleX = 0.6
-        white_x.scaleY = 0.6
-        phone_container.add(white_x)
+        // fg
+        const fg = this.add.image(-0.03729248046875, 0.1182861328125, 'epfphone', 'fg')
+        phone_container.add(fg)
+
+        // home_btn
+        const home_btn = this.add.image(0.4826156000793844, 363.9731955963243, 'epfphone', 'home-btn')
+        phone_container.add(home_btn)
+
+        // exit
+        const exit = this.add.image(238, -387, 'main', 'white-x')
+        exit.scaleX = 0.6
+        exit.scaleY = 0.6
+        phone_container.add(exit)
 
         // lists
         const dailyMissionsList = [daily_m1, daily_m2, daily_m3]
@@ -260,10 +411,6 @@ export default class EPFPhone extends Closeup {
 
         // block (components)
         new Interactive(block)
-
-        // home_btn (components)
-        const home_btnButton = new Button(home_btn)
-        home_btnButton.callback = () => this.goToHQ()
 
         // tp_header (components)
         const tp_headerLocalisedString = new LocalisedString(tp_header)
@@ -295,13 +442,41 @@ export default class EPFPhone extends Closeup {
         const m_goBack_btnSimpleButton = new SimpleButton(m_goBack_btn)
         m_goBack_btnSimpleButton.callback = () => this.showSelectPage()
 
+        // right_button (components)
+        const right_buttonButton = new Button(right_button)
+        right_buttonButton.callback = () => this.nextItemsPage()
+
+        // left_button (components)
+        const left_buttonButton = new Button(left_button)
+        left_buttonButton.callback = () => this.prevItemsPage()
+
+        // buy_head_item (components)
+        const buy_head_itemButton = new Button(buy_head_item)
+        buy_head_itemButton.callback = () => this.purchaseCurrentHeadItem()
+
+        // buy_body_item (components)
+        const buy_body_itemButton = new Button(buy_body_item)
+        buy_body_itemButton.callback = () => this.purchaseCurrentBodyItem()
+
+        // buy_face_item (components)
+        const buy_face_itemButton = new Button(buy_face_item)
+        buy_face_itemButton.callback = () => this.purchaseCurrentFaceItem()
+
+        // buy_feet_item (components)
+        const buy_feet_itemButton = new Button(buy_feet_item)
+        buy_feet_itemButton.callback = () => this.purchaseCurrentFeetItem()
+
+        // g_goBack_btn (components)
+        const g_goBack_btnSimpleButton = new SimpleButton(g_goBack_btn)
+        g_goBack_btnSimpleButton.callback = () => this.showSelectPage()
+
         // gear_txt (components)
         const gear_txtLocalisedString = new LocalisedString(gear_txt)
         gear_txtLocalisedString.id = 'epfphone-gear'
 
         // gear_btn (components)
         const gear_btnButton = new Button(gear_btn)
-        gear_btnButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
+        gear_btnButton.callback = () => this.showGearPage()
 
         // missions_txt (components)
         const missions_txtLocalisedString = new LocalisedString(missions_txt)
@@ -309,7 +484,7 @@ export default class EPFPhone extends Closeup {
 
         // missions_btn (components)
         const missions_btnButton = new Button(missions_btn)
-        missions_btnButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
+        missions_btnButton.callback = () => this.showMissionsPage()
 
         // teleport_txt (components)
         const teleport_txtLocalisedString = new LocalisedString(teleport_txt)
@@ -325,7 +500,7 @@ export default class EPFPhone extends Closeup {
 
         // messages_btn (components)
         const messages_btnButton = new Button(messages_btn)
-        messages_btnButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
+        messages_btnButton.callback = () => this.showMessagesPage()
 
         // gadgets_txt (components)
         const gadgets_txtLocalisedString = new LocalisedString(gadgets_txt)
@@ -333,7 +508,7 @@ export default class EPFPhone extends Closeup {
 
         // gadgets_button (components)
         const gadgets_buttonButton = new Button(gadgets_button)
-        gadgets_buttonButton.callback = () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
+        gadgets_buttonButton.callback = () => this.showGadgetsPage()
 
         // puffle_txt (components)
         const puffle_txtLocalisedString = new LocalisedString(puffle_txt)
@@ -343,9 +518,13 @@ export default class EPFPhone extends Closeup {
         const puffle_btnButton = new Button(puffle_btn)
         puffle_btnButton.callback = () => this.showElitePufflePage()
 
-        // white_x (components)
-        const white_xSimpleButton = new SimpleButton(white_x)
-        white_xSimpleButton.callback = () => this.stop()
+        // home_btn (components)
+        const home_btnButton = new Button(home_btn)
+        home_btnButton.callback = () => this.goToHQ()
+
+        // exit (components)
+        const exitSimpleButton = new SimpleButton(exit)
+        exitSimpleButton.callback = () => this.stop()
 
         this.tp_anim = tp_anim
         this.tp_text = tp_text
@@ -358,6 +537,14 @@ export default class EPFPhone extends Closeup {
         this.daily_m2 = daily_m2
         this.daily_m1 = daily_m1
         this.missions_page = missions_page
+        this.your_medals = your_medals
+        this.gearPenguin = gearPenguin
+        this.head_item_price = head_item_price
+        this.body_item_price = body_item_price
+        this.face_item_price = face_item_price
+        this.feet_item_price = feet_item_price
+        this.refil_timer = refil_timer
+        this.gear_page = gear_page
         this.select_page = select_page
         this.phone_container = phone_container
         this.dailyMissionsList = dailyMissionsList
@@ -394,9 +581,14 @@ export default class EPFPhone extends Closeup {
         })
         this.airtower.events.once('epfgc', (args) => this.onGetMissions(args))
         this.airtower.sendXt('epf#gc')
+        this.showSelectPage()
     }
 
     stop() {
+        if (this.mouseScrollListener) {
+            this.input.off('wheel', this.mouseScrollListener)
+            this.mouseScrollListener = null
+        }
         this.tweens.add({
             targets: this.phone_container,
             x: 86,
@@ -429,9 +621,17 @@ export default class EPFPhone extends Closeup {
             if (this[page]) this[page].visible = false
         }
         this.select_page.visible = true
+
+        if (this.mouseScrollListener) {
+            this.input.off('wheel', this.mouseScrollListener)
+            this.mouseScrollListener = null
+        }
     }
 
-    showGearPage() {}
+    showGearPage() {
+        this.select_page.visible = false
+        this.gear_page.visible = true
+    }
 
     showMissionsPage() {
         this.select_page.visible = false
@@ -441,6 +641,13 @@ export default class EPFPhone extends Closeup {
     showTeleportPage() {
         this.teleport_page.visible = true
         this.select_page.visible = false
+
+        this.scrollTeleportItems(126)
+
+        this.mouseScrollListener = this.input.on('wheel', (pointer, gameObjects, deltaX, deltaY, deltaZ) => {
+            let y = this.bar.y + deltaY / 10
+            this.scrollTeleportItems(y)
+        })
     }
 
     createMask() {
@@ -503,11 +710,17 @@ export default class EPFPhone extends Closeup {
         this.bar.y = dragY
     }
 
-    showMessagesPage() {}
+    showMessagesPage() {
+        this.interface.prompt.showError(this.shell.crumbs.getError(54))
+    }
 
-    showGadgetsPage() {}
+    showGadgetsPage() {
+        this.interface.prompt.showError(this.shell.crumbs.getError(54))
+    }
 
-    showElitePufflePage() {}
+    showElitePufflePage() {
+        this.interface.prompt.showError(this.shell.crumbs.getError(54))
+    }
 
     onGetMissions(args) {
         let challenges = args[0].split('|').map((challenge) => {
