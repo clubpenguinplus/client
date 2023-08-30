@@ -15,7 +15,7 @@ function searchFolder(path) {
                 fs.writeFileSync(`${path}/${file}`, JSON.stringify(jsonData, null, 4))
             } else {
                 fs.writeFileSync(`${path}/${file}`, JSON.stringify(jsonData))
-            }            
+            }
         }
     }
 }

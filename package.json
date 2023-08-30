@@ -7,7 +7,7 @@
     "editor": "phasereditor2d-launcher -project . -max-number-files 100000 -public",
     "build": "node ./utils/pre-build.js && webpack --mode production --env obfuscate=true",
     "build-crumbs": "node ./utils/build-crumbs.js",
-    "format": "npx prettier --write ./src/",
+    "format": "npx prettier --write ./src/ && npx prettier --write ./utils/",
     "check-version": "node ./utils/check-version.js",
     "minify-json": "node ./utils/minify-json.js"
   },

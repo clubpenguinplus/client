@@ -1,7 +1,7 @@
 // Merges all crumb files into one
 
 const fs = require('fs')
-const { Translate } = require('@google-cloud/translate').v2;
+const {Translate} = require('@google-cloud/translate').v2
 const projectId = 'clubpenguinplus'
 const tlate = new Translate({projectId})
 const translate = async (input, lang) => {
@@ -17,7 +17,7 @@ for (const lang of langs) {
 }
 
 async function tranlateLang(lang) {
-    let newJson = { errors: {} }
+    let newJson = {errors: {}}
     const assets = path.resolve(__dirname, `../client/media/crumbs/${lang}`)
     const stringFile = fs.readFileSync(`${assets}/strings.json`)
     let strings = JSON.parse(stringFile)
@@ -29,13 +29,13 @@ async function tranlateLang(lang) {
                 for (let i = 0; i < arr.length; i++) {
                     const localI = i
                     if (typeof arr[localI] == 'string') {
-                        let p = await translate(arr[localI], { to: lang })
+                        let p = await translate(arr[localI], {to: lang})
                         arr[localI] = p
                     } else {
                         for (let j = 0; j < arr[localI].length; j++) {
                             const localJ = j
                             if (localJ % 2 != 0) continue
-                            var p = await translate(arr[localI][localJ], { to: lang })
+                            var p = await translate(arr[localI][localJ], {to: lang})
                             arr[localI][localJ] = p
                         }
                         arr[localI] = arr[localI].join('')
@@ -51,13 +51,13 @@ async function tranlateLang(lang) {
         for (let i = 0; i < arr.length; i++) {
             const localI = i
             if (typeof arr[localI] == 'string') {
-                let p = await translate(arr[localI], { to: lang })
+                let p = await translate(arr[localI], {to: lang})
                 arr[localI] = p
             } else {
                 for (let j = 0; j < arr[localI].length; j++) {
                     const localJ = j
                     if (localJ % 2 != 0) continue
-                    var p = await translate(arr[localI][localJ], { to: lang })
+                    var p = await translate(arr[localI][localJ], {to: lang})
                     arr[localI][localJ] = p
                 }
                 arr[localI] = arr[localI].join('')
@@ -74,20 +74,20 @@ async function tranlateLang(lang) {
 }
 
 function parseString(str) {
-    const parts = str.split(/\{|\}/);
-    const substrings = [];
+    const parts = str.split(/\{|\}/)
+    const substrings = []
     for (let i = 0; i < parts.length; i++) {
         if (parts[i] === '') {
-            continue;
+            continue
         }
         if (i % 2 === 0) {
-            substrings.push(parts[i]);
+            substrings.push(parts[i])
         }
         if (i % 2 === 1) {
-            substrings.push(`{${parts[i]}}`);
+            substrings.push(`{${parts[i]}}`)
         }
     }
-    return substrings;
+    return substrings
 }
 
 function processString(strings, identifier) {

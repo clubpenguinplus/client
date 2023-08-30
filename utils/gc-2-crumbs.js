@@ -52,10 +52,10 @@ function processConfig(file, input) {
         for (let i in fileData) {
             for (let j of fileData[i].stamps) {
                 crumb[j.stamp_id] = {
-                    'name': j.name,
-                    'groupid': fileData[i].group_id,
-                    'difficulty': j.rank,
-                    'description': j.description,
+                    name: j.name,
+                    groupid: fileData[i].group_id,
+                    difficulty: j.rank,
+                    description: j.description
                 }
             }
         }
@@ -79,9 +79,9 @@ function getCrumbFormat(file) {
     switch (file) {
         case 'safe_chat_messages.json':
         case 'jokes.json':
-            return "array"
+            return 'array'
         default:
-            return "object"
+            return 'object'
     }
 }
 
@@ -122,49 +122,48 @@ function getCrumb(file, item) {
     switch (file) {
         case 'paper_items.json':
             return {
-                'name': item.label,
-                'type': parseInt(item.type),
-                'cost': parseInt(item.cost)
+                name: item.label,
+                type: parseInt(item.type),
+                cost: parseInt(item.cost)
             }
         case 'cards.json':
             return {
-                'name': item.name,
-                'color': item.color,
-                'value': parseInt(item.value),
-                'description': item.description,
-                'powerId': parseInt(item.power_id),
-                'element': item.element,
+                name: item.name,
+                color: item.color,
+                value: parseInt(item.value),
+                description: item.description,
+                powerId: parseInt(item.power_id),
+                element: item.element
             }
         case 'furniture_items.json':
             return {
-                'name': item.label,
-                'type': parseInt(item.type),
-                'sort': parseInt(item.sort),
-                'cost': parseInt(item.cost),
-                'max': parseInt(item.max_quantity),
+                name: item.label,
+                type: parseInt(item.type),
+                sort: parseInt(item.sort),
+                cost: parseInt(item.cost),
+                max: parseInt(item.max_quantity)
             }
         case 'igloo_floors.json':
             return {
-                'name': item.label,
-                'cost': parseInt(item.cost),
+                name: item.label,
+                cost: parseInt(item.cost)
             }
         case 'igloo_locations.json':
             return {
-                'name': item.name,
-                'cost': parseInt(item.cost),
+                name: item.name,
+                cost: parseInt(item.cost)
             }
         case 'igloo_music_tracks.json':
-            return {
-            }
+            return {}
         case 'igloos.json':
             return {
-                'name': item.name,
-                'cost': parseInt(item.cost),
+                name: item.name,
+                cost: parseInt(item.cost)
             }
         case 'jokes.json':
             return {
-                'joke': item.split('|')[0],
-                'punchline': item.split('|')[1]
+                joke: item.split('|')[0],
+                punchline: item.split('|')[1]
             }
         case 'mascot_messages.json':
             var categories = {}
@@ -174,43 +173,43 @@ function getCrumb(file, item) {
             return categories
         case 'mascots.json':
             return {
-                "gift": parseInt(item.gift_id),
-                "ids": item.ids
+                gift: parseInt(item.gift_id),
+                ids: item.ids
             }
         case 'polaroids.json':
             let polaroids = []
-            item.polaroids.forEach(polaroid => {
+            item.polaroids.forEach((polaroid) => {
                 polaroids.push({
-                    'id': parseInt(polaroid.polaroid_id),
-                    'stamps': parseInt(polaroid.stamp_count)
+                    id: parseInt(polaroid.polaroid_id),
+                    stamps: parseInt(polaroid.stamp_count)
                 })
             })
             return polaroids
         case 'postcards.json':
             postcards = {}
             for (let p in item) {
-                if (p == "order_position") continue
+                if (p == 'order_position') continue
                 postcards[p] = item[p].subject
             }
             return postcards
         case 'puffle_items.json':
             return {
-                'name': item.label,
-                'asset': item.asset,
-                'cost': parseInt(item.cost),
-                'quantity': parseInt(item.quantity),
-                'parent': parseInt(item.root_item_id),
-                'consumption': item.consumption,
-                'type': item.type,
-                'purchase': item.only_purchase,
-                'effect': item.effect,
-                'reaction': item.reaction
+                name: item.label,
+                asset: item.asset,
+                cost: parseInt(item.cost),
+                quantity: parseInt(item.quantity),
+                parent: parseInt(item.root_item_id),
+                consumption: item.consumption,
+                type: item.type,
+                purchase: item.only_purchase,
+                effect: item.effect,
+                reaction: item.reaction
             }
         case 'puffles_v2.json':
             return {
-                'parent': item.parent_puffle_id,
-                'name': item.description,
-                'color': item.color,
+                parent: item.parent_puffle_id,
+                name: item.description,
+                color: item.color
             }
         case 'safe_chat_messages.json':
             return convertSafeChat(item)
@@ -223,17 +222,17 @@ function convertSafeChat(item) {
     if (!item) return undefined
     if (!item.menu) {
         return {
-            'id': item.id,
-            'name': item.message
+            id: item.id,
+            name: item.message
         }
     }
     var menu = []
-    item.menu.forEach(m => {
+    item.menu.forEach((m) => {
         menu.push(convertSafeChat(m))
     })
     return {
-        'id': item.id,
-        'name': item.message,
-        'menu': menu
+        id: item.id,
+        name: item.message,
+        menu: menu
     }
 }
