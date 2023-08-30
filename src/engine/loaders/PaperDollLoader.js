@@ -49,6 +49,10 @@ export default class PaperDollLoader extends BaseLoader {
     }
 
     loadItem(item, slot) {
+        if (!this.crumbs.items[item]) {
+            return
+        }
+
         if (slot == 'color') {
             return this.setColor(item)
         }

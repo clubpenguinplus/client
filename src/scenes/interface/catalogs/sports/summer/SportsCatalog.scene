@@ -36,14 +36,12 @@
             "type": "Container",
             "id": "91f5a4fc-f734-4524-97ce-6c2141ef796a",
             "label": "page1",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "03372dcd-1297-4625-89cd-d1bc381a6874",
                     "label": "page1body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page1body"
@@ -87,14 +85,12 @@
             "type": "Container",
             "id": "3ae976a3-2c41-4b82-95cc-78312622ed08",
             "label": "page2",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "c2850faf-c979-417d-9a36-8b1003753b6e",
                     "label": "page2body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page2body"
@@ -177,7 +173,6 @@
                     "id": "344530cc-d785-4476-b9e7-b13efbb9889c",
                     "label": "bgholder1",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "bgholder"
@@ -192,7 +187,6 @@
                     "id": "8c231572-dbba-4180-86b2-777ebfa5d1e9",
                     "label": "bgholder2",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "bgholder"
@@ -207,7 +201,6 @@
                     "id": "8fffeaef-d219-463b-873f-dfd7698ff7c8",
                     "label": "bgholder3",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "bgholder"
@@ -222,7 +215,6 @@
                     "id": "0c4a8b55-50de-4226-9571-5fe01c28f413",
                     "label": "bgholder4",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "bgholder"
@@ -236,7 +228,6 @@
                     "type": "Image",
                     "id": "dd4c58c7-624d-4d65-8fb9-e7c3726c1203",
                     "label": "backgrounds",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "backgrounds"
@@ -322,14 +313,12 @@
             "type": "Container",
             "id": "d18b7438-8914-4145-99c5-a4cc53d9c86c",
             "label": "page3",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "7dedd142-876c-42bd-8156-85bcd7764594",
                     "label": "page3body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page3body"
@@ -553,14 +542,12 @@
             "type": "Container",
             "id": "3499b762-d5cf-4506-8bce-480ba2de88ec",
             "label": "page4",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "66be5197-933e-4e26-a197-3f7d0a22a98d",
                     "label": "page4body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page4body"
@@ -644,14 +631,12 @@
             "type": "Container",
             "id": "2f282795-e367-4c38-aaf8-5edf05db3385",
             "label": "page5",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "51f5ff4f-0986-4130-8365-9607642da34e",
                     "label": "page5body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page5body"
@@ -805,14 +790,12 @@
             "type": "Container",
             "id": "54487cba-a3d4-478c-8b1e-213d83b742c7",
             "label": "page6",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "58db2036-2435-4d76-9ad8-16a41e3e8ce9",
                     "label": "page6body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page6body"
@@ -896,14 +879,12 @@
             "type": "Container",
             "id": "7d988d0b-67e8-4b8a-949b-7dd96ba12898",
             "label": "page7",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "c6959b10-aa30-4e07-a6c4-f6db7be4d1b4",
                     "label": "page7body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page7body"
@@ -917,14 +898,12 @@
             "type": "Container",
             "id": "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
             "label": "page8",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "63d6484d-05ac-4dc7-a974-64c633a74b53",
                     "label": "page8body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page8body"
@@ -1253,14 +1232,12 @@
             "type": "Container",
             "id": "99f95081-9560-4e15-a29e-7d5fedb71132",
             "label": "page9",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "ece414cf-c0f3-4270-865f-8899ddd12701",
                     "label": "page9body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page9body"
@@ -1414,14 +1391,12 @@
             "type": "Container",
             "id": "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
             "label": "page10",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "6495ea8c-40c7-4106-805f-f12111d68c29",
                     "label": "page10body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page10body"
@@ -1540,14 +1515,12 @@
             "type": "Container",
             "id": "6ee0e20b-7f0a-4876-9531-765868ac97a7",
             "label": "page11",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "1e343afc-b8f7-4361-bb7d-5617121ca3f2",
                     "label": "page11body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page11body"
@@ -1701,14 +1674,12 @@
             "type": "Container",
             "id": "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
             "label": "page12",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "49d47aeb-9552-4d3a-ae31-cb155a127299",
                     "label": "page12body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page12body"
@@ -1862,14 +1833,12 @@
             "type": "Container",
             "id": "7c9e717b-95de-42c5-8403-3fcc46ffccca",
             "label": "page13",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "ca2056dd-df1f-4b00-904a-b0d4f8b25467",
                     "label": "page13body",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "page13body"
@@ -1914,7 +1883,6 @@
             "id": "c0303408-3e8c-411a-a9e0-380b770a5afb",
             "label": "buttons",
             "scope": "CLASS",
-            "components": [],
             "x": 204,
             "y": 59,
             "visible": false,
@@ -1968,7 +1936,6 @@
                     "type": "Image",
                     "id": "d7878c04-d1f0-427d-8fbf-51df19d309e1",
                     "label": "coinholder",
-                    "components": [],
                     "texture": {
                         "key": "summer-sports",
                         "frame": "coinholder"
@@ -1983,7 +1950,6 @@
                     "id": "64b97488-5f81-4a5d-a138-71170841f44b",
                     "label": "coins",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 596,
                     "y": 864,
                     "text": "Your Coins: 100000",
@@ -2001,7 +1967,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
@@ -2014,13 +1980,13 @@
                 "3499b762-d5cf-4506-8bce-480ba2de88ec",
                 "2f282795-e367-4c38-aaf8-5edf05db3385",
                 "54487cba-a3d4-478c-8b1e-213d83b742c7",
-                "7c9e717b-95de-42c5-8403-3fcc46ffccca",
-                "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
-                "6ee0e20b-7f0a-4876-9531-765868ac97a7",
-                "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
-                "99f95081-9560-4e15-a29e-7d5fedb71132",
+                "7d988d0b-67e8-4b8a-949b-7dd96ba12898",
                 "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
-                "7d988d0b-67e8-4b8a-949b-7dd96ba12898"
+                "99f95081-9560-4e15-a29e-7d5fedb71132",
+                "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
+                "6ee0e20b-7f0a-4876-9531-765868ac97a7",
+                "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
+                "7c9e717b-95de-42c5-8403-3fcc46ffccca"
             ]
         }
     ]

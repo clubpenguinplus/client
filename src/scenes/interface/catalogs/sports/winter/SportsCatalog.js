@@ -176,24 +176,24 @@ export default class SportsCatalog extends Book {
         this.buyBtn_6013
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_6013
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_1036
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_1036
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_1036
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_1036
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_1036
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_goaliehelmet
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_5018
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_5018
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_5018
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_5018
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_5018
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_goaliestick
         /** @type {Phaser.GameObjects.Sprite} */
@@ -204,14 +204,14 @@ export default class SportsCatalog extends Book {
         this.buyBtn_4483
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_4483
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_4484
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_4484
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_4484
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_4484
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_4484
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_snowsky
         /** @type {Phaser.GameObjects.Sprite} */
@@ -226,20 +226,20 @@ export default class SportsCatalog extends Book {
         this.buyBtn_1336
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_1336
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_1338
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_1338
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_1338
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_1338
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_1338
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_frees
-        /** @type {Phaser.GameObjects.Container} */
-        this.buttons
         /** @type {Phaser.GameObjects.Text} */
         this.coins
+        /** @type {Phaser.GameObjects.Container} */
+        this.buttons
         /** @type {Phaser.GameObjects.Container[]} */
         this.pages
 
@@ -1921,24 +1921,24 @@ export default class SportsCatalog extends Book {
         this.priceNum_3002 = priceNum_3002
         this.buyBtn_6013 = buyBtn_6013
         this.priceNum_6013 = priceNum_6013
-        this.sec_1036 = sec_1036
         this.buyBtn_1036 = buyBtn_1036
         this.priceNum_1036 = priceNum_1036
         this.nameTag_1036 = nameTag_1036
+        this.sec_1036 = sec_1036
         this.sec_goaliehelmet = sec_goaliehelmet
-        this.sec_5018 = sec_5018
         this.buyBtn_5018 = buyBtn_5018
         this.priceNum_5018 = priceNum_5018
         this.nameTag_5018 = nameTag_5018
+        this.sec_5018 = sec_5018
         this.sec_goaliestick = sec_goaliestick
         this.buyBtn_1337 = buyBtn_1337
         this.priceNum_1337 = priceNum_1337
         this.buyBtn_4483 = buyBtn_4483
         this.priceNum_4483 = priceNum_4483
-        this.sec_4484 = sec_4484
         this.buyBtn_4484 = buyBtn_4484
         this.priceNum_4484 = priceNum_4484
         this.nameTag_4484 = nameTag_4484
+        this.sec_4484 = sec_4484
         this.sec_snowsky = sec_snowsky
         this.buyBtn_6011 = buyBtn_6011
         this.priceNum_6011 = priceNum_6011
@@ -1946,13 +1946,13 @@ export default class SportsCatalog extends Book {
         this.priceNum_4482 = priceNum_4482
         this.buyBtn_1336 = buyBtn_1336
         this.priceNum_1336 = priceNum_1336
-        this.sec_1338 = sec_1338
         this.buyBtn_1338 = buyBtn_1338
         this.priceNum_1338 = priceNum_1338
         this.nameTag_1338 = nameTag_1338
+        this.sec_1338 = sec_1338
         this.sec_frees = sec_frees
-        this.buttons = buttons
         this.coins = coins
+        this.buttons = buttons
         this.pages = pages
 
         this.events.emit('scene-awake')

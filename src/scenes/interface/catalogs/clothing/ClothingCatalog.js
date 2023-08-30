@@ -103,14 +103,169 @@ export default class ClothingCatalog extends Book {
             frontPenguin: 'pink-starlight-springtime',
             backgrounds: [901, 985, 9275, 904, 905, 926, 907, 908],
             new: [
-                {background: 1, leftItems: [1690, 1689, 1655, 4945, 4944, 4908, 5349, 3215, 6155], rightItems: [1657, 4909, 6181, 1227, 24194, 6109, 417, 243], comments: 'the cool page'},
-                {background: 16, leftItems: [1007, 3004, 1911, 4311, 24196, 352, 6233], rightItems: [24199], comments: 'agentg'},
-                {background: 4, leftItems: [3227, 3225, 3226, 3221], rightItems: [3222, 5489, 5506, 5491], comments: 'nov2014 assorted items'},
-                {background: 10, leftItems: [1125, 101, 214, 294, 334, 358, 423, 261], rightItems: [1040, 119, 3015, 4065, 323, 6015], comments: 'fancy schmancy'},
-                {background: 20, leftItems: [446, 103, 172, 265, 346, 5196, 351], rightItems: [24280, 201, 202, 4808, 366], comments: 'my page (the jeff the rock page :trol:)'},
-                {background: 2, leftItems: [221, 4046, 222, 223, 4108, 4009, 4259], rightItems: [3109, 3111, 3115, 3112, 3078, 3110, 3114, 3108, 3113], comments: 'hoodies n boas'},
-                {background: 18, leftItems: [176, 187, 167, 188], rightItems: [3238, 3005, 189, 177], comments: 'ties'},
-                {background: 16, leftItems: [131, 139, 135, 132, 382, 367], rightItems: [1663, 4199, 21090, 763, 239, 364, 362], comments: 'snorkels and tourdude'}
+                {
+                    background: 1,
+                    leftItems: [
+                        {id: 1690, type: 'icon'},
+                        {id: 1689, type: 'icon'},
+                        {id: 1655, type: 'icon'},
+                        {id: 4945, type: 'paper'},
+                        {id: 4944, type: 'paper'},
+                        {id: 4908, type: 'paper'},
+                        {id: 5349, type: 'paper'},
+                        {id: 3215, type: 'icon'},
+                        {id: 6155, type: 'paper'}
+                    ],
+                    rightItems: [
+                        {id: 1657, type: 'icon'},
+                        {id: 4909, type: 'paper'},
+                        {id: 6181, type: 'icon'},
+                        {id: 1227, type: 'icon'},
+                        {id: 24194, type: 'paper'},
+                        {id: 6109, type: 'paper'},
+                        {id: 417, type: 'paper'},
+                        {id: 243, type: 'icon'}
+                    ],
+                    comments: 'the cool page'
+                },
+                {
+                    background: 16,
+                    leftItems: [
+                        {id: 1007, type: 'icon'},
+                        {id: 3004, type: 'icon'},
+                        {id: 1911, type: 'icon'},
+                        {id: 4311, type: 'paper'},
+                        {id: 24196, type: 'paper'},
+                        {id: 352, type: 'icon'},
+                        {id: 6233, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 24199, type: 'icon'},
+                        {id: 21075, type: 'icon'},
+                        {id: 175, type: 'icon'},
+                        {id: 106, type: 'icon'}
+                    ],
+                    comments: 'requested items'
+                },
+                {
+                    background: 4,
+                    leftItems: [
+                        {id: 3227, type: 'icon'},
+                        {id: 3225, type: 'icon'},
+                        {id: 3226, type: 'icon'},
+                        {id: 3221, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 3222, type: 'icon'},
+                        {id: 5489, type: 'icon'},
+                        {id: 5506, type: 'icon'},
+                        {id: 5491, type: 'icon'}
+                    ],
+                    comments: 'nov2014 assorted items'
+                },
+                {
+                    background: 10,
+                    leftItems: [
+                        {id: 1125, type: 'icon'},
+                        {id: 101, type: 'icon'},
+                        {id: 214, type: 'icon'},
+                        {id: 294, type: 'icon'},
+                        {id: 334, type: 'icon'},
+                        {id: 358, type: 'icon'},
+                        {id: 423, type: 'icon'},
+                        {id: 261, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1040, type: 'icon'},
+                        {id: 119, type: 'icon'},
+                        {id: 3015, type: 'icon'},
+                        {id: 4065, type: 'icon'},
+                        {id: 323, type: 'icon'},
+                        {id: 6015, type: 'icon'}
+                    ],
+                    comments: 'fancy schmancy'
+                },
+                {
+                    background: 20,
+                    leftItems: [
+                        {id: 446, type: 'icon'},
+                        {id: 103, type: 'icon'},
+                        {id: 172, type: 'icon'},
+                        {id: 265, type: 'icon'},
+                        {id: 346, type: 'icon'},
+                        {id: 5196, type: 'icon'},
+                        {id: 351, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 24280, type: 'paper'},
+                        {id: 201, type: 'icon'},
+                        {id: 202, type: 'icon'},
+                        {id: 4808, type: 'paper'},
+                        {id: 366, type: 'icon'}
+                    ],
+                    comments: 'my page (the jeff the rock page :trol:)'
+                },
+                {
+                    background: 2,
+                    leftItems: [
+                        {id: 221, type: 'icon'},
+                        {id: 4046, type: 'icon'},
+                        {id: 222, type: 'icon'},
+                        {id: 223, type: 'icon'},
+                        {id: 4108, type: 'icon'},
+                        {id: 4009, type: 'icon'},
+                        {id: 4259, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 3109, type: 'icon'},
+                        {id: 3111, type: 'icon'},
+                        {id: 3115, type: 'icon'},
+                        {id: 3112, type: 'icon'},
+                        {id: 3078, type: 'icon'},
+                        {id: 3110, type: 'icon'},
+                        {id: 3114, type: 'icon'},
+                        {id: 3108, type: 'icon'},
+                        {id: 3113, type: 'icon'}
+                    ],
+                    comments: 'hoodies n boas'
+                },
+                {
+                    background: 18,
+                    leftItems: [
+                        {id: 176, type: 'icon'},
+                        {id: 187, type: 'icon'},
+                        {id: 167, type: 'icon'},
+                        {id: 188, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 3238, type: 'icon'},
+                        {id: 3005, type: 'icon'},
+                        {id: 189, type: 'icon'},
+                        {id: 177, type: 'icon'}
+                    ],
+                    comments: 'ties'
+                },
+                {
+                    background: 16,
+                    leftItems: [
+                        {id: 131, type: 'icon'},
+                        {id: 139, type: 'icon'},
+                        {id: 135, type: 'icon'},
+                        {id: 132, type: 'icon'},
+                        {id: 382, type: 'icon'},
+                        {id: 367, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1663, type: 'icon'},
+                        {id: 4199, type: 'icon'},
+                        {id: 21090, type: 'paper'},
+                        {id: 763, type: 'icon'},
+                        {id: 239, type: 'icon'},
+                        {id: 364, type: 'icon'},
+                        {id: 362, type: 'icon'}
+                    ],
+                    comments: 'snorkels and tourdude'
+                }
             ],
             party: [],
             returning: [],

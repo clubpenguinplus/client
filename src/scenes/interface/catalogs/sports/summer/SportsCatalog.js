@@ -184,10 +184,10 @@ export default class SportsCatalog extends Book {
         this.buyBtn_372
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_372
-        /** @type {Phaser.GameObjects.Container} */
-        this.buttons
         /** @type {Phaser.GameObjects.Text} */
         this.coins
+        /** @type {Phaser.GameObjects.Container} */
+        this.buttons
         /** @type {Phaser.GameObjects.Container[]} */
         this.pages
 
@@ -850,7 +850,7 @@ export default class SportsCatalog extends Book {
         buttons.add(coins)
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page13, page12, page11, page10, page9, page8, page7]
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13]
 
         // block (components)
         new Interactive(block)
@@ -1315,8 +1315,8 @@ export default class SportsCatalog extends Book {
         this.priceNum_313 = priceNum_313
         this.buyBtn_372 = buyBtn_372
         this.priceNum_372 = priceNum_372
-        this.buttons = buttons
         this.coins = coins
+        this.buttons = buttons
         this.pages = pages
 
         this.events.emit('scene-awake')

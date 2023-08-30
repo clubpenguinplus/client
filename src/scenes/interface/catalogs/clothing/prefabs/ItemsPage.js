@@ -48,7 +48,7 @@ export default class ItemsPage extends Page {
 
         const leftPostitions = this.calculateLeftPositions(json.leftItems.length)
         json.leftItems.forEach((item, index) => {
-            const itemObject = new Item(this.scene, 0, 0, item)
+            const itemObject = new Item(this.scene, 0, 0, item.id, item.type)
             itemObject.x = leftPostitions[index].x
             itemObject.y = leftPostitions[index].y
             this.add(itemObject)
@@ -56,7 +56,7 @@ export default class ItemsPage extends Page {
 
         const rightPostitions = this.calculateRightPositions(json.rightItems.length)
         json.rightItems.forEach((item, index) => {
-            const itemObject = new Item(this.scene, 0, 0, item)
+            const itemObject = new Item(this.scene, 0, 0, item.id, item.type)
             itemObject.x = rightPostitions[index].x
             itemObject.y = rightPostitions[index].y
             this.add(itemObject)
