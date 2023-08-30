@@ -45,7 +45,7 @@ exec(
             console.error(stderr)
         }
         for (let line of stdout.split('\n')) {
-            if (line.endsWith('.json')) {
+            if (line.endsWith('.json') && line.includes('modified:')) {
                 let file = line.split(' ')[line.split(' ').length - 1]
                 minify(`client/${file}`)
             }
