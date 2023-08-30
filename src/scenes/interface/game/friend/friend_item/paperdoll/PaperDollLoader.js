@@ -58,6 +58,10 @@ export default class PaperDollLoader {
             this.removeItem(slot)
         }
 
+        if (!this.scene.crumbs.items[item]) {
+            return
+        }
+
         this.paperDoll.items[slot].id = item
 
         if (this.scene.crumbs.items[item].back) {
