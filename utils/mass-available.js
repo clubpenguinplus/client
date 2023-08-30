@@ -44,16 +44,19 @@ if (!sessionKey) {
     return
 }
 
-items.forEach(async (item) => {
-    await fetch(`${protcol}://${host}${endpoint}`, {
-        method: 'POST',
-        headers: {
-            cookie: `sessionKey=${sessionKey}`,
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: JSON.stringify({
-            item: item,
-            available: availabitity == 'true' ? 'false' : 'true'
+items.forEach(async (item, i) => {
+    setTimeout(async () => {
+        console.log(`Updating ${item} to ${availabitity == 'true' ? 'available' : 'unavailable'}`)
+        await fetch(`${protcol}://${host}${endpoint}`, {
+            method: 'POST',
+            headers: {
+                cookie: `sessionKey=${sessionKey}`,
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: JSON.stringify({
+                item: item,
+                available: availabitity == 'true' ? 'false' : 'true'
+            })
         })
-    })
+    }, 1000 * i)
 })
