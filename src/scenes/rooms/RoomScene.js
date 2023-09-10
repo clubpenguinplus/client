@@ -78,11 +78,6 @@ export default class RoomScene extends BaseScene {
 
         window.updateScaling()
         this.interface.hideLoading()
-
-        if (!localStorage.seenIntro) {
-            this.interface.loadExternal('Intro')
-            localStorage.seenIntro = true
-        }
     }
 
     preload() {
