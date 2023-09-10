@@ -928,22 +928,6 @@
             "visible": false
         },
         {
-            "type": "Image",
-            "id": "a758f2b9-3859-4cd2-ae20-f40a070251e7",
-            "label": "beta",
-            "scope": "CLASS",
-            "components": [
-                "Button"
-            ],
-            "Button.callback": "() => this.onBetaClick()",
-            "texture": {
-                "key": "main",
-                "frame": "beta"
-            },
-            "x": 1354,
-            "y": 68
-        },
-        {
             "type": "Layer",
             "id": "a205badf-674d-4f0f-bb3e-e687b24d30e9",
             "label": "widgetLayer",
@@ -1274,7 +1258,6 @@
                 "1336b11c-fc2a-4b8c-8db0-9b3244d95b57",
                 "980ed16f-2969-4e44-ad27-f3f28486ae8f",
                 "c77d9303-6faa-472c-83e7-725f82e2b2eb",
-                "a758f2b9-3859-4cd2-ae20-f40a070251e7",
                 "dc1387ce-b9fd-415b-9587-ce066fc1f396",
                 "fe8d6749-68cf-47c6-b41c-01807204bcde"
             ]
