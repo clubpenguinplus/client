@@ -1,10 +1,10 @@
 {
-    "id": "db5f353b-acdc-4124-a0f5-f96981200c80",
+    "id": "2babe67f-aac6-40eb-a1ea-3ae6c1600c6b",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
-        "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
+        "superClassName": "BaseContainer",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -14,28 +14,22 @@
     "displayList": [
         {
             "type": "Container",
-            "id": "64602953-c663-4ca1-8556-c673f4ba49e7",
+            "id": "a41710f8-2b1d-4293-94c4-737fce0a33ec",
             "label": "container_1",
-            "x": 760,
-            "y": 457,
+            "scaleX": 0.782608694,
+            "scaleY": 0.782608694,
             "list": [
                 {
                     "type": "Image",
-                    "id": "de537844-21ba-4aa2-b51e-ddcaa06dcb52",
-                    "label": "igloo",
-                    "scope": "CLASS",
-                    "components": [
-                        "SimpleButton",
-                        "ShowHint"
-                    ],
-                    "SimpleButton.callback": "() => this.onClick()",
+                    "id": "c9de864f-c303-4b25-a130-640c90c55892",
+                    "label": "agentpenguin",
                     "texture": {
-                        "key": "map-for-igloo",
-                        "frame": "igloo/igloo"
+                        "key": "epfphone",
+                        "frame": "agentpenguin"
                     },
                     "y": 20,
-                    "originX": 0.5054945054945055,
-                    "originY": 0.5058823529411764
+                    "scaleX": 1.27777778,
+                    "scaleY": 1.27777778
                 }
             ]
         }

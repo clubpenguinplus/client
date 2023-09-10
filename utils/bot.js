@@ -2,12 +2,12 @@ const io = require('socket.io-client')
 const AES = require('crypto-js/aes')
 const enc = require('crypto-js/enc-utf8')
 
-const loginHost = "https://login.cpplus.pw"
+const loginHost = 'https://login.cpplus.pw'
 // const loginHost = "http://localhost:6111"
-const loginServer = "/socket/"
-const gameHost = "https://blizzard.cpplus.pw"
+const loginServer = '/socket/'
+const gameHost = 'https://blizzard.cpplus.pw'
 // const gameHost = "http://localhost:6112"
-const gameServer = "/socket/"
+const gameServer = '/socket/'
 
 const passwords = 'password'
 const users = []
@@ -22,7 +22,6 @@ let interval = setInterval(() => {
     if (i >= users.length) clearInterval(interval)
 }, 1000)
 
-
 function createUserInstance(username, password) {
     let encryptionKeys = {}
     let loginKey = ''
@@ -30,7 +29,7 @@ function createUserInstance(username, password) {
         client: generatePrimaryClientKey(),
         server: generatePrimaryServerKey()
     }
-    let socket = io.connect(loginHost, { path: `${loginServer}`, transports: ['websocket']})
+    let socket = io.connect(loginHost, {path: `${loginServer}`, transports: ['websocket']})
     socket.once('connect', () => {
         //console.log(`Connected to ${loginServer}`)
         sendXml(socket, encryptionKeys, `<msg t='sys'><body action='verChk' r='0'><ver v='0.1.7-beta' /></body></msg>`)
@@ -39,7 +38,7 @@ function createUserInstance(username, password) {
     socket.on('message', (data) => {
         let message = AES.decrypt(data, encryptionKeys['Login'].server).toString(enc)
         let messageParts = message.split('%')
-        if (messageParts[2] == 'l' && messageParts[3] == 't'){
+        if (messageParts[2] == 'l' && messageParts[3] == 't') {
             loginKey = messageParts[6]
         }
     })
@@ -50,7 +49,7 @@ function createUserInstance(username, password) {
                 client: generatePrimaryClientKey(),
                 server: generatePrimaryServerKey()
             }
-            socket = io.connect(gameHost, { path: `${gameServer}`, transports: ['websocket']})
+            socket = io.connect(gameHost, {path: `${gameServer}`, transports: ['websocket']})
             socket.once('connect', () => {
                 sendXt(socket, encryptionKeys, 'auth#g', [username, loginKey])
             })
@@ -66,10 +65,10 @@ function createUserInstance(username, password) {
                     sendXt(socket, encryptionKeys, 'l#lp')
                 } else if (messageParts[2] == 'lp') {
                     sendXt(socket, encryptionKeys, 'j#js')
-                } else if (messageParts[2] == 'jr'){
+                } else if (messageParts[2] == 'jr') {
                     console.log(`Joined room ${messageParts[3]}`)
                     let acceptableRooms = ['100', '300', '801', '802']
-                    if (!acceptableRooms.includes(messageParts[3])){
+                    if (!acceptableRooms.includes(messageParts[3])) {
                         let randomRoom = acceptableRooms[Math.floor(Math.random() * acceptableRooms.length)]
                         sendXt(socket, encryptionKeys, 'j#jr', randomRoom)
                     } else {

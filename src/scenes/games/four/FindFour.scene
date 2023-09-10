@@ -28,7 +28,6 @@
                     "type": "Image",
                     "id": "444f3793-1a41-4386-9e05-e712dbd5f24d",
                     "label": "window",
-                    "components": [],
                     "texture": {
                         "key": "four",
                         "frame": "window"
@@ -38,7 +37,6 @@
                     "type": "Image",
                     "id": "8bd244b6-e19b-4100-ad75-9be7d47ee878",
                     "label": "shadow",
-                    "components": [],
                     "texture": {
                         "key": "four",
                         "frame": "shadow"
@@ -49,16 +47,13 @@
                     "type": "Container",
                     "id": "0a4b10d7-2a94-4fb2-8652-09e09d0f3ec4",
                     "label": "counterContainer",
-                    "scope": "CLASS",
-                    "components": [],
-                    "list": []
+                    "scope": "CLASS"
                 },
                 {
                     "type": "Image",
                     "id": "ffb54173-b9ac-4fe1-bab7-7a6b435da288",
                     "label": "board",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "four",
                         "frame": "board"
@@ -73,10 +68,8 @@
                         "y"
                     ],
                     "label": "player2",
-                    "components": [],
                     "x": -126,
-                    "y": 232,
-                    "nestedPrefabs": []
+                    "y": 232
                 },
                 {
                     "prefabId": "aa157150-c6e0-4443-8649-1a137743c2ee",
@@ -86,10 +79,8 @@
                         "y"
                     ],
                     "label": "player1",
-                    "components": [],
                     "x": -126,
-                    "y": 172,
-                    "nestedPrefabs": []
+                    "y": 172
                 },
                 {
                     "type": "Image",
@@ -110,7 +101,6 @@
                     "type": "Image",
                     "id": "7583ca44-3abe-403e-9adb-f44e6d03c299",
                     "label": "blue_x",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "blue-x"
@@ -123,7 +113,6 @@
                     "id": "ec828e7e-f8fe-45ce-a6b2-37004b848cde",
                     "label": "hover",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "four",
                         "frame": "counter_1"
@@ -138,7 +127,6 @@
                     "id": "679651b3-e1fc-4c54-9ea1-6b6dde4bbb91",
                     "label": "hitbox",
                     "scope": "CLASS",
-                    "components": [],
                     "x": -152,
                     "y": -44,
                     "visible": false,
@@ -257,7 +245,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

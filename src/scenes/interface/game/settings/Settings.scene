@@ -1080,6 +1080,7 @@
                     "y": 193,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "Parental Controls",
                     "fixedWidth": 500,
                     "align": "center",
@@ -1102,6 +1103,7 @@
                     "y": 334,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "Infraction Notifications:",
                     "fixedWidth": 300,
                     "align": "right",
@@ -1119,6 +1121,7 @@
                     "scope": "CLASS",
                     "x": 341,
                     "y": 332,
+                    "visible": false,
                     "list": [
                         {
                             "type": "Image",
@@ -1164,6 +1167,7 @@
                     "y": 332,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "Disabled",
                     "fixedWidth": 120,
                     "align": "center",
@@ -1185,6 +1189,7 @@
                     "y": 332,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "Enabled",
                     "fixedWidth": 120,
                     "align": "center",
@@ -1206,6 +1211,7 @@
                     "y": 254,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "Playtime Limit:",
                     "fixedWidth": 300,
                     "align": "right",
@@ -1227,6 +1233,7 @@
                     },
                     "x": 405,
                     "y": 254,
+                    "visible": false,
                     "width": 300,
                     "height": 60
                 },
@@ -1239,6 +1246,7 @@
                     "y": 254,
                     "originX": 0.5,
                     "originY": 0.5,
+                    "visible": false,
                     "text": "2 hours",
                     "fixedWidth": 280,
                     "align": "center",
@@ -1522,6 +1530,38 @@
                             "y": -320
                         }
                     ]
+                },
+                {
+                    "type": "Text",
+                    "id": "ec8a8152-74a1-4846-8b4d-8105d9fbcbe6",
+                    "label": "settings_1",
+                    "scope": "CLASS",
+                    "x": 355,
+                    "y": 272,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Report a bug, another player, or suggest a feature",
+                    "fixedWidth": 400,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "stroke": "#642602ff",
+                    "strokeThickness": 8,
+                    "wordWrapWidth": 400
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "e6a7a71d-f384-42c3-b91f-1f61bf39d07b",
+                    "label": "rectangle_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.loadExternal('Report')",
+                    "x": 351,
+                    "y": 274,
+                    "width": 400,
+                    "height": 200
                 }
             ]
         }

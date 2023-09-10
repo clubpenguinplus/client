@@ -622,6 +622,8 @@ export default class IglooEdit extends BaseScene {
 
         this.scrollbar.setInteractive()
         this.scrollbar.on('pointerdown', (pointer) => this.onScrollerDown(pointer))
+
+        this.loadItems(0)
     }
 
     onSleep() {
@@ -838,7 +840,7 @@ export default class IglooEdit extends BaseScene {
                 break
             case 4:
                 this.shell.client.furnitureInventory.forEach((item) => {
-                    if (this.crumbs.furniture[item.id].type == 1) {
+                    if (this.crumbs.furniture[item.id].type == 1 || this.crumbs.furniture[item.id].type == 3) {
                         items.push(item)
                     }
                 })
@@ -851,13 +853,6 @@ export default class IglooEdit extends BaseScene {
                 })
                 break
             case 6:
-                this.shell.client.furnitureInventory.forEach((item) => {
-                    if (this.crumbs.furniture[item.id].type == 3) {
-                        items.push(item)
-                    }
-                })
-                break
-            case 7:
                 this.shell.client.furnitureInventory.forEach((item) => {
                     if (this.crumbs.furniture[item.id].type == 4) {
                         items.push(item)
@@ -876,6 +871,7 @@ export default class IglooEdit extends BaseScene {
         } else {
             this.scrollBarContainer.visible = false
         }
+        this.category = category
     }
 
     loadIglooItems(list, xcoord) {
@@ -1067,8 +1063,8 @@ export default class IglooEdit extends BaseScene {
     }
 
     showFurnitureCat() {
-        this.interface.prompt.showError('Use !af {ID} in the chat bar to obtain furniture. EG: !af 100 You can also use !afl {ID} to add flooring, !al {id} to add locations and !aig {ID} to add igloos, but beware many igloos have not yet been implemented.')
-        //this.interface.loadExternal('FurnitureCatalog')
+        //this.interface.prompt.showError('Use !af {ID} in the chat bar to obtain furniture. EG: !af 100 You can also use !afl {ID} to add flooring, !al {id} to add locations and !aig {ID} to add igloos, but beware many igloos have not yet been implemented.')
+        this.interface.loadExternal('FurnitureCatalog')
     }
     /* END-USER-CODE */
 }

@@ -68,16 +68,38 @@ export default class ItemPrompt extends BaseContainer {
 
     /* START-USER-CODE */
 
-    showItem(item) {
+    showItem(item, isMedals = false) {
         if (this.inventoryIncludes(item)) {
             return this.interface.prompt.showError(this.shell.crumbs.getError('1'))
         }
+        this.airtower.sendXt('i#gi', `items%${item}%${isMedals ? 1 : 0}`)
+        this.airtower.events.once('gii', this.showAfterEvent.bind(this))
+    }
 
-        this.show(item, this.crumbs.items[item], 'clothing')
+    showAfterEvent(args) {
+        let crumb = {
+            name: this.crumbs.items[args[1]].name,
+            cost: args[3],
+            available: args[4],
+            medals: args[6]
+        }
+        this.show(args[1], crumb, 'clothing')
     }
 
     showFurniture(item) {
         this.show(item, this.crumbs.furniture[item], 'furniture')
+    }
+
+    showLocation(item) {
+        this.show(item, this.crumbs.locations[item], 'location')
+    }
+
+    showIgloo(item) {
+        this.show(item, this.crumbs.igloos[item], 'igloo')
+    }
+
+    showFlooring(item) {
+        this.show(item, this.crumbs.flooring[item], 'flooring')
     }
 
     show(item, crumb, type) {
@@ -85,10 +107,15 @@ export default class ItemPrompt extends BaseContainer {
             return
         }
 
+        if (!crumb.available && type == 'clothing') {
+            return this.interface.prompt.showError(this.crumbs.getError('2'))
+        }
+
         this.item = item
         this.type = type
+        this.medals = crumb.medals || 0
 
-        this.text.text = this.getText(crumb.name, crumb.cost)
+        this.text.text = this.getText(crumb.name, crumb.cost, crumb.medals)
         this.visible = true
 
         this.loader.loadIcon(item)
@@ -98,8 +125,10 @@ export default class ItemPrompt extends BaseContainer {
         return this.shell.client.hasItem(item)
     }
 
-    getText(name, cost) {
-        if (cost < 1) {
+    getText(name, cost, medals) {
+        if (medals > 0) {
+            return this.crumbs.getString(`medals-item-popup,${name},${medals},${this.shell.client.medals}`)
+        } else if (cost < 1) {
             return this.crumbs.getString(`free-item-popup,${name}`)
         } else {
             return this.crumbs.getString(`paid-item-popup,${name},${cost},${this.shell.client.coins}`)
@@ -108,7 +137,11 @@ export default class ItemPrompt extends BaseContainer {
 
     callback() {
         if (this.item) {
-            this.sendAddItem()
+            if (this.medals > 0) {
+                this.airtower.sendXt('i#aim', this.item)
+            } else {
+                this.sendAddItem()
+            }
         }
 
         this.visible = false
@@ -125,6 +158,15 @@ export default class ItemPrompt extends BaseContainer {
                 break
             case 'furniture':
                 this.airtower.sendXt('g#af', this.item)
+                break
+            case 'flooring':
+                this.airtower.sendXt('g#bg', this.item)
+                break
+            case 'igloo':
+                this.airtower.sendXt('g#bi', this.item)
+                break
+            case 'location':
+                this.airtower.sendXt('g#bl', this.item)
                 break
             default:
                 break

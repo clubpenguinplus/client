@@ -80,14 +80,14 @@ export default class CostumeCatalog extends Book {
         this.buyBtn_126
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_126
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_212
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_212
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_212
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_210
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_212
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_skirt
         /** @type {Phaser.GameObjects.Sprite} */
@@ -126,14 +126,14 @@ export default class CostumeCatalog extends Book {
         this.buyBtn_327
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_327
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_716
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_716
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_716
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_716
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_716
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_crook
         /** @type {Phaser.GameObjects.Sprite} */
@@ -508,14 +508,14 @@ export default class CostumeCatalog extends Book {
         this.buyBtn_4192
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_4192
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_1272
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_1272
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_1272
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_1272
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_1272
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_sun
         /** @type {Phaser.GameObjects.Sprite} */
@@ -578,14 +578,14 @@ export default class CostumeCatalog extends Book {
         this.buyBtn_475
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_475
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_186
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_186
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_186
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_186
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_186
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_ruff
         /** @type {Phaser.GameObjects.Sprite} */
@@ -632,14 +632,14 @@ export default class CostumeCatalog extends Book {
         this.buyBtn_309
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_309
-        /** @type {Phaser.GameObjects.Container} */
-        this.sec_6020
         /** @type {Phaser.GameObjects.Sprite} */
         this.buyBtn_6020
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_6020
         /** @type {Phaser.GameObjects.Text} */
         this.nameTag_6020
+        /** @type {Phaser.GameObjects.Container} */
+        this.sec_6020
         /** @type {Phaser.GameObjects.Ellipse} */
         this.sec_point
         /** @type {Phaser.GameObjects.Sprite} */
@@ -678,10 +678,10 @@ export default class CostumeCatalog extends Book {
         this.buyBtn_119
         /** @type {Phaser.GameObjects.Text} */
         this.priceNum_119
-        /** @type {Phaser.GameObjects.Container} */
-        this.buttons
         /** @type {Phaser.GameObjects.Text} */
         this.coins
+        /** @type {Phaser.GameObjects.Container} */
+        this.buttons
         /** @type {Phaser.GameObjects.Container[]} */
         this.pages
 
@@ -1894,7 +1894,7 @@ export default class CostumeCatalog extends Book {
         // priceNum_244
         const priceNum_244 = this.add.text(627, 300, '', {})
         priceNum_244.setOrigin(0.5, 0.5)
-        priceNum_244.text = 'Collect'
+        priceNum_244.text = '50'
         priceNum_244.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold'})
         page16.add(priceNum_244)
 
@@ -5074,10 +5074,10 @@ export default class CostumeCatalog extends Book {
         this.priceNum_190 = priceNum_190
         this.buyBtn_126 = buyBtn_126
         this.priceNum_126 = priceNum_126
-        this.sec_212 = sec_212
         this.buyBtn_212 = buyBtn_212
         this.priceNum_212 = priceNum_212
         this.nameTag_210 = nameTag_210
+        this.sec_212 = sec_212
         this.sec_skirt = sec_skirt
         this.buyBtn_676 = buyBtn_676
         this.priceNum_676 = priceNum_676
@@ -5097,10 +5097,10 @@ export default class CostumeCatalog extends Book {
         this.priceNum_432 = priceNum_432
         this.buyBtn_327 = buyBtn_327
         this.priceNum_327 = priceNum_327
-        this.sec_716 = sec_716
         this.buyBtn_716 = buyBtn_716
         this.priceNum_716 = priceNum_716
         this.nameTag_716 = nameTag_716
+        this.sec_716 = sec_716
         this.sec_crook = sec_crook
         this.buyBtn_666 = buyBtn_666
         this.priceNum_666 = priceNum_666
@@ -5288,10 +5288,10 @@ export default class CostumeCatalog extends Book {
         this.priceNum_1114 = priceNum_1114
         this.buyBtn_4192 = buyBtn_4192
         this.priceNum_4192 = priceNum_4192
-        this.sec_1272 = sec_1272
         this.buyBtn_1272 = buyBtn_1272
         this.priceNum_1272 = priceNum_1272
         this.nameTag_1272 = nameTag_1272
+        this.sec_1272 = sec_1272
         this.sec_sun = sec_sun
         this.buyBtn_1115 = buyBtn_1115
         this.priceNum_1115 = priceNum_1115
@@ -5323,10 +5323,10 @@ export default class CostumeCatalog extends Book {
         this.priceNum_760 = priceNum_760
         this.buyBtn_475 = buyBtn_475
         this.priceNum_475 = priceNum_475
-        this.sec_186 = sec_186
         this.buyBtn_186 = buyBtn_186
         this.priceNum_186 = priceNum_186
         this.nameTag_186 = nameTag_186
+        this.sec_186 = sec_186
         this.sec_ruff = sec_ruff
         this.buyBtn_1102 = buyBtn_1102
         this.priceNum_1102 = priceNum_1102
@@ -5350,10 +5350,10 @@ export default class CostumeCatalog extends Book {
         this.priceNum_4138 = priceNum_4138
         this.buyBtn_309 = buyBtn_309
         this.priceNum_309 = priceNum_309
-        this.sec_6020 = sec_6020
         this.buyBtn_6020 = buyBtn_6020
         this.priceNum_6020 = priceNum_6020
         this.nameTag_6020 = nameTag_6020
+        this.sec_6020 = sec_6020
         this.sec_point = sec_point
         this.buyBtn_2043 = buyBtn_2043
         this.priceNum_2043 = priceNum_2043
@@ -5373,8 +5373,8 @@ export default class CostumeCatalog extends Book {
         this.priceNum_3038 = priceNum_3038
         this.buyBtn_119 = buyBtn_119
         this.priceNum_119 = priceNum_119
-        this.buttons = buttons
         this.coins = coins
+        this.buttons = buttons
         this.pages = pages
 
         this.events.emit('scene-awake')

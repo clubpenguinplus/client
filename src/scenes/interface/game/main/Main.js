@@ -151,8 +151,6 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
-        /** @type {Phaser.GameObjects.Image} */
-        this.beta
         /** @type {Friend} */
         this.friend
         /** @type {PlayerCard} */
@@ -173,6 +171,8 @@ export default class Main extends BaseScene {
         this.puffleTricks
         /** @type {Safe} */
         this.safe
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.blocker
         /** @type {Waddle} */
         this.waddle
         /** @type {FindFour} */
@@ -437,9 +437,6 @@ export default class Main extends BaseScene {
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
 
-        // beta
-        const beta = this.add.image(1354, 68, 'main', 'beta')
-
         // widgetLayer
         const widgetLayer = this.add.layer()
 
@@ -487,6 +484,10 @@ export default class Main extends BaseScene {
         const safe = new Safe(this, 244, 933)
         this.add.existing(safe)
         safe.visible = false
+
+        // blocker
+        const blocker = this.add.rectangle(760, 480, 1520, 960)
+        blocker.visible = false
 
         // waddle
         const waddle = new Waddle(this, 733, 422)
@@ -543,7 +544,7 @@ export default class Main extends BaseScene {
 
         // lists
         const hideOnSleep = [playerCard, friend]
-        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, chatLog, badge_member, emote_icon, phone_button, chat_button, chat_icon, mail_btn, beta, safetyquiz, moderatoricon]
+        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, chatLog, badge_member, emote_icon, phone_button, chat_button, chat_icon, mail_btn, safetyquiz, moderatoricon]
 
         // dock (components)
         new Interactive(dock)
@@ -554,7 +555,7 @@ export default class Main extends BaseScene {
         // chatInput (components)
         const chatInputInputText = new InputText(chatInput)
         chatInputInputText.charlimit = 80
-        chatInputInputText.inputfilter = /^[A-Z !?.,:;0-9]*$/i
+        chatInputInputText.inputfilter = /^[a-zA-ZÀ-ÿÁáÉéÍíÓóÚúÜüÑñÇç !?"'.,:;0-9]*$/i
         chatInputInputText.entercallback = () => this.onChatSend()
 
         // puffle_button (components)
@@ -717,9 +718,8 @@ export default class Main extends BaseScene {
         const moderatoriconButton = new Button(moderatoricon)
         moderatoriconButton.callback = () => this.onModClick()
 
-        // beta (components)
-        const betaButton = new Button(beta)
-        betaButton.callback = () => this.onBetaClick()
+        // blocker (components)
+        new Interactive(blocker)
 
         this.pinContainer = pinContainer
         this.dock = dock
@@ -781,7 +781,6 @@ export default class Main extends BaseScene {
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
-        this.beta = beta
         this.friend = friend
         this.playerCard = playerCard
         this.friendSmall = friendSmall
@@ -792,6 +791,7 @@ export default class Main extends BaseScene {
         this.emotesMenu = emotesMenu
         this.puffleTricks = puffleTricks
         this.safe = safe
+        this.blocker = blocker
         this.waddle = waddle
         this.findFour = findFour
         this.mancala = mancala
@@ -896,8 +896,6 @@ export default class Main extends BaseScene {
     onWake() {
         if (!this.moderatoricon) return
         this.showTR()
-        if (!this.beta) return
-        this.beta.visible = true
     }
 
     setupWidgets() {
@@ -1030,14 +1028,12 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = false
         }
-        this.beta.visible = false
     }
 
     show() {
         for (let item of this.interfaceList) {
             item.visible = true
         }
-        this.beta.visible = true
         this.showTR()
     }
 

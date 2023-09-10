@@ -31,23 +31,19 @@
             "type": "Container",
             "id": "38560176-7139-4b4a-be8e-e6c104168e00",
             "label": "pageContainer",
-            "scope": "CLASS",
-            "components": [],
-            "list": []
+            "scope": "CLASS"
         },
         {
             "type": "Container",
             "id": "dfc6c094-d5d9-422e-b7b2-557812d8ddd1",
             "label": "buttons",
             "scope": "CLASS",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "b2459840-60c4-4e8e-b7db-9df7b7e8f5c0",
                     "label": "coinholder",
-                    "components": [],
                     "texture": {
                         "key": "constant",
                         "frame": "coinholder"
@@ -60,7 +56,6 @@
                     "id": "48e91ecb-d276-4383-966d-d7a252a002c7",
                     "label": "coins",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 808.5193256172128,
                     "y": 854.2068469602601,
                     "angle": -7,
@@ -111,7 +106,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

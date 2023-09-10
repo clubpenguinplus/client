@@ -148,7 +148,7 @@ export default class MainRequestItem extends BaseContainer {
 
     onNoClick() {
         if (this.id) {
-            this.shell.airtower.send('b#be', this.id)
+            this.shell.airtower.sendXt('b#be', this.id)
             this.shell.client.pending.filter((f) => f != `${this.id}|${this.username.text}`)
             this.clearItem()
 

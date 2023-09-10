@@ -255,7 +255,7 @@ export default class Shell extends BaseScene {
         })
 
         let id = stringArray[0]
-        let ua = stringArray[17]
+        let ua = stringArray.length >= 16 ? stringArray[17] : 1
 
         isClient = isClient ? true : id == this.client.id
 

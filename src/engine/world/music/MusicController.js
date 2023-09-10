@@ -22,8 +22,6 @@ export default class MusicController extends Phaser.Scene {
     }
 
     addMusic(track, fileExtension = 'mp3') {
-        console.log(`[MusicController] Adding music: ${track}`)
-
         if (track == 0) {
             this.sound.stopAll()
             this.music = null

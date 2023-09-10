@@ -400,7 +400,7 @@ export default class IglooMap extends BaseContainer {
     show() {
         this.iglooSprites.map((igloo) => igloo.reset())
 
-        this.username = this.shell.client.penguin.username
+        this.username.text = this.shell.client.penguin.username
 
         this.panel.visible = false
         this.startSpinner()

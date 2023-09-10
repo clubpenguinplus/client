@@ -186,6 +186,8 @@ export default class Settings extends BaseContainer {
         this.pchange_quit
         /** @type {Phaser.GameObjects.Container} */
         this.pchange
+        /** @type {Phaser.GameObjects.Text} */
+        this.settings_1
 
         // block
         const block = scene.add.rectangle(0, 0, 1520, 960)
@@ -535,6 +537,7 @@ export default class Settings extends BaseContainer {
         // pc_header
         const pc_header = scene.add.text(291, 193, '', {})
         pc_header.setOrigin(0.5, 0.5)
+        pc_header.visible = false
         pc_header.text = 'Parental Controls'
         pc_header.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '36px', stroke: '#642602ff', strokeThickness: 6})
         this.add(pc_header)
@@ -542,6 +545,7 @@ export default class Settings extends BaseContainer {
         // in_header
         const in_header = scene.add.text(95, 334, '', {})
         in_header.setOrigin(0.5, 0.5)
+        in_header.visible = false
         in_header.text = 'Infraction Notifications:'
         in_header.setStyle({align: 'right', color: '#ffffffff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '24px', stroke: '#642602ff', strokeThickness: 6})
         in_header.setWordWrapWidth(250)
@@ -549,6 +553,7 @@ export default class Settings extends BaseContainer {
 
         // in_switcher
         const in_switcher = scene.add.container(341, 332)
+        in_switcher.visible = false
         this.add(in_switcher)
 
         // in_switch1
@@ -562,6 +567,7 @@ export default class Settings extends BaseContainer {
         // in_text1
         const in_text1 = scene.add.text(341, 332, '', {})
         in_text1.setOrigin(0.5, 0.5)
+        in_text1.visible = false
         in_text1.text = 'Disabled'
         in_text1.setStyle({align: 'center', color: '#642602ff', fixedWidth: 120, fontFamily: 'cpBurbankSmall', fontSize: '24px', stroke: '#ffffffff'})
         this.add(in_text1)
@@ -569,6 +575,7 @@ export default class Settings extends BaseContainer {
         // in_text2
         const in_text2 = scene.add.text(471, 332, '', {})
         in_text2.setOrigin(0.5, 0.5)
+        in_text2.visible = false
         in_text2.text = 'Enabled'
         in_text2.setStyle({align: 'center', color: '#642602ff', fixedWidth: 120, fontFamily: 'cpBurbankSmall', fontSize: '24px', stroke: '#ffffffff'})
         this.add(in_text2)
@@ -576,6 +583,7 @@ export default class Settings extends BaseContainer {
         // plimit_header
         const plimit_header = scene.add.text(95, 254, '', {})
         plimit_header.setOrigin(0.5, 0.5)
+        plimit_header.visible = false
         plimit_header.text = 'Playtime Limit:'
         plimit_header.setStyle({align: 'right', color: '#ffffffff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '24px', stroke: '#642602ff', strokeThickness: 6})
         plimit_header.setWordWrapWidth(250)
@@ -583,11 +591,13 @@ export default class Settings extends BaseContainer {
 
         // plimit_bg
         const plimit_bg = scene.add.ninePatchContainer(405, 254, 300, 60, 'banning', 'text_bg')
+        plimit_bg.visible = false
         this.add(plimit_bg)
 
         // plimit_text
         const plimit_text = scene.add.text(405, 254, '', {})
         plimit_text.setOrigin(0.5, 0.5)
+        plimit_text.visible = false
         plimit_text.text = '2 hours'
         plimit_text.setStyle({align: 'center', color: '#642602ff', fixedWidth: 280, fontFamily: 'cpBurbankSmall', fontSize: '28px'})
         this.add(plimit_text)
@@ -684,6 +694,18 @@ export default class Settings extends BaseContainer {
         // pchange_quit
         const pchange_quit = scene.add.image(218, -320, 'main', 'white-x')
         pchange.add(pchange_quit)
+
+        // settings_1
+        const settings_1 = scene.add.text(355, 272, '', {})
+        settings_1.setOrigin(0.5, 0.5)
+        settings_1.text = 'Report a bug, another player, or suggest a feature'
+        settings_1.setStyle({align: 'center', fixedWidth: 400, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold', stroke: '#642602ff', strokeThickness: 8})
+        settings_1.setWordWrapWidth(400)
+        this.add(settings_1)
+
+        // rectangle_1
+        const rectangle_1 = scene.add.rectangle(351, 274, 400, 200)
+        this.add(rectangle_1)
 
         // block (components)
         new Interactive(block)
@@ -911,6 +933,10 @@ export default class Settings extends BaseContainer {
         const pchange_quitSimpleButton = new SimpleButton(pchange_quit)
         pchange_quitSimpleButton.callback = () => this.cancelPChange()
 
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1)
+        rectangle_1SimpleButton.callback = () => this.interface.loadExternal('Report')
+
         this.block = block
         this.bg = bg
         this.age = age
@@ -1000,6 +1026,7 @@ export default class Settings extends BaseContainer {
         this.pchange_submit_text = pchange_submit_text
         this.pchange_quit = pchange_quit
         this.pchange = pchange
+        this.settings_1 = settings_1
 
         /* START-USER-CTR-CODE */
         this.maxSliderX = -200

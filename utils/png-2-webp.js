@@ -8,7 +8,7 @@ function searchForPNGs(path) {
             searchForPNGs(`${path}/${file}`)
             continue
         }
-        
+
         if (file.endsWith('.png')) {
             console.log(`Found png at ${path}/${file}, converting to webp`)
             exec(`cwebp -q 100 ${path}/${file} -o ${path}/${file.replace('.png', '.webp')}`, (err, stdout, stderr) => {
@@ -21,7 +21,7 @@ function searchForPNGs(path) {
                 }
                 console.log(stdout)
                 fs.unlinkSync(`${path}/${file}`)
-            }) 
+            })
             continue
         }
 

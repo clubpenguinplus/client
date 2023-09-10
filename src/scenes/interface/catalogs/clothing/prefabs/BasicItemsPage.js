@@ -31,18 +31,18 @@ export default class BasicItemsPage extends Page {
         this.add(page4_header)
 
         // buyBtn_210
-        const buyBtn_210 = scene.add.sprite(999, 235, 'catalogs-master', 'buybtn')
+        const buyBtn_210 = scene.add.sprite(1002, 235, 'catalogs-master', 'buybtn')
         this.add(buyBtn_210)
 
         // priceNum_210
-        const priceNum_210 = scene.add.text(997, 235, '', {})
+        const priceNum_210 = scene.add.text(1002, 235, '', {})
         priceNum_210.setOrigin(0.5, 0.5)
         priceNum_210.text = '300'
-        priceNum_210.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_210.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_210)
 
         // nameTag_210
-        const nameTag_210 = scene.add.text(1008, 198, '', {})
+        const nameTag_210 = scene.add.text(1002, 198, '', {})
         nameTag_210.setOrigin(0.5, 0.5)
         nameTag_210.text = 'Star T-Shirt'
         nameTag_210.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -54,18 +54,18 @@ export default class BasicItemsPage extends Page {
         this.add(hover_210)
 
         // buyBtn_405
-        const buyBtn_405 = scene.add.sprite(1173, 235, 'catalogs-master', 'buybtn')
+        const buyBtn_405 = scene.add.sprite(1177, 235, 'catalogs-master', 'buybtn')
         this.add(buyBtn_405)
 
         // priceNum_405
-        const priceNum_405 = scene.add.text(1171, 235, '', {})
+        const priceNum_405 = scene.add.text(1177, 235, '', {})
         priceNum_405.setOrigin(0.5, 0.5)
         priceNum_405.text = '200'
-        priceNum_405.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_405.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_405)
 
         // nameTag_405
-        const nameTag_405 = scene.add.text(1179, 198, '', {})
+        const nameTag_405 = scene.add.text(1177, 198, '', {})
         nameTag_405.setOrigin(0.5, 0.5)
         nameTag_405.text = 'Green Ball Cap'
         nameTag_405.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -77,18 +77,18 @@ export default class BasicItemsPage extends Page {
         this.add(hover_405)
 
         // buyBtn_717
-        const buyBtn_717 = scene.add.sprite(1344, 235, 'catalogs-master', 'buybtn')
+        const buyBtn_717 = scene.add.sprite(1349, 235, 'catalogs-master', 'buybtn')
         this.add(buyBtn_717)
 
         // priceNum_717
-        const priceNum_717 = scene.add.text(1342, 235, '', {})
+        const priceNum_717 = scene.add.text(1349, 235, '', {})
         priceNum_717.setOrigin(0.5, 0.5)
         priceNum_717.text = '300'
-        priceNum_717.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_717.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_717)
 
         // nameTag_717
-        const nameTag_717 = scene.add.text(1351, 198, '', {})
+        const nameTag_717 = scene.add.text(1349, 198, '', {})
         nameTag_717.setOrigin(0.5, 0.5)
         nameTag_717.text = 'Baseball Glove'
         nameTag_717.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -100,18 +100,18 @@ export default class BasicItemsPage extends Page {
         this.add(hover_717)
 
         // buyBtn_713
-        const buyBtn_713 = scene.add.sprite(1344, 453, 'catalogs-master', 'buybtn')
+        const buyBtn_713 = scene.add.sprite(1349, 453, 'catalogs-master', 'buybtn')
         this.add(buyBtn_713)
 
         // priceNum_713
-        const priceNum_713 = scene.add.text(1342, 453, '', {})
+        const priceNum_713 = scene.add.text(1349, 453, '', {})
         priceNum_713.setOrigin(0.5, 0.5)
         priceNum_713.text = '300'
-        priceNum_713.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_713.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_713)
 
         // nameTag_713
-        const nameTag_713 = scene.add.text(1351, 415, '', {})
+        const nameTag_713 = scene.add.text(1349, 415, '', {})
         nameTag_713.setOrigin(0.5, 0.5)
         nameTag_713.text = 'Pink Purse'
         nameTag_713.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -123,18 +123,18 @@ export default class BasicItemsPage extends Page {
         this.add(hover_713)
 
         // buyBtn_192
-        const buyBtn_192 = scene.add.sprite(1173, 453, 'catalogs-master', 'buybtn')
+        const buyBtn_192 = scene.add.sprite(1177, 453, 'catalogs-master', 'buybtn')
         this.add(buyBtn_192)
 
         // priceNum_192
-        const priceNum_192 = scene.add.text(1171, 453, '', {})
+        const priceNum_192 = scene.add.text(1177, 453, '', {})
         priceNum_192.setOrigin(0.5, 0.5)
         priceNum_192.text = '150'
-        priceNum_192.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_192.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_192)
 
         // nameTag_192
-        const nameTag_192 = scene.add.text(1180, 415, '', {})
+        const nameTag_192 = scene.add.text(1177, 415, '', {})
         nameTag_192.setOrigin(0.5, 0.5)
         nameTag_192.text = 'Red Bandana'
         nameTag_192.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -146,18 +146,18 @@ export default class BasicItemsPage extends Page {
         this.add(hover_192)
 
         // buyBtn_203
-        const buyBtn_203 = scene.add.sprite(1337, 679, 'catalogs-master', 'buybtn')
+        const buyBtn_203 = scene.add.sprite(1349, 679, 'catalogs-master', 'buybtn')
         this.add(buyBtn_203)
 
         // priceNum_203
-        const priceNum_203 = scene.add.text(1336, 679, '', {})
+        const priceNum_203 = scene.add.text(1349, 679, '', {})
         priceNum_203.setOrigin(0.5, 0.5)
         priceNum_203.text = '200'
-        priceNum_203.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_203.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_203)
 
         // nameTag_203
-        const nameTag_203 = scene.add.text(1347, 639, '', {})
+        const nameTag_203 = scene.add.text(1349, 639, '', {})
         nameTag_203.setOrigin(0.5, 0.5)
         nameTag_203.text = 'Butterfly T-Shirt'
         nameTag_203.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -169,18 +169,18 @@ export default class BasicItemsPage extends Page {
         this.add(hover_203)
 
         // buyBtn_653
-        const buyBtn_653 = scene.add.sprite(1173, 679, 'catalogs-master', 'buybtn')
+        const buyBtn_653 = scene.add.sprite(1177, 679, 'catalogs-master', 'buybtn')
         this.add(buyBtn_653)
 
         // priceNum_653
-        const priceNum_653 = scene.add.text(1171, 679, '', {})
+        const priceNum_653 = scene.add.text(1177, 679, '', {})
         priceNum_653.setOrigin(0.5, 0.5)
         priceNum_653.text = '500'
-        priceNum_653.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold'})
+        priceNum_653.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(priceNum_653)
 
         // nameTag_653
-        const nameTag_653 = scene.add.text(1180, 639, '', {})
+        const nameTag_653 = scene.add.text(1177, 639, '', {})
         nameTag_653.setOrigin(0.5, 0.5)
         nameTag_653.text = 'The Funster'
         nameTag_653.setStyle({fontFamily: 'cpBurbankSmall', fontSize: '20px'})

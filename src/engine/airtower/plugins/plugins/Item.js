@@ -6,6 +6,7 @@ export default class Item extends Plugin {
         this.events = {
             up: this.updatePlayer,
             ai: this.addItem,
+            aim: this.addItemWithMedal,
             aci: this.addCodeItem,
             ac: this.addCoins,
             sepfm: this.setMedals
@@ -39,6 +40,24 @@ export default class Item extends Plugin {
 
         // Update catalog coins
         this.interface.updateCatalogCoins(args[3])
+
+        // Show prompt
+        let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.items[args[0]].name}`)
+        this.interface.prompt.showWindow(text, 'single')
+    }
+
+    addItemWithMedal(args) {
+        args[0] = parseInt(args[0])
+        // If item already in inventory
+        if (this.client.inventory[args[2]].includes(args[0])) return
+
+        // Update player data
+        this.client.medals = args[3]
+        this.client.inventory[args[2]].push(args[0])
+        this.client.inventory[args[2]].sort((a, b) => a - b)
+
+        // Update EPF phone medals
+        this.interface.updateEPFMedals(args[3])
 
         // Show prompt
         let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.items[args[0]].name}`)

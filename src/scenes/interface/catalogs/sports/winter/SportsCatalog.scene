@@ -36,14 +36,12 @@
             "type": "Container",
             "id": "91f5a4fc-f734-4524-97ce-6c2141ef796a",
             "label": "page1",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "03372dcd-1297-4625-89cd-d1bc381a6874",
                     "label": "page1body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page1body"
@@ -87,14 +85,12 @@
             "type": "Container",
             "id": "3ae976a3-2c41-4b82-95cc-78312622ed08",
             "label": "page2",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "c2850faf-c979-417d-9a36-8b1003753b6e",
                     "label": "page2body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page2body"
@@ -348,14 +344,12 @@
             "type": "Container",
             "id": "3499b762-d5cf-4506-8bce-480ba2de88ec",
             "label": "page3",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "66be5197-933e-4e26-a197-3f7d0a22a98d",
                     "label": "page3body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page3body"
@@ -469,14 +463,12 @@
             "type": "Container",
             "id": "6494f37f-1fad-439d-8e91-d3cd4220d017",
             "label": "page4",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "79a16d38-20e6-4ca0-bd0f-b3ec4c50086b",
                     "label": "page4body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page4body"
@@ -660,14 +652,12 @@
             "type": "Container",
             "id": "2f282795-e367-4c38-aaf8-5edf05db3385",
             "label": "page5",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "51f5ff4f-0986-4130-8365-9607642da34e",
                     "label": "page5body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page5body"
@@ -851,14 +841,12 @@
             "type": "Container",
             "id": "54487cba-a3d4-478c-8b1e-213d83b742c7",
             "label": "page6",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "58db2036-2435-4d76-9ad8-16a41e3e8ce9",
                     "label": "page6body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page6body"
@@ -972,14 +960,12 @@
             "type": "Container",
             "id": "7d988d0b-67e8-4b8a-949b-7dd96ba12898",
             "label": "page7",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "c6959b10-aa30-4e07-a6c4-f6db7be4d1b4",
                     "label": "page7body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page7body"
@@ -1093,14 +1079,12 @@
             "type": "Container",
             "id": "43ac1a3d-6ae6-4ac5-ae60-1c81891ad5c7",
             "label": "page8",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "63d6484d-05ac-4dc7-a974-64c633a74b53",
                     "label": "page8body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page8body"
@@ -1424,14 +1408,12 @@
             "type": "Container",
             "id": "99f95081-9560-4e15-a29e-7d5fedb71132",
             "label": "page9",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "ece414cf-c0f3-4270-865f-8899ddd12701",
                     "label": "page9body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page9body"
@@ -1755,14 +1737,12 @@
             "type": "Container",
             "id": "4870e3b0-4926-4eb3-a1d2-cc497c1eb661",
             "label": "page10",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "6495ea8c-40c7-4106-805f-f12111d68c29",
                     "label": "page10body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page10body"
@@ -1985,7 +1965,6 @@
                     "id": "9e72ef6b-0d7d-4c1f-b6b6-522deb1018c7",
                     "label": "sec_1036",
                     "scope": "CLASS",
-                    "components": [],
                     "visible": false,
                     "list": [
                         {
@@ -2007,7 +1986,6 @@
                             "type": "Image",
                             "id": "0700133e-a3f4-4d4c-850b-5468c32a492d",
                             "label": "secretholder_goalhel",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretholder"
@@ -2021,7 +1999,6 @@
                             "type": "Image",
                             "id": "d3b5e903-e638-453d-8902-54de5c652832",
                             "label": "secretwrap_goalhel",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretwrap"
@@ -2033,7 +2010,6 @@
                             "type": "Image",
                             "id": "cd264831-a84d-4bb6-8a9d-e7171deac512",
                             "label": "secrettext_goalhel",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secrettext"
@@ -2062,7 +2038,6 @@
                             "type": "Image",
                             "id": "4d184624-154f-45cd-992a-b8bb68cc0cb7",
                             "label": "sec_goalhel",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "sec_goalhel.webp"
@@ -2150,7 +2125,6 @@
                     "id": "fe938627-2e39-4fed-aaac-aa4699d980ba",
                     "label": "sec_5018",
                     "scope": "CLASS",
-                    "components": [],
                     "visible": false,
                     "list": [
                         {
@@ -2172,7 +2146,6 @@
                             "type": "Image",
                             "id": "aee73d1a-6bce-4b45-b960-8fcf57719721",
                             "label": "secretholder_goalstick",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretholder"
@@ -2186,7 +2159,6 @@
                             "type": "Image",
                             "id": "7ce9ed29-1d1c-417f-af26-5ed8c6e1aeac",
                             "label": "secretwrap_goalstick",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretwrap"
@@ -2198,7 +2170,6 @@
                             "type": "Image",
                             "id": "97d8dc48-cedb-409f-876e-f48ce640838f",
                             "label": "secrettext_goalstick",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secrettext"
@@ -2227,7 +2198,6 @@
                             "type": "Image",
                             "id": "03c05137-f00f-453f-ac04-fbd27c963b9c",
                             "label": "sec_goalstick",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "sec_goal.webp"
@@ -2346,14 +2316,12 @@
             "type": "Container",
             "id": "6ee0e20b-7f0a-4876-9531-765868ac97a7",
             "label": "page11",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "1e343afc-b8f7-4361-bb7d-5617121ca3f2",
                     "label": "page11body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page11body"
@@ -2436,7 +2404,6 @@
                     "id": "f72ed02c-6335-4148-80f3-34f770d6e98e",
                     "label": "sec_4484",
                     "scope": "CLASS",
-                    "components": [],
                     "visible": false,
                     "list": [
                         {
@@ -2458,7 +2425,6 @@
                             "type": "Image",
                             "id": "ae0076ed-5be2-43e7-b5d3-5dce7e715504",
                             "label": "secretholder_snowysky",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretholder"
@@ -2472,7 +2438,6 @@
                             "type": "Image",
                             "id": "f77de570-fa1d-44ae-b2c1-52abc7215197",
                             "label": "secretwrap_snowysky",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretwrap"
@@ -2484,7 +2449,6 @@
                             "type": "Image",
                             "id": "30f0d1f1-6251-4642-aeca-387616d5e5a8",
                             "label": "secrettext_snowysky",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secrettext"
@@ -2513,7 +2477,6 @@
                             "type": "Image",
                             "id": "694f8488-5ea2-4cbf-b41d-fef8be4a235a",
                             "label": "sec_snowysky",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "sec_snowy.webp"
@@ -2631,14 +2594,12 @@
             "type": "Container",
             "id": "4b1a2268-39ef-49d3-a85b-b2c370d0b656",
             "label": "page12",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "49d47aeb-9552-4d3a-ae31-cb155a127299",
                     "label": "page12body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page12body"
@@ -2756,7 +2717,6 @@
                     "id": "a731112d-1f94-4cc9-b299-d9e663b679c0",
                     "label": "sec_1338",
                     "scope": "CLASS",
-                    "components": [],
                     "visible": false,
                     "list": [
                         {
@@ -2778,7 +2738,6 @@
                             "type": "Image",
                             "id": "ff28681e-0c09-4f95-8aee-ab550b216ed7",
                             "label": "secretholder_free",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretholder"
@@ -2792,7 +2751,6 @@
                             "type": "Image",
                             "id": "e039bc41-a6ae-4739-831d-415209528d54",
                             "label": "secretwrap_free",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secretwrap"
@@ -2804,7 +2762,6 @@
                             "type": "Image",
                             "id": "ccc14adb-11d6-4381-b67c-4ff8bac09252",
                             "label": "secrettext_free",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "secrettext"
@@ -2833,7 +2790,6 @@
                             "type": "Image",
                             "id": "030dde11-59be-4771-a8b4-ae2c5334912c",
                             "label": "sec_free",
-                            "components": [],
                             "texture": {
                                 "key": "winter-sports",
                                 "frame": "sec_free.webp"
@@ -2951,14 +2907,12 @@
             "type": "Container",
             "id": "7c9e717b-95de-42c5-8403-3fcc46ffccca",
             "label": "page13",
-            "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
                     "id": "ca2056dd-df1f-4b00-904a-b0d4f8b25467",
                     "label": "page13body",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "page13body"
@@ -3003,7 +2957,6 @@
             "id": "c0303408-3e8c-411a-a9e0-380b770a5afb",
             "label": "buttons",
             "scope": "CLASS",
-            "components": [],
             "x": 204,
             "y": 59,
             "visible": false,
@@ -3012,7 +2965,6 @@
                     "type": "Image",
                     "id": "28766178-fd9e-4605-ab7e-7d207c3f48dd",
                     "label": "coinholder",
-                    "components": [],
                     "texture": {
                         "key": "winter-sports",
                         "frame": "coinholder"
@@ -3025,7 +2977,6 @@
                     "id": "d7c686fa-2a32-4c15-a1be-922efadcd68c",
                     "label": "coins",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 587,
                     "y": 803,
                     "angle": -7,
@@ -3059,7 +3010,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

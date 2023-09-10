@@ -17,14 +17,12 @@
             "id": "4d2c4ae2-2e42-4f0a-9fcf-db9d23e48873",
             "label": "page4",
             "scope": "CLASS",
-            "components": [],
             "list": [
                 {
                     "type": "Image",
                     "id": "6a527fd4-8524-445a-af3d-2f380f08abb8",
                     "label": "page4Bg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "constant",
                         "frame": "basicItemsPage"
@@ -37,7 +35,6 @@
                     "id": "2f9c21ed-d7ac-4d44-85ed-153be4d1a47a",
                     "label": "rollOverText",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 929,
                     "y": 637,
                     "originX": 0.5,
@@ -52,7 +49,6 @@
                     "id": "e296cf4d-4c5f-4a43-b7a8-f6f481037937",
                     "label": "rollOver",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "constant",
                         "frame": "rollover10001"
@@ -65,7 +61,6 @@
                     "id": "8f15817c-2125-4305-916c-eb5bbf2977e2",
                     "label": "page4_header",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 204,
                     "y": 82,
                     "originX": 0.5,
@@ -88,7 +83,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 999,
+                    "x": 1002,
                     "y": 235
                 },
                 {
@@ -100,7 +95,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 210,
-                    "x": 997,
+                    "x": 1002,
                     "y": 235,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -108,7 +103,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -119,7 +118,7 @@
                         "Name"
                     ],
                     "Name.id": 210,
-                    "x": 1008,
+                    "x": 1002,
                     "y": 198,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -155,7 +154,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 1173,
+                    "x": 1177,
                     "y": 235
                 },
                 {
@@ -167,7 +166,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 405,
-                    "x": 1171,
+                    "x": 1177,
                     "y": 235,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -175,7 +174,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -186,7 +189,7 @@
                         "Name"
                     ],
                     "Name.id": 405,
-                    "x": 1179,
+                    "x": 1177,
                     "y": 198,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -222,7 +225,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 1344,
+                    "x": 1349,
                     "y": 235
                 },
                 {
@@ -234,7 +237,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 717,
-                    "x": 1342,
+                    "x": 1349,
                     "y": 235,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -242,7 +245,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -253,7 +260,7 @@
                         "Name"
                     ],
                     "Name.id": 717,
-                    "x": 1351,
+                    "x": 1349,
                     "y": 198,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -289,7 +296,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 1344,
+                    "x": 1349,
                     "y": 453
                 },
                 {
@@ -301,7 +308,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 713,
-                    "x": 1342,
+                    "x": 1349,
                     "y": 453,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -309,7 +316,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -320,7 +331,7 @@
                         "Name"
                     ],
                     "Name.id": 713,
-                    "x": 1351,
+                    "x": 1349,
                     "y": 415,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -356,7 +367,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 1173,
+                    "x": 1177,
                     "y": 453
                 },
                 {
@@ -368,7 +379,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 192,
-                    "x": 1171,
+                    "x": 1177,
                     "y": 453,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -376,7 +387,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -387,7 +402,7 @@
                         "Name"
                     ],
                     "Name.id": 192,
-                    "x": 1180,
+                    "x": 1177,
                     "y": 415,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -423,7 +438,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 1337,
+                    "x": 1349,
                     "y": 679
                 },
                 {
@@ -435,7 +450,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 203,
-                    "x": 1336,
+                    "x": 1349,
                     "y": 679,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -443,7 +458,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -454,7 +473,7 @@
                         "Name"
                     ],
                     "Name.id": 203,
-                    "x": 1347,
+                    "x": 1349,
                     "y": 639,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -490,7 +509,7 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 1173,
+                    "x": 1177,
                     "y": 679
                 },
                 {
@@ -502,7 +521,7 @@
                         "Pricetag"
                     ],
                     "Pricetag.id": 653,
-                    "x": 1171,
+                    "x": 1177,
                     "y": 679,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -510,7 +529,11 @@
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
-                    "color": "#4b2500ff"
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -521,7 +544,7 @@
                         "Name"
                     ],
                     "Name.id": 653,
-                    "x": 1180,
+                    "x": 1177,
                     "y": 639,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -567,6 +590,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

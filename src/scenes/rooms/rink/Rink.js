@@ -219,7 +219,7 @@ export default class Rink extends RoomScene {
 
     loadSeason() {
         let currentMonth = new Date().getMonth() + 1
-        if (currentMonth >= 6 && currentMonth < 12) {
+        if (currentMonth >= 5 && currentMonth < 11) {
             this.bg.visible = true
             this.fg.visible = true
             this.gate.visible = true
@@ -237,7 +237,7 @@ export default class Rink extends RoomScene {
             this.bgwinter.visible = false
             this.fgwinter.visible = false
             this.toprink.visible = false
-        } else if (currentMonth >= 12 || currentMonth < 6) {
+        } else if (currentMonth >= 11 || currentMonth < 5) {
             this.bg.visible = false
             this.fg.visible = false
             this.gate.visible = false
@@ -261,9 +261,9 @@ export default class Rink extends RoomScene {
     loadSnowSports() {
         let currentMonth = new Date().getMonth() + 1
 
-        if (currentMonth >= 6 && currentMonth < 12) {
+        if (currentMonth >= 5 && currentMonth < 11) {
             this.interface.loadExternal('SummerSports')
-        } else if (currentMonth >= 12 || currentMonth < 6) {
+        } else if (currentMonth >= 5 || currentMonth < 11) {
             this.interface.loadExternal('WinterSports')
         }
     }
