@@ -8,12 +8,44 @@ export default class ItemPromptLoader extends BaseLoader {
     }
 
     get baseURL() {
-        let suffix = this.prompt.type == 'furniture' ? '/client/media/furniture/icon/@5x/' : '/client/media/clothing/icon/large/'
+        let suffix
+        switch (this.prompt.type) {
+            case 'clothing':
+                suffix = '/client/media/clothing/icon/large/'
+                break
+            case 'furniture':
+                suffix = '/client/media/furniture/icon/@5x/'
+                break
+            case 'igloo':
+                suffix = '/client/media/igloos/buildings/icon/'
+                break
+            case 'location':
+                suffix = '/client/media/igloos/locations/icon/'
+                break
+            case 'flooring':
+                suffix = '/client/media/igloos/flooring/icon/'
+                break
+            default:
+                suffix = '/client/media/clothing/icon/large/'
+        }
         return window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
     }
 
     get keyPrefix() {
-        return this.prompt.type == 'furniture' ? 'furniture/icon/@5x/' : 'clothing/icon/large/'
+        switch (this.prompt.type) {
+            case 'clothing':
+                return '/clothing/icon/large/'
+            case 'furniture':
+                return '/furniture/icon/@5x/'
+            case 'igloo':
+                return '/igloos/buildings/icon/'
+            case 'location':
+                return '/igloos/locations/icon/'
+            case 'flooring':
+                return '/igloos/flooring/icon/'
+            default:
+                return '/clothing/icon/large/'
+        }
     }
 
     get scale() {

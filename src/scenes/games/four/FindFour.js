@@ -205,6 +205,7 @@ export default class FindFour extends BaseContainer {
 
         this.activeWaddleId = null
         this.visible = false
+        this.shell.interface.main.blocker.visible = false
     }
 
     showWaddle(waddle, seat) {
@@ -224,6 +225,7 @@ export default class FindFour extends BaseContainer {
         }
 
         this.visible = true
+        this.shell.interface.main.blocker.visible = true
     }
 
     updateWaddle(waddle, seat, username) {

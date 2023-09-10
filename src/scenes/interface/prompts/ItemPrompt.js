@@ -90,12 +90,24 @@ export default class ItemPrompt extends BaseContainer {
         this.show(item, this.crumbs.furniture[item], 'furniture')
     }
 
+    showLocation(item) {
+        this.show(item, this.crumbs.locations[item], 'location')
+    }
+
+    showIgloo(item) {
+        this.show(item, this.crumbs.igloos[item], 'igloo')
+    }
+
+    showFlooring(item) {
+        this.show(item, this.crumbs.flooring[item], 'flooring')
+    }
+
     show(item, crumb, type) {
         if (!crumb) {
             return
         }
 
-        if (!crumb.available) {
+        if (!crumb.available && type == 'clothing') {
             return this.interface.prompt.showError(this.crumbs.getError('2'))
         }
 
@@ -146,6 +158,15 @@ export default class ItemPrompt extends BaseContainer {
                 break
             case 'furniture':
                 this.airtower.sendXt('g#af', this.item)
+                break
+            case 'flooring':
+                this.airtower.sendXt('g#bg', this.item)
+                break
+            case 'igloo':
+                this.airtower.sendXt('g#bi', this.item)
+                break
+            case 'location':
+                this.airtower.sendXt('g#bl', this.item)
                 break
             default:
                 break

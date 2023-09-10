@@ -19,7 +19,8 @@ function searchFolder(path) {
 function minify(json) {
     var jsonFile = fs.readFileSync(json, 'utf8')
     var jsonData = JSON.parse(jsonFile)
-    if (json.includes('crumbs/')) {
+    let regex = new RegExp('^crumbs/[^/]+/.+.json$')
+    if (regex.test(json)) {
         fs.writeFileSync(json, JSON.stringify(jsonData, null, 4))
     } else {
         fs.writeFileSync(json, JSON.stringify(jsonData))

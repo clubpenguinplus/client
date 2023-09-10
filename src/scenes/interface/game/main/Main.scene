@@ -69,7 +69,7 @@
                         "InputText"
                     ],
                     "InputText.charlimit": 80,
-                    "InputText.inputfilter": "/^[a-zA-ZÀ-ÿÁáÉéÍíÓóÚúÜüÑñÇç !?.,:;0-9]*$/i",
+                    "InputText.inputfilter": "/^[a-zA-ZÀ-ÿÁáÉéÍíÓóÚúÜüÑñÇç !?\"'.,:;0-9]*$/i",
                     "InputText.entercallback": "() => this.onChatSend()",
                     "originY": 0.5,
                     "fixedWidth": 476,
@@ -1076,6 +1076,20 @@
             "x": 244,
             "y": 933,
             "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "188d6944-ef9f-4160-ae5b-55ba22831852",
+            "label": "blocker",
+            "scope": "CLASS",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "width": 1520,
+            "height": 960
         },
         {
             "prefabId": "032db1d9-1eac-4321-b4b3-ef359e514589",

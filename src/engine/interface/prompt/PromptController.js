@@ -24,6 +24,16 @@ export default class PromptController {
         _interface.add.existing(this.warn)
     }
 
+    hideAllForIP() {
+        this.setCursor()
+
+        for (let i of ['error', 'loading', 'window', 'coins', 'warn']) {
+            this[i].visible = false
+        }
+
+        this.interface.bringToTop(this.item)
+    }
+
     showError(
         text,
         buttonText = this.interface.crumbs.getString('okay'),
@@ -57,13 +67,22 @@ export default class PromptController {
 
     showFurniture(item) {
         this.item.showFurniture(item)
-        this.setCursor()
+        this.hideAllForIP()
+    }
 
-        for (let i of ['error', 'loading', 'window', 'coins', 'warn']) {
-            this[i].visible = false
-        }
+    showIgloo(item) {
+        this.item.showIgloo(item)
+        this.hideAllForIP()
+    }
 
-        this.interface.bringToTop(this.item)
+    showFlooring(item) {
+        this.item.showFlooring(item)
+        this.hideAllForIP()
+    }
+
+    showLocation(item) {
+        this.item.showLocation(item)
+        this.hideAllForIP()
     }
 
     showLoading(scene, progress = 0) {

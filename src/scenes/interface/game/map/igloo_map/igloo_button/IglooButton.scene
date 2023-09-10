@@ -16,9 +16,6 @@
             "type": "Container",
             "id": "64602953-c663-4ca1-8556-c673f4ba49e7",
             "label": "container_1",
-            "components": [
-                "ShowHint"
-            ],
             "x": 760,
             "y": 457,
             "list": [
@@ -26,6 +23,7 @@
                     "type": "Image",
                     "id": "de537844-21ba-4aa2-b51e-ddcaa06dcb52",
                     "label": "igloo",
+                    "scope": "CLASS",
                     "components": [
                         "SimpleButton",
                         "ShowHint"
@@ -47,6 +45,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

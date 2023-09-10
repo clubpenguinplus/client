@@ -39,8 +39,8 @@ export default class Igloo extends Plugin {
 
         this.interface.refreshPlayerCard()
 
+        this.interface.iglooEdit.loadItems(this.interface.iglooEdit.category)
         this.interface.updateCatalogCoins(args[1])
-
         let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.igloos[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
     }
@@ -64,13 +64,14 @@ export default class Igloo extends Plugin {
 
         this.interface.refreshPlayerCard()
 
+        this.interface.iglooEdit.loadItems(this.interface.iglooEdit.category)
         this.interface.updateCatalogCoins(args[1])
         let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.furniture[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
     }
 
     addFlooring(args) {
-        let inventory = this.client.flooringInventory
+        let inventory = this.client.floorInventory
         this.client.coins = args[1]
 
         let existsInInventory = false
@@ -87,6 +88,7 @@ export default class Igloo extends Plugin {
 
         this.interface.refreshPlayerCard()
 
+        this.interface.iglooEdit.loadItems(this.interface.iglooEdit.category)
         this.interface.updateCatalogCoins(args[1])
         let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.flooring[args[0]].name}`)
         this.interface.prompt.showWindow(text, 'single')
@@ -107,6 +109,11 @@ export default class Igloo extends Plugin {
         if (!existsInInventory) {
             inventory.push({id: args[0], type: 'location'})
         }
+
+        this.interface.iglooEdit.loadItems(this.interface.iglooEdit.category)
+        this.interface.updateCatalogCoins(args[1])
+        let text = this.crumbs.getString(`new-inventory-item,${this.crumbs.locations[args[0]].name}`)
+        this.interface.prompt.showWindow(text, 'single')
     }
 
     updateFlooring(args) {

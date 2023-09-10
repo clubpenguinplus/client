@@ -173,6 +173,8 @@ export default class Main extends BaseScene {
         this.puffleTricks
         /** @type {Safe} */
         this.safe
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.blocker
         /** @type {Waddle} */
         this.waddle
         /** @type {FindFour} */
@@ -488,6 +490,10 @@ export default class Main extends BaseScene {
         this.add.existing(safe)
         safe.visible = false
 
+        // blocker
+        const blocker = this.add.rectangle(760, 480, 1520, 960)
+        blocker.visible = false
+
         // waddle
         const waddle = new Waddle(this, 733, 422)
         this.add.existing(waddle)
@@ -554,7 +560,7 @@ export default class Main extends BaseScene {
         // chatInput (components)
         const chatInputInputText = new InputText(chatInput)
         chatInputInputText.charlimit = 80
-        chatInputInputText.inputfilter = /^[a-zA-ZÀ-ÿÁáÉéÍíÓóÚúÜüÑñÇç !?.,:;0-9]*$/i
+        chatInputInputText.inputfilter = /^[a-zA-ZÀ-ÿÁáÉéÍíÓóÚúÜüÑñÇç !?"'.,:;0-9]*$/i
         chatInputInputText.entercallback = () => this.onChatSend()
 
         // puffle_button (components)
@@ -721,6 +727,9 @@ export default class Main extends BaseScene {
         const betaButton = new Button(beta)
         betaButton.callback = () => this.onBetaClick()
 
+        // blocker (components)
+        new Interactive(blocker)
+
         this.pinContainer = pinContainer
         this.dock = dock
         this.chat_box = chat_box
@@ -792,6 +801,7 @@ export default class Main extends BaseScene {
         this.emotesMenu = emotesMenu
         this.puffleTricks = puffleTricks
         this.safe = safe
+        this.blocker = blocker
         this.waddle = waddle
         this.findFour = findFour
         this.mancala = mancala

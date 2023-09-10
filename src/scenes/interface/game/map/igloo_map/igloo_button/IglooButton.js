@@ -6,18 +6,20 @@ export default class IglooButton extends Phaser.GameObjects.Container {
     constructor(scene, x, y) {
         super(scene, x ?? 760, y ?? 457)
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.igloo
+
         // igloo
         const igloo = scene.add.image(0, 20, 'map-for-igloo', 'igloo/igloo')
         igloo.setOrigin(0.5054945054945055, 0.5058823529411764)
         this.add(igloo)
 
-        // this (components)
-        new ShowHint(this)
-
         // igloo (components)
         const iglooSimpleButton = new SimpleButton(igloo)
         iglooSimpleButton.callback = () => this.onClick()
         new ShowHint(igloo)
+
+        this.igloo = igloo
 
         /* START-USER-CTR-CODE */
 
@@ -37,14 +39,14 @@ export default class IglooButton extends Phaser.GameObjects.Container {
 
     reset() {
         this.id = null
-        this.__ShowHint.text = null
+        this.igloo.__ShowHint.text = null
 
         this.visible = false
     }
 
     show(igloo) {
         this.id = igloo.id
-        this.__ShowHint.text = igloo.username
+        this.igloo.__ShowHint.text = igloo.username
 
         this.visible = true
     }

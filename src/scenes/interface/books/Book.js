@@ -73,6 +73,9 @@ export default class Book extends BaseScene {
         }
 
         this.buttons.visible = visible
+        if (this.coinsContainerShowThis) {
+            this.coinsContainerShowThis.visible = visible
+        }
     }
 
     close() {
