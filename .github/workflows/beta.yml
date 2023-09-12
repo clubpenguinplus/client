@@ -2,7 +2,7 @@ name: Update Development
 
 on:
     push:
-        branches: [beta]
+        branches: '**-beta'
 
 jobs:
     update-development:
