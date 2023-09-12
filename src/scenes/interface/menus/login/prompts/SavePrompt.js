@@ -19,8 +19,7 @@ export default class SavePrompt extends BaseContainer {
         this.add(block)
 
         // illustration
-        const illustration = scene.add.image(-440, -216, 'login', 'illustration1')
-        illustration.setOrigin(0.01327433628318584, 0)
+        const illustration = scene.add.image(-1, -9, 'login', 'illustration1')
         this.add(illustration)
 
         // save_bg

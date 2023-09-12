@@ -232,7 +232,7 @@ export default class PuffleCare extends BaseContainer {
         this.name_txt.text = args.name
 
         if (args.id != this.shell.client.penguin.walking) {
-            this.walk_btn.visible = true
+            this.swap_btn.visible = true
         } else {
             this.swap_btn.visible = false
         }

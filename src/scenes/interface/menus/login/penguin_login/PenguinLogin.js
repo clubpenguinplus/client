@@ -71,10 +71,10 @@ export default class PenguinLogin extends BaseScene {
         forgotText.setLineSpacing(25)
 
         // loginButton
-        const loginButton = this.add.sprite(935, 487, 'login', 'login-button')
+        const loginButton = this.add.sprite(921, 487, 'login', 'login-button')
 
         // loginText
-        const loginText = this.add.text(935, 487, '', {})
+        const loginText = this.add.text(921, 487, '', {})
         loginText.setOrigin(0.5, 0.5)
         loginText.text = 'Login'
         loginText.setStyle({align: 'center', color: '#ffffffff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '38px'})

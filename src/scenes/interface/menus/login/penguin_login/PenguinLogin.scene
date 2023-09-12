@@ -165,7 +165,7 @@
                 "key": "login",
                 "frame": "login-button"
             },
-            "x": 935,
+            "x": 921,
             "y": 487
         },
         {
@@ -176,7 +176,7 @@
                 "LocalisedString"
             ],
             "LocalisedString.id": "login",
-            "x": 935,
+            "x": 921,
             "y": 487,
             "originX": 0.5,
             "originY": 0.5,

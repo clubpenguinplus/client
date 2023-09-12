@@ -59,8 +59,6 @@ export default class IglooPuffle extends BaseContainer {
     }
 
     loadPuffle() {
-        if (this.scene.penguins[this.scene.id] && this.scene.penguins[this.scene.id].walking == this.id) return
-
         if (!this.shell.textures.exists(`puffles/igloo/${this.species}`)) {
             this.shell.events.once(`textureLoaded:puffles/igloo/${this.species}`, () => {
                 this.spawnPuffle()
@@ -72,6 +70,7 @@ export default class IglooPuffle extends BaseContainer {
     }
 
     spawnPuffle() {
+        if (!this.scene) return
         if (this.scene.penguins[this.scene.id] && this.scene.penguins[this.scene.id].walking == this.id) return
 
         Object.assign(this, this.generateRandomPosition())
