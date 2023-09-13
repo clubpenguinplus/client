@@ -258,6 +258,7 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onCare() {
+        this.shell.interface.loadExternal('PuffleCreatureCare')
         this.close()
     }
 

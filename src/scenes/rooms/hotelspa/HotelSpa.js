@@ -84,18 +84,20 @@ export default class HotelSpa extends RoomScene {
         mat3.setOrigin(0.3728777807378776, 0.18737176143432963)
 
         // mat1
-        const mat1 = this.add.image(355.9315315785099, 574.5621063344512, 'hotelspa', 'mat')
-        mat1.setOrigin(0.3261939086224065, 0.22002915660337835)
+        const mat1 = this.add.image(354.74975190711433, 572.5164636831448, 'hotelspa', 'mat')
+        mat1.setOrigin(0.31936288753816855, 0.1920064714568849)
 
         // mat2
         const mat2 = this.add.image(533.4240144789662, 495.6795831820411, 'hotelspa', 'mat')
         mat2.setOrigin(0.3232601127751917, 0.20793967608925065)
 
         // dumbell2
-        const dumbell2 = this.add.sprite(588, 484, 'hotelspa', 'dumbell0001')
+        const dumbell2 = this.add.sprite(585.8120176650277, 528.5944143597183, 'hotelspa', 'dumbell0001')
+        dumbell2.setOrigin(0.47331728859789907, 1.0574303173868742)
 
         // dumbell1
-        const dumbell1 = this.add.sprite(413, 560, 'hotelspa', 'dumbell0001')
+        const dumbell1 = this.add.sprite(405.123270326567, 603.2013767015444, 'hotelspa', 'dumbell0001')
+        dumbell1.setOrigin(0.4039422389524365, 1.0400171607995063)
 
         // railing
         const railing = this.add.image(287, 662, 'hotelspa', 'railing')
@@ -193,20 +195,20 @@ export default class HotelSpa extends RoomScene {
         interfaceBtn.setOrigin(0.5, 4.776625998183785)
 
         // groomAnim1
-        const groomAnim1 = this.add.sprite(1094, 1016.2585891146189, 'hotelspa', 'groom-anim0001')
+        const groomAnim1 = this.add.sprite(1094, 1007.2585891146189, 'hotelspa', 'groom-anim0001')
         groomAnim1.setOrigin(0.5, 2.0161833982000315)
 
         // groomAnim2
-        const groomAnim2 = this.add.sprite(1302, 1023.0814144065191, 'hotelspa', 'groom-anim0001')
+        const groomAnim2 = this.add.sprite(1300, 1015.0814144065191, 'hotelspa', 'groom-anim0001')
         groomAnim2.scaleX = -1
         groomAnim2.setOrigin(0.5, 2.0274981996791364)
 
         // washAnim1
-        const washAnim1 = this.add.sprite(1085, 1117.970074905756, 'hotelspa', 'wash-anim0001')
+        const washAnim1 = this.add.sprite(1095, 1123, 'hotelspa', 'wash-anim0001')
         washAnim1.setOrigin(0.5, 1.2454243570842058)
 
         // washAnim2
-        const washAnim2 = this.add.sprite(1344, 1172.552677240957, 'hotelspa', 'wash-anim0001')
+        const washAnim2 = this.add.sprite(1352, 1178, 'hotelspa', 'wash-anim0001')
         washAnim2.scaleX = -1
         washAnim2.setOrigin(0.5, 1.385739530182409)
 
@@ -217,7 +219,7 @@ export default class HotelSpa extends RoomScene {
         this.add.image(774, 401, 'hotelspa', 'stool')
 
         // lists
-        const sort = [washAnim2, washAnim1, groomAnim2, groomAnim1, interfaceBtn, fg, otherbottle, cloth, washchair_arm, washchair_right, washchair_left, bubbles, products, divider, chair_right, chair_left, bottle, dunmbells, speakerRightAnim, speakerLeftAnim, punching_bag, railing, lowwall, treadmill2Container, treadmill1Container]
+        const sort = [washAnim2, washAnim1, groomAnim2, groomAnim1, interfaceBtn, fg, otherbottle, cloth, washchair_arm, washchair_right, washchair_left, bubbles, products, divider, chair_right, chair_left, bottle, dunmbells, speakerRightAnim, speakerLeftAnim, punching_bag, railing, lowwall, treadmill2Container, treadmill1Container, dumbell1, dumbell2]
 
         // elevatorAnim (components)
         const elevatorAnimSimpleButton = new SimpleButton(elevatorAnim)
@@ -345,6 +347,10 @@ export default class HotelSpa extends RoomScene {
         this.speakerRightAnim.play('hotelspa-speaker_right')
     }
 
+    get puffle() {
+        return this.shell.client.penguin.puffleSprite
+    }
+
     onTreadmill1Over() {
         this.treadmill1.setFrame('treadmill-hover')
         this.treadmillArm1.setFrame('treadmill-arm-hover')
@@ -391,60 +397,248 @@ export default class HotelSpa extends RoomScene {
         }
     }
 
+    getPuffleHealth() {
+        this.airtower.events.once('phg', (args) => {
+            if (args[0] == this.shell.client.penguin.walking) {
+                this.puffleHealth = {
+                    clean: args[1],
+                    food: args[2],
+                    play: args[3],
+                    rest: args[4]
+                }
+            }
+        })
+        this.airtower.sendXt('p#phg', this.shell.client.penguin.walking)
+    }
+
     startTreadmill1() {
-        //this.treadmillAnim1.play('hotelspa-treadmill-anim')
+        if (!this.puffle) {
+            this.shell.client.penguin.move(244, 756)
+            this.shell.client.lockRotation = true
+            this.shell.client.penguin.playFrame(13)
+            this.treadmillAnim1.play('hotelspa-treadmill-anim')
+            this.shell.client.penguin.afterMove = () => this.stopTreadmill1()
+            return
+        }
+
+        this.shell.client.penguin.rotate(200, 580)
+        this.shell.client.lockRotation = true
+        this.shell.client.penguin.playPuffleFrame(75, -1)
+
+        this.getPuffleHealth()
+        this.shell.client.penguin.afterMove = () => this.increasePufflePlay(this.shell.client.penguin.x, this.shell.client.penguin.y)
+
+        this.treadmillAnim1.play('hotelspa-treadmill-anim')
     }
 
     stopTreadmill1() {
-        //this.treadmillAnim1.anims.stopAfterRepeat(0)
+        this.treadmillAnim1.anims.stop()
+        this.treadmillAnim1.setFrame('treadmill-anim0001')
     }
 
     startTreadmill2() {
-        //this.treadmillAnim2.play('hotelspa-treadmill-anim')
+        if (!this.puffle) {
+            this.shell.client.penguin.move(504, 756)
+            this.shell.client.lockRotation = true
+            this.shell.client.penguin.playFrame(13)
+            this.treadmillAnim2.play('hotelspa-treadmill-anim')
+            this.shell.client.penguin.afterMove = () => this.stopTreadmill2()
+            return
+        }
+
+        this.shell.client.penguin.rotate(-60, 580)
+        this.shell.client.lockRotation = true
+        this.shell.client.penguin.playPuffleFrame(75, -1)
+
+        this.getPuffleHealth()
+        this.shell.client.penguin.afterMove = () => this.increasePufflePlay(this.shell.client.penguin.x, this.shell.client.penguin.y)
+
+        this.treadmillAnim2.play('hotelspa-treadmill-anim')
     }
 
     stopTreadmill2() {
-        //this.treadmillAnim2.anims.stopAfterRepeat(0)
+        this.treadmillAnim2.anims.stop()
+        this.treadmillAnim2.setFrame('treadmill-anim0001')
     }
 
     startMat1() {
-        //this.dumbell1.play('hotelspa-dumbell')
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(405, 1000)
+        this.shell.client.lockRotation = true
+
+        this.getPuffleHealth()
+        this.shell.client.penguin.afterMove = () => this.increasePufflePlay(this.shell.client.penguin.x, this.shell.client.penguin.y)
+
+        this.dumbell1.play('hotelspa-dumbell')
     }
 
     stopMat1() {
-        //this.dumbell1.anims.stopAfterRepeat(0)
+        this.dumbell1.anims.stop()
+        this.dumbell1.setFrame('dumbell0001')
     }
 
     startMat2() {
-        //this.dumbell2.play('hotelspa-dumbell')
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(585, 1000)
+        this.shell.client.lockRotation = true
+
+        this.getPuffleHealth()
+        this.shell.client.penguin.afterMove = () => this.increasePufflePlay(this.shell.client.penguin.x, this.shell.client.penguin.y)
+
+        this.dumbell2.play('hotelspa-dumbell')
     }
 
     stopMat2() {
-        //this.dumbell2.anims.stopAfterRepeat(0)
+        this.dumbell2.anims.stop()
+        this.dumbell2.setFrame('dumbell0001')
     }
 
-    startMat3() {}
+    startMat3() {
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(262, 1000)
+        this.shell.client.lockRotation = true
+        this.getPuffleHealth()
+        this.shell.client.penguin.afterMove = () => this.increasePufflePlay(this.shell.client.penguin.x, this.shell.client.penguin.y)
+
+        this.shell.client.penguin.playPuffleFrame(71, -1)
+    }
 
     stopMat3() {}
 
-    startMat4() {}
+    startMat4() {
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(414, 1000)
+        this.shell.client.lockRotation = true
+        this.getPuffleHealth()
+        this.shell.client.penguin.afterMove = () => this.increasePufflePlay(this.shell.client.penguin.x, this.shell.client.penguin.y)
+
+        this.shell.client.penguin.playPuffleFrame(71, -1)
+    }
 
     stopMat4() {}
 
     startGrooming1() {
-        //this.groomAnim1.play('hotelspa-groom-anim')
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(1056, 480)
+        this.shell.client.lockRotation = true
+        this.groomAnim1.play('hotelspa-groom-anim')
+
+        this.getPuffleHealth()
+
+        this.groomAnim1.on('animationcomplete', () => {
+            this.shell.client.lockRotation = false
+            this.groomAnim1.setFrame('groom-anim0001')
+            this.increasePuffleClean(1043, 389)
+        })
     }
 
     startGrooming2() {
-        //this.groomAnim2.play('hotelspa-groom-anim')
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(1392, 480)
+        this.shell.client.lockRotation = true
+        this.groomAnim2.play('hotelspa-groom-anim')
+
+        this.getPuffleHealth()
+
+        this.groomAnim2.on('animationcomplete', () => {
+            this.shell.client.lockRotation = false
+            this.groomAnim2.setFrame('groom-anim0001')
+            this.increasePuffleClean(1226, 389)
+        })
     }
 
     startWashChair1() {
-        //this.washAnim1.play('hotelspa-wash-anim')
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(1200, 832)
+        this.shell.client.lockRotation = true
+        this.washAnim1.play('hotelspa-wash-anim')
+
+        this.getPuffleHealth()
+
+        this.washAnim1.on('animationcomplete', () => {
+            this.shell.client.lockRotation = false
+            this.washAnim1.setFrame('wash-anim0001')
+            this.increasePuffleClean(1018, 709)
+        })
     }
 
     startWashChair2() {
-        //this.washAnim2.play('hotelspa-wash-anim')
+        if (!this.puffle) return
+
+        this.shell.client.penguin.rotate(1200, 832)
+        this.shell.client.lockRotation = true
+        this.washAnim2.play('hotelspa-wash-anim')
+
+        this.getPuffleHealth()
+
+        this.washAnim2.on('animationcomplete', () => {
+            this.shell.client.lockRotation = false
+            this.washAnim2.setFrame('wash-anim0001')
+            this.increasePuffleClean(1311, 711)
+        })
+    }
+
+    increasePuffleRest(x, y) {
+        if (!this.shell.isNearPos(x, y)) return
+
+        this.carePopup.x = this.shell.client.penguin.x
+        this.carePopup.y = this.shell.client.penguin.y
+
+        const oldRest = this.puffleHealth.rest
+        this.puffleHealth.rest += 20
+        if (this.puffleHealth.rest > 100) this.puffleHealth.rest = 100
+
+        this.carePopup.showPopup('rest', oldRest, this.puffleHealth.rest)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.rest}`)
+    }
+
+    increasePuffleFood(x, y) {
+        if (!this.shell.isNearPos(x, y)) return
+
+        this.carePopup.x = this.shell.client.penguin.x
+        this.carePopup.y = this.shell.client.penguin.y
+
+        const oldFood = this.puffleHealth.food
+        this.puffleHealth.food += 20
+        if (this.puffleHealth.food > 100) this.puffleHealth.food = 100
+
+        this.carePopup.showPopup('food', oldFood, this.puffleHealth.food)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.rest}`)
+    }
+
+    increasePuffleClean(x, y) {
+        if (!this.shell.isNearPos(x, y)) return
+
+        this.carePopup.x = this.shell.client.penguin.x
+        this.carePopup.y = this.shell.client.penguin.y
+
+        const oldClean = this.puffleHealth.clean
+        this.puffleHealth.clean += 20
+        if (this.puffleHealth.clean > 100) this.puffleHealth.clean = 100
+
+        this.carePopup.showPopup('clean', oldClean, this.puffleHealth.clean)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.clean}`)
+    }
+
+    increasePufflePlay(x, y) {
+        if (!this.shell.isNearPos(x, y)) return
+
+        this.carePopup.x = this.shell.client.penguin.x
+        this.carePopup.y = this.shell.client.penguin.y
+
+        const oldPlay = this.puffleHealth.play
+        this.puffleHealth.play += 20
+        if (this.puffleHealth.play > 100) this.puffleHealth.play = 100
+
+        this.carePopup.showPopup('play', oldPlay, this.puffleHealth.play)
+        this.airtower.sendXt('p#phs', `${this.shell.client.penguin.walking}%${this.puffleHealth.food}%${this.puffleHealth.play}%${this.puffleHealth.rest}%${this.puffleHealth.play}`)
     }
 
     /* END-USER-CODE */

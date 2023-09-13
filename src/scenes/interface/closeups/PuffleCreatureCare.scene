@@ -1,0 +1,141 @@
+{
+    "id": "520c810d-3f9b-4fac-9b17-320fa07d6ea6",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/interface/closeups/pufflecreaturecare/pufflecreaturecare-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "PuffleCreatureCare",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "NinePatchContainer",
+            "id": "11423b62-094f-4049-a7cf-fd994e276a94",
+            "label": "window",
+            "texture": {
+                "key": "prompt",
+                "frame": "window"
+            },
+            "x": 760,
+            "y": 480,
+            "width": 850,
+            "height": 650
+        },
+        {
+            "type": "NinePatchContainer",
+            "id": "f02f7004-2663-4270-a664-befa9c51e752",
+            "label": "window_button",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => {this.stop(); this.shell.room.triggerRoom(430, 800, 350)}",
+            "texture": {
+                "key": "prompt",
+                "frame": "window-button"
+            },
+            "x": 964,
+            "y": 690,
+            "width": 350,
+            "height": 92
+        },
+        {
+            "type": "Image",
+            "id": "ee2a08ae-8b68-4c90-823e-e3850f444618",
+            "label": "pufflecreaturecare",
+            "texture": {
+                "key": "pufflecreaturecare"
+            },
+            "x": 760,
+            "y": 459
+        },
+        {
+            "type": "Image",
+            "id": "19f32e30-b97a-4a22-a650-bdc40027563c",
+            "label": "window_button_1",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => this.stop()",
+            "texture": {
+                "key": "prompt",
+                "frame": "window-button"
+            },
+            "x": 545,
+            "y": 690
+        },
+        {
+            "type": "Text",
+            "id": "1b63817e-ca39-4f2c-a235-2f8eb26f5d0b",
+            "label": "text_1",
+            "x": 760,
+            "y": 521,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Walk your puffles to the hotel to care for them.",
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "32px",
+            "wordWrapWidth": 450
+        },
+        {
+            "type": "Text",
+            "id": "25fa0c4c-bcf0-4c2c-8fb4-10ae22053242",
+            "label": "text",
+            "x": 545,
+            "y": 690,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "No Thanks",
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "32px",
+            "fontStyle": "bold",
+            "wordWrapWidth": 450
+        },
+        {
+            "type": "Text",
+            "id": "82623267-6a8e-4594-9639-18086fcb6ec9",
+            "label": "text_2",
+            "x": 1001,
+            "y": 690,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Go there!",
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "32px",
+            "fontStyle": "bold",
+            "wordWrapWidth": 450
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}
