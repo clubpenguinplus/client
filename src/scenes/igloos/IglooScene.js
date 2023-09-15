@@ -109,7 +109,7 @@ export default class IglooScene extends RoomScene {
         super.create()
         if (this.floor) this.floor.depth = -2
 
-        if (this.args.flooring) this.addFlooring(this.args.flooring)
+        if (this.args.flooring) this.updateFlooring(this.args.flooring)
         this.addLocation()
         this.loadAllFurniture()
 
@@ -159,10 +159,11 @@ export default class IglooScene extends RoomScene {
     addFlooring(flooring) {
         if (this.flooring) this.flooring.destroy()
 
+        if (!this.textures.exists(`flooring/${flooring}`)) return console.warn('WHAT WHY YOU SUCK')
+
+        if (!this.textures.list[`flooring/${flooring}`].frames[`${this.floorFrame}_1`]) this.floorFrame = 1
         this.flooring = this.add.image(0, 0, `flooring/${flooring}`, `${this.floorFrame}_1`)
         this.flooring.depth = -1
-
-        if (this.isPreview) return
 
         if (this.roomPhysics.mask) {
             let mask = this.createMask()
@@ -204,6 +205,7 @@ export default class IglooScene extends RoomScene {
     }
 
     updateFlooring(flooring) {
+        if (this.args.flooring != flooring && this.id == this.shell.client.id) this.airtower.sendXt('g#ag', flooring)
         this.args.flooring = flooring
 
         if (flooring == 0 && this.flooring) return this.flooring.destroy()

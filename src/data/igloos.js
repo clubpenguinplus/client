@@ -89,6 +89,13 @@ const igloos = {
         preview: require('@igloos/splitlevel/SplitLevel-preview').default,
         x: 310,
         y: 700
+    },
+    89: {
+        key: 'BluePuffleTreehouse',
+        scene: require('@igloos/bluepuffletreehouse/BluePuffleTreehouse').default,
+        preview: require('@igloos/bluepuffletreehouse/BluePuffleTreehouse-preview').default,
+        x: 710,
+        y: 650
     }
 }
 

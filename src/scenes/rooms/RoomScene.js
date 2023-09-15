@@ -42,9 +42,10 @@ export default class RoomScene extends BaseScene {
         this._create()
         this.sortChildren()
 
+        if (this.roomPhysics) this.addPhysics()
+
         if (this.isPreview) return
 
-        if (this.roomPhysics) this.addPhysics()
         if (this.roomAnims) this.addAnims()
         this.addInput()
 
@@ -227,7 +228,7 @@ export default class RoomScene extends BaseScene {
     /*======= Physics =======*/
 
     get roomPhysics() {
-        let key = this.key.toLowerCase()
+        let key = this.isPreview ? this.key.toLowerCase().split('-').slice(0, -2).join('-') : this.key.toLowerCase()
 
         return this.cache.json.get(`${key}-physics`)
     }
