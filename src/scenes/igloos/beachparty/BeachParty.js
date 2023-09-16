@@ -8,10 +8,10 @@ export default class BeachParty extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [670, 440]
+        this.wallSpawn = [870, 70]
+        this.wallBounds = [838, 904]
+        this.floorFrame = 16
 
         /* END-USER-CTR-CODE */
     }

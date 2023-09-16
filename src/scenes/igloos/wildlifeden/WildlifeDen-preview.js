@@ -8,10 +8,10 @@ export default class WildlifeDen extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [608, 728]
+        this.wallSpawn = [496, 182]
+        this.wallBounds = [308, 1072]
+        this.floorFrame = 15
 
         this.isPreview = true
 

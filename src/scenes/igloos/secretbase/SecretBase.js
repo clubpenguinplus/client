@@ -8,10 +8,10 @@ export default class SecretBase extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [690, 800]
+        this.wallSpawn = [680, 150]
+        this.wallBounds = [700, 980]
+        this.floorFrame = 16
 
         /* END-USER-CTR-CODE */
     }

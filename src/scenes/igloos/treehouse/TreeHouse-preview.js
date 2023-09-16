@@ -8,10 +8,10 @@ export default class TreeHouse extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [670, 570]
+        this.wallSpawn = [650, 310]
+        this.wallBounds = [280, 1250]
+        this.floorFrame = 7
 
         this.isPreview = true
 

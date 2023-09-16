@@ -8,10 +8,10 @@ export default class Theatre extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [754, 698]
+        this.wallSpawn = [804, 472]
+        this.wallBounds = [510, 1044]
+        this.floorFrame = 12
 
         this.isPreview = true
 

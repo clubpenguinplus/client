@@ -8,10 +8,10 @@ export default class RainbowPuffleTreeHouse extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [580, 634]
+        this.wallSpawn = [1040, 250]
+        this.wallBounds = [460, 1060]
+        this.floorFrame = 15
 
         /* END-USER-CTR-CODE */
     }

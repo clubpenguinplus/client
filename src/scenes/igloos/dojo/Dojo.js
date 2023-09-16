@@ -8,10 +8,10 @@ export default class Dojo extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [758, 724]
+        this.wallSpawn = [756, 506]
+        this.wallBounds = [416, 1100]
+        this.floorFrame = 5
 
         /* END-USER-CTR-CODE */
     }

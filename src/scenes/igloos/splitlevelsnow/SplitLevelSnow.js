@@ -8,10 +8,10 @@ export default class SplitLevelSnow extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [1080, 490]
+        this.wallSpawn = [970, 200]
+        this.wallBounds = [410, 1110]
+        this.floorFrame = 3
 
         /* END-USER-CTR-CODE */
     }

@@ -8,10 +8,10 @@ export default class MagicalHideout extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [720, 720]
+        this.wallSpawn = [860, 320]
+        this.wallBounds = [520, 1200]
+        this.floorFrame = 16
 
         this.isPreview = true
 

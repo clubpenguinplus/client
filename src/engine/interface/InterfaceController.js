@@ -137,8 +137,6 @@ export default class InterfaceController extends BaseScene {
             return
         }
 
-        console.log(this.scene.manager.keys)
-
         if (!(key in this.scene.manager.keys)) {
             // Create scene
             this.scene.add(key, this.interfaces[key], true)

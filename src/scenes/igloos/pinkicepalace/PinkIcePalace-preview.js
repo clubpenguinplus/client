@@ -8,10 +8,10 @@ export default class PinkIcePalace extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [760, 800]
+        this.wallSpawn = [760, 430]
+        this.wallBounds = [4420, 1100]
+        this.floorFrame = 8
 
         this.isPreview = true
 

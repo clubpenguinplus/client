@@ -8,10 +8,10 @@ export default class Ship extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [768, 720]
+        this.wallSpawn = [756, 436]
+        this.wallBounds = [390, 1100]
+        this.floorFrame = 7
 
         /* END-USER-CTR-CODE */
     }

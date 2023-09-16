@@ -8,10 +8,10 @@ export default class MermaidCove extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [616, 512]
+        this.wallSpawn = [850, 216]
+        this.wallBounds = [260, 1140]
+        this.floorFrame = 14
 
         this.isPreview = true
 

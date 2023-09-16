@@ -8,10 +8,10 @@ export default class Shipwreck extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
+        this.floorSpawn = [760, 580]
+        this.wallSpawn = [840, 260]
         this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorFrame = 15
 
         this.isPreview = true
 

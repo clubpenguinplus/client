@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+
 /* START OF COMPILED CODE */
 
 export default class SpaceDome extends IglooScene {
@@ -7,10 +8,10 @@ export default class SpaceDome extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [700, 620]
+        this.wallSpawn = [380, 210]
+        this.wallBounds = [490, 1030]
+        this.floorFrame = 16
 
         this.isPreview = true
 

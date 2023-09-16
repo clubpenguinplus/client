@@ -8,10 +8,10 @@ export default class GhostlyCavern extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [720, 720]
+        this.wallSpawn = [720, 720]
+        this.wallBounds = [400, 340]
+        this.floorFrame = 16
 
         this.isPreview = true
 

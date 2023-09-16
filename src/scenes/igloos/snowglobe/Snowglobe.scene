@@ -8,7 +8,7 @@
         "superClassName": "IglooScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "yukon/client/media/igloos/buildings/sprites/snow/snow-pack.json"
+            "client/client/media/igloos/buildings/sprites/snowglobe/snowglobe-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Snowglobe",
@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "a685ef1a-f5bd-49e2-84de-42c66c539751",
             "label": "snowglobe",
-            "components": [],
             "texture": {
                 "key": "snowglobe"
             },
@@ -33,6 +32,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

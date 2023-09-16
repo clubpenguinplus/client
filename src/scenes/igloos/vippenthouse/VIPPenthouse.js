@@ -8,10 +8,10 @@ export default class VIPPenthouse extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [490, 600]
+        this.wallSpawn = [680, 150]
+        this.wallBounds = [490, 1330]
+        this.floorFrame = 16
 
         /* END-USER-CTR-CODE */
     }

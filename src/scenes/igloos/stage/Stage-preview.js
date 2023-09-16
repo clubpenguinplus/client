@@ -8,10 +8,10 @@ export default class Stage extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [760, 500]
+        this.wallSpawn = [740, 140]
+        this.wallBounds = [470, 1050]
+        this.floorFrame = 15
 
         this.isPreview = true
 

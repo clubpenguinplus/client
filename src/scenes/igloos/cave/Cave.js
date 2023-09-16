@@ -9,9 +9,9 @@ export default class Cave extends IglooScene {
         /* START-USER-CTR-CODE */
 
         this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.wallSpawn = [760, 260]
+        this.wallBounds = [250, 1200]
+        this.floorFrame = 2
 
         /* END-USER-CTR-CODE */
     }

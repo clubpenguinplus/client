@@ -12,6 +12,10 @@ export default class Backyard extends SoloRoom {
         this.puffles = {}
     }
 
+    get sort() {
+        return [this.gate]
+    }
+
     set id(id) {
         // Prevents a crash
     }
@@ -37,16 +41,21 @@ export default class Backyard extends SoloRoom {
     _create() {
         this.bg = this.add.sprite(760, 480, `backyard/${this.location}`, 'bg')
         this.bg.setInteractive()
-        this.gate = this.add.sprite(760, 480, `backyard/${this.location}`, 'gate')
+        this.gate = this.add.sprite(760, 960, `backyard/${this.location}`, 'gate')
+        this.gate.setOrigin(0.5, 1)
         this.gateBtn = this.add.rectangle(300, 750, 500, 200)
         this.gateBtn.rotation = 0.436332
         this.gateBtn.setInteractive({cursor: 'pointer'})
         this.gateBtn.on('pointerover', () => {
-            this.gate.setFrame('gate-hover')
+            this.gate.setFrame('gate-hover', false, false)
         })
         this.gateBtn.on('pointerout', () => {
-            this.gate.setFrame('gate')
+            this.gate.setFrame('gate', false, false)
         })
+        this.gateBtn.on('pointerdown', () => {
+            this.shell.client.penguin.move(230, 820)
+        })
+        this.gateBtn.isButton = true
         this.puffleLoader = new PuffleLoader(this)
         this.shell.airtower.sendXt('p#pg', `${this.id}%1`)
     }

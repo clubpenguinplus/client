@@ -8,10 +8,10 @@ export default class EzrasHideout extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [760, 740]
+        this.wallSpawn = [760, 320]
+        this.wallBounds = [470, 1050]
+        this.floorFrame = 15
 
         /* END-USER-CTR-CODE */
     }

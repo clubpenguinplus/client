@@ -8,10 +8,10 @@ export default class Restaurant extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [760, 780]
+        this.wallSpawn = [760, 480]
+        this.wallBounds = [410, 1110]
+        this.floorFrame = 12
 
         this.isPreview = true
 

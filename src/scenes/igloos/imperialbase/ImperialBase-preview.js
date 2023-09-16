@@ -8,10 +8,10 @@ export default class ImperialBase extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [748, 444]
+        this.wallSpawn = [760, 170]
+        this.wallBounds = [300, 1230]
+        this.floorFrame = 16
 
         this.isPreview = true
 

@@ -8,10 +8,10 @@ export default class GingerbreadHouse extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [754, 696]
+        this.wallSpawn = [804, 472]
+        this.wallBounds = [510, 1044]
+        this.floorFrame = 11
 
         /* END-USER-CTR-CODE */
     }

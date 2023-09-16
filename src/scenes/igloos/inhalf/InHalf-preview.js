@@ -8,10 +8,10 @@ export default class InHalf extends IglooScene {
 
         /* START-USER-CTR-CODE */
 
-        this.floorSpawn = [760, 760]
-        this.wallSpawn = [750, 320]
-        this.wallBounds = [580, 1000]
-        this.floorFrame = 1
+        this.floorSpawn = [940, 620]
+        this.wallSpawn = [680, 376]
+        this.wallBounds = [646, 920]
+        this.floorFrame = 2
 
         this.isPreview = true
 
