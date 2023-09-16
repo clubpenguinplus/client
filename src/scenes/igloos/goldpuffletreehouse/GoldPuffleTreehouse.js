@@ -2,9 +2,9 @@ import IglooScene from '../IglooScene'
 
 /* START OF COMPILED CODE */
 
-export default class GoldPuffleTreehouse extends IglooScene {
+export default class GoldPuffleTreeHouse extends IglooScene {
     constructor() {
-        super('GoldPuffleTreehouse')
+        super('GoldPuffleTreeHouse')
 
         /* START-USER-CTR-CODE */
 

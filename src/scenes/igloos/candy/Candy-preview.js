@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class Candy extends IglooScene {
     constructor() {
-        super(`Candy-preview-${Date.now()}`)
+        super(`Candy-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Image} */
         this.floor

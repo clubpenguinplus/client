@@ -9,7 +9,7 @@
         "preloadMethodName": "_preload",
         "preloadPackFiles": [],
         "createMethodName": "_create",
-        "sceneKey": "Treehouse",
+        "sceneKey": "TreeHouse",
         "borderWidth": 1520,
         "borderHeight": 960
     },

@@ -2,9 +2,9 @@ import IglooScene from '../IglooScene'
 
 /* START OF COMPILED CODE */
 
-export default class BluePuffleTreehouse extends IglooScene {
+export default class BluePuffleTreeHouse extends IglooScene {
     constructor() {
-        super('BluePuffleTreehouse')
+        super('BluePuffleTreeHouse')
 
         /** @type {Phaser.GameObjects.Image} */
         this.floor

@@ -1,11 +1,12 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
-export default class BluePuffleTreehouse extends IglooScene {
+export default class BluePuffleTreeHouse extends IglooScene {
     constructor() {
-        super(`BluePuffleTreehouse-preview-${Date.now()}`)
+        super(`BluePuffleTreeHouse-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.floor
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort
 
@@ -17,6 +18,7 @@ export default class BluePuffleTreehouse extends IglooScene {
         this.floorFrame = 15
 
         this.isPreview = true
+
         /* END-USER-CTR-CODE */
     }
 

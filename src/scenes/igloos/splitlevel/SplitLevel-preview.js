@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class SplitLevel extends IglooScene {
     constructor() {
-        super(`SplitLevel-preview-${Date.now()}`)
+        super(`SplitLevel-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Layer} */
         this.floor

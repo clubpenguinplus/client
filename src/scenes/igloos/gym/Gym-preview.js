@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class Gym extends IglooScene {
     constructor() {
-        super(`Gym-preview-${Date.now()}`)
+        super(`Gym-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Layer} */
         this.floor

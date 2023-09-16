@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class LogCabin extends IglooScene {
     constructor() {
-        super(`LogCabin-preview-${Date.now()}`)
+        super(`LogCabin-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Layer} */
         this.floor

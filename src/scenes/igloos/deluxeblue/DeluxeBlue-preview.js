@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class DeluxeBlue extends IglooScene {
     constructor() {
-        super(`DeluxeBlue-preview-${Date.now()}`)
+        super(`DeluxeBlue-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Image} */
         this.floor

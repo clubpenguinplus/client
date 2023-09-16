@@ -11,7 +11,7 @@
             "client/client/media/igloos/buildings/sprites/bluepuffletreehouse/bluepuffletreehouse-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "BluePuffleTreehouse",
+        "sceneKey": "BluePuffleTreeHouse",
         "borderWidth": 1520,
         "borderHeight": 960
     },

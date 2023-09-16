@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class BambooHut extends IglooScene {
     constructor() {
-        super('BambooHut')
+        super(`BambooHut-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Image} */
         this.floor
@@ -15,6 +14,8 @@ export default class BambooHut extends IglooScene {
         this.wallSpawn = [790, 400]
         this.wallBounds = [520, 1050]
         this.floorFrame = 4
+
+        this.isPreview = true
 
         /* END-USER-CTR-CODE */
     }

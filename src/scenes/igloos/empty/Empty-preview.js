@@ -1,10 +1,9 @@
 import IglooScene from '../IglooScene'
-
 /* START OF COMPILED CODE */
 
 export default class Empty extends IglooScene {
     constructor() {
-        super(`Empty-preview-${Date.now()}`)
+        super(`Empty-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /* START-USER-CTR-CODE */
 
