@@ -17,11 +17,7 @@ export default class MancalaPlayer extends Phaser.GameObjects.Container {
         const waiting = scene.add.text(55, 0, '', {})
         waiting.setOrigin(0, 0.5)
         waiting.text = 'Waiting for Player'
-        waiting.setStyle({
-            fixedWidth: 260,
-            fontFamily: 'cpBurbankSmall',
-            fontSize: '24px'
-        })
+        waiting.setStyle({fixedWidth: 260, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(waiting)
 
         this.spinner = spinner

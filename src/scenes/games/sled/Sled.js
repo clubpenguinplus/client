@@ -70,8 +70,8 @@ class Sled extends GameScene {
 
         this.bg = bg
         this.hill = hill
-        this.progress = progress
         this.bar = bar
+        this.progress = progress
         this.text = text
         this.spinner = spinner
         this.note = note
@@ -83,10 +83,10 @@ class Sled extends GameScene {
     bg
     /** @type {Phaser.GameObjects.Container} */
     hill
-    /** @type {Phaser.GameObjects.Container} */
-    progress
     /** @type {Phaser.GameObjects.Image} */
     bar
+    /** @type {Phaser.GameObjects.Container} */
+    progress
     /** @type {Phaser.GameObjects.Image} */
     text
     /** @type {Phaser.GameObjects.Image} */

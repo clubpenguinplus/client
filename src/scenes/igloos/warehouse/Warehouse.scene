@@ -1,0 +1,24 @@
+{
+    "id": "3905a10f-c033-465a-8c97-cbea46b166be",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "IglooScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "Warehouse",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

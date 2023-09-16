@@ -1,0 +1,24 @@
+{
+    "id": "71c180e3-9acd-41d1-9e09-db1035fa04ac",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "IglooScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "Theatre",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

@@ -14,11 +14,6 @@ export default class IceFishing extends GameScene {
     }
 
     /** @returns {void} */
-    _preload() {
-        this.load.pack('load-pack', 'client/media/interface/menus/load/load-pack.json')
-    }
-
-    /** @returns {void} */
     _create() {
         // bg
         const bg = this.add.image(0, 0, 'load', 'bg')
