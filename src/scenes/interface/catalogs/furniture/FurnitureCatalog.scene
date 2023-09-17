@@ -807,13 +807,27 @@
                             "components": [
                                 "Button"
                             ],
-                            "Button.callback": "() => this.buyLocation(40)",
+                            "Button.callback": "() => this.buyIgloo(40)",
                             "texture": {
                                 "key": "furniturecatalog",
                                 "frame": "buyButton"
                             },
                             "x": 1271,
                             "y": 741
+                        },
+                        {
+                            "type": "Text",
+                            "id": "31072efe-ab63-42c8-8d15-ba5d8147aed4",
+                            "label": "coins_78",
+                            "scope": "CLASS",
+                            "x": 1255,
+                            "y": 727,
+                            "text": "3030",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
                         }
                     ]
                 },
@@ -864,6 +878,34 @@
                             },
                             "x": 1283,
                             "y": 743
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3f9a437f-87cf-4284-90a1-bab7792bda2f",
+                            "label": "coins_76",
+                            "scope": "CLASS",
+                            "x": 546,
+                            "y": 726,
+                            "text": "1000",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8ebcce0a-3de1-4709-a126-78b7ad62ee9f",
+                            "label": "coins_77",
+                            "scope": "CLASS",
+                            "x": 1273,
+                            "y": 729,
+                            "text": "900",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
                         }
                     ]
                 },
@@ -1788,6 +1830,34 @@
                             },
                             "x": 1289,
                             "y": 673
+                        },
+                        {
+                            "type": "Text",
+                            "id": "85f347fd-cd15-4266-8c37-d9812ed0eac2",
+                            "label": "coins_74",
+                            "scope": "CLASS",
+                            "x": 508,
+                            "y": 666,
+                            "text": "3500",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "33fb9478-f3b8-48c0-9901-ebd82ad8f01d",
+                            "label": "coins_75",
+                            "scope": "CLASS",
+                            "x": 1274,
+                            "y": 659,
+                            "text": "3000",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
                         }
                     ]
                 },
@@ -2677,6 +2747,34 @@
                             },
                             "x": 1279,
                             "y": 740
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1227c0d2-815e-4a52-b8dc-73f67630f31b",
+                            "label": "coins_72",
+                            "scope": "CLASS",
+                            "x": 547,
+                            "y": 720,
+                            "text": "4200",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "81a4c239-0619-44e7-8705-7d7d1e4d7e10",
+                            "label": "coins_73",
+                            "scope": "CLASS",
+                            "x": 1264,
+                            "y": 726,
+                            "text": "5000",
+                            "align": "center",
+                            "fontFamily": "cpBurbankSmall",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#462f04ff"
                         }
                     ]
                 },
@@ -2881,17 +2979,23 @@
             "objectIds": [
                 "91e45e1e-ecbe-48e5-8ec5-a6d2842a1275",
                 "d62632b7-b40d-4409-8d51-c6811b8217a9",
+                "1f61a4b7-6881-472a-ae4d-212c8ad50890",
+                "d9b6d086-21d8-4ce5-8cc2-2b73cbc4fcd6",
                 "7e01a247-195f-40a2-83cb-5ff70fa5da36",
                 "b72beb26-5bcf-4934-bd48-574964c46c23",
                 "51ec6127-cf08-4b96-b691-5529cae91ae7",
                 "0a56b247-3cf2-4886-86ae-9af836b43696",
                 "76111dfe-213a-48ae-97c6-f4029d5774c9",
+                "7ef5f109-9fc6-44b5-b823-3f6a0725a69d",
                 "b7c681e7-6f19-4ef4-be6a-0023cac7d790",
                 "076bf43a-1c7d-4be6-9e74-2b7c7b68f49a",
                 "ef066a58-b779-49aa-8f8e-803842f2d9a3",
                 "0a69f448-3f73-4b0b-a644-cb6dcb15b548",
                 "490a7702-fb20-4a39-ba4c-a0fc60ea7dca",
                 "86e7c2a0-a857-44ec-9764-58b182d97801",
+                "b1f14a0e-8702-4223-8fee-01650cfdac0a",
+                "99e63699-2574-47c0-9aa9-89aceb44c0db",
+                "a1b340d8-f070-49fc-97c3-253418d51268",
                 "2b0cce54-b488-4e07-b375-17e1fa282b63",
                 "abe61615-9efc-4387-a697-53f27908e4be",
                 "9fd7178a-c97f-4fe4-87e6-09edca866065",
