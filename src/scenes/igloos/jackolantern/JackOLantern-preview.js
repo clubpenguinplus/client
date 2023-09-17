@@ -1,12 +1,19 @@
 import IglooScene from '../IglooScene'
-
+import {Button, MoveTo} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class JackOLantern extends IglooScene {
     constructor() {
         super(`JackOLantern-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.floor
+
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [760, 760]
         this.wallSpawn = [760, 330]
@@ -19,7 +26,17 @@ export default class JackOLantern extends IglooScene {
     }
 
     /** @returns {void} */
+    _preload() {
+        this.load.pack('jackolantern-pack', 'client/media/igloos/buildings/sprites/jackolantern/jackolantern-pack.json')
+    }
+
+    /** @returns {void} */
     _create() {
+        // floor
+        const floor = this.add.image(760, 480, 'jackolantern', 'bg')
+
+        this.floor = floor
+
         this.events.emit('scene-awake')
     }
 

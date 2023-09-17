@@ -7,13 +7,45 @@
         "exportClass": true,
         "superClassName": "IglooScene",
         "preloadMethodName": "_preload",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "client/client/media/igloos/buildings/sprites/backyard/backyard-pack.json"
+        ],
         "createMethodName": "_create",
         "sceneKey": "Backyard",
         "borderWidth": 1520,
         "borderHeight": 960
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "e416b6bc-de6c-45ae-a0bb-b817b975c338",
+            "label": "floor",
+            "scope": "CLASS",
+            "texture": {
+                "key": "backyard",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "4b7ede61-736d-4872-8519-1f177d2fbe45",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "texture": {
+                "key": "backyard",
+                "frame": "door"
+            },
+            "x": 677.7786964525617,
+            "y": 314.9572825204803,
+            "originX": 0.39645371736436524,
+            "originY": 0.8507561659638476
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",

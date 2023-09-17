@@ -1,6 +1,5 @@
 import IglooScene from '../IglooScene'
-import {Animation, Button, MoveTo, SimpleButton} from '@components/components'
-import Main from '@scenes/interface/game/main/Main'
+import {Button, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 

@@ -158,18 +158,14 @@ export default class IglooScene extends RoomScene {
 
     addFlooring(flooring) {
         if (this.flooring) this.flooring.destroy()
-
-        if (!this.textures.exists(`flooring/${flooring}`)) return console.warn('WHAT WHY YOU SUCK')
+        if (!this.roomPhysics.mask) return
 
         if (!this.textures.list[`flooring/${flooring}`].frames[`${this.floorFrame}_1`]) this.floorFrame = 1
         this.flooring = this.add.image(0, 0, `flooring/${flooring}`, `${this.floorFrame}_1`)
         this.flooring.depth = -1
 
-        if (this.roomPhysics.mask) {
-            let mask = this.createMask()
-
-            this.flooring.setMask(mask)
-        }
+        let mask = this.createMask()
+        this.flooring.setMask(mask)
     }
 
     addLocation() {

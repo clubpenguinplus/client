@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class BambooHut extends IglooScene {
@@ -9,6 +10,10 @@ export default class BambooHut extends IglooScene {
         this.floor
 
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [770, 750]
         this.wallSpawn = [790, 400]

@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -10,6 +11,10 @@ export default class SplitLevel extends IglooScene {
         this.floor
 
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [1080, 490]
         this.wallSpawn = [970, 200]

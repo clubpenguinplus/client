@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -6,7 +7,14 @@ export default class ShadowyKeep extends IglooScene {
     constructor() {
         super('ShadowyKeep')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.floor
+
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [760, 800]
         this.wallSpawn = [760, 430]
@@ -17,7 +25,23 @@ export default class ShadowyKeep extends IglooScene {
     }
 
     /** @returns {void} */
+    _preload() {
+        this.load.pack('shadowykeep-pack', 'client/media/igloos/buildings/sprites/shadowykeep/shadowykeep-pack.json')
+    }
+
+    /** @returns {void} */
     _create() {
+        // bg_lower
+        this.add.image(758, 639, 'shadowykeep', 'bg-lower')
+
+        // floor
+        const floor = this.add.image(760, 480, 'shadowykeep', 'bg-upper')
+
+        // door
+        this.add.image(754, 552, 'shadowykeep', 'door')
+
+        this.floor = floor
+
         this.events.emit('scene-awake')
     }
 

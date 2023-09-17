@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -6,7 +7,16 @@ export default class MermaidCove extends IglooScene {
     constructor() {
         super('MermaidCove')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.floor
+        /** @type {Phaser.GameObjects.Image[]} */
+        this.sort
+
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [616, 512]
         this.wallSpawn = [850, 216]
@@ -17,7 +27,25 @@ export default class MermaidCove extends IglooScene {
     }
 
     /** @returns {void} */
+    _preload() {
+        this.load.pack('mermaidcove-pack', 'client/media/igloos/buildings/sprites/mermaidcove/mermaidcove-pack.json')
+    }
+
+    /** @returns {void} */
     _create() {
+        // floor
+        const floor = this.add.image(760, 480, 'mermaidcove', 'bg')
+
+        // bridge
+        const bridge = this.add.image(478.71526559673634, 686.5007154026904, 'mermaidcove', 'bridge')
+        bridge.setOrigin(0.5517666298233039, 0.09254678465999935)
+
+        // lists
+        const sort = [bridge]
+
+        this.floor = floor
+        this.sort = sort
+
         this.events.emit('scene-awake')
     }
 

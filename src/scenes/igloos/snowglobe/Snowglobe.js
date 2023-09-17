@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 

@@ -1,5 +1,4 @@
 const fs = require('fs')
-const {exitCode} = require('process')
 const exec = require('child_process').exec
 
 function searchFolder(path) {
@@ -46,8 +45,8 @@ exec(
             console.error(stderr)
         }
         for (let line of stdout.split('\n')) {
-            if (line.endsWith('.json') && line.includes('modified:')) {
-                let file = line.split(' ')[line.split(' ').length - 1]
+            if (line.endsWith('.json') && fs.existsSync(`client/${line.trim()}`)) {
+                let file = line.trim()
                 minify(`client/${file}`)
             }
         }

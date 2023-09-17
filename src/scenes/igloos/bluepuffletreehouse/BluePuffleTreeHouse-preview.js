@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class BluePuffleTreeHouse extends IglooScene {
@@ -11,6 +12,10 @@ export default class BluePuffleTreeHouse extends IglooScene {
         this.sort
 
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [580, 634]
         this.wallSpawn = [1040, 250]
