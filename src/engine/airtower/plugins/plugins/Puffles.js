@@ -49,7 +49,7 @@ export default class Puffles extends Plugin {
         penguin.walking = args[1]
         penguin.getPuffleSpecies()
 
-        if (this.shell.room.isIgloo && this.shell.room.id == args[0]) {
+        if ((this.shell.room.isIgloo || this.shell.room.isBackyard) && this.shell.room.id == args[0]) {
             if (this.shell.room.puffles[args[1]]) this.shell.room.puffles[args[1]].removePuffle()
             if (this.shell.room.puffles[prevWalking]) this.shell.room.puffles[prevWalking].loadPuffle()
         }

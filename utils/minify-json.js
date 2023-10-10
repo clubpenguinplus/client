@@ -1,5 +1,4 @@
 const fs = require('fs')
-const {exitCode} = require('process')
 const exec = require('child_process').exec
 
 function searchFolder(path) {
@@ -19,7 +18,7 @@ function searchFolder(path) {
 function minify(json) {
     var jsonFile = fs.readFileSync(json, 'utf8')
     var jsonData = JSON.parse(jsonFile)
-    let regex = new RegExp('^crumbs/[^/]+/.+.json$')
+    let regex = new RegExp('^.*/crumbs/[^/]+/[^/]+.json$')
     if (regex.test(json)) {
         fs.writeFileSync(json, JSON.stringify(jsonData, null, 4))
     } else {
@@ -46,9 +45,12 @@ exec(
             console.error(stderr)
         }
         for (let line of stdout.split('\n')) {
-            if (line.endsWith('.json') && line.includes('modified:')) {
-                let file = line.split(' ')[line.split(' ').length - 1]
-                minify(`client/${file}`)
+            let file = line.trim()
+            if (file.includes('   ')) {
+                file = file.split('   ')[1]
+            }
+            if (file.endsWith('.json') && fs.existsSync(`./client/${file}`)) {
+                minify(`./client/${file}`)
             }
         }
     }

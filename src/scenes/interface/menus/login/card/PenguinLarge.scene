@@ -17,7 +17,6 @@
             "type": "Container",
             "id": "1c5978f9-cd54-4259-8979-f97d5bfa2bbd",
             "label": "container_1",
-            "components": [],
             "x": 760,
             "y": 480,
             "list": [
@@ -26,7 +25,6 @@
                     "id": "846d9c56-c43a-4eb9-bc0f-a6f23fbc30db",
                     "label": "bg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "prompt",
                         "frame": "window"
@@ -61,18 +59,14 @@
                     "label": "paperDoll",
                     "scope": "CLASS",
                     "fadeIn": false,
-                    "components": [],
                     "x": 0,
-                    "y": -45,
-                    "nestedPrefabs": [],
-                    "list": []
+                    "y": -45
                 },
                 {
                     "type": "Text",
                     "id": "b7ce3c05-47d9-4ce8-9537-8c11bd4de74e",
                     "label": "username",
                     "scope": "CLASS",
-                    "components": [],
                     "y": 215,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -93,6 +87,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

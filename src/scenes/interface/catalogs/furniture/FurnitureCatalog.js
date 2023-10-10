@@ -314,6 +314,12 @@ export default class FurnitureCatalog extends Book {
         const buyButton_58 = this.add.image(1271, 741, 'furniturecatalog', 'buyButton')
         page18.add(buyButton_58)
 
+        // coins_78
+        const coins_78 = this.add.text(1255, 727, '', {})
+        coins_78.text = '3030'
+        coins_78.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page18.add(coins_78)
+
         // page17
         const page17 = this.add.container(0, -1)
         page17.visible = false
@@ -330,6 +336,18 @@ export default class FurnitureCatalog extends Book {
         // buyButton_57
         const buyButton_57 = this.add.image(1283, 743, 'furniturecatalog', 'buyButton')
         page17.add(buyButton_57)
+
+        // coins_76
+        const coins_76 = this.add.text(546, 726, '', {})
+        coins_76.text = '1000'
+        coins_76.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page17.add(coins_76)
+
+        // coins_77
+        const coins_77 = this.add.text(1273, 729, '', {})
+        coins_77.text = '900'
+        coins_77.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page17.add(coins_77)
 
         // page16
         const page16 = this.add.container(0, -1)
@@ -662,6 +680,18 @@ export default class FurnitureCatalog extends Book {
         const buyButton_29 = this.add.image(1289, 673, 'furniturecatalog', 'buyButton')
         page10.add(buyButton_29)
 
+        // coins_74
+        const coins_74 = this.add.text(508, 666, '', {})
+        coins_74.text = '3500'
+        coins_74.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page10.add(coins_74)
+
+        // coins_75
+        const coins_75 = this.add.text(1274, 659, '', {})
+        coins_75.text = '3000'
+        coins_75.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page10.add(coins_75)
+
         // page9
         const page9 = this.add.container(0, -1)
         page9.visible = false
@@ -980,6 +1010,18 @@ export default class FurnitureCatalog extends Book {
         const buyButton_2 = this.add.image(1279, 740, 'furniturecatalog', 'buyButton')
         page4.add(buyButton_2)
 
+        // coins_72
+        const coins_72 = this.add.text(547, 720, '', {})
+        coins_72.text = '4200'
+        coins_72.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page4.add(coins_72)
+
+        // coins_73
+        const coins_73 = this.add.text(1264, 726, '', {})
+        coins_73.text = '5000'
+        coins_73.setStyle({align: 'center', color: '#462f04ff', fontFamily: 'cpBurbankSmall', fontSize: '24px', fontStyle: 'bold'})
+        page4.add(coins_73)
+
         // page3
         const page3 = this.add.container(760, 463)
         page3.visible = false
@@ -1051,7 +1093,7 @@ export default class FurnitureCatalog extends Book {
         container.add(white_x)
 
         // lists
-        const pages = [page1, page2, page5, page6, page7, page8, page9, page11, page12, page13, page14, page15, page16, page20, page21, page22, page23, page25]
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16, page17, page18, page19, page20, page21, page22, page23, page25]
 
         // blocker (components)
         new Interactive(blocker)
@@ -1146,7 +1188,7 @@ export default class FurnitureCatalog extends Book {
 
         // buyButton_58 (components)
         const buyButton_58Button = new Button(buyButton_58)
-        buyButton_58Button.callback = () => this.buyLocation(40)
+        buyButton_58Button.callback = () => this.buyIgloo(40)
 
         // buyButton_56 (components)
         const buyButton_56Button = new Button(buyButton_56)
@@ -1418,6 +1460,9 @@ export default class FurnitureCatalog extends Book {
         this.coins_54 = coins_54
         this.coins_55 = coins_55
         this.coins_56 = coins_56
+        this.coins_78 = coins_78
+        this.coins_76 = coins_76
+        this.coins_77 = coins_77
         this.coins_52 = coins_52
         this.coins_51 = coins_51
         this.coins_50 = coins_50
@@ -1444,6 +1489,8 @@ export default class FurnitureCatalog extends Book {
         this.coins_32 = coins_32
         this.coins_33 = coins_33
         this.coins_34 = coins_34
+        this.coins_74 = coins_74
+        this.coins_75 = coins_75
         this.coins_21 = coins_21
         this.coins_22 = coins_22
         this.coins_23 = coins_23
@@ -1470,6 +1517,8 @@ export default class FurnitureCatalog extends Book {
         this.coins_5 = coins_5
         this.coins_6 = coins_6
         this.coins_7 = coins_7
+        this.coins_72 = coins_72
+        this.coins_73 = coins_73
         this.coins_1 = coins_1
         this.coinsTxt_1 = coinsTxt_1
         this.buttons = buttons
@@ -1523,6 +1572,12 @@ export default class FurnitureCatalog extends Book {
     /** @type {Phaser.GameObjects.Text} */
     coins_56
     /** @type {Phaser.GameObjects.Text} */
+    coins_78
+    /** @type {Phaser.GameObjects.Text} */
+    coins_76
+    /** @type {Phaser.GameObjects.Text} */
+    coins_77
+    /** @type {Phaser.GameObjects.Text} */
     coins_52
     /** @type {Phaser.GameObjects.Text} */
     coins_51
@@ -1575,6 +1630,10 @@ export default class FurnitureCatalog extends Book {
     /** @type {Phaser.GameObjects.Text} */
     coins_34
     /** @type {Phaser.GameObjects.Text} */
+    coins_74
+    /** @type {Phaser.GameObjects.Text} */
+    coins_75
+    /** @type {Phaser.GameObjects.Text} */
     coins_21
     /** @type {Phaser.GameObjects.Text} */
     coins_22
@@ -1626,6 +1685,10 @@ export default class FurnitureCatalog extends Book {
     coins_6
     /** @type {Phaser.GameObjects.Text} */
     coins_7
+    /** @type {Phaser.GameObjects.Text} */
+    coins_72
+    /** @type {Phaser.GameObjects.Text} */
+    coins_73
     /** @type {Phaser.GameObjects.Text} */
     coins_1
     /** @type {Phaser.GameObjects.Text} */

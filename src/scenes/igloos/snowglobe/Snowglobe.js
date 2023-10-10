@@ -1,4 +1,5 @@
 import IglooScene from '../IglooScene'
+import {Button, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -16,7 +17,7 @@ export default class Snowglobe extends IglooScene {
 
     /** @returns {void} */
     _preload() {
-        this.load.pack('snow-pack', 'client/media/igloos/buildings/sprites/snow/snow-pack.json')
+        this.load.pack('snowglobe-pack', 'client/media/igloos/buildings/sprites/snowglobe/snowglobe-pack.json')
     }
 
     /** @returns {void} */

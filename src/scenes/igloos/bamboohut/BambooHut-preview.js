@@ -1,20 +1,26 @@
 import IglooScene from '../IglooScene'
-
+import {Button, MoveTo} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class BambooHut extends IglooScene {
     constructor() {
-        super('BambooHut')
+        super(`BambooHut-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Image} */
         this.floor
 
         /* START-USER-CTR-CODE */
 
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
+
         this.floorSpawn = [770, 750]
         this.wallSpawn = [790, 400]
         this.wallBounds = [520, 1050]
         this.floorFrame = 4
+
+        this.isPreview = true
 
         /* END-USER-CTR-CODE */
     }

@@ -31,21 +31,15 @@ class SledPlayer extends BaseContainer {
         const username = scene.add.text(3, -50, '', {})
         username.setOrigin(0.5, 1)
         username.text = 'Username'
-        username.setStyle({
-            align: 'center',
-            color: '#000000ff',
-            fixedWidth: 200,
-            fontFamily: 'cpBurbankSmall',
-            fontSize: '24px'
-        })
+        username.setStyle({align: 'center', color: '#000000ff', fixedWidth: 200, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         art.add(username)
 
         this.shadow = shadow
-        this.art = art
         this.sled = sled
         this.body = body
         this.penguin = penguin
         this.username = username
+        this.art = art
 
         /* START-USER-CTR-CODE */
 
@@ -96,8 +90,6 @@ class SledPlayer extends BaseContainer {
 
     /** @type {Phaser.GameObjects.Image} */
     shadow
-    /** @type {Phaser.GameObjects.Container} */
-    art
     /** @type {Phaser.GameObjects.Sprite} */
     sled
     /** @type {Phaser.GameObjects.Sprite} */
@@ -106,6 +98,8 @@ class SledPlayer extends BaseContainer {
     penguin
     /** @type {Phaser.GameObjects.Text} */
     username
+    /** @type {Phaser.GameObjects.Container} */
+    art
     /** @type {number} */
     fixedX = 0
 

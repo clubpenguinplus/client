@@ -193,12 +193,6 @@ export default class Penguin extends BaseContainer {
             this.puffleSprite = this.room.add.sprite(0, 0, `puffles/walk/${this.puffle}`, frame)
             this.add(this.puffleSprite)
         }
-
-        if (this.room.isIgloo) {
-            this.puffleSprite.setInteractive({useHandCursor: true, pixelPerfect: true})
-            this.puffleSprite.on('pointerdown', () => this.interface.main.puffleCare.showPuffle(this.room.puffles[this.walking]))
-            this.puffleSprite.isButton = true
-        }
     }
 
     removePuffle() {
@@ -511,8 +505,8 @@ export default class Penguin extends BaseContainer {
         this.puffleLoader.loadPuffle(animation, this.puffle)
     }
 
-    generatePuffleFrame(frame) {
-        let frameTotal = this.crumbs.puffles[this.puffle].frames[frame].end
+    generatePuffleFrame(frame, repeat) {
+        let frameTotal = this.crumbs.puffles[this.puffle].frames[frame] ? this.crumbs.puffles[this.puffle].frames[frame].end : this.crumbs.penguin[frame].end
         let frameArray = Phaser.Utils.Array.NumberArray(1, frameTotal)
         frameArray = frameArray.map((f) => {
             return `${frame}_${f}`
@@ -521,14 +515,14 @@ export default class Penguin extends BaseContainer {
             key: `puffle_walk_${this.puffle}_${frame}`,
             frames: this.anims.generateFrameNames(`puffles/walk/${this.puffle}`, {frames: frameArray}),
             frameRate: 24,
-            repeat: 0
+            repeat: repeat
         })
     }
 
-    playPuffleFrame(frame) {
+    playPuffleFrame(frame, repeat = 0) {
         if (!this.puffleSprite) return
 
-        if (!this.anims.exists(`puffle_walk_${this.puffle}_${frame}`)) this.generatePuffleFrame(frame)
+        if (!this.anims.exists(`puffle_walk_${this.puffle}_${frame}`)) this.generatePuffleFrame(frame, repeat)
 
         this.puffleSprite.play(`puffle_walk_${this.puffle}_${frame}`)
 

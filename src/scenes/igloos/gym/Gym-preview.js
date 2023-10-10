@@ -1,15 +1,19 @@
 import IglooScene from '../IglooScene'
-
+import {Button, MoveTo} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class Gym extends IglooScene {
     constructor() {
-        super(`Gym-preview-${Date.now()}`)
+        super(`Gym-preview-${Date.now()}${Phaser.Math.Between(0, 10000)}`)
 
         /** @type {Phaser.GameObjects.Layer} */
         this.floor
 
         /* START-USER-CTR-CODE */
+
+        this.roomTriggers = {
+            map: () => this.interface.main.onMapClick()
+        }
 
         this.floorSpawn = [760, 780]
         this.wallSpawn = [760, 480]
