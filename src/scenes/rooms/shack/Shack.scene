@@ -41,41 +41,6 @@
             "originY": 0.2575485725043334
         },
         {
-            "type": "Sprite",
-            "id": "191af30e-a73f-4cad-baf9-f12cba3eeb99",
-            "label": "fireparticles_1",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shack",
-                "frame": "fireparticles0001"
-            },
-            "x": 661,
-            "y": 203
-        },
-        {
-            "type": "Image",
-            "id": "7a37ae83-b51c-4387-84da-d6cf45f16d6d",
-            "label": "firefront_1",
-            "texture": {
-                "key": "shack",
-                "frame": "firefront"
-            },
-            "x": 664,
-            "y": 258
-        },
-        {
-            "type": "Sprite",
-            "id": "280e6070-c80a-4b4d-98a2-e81b469a67f6",
-            "label": "fireback_1",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shack",
-                "frame": "fireback0001"
-            },
-            "x": 661,
-            "y": 196
-        },
-        {
             "type": "Image",
             "id": "7a3e4e64-8b7b-4474-b7cf-5d73c4d09ceb",
             "label": "entrance",
@@ -278,41 +243,6 @@
         },
         {
             "type": "Sprite",
-            "id": "60051f29-ba20-4dff-955d-73839990c96e",
-            "label": "fireparticles",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shack",
-                "frame": "fireparticles0001"
-            },
-            "x": 427,
-            "y": 203
-        },
-        {
-            "type": "Sprite",
-            "id": "b18ed4c4-39a2-4d19-aa07-0efcec98fcf6",
-            "label": "fireback",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shack",
-                "frame": "fireback0001"
-            },
-            "x": 427,
-            "y": 196
-        },
-        {
-            "type": "Image",
-            "id": "f9d8874a-90e2-465e-9652-6ba9a0f18318",
-            "label": "firefront",
-            "texture": {
-                "key": "shack",
-                "frame": "firefront"
-            },
-            "x": 430,
-            "y": 258
-        },
-        {
-            "type": "Sprite",
             "id": "0752a437-0c1a-4002-8329-51135b1fb583",
             "label": "mine",
             "scope": "CLASS",
@@ -355,6 +285,94 @@
             "originY": 0.7161762061615676,
             "width": 180,
             "height": 250
+        },
+        {
+            "type": "Container",
+            "id": "0ce831a1-e101-4104-a9ce-6a171684898c",
+            "label": "container_1",
+            "x": 432.43486883238114,
+            "y": 356.71680692706605,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "60051f29-ba20-4dff-955d-73839990c96e",
+                    "label": "fireparticles",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireparticles0001"
+                    },
+                    "x": -5.4348674514199615,
+                    "y": -153.71679463484696
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b18ed4c4-39a2-4d19-aa07-0efcec98fcf6",
+                    "label": "fireback",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireback0001"
+                    },
+                    "x": -5.4348674514199615,
+                    "y": -160.71679463484696
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f9d8874a-90e2-465e-9652-6ba9a0f18318",
+                    "label": "firefront",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "firefront"
+                    },
+                    "x": -2.4348674514199615,
+                    "y": -98.71679463484696
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2b28593b-715f-425a-9b28-cbab5a46cfba",
+            "label": "container_2",
+            "x": 665.6584578155029,
+            "y": 258.1127708733708,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "191af30e-a73f-4cad-baf9-f12cba3eeb99",
+                    "label": "fireparticles_1",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireparticles0001"
+                    },
+                    "x": -4.658457815502857,
+                    "y": -55.11277087337078
+                },
+                {
+                    "type": "Image",
+                    "id": "7a37ae83-b51c-4387-84da-d6cf45f16d6d",
+                    "label": "firefront_1",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "firefront"
+                    },
+                    "x": -1.6584578155028566,
+                    "y": -0.11277087337077774
+                },
+                {
+                    "type": "Sprite",
+                    "id": "280e6070-c80a-4b4d-98a2-e81b469a67f6",
+                    "label": "fireback_1",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireback0001"
+                    },
+                    "x": -4.658457815502857,
+                    "y": -62.11277087337078
+                }
+            ]
         }
     ],
     "plainObjects": [],
@@ -384,7 +402,9 @@
                 "d4c27e02-489f-40fe-88d3-7b0e7ce3135b",
                 "3f2200dc-ece5-4e66-941b-7dbf27566fdf",
                 "7a3e4e64-8b7b-4474-b7cf-5d73c4d09ceb",
-                "ad56f759-bb14-4c96-a388-226228902d09"
+                "ad56f759-bb14-4c96-a388-226228902d09",
+                "2b28593b-715f-425a-9b28-cbab5a46cfba",
+                "0ce831a1-e101-4104-a9ce-6a171684898c"
             ]
         }
     ]

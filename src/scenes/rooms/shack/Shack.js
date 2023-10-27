@@ -9,16 +9,16 @@ export default class Shack extends RoomScene {
         super('Shack')
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fireparticles_1
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.fireback_1
+        this.mine
         /** @type {Phaser.GameObjects.Sprite} */
         this.fireparticles
         /** @type {Phaser.GameObjects.Sprite} */
         this.fireback
         /** @type {Phaser.GameObjects.Sprite} */
-        this.mine
-        /** @type {Phaser.GameObjects.Image[]} */
+        this.fireparticles_1
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fireback_1
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container>} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -51,15 +51,6 @@ export default class Shack extends RoomScene {
         // castle
         const castle = this.add.image(884.0079432436852, 247.24662960416003, 'shack', 'castle')
         castle.setOrigin(0.581584173186635, 0.2575485725043334)
-
-        // fireparticles_1
-        const fireparticles_1 = this.add.sprite(661, 203, 'shack', 'fireparticles0001')
-
-        // firefront_1
-        this.add.image(664, 258, 'shack', 'firefront')
-
-        // fireback_1
-        const fireback_1 = this.add.sprite(661, 196, 'shack', 'fireback0001')
 
         // entrance
         const entrance = this.add.image(519.1631840861114, 341.13773981487867, 'shack', 'entrance')
@@ -120,15 +111,6 @@ export default class Shack extends RoomScene {
         const arrow = this.add.image(1481.6157247997098, 413.9698029595037, 'shack', 'arrow')
         arrow.setOrigin(0.9747471873682302, 0.431218544749483)
 
-        // fireparticles
-        const fireparticles = this.add.sprite(427, 203, 'shack', 'fireparticles0001')
-
-        // fireback
-        const fireback = this.add.sprite(427, 196, 'shack', 'fireback0001')
-
-        // firefront
-        this.add.image(430, 258, 'shack', 'firefront')
-
         // mine
         const mine = this.add.sprite(1089, 153, 'shack', 'mine0001')
 
@@ -141,8 +123,38 @@ export default class Shack extends RoomScene {
         const rectangle = this.add.rectangle(860, 443, 180, 250)
         rectangle.setOrigin(0.6229255187473137, 0.7161762061615676)
 
+        // container_1
+        const container_1 = this.add.container(432.43486883238114, 356.71680692706605)
+
+        // fireparticles
+        const fireparticles = this.add.sprite(-5.4348674514199615, -153.71679463484696, 'shack', 'fireparticles0001')
+        container_1.add(fireparticles)
+
+        // fireback
+        const fireback = this.add.sprite(-5.4348674514199615, -160.71679463484696, 'shack', 'fireback0001')
+        container_1.add(fireback)
+
+        // firefront
+        const firefront = this.add.sprite(-2.4348674514199615, -98.71679463484696, 'shack', 'firefront')
+        container_1.add(firefront)
+
+        // container_2
+        const container_2 = this.add.container(665.6584578155029, 258.1127708733708)
+
+        // fireparticles_1
+        const fireparticles_1 = this.add.sprite(-4.658457815502857, -55.11277087337078, 'shack', 'fireparticles0001')
+        container_2.add(fireparticles_1)
+
+        // firefront_1
+        const firefront_1 = this.add.image(-1.6584578155028566, -0.11277087337077774, 'shack', 'firefront')
+        container_2.add(firefront_1)
+
+        // fireback_1
+        const fireback_1 = this.add.sprite(-4.658457815502857, -62.11277087337078, 'shack', 'fireback0001')
+        container_2.add(fireback_1)
+
         // lists
-        const sort = [railing, arm, chair, treeandrock, thingy, table, rockkk, rockk, rockkkk, rockkkkk, stairs, rock, arrow, castle, entrance, door]
+        const sort = [railing, arm, chair, treeandrock, thingy, table, rockkk, rockk, rockkkk, rockkkkk, stairs, rock, arrow, castle, entrance, door, container_2, container_1]
 
         // door (components)
         const doorButton = new Button(door)
@@ -162,11 +174,11 @@ export default class Shack extends RoomScene {
         new SimpleButton(rectangle)
         new MoveTo(rectangle)
 
-        this.fireparticles_1 = fireparticles_1
-        this.fireback_1 = fireback_1
+        this.mine = mine
         this.fireparticles = fireparticles
         this.fireback = fireback
-        this.mine = mine
+        this.fireparticles_1 = fireparticles_1
+        this.fireback_1 = fireback_1
         this.sort = sort
 
         this.events.emit('scene-awake')
