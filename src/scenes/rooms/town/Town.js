@@ -20,7 +20,7 @@ export default class Town extends RoomScene {
 
         this.music = 581
 
-        this.loadSfx = ['town-DoorDiscoOpen', 'town-DoorDiscoClose', 'town-DoorShopOpen', 'town-DoorShopClose', 'town-DoorCoffeeOpen', 'town-DoorCoffeeClose']
+        this.loadSfx = ['shack-MineLightOn', 'shack-MineLightOff', 'town-DoorShopOpen', 'town-DoorShopClose', 'town-DoorCoffeeOpen', 'town-DoorCoffeeClose']
 
         /* END-USER-CTR-CODE */
     }
@@ -32,177 +32,93 @@ export default class Town extends RoomScene {
 
     /** @returns {void} */
     _create() {
-        // dc_door
-        const dc_door = this.add.sprite(846, 211, 'town', 'danceclubdoor0001')
-        dc_door.setOrigin(0.5579637817944546, -0.002307969050704048)
+        // bg_lower
+        this.add.image(760, 480, 'town', 'bg-lower')
 
-        // bg
-        this.add.image(760, 480, 'town', 'bg')
+        // clothesdoor
+        const clothesdoor = this.add.image(1224.5614271559207, 584.4819920650543, 'town', 'clothesdoor')
+        clothesdoor.setOrigin(0.47204412321886735, 0.9139999513193517)
 
-        // image
-        this.add.image(1511, 613, 'town', 'sidetrees')
+        // dcdoor
+        const dcdoor = this.add.image(813.0092402431831, 486.10711825839496, 'town', 'dcdoor')
+        dcdoor.setOrigin(0.5067282682878871, 0.8486023062202533)
 
-        // noticeboard
-        const noticeboard = this.add.image(93.21640776789215, 675.1955159398718, 'town', 'bottom_left')
-        noticeboard.setOrigin(0.3045572976426323, 0.3075324463521485)
+        // bg_upper
+        this.add.image(760, 480, 'town', 'bg-upper')
 
-        // front_trees
-        const front_trees = this.add.image(-103, 752, 'town', 'bottom_trees')
-        front_trees.setOrigin(-0.000037033625174373305, 0.012728011654378707)
+        // coffeedoor
+        const coffeedoor = this.add.image(363.40952227654265, 535.9996780739574, 'town', 'coffeedoor')
+        coffeedoor.setOrigin(0.5023671807892639, 0.9387738677242724)
 
-        // coffee_door
-        const coffee_door = this.add.sprite(419, 348, 'town', 'coffeedoor')
-        coffee_door.setOrigin(0.5507261533206609, -0.0027676246941171125)
+        // arrow
+        const arrow = this.add.image(170.95878766724206, 587.5000212507283, 'town', 'arrow')
+        arrow.setOrigin(0.11247288662318557, 0.611979188802842)
 
-        // clothes_door
-        const clothes_door = this.add.sprite(1108, 291, 'town', 'clothesdoor')
-        clothes_door.setOrigin(0.4877768305251397, -0.01994307153677468)
+        // bigspook
+        const bigspook = this.add.image(985.5255882317963, 513.3777870583059, 'town', 'bigspook')
+        bigspook.setOrigin(0.6483720975209186, 0.5347685281857353)
 
-        // bench_arm
-        const bench_arm = this.add.image(256, 548, 'town', 'bench_side')
-        bench_arm.setOrigin(0.47839655086139365, 0.7665475678359499)
+        // cage_upper
+        const cage_upper = this.add.image(1245.2358152147403, 864.9614305979176, 'town', 'cage_upper')
+        cage_upper.setOrigin(0.8192340889570661, 0.9010014902061642)
 
-        // clothes_rack
-        const clothes_rack = this.add.image(1192, 411, 'town', 'clothesrack')
-        clothes_rack.setOrigin(0.5072043625558867, 0.011544218710822484)
+        // cage2_upper
+        const cage2_upper = this.add.image(1307.475088425182, 951.4048656124199, 'town', 'cage2_upper')
+        cage2_upper.setOrigin(0.8601809792270935, 0.9910467350129374)
 
-        // left_chair
-        const left_chair = this.add.image(545, 452, 'town', 'leftchari')
-        left_chair.setOrigin(0.43846826392076804, 0.2992761373118083)
+        // grave
+        const grave = this.add.image(58.079307682240255, 679.3961901001189, 'town', 'grave')
+        grave.setOrigin(0.038210070843579115, 0.7077043646876239)
 
-        // right_chair
-        const right_chair = this.add.image(696, 437, 'town', 'rightchair')
-        right_chair.setOrigin(0.5418277481710252, 0.27855253873250896)
+        // plumpkin
+        const plumpkin = this.add.image(918.7700141151845, 536.8324482344127, 'town', 'plumpkin')
+        plumpkin.setOrigin(0.6044539566547267, 0.5592004669108466)
 
-        // coloured_lights
-        const coloured_lights = this.add.sprite(833, -69, 'town', 'disco_lights0001')
-        coloured_lights.setOrigin(0.49671744383068733, 0.00587362442472057)
+        // pumpspook
+        const pumpspook = this.add.image(698.6570400009514, 554.8744952929563, 'town', 'pumpspook')
+        pumpspook.setOrigin(0.45964278947431014, 0.5779942659301629)
 
-        // dance_cover
-        const dance_cover = this.add.image(847, 350, 'town', 'roof')
-        dance_cover.setOrigin(0.5079538861025653, 0.4574233155686223)
+        // railing
+        const railing = this.add.image(760, 480, 'town', 'railing')
 
-        // shopfronts
-        const shopfronts = this.add.image(329, 212, 'town', 'shopfronts')
-        shopfronts.setOrigin(-0.002646461293556528, 0.007956149379252361)
+        // sign
+        const sign = this.add.image(1452.8146070480784, 571.1123376456458, 'town', 'sign')
+        sign.setOrigin(0.9557990835842621, 0.5949086850475477)
 
-        // giftshopsign
-        this.add.image(1067, 170, 'town', 'giftshopsign')
+        // spookin
+        const spookin = this.add.image(642.726694119466, 518.790401175869, 'town', 'spookin')
+        spookin.setOrigin(0.4228465092891223, 0.5404066678915301)
 
-        // main_lights
-        const main_lights = this.add.sprite(578, -17, 'town', 'lights0001')
-        main_lights.setOrigin(0.00036237604574263714, 0.009681408322522898)
-
-        // stars_anim
-        const stars_anim = this.add.sprite(784, 294, 'town', 'starsanim0001')
-        stars_anim.setOrigin(0.01746424311105394, 0.02276683384609813)
-        stars_anim.visible = false
-
-        // stars
-        const stars = this.add.image(789, 296, 'town', 'stars')
-        stars.setOrigin(0.016295875660959563, 0.014467126608638104)
-
-        // table
-        const table = this.add.image(621, 498, 'town', 'table')
-        table.setOrigin(0.5222867233277427, 0.7080516274288713)
-
-        // lights_front
-        this.add.image(843, 227, 'town', 'lights_front')
-
-        // localisation
-        const localisation = this.add.image(661, 208, 'town', 'localised-en')
-
-        // ellipse_1
-        const ellipse_1 = this.add.ellipse(560, 478, 40, 40)
-
-        // ellipse
-        const ellipse = this.add.ellipse(688, 471, 40, 40)
-
-        // ellipse_2
-        const ellipse_2 = this.add.ellipse(288, 520, 40, 40)
-
-        // ellipse_3
-        const ellipse_3 = this.add.ellipse(315, 496, 40, 40)
-
-        // speakers
-        const speakers = this.add.sprite(841, 321, 'town', 'speakers0001')
-
-        // barrier
-        const barrier = this.add.image(949.9629279361815, 438.4383708474857, 'town', 'barrier')
-        barrier.setOrigin(0.5280418276597353, 0.37359933744285717)
+        // tree
+        const tree = this.add.image(105.33505215683488, 967.5409734817938, 'town', 'tree')
+        tree.setOrigin(0.06929937641897031, 1.0078551807102019)
 
         // lists
-        const sort = [bench_arm, left_chair, right_chair, table, barrier]
+        const sort = [arrow, tree, spookin, sign, railing, pumpspook, plumpkin, grave, cage2_upper, cage_upper, bigspook]
 
-        // dc_door (components)
-        const dc_doorSimpleButton = new SimpleButton(dc_door)
-        dc_doorSimpleButton.hoverCallback = () => this.DiscoDoorOver()
-        dc_doorSimpleButton.hoverOutCallback = () => this.DiscoDoorOut()
-        const dc_doorMoveTo = new MoveTo(dc_door)
-        dc_doorMoveTo.x = 850
-        dc_doorMoveTo.y = 400
+        // clothesdoor (components)
+        const clothesdoorButton = new Button(clothesdoor)
+        clothesdoorButton.hoverCallback = () => this.ShopDoorOver()
+        clothesdoorButton.hoverOutCallback = () => this.ShopDoorOut()
+        new MoveTo(clothesdoor)
 
-        // coffee_door (components)
-        const coffee_doorMoveTo = new MoveTo(coffee_door)
-        coffee_doorMoveTo.x = 430
-        coffee_doorMoveTo.y = 430
-        const coffee_doorButton = new Button(coffee_door)
-        coffee_doorButton.hoverCallback = () => this.CoffeeDoorOver()
-        coffee_doorButton.hoverOutCallback = () => this.CoffeeDoorOut()
+        // dcdoor (components)
+        const dcdoorButton = new Button(dcdoor)
+        dcdoorButton.hoverCallback = () => this.DiscoDoorOver()
+        dcdoorButton.hoverOutCallback = () => this.DiscoDoorOut()
+        new MoveTo(dcdoor)
 
-        // clothes_door (components)
-        const clothes_doorMoveTo = new MoveTo(clothes_door)
-        clothes_doorMoveTo.x = 1100
-        clothes_doorMoveTo.y = 400
-        const clothes_doorButton = new Button(clothes_door)
-        clothes_doorButton.hoverCallback = () => this.ShopDoorOver()
-        clothes_doorButton.hoverOutCallback = () => this.ShopDoorOut()
+        // coffeedoor (components)
+        const coffeedoorButton = new Button(coffeedoor)
+        coffeedoorButton.hoverCallback = () => this.CoffeeDoorOver()
+        coffeedoorButton.hoverOutCallback = () => this.CoffeeDoorOut()
+        new MoveTo(coffeedoor)
 
-        // localisation (components)
-        new LocalisedSprite(localisation)
-
-        // ellipse_1 (components)
-        const ellipse_1Seat = new Seat(ellipse_1)
-        ellipse_1Seat.direction = 'southeast'
-
-        // ellipse (components)
-        const ellipseSeat = new Seat(ellipse)
-        ellipseSeat.direction = 'southwest'
-
-        // ellipse_2 (components)
-        const ellipse_2Seat = new Seat(ellipse_2)
-        ellipse_2Seat.direction = 'southeast'
-
-        // ellipse_3 (components)
-        const ellipse_3Seat = new Seat(ellipse_3)
-        ellipse_3Seat.direction = 'southeast'
-
-        this.dc_door = dc_door
-        this.coffee_door = coffee_door
-        this.clothes_door = clothes_door
-        this.coloured_lights = coloured_lights
-        this.main_lights = main_lights
-        this.stars_anim = stars_anim
-        this.speakers = speakers
         this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
-    /** @type {Phaser.GameObjects.Sprite} */
-    dc_door
-    /** @type {Phaser.GameObjects.Sprite} */
-    coffee_door
-    /** @type {Phaser.GameObjects.Sprite} */
-    clothes_door
-    /** @type {Phaser.GameObjects.Sprite} */
-    coloured_lights
-    /** @type {Phaser.GameObjects.Sprite} */
-    main_lights
-    /** @type {Phaser.GameObjects.Sprite} */
-    stars_anim
-    /** @type {Phaser.GameObjects.Sprite} */
-    speakers
     /** @type {Phaser.GameObjects.Image[]} */
     sort
 
@@ -210,28 +126,14 @@ export default class Town extends RoomScene {
 
     create() {
         super.create()
-
-        this.main_lights.play('town-lights')
-        this.coloured_lights.play('town-disco_lights')
-        this.speakers.play('town-speakers')
     }
 
     DiscoDoorOver() {
-        this.dc_door.play('town-danceclubdoor')
-        this.shell.musicController.addSfx('town-DoorDiscoOpen')
-        this.stars_anim.visible = true
-        this.stars_anim.play('town-starsanim')
+        this.shell.musicController.addSfx('shack-MineLightOn')
     }
 
     DiscoDoorOut() {
-        if (this.dc_door.anims.isPlaying) {
-            this.dc_door.anims.reverse()
-        } else {
-            this.dc_door.playReverse('town-danceclubdoor')
-        }
-        this.stars_anim.stop('town-starsanim')
-        this.shell.musicController.addSfx('town-DoorDiscoClose')
-        this.stars_anim.visible = false
+        this.shell.musicController.addSfx('shack-MineLightOff')
     }
 
     CoffeeDoorOver() {
