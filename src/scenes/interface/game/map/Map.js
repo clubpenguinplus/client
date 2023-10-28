@@ -94,103 +94,203 @@ export default class Map extends BaseContainer {
         this.close_btn
 
         // bg
-        const bg = scene.add.sprite(0, 0, 'map', 'map/bg')
+        const bg = scene.add.sprite(0, 0, 'map', 'map/halloween/bg')
+        bg.tintTopLeft = 11579069
+        bg.tintTopRight = 11579069
+        bg.tintBottomLeft = 11579069
+        bg.tintBottomRight = 11579069
         this.add(bg)
 
         // map_places_dojo
         const map_places_dojo = scene.add.image(160, -214, 'map', 'map/places/dojo')
+        map_places_dojo.tintTopLeft = 11579069
+        map_places_dojo.tintTopRight = 11579069
+        map_places_dojo.tintBottomLeft = 11579069
+        map_places_dojo.tintBottomRight = 11579069
         this.add(map_places_dojo)
 
         // map_fg
         const map_fg = scene.add.image(3, 100, 'map', 'map/fg')
+        map_fg.tintTopLeft = 11579069
+        map_fg.tintTopRight = 11579069
+        map_fg.tintBottomLeft = 11579069
+        map_fg.tintBottomRight = 11579069
         this.add(map_fg)
 
         // map_places_skihill
         const map_places_skihill = scene.add.image(-442, -121, 'map', 'map/places/skihill')
+        map_places_skihill.tintTopLeft = 11579069
+        map_places_skihill.tintTopRight = 11579069
+        map_places_skihill.tintBottomLeft = 11579069
+        map_places_skihill.tintBottomRight = 11579069
         this.add(map_places_skihill)
 
         // map_left_snow
         const map_left_snow = scene.add.image(-610, 51, 'map', 'map/left_snow')
+        map_left_snow.tintTopLeft = 11579069
+        map_left_snow.tintTopRight = 11579069
+        map_left_snow.tintBottomLeft = 11579069
+        map_left_snow.tintBottomRight = 11579069
         this.add(map_left_snow)
 
         // map_snow_mound
         const map_snow_mound = scene.add.image(-279, -34, 'map', 'map/snow_mound')
+        map_snow_mound.tintTopLeft = 11579069
+        map_snow_mound.tintTopRight = 11579069
+        map_snow_mound.tintBottomLeft = 11579069
+        map_snow_mound.tintBottomRight = 11579069
         this.add(map_snow_mound)
 
         // map_snow
         const map_snow = scene.add.image(-194, 47, 'map', 'map/snow')
+        map_snow.tintTopLeft = 11579069
+        map_snow.tintTopRight = 11579069
+        map_snow.tintBottomLeft = 11579069
+        map_snow.tintBottomRight = 11579069
         this.add(map_snow)
 
         // map_places_lighthouse
         const map_places_lighthouse = scene.add.image(-691, 124, 'map', 'map/places/lighthouse')
+        map_places_lighthouse.tintTopLeft = 11579069
+        map_places_lighthouse.tintTopRight = 11579069
+        map_places_lighthouse.tintBottomLeft = 11579069
+        map_places_lighthouse.tintBottomRight = 11579069
         this.add(map_places_lighthouse)
 
         // map_places_dock
         const map_places_dock = scene.add.image(-460, 319, 'map', 'map/places/dock')
+        map_places_dock.tintTopLeft = 11579069
+        map_places_dock.tintTopRight = 11579069
+        map_places_dock.tintBottomLeft = 11579069
+        map_places_dock.tintBottomRight = 11579069
         this.add(map_places_dock)
 
         // map_places_igloos
         const map_places_igloos = scene.add.image(-152, 263, 'map', 'map/places/igloos')
+        map_places_igloos.tintTopLeft = 11579069
+        map_places_igloos.tintTopRight = 11579069
+        map_places_igloos.tintBottomLeft = 11579069
+        map_places_igloos.tintBottomRight = 11579069
         this.add(map_places_igloos)
 
         // map_places_igloo
         const map_places_igloo = scene.add.image(-25, 184, 'map', 'map/places/igloo')
+        map_places_igloo.tintTopLeft = 11579069
+        map_places_igloo.tintTopRight = 11579069
+        map_places_igloo.tintBottomLeft = 11579069
+        map_places_igloo.tintBottomRight = 11579069
         this.add(map_places_igloo)
 
         // map_places_town
         const map_places_town = scene.add.image(-186, 92, 'map', 'map/places/town')
+        map_places_town.tintTopLeft = 11579069
+        map_places_town.tintTopRight = 11579069
+        map_places_town.tintBottomLeft = 11579069
+        map_places_town.tintBottomRight = 11579069
         this.add(map_places_town)
 
         // map_places_pufflewild
         const map_places_pufflewild = scene.add.image(-231, -102, 'map', 'map/places/pufflewild')
+        map_places_pufflewild.tintTopLeft = 11579069
+        map_places_pufflewild.tintTopRight = 11579069
+        map_places_pufflewild.tintBottomLeft = 11579069
+        map_places_pufflewild.tintBottomRight = 11579069
         this.add(map_places_pufflewild)
 
         // map_places_rink
         const map_places_rink = scene.add.image(-99, -92, 'map', 'map/places/rink')
+        map_places_rink.tintTopLeft = 11579069
+        map_places_rink.tintTopRight = 11579069
+        map_places_rink.tintBottomLeft = 11579069
+        map_places_rink.tintBottomRight = 11579069
         this.add(map_places_rink)
 
         // map_left_trees
         const map_left_trees = scene.add.image(-179, -11, 'map', 'map/left_trees')
+        map_left_trees.tintTopLeft = 11579069
+        map_left_trees.tintTopRight = 11579069
+        map_left_trees.tintBottomLeft = 11579069
+        map_left_trees.tintBottomRight = 11579069
         this.add(map_left_trees)
 
         // map_places_shack
         const map_places_shack = scene.add.image(409, -10, 'map', 'map/places/shack')
+        map_places_shack.tintTopLeft = 11579069
+        map_places_shack.tintTopRight = 11579069
+        map_places_shack.tintBottomLeft = 11579069
+        map_places_shack.tintBottomRight = 11579069
         this.add(map_places_shack)
 
         // map_right_trees
         const map_right_trees = scene.add.image(330, 20, 'map', 'map/right_trees')
+        map_right_trees.tintTopLeft = 11579069
+        map_right_trees.tintTopRight = 11579069
+        map_right_trees.tintBottomLeft = 11579069
+        map_right_trees.tintBottomRight = 11579069
         this.add(map_right_trees)
 
         // map_places_skivillage
         const map_places_skivillage = scene.add.image(-329, -10, 'map', 'map/places/skivillage')
+        map_places_skivillage.tintTopLeft = 11579069
+        map_places_skivillage.tintTopRight = 11579069
+        map_places_skivillage.tintBottomLeft = 11579069
+        map_places_skivillage.tintBottomRight = 11579069
         this.add(map_places_skivillage)
 
         // map_places_forts
         const map_places_forts = scene.add.image(12, 47, 'map', 'map/places/forts')
+        map_places_forts.tintTopLeft = 11579069
+        map_places_forts.tintTopRight = 11579069
+        map_places_forts.tintBottomLeft = 11579069
+        map_places_forts.tintBottomRight = 11579069
         this.add(map_places_forts)
 
         // map_places_pufflepark
         const map_places_pufflepark = scene.add.image(163, -16, 'map', 'map/places/pufflepark')
+        map_places_pufflepark.tintTopLeft = 11579069
+        map_places_pufflepark.tintTopRight = 11579069
+        map_places_pufflepark.tintBottomLeft = 11579069
+        map_places_pufflepark.tintBottomRight = 11579069
         this.add(map_places_pufflepark)
 
         // map_places_plaza
         const map_places_plaza = scene.add.image(228, 107, 'map', 'map/places/plaza')
+        map_places_plaza.tintTopLeft = 11579069
+        map_places_plaza.tintTopRight = 11579069
+        map_places_plaza.tintBottomLeft = 11579069
+        map_places_plaza.tintBottomRight = 11579069
         this.add(map_places_plaza)
 
         // map_places_forest
         const map_places_forest = scene.add.image(421, 136, 'map', 'map/places/forest')
+        map_places_forest.tintTopLeft = 11579069
+        map_places_forest.tintTopRight = 11579069
+        map_places_forest.tintBottomLeft = 11579069
+        map_places_forest.tintBottomRight = 11579069
         this.add(map_places_forest)
 
         // map_places_skatepark
         const map_places_skatepark = scene.add.image(618, 7, 'map', 'map/places/skatepark')
+        map_places_skatepark.tintTopLeft = 11579069
+        map_places_skatepark.tintTopRight = 11579069
+        map_places_skatepark.tintBottomLeft = 11579069
+        map_places_skatepark.tintBottomRight = 11579069
         this.add(map_places_skatepark)
 
         // map_places_cove
         const map_places_cove = scene.add.image(657, 164, 'map', 'map/places/cove')
+        map_places_cove.tintTopLeft = 11579069
+        map_places_cove.tintTopRight = 11579069
+        map_places_cove.tintBottomLeft = 11579069
+        map_places_cove.tintBottomRight = 11579069
         this.add(map_places_cove)
 
         // map_places_iceberg
         const map_places_iceberg = scene.add.image(674, -62, 'map', 'map/places/iceberg')
+        map_places_iceberg.tintTopLeft = 11579069
+        map_places_iceberg.tintTopRight = 11579069
+        map_places_iceberg.tintBottomLeft = 11579069
+        map_places_iceberg.tintBottomRight = 11579069
         this.add(map_places_iceberg)
 
         // block
@@ -205,74 +305,146 @@ export default class Map extends BaseContainer {
 
         // map_places_cove_1
         const map_places_cove_1 = scene.add.image(1349, 385, 'map', 'map/places_outline/cove_outline')
+        map_places_cove_1.tintTopLeft = 11579069
+        map_places_cove_1.tintTopRight = 11579069
+        map_places_cove_1.tintBottomLeft = 11579069
+        map_places_cove_1.tintBottomRight = 11579069
         places_container.add(map_places_cove_1)
 
         // map_places_skatepark_1
         const map_places_skatepark_1 = scene.add.image(1309, 221, 'map', 'map/places_outline/skatepark_outline')
+        map_places_skatepark_1.tintTopLeft = 11579069
+        map_places_skatepark_1.tintTopRight = 11579069
+        map_places_skatepark_1.tintBottomLeft = 11579069
+        map_places_skatepark_1.tintBottomRight = 11579069
         places_container.add(map_places_skatepark_1)
 
         // map_places_forest_1
         const map_places_forest_1 = scene.add.image(1110, 349, 'map', 'map/places_outline/forest_outline')
+        map_places_forest_1.tintTopLeft = 11579069
+        map_places_forest_1.tintTopRight = 11579069
+        map_places_forest_1.tintBottomLeft = 11579069
+        map_places_forest_1.tintBottomRight = 11579069
         places_container.add(map_places_forest_1)
 
         // map_places_plaza_1
         const map_places_plaza_1 = scene.add.image(919.5, 321, 'map', 'map/places_outline/plaza_outline')
+        map_places_plaza_1.tintTopLeft = 11579069
+        map_places_plaza_1.tintTopRight = 11579069
+        map_places_plaza_1.tintBottomLeft = 11579069
+        map_places_plaza_1.tintBottomRight = 11579069
         places_container.add(map_places_plaza_1)
 
         // map_places_pufflepark_1
         const map_places_pufflepark_1 = scene.add.image(853, 200, 'map', 'map/places_outline/pufflepark_outline')
+        map_places_pufflepark_1.tintTopLeft = 11579069
+        map_places_pufflepark_1.tintTopRight = 11579069
+        map_places_pufflepark_1.tintBottomLeft = 11579069
+        map_places_pufflepark_1.tintBottomRight = 11579069
         places_container.add(map_places_pufflepark_1)
 
         // map_places_forts_1
         const map_places_forts_1 = scene.add.image(703, 261, 'map', 'map/places_outline/forts_outline')
+        map_places_forts_1.tintTopLeft = 11579069
+        map_places_forts_1.tintTopRight = 11579069
+        map_places_forts_1.tintBottomLeft = 11579069
+        map_places_forts_1.tintBottomRight = 11579069
         places_container.add(map_places_forts_1)
 
         // map_places_shack_1
         const map_places_shack_1 = scene.add.image(1100, 203, 'map', 'map/places_outline/shack_outline')
+        map_places_shack_1.tintTopLeft = 11579069
+        map_places_shack_1.tintTopRight = 11579069
+        map_places_shack_1.tintBottomLeft = 11579069
+        map_places_shack_1.tintBottomRight = 11579069
         places_container.add(map_places_shack_1)
 
         // map_places_pufflewild_1
         const map_places_pufflewild_1 = scene.add.image(461, 117, 'map', 'map/places_outline/pufflewild_outline')
+        map_places_pufflewild_1.tintTopLeft = 11579069
+        map_places_pufflewild_1.tintTopRight = 11579069
+        map_places_pufflewild_1.tintBottomLeft = 11579069
+        map_places_pufflewild_1.tintBottomRight = 11579069
         places_container.add(map_places_pufflewild_1)
 
         // map_places_town_1
         const map_places_town_1 = scene.add.image(506, 306.5, 'map', 'map/places_outline/town_outline')
+        map_places_town_1.tintTopLeft = 11579069
+        map_places_town_1.tintTopRight = 11579069
+        map_places_town_1.tintBottomLeft = 11579069
+        map_places_town_1.tintBottomRight = 11579069
         places_container.add(map_places_town_1)
 
         // map_places_igloo_1
         const map_places_igloo_1 = scene.add.image(676, 400, 'map', 'map/places_outline/igloo_outline')
+        map_places_igloo_1.tintTopLeft = 11579069
+        map_places_igloo_1.tintTopRight = 11579069
+        map_places_igloo_1.tintBottomLeft = 11579069
+        map_places_igloo_1.tintBottomRight = 11579069
         places_container.add(map_places_igloo_1)
 
         // map_places_rink_1
         const map_places_rink_1 = scene.add.image(593, 123, 'map', 'map/places_outline/rink_outline')
+        map_places_rink_1.tintTopLeft = 11579069
+        map_places_rink_1.tintTopRight = 11579069
+        map_places_rink_1.tintBottomLeft = 11579069
+        map_places_rink_1.tintBottomRight = 11579069
         places_container.add(map_places_rink_1)
 
         // map_places_igloos_1
         const map_places_igloos_1 = scene.add.image(540, 475, 'map', 'map/places_outline/igloos_outline')
+        map_places_igloos_1.tintTopLeft = 11579069
+        map_places_igloos_1.tintTopRight = 11579069
+        map_places_igloos_1.tintBottomLeft = 11579069
+        map_places_igloos_1.tintBottomRight = 11579069
         places_container.add(map_places_igloos_1)
 
         // map_places_dock_1
         const map_places_dock_1 = scene.add.image(232, 531, 'map', 'map/places_outline/dock_outline')
+        map_places_dock_1.tintTopLeft = 11579069
+        map_places_dock_1.tintTopRight = 11579069
+        map_places_dock_1.tintBottomLeft = 11579069
+        map_places_dock_1.tintBottomRight = 11579069
         places_container.add(map_places_dock_1)
 
         // map_places_lighthouse_1
         const map_places_lighthouse_1 = scene.add.image(0, 337, 'map', 'map/places_outline/lighthouse_outline')
+        map_places_lighthouse_1.tintTopLeft = 11579069
+        map_places_lighthouse_1.tintTopRight = 11579069
+        map_places_lighthouse_1.tintBottomLeft = 11579069
+        map_places_lighthouse_1.tintBottomRight = 11579069
         places_container.add(map_places_lighthouse_1)
 
         // map_places_dojo_1
         const map_places_dojo_1 = scene.add.image(851, 0, 'map', 'map/places_outline/dojo_outline')
+        map_places_dojo_1.tintTopLeft = 11579069
+        map_places_dojo_1.tintTopRight = 11579069
+        map_places_dojo_1.tintBottomLeft = 11579069
+        map_places_dojo_1.tintBottomRight = 11579069
         places_container.add(map_places_dojo_1)
 
         // map_places_skihill_1
         const map_places_skihill_1 = scene.add.image(261.5, 92.5, 'map', 'map/places_outline/skihill_outline')
+        map_places_skihill_1.tintTopLeft = 11579069
+        map_places_skihill_1.tintTopRight = 11579069
+        map_places_skihill_1.tintBottomLeft = 11579069
+        map_places_skihill_1.tintBottomRight = 11579069
         places_container.add(map_places_skihill_1)
 
         // map_places_skivillage_1
         const map_places_skivillage_1 = scene.add.image(363, 205, 'map', 'map/places_outline/skivillage_outline')
+        map_places_skivillage_1.tintTopLeft = 11579069
+        map_places_skivillage_1.tintTopRight = 11579069
+        map_places_skivillage_1.tintBottomLeft = 11579069
+        map_places_skivillage_1.tintBottomRight = 11579069
         places_container.add(map_places_skivillage_1)
 
         // map_places_iceberg_1
         const map_places_iceberg_1 = scene.add.image(1365, 152, 'map', 'map/places/iceberg')
+        map_places_iceberg_1.tintTopLeft = 11579069
+        map_places_iceberg_1.tintTopRight = 11579069
+        map_places_iceberg_1.tintBottomLeft = 11579069
+        map_places_iceberg_1.tintBottomRight = 11579069
         places_container.add(map_places_iceberg_1)
 
         // games_container

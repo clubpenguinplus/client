@@ -36,10 +36,10 @@ export default class Berg extends RoomScene {
         // aqua
         const aqua = this.add.sprite(1255, 325, 'berg', 'aqua0001')
         aqua.setOrigin(0.5, 0.4014336917562724)
-        aqua.tintTopLeft = 11782109
-        aqua.tintTopRight = 11782109
-        aqua.tintBottomLeft = 11782109
-        aqua.tintBottomRight = 11782109
+        aqua.tintTopLeft = 11579069
+        aqua.tintTopRight = 11579069
+        aqua.tintBottomLeft = 11579069
+        aqua.tintBottomRight = 11579069
 
         // aqua (components)
         const aquaSimpleButton = new SimpleButton(aqua)

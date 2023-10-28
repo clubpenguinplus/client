@@ -10,15 +10,7 @@ export default class Plaza extends RoomScene {
         super('Plaza')
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.parksign
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.cannon
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.cover
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.puffle
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.smoke
+        this.manhole
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort
 
@@ -53,214 +45,102 @@ export default class Plaza extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'plaza', 'bg')
-        bg.setOrigin(0, 0)
+        this.add.image(760, 480, 'plaza', 'bg')
 
-        // parksign
-        const parksign = this.add.sprite(-45, 358, 'plaza', 'park')
+        // hoteldoor
+        const hoteldoor = this.add.image(583.468744605747, 462.38205446003013, 'plaza', 'hoteldoor')
+        hoteldoor.setOrigin(0.5378335522633343, 0.9060614097279936)
 
-        // signText_en
-        const signText_en = this.add.image(147, 261, 'plaza', 'signText-en')
+        // malldoorleft
+        const malldoorleft = this.add.image(769.4488626555903, 434.690310995506, 'plaza', 'malldoorleft')
+        malldoorleft.setOrigin(0.5382634789935992, 0.9015608118037959)
 
-        // buildings
-        this.add.image(767, 325, 'plaza', 'buildings')
+        // malldoorright
+        const malldoorright = this.add.image(982.7144903527169, 437.13917365109637, 'plaza', 'malldoorright')
+        malldoorright.setOrigin(0.43303891176120146, 0.9147267400596579)
 
-        // pole
-        this.add.image(1082, 77, 'plaza', 'pole')
+        // manhole
+        const manhole = this.add.sprite(1242, 507, 'plaza', 'manhole-open0001')
 
-        // pole_1
-        const pole_1 = this.add.image(753, 81, 'plaza', 'pole')
-        pole_1.angle = -22
+        // petdoor
+        const petdoor = this.add.image(343.6122156638976, 508.4261157673976, 'plaza', 'petdoor')
+        petdoor.setOrigin(0.506582964127931, 0.8647242253006924)
 
-        // flag1_0001
-        const flag1_0001 = this.add.sprite(1107, 79, 'plaza', 'flag1_0001')
+        // pizzadoor
+        const pizzadoor = this.add.image(1113.5083519224247, 472.0024121923148, 'plaza', 'pizzadoor')
+        pizzadoor.setOrigin(0.47714084332499734, 0.89839359505947)
 
-        // flag
-        const flag = this.add.sprite(778, 71, 'plaza', 'flag1_0001')
-        flag.angle = -27
+        // signs
+        this.add.image(760, 480, 'plaza', 'signs')
 
-        // mall_sign_en
-        const mall_sign_en = this.add.image(894, 65, 'plaza', 'mall_sign-en')
+        // puffles
+        const puffles = this.add.image(862.5576366884968, 961.3371521150619, 'plaza', 'puffles')
+        puffles.setOrigin(0.5674721287268194, 1.0013928854721865)
 
-        // mall_fg
-        this.add.image(914, 302, 'plaza', 'mall_fg')
+        // arrow
+        const arrow = this.add.image(1335.8445432559274, 495.8307778214688, 'plaza', 'arrow')
+        arrow.setOrigin(0.8788450942473207, 0.51649039356403)
 
-        // pet_door0001
-        const pet_door0001 = this.add.image(385, 431, 'plaza', 'pet_door')
+        // railingback
+        const railingback = this.add.image(585.3966474747571, 497.08883875778974, 'plaza', 'railingback')
+        railingback.setOrigin(0.38512937333865593, 0.517800873706031)
 
-        // cannon
-        const cannon = this.add.sprite(285, 433, 'plaza', 'cannon_0001')
+        // railingfrontleft
+        const railingfrontleft = this.add.image(458.34484627553763, 583.2760255362075, 'plaza', 'railingfrontleft')
+        railingfrontleft.setOrigin(0.30154266202338004, 0.6075791932668828)
 
-        // buildings2
-        this.add.image(480, 283, 'plaza', 'buildings2')
+        // railingfrontright
+        const railingfrontright = this.add.image(742.9111612422103, 541.6684181259369, 'plaza', 'railingfrontright')
+        railingfrontright.setOrigin(0.4887573429225067, 0.564237935547851)
 
-        // cover
-        const cover = this.add.sprite(507, 673.9236627496881, 'plaza', 'cover_0001')
-        cover.setOrigin(0.5, 1.6478945983850846)
+        // ticketbooth
+        const ticketbooth = this.add.image(875.7698954012483, 436.85339837047974, 'plaza', 'ticketbooth')
+        ticketbooth.setOrigin(0.5761644174658046, 0.45505562125919385)
 
-        // pet_sign_en
-        const pet_sign_en = this.add.image(362, 292, 'plaza', 'pet_sign-en')
-
-        // pizza_door0001
-        const pizza_door0001 = this.add.image(1222, 417, 'plaza', 'pizza_door')
-
-        // mall_door0001
-        const mall_door0001 = this.add.image(918, 404, 'plaza', 'mall_door')
-
-        // hotel_door0001
-        const hotel_door0001 = this.add.image(643, 409, 'plaza', 'hotel_door')
-
-        // fg_2
-        const fg_2 = this.add.image(203.14926228192448, 755.2392501923956, 'plaza', 'fg_2')
-        fg_2.setOrigin(0.616515661435073, 0.4097499303023767)
-
-        // fg_3
-        this.add.image(1567, 692, 'plaza', 'fg_3')
-
-        // fg_1
-        const fg_1 = this.add.image(1421.4777668477834, 754.5607223603644, 'plaza', 'fg_1')
-        fg_1.setOrigin(0.42192926018256904, 0.20276760019732185)
-
-        // pizza_sign
-        const pizza_sign = this.add.image(1254, 285, 'plaza', 'pizza_sign')
-
-        // puffle
-        const puffle = this.add.sprite(-8, 231, 'plaza', 'puffle_0001')
-
-        // smoke
-        const smoke = this.add.sprite(183, 251, 'plaza', 'smoke_0001')
-
-        // rectangle_1
-        const rectangle_1 = this.add.rectangle(253, 439, 128, 128)
-        rectangle_1.scaleX = 1.084041731335266
-        rectangle_1.scaleY = 1.0910348521771707
-        rectangle_1.isFilled = true
-        rectangle_1.fillColor = 47333
-        rectangle_1.fillAlpha = 100
-
-        // rectangle
-        const rectangle = this.add.rectangle(502.45727104401004, 571.0704385968158, 128, 128)
-        rectangle.scaleX = 1.0752579888181788
-        rectangle.scaleY = 0.5000892234118466
-        rectangle.setOrigin(0.4379311114735458, 0.8916559230325944)
-        rectangle.fillColor = 47333
-        rectangle.fillAlpha = 100
-
-        // puffle_hotel_sign
-        const puffle_hotel_sign = this.add.image(534, 147, 'plaza', 'puffle_hotel_sign-en')
-
-        // rectangle_2
-        const rectangle_2 = this.add.rectangle(144.52093192533204, 498.8023298133302, 128, 128)
-        rectangle_2.scaleX = 1.569424637449067
-        rectangle_2.scaleY = 2.2133166412822716
-        rectangle_2.setOrigin(0.5921960685294967, 1.0358273910455558)
-        rectangle_2.fillColor = 47333
-        rectangle_2.fillAlpha = 100
+        // tree
+        const tree = this.add.image(780.6820720379931, 1026.308976747584, 'plaza', 'tree')
+        tree.setOrigin(0.5136066263407849, 1.069071858658325)
 
         // lists
-        const sort = [fg_2, fg_1]
+        const sort = [tree, ticketbooth, railingfrontright, railingfrontleft, railingback]
 
-        // parksign (components)
-        new LocalisedSprite(parksign)
+        // hoteldoor (components)
+        const hoteldoorButton = new Button(hoteldoor)
+        hoteldoorButton.hoverCallback = () => this.onHotelOver()
+        hoteldoorButton.hoverOutCallback = () => this.onHotelOut()
+        new MoveTo(hoteldoor)
 
-        // signText_en (components)
-        new LocalisedSprite(signText_en)
+        // malldoorleft (components)
+        const malldoorleftButton = new Button(malldoorleft)
+        malldoorleftButton.hoverCallback = () => this.onMallOver()
+        malldoorleftButton.hoverOutCallback = () => this.onMallOut()
+        new MoveTo(malldoorleft)
 
-        // flag1_0001 (components)
-        const flag1_0001Animation = new Animation(flag1_0001)
-        flag1_0001Animation.key = 'flag1_'
-        flag1_0001Animation.end = 15
+        // malldoorright (components)
+        const malldoorrightButton = new Button(malldoorright)
+        malldoorrightButton.hoverCallback = () => this.onMallOver()
+        malldoorrightButton.hoverOutCallback = () => this.onMallOut()
+        new MoveTo(malldoorright)
 
-        // flag (components)
-        const flagAnimation = new Animation(flag)
-        flagAnimation.key = 'flag1_'
-        flagAnimation.end = 15
+        // manhole (components)
+        new MoveTo(manhole)
+        const manholeSimpleButton = new SimpleButton(manhole)
+        manholeSimpleButton.hoverCallback = () => this.onHoleOver()
+        manholeSimpleButton.hoverOutCallback = () => this.onHoleOut()
 
-        // mall_sign_en (components)
-        new LocalisedSprite(mall_sign_en)
+        // petdoor (components)
+        const petdoorButton = new Button(petdoor)
+        petdoorButton.hoverCallback = () => this.onPetOver()
+        petdoorButton.hoverOutCallback = () => this.onPetOut()
+        new MoveTo(petdoor)
 
-        // pet_door0001 (components)
-        const pet_door0001Button = new Button(pet_door0001)
-        pet_door0001Button.hoverCallback = () => this.onPetOver()
-        const pet_door0001MoveTo = new MoveTo(pet_door0001)
-        pet_door0001MoveTo.x = 396
-        pet_door0001MoveTo.y = 492
+        // pizzadoor (components)
+        const pizzadoorButton = new Button(pizzadoor)
+        pizzadoorButton.hoverCallback = () => this.onPizzaOver()
+        pizzadoorButton.hoverOutCallback = () => this.onPizzaOut()
+        new MoveTo(pizzadoor)
 
-        // cannon (components)
-        const cannonAnimation = new Animation(cannon)
-        cannonAnimation.key = 'cannon_'
-        cannonAnimation.end = 13
-        cannonAnimation.repeat = 0
-        cannonAnimation.autoPlay = false
-
-        // pet_sign_en (components)
-        new LocalisedSprite(pet_sign_en)
-
-        // pizza_door0001 (components)
-        const pizza_door0001Button = new Button(pizza_door0001)
-        pizza_door0001Button.hoverCallback = () => this.onPizzaOver()
-        pizza_door0001Button.hoverOutCallback = () => this.onPizzaOut()
-        const pizza_door0001MoveTo = new MoveTo(pizza_door0001)
-        pizza_door0001MoveTo.x = 1224
-        pizza_door0001MoveTo.y = 480
-
-        // mall_door0001 (components)
-        const mall_door0001Button = new Button(mall_door0001)
-        mall_door0001Button.hoverCallback = () => this.onMallOver()
-        mall_door0001Button.hoverOutCallback = () => this.onMallOut()
-        const mall_door0001MoveTo = new MoveTo(mall_door0001)
-        mall_door0001MoveTo.x = 920
-        mall_door0001MoveTo.y = 460
-
-        // hotel_door0001 (components)
-        const hotel_door0001Button = new Button(hotel_door0001)
-        hotel_door0001Button.hoverCallback = () => this.onHotelOver()
-        hotel_door0001Button.hoverOutCallback = () => this.onHotelOut()
-        const hotel_door0001MoveTo = new MoveTo(hotel_door0001)
-        hotel_door0001MoveTo.x = 644
-        hotel_door0001MoveTo.y = 468
-
-        // pizza_sign (components)
-        new LocalisedSprite(pizza_sign)
-
-        // puffle (components)
-        const puffleAnimation = new Animation(puffle)
-        puffleAnimation.key = 'puffle_'
-        puffleAnimation.end = 12
-        puffleAnimation.repeat = 0
-        puffleAnimation.autoPlay = false
-
-        // smoke (components)
-        const smokeAnimation = new Animation(smoke)
-        smokeAnimation.key = 'smoke_'
-        smokeAnimation.end = 12
-        smokeAnimation.repeat = 0
-        smokeAnimation.autoPlay = false
-
-        // rectangle_1 (components)
-        const rectangle_1Zone = new Zone(rectangle_1)
-        rectangle_1Zone.hoverCallback = () => this.onPuffleOver()
-
-        // rectangle (components)
-        const rectangleSimpleButton = new SimpleButton(rectangle)
-        rectangleSimpleButton.hoverCallback = () => this.onHoleOver()
-        rectangleSimpleButton.hoverOutCallback = () => this.onHoleOut()
-        rectangleSimpleButton.callback = () => this.shell.client.penguin.move(512, 560)
-
-        // puffle_hotel_sign (components)
-        new LocalisedSprite(puffle_hotel_sign)
-
-        // rectangle_2 (components)
-        const rectangle_2SimpleButton = new SimpleButton(rectangle_2)
-        rectangle_2SimpleButton.hoverCallback = () => this.parksign.setFrame('park-hover')
-        rectangle_2SimpleButton.hoverOutCallback = () => this.parksign.setFrame('park')
-        new MoveTo(rectangle_2)
-
-        this.parksign = parksign
-        this.cannon = cannon
-        this.cover = cover
-        this.puffle = puffle
-        this.smoke = smoke
+        this.manhole = manhole
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -277,12 +157,12 @@ export default class Plaza extends RoomScene {
 
     onHoleOver() {
         this.shell.musicController.addSfx('plaza-HoleOpen')
-        this.cover.play('plaza-holeopen')
+        this.manhole.play('plaza-manhole-open')
     }
 
     onHoleOut() {
         this.shell.musicController.addSfx('plaza-HoleClose')
-        this.cover.play('plaza-holeclose')
+        this.manhole.play('plaza-manhole-close')
     }
 
     onMallOver() {

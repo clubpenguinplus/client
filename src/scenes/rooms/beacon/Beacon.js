@@ -42,18 +42,18 @@ export default class Beacon extends RoomScene {
 
         // launch
         const launch = this.add.image(1321, 570, 'lightroof', 'launch')
-        launch.tintTopLeft = 11782109
-        launch.tintTopRight = 11782109
-        launch.tintBottomLeft = 11782109
-        launch.tintBottomRight = 11782109
+        launch.tintTopLeft = 11579069
+        launch.tintTopRight = 11579069
+        launch.tintBottomLeft = 11579069
+        launch.tintBottomRight = 11579069
 
         // launchActive
         const launchActive = this.add.sprite(1321, 570, 'lightroof', 'launch/launch0001')
         launchActive.visible = false
-        launchActive.tintTopLeft = 11782109
-        launchActive.tintTopRight = 11782109
-        launchActive.tintBottomLeft = 11782109
-        launchActive.tintBottomRight = 11782109
+        launchActive.tintTopLeft = 11579069
+        launchActive.tintTopRight = 11579069
+        launchActive.tintBottomLeft = 11579069
+        launchActive.tintBottomRight = 11579069
 
         // telescopeZone
         const telescopeZone = this.add.rectangle(255, 300, 235, 110)
@@ -74,10 +74,10 @@ export default class Beacon extends RoomScene {
         // stairs
         const stairs = this.add.image(138.86516189156674, 675.7588356232907, 'lightroof', 'stairs')
         stairs.setOrigin(0.45806784480189044, 0.8093247083206717)
-        stairs.tintTopLeft = 11782109
-        stairs.tintTopRight = 11782109
-        stairs.tintBottomLeft = 11782109
-        stairs.tintBottomRight = 11782109
+        stairs.tintTopLeft = 11579069
+        stairs.tintTopRight = 11579069
+        stairs.tintBottomLeft = 11579069
+        stairs.tintBottomRight = 11579069
 
         // railing
         const railing = this.add.image(158.9663836968491, 564.611528508696, 'lightroof', 'railing')

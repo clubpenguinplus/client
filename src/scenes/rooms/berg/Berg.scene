@@ -48,10 +48,10 @@
             "x": 1255,
             "y": 325,
             "originY": 0.4014336917562724,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         }
     ],
     "plainObjects": [],

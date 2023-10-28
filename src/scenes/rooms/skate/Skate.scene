@@ -26,10 +26,10 @@
             },
             "originX": 0,
             "originY": 0,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -41,10 +41,10 @@
             },
             "x": 1204,
             "y": 207,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -58,10 +58,10 @@
             "y": 350.9968016178712,
             "originX": 0.18418614466094257,
             "originY": 0.3356914401276514,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -75,10 +75,10 @@
             "y": 462.9056017649504,
             "originX": 0.21524087109163548,
             "originY": 0.3127283713802269,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -90,10 +90,10 @@
             },
             "x": 5,
             "y": 429,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -105,10 +105,10 @@
             },
             "x": 196,
             "y": 209,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -124,10 +124,10 @@
             "scaleY": 0.8,
             "originX": 0.5488281242724042,
             "originY": 3.04921256043897,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -141,10 +141,10 @@
             "y": 149,
             "scaleX": 0.5,
             "scaleY": 0.5,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -162,10 +162,10 @@
             },
             "x": 324,
             "y": 178,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -179,10 +179,10 @@
             "y": 699.2437501579271,
             "originX": 0.49747597996282805,
             "originY": 0.16730633525779298,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -194,10 +194,10 @@
             },
             "x": 770,
             "y": 826,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -224,10 +224,10 @@
             },
             "x": 1261,
             "y": 228,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",
@@ -241,10 +241,10 @@
             "y": 691.3702917992708,
             "originX": 0.4582764034671558,
             "originY": 0.41586599876093105,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         }
     ],
     "plainObjects": [],

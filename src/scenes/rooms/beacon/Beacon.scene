@@ -38,10 +38,10 @@
             },
             "x": 1321,
             "y": 570,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Sprite",
@@ -55,10 +55,10 @@
             "x": 1321,
             "y": 570,
             "visible": false,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Rectangle",
@@ -122,10 +122,10 @@
             "y": 675.7588356232907,
             "originX": 0.45806784480189044,
             "originY": 0.8093247083206717,
-            "tintTopLeft": "#b3c7dd",
-            "tintTopRight": "#b3c7dd",
-            "tintBottomLeft": "#b3c7dd",
-            "tintBottomRight": "#b3c7dd"
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Image",

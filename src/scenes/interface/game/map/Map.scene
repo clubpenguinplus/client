@@ -30,8 +30,12 @@
                     ],
                     "texture": {
                         "key": "map",
-                        "frame": "map/bg"
-                    }
+                        "frame": "map/halloween/bg"
+                    },
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -48,7 +52,11 @@
                         "frame": "map/places/dojo"
                     },
                     "x": 160,
-                    "y": -214
+                    "y": -214,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -59,7 +67,11 @@
                         "frame": "map/fg"
                     },
                     "x": 3,
-                    "y": 100
+                    "y": 100,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -76,7 +88,11 @@
                         "frame": "map/places/skihill"
                     },
                     "x": -442,
-                    "y": -121
+                    "y": -121,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -87,7 +103,11 @@
                         "frame": "map/left_snow"
                     },
                     "x": -610,
-                    "y": 51
+                    "y": 51,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -98,7 +118,11 @@
                         "frame": "map/snow_mound"
                     },
                     "x": -279,
-                    "y": -34
+                    "y": -34,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -109,7 +133,11 @@
                         "frame": "map/snow"
                     },
                     "x": -194,
-                    "y": 47
+                    "y": 47,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -126,7 +154,11 @@
                         "frame": "map/places/lighthouse"
                     },
                     "x": -691,
-                    "y": 124
+                    "y": 124,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -143,7 +175,11 @@
                         "frame": "map/places/dock"
                     },
                     "x": -460,
-                    "y": 319
+                    "y": 319,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -160,7 +196,11 @@
                         "frame": "map/places/igloos"
                     },
                     "x": -152,
-                    "y": 263
+                    "y": 263,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -177,7 +217,11 @@
                         "frame": "map/places/igloo"
                     },
                     "x": -25,
-                    "y": 184
+                    "y": 184,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -194,7 +238,11 @@
                         "frame": "map/places/town"
                     },
                     "x": -186,
-                    "y": 92
+                    "y": 92,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -211,7 +259,11 @@
                         "frame": "map/places/pufflewild"
                     },
                     "x": -231,
-                    "y": -102
+                    "y": -102,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -228,7 +280,11 @@
                         "frame": "map/places/rink"
                     },
                     "x": -99,
-                    "y": -92
+                    "y": -92,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -239,7 +295,11 @@
                         "frame": "map/left_trees"
                     },
                     "x": -179,
-                    "y": -11
+                    "y": -11,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -256,7 +316,11 @@
                         "frame": "map/places/shack"
                     },
                     "x": 409,
-                    "y": -10
+                    "y": -10,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -267,7 +331,11 @@
                         "frame": "map/right_trees"
                     },
                     "x": 330,
-                    "y": 20
+                    "y": 20,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -284,7 +352,11 @@
                         "frame": "map/places/skivillage"
                     },
                     "x": -329,
-                    "y": -10
+                    "y": -10,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -301,7 +373,11 @@
                         "frame": "map/places/forts"
                     },
                     "x": 12,
-                    "y": 47
+                    "y": 47,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -318,7 +394,11 @@
                         "frame": "map/places/pufflepark"
                     },
                     "x": 163,
-                    "y": -16
+                    "y": -16,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -335,7 +415,11 @@
                         "frame": "map/places/plaza"
                     },
                     "x": 228,
-                    "y": 107
+                    "y": 107,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -352,7 +436,11 @@
                         "frame": "map/places/forest"
                     },
                     "x": 421,
-                    "y": 136
+                    "y": 136,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -369,7 +457,11 @@
                         "frame": "map/places/skatepark"
                     },
                     "x": 618,
-                    "y": 7
+                    "y": 7,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -386,7 +478,11 @@
                         "frame": "map/places/cove"
                     },
                     "x": 657,
-                    "y": 164
+                    "y": 164,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Image",
@@ -403,7 +499,11 @@
                         "frame": "map/places/iceberg"
                     },
                     "x": 674,
-                    "y": -62
+                    "y": -62,
+                    "tintTopLeft": "#b0aebd",
+                    "tintTopRight": "#b0aebd",
+                    "tintBottomLeft": "#b0aebd",
+                    "tintBottomRight": "#b0aebd"
                 },
                 {
                     "type": "Rectangle",
@@ -441,7 +541,11 @@
                                 "frame": "map/places_outline/cove_outline"
                             },
                             "x": 1349,
-                            "y": 385
+                            "y": 385,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -458,7 +562,11 @@
                                 "frame": "map/places_outline/skatepark_outline"
                             },
                             "x": 1309,
-                            "y": 221
+                            "y": 221,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -475,7 +583,11 @@
                                 "frame": "map/places_outline/forest_outline"
                             },
                             "x": 1110,
-                            "y": 349
+                            "y": 349,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -492,7 +604,11 @@
                                 "frame": "map/places_outline/plaza_outline"
                             },
                             "x": 919.5,
-                            "y": 321
+                            "y": 321,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -509,7 +625,11 @@
                                 "frame": "map/places_outline/pufflepark_outline"
                             },
                             "x": 853,
-                            "y": 200
+                            "y": 200,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -526,7 +646,11 @@
                                 "frame": "map/places_outline/forts_outline"
                             },
                             "x": 703,
-                            "y": 261
+                            "y": 261,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -543,7 +667,11 @@
                                 "frame": "map/places_outline/shack_outline"
                             },
                             "x": 1100,
-                            "y": 203
+                            "y": 203,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -560,7 +688,11 @@
                                 "frame": "map/places_outline/pufflewild_outline"
                             },
                             "x": 461,
-                            "y": 117
+                            "y": 117,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -577,7 +709,11 @@
                                 "frame": "map/places_outline/town_outline"
                             },
                             "x": 506,
-                            "y": 306.5
+                            "y": 306.5,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -594,7 +730,11 @@
                                 "frame": "map/places_outline/igloo_outline"
                             },
                             "x": 676,
-                            "y": 400
+                            "y": 400,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -611,7 +751,11 @@
                                 "frame": "map/places_outline/rink_outline"
                             },
                             "x": 593,
-                            "y": 123
+                            "y": 123,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -628,7 +772,11 @@
                                 "frame": "map/places_outline/igloos_outline"
                             },
                             "x": 540,
-                            "y": 475
+                            "y": 475,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -645,7 +793,11 @@
                                 "frame": "map/places_outline/dock_outline"
                             },
                             "x": 232,
-                            "y": 531
+                            "y": 531,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -661,7 +813,11 @@
                                 "key": "map",
                                 "frame": "map/places_outline/lighthouse_outline"
                             },
-                            "y": 337
+                            "y": 337,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -677,7 +833,11 @@
                                 "key": "map",
                                 "frame": "map/places_outline/dojo_outline"
                             },
-                            "x": 851
+                            "x": 851,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -694,7 +854,11 @@
                                 "frame": "map/places_outline/skihill_outline"
                             },
                             "x": 261.5,
-                            "y": 92.5
+                            "y": 92.5,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -711,7 +875,11 @@
                                 "frame": "map/places_outline/skivillage_outline"
                             },
                             "x": 363,
-                            "y": 205
+                            "y": 205,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         },
                         {
                             "type": "Image",
@@ -726,7 +894,11 @@
                                 "frame": "map/places/iceberg"
                             },
                             "x": 1365,
-                            "y": 152
+                            "y": 152,
+                            "tintTopLeft": "#b0aebd",
+                            "tintTopRight": "#b0aebd",
+                            "tintBottomLeft": "#b0aebd",
+                            "tintBottomRight": "#b0aebd"
                         }
                     ]
                 },
