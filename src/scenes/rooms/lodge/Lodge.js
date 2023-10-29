@@ -91,90 +91,196 @@ export default class Lodge extends RoomScene {
     _create() {
         // bg
         const bg = this.add.sprite(760, 285, 'lodge', 'bg')
+        bg.tintTopLeft = 11579069
+        bg.tintTopRight = 11579069
+        bg.tintBottomLeft = 11579069
+        bg.tintBottomRight = 11579069
+
+        // decor
+        this.add.image(586, 262, 'lodge', 'decor')
 
         // maindoor
         const maindoor = this.add.sprite(115, 410, 'lodge', 'maindoor')
+        maindoor.tintTopLeft = 11579069
+        maindoor.tintTopRight = 11579069
+        maindoor.tintBottomLeft = 11579069
+        maindoor.tintBottomRight = 11579069
 
         // fishingdoor
         const fishingdoor = this.add.sprite(1012, 176, 'lodge', 'fishingdoor')
+        fishingdoor.tintTopLeft = 11579069
+        fishingdoor.tintTopRight = 11579069
+        fishingdoor.tintBottomLeft = 11579069
+        fishingdoor.tintBottomRight = 11579069
 
         // bottomrailing
         const bottomrailing = this.add.sprite(553, 758, 'lodge', 'bottomrailing')
+        bottomrailing.tintTopLeft = 11579069
+        bottomrailing.tintTopRight = 11579069
+        bottomrailing.tintBottomLeft = 11579069
+        bottomrailing.tintBottomRight = 11579069
 
         // railing2
         const railing2 = this.add.sprite(608.8665100325047, 474.78866293912046, 'lodge', 'railing2')
         railing2.setOrigin(0.39408475832665096, 0.21025083989237348)
+        railing2.tintTopLeft = 11579069
+        railing2.tintTopRight = 11579069
+        railing2.tintBottomLeft = 11579069
+        railing2.tintBottomRight = 11579069
 
         // railing3
         const railing3 = this.add.sprite(883.6084060118849, 424.9719799603836, 'lodge', 'railing3')
         railing3.setOrigin(0.524448870259249, 0.19497123771793884)
+        railing3.tintTopLeft = 11579069
+        railing3.tintTopRight = 11579069
+        railing3.tintBottomLeft = 11579069
+        railing3.tintBottomRight = 11579069
 
         // bluechair
         const bluechair = this.add.sprite(682.7797146531126, 477.3705865327877, 'lodge', 'bluechair')
         bluechair.setOrigin(0.4003419977308072, 0.3886443011867641)
+        bluechair.tintTopLeft = 11579069
+        bluechair.tintTopRight = 11579069
+        bluechair.tintBottomLeft = 11579069
+        bluechair.tintBottomRight = 11579069
 
         // bluechairarm
         const bluechairarm = this.add.sprite(672, 587, 'lodge', 'bluechairarm')
+        bluechairarm.tintTopLeft = 11579069
+        bluechairarm.tintTopRight = 11579069
+        bluechairarm.tintBottomLeft = 11579069
+        bluechairarm.tintBottomRight = 11579069
+
+        // spookin1
+        this.add.image(760, 480, 'lodge', 'spookin1')
 
         // railing4
         const railing4 = this.add.sprite(1397, 438, 'lodge', 'railing4')
+        railing4.tintTopLeft = 11579069
+        railing4.tintTopRight = 11579069
+        railing4.tintBottomLeft = 11579069
+        railing4.tintBottomRight = 11579069
 
         // atticlight
         const atticlight = this.add.image(1421, 204, 'lodge', 'atticlight')
+        atticlight.tintTopLeft = 11579069
+        atticlight.tintTopRight = 11579069
+        atticlight.tintBottomLeft = 11579069
+        atticlight.tintBottomRight = 11579069
 
         // fireplace
         const fireplace = this.add.container(1434, 537.0177069602676)
 
         // fireplace_lower
         const fireplace_lower = this.add.sprite(-0.6740658385836014, 53.64933030347282, 'lodge', 'fireplace_lower')
+        fireplace_lower.tintTopLeft = 11579069
+        fireplace_lower.tintTopRight = 11579069
+        fireplace_lower.tintBottomLeft = 11579069
+        fireplace_lower.tintBottomRight = 11579069
         fireplace.add(fireplace_lower)
 
         // fire
         const fire = this.add.sprite(-1.6740658385836014, 20.649330303472823, 'lodge', 'fireanim0001')
+        fire.tintTopLeft = 11579069
+        fire.tintTopRight = 11579069
+        fire.tintBottomLeft = 11579069
+        fire.tintBottomRight = 11579069
         fireplace.add(fire)
 
         // fireplace_upper
         const fireplace_upper = this.add.sprite(40.3259341614164, -220.35066969652718, 'lodge', 'fireplace_upper')
+        fireplace_upper.tintTopLeft = 11579069
+        fireplace_upper.tintTopRight = 11579069
+        fireplace_upper.tintBottomLeft = 11579069
+        fireplace_upper.tintBottomRight = 11579069
         fireplace.add(fireplace_upper)
+
+        // spookin2
+        const spookin2 = this.add.image(-674, -57.0177001953125, 'lodge', 'spookin2')
+        fireplace.add(spookin2)
 
         // greenchair
         const greenchair = this.add.sprite(754.3481316771671, 773.7114322952416, 'lodge', 'greenchair')
         greenchair.setOrigin(0.5221730574646827, 0.16518683228329023)
+        greenchair.tintTopLeft = 11579069
+        greenchair.tintTopRight = 11579069
+        greenchair.tintBottomLeft = 11579069
+        greenchair.tintBottomRight = 11579069
 
         // redchair
         const redchair = this.add.sprite(1356.3037366456658, 776.3854981338252, 'lodge', 'redchair')
         redchair.setOrigin(0.45076276945342514, 0.1669397808053675)
+        redchair.tintTopLeft = 11579069
+        redchair.tintTopRight = 11579069
+        redchair.tintBottomLeft = 11579069
+        redchair.tintBottomRight = 11579069
 
         // stool
         const stool = this.add.sprite(1076.5653971553033, 498.2739923371362, 'lodge', 'stool')
         stool.setOrigin(0.4957805549058577, 0.15515209062104543)
+        stool.tintTopLeft = 11579069
+        stool.tintTopRight = 11579069
+        stool.tintBottomLeft = 11579069
+        stool.tintBottomRight = 11579069
 
         // findfour_1
         const findfour_1 = this.add.sprite(1008, 537, 'lodge', 'findfour')
         findfour_1.scaleX = -1
+        findfour_1.tintTopLeft = 11579069
+        findfour_1.tintTopRight = 11579069
+        findfour_1.tintBottomLeft = 11579069
+        findfour_1.tintBottomRight = 11579069
 
         // stool_1
         const stool_1 = this.add.sprite(928.4346028446968, 574.058758200775, 'lodge', 'stool')
         stool_1.setOrigin(0.5042194450941434, 0.09846476305190159)
+        stool_1.tintTopLeft = 11579069
+        stool_1.tintTopRight = 11579069
+        stool_1.tintBottomLeft = 11579069
+        stool_1.tintBottomRight = 11579069
 
         // findfour_2
         const findfour_2 = this.add.sprite(886, 671, 'lodge', 'findfour')
         findfour_2.scaleX = -1
+        findfour_2.tintTopLeft = 11579069
+        findfour_2.tintTopRight = 11579069
+        findfour_2.tintBottomLeft = 11579069
+        findfour_2.tintBottomRight = 11579069
 
         // findfour_3
         const findfour_3 = this.add.sprite(1114, 663, 'lodge', 'findfour')
+        findfour_3.tintTopLeft = 11579069
+        findfour_3.tintTopRight = 11579069
+        findfour_3.tintBottomLeft = 11579069
+        findfour_3.tintBottomRight = 11579069
 
         // desk
         const desk = this.add.sprite(153, 689, 'lodge', 'desk')
+        desk.tintTopLeft = 11579069
+        desk.tintTopRight = 11579069
+        desk.tintBottomLeft = 11579069
+        desk.tintBottomRight = 11579069
 
         // deskchair
         const deskchair = this.add.sprite(118, 623, 'lodge', 'deskchair')
+        deskchair.tintTopLeft = 11579069
+        deskchair.tintTopRight = 11579069
+        deskchair.tintBottomLeft = 11579069
+        deskchair.tintBottomRight = 11579069
 
         // bait
         const bait = this.add.sprite(877, 297, 'lodge', 'bait')
+        bait.tintTopLeft = 11579069
+        bait.tintTopRight = 11579069
+        bait.tintBottomLeft = 11579069
+        bait.tintBottomRight = 11579069
 
         // safe
         const safe = this.add.sprite(-34, 684, 'lodge', 'safe')
+        safe.tintTopLeft = 11579069
+        safe.tintTopRight = 11579069
+        safe.tintBottomLeft = 11579069
+        safe.tintBottomRight = 11579069
 
         // rectangle
         const rectangle = this.add.rectangle(107, 44, 30, 250)
@@ -185,6 +291,10 @@ export default class Lodge extends RoomScene {
         // fg
         const fg = this.add.sprite(821, 1015.5, 'lodge', 'fg')
         fg.setOrigin(0.5, 1)
+        fg.tintTopLeft = 11579069
+        fg.tintTopRight = 11579069
+        fg.tintBottomLeft = 11579069
+        fg.tintBottomRight = 11579069
 
         // ellipse
         const ellipse = this.add.ellipse(928, 592, 50, 50)
@@ -216,9 +326,23 @@ export default class Lodge extends RoomScene {
 
         // wilddoor
         const wilddoor = this.add.sprite(481, 195, 'lodge', 'wilddoor')
+        wilddoor.tintTopLeft = 11579069
+        wilddoor.tintTopRight = 11579069
+        wilddoor.tintBottomLeft = 11579069
+        wilddoor.tintBottomRight = 11579069
+
+        // spookin3
+        this.add.image(760, 480, 'lodge', 'spookin3')
+
+        // spookin4
+        this.add.image(760, 480, 'lodge', 'spookin4')
+
+        // fglights
+        const fglights = this.add.image(760, 1276.5181247629253, 'lodge', 'fglights')
+        fglights.setOrigin(0.5, 1.3297063799613804)
 
         // lists
-        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace, catalog]
+        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace, catalog, fglights]
         const seats106 = [ellipse_4, ellipse_5]
         const seats105 = [ellipse_3, ellipse_2]
         const seats104 = [ellipse_1, ellipse]

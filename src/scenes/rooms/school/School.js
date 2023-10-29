@@ -7,23 +7,9 @@ export default class School extends RoomScene {
     constructor() {
         super('School')
 
-        /** @type {Phaser.GameObjects.Image} */
-        this.floor
-        /** @type {Phaser.GameObjects.Image} */
-        this.chalk
-        /** @type {Phaser.GameObjects.Image} */
-        this.banner
-        /** @type {Phaser.GameObjects.Image} */
-        this.banner2
-        /** @type {Phaser.GameObjects.Image} */
-        this.overhang
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.rosette
-        /** @type {Phaser.GameObjects.Image} */
-        this.photo
-        /** @type {Phaser.GameObjects.Sprite[]} */
+        /** @type {Array<any>} */
         this.lockers
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -55,337 +41,118 @@ export default class School extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(-47, -69, 'school', 'bg')
-        bg.setOrigin(0, 0)
+        this.add.image(760, 480, 'school', 'bg')
 
-        // floor
-        const floor = this.add.image(861, 284, 'school', 'floor0001')
-        floor.setOrigin(0, 0)
-
-        // chalk
-        const chalk = this.add.image(512, 194, 'school', 'chalk0001')
-
-        // banner
-        const banner = this.add.image(1154, 185, 'school', 'banner0001')
-
-        // banner2
-        const banner2 = this.add.image(1153, 109, 'school', 'banner20001')
-
-        // text_en
-        const text_en = this.add.image(1149, 110, 'school', 'text-en')
-
-        // table3
-        const table3 = this.add.image(373, 364, 'school', 'table3')
-
-        // chair_4
-        const chair_4 = this.add.image(304, 399.47688205906013, 'school', 'chair8')
-        chair_4.setOrigin(0.5, 0.04966974370085901)
-
-        // chair_5
-        const chair_5 = this.add.image(402, 401.0203840925246, 'school', 'chair8')
-        chair_5.setOrigin(0.5, 0.05743405846463686)
-
-        // chair_7
-        const chair_7 = this.add.image(381, 442, 'school', 'chair2')
-        chair_7.setOrigin(0.5, 0.8232406830604544)
-
-        // chair_6
-        const chair_6 = this.add.image(281, 441, 'school', 'chair2')
-        chair_6.setOrigin(0.5, 0.8404039051698586)
-
-        // chair8
-        const chair8 = this.add.image(367, 536.1943922263825, 'school', 'chair8')
-        chair8.setOrigin(0.5, 0.08849131751975067)
-
-        // table4
-        const table4 = this.add.image(314, 486, 'school', 'table4')
-
-        // table6
-        const table6 = this.add.image(707, 271, 'school', 'table6')
-
-        // table5
-        const table5 = this.add.image(651, 310, 'school', 'table5')
-
-        // table2
-        const table2 = this.add.image(661, 377, 'school', 'table2')
-
-        // chair9
-        const chair9 = this.add.image(240, 530.6758001850613, 'school', 'chair9')
-        chair9.setOrigin(0.5, 0.023995922144109148)
-
-        // chair2
-        const chair2 = this.add.image(343, 581, 'school', 'chair2')
-        chair2.setOrigin(0.5, 0.8690092753521999)
-
-        // chair7
-        const chair7 = this.add.image(710, 405.8694276601772, 'school', 'chair7')
-        chair7.setOrigin(0.5, 0.13825903546902965)
-
-        // chair3
-        const chair3 = this.add.image(716, 447, 'school', 'chair3')
-        chair3.setOrigin(0.5, 0.8043493691967302)
-
-        // chair_3
-        const chair_3 = this.add.image(605, 414, 'school', 'chair4')
-        chair_3.setOrigin(0.5, 0.06146704192096798)
-
-        // chair_2
-        const chair_2 = this.add.image(605, 463, 'school', 'chair1')
-        chair_2.setOrigin(0.5, 0.9777096820450962)
-
-        // chair5
-        const chair5 = this.add.image(709, 525.3576615442951, 'school', 'chair5')
-        chair5.setOrigin(0.5, 0.09928239905584864)
+        // support
+        const support = this.add.image(1096.4095134138174, 319.2379316429545, 'school', 'support')
+        support.setOrigin(0.7213220482985641, 0.3325395121280776)
 
         // table1
-        const table1 = this.add.image(658, 475, 'school', 'table1')
+        const table1 = this.add.image(1181.2561606022582, 395.15335281155933, 'school', 'table1')
+        table1.setOrigin(0.7771422109225383, 0.4116180758453743)
 
-        // chair_1
-        const chair_1 = this.add.image(709, 581, 'school', 'chair1')
-        chair_1.setOrigin(0.5, 0.8518460532427956)
+        // table2
+        const table2 = this.add.image(938.6245203967172, 396.64189048153196, 'school', 'table2')
+        table2.setOrigin(0.6175161318399456, 0.4131686359182625)
 
-        // chair4
-        const chair4 = this.add.image(598, 527.2599130180868, 'school', 'chair4')
-        chair4.setOrigin(0.5, 0.12517101140380663)
+        // benches
+        const benches = this.add.image(1059.753586271564, 407.9164011999352, 'school', 'benches')
+        benches.setOrigin(0.6972062707685049, 0.42491292984032525)
 
-        // chair1
-        const chair1 = this.add.image(598, 584, 'school', 'chair1')
-        chair1.setOrigin(0.5, 0.8947541085163074)
+        // idkwhatthisis
+        const idkwhatthisis = this.add.image(254.52712416977687, 312.1698861319424, 'school', 'idkwhatthisis')
+        idkwhatthisis.setOrigin(0.167452058412824, 0.32517696555786274)
 
-        // counter
-        const counter = this.add.image(1243, 277, 'school', 'counter')
+        // bookshelf
+        const bookshelf = this.add.image(181.78334526133634, 342.00589524271754, 'school', 'bookshelf')
+        bookshelf.setOrigin(0.1195943034572738, 0.3562561329682252)
 
-        // cafeteria
-        const cafeteria = this.add.image(1319, 323, 'school', 'cafeteria')
+        // supports
+        const supports = this.add.image(599.0396617477228, 239.29785733019156, 'school', 'supports')
+        supports.setOrigin(0.3941050337680276, 0.24926863267225105)
 
-        // overhang
-        const overhang = this.add.image(1347, 129, 'school', 'overhang_0001')
+        // woodthingback
+        const woodthingback = this.add.image(589.5145181651745, 249.15411376953125, 'school', 'woodthingback')
+        woodthingback.setOrigin(0.3878384980985989, 0.25953554167091075)
 
-        // fg2_png_png
-        const fg2_png_png = this.add.image(743, 600.3200871275012, 'school', 'fg2')
-        fg2_png_png.setOrigin(0.5, 0.8530579712500017)
+        // woodthing
+        const woodthing = this.add.image(648.3378163525731, 266.5811489964501, 'school', 'woodthing')
+        woodthing.setOrigin(0.42653803707406124, 0.2776886968713022)
 
-        // fg3
-        const fg3 = this.add.image(764, 617.2398802829914, 'school', 'fg3')
-        fg3.setOrigin(0.5, 0.7290372248364891)
+        // tablesrow2
+        const tablesrow2 = this.add.image(518.3879093002599, 424.77437926863087, 'school', 'tablesrow2')
+        tablesrow2.setOrigin(0.34104467717122366, 0.4424733117381571)
 
-        // chair
-        const chair = this.add.image(1325, 506, 'school', 'chair13')
+        // stoolsrow2
+        const stoolsrow2 = this.add.image(574.7640380859375, 467.3195713613009, 'school', 'stoolsrow2')
+        stoolsrow2.setOrigin(0.3781342524979381, 0.48679120579626406)
 
-        // locker_5
-        const locker_5 = this.add.sprite(915, 1012.699043405277, 'school', 'locker_0001')
-        locker_5.setOrigin(0.5, 0.8570859828555114)
+        // tables
+        const tables = this.add.image(603.5274079277874, 514.5160129571058, 'school', 'tables')
+        tables.setOrigin(0.3970575052156496, 0.5359541801636518)
 
-        // locker_6
-        const locker_6 = this.add.sprite(1033, 1008.5017169401333, 'school', 'locker_0001')
-        locker_6.setOrigin(0.5, 0.8414243169407959)
+        // stools
+        const stools = this.add.image(549.4523315429688, 596.2742024976302, 'school', 'stools')
+        stools.setOrigin(0.36148179010635206, 0.621118985700552)
 
-        // locker_7
-        const locker_7 = this.add.sprite(1151, 1011.8595781122483, 'school', 'locker_0001')
-        locker_7.setOrigin(0.5, 0.8539536496725683)
+        // railings
+        const railings = this.add.image(532.1943144831023, 661.7843349074235, 'school', 'railings')
+        railings.setOrigin(0.3501278384757252, 0.6893586821952328)
 
-        // locker_8
-        const locker_8 = this.add.sprite(1269, 1013.5385086983058, 'school', 'locker_0001')
-        locker_8.setOrigin(0.5, 0.8602183160384544)
+        // skelebob
+        const skelebob = this.add.image(453.5276018898494, 238.5285987493972, 'school', 'skelebob')
+        skelebob.setOrigin(0.29837342929233246, 0.24846728469059892)
 
-        // locker_9
-        const locker_9 = this.add.sprite(1387, 1016.0569045773921, 'school', 'locker_0001')
-        locker_9.setOrigin(0.5, 0.8696153155872838)
+        // arrows
+        const arrows = this.add.image(235.85169254915695, 670.3908512841136, 'school', 'arrows')
+        arrows.setOrigin(0.15516558720339274, 0.6983238034209517)
 
-        // locker
-        const locker = this.add.sprite(304, 1011.0201128192195, 'school', 'locker_0001')
-        locker.setOrigin(0.5, 0.8508213164896252)
+        // cage
+        const cage = this.add.image(1346.082680760133, 235.70330528002282, 'school', 'cage')
+        cage.setOrigin(0.8855807110264032, 0.2455242763333571)
 
-        // locker_2
-        const locker_2 = this.add.sprite(422, 1007.6622516471047, 'school', 'locker_0001')
-        locker_2.setOrigin(0.5, 0.8382919837578532)
+        // pillar
+        const pillar = this.add.image(764.3961791992188, 668.2539880139652, 'school', 'pillar')
+        pillar.setOrigin(0.5028922151162738, 0.6960979001792665)
 
-        // locker_3
-        const locker_3 = this.add.sprite(540, 1013.5385086983058, 'school', 'locker_0001')
-        locker_3.setOrigin(0.5, 0.8602183160384544)
-
-        // locker_4
-        const locker_4 = this.add.sprite(658, 1010.1806475261908, 'school', 'locker_0001')
-        locker_4.setOrigin(0.5, 0.8476889833066821)
-
-        // locker_1
-        const locker_1 = this.add.sprite(186, 1010.518047764558, 'school', 'locker_0001')
-        locker_1.setOrigin(0.5, 0.8489481587718389)
-
-        // fg
-        const fg = this.add.sprite(753, 1227.1024961248506, 'school', 'fg')
-        fg.setOrigin(0.5, 1.2350172946082631)
+        // doorframe
+        const doorframe = this.add.image(90.25516627876812, 783.8760093095649, 'school', 'doorframe')
+        doorframe.setOrigin(0.4308064722263145, 1.007419203673693)
 
         // door
-        const door = this.add.sprite(1480, 2438, 'school', 'door')
-        door.setOrigin(0.5, 3.925414825717541)
+        const door = this.add.image(25.234501163695626, 805.20997603704, 'school', 'door')
+        door.scaleX = -1
+        door.setOrigin(0.31732908667747045, 0.8850852713837973)
+
+        // doorframe_1
+        const doorframe_1 = this.add.image(1409, 764.7390564853001, 'school', 'doorframe')
+        doorframe_1.scaleX = -1
+        doorframe_1.setOrigin(0.5, 0.9832563844511365)
 
         // door_1
-        const door_1 = this.add.sprite(46, 2228, 'school', 'door')
-        door_1.setOrigin(0.5, 3.532624319662934)
-        door_1.flipX = true
+        const door_1 = this.add.image(1487.589141527205, 802.81788619329, 'school', 'door')
+        door_1.setOrigin(0.29123324191710875, 0.8825350377984742)
 
-        // mic
-        const mic = this.add.sprite(1094, 302, 'school', 'mic')
-        mic.setOrigin(0.7046615371015782, 0.831551690104559)
-
-        // chair10
-        const chair10 = this.add.sprite(1005, 373, 'school', 'chair10')
-
-        // chair13
-        const chair13 = this.add.sprite(1209, 369, 'school', 'chair13')
-
-        // table7
-        const table7 = this.add.sprite(1103, 402, 'school', 'table7')
-
-        // table8
-        const table8 = this.add.sprite(1216, 545, 'school', 'table8')
-
-        // chair12
-        const chair12 = this.add.sprite(1083.0517230034852, 553.3979925708444, 'school', 'chair12')
-        chair12.setOrigin(0.6072982815872352, 0.12283802448423232)
-
-        // chair11
-        const chair11 = this.add.sprite(1048, 596.8390766782843, 'school', 'chair11')
-        chair11.setOrigin(0.5, 0.8231497954235465)
-
-        // rosette
-        const rosette = this.add.sprite(859, 1001.828228926573, 'school', 'rosette_0001')
-        rosette.setOrigin(0.5, 6.955506942157839)
-
-        // photo
-        const photo = this.add.image(858, 1023.8313427344806, 'school', 'photo_0001')
-        photo.setOrigin(0.5, 9.018751306119444)
-
-        // hanginglights
-        const hanginglights = this.add.image(1132, 7, 'school', 'hanginglights')
-
-        // ellipse_1
-        const ellipse_1 = this.add.ellipse(231, 551, 70, 40)
-
-        // ellipse
-        const ellipse = this.add.ellipse(360, 547, 70, 40)
-
-        // ellipse_2
-        const ellipse_2 = this.add.ellipse(599, 542, 70, 40)
-
-        // ellipse_3
-        const ellipse_3 = this.add.ellipse(711, 541, 70, 40)
-
-        // ellipse_4
-        const ellipse_4 = this.add.ellipse(708, 421, 70, 30)
-
-        // ellipse_5
-        const ellipse_5 = this.add.ellipse(606, 415, 70, 40)
-
-        // ellipse_6
-        const ellipse_6 = this.add.ellipse(394, 411, 70, 40)
-
-        // ellipse_7
-        const ellipse_7 = this.add.ellipse(299, 408, 70, 40)
-
-        // ellipse_8
-        const ellipse_8 = this.add.ellipse(702, 288, 70, 40)
-        ellipse_8.angle = 26
-
-        // ellipse_9
-        const ellipse_9 = this.add.ellipse(1009, 388, 70, 40)
-        ellipse_9.angle = -33
-
-        // ellipse_10
-        const ellipse_10 = this.add.ellipse(1210, 384, 70, 40)
-        ellipse_10.angle = 37
-
-        // ellipse_11
-        const ellipse_11 = this.add.ellipse(1324, 520, 70, 40)
-        ellipse_11.angle = 37
-
-        // ellipse_12
-        const ellipse_12 = this.add.ellipse(1079, 574, 70, 40)
-        ellipse_12.angle = 56
+        // fg
+        const fg = this.add.image(760, 990.6285669693547, 'school', 'fg')
+        fg.setOrigin(0.5, 1.0319047572597444)
 
         // lists
-        const lockers = [locker_1, locker, locker_2, locker_3, locker_4, locker_5, locker_6, locker_7, locker_8, locker_9]
-        const sort = [table3, chair_4, chair_5, chair_7, chair_6, chair8, table4, table6, table5, table2, chair9, chair2, chair7, chair3, chair_3, chair_2, chair5, table1, chair_1, chair4, chair1, counter, cafeteria, overhang, fg3, chair, locker_5, locker_6, locker_7, locker_8, locker_9, locker, locker_2, locker_3, locker_4, locker_1, fg, door, door_1, mic, chair10, chair13, table7, table8, chair12, chair11, hanginglights, fg2_png_png, photo, rosette]
-
-        // text_en (components)
-        new LocalisedSprite(text_en)
+        const lockers = []
+        const sort = [support, fg, door_1, doorframe_1, door, doorframe, pillar, cage, arrows, skelebob, railings, stools, tables, stoolsrow2, tablesrow2, woodthing, woodthingback, supports, bookshelf, idkwhatthisis, benches, table2, table1]
 
         // door (components)
         const doorButton = new Button(door)
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
         doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
-        const doorMoveTo = new MoveTo(door)
-        doorMoveTo.x = 1440
-        doorMoveTo.y = 724
+        new MoveTo(door)
 
         // door_1 (components)
         const door_1Button = new Button(door_1)
         door_1Button.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
         door_1Button.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
-        const door_1MoveTo = new MoveTo(door_1)
-        door_1MoveTo.x = 80
-        door_1MoveTo.y = 724
+        new MoveTo(door_1)
 
-        // ellipse_1 (components)
-        const ellipse_1Seat = new Seat(ellipse_1)
-        ellipse_1Seat.direction = 'north'
-
-        // ellipse (components)
-        const ellipseSeat = new Seat(ellipse)
-        ellipseSeat.direction = 'north'
-
-        // ellipse_2 (components)
-        const ellipse_2Seat = new Seat(ellipse_2)
-        ellipse_2Seat.direction = 'north'
-
-        // ellipse_3 (components)
-        const ellipse_3Seat = new Seat(ellipse_3)
-        ellipse_3Seat.direction = 'north'
-
-        // ellipse_4 (components)
-        const ellipse_4Seat = new Seat(ellipse_4)
-        ellipse_4Seat.direction = 'northwest'
-
-        // ellipse_5 (components)
-        const ellipse_5Seat = new Seat(ellipse_5)
-        ellipse_5Seat.direction = 'north'
-
-        // ellipse_6 (components)
-        const ellipse_6Seat = new Seat(ellipse_6)
-        ellipse_6Seat.direction = 'north'
-
-        // ellipse_7 (components)
-        const ellipse_7Seat = new Seat(ellipse_7)
-        ellipse_7Seat.direction = 'north'
-
-        // ellipse_8 (components)
-        const ellipse_8Seat = new Seat(ellipse_8)
-        ellipse_8Seat.direction = 'southwest'
-
-        // ellipse_9 (components)
-        const ellipse_9Seat = new Seat(ellipse_9)
-        ellipse_9Seat.direction = 'southeast'
-
-        // ellipse_10 (components)
-        const ellipse_10Seat = new Seat(ellipse_10)
-        ellipse_10Seat.direction = 'southwest'
-
-        // ellipse_11 (components)
-        const ellipse_11Seat = new Seat(ellipse_11)
-        ellipse_11Seat.direction = 'southwest'
-
-        // ellipse_12 (components)
-        const ellipse_12Seat = new Seat(ellipse_12)
-        ellipse_12Seat.direction = 'northeast'
-
-        this.floor = floor
-        this.chalk = chalk
-        this.banner = banner
-        this.banner2 = banner2
-        this.overhang = overhang
-        this.rosette = rosette
-        this.photo = photo
         this.lockers = lockers
         this.sort = sort
 
@@ -396,7 +163,6 @@ export default class School extends RoomScene {
 
     create() {
         super.create()
-        this.switchDays(this.shell.getPSTDay() + 1)
     }
 
     switchDays(day) {

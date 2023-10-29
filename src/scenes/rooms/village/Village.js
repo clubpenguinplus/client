@@ -32,23 +32,8 @@ export default class Village extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(-124.80423540374727, 987.0732936798435, 'village', 'bg')
+        const bg = this.add.image(1, 963, 'village', 'bg')
         bg.setOrigin(0.0006852446809371995, 1.0032013740410073)
-
-        // rockstube
-        this.add.image(608, 415, 'village', 'rockstube')
-
-        // pufflewild
-        this.add.image(716, 245, 'village', 'pufflewild')
-
-        // lodge
-        this.add.image(1088, 249, 'village', 'lodge')
-
-        // buildingtree
-        this.add.image(1362, 512, 'village', 'buildingtree')
-
-        // epf
-        this.add.image(1383, 303, 'village', 'epf')
 
         // tubelift
         const tubelift = this.add.container(122, 286)
@@ -57,48 +42,46 @@ export default class Village extends RoomScene {
 
         // tubepile
         const tubepile = this.add.sprite(499, 443, 'village', 'tubepile0001')
-
-        // liftramp
-        const liftramp = this.add.image(759, 334, 'village', 'liftramp')
-
-        // leftside
-        const leftside = this.add.image(56.80749526416906, 467.8430058465068, 'village', 'leftside')
-        leftside.setOrigin(0.2363267202866612, 0.2559405019542914)
+        tubepile.tintTopLeft = 11451101
+        tubepile.tintTopRight = 11451101
+        tubepile.tintBottomLeft = 11451101
+        tubepile.tintBottomRight = 11451101
 
         // fg
-        const fg = this.add.image(816.5228013046404, 1031.1123778211133, 'village', 'fg')
+        const fg = this.add.image(752, 967, 'village', 'fg')
         fg.setOrigin(0.4943822177265207, 1.0066426975506708)
 
         // rightarrow
-        const rightarrow = this.add.image(1392, 632, 'village', 'rightarrow')
+        const rightarrow = this.add.image(1319, 647, 'village', 'rightarrow')
         rightarrow.setOrigin(0.4609375372502956, 0.6382210220374185)
 
         // epf_en
         const epf_en = this.add.image(1334.8644190469176, 1147.1305145761075, 'village', 'epf-en')
         epf_en.setOrigin(0.49142336966633593, 7.249087897527539)
+        epf_en.tintTopLeft = 11451101
+        epf_en.tintTopRight = 11451101
+        epf_en.tintBottomLeft = 11451101
+        epf_en.tintBottomRight = 11451101
 
         // epfdoor
         const epfdoor = this.add.sprite(1322.114776864153, 526.7223596297904, 'village', 'epfdoor')
         epfdoor.setOrigin(0.32509984367671013, 0.9420866020273132)
 
         // lodgedoor
-        const lodgedoor = this.add.sprite(1005.5370304938195, 400.73710116056884, 'village', 'lodgedoor')
+        const lodgedoor = this.add.sprite(1011, 395, 'village', 'lodgedoor')
         lodgedoor.setOrigin(0.4481050057420877, 0.8215963320630062)
 
-        // leftreeandramp
-        const leftreeandramp = this.add.image(72.44437072569082, 720.737628402159, 'village', 'leftreeandramp')
-        leftreeandramp.setOrigin(0.4632254627084889, 0.6821614522107083)
-
         // tours
-        const tours = this.add.sprite(231.48480710978953, 675.1643662178799, 'village', 'tours')
+        const tours = this.add.sprite(277, 677, 'village', 'tours')
         tours.setOrigin(0.6270200296241231, 0.7870039146644123)
 
         // toursign_en
         const toursign_en = this.add.sprite(235.15781421589907, 749.1208021563593, 'village', 'toursign-en')
         toursign_en.setOrigin(0.5872172481438145, 2.461207972926635)
-
-        // arrow
-        this.add.image(608, 375, 'village', 'arrow')
+        toursign_en.tintTopLeft = 11451101
+        toursign_en.tintTopRight = 11451101
+        toursign_en.tintBottomLeft = 11451101
+        toursign_en.tintBottomRight = 11451101
 
         // skichair
         const skichair = this.add.container(261.99604271365615, 410.1601804653192)
@@ -111,8 +94,15 @@ export default class Village extends RoomScene {
         // phone_speaker
         this.add.image(1198, 415, 'village', 'phone_speaker')
 
+        // pumpkin
+        this.add.image(780, 457, 'village', 'pumpkin')
+
+        // liftramp
+        const liftramp = this.add.image(401.6854189720482, 461.3130451502482, 'village', 'liftramp')
+        liftramp.setOrigin(0.7867449909354108, 0.8662646132263402)
+
         // lists
-        const sort = [fg, rightarrow, toursign_en, tours, leftside, liftramp, epf_en, skichair]
+        const sort = [fg, rightarrow, toursign_en, tours, epf_en, skichair, liftramp]
 
         // epf_en (components)
         new LocalisedSprite(epf_en)
@@ -175,9 +165,17 @@ export default class Village extends RoomScene {
         super.create()
 
         let tubelift = this.add.video(0, 0, 'village-tubelift')
+        tubelift.tintTopLeft = 11451101
+        tubelift.tintTopRight = 11451101
+        tubelift.tintBottomLeft = 11451101
+        tubelift.tintBottomRight = 11451101
         this.tubelift.add(tubelift)
 
         let skichair = this.add.video(-61, -282, 'village-skichair')
+        skichair.tintTopLeft = 11451101
+        skichair.tintTopRight = 11451101
+        skichair.tintBottomLeft = 11451101
+        skichair.tintBottomRight = 11451101
         this.skichair.add(skichair)
 
         skichair.play(true)

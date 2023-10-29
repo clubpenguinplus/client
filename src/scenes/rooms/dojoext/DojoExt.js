@@ -30,43 +30,87 @@ export default class DojoExt extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        this.add.image(762, 459, 'dojoext', 'bg')
+        this.add.image(760, 480, 'dojoext', 'bg')
 
         // fireanim0001
-        const fireanim0001 = this.add.sprite(63, 147, 'dojoext', 'fireanim0001')
+        const fireanim0001 = this.add.sprite(60, 138, 'dojoext', 'fireanim0001')
         fireanim0001.setOrigin(0.5, 0.5004580154109345)
+        fireanim0001.tintTopLeft = 11579069
+        fireanim0001.tintTopRight = 11579069
+        fireanim0001.tintBottomLeft = 11579069
+        fireanim0001.tintBottomRight = 11579069
 
         // waterfall0001
-        const waterfall0001 = this.add.sprite(320, 358, 'dojoext', 'waterfall0001')
+        const waterfall0001 = this.add.sprite(317, 349, 'dojoext', 'waterfall0001')
+        waterfall0001.tintTopLeft = 11579069
+        waterfall0001.tintTopRight = 11579069
+        waterfall0001.tintBottomLeft = 11579069
+        waterfall0001.tintBottomRight = 11579069
 
         // abovewaterfall
-        this.add.image(856, 542, 'dojoext', 'abovewaterfall')
+        const abovewaterfall = this.add.image(853, 533, 'dojoext', 'abovewaterfall')
+        abovewaterfall.tintTopLeft = 11579069
+        abovewaterfall.tintTopRight = 11579069
+        abovewaterfall.tintBottomLeft = 11579069
+        abovewaterfall.tintBottomRight = 11579069
 
         // door0001
-        const door0001 = this.add.image(779, 502, 'dojoext', 'door')
+        const door0001 = this.add.image(776, 493, 'dojoext', 'door')
+        door0001.tintTopLeft = 11579069
+        door0001.tintTopRight = 11579069
+        door0001.tintBottomLeft = 11579069
+        door0001.tintBottomRight = 11579069
 
         // dojo
-        this.add.image(667, 488, 'dojoext', 'dojo')
+        const dojo = this.add.image(664, 479, 'dojoext', 'dojo')
+        dojo.tintTopLeft = 11579069
+        dojo.tintTopRight = 11579069
+        dojo.tintBottomLeft = 11579069
+        dojo.tintBottomRight = 11579069
 
         // tree_bottom_lefter
-        this.add.image(1374, 692, 'dojoext', 'tree-bottom-lefter')
+        const tree_bottom_lefter = this.add.image(1371, 683, 'dojoext', 'tree-bottom-lefter')
+        tree_bottom_lefter.tintTopLeft = 11579069
+        tree_bottom_lefter.tintTopRight = 11579069
+        tree_bottom_lefter.tintBottomLeft = 11579069
+        tree_bottom_lefter.tintBottomRight = 11579069
 
         // tree_bottomleft
-        this.add.image(1303, 787, 'dojoext', 'tree-bottomleft')
+        const tree_bottomleft = this.add.image(1300, 778, 'dojoext', 'tree-bottomleft')
+        tree_bottomleft.tintTopLeft = 11579069
+        tree_bottomleft.tintTopRight = 11579069
+        tree_bottomleft.tintBottomLeft = 11579069
+        tree_bottomleft.tintBottomRight = 11579069
 
         // stoneleft
-        const stoneleft = this.add.image(471.7999267578125, 862.9704922274007, 'dojoext', 'stoneleft')
+        const stoneleft = this.add.image(468.7999267578125, 853.9704922274007, 'dojoext', 'stoneleft')
         stoneleft.setOrigin(0.52893583911881, 0.5612652611477137)
+        stoneleft.tintTopLeft = 11579069
+        stoneleft.tintTopRight = 11579069
+        stoneleft.tintBottomLeft = 11579069
+        stoneleft.tintBottomRight = 11579069
 
         // stoneright
-        const stoneright = this.add.image(1073.200439453125, 858.0861117100638, 'dojoext', 'stoneright')
+        const stoneright = this.add.image(1070.200439453125, 849.0861117100638, 'dojoext', 'stoneright')
         stoneright.setOrigin(0.3412469526944675, 0.5597417256679151)
+        stoneright.tintTopLeft = 11579069
+        stoneright.tintTopRight = 11579069
+        stoneright.tintBottomLeft = 11579069
+        stoneright.tintBottomRight = 11579069
 
         // foreground
-        this.add.image(1498, 888, 'dojoext', 'foreground')
+        const foreground = this.add.image(1495, 879, 'dojoext', 'foreground')
+        foreground.tintTopLeft = 11579069
+        foreground.tintTopRight = 11579069
+        foreground.tintBottomLeft = 11579069
+        foreground.tintBottomRight = 11579069
 
         // front
-        this.add.image(68.5, 307, 'dojoext', 'front')
+        const front = this.add.image(65.5, 298, 'dojoext', 'front')
+        front.tintTopLeft = 11579069
+        front.tintTopRight = 11579069
+        front.tintBottomLeft = 11579069
+        front.tintBottomRight = 11579069
 
         // card
         const card = this.add.image(1434, 895, 'dojoext', 'card')
@@ -92,7 +136,7 @@ export default class DojoExt extends RoomScene {
         new MoveTo(door0001)
 
         // card (components)
-        const cardButton = new Button(card)
+        new Button(card)
 
         this.sort = sort
 

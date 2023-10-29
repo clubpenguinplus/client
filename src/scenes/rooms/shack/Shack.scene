@@ -18,437 +18,361 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "10919f17-626a-4a5c-b2ef-a38ebf292199",
-            "label": "shackbg",
-            "components": [],
+            "id": "14ee3f3f-90bd-474e-a885-7593cf458a0f",
+            "label": "bg",
             "texture": {
                 "key": "shack",
-                "frame": "shackbg"
+                "frame": "bg"
             },
-            "x": 782,
-            "y": 467
+            "x": 760,
+            "y": 480
         },
         {
             "type": "Image",
-            "id": "a67b6bca-bcf1-40af-81a3-69c8080e9717",
-            "label": "arch",
-            "components": [],
+            "id": "3f2200dc-ece5-4e66-941b-7dbf27566fdf",
+            "label": "castle",
             "texture": {
                 "key": "shack",
-                "frame": "arch"
+                "frame": "castle"
             },
-            "x": 157,
-            "y": 344
+            "x": 884.0079432436852,
+            "y": 247.24662960416003,
+            "originX": 0.581584173186635,
+            "originY": 0.2575485725043334
         },
         {
             "type": "Image",
-            "id": "6d597cf3-0ea2-43e7-89b4-21242e960f47",
-            "label": "bigtree",
-            "components": [],
+            "id": "7a3e4e64-8b7b-4474-b7cf-5d73c4d09ceb",
+            "label": "entrance",
             "texture": {
                 "key": "shack",
-                "frame": "bigtree"
+                "frame": "entrance"
             },
-            "x": 34.060648209326246,
-            "y": 495.3883923884107,
-            "originX": 0.40065216445209817,
-            "originY": 0.8192540254452281
+            "x": 519.1631840861114,
+            "y": 341.13773981487867,
+            "originX": 0.5238962359255627,
+            "originY": 0.2485593877997145
         },
         {
             "type": "Image",
-            "id": "4cb506d8-58e9-464d-b0f3-dcc08b491897",
-            "label": "cpu_fence_l",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "cpu_fence_l"
-            },
-            "x": 70.95500585386105,
-            "y": 668.5693099492144,
-            "originX": 0.6837960062002042,
-            "originY": 0.7840051982111681
-        },
-        {
-            "type": "Image",
-            "id": "b201b2e0-ff7d-470b-bffd-bd96e23e366f",
-            "label": "cpu_fence_r",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "cpu_fence_r"
-            },
-            "x": 421.5637446991831,
-            "y": 883.4631488536763,
-            "originX": 0.4492963624180372,
-            "originY": 0.7730948819569041
-        },
-        {
-            "type": "Image",
-            "id": "d4365961-ef3a-4788-b2eb-0f01c88934c5",
-            "label": "cpu_fence_en",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "cpu_fence_en"
-            },
-            "x": 155.05726423595928,
-            "y": 957.6629615636905,
-            "originX": 0.11648585069152463,
-            "originY": 7.950227395854219
-        },
-        {
-            "type": "Image",
-            "id": "0d15c688-6ee8-45cd-83cc-bc7dbcfd73a4",
-            "label": "flagpole",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "flagpole"
-            },
-            "x": 328,
-            "y": 239
-        },
-        {
-            "type": "Sprite",
-            "id": "d6e387d7-c869-48f8-887e-fe900c712a2f",
-            "label": "shackflag",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "flag0001"
-            },
-            "x": 276.83275151038407,
-            "y": 655.3306895217695,
-            "originX": 0.5192921211619376,
-            "originY": 7.517509072654862
-        },
-        {
-            "type": "Sprite",
-            "id": "ba022690-1f06-4d56-8c6a-19976ef530dc",
-            "label": "minutehand",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "minutehand"
-            },
-            "x": 475.17512186012317,
-            "y": 125.93228149414062,
-            "originX": 0.5350267713930179,
-            "originY": 0.9138450108891423
-        },
-        {
-            "type": "Sprite",
-            "id": "2a9a3a64-c0f8-41f6-b00c-829a761bf057",
-            "label": "hourhand",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "hourhand"
-            },
-            "x": 475.30143411598254,
-            "y": 125.94285036201337,
-            "originX": 0.5169051965889025,
-            "originY": 0.87242241458853
-        },
-        {
-            "type": "Image",
-            "id": "acb0205c-21a1-476b-93af-8df360e25745",
-            "label": "schooldoor",
+            "id": "ad56f759-bb14-4c96-a388-226228902d09",
+            "label": "door",
             "components": [
                 "Button",
                 "MoveTo"
             ],
             "Button.hoverCallback": "() => this.SchoolDoorOver()",
             "Button.hoverOutCallback": "() => this.SchoolDoorOut()",
+            "MoveTo.x": 626,
+            "MoveTo.y": 575,
             "texture": {
                 "key": "shack",
-                "frame": "schooldoor"
+                "frame": "door"
             },
-            "x": 488.2573646340227,
-            "y": 398.83101097424947,
-            "originX": 0.5262800286050783,
-            "originY": 0.8143020870754998
+            "x": 622.2452312209512,
+            "y": 345.01081101061163,
+            "originX": 0.4506949067918149,
+            "originY": -0.007770328051593056
         },
         {
             "type": "Image",
-            "id": "32775c71-3174-4107-a9a6-ee95ffd5260d",
-            "label": "rail",
-            "components": [],
+            "id": "a12091d8-3c41-48a5-9aef-7ddc951bfcdb",
+            "label": "railing",
             "texture": {
                 "key": "shack",
-                "frame": "rail"
+                "frame": "railing"
             },
-            "x": 595.1654328509248,
-            "y": 497.3306599532049,
-            "originX": 0.9215582111297244,
-            "originY": 0.7559704490208276
+            "x": 760,
+            "y": 480
         },
         {
             "type": "Image",
-            "id": "cc620347-ff48-4378-985a-2c15205a541e",
-            "label": "book",
-            "components": [],
+            "id": "7601d4af-0f76-4d2e-9cfc-64ff510001f3",
+            "label": "rock",
             "texture": {
                 "key": "shack",
-                "frame": "book"
+                "frame": "rock"
             },
-            "x": 711.7532603454578,
-            "y": 777.4856544799858,
-            "originX": 0.5543950774704023,
-            "originY": 0.23363958838686746
+            "x": 1267.8036581923884,
+            "y": 355.80034366192353,
+            "originX": 0.8340813540739398,
+            "originY": 0.37062535798117036
         },
         {
             "type": "Image",
-            "id": "a853a995-0b2a-44c8-ac61-f3498f738eda",
-            "label": "guitar",
-            "components": [],
+            "id": "7f6e1d18-85cb-4ffc-bc24-ece717a6765e",
+            "label": "stairs",
             "texture": {
                 "key": "shack",
-                "frame": "guitar"
+                "frame": "stairs"
             },
-            "x": 888,
-            "y": 825.5,
-            "originY": 0.5562989051818661
+            "x": 676.6761799250879,
+            "y": 720.5385749332366,
+            "originX": 0.4451816973191368,
+            "originY": 0.7505610155554548
         },
         {
             "type": "Image",
-            "id": "174c061e-8996-4e77-a877-e8d895247a7d",
-            "label": "coffee",
-            "components": [],
+            "id": "dfaa0349-5ce1-4037-928f-b6565e17059b",
+            "label": "rockkkkk",
             "texture": {
                 "key": "shack",
-                "frame": "coffee"
+                "frame": "rockkkkk"
             },
-            "x": 818.7506520690915,
-            "y": 839.4960875854507,
-            "originX": 0.5187663017272882,
-            "originY": 0.38147598909080815
+            "x": 870.0503284008273,
+            "y": 632.4983122125749,
+            "originX": 0.5724015318426495,
+            "originY": 0.6588524085547655
         },
         {
             "type": "Image",
-            "id": "b20b3f82-2ad9-495d-967d-0e55b3914c4d",
-            "label": "bottom_bush",
-            "components": [],
+            "id": "5b525871-c760-4023-8470-c0f217b909b6",
+            "label": "rockkkk",
             "texture": {
                 "key": "shack",
-                "frame": "bottom_bush"
+                "frame": "rockkkk"
             },
-            "x": 1242.5147001165951,
-            "y": 997.5295962689582,
-            "originX": 0.49303837567673703,
-            "originY": 0.993972647633281
+            "x": 1087.006690105315,
+            "y": 623.0654269210754,
+            "originX": 0.7151359803324442,
+            "originY": 0.6490264863761203
         },
         {
             "type": "Image",
-            "id": "24795a1d-df7c-453a-9b26-1018f9b87f64",
-            "label": "volley_polll",
-            "components": [],
+            "id": "37c20919-a7b9-4446-9f8f-e68b7f902349",
+            "label": "rockk",
             "texture": {
                 "key": "shack",
-                "frame": "volley_polll"
+                "frame": "rockk"
             },
-            "x": 1030,
-            "y": 705
+            "x": 1409.2969375648806,
+            "y": 384.098999536422,
+            "originX": 0.927169037871632,
+            "originY": 0.4001031245171063
         },
         {
             "type": "Image",
-            "id": "b7e533a6-84b0-45bd-8356-5f508c2eac50",
-            "label": "volley_net",
-            "components": [],
+            "id": "d134d163-e62a-44f7-bfee-80f164844dd5",
+            "label": "rockkk",
             "texture": {
                 "key": "shack",
-                "frame": "volley_net"
+                "frame": "rockkk"
             },
-            "x": 1138,
-            "y": 733,
-            "originX": 0.4381549193905814,
-            "originY": 0.7410944289986862
+            "x": 991.1056896417372,
+            "y": 574.3288529149947,
+            "originX": 0.6520432168695639,
+            "originY": 0.5982592217864529
         },
         {
             "type": "Image",
-            "id": "ca822afd-234c-48bd-8831-4e062db41170",
-            "label": "volley_pollr",
-            "components": [],
+            "id": "c17087bd-a6f5-4b11-9e86-9f920ddbb4b4",
+            "label": "table",
             "texture": {
                 "key": "shack",
-                "frame": "volley_pollr"
+                "frame": "table"
             },
-            "x": 1266.323513821303,
-            "y": 810.5736463402268,
-            "originX": 0.3378146806086599,
-            "originY": 0.7580220990316775
+            "x": 980.1006568016544,
+            "y": 605.7718038866597,
+            "originX": 0.6448030636852989,
+            "originY": 0.6310122957152705
         },
         {
             "type": "Image",
-            "id": "2ccb2c29-b33f-4e64-8dad-e5d194fbf95f",
-            "label": "bucket",
-            "components": [],
+            "id": "9aa7cdf7-fc25-44ee-b4f5-400768242ad8",
+            "label": "thingy",
             "texture": {
                 "key": "shack",
-                "frame": "bucket"
+                "frame": "thingy"
             },
-            "x": 1346,
-            "y": 731.0961775186978,
-            "originY": 0.3013739645528257
+            "x": 245.9077516132786,
+            "y": 583.7617382064942,
+            "originX": 0.1617814155350517,
+            "originY": 0.6080851439650982
+        },
+        {
+            "type": "Image",
+            "id": "01df37c4-1b77-42b4-953d-1762e8eed24c",
+            "label": "treeandrock",
+            "texture": {
+                "key": "shack",
+                "frame": "treeandrock"
+            },
+            "x": 1382.5704292389655,
+            "y": 972.0821827065562,
+            "originX": 0.9095858087098457,
+            "originY": 1.012585606985996
+        },
+        {
+            "type": "Image",
+            "id": "a96f7b44-a915-41ed-84df-cdca875126b6",
+            "label": "chair",
+            "texture": {
+                "key": "shack",
+                "frame": "chair"
+            },
+            "x": 918.7869024069079,
+            "y": 802.2902474595654,
+            "originX": 0.6044650673729657,
+            "originY": 0.8357190077703807
+        },
+        {
+            "type": "Image",
+            "id": "4129eb99-4187-42cf-bcdd-febf77ef7547",
+            "label": "arm",
+            "texture": {
+                "key": "shack",
+                "frame": "arm"
+            },
+            "x": 931.3640827955738,
+            "y": 860.4597067571456,
+            "originX": 0.6127395281549828,
+            "originY": 0.8963121945386933
+        },
+        {
+            "type": "Image",
+            "id": "d4c27e02-489f-40fe-88d3-7b0e7ce3135b",
+            "label": "arrow",
+            "texture": {
+                "key": "shack",
+                "frame": "arrow"
+            },
+            "x": 1481.6157247997098,
+            "y": 413.9698029595037,
+            "originX": 0.9747471873682302,
+            "originY": 0.431218544749483
         },
         {
             "type": "Sprite",
-            "id": "ac16dd19-4610-4fb6-b3c3-ce7c1f9fbaa5",
-            "label": "volleyball",
+            "id": "0752a437-0c1a-4002-8329-51135b1fb583",
+            "label": "mine",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "shack",
-                "frame": "volleyball0001"
+                "frame": "mine0001"
             },
-            "x": 1063.1454009985412,
-            "y": 819.7181014978116,
-            "originX": 0.4516169660769689,
-            "originY": 0.42487897364581806
+            "x": 1089,
+            "y": 153
         },
         {
-            "type": "Image",
-            "id": "3072856b-c20b-40ea-87e5-5e58fef44f4b",
-            "label": "minedoor",
+            "type": "Rectangle",
+            "id": "177841c3-7a9a-49e1-a9e1-9e0574f61943",
+            "label": "rectangle_1",
             "components": [
-                "Button",
+                "SimpleButton",
                 "MoveTo"
             ],
-            "Button.hoverCallback": "() => this.MineDoorOver()",
-            "Button.hoverOutCallback": "() => this.MineDoorOut()",
-            "texture": {
-                "key": "shack",
-                "frame": "minedoor"
-            },
-            "x": 988.5808784553258,
-            "y": 421.2501325189237,
-            "originX": 0.48387361881052016,
-            "originY": 0.9159494182665836
+            "SimpleButton.hoverCallback": "() => this.onMineOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onMineOut()",
+            "x": 1054.9273731547107,
+            "y": 443.1911824767119,
+            "angle": 16,
+            "originX": 0.6229255187473137,
+            "originY": 0.7161762061615676,
+            "width": 180,
+            "height": 140
         },
         {
-            "type": "Image",
-            "id": "be519a73-4435-430c-90d2-5c7ba2c7bc4a",
-            "label": "mine_overhang",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "mine_overhang"
-            },
-            "x": 978,
-            "y": 294
+            "type": "Rectangle",
+            "id": "09c854d4-737f-4ed0-ab8f-23283d34263e",
+            "label": "rectangle",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "x": 860,
+            "y": 443,
+            "originX": 0.6229255187473137,
+            "originY": 0.7161762061615676,
+            "width": 180,
+            "height": 250
         },
         {
-            "type": "Image",
-            "id": "6b73f487-7f86-451d-a9d3-6e65d247086c",
-            "label": "mine_en",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "mine_en"
-            },
-            "x": 980,
-            "y": 334
+            "type": "Container",
+            "id": "0ce831a1-e101-4104-a9ce-6a171684898c",
+            "label": "container_1",
+            "x": 432.43486883238114,
+            "y": 356.71680692706605,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "60051f29-ba20-4dff-955d-73839990c96e",
+                    "label": "fireparticles",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireparticles0001"
+                    },
+                    "x": -5.4348674514199615,
+                    "y": -153.71679463484696
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b18ed4c4-39a2-4d19-aa07-0efcec98fcf6",
+                    "label": "fireback",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireback0001"
+                    },
+                    "x": -5.4348674514199615,
+                    "y": -160.71679463484696
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f9d8874a-90e2-465e-9652-6ba9a0f18318",
+                    "label": "firefront",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "firefront"
+                    },
+                    "x": -2.4348674514199615,
+                    "y": -98.71679463484696
+                }
+            ]
         },
         {
-            "type": "Image",
-            "id": "f3de0fcc-47a5-4d4e-a39e-6f67c627f388",
-            "label": "lantern",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "lantern"
-            },
-            "x": 1058,
-            "y": 436.14779945138315,
-            "originY": 0.33538610349143266
-        },
-        {
-            "type": "Image",
-            "id": "4c1f5cf4-8c4b-4c32-8e05-73a17e0fd2e5",
-            "label": "righttree",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "righttree"
-            },
-            "x": 1489,
-            "y": 591
-        },
-        {
-            "type": "Image",
-            "id": "062fd146-cf75-4295-bb93-b1ff5521e257",
-            "label": "gardenrock",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "gardenrock"
-            },
-            "x": 1480,
-            "y": 702
-        },
-        {
-            "type": "Image",
-            "id": "25db515e-8324-4d34-b7ce-eb8f0db23857",
-            "label": "carrot",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "carrot"
-            },
-            "x": 1474,
-            "y": 740
-        },
-        {
-            "type": "Image",
-            "id": "dad404bf-a879-4ea2-aff6-7044c1a804b2",
-            "label": "squash",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "squash"
-            },
-            "x": 1492,
-            "y": 867
-        },
-        {
-            "type": "Image",
-            "id": "3d4b08ed-1073-4c0e-ba6e-f91890b3aa91",
-            "label": "pizzaplant_2",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "pizzaplant"
-            },
-            "x": 1577,
-            "y": 821
-        },
-        {
-            "type": "Image",
-            "id": "a67e3c6b-e87a-433a-85b0-4dec65e8493c",
-            "label": "pizzaplant_1",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "pizzaplant"
-            },
-            "x": 1536,
-            "y": 870,
-            "flipX": true
-        },
-        {
-            "type": "Image",
-            "id": "7b3701b3-101b-4675-8c25-9b2701bd3510",
-            "label": "pizzaplant",
-            "components": [],
-            "texture": {
-                "key": "shack",
-                "frame": "pizzaplant"
-            },
-            "x": 1488,
-            "y": 921
+            "type": "Container",
+            "id": "2b28593b-715f-425a-9b28-cbab5a46cfba",
+            "label": "container_2",
+            "x": 665.6584578155029,
+            "y": 258.1127708733708,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "191af30e-a73f-4cad-baf9-f12cba3eeb99",
+                    "label": "fireparticles_1",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireparticles0001"
+                    },
+                    "x": -4.658457815502857,
+                    "y": -55.11277087337078
+                },
+                {
+                    "type": "Image",
+                    "id": "7a37ae83-b51c-4387-84da-d6cf45f16d6d",
+                    "label": "firefront_1",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "firefront"
+                    },
+                    "x": -1.6584578155028566,
+                    "y": -0.11277087337077774
+                },
+                {
+                    "type": "Sprite",
+                    "id": "280e6070-c80a-4b4d-98a2-e81b469a67f6",
+                    "label": "fireback_1",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "shack",
+                        "frame": "fireback0001"
+                    },
+                    "x": -4.658457815502857,
+                    "y": -62.11277087337078
+                }
+            ]
         }
     ],
     "plainObjects": [],
@@ -456,28 +380,31 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
             "id": "0c21a319-fa3f-4dab-98d3-85688861ceb0",
             "label": "sort",
             "objectIds": [
-                "4cb506d8-58e9-464d-b0f3-dcc08b491897",
-                "b201b2e0-ff7d-470b-bffd-bd96e23e366f",
-                "d4365961-ef3a-4788-b2eb-0f01c88934c5",
-                "32775c71-3174-4107-a9a6-ee95ffd5260d",
-                "cc620347-ff48-4378-985a-2c15205a541e",
-                "a853a995-0b2a-44c8-ac61-f3498f738eda",
-                "b20b3f82-2ad9-495d-967d-0e55b3914c4d",
-                "24795a1d-df7c-453a-9b26-1018f9b87f64",
-                "b7e533a6-84b0-45bd-8356-5f508c2eac50",
-                "ca822afd-234c-48bd-8831-4e062db41170",
-                "2ccb2c29-b33f-4e64-8dad-e5d194fbf95f",
-                "ac16dd19-4610-4fb6-b3c3-ce7c1f9fbaa5",
-                "f3de0fcc-47a5-4d4e-a39e-6f67c627f388",
-                "6d597cf3-0ea2-43e7-89b4-21242e960f47",
-                "d6e387d7-c869-48f8-887e-fe900c712a2f"
+                "a12091d8-3c41-48a5-9aef-7ddc951bfcdb",
+                "4129eb99-4187-42cf-bcdd-febf77ef7547",
+                "a96f7b44-a915-41ed-84df-cdca875126b6",
+                "01df37c4-1b77-42b4-953d-1762e8eed24c",
+                "9aa7cdf7-fc25-44ee-b4f5-400768242ad8",
+                "c17087bd-a6f5-4b11-9e86-9f920ddbb4b4",
+                "d134d163-e62a-44f7-bfee-80f164844dd5",
+                "37c20919-a7b9-4446-9f8f-e68b7f902349",
+                "5b525871-c760-4023-8470-c0f217b909b6",
+                "dfaa0349-5ce1-4037-928f-b6565e17059b",
+                "7f6e1d18-85cb-4ffc-bc24-ece717a6765e",
+                "7601d4af-0f76-4d2e-9cfc-64ff510001f3",
+                "d4c27e02-489f-40fe-88d3-7b0e7ce3135b",
+                "3f2200dc-ece5-4e66-941b-7dbf27566fdf",
+                "7a3e4e64-8b7b-4474-b7cf-5d73c4d09ceb",
+                "ad56f759-bb14-4c96-a388-226228902d09",
+                "2b28593b-715f-425a-9b28-cbab5a46cfba",
+                "0ce831a1-e101-4104-a9ce-6a171684898c"
             ]
         }
     ]

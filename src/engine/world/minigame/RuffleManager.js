@@ -127,12 +127,11 @@ export default class RuffleManager {
         this.swfInstance = this.rufflePlayer.load({
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
-            quality: 'low',
-            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error'
+            quality: 'high',
+            logLevel: localStorage.getItem('debugMode') == 'true' ? 'Trace' : 'Error',
+            wmode: 'transparent'
         })
         this.swf = {path: path, params: params}
-
-        this.shell.client.inMinigame = true
     }
 
     onLoaderInit() {

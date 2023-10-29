@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {Button, LocalisedSprite, MoveTo} from '@components/components'
+import {Button, SimpleButton, MoveTo} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -9,14 +9,16 @@ export default class Shack extends RoomScene {
         super('Shack')
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.shackflag
+        this.mine
         /** @type {Phaser.GameObjects.Sprite} */
-        this.minutehand
+        this.fireparticles
         /** @type {Phaser.GameObjects.Sprite} */
-        this.hourhand
+        this.fireback
         /** @type {Phaser.GameObjects.Sprite} */
-        this.volleyball
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        this.fireparticles_1
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fireback_1
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container>} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -32,7 +34,7 @@ export default class Shack extends RoomScene {
 
         this.music = 19
 
-        this.loadSfx = ['shack-SchoolDoorOpen', 'shack-SchoolDoorClose', 'shack-MineLightOn', 'shack-MineLightOff']
+        this.loadSfx = ['shack-SchoolDoorOpen', 'shack-SchoolDoorClose', 'shack-MineLightOn', 'shack-MineLightOff', 'mine-cart']
         /* END-USER-CTR-CODE */
     }
 
@@ -43,141 +45,140 @@ export default class Shack extends RoomScene {
 
     /** @returns {void} */
     _create() {
-        // shackbg
-        this.add.image(782, 467, 'shack', 'shackbg')
+        // bg
+        this.add.image(760, 480, 'shack', 'bg')
 
-        // arch
-        this.add.image(157, 344, 'shack', 'arch')
+        // castle
+        const castle = this.add.image(884.0079432436852, 247.24662960416003, 'shack', 'castle')
+        castle.setOrigin(0.581584173186635, 0.2575485725043334)
 
-        // bigtree
-        const bigtree = this.add.image(34.060648209326246, 495.3883923884107, 'shack', 'bigtree')
-        bigtree.setOrigin(0.40065216445209817, 0.8192540254452281)
+        // entrance
+        const entrance = this.add.image(519.1631840861114, 341.13773981487867, 'shack', 'entrance')
+        entrance.setOrigin(0.5238962359255627, 0.2485593877997145)
 
-        // cpu_fence_l
-        const cpu_fence_l = this.add.image(70.95500585386105, 668.5693099492144, 'shack', 'cpu_fence_l')
-        cpu_fence_l.setOrigin(0.6837960062002042, 0.7840051982111681)
+        // door
+        const door = this.add.image(622.2452312209512, 345.01081101061163, 'shack', 'door')
+        door.setOrigin(0.4506949067918149, -0.007770328051593056)
 
-        // cpu_fence_r
-        const cpu_fence_r = this.add.image(421.5637446991831, 883.4631488536763, 'shack', 'cpu_fence_r')
-        cpu_fence_r.setOrigin(0.4492963624180372, 0.7730948819569041)
+        // railing
+        const railing = this.add.image(760, 480, 'shack', 'railing')
 
-        // cpu_fence_en
-        const cpu_fence_en = this.add.image(155.05726423595928, 957.6629615636905, 'shack', 'cpu_fence_en')
-        cpu_fence_en.setOrigin(0.11648585069152463, 7.950227395854219)
+        // rock
+        const rock = this.add.image(1267.8036581923884, 355.80034366192353, 'shack', 'rock')
+        rock.setOrigin(0.8340813540739398, 0.37062535798117036)
 
-        // flagpole
-        this.add.image(328, 239, 'shack', 'flagpole')
+        // stairs
+        const stairs = this.add.image(676.6761799250879, 720.5385749332366, 'shack', 'stairs')
+        stairs.setOrigin(0.4451816973191368, 0.7505610155554548)
 
-        // shackflag
-        const shackflag = this.add.sprite(276.83275151038407, 655.3306895217695, 'shack', 'flag0001')
-        shackflag.setOrigin(0.5192921211619376, 7.517509072654862)
+        // rockkkkk
+        const rockkkkk = this.add.image(870.0503284008273, 632.4983122125749, 'shack', 'rockkkkk')
+        rockkkkk.setOrigin(0.5724015318426495, 0.6588524085547655)
 
-        // minutehand
-        const minutehand = this.add.sprite(475.17512186012317, 125.93228149414062, 'shack', 'minutehand')
-        minutehand.setOrigin(0.5350267713930179, 0.9138450108891423)
+        // rockkkk
+        const rockkkk = this.add.image(1087.006690105315, 623.0654269210754, 'shack', 'rockkkk')
+        rockkkk.setOrigin(0.7151359803324442, 0.6490264863761203)
 
-        // hourhand
-        const hourhand = this.add.sprite(475.30143411598254, 125.94285036201337, 'shack', 'hourhand')
-        hourhand.setOrigin(0.5169051965889025, 0.87242241458853)
+        // rockk
+        const rockk = this.add.image(1409.2969375648806, 384.098999536422, 'shack', 'rockk')
+        rockk.setOrigin(0.927169037871632, 0.4001031245171063)
 
-        // schooldoor
-        const schooldoor = this.add.image(488.2573646340227, 398.83101097424947, 'shack', 'schooldoor')
-        schooldoor.setOrigin(0.5262800286050783, 0.8143020870754998)
+        // rockkk
+        const rockkk = this.add.image(991.1056896417372, 574.3288529149947, 'shack', 'rockkk')
+        rockkk.setOrigin(0.6520432168695639, 0.5982592217864529)
 
-        // rail
-        const rail = this.add.image(595.1654328509248, 497.3306599532049, 'shack', 'rail')
-        rail.setOrigin(0.9215582111297244, 0.7559704490208276)
+        // table
+        const table = this.add.image(980.1006568016544, 605.7718038866597, 'shack', 'table')
+        table.setOrigin(0.6448030636852989, 0.6310122957152705)
 
-        // book
-        const book = this.add.image(711.7532603454578, 777.4856544799858, 'shack', 'book')
-        book.setOrigin(0.5543950774704023, 0.23363958838686746)
+        // thingy
+        const thingy = this.add.image(245.9077516132786, 583.7617382064942, 'shack', 'thingy')
+        thingy.setOrigin(0.1617814155350517, 0.6080851439650982)
 
-        // guitar
-        const guitar = this.add.image(888, 825.5, 'shack', 'guitar')
-        guitar.setOrigin(0.5, 0.5562989051818661)
+        // treeandrock
+        const treeandrock = this.add.image(1382.5704292389655, 972.0821827065562, 'shack', 'treeandrock')
+        treeandrock.setOrigin(0.9095858087098457, 1.012585606985996)
 
-        // coffee
-        const coffee = this.add.image(818.7506520690915, 839.4960875854507, 'shack', 'coffee')
-        coffee.setOrigin(0.5187663017272882, 0.38147598909080815)
+        // chair
+        const chair = this.add.image(918.7869024069079, 802.2902474595654, 'shack', 'chair')
+        chair.setOrigin(0.6044650673729657, 0.8357190077703807)
 
-        // bottom_bush
-        const bottom_bush = this.add.image(1242.5147001165951, 997.5295962689582, 'shack', 'bottom_bush')
-        bottom_bush.setOrigin(0.49303837567673703, 0.993972647633281)
+        // arm
+        const arm = this.add.image(931.3640827955738, 860.4597067571456, 'shack', 'arm')
+        arm.setOrigin(0.6127395281549828, 0.8963121945386933)
 
-        // volley_polll
-        const volley_polll = this.add.image(1030, 705, 'shack', 'volley_polll')
+        // arrow
+        const arrow = this.add.image(1481.6157247997098, 413.9698029595037, 'shack', 'arrow')
+        arrow.setOrigin(0.9747471873682302, 0.431218544749483)
 
-        // volley_net
-        const volley_net = this.add.image(1138, 733, 'shack', 'volley_net')
-        volley_net.setOrigin(0.4381549193905814, 0.7410944289986862)
+        // mine
+        const mine = this.add.sprite(1089, 153, 'shack', 'mine0001')
 
-        // volley_pollr
-        const volley_pollr = this.add.image(1266.323513821303, 810.5736463402268, 'shack', 'volley_pollr')
-        volley_pollr.setOrigin(0.3378146806086599, 0.7580220990316775)
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(1054.9273731547107, 443.1911824767119, 180, 140)
+        rectangle_1.angle = 16
+        rectangle_1.setOrigin(0.6229255187473137, 0.7161762061615676)
 
-        // bucket
-        const bucket = this.add.image(1346, 731.0961775186978, 'shack', 'bucket')
-        bucket.setOrigin(0.5, 0.3013739645528257)
+        // rectangle
+        const rectangle = this.add.rectangle(860, 443, 180, 250)
+        rectangle.setOrigin(0.6229255187473137, 0.7161762061615676)
 
-        // volleyball
-        const volleyball = this.add.sprite(1063.1454009985412, 819.7181014978116, 'shack', 'volleyball0001')
-        volleyball.setOrigin(0.4516169660769689, 0.42487897364581806)
+        // container_1
+        const container_1 = this.add.container(432.43486883238114, 356.71680692706605)
 
-        // minedoor
-        const minedoor = this.add.image(988.5808784553258, 421.2501325189237, 'shack', 'minedoor')
-        minedoor.setOrigin(0.48387361881052016, 0.9159494182665836)
+        // fireparticles
+        const fireparticles = this.add.sprite(-5.4348674514199615, -153.71679463484696, 'shack', 'fireparticles0001')
+        container_1.add(fireparticles)
 
-        // mine_overhang
-        this.add.image(978, 294, 'shack', 'mine_overhang')
+        // fireback
+        const fireback = this.add.sprite(-5.4348674514199615, -160.71679463484696, 'shack', 'fireback0001')
+        container_1.add(fireback)
 
-        // mine_en
-        this.add.image(980, 334, 'shack', 'mine_en')
+        // firefront
+        const firefront = this.add.sprite(-2.4348674514199615, -98.71679463484696, 'shack', 'firefront')
+        container_1.add(firefront)
 
-        // lantern
-        const lantern = this.add.image(1058, 436.14779945138315, 'shack', 'lantern')
-        lantern.setOrigin(0.5, 0.33538610349143266)
+        // container_2
+        const container_2 = this.add.container(665.6584578155029, 258.1127708733708)
 
-        // righttree
-        this.add.image(1489, 591, 'shack', 'righttree')
+        // fireparticles_1
+        const fireparticles_1 = this.add.sprite(-4.658457815502857, -55.11277087337078, 'shack', 'fireparticles0001')
+        container_2.add(fireparticles_1)
 
-        // gardenrock
-        this.add.image(1480, 702, 'shack', 'gardenrock')
+        // firefront_1
+        const firefront_1 = this.add.image(-1.6584578155028566, -0.11277087337077774, 'shack', 'firefront')
+        container_2.add(firefront_1)
 
-        // carrot
-        this.add.image(1474, 740, 'shack', 'carrot')
-
-        // squash
-        this.add.image(1492, 867, 'shack', 'squash')
-
-        // pizzaplant_2
-        this.add.image(1577, 821, 'shack', 'pizzaplant')
-
-        // pizzaplant_1
-        const pizzaplant_1 = this.add.image(1536, 870, 'shack', 'pizzaplant')
-        pizzaplant_1.flipX = true
-
-        // pizzaplant
-        this.add.image(1488, 921, 'shack', 'pizzaplant')
+        // fireback_1
+        const fireback_1 = this.add.sprite(-4.658457815502857, -62.11277087337078, 'shack', 'fireback0001')
+        container_2.add(fireback_1)
 
         // lists
-        const sort = [cpu_fence_l, cpu_fence_r, cpu_fence_en, rail, book, guitar, bottom_bush, volley_polll, volley_net, volley_pollr, bucket, volleyball, lantern, bigtree, shackflag]
+        const sort = [railing, arm, chair, treeandrock, thingy, table, rockkk, rockk, rockkkk, rockkkkk, stairs, rock, arrow, castle, entrance, door, container_2, container_1]
 
-        // schooldoor (components)
-        const schooldoorButton = new Button(schooldoor)
-        schooldoorButton.hoverCallback = () => this.SchoolDoorOver()
-        schooldoorButton.hoverOutCallback = () => this.SchoolDoorOut()
-        new MoveTo(schooldoor)
+        // door (components)
+        const doorButton = new Button(door)
+        doorButton.hoverCallback = () => this.SchoolDoorOver()
+        doorButton.hoverOutCallback = () => this.SchoolDoorOut()
+        const doorMoveTo = new MoveTo(door)
+        doorMoveTo.x = 626
+        doorMoveTo.y = 575
 
-        // minedoor (components)
-        const minedoorButton = new Button(minedoor)
-        minedoorButton.hoverCallback = () => this.MineDoorOver()
-        minedoorButton.hoverOutCallback = () => this.MineDoorOut()
-        new MoveTo(minedoor)
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1)
+        rectangle_1SimpleButton.hoverCallback = () => this.onMineOver()
+        rectangle_1SimpleButton.hoverOutCallback = () => this.onMineOut()
+        new MoveTo(rectangle_1)
 
-        this.shackflag = shackflag
-        this.minutehand = minutehand
-        this.hourhand = hourhand
-        this.volleyball = volleyball
+        // rectangle (components)
+        new SimpleButton(rectangle)
+        new MoveTo(rectangle)
+
+        this.mine = mine
+        this.fireparticles = fireparticles
+        this.fireback = fireback
+        this.fireparticles_1 = fireparticles_1
+        this.fireback_1 = fireback_1
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -190,9 +191,10 @@ export default class Shack extends RoomScene {
     create() {
         super.create()
 
-        this.shackflag.play('shack-flag')
-
-        this.setClockTime()
+        this.fireback.play('shack-fireback')
+        this.fireparticles.play('shack-fireparticles')
+        this.fireback_1.play('shack-fireback')
+        this.fireparticles_1.play('shack-fireparticles')
     }
 
     setClockTime() {
@@ -225,17 +227,21 @@ export default class Shack extends RoomScene {
         this.shell.musicController.addSfx('shack-SchoolDoorClose')
     }
 
-    MineDoorOver() {
-        this.shell.musicController.addSfx('shack-MineLightOn')
+    onMineOver() {
+        this.shell.musicController.addSfx('mine-cart')
+        if (this.mine.anims.isPlaying && this.mine.anims.inReverse) {
+            this.mine.anims.reverse()
+        } else {
+            this.mine.anims.play('shack-mine')
+        }
     }
 
-    MineDoorOut() {
-        this.shell.musicController.addSfx('shack-MineLightOff')
-    }
-
-    stop() {
-        clearTimeout(this.clockTimeTO)
-        super.stop()
+    onMineOut() {
+        if (this.mine.anims.isPlaying && !this.mine.anims.inReverse) {
+            this.mine.anims.reverse()
+        } else {
+            this.mine.anims.playReverse('shack-mine')
+        }
     }
 
     /* END-USER-CODE */

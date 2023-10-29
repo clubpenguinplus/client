@@ -35,7 +35,7 @@ export default class Pizza extends RoomScene {
     /** @returns {void} */
     _create() {
         // pizzabg
-        const pizzabg = this.add.image(-168, 980, 'pizza', 'pizzabg')
+        const pizzabg = this.add.image(0, 960, 'pizza', 'pizzabg')
         pizzabg.setOrigin(0, 1)
 
         // pizzatrondoor

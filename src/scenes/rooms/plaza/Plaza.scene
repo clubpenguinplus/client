@@ -18,430 +18,231 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "990c5549-c224-4ebd-915c-2092458cd35b",
+            "id": "e919ff80-0df7-4268-bb0b-404a26518cfe",
             "label": "bg",
             "texture": {
                 "key": "plaza",
                 "frame": "bg"
             },
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Sprite",
-            "id": "65a2450e-a593-4da3-a097-2b6d2cd8f8ee",
-            "label": "parksign",
-            "scope": "CLASS",
-            "components": [
-                "LocalisedSprite"
-            ],
-            "texture": {
-                "key": "plaza",
-                "frame": "park"
-            },
-            "x": -45,
-            "y": 358
+            "x": 760,
+            "y": 480
         },
         {
             "type": "Image",
-            "id": "2f063f34-4a8d-4ddb-bdbe-f9c5544ecbbb",
-            "label": "signText_en",
-            "components": [
-                "LocalisedSprite"
-            ],
-            "texture": {
-                "key": "plaza",
-                "frame": "signText-en"
-            },
-            "x": 147,
-            "y": 261
-        },
-        {
-            "type": "Image",
-            "id": "50b8efec-5fe2-427c-a689-eebdba356534",
-            "label": "buildings",
-            "texture": {
-                "key": "plaza",
-                "frame": "buildings"
-            },
-            "x": 767,
-            "y": 325
-        },
-        {
-            "type": "Image",
-            "id": "338f6e52-0a36-47a5-b11e-a0a4d4269513",
-            "label": "pole",
-            "texture": {
-                "key": "plaza",
-                "frame": "pole"
-            },
-            "x": 1082,
-            "y": 77
-        },
-        {
-            "type": "Image",
-            "id": "d1c65a28-a44b-463d-afd9-bc3796292074",
-            "label": "pole_1",
-            "texture": {
-                "key": "plaza",
-                "frame": "pole"
-            },
-            "x": 753,
-            "y": 81,
-            "angle": -22
-        },
-        {
-            "type": "Sprite",
-            "id": "68792625-7307-423a-a393-e843f7817ba8",
-            "label": "flag1_0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "flag1_",
-            "Animation.end": 15,
-            "texture": {
-                "key": "plaza",
-                "frame": "flag1_0001"
-            },
-            "x": 1107,
-            "y": 79
-        },
-        {
-            "type": "Sprite",
-            "id": "167f61fb-7b43-497d-a16f-6db19b205115",
-            "label": "flag",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "flag1_",
-            "Animation.end": 15,
-            "texture": {
-                "key": "plaza",
-                "frame": "flag1_0001"
-            },
-            "x": 778,
-            "y": 71,
-            "angle": -27
-        },
-        {
-            "type": "Image",
-            "id": "4ea07296-3796-49c7-a204-845ae48d338e",
-            "label": "mall_sign_en",
-            "components": [
-                "LocalisedSprite"
-            ],
-            "texture": {
-                "key": "plaza",
-                "frame": "mall_sign-en"
-            },
-            "x": 894,
-            "y": 65
-        },
-        {
-            "type": "Image",
-            "id": "9a9589bb-496f-4654-9eb4-2626095d3159",
-            "label": "mall_fg",
-            "texture": {
-                "key": "plaza",
-                "frame": "mall_fg"
-            },
-            "x": 914,
-            "y": 302
-        },
-        {
-            "type": "Image",
-            "id": "9288b20a-6262-4be9-888c-9f79ef6632ed",
-            "label": "pet_door0001",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.hoverCallback": "() => this.onPetOver()",
-            "MoveTo.x": 396,
-            "MoveTo.y": 492,
-            "texture": {
-                "key": "plaza",
-                "frame": "pet_door"
-            },
-            "x": 385,
-            "y": 431
-        },
-        {
-            "type": "Sprite",
-            "id": "07a3253c-aecc-4661-a086-891c8fcad9eb",
-            "label": "cannon",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "cannon_",
-            "Animation.end": 13,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "texture": {
-                "key": "plaza",
-                "frame": "cannon_0001"
-            },
-            "x": 285,
-            "y": 433
-        },
-        {
-            "type": "Image",
-            "id": "a44e7560-cbf1-49dd-854a-ba2ca096b6cf",
-            "label": "buildings2",
-            "texture": {
-                "key": "plaza",
-                "frame": "buildings2"
-            },
-            "x": 480,
-            "y": 283
-        },
-        {
-            "type": "Sprite",
-            "id": "ad1ba330-8d4c-4b32-ad72-26a56e99944a",
-            "label": "cover",
-            "scope": "CLASS",
-            "texture": {
-                "key": "plaza",
-                "frame": "cover_0001"
-            },
-            "x": 507,
-            "y": 673.9236627496881,
-            "originY": 1.6478945983850846
-        },
-        {
-            "type": "Image",
-            "id": "c52aed59-6825-413e-9251-e3fae5877f0d",
-            "label": "pet_sign_en",
-            "components": [
-                "LocalisedSprite"
-            ],
-            "texture": {
-                "key": "plaza",
-                "frame": "pet_sign-en"
-            },
-            "x": 362,
-            "y": 292
-        },
-        {
-            "type": "Image",
-            "id": "4f0b3a49-4e51-4bff-8339-127c74ea8dcb",
-            "label": "pizza_door0001",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.hoverCallback": "() => this.onPizzaOver()",
-            "Button.hoverOutCallback": "() => this.onPizzaOut()",
-            "MoveTo.x": 1224,
-            "MoveTo.y": 480,
-            "texture": {
-                "key": "plaza",
-                "frame": "pizza_door"
-            },
-            "x": 1222,
-            "y": 417
-        },
-        {
-            "type": "Image",
-            "id": "f8997190-4afc-4e5a-afe3-d813c8ea214c",
-            "label": "mall_door0001",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.hoverCallback": "() => this.onMallOver()",
-            "Button.hoverOutCallback": "() => this.onMallOut()",
-            "MoveTo.x": 920,
-            "MoveTo.y": 460,
-            "texture": {
-                "key": "plaza",
-                "frame": "mall_door"
-            },
-            "x": 918,
-            "y": 404
-        },
-        {
-            "type": "Image",
-            "id": "d5bdb4b6-7e62-4e2d-9a47-11f8a2e05491",
-            "label": "hotel_door0001",
+            "id": "dfeb8468-89bc-4573-800b-32f14dad9809",
+            "label": "hoteldoor",
             "components": [
                 "Button",
                 "MoveTo"
             ],
             "Button.hoverCallback": "() => this.onHotelOver()",
             "Button.hoverOutCallback": "() => this.onHotelOut()",
-            "MoveTo.x": 644,
-            "MoveTo.y": 468,
             "texture": {
                 "key": "plaza",
-                "frame": "hotel_door"
+                "frame": "hoteldoor"
             },
-            "x": 643,
-            "y": 409
+            "x": 583.468744605747,
+            "y": 462.38205446003013,
+            "originX": 0.5378335522633343,
+            "originY": 0.9060614097279936
         },
         {
             "type": "Image",
-            "id": "e75510db-f862-40c5-a2a6-d7c9dbe846e7",
-            "label": "fg_2",
-            "texture": {
-                "key": "plaza",
-                "frame": "fg_2"
-            },
-            "x": 203.14926228192448,
-            "y": 755.2392501923956,
-            "originX": 0.616515661435073,
-            "originY": 0.4097499303023767
-        },
-        {
-            "type": "Image",
-            "id": "c4c851f5-2787-468a-9b63-6eebaba379d5",
-            "label": "fg_3",
-            "texture": {
-                "key": "plaza",
-                "frame": "fg_3"
-            },
-            "x": 1567,
-            "y": 692
-        },
-        {
-            "type": "Image",
-            "id": "c14a07fe-e42d-40e8-bb18-b2517e63f7b7",
-            "label": "fg_1",
-            "texture": {
-                "key": "plaza",
-                "frame": "fg_1"
-            },
-            "x": 1421.4777668477834,
-            "y": 754.5607223603644,
-            "originX": 0.42192926018256904,
-            "originY": 0.20276760019732185
-        },
-        {
-            "type": "Image",
-            "id": "add35ca5-b652-4832-b781-840728fad7ab",
-            "label": "pizza_sign",
+            "id": "41bbec0b-22d2-4b9e-8f73-e3f6ab6635e1",
+            "label": "malldoorleft",
             "components": [
-                "LocalisedSprite"
-            ],
-            "texture": {
-                "key": "plaza",
-                "frame": "pizza_sign"
-            },
-            "x": 1254,
-            "y": 285
-        },
-        {
-            "type": "Sprite",
-            "id": "2002bd1c-1c25-445a-830a-ad3d2b4a4d5a",
-            "label": "puffle",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "puffle_",
-            "Animation.end": 12,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "texture": {
-                "key": "plaza",
-                "frame": "puffle_0001"
-            },
-            "x": -8,
-            "y": 231
-        },
-        {
-            "type": "Sprite",
-            "id": "2359318c-4807-4b1e-8508-310ecd41fa1c",
-            "label": "smoke",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "smoke_",
-            "Animation.end": 12,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "texture": {
-                "key": "plaza",
-                "frame": "smoke_0001"
-            },
-            "x": 183,
-            "y": 251
-        },
-        {
-            "type": "Rectangle",
-            "id": "96b780ae-7b1a-43bb-bd3c-648ce06f3697",
-            "label": "rectangle_1",
-            "components": [
-                "Zone"
-            ],
-            "Zone.hoverCallback": "() => this.onPuffleOver()",
-            "x": 253,
-            "y": 439,
-            "scaleX": 1.084041731335266,
-            "scaleY": 1.0910348521771707,
-            "isFilled": true,
-            "fillColor": "#00b8e5",
-            "fillAlpha": 100,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Rectangle",
-            "id": "0e31bc7a-b828-4255-a26d-7f35e853084d",
-            "label": "rectangle",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onHoleOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onHoleOut()",
-            "SimpleButton.callback": "() => this.shell.client.penguin.move(512, 560)",
-            "x": 502.45727104401004,
-            "y": 571.0704385968158,
-            "scaleX": 1.0752579888181788,
-            "scaleY": 0.5000892234118466,
-            "originX": 0.4379311114735458,
-            "originY": 0.8916559230325944,
-            "fillColor": "#00b8e5",
-            "fillAlpha": 100,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Image",
-            "id": "aed321bc-5b7d-48c7-8b06-28cf3eb777e4",
-            "label": "puffle_hotel_sign",
-            "components": [
-                "LocalisedSprite"
-            ],
-            "texture": {
-                "key": "plaza",
-                "frame": "puffle_hotel_sign-en"
-            },
-            "x": 534,
-            "y": 147
-        },
-        {
-            "type": "Rectangle",
-            "id": "b9e6b316-51cc-41a3-bc7c-4096215ee840",
-            "label": "rectangle_2",
-            "components": [
-                "SimpleButton",
+                "Button",
                 "MoveTo"
             ],
-            "SimpleButton.hoverCallback": "() => this.parksign.setFrame(\"park-hover\")",
-            "SimpleButton.hoverOutCallback": "() => this.parksign.setFrame(\"park\")",
-            "x": 144.52093192533204,
-            "y": 498.8023298133302,
-            "scaleX": 1.569424637449067,
-            "scaleY": 2.2133166412822716,
-            "originX": 0.5921960685294967,
-            "originY": 1.0358273910455558,
-            "fillColor": "#00b8e5",
-            "fillAlpha": 100,
-            "width": 128,
-            "height": 128
+            "Button.hoverCallback": "() => this.onMallOver()",
+            "Button.hoverOutCallback": "() => this.onMallOut()",
+            "texture": {
+                "key": "plaza",
+                "frame": "malldoorleft"
+            },
+            "x": 769.4488626555903,
+            "y": 434.690310995506,
+            "originX": 0.5382634789935992,
+            "originY": 0.9015608118037959
+        },
+        {
+            "type": "Image",
+            "id": "d65418ef-f8c2-4d9a-8d3a-caec098ec25b",
+            "label": "malldoorright",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onMallOver()",
+            "Button.hoverOutCallback": "() => this.onMallOut()",
+            "texture": {
+                "key": "plaza",
+                "frame": "malldoorright"
+            },
+            "x": 982.7144903527169,
+            "y": 437.13917365109637,
+            "originX": 0.43303891176120146,
+            "originY": 0.9147267400596579
+        },
+        {
+            "type": "Sprite",
+            "id": "3f576301-40d7-426e-a7a4-db91f79cbd9d",
+            "label": "manhole",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 1235,
+            "MoveTo.y": 545,
+            "SimpleButton.hoverCallback": "() => this.onHoleOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onHoleOut()",
+            "texture": {
+                "key": "plaza",
+                "frame": "manhole-open0001"
+            },
+            "x": 1242,
+            "y": 507
+        },
+        {
+            "type": "Image",
+            "id": "63957d91-b408-43ca-91e7-b4b79021bc38",
+            "label": "petdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onPetOver()",
+            "Button.hoverOutCallback": "() => this.onPetOut()",
+            "texture": {
+                "key": "plaza",
+                "frame": "petdoor"
+            },
+            "x": 343.6122156638976,
+            "y": 508.4261157673976,
+            "originX": 0.506582964127931,
+            "originY": 0.8647242253006924
+        },
+        {
+            "type": "Image",
+            "id": "85f4539b-d48a-41bd-b60a-bb17eca51040",
+            "label": "pizzadoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onPizzaOver()",
+            "Button.hoverOutCallback": "() => this.onPizzaOut()",
+            "texture": {
+                "key": "plaza",
+                "frame": "pizzadoor"
+            },
+            "x": 1113.5083519224247,
+            "y": 472.0024121923148,
+            "originX": 0.47714084332499734,
+            "originY": 0.89839359505947
+        },
+        {
+            "type": "Image",
+            "id": "45d42063-a833-45d1-ba05-8246a478e5e6",
+            "label": "signs",
+            "texture": {
+                "key": "plaza",
+                "frame": "signs"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "a21fa87f-e368-4bb0-bcd4-2b4eabb718f5",
+            "label": "puffles",
+            "texture": {
+                "key": "plaza",
+                "frame": "puffles"
+            },
+            "x": 862.5576366884968,
+            "y": 961.3371521150619,
+            "originX": 0.5674721287268194,
+            "originY": 1.0013928854721865
+        },
+        {
+            "type": "Image",
+            "id": "1d00858e-6660-4e54-a506-09a91d7ffc90",
+            "label": "arrow",
+            "texture": {
+                "key": "plaza",
+                "frame": "arrow"
+            },
+            "x": 1335.8445432559274,
+            "y": 495.8307778214688,
+            "originX": 0.8788450942473207,
+            "originY": 0.51649039356403
+        },
+        {
+            "type": "Image",
+            "id": "e47ea953-cf4a-409b-9eae-f8f839655a83",
+            "label": "railingback",
+            "texture": {
+                "key": "plaza",
+                "frame": "railingback"
+            },
+            "x": 585.3966474747571,
+            "y": 497.08883875778974,
+            "originX": 0.38512937333865593,
+            "originY": 0.517800873706031
+        },
+        {
+            "type": "Image",
+            "id": "d4ba8e73-4ff4-44de-8f7f-697ffff9203b",
+            "label": "railingfrontleft",
+            "texture": {
+                "key": "plaza",
+                "frame": "railingfrontleft"
+            },
+            "x": 458.34484627553763,
+            "y": 583.2760255362075,
+            "originX": 0.30154266202338004,
+            "originY": 0.6075791932668828
+        },
+        {
+            "type": "Image",
+            "id": "58622f0e-00ac-4a89-a57c-464ca5cee3b2",
+            "label": "railingfrontright",
+            "texture": {
+                "key": "plaza",
+                "frame": "railingfrontright"
+            },
+            "x": 742.9111612422103,
+            "y": 541.6684181259369,
+            "originX": 0.4887573429225067,
+            "originY": 0.564237935547851
+        },
+        {
+            "type": "Image",
+            "id": "05676c0d-f109-4b0c-baec-c8b815ce2c74",
+            "label": "ticketbooth",
+            "texture": {
+                "key": "plaza",
+                "frame": "ticketbooth"
+            },
+            "x": 875.7698954012483,
+            "y": 436.85339837047974,
+            "originX": 0.5761644174658046,
+            "originY": 0.45505562125919385
+        },
+        {
+            "type": "Image",
+            "id": "9c79b481-0568-4000-b33c-575bc4303c91",
+            "label": "tree",
+            "texture": {
+                "key": "plaza",
+                "frame": "tree"
+            },
+            "x": 780.6820720379931,
+            "y": 1026.308976747584,
+            "originX": 0.5136066263407849,
+            "originY": 1.069071858658325
         }
     ],
     "plainObjects": [],
@@ -456,8 +257,11 @@
             "id": "458b4e63-d0df-4d50-95f0-9066e98b6595",
             "label": "sort",
             "objectIds": [
-                "e75510db-f862-40c5-a2a6-d7c9dbe846e7",
-                "c14a07fe-e42d-40e8-bb18-b2517e63f7b7"
+                "9c79b481-0568-4000-b33c-575bc4303c91",
+                "05676c0d-f109-4b0c-baec-c8b815ce2c74",
+                "58622f0e-00ac-4a89-a57c-464ca5cee3b2",
+                "d4ba8e73-4ff4-44de-8f7f-697ffff9203b",
+                "e47ea953-cf4a-409b-9eae-f8f839655a83"
             ]
         }
     ]
