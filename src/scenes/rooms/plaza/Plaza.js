@@ -123,7 +123,9 @@ export default class Plaza extends RoomScene {
         new MoveTo(malldoorright)
 
         // manhole (components)
-        new MoveTo(manhole)
+        const manholeMoveTo = new MoveTo(manhole)
+        manholeMoveTo.x = 1235
+        manholeMoveTo.y = 545
         const manholeSimpleButton = new SimpleButton(manhole)
         manholeSimpleButton.hoverCallback = () => this.onHoleOver()
         manholeSimpleButton.hoverOutCallback = () => this.onHoleOut()

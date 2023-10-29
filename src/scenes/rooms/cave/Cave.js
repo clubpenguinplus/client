@@ -8,8 +8,12 @@ export default class Cave extends RoomScene {
     constructor() {
         super('Cave')
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.animdummy
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.waterZones
 
         /* START-USER-CTR-CODE */
 
@@ -33,125 +37,54 @@ export default class Cave extends RoomScene {
 
     /** @returns {void} */
     _create() {
-        // window
-        const window = this.add.image(515, 265, 'cave', 'window')
-        window.setOrigin(0, 0)
-
-        // bubbles_bubbles0001
-        const bubbles_bubbles0001 = this.add.sprite(1050, 211, 'cave', 'bubbles/bubbles0001')
-        bubbles_bubbles0001.setOrigin(0, 0)
-
-        // fish_fish0001
-        const fish_fish0001 = this.add.sprite(357, 344, 'cave', 'fish/fish0001')
-        fish_fish0001.setOrigin(0, 0)
-
-        // crab
-        const crab = this.add.sprite(373, 211, 'cave', 'crab/crab0001')
-        crab.setOrigin(0, 0)
-
         // bg
-        const bg = this.add.image(0, -14, 'cave', 'bg')
-        bg.setOrigin(0, 0)
+        this.add.image(760, 480, 'cave', 'bg')
 
-        // ceiling
-        const ceiling = this.add.image(1360, 743, 'cave', 'ceiling')
-        ceiling.setOrigin(0.8945998698763825, 0.9345911949685535)
+        // chair
+        const chair = this.add.image(386.66524261141893, 430.3902110876788, 'cave', 'chair')
+        chair.setOrigin(0.25438503754995867, 0.44832312820824016)
 
-        // fg_1
-        const fg_1 = this.add.image(-15, 880, 'cave', 'fg_1')
-        fg_1.setOrigin(0, 1)
-
-        // fg_2
-        const fg_2 = this.add.image(1381, 830, 'cave', 'fg_2')
-        fg_2.setOrigin(0.06493506493506493, 0.46387832699619774)
-
-        // fg_3
-        const fg_3 = this.add.image(0, 960, 'cave', 'fg_3')
-        fg_3.setOrigin(0, 1)
-
-        // chair_back
-        const chair_back = this.add.image(357, 399, 'cave', 'chair_back')
-        chair_back.setOrigin(0, 0)
-
-        // chair_front
-        const chair_front = this.add.image(391, 490, 'cave', 'chair_front')
-        chair_front.setOrigin(0.5909090909090909, 0.7115384615384616)
+        // chairarm
+        const chairarm = this.add.image(381.62019298236874, 495.13519228070527, 'cave', 'chairarm')
+        chairarm.setOrigin(0.2510659164357689, 0.5157658252924013)
 
         // door
-        const door = this.add.image(104, 291, 'cave', 'door')
-        door.setOrigin(0, 0)
+        const door = this.add.image(160.21337711275305, 587.2903157849864, 'cave', 'door')
+        door.setOrigin(0.4525410986905808, 0.8563303924421574)
 
-        // ring
-        const ring = this.add.image(376, 288, 'cave', 'ring')
-        ring.setOrigin(0, 0)
+        // icewalls
+        const icewalls = this.add.image(1442.9234312463204, 738.1783703492187, 'cave', 'icewalls')
+        icewalls.setOrigin(0.9492917310831055, 0.7689358024471028)
 
-        // board_1
-        const board_1 = this.add.image(669, 455, 'cave', 'board_1')
-        board_1.setOrigin(0, 0)
+        // icewall_bottomright
+        const icewall_bottomright = this.add.image(1462.9114341120662, 888.0883918423134, 'cave', 'icewall-bottomright')
+        icewall_bottomright.setOrigin(0.9624417329684646, 0.9250920748357431)
 
-        // board_1_1
-        const board_1_1 = this.add.image(930, 440, 'cave', 'board_1')
-        board_1_1.angle = 10
-        board_1_1.setOrigin(0, 0)
+        // leftwall
+        const leftwall = this.add.image(145.36891187831168, 784.8170437026258, 'cave', 'leftwall')
+        leftwall.setOrigin(0.09563744202520505, 0.817517753856902)
 
-        // board_2
-        const board_2 = this.add.image(693, 457, 'cave', 'board_2')
-        board_2.setOrigin(0, 0)
+        // pool
+        this.add.image(760, 480, 'cave', 'pool')
 
-        // ladder_back
-        const ladder_back = this.add.image(349, 756, 'cave', 'ladder_back')
-        ladder_back.setOrigin(0.5068493150684932, 0.5)
+        // poolfront
+        const poolfront = this.add.image(735.0149964178175, 863.1033882601309, 'cave', 'poolfront')
+        poolfront.setOrigin(0.483562497643301, 0.8990660294376364)
 
-        // ladder_front
-        const ladder_front = this.add.image(317, 778, 'cave', 'ladder_front')
+        // poolladder
+        const poolladder = this.add.image(335.92969121528165, 721.9836225268732, 'cave', 'poolladder')
+        poolladder.setOrigin(0.2210063757995274, 0.7520662734654929)
 
-        // water_water_1
-        const water_water_1 = this.add.image(813, 639, 'cave', 'water/water_1')
-        water_water_1.setOrigin(0.5, 2.8333333333333335)
+        // poolladder_front
+        const poolladder_front = this.add.image(339.92281320527127, 793.0613073721329, 'cave', 'poolladder-front')
+        poolladder_front.setOrigin(0.22363343440781808, 0.8261055419091525)
 
-        // water_water_2
-        const water_water_2 = this.add.image(811, 656, 'cave', 'water/water_2')
-        water_water_2.setOrigin(0.5, 1.8571428571428572)
+        // pumpkin
+        const pumpkin = this.add.image(353.87234046774245, 550.6308973099578, 'cave', 'pumpkin')
+        pumpkin.setOrigin(0.2328107503077253, 0.5735738513645394)
 
-        // water_water_3
-        const water_water_3 = this.add.image(809, 677, 'cave', 'water/water_3')
-        water_water_3.setOrigin(0.5, 1.8571428571428572)
-
-        // water_water_4
-        const water_water_4 = this.add.image(807, 698, 'cave', 'water/water_4')
-        water_water_4.setOrigin(0.5006675567423231, 1.8571428571428572)
-
-        // water_water_5
-        const water_water_5 = this.add.image(805, 719, 'cave', 'water/water_5')
-        water_water_5.setOrigin(0.5006385696040868, 1.8571428571428572)
-
-        // water_water_6
-        const water_water_6 = this.add.image(803, 740, 'cave', 'water/water_6')
-        water_water_6.setOrigin(0.5, 1.8571428571428572)
-
-        // water_water_7
-        const water_water_7 = this.add.image(801, 761, 'cave', 'water/water_7')
-        water_water_7.setOrigin(0.5, 1.8571428571428572)
-
-        // water_water_8
-        const water_water_8 = this.add.image(799, 782, 'cave', 'water/water_8')
-        water_water_8.setOrigin(0.5, 1.8571428571428572)
-
-        // water_water_9
-        const water_water_9 = this.add.image(798, 803, 'cave', 'water/water_9')
-        water_water_9.setOrigin(0.5, 1.8571428571428572)
-
-        // water_water_10
-        const water_water_10 = this.add.image(797, 824, 'cave', 'water/water_10')
-        water_water_10.setOrigin(0.5005313496280552, 1.8571428571428572)
-
-        // water_water_11
-        const water_water_11 = this.add.image(796, 845, 'cave', 'water/water_11')
-        water_water_11.setOrigin(0.5, 1.8571428571428572)
-
-        // line
-        const line = this.add.image(807, 724, 'cave', 'line')
-        line.setOrigin(0.5006337135614702, 2.0555555555555554)
+        // windows
+        this.add.image(816, 349, 'cave', 'windows')
 
         // zone
         const zone = this.add.rectangle(1319, 295, 115, 400)
@@ -159,40 +92,41 @@ export default class Cave extends RoomScene {
         zone.isFilled = true
         zone.fillColor = 65280
 
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(807, 719, 800, 260)
+
+        // ellipse
+        const ellipse = this.add.ellipse(570, 697, 300, 200)
+
+        // ellipse_2
+        const ellipse_2 = this.add.ellipse(1041, 689, 300, 200)
+
+        // ellipse_3
+        const ellipse_3 = this.add.ellipse(1139, 761, 300, 200)
+
+        // ellipse_4
+        const ellipse_4 = this.add.ellipse(495, 762, 300, 200)
+
+        // animdummy
+        const animdummy = this.add.sprite(816, 349, 'cave', 'fish1/1698576527527')
+
         // lists
-        const sort = [line, water_water_11, water_water_10, water_water_9, water_water_8, water_water_7, water_water_6, water_water_5, water_water_4, water_water_3, water_water_2, water_water_1, ladder_front, ladder_back, chair_front, fg_2, ceiling, fg_3, fg_1]
-
-        // bubbles_bubbles0001 (components)
-        const bubbles_bubbles0001Animation = new Animation(bubbles_bubbles0001)
-        bubbles_bubbles0001Animation.key = 'bubbles/bubbles'
-        bubbles_bubbles0001Animation.end = 56
-        bubbles_bubbles0001Animation.repeatDelay = 3500
-
-        // fish_fish0001 (components)
-        const fish_fish0001Animation = new Animation(fish_fish0001)
-        fish_fish0001Animation.key = 'fish/fish'
-        fish_fish0001Animation.end = 140
-        fish_fish0001Animation.repeatDelay = 2000
-
-        // crab (components)
-        const crabAnimation = new Animation(crab)
-        crabAnimation.key = 'crab/crab'
-        crabAnimation.end = 234
-        crabAnimation.repeatDelay = 4000
+        const sort = [pumpkin, poolladder_front, poolladder, poolfront, leftwall, icewall_bottomright, icewalls, chairarm, chair]
+        const waterZones = [ellipse_1, ellipse_4, ellipse_3, ellipse_2, ellipse]
 
         // door (components)
+        new MoveTo(door)
         const doorButton = new Button(door)
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('cave-dooropen')
-        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('cave-doorclosed')
-        const doorMoveTo = new MoveTo(door)
-        doorMoveTo.x = 190
-        doorMoveTo.y = 600
+        doorButton.hoverOutCallback = () => this.shell.musicController.addSfx('cave-doorclose')
 
         // zone (components)
         const zoneZone = new Zone(zone)
         zoneZone.callback = () => this.onZoneClick()
 
+        this.animdummy = animdummy
         this.sort = sort
+        this.waterZones = waterZones
 
         this.events.emit('scene-awake')
     }
@@ -201,15 +135,43 @@ export default class Cave extends RoomScene {
 
     create() {
         super.create()
-        this.shell.musicController.addSfx('cave-crab')
-        this.crabTimeout = setInterval(function () {
-            this.shell.musicController.addSfx('cave-crab')
-        }, 13750)
+        setTimeout(
+            () => {
+                this.randomiseAnimations()
+            },
+            Phaser.Math.Between(3000, 4500)
+        )
     }
 
-    stop() {
-        clearInterval(this.crabTimeout)
-        super.stop()
+    randomiseAnimations() {
+        if (this.animdummy.anims.isPlaying) return
+        let choice = Phaser.Math.Between(0, 3)
+        let anim
+        switch (choice) {
+            case 0:
+                anim = 'cave-fish1'
+                break
+            case 1:
+                anim = 'cave-fish2'
+                break
+            case 2:
+                anim = 'cave-crab1'
+                break
+            case 3:
+                anim = 'cave-crab2'
+                break
+        }
+        this.animdummy.play(anim)
+        this.animdummy.once('animationcomplete', () => {
+            this.animdummy.anims.stop()
+            this.animdummy.setFrame(`${anim}/1698576473150`)
+        })
+        setTimeout(
+            () => {
+                this.randomiseAnimations()
+            },
+            Phaser.Math.Between(3000, 6000)
+        )
     }
 
     onZoneClick() {

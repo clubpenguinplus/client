@@ -93,6 +93,8 @@
                 "MoveTo",
                 "SimpleButton"
             ],
+            "MoveTo.x": 1235,
+            "MoveTo.y": 545,
             "SimpleButton.hoverCallback": "() => this.onHoleOver()",
             "SimpleButton.hoverOutCallback": "() => this.onHoleOut()",
             "texture": {
