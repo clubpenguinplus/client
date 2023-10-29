@@ -28,7 +28,7 @@ export default class Skate extends RoomScene {
             railskate: () => {},
             sample: () => {}
         }
-        this.music = 754
+        this.music = 251
         /* END-USER-CTR-CODE */
     }
 

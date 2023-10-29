@@ -24,7 +24,7 @@ export default class Cove extends RoomScene {
             waves: () => this.triggerGame('catchinwaves', 912, 'ruffle')
         }
 
-        this.music = 579
+        this.music = 252
 
         /* END-USER-CTR-CODE */
     }

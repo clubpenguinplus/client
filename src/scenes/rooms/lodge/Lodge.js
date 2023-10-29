@@ -75,7 +75,7 @@ export default class Lodge extends RoomScene {
             wild: () => this.triggerRoom(436, 760, 730),
             fishing: () => this.triggerGame('icefishing', 904, 'ruffle')
         }
-        this.music = 589
+        this.music = 252
         this.waddles = {}
         this.loadSfx = ['lodge-DoorLOpen', 'lodge-DoorLClose', 'lodge-DoorROpen', 'lodge-DoorRClose', 'lodge-LightOn', 'lodge-LightOff', 'lodge-DoorMOpen', 'lodge-DoorMClose']
 

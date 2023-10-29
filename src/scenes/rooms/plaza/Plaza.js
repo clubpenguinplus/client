@@ -38,7 +38,7 @@ export default class Plaza extends RoomScene {
             park: () => this.interface.prompt.showError(this.shell.crumbs.getError(54))
         }
 
-        this.music = 677
+        this.music = 19
 
         this.loadSfx = ['plaza-Cannon', 'plaza-HoleOpen', 'plaza-HoleClose', 'plaza-StageOpen', 'plaza-StageClose', 'plaza-PizzaOpen', 'plaza-PizzaClose', 'plaza-HotelOpen', 'plaza-HotelClose', 'plaza-PetOpen', 'plaza-PetClose']
 

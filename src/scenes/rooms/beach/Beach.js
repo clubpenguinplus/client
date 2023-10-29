@@ -23,7 +23,7 @@ export default class Beach extends RoomScene {
             // migrator: () => this.triggerRoom(420, 900, 600)
         }
 
-        this.music = 582
+        this.music = 251
 
         this.loadSfx = ['beach-LightDoorOpen', 'beach-LightDoorClose']
         /* END-USER-CTR-CODE */

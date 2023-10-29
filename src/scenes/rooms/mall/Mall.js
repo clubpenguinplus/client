@@ -17,7 +17,7 @@ export default class Mall extends RoomScene {
             downescalator: () => this.escalateDown()
         }
 
-        this.music = 749
+        this.music = 780
 
         this.loadSfx = ['mall-dooropen', 'mall-doorclose', 'mall-chestopen', 'mall-chestclose']
 

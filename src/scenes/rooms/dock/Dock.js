@@ -32,7 +32,7 @@ export default class Dock extends RoomScene {
             hydro: () => this.triggerGame('hydrohopper', 924, 'ruffle')
         }
 
-        this.music = 585
+        this.music = 251
 
         this.loadSfx = ['dock-tubes']
 

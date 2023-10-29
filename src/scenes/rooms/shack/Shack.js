@@ -30,7 +30,7 @@ export default class Shack extends RoomScene {
             volleytwo: null
         }
 
-        this.music = 580
+        this.music = 19
 
         this.loadSfx = ['shack-SchoolDoorOpen', 'shack-SchoolDoorClose', 'shack-MineLightOn', 'shack-MineLightOff']
         /* END-USER-CTR-CODE */

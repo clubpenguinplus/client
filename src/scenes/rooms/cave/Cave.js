@@ -19,7 +19,7 @@ export default class Cave extends RoomScene {
             mine: () => this.triggerRoom(808, 360, 565)
         }
 
-        this.music = 670
+        this.music = 252
 
         this.loadSfx = ['cave-dooropen', 'cave-doorclose', 'cave-crab']
 

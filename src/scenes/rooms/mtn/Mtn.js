@@ -14,7 +14,7 @@ export default class Mtn extends RoomScene {
             unknown: () => this.triggerRoom(200, 760, 480)
         }
 
-        this.music = 590
+        this.music = 340
         /* END-USER-CTR-CODE */
     }
 

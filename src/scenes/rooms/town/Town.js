@@ -18,7 +18,7 @@ export default class Town extends RoomScene {
             clothesShop: () => this.triggerRoom(130, 1036, 520)
         }
 
-        this.music = 581
+        this.music = 512
 
         this.loadSfx = ['town-DoorDiscoOpen', 'town-DoorDiscoClose', 'town-DoorShopOpen', 'town-DoorShopClose', 'town-DoorCoffeeOpen', 'town-DoorCoffeeClose']
 

@@ -22,7 +22,7 @@ export default class Beacon extends RoomScene {
             jetpack: () => this.triggerGame('jetpackadventure', 906, 'ruffle')
         }
 
-        this.music = 583
+        this.music = 340
 
         this.loadSfx = ['beacon-jetpackopen', 'beacon-jetpackclose']
 

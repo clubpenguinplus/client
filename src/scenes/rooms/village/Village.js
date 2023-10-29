@@ -18,7 +18,7 @@ export default class Village extends RoomScene {
             pufflewild: () => this.triggerRoom(436, 760, 730)
         }
 
-        this.music = 591
+        this.music = 251
 
         this.loadSfx = ['village-LodgeDoorOpen', 'village-LodgeDoorClose', 'village-EPFDoorOpen', 'village-EPFDoorClose']
         /* END-USER-CTR-CODE */
