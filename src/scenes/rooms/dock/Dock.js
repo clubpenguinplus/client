@@ -8,17 +8,9 @@ export default class Dock extends RoomScene {
     constructor() {
         super('Dock')
 
-        /** @type {Phaser.GameObjects.Image} */
-        this.boat
         /** @type {Phaser.GameObjects.Sprite} */
-        this.ring
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.smallcatalog
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.rectangle_1
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.rectangle
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
+        this.animation
+        /** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
         this.sort
         /** @type {Array<any>} */
         this.waterZones
@@ -47,129 +39,136 @@ export default class Dock extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'dock', 'bg')
-        bg.setOrigin(0, 0)
+        this.add.image(760, 480, 'dock', 'bg')
 
-        // bench2
-        const bench2 = this.add.image(180, 315, 'dock', 'bench2')
+        // tombseat
+        const tombseat = this.add.image(137.09763136004005, 289.54423980432875, 'dock', 'tombseat')
+        tombseat.setOrigin(0.09019581010528951, 0.3016085831295091)
 
-        // bench1
-        const bench1 = this.add.image(119.98440274657416, 371.2733011067446, 'dock', 'bench1')
-        bench1.setOrigin(0.5233459473113757, 0.6715589112930161)
+        // interior
+        const interior = this.add.image(1389.2140497301386, 617.1233513753853, 'dock', 'interior')
+        interior.setOrigin(0.9139566791452437, 0.6428368112246403)
 
-        // table2
-        const table2 = this.add.image(828.00002760472, 311.34824674331423, 'dock', 'table2')
-        table2.setOrigin(0.4097222222222222, 0.1971391980227298)
+        // anotherthing
+        const anotherthing = this.add.image(759.4562798345298, 752.184898110161, 'dock', 'anotherthing')
+        anotherthing.setOrigin(0.4996422930613958, 0.7835259091319838)
 
-        // tabale
-        const tabale = this.add.image(966, 336, 'dock', 'tabale')
-        tabale.setOrigin(0.5883534136546185, 0.3974358974358974)
+        // body
+        const body = this.add.image(1045.024377691143, 316.30356686657336, 'dock', 'body')
+        body.setOrigin(0.6875160379546993, 0.32948288215268057)
 
-        // tree_fg
-        this.add.image(365, 486, 'dock', 'tree_fg')
+        // body2
+        const body2 = this.add.image(1141.3163971813938, 312.4518860869633, 'dock', 'body2')
+        body2.setOrigin(0.7508660507772328, 0.32547071467392014)
 
-        // boat
-        const boat = this.add.image(173, 641, 'dock', 'boat')
+        // cloud
+        const cloud = this.add.image(854.366179100446, 553.1819348125907, 'dock', 'cloud')
+        cloud.setOrigin(0.5620830125660828, 0.5762311820964486)
 
-        // fg2
-        const fg2 = this.add.image(114.83660557045329, 475.7219760867117, 'dock', 'fg2')
-        fg2.setOrigin(0.3014677290709707, 0.2295572351198286)
+        // cloud2
+        const cloud2 = this.add.image(501.9373877661274, 618.6605080659614, 'dock', 'cloud2')
+        cloud2.setOrigin(0.3302219656356101, 0.6444380292353764)
 
-        // pillar2
-        const pillar2 = this.add.image(537, 632, 'dock', 'pillar2')
+        // cloud3
+        const cloud3 = this.add.image(835.1077752023957, 832.4287913343185, 'dock', 'cloud3')
+        cloud3.setOrigin(0.5494130100015762, 0.8671133243065817)
 
-        // pillar1
-        const pillar1 = this.add.image(290, 828, 'dock', 'pillar1')
+        // fg
+        const fg = this.add.image(196.5301144653589, 863.8484809755633, 'dock', 'fg')
+        fg.setOrigin(0.12929612793773612, 0.8998421676828785)
 
-        // ring
-        const ring = this.add.sprite(524.5138040019274, 716.6663020350195, 'dock', 'ring_0001')
-        ring.setOrigin(0.7958926666696138, 0.9202893887915851)
+        // gariwald
+        const gariwald = this.add.image(951.9242404877815, 300.37859544092225, 'dock', 'gariwald')
+        gariwald.setOrigin(0.62626594768933, 0.3128943702509607)
 
-        // torch1
-        this.add.image(474, 497, 'dock', 'torch1')
+        // house
+        const house = this.add.image(1359.3753068642714, 743.5556143965102, 'dock', 'house')
+        house.setOrigin(0.8943258840634255, 0.774537151989924)
 
-        // forest
-        const forest = this.add.image(1645.8761446555077, 637.5082886271437, 'dock', 'forest')
-        forest.setOrigin(0.9865161701460728, 0.950398119952734)
+        // idkwhatthisis
+        const idkwhatthisis = this.add.image(469.42059864141436, 654.3476408151514, 'dock', 'idkwhatthisis')
+        idkwhatthisis.setOrigin(0.30882934121145683, 0.681612125849116)
 
-        // snow_fg
-        const snow_fg = this.add.image(1251.2844576597856, 645.4935482871178, 'dock', 'snow_fg')
-        snow_fg.setOrigin(0.5421769883029249, 0.4248847922605049)
+        // grave2
+        const grave2 = this.add.image(753.3581851118038, 596.2317605434342, 'dock', 'grave2')
+        grave2.setOrigin(0.49563038494197614, 0.6210747505660773)
+
+        // isitawrapper
+        const isitawrapper = this.add.image(1015.7098731955552, 782.202577412929, 'dock', 'isitawrapper')
+        isitawrapper.setOrigin(0.668230179733918, 0.8147943514718011)
+
+        // pile
+        const pile = this.add.image(617.2009799037808, 677.5939929238382, 'dock', 'pile')
+        pile.setOrigin(0.4060532762524873, 0.7058270759623314)
+
+        // railing
+        const railing = this.add.image(333.26339343339134, 428.5259346164791, 'dock', 'railing')
+        railing.setOrigin(0.219252232521968, 0.44638118189216575)
+
+        // shovel
+        const shovel = this.add.image(975.8589838663779, 737.3703269176044, 'dock', 'shovel')
+        shovel.setOrigin(0.6420124893857749, 0.7680940905391712)
+
+        // snowrail
+        const snowrail = this.add.image(104.12077979062099, 458.4141016133622, 'dock', 'snowrail')
+        snowrail.setOrigin(0.06850051302014538, 0.47751468918058565)
+
+        // thingy
+        const thingy = this.add.image(105.78123351267004, 330.55916501558454, 'dock', 'thingy')
+        thingy.setOrigin(0.06959291678465135, 0.34433246355790054)
+
+        // wood
+        const wood = this.add.image(1390.4505615234375, 718.5516364175835, 'dock', 'wood')
+        wood.setOrigin(0.9147700885431397, 0.748491326270781)
+
+        // grave1
+        const grave1 = this.add.image(866.2690382111399, 554.7204174922077, 'dock', 'grave1')
+        grave1.setOrigin(0.5699138409283815, 0.5778337682210497)
+
+        // grave3
+        const grave3 = this.add.image(461.118330031169, 536.4554265496681, 'dock', 'grave3')
+        grave3.setOrigin(0.303367322388927, 0.5588077359892376)
+
+        // grave4
+        const grave4 = this.add.image(361.4911067082254, 601.2131217095814, 'dock', 'grave4')
+        grave4.setOrigin(0.23782309651856934, 0.6262636684474806)
+
+        // grave5
+        const grave5 = this.add.image(852.9854084347475, 757.2957715821932, 'dock', 'grave5')
+        grave5.setOrigin(0.5611746108123339, 0.7888497620647846)
+
+        // grave6
+        const grave6 = this.add.image(579.0105442966524, 498.2649909425397, 'dock', 'grave6')
+        grave6.setOrigin(0.3809279896688502, 0.5190260322318122)
+
+        // grave7
+        const grave7 = this.add.image(544.1410161336221, 670.952178035642, 'dock', 'grave7')
+        grave7.setOrigin(0.35798751061422507, 0.698908518787127)
+
+        // catalog
+        const catalog = this.add.image(1448, 980.0269005474264, 'dock', 'catalog')
+        catalog.setOrigin(0.5, 1.2780268569206148)
 
         // container_1
-        const container_1 = this.add.container(775.3025600933964, 699.3791158270643)
+        const container_1 = this.add.container(422.8442108823466, 348.3755027807417)
 
-        // catalogfg
-        const catalogfg = this.add.image(6.8331972372499195, -0.045120605207898734, 'dock', 'catalogfg')
-        catalogfg.setOrigin(0.49072525928861027, 0.7352056908444423)
-        container_1.add(catalogfg)
+        // fountain
+        const fountain = this.add.image(337.1557891176534, 131.62449721925827, 'dock', 'fountain')
+        container_1.add(fountain)
 
-        // smallcatalog
-        const smallcatalog = this.add.sprite(-25.30257975094662, -44.37913859754099, 'dock', 'catalog0001')
-        container_1.add(smallcatalog)
-
-        // rectangle_1
-        const rectangle_1 = this.add.rectangle(749, 639, 128, 128)
-        rectangle_1.scaleX = 0.6479719067963792
-        rectangle_1.scaleY = 0.632333043277452
-        rectangle_1.fillColor = 1741055
-        rectangle_1.fillAlpha = 100
-
-        // rectangle
-        const rectangle = this.add.rectangle(526, 699, 128, 128)
-        rectangle.scaleX = 1.4952694746750035
-        rectangle.scaleY = 1.3247912439284337
-        rectangle.fillColor = 1741055
-        rectangle.fillAlpha = 100
+        // animation
+        const animation = this.add.sprite(27.1557891176534, 29.624497219258274, 'dock', 'animation0001')
+        container_1.add(animation)
 
         // lists
-        const sort = [snow_fg, ring, pillar1, fg2, pillar2, table2, forest, bench2, bench1, container_1, tabale]
+        const sort = [container_1, animation, fountain, catalog, grave7, grave6, grave5, grave4, grave3, grave1, wood, thingy, snowrail, shovel, railing, pile, isitawrapper, grave2, idkwhatthisis, house, gariwald, fg, cloud3, cloud2, cloud, body2, body, anotherthing, interior, tombseat]
         const waterZones = []
 
-        // boat (components)
-        new Button(boat)
-        const boatShowHint = new ShowHint(boat)
-        boatShowHint.text = 'hydrohopper'
-        new MoveTo(boat)
+        // catalog (components)
+        const catalogButton = new Button(catalog)
+        catalogButton.callback = () => this.interface.loadExternal('Hydro')
 
-        // ring (components)
-        const ringAnimation = new Animation(ring)
-        ringAnimation.key = 'ring_'
-        ringAnimation.end = 34
-        ringAnimation.repeat = 0
-        ringAnimation.autoPlay = false
-
-        // smallcatalog (components)
-        const smallcatalogAnimation = new Animation(smallcatalog)
-        smallcatalogAnimation.key = 'catalog'
-        smallcatalogAnimation.end = 4
-        smallcatalogAnimation.repeat = 0
-        smallcatalogAnimation.autoPlay = false
-
-        // rectangle_1 (components)
-        const rectangle_1SimpleButton = new SimpleButton(rectangle_1)
-        rectangle_1SimpleButton.hoverCallback = () => {
-            this.smallcatalog.__Animation.play()
-        }
-        rectangle_1SimpleButton.hoverOutCallback = () => {
-            this.smallcatalog.__Animation.stop()
-            this.smallcatalog.setFrame('catalog0001')
-        }
-        rectangle_1SimpleButton.callback = () => this.interface.loadExternal('Hydro')
-
-        // rectangle (components)
-        const rectangleSimpleButton = new SimpleButton(rectangle)
-        rectangleSimpleButton.hoverCallback = () => {
-            this.ring.__Animation.play()
-            this.shell.musicController.addSfx('dock-tubes')
-        }
-        rectangleSimpleButton.hoverOutCallback = () => {}
-
-        this.boat = boat
-        this.ring = ring
-        this.smallcatalog = smallcatalog
-        this.rectangle_1 = rectangle_1
-        this.rectangle = rectangle
+        this.animation = animation
         this.sort = sort
         this.waterZones = waterZones
 
@@ -181,13 +180,7 @@ export default class Dock extends RoomScene {
     create() {
         super.create()
 
-        this.up = false
-
-        this.time.addEvent({
-            delay: 1500,
-            callback: () => this.floatBoat(),
-            loop: true
-        })
+        this.animation.play('dock-animation')
     }
 
     floatBoat() {

@@ -31,7 +31,7 @@ export default class Pet extends RoomScene {
     /** @returns {void} */
     _create() {
         // outsidebgs
-        this.add.image(787, 200, 'pet', 'outsidebgs')
+        this.add.image(929, 296, 'pet', 'outsidebg')
 
         // scapebg
         this.add.image(972, 186, 'pet', 'scapebg')

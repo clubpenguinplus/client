@@ -29,19 +29,6 @@
         },
         {
             "type": "Image",
-            "id": "4208daaf-aea2-45d3-9406-371b27af5251",
-            "label": "light",
-            "texture": {
-                "key": "lightroof",
-                "frame": "light"
-            },
-            "x": 688.6894422954724,
-            "y": 555.9710578661634,
-            "originX": 0.6309839947998837,
-            "originY": 0.8038810334259991
-        },
-        {
-            "type": "Image",
             "id": "dc4ec1d2-430c-4216-9733-c5e02826b9d3",
             "label": "launch",
             "scope": "CLASS",
@@ -50,7 +37,11 @@
                 "frame": "launch"
             },
             "x": 1321,
-            "y": 570
+            "y": 570,
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Sprite",
@@ -63,32 +54,11 @@
             },
             "x": 1321,
             "y": 570,
-            "visible": false
-        },
-        {
-            "type": "Image",
-            "id": "09eaf95e-f381-4922-922f-a45cf7948855",
-            "label": "railing",
-            "texture": {
-                "key": "lightroof",
-                "frame": "railing"
-            },
-            "x": 680,
-            "y": 846,
-            "originY": 0.7486553607307954
-        },
-        {
-            "type": "Image",
-            "id": "9522205a-6203-411e-b7a4-316ebf83d25d",
-            "label": "railing_2",
-            "texture": {
-                "key": "lightroof",
-                "frame": "railing_2"
-            },
-            "x": 230.2762147789686,
-            "y": 563.4632225414601,
-            "originX": 0.8421959359650598,
-            "originY": 0.3415237313641213
+            "visible": false,
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
         },
         {
             "type": "Rectangle",
@@ -135,6 +105,66 @@
             "label": "snow",
             "x": 5,
             "y": 1722
+        },
+        {
+            "type": "Image",
+            "id": "7e0b97df-89ed-403e-859d-03b6e557ded5",
+            "label": "stairs",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "texture": {
+                "key": "lightroof",
+                "frame": "stairs"
+            },
+            "x": 138.86516189156674,
+            "y": 675.7588356232907,
+            "originX": 0.45806784480189044,
+            "originY": 0.8093247083206717,
+            "tintTopLeft": "#b0aebd",
+            "tintTopRight": "#b0aebd",
+            "tintBottomLeft": "#b0aebd",
+            "tintBottomRight": "#b0aebd"
+        },
+        {
+            "type": "Image",
+            "id": "3d2ba743-090e-437a-88aa-8e8008b7f03d",
+            "label": "railing",
+            "texture": {
+                "key": "lightroof",
+                "frame": "railing"
+            },
+            "x": 158.9663836968491,
+            "y": 564.611528508696,
+            "originX": 0.10458314716897968,
+            "originY": 0.588137008863225
+        },
+        {
+            "type": "Image",
+            "id": "812e4cdb-0145-4ad0-85e7-2d1c32103f99",
+            "label": "light",
+            "texture": {
+                "key": "lightroof",
+                "frame": "light"
+            },
+            "x": 723.5295135738379,
+            "y": 536.8939588248128,
+            "originX": 0.4760062589301565,
+            "originY": 0.5592645404425133
+        },
+        {
+            "type": "Image",
+            "id": "3f123638-01b3-45f3-bc7d-c72ca0f7a839",
+            "label": "beegrailing",
+            "texture": {
+                "key": "lightroof",
+                "frame": "beegrailing"
+            },
+            "x": 46.63728477610907,
+            "y": 879.7165481341377,
+            "originX": 0.03068242467386182,
+            "originY": 0.9163713866986836
         }
     ],
     "plainObjects": [],
@@ -149,10 +179,10 @@
             "id": "bbac4209-750d-4002-a662-47265b2636fc",
             "label": "sort",
             "objectIds": [
-                "9522205a-6203-411e-b7a4-316ebf83d25d",
-                "09eaf95e-f381-4922-922f-a45cf7948855",
-                "4208daaf-aea2-45d3-9406-371b27af5251",
-                "7e83ea08-f4b8-451f-9bdd-8281717a1ef3"
+                "7e83ea08-f4b8-451f-9bdd-8281717a1ef3",
+                "3d2ba743-090e-437a-88aa-8e8008b7f03d",
+                "3f123638-01b3-45f3-bc7d-c72ca0f7a839",
+                "812e4cdb-0145-4ad0-85e7-2d1c32103f99"
             ]
         }
     ]

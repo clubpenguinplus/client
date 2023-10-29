@@ -20,13 +20,10 @@
             "type": "Image",
             "id": "35457aaa-97a7-4ce5-8a8c-50288c3378b3",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "bg"
             },
-            "x": -105,
-            "y": -15,
             "originX": 0,
             "originY": 0
         },
@@ -34,7 +31,6 @@
             "type": "Image",
             "id": "cdcfe027-9fba-456d-9307-2e7aafea8a0d",
             "label": "pizzabox",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "pizzabox"
@@ -46,19 +42,21 @@
             "type": "Image",
             "id": "724f93d9-dafa-444a-86ed-ea5a38c884dd",
             "label": "leftbluechair",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftbluechair"
             },
             "x": 71,
-            "y": 578
+            "y": 578,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "513201ba-a197-4f3d-90b5-5d7312d30b03",
             "label": "bluechair",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "bluechair"
@@ -72,7 +70,6 @@
             "type": "Image",
             "id": "96ee913d-c020-4e05-8c56-a8678d293027",
             "label": "rug",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rug"
@@ -80,13 +77,16 @@
             "x": 195.41565813862397,
             "y": 735.5843418613761,
             "originX": 0.5604710352035555,
-            "originY": 0.4314344167770711
+            "originY": 0.4314344167770711,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "90566074-0da9-45fb-8991-7bbdd9031cfa",
             "label": "lamp",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "lamp"
@@ -94,25 +94,27 @@
             "x": 25.779589508140994,
             "y": 594.693842622115,
             "originX": 0.5243823641065,
-            "originY": 0.7229617252519517
+            "originY": 0.7229617252519517,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "3b2d2389-2eb3-4690-952c-ae856d428fcc",
             "label": "pirate_fixed",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "pirate_fixed"
             },
             "x": 1410,
-            "y": 284
+            "y": 289
         },
         {
             "type": "Image",
             "id": "def8d478-a051-4c5d-9c67-da33a2a7285d",
             "label": "paintings",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "paintings"
@@ -124,7 +126,6 @@
             "type": "Image",
             "id": "70455f9c-2420-4398-9558-e1f822b56af2",
             "label": "pufflebag",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "pufflebag"
@@ -136,7 +137,6 @@
             "type": "Image",
             "id": "2d8af1d1-0412-4d24-a937-71aabc54955a",
             "label": "yellowpuffbag",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "yellowpuffbag"
@@ -160,13 +160,16 @@
             "x": 1469,
             "y": 570,
             "originX": 0.544,
-            "originY": 0.503185
+            "originY": 0.503185,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "6e9740e2-b3f8-41a8-bb83-6b956c47543b",
             "label": "chairback",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "chairback"
@@ -174,26 +177,32 @@
             "x": 1166.1846078201497,
             "y": 596.6769363147381,
             "originX": 0.7049975020391702,
-            "originY": 0.09186185735317463
+            "originY": 0.09186185735317463,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "978eca94-bc31-47ed-bfab-a182897197b4",
             "label": "circlestool",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "circlestool"
             },
             "x": 1052,
             "y": 715.4476985483765,
-            "originY": 0.22341352654558833
+            "originY": 0.22341352654558833,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "7294d42f-064f-4920-930d-6b011cc48921",
             "label": "plantable",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "plantable"
@@ -201,13 +210,16 @@
             "x": 1246.0092549755211,
             "y": 666.7338652541221,
             "originX": 0.4564226314804238,
-            "originY": 0.3339699491107722
+            "originY": 0.3339699491107722,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "46d3517d-8533-4356-b106-84cc8f54645a",
             "label": "squarestool",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "squarestool"
@@ -215,13 +227,16 @@
             "x": 1160.1953848044964,
             "y": 783.4015465933392,
             "originX": 0.49399540898877886,
-            "originY": 0.2209802144624126
+            "originY": 0.2209802144624126,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "b129cdc8-846f-4d18-b5c7-5193f7445d81",
             "label": "fg_left",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "fg_left"
@@ -229,13 +244,16 @@
             "x": -161,
             "y": 969,
             "originX": 0.004053513024603988,
-            "originY": 0.9838982835484917
+            "originY": 0.9838982835484917,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "305d78b7-ea92-40ed-b2cc-8473c6bf17bf",
             "label": "brownchairfront",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "brownchairfront"
@@ -247,7 +265,6 @@
             "type": "Image",
             "id": "932eea53-0702-497e-90cb-6e992ec0343c",
             "label": "brownchair",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "brownchair"
@@ -255,14 +272,17 @@
             "x": 764,
             "y": 897,
             "originX": 0.503982979899936,
-            "originY": 0.6854659688099547
+            "originY": 0.6854659688099547,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Sprite",
             "id": "e484bff0-be88-4677-8d31-c6be47a8d8c5",
             "label": "boxdimension",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension"
@@ -270,7 +290,11 @@
             "x": 966,
             "y": 971,
             "originX": 0.47834338839237844,
-            "originY": 1.011384788761301
+            "originY": 1.011384788761301,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Rectangle",
@@ -295,7 +319,6 @@
             "id": "a1345f1f-e326-4e94-8bbe-6dfe7f11ae55",
             "label": "boxdimension-anim",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension-hover-anim0001"
@@ -304,14 +327,17 @@
             "y": 991,
             "originX": 0.49999999999999933,
             "originY": 1.8995033355331223,
-            "visible": false
+            "visible": false,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Sprite",
             "id": "0389399c-148e-406f-9410-7e5738e7f63f",
             "label": "boxdimension-flaps",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension-hover-flaps"
@@ -320,13 +346,16 @@
             "y": 1014.9631945186845,
             "originX": 0.47834338839237844,
             "originY": 1.6725657121405844,
-            "visible": false
+            "visible": false,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "84040747-7635-4ac3-9a30-8c04d0cedfe3",
             "label": "fg_right",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "fg_right"
@@ -334,26 +363,32 @@
             "x": 1679,
             "y": 1150,
             "originX": 0.9977534832559671,
-            "originY": 1.0049481046883484
+            "originY": 1.0049481046883484,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "9aa0d430-ae3b-421a-bd01-7b0f9c6fd49c",
             "label": "frontpizzabox",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "frontpizzabox"
             },
             "x": 537,
             "y": 927.0003486965516,
-            "originY": 0.6917832102503532
+            "originY": 0.6917832102503532,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "fcaa31de-ba98-4429-a954-99e79e9af82c",
             "label": "leftpencil",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftpencil"
@@ -365,20 +400,22 @@
             "type": "Image",
             "id": "44c16782-8674-42db-aa70-49333dc4dcc9",
             "label": "circlestoolmirror",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "circlestoolmirror"
             },
             "x": 309,
             "y": 446.4979269430127,
-            "originY": 0.23284831428784541
+            "originY": 0.23284831428784541,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "fd0c1440-8005-447b-8832-2c204d1c335a",
             "label": "leftstairhandle",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftstairhandle"
@@ -386,13 +423,16 @@
             "x": 753.2325890753189,
             "y": 471.0308788528382,
             "originX": 0.6133198013694338,
-            "originY": 0.23500896788610423
+            "originY": 0.23500896788610423,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "c71c27bc-1f15-42dd-b06b-e10cb4c0b650",
             "label": "rightstairhandle",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rightstairhandle"
@@ -400,7 +440,11 @@
             "x": 869.883720505676,
             "y": 575.5735707900989,
             "originX": 0.46612723328631056,
-            "originY": 0.3797219652131449
+            "originY": 0.3797219652131449,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
@@ -417,7 +461,11 @@
                 "frame": "findfourtable"
             },
             "x": 248,
-            "y": 626
+            "y": 626,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
@@ -476,7 +524,6 @@
             "type": "Image",
             "id": "4eb2140a-9ba7-48c8-839d-0f4408d1d438",
             "label": "leftsoda",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftsoda"
@@ -484,13 +531,16 @@
             "x": 1127.0949891243745,
             "y": 676.4124909369787,
             "originX": 0.31616253777615067,
-            "originY": 0.40589272767112367
+            "originY": 0.40589272767112367,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "b5d2ceca-0326-4ec8-8045-48b0756ada70",
             "label": "rightpencil",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rightpencil"
@@ -502,37 +552,46 @@
             "type": "Image",
             "id": "8e3180dd-9ece-498e-9993-3ff75eac5598",
             "label": "apple",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "apple"
             },
             "x": 1234,
-            "y": 615
+            "y": 615,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "2e3edcd1-a29a-4e08-819c-64830ee98385",
             "label": "book",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "book"
             },
             "x": 1190,
-            "y": 646
+            "y": 646,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Image",
             "id": "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92",
             "label": "rightsoda",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rightsoda"
             },
             "x": 1270,
-            "y": 572
+            "y": 572,
+            "tintTopLeft": "#a3aad7",
+            "tintTopRight": "#a3aad7",
+            "tintBottomLeft": "#a3aad7",
+            "tintBottomRight": "#a3aad7"
         },
         {
             "type": "Ellipse",
@@ -757,6 +816,53 @@
             "visible": false,
             "width": 50,
             "height": 50
+        },
+        {
+            "type": "Rectangle",
+            "id": "bb6adb01-7b00-461d-9556-a912350d7a53",
+            "label": "rectangle_1",
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#08022a",
+            "fillAlpha": 0.33,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "e7e2a202-3b12-4011-b159-e1c92d49d421",
+            "label": "lamp1",
+            "texture": {
+                "key": "attic",
+                "frame": "lamp1"
+            },
+            "x": 23.085611367470364,
+            "y": 604.3610682150936,
+            "originX": 0.3864806173975602,
+            "originY": 0.780005679179903
+        },
+        {
+            "type": "Image",
+            "id": "6ec09896-128e-4404-b307-662391bcf509",
+            "label": "lamp2",
+            "texture": {
+                "key": "attic",
+                "frame": "lamp2"
+            },
+            "x": 256,
+            "y": 330
+        },
+        {
+            "type": "Image",
+            "id": "dc85513f-5085-4a90-8166-d62fc08796ff",
+            "label": "window",
+            "texture": {
+                "key": "attic",
+                "frame": "window"
+            },
+            "x": 759,
+            "y": 175
         }
     ],
     "plainObjects": [],
@@ -764,7 +870,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
@@ -793,7 +899,8 @@
                 "0389399c-148e-406f-9410-7e5738e7f63f",
                 "46d3517d-8533-4356-b106-84cc8f54645a",
                 "978eca94-bc31-47ed-bfab-a182897197b4",
-                "6e9740e2-b3f8-41a8-bb83-6b956c47543b"
+                "6e9740e2-b3f8-41a8-bb83-6b956c47543b",
+                "e7e2a202-3b12-4011-b159-e1c92d49d421"
             ]
         },
         {
