@@ -29,6 +29,24 @@
         },
         {
             "type": "Image",
+            "id": "681d28b3-aab5-44a1-80d1-aeb2a0117598",
+            "label": "purplezombie",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('purplezombie');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "purplezombie"
+            },
+            "x": 1258,
+            "y": 825,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "a8a4dc07-56d6-4758-9618-5dedf147145d",
             "label": "chair",
             "texture": {

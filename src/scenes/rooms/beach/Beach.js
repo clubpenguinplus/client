@@ -8,6 +8,8 @@ export default class Beach extends RoomScene {
     constructor() {
         super('Beach')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.orangebat
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort
         /** @type {Array<any>} */
@@ -36,6 +38,11 @@ export default class Beach extends RoomScene {
     _create() {
         // bg
         this.add.image(760, 480, 'beach', 'bg')
+
+        // orangebat
+        const orangebat = this.add.image(646, 399, 'candyhunt', 'orangebat')
+        orangebat.scaleX = 0.25
+        orangebat.scaleY = 0.25
 
         // anotherotherpost
         const anotherotherpost = this.add.image(955.1087855674923, 867.5362732940885, 'beach', 'anotherotherpost')
@@ -197,6 +204,10 @@ export default class Beach extends RoomScene {
         const sort = [anotherotherpost, violin, tvgrave, triplegrave, ticketbox, thingy, thatsastool, spotlightagain, spotlight, slfacingback, sign, salegrave, post, otherframe, othercrateback, othercrate, notshadedgrave, morgleg, moneygrave, modelgrave, lantern, isthattheentrancetoamorgue, howmanygravesarethere, holygrave, gravegrave, frame, fishbones, fg, fence, eyescream, crateback, crate, coffin, cart, boat_front, boat_back, anotherpost]
         const this_waterZones = []
 
+        // orangebat (components)
+        const orangebatSimpleButton = new SimpleButton(orangebat)
+        orangebatSimpleButton.callback = () => this.shell.party.findCandy('orangebat')
+
         // door (components)
         const doorButton = new Button(door)
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('beach-LightDoorOpen')
@@ -209,6 +220,7 @@ export default class Beach extends RoomScene {
         door2Button.hoverOutCallback = () => this.shell.musicController.addSfx('beach-LightDoorClose')
         new MoveTo(door2)
 
+        this.orangebat = orangebat
         this.sort = sort
         this.this_waterZones = this_waterZones
 

@@ -28,6 +28,24 @@
             "y": 480
         },
         {
+            "type": "Image",
+            "id": "32b4ed4c-35b9-4d7f-a562-19b66eaa2da2",
+            "label": "orangewolf",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('orangewolf');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "orangewolf"
+            },
+            "x": 202,
+            "y": 399,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
             "type": "Sprite",
             "id": "2a9efb36-6691-4b6d-86c2-7bc27b145d38",
             "label": "splash",

@@ -211,6 +211,11 @@ export default class Mtn extends RoomScene {
         skicatbottom.tintBottomLeft = 11579069
         skicatbottom.tintBottomRight = 11579069
 
+        // purplebat
+        const purplebat = this.add.image(646, 181, 'candyhunt', 'purplebat')
+        purplebat.scaleX = 0.25
+        purplebat.scaleY = 0.25
+
         // scarecrow
         const scarecrow = this.add.image(696.4721693301371, 375.96835077597666, 'mtn', 'scarecrow')
         scarecrow.setOrigin(0.5603376864086358, 0.7341392143460644)
@@ -228,11 +233,16 @@ export default class Mtn extends RoomScene {
         const skicatbottomButton = new Button(skicatbottom)
         skicatbottomButton.callback = () => this.interface.loadExternal('Sled')
 
+        // purplebat (components)
+        const purplebatSimpleButton = new SimpleButton(purplebat)
+        purplebatSimpleButton.callback = () => this.shell.party.findCandy('purplebat')
+
         this.skichairback = skichairback
         this.skichairfront = skichairfront
         this.skichairtopback = skichairtopback
         this.skichairtopfront = skichairtopfront
         this.ski_cat = ski_cat
+        this.purplebat = purplebat
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -248,6 +258,8 @@ export default class Mtn extends RoomScene {
     skichairtopfront
     /** @type {Phaser.GameObjects.Sprite} */
     ski_cat
+    /** @type {Phaser.GameObjects.Image} */
+    purplebat
     /** @type {Phaser.GameObjects.Image[]} */
     sort
 

@@ -1,11 +1,13 @@
 import RoomScene from '../RoomScene'
-import {LocalisedSprite, Button} from '@scenes/components/components'
+import {LocalisedSprite, Button, SimpleButton} from '@scenes/components/components'
 /* START OF COMPILED CODE */
 
 export default class Rink extends RoomScene {
     constructor() {
         super('Rink')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.bluezombie
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort
 
@@ -27,6 +29,11 @@ export default class Rink extends RoomScene {
     _create() {
         // bg
         this.add.image(760, 480, 'rink', 'bg')
+
+        // bluezombie
+        const bluezombie = this.add.image(309, 587, 'candyhunt', 'bluezombie')
+        bluezombie.scaleX = 0.25
+        bluezombie.scaleY = 0.25
 
         // arrow
         const arrow = this.add.image(1131.90617275435, 388.8230028086109, 'rink', 'arrow')
@@ -147,6 +154,11 @@ export default class Rink extends RoomScene {
         // lists
         const sort = [fg, swingfrontright, swingseatright, swingfrontleft, swingseatleft, swingback, scarytree, bush3, pole4, pole3, pole2, pole, picket5, picket4, picket3, picket2, picket, lampere, lamp2, house3, house2, house1_porch, house1_front, house1, bush4, bush2, bush, arrow2, arrow]
 
+        // bluezombie (components)
+        const bluezombieSimpleButton = new SimpleButton(bluezombie)
+        bluezombieSimpleButton.callback = () => this.shell.party.findCandy('bluezombie')
+
+        this.bluezombie = bluezombie
         this.sort = sort
 
         this.events.emit('scene-awake')

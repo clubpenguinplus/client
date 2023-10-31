@@ -27,7 +27,8 @@ const interfaces = {
     Elevator: require('@scenes/interface/closeups/Elevator').default,
     RainbowQuest: require('@scenes/interface/closeups/RainbowQuest').default,
     EPFPhone: require('@scenes/interface/game/spyphone/EPFPhone').default,
-    PuffleCreatureCare: require('@scenes/interface/closeups/PuffleCreatureCare').default
+    PuffleCreatureCare: require('@scenes/interface/closeups/PuffleCreatureCare').default,
+    CandyHunt: require('@scenes/interface/closeups/CandyHunt').default
 }
 
 export default interfaces

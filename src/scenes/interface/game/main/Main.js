@@ -151,6 +151,8 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
+        /** @type {Phaser.GameObjects.Image} */
+        this.candy_btn
         /** @type {Friend} */
         this.friend
         /** @type {PlayerCard} */
@@ -437,6 +439,9 @@ export default class Main extends BaseScene {
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
 
+        // candy_btn
+        const candy_btn = this.add.image(1294, 68, 'candyhunt', 'candy-btn')
+
         // widgetLayer
         const widgetLayer = this.add.layer()
 
@@ -544,7 +549,7 @@ export default class Main extends BaseScene {
 
         // lists
         const hideOnSleep = [playerCard, friend]
-        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, chatLog, badge_member, emote_icon, phone_button, chat_button, chat_icon, mail_btn, safetyquiz, moderatoricon]
+        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, chatLog, badge_member, emote_icon, phone_button, chat_button, chat_icon, mail_btn, safetyquiz, moderatoricon, candy_btn]
 
         // dock (components)
         new Interactive(dock)
@@ -718,6 +723,10 @@ export default class Main extends BaseScene {
         const moderatoriconButton = new Button(moderatoricon)
         moderatoriconButton.callback = () => this.onModClick()
 
+        // candy_btn (components)
+        const candy_btnButton = new Button(candy_btn)
+        candy_btnButton.callback = () => this.onCandyDown()
+
         // blocker (components)
         new Interactive(blocker)
 
@@ -781,6 +790,7 @@ export default class Main extends BaseScene {
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
+        this.candy_btn = candy_btn
         this.friend = friend
         this.playerCard = playerCard
         this.friendSmall = friendSmall
@@ -896,6 +906,7 @@ export default class Main extends BaseScene {
     onWake() {
         if (!this.moderatoricon) return
         this.showTR()
+        this.candy_btn.visible = true
     }
 
     setupWidgets() {
@@ -1129,6 +1140,10 @@ export default class Main extends BaseScene {
         this.puffle_icon.setFrame(`puffle-icon-${color}`)
         this.puffle_button.visible = true
         this.puffle_button_disabled.visible = false
+    }
+
+    onCandyDown() {
+        this.interface.loadExternal('CandyHunt')
     }
 
     /* END-USER-CODE */

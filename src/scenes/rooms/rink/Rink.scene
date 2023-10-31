@@ -29,6 +29,24 @@
         },
         {
             "type": "Image",
+            "id": "b13622c7-11e8-401b-b27e-b0b706272292",
+            "label": "bluezombie",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('bluezombie');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "bluezombie"
+            },
+            "x": 309,
+            "y": 587,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "b7c907e7-64b5-4299-bd74-c0c988f07cca",
             "label": "arrow",
             "texture": {

@@ -29,6 +29,24 @@
         },
         {
             "type": "Image",
+            "id": "b6840c62-bf58-4d20-a988-e95a7cc47391",
+            "label": "bluewolf",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('bluewolf');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "bluewolf"
+            },
+            "x": 1373,
+            "y": 328,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "ad7f973c-3920-46b4-8f3a-f8e107f851e5",
             "label": "support",
             "texture": {

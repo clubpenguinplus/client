@@ -28,6 +28,24 @@
         },
         {
             "type": "Image",
+            "id": "0ae4f79d-459a-40f3-b3eb-9c685880cd7a",
+            "label": "greenbat",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('greenbat');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "greenbat"
+            },
+            "x": 950,
+            "y": 179,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "ba80fac6-ad28-41ea-879d-0dc1a236aeab",
             "label": "clothesdoor",
             "components": [

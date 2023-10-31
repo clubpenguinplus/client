@@ -439,6 +439,24 @@
         },
         {
             "type": "Image",
+            "id": "3ae49f4a-f645-4d2f-a354-b31c0381cd0c",
+            "label": "purplebat",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('purplebat');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "purplebat"
+            },
+            "x": 646,
+            "y": 181,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "56629e58-a3e7-4e2c-951f-bc72c3798f9a",
             "label": "scarecrow",
             "texture": {

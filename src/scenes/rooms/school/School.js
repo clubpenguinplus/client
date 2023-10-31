@@ -1,12 +1,14 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import {LocalisedSprite, Seat, Button, MoveTo} from '@components/components'
+import {LocalisedSprite, Seat, Button, MoveTo, SimpleButton} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class School extends RoomScene {
     constructor() {
         super('School')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.bluewolf
         /** @type {Array<any>} */
         this.lockers
         /** @type {Phaser.GameObjects.Image[]} */
@@ -42,6 +44,11 @@ export default class School extends RoomScene {
     _create() {
         // bg
         this.add.image(760, 480, 'school', 'bg')
+
+        // bluewolf
+        const bluewolf = this.add.image(1373, 328, 'candyhunt', 'bluewolf')
+        bluewolf.scaleX = 0.25
+        bluewolf.scaleY = 0.25
 
         // support
         const support = this.add.image(1096.4095134138174, 319.2379316429545, 'school', 'support')
@@ -141,6 +148,10 @@ export default class School extends RoomScene {
         const lockers = []
         const sort = [support, fg, door_1, doorframe_1, door, doorframe, pillar, cage, arrows, skelebob, railings, stools, tables, stoolsrow2, tablesrow2, woodthing, woodthingback, supports, bookshelf, idkwhatthisis, benches, table2, table1]
 
+        // bluewolf (components)
+        const bluewolfSimpleButton = new SimpleButton(bluewolf)
+        bluewolfSimpleButton.callback = () => this.shell.party.findCandy('bluewolf')
+
         // door (components)
         const doorButton = new Button(door)
         doorButton.hoverCallback = () => this.shell.musicController.addSfx('school-dooropen')
@@ -153,6 +164,7 @@ export default class School extends RoomScene {
         door_1Button.hoverOutCallback = () => this.shell.musicController.addSfx('school-doorclose')
         new MoveTo(door_1)
 
+        this.bluewolf = bluewolf
         this.lockers = lockers
         this.sort = sort
 

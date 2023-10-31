@@ -29,6 +29,24 @@
         },
         {
             "type": "Image",
+            "id": "93204f32-c136-47f9-a2d9-5cf67d295d2b",
+            "label": "orangebat",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('orangebat');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "orangebat"
+            },
+            "x": 646,
+            "y": 399,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "ea9ee8a2-dde6-4c41-b088-e3e4a9a220ca",
             "label": "anotherotherpost",
             "texture": {

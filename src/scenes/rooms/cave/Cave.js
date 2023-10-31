@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import {Animation, Button, MoveTo, Zone} from '@components/components'
+import {Animation, Button, MoveTo, Zone, SimpleButton} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -8,6 +8,8 @@ export default class Cave extends RoomScene {
     constructor() {
         super('Cave')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.purplezombie
         /** @type {Phaser.GameObjects.Sprite} */
         this.animdummy
         /** @type {Phaser.GameObjects.Image[]} */
@@ -39,6 +41,11 @@ export default class Cave extends RoomScene {
     _create() {
         // bg
         this.add.image(760, 480, 'cave', 'bg')
+
+        // purplezombie
+        const purplezombie = this.add.image(1258, 825, 'candyhunt', 'purplezombie')
+        purplezombie.scaleX = 0.25
+        purplezombie.scaleY = 0.25
 
         // chair
         const chair = this.add.image(386.66524261141893, 430.3902110876788, 'cave', 'chair')
@@ -114,6 +121,10 @@ export default class Cave extends RoomScene {
         const sort = [pumpkin, poolladder_front, poolladder, poolfront, leftwall, icewall_bottomright, icewalls, chairarm, chair]
         const waterZones = [ellipse_1, ellipse_4, ellipse_3, ellipse_2, ellipse]
 
+        // purplezombie (components)
+        const purplezombieSimpleButton = new SimpleButton(purplezombie)
+        purplezombieSimpleButton.callback = () => this.shell.party.findCandy('purplezombie')
+
         // door (components)
         new MoveTo(door)
         const doorButton = new Button(door)
@@ -124,6 +135,7 @@ export default class Cave extends RoomScene {
         const zoneZone = new Zone(zone)
         zoneZone.callback = () => this.onZoneClick()
 
+        this.purplezombie = purplezombie
         this.animdummy = animdummy
         this.sort = sort
         this.waterZones = waterZones
@@ -144,7 +156,16 @@ export default class Cave extends RoomScene {
     }
 
     randomiseAnimations() {
-        if (this.animdummy.anims.isPlaying) return
+        if (this.shell.room !== this) return
+        if (this.animdummy.anims.isPlaying) {
+            setTimeout(
+                () => {
+                    this.randomiseAnimations()
+                },
+                Phaser.Math.Between(3000, 6000)
+            )
+            return
+        }
         let choice = Phaser.Math.Between(0, 3)
         let anim
         switch (choice) {
@@ -164,7 +185,7 @@ export default class Cave extends RoomScene {
         this.animdummy.play(anim)
         this.animdummy.once('animationcomplete', () => {
             this.animdummy.anims.stop()
-            this.animdummy.setFrame(`${anim}/1698576473150`)
+            this.animdummy.setFrame('fish1/1698576527527')
         })
         setTimeout(
             () => {

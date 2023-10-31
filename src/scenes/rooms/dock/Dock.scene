@@ -133,6 +133,24 @@
         },
         {
             "type": "Image",
+            "id": "d788dc2f-6e4d-4ca7-9b26-fad7cf2afcf0",
+            "label": "brownwolf",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.shell.party.findCandy('brownwolf');",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "brownwolf"
+            },
+            "x": 645,
+            "y": 655,
+            "scaleX": 0.25,
+            "scaleY": 0.25
+        },
+        {
+            "type": "Image",
             "id": "dc123eb6-2d8b-457a-a56a-446352ba96a1",
             "label": "fg",
             "texture": {
@@ -360,10 +378,10 @@
                 "key": "dock",
                 "frame": "grave7"
             },
-            "x": 544.1410161336221,
-            "y": 670.952178035642,
-            "originX": 0.35798751061422507,
-            "originY": 0.698908518787127
+            "x": 562.0657355923214,
+            "y": 680.7701931591972,
+            "originX": 0.36978011224967694,
+            "originY": 0.7091357135257241
         },
         {
             "type": "Image",

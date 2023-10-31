@@ -1,0 +1,412 @@
+{
+    "id": "09f5f764-3971-4a23-97b8-f3d4aa87d9f3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "CandyHunt",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Image",
+            "id": "8494fbc0-fc43-48cc-b1d8-74ccc383b333",
+            "label": "grave",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "grave"
+            },
+            "x": 760,
+            "y": 436
+        },
+        {
+            "type": "Image",
+            "id": "acc8c0f7-f7c4-4701-b41a-08f1383f3897",
+            "label": "exit",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => this.stop()",
+            "texture": {
+                "key": "main",
+                "frame": "white-x"
+            },
+            "x": 1103,
+            "y": 66,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "4071d50b-8607-491c-858f-a875945c44d6",
+            "label": "bluewolf_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "bluewolf"
+            },
+            "x": 946,
+            "y": 710,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "59da1dc2-e1bf-4f5a-a68b-09aa18845a27",
+            "label": "greenzombie_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "greenzombie"
+            },
+            "x": 565,
+            "y": 531,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "85779f26-c7ed-4de7-8ef6-b158189232f4",
+            "label": "orangebat_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "orangebat"
+            },
+            "x": 566,
+            "y": 350,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "e054993f-2db0-48bb-9814-f1e530b52dc2",
+            "label": "greenbat_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "greenbat"
+            },
+            "x": 756,
+            "y": 350,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "85db83e7-6464-4fb4-aee0-0b0061bdfa4e",
+            "label": "purplezombie_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "purplezombie"
+            },
+            "x": 755,
+            "y": 530,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "591a7fe7-2684-474b-82da-ce9dc75a9572",
+            "label": "purplebat_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "purplebat"
+            },
+            "x": 946,
+            "y": 350,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "329ec867-8329-4f20-8940-5bfbfe2225f0",
+            "label": "orangewolf_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "orangewolf"
+            },
+            "x": 756,
+            "y": 710,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "85c5c271-9673-4381-a232-e926c79d25ef",
+            "label": "brownwolf_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "brownwolf"
+            },
+            "x": 566,
+            "y": 710,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "2e259c2a-3a97-4e14-b43e-23e2ed5a08ee",
+            "label": "bluezombie_1",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "bluezombie"
+            },
+            "x": 945,
+            "y": 530,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#000000",
+            "tintBottomRight": "#000000",
+            "tintFill": true
+        },
+        {
+            "type": "Image",
+            "id": "b74ccf34-4fad-48bc-a56d-c178d5ec0178",
+            "label": "bluewolf",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "bluewolf"
+            },
+            "x": 950,
+            "y": 706
+        },
+        {
+            "type": "Image",
+            "id": "18c9142d-bff3-4768-8027-974f6096a7f1",
+            "label": "bluezombie",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "bluezombie"
+            },
+            "x": 949,
+            "y": 526
+        },
+        {
+            "type": "Image",
+            "id": "6eafdf03-828d-408b-9c93-c154939f60d0",
+            "label": "brownwolf",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "brownwolf"
+            },
+            "x": 570,
+            "y": 706
+        },
+        {
+            "type": "Image",
+            "id": "c96e66d6-13a5-4fc7-9f20-96e392efea88",
+            "label": "orangewolf",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "orangewolf"
+            },
+            "x": 760,
+            "y": 706
+        },
+        {
+            "type": "Image",
+            "id": "3aaf412c-fbfc-4c15-bf13-8c9de624610a",
+            "label": "purplebat",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "purplebat"
+            },
+            "x": 950,
+            "y": 346
+        },
+        {
+            "type": "Image",
+            "id": "54db3455-9e2b-41e3-95eb-53432cebfcc7",
+            "label": "purplezombie",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "purplezombie"
+            },
+            "x": 759,
+            "y": 526
+        },
+        {
+            "type": "Image",
+            "id": "4ce8da58-1a4e-4aef-9a3f-497f6bcf5d11",
+            "label": "greenbat",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "greenbat"
+            },
+            "x": 760,
+            "y": 346
+        },
+        {
+            "type": "Image",
+            "id": "e0243fad-ad1e-463e-9819-19269d036d6a",
+            "label": "orangebat",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "orangebat"
+            },
+            "x": 570,
+            "y": 346
+        },
+        {
+            "type": "Image",
+            "id": "6947ae6a-8f2e-43a0-accd-d955da05f43b",
+            "label": "greenzombie",
+            "scope": "CLASS",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "greenzombie"
+            },
+            "x": 569,
+            "y": 527
+        },
+        {
+            "type": "Text",
+            "id": "20e080e9-702b-481c-9073-387f0375b31f",
+            "label": "title",
+            "scope": "CLASS",
+            "x": 760,
+            "y": 166,
+            "originX": 0.5,
+            "text": "Candy Hunt",
+            "fixedWidth": 800,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "CCFaceFront",
+            "fontSize": "48px",
+            "fontStyle": "bold italic",
+            "color": "#25b110ff",
+            "stroke": "#172b14ff",
+            "strokeThickness": 10,
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 800
+        },
+        {
+            "type": "Text",
+            "id": "6fdc0280-389b-4d35-b83d-bfddf9bb1bb0",
+            "label": "title_1",
+            "scope": "CLASS",
+            "x": 760,
+            "y": 227,
+            "originX": 0.5,
+            "text": "Find all nine for an exclusive reward!",
+            "fixedWidth": 800,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "cpChantal",
+            "fontSize": "28px",
+            "fontStyle": "italic",
+            "color": "#461755ff",
+            "stroke": "#b788c7ff",
+            "strokeThickness": 5,
+            "shadow.offsetX": 1,
+            "shadow.offsetY": 2,
+            "shadow.stroke": true,
+            "shadow.color": "#000000ff",
+            "shadow.blur": 2,
+            "wordWrapWidth": 800
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

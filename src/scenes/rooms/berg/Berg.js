@@ -10,6 +10,8 @@ export default class Berg extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.aqua
+        /** @type {Phaser.GameObjects.Image} */
+        this.greenzombie
 
         /* START-USER-CTR-CODE */
 
@@ -41,6 +43,11 @@ export default class Berg extends RoomScene {
         aqua.tintBottomLeft = 11579069
         aqua.tintBottomRight = 11579069
 
+        // greenzombie
+        const greenzombie = this.add.image(347, 280, 'candyhunt', 'greenzombie')
+        greenzombie.scaleX = 0.25
+        greenzombie.scaleY = 0.25
+
         // aqua (components)
         const aquaSimpleButton = new SimpleButton(aqua)
         aquaSimpleButton.hoverCallback = () => this.onAquaOver()
@@ -50,7 +57,12 @@ export default class Berg extends RoomScene {
         const aquaShowHint = new ShowHint(aqua)
         aquaShowHint.text = 'aquagrabber'
 
+        // greenzombie (components)
+        const greenzombieSimpleButton = new SimpleButton(greenzombie)
+        greenzombieSimpleButton.callback = () => this.shell.party.findCandy('greenzombie')
+
         this.aqua = aqua
+        this.greenzombie = greenzombie
 
         this.events.emit('scene-awake')
     }

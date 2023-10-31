@@ -35,6 +35,11 @@ export default class Town extends RoomScene {
         // bg_lower
         this.add.image(760, 480, 'town', 'bg-lower')
 
+        // greenbat
+        const greenbat = this.add.image(950, 179, 'candyhunt', 'greenbat')
+        greenbat.scaleX = 0.25
+        greenbat.scaleY = 0.25
+
         // clothesdoor
         const clothesdoor = this.add.image(1224.5614271559207, 584.4819920650543, 'town', 'clothesdoor')
         clothesdoor.setOrigin(0.47204412321886735, 0.9139999513193517)
@@ -96,6 +101,10 @@ export default class Town extends RoomScene {
         // lists
         const sort = [arrow, tree, spookin, sign, railing, pumpspook, plumpkin, grave, cage2_upper, cage_upper, bigspook]
 
+        // greenbat (components)
+        const greenbatSimpleButton = new SimpleButton(greenbat)
+        greenbatSimpleButton.callback = () => this.shell.party.findCandy('greenbat')
+
         // clothesdoor (components)
         const clothesdoorButton = new Button(clothesdoor)
         clothesdoorButton.hoverCallback = () => this.ShopDoorOver()
@@ -114,11 +123,14 @@ export default class Town extends RoomScene {
         coffeedoorButton.hoverOutCallback = () => this.CoffeeDoorOut()
         new MoveTo(coffeedoor)
 
+        this.greenbat = greenbat
         this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
+    /** @type {Phaser.GameObjects.Image} */
+    greenbat
     /** @type {Phaser.GameObjects.Image[]} */
     sort
 

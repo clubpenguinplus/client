@@ -8,6 +8,8 @@ export default class Dock extends RoomScene {
     constructor() {
         super('Dock')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.brownwolf
         /** @type {Phaser.GameObjects.Sprite} */
         this.animation
         /** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
@@ -72,6 +74,11 @@ export default class Dock extends RoomScene {
         // cloud3
         const cloud3 = this.add.image(835.1077752023957, 832.4287913343185, 'dock', 'cloud3')
         cloud3.setOrigin(0.5494130100015762, 0.8671133243065817)
+
+        // brownwolf
+        const brownwolf = this.add.image(645, 655, 'candyhunt', 'brownwolf')
+        brownwolf.scaleX = 0.25
+        brownwolf.scaleY = 0.25
 
         // fg
         const fg = this.add.image(196.5301144653589, 863.8484809755633, 'dock', 'fg')
@@ -142,8 +149,8 @@ export default class Dock extends RoomScene {
         grave6.setOrigin(0.3809279896688502, 0.5190260322318122)
 
         // grave7
-        const grave7 = this.add.image(544.1410161336221, 670.952178035642, 'dock', 'grave7')
-        grave7.setOrigin(0.35798751061422507, 0.698908518787127)
+        const grave7 = this.add.image(562.0657355923214, 680.7701931591972, 'dock', 'grave7')
+        grave7.setOrigin(0.36978011224967694, 0.7091357135257241)
 
         // catalog
         const catalog = this.add.image(1448, 980.0269005474264, 'dock', 'catalog')
@@ -164,10 +171,15 @@ export default class Dock extends RoomScene {
         const sort = [container_1, animation, fountain, catalog, grave7, grave6, grave5, grave4, grave3, grave1, wood, thingy, snowrail, shovel, railing, pile, isitawrapper, grave2, idkwhatthisis, house, gariwald, fg, cloud3, cloud2, cloud, body2, body, anotherthing, interior, tombseat]
         const waterZones = []
 
+        // brownwolf (components)
+        const brownwolfSimpleButton = new SimpleButton(brownwolf)
+        brownwolfSimpleButton.callback = () => this.shell.party.findCandy('brownwolf')
+
         // catalog (components)
         const catalogButton = new Button(catalog)
         catalogButton.callback = () => this.interface.loadExternal('Hydro')
 
+        this.brownwolf = brownwolf
         this.animation = animation
         this.sort = sort
         this.waterZones = waterZones

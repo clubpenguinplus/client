@@ -8,6 +8,8 @@ export default class Cove extends RoomScene {
     constructor() {
         super('Cove')
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.orangewolf
         /** @type {Phaser.GameObjects.Sprite} */
         this.splash
         /** @type {Phaser.GameObjects.Sprite} */
@@ -48,6 +50,11 @@ export default class Cove extends RoomScene {
     _create() {
         // bg
         this.add.image(760, 480, 'cove', 'bg')
+
+        // orangewolf
+        const orangewolf = this.add.image(202, 399, 'candyhunt', 'orangewolf')
+        orangewolf.scaleX = 0.25
+        orangewolf.scaleY = 0.25
 
         // splash
         const splash = this.add.sprite(93, 311, 'cove', 'splash0001')
@@ -269,6 +276,10 @@ export default class Cove extends RoomScene {
         const sort = [bench, tentacle3, tentacle2, tentacle1, catalog, tree, tree2, treebody, treelef, web2, web, waves, treerra, treeleg, treelefg, tooth, campfire, table, stikkkin, stickkin, seat2, seat, root, roof, rod, rock, potfront, potback, pole, lefttree, ladder, house, grass9, grass8, grass7, grass6, grass5, grass4, grass3, grass2, grass14, grass13, grass12, grass11, grass10, grass1, duck, boatfront, bucket, boat, board, bloof]
         const waterZones = []
 
+        // orangewolf (components)
+        const orangewolfSimpleButton = new SimpleButton(orangewolf)
+        orangewolfSimpleButton.callback = () => this.shell.party.findCandy('orangewolf')
+
         // waves (components)
         const wavesMoveTo = new MoveTo(waves)
         wavesMoveTo.x = 1128
@@ -286,6 +297,7 @@ export default class Cove extends RoomScene {
         }
         catalogSimpleButton.callback = () => this.interface.loadExternal('Waves')
 
+        this.orangewolf = orangewolf
         this.splash = splash
         this.waterfall = waterfall
         this.campfire = campfire

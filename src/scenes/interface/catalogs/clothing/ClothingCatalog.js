@@ -99,10 +99,89 @@ export default class ClothingCatalog extends Book {
 
     get catJson() {
         return {
-            releaseDate: '2023-09-01',
-            frontPenguin: 'pink-starlight-springtime',
-            backgrounds: [901, 985, 9275, 904, 905, 926, 907, 908],
+            releaseDate: '2023-10-31',
+            frontPenguin: 'october',
+            backgrounds: [9006, 9044, 9170, 9045, 9169, 9114, 9008, 9128],
             new: [
+                {
+                    background: 1,
+                    leftItems: [
+                        {id: 21040, type: 'icon'},
+                        {id: 24326, type: 'paper'},
+                        {id: 6274, type: 'paper'}
+                    ],
+                    rightItems: [
+                        {id: 1706, type: 'icon'},
+                        {id: 4960, type: 'icon'},
+                        {id: 3179, type: 'icon'},
+                        {id: 6200, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 10,
+                    leftItems: [
+                        {id: 21041, type: 'icon'},
+                        {id: 21042, type: 'icon'},
+                        {id: 4721, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 4723, type: 'icon'},
+                        {id: 24236, type: 'paper'},
+                        {id: 1957, type: 'icon'},
+                        {id: 6246, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 16,
+                    leftItems: [
+                        {id: 656, type: 'icon'},
+                        {id: 136, type: 'icon'},
+                        {id: 3004, type: 'icon'},
+                        {id: 4964, type: 'icon'},
+                        {id: 730, type: 'icon'},
+                        {id: 6029, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 651, type: 'icon'},
+                        {id: 2045, type: 'icon'},
+                        {id: 3098, type: 'icon'},
+                        {id: 4048, type: 'icon'},
+                        {id: 731, type: 'icon'},
+                        {id: 6081, type: 'icon'}
+                    ]
+                }
+            ],
+            party: [
+                {
+                    background: 6,
+                    leftItems: [
+                        {id: 1927, type: 'icon'},
+                        {id: 1718, type: 'icon'},
+                        {id: 6275, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1306, type: 'icon'},
+                        {id: 1928, type: 'icon'},
+                        {id: 5122, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 12,
+                    leftItems: [
+                        {id: 1717, type: 'icon'},
+                        {id: 2080, type: 'icon'},
+                        {id: 2130, type: 'icon'},
+                        {id: 2162, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 2131, type: 'icon'},
+                        {id: 4962, type: 'icon'},
+                        {id: 4428, type: 'icon'},
+                        {id: 4735, type: 'icon'}
+                    ]
+                }
+            ],
+            returning: [
                 {
                     background: 1,
                     leftItems: [
@@ -267,8 +346,6 @@ export default class ClothingCatalog extends Book {
                     comments: 'snorkels and tourdude'
                 }
             ],
-            party: [],
-            returning: [],
             lastChance: []
         }
     }
