@@ -47,19 +47,6 @@
         },
         {
             "type": "Image",
-            "id": "b7c907e7-64b5-4299-bd74-c0c988f07cca",
-            "label": "arrow",
-            "texture": {
-                "key": "rink",
-                "frame": "arrow"
-            },
-            "x": 1131.90617275435,
-            "y": 388.8230028086109,
-            "originX": 0.7446751136541777,
-            "originY": 0.4050239612589697
-        },
-        {
-            "type": "Image",
             "id": "e436b7be-a494-418f-9850-83d01f5b7756",
             "label": "arrow2",
             "texture": {
@@ -151,6 +138,19 @@
         },
         {
             "type": "Image",
+            "id": "b7c907e7-64b5-4299-bd74-c0c988f07cca",
+            "label": "arrow",
+            "texture": {
+                "key": "rink",
+                "frame": "arrow"
+            },
+            "x": 1131.90617275435,
+            "y": 388.8230028086109,
+            "originX": 0.7446751136541777,
+            "originY": 0.4050239612589697
+        },
+        {
+            "type": "Image",
             "id": "d8542674-c3f6-4f4c-8646-105dbcaaf4b6",
             "label": "house2",
             "texture": {
@@ -190,19 +190,6 @@
         },
         {
             "type": "Image",
-            "id": "80bd4935-e8bd-4b88-8108-e3b5c58c230d",
-            "label": "lampere",
-            "texture": {
-                "key": "rink",
-                "frame": "lampere"
-            },
-            "x": 1023.9334129224419,
-            "y": 374.4266348310232,
-            "originX": 0.6736404032384486,
-            "originY": 0.39002774461564915
-        },
-        {
-            "type": "Image",
             "id": "5a563859-2696-4d29-a776-b28c020baf74",
             "label": "picket",
             "texture": {
@@ -213,6 +200,19 @@
             "y": 379.22542415688577,
             "originX": 0.7004757382843907,
             "originY": 0.395026483496756
+        },
+        {
+            "type": "Image",
+            "id": "80bd4935-e8bd-4b88-8108-e3b5c58c230d",
+            "label": "lampere",
+            "texture": {
+                "key": "rink",
+                "frame": "lampere"
+            },
+            "x": 1032.7517007589968,
+            "y": 404.18836487850876,
+            "originX": 0.6794419098927023,
+            "originY": 0.4210295457993171
         },
         {
             "type": "Image",

@@ -5,67 +5,69 @@ import {Button, MoveTo, ShowHint, WaddleSeat} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class Lodge extends RoomScene {
+
     constructor() {
-        super('Lodge')
+        super("Lodge");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bg
+        this.bg;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.maindoor
+        this.maindoor;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fishingdoor
+        this.fishingdoor;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bottomrailing
+        this.bottomrailing;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.railing2
+        this.railing2;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.railing3
+        this.railing3;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bluechair
+        this.bluechair;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bluechairarm
+        this.bluechairarm;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.railing4
+        this.railing4;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fireplace_lower
+        this.fireplace_lower;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fire
+        this.fire;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fireplace_upper
+        this.fireplace_upper;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.greenchair
+        this.greenchair;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.redchair
+        this.redchair;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.stool
+        this.stool;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.findfour_1
+        this.findfour_1;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.stool_1
+        this.stool_1;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.findfour_2
+        this.findfour_2;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.findfour_3
+        this.findfour_3;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.desk
+        this.desk;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.deskchair
+        this.deskchair;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bait
+        this.bait;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.safe
+        this.safe;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fg
+        this.fg;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.wilddoor
+        this.wilddoor;
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
-        this.sort
+        this.sort;
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats106
+        this.seats106;
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats105
+        this.seats105;
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats104
+        this.seats104;
+
 
         /* START-USER-CTR-CODE */
 
@@ -84,386 +86,390 @@ export default class Lodge extends RoomScene {
 
     /** @returns {void} */
     _preload() {
-        this.load.pack('lodge-pack', 'client/media/rooms/lodge/lodge-pack.json')
+
+        this.load.pack("lodge-pack", "client/media/rooms/lodge/lodge-pack.json");
     }
 
     /** @returns {void} */
     _create() {
+
         // bg
-        const bg = this.add.sprite(760, 285, 'lodge', 'bg')
-        bg.tintTopLeft = 11579069
-        bg.tintTopRight = 11579069
-        bg.tintBottomLeft = 11579069
-        bg.tintBottomRight = 11579069
+        const bg = this.add.sprite(760, 285, "lodge", "bg");
+        bg.tintTopLeft = 11579069;
+        bg.tintTopRight = 11579069;
+        bg.tintBottomLeft = 11579069;
+        bg.tintBottomRight = 11579069;
 
         // decor
-        this.add.image(586, 262, 'lodge', 'decor')
+        this.add.image(586, 262, "lodge", "decor");
 
         // maindoor
-        const maindoor = this.add.sprite(115, 410, 'lodge', 'maindoor')
-        maindoor.tintTopLeft = 11579069
-        maindoor.tintTopRight = 11579069
-        maindoor.tintBottomLeft = 11579069
-        maindoor.tintBottomRight = 11579069
+        const maindoor = this.add.sprite(115, 410, "lodge", "maindoor");
+        maindoor.tintTopLeft = 11579069;
+        maindoor.tintTopRight = 11579069;
+        maindoor.tintBottomLeft = 11579069;
+        maindoor.tintBottomRight = 11579069;
 
         // fishingdoor
-        const fishingdoor = this.add.sprite(1012, 176, 'lodge', 'fishingdoor')
-        fishingdoor.tintTopLeft = 11579069
-        fishingdoor.tintTopRight = 11579069
-        fishingdoor.tintBottomLeft = 11579069
-        fishingdoor.tintBottomRight = 11579069
+        const fishingdoor = this.add.sprite(1012, 176, "lodge", "fishingdoor");
+        fishingdoor.tintTopLeft = 11579069;
+        fishingdoor.tintTopRight = 11579069;
+        fishingdoor.tintBottomLeft = 11579069;
+        fishingdoor.tintBottomRight = 11579069;
 
         // bottomrailing
-        const bottomrailing = this.add.sprite(553, 758, 'lodge', 'bottomrailing')
-        bottomrailing.tintTopLeft = 11579069
-        bottomrailing.tintTopRight = 11579069
-        bottomrailing.tintBottomLeft = 11579069
-        bottomrailing.tintBottomRight = 11579069
+        const bottomrailing = this.add.sprite(553, 758, "lodge", "bottomrailing");
+        bottomrailing.tintTopLeft = 11579069;
+        bottomrailing.tintTopRight = 11579069;
+        bottomrailing.tintBottomLeft = 11579069;
+        bottomrailing.tintBottomRight = 11579069;
 
         // railing2
-        const railing2 = this.add.sprite(608.8665100325047, 474.78866293912046, 'lodge', 'railing2')
-        railing2.setOrigin(0.39408475832665096, 0.21025083989237348)
-        railing2.tintTopLeft = 11579069
-        railing2.tintTopRight = 11579069
-        railing2.tintBottomLeft = 11579069
-        railing2.tintBottomRight = 11579069
+        const railing2 = this.add.sprite(608.8665100325047, 474.78866293912046, "lodge", "railing2");
+        railing2.setOrigin(0.39408475832665096, 0.21025083989237348);
+        railing2.tintTopLeft = 11579069;
+        railing2.tintTopRight = 11579069;
+        railing2.tintBottomLeft = 11579069;
+        railing2.tintBottomRight = 11579069;
 
         // railing3
-        const railing3 = this.add.sprite(883.6084060118849, 424.9719799603836, 'lodge', 'railing3')
-        railing3.setOrigin(0.524448870259249, 0.19497123771793884)
-        railing3.tintTopLeft = 11579069
-        railing3.tintTopRight = 11579069
-        railing3.tintBottomLeft = 11579069
-        railing3.tintBottomRight = 11579069
+        const railing3 = this.add.sprite(883.6084060118849, 424.9719799603836, "lodge", "railing3");
+        railing3.setOrigin(0.524448870259249, 0.19497123771793884);
+        railing3.tintTopLeft = 11579069;
+        railing3.tintTopRight = 11579069;
+        railing3.tintBottomLeft = 11579069;
+        railing3.tintBottomRight = 11579069;
 
         // bluechair
-        const bluechair = this.add.sprite(682.7797146531126, 477.3705865327877, 'lodge', 'bluechair')
-        bluechair.setOrigin(0.4003419977308072, 0.3886443011867641)
-        bluechair.tintTopLeft = 11579069
-        bluechair.tintTopRight = 11579069
-        bluechair.tintBottomLeft = 11579069
-        bluechair.tintBottomRight = 11579069
+        const bluechair = this.add.sprite(682.7797146531126, 477.3705865327877, "lodge", "bluechair");
+        bluechair.setOrigin(0.4003419977308072, 0.3886443011867641);
+        bluechair.tintTopLeft = 11579069;
+        bluechair.tintTopRight = 11579069;
+        bluechair.tintBottomLeft = 11579069;
+        bluechair.tintBottomRight = 11579069;
 
         // bluechairarm
-        const bluechairarm = this.add.sprite(672, 587, 'lodge', 'bluechairarm')
-        bluechairarm.tintTopLeft = 11579069
-        bluechairarm.tintTopRight = 11579069
-        bluechairarm.tintBottomLeft = 11579069
-        bluechairarm.tintBottomRight = 11579069
+        const bluechairarm = this.add.sprite(672, 587, "lodge", "bluechairarm");
+        bluechairarm.tintTopLeft = 11579069;
+        bluechairarm.tintTopRight = 11579069;
+        bluechairarm.tintBottomLeft = 11579069;
+        bluechairarm.tintBottomRight = 11579069;
 
         // spookin1
-        this.add.image(760, 480, 'lodge', 'spookin1')
+        this.add.image(760, 480, "lodge", "spookin1");
 
         // railing4
-        const railing4 = this.add.sprite(1397, 438, 'lodge', 'railing4')
-        railing4.tintTopLeft = 11579069
-        railing4.tintTopRight = 11579069
-        railing4.tintBottomLeft = 11579069
-        railing4.tintBottomRight = 11579069
+        const railing4 = this.add.sprite(1397, 438, "lodge", "railing4");
+        railing4.tintTopLeft = 11579069;
+        railing4.tintTopRight = 11579069;
+        railing4.tintBottomLeft = 11579069;
+        railing4.tintBottomRight = 11579069;
 
         // atticlight
-        const atticlight = this.add.image(1421, 204, 'lodge', 'atticlight')
-        atticlight.tintTopLeft = 11579069
-        atticlight.tintTopRight = 11579069
-        atticlight.tintBottomLeft = 11579069
-        atticlight.tintBottomRight = 11579069
+        const atticlight = this.add.image(1421, 204, "lodge", "atticlight");
+        atticlight.tintTopLeft = 11579069;
+        atticlight.tintTopRight = 11579069;
+        atticlight.tintBottomLeft = 11579069;
+        atticlight.tintBottomRight = 11579069;
 
         // fireplace
-        const fireplace = this.add.container(1434, 537.0177069602676)
+        const fireplace = this.add.container(1434, 537.0177069602676);
 
         // fireplace_lower
-        const fireplace_lower = this.add.sprite(-0.6740658385836014, 53.64933030347282, 'lodge', 'fireplace_lower')
-        fireplace_lower.tintTopLeft = 11579069
-        fireplace_lower.tintTopRight = 11579069
-        fireplace_lower.tintBottomLeft = 11579069
-        fireplace_lower.tintBottomRight = 11579069
-        fireplace.add(fireplace_lower)
+        const fireplace_lower = this.add.sprite(-0.6740658385836014, 53.64933030347282, "lodge", "fireplace_lower");
+        fireplace_lower.tintTopLeft = 11579069;
+        fireplace_lower.tintTopRight = 11579069;
+        fireplace_lower.tintBottomLeft = 11579069;
+        fireplace_lower.tintBottomRight = 11579069;
+        fireplace.add(fireplace_lower);
 
         // fire
-        const fire = this.add.sprite(-1.6740658385836014, 20.649330303472823, 'lodge', 'fireanim0001')
-        fire.tintTopLeft = 11579069
-        fire.tintTopRight = 11579069
-        fire.tintBottomLeft = 11579069
-        fire.tintBottomRight = 11579069
-        fireplace.add(fire)
+        const fire = this.add.sprite(-1.6740658385836014, 20.649330303472823, "lodge", "fireanim0001");
+        fire.tintTopLeft = 11579069;
+        fire.tintTopRight = 11579069;
+        fire.tintBottomLeft = 11579069;
+        fire.tintBottomRight = 11579069;
+        fireplace.add(fire);
 
         // fireplace_upper
-        const fireplace_upper = this.add.sprite(40.3259341614164, -220.35066969652718, 'lodge', 'fireplace_upper')
-        fireplace_upper.tintTopLeft = 11579069
-        fireplace_upper.tintTopRight = 11579069
-        fireplace_upper.tintBottomLeft = 11579069
-        fireplace_upper.tintBottomRight = 11579069
-        fireplace.add(fireplace_upper)
+        const fireplace_upper = this.add.sprite(40.3259341614164, -220.35066969652718, "lodge", "fireplace_upper");
+        fireplace_upper.tintTopLeft = 11579069;
+        fireplace_upper.tintTopRight = 11579069;
+        fireplace_upper.tintBottomLeft = 11579069;
+        fireplace_upper.tintBottomRight = 11579069;
+        fireplace.add(fireplace_upper);
 
         // spookin2
-        const spookin2 = this.add.image(-674, -57.0177001953125, 'lodge', 'spookin2')
-        fireplace.add(spookin2)
+        const spookin2 = this.add.image(-674, -57.0177001953125, "lodge", "spookin2");
+        fireplace.add(spookin2);
 
         // greenchair
-        const greenchair = this.add.sprite(754.3481316771671, 773.7114322952416, 'lodge', 'greenchair')
-        greenchair.setOrigin(0.5221730574646827, 0.16518683228329023)
-        greenchair.tintTopLeft = 11579069
-        greenchair.tintTopRight = 11579069
-        greenchair.tintBottomLeft = 11579069
-        greenchair.tintBottomRight = 11579069
+        const greenchair = this.add.sprite(754.3481316771671, 773.7114322952416, "lodge", "greenchair");
+        greenchair.setOrigin(0.5221730574646827, 0.16518683228329023);
+        greenchair.tintTopLeft = 11579069;
+        greenchair.tintTopRight = 11579069;
+        greenchair.tintBottomLeft = 11579069;
+        greenchair.tintBottomRight = 11579069;
 
         // redchair
-        const redchair = this.add.sprite(1356.3037366456658, 776.3854981338252, 'lodge', 'redchair')
-        redchair.setOrigin(0.45076276945342514, 0.1669397808053675)
-        redchair.tintTopLeft = 11579069
-        redchair.tintTopRight = 11579069
-        redchair.tintBottomLeft = 11579069
-        redchair.tintBottomRight = 11579069
+        const redchair = this.add.sprite(1356.3037366456658, 776.3854981338252, "lodge", "redchair");
+        redchair.setOrigin(0.45076276945342514, 0.1669397808053675);
+        redchair.tintTopLeft = 11579069;
+        redchair.tintTopRight = 11579069;
+        redchair.tintBottomLeft = 11579069;
+        redchair.tintBottomRight = 11579069;
 
         // stool
-        const stool = this.add.sprite(1076.5653971553033, 498.2739923371362, 'lodge', 'stool')
-        stool.setOrigin(0.4957805549058577, 0.15515209062104543)
-        stool.tintTopLeft = 11579069
-        stool.tintTopRight = 11579069
-        stool.tintBottomLeft = 11579069
-        stool.tintBottomRight = 11579069
+        const stool = this.add.sprite(1076.5653971553033, 498.2739923371362, "lodge", "stool");
+        stool.setOrigin(0.4957805549058577, 0.15515209062104543);
+        stool.tintTopLeft = 11579069;
+        stool.tintTopRight = 11579069;
+        stool.tintBottomLeft = 11579069;
+        stool.tintBottomRight = 11579069;
 
         // findfour_1
-        const findfour_1 = this.add.sprite(1008, 537, 'lodge', 'findfour')
-        findfour_1.scaleX = -1
-        findfour_1.tintTopLeft = 11579069
-        findfour_1.tintTopRight = 11579069
-        findfour_1.tintBottomLeft = 11579069
-        findfour_1.tintBottomRight = 11579069
+        const findfour_1 = this.add.sprite(1008, 537, "lodge", "findfour");
+        findfour_1.scaleX = -1;
+        findfour_1.tintTopLeft = 11579069;
+        findfour_1.tintTopRight = 11579069;
+        findfour_1.tintBottomLeft = 11579069;
+        findfour_1.tintBottomRight = 11579069;
 
         // stool_1
-        const stool_1 = this.add.sprite(928.4346028446968, 574.058758200775, 'lodge', 'stool')
-        stool_1.setOrigin(0.5042194450941434, 0.09846476305190159)
-        stool_1.tintTopLeft = 11579069
-        stool_1.tintTopRight = 11579069
-        stool_1.tintBottomLeft = 11579069
-        stool_1.tintBottomRight = 11579069
+        const stool_1 = this.add.sprite(928.4346028446968, 574.058758200775, "lodge", "stool");
+        stool_1.setOrigin(0.5042194450941434, 0.09846476305190159);
+        stool_1.tintTopLeft = 11579069;
+        stool_1.tintTopRight = 11579069;
+        stool_1.tintBottomLeft = 11579069;
+        stool_1.tintBottomRight = 11579069;
 
         // findfour_2
-        const findfour_2 = this.add.sprite(886, 671, 'lodge', 'findfour')
-        findfour_2.scaleX = -1
-        findfour_2.tintTopLeft = 11579069
-        findfour_2.tintTopRight = 11579069
-        findfour_2.tintBottomLeft = 11579069
-        findfour_2.tintBottomRight = 11579069
+        const findfour_2 = this.add.sprite(886, 671, "lodge", "findfour");
+        findfour_2.scaleX = -1;
+        findfour_2.tintTopLeft = 11579069;
+        findfour_2.tintTopRight = 11579069;
+        findfour_2.tintBottomLeft = 11579069;
+        findfour_2.tintBottomRight = 11579069;
 
         // findfour_3
-        const findfour_3 = this.add.sprite(1114, 663, 'lodge', 'findfour')
-        findfour_3.tintTopLeft = 11579069
-        findfour_3.tintTopRight = 11579069
-        findfour_3.tintBottomLeft = 11579069
-        findfour_3.tintBottomRight = 11579069
+        const findfour_3 = this.add.sprite(1114, 663, "lodge", "findfour");
+        findfour_3.tintTopLeft = 11579069;
+        findfour_3.tintTopRight = 11579069;
+        findfour_3.tintBottomLeft = 11579069;
+        findfour_3.tintBottomRight = 11579069;
 
         // desk
-        const desk = this.add.sprite(153, 689, 'lodge', 'desk')
-        desk.tintTopLeft = 11579069
-        desk.tintTopRight = 11579069
-        desk.tintBottomLeft = 11579069
-        desk.tintBottomRight = 11579069
+        const desk = this.add.sprite(211.94227823357252, 623.4163383034897, "lodge", "desk");
+        desk.setOrigin(0.652700202677649, 0.3669702602504863);
+        desk.tintTopLeft = 11579069;
+        desk.tintTopRight = 11579069;
+        desk.tintBottomLeft = 11579069;
+        desk.tintBottomRight = 11579069;
 
         // deskchair
-        const deskchair = this.add.sprite(118, 623, 'lodge', 'deskchair')
-        deskchair.tintTopLeft = 11579069
-        deskchair.tintTopRight = 11579069
-        deskchair.tintBottomLeft = 11579069
-        deskchair.tintBottomRight = 11579069
+        const deskchair = this.add.sprite(116.33965413426556, 683.602642420045, "lodge", "deskchair");
+        deskchair.setOrigin(0.47999583294295856, 0.9771860165299757);
+        deskchair.tintTopLeft = 11579069;
+        deskchair.tintTopRight = 11579069;
+        deskchair.tintBottomLeft = 11579069;
+        deskchair.tintBottomRight = 11579069;
 
         // bait
-        const bait = this.add.sprite(877, 297, 'lodge', 'bait')
-        bait.tintTopLeft = 11579069
-        bait.tintTopRight = 11579069
-        bait.tintBottomLeft = 11579069
-        bait.tintBottomRight = 11579069
+        const bait = this.add.sprite(877, 297, "lodge", "bait");
+        bait.tintTopLeft = 11579069;
+        bait.tintTopRight = 11579069;
+        bait.tintBottomLeft = 11579069;
+        bait.tintBottomRight = 11579069;
 
         // safe
-        const safe = this.add.sprite(-34, 684, 'lodge', 'safe')
-        safe.tintTopLeft = 11579069
-        safe.tintTopRight = 11579069
-        safe.tintBottomLeft = 11579069
-        safe.tintBottomRight = 11579069
+        const safe = this.add.sprite(46.52677560724902, 688.9810188844358, "lodge", "safe");
+        safe.setOrigin(0.9046571582317596, 0.5134622637762253);
+        safe.tintTopLeft = 11579069;
+        safe.tintTopRight = 11579069;
+        safe.tintBottomLeft = 11579069;
+        safe.tintBottomRight = 11579069;
 
         // rectangle
-        const rectangle = this.add.rectangle(107, 44, 30, 250)
-        rectangle.angle = 65
-        rectangle.isFilled = true
-        rectangle.fillColor = 6507055
+        const rectangle = this.add.rectangle(107, 44, 30, 250);
+        rectangle.angle = 65;
+        rectangle.isFilled = true;
+        rectangle.fillColor = 6507055;
 
         // fg
-        const fg = this.add.sprite(821, 1015.5, 'lodge', 'fg')
-        fg.setOrigin(0.5, 1)
-        fg.tintTopLeft = 11579069
-        fg.tintTopRight = 11579069
-        fg.tintBottomLeft = 11579069
-        fg.tintBottomRight = 11579069
+        const fg = this.add.sprite(821, 1015.5, "lodge", "fg");
+        fg.setOrigin(0.5, 1);
+        fg.tintTopLeft = 11579069;
+        fg.tintTopRight = 11579069;
+        fg.tintBottomLeft = 11579069;
+        fg.tintBottomRight = 11579069;
 
         // ellipse
-        const ellipse = this.add.ellipse(928, 592, 50, 50)
-        ellipse.visible = false
+        const ellipse = this.add.ellipse(928, 592, 50, 50);
+        ellipse.visible = false;
 
         // ellipse_1
-        const ellipse_1 = this.add.ellipse(1084, 510, 50, 50)
-        ellipse_1.visible = false
+        const ellipse_1 = this.add.ellipse(1084, 510, 50, 50);
+        ellipse_1.visible = false;
 
         // ellipse_2
-        const ellipse_2 = this.add.ellipse(821, 750, 50, 50)
-        ellipse_2.visible = false
+        const ellipse_2 = this.add.ellipse(821, 750, 50, 50);
+        ellipse_2.visible = false;
 
         // ellipse_3
-        const ellipse_3 = this.add.ellipse(967, 665, 50, 50)
-        ellipse_3.visible = false
+        const ellipse_3 = this.add.ellipse(967, 665, 50, 50);
+        ellipse_3.visible = false;
 
         // ellipse_4
-        const ellipse_4 = this.add.ellipse(1053, 632, 50, 50)
-        ellipse_4.visible = false
+        const ellipse_4 = this.add.ellipse(1053, 632, 50, 50);
+        ellipse_4.visible = false;
 
         // ellipse_5
-        const ellipse_5 = this.add.ellipse(1172, 724, 50, 50)
-        ellipse_5.visible = false
+        const ellipse_5 = this.add.ellipse(1172, 724, 50, 50);
+        ellipse_5.visible = false;
 
         // catalog
-        const catalog = this.add.image(1441.4057969299358, 1132.217378955382, 'lodge', 'catalog')
-        catalog.setOrigin(0.5272463754394866, 2.7917512051904856)
+        const catalog = this.add.image(1441.4057969299358, 1132.217378955382, "lodge", "catalog");
+        catalog.setOrigin(0.5272463754394866, 2.7917512051904856);
 
         // wilddoor
-        const wilddoor = this.add.sprite(481, 195, 'lodge', 'wilddoor')
-        wilddoor.tintTopLeft = 11579069
-        wilddoor.tintTopRight = 11579069
-        wilddoor.tintBottomLeft = 11579069
-        wilddoor.tintBottomRight = 11579069
+        const wilddoor = this.add.sprite(481, 195, "lodge", "wilddoor");
+        wilddoor.tintTopLeft = 11579069;
+        wilddoor.tintTopRight = 11579069;
+        wilddoor.tintBottomLeft = 11579069;
+        wilddoor.tintBottomRight = 11579069;
 
         // spookin3
-        this.add.image(760, 480, 'lodge', 'spookin3')
+        this.add.image(760, 480, "lodge", "spookin3");
 
         // spookin4
-        this.add.image(760, 480, 'lodge', 'spookin4')
+        this.add.image(760, 480, "lodge", "spookin4");
 
         // fglights
-        const fglights = this.add.image(760, 1276.5181247629253, 'lodge', 'fglights')
-        fglights.setOrigin(0.5, 1.3297063799613804)
+        const fglights = this.add.image(760, 1276.5181247629253, "lodge", "fglights");
+        fglights.setOrigin(0.5, 1.3297063799613804);
 
         // lists
-        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace, catalog, fglights]
-        const seats106 = [ellipse_4, ellipse_5]
-        const seats105 = [ellipse_3, ellipse_2]
-        const seats104 = [ellipse_1, ellipse]
+        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace, catalog, fglights];
+        const seats106 = [ellipse_4, ellipse_5];
+        const seats105 = [ellipse_3, ellipse_2];
+        const seats104 = [ellipse_1, ellipse];
 
         // maindoor (components)
-        const maindoorButton = new Button(maindoor)
-        maindoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorLOpen')
-        maindoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorLClose')
-        const maindoorMoveTo = new MoveTo(maindoor)
-        maindoorMoveTo.x = 140
-        maindoorMoveTo.y = 490
+        const maindoorButton = new Button(maindoor);
+        maindoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorLOpen');
+        maindoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorLClose');
+        const maindoorMoveTo = new MoveTo(maindoor);
+        maindoorMoveTo.x = 140;
+        maindoorMoveTo.y = 490;
 
         // fishingdoor (components)
-        const fishingdoorButton = new Button(fishingdoor)
-        fishingdoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorROpen')
-        fishingdoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorRClose')
-        const fishingdoorMoveTo = new MoveTo(fishingdoor)
-        fishingdoorMoveTo.x = 1000
-        fishingdoorMoveTo.y = 310
-        const fishingdoorShowHint = new ShowHint(fishingdoor)
-        fishingdoorShowHint.text = 'icefishing'
+        const fishingdoorButton = new Button(fishingdoor);
+        fishingdoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorROpen');
+        fishingdoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorRClose');
+        const fishingdoorMoveTo = new MoveTo(fishingdoor);
+        fishingdoorMoveTo.x = 1000;
+        fishingdoorMoveTo.y = 310;
+        const fishingdoorShowHint = new ShowHint(fishingdoor);
+        fishingdoorShowHint.text = "icefishing";
 
         // atticlight (components)
-        const atticlightButton = new Button(atticlight)
-        atticlightButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-LightOn')
-        atticlightButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-LightOff')
-        const atticlightMoveTo = new MoveTo(atticlight)
-        atticlightMoveTo.x = 1250
-        atticlightMoveTo.y = 360
+        const atticlightButton = new Button(atticlight);
+        atticlightButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-LightOn');
+        atticlightButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-LightOff');
+        const atticlightMoveTo = new MoveTo(atticlight);
+        atticlightMoveTo.x = 1250;
+        atticlightMoveTo.y = 360;
 
         // findfour_1 (components)
-        const findfour_1Button = new Button(findfour_1)
-        findfour_1Button.callback = () => this.triggerWaddle(104)
-        findfour_1Button.pixelPerfect = true
-        const findfour_1ShowHint = new ShowHint(findfour_1)
-        findfour_1ShowHint.text = 'four'
+        const findfour_1Button = new Button(findfour_1);
+        findfour_1Button.callback = () => this.triggerWaddle(104);
+        findfour_1Button.pixelPerfect = true;
+        const findfour_1ShowHint = new ShowHint(findfour_1);
+        findfour_1ShowHint.text = "four";
 
         // findfour_2 (components)
-        const findfour_2Button = new Button(findfour_2)
-        findfour_2Button.callback = () => this.triggerWaddle(105)
-        findfour_2Button.pixelPerfect = true
-        const findfour_2ShowHint = new ShowHint(findfour_2)
-        findfour_2ShowHint.text = 'four'
+        const findfour_2Button = new Button(findfour_2);
+        findfour_2Button.callback = () => this.triggerWaddle(105);
+        findfour_2Button.pixelPerfect = true;
+        const findfour_2ShowHint = new ShowHint(findfour_2);
+        findfour_2ShowHint.text = "four";
 
         // findfour_3 (components)
-        const findfour_3Button = new Button(findfour_3)
-        findfour_3Button.callback = () => this.triggerWaddle(106)
-        findfour_3Button.pixelPerfect = true
-        const findfour_3ShowHint = new ShowHint(findfour_3)
-        findfour_3ShowHint.text = 'four'
+        const findfour_3Button = new Button(findfour_3);
+        findfour_3Button.callback = () => this.triggerWaddle(106);
+        findfour_3Button.pixelPerfect = true;
+        const findfour_3ShowHint = new ShowHint(findfour_3);
+        findfour_3ShowHint.text = "four";
 
         // ellipse (components)
-        const ellipseWaddleSeat = new WaddleSeat(ellipse)
-        ellipseWaddleSeat.sitdirection = 'northeast'
+        const ellipseWaddleSeat = new WaddleSeat(ellipse);
+        ellipseWaddleSeat.sitdirection = "northeast";
 
         // ellipse_1 (components)
-        const ellipse_1WaddleSeat = new WaddleSeat(ellipse_1)
-        ellipse_1WaddleSeat.sitdirection = 'southwest'
+        const ellipse_1WaddleSeat = new WaddleSeat(ellipse_1);
+        ellipse_1WaddleSeat.sitdirection = "southwest";
 
         // ellipse_2 (components)
-        const ellipse_2WaddleSeat = new WaddleSeat(ellipse_2)
-        ellipse_2WaddleSeat.sitdirection = 'northeast'
+        const ellipse_2WaddleSeat = new WaddleSeat(ellipse_2);
+        ellipse_2WaddleSeat.sitdirection = "northeast";
 
         // ellipse_3 (components)
-        const ellipse_3WaddleSeat = new WaddleSeat(ellipse_3)
-        ellipse_3WaddleSeat.sitdirection = 'southwest'
+        const ellipse_3WaddleSeat = new WaddleSeat(ellipse_3);
+        ellipse_3WaddleSeat.sitdirection = "southwest";
 
         // ellipse_4 (components)
-        const ellipse_4WaddleSeat = new WaddleSeat(ellipse_4)
-        ellipse_4WaddleSeat.sitdirection = 'southeast'
+        const ellipse_4WaddleSeat = new WaddleSeat(ellipse_4);
+        ellipse_4WaddleSeat.sitdirection = "southeast";
 
         // ellipse_5 (components)
-        const ellipse_5WaddleSeat = new WaddleSeat(ellipse_5)
-        ellipse_5WaddleSeat.sitdirection = 'northwest'
+        const ellipse_5WaddleSeat = new WaddleSeat(ellipse_5);
+        ellipse_5WaddleSeat.sitdirection = "northwest";
 
         // catalog (components)
-        const catalogButton = new Button(catalog)
-        catalogButton.callback = () => {
-            this.interface.loadExternal('Fishing')
-        }
+        const catalogButton = new Button(catalog);
+        catalogButton.callback = () => {this.interface.loadExternal('Fishing')};
 
         // wilddoor (components)
-        const wilddoorButton = new Button(wilddoor)
-        wilddoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorMOpen')
-        wilddoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorMClose')
-        const wilddoorMoveTo = new MoveTo(wilddoor)
-        wilddoorMoveTo.x = 468
-        wilddoorMoveTo.y = 324
+        const wilddoorButton = new Button(wilddoor);
+        wilddoorButton.hoverCallback = () => this.shell.musicController.addSfx('lodge-DoorMOpen');
+        wilddoorButton.hoverOutCallback = () => this.shell.musicController.addSfx('lodge-DoorMClose');
+        const wilddoorMoveTo = new MoveTo(wilddoor);
+        wilddoorMoveTo.x = 468;
+        wilddoorMoveTo.y = 324;
 
-        this.bg = bg
-        this.maindoor = maindoor
-        this.fishingdoor = fishingdoor
-        this.bottomrailing = bottomrailing
-        this.railing2 = railing2
-        this.railing3 = railing3
-        this.bluechair = bluechair
-        this.bluechairarm = bluechairarm
-        this.railing4 = railing4
-        this.fireplace_lower = fireplace_lower
-        this.fire = fire
-        this.fireplace_upper = fireplace_upper
-        this.greenchair = greenchair
-        this.redchair = redchair
-        this.stool = stool
-        this.findfour_1 = findfour_1
-        this.stool_1 = stool_1
-        this.findfour_2 = findfour_2
-        this.findfour_3 = findfour_3
-        this.desk = desk
-        this.deskchair = deskchair
-        this.bait = bait
-        this.safe = safe
-        this.fg = fg
-        this.wilddoor = wilddoor
-        this.sort = sort
-        this.seats106 = seats106
-        this.seats105 = seats105
-        this.seats104 = seats104
+        this.bg = bg;
+        this.maindoor = maindoor;
+        this.fishingdoor = fishingdoor;
+        this.bottomrailing = bottomrailing;
+        this.railing2 = railing2;
+        this.railing3 = railing3;
+        this.bluechair = bluechair;
+        this.bluechairarm = bluechairarm;
+        this.railing4 = railing4;
+        this.fireplace_lower = fireplace_lower;
+        this.fire = fire;
+        this.fireplace_upper = fireplace_upper;
+        this.greenchair = greenchair;
+        this.redchair = redchair;
+        this.stool = stool;
+        this.findfour_1 = findfour_1;
+        this.stool_1 = stool_1;
+        this.findfour_2 = findfour_2;
+        this.findfour_3 = findfour_3;
+        this.desk = desk;
+        this.deskchair = deskchair;
+        this.bait = bait;
+        this.safe = safe;
+        this.fg = fg;
+        this.wilddoor = wilddoor;
+        this.sort = sort;
+        this.seats106 = seats106;
+        this.seats105 = seats105;
+        this.seats104 = seats104;
 
-        this.events.emit('scene-awake')
+        this.events.emit("scene-awake");
     }
+
 
     /* START-USER-CODE */
 
