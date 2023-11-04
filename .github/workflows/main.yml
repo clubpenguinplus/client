@@ -19,15 +19,15 @@ jobs:
             - name: SSH into server and deploy 
               uses: appleboy/ssh-action@v0.1.4
               with:
-                host: ${{ secrets.SERVER_HOST }}
-                username: ${{ secrets.SERVER_USERNAME }}
-                key: ${{ secrets.SSH_PRIVATE_KEY }}
-                port: 22
-                script: |
-                  cd /home/cpplus/client
-                  git pull --recurse-submodules
-                  npm install
-                  npm run build
+                  host: ${{ secrets.SERVER_HOST }}
+                  username: ${{ secrets.SERVER_USERNAME }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  port: 22
+                  script: |
+                    cd /home/cpplus/client
+                    git pull --recurse-submodules
+                    npm install
+                    npm run build
 
     create-archive:
         runs-on: ubuntu-latest
@@ -68,9 +68,9 @@ jobs:
             - name: Upload archive
               uses: sharapeco/lftp-mirror-action
               with:
-                host: ${{ secrets.SERVER_HOST }}
-                port: 22
-                username: ${{ secrets.SERVER_USERNAME }}
-                ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-                local_path: './archive'
-                remote_path: '/home/cpplus/archive'
+                  host: ${{ secrets.SERVER_HOST }}
+                  port: 22
+                  username: ${{ secrets.SERVER_USERNAME }}
+                  ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  local_path: './archive'
+                  remote_path: '/home/cpplus/archive'
