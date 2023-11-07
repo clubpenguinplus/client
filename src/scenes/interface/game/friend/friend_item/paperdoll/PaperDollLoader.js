@@ -2,6 +2,7 @@ export default class PaperDollLoader {
     constructor(paperDoll) {
         this.paperDoll = paperDoll
         this.scene = paperDoll.scene
+        this.shell = paperDoll.shell
 
         this.scale = 1
         this.photoScale = 1
