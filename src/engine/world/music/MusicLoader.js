@@ -6,7 +6,7 @@ export default class MusicLoader extends Phaser.Loader.LoaderPlugin {
 
         const suffix = '/client/media/music/'
 
-        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        this.baseURL = this.shell.baseURL + suffix
         this.keyPrefix = 'music/'
     }
 

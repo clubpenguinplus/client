@@ -12,7 +12,7 @@ export default class GridViewLoader extends BaseLoader {
 
     get baseURL() {
         let suffix = this.filter == 'igloo' ? '/client/media/igloos/buildings/icon/' : '/client/media/furniture/icon/'
-        return window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        return this.shell.baseURL + suffix
     }
 
     get keyPrefix() {

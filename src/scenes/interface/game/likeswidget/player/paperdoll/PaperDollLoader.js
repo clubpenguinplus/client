@@ -9,7 +9,7 @@ export default class PaperDollLoader {
 
         this.load = new Phaser.Loader.LoaderPlugin(this.scene)
         let suffix = '/client/media/clothing'
-        this.url = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        this.url = this.shell.baseURL + suffix
         this.keyPrefix = 'paper/88/'
 
         this.load.on('filecomplete', this.onFileComplete, this)

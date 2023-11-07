@@ -9,7 +9,7 @@ export default class ItemLoader extends SpriteLoader {
 
         this.load = new Phaser.Loader.LoaderPlugin(penguin.room)
         let suffix = '/client/media/clothing/sprites'
-        this.url = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        this.url = this.shell.baseURL + suffix
 
         this.load.on('filecomplete', this.onFileComplete, this)
         this.load.on('loaderror', this.onLoadError, this)

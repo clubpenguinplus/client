@@ -7,7 +7,7 @@ export default class CatalogItemLoader extends BaseLoader {
         this.initiator = initiator
 
         let suffix = '/client/media/clothing/'
-        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        this.baseURL = this.shell.baseURL + suffix
         this.keyPrefix = 'catalogitem/'
     }
 

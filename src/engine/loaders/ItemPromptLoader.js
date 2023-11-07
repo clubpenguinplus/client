@@ -28,7 +28,7 @@ export default class ItemPromptLoader extends BaseLoader {
             default:
                 suffix = '/client/media/clothing/icon/large/'
         }
-        return window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        return this.shell.baseURL + suffix
     }
 
     get keyPrefix() {
