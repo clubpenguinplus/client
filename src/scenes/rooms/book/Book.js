@@ -43,7 +43,7 @@ export default class Book extends RoomScene {
 
         this.loadSfx = ['book-printingpress', 'book-doorlighton', 'book-doorlightoff', 'book-bookopen', 'book-bookclose']
 
-        this.music = 252
+        this.music = 669
         /* END-USER-CTR-CODE */
     }
 

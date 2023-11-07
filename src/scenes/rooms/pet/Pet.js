@@ -18,7 +18,7 @@ export default class Pet extends RoomScene {
             scape: () => this.interface.prompt.showError(this.shell.crumbs.getError(54)),
             launch: () => this.triggerGame('pufflelaunch', 928, 'ruffle')
         }
-        this.music = 252
+        this.music = 659
         this.loadSfx = ['pet-plazadooropen', 'pet-plazadoorclose', 'pet-parkdooropen', 'pet-parkdoorclose', 'pet-hoteldooropen', 'pet-hoteldoorclose', 'pet-pufflebounce']
         /* END-USER-CTR-CODE */
     }
@@ -31,7 +31,7 @@ export default class Pet extends RoomScene {
     /** @returns {void} */
     _create() {
         // outsidebgs
-        this.add.image(929, 296, 'pet', 'outsidebg')
+        this.add.image(787, 200, 'pet', 'outsidebgs')
 
         // scapebg
         this.add.image(972, 186, 'pet', 'scapebg')

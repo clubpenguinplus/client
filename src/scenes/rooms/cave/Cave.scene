@@ -18,190 +18,433 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "0f010726-2c39-43a5-b6a6-4dccc9cc5168",
+            "id": "2f1d38fc-4f8c-4b05-8c62-8b07cab9c125",
+            "label": "window",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "window"
+            },
+            "x": 515,
+            "y": 265,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "81c4a835-f71e-474a-b3c6-f176f495f8df",
+            "label": "bubbles_bubbles0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bubbles/bubbles",
+            "Animation.end": 56,
+            "Animation.repeatDelay": 3500,
+            "texture": {
+                "key": "cave",
+                "frame": "bubbles/bubbles0001"
+            },
+            "x": 1050,
+            "y": 211,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "1ad21e05-2b4e-44be-91dc-1e9a6e4acabc",
+            "label": "fish_fish0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fish/fish",
+            "Animation.end": 140,
+            "Animation.repeatDelay": 2000,
+            "texture": {
+                "key": "cave",
+                "frame": "fish/fish0001"
+            },
+            "x": 357,
+            "y": 344,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "1aa34e59-e118-4ca8-b24c-442884646f19",
+            "label": "crab",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "crab/crab",
+            "Animation.end": 234,
+            "Animation.repeatDelay": 4000,
+            "texture": {
+                "key": "cave",
+                "frame": "crab/crab0001"
+            },
+            "x": 373,
+            "y": 211,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "4ee4b639-a483-4ac4-aacc-86ea78353d62",
             "label": "bg",
+            "components": [],
             "texture": {
                 "key": "cave",
                 "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "y": -14,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "681d28b3-aab5-44a1-80d1-aeb2a0117598",
-            "label": "purplezombie",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.shell.party.findCandy('purplezombie');",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "purplezombie"
-            },
-            "x": 1258,
-            "y": 825,
-            "scaleX": 0.25,
-            "scaleY": 0.25
-        },
-        {
-            "type": "Image",
-            "id": "a8a4dc07-56d6-4758-9618-5dedf147145d",
-            "label": "chair",
+            "id": "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
+            "label": "ceiling",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "chair"
+                "frame": "ceiling"
             },
-            "x": 386.66524261141893,
-            "y": 430.3902110876788,
-            "originX": 0.25438503754995867,
-            "originY": 0.44832312820824016
+            "x": 1360,
+            "y": 743,
+            "originX": 0.8945998698763825,
+            "originY": 0.9345911949685535
         },
         {
             "type": "Image",
-            "id": "9a023cce-23cc-41a9-b97c-ddb3938c8516",
-            "label": "chairarm",
+            "id": "f2c508bd-8ced-400f-97d9-b45f944a94ff",
+            "label": "fg_1",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "chairarm"
+                "frame": "fg_1"
             },
-            "x": 381.62019298236874,
-            "y": 495.13519228070527,
-            "originX": 0.2510659164357689,
-            "originY": 0.5157658252924013
+            "x": -15,
+            "y": 880,
+            "originX": 0,
+            "originY": 1
         },
         {
             "type": "Image",
-            "id": "0bfffc1f-6943-43f3-bd64-68dfae412344",
+            "id": "1e6d8587-7ad0-4a0f-9e5e-4e89a967e609",
+            "label": "fg_2",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "fg_2"
+            },
+            "x": 1381,
+            "y": 830,
+            "originX": 0.06493506493506493,
+            "originY": 0.46387832699619774
+        },
+        {
+            "type": "Image",
+            "id": "212e8496-11a4-430b-8277-c1b9280cc8a9",
+            "label": "fg_3",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "fg_3"
+            },
+            "y": 960,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "55662aab-8c39-4d23-90bc-5cf40da532ad",
+            "label": "chair_back",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "chair_back"
+            },
+            "x": 357,
+            "y": 399,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "995ccf4e-8213-468d-8848-73eec0c97a61",
+            "label": "chair_front",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "chair_front"
+            },
+            "x": 391,
+            "y": 490,
+            "originX": 0.5909090909090909,
+            "originY": 0.7115384615384616
+        },
+        {
+            "type": "Image",
+            "id": "cf7e6d2f-911b-4db4-83f2-c87b36901721",
             "label": "door",
             "components": [
-                "MoveTo",
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('cave-dooropen')",
-            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('cave-doorclose')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('cave-doorclosed')",
+            "MoveTo.x": 190,
+            "MoveTo.y": 600,
             "texture": {
                 "key": "cave",
                 "frame": "door"
             },
-            "x": 160.21337711275305,
-            "y": 587.2903157849864,
-            "originX": 0.4525410986905808,
-            "originY": 0.8563303924421574
+            "x": 104,
+            "y": 291,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "c2310e0a-1973-4e18-8e7e-f5c05ee59c25",
-            "label": "icewalls",
+            "id": "784439f5-e25a-4faf-96a2-e73025935b3b",
+            "label": "ring",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "icewalls"
+                "frame": "ring"
             },
-            "x": 1442.9234312463204,
-            "y": 738.1783703492187,
-            "originX": 0.9492917310831055,
-            "originY": 0.7689358024471028
+            "x": 376,
+            "y": 288,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "8d27953b-66a7-4bc6-a052-9b178afbe5f1",
-            "label": "icewall_bottomright",
+            "id": "cc86f8ce-09af-45bd-a4ed-fc84ddd23b41",
+            "label": "board_1",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "icewall-bottomright"
+                "frame": "board_1"
             },
-            "x": 1462.9114341120662,
-            "y": 888.0883918423134,
-            "originX": 0.9624417329684646,
-            "originY": 0.9250920748357431
+            "x": 669,
+            "y": 455,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "1d3cb1b6-9d8a-4fce-a9ba-e9458ba76291",
-            "label": "leftwall",
+            "id": "67ded887-65de-4815-b18d-08fbcf274901",
+            "label": "board_1_1",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "leftwall"
+                "frame": "board_1"
             },
-            "x": 145.36891187831168,
-            "y": 784.8170437026258,
-            "originX": 0.09563744202520505,
-            "originY": 0.817517753856902
+            "x": 930,
+            "y": 440,
+            "angle": 10,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "4ecd87e1-0e83-4655-9519-79964bf4b749",
-            "label": "pool",
+            "id": "5d51e4e8-155e-41c7-a435-947683e75091",
+            "label": "board_2",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "pool"
+                "frame": "board_2"
             },
-            "x": 760,
-            "y": 480
+            "x": 693,
+            "y": 457,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "ad970ced-4c3a-49b3-b233-fa6af7c7d277",
-            "label": "poolfront",
+            "id": "d4f581e9-923d-4c75-84ca-ae1c781dfdf2",
+            "label": "ladder_back",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "poolfront"
+                "frame": "ladder_back"
             },
-            "x": 735.0149964178175,
-            "y": 863.1033882601309,
-            "originX": 0.483562497643301,
-            "originY": 0.8990660294376364
+            "x": 349,
+            "y": 756,
+            "originX": 0.5068493150684932
         },
         {
             "type": "Image",
-            "id": "f3ce8435-d5cf-4281-b169-c41e925c9185",
-            "label": "poolladder",
+            "id": "0b399561-3d4c-4e20-b531-9f65bacd684d",
+            "label": "ladder_front",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "poolladder"
+                "frame": "ladder_front"
             },
-            "x": 335.92969121528165,
-            "y": 721.9836225268732,
-            "originX": 0.2210063757995274,
-            "originY": 0.7520662734654929
+            "x": 317,
+            "y": 778
         },
         {
             "type": "Image",
-            "id": "f92eacf3-538c-45c8-a05f-0bfb978c3aab",
-            "label": "poolladder_front",
+            "id": "9523692e-5de3-4993-a63e-0297db8e3442",
+            "label": "water_water_1",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "poolladder-front"
+                "frame": "water/water_1"
             },
-            "x": 339.92281320527127,
-            "y": 793.0613073721329,
-            "originX": 0.22363343440781808,
-            "originY": 0.8261055419091525
+            "x": 813,
+            "y": 639,
+            "originY": 2.8333333333333335
         },
         {
             "type": "Image",
-            "id": "ab48ba58-2219-4cb2-af3c-649685cd918f",
-            "label": "pumpkin",
+            "id": "a7cc954f-3dc3-406a-9cdf-bdc3eb257d00",
+            "label": "water_water_2",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "pumpkin"
+                "frame": "water/water_2"
             },
-            "x": 353.87234046774245,
-            "y": 550.6308973099578,
-            "originX": 0.2328107503077253,
-            "originY": 0.5735738513645394
+            "x": 811,
+            "y": 656,
+            "originY": 1.8571428571428572
         },
         {
             "type": "Image",
-            "id": "dc19a78e-572f-4204-ab54-e84df3d9695b",
-            "label": "windows",
+            "id": "a91c7eb1-2c89-4e38-8bd1-41cd1230de1c",
+            "label": "water_water_3",
+            "components": [],
             "texture": {
                 "key": "cave",
-                "frame": "windows"
+                "frame": "water/water_3"
             },
-            "x": 816,
-            "y": 349
+            "x": 809,
+            "y": 677,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "ada5841d-5766-4a75-a59b-68795c95de2a",
+            "label": "water_water_4",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_4"
+            },
+            "x": 807,
+            "y": 698,
+            "originX": 0.5006675567423231,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "378602d1-8d9f-4367-988c-f0c78d105ee5",
+            "label": "water_water_5",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_5"
+            },
+            "x": 805,
+            "y": 719,
+            "originX": 0.5006385696040868,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "4b0e9270-91a0-4d18-becb-b4fa95f9d9a0",
+            "label": "water_water_6",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_6"
+            },
+            "x": 803,
+            "y": 740,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "92d47b04-1c95-4370-ba03-39104c3d4bcf",
+            "label": "water_water_7",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_7"
+            },
+            "x": 801,
+            "y": 761,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "b1af1383-4603-45d9-9c28-2c2646358cff",
+            "label": "water_water_8",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_8"
+            },
+            "x": 799,
+            "y": 782,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "851a99c8-0ee0-41ea-b554-fd45b2c46d0b",
+            "label": "water_water_9",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_9"
+            },
+            "x": 798,
+            "y": 803,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "181f1c94-1b16-47e4-8073-2a064477f73a",
+            "label": "water_water_10",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_10"
+            },
+            "x": 797,
+            "y": 824,
+            "originX": 0.5005313496280552,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "b809ca01-3422-407f-8a06-e2b5d91e2e2a",
+            "label": "water_water_11",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "water/water_11"
+            },
+            "x": 796,
+            "y": 845,
+            "originY": 1.8571428571428572
+        },
+        {
+            "type": "Image",
+            "id": "54a82951-5365-406b-91f1-74dfa87934da",
+            "label": "line",
+            "components": [],
+            "texture": {
+                "key": "cave",
+                "frame": "line"
+            },
+            "x": 807,
+            "y": 724,
+            "originX": 0.5006337135614702,
+            "originY": 2.0555555555555554
         },
         {
             "type": "Rectangle",
@@ -223,6 +466,7 @@
             "type": "Ellipse",
             "id": "b208ffe1-8482-4a97-8cb0-e4f26ac6727e",
             "label": "ellipse_1",
+            "components": [],
             "x": 807,
             "y": 719,
             "width": 800,
@@ -232,6 +476,7 @@
             "type": "Ellipse",
             "id": "777ad623-2208-4252-81a1-ff30990a5425",
             "label": "ellipse",
+            "components": [],
             "x": 570,
             "y": 697,
             "width": 300,
@@ -241,6 +486,7 @@
             "type": "Ellipse",
             "id": "b66c4ca4-58d5-44e1-aebf-76b9303ee69f",
             "label": "ellipse_2",
+            "components": [],
             "x": 1041,
             "y": 689,
             "width": 300,
@@ -250,6 +496,7 @@
             "type": "Ellipse",
             "id": "3dadc396-b5ae-4f2a-a4c7-7f4d1566599b",
             "label": "ellipse_3",
+            "components": [],
             "x": 1139,
             "y": 761,
             "width": 300,
@@ -259,22 +506,11 @@
             "type": "Ellipse",
             "id": "b1bb0f39-097c-43b5-a057-8be4688534dd",
             "label": "ellipse_4",
+            "components": [],
             "x": 495,
             "y": 762,
             "width": 300,
             "height": 200
-        },
-        {
-            "type": "Sprite",
-            "id": "27bc9ebb-7ff8-4ac3-8b10-d1735dcda8cb",
-            "label": "animdummy",
-            "scope": "CLASS",
-            "texture": {
-                "key": "cave",
-                "frame": "fish1/1698576527527"
-            },
-            "x": 816,
-            "y": 349
         }
     ],
     "plainObjects": [],
@@ -282,22 +518,32 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     },
     "lists": [
         {
             "id": "811d25fb-0793-4398-b923-90101be1057c",
             "label": "sort",
             "objectIds": [
-                "ab48ba58-2219-4cb2-af3c-649685cd918f",
-                "f92eacf3-538c-45c8-a05f-0bfb978c3aab",
-                "f3ce8435-d5cf-4281-b169-c41e925c9185",
-                "ad970ced-4c3a-49b3-b233-fa6af7c7d277",
-                "1d3cb1b6-9d8a-4fce-a9ba-e9458ba76291",
-                "8d27953b-66a7-4bc6-a052-9b178afbe5f1",
-                "c2310e0a-1973-4e18-8e7e-f5c05ee59c25",
-                "9a023cce-23cc-41a9-b97c-ddb3938c8516",
-                "a8a4dc07-56d6-4758-9618-5dedf147145d"
+                "54a82951-5365-406b-91f1-74dfa87934da",
+                "b809ca01-3422-407f-8a06-e2b5d91e2e2a",
+                "181f1c94-1b16-47e4-8073-2a064477f73a",
+                "851a99c8-0ee0-41ea-b554-fd45b2c46d0b",
+                "b1af1383-4603-45d9-9c28-2c2646358cff",
+                "92d47b04-1c95-4370-ba03-39104c3d4bcf",
+                "4b0e9270-91a0-4d18-becb-b4fa95f9d9a0",
+                "378602d1-8d9f-4367-988c-f0c78d105ee5",
+                "ada5841d-5766-4a75-a59b-68795c95de2a",
+                "a91c7eb1-2c89-4e38-8bd1-41cd1230de1c",
+                "a7cc954f-3dc3-406a-9cdf-bdc3eb257d00",
+                "9523692e-5de3-4993-a63e-0297db8e3442",
+                "0b399561-3d4c-4e20-b531-9f65bacd684d",
+                "d4f581e9-923d-4c75-84ca-ae1c781dfdf2",
+                "995ccf4e-8213-468d-8848-73eec0c97a61",
+                "1e6d8587-7ad0-4a0f-9e5e-4e89a967e609",
+                "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
+                "212e8496-11a4-430b-8277-c1b9280cc8a9",
+                "f2c508bd-8ced-400f-97d9-b45f944a94ff"
             ]
         },
         {

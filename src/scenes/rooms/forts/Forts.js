@@ -9,13 +9,17 @@ export default class Forts extends RoomScene {
         super('Forts')
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fountain
+        this.tower
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.target
         /** @type {Phaser.GameObjects.Text} */
         this.day
         /** @type {Phaser.GameObjects.Text} */
         this.am_pm
         /** @type {Phaser.GameObjects.Text} */
         this.clockTime
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.hitbox
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container>} */
         this.sort
 
@@ -23,11 +27,11 @@ export default class Forts extends RoomScene {
 
         this.roomTriggers = {
             town: () => this.triggerRoom(100, 1240, 660),
-            rink: () => this.triggerRoom(802, 720, 900),
+            rink: () => this.triggerRoom(802, 780, 340),
             plaza: () => this.triggerRoom(300, 340, 660)
         }
 
-        this.music = 500
+        this.music = 587
 
         /* END-USER-CTR-CODE */
     }
@@ -40,135 +44,132 @@ export default class Forts extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        this.add.image(760, 480, 'forts', 'bg')
-
-        // bush
-        const bush = this.add.image(760, 480, 'forts', 'bush')
-
-        // house2
-        const house2 = this.add.image(1143.3888680374912, 215.8542046954331, 'forts', 'house2')
-        house2.setOrigin(0.7522295415240575, 0.2248481208161378)
-
-        // house3
-        const house3 = this.add.image(756.1775152028055, 335.573588259977, 'forts', 'house3')
-        house3.setOrigin(0.4974851982928671, 0.3495558002759934)
-
-        // house4
-        const house4 = this.add.image(187.91675976494508, 629.2614250393092, 'forts', 'house4')
-        house4.setOrigin(0.12362944252015566, 0.6554806497426083)
-
-        // grave
-        const grave = this.add.image(812.8843428222448, 482.0340131854709, 'forts', 'grave')
-        grave.setOrigin(0.5347923308041084, 0.5021187637348655)
-
-        // grave2
-        const grave2 = this.add.image(1087.24755859375, 683.3276172990688, 'forts', 'grave2')
-        grave2.setOrigin(0.7152944391044711, 0.7117995527692026)
-
-        // gremlin
-        const gremlin = this.add.image(855.5190681728106, 427.4645125049541, 'forts', 'gremlin')
-        gremlin.setOrigin(0.5628414922189544, 0.44527553385932717)
-
-        // gremlin2
-        const gremlin2 = this.add.image(990.8377480842926, 394.0328386444703, 'forts', 'gremlin2')
-        gremlin2.setOrigin(0.6518669395291399, 0.4104508735879899)
-
-        // pool
-        const pool = this.add.image(760, 480, 'forts', 'pool')
-
-        // what
-        const what = this.add.image(59.52683339938767, 675.8140897542621, 'forts', 'what')
-        what.setOrigin(0.039162390394333994, 0.7039730101606897)
-
-        // what2
-        const what2 = this.add.image(190.069559902229, 772.9251423966198, 'forts', 'what2')
-        what2.setOrigin(0.1250457630935717, 0.8051303566631456)
-
-        // fg
-        const fg = this.add.image(760, 977.8574164314624, 'forts', 'fg')
-        fg.setOrigin(0.5, 1.0186014636763052)
+        const bg = this.add.image(0, 0, 'forts', 'bg')
+        bg.setOrigin(0, 0)
 
         // container_1
-        const container_1 = this.add.container(755.0503792350843, 645.2723353093012)
+        const container_1 = this.add.container(490.56270613136127, 674.5237209306217)
 
-        // pumpkman
-        const pumpkman = this.add.image(4.949620764915721, -165.27233530930118, 'forts', 'pumpkman')
-        container_1.add(pumpkman)
+        // flag1_0001
+        const flag1_0001 = this.add.sprite(-45.56270613136127, -216.52372093062172, 'forts', 'flag1_0001')
+        container_1.add(flag1_0001)
 
-        // fountain
-        const fountain = this.add.sprite(-53.05037923508428, 62.727664690698816, 'forts', 'fountain0001')
-        container_1.add(fountain)
+        // fort1
+        const fort1 = this.add.image(-2.562706131361267, -14.274148176715471, 'forts', 'fort1')
+        fort1.setOrigin(0.5, 0.5552506587546583)
+        container_1.add(fort1)
+
+        // fort9
+        this.add.image(871, 399, 'forts', 'fort9')
+
+        // fort4
+        this.add.image(872, 676, 'forts', 'fort4')
+
+        // fort3
+        const fort3 = this.add.image(775.6070787215541, 714.8389329685477, 'forts', 'fort3')
+        fort3.setOrigin(0.511865390531428, 0.5830080877345094)
+
+        // fort2
+        const fort2 = this.add.image(558, 750, 'forts', 'fort2')
+
+        // fort10
+        const fort10 = this.add.image(1057, 441, 'forts', 'fort10')
+
+        // fort7
+        const fort7 = this.add.image(1200, 539, 'forts', 'fort7')
+
+        // fort6
+        const fort6 = this.add.image(1073.4639997667232, 564.0800320527403, 'forts', 'fort6')
+        fort6.setOrigin(0.49254368818797667, 0.7269951083660202)
+
+        // snowman
+        const snowman = this.add.image(1373.196460639223, 738.0884840194266, 'forts', 'snowman')
+        snowman.setOrigin(0.4903035518237796, 0.7012878750867257)
+
+        // tower
+        const tower = this.add.sprite(1193, 199, 'forts', 'tower_0001')
+
+        // target
+        const target = this.add.sprite(1300, 181, 'forts', 'target_0001')
+
+        // text
+        this.add.image(1105, 76, 'forts', 'text')
 
         // container_2
-        const container_2 = this.add.container(1381.6363087071127, 679.0765047695506)
+        const container_2 = this.add.container(865.0335578701404, 468.2888433582715)
 
-        // house1
-        const house1 = this.add.image(3.5948924647623244, 1.9237393710743618, 'forts', 'house1')
-        house1.setOrigin(0.9113363073307206, 0.7093752586573532)
-        container_2.add(house1)
+        // flag2_0004
+        const flag2_0004 = this.add.sprite(-73.03355787014038, -134.2888433582715, 'forts', 'flag2_0004')
+        container_2.add(flag2_0004)
+
+        // fort8
+        const fort8 = this.add.image(-99.03355787014038, -20.288843358271492, 'forts', 'fort8')
+        container_2.add(fort8)
+
+        // fort5
+        const fort5 = this.add.image(-16.033557870140385, -35.28884335827149, 'forts', 'fort5')
+        container_2.add(fort5)
 
         // day
-        const day = this.add.text(-41.636308707112676, -198.07650476955064, '', {})
+        const day = this.add.text(1113, 233, '', {})
         day.scaleX = 0.8
-        day.angle = 12.000000000000002
+        day.angle = 4
         day.setOrigin(0.5, 0.5)
         day.text = 'WEDNESDAY'
-        day.setStyle({color: '#1dd63fff', fontFamily: 'CCFaceFront', fontSize: '18px', fontStyle: 'italic'})
+        day.setStyle({color: '#ffffffff', fontFamily: 'CCFaceFront', fontSize: '18px', fontStyle: 'italic'})
         day.setPadding({left: 5, right: 5})
-        container_2.add(day)
 
         // am_pm
-        const am_pm = this.add.text(46.363691292887324, -306.07650476955064, '', {})
-        am_pm.angle = 16
+        const am_pm = this.add.text(1177, 149, '', {})
         am_pm.setOrigin(0.5, 0.5)
         am_pm.text = 'AM'
-        am_pm.setStyle({align: 'right', color: '#1dd63fff', fontFamily: 'cplcd', fontSize: '35px'})
-        container_2.add(am_pm)
+        am_pm.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'cplcd', fontSize: '35px'})
 
         // clockTime
-        const clockTime = this.add.text(-29.636308707112676, -317.07650476955064, '', {})
+        const clockTime = this.add.text(1097, 170, '', {})
         clockTime.scaleX = 0.6363895309486298
-        clockTime.angle = 16
         clockTime.setOrigin(0.5, 0.5)
         clockTime.text = '12:59'
-        clockTime.setStyle({align: 'right', color: '#1dd63fff', fontFamily: 'cplcd', fontSize: '90px'})
+        clockTime.setStyle({align: 'right', color: '#DCE8FD', fontFamily: 'cplcd', fontSize: '90px'})
         clockTime.setPadding({left: 5, right: 5})
-        container_2.add(clockTime)
 
-        // rectangle_1
-        const rectangle_1 = this.add.rectangle(113, 142, 220, 280)
-
-        // rectangle
-        const rectangle = this.add.rectangle(445, 136, 220, 280)
-
-        // rectangle_2
-        const rectangle_2 = this.add.rectangle(1412, 140, 220, 280)
+        // hitbox
+        const hitbox = this.add.ellipse(1304, 147, 60, 70)
 
         // lists
-        const sort = [fg, container_1, what2, what, pool, gremlin2, gremlin, grave2, grave, house4, house3, house2, bush, container_2]
+        const sort = [snowman, fort2, fort3, container_1, fort6, fort7, fort10]
 
-        // rectangle_1 (components)
-        new SimpleButton(rectangle_1)
-        const rectangle_1MoveTo = new MoveTo(rectangle_1)
-        rectangle_1MoveTo.x = 148
-        rectangle_1MoveTo.y = 287
+        // flag1_0001 (components)
+        const flag1_0001Animation = new Animation(flag1_0001)
+        flag1_0001Animation.key = 'flag1_'
+        flag1_0001Animation.end = 16
 
-        // rectangle (components)
-        new SimpleButton(rectangle)
-        const rectangleMoveTo = new MoveTo(rectangle)
-        rectangleMoveTo.x = 430
-        rectangleMoveTo.y = 260
+        // tower (components)
+        const towerAnimation = new Animation(tower)
+        towerAnimation.key = 'tower_'
+        towerAnimation.end = 12
+        towerAnimation.repeat = 0
+        towerAnimation.autoPlay = false
 
-        // rectangle_2 (components)
-        new SimpleButton(rectangle_2)
-        const rectangle_2MoveTo = new MoveTo(rectangle_2)
-        rectangle_2MoveTo.x = 1390
-        rectangle_2MoveTo.y = 240
+        // target (components)
+        const targetAnimation = new Animation(target)
+        targetAnimation.key = 'target_'
+        targetAnimation.end = 12
+        targetAnimation.repeat = 0
+        targetAnimation.autoPlay = false
 
-        this.fountain = fountain
+        // flag2_0004 (components)
+        const flag2_0004Animation = new Animation(flag2_0004)
+        flag2_0004Animation.key = 'flag2_'
+        flag2_0004Animation.start = 4
+        flag2_0004Animation.end = 16
+
+        this.tower = tower
+        this.target = target
         this.day = day
         this.am_pm = am_pm
         this.clockTime = clockTime
+        this.hitbox = hitbox
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -179,7 +180,26 @@ export default class Forts extends RoomScene {
     create() {
         super.create()
 
-        this.fountain.play('forts-fountain')
+        this.bounds = this.hitbox.getBounds()
+
+        this.tower.on('animationcomplete', () => this.onTowerAnimComplete())
+        this.target.on('animationcomplete', () => this.onTargetAnimComplete())
+
+        if (!this.shell.client.stamps.includes(27)) {
+            this.snowFortsInterval = setInterval(() => {
+                let thrownColor = 0
+                for (let p in this.penguins) {
+                    let penguin = this.penguins[p]
+                    if (penguin.color == this.shell.client.penguin.color && penguin.hasThrownSnowball) thrownColor++
+                }
+                if (thrownColor >= 5 && this.shell.client.penguin.hasThrownSnowball) {
+                    this.shell.client.stampEarned(27)
+                    clearInterval(this.snowFortsInterval)
+                }
+            }, 2000)
+        }
+
+        this.consequtiveHits = 0
     }
 
     update() {
@@ -218,8 +238,29 @@ export default class Forts extends RoomScene {
         }
     }
 
+    onSnowballComplete(user, x, y) {
+        if (this.bounds.contains(x, y)) {
+            this.tower.__Animation.play()
+            this.target.__Animation.play()
+
+            if (user != this.shell.client.id) return
+            this.consequtiveHits++
+            if (this.consequtiveHits == 10) this.shell.client.stampEarned(13)
+        } else if (user == this.shell.client.id) {
+            this.consequtiveHits = 0
+        }
+    }
+
+    onTowerAnimComplete() {
+        this.tower.setFrame('tower_0001')
+    }
+
+    onTargetAnimComplete() {
+        this.target.setFrame('target_0001')
+    }
+
     stop() {
-        this.lastTime = null
+        clearInterval(this.snowFortsInterval)
         super.stop()
     }
 

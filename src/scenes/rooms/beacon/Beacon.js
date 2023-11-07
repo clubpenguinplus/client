@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import {SimpleButton, ShowHint, Zone, Button, MoveTo} from '@components/components'
+import {SimpleButton, ShowHint, Zone} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -12,7 +12,7 @@ export default class Beacon extends RoomScene {
         this.launch
         /** @type {Phaser.GameObjects.Sprite} */
         this.launchActive
-        /** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container>} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -22,7 +22,7 @@ export default class Beacon extends RoomScene {
             jetpack: () => this.triggerGame('jetpackadventure', 906, 'ruffle')
         }
 
-        this.music = 340
+        this.music = 583
 
         this.loadSfx = ['beacon-jetpackopen', 'beacon-jetpackclose']
 
@@ -40,20 +40,24 @@ export default class Beacon extends RoomScene {
         const bg = this.add.image(0, 0, 'lightroof', 'bg')
         bg.setOrigin(0, 0)
 
+        // light
+        const light = this.add.image(688.6894422954724, 555.9710578661634, 'lightroof', 'light')
+        light.setOrigin(0.6309839947998837, 0.8038810334259991)
+
         // launch
         const launch = this.add.image(1321, 570, 'lightroof', 'launch')
-        launch.tintTopLeft = 11579069
-        launch.tintTopRight = 11579069
-        launch.tintBottomLeft = 11579069
-        launch.tintBottomRight = 11579069
 
         // launchActive
         const launchActive = this.add.sprite(1321, 570, 'lightroof', 'launch/launch0001')
         launchActive.visible = false
-        launchActive.tintTopLeft = 11579069
-        launchActive.tintTopRight = 11579069
-        launchActive.tintBottomLeft = 11579069
-        launchActive.tintBottomRight = 11579069
+
+        // railing
+        const railing = this.add.image(680, 846, 'lightroof', 'railing')
+        railing.setOrigin(0.5, 0.7486553607307954)
+
+        // railing_2
+        const railing_2 = this.add.image(230.2762147789686, 563.4632225414601, 'lightroof', 'railing_2')
+        railing_2.setOrigin(0.8421959359650598, 0.3415237313641213)
 
         // telescopeZone
         const telescopeZone = this.add.rectangle(255, 300, 235, 110)
@@ -71,28 +75,8 @@ export default class Beacon extends RoomScene {
         // snow
         const snow = this.add.container(5, 1722)
 
-        // stairs
-        const stairs = this.add.image(138.86516189156674, 675.7588356232907, 'lightroof', 'stairs')
-        stairs.setOrigin(0.45806784480189044, 0.8093247083206717)
-        stairs.tintTopLeft = 11579069
-        stairs.tintTopRight = 11579069
-        stairs.tintBottomLeft = 11579069
-        stairs.tintBottomRight = 11579069
-
-        // railing
-        const railing = this.add.image(158.9663836968491, 564.611528508696, 'lightroof', 'railing')
-        railing.setOrigin(0.10458314716897968, 0.588137008863225)
-
-        // light
-        const light = this.add.image(723.5295135738379, 536.8939588248128, 'lightroof', 'light')
-        light.setOrigin(0.4760062589301565, 0.5592645404425133)
-
-        // beegrailing
-        const beegrailing = this.add.image(46.63728477610907, 879.7165481341377, 'lightroof', 'beegrailing')
-        beegrailing.setOrigin(0.03068242467386182, 0.9163713866986836)
-
         // lists
-        const sort = [snow, railing, beegrailing, light]
+        const sort = [railing_2, railing, light, snow]
 
         // telescopeZone (components)
         const telescopeZoneZone = new Zone(telescopeZone)
@@ -113,10 +97,6 @@ export default class Beacon extends RoomScene {
         jetpackZoneSimpleButton.callback = () => this.shell.client.penguin.move(1342, 565)
         const jetpackZoneShowHint = new ShowHint(jetpackZone)
         jetpackZoneShowHint.text = 'jetpackadventure'
-
-        // stairs (components)
-        new Button(stairs)
-        new MoveTo(stairs)
 
         this.launch = launch
         this.launchActive = launchActive

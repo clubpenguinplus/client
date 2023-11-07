@@ -33,7 +33,7 @@ export default class Coffee extends RoomScene {
             smoothie: () => this.triggerGame('smoothie', 959, 'waflash')
         }
 
-        this.music = 252
+        this.music = 429
 
         this.loadSfx = ['coffee-TownDoorOpen', 'coffee-BookLightOn', 'coffee-BookLightOff', 'coffee-beans', 'coffee-cashregister', 'coffee-smoothie']
         /* END-USER-CTR-CODE */

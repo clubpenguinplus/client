@@ -21,7 +21,7 @@ export default class Pizza extends RoomScene {
             pizzatron: () => this.triggerGame('pizzatron', 910, 'ruffle')
         }
 
-        this.music = 780
+        this.music = 676
 
         this.loadSfx = ['pizza-PlazaOpen', 'pizza-PlazaClose', 'pizza-KitchenOpen', 'pizza-KitchenClose', 'pizza-CashUp', 'pizza-CashDown']
         /* END-USER-CTR-CODE */
@@ -35,7 +35,7 @@ export default class Pizza extends RoomScene {
     /** @returns {void} */
     _create() {
         // pizzabg
-        const pizzabg = this.add.image(0, 960, 'pizza', 'pizzabg')
+        const pizzabg = this.add.image(-168, 980, 'pizza', 'pizzabg')
         pizzabg.setOrigin(0, 1)
 
         // pizzatrondoor

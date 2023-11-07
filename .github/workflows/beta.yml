@@ -16,34 +16,15 @@ jobs:
               with:
                   node-version: '16'
 
-            - name: Checkout repository and submodules
-              uses: actions/checkout@v2
+            - name: SSH into server and deploy 
+              uses: appleboy/ssh-action@v0.1.9
               with:
-                  token: ${{ secrets.MEDIA_KEY }}
-                  submodules: recursive
-
-            - name: Installing
-              run: npm install
-
-            - name: Build
-              run: npm run build
-
-            - name: Push static content to CDN
-              uses: clubpenguinplus/spaces-sync-action@beta
-              env:
-                  SOURCE_DIR: './client/'
-                  SPACE_REGION: 'nyc3'
-                  SPACE_NAME: ${{ secrets.SPACE_NAME }}
-                  SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
-                  SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
-                  FILE_PATH: 'beta'
-
-            - name: Push play page to CDN
-              uses: clubpenguinplus/spaces-sync-action@literal
-              env:
-                  SOURCE_DIR: './play/'
-                  SPACE_REGION: 'nyc3'
-                  SPACE_NAME: ${{ secrets.SPACE_NAME }}
-                  SPACE_ACCESS_KEY: ${{ secrets.SPACE_ACCESS_KEY }}
-                  SPACE_SECRET_KEY: ${{ secrets.SPACE_SECRET_KEY }}
-                  FILE_PATH: 'beta'
+                  host: ${{ secrets.SERVER_HOST }}
+                  username: ${{ secrets.SERVER_USERNAME }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  port: 22
+                  script: |
+                    cd /home/cpplus/betaclient
+                    git pull --recurse-submodules
+                    npm install
+                    npm run build

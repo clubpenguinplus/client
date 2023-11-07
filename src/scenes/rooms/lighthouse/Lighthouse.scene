@@ -18,714 +18,347 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "fd4759fa-eae7-4ac0-a677-b46139cc41f4",
+            "id": "50df9ab4-e7db-4cda-b997-78d41eec7461",
             "label": "bg",
             "texture": {
                 "key": "lighthouse",
                 "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "8fce8a4c-1bf9-49fb-aece-b613afa3f5a6",
-            "label": "actuallyidkwhatthisis",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "actuallyidkwhatthisis"
-            },
-            "x": 180.08974094299833,
-            "y": 602.0863703277898,
-            "originX": 0.1184800927256568,
-            "originY": 0.6271733024247811
-        },
-        {
-            "type": "Image",
-            "id": "7902da82-77ac-4677-bb0e-7b4fa25eaad6",
-            "label": "banner",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "banner"
-            },
-            "x": 962.2055508554018,
-            "y": 346.46803245397984,
-            "originX": 0.6330299676680275,
-            "originY": 0.3609042004728957
-        },
-        {
-            "type": "Image",
-            "id": "e4f08439-fdbb-493f-9005-dd9b83029d12",
-            "label": "chair1_back",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair1-back"
-            },
-            "x": 741.4736421815203,
-            "y": 630.7812602180342,
-            "originX": 0.4878115932394536,
-            "originY": 0.6570638118482215
-        },
-        {
-            "type": "Image",
-            "id": "4b8cf258-e6ef-434a-af5d-c222e35931b9",
-            "label": "chair1_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair1-front"
-            },
-            "x": 742.5262059828314,
-            "y": 676.8714125934339,
-            "originX": 0.48850408288344166,
-            "originY": 0.7050743881181603
-        },
-        {
-            "type": "Image",
-            "id": "ac15b40d-2fca-4c7e-bf69-e01ec6b166dc",
-            "label": "chair10",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair10"
-            },
-            "x": 1069.868613904458,
-            "y": 744.4367494598193,
-            "originX": 0.7038609302003013,
-            "originY": 0.7754549473539785
-        },
-        {
-            "type": "Image",
-            "id": "ade23e7f-ac8c-4319-b37a-da00bb20411e",
-            "label": "chair10_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair10-front"
-            },
-            "x": 1069.868613904458,
-            "y": 785.2089354998797,
-            "originX": 0.7038609302003013,
-            "originY": 0.8179259744790414
-        },
-        {
-            "type": "Image",
-            "id": "d890c4a6-27b5-4ac8-a3b8-6713517c4fc2",
-            "label": "chair11",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair11"
-            },
-            "x": 1046.5702218815663,
-            "y": 828.3109607422291,
-            "originX": 0.6885330407115569,
-            "originY": 0.862823917439822
-        },
-        {
-            "type": "Image",
-            "id": "fc4183d4-affc-4301-95e9-4aa1724145ca",
-            "label": "chair11_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair11-front"
-            },
-            "x": 1031.426267066687,
-            "y": 870.248066383434,
-            "originX": 0.678569912543873,
-            "originY": 0.9065084024827438
-        },
-        {
-            "type": "Image",
-            "id": "8607097e-feae-4422-90d5-2761addc1132",
-            "label": "chair12",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair12"
-            },
-            "x": 959.2012517957229,
-            "y": 685.0258498014459,
-            "originX": 0.6310534551287651,
-            "originY": 0.7135685935431728
-        },
-        {
-            "type": "Image",
-            "id": "15083102-cabc-4bad-a5a9-fabf4dd91f16",
-            "label": "chair12_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair12-front"
-            },
-            "x": 955.7064929922892,
-            "y": 732.7875534483736,
-            "originX": 0.6287542717054534,
-            "originY": 0.7633203681753892
-        },
-        {
-            "type": "Image",
-            "id": "e2b03ab9-c3d4-4771-98a6-a7481a300808",
-            "label": "chair13",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair13"
-            },
-            "x": 930.0782617671085,
-            "y": 764.2403826792772,
-            "originX": 0.6118935932678345,
-            "originY": 0.7960837319575804
-        },
-        {
-            "type": "Image",
-            "id": "14354243-9a5d-4fae-8903-be68ee9c1c43",
-            "label": "chair13_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair13-front"
-            },
-            "x": 912.6044677499399,
-            "y": 807.3424079216267,
-            "originX": 0.6003976761512763,
-            "originY": 0.8409816749183611
-        },
-        {
-            "type": "Image",
-            "id": "b66fd923-883d-420a-b137-84db73f9040b",
-            "label": "chair14",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair14"
-            },
-            "x": 784.4633116240361,
-            "y": 761.9105434769881,
-            "originX": 0.5160942839631817,
-            "originY": 0.7936568161218626
-        },
-        {
-            "type": "Image",
-            "id": "8ebf8ec0-4bed-4772-a095-f666b5742725",
-            "label": "chair14_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair14-front"
-            },
-            "x": 777.4737940171686,
-            "y": 793.3633727078917,
-            "originX": 0.5114959171165583,
-            "originY": 0.8264201799040538
-        },
-        {
-            "type": "Image",
-            "id": "92e22ff9-9a0f-4ef1-9a6e-f41d53197f66",
-            "label": "chair15",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair15"
-            },
-            "x": 872.9972013110241,
-            "y": 828.3109607422291,
-            "originX": 0.5743402640204106,
-            "originY": 0.862823917439822
-        },
-        {
-            "type": "Image",
-            "id": "c32b9a10-e3d5-4ed6-b50f-23e55830b1cc",
-            "label": "chair15_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair15-front"
-            },
-            "x": 870.667362108735,
-            "y": 862.0936291754219,
-            "originX": 0.5728074750715362,
-            "originY": 0.8980141970577312
-        },
-        {
-            "type": "Image",
-            "id": "9ed55309-e67d-41b9-b773-e82c7a04ac5b",
-            "label": "chair16",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair16"
-            },
-            "x": 713.4032159542169,
-            "y": 837.6303175513857,
-            "originX": 0.4693442210225111,
-            "originY": 0.8725315807826934
-        },
-        {
-            "type": "Image",
-            "id": "b0a27629-9579-4ee9-82ef-18aaec7173b9",
-            "label": "chair16_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair16-front"
-            },
-            "x": 714.5681355553614,
-            "y": 872.5779055857231,
-            "originX": 0.4701106154969483,
-            "originY": 0.9089353183184615
-        },
-        {
-            "type": "Image",
-            "id": "ff53a645-15c1-41c9-bedd-d3bc63cb8cdb",
-            "label": "chair2",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair2"
-            },
-            "x": 743.6911255839759,
-            "y": 633.7693873510844,
-            "originX": 0.4892704773578789,
-            "originY": 0.6601764451573796
-        },
-        {
-            "type": "Image",
-            "id": "8b976c87-64c1-48ec-8fdc-5625eed5fa5d",
-            "label": "chair2_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair2-front"
-            },
-            "x": 737.866527578253,
-            "y": 679.201251795723,
-            "originX": 0.48543850498569274,
-            "originY": 0.7075013039538781
-        },
-        {
-            "type": "Image",
-            "id": "a481a523-4e29-4226-be39-41fce068180a",
-            "label": "chair3",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair3"
-            },
-            "x": 705.2487787462048,
-            "y": 703.6645634197591,
-            "originX": 0.46397945970145055,
-            "originY": 0.7329839202289158
-        },
-        {
-            "type": "Image",
-            "id": "ebadb925-615b-4a9a-8073-38c5b27e460c",
-            "label": "chair3_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair3-front"
-            },
-            "x": 699.4241807404819,
-            "y": 744.4367494598193,
-            "originX": 0.4601474873292644,
-            "originY": 0.7754549473539785
-        },
-        {
-            "type": "Image",
-            "id": "d9af0ee6-6ab4-403d-a467-8e4560b21575",
-            "label": "chair4",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair4"
-            },
-            "x": 645.8378790878313,
-            "y": 772.3948198872893,
-            "originX": 0.4248933415051522,
-            "originY": 0.804577937382593
-        },
-        {
-            "type": "Image",
-            "id": "48656b1b-48f4-40a3-9a8d-056ec139763e",
-            "label": "chair4_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair4-front"
-            },
-            "x": 638.8483614809638,
-            "y": 818.9916039330724,
-            "originX": 0.42029497465852883,
-            "originY": 0.8531162540969504
-        },
-        {
-            "type": "Image",
-            "id": "a393a0f8-a02a-4af8-9f26-23914589e598",
-            "label": "chair5",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair5"
-            },
-            "x": 558.4689090019879,
-            "y": 830.6407999445182,
-            "originX": 0.3674137559223604,
-            "originY": 0.8652508332755399
-        },
-        {
-            "type": "Image",
-            "id": "593716b2-e519-4d0f-a96c-7d0c8c8ad020",
-            "label": "chair5_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair5-front"
-            },
-            "x": 546.819712990542,
-            "y": 870.248066383434,
-            "originX": 0.35974981117798815,
-            "originY": 0.9065084024827438
-        },
-        {
-            "type": "Image",
-            "id": "95d30289-4abf-45e0-9771-2e2e2bc39e5a",
-            "label": "chair6",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair6"
-            },
-            "x": 848.533889686988,
-            "y": 622.1201913396386,
-            "originX": 0.5582459800572289,
-            "originY": 0.6480418659787902
-        },
-        {
-            "type": "Image",
-            "id": "6fbf57e4-e375-44d1-8c8a-0d539150ed27",
-            "label": "chair6_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair6-front"
-            },
-            "x": 847.3689700858434,
-            "y": 659.3976185762651,
-            "originX": 0.5574795855827918,
-            "originY": 0.6868725193502762
-        },
-        {
-            "type": "Image",
-            "id": "b569d3f7-a988-4c2d-a113-6810b75aca0e",
-            "label": "chair7",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair7"
-            },
-            "x": 831.0600956698192,
-            "y": 683.8609302003013,
-            "originX": 0.5467500629406705,
-            "originY": 0.7123551356253138
-        },
-        {
-            "type": "Image",
-            "id": "58a880ec-7214-4e7d-a5b9-6862c705ae13",
-            "label": "chair7_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair7-front"
-            },
-            "x": 822.9056584618071,
-            "y": 719.9734378357832,
-            "originX": 0.54138530161961,
-            "originY": 0.7499723310789409
-        },
-        {
-            "type": "Image",
-            "id": "9f80f4cd-e409-4d6a-b46c-c3e8a758d6c6",
-            "label": "chair8",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair8"
-            },
-            "x": 966.1907694025905,
-            "y": 630.2746285476507,
-            "originX": 0.6356518219753885,
-            "originY": 0.6565360714038028
-        },
-        {
-            "type": "Image",
-            "id": "a8867cc1-b8e6-4671-9ea9-4066712d52b3",
-            "label": "chair8_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair8-front"
-            },
-            "x": 959.2012517957229,
-            "y": 675.7064929922892,
-            "originX": 0.6310534551287651,
-            "originY": 0.7038609302003013
-        },
-        {
-            "type": "Image",
-            "id": "7f33f618-5ac6-4a53-8eeb-a18b31276a0e",
-            "label": "chair9",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair9"
-            },
-            "x": 1078.02305111247,
-            "y": 680.3661713968676,
-            "originX": 0.7092256915213618,
-            "originY": 0.7087147618717371
-        },
-        {
-            "type": "Image",
-            "id": "bdd040a8-81c9-474c-ae46-f48fa8adc4bf",
-            "label": "chair9_front",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "chair9-front"
-            },
-            "x": 1076.8581315113254,
-            "y": 733.9524730495182,
-            "originX": 0.7084592970469246,
-            "originY": 0.764533826093248
-        },
-        {
-            "type": "Image",
-            "id": "f2844a76-38ef-4faa-8be3-d9d6d4295087",
-            "label": "door",
-            "components": [
-                "MoveTo",
-                "Button"
-            ],
-            "Button.hoverCallback": "() => this.shell.musicController.addSfx('lighthouse-LightDoorOpen')",
-            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lighthouse-LightDoorClose')",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "door"
-            },
-            "x": 452,
-            "y": 459,
-            "originX": 0.3872658450505245,
-            "originY": 0.8045890700240413
-        },
-        {
-            "type": "Image",
-            "id": "4a7290af-8f74-488e-bb3e-9883122a2a8d",
-            "label": "nikpmup",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "nikpmup"
-            },
-            "x": 582.932220626024,
-            "y": 417.09434153819274,
-            "originX": 0.3835080398855421,
-            "originY": 0.43447327243561745
-        },
-        {
-            "type": "Image",
-            "id": "4b559dad-c786-4174-9117-0b36d13787db",
-            "label": "popcorn",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "popcorn"
-            },
-            "x": 736.7016079771084,
-            "y": 377.48707509927704,
-            "originX": 0.4846721105112555,
-            "originY": 0.3932157032284136
-        },
-        {
-            "type": "Image",
-            "id": "76a87e42-428b-4604-ab0f-353846450cd7",
-            "label": "projector",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "projector"
-            },
-            "x": 1180.326592990545,
-            "y": 394.96282800769325,
-            "originX": 0.7765306532832532,
-            "originY": 0.4114196125080138
-        },
-        {
-            "type": "Image",
-            "id": "33e2450b-5a95-43f4-8fa5-8fcbeb180880",
-            "label": "pumpkin",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "pumpkin"
-            },
-            "x": 1493.7493126193328,
-            "y": 608.7705747312074,
-            "originX": 0.9827298109337717,
-            "originY": 0.6341360153450076
-        },
-        {
-            "type": "Image",
-            "id": "c1c46d9f-fa2a-4e47-bb19-bfe2b8619cac",
-            "label": "railin",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "railin"
-            },
-            "x": 201.18429833626976,
-            "y": 594.1927738182405,
-            "originX": 0.13235809101070378,
-            "originY": 0.6189508060606672
-        },
-        {
-            "type": "Image",
-            "id": "b7ec0438-c751-4bf4-9bdb-691163823c9b",
-            "label": "railin2",
-            "texture": {
-                "key": "lighthouse",
-                "frame": "railin2"
-            },
-            "x": 157.45089559736903,
-            "y": 601.481674274724,
-            "originX": 0.10358611552458488,
-            "originY": 0.6265434107028375
-        },
-        {
-            "type": "Image",
-            "id": "d185a52c-663c-49f0-90b2-6e4673a8ca61",
+            "id": "49b130c2-5e05-42c1-947a-2b959b4f3cdb",
             "label": "railing",
             "texture": {
                 "key": "lighthouse",
                 "frame": "railing"
             },
-            "x": 1294.5193668087854,
-            "y": 574.7557059342847,
-            "originX": 0.8516574781636747,
-            "originY": 0.5987038603482132
+            "x": 717.702414598927,
+            "y": 643.22225871604,
+            "originX": 0.5445922646817206,
+            "originY": 0.9989061217506493
         },
         {
             "type": "Image",
-            "id": "d7dee65f-b145-4a92-9a15-fbf73cf56a8c",
-            "label": "screen",
+            "id": "7425db30-e38b-46f4-b294-758713226c34",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.shell.musicController.addSfx('lighthouse-LightDoorOpen')",
+            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('lighthouse-LightDoorClose')",
+            "MoveTo.x": 482,
+            "MoveTo.y": 496,
             "texture": {
                 "key": "lighthouse",
-                "frame": "screen"
+                "frame": "door"
             },
-            "x": 1187.6154934470283,
-            "y": 462.9925656015387,
-            "originX": 0.7813259825309397,
-            "originY": 0.4822839225016028
+            "x": 391,
+            "y": 287,
+            "originX": 0,
+            "originY": 0
         },
         {
-            "type": "Image",
-            "id": "8ff2f10d-9104-4c02-963e-8c1585b50fe6",
-            "label": "speaker",
+            "type": "Sprite",
+            "id": "c8afd020-7201-4c6f-9800-8a655e54efe7",
+            "label": "speakers3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "speakers3_",
+            "Animation.end": 10,
             "texture": {
                 "key": "lighthouse",
-                "frame": "speaker"
+                "frame": "speakers3_0001"
             },
-            "x": 628.7997917832981,
-            "y": 433.8369637756049,
-            "originX": 0.4136840735416435,
-            "originY": 0.45191350393292173
+            "x": 16,
+            "y": 871.5
         },
         {
-            "type": "Image",
-            "id": "3a4183f6-5834-49bb-b898-58a969a2c4ce",
-            "label": "speaker2",
+            "type": "Sprite",
+            "id": "e101c742-d297-4a37-b0d0-b90ef7c7526a",
+            "label": "speakers1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "speakers1_",
+            "Animation.end": 10,
             "texture": {
                 "key": "lighthouse",
-                "frame": "speaker2"
+                "frame": "speakers1_0001"
             },
-            "x": 43.25812177912849,
-            "y": 849.3042897951609,
-            "originX": 0.028459290644163478,
-            "originY": 0.8846919685366259
+            "x": 122,
+            "y": 300.5
         },
         {
-            "type": "Image",
-            "id": "f09bf683-2a92-43d8-8ae8-b7c9aab2dc8c",
-            "label": "stand",
+            "type": "Sprite",
+            "id": "2b755c2e-27f1-43e9-8328-302786a61cac",
+            "label": "speakers2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "speakers2_",
+            "Animation.end": 10,
             "texture": {
                 "key": "lighthouse",
-                "frame": "stand"
+                "frame": "speakers2_0001"
             },
-            "x": 983.5262806654921,
-            "y": 506.7259683404393,
-            "originX": 0.6470567635957185,
-            "originY": 0.5278395503546243
+            "x": 347.5,
+            "y": 334.5
         },
         {
             "type": "Image",
-            "id": "fadd4ebe-16f9-402c-8999-82b953ffe1ac",
-            "label": "catalog",
+            "id": "3def2487-64d5-4656-86d9-1e4b1fc7038d",
+            "label": "pole",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "pole"
+            },
+            "x": 604,
+            "y": 275,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "b62f488c-cec5-47a5-82aa-0f5d117bcbad",
+            "label": "speakers4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "speakers4_",
+            "Animation.end": 10,
+            "texture": {
+                "key": "lighthouse",
+                "frame": "speakers4_0001"
+            },
+            "x": 628,
+            "y": 304.5
+        },
+        {
+            "type": "Image",
+            "id": "7b62f6e7-488d-4929-8c44-122a670cd996",
+            "label": "instruments",
+            "scope": "CLASS",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "instruments"
+            },
+            "x": 1068,
+            "y": 423,
+            "angle": -5,
+            "originX": 0,
+            "originY": 0,
+            "flipX": true
+        },
+        {
+            "type": "Rectangle",
+            "id": "caca9354-9b41-43f6-915e-04d1463a6a62",
+            "label": "zone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.onInstrumentsOver()",
+            "Zone.hoverOutCallback": "() => this.onInstrumentsOut()",
+            "Zone.callback": "() => this.interface.loadExternal(\"Music\")",
+            "x": 1183,
+            "y": 565,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 165,
+            "height": 235
+        },
+        {
+            "type": "Sprite",
+            "id": "4166482f-d1c8-482f-89ed-df9af4f4f35b",
+            "label": "sign",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "totop_",
+            "Animation.end": 26,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "texture": {
+                "key": "lighthouse",
+                "frame": "totop_0001"
+            },
+            "x": 234,
+            "y": -11,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Rectangle",
+            "id": "2dfb9eeb-c786-425f-b8e5-669ea4d3ffc2",
+            "label": "totopZone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.onToTopOver()",
+            "Zone.callback": "() => this.onToTopClick()",
+            "x": 321,
+            "y": 54,
+            "scaleX": 0.8414379726690489,
+            "scaleY": 0.3861454935584283,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 165,
+            "height": 235
+        },
+        {
+            "type": "Image",
+            "id": "4aace61a-00d6-4b7f-a1df-14fa1a905d4d",
+            "label": "piano",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "piano"
+            },
+            "x": 418,
+            "y": 684
+        },
+        {
+            "type": "Image",
+            "id": "879bd016-199b-4db4-826d-14630c47741e",
+            "label": "microphone",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "microphone"
+            },
+            "x": 320,
+            "y": 611
+        },
+        {
+            "type": "Image",
+            "id": "54780c1a-77fb-4094-b45d-8822836dddda",
+            "label": "drums_0001",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "drums_0001"
+            },
+            "x": -48,
+            "y": 416
+        },
+        {
+            "type": "Image",
+            "id": "98d4d951-8025-43b2-b2fb-9f2dc77c0757",
+            "label": "book",
             "components": [
                 "Button"
             ],
-            "Button.callback": "() => this.interface.loadExternal('MusicCatalog')",
+            "Button.callback": "() => this.interface.loadExternal(\"Music\")",
             "texture": {
                 "key": "lighthouse",
-                "frame": "catalog"
+                "frame": "book"
             },
-            "x": 1426,
-            "y": 1173.774654156404,
-            "originY": 2.967605688316557
+            "x": 1421,
+            "y": 1024.2580729932183,
+            "originY": 1.7196354173323332
         },
         {
-            "type": "Rectangle",
-            "id": "00a20c9e-6a61-4880-a21c-df3d8b23cfa1",
-            "label": "rectangle_1",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.playRuffle()",
-            "x": 168,
-            "y": 422,
-            "scaleX": 0.5289812898672783,
-            "scaleY": 0.9368037044783979,
-            "angle": -32,
-            "width": 350,
-            "height": 250
+            "type": "Image",
+            "id": "f4fc273b-8d40-4514-8f3a-28f8ec59fdc5",
+            "label": "chair1",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair1"
+            },
+            "x": 757,
+            "y": 656
         },
         {
-            "type": "Rectangle",
-            "id": "3889bd8b-8ca4-45dd-b4db-db74b7405c69",
-            "label": "rectangle",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.playRuffle()",
-            "x": 78,
-            "y": 475,
-            "scaleX": 0.3555604665465204,
-            "scaleY": 0.8622623334968647,
-            "angle": -10,
-            "width": 350,
-            "height": 250
+            "type": "Image",
+            "id": "3a486ae8-3274-4202-8977-a06371899eeb",
+            "label": "chair_1",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair1"
+            },
+            "x": 942,
+            "y": 667
         },
         {
-            "type": "Rectangle",
-            "id": "93d798b2-6a44-4131-a3aa-84d0c762664a",
-            "label": "rectangle_2",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.playRuffle()",
-            "x": 238,
-            "y": 377,
-            "scaleX": 0.3555604665465204,
-            "scaleY": 0.8622623334968647,
-            "angle": -10,
-            "width": 350,
-            "height": 250
+            "type": "Image",
+            "id": "c6382ba5-85f0-4515-8bba-099eb3478384",
+            "label": "chair_2",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair1"
+            },
+            "x": 972,
+            "y": 756
         },
         {
-            "type": "Rectangle",
-            "id": "378f1865-0e7b-4575-aa51-6830fdc58bfb",
-            "label": "rectangle_3",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.playRuffle()",
-            "x": 261,
-            "y": 294,
-            "scaleX": 0.21895216380032803,
-            "scaleY": 0.4659933914915612,
-            "angle": -2,
-            "width": 350,
-            "height": 250
+            "type": "Image",
+            "id": "7cadd1fb-07f6-4296-bebd-c5b74b37cc36",
+            "label": "chair3_bottom_2",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair3-bottom"
+            },
+            "x": 646,
+            "y": 843
         },
         {
-            "type": "Rectangle",
-            "id": "7874cbb3-8af4-4b54-af59-7eb7208f602d",
-            "label": "rectangle_4",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.playRuffle()",
-            "x": 84,
-            "y": 575,
-            "scaleX": 0.21895216380032803,
-            "scaleY": 0.4659933914915612,
-            "angle": 55,
-            "width": 350,
-            "height": 250
+            "type": "Image",
+            "id": "6fa4d2d4-e022-4553-b1c5-efa3e94e09eb",
+            "label": "chair2_bottom",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair2-bottom"
+            },
+            "x": 720,
+            "y": 763
+        },
+        {
+            "type": "Image",
+            "id": "73a67dcf-e748-4134-b5af-7c4dfe9d0315",
+            "label": "chair2",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair2"
+            },
+            "x": 738,
+            "y": 764
+        },
+        {
+            "type": "Image",
+            "id": "be00f0d3-3b37-4ab8-b984-6cf583bd3116",
+            "label": "chair_3",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair3"
+            },
+            "x": 661,
+            "y": 843
+        },
+        {
+            "type": "Image",
+            "id": "8d852029-a7fc-4662-9d4f-420597dc308d",
+            "label": "chair2_bottom_1",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair2-bottom"
+            },
+            "x": 932,
+            "y": 851
+        },
+        {
+            "type": "Image",
+            "id": "39c21931-11cc-4556-9bc5-f892c0b86b2f",
+            "label": "chair",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair2"
+            },
+            "x": 950,
+            "y": 852
         }
     ],
     "plainObjects": [],
@@ -740,52 +373,16 @@
             "id": "2cfa95fa-6a2c-4ddd-9dac-59efeb093ff0",
             "label": "sort",
             "objectIds": [
-                "8fce8a4c-1bf9-49fb-aece-b613afa3f5a6",
-                "fadd4ebe-16f9-402c-8999-82b953ffe1ac",
-                "f09bf683-2a92-43d8-8ae8-b7c9aab2dc8c",
-                "3a4183f6-5834-49bb-b898-58a969a2c4ce",
-                "8ff2f10d-9104-4c02-963e-8c1585b50fe6",
-                "d7dee65f-b145-4a92-9a15-fbf73cf56a8c",
-                "d185a52c-663c-49f0-90b2-6e4673a8ca61",
-                "b7ec0438-c751-4bf4-9bdb-691163823c9b",
-                "c1c46d9f-fa2a-4e47-bb19-bfe2b8619cac",
-                "33e2450b-5a95-43f4-8fa5-8fcbeb180880",
-                "76a87e42-428b-4604-ab0f-353846450cd7",
-                "4b559dad-c786-4174-9117-0b36d13787db",
-                "4a7290af-8f74-488e-bb3e-9883122a2a8d",
-                "bdd040a8-81c9-474c-ae46-f48fa8adc4bf",
-                "7f33f618-5ac6-4a53-8eeb-a18b31276a0e",
-                "a8867cc1-b8e6-4671-9ea9-4066712d52b3",
-                "9f80f4cd-e409-4d6a-b46c-c3e8a758d6c6",
-                "58a880ec-7214-4e7d-a5b9-6862c705ae13",
-                "b569d3f7-a988-4c2d-a113-6810b75aca0e",
-                "6fbf57e4-e375-44d1-8c8a-0d539150ed27",
-                "95d30289-4abf-45e0-9771-2e2e2bc39e5a",
-                "593716b2-e519-4d0f-a96c-7d0c8c8ad020",
-                "a393a0f8-a02a-4af8-9f26-23914589e598",
-                "48656b1b-48f4-40a3-9a8d-056ec139763e",
-                "d9af0ee6-6ab4-403d-a467-8e4560b21575",
-                "ebadb925-615b-4a9a-8073-38c5b27e460c",
-                "a481a523-4e29-4226-be39-41fce068180a",
-                "8b976c87-64c1-48ec-8fdc-5625eed5fa5d",
-                "ff53a645-15c1-41c9-bedd-d3bc63cb8cdb",
-                "b0a27629-9579-4ee9-82ef-18aaec7173b9",
-                "9ed55309-e67d-41b9-b773-e82c7a04ac5b",
-                "c32b9a10-e3d5-4ed6-b50f-23e55830b1cc",
-                "92e22ff9-9a0f-4ef1-9a6e-f41d53197f66",
-                "8ebf8ec0-4bed-4772-a095-f666b5742725",
-                "b66fd923-883d-420a-b137-84db73f9040b",
-                "14354243-9a5d-4fae-8903-be68ee9c1c43",
-                "e2b03ab9-c3d4-4771-98a6-a7481a300808",
-                "15083102-cabc-4bad-a5a9-fabf4dd91f16",
-                "8607097e-feae-4422-90d5-2761addc1132",
-                "fc4183d4-affc-4301-95e9-4aa1724145ca",
-                "d890c4a6-27b5-4ac8-a3b8-6713517c4fc2",
-                "ade23e7f-ac8c-4319-b37a-da00bb20411e",
-                "ac15b40d-2fca-4c7e-bf69-e01ec6b166dc",
-                "4b8cf258-e6ef-434a-af5d-c222e35931b9",
-                "e4f08439-fdbb-493f-9005-dd9b83029d12",
-                "7902da82-77ac-4677-bb0e-7b4fa25eaad6"
+                "49b130c2-5e05-42c1-947a-2b959b4f3cdb",
+                "b62f488c-cec5-47a5-82aa-0f5d117bcbad",
+                "2b755c2e-27f1-43e9-8328-302786a61cac",
+                "e101c742-d297-4a37-b0d0-b90ef7c7526a",
+                "c8afd020-7201-4c6f-9800-8a655e54efe7",
+                "4aace61a-00d6-4b7f-a1df-14fa1a905d4d",
+                "879bd016-199b-4db4-826d-14630c47741e",
+                "be00f0d3-3b37-4ab8-b984-6cf583bd3116",
+                "73a67dcf-e748-4134-b5af-7c4dfe9d0315",
+                "39c21931-11cc-4556-9bc5-f892c0b86b2f"
             ]
         }
     ]
