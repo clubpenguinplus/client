@@ -5,7 +5,7 @@ export default class PuffleLoader extends BaseLoader {
         super(scene)
         this.scene = scene
         let suffix = '/client/media/puffles/'
-        this.hostname = window.location.hostname == 'play.cpplus.pw' ? 'https://media.cpplus.pw' : window.location.origin
+        this.hostname = this.shell.baseURL
         this.baseURL = `${this.hostname}${suffix}`
         this.keyPrefix = 'puffles/'
     }

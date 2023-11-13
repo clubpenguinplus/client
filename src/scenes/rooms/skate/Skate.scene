@@ -20,36 +20,33 @@
             "type": "Image",
             "id": "2d799377-6524-4743-a6c6-e73c4504f5cd",
             "label": "bg",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "bg"
             },
+            "x": -144,
+            "y": -39,
             "originX": 0,
-            "originY": 0,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0
         },
         {
             "type": "Image",
             "id": "a932388a-d2b4-46bf-8154-032a3fea0fbf",
             "label": "bench",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "bench"
             },
             "x": 1204,
-            "y": 207,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "y": 207
         },
         {
             "type": "Image",
             "id": "4be50e03-85ed-4111-a097-75116e839637",
             "label": "railing2",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "railing2"
@@ -57,16 +54,13 @@
             "x": 1206.5251210883862,
             "y": 350.9968016178712,
             "originX": 0.18418614466094257,
-            "originY": 0.3356914401276514,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0.3356914401276514
         },
         {
             "type": "Image",
             "id": "a2578e85-568f-4cbc-ba32-09286e9d6c7b",
             "label": "railing3",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "railing3"
@@ -74,46 +68,37 @@
             "x": 1240.6163209413069,
             "y": 462.9056017649504,
             "originX": 0.21524087109163548,
-            "originY": 0.3127283713802269,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0.3127283713802269
         },
         {
             "type": "Image",
             "id": "62aada2c-ab84-4e8b-b3d5-c54dd737573a",
             "label": "pillar",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "pillar"
             },
             "x": 5,
-            "y": 429,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "y": 429
         },
         {
             "type": "Image",
             "id": "8a0a9dd8-3d4f-4846-a8d0-0bb42ad746e8",
             "label": "pillar2",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "pillar2"
             },
             "x": 196,
-            "y": 209,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "y": 209
         },
         {
             "type": "Image",
             "id": "eedb20f5-0f30-48c2-9cd1-22b87a798928",
             "label": "puffle",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "puffle"
@@ -123,16 +108,13 @@
             "scaleX": 0.8,
             "scaleY": 0.8,
             "originX": 0.5488281242724042,
-            "originY": 3.04921256043897,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 3.04921256043897
         },
         {
             "type": "Image",
             "id": "047391bd-5905-4318-bdf9-b2a819a6bcde",
             "label": "puffle_1",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "puffle"
@@ -140,11 +122,7 @@
             "x": 180,
             "y": 149,
             "scaleX": 0.5,
-            "scaleY": 0.5,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "scaleY": 0.5
         },
         {
             "type": "Image",
@@ -161,16 +139,13 @@
                 "frame": "skate"
             },
             "x": 324,
-            "y": 178,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "y": 178
         },
         {
             "type": "Image",
             "id": "312578d1-ac64-4fe4-b0ff-41d3e4d88d25",
             "label": "fg2",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "fg2"
@@ -178,26 +153,19 @@
             "x": 646.6369855269844,
             "y": 699.2437501579271,
             "originX": 0.49747597996282805,
-            "originY": 0.16730633525779298,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0.16730633525779298
         },
         {
             "type": "Image",
             "id": "2b9e7ce6-288b-414f-858b-c40dd0651a87",
             "label": "fg1",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "fg1"
             },
             "x": 770,
-            "y": 826,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "y": 826
         },
         {
             "type": "Image",
@@ -218,21 +186,19 @@
             "type": "Image",
             "id": "7ae89f31-08e5-49c8-ac6a-3437739cb804",
             "label": "bar",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "bar"
             },
             "x": 1261,
-            "y": 228,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "y": 228
         },
         {
             "type": "Image",
             "id": "f2a94402-fe0a-4d95-b07c-af5748402a71",
             "label": "railing1",
+            "components": [],
             "texture": {
                 "key": "skate",
                 "frame": "railing1"
@@ -240,11 +206,7 @@
             "x": 1172.866631309672,
             "y": 691.3702917992708,
             "originX": 0.4582764034671558,
-            "originY": 0.41586599876093105,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0.41586599876093105
         }
     ],
     "plainObjects": [],
@@ -252,7 +214,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     },
     "lists": [
         {

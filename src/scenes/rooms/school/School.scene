@@ -18,283 +18,574 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "9f557a4f-1742-4d2c-91da-b36248f79790",
+            "id": "90a3b29b-246f-4c6e-ab9d-dd015bf4dac2",
             "label": "bg",
+            "components": [],
             "texture": {
                 "key": "school",
                 "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "x": -47,
+            "y": -69,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "b6840c62-bf58-4d20-a988-e95a7cc47391",
-            "label": "bluewolf",
+            "id": "d7af18f7-70cb-44aa-add0-987445dacbcb",
+            "label": "floor",
             "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "floor0001"
+            },
+            "x": 861,
+            "y": 284,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "29ce8371-c74f-4cfc-b3e4-5ca3efbe54cf",
+            "label": "chalk",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chalk0001"
+            },
+            "x": 512,
+            "y": 194
+        },
+        {
+            "type": "Image",
+            "id": "2b6f13f1-9d38-4c23-a55a-e05cf92a0e58",
+            "label": "banner",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "banner0001"
+            },
+            "x": 1154,
+            "y": 185
+        },
+        {
+            "type": "Image",
+            "id": "8a4f2a3c-f32d-4a19-b41e-666ae6f90e73",
+            "label": "banner2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "banner20001"
+            },
+            "x": 1153,
+            "y": 109
+        },
+        {
+            "type": "Image",
+            "id": "6adc04b5-69d8-4945-acda-66691089ffb8",
+            "label": "text_en",
             "components": [
-                "SimpleButton"
+                "LocalisedSprite"
             ],
-            "SimpleButton.callback": "() => this.shell.party.findCandy('bluewolf');",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "bluewolf"
-            },
-            "x": 1373,
-            "y": 328,
-            "scaleX": 0.25,
-            "scaleY": 0.25
-        },
-        {
-            "type": "Image",
-            "id": "ad7f973c-3920-46b4-8f3a-f8e107f851e5",
-            "label": "support",
             "texture": {
                 "key": "school",
-                "frame": "support"
+                "frame": "text-en"
             },
-            "x": 1096.4095134138174,
-            "y": 319.2379316429545,
-            "originX": 0.7213220482985641,
-            "originY": 0.3325395121280776
+            "x": 1149,
+            "y": 110
         },
         {
             "type": "Image",
-            "id": "f5da9e22-1b48-41d9-86e5-4a7b45b253d1",
-            "label": "table1",
+            "id": "ea49ba28-6505-4149-8ddb-9c1c887e1281",
+            "label": "table3",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "table1"
+                "frame": "table3"
             },
-            "x": 1181.2561606022582,
-            "y": 395.15335281155933,
-            "originX": 0.7771422109225383,
-            "originY": 0.4116180758453743
+            "x": 373,
+            "y": 364
         },
         {
             "type": "Image",
-            "id": "b0dc632b-b671-445d-bdb8-1c6dbf0ca8a9",
+            "id": "3c85f2d8-0313-4eb0-a7d3-f875e800a8df",
+            "label": "chair_4",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair8"
+            },
+            "x": 304,
+            "y": 399.47688205906013,
+            "originY": 0.04966974370085901
+        },
+        {
+            "type": "Image",
+            "id": "991a3d70-1c9c-433d-bf85-cc6ed12a1f4f",
+            "label": "chair_5",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair8"
+            },
+            "x": 402,
+            "y": 401.0203840925246,
+            "originY": 0.05743405846463686
+        },
+        {
+            "type": "Image",
+            "id": "d7cade3d-1c63-4198-8e88-289d4d0fb4d9",
+            "label": "chair_7",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair2"
+            },
+            "x": 381,
+            "y": 442,
+            "originY": 0.8232406830604544
+        },
+        {
+            "type": "Image",
+            "id": "0153e9bd-e063-4398-b815-9656f183e588",
+            "label": "chair_6",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair2"
+            },
+            "x": 281,
+            "y": 441,
+            "originY": 0.8404039051698586
+        },
+        {
+            "type": "Image",
+            "id": "ac197aef-b0a1-437b-a7b8-f5c4a5acceef",
+            "label": "chair8",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair8"
+            },
+            "x": 367,
+            "y": 536.1943922263825,
+            "originY": 0.08849131751975067
+        },
+        {
+            "type": "Image",
+            "id": "0468bdf7-5a05-47f0-bf9c-5069d24ce320",
+            "label": "table4",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table4"
+            },
+            "x": 314,
+            "y": 486
+        },
+        {
+            "type": "Image",
+            "id": "e6066063-ff38-4a4b-a8b7-897d2ba49c63",
+            "label": "table6",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table6"
+            },
+            "x": 707,
+            "y": 271
+        },
+        {
+            "type": "Image",
+            "id": "9dfb0a0a-dcd7-4441-bb7f-220e7b8f4fbf",
+            "label": "table5",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table5"
+            },
+            "x": 651,
+            "y": 310
+        },
+        {
+            "type": "Image",
+            "id": "b07832ce-1814-4cb2-862b-50c55692a46d",
             "label": "table2",
+            "components": [],
             "texture": {
                 "key": "school",
                 "frame": "table2"
             },
-            "x": 938.6245203967172,
-            "y": 396.64189048153196,
-            "originX": 0.6175161318399456,
-            "originY": 0.4131686359182625
+            "x": 661,
+            "y": 377
         },
         {
             "type": "Image",
-            "id": "7f928bf1-7ab1-43dd-8bf5-137ac7347435",
-            "label": "benches",
+            "id": "dd6db963-40c9-4e51-a755-6fb2f63f784f",
+            "label": "chair9",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "benches"
+                "frame": "chair9"
             },
-            "x": 1059.753586271564,
-            "y": 407.9164011999352,
-            "originX": 0.6972062707685049,
-            "originY": 0.42491292984032525
+            "x": 240,
+            "y": 530.6758001850613,
+            "originY": 0.023995922144109148
         },
         {
             "type": "Image",
-            "id": "30d0e599-dfec-48d2-b73a-cc59838090b8",
-            "label": "idkwhatthisis",
+            "id": "5129e5e3-b16b-4c8c-a355-a90401eff8eb",
+            "label": "chair2",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "idkwhatthisis"
+                "frame": "chair2"
             },
-            "x": 254.52712416977687,
-            "y": 312.1698861319424,
-            "originX": 0.167452058412824,
-            "originY": 0.32517696555786274
+            "x": 343,
+            "y": 581,
+            "originY": 0.8690092753521999
         },
         {
             "type": "Image",
-            "id": "636ea401-5aeb-49f0-89fe-095b7e3d22b5",
-            "label": "bookshelf",
+            "id": "5f48868d-8cbc-4464-aaa3-8bddee56aa9e",
+            "label": "chair7",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "bookshelf"
+                "frame": "chair7"
             },
-            "x": 181.78334526133634,
-            "y": 342.00589524271754,
-            "originX": 0.1195943034572738,
-            "originY": 0.3562561329682252
+            "x": 710,
+            "y": 405.8694276601772,
+            "originY": 0.13825903546902965
         },
         {
             "type": "Image",
-            "id": "120b600c-a4d0-4951-82db-86377be9b7dd",
-            "label": "supports",
+            "id": "5d42c74e-2ae0-4b47-a501-8e40a201b68a",
+            "label": "chair3",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "supports"
+                "frame": "chair3"
             },
-            "x": 599.0396617477228,
-            "y": 239.29785733019156,
-            "originX": 0.3941050337680276,
-            "originY": 0.24926863267225105
+            "x": 716,
+            "y": 447,
+            "originY": 0.8043493691967302
         },
         {
             "type": "Image",
-            "id": "4ffa4c42-5570-451d-aba3-f01cd1408b89",
-            "label": "woodthingback",
+            "id": "50c4c01a-e8bb-4b13-9332-ab4852098f6c",
+            "label": "chair_3",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "woodthingback"
+                "frame": "chair4"
             },
-            "x": 589.5145181651745,
-            "y": 249.15411376953125,
-            "originX": 0.3878384980985989,
-            "originY": 0.25953554167091075
+            "x": 605,
+            "y": 414,
+            "originY": 0.06146704192096798
         },
         {
             "type": "Image",
-            "id": "a0d9f381-5168-4854-835b-af86a805116f",
-            "label": "woodthing",
+            "id": "5228dc00-d6ce-46f1-8907-87a67e3baa24",
+            "label": "chair_2",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "woodthing"
+                "frame": "chair1"
             },
-            "x": 648.3378163525731,
-            "y": 266.5811489964501,
-            "originX": 0.42653803707406124,
-            "originY": 0.2776886968713022
+            "x": 605,
+            "y": 463,
+            "originY": 0.9777096820450962
         },
         {
             "type": "Image",
-            "id": "a87dd6a7-7317-44e3-9775-2e839b28a746",
-            "label": "tablesrow2",
+            "id": "9f453f52-ab5f-419d-9e26-6766a5596a5c",
+            "label": "chair5",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "tablesrow2"
+                "frame": "chair5"
             },
-            "x": 518.3879093002599,
-            "y": 424.77437926863087,
-            "originX": 0.34104467717122366,
-            "originY": 0.4424733117381571
+            "x": 709,
+            "y": 525.3576615442951,
+            "originY": 0.09928239905584864
         },
         {
             "type": "Image",
-            "id": "cedf43cc-2d4f-4c9d-9ed7-5e8dde3a932c",
-            "label": "stoolsrow2",
+            "id": "87bcb7d4-624c-4937-a03f-99c9a41110db",
+            "label": "table1",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "stoolsrow2"
+                "frame": "table1"
             },
-            "x": 574.7640380859375,
-            "y": 467.3195713613009,
-            "originX": 0.3781342524979381,
-            "originY": 0.48679120579626406
+            "x": 658,
+            "y": 475
         },
         {
             "type": "Image",
-            "id": "f83ea68d-bdeb-4ce5-a027-5dbcb23cd237",
-            "label": "tables",
+            "id": "c6f8f595-c687-4046-b627-9f467ff319bd",
+            "label": "chair_1",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "tables"
+                "frame": "chair1"
             },
-            "x": 603.5274079277874,
-            "y": 514.5160129571058,
-            "originX": 0.3970575052156496,
-            "originY": 0.5359541801636518
+            "x": 709,
+            "y": 581,
+            "originY": 0.8518460532427956
         },
         {
             "type": "Image",
-            "id": "ca7f8963-768c-48d4-81c9-3b3a7a348169",
-            "label": "stools",
+            "id": "076f9812-06b3-4b15-8d3d-bae14db6a515",
+            "label": "chair4",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "stools"
+                "frame": "chair4"
             },
-            "x": 549.4523315429688,
-            "y": 596.2742024976302,
-            "originX": 0.36148179010635206,
-            "originY": 0.621118985700552
+            "x": 598,
+            "y": 527.2599130180868,
+            "originY": 0.12517101140380663
         },
         {
             "type": "Image",
-            "id": "2ee70c7e-d002-43bf-ab18-bf8d288ca113",
-            "label": "railings",
+            "id": "49a54668-09d6-444d-8097-60b145f83483",
+            "label": "chair1",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "railings"
+                "frame": "chair1"
             },
-            "x": 532.1943144831023,
-            "y": 661.7843349074235,
-            "originX": 0.3501278384757252,
-            "originY": 0.6893586821952328
+            "x": 598,
+            "y": 584,
+            "originY": 0.8947541085163074
         },
         {
             "type": "Image",
-            "id": "eab725ac-72e3-4a87-a99e-291e2e88a900",
-            "label": "skelebob",
+            "id": "24167782-c61d-4a51-8cbf-cb03552cb107",
+            "label": "counter",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "skelebob"
+                "frame": "counter"
             },
-            "x": 453.5276018898494,
-            "y": 238.5285987493972,
-            "originX": 0.29837342929233246,
-            "originY": 0.24846728469059892
+            "x": 1243,
+            "y": 277
         },
         {
             "type": "Image",
-            "id": "62d25f12-45a0-4e37-b3ae-ed1af9f57725",
-            "label": "arrows",
+            "id": "6a15110f-2d3a-4e67-b4c8-875932ccb955",
+            "label": "cafeteria",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "arrows"
+                "frame": "cafeteria"
             },
-            "x": 235.85169254915695,
-            "y": 670.3908512841136,
-            "originX": 0.15516558720339274,
-            "originY": 0.6983238034209517
+            "x": 1319,
+            "y": 323
         },
         {
             "type": "Image",
-            "id": "c333ed64-cebb-43b4-afc3-a2d6d6951c58",
-            "label": "cage",
+            "id": "ef7ad16b-755c-4021-bcaa-8d6c4be5565a",
+            "label": "overhang",
+            "scope": "CLASS",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "cage"
+                "frame": "overhang_0001"
             },
-            "x": 1346.082680760133,
-            "y": 235.70330528002282,
-            "originX": 0.8855807110264032,
-            "originY": 0.2455242763333571
+            "x": 1347,
+            "y": 129
         },
         {
             "type": "Image",
-            "id": "833a5404-97bb-4717-b3bf-7a6766781a95",
-            "label": "pillar",
+            "id": "94d990e2-e804-4fdb-b5c7-2b4f2d4729df",
+            "label": "fg2_png_png",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "pillar"
+                "frame": "fg2"
             },
-            "x": 764.3961791992188,
-            "y": 668.2539880139652,
-            "originX": 0.5028922151162738,
-            "originY": 0.6960979001792665
+            "x": 743,
+            "y": 600.3200871275012,
+            "originY": 0.8530579712500017
         },
         {
             "type": "Image",
-            "id": "4d4b4533-231a-4f66-b585-b260305471b6",
-            "label": "doorframe",
+            "id": "f7759254-42b2-491c-b610-537346fbc96d",
+            "label": "fg3",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "doorframe"
+                "frame": "fg3"
             },
-            "x": 90.25516627876812,
-            "y": 783.8760093095649,
-            "originX": 0.4308064722263145,
-            "originY": 1.007419203673693
+            "x": 764,
+            "y": 617.2398802829914,
+            "originY": 0.7290372248364891
         },
         {
             "type": "Image",
-            "id": "778cca29-3767-4ece-a8ed-94b89b75cee5",
+            "id": "3e25d412-8682-46ef-913f-c15a35f6d481",
+            "label": "chair",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair13"
+            },
+            "x": 1325,
+            "y": 506
+        },
+        {
+            "type": "Sprite",
+            "id": "f34752f5-a7ae-4c12-8efe-ffe65d5efb55",
+            "label": "locker_5",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 915,
+            "y": 1012.699043405277,
+            "originY": 0.8570859828555114
+        },
+        {
+            "type": "Sprite",
+            "id": "07263734-d527-4d94-91db-5a4671312891",
+            "label": "locker_6",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1033,
+            "y": 1008.5017169401333,
+            "originY": 0.8414243169407959
+        },
+        {
+            "type": "Sprite",
+            "id": "68a0905f-acd8-4fbb-a0b3-464fdf4c3170",
+            "label": "locker_7",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1151,
+            "y": 1011.8595781122483,
+            "originY": 0.8539536496725683
+        },
+        {
+            "type": "Sprite",
+            "id": "82f363bd-a76c-4a7b-98db-7c09c1daa506",
+            "label": "locker_8",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1269,
+            "y": 1013.5385086983058,
+            "originY": 0.8602183160384544
+        },
+        {
+            "type": "Sprite",
+            "id": "dd47e011-3dce-410c-84e4-232cc4659ade",
+            "label": "locker_9",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 1387,
+            "y": 1016.0569045773921,
+            "originY": 0.8696153155872838
+        },
+        {
+            "type": "Sprite",
+            "id": "b13114ad-c647-4adc-a515-c456ffbd4cc8",
+            "label": "locker",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 304,
+            "y": 1011.0201128192195,
+            "originY": 0.8508213164896252
+        },
+        {
+            "type": "Sprite",
+            "id": "17ba84a4-8475-4137-95d4-ace0f35a2b80",
+            "label": "locker_2",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 422,
+            "y": 1007.6622516471047,
+            "originY": 0.8382919837578532
+        },
+        {
+            "type": "Sprite",
+            "id": "48094d0b-8191-4c49-9bfd-7de14e7a7979",
+            "label": "locker_3",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 540,
+            "y": 1013.5385086983058,
+            "originY": 0.8602183160384544
+        },
+        {
+            "type": "Sprite",
+            "id": "b670f760-c37b-49a0-bf84-5d2dd6349b29",
+            "label": "locker_4",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 658,
+            "y": 1010.1806475261908,
+            "originY": 0.8476889833066821
+        },
+        {
+            "type": "Sprite",
+            "id": "9487f7a3-bf2f-458c-8e66-0768d5ae4ef8",
+            "label": "locker_1",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "locker_0001"
+            },
+            "x": 186,
+            "y": 1010.518047764558,
+            "originY": 0.8489481587718389
+        },
+        {
+            "type": "Sprite",
+            "id": "a1827d96-76f3-4728-97f0-7990eced5647",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "fg"
+            },
+            "x": 753,
+            "y": 1227.1024961248506,
+            "originY": 1.2350172946082631
+        },
+        {
+            "type": "Sprite",
+            "id": "9351ae9a-8bc1-4425-9713-904be3e7d8c0",
             "label": "door",
             "components": [
                 "Button",
@@ -302,32 +593,19 @@
             ],
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('school-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('school-doorclose')",
+            "MoveTo.x": 1440,
+            "MoveTo.y": 724,
             "texture": {
                 "key": "school",
                 "frame": "door"
             },
-            "x": 25.234501163695626,
-            "y": 805.20997603704,
-            "scaleX": -1,
-            "originX": 0.31732908667747045,
-            "originY": 0.8850852713837973
+            "x": 1480,
+            "y": 2438,
+            "originY": 3.925414825717541
         },
         {
-            "type": "Image",
-            "id": "fdab0ed2-efbb-4b48-9a0c-bafeb4ac38ce",
-            "label": "doorframe_1",
-            "texture": {
-                "key": "school",
-                "frame": "doorframe"
-            },
-            "x": 1409,
-            "y": 764.7390564853001,
-            "scaleX": -1,
-            "originY": 0.9832563844511365
-        },
-        {
-            "type": "Image",
-            "id": "5206a597-1797-43ae-96b9-03f5f3d9fd3e",
+            "type": "Sprite",
+            "id": "aa72c4a7-4723-4d10-897f-4aa31f9d9294",
             "label": "door_1",
             "components": [
                 "Button",
@@ -335,26 +613,332 @@
             ],
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('school-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('school-doorclose')",
+            "MoveTo.x": 80,
+            "MoveTo.y": 724,
             "texture": {
                 "key": "school",
                 "frame": "door"
             },
-            "x": 1487.589141527205,
-            "y": 802.81788619329,
-            "originX": 0.29123324191710875,
-            "originY": 0.8825350377984742
+            "x": 46,
+            "y": 2228,
+            "originY": 3.532624319662934,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "5cf7bc3c-0d6e-483e-a587-a7d6538e6c8c",
+            "label": "mic",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "mic"
+            },
+            "x": 1094,
+            "y": 302,
+            "originX": 0.7046615371015782,
+            "originY": 0.831551690104559
+        },
+        {
+            "type": "Sprite",
+            "id": "fb748cf6-f8d7-4673-bb5e-ee7e6d97cf69",
+            "label": "chair10",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair10"
+            },
+            "x": 1005,
+            "y": 373
+        },
+        {
+            "type": "Sprite",
+            "id": "e56efbfb-2b94-4643-9197-2ed42a5d3161",
+            "label": "chair13",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair13"
+            },
+            "x": 1209,
+            "y": 369
+        },
+        {
+            "type": "Sprite",
+            "id": "ae76ad4c-23c7-4749-8885-b30dd8c8f274",
+            "label": "table7",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table7"
+            },
+            "x": 1103,
+            "y": 402
+        },
+        {
+            "type": "Sprite",
+            "id": "92a0e3ab-7084-4d3a-bd48-796a331a4c80",
+            "label": "table8",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table8"
+            },
+            "x": 1216,
+            "y": 545
+        },
+        {
+            "type": "Sprite",
+            "id": "94671ce2-3b08-4487-928b-68afdca9c73f",
+            "label": "chair12",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair12"
+            },
+            "x": 1083.0517230034852,
+            "y": 553.3979925708444,
+            "originX": 0.6072982815872352,
+            "originY": 0.12283802448423232
+        },
+        {
+            "type": "Sprite",
+            "id": "c91d9e54-fdc0-4815-b543-2688cacb25f4",
+            "label": "chair11",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair11"
+            },
+            "x": 1048,
+            "y": 596.8390766782843,
+            "originY": 0.8231497954235465
+        },
+        {
+            "type": "Sprite",
+            "id": "9a85b897-0a5a-4f63-b53d-eb096ab560de",
+            "label": "rosette",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "rosette_0001"
+            },
+            "x": 859,
+            "y": 1001.828228926573,
+            "originY": 6.955506942157839
         },
         {
             "type": "Image",
-            "id": "6ee4841d-3d72-4e8b-8286-408a82d6b63c",
-            "label": "fg",
+            "id": "eb7b7799-0f41-4a4d-a2e2-15322a2d4667",
+            "label": "photo",
+            "scope": "CLASS",
+            "components": [],
             "texture": {
                 "key": "school",
-                "frame": "fg"
+                "frame": "photo_0001"
             },
-            "x": 760,
-            "y": 990.6285669693547,
-            "originY": 1.0319047572597444
+            "x": 858,
+            "y": 1023.8313427344806,
+            "originY": 9.018751306119444
+        },
+        {
+            "type": "Image",
+            "id": "be690bd1-b04d-4a2f-9352-e6bfaffdcf21",
+            "label": "hanginglights",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "hanginglights"
+            },
+            "x": 1132,
+            "y": 7
+        },
+        {
+            "type": "Ellipse",
+            "id": "32d1f0e1-27fe-423e-b8db-567abd86b852",
+            "label": "ellipse_1",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 231,
+            "y": 551,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "84bbfae3-2726-4535-b9b7-c24dfe40d5b1",
+            "label": "ellipse",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 360,
+            "y": 547,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "79de0815-0d77-4291-be57-215455677708",
+            "label": "ellipse_2",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 599,
+            "y": 542,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "10a26acb-fbdd-41c9-bc2c-656c2d897187",
+            "label": "ellipse_3",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 711,
+            "y": 541,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "eb6274a4-9467-46f6-b8c8-54c4de986eee",
+            "label": "ellipse_4",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northwest",
+            "x": 708,
+            "y": 421,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 30
+        },
+        {
+            "type": "Ellipse",
+            "id": "985789f8-7434-4e10-86be-6234f2cd74c2",
+            "label": "ellipse_5",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 606,
+            "y": 415,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "701bebaa-ab2f-4b47-8c72-422cf2eaf20a",
+            "label": "ellipse_6",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 394,
+            "y": 411,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "cd6fd35b-e2d9-4aae-b684-b43e5a1e9ce0",
+            "label": "ellipse_7",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "north",
+            "x": 299,
+            "y": 408,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "25c88ba2-06e3-4cce-807c-120922ede226",
+            "label": "ellipse_8",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 702,
+            "y": 288,
+            "angle": 26,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "4ba6e03a-cdbd-4db1-92ca-4e9f8ff80077",
+            "label": "ellipse_9",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southeast",
+            "x": 1009,
+            "y": 388,
+            "angle": -33,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "63df8d32-82e7-40a6-a6be-49f880814ae6",
+            "label": "ellipse_10",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 1210,
+            "y": 384,
+            "angle": 37,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "ea1a9bd9-f4bf-4b81-807b-3389da24630f",
+            "label": "ellipse_11",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "southwest",
+            "x": 1324,
+            "y": 520,
+            "angle": 37,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
+        },
+        {
+            "type": "Ellipse",
+            "id": "e997bbb6-1e8b-4085-8009-c1a19a3b93fb",
+            "label": "ellipse_12",
+            "components": [
+                "Seat"
+            ],
+            "Seat.direction": "northeast",
+            "x": 1079,
+            "y": 574,
+            "angle": 56,
+            "fillColor": "#ffffff",
+            "width": 70,
+            "height": 40
         }
     ],
     "plainObjects": [],
@@ -362,40 +946,79 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     },
     "lists": [
         {
             "id": "9736cc33-11bf-4e8f-b9ed-13e1796208bc",
-            "label": "lockers"
+            "label": "lockers",
+            "objectIds": [
+                "9487f7a3-bf2f-458c-8e66-0768d5ae4ef8",
+                "b13114ad-c647-4adc-a515-c456ffbd4cc8",
+                "17ba84a4-8475-4137-95d4-ace0f35a2b80",
+                "48094d0b-8191-4c49-9bfd-7de14e7a7979",
+                "b670f760-c37b-49a0-bf84-5d2dd6349b29",
+                "f34752f5-a7ae-4c12-8efe-ffe65d5efb55",
+                "07263734-d527-4d94-91db-5a4671312891",
+                "68a0905f-acd8-4fbb-a0b3-464fdf4c3170",
+                "82f363bd-a76c-4a7b-98db-7c09c1daa506",
+                "dd47e011-3dce-410c-84e4-232cc4659ade"
+            ]
         },
         {
             "id": "250bed5d-2b68-47c5-92f5-c5e2d70dc55c",
             "label": "sort",
             "objectIds": [
-                "ad7f973c-3920-46b4-8f3a-f8e107f851e5",
-                "6ee4841d-3d72-4e8b-8286-408a82d6b63c",
-                "5206a597-1797-43ae-96b9-03f5f3d9fd3e",
-                "fdab0ed2-efbb-4b48-9a0c-bafeb4ac38ce",
-                "778cca29-3767-4ece-a8ed-94b89b75cee5",
-                "4d4b4533-231a-4f66-b585-b260305471b6",
-                "833a5404-97bb-4717-b3bf-7a6766781a95",
-                "c333ed64-cebb-43b4-afc3-a2d6d6951c58",
-                "62d25f12-45a0-4e37-b3ae-ed1af9f57725",
-                "eab725ac-72e3-4a87-a99e-291e2e88a900",
-                "2ee70c7e-d002-43bf-ab18-bf8d288ca113",
-                "ca7f8963-768c-48d4-81c9-3b3a7a348169",
-                "f83ea68d-bdeb-4ce5-a027-5dbcb23cd237",
-                "cedf43cc-2d4f-4c9d-9ed7-5e8dde3a932c",
-                "a87dd6a7-7317-44e3-9775-2e839b28a746",
-                "a0d9f381-5168-4854-835b-af86a805116f",
-                "4ffa4c42-5570-451d-aba3-f01cd1408b89",
-                "120b600c-a4d0-4951-82db-86377be9b7dd",
-                "636ea401-5aeb-49f0-89fe-095b7e3d22b5",
-                "30d0e599-dfec-48d2-b73a-cc59838090b8",
-                "7f928bf1-7ab1-43dd-8bf5-137ac7347435",
-                "b0dc632b-b671-445d-bdb8-1c6dbf0ca8a9",
-                "f5da9e22-1b48-41d9-86e5-4a7b45b253d1"
+                "ea49ba28-6505-4149-8ddb-9c1c887e1281",
+                "3c85f2d8-0313-4eb0-a7d3-f875e800a8df",
+                "991a3d70-1c9c-433d-bf85-cc6ed12a1f4f",
+                "d7cade3d-1c63-4198-8e88-289d4d0fb4d9",
+                "0153e9bd-e063-4398-b815-9656f183e588",
+                "ac197aef-b0a1-437b-a7b8-f5c4a5acceef",
+                "0468bdf7-5a05-47f0-bf9c-5069d24ce320",
+                "e6066063-ff38-4a4b-a8b7-897d2ba49c63",
+                "9dfb0a0a-dcd7-4441-bb7f-220e7b8f4fbf",
+                "b07832ce-1814-4cb2-862b-50c55692a46d",
+                "dd6db963-40c9-4e51-a755-6fb2f63f784f",
+                "5129e5e3-b16b-4c8c-a355-a90401eff8eb",
+                "5f48868d-8cbc-4464-aaa3-8bddee56aa9e",
+                "5d42c74e-2ae0-4b47-a501-8e40a201b68a",
+                "50c4c01a-e8bb-4b13-9332-ab4852098f6c",
+                "5228dc00-d6ce-46f1-8907-87a67e3baa24",
+                "9f453f52-ab5f-419d-9e26-6766a5596a5c",
+                "87bcb7d4-624c-4937-a03f-99c9a41110db",
+                "c6f8f595-c687-4046-b627-9f467ff319bd",
+                "076f9812-06b3-4b15-8d3d-bae14db6a515",
+                "49a54668-09d6-444d-8097-60b145f83483",
+                "24167782-c61d-4a51-8cbf-cb03552cb107",
+                "6a15110f-2d3a-4e67-b4c8-875932ccb955",
+                "ef7ad16b-755c-4021-bcaa-8d6c4be5565a",
+                "f7759254-42b2-491c-b610-537346fbc96d",
+                "3e25d412-8682-46ef-913f-c15a35f6d481",
+                "f34752f5-a7ae-4c12-8efe-ffe65d5efb55",
+                "07263734-d527-4d94-91db-5a4671312891",
+                "68a0905f-acd8-4fbb-a0b3-464fdf4c3170",
+                "82f363bd-a76c-4a7b-98db-7c09c1daa506",
+                "dd47e011-3dce-410c-84e4-232cc4659ade",
+                "b13114ad-c647-4adc-a515-c456ffbd4cc8",
+                "17ba84a4-8475-4137-95d4-ace0f35a2b80",
+                "48094d0b-8191-4c49-9bfd-7de14e7a7979",
+                "b670f760-c37b-49a0-bf84-5d2dd6349b29",
+                "9487f7a3-bf2f-458c-8e66-0768d5ae4ef8",
+                "a1827d96-76f3-4728-97f0-7990eced5647",
+                "9351ae9a-8bc1-4425-9713-904be3e7d8c0",
+                "aa72c4a7-4723-4d10-897f-4aa31f9d9294",
+                "5cf7bc3c-0d6e-483e-a587-a7d6538e6c8c",
+                "fb748cf6-f8d7-4673-bb5e-ee7e6d97cf69",
+                "e56efbfb-2b94-4643-9197-2ed42a5d3161",
+                "ae76ad4c-23c7-4749-8885-b30dd8c8f274",
+                "92a0e3ab-7084-4d3a-bd48-796a331a4c80",
+                "94671ce2-3b08-4487-928b-68afdca9c73f",
+                "c91d9e54-fdc0-4815-b543-2688cacb25f4",
+                "be690bd1-b04d-4a2f-9352-e6bfaffdcf21",
+                "94d990e2-e804-4fdb-b5c7-2b4f2d4729df",
+                "eb7b7799-0f41-4a4d-a2e2-15322a2d4667",
+                "9a85b897-0a5a-4f63-b53d-eb096ab560de"
             ]
         }
     ]

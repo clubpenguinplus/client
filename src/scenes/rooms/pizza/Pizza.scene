@@ -24,7 +24,8 @@
                 "key": "pizza",
                 "frame": "pizzabg"
             },
-            "y": 960,
+            "x": -168,
+            "y": 980,
             "originX": 0,
             "originY": 1
         },

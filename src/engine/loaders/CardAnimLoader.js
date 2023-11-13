@@ -5,7 +5,7 @@ export default class CardAnimLoader extends BaseLoader {
         super(scene)
         this.scene = scene
         let suffix = '/client/media/games/card/battles/'
-        this.baseURL = window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        this.baseURL = this.shell.baseURL + suffix
         this.keyPrefix = 'battles/'
     }
 

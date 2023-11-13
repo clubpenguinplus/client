@@ -928,22 +928,6 @@
             "visible": false
         },
         {
-            "type": "Image",
-            "id": "44e59742-bad8-4ec6-b9b5-28f58c7522a3",
-            "label": "candy_btn",
-            "scope": "CLASS",
-            "components": [
-                "Button"
-            ],
-            "Button.callback": "() => this.onCandyDown();",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy-btn"
-            },
-            "x": 1294,
-            "y": 68
-        },
-        {
             "type": "Layer",
             "id": "a205badf-674d-4f0f-bb3e-e687b24d30e9",
             "label": "widgetLayer",
@@ -1275,8 +1259,7 @@
                 "980ed16f-2969-4e44-ad27-f3f28486ae8f",
                 "c77d9303-6faa-472c-83e7-725f82e2b2eb",
                 "dc1387ce-b9fd-415b-9587-ce066fc1f396",
-                "fe8d6749-68cf-47c6-b41c-01807204bcde",
-                "44e59742-bad8-4ec6-b9b5-28f58c7522a3"
+                "fe8d6749-68cf-47c6-b41c-01807204bcde"
             ]
         }
     ]

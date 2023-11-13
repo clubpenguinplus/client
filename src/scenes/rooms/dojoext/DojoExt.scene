@@ -19,12 +19,13 @@
             "type": "Image",
             "id": "2743bedc-7cc8-4096-a545-cdd393051c2a",
             "label": "bg",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "x": 762,
+            "y": 459
         },
         {
             "type": "Sprite",
@@ -39,13 +40,9 @@
                 "key": "dojoext",
                 "frame": "fireanim0001"
             },
-            "x": 60,
-            "y": 138,
-            "originY": 0.5004580154109345,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 63,
+            "y": 147,
+            "originY": 0.5004580154109345
         },
         {
             "type": "Sprite",
@@ -60,27 +57,20 @@
                 "key": "dojoext",
                 "frame": "waterfall0001"
             },
-            "x": 317,
-            "y": 349,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 320,
+            "y": 358
         },
         {
             "type": "Image",
             "id": "3642999a-a5f0-4b51-bef5-4bb48ae0ddbb",
             "label": "abovewaterfall",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "abovewaterfall"
             },
-            "x": 853,
-            "y": 533,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 856,
+            "y": 542
         },
         {
             "type": "Image",
@@ -96,121 +86,96 @@
                 "key": "dojoext",
                 "frame": "door"
             },
-            "x": 776,
-            "y": 493,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 779,
+            "y": 502
         },
         {
             "type": "Image",
             "id": "da95ec35-ef95-40e4-968a-150c8adf9cc2",
             "label": "dojo",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "dojo"
             },
-            "x": 664,
-            "y": 479,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 667,
+            "y": 488
         },
         {
             "type": "Image",
             "id": "f4df60cd-85a6-4fa2-aa3a-0a4bdd8c7205",
             "label": "tree_bottom_lefter",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "tree-bottom-lefter"
             },
-            "x": 1371,
-            "y": 683,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 1374,
+            "y": 692
         },
         {
             "type": "Image",
             "id": "79a642f4-fc94-49d2-8f33-7eb0d37a4763",
             "label": "tree_bottomleft",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "tree-bottomleft"
             },
-            "x": 1300,
-            "y": 778,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 1303,
+            "y": 787
         },
         {
             "type": "Image",
             "id": "179077d3-3759-44d6-b903-cfcef40693d6",
             "label": "stoneleft",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "stoneleft"
             },
-            "x": 468.7999267578125,
-            "y": 853.9704922274007,
+            "x": 471.7999267578125,
+            "y": 862.9704922274007,
             "originX": 0.52893583911881,
-            "originY": 0.5612652611477137,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0.5612652611477137
         },
         {
             "type": "Image",
             "id": "4dd9efc3-8647-4e59-8084-c47e408e404a",
             "label": "stoneright",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "stoneright"
             },
-            "x": 1070.200439453125,
-            "y": 849.0861117100638,
+            "x": 1073.200439453125,
+            "y": 858.0861117100638,
             "originX": 0.3412469526944675,
-            "originY": 0.5597417256679151,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "originY": 0.5597417256679151
         },
         {
             "type": "Image",
             "id": "eabd7400-0e45-46a6-980c-c7edffa92b27",
             "label": "foreground",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "foreground"
             },
-            "x": 1495,
-            "y": 879,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 1498,
+            "y": 888
         },
         {
             "type": "Image",
             "id": "856bb3c6-4e00-4ab1-a3cd-6735024e8d2c",
             "label": "front",
+            "components": [],
             "texture": {
                 "key": "dojoext",
                 "frame": "front"
             },
-            "x": 65.5,
-            "y": 298,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
+            "x": 68.5,
+            "y": 307
         },
         {
             "type": "Image",
@@ -233,7 +198,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     },
     "lists": [
         {

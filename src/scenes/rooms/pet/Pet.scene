@@ -21,10 +21,10 @@
             "label": "outsidebgs",
             "texture": {
                 "key": "pet",
-                "frame": "outsidebg"
+                "frame": "outsidebgs"
             },
-            "x": 929,
-            "y": 296
+            "x": 787,
+            "y": 200
         },
         {
             "type": "Image",

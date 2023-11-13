@@ -35,7 +35,7 @@ export default class Attic extends RoomScene {
             lodge: () => this.triggerRoom(220, 1180, 360),
             boxdimension: () => this.triggerRoom(811, 1180, 260)
         }
-        this.music = 252
+        this.music = 884
         this.waddles = {}
         this.loadSfx = ['attic-HorseNeigh', 'attic-BoxOpen', 'attic-BoxClose', 'attic-BoxLoop']
 
@@ -50,7 +50,7 @@ export default class Attic extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'attic', 'bg')
+        const bg = this.add.image(-105, -15, 'attic', 'bg')
         bg.setOrigin(0, 0)
 
         // pizzabox
@@ -58,10 +58,6 @@ export default class Attic extends RoomScene {
 
         // leftbluechair
         const leftbluechair = this.add.image(71, 578, 'attic', 'leftbluechair')
-        leftbluechair.tintTopLeft = 10726103
-        leftbluechair.tintTopRight = 10726103
-        leftbluechair.tintBottomLeft = 10726103
-        leftbluechair.tintBottomRight = 10726103
 
         // bluechair
         const bluechair = this.add.image(148.60520449114657, 499.39479550885346, 'attic', 'bluechair')
@@ -70,21 +66,13 @@ export default class Attic extends RoomScene {
         // rug
         const rug = this.add.image(195.41565813862397, 735.5843418613761, 'attic', 'rug')
         rug.setOrigin(0.5604710352035555, 0.4314344167770711)
-        rug.tintTopLeft = 10726103
-        rug.tintTopRight = 10726103
-        rug.tintBottomLeft = 10726103
-        rug.tintBottomRight = 10726103
 
         // lamp
         const lamp = this.add.image(25.779589508140994, 594.693842622115, 'attic', 'lamp')
         lamp.setOrigin(0.5243823641065, 0.7229617252519517)
-        lamp.tintTopLeft = 10726103
-        lamp.tintTopRight = 10726103
-        lamp.tintBottomLeft = 10726103
-        lamp.tintBottomRight = 10726103
 
         // pirate_fixed
-        this.add.image(1410, 289, 'attic', 'pirate_fixed')
+        this.add.image(1410, 284, 'attic', 'pirate_fixed')
 
         // paintings
         this.add.image(1429, 446, 'attic', 'paintings')
@@ -98,50 +86,26 @@ export default class Attic extends RoomScene {
         // horse
         const horse = this.add.sprite(1469, 570, 'attic', 'horse0001')
         horse.setOrigin(0.544, 0.503185)
-        horse.tintTopLeft = 10726103
-        horse.tintTopRight = 10726103
-        horse.tintBottomLeft = 10726103
-        horse.tintBottomRight = 10726103
 
         // chairback
         const chairback = this.add.image(1166.1846078201497, 596.6769363147381, 'attic', 'chairback')
         chairback.setOrigin(0.7049975020391702, 0.09186185735317463)
-        chairback.tintTopLeft = 10726103
-        chairback.tintTopRight = 10726103
-        chairback.tintBottomLeft = 10726103
-        chairback.tintBottomRight = 10726103
 
         // circlestool
         const circlestool = this.add.image(1052, 715.4476985483765, 'attic', 'circlestool')
         circlestool.setOrigin(0.5, 0.22341352654558833)
-        circlestool.tintTopLeft = 10726103
-        circlestool.tintTopRight = 10726103
-        circlestool.tintBottomLeft = 10726103
-        circlestool.tintBottomRight = 10726103
 
         // plantable
         const plantable = this.add.image(1246.0092549755211, 666.7338652541221, 'attic', 'plantable')
         plantable.setOrigin(0.4564226314804238, 0.3339699491107722)
-        plantable.tintTopLeft = 10726103
-        plantable.tintTopRight = 10726103
-        plantable.tintBottomLeft = 10726103
-        plantable.tintBottomRight = 10726103
 
         // squarestool
         const squarestool = this.add.image(1160.1953848044964, 783.4015465933392, 'attic', 'squarestool')
         squarestool.setOrigin(0.49399540898877886, 0.2209802144624126)
-        squarestool.tintTopLeft = 10726103
-        squarestool.tintTopRight = 10726103
-        squarestool.tintBottomLeft = 10726103
-        squarestool.tintBottomRight = 10726103
 
         // fg_left
         const fg_left = this.add.image(-161, 969, 'attic', 'fg_left')
         fg_left.setOrigin(0.004053513024603988, 0.9838982835484917)
-        fg_left.tintTopLeft = 10726103
-        fg_left.tintTopRight = 10726103
-        fg_left.tintBottomLeft = 10726103
-        fg_left.tintBottomRight = 10726103
 
         // brownchairfront
         this.add.image(766, 758, 'attic', 'brownchairfront')
@@ -149,18 +113,10 @@ export default class Attic extends RoomScene {
         // brownchair
         const brownchair = this.add.image(764, 897, 'attic', 'brownchair')
         brownchair.setOrigin(0.503982979899936, 0.6854659688099547)
-        brownchair.tintTopLeft = 10726103
-        brownchair.tintTopRight = 10726103
-        brownchair.tintBottomLeft = 10726103
-        brownchair.tintBottomRight = 10726103
 
         // boxdimension
         const boxdimension = this.add.sprite(966, 971, 'attic', 'boxdimension')
         boxdimension.setOrigin(0.47834338839237844, 1.011384788761301)
-        boxdimension.tintTopLeft = 10726103
-        boxdimension.tintTopRight = 10726103
-        boxdimension.tintBottomLeft = 10726103
-        boxdimension.tintBottomRight = 10726103
 
         // boxdimension_btn
         const boxdimension_btn = this.add.rectangle(967, 864, 200, 200)
@@ -169,35 +125,19 @@ export default class Attic extends RoomScene {
         const boxdimension_anim = this.add.sprite(964, 991, 'attic', 'boxdimension-hover-anim0001')
         boxdimension_anim.setOrigin(0.49999999999999933, 1.8995033355331223)
         boxdimension_anim.visible = false
-        boxdimension_anim.tintTopLeft = 10726103
-        boxdimension_anim.tintTopRight = 10726103
-        boxdimension_anim.tintBottomLeft = 10726103
-        boxdimension_anim.tintBottomRight = 10726103
 
         // boxdimension-flaps
         const boxdimension_flaps = this.add.sprite(981, 1014.9631945186845, 'attic', 'boxdimension-hover-flaps')
         boxdimension_flaps.setOrigin(0.47834338839237844, 1.6725657121405844)
         boxdimension_flaps.visible = false
-        boxdimension_flaps.tintTopLeft = 10726103
-        boxdimension_flaps.tintTopRight = 10726103
-        boxdimension_flaps.tintBottomLeft = 10726103
-        boxdimension_flaps.tintBottomRight = 10726103
 
         // fg_right
         const fg_right = this.add.image(1679, 1150, 'attic', 'fg_right')
         fg_right.setOrigin(0.9977534832559671, 1.0049481046883484)
-        fg_right.tintTopLeft = 10726103
-        fg_right.tintTopRight = 10726103
-        fg_right.tintBottomLeft = 10726103
-        fg_right.tintBottomRight = 10726103
 
         // frontpizzabox
         const frontpizzabox = this.add.image(537, 927.0003486965516, 'attic', 'frontpizzabox')
         frontpizzabox.setOrigin(0.5, 0.6917832102503532)
-        frontpizzabox.tintTopLeft = 10726103
-        frontpizzabox.tintTopRight = 10726103
-        frontpizzabox.tintBottomLeft = 10726103
-        frontpizzabox.tintBottomRight = 10726103
 
         // leftpencil
         this.add.image(1160, 693, 'attic', 'leftpencil')
@@ -205,33 +145,17 @@ export default class Attic extends RoomScene {
         // circlestoolmirror
         const circlestoolmirror = this.add.image(309, 446.4979269430127, 'attic', 'circlestoolmirror')
         circlestoolmirror.setOrigin(0.5, 0.23284831428784541)
-        circlestoolmirror.tintTopLeft = 10726103
-        circlestoolmirror.tintTopRight = 10726103
-        circlestoolmirror.tintBottomLeft = 10726103
-        circlestoolmirror.tintBottomRight = 10726103
 
         // leftstairhandle
         const leftstairhandle = this.add.image(753.2325890753189, 471.0308788528382, 'attic', 'leftstairhandle')
         leftstairhandle.setOrigin(0.6133198013694338, 0.23500896788610423)
-        leftstairhandle.tintTopLeft = 10726103
-        leftstairhandle.tintTopRight = 10726103
-        leftstairhandle.tintBottomLeft = 10726103
-        leftstairhandle.tintBottomRight = 10726103
 
         // rightstairhandle
         const rightstairhandle = this.add.image(869.883720505676, 575.5735707900989, 'attic', 'rightstairhandle')
         rightstairhandle.setOrigin(0.46612723328631056, 0.3797219652131449)
-        rightstairhandle.tintTopLeft = 10726103
-        rightstairhandle.tintTopRight = 10726103
-        rightstairhandle.tintBottomLeft = 10726103
-        rightstairhandle.tintBottomRight = 10726103
 
         // findfourtable
         const findfourtable = this.add.image(248, 626, 'attic', 'findfourtable')
-        findfourtable.tintTopLeft = 10726103
-        findfourtable.tintTopRight = 10726103
-        findfourtable.tintBottomLeft = 10726103
-        findfourtable.tintBottomRight = 10726103
 
         // findfourtable_1
         const findfourtable_1 = this.add.image(360, 698, 'attic', 'findfourtable')
@@ -247,34 +171,18 @@ export default class Attic extends RoomScene {
         // leftsoda
         const leftsoda = this.add.image(1127.0949891243745, 676.4124909369787, 'attic', 'leftsoda')
         leftsoda.setOrigin(0.31616253777615067, 0.40589272767112367)
-        leftsoda.tintTopLeft = 10726103
-        leftsoda.tintTopRight = 10726103
-        leftsoda.tintBottomLeft = 10726103
-        leftsoda.tintBottomRight = 10726103
 
         // rightpencil
         this.add.image(1199, 723, 'attic', 'rightpencil')
 
         // apple
         const apple = this.add.image(1234, 615, 'attic', 'apple')
-        apple.tintTopLeft = 10726103
-        apple.tintTopRight = 10726103
-        apple.tintBottomLeft = 10726103
-        apple.tintBottomRight = 10726103
 
         // book
         const book = this.add.image(1190, 646, 'attic', 'book')
-        book.tintTopLeft = 10726103
-        book.tintTopRight = 10726103
-        book.tintBottomLeft = 10726103
-        book.tintBottomRight = 10726103
 
         // rightsoda
         const rightsoda = this.add.image(1270, 572, 'attic', 'rightsoda')
-        rightsoda.tintTopLeft = 10726103
-        rightsoda.tintTopRight = 10726103
-        rightsoda.tintBottomLeft = 10726103
-        rightsoda.tintBottomRight = 10726103
 
         // ellipse_1
         const ellipse_1 = this.add.ellipse(309, 453, 70, 40)
@@ -332,24 +240,8 @@ export default class Attic extends RoomScene {
         const ellipse_15 = this.add.ellipse(131, 679, 50, 50)
         ellipse_15.visible = false
 
-        // rectangle_1
-        const rectangle_1 = this.add.rectangle(760, 480, 1520, 960)
-        rectangle_1.isFilled = true
-        rectangle_1.fillColor = 524842
-        rectangle_1.fillAlpha = 0.33
-
-        // lamp1
-        const lamp1 = this.add.image(23.085611367470364, 604.3610682150936, 'attic', 'lamp1')
-        lamp1.setOrigin(0.3864806173975602, 0.780005679179903)
-
-        // lamp2
-        this.add.image(256, 330, 'attic', 'lamp2')
-
-        // window
-        this.add.image(759, 175, 'attic', 'window')
-
         // lists
-        const sort = [horse, fg_left, fg_right, plantable, brownchair, frontpizzabox, boxdimension, circlestoolmirror, leftstairhandle, rightstairhandle, rug, lamp, leftbluechair, findfourtable, leftsoda, book, apple, rightsoda, boxdimension_anim, boxdimension_flaps, squarestool, circlestool, chairback, lamp1]
+        const sort = [horse, fg_left, fg_right, plantable, brownchair, frontpizzabox, boxdimension, circlestoolmirror, leftstairhandle, rightstairhandle, rug, lamp, leftbluechair, findfourtable, leftsoda, book, apple, rightsoda, boxdimension_anim, boxdimension_flaps, squarestool, circlestool, chairback]
         const seats107 = [ellipse_8, ellipse_9]
         const seats108 = [ellipse_11, ellipse_10]
         const seats109 = [ellipse_12, ellipse_13]

@@ -10,15 +10,13 @@ export default class Berg extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.aqua
-        /** @type {Phaser.GameObjects.Image} */
-        this.greenzombie
 
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
             aqua: () => this.triggerGame('aquagrabber', 916, 'ruffle')
         }
-        this.music = 340
+        this.music = 584
         this.loadSfx = ['berg-aquagrabber']
 
         /* END-USER-CTR-CODE */
@@ -32,21 +30,12 @@ export default class Berg extends RoomScene {
     /** @returns {void} */
     _create() {
         // bg
-        const bg = this.add.image(0, 0, 'berg', 'bg')
+        const bg = this.add.image(-18, -18, 'berg', 'bg')
         bg.setOrigin(0, 0)
 
         // aqua
         const aqua = this.add.sprite(1255, 325, 'berg', 'aqua0001')
         aqua.setOrigin(0.5, 0.4014336917562724)
-        aqua.tintTopLeft = 11579069
-        aqua.tintTopRight = 11579069
-        aqua.tintBottomLeft = 11579069
-        aqua.tintBottomRight = 11579069
-
-        // greenzombie
-        const greenzombie = this.add.image(347, 280, 'candyhunt', 'greenzombie')
-        greenzombie.scaleX = 0.25
-        greenzombie.scaleY = 0.25
 
         // aqua (components)
         const aquaSimpleButton = new SimpleButton(aqua)
@@ -57,12 +46,7 @@ export default class Berg extends RoomScene {
         const aquaShowHint = new ShowHint(aqua)
         aquaShowHint.text = 'aquagrabber'
 
-        // greenzombie (components)
-        const greenzombieSimpleButton = new SimpleButton(greenzombie)
-        greenzombieSimpleButton.callback = () => this.shell.party.findCandy('greenzombie')
-
         this.aqua = aqua
-        this.greenzombie = greenzombie
 
         this.events.emit('scene-awake')
     }

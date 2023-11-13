@@ -20,10 +20,13 @@
             "type": "Image",
             "id": "009c916f-93cb-4de1-8ffe-0c3d0f4f5b83",
             "label": "bg",
+            "components": [],
             "texture": {
                 "key": "berg",
                 "frame": "bg"
             },
+            "x": -18,
+            "y": -18,
             "originX": 0,
             "originY": 0
         },
@@ -47,29 +50,7 @@
             },
             "x": 1255,
             "y": 325,
-            "originY": 0.4014336917562724,
-            "tintTopLeft": "#b0aebd",
-            "tintTopRight": "#b0aebd",
-            "tintBottomLeft": "#b0aebd",
-            "tintBottomRight": "#b0aebd"
-        },
-        {
-            "type": "Image",
-            "id": "be3a40c9-feab-4977-8cdf-6d9f28edd7fb",
-            "label": "greenzombie",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.shell.party.findCandy('greenzombie');",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "greenzombie"
-            },
-            "x": 347,
-            "y": 280,
-            "scaleX": 0.25,
-            "scaleY": 0.25
+            "originY": 0.4014336917562724
         }
     ],
     "plainObjects": [],
@@ -77,6 +58,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     }
 }

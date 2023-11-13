@@ -99,10 +99,71 @@ export default class ClothingCatalog extends Book {
 
     get catJson() {
         return {
-            releaseDate: '2023-10-31',
-            frontPenguin: 'october',
-            backgrounds: [9006, 9044, 9170, 9045, 9169, 9114, 9008, 9128],
+            releaseDate: '2023-11-09',
+            frontPenguin: 'november',
+            backgrounds: [9283, 9157, 9284, 9061, 9006, 9044, 9170, 9045],
             new: [
+                {
+                    background: 2,
+                    leftItems: [
+                        {id: 1726, type: 'icon'},
+                        {id: 24234, type: 'icon'},
+                        {id: 6245, type: 'icon'},
+                        {id: 1955, type: 'icon'},
+                        {id: 4996, type: 'icon'},
+                        {id: 6146, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1205, type: 'icon'},
+                        {id: 4283, type: 'icon'},
+                        {id: 21065, type: 'icon'},
+                        {id: 6013, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 17,
+                    leftItems: [
+                        {id: 24001, type: 'icon'},
+                        {id: 24233, type: 'icon'},
+                        {id: 24334, type: 'icon'},
+                        {id: 6210, type: 'icon'},
+                        {id: 6244, type: 'icon'},
+                        {id: 6277, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1958, type: 'icon'},
+                        {id: 1324, type: 'icon'},
+                        {id: 1957, type: 'icon'},
+                        {id: 24237, type: 'icon'},
+                        {id: 3092, type: 'icon'},
+                        {id: 24236, type: 'icon'},
+                        {id: 6247, type: 'icon'},
+                        {id: 4461, type: 'icon'},
+                        {id: 6246, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 8,
+                    leftItems: [
+                        {id: 1936, type: 'icon'},
+                        {id: 1937, type: 'icon'},
+                        {id: 1939, type: 'icon'},
+                        {id: 24215, type: 'icon'},
+                        {id: 24216, type: 'icon'},
+                        {id: 24217, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 3227, type: 'icon'},
+                        {id: 3226, type: 'icon'},
+                        {id: 3221, type: 'icon'},
+                        {id: 3222, type: 'icon'},
+                        {id: 5489, type: 'icon'},
+                        {id: 5491, type: 'icon'}
+                    ]
+                }
+            ],
+            party: [],
+            returning: [
                 {
                     background: 1,
                     leftItems: [
@@ -151,37 +212,7 @@ export default class ClothingCatalog extends Book {
                     ]
                 }
             ],
-            party: [
-                {
-                    background: 6,
-                    leftItems: [
-                        {id: 1927, type: 'icon'},
-                        {id: 1718, type: 'icon'},
-                        {id: 6275, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 1306, type: 'icon'},
-                        {id: 1928, type: 'icon'},
-                        {id: 5122, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 12,
-                    leftItems: [
-                        {id: 1717, type: 'icon'},
-                        {id: 2080, type: 'icon'},
-                        {id: 2130, type: 'icon'},
-                        {id: 2162, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 2131, type: 'icon'},
-                        {id: 4962, type: 'icon'},
-                        {id: 4428, type: 'icon'},
-                        {id: 4735, type: 'icon'}
-                    ]
-                }
-            ],
-            returning: [
+            lastChance: [
                 {
                     background: 1,
                     leftItems: [
@@ -204,8 +235,7 @@ export default class ClothingCatalog extends Book {
                         {id: 6109, type: 'paper'},
                         {id: 417, type: 'paper'},
                         {id: 243, type: 'icon'}
-                    ],
-                    comments: 'the cool page'
+                    ]
                 },
                 {
                     background: 16,
@@ -223,8 +253,7 @@ export default class ClothingCatalog extends Book {
                         {id: 21075, type: 'icon'},
                         {id: 175, type: 'icon'},
                         {id: 106, type: 'icon'}
-                    ],
-                    comments: 'requested items'
+                    ]
                 },
                 {
                     background: 4,
@@ -239,8 +268,7 @@ export default class ClothingCatalog extends Book {
                         {id: 5489, type: 'icon'},
                         {id: 5506, type: 'icon'},
                         {id: 5491, type: 'icon'}
-                    ],
-                    comments: 'nov2014 assorted items'
+                    ]
                 },
                 {
                     background: 10,
@@ -261,8 +289,7 @@ export default class ClothingCatalog extends Book {
                         {id: 4065, type: 'icon'},
                         {id: 323, type: 'icon'},
                         {id: 6015, type: 'icon'}
-                    ],
-                    comments: 'fancy schmancy'
+                    ]
                 },
                 {
                     background: 20,
@@ -281,8 +308,7 @@ export default class ClothingCatalog extends Book {
                         {id: 202, type: 'icon'},
                         {id: 4808, type: 'paper'},
                         {id: 366, type: 'icon'}
-                    ],
-                    comments: 'my page (the jeff the rock page :trol:)'
+                    ]
                 },
                 {
                     background: 2,
@@ -305,8 +331,7 @@ export default class ClothingCatalog extends Book {
                         {id: 3114, type: 'icon'},
                         {id: 3108, type: 'icon'},
                         {id: 3113, type: 'icon'}
-                    ],
-                    comments: 'hoodies n boas'
+                    ]
                 },
                 {
                     background: 18,
@@ -321,8 +346,7 @@ export default class ClothingCatalog extends Book {
                         {id: 3005, type: 'icon'},
                         {id: 189, type: 'icon'},
                         {id: 177, type: 'icon'}
-                    ],
-                    comments: 'ties'
+                    ]
                 },
                 {
                     background: 16,
@@ -342,11 +366,9 @@ export default class ClothingCatalog extends Book {
                         {id: 239, type: 'icon'},
                         {id: 364, type: 'icon'},
                         {id: 362, type: 'icon'}
-                    ],
-                    comments: 'snorkels and tourdude'
+                    ]
                 }
-            ],
-            lastChance: []
+            ]
         }
     }
 

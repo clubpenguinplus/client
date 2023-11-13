@@ -54,7 +54,7 @@ export default class Shop extends RoomScene {
         this.roomTriggers = {
             town: () => this.triggerRoom(100, 932, 560)
         }
-        this.music = 780
+        this.music = 345
         this.loadSfx = ['shop-curtainopen', 'shop-curtainclose', 'shop-spinner', 'shop-dooropen', 'shop-doorclose', 'shop-bookopen', 'shop-bookclose']
 
         /* END-USER-CTR-CODE */

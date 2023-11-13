@@ -12,7 +12,7 @@ jobs:
       - name: Checkout updated version
         uses: actions/checkout@v2
         with:
-          ref: 'beta'
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Checkout current version
         uses: actions/checkout@v2

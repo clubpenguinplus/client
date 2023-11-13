@@ -9,7 +9,7 @@ export default class UnlockItemsLoader extends BaseLoader {
 
     get baseURL() {
         let suffix = '/client/media/clothing/icon/large/'
-        return window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw${suffix}` : `${window.location.origin}${suffix}`
+        return this.shell.baseURL + suffix
     }
 
     get keyPrefix() {

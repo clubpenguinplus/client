@@ -64,6 +64,17 @@ export default class Shell extends BaseScene {
         localStorage.settings = JSON.stringify(settings)
     }
 
+    get baseURL() {
+        switch (window.location.hostname) {
+            case 'play.cpplus.pw':
+                return 'https://media.cpplus.pw'
+            case 'beta.cpplus.pw':
+                return 'https://betamedia.cpplus.pw'
+            default:
+                return `${window.location.origin}`
+        }
+    }
+
     create() {
         super.create()
         var RuffleHolder = this.scene.get('RuffleHolder')

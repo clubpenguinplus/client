@@ -18,6 +18,17 @@ if (settings) {
     window.currentScale = 1
 }
 
+function baseURL() {
+    switch (window.location.hostname) {
+        case 'play.cpplus.pw':
+            return 'https://media.cpplus.pw'
+        case 'beta.cpplus.pw':
+            return 'https://betamedia.cpplus.pw'
+        default:
+            return `${window.location.origin}/`
+    }
+}
+
 const clubpenguinplus = {
     type: localStorage.getItem('webgl') == 'true' ? Phaser.WEBGL : Phaser.CANVAS,
 
@@ -50,7 +61,7 @@ const clubpenguinplus = {
     },
 
     loader: {
-        baseURL: window.location.hostname == 'play.cpplus.pw' ? `https://media.cpplus.pw/` : `${window.location.origin}/`,
+        baseURL: baseURL() + '/',
         crossOrigin: 'anonymous'
     },
 
