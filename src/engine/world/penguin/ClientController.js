@@ -391,4 +391,16 @@ export default class ClientController {
         }
         return false
     }
+
+    sendJoinLastRoom() {
+        if (!this.world.lastRoom || (this.world.room && this.world.lastRoom === this.world.room.id)) {
+            return
+        }
+
+        const room = this.crumbs.scenes.rooms[this.world.lastRoom]
+
+        if (room) {
+            this.sendJoinRoom(this.world.lastRoom, room.key, room.x, room.y, 80)
+        }
+    }
 }

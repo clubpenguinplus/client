@@ -95,6 +95,9 @@ export default class Waddle extends BaseContainer {
     }
 
     getSeat(waddle, seat) {
+        if (waddle < 200) {
+            return this.shell.room[`waddle${waddle}`][`seat${seat}`]
+        }
         return this.shell.room[`seats${waddle}`][seat]
     }
 
@@ -114,7 +117,7 @@ export default class Waddle extends BaseContainer {
 
         this.items.map((item) => item.hideItem())
 
-        for (let [index, username] of this.activeWaddle.entries()) {
+        for (let [index, username] of Object.entries(this.activeWaddle.seats)) {
             this.items[index].setItem(username)
         }
 
@@ -134,8 +137,16 @@ export default class Waddle extends BaseContainer {
 
     enterSeat(waddle, seat) {
         this.activeSeat = this.getSeat(waddle, seat)
+        let parentContainer = this.activeSeat.parentContainer
+        let x = this.activeSeat.x
+        let y = this.activeSeat.y
+        while (parentContainer) {
+            x += parentContainer.x
+            y += parentContainer.y
+            parentContainer = parentContainer.parentContainer
+        }
 
-        this.shell.client.penguin.move(this.activeSeat.x, this.activeSeat.y, this.activeSeat.sitFrame)
+        this.shell.client.penguin.move(x, y, this.activeSeat.sitFrame)
     }
 
     leaveSeat() {

@@ -1,21 +1,43 @@
-import GameScene from '@games/GameScene'
-
-import SledPlayer from './SledPlayer'
-
 /* START OF COMPILED CODE */
 
-class Sled extends GameScene {
+import GameScene from '../GameScene'
+import Button from '../../components/Button'
+/* START-USER-IMPORTS */
+
+import ClientSledPlayer from './ClientSledPlayer'
+import SledPlayer from './SledPlayer'
+
+/* END-USER-IMPORTS */
+
+export default class Sled extends GameScene {
     constructor() {
         super('Sled')
 
+        /** @type {Phaser.GameObjects.Container} */
+        this.bg
+        /** @type {Phaser.GameObjects.Container} */
+        this.hill
+        /** @type {Phaser.GameObjects.Image} */
+        this.bar
+        /** @type {Phaser.GameObjects.Container} */
+        this.progress
+        /** @type {Phaser.GameObjects.Image} */
+        this.text
+        /** @type {Phaser.GameObjects.Image} */
+        this.spinner
+        /** @type {Phaser.GameObjects.Image} */
+        this.note
+
         /* START-USER-CTR-CODE */
-        this.music = 'sledracing'
+
+        this.music = 117
+
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
     preload() {
-        this.load.pack('sled-pack', 'client/media/games/sled/sled-pack.json')
+        this.load.pack('sled-pack', 'assets/media/games/sled/sled-pack.json')
     }
 
     /** @returns {void} */
@@ -25,7 +47,7 @@ class Sled extends GameScene {
         sky.setOrigin(0, 0)
 
         // bg
-        const bg = this.add.container(0, 101)
+        const bg = this.add.container(110, 102)
 
         // bg3
         const bg3 = this.add.image(4142, 0, 'sled', 'bg_3')
@@ -47,13 +69,13 @@ class Sled extends GameScene {
         fg.setOrigin(0, 0)
 
         // hill
-        const hill = this.add.container(200, 400)
+        const hill = this.add.container(361, 480)
 
         // progress
-        const progress = this.add.container(762.3364439073046, 50)
+        const progress = this.add.container(784, 53)
 
         // bar
-        const bar = this.add.image(303.66355609269544, 0, 'sled', 'progress/bar')
+        const bar = this.add.image(304, 0, 'sled', 'progress/bar')
         progress.add(bar)
 
         // text
@@ -68,6 +90,17 @@ class Sled extends GameScene {
         const note = this.add.image(1253, 783, 'sled', 'note')
         note.setOrigin(0.5, 0.4050179211469534)
 
+        // closeButton
+        const closeButton = this.add.image(1458, 52, 'main', 'grey-button')
+
+        // x
+        this.add.image(1458, 50, 'main', 'grey-x')
+
+        // closeButton (components)
+        const closeButtonButton = new Button(closeButton)
+        closeButtonButton.spriteName = 'grey-button'
+        closeButtonButton.callback = () => this.onCloseClick()
+
         this.bg = bg
         this.hill = hill
         this.bar = bar
@@ -79,63 +112,44 @@ class Sled extends GameScene {
         this.events.emit('scene-awake')
     }
 
-    /** @type {Phaser.GameObjects.Container} */
-    bg
-    /** @type {Phaser.GameObjects.Container} */
-    hill
-    /** @type {Phaser.GameObjects.Image} */
-    bar
-    /** @type {Phaser.GameObjects.Container} */
-    progress
-    /** @type {Phaser.GameObjects.Image} */
-    text
-    /** @type {Phaser.GameObjects.Image} */
-    spinner
-    /** @type {Phaser.GameObjects.Image} */
-    note
-
     /* START-USER-CODE */
 
     create() {
         super.create()
 
-        this.isWaiting = true
-
         this.players = []
-        this.maxPlayers = 0
         this.myPlayer = null
 
-        this.finishPos = 0
+        // Store ms since intro started
+        this.introTimer = null
+        // Start game after 2s
+        this.startTime = 2000
+        // Hide intro after 3s
+        // Required if game goes into background
+        this.maxIntroTime = 3000
 
-        // fixedX start position for player sprites
-        this.startX = 400
+        this.started = false
 
-        this.lastTime = 0
-        this.startTime = 0
-        this.gameTime = 0
-        this.delta
+        // Array of tile IDs for current sled hill
+        this.hillTileIds = this.setHillTileIds()
 
+        // Multidimensional array of tile coordinates for current sled hill
+        this.hillMap = this.createHillMap()
+
+        this.hillStartX = this.hill.x
+        this.hillStartY = this.hill.y
+        this.bgStartX = this.bg.x
+
+        // Current tile index
         this.currentTile = 0
+
+        // Used for updating current tiles
         this.lastTileY = 0
 
-        this.isGameHidden = false
-
-        // Events (remove on game over)
-        // this.game.events.on('hidden', this.onHidden)
-        // this.game.events.on('visible', this.onVisible)
-
-        this.anims.fromJSON(this.cache.json.get('sled-anims'))
-
-        // Map data
-        this.myHill = this.cache.json.get('sledmap').hills['103']
-        this.myMap = this.createMap()
-
-        // Input
-        this.input.keyboard.on('keydown-UP', () => this.onMoveUp())
-        this.input.keyboard.on('keydown-RIGHT', () => this.onMoveUp())
-
-        this.input.keyboard.on('keydown-DOWN', () => this.onMoveDown())
-        this.input.keyboard.on('keydown-LEFT', () => this.onMoveDown())
+        // Physics fixed timestep
+        this.fixedTimestep = 1000 / 60
+        this.accumulator = 0
+        this.lastTime = Date.now()
 
         // Spinner
         this.spinnerTween = this.tweens.add({
@@ -146,116 +160,132 @@ class Sled extends GameScene {
             ease: 'Cubic'
         })
 
-        this.startGame()
+        this.addListeners()
+
+        this.sendStartGame()
     }
 
-    createMap() {
-        let tiles = this.cache.json.get('sledmap').tiles
-        return this.myHill.map((tile) => tiles[tile]).flat()
+    get isIntroTimerActive() {
+        return this.introTimer !== null
     }
 
-    onMoveUp() {
+    setHillTileIds() {
+        const hills = this.cache.json.get('sledmap').hills
+        const lastSledId = this.world.client.lastSledId
+
+        return lastSledId in hills ? hills[lastSledId] : hills[100]
+    }
+
+    createHillMap() {
+        const tiles = this.cache.json.get('sledmap').tiles
+
+        return this.hillTileIds.map((tile) => tiles[tile]).flat()
+    }
+
+    addListeners() {
+        this.network.events.on('start_game', this.handleStartGame, this)
+        this.network.events.on('send_move', this.handleSendMove, this)
+    }
+
+    removeListeners() {
+        this.network.events.off('start_game', this.handleStartGame, this)
+        this.network.events.off('send_move', this.handleSendMove, this)
+    }
+
+    handleStartGame(args) {
+        args.users.map((playerData, index) => this.addPlayer(playerData, index))
+
         if (this.myPlayer) {
-            this.myPlayer.moveUp()
+            this.progress.bringToTop(this.myPlayer.icon)
+        }
+
+        this.playIntro()
+    }
+
+    handleSendMove(args) {
+        const player = this.players[args.id]
+
+        if (!player) {
+            return
+        }
+
+        switch (args.move) {
+            case 1:
+                player.moveUp()
+                break
+            case 2:
+                player.moveDown()
+                break
+            case 3:
+                player.startCrash()
+                break
+            case 4:
+                player.startBoost()
+                break
         }
     }
 
-    onMoveDown() {
-        if (this.myPlayer) {
-            this.myPlayer.moveDown()
-        }
-    }
-
-    update(time, delta) {
-        let currentTime = Date.now()
-
-        this.gameTime = currentTime - this.startTime
-        this.delta = currentTime - this.lastTime
-
-        // Prevents changes if game has been in the background
-        //this.delta = delta
-
-        this.players.map((player) => player.update())
-
-        if (this.myPlayer) {
-            this.updateHill()
-        }
-
-        this.sortHill()
-
-        this.lastTime = currentTime
-    }
-
-    updateHill() {
-        this.hill.x = 200 - this.myPlayer.fixedY
-        this.hill.y = 400 - this.myPlayer.fixedY * 0.6
-
-        this.bg.x = -this.myPlayer.fixedY / 25
-
-        let tileY = Math.round(this.myPlayer.fixedY / 400)
-
-        if (this.lastTileY < tileY) {
-            this.lastTileY = tileY
-            this.addTile()
-            this.removeTile()
-        }
-    }
-
-    startGame() {
-        this.startTime = Date.now()
-        this.lastTime = this.startTime
-
+    sendStartGame() {
         // Add first 4 tiles
         for (let i = 0; i < 4; i++) {
             this.addTile()
         }
 
-        this.airtower.sendXt('a#sg')
+        this.network.send('start_game')
     }
 
-    addTile() {
-        let id = this.currentTile
-        this.currentTile++
+    update() {
+        const currentTime = Date.now()
 
-        let tile = this.myHill[id]
-        if (tile == null) return
+        // Difference between this update and last update
+        const frameTime = currentTime - this.lastTime
 
-        let x = id * 400
-        let y = id * 400 * 0.6
+        this.lastTime = currentTime
+        this.accumulator += frameTime
 
-        this.addTileSprite(id, tile, x, y)
+        // Do fixed update when fixed timestep is accumulated
+        while (this.accumulator >= this.fixedTimestep) {
+            this.fixedUpdate()
 
-        if (tile == 99) {
-            this.addFinish(id, x, y)
+            this.accumulator -= this.fixedTimestep
         }
     }
 
-    addFinish(id, x, y) {
-        this.addTileSprite(id, 100, x, y)
+    fixedUpdate() {
+        if (this.isIntroTimerActive) {
+            this.checkIntro()
+        }
 
-        let clap = this.add.sprite(x, y, 'sled', 'clap/clap0001')
-        this.hill.add(clap)
+        if (this.started) {
+            this.updatePlayers()
+        }
 
-        clap.depth = id + 1
-        clap.play('clap')
+        this.sortHill()
     }
 
-    addTileSprite(id, tile, x, y) {
-        let sprite = this.add.image(x, y, 'sled', `tiles/${tile}`)
-        this.hill.add(sprite)
+    updatePlayers() {
+        this.players.map((player) => player.update())
 
-        let depth = tile == 100 ? 2000 : 1
-        sprite.depth = id + depth
-
-        return sprite
+        if (this.myPlayer) {
+            this.updateHill()
+        }
     }
 
-    removeTile() {
-        let tiles = this.hill.list.filter((object) => object.constructor.name != 'SledPlayer')
+    updateHill() {
+        // Move hill backwards to follow myPlayer
+        this.hill.x = this.hillStartX - this.myPlayer.gameY
+        this.hill.y = this.hillStartY - this.myPlayer.gameY * 0.6
 
-        // Only removes tiles that are off the screen
-        if (tiles.length > 8) {
-            this.hill.remove(tiles[0], true)
+        this.bg.x = this.bgStartX + -this.myPlayer.gameY / 25
+
+        // Update current tiles every 400 pixels
+        const tileY = Math.round(this.myPlayer.gameY / 400)
+
+        if (this.lastTileY < tileY) {
+            this.lastTileY = tileY
+
+            this.addTile()
+            this.removeTile()
         }
     }
 
@@ -263,36 +293,150 @@ class Sled extends GameScene {
         this.hill.sort('depth')
     }
 
-    addPlayer(p, id) {
-        let player = new SledPlayer(this, -500, 0)
+    addTile() {
+        const index = this.currentTile
+        this.currentTile++
 
-        player.id = id
+        // Get new tile ID
+        const id = this.hillTileIds[index]
 
-        player.fixedX = this.startX -= 80
-        player.icon = this.add.image(0, 0, 'sled', 'progress/icon_1')
+        if (id === undefined) {
+            return
+        }
 
-        player.setSled(p.username, p.hand, p.color)
+        // Position below previous tile
+        const x = index * 400
+        const y = x * 0.6
+
+        this.addTileSprite(index, id, x, y)
+
+        if (id === 99) {
+            // Add finish line
+            this.addFinish(index, x, y)
+        }
+    }
+
+    addFinish(index, x, y) {
+        this.addTileSprite(index, 100, x, y)
+
+        const clap = this.add.sprite(x, y, 'sled', 'clap/clap0001')
+        this.hill.add(clap)
+
+        clap.depth = index + 1
+        clap.play('clap')
+    }
+
+    addTileSprite(index, id, x, y) {
+        const sprite = this.add.image(x, y, 'sled', `tiles/${id}`)
+
+        this.hill.add(sprite)
+
+        // Keep finish line on top
+        const depth = id === 100 ? 2000 : 1
+
+        sprite.depth = index + depth
+    }
+
+    removeTile() {
+        const tiles = this.hill.list.filter((object) => !object.isPlayer)
+
+        // Only removes tiles that are off the screen
+        if (tiles.length > 8) {
+            this.hill.remove(tiles[0], true)
+        }
+    }
+
+    /**
+     * Add a player to the race.
+     *
+     * @param {object} playerData - Player data
+     * @param {number} index - Player index, used as ID
+     */
+    addPlayer(playerData, index) {
+        const isMyPlayer = this.world.isClientUsername(playerData.username)
+
+        const playerClass = isMyPlayer ? ClientSledPlayer : SledPlayer
+
+        // Start off screen
+        const player = new playerClass(this, -500, 0)
+
+        player.setPlayer(playerData, index)
+
+        // Set myPlayer
+        if (isMyPlayer) {
+            this.myPlayer = player
+        }
 
         this.hill.add(player)
         this.progress.add(player.icon)
         this.players.push(player)
 
         player.move()
+    }
 
-        if (p.username.toLowerCase() == this.client.penguin.username.toLowerCase()) {
-            player.icon.setTexture('sled', 'progress/icon_2')
+    playIntro() {
+        this.hideWaiting()
 
-            this.myPlayer = player
-            player.isClient = true
+        const tweenIn = {
+            scale: {from: 0.45, to: 1}
+        }
+
+        const tweenOut = {
+            scale: {from: 1, to: 0.45},
+            delay: 550
+        }
+
+        // Start intro timer
+        this.introTimer = 0
+
+        // Will need to be updated for Phaser v3.60.0+
+        this.tweens.timeline({
+            targets: this.text,
+            duration: 100,
+            ease: Phaser.Math.Easing.Back.InOut,
+
+            onComplete: () => this.onIntroComplete(),
+
+            tweens: [
+                {
+                    ...tweenIn,
+                    onStart: () => this.text.setTexture('sled', 'text/ready')
+                },
+                tweenOut,
+                {
+                    ...tweenIn,
+                    onStart: () => this.text.setTexture('sled', 'text/set')
+                },
+                tweenOut,
+                {
+                    ...tweenIn,
+                    onStart: () => this.text.setTexture('sled', 'text/go')
+                },
+                tweenOut
+            ]
+        })
+    }
+
+    checkIntro() {
+        this.introTimer += this.fixedTimestep
+
+        if (this.introTimer >= this.maxIntroTime) {
+            // Stop intro timer
+            this.introTimer = null
+            // Hide intro tween
+            this.onIntroComplete()
+
+            return
+        }
+
+        if (this.introTimer >= this.startTime) {
+            // Start race
+            this.started = true
         }
     }
 
-    playText() {
-        this.hideWaiting()
-        this.text.setTexture('sled', 'text/ready')
-        setTimeout(() => this.text.setTexture('sled', 'text/set'), 600)
-        setTimeout(() => this.text.setTexture('sled', 'text/go'), 1200)
-        setTimeout(() => this.onTextComplete(), 1800)
+    onIntroComplete() {
+        this.text.visible = false
     }
 
     hideWaiting() {
@@ -309,37 +453,34 @@ class Sled extends GameScene {
         })
     }
 
-    onTextComplete() {
-        this.text.visible = false
-        this.isWaiting = false
+    onCloseClick() {
+        this.showCloseGamePrompt()
     }
 
-    // Events
+    showCloseGamePrompt() {
+        this.interface.prompt.showWindow(this.getString('quit_game_prompt'), 'dual', () => {
+            this.sendLeaveGame()
 
-    handleStartGame(args) {
-        this.maxPlayers = args.seats
-
-        args.users.map((player, id) => this.addPlayer(player, id))
-
-        if (this.myPlayer) {
-            this.progress.bringToTop(this.myPlayer.icon)
-        }
-
-        this.playText()
+            this.interface.prompt.window.visible = false
+        })
     }
 
-    handleSendMove(args) {
-        let player = this.players[args.id]
+    sendLeaveGame() {
+        this.network.send('leave_game')
+        this.leaveGame()
+    }
 
-        if (player) {
-            player.fixedX = args.x
-            player.fixedY = args.y
-        }
+    leaveGame() {
+        this.world.client.sendJoinLastRoom()
+    }
+
+    stop() {
+        this.removeListeners()
+
+        super.stop()
     }
 
     /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */
-
-export default Sled

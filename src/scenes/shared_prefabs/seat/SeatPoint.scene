@@ -1,9 +1,8 @@
 {
-    "id": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+    "id": "3d402c83-0ef8-4993-bf56-3e076074ec9e",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
-        "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "preloadMethodName": "",
         "preloadPackFiles": [],
@@ -13,15 +12,22 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "08c2bfb3-cd25-44af-95ab-6dbb19a94c6e",
-            "label": "seat",
-            "texture": {
-                "key": "mtn",
-                "frame": "seat"
-            },
-            "originX": 0.504950495049505,
-            "originY": 0.37662337662337664
+            "type": "Container",
+            "id": "85f88508-620a-4897-ae28-f327c5f0657a",
+            "label": "container_1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Ellipse",
+                    "id": "2a2dd8a8-d2c1-436b-a26c-67f12407c9c9",
+                    "label": "point",
+                    "components": [],
+                    "isFilled": true,
+                    "fillColor": "#00ff00",
+                    "width": 5,
+                    "height": 5
+                }
+            ]
         }
     ],
     "plainObjects": [],
@@ -29,14 +35,14 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     },
     "prefabProperties": [
         {
             "name": "sitFrame",
             "label": "sitFrame",
-            "tooltip": "Penguin sitting frame",
-            "defValue": 17,
+            "tooltip": "sitFrame",
+            "defValue": 0,
             "customDefinition": false,
             "type": {
                 "id": "number"
@@ -45,7 +51,7 @@
         {
             "name": "donePoint",
             "label": "donePoint",
-            "tooltip": "donePoint",
+            "tooltip": "Property 1",
             "defValue": "",
             "customDefinition": false,
             "type": {

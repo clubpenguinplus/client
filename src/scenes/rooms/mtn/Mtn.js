@@ -1,20 +1,44 @@
-import RoomScene from '@scenes/rooms/RoomScene'
-
-import {MoveTo, SimpleButton, ShowHint, Button, LocalisedSprite} from '@components/components'
-
 /* START OF COMPILED CODE */
+
+import RoomScene from '../RoomScene'
+import Animation from '../../components/Animation'
+import Waddle103 from './waddle/Waddle103'
+import Waddle102 from './waddle/Waddle102'
+import Waddle101 from './waddle/Waddle101'
+import Waddle100 from './waddle/Waddle100'
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
 
 export default class Mtn extends RoomScene {
     constructor() {
         super('Mtn')
 
+        /** @type {Waddle103} */
+        this.waddle103
+        /** @type {Waddle102} */
+        this.waddle102
+        /** @type {Waddle101} */
+        this.waddle101
+        /** @type {Waddle100} */
+        this.waddle100
+        /** @type {Array<Phaser.GameObjects.Image|Waddle100|Waddle101|Waddle102|Waddle103>} */
+        this.sort
+
         /* START-USER-CTR-CODE */
+
         this.roomTriggers = {
-            village: () => this.triggerRoom(200, 760, 480),
-            unknown: () => this.triggerRoom(200, 760, 480)
+            village: () => this.triggerRoom(200, 480, 560),
+            waddle100: () => this.triggerWaddle(100),
+            waddle101: () => this.triggerWaddle(101),
+            waddle102: () => this.triggerWaddle(102),
+            waddle103: () => this.triggerWaddle(103)
         }
 
-        this.music = 590
+        this.waddles = {}
+
+        // Don't show waddle seat for sled hand items
+        this.sleds = [5021, 5046, 5047]
+
         /* END-USER-CTR-CODE */
     }
 
@@ -25,157 +49,123 @@ export default class Mtn extends RoomScene {
 
     /** @returns {void} */
     _create() {
-        // mtnbg
-        this.add.image(740, 480, 'mtn', 'mtnbg')
+        // bg
+        const bg = this.add.image(-21, -19, 'mtn', 'bg')
+        bg.setOrigin(0, 0)
 
-        // skiwires
-        this.add.image(1203, 365, 'mtn', 'skiwires')
-
-        // skichairback
-        const skichairback = this.add.sprite(1293, 422, 'mtn', 'skichair0160')
-
-        // skichairfront
-        const skichairfront = this.add.sprite(1285, 414, 'mtn', 'skichair0001')
+        // chair
+        const chair = this.add.sprite(846, 75, 'mtn', 'chair/chair0001')
+        chair.setOrigin(0, 0)
 
         // mountain
-        this.add.image(767, 559, 'mtn', 'mountain')
+        const mountain = this.add.image(-21, 214, 'mtn', 'mountain')
+        mountain.setOrigin(0, 0)
 
-        // skichairtopback
-        const skichairtopback = this.add.sprite(470, 142, 'mtn', 'skichairtopback0001')
+        // pole
+        const pole = this.add.image(727, 359, 'mtn', 'pole')
+        pole.setOrigin(0.6204081632653061, 0.9194630872483222)
 
-        // concrete
-        this.add.image(948, 343, 'mtn', 'concrete')
+        // sled
+        const sled = this.add.image(532, 284, 'mtn', 'sled')
+        sled.setOrigin(0.8289473684210527, 0.7647058823529411)
 
-        // mid_right_divider
-        this.add.image(896, 648, 'mtn', 'mid_right_divider')
+        // catalogSmall
+        const catalogSmall = this.add.image(520, 407, 'mtn', 'catalog_small')
+        catalogSmall.setOrigin(0.49230769230769234, 3.685185185185185)
 
-        // mid_left_divider
-        this.add.image(625, 659, 'mtn', 'mid_left_divider')
+        // express
+        const express = this.add.image(1065, 809, 'mtn', 'express')
+        express.setOrigin(0.4647887323943662, 0.875)
 
-        // left_divider
-        this.add.image(278, 581, 'mtn', 'left_divider')
+        // penguinRun
+        const penguinRun = this.add.image(524, 606, 'mtn', 'penguin_run')
+        penguinRun.setOrigin(0.6390977443609023, 0.943089430894309)
 
-        // right_divider
-        this.add.image(1100, 626, 'mtn', 'right_divider')
+        // waddle103
+        const waddle103 = new Waddle103(this, 1062, 623)
+        this.add.existing(waddle103)
 
-        // backwire
-        this.add.image(911, 101, 'mtn', 'backwire')
+        // waddle102
+        const waddle102 = new Waddle102(this, 852, 737)
+        this.add.existing(waddle102)
 
-        // frontwire
-        this.add.image(995, 94, 'mtn', 'frontwire')
+        // waddle101
+        const waddle101 = new Waddle101(this, 561, 658)
+        this.add.existing(waddle101)
 
-        // liftwheel
-        this.add.image(661, 148, 'mtn', 'liftwheel')
-
-        // tubetop
-        this.add.image(543, 217, 'mtn', 'tubetop')
-
-        // tubestuckleft
-        this.add.image(403, 268, 'mtn', 'tubestuckleft')
-
-        // tubeundercat
-        this.add.image(510, 266, 'mtn', 'tubeundercat')
-
-        // bench
-        this.add.image(549, 306, 'mtn', 'bench')
-
-        // tubestuckleftest
-        this.add.image(352, 370, 'mtn', 'tubestuckleftest')
-
-        // blue_circles
-        const blue_circles = this.add.image(496.42198696339847, 606.5279768238196, 'mtn', 'blue_circles')
-        blue_circles.setOrigin(0.6157998551488718, 0.7232286364315613)
-
-        // green_squares
-        const green_squares = this.add.image(999.3680057940451, 659.5799855148872, 'mtn', 'green_squares')
-        green_squares.setOrigin(0.44485721183386995, 0.6484613527549641)
-
-        // green_circles
-        const green_circles = this.add.image(1197.5780130366015, 572.2119797208421, 'mtn', 'green_circles')
-        green_circles.setOrigin(0.40350012070927344, 0.7001478977881743)
-
-        // skichairtopfront
-        const skichairtopfront = this.add.sprite(505, 151, 'mtn', 'skichairtopfront0001')
-
-        // hut_back
-        const hut_back = this.add.image(1036.348023866409, 261.43616706486296, 'mtn', 'hut_back')
-        hut_back.setOrigin(0.4816447096267666, 0.380785227472814)
-
-        // hut
-        const hut = this.add.image(1053.0045489274069, 328.63832935137054, 'mtn', 'hut')
-        hut.setOrigin(0.3666826278154627, 0.8854610978379018)
-
-        // ski_cat
-        const ski_cat = this.add.sprite(479, 180, 'mtn', 'ski_cat0001')
-
-        // skicatbottom
-        const skicatbottom = this.add.image(1434, 898, 'mtn', 'skicatbottom')
+        // waddle100
+        const waddle100 = new Waddle100(this, 259, 510)
+        this.add.existing(waddle100)
 
         // lists
-        const sort = [hut, hut_back, green_circles, green_squares, blue_circles]
+        const sort = [penguinRun, express, pole, waddle100, waddle101, waddle102, waddle103]
 
-        // ski_cat (components)
-        const ski_catSimpleButton = new SimpleButton(ski_cat)
-        ski_catSimpleButton.hoverCallback = () => this.onSkiCatHover()
-        ski_catSimpleButton.hoverOutCallback = () => this.onSkiCatOut()
-        ski_catSimpleButton.callback = () => this.interface.loadExternal('Sled')
+        // chair (components)
+        const chairAnimation = new Animation(chair)
+        chairAnimation.key = 'chair/chair'
+        chairAnimation.end = 87
 
-        // skicatbottom (components)
-        const skicatbottomButton = new Button(skicatbottom)
-        skicatbottomButton.callback = () => this.interface.loadExternal('Sled')
-
-        this.skichairback = skichairback
-        this.skichairfront = skichairfront
-        this.skichairtopback = skichairtopback
-        this.skichairtopfront = skichairtopfront
-        this.ski_cat = ski_cat
+        this.waddle103 = waddle103
+        this.waddle102 = waddle102
+        this.waddle101 = waddle101
+        this.waddle100 = waddle100
         this.sort = sort
 
         this.events.emit('scene-awake')
     }
 
-    /** @type {Phaser.GameObjects.Sprite} */
-    skichairback
-    /** @type {Phaser.GameObjects.Sprite} */
-    skichairfront
-    /** @type {Phaser.GameObjects.Sprite} */
-    skichairtopback
-    /** @type {Phaser.GameObjects.Sprite} */
-    skichairtopfront
-    /** @type {Phaser.GameObjects.Sprite} */
-    ski_cat
-    /** @type {Phaser.GameObjects.Image[]} */
-    sort
-
     /* START-USER-CODE */
 
-    // Write your code here
+    setWaddles(waddles) {
+        super.setWaddles(waddles)
 
-    create() {
-        super.create()
-        this.skichairback.play('mtn-skichairback')
-        this.skichairfront.play('mtn-skichairfront')
-        this.skichairtopback.play('mtn-skichairtopback')
-        this.skichairtopfront.play('mtn-skichairtopfront')
-    }
-
-    onSkiCatHover() {
-        this.ski_cat.play('mtn-skicat')
-    }
-
-    onSkiCatOut() {
-        this.ski_cat.setFrame('ski_cat0001')
-    }
-
-    triggerAction(frame) {
-        if (frame == 48) {
-            this.shell.client.stampEarned(11)
+        for (let waddle of Object.keys(waddles)) {
+            // Update waddles to show seats
+            let seats = waddles[waddle].seats
+            if (!seats) continue
+            for (let seat of Object.keys(seats)) {
+                this.updateWaddle(waddle, seat, seats[seat])
+            }
         }
+    }
+
+    updateWaddle(waddle, seat, username) {
+        const show = this.checkShowSeat(username)
+
+        this.getWaddle(waddle)[`seat${seat}`].visible = show
+
+        super.updateWaddle(waddle, seat, username)
+    }
+
+    checkShowSeat(username) {
+        if (username === null) {
+            return false
+        }
+
+        const penguin = this.getPenguinByUsername(username)
+        if (!penguin) {
+            return false
+        }
+
+        const hand = penguin.items.all.hand.id
+        return !this.sleds.includes(hand)
+    }
+
+    triggerWaddle(id) {
+        if (this.interface.main.waddle.visible) return
+
+        let sled = this.crumbs.getString('sled')
+        let text = this.crumbs.getString(`join-multiplayer,${sled}`)
+
+        this.interface.prompt.showWindow(text, 'dual', () => {
+            this.shell.client.lastSledId = id
+            this.airtower.sendXt('a#jt', id)
+
+            this.interface.prompt.window.visible = false
+        })
     }
 
     /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */
-
-// You can write more code here

@@ -463,6 +463,30 @@ export default class RoomScene extends BaseScene {
         }
     }
 
+    getPenguinByUsername(username) {
+        return Object.values(this.penguins).find((penguin) => penguin.username === username)
+    }
+
+    updateWaddle(waddle, seat, username) {
+        this.interface.main.waddle.updateWaddle(waddle, seat, username)
+    }
+
+    sendGetTables() {
+        this.network.send('get_tables')
+    }
+
+    sendGetWaddles() {
+        this.network.send('get_waddles')
+    }
+
+    getTable(id) {
+        return this[`table${id}`]
+    }
+
+    getWaddle(id) {
+        return this[`waddle${id}`]
+    }
+
     /*======= Animations =======*/
 
     /**

@@ -346,7 +346,7 @@ export default class Mancala extends BaseContainer {
 
         this.items.map((item) => item.hideItem())
 
-        for (let [index, username] of this.activeWaddle.entries()) {
+        for (let [index, username] of Object.entries(this.activeWaddle.seats)) {
             this.items[index].setItem(username, this.seat)
         }
 

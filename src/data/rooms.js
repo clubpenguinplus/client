@@ -355,8 +355,8 @@ const rooms = {
         preventTeleport: true
     },
     998: {
-        key: 'Card',
-        scene: require('@games/card/Card').default,
+        key: 'CardJitsu',
+        scene: require('@games/card/CardJitsu').default,
         preventTeleport: true
     },
     999: {
