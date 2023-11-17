@@ -39,7 +39,7 @@
   },
   "prettier": "./prettier-config.json",
   "dependencies": {
-    "crypto-js": "^4.1.1",
+    "crypto-js": "^4.2.0",
     "devtools-detect": "^4.0.1",
     "phaser": "^3.60.0"
   }
