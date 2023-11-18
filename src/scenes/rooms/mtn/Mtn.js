@@ -17,9 +17,9 @@ export default class Mtn extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.skichairback
         /** @type {Phaser.GameObjects.Sprite} */
-        this.skichairfront
-        /** @type {Phaser.GameObjects.Sprite} */
         this.skichairtopback
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.skichairfront
         /** @type {Waddle103} */
         this.waddle103
         /** @type {Waddle102} */
@@ -32,7 +32,7 @@ export default class Mtn extends RoomScene {
         this.skichairtopfront
         /** @type {Phaser.GameObjects.Sprite} */
         this.ski_cat
-        /** @type {Array<Waddle100|Waddle101|Waddle102|Waddle103>} */
+        /** @type {Array<Waddle100|Waddle101|Waddle102|Waddle103|Phaser.GameObjects.Image>} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -63,11 +63,11 @@ export default class Mtn extends RoomScene {
         // mtnbg
         this.add.image(760, 480, 'mtn', 'mtnbg')
 
-        // skiwires
-        this.add.image(1203, 365, 'mtn', 'skiwires')
-
         // skichairback
         const skichairback = this.add.sprite(1293, 422, 'mtn', 'skichair0160')
+
+        // skichairtopback
+        const skichairtopback = this.add.sprite(470, 142, 'mtn', 'skichairtopback0001')
 
         // skichairfront
         const skichairfront = this.add.sprite(1285, 414, 'mtn', 'skichair0001')
@@ -75,14 +75,8 @@ export default class Mtn extends RoomScene {
         // mountain
         this.add.image(760, 480, 'mtn', 'mountain')
 
-        // skichairtopback
-        const skichairtopback = this.add.sprite(470, 142, 'mtn', 'skichairtopback0001')
-
         // concrete
         this.add.image(952, 337, 'mtn', 'concrete')
-
-        // hut_back
-        this.add.image(1044, 262, 'mtn', 'hut_back')
 
         // waddle103
         const waddle103 = new Waddle103(this, 1040, 586)
@@ -100,9 +94,6 @@ export default class Mtn extends RoomScene {
         const waddle100 = new Waddle100(this, 202, 512)
         this.add.existing(waddle100)
 
-        // hut
-        this.add.image(1096, 205, 'mtn', 'hut')
-
         // liftwheel
         this.add.image(666, 143, 'mtn', 'liftwheel')
 
@@ -114,6 +105,13 @@ export default class Mtn extends RoomScene {
 
         // skichairtopfront
         const skichairtopfront = this.add.sprite(505, 151, 'mtn', 'skichairtopfront0001')
+
+        // hut_back
+        this.add.image(1044, 262, 'mtn', 'hut_back')
+
+        // hut
+        const hut = this.add.image(1073.817548829116, 321.96074095961126, 'mtn', 'hut')
+        hut.setOrigin(0.4186582388937918, 0.8898691418112477)
 
         // green_squares
         this.add.image(1019, 662, 'mtn', 'green_squares')
@@ -137,7 +135,7 @@ export default class Mtn extends RoomScene {
         const skicatbottom = this.add.image(1451, 896, 'mtn', 'skicatbottom')
 
         // lists
-        const sort = [waddle100, waddle101, waddle102, waddle103]
+        const sort = [waddle100, waddle101, waddle102, waddle103, hut]
 
         // ski_cat (components)
         const ski_catSimpleButton = new SimpleButton(ski_cat)
@@ -150,8 +148,8 @@ export default class Mtn extends RoomScene {
         skicatbottomButton.callback = () => this.interface.loadExternal('SledCatalog')
 
         this.skichairback = skichairback
-        this.skichairfront = skichairfront
         this.skichairtopback = skichairtopback
+        this.skichairfront = skichairfront
         this.waddle103 = waddle103
         this.waddle102 = waddle102
         this.waddle101 = waddle101
@@ -222,6 +220,7 @@ export default class Mtn extends RoomScene {
         this.skichairback.play('mtn-skichairback')
         this.skichairfront.play('mtn-skichairfront')
         this.skichairtopfront.play('mtn-skichairtopfront')
+        this.skichairtopback.play('mtn-skichairtopback')
     }
 
     onSkiCatHover() {

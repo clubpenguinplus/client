@@ -112,8 +112,8 @@ export default class Waddle100 extends BaseContainer {
         const zoneShowHint = new ShowHint(zone)
         zoneShowHint.text = 'sled_hint'
         const zoneMoveTo = new MoveTo(zone)
-        zoneMoveTo.x = 404
-        zoneMoveTo.y = 506
+        zoneMoveTo.x = 280
+        zoneMoveTo.y = 560
         new SimpleButton(zone)
 
         this.done3 = done3

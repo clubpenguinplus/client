@@ -29,17 +29,6 @@
             "y": 480
         },
         {
-            "type": "Image",
-            "id": "bbee91ca-a113-45f2-aa44-c5e8dfd03b34",
-            "label": "skiwires",
-            "texture": {
-                "key": "mtn",
-                "frame": "skiwires"
-            },
-            "x": 1203,
-            "y": 365
-        },
-        {
             "type": "Sprite",
             "id": "017d63db-8f71-4711-abfe-613fcd1624fe",
             "label": "skichairback",
@@ -50,6 +39,18 @@
             },
             "x": 1293,
             "y": 422
+        },
+        {
+            "type": "Sprite",
+            "id": "d5cbb35b-3803-4c7e-a731-52aecdbc7ed6",
+            "label": "skichairtopback",
+            "scope": "CLASS",
+            "texture": {
+                "key": "mtn",
+                "frame": "skichairtopback0001"
+            },
+            "x": 470,
+            "y": 142
         },
         {
             "type": "Sprite",
@@ -75,18 +76,6 @@
             "y": 480
         },
         {
-            "type": "Sprite",
-            "id": "d5cbb35b-3803-4c7e-a731-52aecdbc7ed6",
-            "label": "skichairtopback",
-            "scope": "CLASS",
-            "texture": {
-                "key": "mtn",
-                "frame": "skichairtopback0001"
-            },
-            "x": 470,
-            "y": 142
-        },
-        {
             "type": "Image",
             "id": "ecd54f98-79e2-47ee-bcf5-bb3f4e481939",
             "label": "concrete",
@@ -96,17 +85,6 @@
             },
             "x": 952,
             "y": 337
-        },
-        {
-            "type": "Image",
-            "id": "bf9de124-fa78-4b22-a4da-d16a6d7ad56d",
-            "label": "hut_back",
-            "texture": {
-                "key": "mtn",
-                "frame": "hut_back"
-            },
-            "x": 1044,
-            "y": 262
         },
         {
             "prefabId": "a0e50964-499b-4974-bffb-4291c8761c1e",
@@ -158,17 +136,6 @@
         },
         {
             "type": "Image",
-            "id": "92e95849-d21a-4cb3-93e6-d58abf32de6d",
-            "label": "hut",
-            "texture": {
-                "key": "mtn",
-                "frame": "hut"
-            },
-            "x": 1096,
-            "y": 205
-        },
-        {
-            "type": "Image",
             "id": "c2cbbd0e-f615-45c9-a1e9-f13eecbb86ed",
             "label": "liftwheel",
             "texture": {
@@ -211,6 +178,30 @@
             },
             "x": 505,
             "y": 151
+        },
+        {
+            "type": "Image",
+            "id": "bf9de124-fa78-4b22-a4da-d16a6d7ad56d",
+            "label": "hut_back",
+            "texture": {
+                "key": "mtn",
+                "frame": "hut_back"
+            },
+            "x": 1044,
+            "y": 262
+        },
+        {
+            "type": "Image",
+            "id": "92e95849-d21a-4cb3-93e6-d58abf32de6d",
+            "label": "hut",
+            "texture": {
+                "key": "mtn",
+                "frame": "hut"
+            },
+            "x": 1073.817548829116,
+            "y": 321.96074095961126,
+            "originX": 0.4186582388937918,
+            "originY": 0.8898691418112477
         },
         {
             "type": "Image",
@@ -316,7 +307,8 @@
                 "d0aaf43c-c7b5-4804-ad63-de3b273f6afe",
                 "6471c65c-90ac-401f-ad4b-f0cfc6744920",
                 "18e304e8-8cc2-42b4-b8b5-49056864e58b",
-                "88d14316-b60a-45bc-8831-3f80be700cfc"
+                "88d14316-b60a-45bc-8831-3f80be700cfc",
+                "92e95849-d21a-4cb3-93e6-d58abf32de6d"
             ]
         }
     ]

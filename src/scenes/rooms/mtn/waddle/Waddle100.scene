@@ -193,8 +193,8 @@
                         "SimpleButton"
                     ],
                     "ShowHint.text": "sled_hint",
-                    "MoveTo.x": "404",
-                    "MoveTo.y": "506",
+                    "MoveTo.x": 280,
+                    "MoveTo.y": 560,
                     "x": 78,
                     "y": 53,
                     "angle": 33,
