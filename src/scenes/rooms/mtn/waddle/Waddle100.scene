@@ -25,7 +25,7 @@
                     "label": "barrier3",
                     "texture": {
                         "key": "mtn",
-                        "frame": "barrier_1"
+                        "frame": "barrier_3"
                     },
                     "x": 146,
                     "y": 101,
@@ -37,10 +37,10 @@
                     "label": "barrier2",
                     "texture": {
                         "key": "mtn",
-                        "frame": "barrier_1"
+                        "frame": "barrier_2"
                     },
-                    "x": 86,
-                    "y": 63,
+                    "x": 82,
+                    "y": 61,
                     "originY": 0.45901639344262296
                 },
                 {
@@ -51,8 +51,8 @@
                         "key": "mtn",
                         "frame": "barrier_1"
                     },
-                    "x": 26,
-                    "y": 25,
+                    "x": 21,
+                    "y": 17,
                     "originY": 0.45901639344262296
                 },
                 {

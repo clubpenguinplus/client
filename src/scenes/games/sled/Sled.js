@@ -37,7 +37,7 @@ export default class Sled extends GameScene {
 
     /** @returns {void} */
     preload() {
-        this.load.pack('sled-pack', 'assets/media/games/sled/sled-pack.json')
+        this.load.pack('sled-pack', 'client/media/games/sled/sled-pack.json')
     }
 
     /** @returns {void} */
@@ -98,7 +98,6 @@ export default class Sled extends GameScene {
 
         // closeButton (components)
         const closeButtonButton = new Button(closeButton)
-        closeButtonButton.spriteName = 'grey-button'
         closeButtonButton.callback = () => this.onCloseClick()
 
         this.bg = bg
@@ -160,6 +159,9 @@ export default class Sled extends GameScene {
             ease: 'Cubic'
         })
 
+        this.boundStartGame = this.handleStartGame.bind(this)
+        this.boundSendMove = this.handleSendMove.bind(this)
+
         this.addListeners()
 
         this.sendStartGame()
@@ -171,7 +173,7 @@ export default class Sled extends GameScene {
 
     setHillTileIds() {
         const hills = this.cache.json.get('sledmap').hills
-        const lastSledId = this.world.client.lastSledId
+        const lastSledId = this.shell.client.lastSledId
 
         return lastSledId in hills ? hills[lastSledId] : hills[100]
     }
@@ -183,16 +185,17 @@ export default class Sled extends GameScene {
     }
 
     addListeners() {
-        this.network.events.on('start_game', this.handleStartGame, this)
-        this.network.events.on('send_move', this.handleSendMove, this)
+        this.airtower.events.on('start_game', this.boundStartGame, this)
+        this.airtower.events.on('send_move', this.boundSendMove, this)
     }
 
     removeListeners() {
-        this.network.events.off('start_game', this.handleStartGame, this)
-        this.network.events.off('send_move', this.handleSendMove, this)
+        this.airtower.events.off('start_game', this.boundStartGame, this)
+        this.airtower.events.off('send_move', this.boundSendMove, this)
     }
 
     handleStartGame(args) {
+        args = JSON.parse(args)
         args.users.map((playerData, index) => this.addPlayer(playerData, index))
 
         if (this.myPlayer) {
@@ -203,6 +206,7 @@ export default class Sled extends GameScene {
     }
 
     handleSendMove(args) {
+        args = JSON.parse(args)
         const player = this.players[args.id]
 
         if (!player) {
@@ -231,7 +235,7 @@ export default class Sled extends GameScene {
             this.addTile()
         }
 
-        this.network.send('start_game')
+        this.airtower.sendXt('start_game')
     }
 
     update() {
@@ -353,7 +357,7 @@ export default class Sled extends GameScene {
      * @param {number} index - Player index, used as ID
      */
     addPlayer(playerData, index) {
-        const isMyPlayer = this.world.isClientUsername(playerData.username)
+        const isMyPlayer = this.shell.isClientUsername(playerData.username)
 
         const playerClass = isMyPlayer ? ClientSledPlayer : SledPlayer
 
@@ -389,31 +393,71 @@ export default class Sled extends GameScene {
         // Start intro timer
         this.introTimer = 0
 
-        // Will need to be updated for Phaser v3.60.0+
-        this.tweens.timeline({
+        this.addReadyTween()
+    }
+
+    addReadyTween() {
+        this.text.setTexture('sled', 'text/ready')
+        this.tweens.add({
             targets: this.text,
+            scale: {from: 1, to: 0.45},
             duration: 100,
             ease: Phaser.Math.Easing.Back.InOut,
 
-            onComplete: () => this.onIntroComplete(),
+            onComplete: () => {
+                this.tweens.add({
+                    targets: this.text,
+                    scale: {from: 0.45, to: 1},
+                    duration: 550,
+                    ease: Phaser.Math.Easing.Back.InOut,
 
-            tweens: [
-                {
-                    ...tweenIn,
-                    onStart: () => this.text.setTexture('sled', 'text/ready')
-                },
-                tweenOut,
-                {
-                    ...tweenIn,
-                    onStart: () => this.text.setTexture('sled', 'text/set')
-                },
-                tweenOut,
-                {
-                    ...tweenIn,
-                    onStart: () => this.text.setTexture('sled', 'text/go')
-                },
-                tweenOut
-            ]
+                    onComplete: () => this.addSetTween()
+                })
+            }
+        })
+    }
+
+    addSetTween() {
+        this.text.setTexture('sled', 'text/set')
+
+        this.tweens.add({
+            targets: this.text,
+            scale: {from: 1, to: 0.45},
+            duration: 100,
+            ease: Phaser.Math.Easing.Back.InOut,
+
+            onComplete: () => {
+                this.tweens.add({
+                    targets: this.text,
+                    scale: {from: 0.45, to: 1},
+                    duration: 550,
+                    ease: Phaser.Math.Easing.Back.InOut,
+
+                    onComplete: () => this.addGoTween()
+                })
+            }
+        })
+    }
+
+    addGoTween() {
+        this.text.setTexture('sled', 'text/go')
+
+        this.tweens.add({
+            targets: this.text,
+            scale: {from: 1, to: 0.45},
+            duration: 100,
+            ease: Phaser.Math.Easing.Back.InOut,
+
+            onComplete: () => {
+                this.tweens.add({
+                    targets: this.text,
+                    scale: {from: 0.45, to: 1},
+                    duration: 550,
+                    ease: Phaser.Math.Easing.Back.InOut,
+
+                    onComplete: () => this.onIntroComplete()
+                })
+            }
         })
     }
 
@@ -466,12 +510,12 @@ export default class Sled extends GameScene {
     }
 
     sendLeaveGame() {
-        this.network.send('leave_game')
+        this.airtower.sendXt('leave_game')
         this.leaveGame()
     }
 
     leaveGame() {
-        this.world.client.sendJoinLastRoom()
+        this.shell.client.sendJoinLastRoom()
     }
 
     stop() {

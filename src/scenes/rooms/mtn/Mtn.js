@@ -1,11 +1,12 @@
 /* START OF COMPILED CODE */
 
 import RoomScene from '../RoomScene'
-import Animation from '../../components/Animation'
 import Waddle103 from './waddle/Waddle103'
 import Waddle102 from './waddle/Waddle102'
 import Waddle101 from './waddle/Waddle101'
 import Waddle100 from './waddle/Waddle100'
+import SimpleButton from '../../components/SimpleButton'
+import Button from '../../components/Button'
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -13,6 +14,12 @@ export default class Mtn extends RoomScene {
     constructor() {
         super('Mtn')
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.skichairback
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.skichairfront
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.skichairtopback
         /** @type {Waddle103} */
         this.waddle103
         /** @type {Waddle102} */
@@ -21,7 +28,11 @@ export default class Mtn extends RoomScene {
         this.waddle101
         /** @type {Waddle100} */
         this.waddle100
-        /** @type {Array<Phaser.GameObjects.Image|Waddle100|Waddle101|Waddle102|Waddle103>} */
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.skichairtopfront
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.ski_cat
+        /** @type {Array<Waddle100|Waddle101|Waddle102|Waddle103>} */
         this.sort
 
         /* START-USER-CTR-CODE */
@@ -49,66 +60,104 @@ export default class Mtn extends RoomScene {
 
     /** @returns {void} */
     _create() {
-        // bg
-        const bg = this.add.image(-21, -19, 'mtn', 'bg')
-        bg.setOrigin(0, 0)
+        // mtnbg
+        this.add.image(760, 480, 'mtn', 'mtnbg')
 
-        // chair
-        const chair = this.add.sprite(846, 75, 'mtn', 'chair/chair0001')
-        chair.setOrigin(0, 0)
+        // skiwires
+        this.add.image(1203, 365, 'mtn', 'skiwires')
+
+        // skichairback
+        const skichairback = this.add.sprite(1293, 422, 'mtn', 'skichair0160')
+
+        // skichairfront
+        const skichairfront = this.add.sprite(1285, 414, 'mtn', 'skichair0001')
 
         // mountain
-        const mountain = this.add.image(-21, 214, 'mtn', 'mountain')
-        mountain.setOrigin(0, 0)
+        this.add.image(760, 480, 'mtn', 'mountain')
 
-        // pole
-        const pole = this.add.image(727, 359, 'mtn', 'pole')
-        pole.setOrigin(0.6204081632653061, 0.9194630872483222)
+        // skichairtopback
+        const skichairtopback = this.add.sprite(470, 142, 'mtn', 'skichairtopback0001')
 
-        // sled
-        const sled = this.add.image(532, 284, 'mtn', 'sled')
-        sled.setOrigin(0.8289473684210527, 0.7647058823529411)
+        // concrete
+        this.add.image(952, 337, 'mtn', 'concrete')
 
-        // catalogSmall
-        const catalogSmall = this.add.image(520, 407, 'mtn', 'catalog_small')
-        catalogSmall.setOrigin(0.49230769230769234, 3.685185185185185)
-
-        // express
-        const express = this.add.image(1065, 809, 'mtn', 'express')
-        express.setOrigin(0.4647887323943662, 0.875)
-
-        // penguinRun
-        const penguinRun = this.add.image(524, 606, 'mtn', 'penguin_run')
-        penguinRun.setOrigin(0.6390977443609023, 0.943089430894309)
+        // hut_back
+        this.add.image(1044, 262, 'mtn', 'hut_back')
 
         // waddle103
-        const waddle103 = new Waddle103(this, 1062, 623)
+        const waddle103 = new Waddle103(this, 1040, 586)
         this.add.existing(waddle103)
 
         // waddle102
-        const waddle102 = new Waddle102(this, 852, 737)
+        const waddle102 = new Waddle102(this, 858, 637)
         this.add.existing(waddle102)
 
         // waddle101
-        const waddle101 = new Waddle101(this, 561, 658)
+        const waddle101 = new Waddle101(this, 557, 620)
         this.add.existing(waddle101)
 
         // waddle100
-        const waddle100 = new Waddle100(this, 259, 510)
+        const waddle100 = new Waddle100(this, 202, 512)
         this.add.existing(waddle100)
 
+        // hut
+        this.add.image(1096, 205, 'mtn', 'hut')
+
+        // liftwheel
+        this.add.image(666, 143, 'mtn', 'liftwheel')
+
+        // blue_circles
+        this.add.image(478, 586, 'mtn', 'blue_circles')
+
+        // green_circles
+        this.add.image(1210, 550, 'mtn', 'green_circles')
+
+        // skichairtopfront
+        const skichairtopfront = this.add.sprite(505, 151, 'mtn', 'skichairtopfront0001')
+
+        // green_squares
+        this.add.image(1019, 662, 'mtn', 'green_squares')
+
+        // tubestuckleftest
+        this.add.image(355, 358, 'mtn', 'tubestuckleftest')
+
+        // tubetop
+        this.add.image(551, 206, 'mtn', 'tubetop')
+
+        // tubeundercat
+        this.add.image(515, 255, 'mtn', 'tubeundercat')
+
+        // bench
+        this.add.image(559, 299, 'mtn', 'bench')
+
+        // ski_cat
+        const ski_cat = this.add.sprite(486, 172, 'mtn', 'ski_cat0001')
+
+        // skicatbottom
+        const skicatbottom = this.add.image(1451, 896, 'mtn', 'skicatbottom')
+
         // lists
-        const sort = [penguinRun, express, pole, waddle100, waddle101, waddle102, waddle103]
+        const sort = [waddle100, waddle101, waddle102, waddle103]
 
-        // chair (components)
-        const chairAnimation = new Animation(chair)
-        chairAnimation.key = 'chair/chair'
-        chairAnimation.end = 87
+        // ski_cat (components)
+        const ski_catSimpleButton = new SimpleButton(ski_cat)
+        ski_catSimpleButton.hoverCallback = () => this.onSkiCatHover()
+        ski_catSimpleButton.hoverOutCallback = () => this.onSkiCatOut()
+        ski_catSimpleButton.callback = () => this.interface.loadExternal('SledCatalog')
 
+        // skicatbottom (components)
+        const skicatbottomButton = new Button(skicatbottom)
+        skicatbottomButton.callback = () => this.interface.loadExternal('SledCatalog')
+
+        this.skichairback = skichairback
+        this.skichairfront = skichairfront
+        this.skichairtopback = skichairtopback
         this.waddle103 = waddle103
         this.waddle102 = waddle102
         this.waddle101 = waddle101
         this.waddle100 = waddle100
+        this.skichairtopfront = skichairtopfront
+        this.ski_cat = ski_cat
         this.sort = sort
 
         this.events.emit('scene-awake')
@@ -119,12 +168,11 @@ export default class Mtn extends RoomScene {
     setWaddles(waddles) {
         super.setWaddles(waddles)
 
-        for (let waddle of Object.keys(waddles)) {
+        for (let w of Object.keys(this.waddles)) {
+            const waddle = this.waddles[w]
             // Update waddles to show seats
-            let seats = waddles[waddle].seats
-            if (!seats) continue
-            for (let seat of Object.keys(seats)) {
-                this.updateWaddle(waddle, seat, seats[seat])
+            for (let i = 0; i < waddle.seatCount; i++) {
+                this.updateWaddle(w, i, waddle.seats[i])
             }
         }
     }
@@ -132,7 +180,7 @@ export default class Mtn extends RoomScene {
     updateWaddle(waddle, seat, username) {
         const show = this.checkShowSeat(username)
 
-        this.getWaddle(waddle)[`seat${seat}`].visible = show
+        this.getSeat(waddle, seat).visible = show
 
         super.updateWaddle(waddle, seat, username)
     }
@@ -163,6 +211,32 @@ export default class Mtn extends RoomScene {
 
             this.interface.prompt.window.visible = false
         })
+    }
+
+    getSeat(waddle, seat) {
+        return this[`waddle${waddle}`][`seat${seat}`]
+    }
+
+    create() {
+        super.create()
+        this.skichairback.play('mtn-skichairback')
+        this.skichairfront.play('mtn-skichairfront')
+        this.skichairtopfront.play('mtn-skichairtopfront')
+    }
+
+    onSkiCatHover() {
+        this.ski_cat.play('mtn-skicat')
+    }
+
+    onSkiCatOut() {
+        this.ski_cat.anims.stop()
+        this.ski_cat.setFrame('ski_cat0001')
+    }
+
+    triggerAction(frame) {
+        if (frame == 48) {
+            this.shell.client.stampEarned(11)
+        }
     }
 
     /* END-USER-CODE */

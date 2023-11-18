@@ -1,8 +1,8 @@
-import BaseContainer from '@scenes/base/BaseContainer'
-
-import {Button} from '@components/components'
-
 /* START OF COMPILED CODE */
+
+import BaseContainer from '../../../../base/BaseContainer'
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
 
 export default class WaddleItem extends BaseContainer {
     constructor(scene, x, y) {
@@ -12,6 +12,10 @@ export default class WaddleItem extends BaseContainer {
         this.icon
         /** @type {Phaser.GameObjects.Text} */
         this.username
+
+        // waddle_item
+        const waddle_item = scene.add.image(0, 0, 'main', 'buddy/item')
+        this.add(waddle_item)
 
         // icon
         const icon = scene.add.image(-137, 0, 'main', 'buddy/icon-load')
@@ -45,7 +49,7 @@ export default class WaddleItem extends BaseContainer {
     /* START-USER-CODE */
 
     setItem(username) {
-        this.visible = true
+        this.show()
 
         this.username.text = username ? username : 'Empty'
 
@@ -63,7 +67,7 @@ export default class WaddleItem extends BaseContainer {
     }
 
     hideItem() {
-        this.visible = false
+        this.close()
         this.stopSpinner()
     }
 

@@ -31,17 +31,17 @@ export default class Waddle100 extends BaseContainer {
         this.seat3
 
         // barrier3
-        const barrier3 = scene.add.image(146, 101, 'mtn', 'barrier_1')
+        const barrier3 = scene.add.image(146, 101, 'mtn', 'barrier_3')
         barrier3.setOrigin(0.5, 0.45901639344262296)
         this.add(barrier3)
 
         // barrier2
-        const barrier2 = scene.add.image(86, 63, 'mtn', 'barrier_1')
+        const barrier2 = scene.add.image(82, 61, 'mtn', 'barrier_2')
         barrier2.setOrigin(0.5, 0.45901639344262296)
         this.add(barrier2)
 
         // barrier1
-        const barrier1 = scene.add.image(26, 25, 'mtn', 'barrier_1')
+        const barrier1 = scene.add.image(21, 17, 'mtn', 'barrier_1')
         barrier1.setOrigin(0.5, 0.45901639344262296)
         this.add(barrier1)
 

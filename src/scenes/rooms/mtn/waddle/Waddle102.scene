@@ -25,7 +25,7 @@
                     "label": "barrier",
                     "texture": {
                         "key": "mtn",
-                        "frame": "barrier_2"
+                        "frame": "barrier_6"
                     },
                     "x": 44,
                     "y": 13,
@@ -67,11 +67,13 @@
                         "x",
                         "y",
                         "visible",
-                        "donePoint"
+                        "donePoint",
+                        "direction"
                     ],
                     "label": "seat1",
                     "scope": "CLASS",
                     "donePoint": "done1",
+                    "direction": "sw",
                     "x": 101,
                     "y": 3,
                     "visible": false
@@ -83,11 +85,13 @@
                         "x",
                         "y",
                         "visible",
-                        "donePoint"
+                        "donePoint",
+                        "direction"
                     ],
                     "label": "seat0",
                     "scope": "CLASS",
                     "donePoint": "done0",
+                    "direction": "sw",
                     "x": 0,
                     "y": 0,
                     "visible": false

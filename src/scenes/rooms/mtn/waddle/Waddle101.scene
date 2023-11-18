@@ -25,10 +25,10 @@
                     "label": "barrier2",
                     "texture": {
                         "key": "mtn",
-                        "frame": "barrier_2"
+                        "frame": "barrier_5"
                     },
-                    "x": 87,
-                    "y": 48,
+                    "x": 126,
+                    "y": 36,
                     "originX": 0.48,
                     "originY": 0.47761194029850745
                 },
@@ -38,11 +38,10 @@
                     "label": "barrier1",
                     "texture": {
                         "key": "mtn",
-                        "frame": "barrier_1"
+                        "frame": "barrier_4"
                     },
                     "x": 23,
                     "y": 36,
-                    "angle": -14.999999999999998,
                     "originY": 0.45901639344262296
                 },
                 {
@@ -113,12 +112,14 @@
                         "y",
                         "visible",
                         "sitFrame",
-                        "donePoint"
+                        "donePoint",
+                        "direction"
                     ],
                     "label": "seat2",
                     "scope": "CLASS",
                     "sitFrame": 18,
                     "donePoint": "done2",
+                    "direction": "s",
                     "x": 142,
                     "y": 36,
                     "visible": false
@@ -131,12 +132,14 @@
                         "y",
                         "visible",
                         "sitFrame",
-                        "donePoint"
+                        "donePoint",
+                        "direction"
                     ],
                     "label": "seat1",
                     "scope": "CLASS",
                     "sitFrame": 18,
                     "donePoint": "done1",
+                    "direction": "s",
                     "x": 53,
                     "y": 38,
                     "visible": false

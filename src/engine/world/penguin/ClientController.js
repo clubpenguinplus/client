@@ -393,14 +393,14 @@ export default class ClientController {
     }
 
     sendJoinLastRoom() {
-        if (!this.world.lastRoom || (this.world.room && this.world.lastRoom === this.world.room.id)) {
+        if (!this.shell.lastRoom || (this.shell.room && this.shell.lastRoom === this.shell.room.id)) {
             return
         }
 
-        const room = this.crumbs.scenes.rooms[this.world.lastRoom]
+        const room = this.crumbs.scenes.rooms[this.shell.lastRoom]
 
         if (room) {
-            this.sendJoinRoom(this.world.lastRoom, room.key, room.x, room.y, 80)
+            this.sendJoinRoom(this.shell.lastRoom, room.key, room.x, room.y, 80)
         }
     }
 }

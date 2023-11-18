@@ -23,9 +23,8 @@ export default class Waddle103 extends BaseContainer {
         this.seat0
 
         // barrier
-        const barrier = scene.add.image(66, 29, 'mtn', 'barrier_1')
+        const barrier = scene.add.image(66, 29, 'mtn', 'barrier_7')
         barrier.setOrigin(0.5, 0.45901639344262296)
-        barrier.flipX = true
         this.add(barrier)
 
         // done1
@@ -58,10 +57,12 @@ export default class Waddle103 extends BaseContainer {
         // seat1 (prefab fields)
         seat1.sitFrame = 24
         seat1.donePoint = done1
+        seat1.direction = 'se'
 
         // seat0 (prefab fields)
         seat0.sitFrame = 24
         seat0.donePoint = done0
+        seat0.direction = 'se'
 
         // zone (components)
         const zoneShowHint = new ShowHint(zone)

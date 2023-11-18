@@ -183,28 +183,28 @@ export default class CardJitsu extends GameScene {
 
     // probably a better way than needing 2 functions for this
     addListeners() {
-        this.network.events.on('start_game', this.handleStartGame, this)
-        this.network.events.on('send_deal', this.handleSendDeal, this)
-        this.network.events.on('send_opponent_deal', this.handleSendOpponentDeal, this)
-        this.network.events.on('pick_card', this.handlePickCard, this)
-        this.network.events.on('reveal_card', this.handleRevealCard, this)
-        this.network.events.on('judge', this.handleJudge, this)
-        this.network.events.on('winner', this.handleWinner, this)
-        this.network.events.on('close_game', this.handleCloseGame, this)
-        this.network.events.on('award', this.handleAward, this)
+        this.airtower.events.on('start_game', this.handleStartGame, this)
+        this.airtower.events.on('send_deal', this.handleSendDeal, this)
+        this.airtower.events.on('send_opponent_deal', this.handleSendOpponentDeal, this)
+        this.airtower.events.on('pick_card', this.handlePickCard, this)
+        this.airtower.events.on('reveal_card', this.handleRevealCard, this)
+        this.airtower.events.on('judge', this.handleJudge, this)
+        this.airtower.events.on('winner', this.handleWinner, this)
+        this.airtower.events.on('close_game', this.handleCloseGame, this)
+        this.airtower.events.on('award', this.handleAward, this)
     }
 
     removeListeners() {
-        this.network.events.off('start_game', this.handleStartGame, this)
-        this.network.events.off('send_deal', this.handleSendDeal, this)
-        this.network.events.off('send_opponent_deal', this.handleSendOpponentDeal, this)
-        this.network.events.off('pick_card', this.handlePickCard, this)
-        this.network.events.off('reveal_card', this.handleRevealCard, this)
-        this.network.events.off('judge', this.handleJudge, this)
-        this.network.events.off('winner', this.handleWinner, this)
-        this.network.events.off('close_game', this.handleCloseGame, this)
-        this.network.events.off('close_game', this.handleCloseGame, this)
-        this.network.events.off('award', this.handleAward, this)
+        this.airtower.events.off('start_game', this.handleStartGame, this)
+        this.airtower.events.off('send_deal', this.handleSendDeal, this)
+        this.airtower.events.off('send_opponent_deal', this.handleSendOpponentDeal, this)
+        this.airtower.events.off('pick_card', this.handlePickCard, this)
+        this.airtower.events.off('reveal_card', this.handleRevealCard, this)
+        this.airtower.events.off('judge', this.handleJudge, this)
+        this.airtower.events.off('winner', this.handleWinner, this)
+        this.airtower.events.off('close_game', this.handleCloseGame, this)
+        this.airtower.events.off('close_game', this.handleCloseGame, this)
+        this.airtower.events.off('award', this.handleAward, this)
     }
 
     async loadEmulator() {
@@ -239,7 +239,7 @@ export default class CardJitsu extends GameScene {
         this.bg.visible = false
         this.container.visible = true
 
-        this.network.send('start_game')
+        this.airtower.sendXt('start_game')
     }
 
     getBattlesPath() {
@@ -259,6 +259,7 @@ export default class CardJitsu extends GameScene {
     }
 
     handleStartGame(args) {
+        args = JSON.parse(args)
         for (let user of args.users) {
             this.setPlayer(user, args.users.indexOf(user))
         }
@@ -270,12 +271,14 @@ export default class CardJitsu extends GameScene {
     }
 
     handleSendDeal(args) {
+        args = JSON.parse(args)
         for (let card of args.cards) {
             this.cardLoader.loadCard(card, this.onDealCardLoad)
         }
     }
 
     handleSendOpponentDeal(args) {
+        args = JSON.parse(args)
         for (let i = 0; i < args.deal; i++) {
             let cardPrefab = this.createCard()
 
@@ -284,6 +287,7 @@ export default class CardJitsu extends GameScene {
     }
 
     handlePickCard(args) {
+        args = JSON.parse(args)
         if (this.opponent.pick) {
             this.events.once('remove_pick', () => this.handlePickCard(args))
             return
@@ -294,10 +298,12 @@ export default class CardJitsu extends GameScene {
     }
 
     handleRevealCard(args) {
+        args = JSON.parse(args)
         this.cardLoader.loadCard(args.card, this.onRevealCardLoad)
     }
 
     handleJudge(args) {
+        args = JSON.parse(args)
         let cardPrefab = this.opponent.pick
 
         cardPrefab.setState('reveal')
@@ -306,6 +312,7 @@ export default class CardJitsu extends GameScene {
     }
 
     handleWinner(args) {
+        args = JSON.parse(args)
         // Remove original handler
         this.events.off('battle_complete')
 
@@ -313,6 +320,7 @@ export default class CardJitsu extends GameScene {
     }
 
     handleCloseGame(args) {
+        args = JSON.parse(args)
         this.interface.prompt.showWindow(this.getFormatString('player_quit_prompt', args.username))
 
         // remove this delay when BUG with 2 players joining the same room at exactly the same time is fixed
@@ -321,6 +329,7 @@ export default class CardJitsu extends GameScene {
     }
 
     handleAward(args) {
+        args = JSON.parse(args)
         this.rankUp = args.rank
 
         this.addAward(this.awards[args.rank - 1])
@@ -330,19 +339,19 @@ export default class CardJitsu extends GameScene {
         let type = award == 104 ? 'face' : 'body'
 
         // this should be abstracted, user inventory could be its own class
-        if (this.world.client.inventory[type].includes(award)) {
+        if (this.shell.client.inventory[type].includes(award)) {
             return
         }
 
-        this.world.client.inventory[type].push(award)
-        this.world.client.inventory[type].sort((a, b) => a - b)
+        this.shell.client.inventory[type].push(award)
+        this.shell.client.inventory[type].sort((a, b) => a - b)
     }
 
     setPlayer(user, index) {
         let player = this.players[index]
         player.set(user)
 
-        if (this.world.isClientUsername(user.username)) {
+        if (this.shell.isClientUsername(user.username)) {
             this.myPlayer = player
         } else {
             this.opponent = player
@@ -352,7 +361,7 @@ export default class CardJitsu extends GameScene {
     onBattleComplete() {
         this.playBattle('ambient')
 
-        this.network.send('send_deal')
+        this.airtower.sendXt('send_deal')
     }
 
     onFlipped(winner) {
@@ -534,7 +543,7 @@ export default class CardJitsu extends GameScene {
         }
 
         this.myPlayer.pickCard(card)
-        this.network.send('pick_card', {card: card.id})
+        this.airtower.sendXt('pick_card', {card: card.id})
 
         this.clock.stop()
         this.help.lock()
@@ -629,7 +638,7 @@ export default class CardJitsu extends GameScene {
     }
 
     sendLeaveGame() {
-        this.network.send('leave_game')
+        this.airtower.sendXt('leave_game')
         this.leaveGame()
     }
 
@@ -644,7 +653,7 @@ export default class CardJitsu extends GameScene {
 
         this.game.domContainer.style.zIndex = 'auto'
 
-        this.world.client.sendJoinLastRoom()
+        this.shell.client.sendJoinLastRoom()
     }
 
     playCloseSound() {

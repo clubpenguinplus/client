@@ -54,7 +54,7 @@ export default class CardJitsuPlayer extends BaseContainer {
         this.username = user.username
         this.usernameText.text = user.username.toUpperCase()
 
-        this.color = this.world.getColor(user.color)
+        this.color = this.shell.getColor(user.color)
 
         this.sensei = user.sensei || false
 

@@ -165,7 +165,8 @@ export default class RoomScene extends BaseScene {
             }
             return {
                 id: waddle[0],
-                seats: seats
+                seats: seats,
+                seatCount: waddle[1].split(',').length
             }
         })
         waddles.forEach((waddle) => {
@@ -472,11 +473,11 @@ export default class RoomScene extends BaseScene {
     }
 
     sendGetTables() {
-        this.network.send('get_tables')
+        this.airtower.sendXt('get_tables')
     }
 
     sendGetWaddles() {
-        this.network.send('get_waddles')
+        this.airtower.sendXt('get_waddles')
     }
 
     getTable(id) {

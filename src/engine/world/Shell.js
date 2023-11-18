@@ -105,6 +105,7 @@ export default class Shell extends BaseScene {
     }
 
     joinRoom(id, users = null) {
+        this.lastRoom = this.room ? this.room.id : 100
         if (!this.crumbs.scenes.rooms[id]) return this.airtower.sendXt('j#jr', 100) // Default to town if room will crash
         this.interface.showLoading()
 
@@ -491,5 +492,9 @@ export default class Shell extends BaseScene {
                 this.sound.add(`${this.soundStudioMode}_sfx_${index}`).play()
             }, delay)
         )
+    }
+
+    isClientUsername(username) {
+        return this.client.username == username
     }
 }

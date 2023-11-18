@@ -66,10 +66,11 @@ export default class ClientSledPlayer extends SledPlayer {
         super.endFinish()
 
         this.sendFinished()
+        this.shell.client.sendJoinLastRoom()
     }
 
     sendMove(move) {
-        this.network.send('send_move', {move: move})
+        this.airtower.sendXt('send_move', JSON.stringify({move}))
     }
 
     sendCrash() {

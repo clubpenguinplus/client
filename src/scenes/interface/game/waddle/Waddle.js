@@ -16,14 +16,12 @@ export default class Waddle extends BaseContainer {
         this.items
 
         // bg
-        const bg = scene.add.rectangle(0, 0, 464, 360)
-        bg.isFilled = true
-        bg.fillColor = 39372
+        const bg = scene.add.image(0, -16, 'main', 'waddle')
         this.add(bg)
 
-        // tab_2
-        const tab_2 = scene.add.image(0, -190, 'main', 'tab-2')
-        this.add(tab_2)
+        // tab
+        const tab = scene.add.image(0, -190, 'main', 'tab-2')
+        this.add(tab)
 
         // waddle_item_3
         const waddle_item_3 = new WaddleItem(scene, 0, 100)
@@ -44,14 +42,7 @@ export default class Waddle extends BaseContainer {
         // text
         const text = scene.add.text(0, -122, '', {})
         text.setOrigin(0.5, 0.5)
-        text.text = 'Sled Racing'
-        text.setStyle({
-            align: 'center',
-            color: '#000000',
-            fixedWidth: 420,
-            fontFamily: 'cpBurbankSmall',
-            fontSize: '32px'
-        })
+        text.setStyle({align: 'center', color: '#000000', fixedWidth: 420, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(text)
 
         // x_button
@@ -69,10 +60,6 @@ export default class Waddle extends BaseContainer {
         const thisDraggableContainer = new DraggableContainer(this)
         thisDraggableContainer.handle = bg
 
-        // bg (components)
-        const bgNineSlice = new NineSlice(bg)
-        bgNineSlice.corner = 50
-
         // x_button (components)
         const x_buttonButton = new Button(x_button)
         x_buttonButton.callback = () => this.onClose()
@@ -82,8 +69,7 @@ export default class Waddle extends BaseContainer {
 
         /* START-USER-CTR-CODE */
 
-        this.activeWaddleId
-        this.activeSeat
+        this.activeWaddleId = null
 
         /* END-USER-CTR-CODE */
     }
@@ -110,7 +96,7 @@ export default class Waddle extends BaseContainer {
         this.visible = false
     }
 
-    showWaddle(waddle, seat) {
+    showWaddle(waddle, seat, game) {
         this.activeWaddleId = waddle
 
         this.enterSeat(waddle, seat)
@@ -121,13 +107,12 @@ export default class Waddle extends BaseContainer {
             this.items[index].setItem(username)
         }
 
+        this.text.setText(this.getString(`waddle_${game}`))
+
         this.visible = true
     }
 
     updateWaddle(waddle, seat, username) {
-        let sprite = this.getSeat(waddle, seat)
-        sprite.visible = username != null
-
         this.shell.room.waddles[waddle].seats[seat] = username
 
         if (waddle == this.activeWaddleId) {

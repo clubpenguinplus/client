@@ -204,6 +204,7 @@ export default class Penguin extends BaseContainer {
     /*========== Animations ==========*/
 
     playFrame(_frame, set = true) {
+        if (!this.room) return
         _frame = parseInt(_frame)
         // Moving penguin can only update when frames are movement frames (9-16)
         if (this.isTweening && (_frame < 9 || _frame > 16)) {

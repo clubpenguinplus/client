@@ -25,12 +25,11 @@
                     "label": "barrier",
                     "texture": {
                         "key": "mtn",
-                        "frame": "barrier_1"
+                        "frame": "barrier_7"
                     },
                     "x": 66,
                     "y": 29,
-                    "originY": 0.45901639344262296,
-                    "flipX": true
+                    "originY": 0.45901639344262296
                 },
                 {
                     "prefabId": "3d402c83-0ef8-4993-bf56-3e076074ec9e",
@@ -68,12 +67,14 @@
                         "y",
                         "visible",
                         "sitFrame",
-                        "donePoint"
+                        "donePoint",
+                        "direction"
                     ],
                     "label": "seat1",
                     "scope": "CLASS",
                     "sitFrame": 24,
                     "donePoint": "done1",
+                    "direction": "se",
                     "x": 101,
                     "y": 3,
                     "visible": false
@@ -86,12 +87,14 @@
                         "y",
                         "visible",
                         "sitFrame",
-                        "donePoint"
+                        "donePoint",
+                        "direction"
                     ],
                     "label": "seat0",
                     "scope": "CLASS",
                     "sitFrame": 24,
                     "donePoint": "done0",
+                    "direction": "se",
                     "x": 40,
                     "y": 44,
                     "visible": false
