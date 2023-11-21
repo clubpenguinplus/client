@@ -19,7 +19,7 @@ export default class CardLoader extends BaseLoader {
             return
         }
 
-        this.image(key, `${card.id}.png`)
+        this.image(key, `${card.id}.webp`)
         this.start()
     }
 

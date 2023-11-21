@@ -23,6 +23,9 @@ export default class RoomScene extends BaseScene {
         this.swim_check = [806]
         this.berg_check = [805]
         this.medal_check = [800, 200, 100, 400, 801, 300, 809, 810, 805, 806]
+
+        this.waddles
+        this.tables
     }
 
     get client() {
@@ -53,7 +56,8 @@ export default class RoomScene extends BaseScene {
         if (!this.music) this.music = 0
         this.addMusic()
 
-        if (this.waddles) this.getWaddles()
+        if (this.tables) this.sendGetTables()
+        if (this.waddles) this.sendGetWaddles()
 
         this.interface.showInterface()
 
@@ -148,10 +152,6 @@ export default class RoomScene extends BaseScene {
         if (!this.shell.muteMusic) {
             this.shell.musicController.addMusic(this.music)
         }
-    }
-
-    getWaddles() {
-        this.airtower.sendXt('a#gt')
     }
 
     setWaddles(waddles) {
@@ -477,7 +477,7 @@ export default class RoomScene extends BaseScene {
     }
 
     sendGetWaddles() {
-        this.airtower.sendXt('get_waddles')
+        this.airtower.sendXt('a#gt')
     }
 
     getTable(id) {
@@ -486,6 +486,32 @@ export default class RoomScene extends BaseScene {
 
     getWaddle(id) {
         return this[`waddle${id}`]
+    }
+
+    setTables(tables) {
+        this.tables = tables
+
+        for (let [table, seats] of Object.entries(tables)) {
+            this.updateTable(table, seats.length)
+        }
+    }
+
+    updateTable(table, seat) {
+        table = this.shell.room.getTable(table)
+        if (!table) {
+            return
+        }
+
+        let button = table.game.__Button
+        let name = button.spriteName
+
+        if (seat > 1) {
+            table.game.setFrame(`${name}-hover`)
+            button.lockFrame = true
+        } else {
+            table.game.setFrame(name)
+            button.lockFrame = false
+        }
     }
 
     /*======= Animations =======*/

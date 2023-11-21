@@ -29,7 +29,34 @@ export default class WaddleSeat {
 
     /* START-USER-CODE */
 
-    // Write your code here.
+    get frame() {
+        switch (this.sitdirection.toLowerCase()) {
+            case 'south':
+            case 's':
+                return 17
+            case 'southwest':
+            case 'sw':
+                return 18
+            case 'west':
+            case 'w':
+                return 19
+            case 'northwest':
+            case 'nw':
+                return 20
+            case 'north':
+            case 'n':
+                return 21
+            case 'northeast':
+            case 'ne':
+                return 22
+            case 'east':
+            case 'e':
+                return 23
+            case 'southeast':
+            case 'se':
+                return 24
+        }
+    }
 
     /* END-USER-CODE */
 }

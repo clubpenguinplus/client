@@ -4,6 +4,8 @@ import MetricsManager from './metrics/MetricsManager'
 import PromptController from './prompt/PromptController'
 import {SimpleButton} from '@components/components'
 
+import PackFileLoader from '@engine/loaders/PackFileLoader'
+
 export default class InterfaceController extends BaseScene {
     metricsManager = new MetricsManager()
 
@@ -11,9 +13,15 @@ export default class InterfaceController extends BaseScene {
         super.create()
         this.prompt = new PromptController(this)
 
+        this.widgets = this.crumbs.widgets
+        // Dynamically loaded widgets
+        this.loadedWidgets = {}
+
         // External interface scenes
         this.interfaces = this.crumbs.scenes.interfaces
         this.loadedScenes = []
+
+        this.packFileLoader = new PackFileLoader(this)
     }
 
     get loading() {
@@ -139,7 +147,8 @@ export default class InterfaceController extends BaseScene {
 
         if (!(key in this.scene.manager.keys)) {
             // Create scene
-            this.scene.add(key, this.interfaces[key], true)
+            let scene = this.scene.add(key, this.interfaces[key], true)
+            this.interface.prompt.showLoading(scene)
             return this.loadedScenes.push(key)
         }
 
@@ -148,7 +157,7 @@ export default class InterfaceController extends BaseScene {
             this.scene.launch(key)
         } else {
             // Scene still preloading
-            this.scene.get(key).events.emit('showloading')
+            this.interface.prompt.showLoading(this.scene.get(key))
         }
 
         this.bringToTop(key)
@@ -218,5 +227,70 @@ export default class InterfaceController extends BaseScene {
             this.main.puffle_button_disabled.visible = false
             this.main.puffle_button.visible = true
         }
+    }
+
+    showWidget(widget) {
+        if (widget.widgetLayer) {
+            widget.widgetLayer.bringToTop(widget)
+        }
+
+        widget.show()
+    }
+
+    destroyWidget(widget) {
+        widget.destroy()
+
+        for (let key in this.loadedWidgets) {
+            if (this.loadedWidgets[key] == widget) {
+                delete this.loadedWidgets[key]
+            }
+        }
+    }
+
+    loadWidget(key, addToWidgetLayer = false) {
+        if (!(key in this.widgets)) {
+            return
+        }
+
+        if (key in this.loadedWidgets) {
+            return this.showWidget(this.loadedWidgets[key])
+        }
+
+        let preload = this.widgets[key].preload
+
+        let dummyScene = {
+            events: new Phaser.Events.EventEmitter()
+        }
+
+        if (preload) {
+            this.packFileLoader.loadPack(preload.key, preload.url, () => {
+                dummyScene.events.emit('create')
+                this.onWidgetLoaded(key, addToWidgetLayer)
+            })
+        } else {
+            dummyScene.events.emit('create')
+            this.onWidgetLoaded(key, addToWidgetLayer)
+        }
+
+        this.prompt.showLoading(dummyScene)
+    }
+
+    onWidgetLoaded(key, addToWidgetLayer) {
+        let scene = addToWidgetLayer ? this.main : this
+
+        let widget = new this.widgets[key].default(scene)
+
+        this.loadedWidgets[key] = widget
+
+        if (addToWidgetLayer) {
+            this.main.addToWidgetLayer(widget)
+        } else {
+            this.add.existing(widget)
+            widget.depth = -1
+        }
+
+        scene.events.once('update', () => {
+            this.showWidget(widget)
+        })
     }
 }

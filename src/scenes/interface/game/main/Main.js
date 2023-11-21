@@ -151,6 +151,8 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.blocker
         /** @type {Friend} */
         this.friend
         /** @type {PlayerCard} */
@@ -171,14 +173,8 @@ export default class Main extends BaseScene {
         this.puffleTricks
         /** @type {Safe} */
         this.safe
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.blocker
         /** @type {Waddle} */
         this.waddle
-        /** @type {FindFour} */
-        this.findFour
-        /** @type {Mancala} */
-        this.mancala
         /** @type {Phaser.GameObjects.Image} */
         this.stampEarnedBg
         /** @type {Phaser.GameObjects.Image} */
@@ -437,6 +433,10 @@ export default class Main extends BaseScene {
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
 
+        // blocker
+        const blocker = this.add.rectangle(760, 480, 1520, 960)
+        blocker.visible = false
+
         // widgetLayer
         const widgetLayer = this.add.layer()
 
@@ -485,24 +485,10 @@ export default class Main extends BaseScene {
         this.add.existing(safe)
         safe.visible = false
 
-        // blocker
-        const blocker = this.add.rectangle(760, 480, 1520, 960)
-        blocker.visible = false
-
         // waddle
         const waddle = new Waddle(this, 733, 422)
         this.add.existing(waddle)
         waddle.visible = false
-
-        // findFour
-        const findFour = new FindFour(this, 736, 472)
-        this.add.existing(findFour)
-        findFour.visible = false
-
-        // mancala
-        const mancala = new Mancala(this, 529, 365)
-        this.add.existing(mancala)
-        mancala.visible = false
 
         // stampEarned
         const stampEarned = this.add.container(933, -150)
@@ -781,6 +767,7 @@ export default class Main extends BaseScene {
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
+        this.blocker = blocker
         this.friend = friend
         this.playerCard = playerCard
         this.friendSmall = friendSmall
@@ -791,10 +778,7 @@ export default class Main extends BaseScene {
         this.emotesMenu = emotesMenu
         this.puffleTricks = puffleTricks
         this.safe = safe
-        this.blocker = blocker
         this.waddle = waddle
-        this.findFour = findFour
-        this.mancala = mancala
         this.stampEarnedBg = stampEarnedBg
         this.stampEarnedImage = stampEarnedImage
         this.stampEarnedHeader = stampEarnedHeader
@@ -1129,6 +1113,15 @@ export default class Main extends BaseScene {
         this.puffle_icon.setFrame(`puffle-icon-${color}`)
         this.puffle_button.visible = true
         this.puffle_button_disabled.visible = false
+    }
+
+    addToWidgetLayer(widget) {
+        this.widgetLayer.add(widget)
+        this.setupWidget(widget)
+    }
+
+    setupWidget(widget) {
+        widget.widgetLayer = this.widgetLayer
     }
 
     /* END-USER-CODE */

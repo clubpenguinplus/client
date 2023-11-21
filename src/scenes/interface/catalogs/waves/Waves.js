@@ -1,9 +1,9 @@
 import {Button, Interactive, SimpleButton} from '@components/components'
-import News from '@scenes/interface/books/News'
+import Book from '@scenes/interface/books/Book'
 
 /* START OF COMPILED CODE */
 
-export default class Waves extends News {
+export default class Waves extends Book {
     constructor() {
         super('Waves')
 

@@ -928,6 +928,20 @@
             "visible": false
         },
         {
+            "type": "Rectangle",
+            "id": "188d6944-ef9f-4160-ae5b-55ba22831852",
+            "label": "blocker",
+            "scope": "CLASS",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "width": 1520,
+            "height": 960
+        },
+        {
             "type": "Layer",
             "id": "a205badf-674d-4f0f-bb3e-e687b24d30e9",
             "label": "widgetLayer",
@@ -1062,20 +1076,6 @@
             "visible": false
         },
         {
-            "type": "Rectangle",
-            "id": "188d6944-ef9f-4160-ae5b-55ba22831852",
-            "label": "blocker",
-            "scope": "CLASS",
-            "components": [
-                "Interactive"
-            ],
-            "x": 760,
-            "y": 480,
-            "visible": false,
-            "width": 1520,
-            "height": 960
-        },
-        {
             "prefabId": "032db1d9-1eac-4321-b4b3-ef359e514589",
             "id": "58867d94-848d-4c51-92e4-57a5a38c3871",
             "unlock": [
@@ -1087,34 +1087,6 @@
             "scope": "CLASS",
             "x": 733,
             "y": 422,
-            "visible": false
-        },
-        {
-            "prefabId": "c497abe9-ef5b-4e05-9576-c628bc1df794",
-            "id": "8ed18124-b020-42c1-bc7c-1ed61448d213",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "findFour",
-            "scope": "CLASS",
-            "x": 736,
-            "y": 472,
-            "visible": false
-        },
-        {
-            "prefabId": "ce0a15ab-d3a1-4e2d-bac2-8a202f2a25a7",
-            "id": "a015fcb9-9444-401f-be0d-1536f644752c",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mancala",
-            "scope": "CLASS",
-            "x": 529,
-            "y": 365,
             "visible": false
         },
         {

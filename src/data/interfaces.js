@@ -1,7 +1,6 @@
 const interfaces = {
     ClothingCatalog: require('@scenes/interface/catalogs/clothing/ClothingCatalog').default,
     FurnitureCatalog: require('@scenes/interface/catalogs/furniture/FurnitureCatalog').default,
-    Newspaper: require('@scenes/interface/catalogs/newspaper/Newspaper').default,
     Music: require('@scenes/interface/catalogs/music/Music').default,
     SledCatalog: require('@scenes/interface/catalogs/sled/Sled').default,
     Hydro: require('@scenes/interface/catalogs/hydro/Hydro').default,

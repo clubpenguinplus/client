@@ -221,7 +221,7 @@ export default class CardJitsu extends GameScene {
         this.game.domContainer.style.zIndex = -10
 
         await player.load({
-            url: 'assets/media/games/card/battle.swf',
+            url: 'client/media/games/card/battle.swf',
             allowScriptAccess: true,
             menu: false,
             contextMenu: false,
