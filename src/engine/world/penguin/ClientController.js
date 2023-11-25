@@ -421,7 +421,7 @@ export default class ClientController {
         }
 
         if (!container) {
-            seat = this.shell.room[`seats${id}`][seat]
+            seat = this.shell.room[`seats${id}`][seat - 1]
         } else {
             seat = container[`seat${seat}`]
         }
