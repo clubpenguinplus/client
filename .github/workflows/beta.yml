@@ -28,4 +28,4 @@ jobs:
                     git checkout ${{ github.ref_name }}
                     git pull --recurse-submodules
                     npm install
-                    npm run build
+                    npm run build-dev
