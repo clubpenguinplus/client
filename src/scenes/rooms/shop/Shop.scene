@@ -17,246 +17,332 @@
     },
     "displayList": [
         {
-            "type": "Sprite",
-            "id": "0f6fe0ab-5847-48c8-9f4d-ffc53a9b81b8",
-            "label": "bg",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "bg"
-            },
-            "x": 765,
-            "y": 468
-        },
-        {
-            "type": "Sprite",
-            "id": "246db7d8-dd44-452b-908a-a1d5ee23d5a6",
-            "label": "rail",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "rail"
-            },
-            "x": 363,
-            "y": 472
-        },
-        {
-            "type": "Sprite",
-            "id": "f1bc8b1a-ad5c-481e-b127-45102e638997",
-            "label": "speakers",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "speakers0001"
-            },
-            "x": 762,
-            "y": 224
-        },
-        {
-            "type": "Sprite",
-            "id": "518abe88-668d-4610-919e-64e852a89337",
-            "label": "chairBody",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "chairBody"
-            },
-            "x": 282,
-            "y": 640
-        },
-        {
-            "type": "Sprite",
-            "id": "b2290f7c-b762-45dd-9b80-8c904c3b0dfe",
-            "label": "chairArm",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "chairArm"
-            },
-            "x": 301,
-            "y": 686
-        },
-        {
-            "type": "Sprite",
-            "id": "fb69f112-3dbc-4f08-8a1a-dbeaec08534f",
-            "label": "chairBody_1",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "chairBody"
-            },
-            "x": 336,
-            "y": 767
-        },
-        {
-            "type": "Sprite",
-            "id": "51cefb19-f416-41c3-831f-00260702a087",
-            "label": "chairArm_1",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "chairArm"
-            },
-            "x": 355,
-            "y": 814
-        },
-        {
-            "type": "Sprite",
-            "id": "9b597891-27a5-40ba-b16f-c3e1fd53b72c",
-            "label": "deskChair",
-            "scope": "CLASS",
-            "texture": {
-                "key": "shop",
-                "frame": "chair"
-            },
-            "x": 1370,
-            "y": 380
-        },
-        {
-            "type": "Container",
-            "id": "d2d7764b-16e7-4f12-9916-1fb5e00eec4e",
-            "label": "desk_container",
-            "x": 1337.3141623444612,
-            "y": 415.3218257529371,
-            "list": [
-                {
-                    "type": "Sprite",
-                    "id": "7057c1fb-d5d6-4adf-9afa-65d3c1d1b128",
-                    "label": "desk",
-                    "scope": "CLASS",
-                    "texture": {
-                        "key": "shop",
-                        "frame": "desk"
-                    },
-                    "x": 13.685837655538762,
-                    "y": 45.678174247062884
-                },
-                {
-                    "type": "Sprite",
-                    "id": "95dca7d3-d9f2-4c70-b3f7-f49a4ada0c8a",
-                    "label": "chest",
-                    "scope": "CLASS",
-                    "texture": {
-                        "key": "shop",
-                        "frame": "chest"
-                    },
-                    "x": 15.685837655538762,
-                    "y": 123.67817424706288
-                },
-                {
-                    "type": "Sprite",
-                    "id": "f96aae91-1544-4534-ac8e-9c16c961f5d4",
-                    "label": "register",
-                    "scope": "CLASS",
-                    "texture": {
-                        "key": "shop",
-                        "frame": "register0001"
-                    },
-                    "x": -48.31416234446124,
-                    "y": -46.321825752937116
-                }
-            ]
-        },
-        {
-            "type": "Sprite",
-            "id": "0c043ff6-74d7-4e78-add5-18b56403f307",
-            "label": "clothesroom",
-            "scope": "CLASS",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.hoverCallback": "() => this.shell.musicController.addSfx('shop-curtainopen')",
-            "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('shop-curtainclose')",
-            "texture": {
-                "key": "shop",
-                "frame": "clothesroom"
-            },
-            "x": 459,
-            "y": 284
-        },
-        {
-            "type": "Sprite",
-            "id": "f4162a4e-747e-4772-bca8-396dccf68162",
-            "label": "spinner",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => {this.onSpinnerOver(); this.shell.musicController.addSfx('shop-spinner')}",
-            "SimpleButton.hoverOutCallback": "() => {this.onSpinnerOut(); this.shell.musicController.stopLoopingSfx('shop-spinner')}",
-            "texture": {
-                "key": "shop",
-                "frame": "spinner0001"
-            },
-            "x": 1403,
-            "y": 436
-        },
-        {
-            "type": "Sprite",
-            "id": "4b189892-eca8-42d9-aae1-5c7d7fd33e67",
-            "label": "door",
-            "scope": "CLASS",
+            "type": "Image",
+            "id": "74a8aedc-d4cf-4c4f-811b-7b735d355040",
+            "label": "shopdoor",
             "components": [
                 "Button",
                 "MoveTo"
             ],
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('shop-dooropen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('shop-doorclose')",
-            "MoveTo.x": 1100,
-            "MoveTo.y": 350,
+            "MoveTo.x": 1125,
+            "MoveTo.y": 325,
             "texture": {
                 "key": "shop",
-                "frame": "door"
+                "frame": "shopdoor"
             },
-            "x": 1103,
-            "y": 248
+            "x": 1112,
+            "y": 255
+        },
+        {
+            "type": "Image",
+            "id": "77c93c3f-dffd-4f16-accb-40138f510624",
+            "label": "bg",
+            "texture": {
+                "key": "shop",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 452
+        },
+        {
+            "type": "Image",
+            "id": "0004cfae-2149-40a1-911e-166a91bc29ec",
+            "label": "dinosaur",
+            "texture": {
+                "key": "shop",
+                "frame": "dinosaur"
+            },
+            "x": 1501,
+            "y": 392
+        },
+        {
+            "type": "Container",
+            "id": "c8f0e105-a1e4-4fb6-86e6-281c6da305d5",
+            "label": "container_1",
+            "x": 1332.7455296300423,
+            "y": 430.4237691679065,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f8fed6f9-3cea-4655-91a5-fe9ab39d27e7",
+                    "label": "table",
+                    "texture": {
+                        "key": "shop",
+                        "frame": "table"
+                    },
+                    "x": 20.88157135767574,
+                    "y": -3.8984094567359193,
+                    "originX": 0.44011293667673024,
+                    "originY": 0.09712339218891278
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e44c9e78-2f70-4820-857d-e81c6663604d",
+                    "label": "cash",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onCashHover()",
+                    "SimpleButton.hoverOutCallback": "() => this.onCashOut()",
+                    "texture": {
+                        "key": "shop",
+                        "frame": "cashJump0001"
+                    },
+                    "x": 49.37309729222375,
+                    "y": 1.694866337428266,
+                    "originX": 0.4085058754783383,
+                    "originY": 0.4203115689650038
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "d5e4ad25-6653-4670-aec1-efb9ccbee4e5",
+            "label": "cabinet",
+            "texture": {
+                "key": "shop",
+                "frame": "cabinet"
+            },
+            "x": 258,
+            "y": 404
         },
         {
             "type": "Sprite",
-            "id": "59433cdd-ad0f-4718-b647-1f946cb10ee1",
-            "label": "circularStool",
-            "scope": "CLASS",
+            "id": "4aba485f-a48c-4e11-85d0-a4543cac8212",
+            "label": "pillar",
             "texture": {
-                "key": "shop",
-                "frame": "circularStool"
+                "key": "pillar"
             },
-            "x": 1105.0536438593308,
-            "y": 585.1647632822302,
-            "originX": 0.3927203373794677,
-            "originY": 0.1307307179502602
+            "x": 989,
+            "y": 251
         },
         {
             "type": "Sprite",
-            "id": "90e4f212-6161-4e69-89ae-d8585ff4f8f7",
-            "label": "squareStool",
+            "id": "94509e21-3440-467d-a001-4ff336012a41",
+            "label": "train",
             "scope": "CLASS",
             "texture": {
                 "key": "shop",
-                "frame": "squareStool"
+                "frame": "train0001"
             },
-            "x": 1032.9632984323307,
-            "y": 645.1017420341761,
-            "originX": 0.3475601335676138,
-            "originY": 0.1008847133406621
+            "x": 572,
+            "y": 121
+        },
+        {
+            "type": "Image",
+            "id": "56d49664-ee1d-45b9-a441-183f71988339",
+            "label": "carts",
+            "texture": {
+                "key": "shop",
+                "frame": "carts"
+            },
+            "x": 749,
+            "y": 243
         },
         {
             "type": "Sprite",
-            "id": "8d2f885f-611e-42a9-b908-4efe197cfe28",
-            "label": "fg",
+            "id": "7b67c58d-d667-4002-86a3-ad3e7cb32271",
+            "label": "chest",
             "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
             "texture": {
                 "key": "shop",
-                "frame": "fg"
+                "frame": "chest"
             },
-            "x": 782,
-            "y": 980.5,
-            "originY": 1
+            "x": 566,
+            "y": 329
+        },
+        {
+            "type": "Image",
+            "id": "3599d598-31c3-4220-99cb-caf12a67456e",
+            "label": "bears",
+            "texture": {
+                "key": "shop",
+                "frame": "bears"
+            },
+            "x": 609,
+            "y": 468
+        },
+        {
+            "type": "Image",
+            "id": "a100a6c0-3ede-472f-844e-52bc10040fb0",
+            "label": "bucket_1",
+            "texture": {
+                "key": "shop",
+                "frame": "bucket_1"
+            },
+            "x": 1399,
+            "y": 563
+        },
+        {
+            "type": "Image",
+            "id": "56901130-a5a3-4ca9-b947-89ee06397d61",
+            "label": "bucket_2",
+            "texture": {
+                "key": "shop",
+                "frame": "bucket_2"
+            },
+            "x": 1477,
+            "y": 594
+        },
+        {
+            "type": "Image",
+            "id": "f8a71e99-effd-4f37-abeb-d3858c055e48",
+            "label": "plushes",
+            "texture": {
+                "key": "shop",
+                "frame": "plushes"
+            },
+            "x": 703,
+            "y": 852
+        },
+        {
+            "type": "Image",
+            "id": "ec75eb85-d178-4619-a446-a142a85394d3",
+            "label": "puffles",
+            "texture": {
+                "key": "shop",
+                "frame": "puffles"
+            },
+            "x": 565,
+            "y": 599
+        },
+        {
+            "type": "Image",
+            "id": "01e4872a-1b9a-4e29-8b08-cca07d14f9a1",
+            "label": "pucks",
+            "texture": {
+                "key": "shop",
+                "frame": "pucks"
+            },
+            "x": 1243,
+            "y": 833
+        },
+        {
+            "type": "Image",
+            "id": "c6aa5fbc-c387-4d7d-9cec-33a1ab32750c",
+            "label": "race_3",
+            "texture": {
+                "key": "shop",
+                "frame": "race_3"
+            },
+            "x": 1077.2456340817034,
+            "y": 489.42103277154115,
+            "originX": 0.9431532210870683,
+            "originY": 0.9325425101596304
+        },
+        {
+            "type": "Image",
+            "id": "5e24d7ea-d0b0-43e0-afaf-12b31eba2f85",
+            "label": "race_1",
+            "texture": {
+                "key": "shop",
+                "frame": "race_1"
+            },
+            "x": 1083,
+            "y": 662
+        },
+        {
+            "type": "Image",
+            "id": "eaaabb11-d085-4d49-b395-dde18ae3e279",
+            "label": "race_2",
+            "texture": {
+                "key": "shop",
+                "frame": "race_2"
+            },
+            "x": 857.787292618592,
+            "y": 427.0395074111094,
+            "originX": 0.20254797775389477,
+            "originY": 0.10987654698508967
+        },
+        {
+            "type": "Image",
+            "id": "42eb3e11-7f58-473f-8f7c-14be6af10ff1",
+            "label": "trafficlights",
+            "texture": {
+                "key": "shop",
+                "frame": "traffic0001"
+            },
+            "x": 860.8574576920828,
+            "y": 438.9671098800855,
+            "originX": 0.6369607718841335,
+            "originY": 0.39941970014847006
+        },
+        {
+            "type": "Image",
+            "id": "9985b6be-ea82-4680-9a44-fa25e0a51c7a",
+            "label": "toy",
+            "texture": {
+                "key": "shop",
+                "frame": "toy"
+            },
+            "x": 1106,
+            "y": 796
+        },
+        {
+            "type": "Image",
+            "id": "e6b73202-89fc-4ea5-9ac3-82550fe10896",
+            "label": "toy_1",
+            "texture": {
+                "key": "shop",
+                "frame": "toy"
+            },
+            "x": 915,
+            "y": 815
+        },
+        {
+            "type": "Image",
+            "id": "2045b3e5-6c04-4243-8c19-103e9f406b27",
+            "label": "tribune_front",
+            "texture": {
+                "key": "shop",
+                "frame": "tribune_front"
+            },
+            "x": 220,
+            "y": 743
+        },
+        {
+            "type": "Image",
+            "id": "ad2efda6-5328-46e5-9550-fddb41d35cf0",
+            "label": "tribune_back",
+            "texture": {
+                "key": "shop",
+                "frame": "tribune_back"
+            },
+            "x": 123,
+            "y": 705
+        },
+        {
+            "type": "Image",
+            "id": "ac87d12f-1796-4e3e-a2c9-2636b7df36fe",
+            "label": "small_overlay",
+            "texture": {
+                "key": "shop",
+                "frame": "small_overlay"
+            },
+            "x": 624,
+            "y": 114
+        },
+        {
+            "type": "Image",
+            "id": "a6952ee2-ec3d-4881-a18b-dabe522a9ddf",
+            "label": "overlay",
+            "texture": {
+                "key": "shop",
+                "frame": "overlay"
+            },
+            "x": 752,
+            "y": 490
         },
         {
             "type": "Sprite",
             "id": "d9d3f441-7715-4324-826e-6839691ce8d1",
-            "label": "catalog-en",
+            "label": "catalog_old",
             "scope": "CLASS",
             "components": [
                 "Button"
@@ -264,14 +350,13 @@
             "Button.hoverCallback": "() => this.shell.musicController.addSfx('book-bookopen')",
             "Button.hoverOutCallback": "() => this.shell.musicController.addSfx('book-bookclose')",
             "Button.callback": "() => this.showClothingCat()",
-            "Button.pixelPerfect": true,
             "Button.isLocalised": true,
             "texture": {
                 "key": "shop",
-                "frame": "catalog-en"
+                "frame": "catalog"
             },
-            "x": 1340,
-            "y": 1055,
+            "x": 1644,
+            "y": 1057,
             "originX": 0,
             "originY": 2
         },
@@ -287,6 +372,27 @@
             "x": 1415,
             "y": 756,
             "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "d157cdd3-b30c-45cd-8438-c3c11ffd6820",
+            "label": "catalog",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.hoverCallback": "() => this.onCatalogHover()",
+            "Button.hoverOutCallback": "() => this.onCatalogOut()",
+            "Button.callback": "() => this.showClothingCat()",
+            "Button.isLocalised": true,
+            "texture": {
+                "key": "shop",
+                "frame": "catalog"
+            },
+            "x": 1335,
+            "y": 1087,
+            "originX": -0.02426799776994842,
+            "originY": 2.2833918797658597
         }
     ],
     "plainObjects": [],
@@ -302,19 +408,20 @@
             "label": "sort",
             "objectIds": [
                 "d9d3f441-7715-4324-826e-6839691ce8d1",
-                "8d2f885f-611e-42a9-b908-4efe197cfe28",
-                "90e4f212-6161-4e69-89ae-d8585ff4f8f7",
-                "59433cdd-ad0f-4718-b647-1f946cb10ee1",
-                "4b189892-eca8-42d9-aae1-5c7d7fd33e67",
-                "f4162a4e-747e-4772-bca8-396dccf68162",
-                "9b597891-27a5-40ba-b16f-c3e1fd53b72c",
-                "51cefb19-f416-41c3-831f-00260702a087",
-                "fb69f112-3dbc-4f08-8a1a-dbeaec08534f",
-                "b2290f7c-b762-45dd-9b80-8c904c3b0dfe",
-                "518abe88-668d-4610-919e-64e852a89337",
-                "f1bc8b1a-ad5c-481e-b127-45102e638997",
-                "246db7d8-dd44-452b-908a-a1d5ee23d5a6",
-                "d2d7764b-16e7-4f12-9916-1fb5e00eec4e"
+                "f8a71e99-effd-4f37-abeb-d3858c055e48",
+                "ec75eb85-d178-4619-a446-a142a85394d3",
+                "3599d598-31c3-4220-99cb-caf12a67456e",
+                "e6b73202-89fc-4ea5-9ac3-82550fe10896",
+                "9985b6be-ea82-4680-9a44-fa25e0a51c7a",
+                "ad2efda6-5328-46e5-9550-fddb41d35cf0",
+                "eaaabb11-d085-4d49-b395-dde18ae3e279",
+                "42eb3e11-7f58-473f-8f7c-14be6af10ff1",
+                "c6aa5fbc-c387-4d7d-9cec-33a1ab32750c",
+                "a6952ee2-ec3d-4881-a18b-dabe522a9ddf",
+                "ac87d12f-1796-4e3e-a2c9-2636b7df36fe",
+                "f8fed6f9-3cea-4655-91a5-fe9ab39d27e7",
+                "e44c9e78-2f70-4820-857d-e81c6663604d",
+                "d157cdd3-b30c-45cd-8438-c3c11ffd6820"
             ]
         }
     ]
