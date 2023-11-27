@@ -6,11 +6,23 @@ export default class Page extends BaseContainer {
     }
 
     get releaseDate() {
-        return Date.now()
+        return this.scene.releaseDate || Date.now()
     }
 
-    buy(item) {
-        this.scene.buy(item)
+    buyIgloo(id) {
+        this.scene.buyIgloo(id)
+    }
+
+    buyLocation(id) {
+        this.scene.buyLocation(id)
+    }
+
+    buyFlooring(id) {
+        this.scene.buyFlooring(id)
+    }
+
+    buyFurniture(id) {
+        this.scene.buyFurniture(id)
     }
 
     close() {

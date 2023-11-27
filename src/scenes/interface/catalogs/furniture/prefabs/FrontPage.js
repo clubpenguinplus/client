@@ -1,5 +1,6 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
+import IglooCatalogFrontLoader from '@engine/loaders/IglooCatalogFrontLoader'
 
 /* START OF COMPILED CODE */
 
@@ -27,12 +28,14 @@ export default class FrontPage extends Page {
         this.add(monthText)
 
         // closebtn
-        const closebtn = scene.add.image(1152, 32, 'constant', 'closebtn')
+        const closebtn = scene.add.image(1152, 27, 'main', 'white-x')
+        closebtn.scaleX = 0.666667
+        closebtn.scaleY = 0.666667
         this.add(closebtn)
 
-        // june15
-        const june15 = scene.add.image(760, 480, 'june15')
-        this.add(june15)
+        // frontcircle
+        const frontcircle = scene.add.image(760, 480, 'june15')
+        this.add(frontcircle)
 
         // nextPage
         const nextPage = scene.add.image(1094, 810, 'furniturecatalog', 'nextPage-btn')
@@ -60,6 +63,7 @@ export default class FrontPage extends Page {
         this.page1Bg = page1Bg
         this.titleText = titleText
         this.monthText = monthText
+        this.frontcircle = frontcircle
         this.coins = coins
 
         /* START-USER-CTR-CODE */
@@ -75,12 +79,24 @@ export default class FrontPage extends Page {
     titleText
     /** @type {Phaser.GameObjects.Text} */
     monthText
+    /** @type {Phaser.GameObjects.Image} */
+    frontcircle
     /** @type {Phaser.GameObjects.Text} */
     coins
 
     /* START-USER-CODE */
 
-    // Write your code here.
+    loadFront(front) {
+        this.visible = false
+        this.front = front
+        let loader = new IglooCatalogFrontLoader(this.scene, this)
+        loader.loadFront(front)
+    }
+
+    showFront() {
+        this.frontcircle.setTexture(`catalog/fronts/${this.front}`)
+        this.visible = true
+    }
 
     /* END-USER-CODE */
 }

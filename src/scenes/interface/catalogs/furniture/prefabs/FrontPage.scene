@@ -78,16 +78,19 @@
                     ],
                     "SimpleButton.callback": "() => this.close()",
                     "texture": {
-                        "key": "constant",
-                        "frame": "closebtn"
+                        "key": "main",
+                        "frame": "white-x"
                     },
                     "x": 1152,
-                    "y": 32
+                    "y": 27,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
                 },
                 {
                     "type": "Image",
                     "id": "b39d4b1a-6d7a-40d6-9953-379300978f44",
-                    "label": "june15",
+                    "label": "frontcircle",
+                    "scope": "CLASS",
                     "texture": {
                         "key": "june15"
                     },

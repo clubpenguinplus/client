@@ -1,0 +1,75 @@
+{
+    "id": "b9bc237a-38cd-405a-ad8a-4cb4257af036",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
+            "label": "page1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
+                    "label": "background",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "back"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "edc46158-88b3-4fe1-9634-ad84c65255b9",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "prevPage-btn"
+                    },
+                    "x": 502,
+                    "y": 808
+                },
+                {
+                    "type": "Image",
+                    "id": "3b08e1a0-363e-4db8-93ff-52d2b00f8971",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 1162,
+                    "y": 40,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

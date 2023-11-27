@@ -29,6 +29,25 @@
             "fillAlpha": 0.3,
             "width": 1520,
             "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "3fb12962-9f57-4236-a8ce-a4e6fccbc329",
+            "label": "pageContainer",
+            "scope": "CLASS"
+        },
+        {
+            "type": "Rectangle",
+            "id": "b434dd22-d34f-4276-9786-6657814422a9",
+            "label": "buttons",
+            "scope": "CLASS",
+            "originX": 1,
+            "originY": 1,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.3,
+            "width": 1,
+            "height": 1
         }
     ],
     "plainObjects": [],

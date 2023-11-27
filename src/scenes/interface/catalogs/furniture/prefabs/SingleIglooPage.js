@@ -1,10 +1,11 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
-import IglooCatalogLocationLoader from '@engine/loaders/IglooCatalogLocationLoader'
+import IglooCatalogIglooFullPageLoader from '@engine/loaders/IglooCatalogIglooFullPageLoader'
+import IglooCatalogIglooIconLoader from '@engine/loaders/IglooCatalogIglooIconLoader'
 
 /* START OF COMPILED CODE */
 
-export default class LocationPage extends Page {
+export default class SingleIglooPage extends Page {
     constructor(scene, x, y) {
         super(scene, x ?? 0, y ?? 0)
 
@@ -12,9 +13,9 @@ export default class LocationPage extends Page {
         const background = scene.add.image(760, 480, 'furniturecatalog', 'pages')
         this.add(background)
 
-        // loc
-        const loc = scene.add.image(760, 480, '2')
-        this.add(loc)
+        // igl
+        const igl = scene.add.image(760, 480, '2')
+        this.add(igl)
 
         // middle
         const middle = scene.add.image(755, 474, 'furniturecatalog', 'middle')
@@ -25,38 +26,44 @@ export default class LocationPage extends Page {
         this.add(nextPage)
 
         // ninepatchcontainer
-        const ninepatchcontainer = scene.add.ninePatchContainer(365, 751, 450, 250, 'furniturecatalog', 'nineslice')
+        const ninepatchcontainer = scene.add.ninePatchContainer(1171, 723, 450, 200, 'furniturecatalog', 'nineslice')
         this.add(ninepatchcontainer)
 
         // ninepatchcontainer_1
-        const ninepatchcontainer_1 = scene.add.ninePatchContainer(365, 750, 450, 250, 'furniturecatalog', 'nineslice')
+        const ninepatchcontainer_1 = scene.add.ninePatchContainer(1171, 722, 450, 200, 'furniturecatalog', 'nineslice')
         this.add(ninepatchcontainer_1)
 
         // header
-        const header = scene.add.text(365, 698, '', {})
+        const header = scene.add.text(1099, 678, '', {})
         header.setOrigin(0.5, 0.5)
-        header.text = 'Beach'
-        header.setStyle({align: 'center', color: '#000000ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
-        header.setWordWrapWidth(400)
+        header.text = 'Stage Igloo'
+        header.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold'})
+        header.setWordWrapWidth(220)
         this.add(header)
 
         // description
-        const description = scene.add.text(365, 762, '', {})
+        const description = scene.add.text(1099, 742, '', {})
         description.setOrigin(0.5, 0.5)
-        description.text = 'Soak up the sun on\nyour beach property!'
-        description.setStyle({align: 'center', color: '#000000ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '25px', maxLines: 2})
-        description.setLineSpacing(5)
-        description.setWordWrapWidth(350)
+        description.text = 'Act out classic plays or make up your own on this lavish stage!'
+        description.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
+        description.setLineSpacing(3)
+        description.setWordWrapWidth(220)
         this.add(description)
 
+        // icon
+        const icon = scene.add.image(1295, 688, '2')
+        icon.scaleX = 0.4
+        icon.scaleY = 0.4
+        this.add(icon)
+
         // buyBtn
-        const buyBtn = scene.add.sprite(365, 834, 'catalogs-master', 'buybtn')
+        const buyBtn = scene.add.sprite(1294, 767, 'catalogs-master', 'buybtn')
         this.add(buyBtn)
 
         // cost
-        const cost = scene.add.text(363, 834, '', {})
+        const cost = scene.add.text(1292, 767, '', {})
         cost.setOrigin(0.5, 0.5)
-        cost.text = '3500'
+        cost.text = '1500'
         cost.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
         this.add(cost)
 
@@ -94,28 +101,32 @@ export default class LocationPage extends Page {
         closebtnSimpleButton.callback = () => this.close()
 
         this.background = background
-        this.loc = loc
+        this.igl = igl
         this.middle = middle
         this.header = header
         this.description = description
+        this.icon = icon
         this.buyBtn = buyBtn
         this.cost = cost
         this.coins = coins
 
         /* START-USER-CTR-CODE */
+        this.igl.setMask(scene.mask)
         /* END-USER-CTR-CODE */
     }
 
     /** @type {Phaser.GameObjects.Image} */
     background
     /** @type {Phaser.GameObjects.Image} */
-    loc
+    igl
     /** @type {Phaser.GameObjects.Image} */
     middle
     /** @type {Phaser.GameObjects.Text} */
     header
     /** @type {Phaser.GameObjects.Text} */
     description
+    /** @type {Phaser.GameObjects.Image} */
+    icon
     /** @type {Phaser.GameObjects.Sprite} */
     buyBtn
     /** @type {Phaser.GameObjects.Text} */
@@ -125,25 +136,43 @@ export default class LocationPage extends Page {
 
     /* START-USER-CODE */
 
-    loadLocation(location) {
-        this.visible = false
-        this.location = location
-        let loader = new IglooCatalogLocationLoader(this.scene, this)
-        loader.loadLocation(location)
+    loadIgloo(igloo) {
+        this.iglooLoaded = false
+        this.iconLoaded = false
+        this.igloo = igloo
+        let loader = new IglooCatalogIglooFullPageLoader(this.scene, this)
+        loader.loadIgloo(igloo)
+        loader = new IglooCatalogIglooIconLoader(this.scene, this)
+        loader.loadIcon(igloo)
     }
 
-    showLocation() {
-        this.loc.setTexture(`catalog/locations/${this.location}`)
-        this.header.text = this.crumbs.locations[this.location].name
-        this.description.text = this.crumbs.locations[this.location].description
-        this.cost.text = this.crumbs.locations[this.location].cost
+    onIglooLoaded() {
+        this.iglooLoaded = true
+        this.checkLoaded()
+    }
+
+    onIconLoaded() {
+        this.iconLoaded = true
+        this.checkLoaded()
+    }
+
+    checkLoaded() {
+        if (this.iglooLoaded && this.iconLoaded) {
+            this.showIgloo()
+        }
+    }
+
+    showIgloo() {
+        this.igl.setTexture(`catalog/igloos/full/${this.igloo}`)
+        this.icon.setTexture(`catalog/igloos/icon/${this.igloo}`)
+        this.header.text = this.crumbs.igloos[this.igloo].name
+        this.description.text = this.crumbs.igloos[this.igloo].description
+        this.cost.text = this.crumbs.igloos[this.igloo].cost
     }
 
     buy() {
-        this.buyLocation(this.location)
+        this.buyIgloo(this.igloo)
     }
-
-    setButtonsVisible() {}
 
     /* END-USER-CODE */
 }

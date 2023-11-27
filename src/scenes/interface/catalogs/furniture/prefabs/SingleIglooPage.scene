@@ -1,5 +1,5 @@
 {
-    "id": "f674968a-a68e-4336-8724-8686db6cd8d4",
+    "id": "e6ac36eb-ebf7-442d-af2e-83c5c03e823e",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
@@ -33,7 +33,7 @@
                 {
                     "type": "Image",
                     "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
-                    "label": "loc",
+                    "label": "igl",
                     "scope": "CLASS",
                     "texture": {
                         "key": "2"
@@ -76,10 +76,10 @@
                         "key": "furniturecatalog",
                         "frame": "nineslice"
                     },
-                    "x": 365,
-                    "y": 751,
+                    "x": 1171,
+                    "y": 723,
                     "width": 450,
-                    "height": 250
+                    "height": 200
                 },
                 {
                     "type": "NinePatchContainer",
@@ -89,47 +89,59 @@
                         "key": "furniturecatalog",
                         "frame": "nineslice"
                     },
-                    "x": 365,
-                    "y": 750,
+                    "x": 1171,
+                    "y": 722,
                     "width": 450,
-                    "height": 250
+                    "height": 200
                 },
                 {
                     "type": "Text",
                     "id": "caac8678-657a-4e67-8254-bf6ee725e303",
                     "label": "header",
                     "scope": "CLASS",
-                    "x": 365,
-                    "y": 698,
+                    "x": 1099,
+                    "y": 678,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Beach",
-                    "fixedWidth": 450,
+                    "text": "Stage Igloo",
+                    "fixedWidth": 220,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "40px",
+                    "fontSize": "25px",
                     "fontStyle": "bold",
                     "color": "#000000ff",
-                    "wordWrapWidth": 400
+                    "wordWrapWidth": 220
                 },
                 {
                     "type": "Text",
                     "id": "294cc0d1-b566-43fc-9c3b-fafc723bc490",
                     "label": "description",
                     "scope": "CLASS",
-                    "x": 365,
-                    "y": 762,
+                    "x": 1099,
+                    "y": 742,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Soak up the sun on\nyour beach property!",
-                    "fixedWidth": 450,
-                    "lineSpacing": 5,
+                    "text": "Act out classic plays or make up your own on this lavish stage!",
+                    "fixedWidth": 220,
+                    "lineSpacing": 3,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "25px",
+                    "fontSize": "20px",
                     "color": "#000000ff",
-                    "maxLines": 2,
-                    "wordWrapWidth": 350
+                    "wordWrapWidth": 220
+                },
+                {
+                    "type": "Image",
+                    "id": "63430dd9-8c2f-4614-87af-58e239b7a45a",
+                    "label": "icon",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 1295,
+                    "y": 688,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
                 },
                 {
                     "type": "Sprite",
@@ -144,19 +156,19 @@
                         "key": "catalogs-master",
                         "frame": "buybtn"
                     },
-                    "x": 365,
-                    "y": 834
+                    "x": 1294,
+                    "y": 767
                 },
                 {
                     "type": "Text",
                     "id": "2b550406-f048-49de-ae9c-fd17c928a78b",
                     "label": "cost",
                     "scope": "CLASS",
-                    "x": 363,
-                    "y": 834,
+                    "x": 1292,
+                    "y": 767,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "3500",
+                    "text": "1500",
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "23px",
                     "fontStyle": "bold",
