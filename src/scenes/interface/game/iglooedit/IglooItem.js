@@ -78,6 +78,7 @@ export default class IglooItem extends Phaser.GameObjects.Container {
     }
 
     addItem(type, id, quantity) {
+        if (!this.scene) return
         const trueQuantity = quantity
         quantity = this.calculateQuantity(type, id, quantity)
         this.item = {type, id, quantity, trueQuantity}

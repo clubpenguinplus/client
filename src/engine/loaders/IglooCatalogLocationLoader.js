@@ -1,10 +1,9 @@
 import BaseLoader from './BaseLoader'
 
 export default class IglooCatalogLocationLoader extends BaseLoader {
-    constructor(scene, initiator) {
+    constructor(scene) {
         super(scene)
         this.scene = scene
-        this.initiator = initiator
 
         let suffix = '/client/media/interface/catalogs/furniture/locations/'
         this.baseURL = this.shell.baseURL + suffix
@@ -31,6 +30,6 @@ export default class IglooCatalogLocationLoader extends BaseLoader {
             return
         }
 
-        this.initiator.showLocation()
+        this.shell.events.emit(`textureLoaded:${key}`)
     }
 }

@@ -1,36 +1,36 @@
 import BaseLoader from './BaseLoader'
 
-export default class IglooCatalogIglooFullPageLoader extends BaseLoader {
+export default class IglooCatalogBackgroundLoader extends BaseLoader {
     constructor(scene) {
         super(scene)
         this.scene = scene
 
-        let suffix = '/client/media/interface/catalogs/furniture/igloos/full/'
+        let suffix = '/client/media/interface/catalogs/furniture/backgrounds/'
         this.baseURL = this.shell.baseURL + suffix
-        this.keyPrefix = 'catalog/igloos/full/'
+        this.keyPrefix = 'catalog/backgrounds/'
     }
 
-    loadIgloo(igloo) {
-        let key = this.getKey(igloo)
+    loadBackground(background) {
+        let key = this.getKey(background)
 
         if (this.textureExists(key)) {
-            this.onFileComplete(key, igloo)
+            this.onFileComplete(key, background)
             return
         }
 
         if (
             this.checkComplete('image', key, () => {
-                this.onFileComplete(key, igloo)
+                this.onFileComplete(key, background)
             })
         ) {
             return
         }
 
-        this.image(key, `${igloo}.webp`)
+        this.image(key, `${background}.webp`)
         this.start()
     }
 
-    onFileComplete(key, igloo) {
+    onFileComplete(key, background) {
         if (!this.textureExists(key)) {
             return
         }

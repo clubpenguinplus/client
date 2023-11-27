@@ -1,7 +1,5 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
-import IglooCatalogIglooFullPageLoader from '@engine/loaders/IglooCatalogIglooFullPageLoader'
-import IglooCatalogIglooIconLoader from '@engine/loaders/IglooCatalogIglooIconLoader'
 
 /* START OF COMPILED CODE */
 
@@ -29,20 +27,16 @@ export default class SingleIglooPage extends Page {
         const ninepatchcontainer = scene.add.ninePatchContainer(1171, 723, 450, 200, 'furniturecatalog', 'nineslice')
         this.add(ninepatchcontainer)
 
-        // ninepatchcontainer_1
-        const ninepatchcontainer_1 = scene.add.ninePatchContainer(1171, 722, 450, 200, 'furniturecatalog', 'nineslice')
-        this.add(ninepatchcontainer_1)
-
         // header
-        const header = scene.add.text(1099, 678, '', {})
+        const header = scene.add.text(1099, 674, '', {})
         header.setOrigin(0.5, 0.5)
         header.text = 'Stage Igloo'
-        header.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'bold'})
-        header.setWordWrapWidth(220)
+        header.setStyle({align: 'center', color: '#000000ff', fixedWidth: 300, fontFamily: 'cpBurbankSmall', fontSize: '20px', fontStyle: 'bold'})
+        header.setWordWrapWidth(300)
         this.add(header)
 
         // description
-        const description = scene.add.text(1099, 742, '', {})
+        const description = scene.add.text(1099, 744, '', {})
         description.setOrigin(0.5, 0.5)
         description.text = 'Act out classic plays or make up your own on this lavish stage!'
         description.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
@@ -140,10 +134,12 @@ export default class SingleIglooPage extends Page {
         this.iglooLoaded = false
         this.iconLoaded = false
         this.igloo = igloo
-        let loader = new IglooCatalogIglooFullPageLoader(this.scene, this)
-        loader.loadIgloo(igloo)
-        loader = new IglooCatalogIglooIconLoader(this.scene, this)
-        loader.loadIcon(igloo)
+
+        this.shell.events.once(`textureLoaded:catalog/igloos/full/${igloo}`, () => this.onIglooLoaded())
+        this.scene.iglooCatalogIglooFullPageLoader.loadIgloo(igloo)
+
+        this.shell.events.once(`textureLoaded:catalog/igloos/icon/${igloo}`, () => this.onIconLoaded())
+        this.scene.iglooCatalogIglooIconLoader.loadIcon(igloo)
     }
 
     onIglooLoaded() {

@@ -1,6 +1,5 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
-import IglooCatalogLocationLoader from '@engine/loaders/IglooCatalogLocationLoader'
 
 /* START OF COMPILED CODE */
 
@@ -128,8 +127,8 @@ export default class LocationPage extends Page {
     loadLocation(location) {
         this.visible = false
         this.location = location
-        let loader = new IglooCatalogLocationLoader(this.scene, this)
-        loader.loadLocation(location)
+        this.shell.events.once(`textureLoaded:catalog/locations/${location}`, () => this.showLocation())
+        this.scene.iglooCatalogLocationLoader.loadLocation(location)
     }
 
     showLocation() {
@@ -142,8 +141,6 @@ export default class LocationPage extends Page {
     buy() {
         this.buyLocation(this.location)
     }
-
-    setButtonsVisible() {}
 
     /* END-USER-CODE */
 }

@@ -1,6 +1,5 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
-import IglooCatalogLocationLoader from '@engine/loaders/IglooCatalogLocationLoader'
 
 /* START OF COMPILED CODE */
 

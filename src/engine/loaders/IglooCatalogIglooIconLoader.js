@@ -1,10 +1,9 @@
 import BaseLoader from './BaseLoader'
 
 export default class IglooCatalogIglooIconLoader extends BaseLoader {
-    constructor(scene, initiator) {
+    constructor(scene) {
         super(scene)
         this.scene = scene
-        this.initiator = initiator
 
         let suffix = '/client/media/igloos/buildings/icon/'
         this.baseURL = this.shell.baseURL + suffix
@@ -35,6 +34,7 @@ export default class IglooCatalogIglooIconLoader extends BaseLoader {
         if (!this.textureExists(key)) {
             return
         }
-        this.initiator.onIconLoaded()
+
+        this.shell.events.emit(`textureLoaded:${key}`)
     }
 }

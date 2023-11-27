@@ -1,6 +1,5 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
-import IglooCatalogFrontLoader from '@engine/loaders/IglooCatalogFrontLoader'
 
 /* START OF COMPILED CODE */
 
@@ -89,8 +88,8 @@ export default class FrontPage extends Page {
     loadFront(front) {
         this.visible = false
         this.front = front
-        let loader = new IglooCatalogFrontLoader(this.scene, this)
-        loader.loadFront(front)
+        this.shell.events.once(`textureLoaded:catalog/fronts/${front}`, () => this.showFront())
+        this.scene.iglooCatalogFrontLoader.loadFront(front)
     }
 
     showFront() {

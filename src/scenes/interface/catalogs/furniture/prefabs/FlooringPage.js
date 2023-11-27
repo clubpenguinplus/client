@@ -1,6 +1,5 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
-import IglooCatalogLocationLoader from '@engine/loaders/IglooCatalogLocationLoader'
 
 /* START OF COMPILED CODE */
 
@@ -124,26 +123,6 @@ export default class LocationPage extends Page {
     coins
 
     /* START-USER-CODE */
-
-    loadLocation(location) {
-        this.visible = false
-        this.location = location
-        let loader = new IglooCatalogLocationLoader(this.scene, this)
-        loader.loadLocation(location)
-    }
-
-    showLocation() {
-        this.loc.setTexture(`catalog/locations/${this.location}`)
-        this.header.text = this.crumbs.locations[this.location].name
-        this.description.text = this.crumbs.locations[this.location].description
-        this.cost.text = this.crumbs.locations[this.location].cost
-    }
-
-    buy() {
-        this.buyLocation(this.location)
-    }
-
-    setButtonsVisible() {}
 
     /* END-USER-CODE */
 }

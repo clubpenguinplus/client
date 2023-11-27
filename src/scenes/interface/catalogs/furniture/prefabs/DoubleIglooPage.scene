@@ -33,7 +33,7 @@
                 {
                     "type": "Image",
                     "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
-                    "label": "loc",
+                    "label": "bgImage",
                     "scope": "CLASS",
                     "texture": {
                         "key": "2"
@@ -67,104 +67,6 @@
                     },
                     "x": 1425,
                     "y": 809
-                },
-                {
-                    "type": "NinePatchContainer",
-                    "id": "754709c8-7c59-4dd6-b832-45c96cfd7fd1",
-                    "label": "ninepatchcontainer",
-                    "texture": {
-                        "key": "furniturecatalog",
-                        "frame": "nineslice"
-                    },
-                    "x": 365,
-                    "y": 751,
-                    "width": 450,
-                    "height": 250
-                },
-                {
-                    "type": "NinePatchContainer",
-                    "id": "13be6aa4-04d6-4653-8c9b-4012af7a582a",
-                    "label": "ninepatchcontainer_1",
-                    "texture": {
-                        "key": "furniturecatalog",
-                        "frame": "nineslice"
-                    },
-                    "x": 365,
-                    "y": 750,
-                    "width": 450,
-                    "height": 250
-                },
-                {
-                    "type": "Text",
-                    "id": "caac8678-657a-4e67-8254-bf6ee725e303",
-                    "label": "header",
-                    "scope": "CLASS",
-                    "x": 365,
-                    "y": 698,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Beach",
-                    "fixedWidth": 450,
-                    "align": "center",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "40px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "wordWrapWidth": 400
-                },
-                {
-                    "type": "Text",
-                    "id": "294cc0d1-b566-43fc-9c3b-fafc723bc490",
-                    "label": "description",
-                    "scope": "CLASS",
-                    "x": 365,
-                    "y": 762,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Soak up the sun on\nyour beach property!",
-                    "fixedWidth": 450,
-                    "lineSpacing": 5,
-                    "align": "center",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "25px",
-                    "color": "#000000ff",
-                    "maxLines": 2,
-                    "wordWrapWidth": 350
-                },
-                {
-                    "type": "Sprite",
-                    "id": "cb5de5bb-cf39-496c-8344-fe8feed5f41a",
-                    "label": "buyBtn",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.buy(this.id)",
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
-                    },
-                    "x": 365,
-                    "y": 834
-                },
-                {
-                    "type": "Text",
-                    "id": "2b550406-f048-49de-ae9c-fd17c928a78b",
-                    "label": "cost",
-                    "scope": "CLASS",
-                    "x": 363,
-                    "y": 834,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "3500",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#4b2500ff",
-                    "shadow.offsetX": 1,
-                    "shadow.offsetY": 1,
-                    "shadow.fill": true,
-                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",
@@ -216,6 +118,222 @@
                     "y": 25,
                     "scaleX": 0.666667,
                     "scaleY": 0.666667
+                },
+                {
+                    "type": "Image",
+                    "id": "11796824-8179-4625-8d91-426b7e5cd5e6",
+                    "label": "leftImage",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 395,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "832c719c-287a-41a1-a26c-48c4144dfb09",
+                    "label": "rightImage",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 1125,
+                    "y": 480
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "aa4083dc-2ded-42f4-9dac-f3e8cb2c1ea7",
+                    "label": "ninepatchcontainer",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nineslice"
+                    },
+                    "x": 386,
+                    "y": 714,
+                    "width": 450,
+                    "height": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "ce74674b-a747-4abb-9ca5-9a6d899e4d3f",
+                    "label": "leftHeader",
+                    "scope": "CLASS",
+                    "x": 314,
+                    "y": 665,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Stage Igloo",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "55272619-ee30-487e-8cb3-e9a9edf0f7cf",
+                    "label": "leftDesc",
+                    "scope": "CLASS",
+                    "x": 314,
+                    "y": 735,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Act out classic plays or make up your own on this lavish stage!",
+                    "fixedWidth": 220,
+                    "lineSpacing": 3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 220
+                },
+                {
+                    "type": "Image",
+                    "id": "ad029a95-43b9-41c3-bef0-bc6ba9061d1e",
+                    "label": "leftIcon",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 510,
+                    "y": 679,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Sprite",
+                    "id": "055bd52f-e6c2-46c8-8a6c-73ef09af94a9",
+                    "label": "leftBuyBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.buyLeft()",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 509,
+                    "y": 758
+                },
+                {
+                    "type": "Text",
+                    "id": "a5a2a9ef-3201-43ab-a8d7-ff1be8e2447b",
+                    "label": "leftCost",
+                    "scope": "CLASS",
+                    "x": 507,
+                    "y": 758,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1500",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "18c80a97-55ed-4baf-bdce-633d952c1951",
+                    "label": "ninepatchcontainer_2",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nineslice"
+                    },
+                    "x": 1099,
+                    "y": 714,
+                    "width": 450,
+                    "height": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "aa26aa3e-71a3-4547-9078-6a8b785477fb",
+                    "label": "rightHeader",
+                    "scope": "CLASS",
+                    "x": 1027,
+                    "y": 665,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Stage Igloo",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "01e44007-44a7-40bf-bd98-4b7bb34c7f39",
+                    "label": "rightDesc",
+                    "scope": "CLASS",
+                    "x": 1027,
+                    "y": 735,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Act out classic plays or make up your own on this lavish stage!",
+                    "fixedWidth": 220,
+                    "lineSpacing": 3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 220
+                },
+                {
+                    "type": "Image",
+                    "id": "44930d43-4a00-401b-b8fc-3404927471c2",
+                    "label": "rightIcon",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 1223,
+                    "y": 679,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Sprite",
+                    "id": "3f3697a0-edd6-4163-a81c-352b583c0eb2",
+                    "label": "rightBuyBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.buyRight()",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 1222,
+                    "y": 758
+                },
+                {
+                    "type": "Text",
+                    "id": "57329e6b-cf88-4a9a-b152-6da0a7060c24",
+                    "label": "rightCost",
+                    "scope": "CLASS",
+                    "x": 1220,
+                    "y": 758,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1500",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 }
             ]
         }

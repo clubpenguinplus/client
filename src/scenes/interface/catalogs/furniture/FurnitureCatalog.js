@@ -9,6 +9,13 @@ import FlooringPage from './prefabs/FlooringPage'
 import FurniturePage from './prefabs/FurniturePage'
 import PhysicsMaskGraphics from '@engine/utils/mask/PhysicsMaskGraphics'
 
+import IglooCatalogBackgroundLoader from '@engine/loaders/IglooCatalogBackgroundLoader'
+import IglooCatalogFrontLoader from '@engine/loaders/IglooCatalogFrontLoader'
+import IglooCatalogIglooFullPageLoader from '@engine/loaders/IglooCatalogIglooFullPageLoader'
+import IglooCatalogIglooHalfPageLoader from '@engine/loaders/IglooCatalogIglooHalfPageLoader'
+import IglooCatalogIglooIconLoader from '@engine/loaders/IglooCatalogIglooIconLoader'
+import IglooCatalogLocationLoader from '@engine/loaders/IglooCatalogLocationLoader'
+
 import Book from '@scenes/interface/books/Book'
 
 /* START OF COMPILED CODE */
@@ -18,7 +25,6 @@ export default class FurnitureCatalog extends Book {
         super('FurnitureCatalog')
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
         /* END-USER-CTR-CODE */
     }
 
@@ -76,8 +82,14 @@ export default class FurnitureCatalog extends Book {
         return {
             releaseDate: '2023-12-01',
             front: 'june15',
-            singleIgloo: 98,
-            doubleIgloo: [21, 8],
+            singleIgloos: [98],
+            doubleIgloos: [
+                {
+                    background: 1,
+                    left: 21,
+                    right: 8
+                }
+            ],
             furniturePages: [
                 {
                     background: 2,
@@ -140,6 +152,13 @@ export default class FurnitureCatalog extends Book {
     create() {
         super.create()
 
+        this.iglooCatalogBackgroundLoader = new IglooCatalogBackgroundLoader(this)
+        this.iglooCatalogFrontLoader = new IglooCatalogFrontLoader(this)
+        this.iglooCatalogIglooFullPageLoader = new IglooCatalogIglooFullPageLoader(this)
+        this.iglooCatalogIglooHalfPageLoader = new IglooCatalogIglooHalfPageLoader(this)
+        this.iglooCatalogIglooIconLoader = new IglooCatalogIglooIconLoader(this)
+        this.iglooCatalogLocationLoader = new IglooCatalogLocationLoader(this)
+
         this.mask = this.createMask()
 
         this.pages = []
@@ -156,9 +175,17 @@ export default class FurnitureCatalog extends Book {
 
         this.pages.push(new InstructionsPage(this, 0, 0))
 
-        let singleIgloo = new SingleIglooPage(this, 0, 0)
-        singleIgloo.loadIgloo(json.singleIgloo)
-        this.pages.push(singleIgloo)
+        json.singleIgloos.forEach((id) => {
+            let singleIgloo = new SingleIglooPage(this, 0, 0)
+            singleIgloo.loadIgloo(id)
+            this.pages.push(singleIgloo)
+        })
+
+        json.doubleIgloos.forEach((igloo) => {
+            let doubleIgloo = new DoubleIglooPage(this, 0, 0)
+            doubleIgloo.loadIgloos(igloo.background, igloo.left, igloo.right)
+            this.pages.push(doubleIgloo)
+        })
 
         json.locationPages.forEach((id) => {
             let page = new LocationPage(this, 0, 0)

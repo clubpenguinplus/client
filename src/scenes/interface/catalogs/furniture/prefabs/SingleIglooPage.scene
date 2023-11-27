@@ -82,35 +82,22 @@
                     "height": 200
                 },
                 {
-                    "type": "NinePatchContainer",
-                    "id": "13be6aa4-04d6-4653-8c9b-4012af7a582a",
-                    "label": "ninepatchcontainer_1",
-                    "texture": {
-                        "key": "furniturecatalog",
-                        "frame": "nineslice"
-                    },
-                    "x": 1171,
-                    "y": 722,
-                    "width": 450,
-                    "height": 200
-                },
-                {
                     "type": "Text",
                     "id": "caac8678-657a-4e67-8254-bf6ee725e303",
                     "label": "header",
                     "scope": "CLASS",
                     "x": 1099,
-                    "y": 678,
+                    "y": 674,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Stage Igloo",
-                    "fixedWidth": 220,
+                    "fixedWidth": 300,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "25px",
+                    "fontSize": "20px",
                     "fontStyle": "bold",
                     "color": "#000000ff",
-                    "wordWrapWidth": 220
+                    "wordWrapWidth": 300
                 },
                 {
                     "type": "Text",
@@ -118,7 +105,7 @@
                     "label": "description",
                     "scope": "CLASS",
                     "x": 1099,
-                    "y": 742,
+                    "y": 744,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Act out classic plays or make up your own on this lavish stage!",

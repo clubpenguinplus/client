@@ -1,10 +1,9 @@
 import BaseLoader from './BaseLoader'
 
 export default class IglooCatalogFrontLoader extends BaseLoader {
-    constructor(scene, initiator) {
+    constructor(scene) {
         super(scene)
         this.scene = scene
-        this.initiator = initiator
 
         let suffix = '/client/media/interface/catalogs/furniture/fronts/'
         this.baseURL = this.shell.baseURL + suffix
@@ -36,6 +35,6 @@ export default class IglooCatalogFrontLoader extends BaseLoader {
             return
         }
 
-        this.initiator.showFront()
+        this.shell.events.emit(`textureLoaded:${key}`)
     }
 }

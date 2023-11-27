@@ -1,13 +1,13 @@
 import BaseLoader from './BaseLoader'
 
-export default class IglooCatalogIglooFullPageLoader extends BaseLoader {
+export default class IglooCatalogIglooHalfPageLoader extends BaseLoader {
     constructor(scene) {
         super(scene)
         this.scene = scene
 
-        let suffix = '/client/media/interface/catalogs/furniture/igloos/full/'
+        let suffix = '/client/media/interface/catalogs/furniture/igloos/half/'
         this.baseURL = this.shell.baseURL + suffix
-        this.keyPrefix = 'catalog/igloos/full/'
+        this.keyPrefix = 'catalog/igloos/half/'
     }
 
     loadIgloo(igloo) {
