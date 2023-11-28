@@ -21,7 +21,7 @@
                 {
                     "type": "Image",
                     "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
-                    "label": "background",
+                    "label": "pages",
                     "scope": "CLASS",
                     "texture": {
                         "key": "furniturecatalog",
@@ -33,13 +33,19 @@
                 {
                     "type": "Image",
                     "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
-                    "label": "loc",
+                    "label": "background",
                     "scope": "CLASS",
                     "texture": {
                         "key": "2"
                     },
                     "x": 760,
                     "y": 480
+                },
+                {
+                    "type": "Container",
+                    "id": "b3b50e56-69a1-4e61-a823-bb00cc107a62",
+                    "label": "furnitureItemContainer",
+                    "scope": "CLASS"
                 },
                 {
                     "type": "Image",
@@ -67,104 +73,6 @@
                     },
                     "x": 1425,
                     "y": 809
-                },
-                {
-                    "type": "NinePatchContainer",
-                    "id": "754709c8-7c59-4dd6-b832-45c96cfd7fd1",
-                    "label": "ninepatchcontainer",
-                    "texture": {
-                        "key": "furniturecatalog",
-                        "frame": "nineslice"
-                    },
-                    "x": 365,
-                    "y": 751,
-                    "width": 450,
-                    "height": 250
-                },
-                {
-                    "type": "NinePatchContainer",
-                    "id": "13be6aa4-04d6-4653-8c9b-4012af7a582a",
-                    "label": "ninepatchcontainer_1",
-                    "texture": {
-                        "key": "furniturecatalog",
-                        "frame": "nineslice"
-                    },
-                    "x": 365,
-                    "y": 750,
-                    "width": 450,
-                    "height": 250
-                },
-                {
-                    "type": "Text",
-                    "id": "caac8678-657a-4e67-8254-bf6ee725e303",
-                    "label": "header",
-                    "scope": "CLASS",
-                    "x": 365,
-                    "y": 698,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Beach",
-                    "fixedWidth": 450,
-                    "align": "center",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "40px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "wordWrapWidth": 400
-                },
-                {
-                    "type": "Text",
-                    "id": "294cc0d1-b566-43fc-9c3b-fafc723bc490",
-                    "label": "description",
-                    "scope": "CLASS",
-                    "x": 365,
-                    "y": 762,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Soak up the sun on\nyour beach property!",
-                    "fixedWidth": 450,
-                    "lineSpacing": 5,
-                    "align": "center",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "25px",
-                    "color": "#000000ff",
-                    "maxLines": 2,
-                    "wordWrapWidth": 350
-                },
-                {
-                    "type": "Sprite",
-                    "id": "cb5de5bb-cf39-496c-8344-fe8feed5f41a",
-                    "label": "buyBtn",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.buy(this.id)",
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "buybtn"
-                    },
-                    "x": 365,
-                    "y": 834
-                },
-                {
-                    "type": "Text",
-                    "id": "2b550406-f048-49de-ae9c-fd17c928a78b",
-                    "label": "cost",
-                    "scope": "CLASS",
-                    "x": 363,
-                    "y": 834,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "3500",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "23px",
-                    "fontStyle": "bold",
-                    "color": "#4b2500ff",
-                    "shadow.offsetX": 1,
-                    "shadow.offsetY": 1,
-                    "shadow.fill": true,
-                    "shadow.color": "#f1f2b5ff"
                 },
                 {
                     "type": "Text",

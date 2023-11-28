@@ -58,7 +58,7 @@
                     "label": "monthText",
                     "scope": "CLASS",
                     "x": 785,
-                    "y": 247,
+                    "y": 258,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "December 2022",
@@ -66,7 +66,6 @@
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "30px",
-                    "fontStyle": "italic",
                     "color": "#d4fefdff"
                 },
                 {

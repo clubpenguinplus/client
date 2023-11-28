@@ -20,10 +20,10 @@ export default class FrontPage extends Page {
         this.add(titleText)
 
         // monthText
-        const monthText = scene.add.text(785, 247, '', {})
+        const monthText = scene.add.text(785, 258, '', {})
         monthText.setOrigin(0.5, 0.5)
         monthText.text = 'December 2022'
-        monthText.setStyle({align: 'center', color: '#d4fefdff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '30px', fontStyle: 'italic'})
+        monthText.setStyle({align: 'center', color: '#d4fefdff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         this.add(monthText)
 
         // closebtn

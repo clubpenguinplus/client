@@ -11,6 +11,7 @@ import PhysicsMaskGraphics from '@engine/utils/mask/PhysicsMaskGraphics'
 
 import IglooCatalogBackgroundLoader from '@engine/loaders/IglooCatalogBackgroundLoader'
 import IglooCatalogFrontLoader from '@engine/loaders/IglooCatalogFrontLoader'
+import IglooCatalogFurnitureIconLoader from '@engine/loaders/IglooCatalogFurnitureIconLoader'
 import IglooCatalogIglooFullPageLoader from '@engine/loaders/IglooCatalogIglooFullPageLoader'
 import IglooCatalogIglooHalfPageLoader from '@engine/loaders/IglooCatalogIglooHalfPageLoader'
 import IglooCatalogIglooIconLoader from '@engine/loaders/IglooCatalogIglooIconLoader'
@@ -132,8 +133,132 @@ export default class FurnitureCatalog extends Book {
                             btnPos: 'bottom'
                         }
                     ]
+                },
+                {
+                    background: 3,
+                    left: [
+                        {
+                            id: 2046,
+                            size: 'twothirds',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2058,
+                            size: 'third',
+                            btnPos: 'right'
+                        }
+                    ],
+                    right: [
+                        {
+                            id: 2054,
+                            size: 'half',
+                            btnPos: 'left'
+                        },
+                        {
+                            id: 2059,
+                            size: 'half',
+                            btnPos: 'right'
+                        }
+                    ]
                 }
             ],
+            commonIglooPage: {
+                background: 4,
+                left: 30,
+                right: 9
+            },
+            commonItemsPages: [
+                {
+                    background: 5,
+                    left: [
+                        {
+                            id: 2255,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2257,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2258,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2260,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ],
+                    right: [
+                        {
+                            id: 2262,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2248,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2261,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2249,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ]
+                },
+                {
+                    background: 5,
+                    left: [
+                        {
+                            id: 2256,
+                            size: 'half',
+                            btnPos: 'right'
+                        },
+                        {
+                            id: 2254,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2259,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ],
+                    right: [
+                        {
+                            id: 2252,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2253,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2251,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2250,
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ]
+                }
+            ],
+            flooring: [18, 21, 22, 14, 15, 11, 19, 7],
             locationPages: [4, 2, 3]
         }
     }
@@ -154,6 +279,7 @@ export default class FurnitureCatalog extends Book {
 
         this.iglooCatalogBackgroundLoader = new IglooCatalogBackgroundLoader(this)
         this.iglooCatalogFrontLoader = new IglooCatalogFrontLoader(this)
+        this.iglooCatalogFurnitureIconLoader = new IglooCatalogFurnitureIconLoader(this)
         this.iglooCatalogIglooFullPageLoader = new IglooCatalogIglooFullPageLoader(this)
         this.iglooCatalogIglooHalfPageLoader = new IglooCatalogIglooHalfPageLoader(this)
         this.iglooCatalogIglooIconLoader = new IglooCatalogIglooIconLoader(this)
@@ -185,6 +311,22 @@ export default class FurnitureCatalog extends Book {
             let doubleIgloo = new DoubleIglooPage(this, 0, 0)
             doubleIgloo.loadIgloos(igloo.background, igloo.left, igloo.right)
             this.pages.push(doubleIgloo)
+        })
+
+        json.furniturePages.forEach((page) => {
+            let furniturePage = new FurniturePage(this, 0, 0)
+            furniturePage.loadPage(page.background, page.left, page.right)
+            this.pages.push(furniturePage)
+        })
+
+        let commonIglooPage = new DoubleIglooPage(this, 0, 0)
+        commonIglooPage.loadIgloos(json.commonIglooPage.background, json.commonIglooPage.left, json.commonIglooPage.right)
+        this.pages.push(commonIglooPage)
+
+        json.commonItemsPages.forEach((page) => {
+            let furniturePage = new FurniturePage(this, 0, 0)
+            furniturePage.loadPage(page.background, page.left, page.right)
+            this.pages.push(furniturePage)
         })
 
         json.locationPages.forEach((id) => {
