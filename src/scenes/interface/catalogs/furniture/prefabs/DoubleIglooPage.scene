@@ -182,13 +182,13 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Act out classic plays or make up your own on this lavish stage!",
-                    "fixedWidth": 220,
+                    "fixedWidth": 250,
                     "lineSpacing": 3,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#000000ff",
-                    "wordWrapWidth": 220
+                    "wordWrapWidth": 250
                 },
                 {
                     "type": "Image",
@@ -279,13 +279,13 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Act out classic plays or make up your own on this lavish stage!",
-                    "fixedWidth": 220,
+                    "fixedWidth": 250,
                     "lineSpacing": 3,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
                     "fontSize": "20px",
                     "color": "#000000ff",
-                    "wordWrapWidth": 220
+                    "wordWrapWidth": 250
                 },
                 {
                     "type": "Image",

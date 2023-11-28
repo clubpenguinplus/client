@@ -39,9 +39,9 @@ export default class SingleIglooPage extends Page {
         const description = scene.add.text(1099, 744, '', {})
         description.setOrigin(0.5, 0.5)
         description.text = 'Act out classic plays or make up your own on this lavish stage!'
-        description.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
+        description.setStyle({align: 'center', color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         description.setLineSpacing(3)
-        description.setWordWrapWidth(220)
+        description.setWordWrapWidth(250)
         this.add(description)
 
         // icon

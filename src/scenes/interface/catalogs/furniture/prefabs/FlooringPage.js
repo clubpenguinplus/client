@@ -1,19 +1,21 @@
 import Page from './Page'
 import {Button, SimpleButton, LocalisedString} from '@components/components'
 
+import FlooringItem from './FlooringItem'
+
 /* START OF COMPILED CODE */
 
-export default class LocationPage extends Page {
+export default class FlooringPage extends Page {
     constructor(scene, x, y) {
         super(scene, x ?? 0, y ?? 0)
 
-        // background
-        const background = scene.add.image(760, 480, 'furniturecatalog', 'pages')
-        this.add(background)
+        // pages
+        const pages = scene.add.image(760, 480, 'furniturecatalog', 'pages')
+        this.add(pages)
 
-        // loc
-        const loc = scene.add.image(760, 480, '2')
-        this.add(loc)
+        // background
+        const background = scene.add.image(760, 480, 'catalog/backgrounds/6')
+        this.add(background)
 
         // middle
         const middle = scene.add.image(755, 474, 'furniturecatalog', 'middle')
@@ -22,42 +24,6 @@ export default class LocationPage extends Page {
         // nextPage
         const nextPage = scene.add.image(1425, 809, 'furniturecatalog', 'nextPage-btn')
         this.add(nextPage)
-
-        // ninepatchcontainer
-        const ninepatchcontainer = scene.add.ninePatchContainer(365, 751, 450, 250, 'furniturecatalog', 'nineslice')
-        this.add(ninepatchcontainer)
-
-        // ninepatchcontainer_1
-        const ninepatchcontainer_1 = scene.add.ninePatchContainer(365, 750, 450, 250, 'furniturecatalog', 'nineslice')
-        this.add(ninepatchcontainer_1)
-
-        // header
-        const header = scene.add.text(365, 698, '', {})
-        header.setOrigin(0.5, 0.5)
-        header.text = 'Beach'
-        header.setStyle({align: 'center', color: '#000000ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold'})
-        header.setWordWrapWidth(400)
-        this.add(header)
-
-        // description
-        const description = scene.add.text(365, 762, '', {})
-        description.setOrigin(0.5, 0.5)
-        description.text = 'Soak up the sun on\nyour beach property!'
-        description.setStyle({align: 'center', color: '#000000ff', fixedWidth: 450, fontFamily: 'cpBurbankSmall', fontSize: '25px', maxLines: 2})
-        description.setLineSpacing(5)
-        description.setWordWrapWidth(350)
-        this.add(description)
-
-        // buyBtn
-        const buyBtn = scene.add.sprite(365, 834, 'catalogs-master', 'buybtn')
-        this.add(buyBtn)
-
-        // cost
-        const cost = scene.add.text(363, 834, '', {})
-        cost.setOrigin(0.5, 0.5)
-        cost.text = '3500'
-        cost.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '23px', fontStyle: 'bold', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
-        this.add(cost)
 
         // coins
         const coins = scene.add.text(967, 937, '', {})
@@ -76,13 +42,44 @@ export default class LocationPage extends Page {
         closebtn.scaleY = 0.666667
         this.add(closebtn)
 
+        // flooringItem
+        const flooringItem = new FlooringItem(scene, 222, 290)
+        this.add(flooringItem)
+
+        // flooringItem_1
+        const flooringItem_1 = new FlooringItem(scene, 222, 621)
+        this.add(flooringItem_1)
+
+        // flooringItem_2
+        const flooringItem_2 = new FlooringItem(scene, 540, 621)
+        this.add(flooringItem_2)
+
+        // flooringItem_3
+        const flooringItem_3 = new FlooringItem(scene, 540, 290)
+        this.add(flooringItem_3)
+
+        // flooringItem_4
+        const flooringItem_4 = new FlooringItem(scene, 1291, 621)
+        this.add(flooringItem_4)
+
+        // flooringItem_5
+        const flooringItem_5 = new FlooringItem(scene, 1291, 290)
+        this.add(flooringItem_5)
+
+        // flooringItem_6
+        const flooringItem_6 = new FlooringItem(scene, 973, 290)
+        this.add(flooringItem_6)
+
+        // flooringItem_7
+        const flooringItem_7 = new FlooringItem(scene, 973, 621)
+        this.add(flooringItem_7)
+
+        // lists
+        const flooringItems = [flooringItem, flooringItem_3, flooringItem_1, flooringItem_2, flooringItem_6, flooringItem_5, flooringItem_7, flooringItem_4]
+
         // nextPage (components)
         const nextPageButton = new Button(nextPage)
         nextPageButton.callback = () => this.nextPage()
-
-        // buyBtn (components)
-        const buyBtnButton = new Button(buyBtn)
-        buyBtnButton.callback = () => this.buy(this.id)
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
@@ -92,37 +89,35 @@ export default class LocationPage extends Page {
         const closebtnSimpleButton = new SimpleButton(closebtn)
         closebtnSimpleButton.callback = () => this.close()
 
+        this.pages = pages
         this.background = background
-        this.loc = loc
         this.middle = middle
-        this.header = header
-        this.description = description
-        this.buyBtn = buyBtn
-        this.cost = cost
         this.coins = coins
+        this.flooringItems = flooringItems
 
         /* START-USER-CTR-CODE */
+        this.background.setMask(this.scene.mask)
         /* END-USER-CTR-CODE */
     }
 
     /** @type {Phaser.GameObjects.Image} */
-    background
+    pages
     /** @type {Phaser.GameObjects.Image} */
-    loc
+    background
     /** @type {Phaser.GameObjects.Image} */
     middle
     /** @type {Phaser.GameObjects.Text} */
-    header
-    /** @type {Phaser.GameObjects.Text} */
-    description
-    /** @type {Phaser.GameObjects.Sprite} */
-    buyBtn
-    /** @type {Phaser.GameObjects.Text} */
-    cost
-    /** @type {Phaser.GameObjects.Text} */
     coins
+    /** @type {FlooringItem[]} */
+    flooringItems
 
     /* START-USER-CODE */
+
+    loadFlooring(flooringList) {
+        this.flooringItems.forEach((item, index) => {
+            item.loadIcon(flooringList[index])
+        })
+    }
 
     /* END-USER-CODE */
 }

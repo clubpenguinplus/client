@@ -64,9 +64,9 @@ export default class DoubleIglooPage extends Page {
         const leftDesc = scene.add.text(314, 735, '', {})
         leftDesc.setOrigin(0.5, 0.5)
         leftDesc.text = 'Act out classic plays or make up your own on this lavish stage!'
-        leftDesc.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
+        leftDesc.setStyle({align: 'center', color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         leftDesc.setLineSpacing(3)
-        leftDesc.setWordWrapWidth(220)
+        leftDesc.setWordWrapWidth(250)
         this.add(leftDesc)
 
         // leftIcon
@@ -102,9 +102,9 @@ export default class DoubleIglooPage extends Page {
         const rightDesc = scene.add.text(1027, 735, '', {})
         rightDesc.setOrigin(0.5, 0.5)
         rightDesc.text = 'Act out classic plays or make up your own on this lavish stage!'
-        rightDesc.setStyle({align: 'center', color: '#000000ff', fixedWidth: 220, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
+        rightDesc.setStyle({align: 'center', color: '#000000ff', fixedWidth: 250, fontFamily: 'cpBurbankSmall', fontSize: '20px'})
         rightDesc.setLineSpacing(3)
-        rightDesc.setWordWrapWidth(220)
+        rightDesc.setWordWrapWidth(250)
         this.add(rightDesc)
 
         // rightIcon

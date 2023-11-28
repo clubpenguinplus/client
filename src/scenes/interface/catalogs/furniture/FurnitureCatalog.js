@@ -10,6 +10,7 @@ import FurniturePage from './prefabs/FurniturePage'
 import PhysicsMaskGraphics from '@engine/utils/mask/PhysicsMaskGraphics'
 
 import IglooCatalogBackgroundLoader from '@engine/loaders/IglooCatalogBackgroundLoader'
+import IglooCatalogFlooringIconLodaer from '@engine/loaders/IglooCatalogFlooringIconLoader'
 import IglooCatalogFrontLoader from '@engine/loaders/IglooCatalogFrontLoader'
 import IglooCatalogFurnitureIconLoader from '@engine/loaders/IglooCatalogFurnitureIconLoader'
 import IglooCatalogIglooFullPageLoader from '@engine/loaders/IglooCatalogIglooFullPageLoader'
@@ -258,7 +259,7 @@ export default class FurnitureCatalog extends Book {
                     ]
                 }
             ],
-            flooring: [18, 21, 22, 14, 15, 11, 19, 7],
+            flooring: [17, 21, 22, 14, 15, 11, 19, 7],
             locationPages: [4, 2, 3]
         }
     }
@@ -278,6 +279,7 @@ export default class FurnitureCatalog extends Book {
         super.create()
 
         this.iglooCatalogBackgroundLoader = new IglooCatalogBackgroundLoader(this)
+        this.iglooCatalogFlooringIconLodaer = new IglooCatalogFlooringIconLodaer(this)
         this.iglooCatalogFrontLoader = new IglooCatalogFrontLoader(this)
         this.iglooCatalogFurnitureIconLoader = new IglooCatalogFurnitureIconLoader(this)
         this.iglooCatalogIglooFullPageLoader = new IglooCatalogIglooFullPageLoader(this)
@@ -329,6 +331,10 @@ export default class FurnitureCatalog extends Book {
             this.pages.push(furniturePage)
         })
 
+        let flooringPage = new FlooringPage(this, 0, 0)
+        flooringPage.loadFlooring(json.flooring)
+        this.pages.push(flooringPage)
+
         json.locationPages.forEach((id) => {
             let page = new LocationPage(this, 0, 0)
             page.loadLocation(id)
@@ -339,7 +345,9 @@ export default class FurnitureCatalog extends Book {
 
         for (let page of this.pages) {
             this.pageContainer.add(page)
-            page.visible = false
+            if (!(page instanceof FrontPage)) {
+                page.visible = false
+            }
         }
     }
 
