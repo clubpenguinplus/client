@@ -1,5 +1,6 @@
 // You can write more code here
 /* START OF COMPILED CODE */
+
 import RoomScene from '../RoomScene'
 import Button from '../../components/Button'
 import ShowHint from '../../components/ShowHint'
@@ -17,6 +18,8 @@ export default class Dock extends RoomScene {
         this.coins
         /** @type {Phaser.GameObjects.Sprite} */
         this.change
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
+        this.sort
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
@@ -46,52 +49,59 @@ export default class Dock extends RoomScene {
         const boat = this.add.sprite(151, 631, 'dock', 'boat')
 
         // fence2
-        this.add.image(1341, 659, 'dock', 'fence2')
+        const fence2 = this.add.image(1318.8972511860202, 615.9578049411973, 'dock', 'fence2')
+        fence2.setOrigin(0.46297697016083783, 0.31990713364517703)
 
         // door
-        this.add.image(914, 658, 'dock', 'door')
+        const door = this.add.image(914, 658, 'dock', 'door')
 
         // fence1
-        this.add.image(858, 792, 'dock', 'fence1')
+        const fence1 = this.add.image(858, 792, 'dock', 'fence1')
 
         // trees
-        this.add.image(1509, 480, 'dock', 'trees')
+        const trees = this.add.image(1509, 480, 'dock', 'trees')
 
         // table
         this.add.image(202, 374, 'dock', 'table')
 
         // hurdle
-        this.add.image(145, 447, 'dock', 'hurdle')
+        const hurdle = this.add.image(147.83091504340908, 506.4492159115898, 'dock', 'hurdle')
+        hurdle.setOrigin(0.5070772876085227, 0.7368494657832264)
 
         // treewhurdle
-        this.add.image(434, 447, 'dock', 'treewhurdle')
+        const treewhurdle = this.add.image(434, 447, 'dock', 'treewhurdle')
 
         // nest
-        this.add.image(965, 286, 'dock', 'nest')
+        const nest = this.add.image(958.6851017026092, 262.2963309650179, 'dock', 'nest')
+        nest.setOrigin(0.4697851142163944, 0.3353909901805804)
 
         // pillar
-        this.add.image(884, 240, 'dock', 'pillar')
+        const pillar = this.add.image(885.3737792432834, 306.40523561006484, 'dock', 'pillar')
+        pillar.setOrigin(0.506133009880491, 0.8088616026503682)
 
         // ceiling
-        this.add.image(1076, 196, 'dock', 'ceiling')
+        const ceiling = this.add.image(1113.7073417721908, 392.9159834604551, 'dock', 'ceiling')
+        ceiling.setOrigin(0.5601392565945352, 0.9290108333537528)
 
         // rightSIgn
-        this.add.image(1139, 433, 'dock', 'rightSIgn')
+        const rightSIgn = this.add.image(1139, 433, 'dock', 'rightSIgn')
 
         // smallhouse
-        this.add.image(721, 290, 'dock', 'smallhouse')
+        const smallhouse = this.add.image(721, 290, 'dock', 'smallhouse')
 
         // foreground
-        this.add.image(495, 487, 'dock', 'foreground')
+        const foreground = this.add.image(495, 487, 'dock', 'foreground')
 
         // dock
-        this.add.image(258, 704, 'dock', 'dock')
+        const dock = this.add.image(379.23444661488344, 579.9129781706487, 'dock', 'dock')
+        dock.setOrigin(0.7563096122936225, 0.13178925273189518)
 
         // pole
-        this.add.image(269, 819, 'dock', 'pole')
+        const pole = this.add.image(269, 819, 'dock', 'pole')
 
         // pole2
-        this.add.image(522, 632, 'dock', 'pole2')
+        const pole2 = this.add.image(511.45756027946476, 632.8785544052123, 'dock', 'pole2')
+        pole2.setOrigin(0.3698464586752434, 0.5066555788177425)
 
         // pot
         const pot = this.add.image(553, 690, 'dock', 'pot')
@@ -101,13 +111,23 @@ export default class Dock extends RoomScene {
         pot.tintBottomRight = 11513775
 
         // coins
-        const coins = this.add.sprite(555, 654, 'dock', 'coins0001')
+        const coins = this.add.sprite(555, 602.1663521674157, 'dock', 'coins0001')
+        coins.setOrigin(0.5, 0.12165220560157411)
 
         // change
-        const change = this.add.sprite(554, 653, 'dock', 'change')
+        const change = this.add.sprite(548.7287815763474, 701.3195022168159, 'dock', 'change')
+        change.setOrigin(0.4638957642215574, 0.7290023801744827)
 
         // leg
-        this.add.image(548, 701, 'dock', 'leg')
+        const leg = this.add.image(551.5141063913345, 715.9350999295234, 'dock', 'leg')
+        leg.setOrigin(0.6098170504927651, 0.6157761152481848)
+
+        // barrell
+        const barrell = this.add.image(1033.4899077074706, 819.7945023720405, 'dock', 'barrell')
+        barrell.setOrigin(0.49397870687377515, 0.24067388648596363)
+
+        // lists
+        const sort = [coins, change, pole2, door, fence2, rightSIgn, smallhouse, foreground, treewhurdle, hurdle, pole, trees, nest, pillar, dock, fence1, leg, ceiling, barrell]
 
         // boat (components)
         new Button(boat)
@@ -122,6 +142,7 @@ export default class Dock extends RoomScene {
         this.boat = boat
         this.coins = coins
         this.change = change
+        this.sort = sort
 
         this.events.emit('scene-awake')
     }
