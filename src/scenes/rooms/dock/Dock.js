@@ -111,8 +111,8 @@ export default class Dock extends RoomScene {
         pot.tintBottomRight = 11513775
 
         // coins
-        const coins = this.add.sprite(555, 602.1663521674157, 'dock', 'coins0001')
-        coins.setOrigin(0.5, 0.12165220560157411)
+        const coins = this.add.sprite(551.8567481760598, 635.6944012913002, 'dock', 'coins0001')
+        coins.setOrigin(0.43585200359305704, 0.36638227461882017)
 
         // change
         const change = this.add.sprite(548.7287815763474, 701.3195022168159, 'dock', 'change')
