@@ -1,10 +1,11 @@
 {
-    "id": "6fa06028-7c95-4e60-80bd-20928312269a",
+    "id": "b0ecbde7-f775-479b-a175-eb814c9727a4",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
+        "autoImport": true,
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
@@ -18,79 +19,18 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "ad5a8b62-4046-45a7-bbe3-c6a3ad707da9",
+            "id": "0064f501-50cf-4f44-9db5-cd2fa27ad805",
             "label": "bg",
             "texture": {
                 "key": "dock",
                 "frame": "bg"
             },
-            "originX": 0,
-            "originY": 0
+            "x": 768,
+            "y": 421.5
         },
         {
-            "type": "Image",
-            "id": "cd8cfd8c-45fd-4387-b329-e7dc871c0f67",
-            "label": "bench2",
-            "texture": {
-                "key": "dock",
-                "frame": "bench2"
-            },
-            "x": 180,
-            "y": 315
-        },
-        {
-            "type": "Image",
-            "id": "3677084f-77ce-40ee-8bce-1de1b00d0865",
-            "label": "bench1",
-            "texture": {
-                "key": "dock",
-                "frame": "bench1"
-            },
-            "x": 119.98440274657416,
-            "y": 371.2733011067446,
-            "originX": 0.5233459473113757,
-            "originY": 0.6715589112930161
-        },
-        {
-            "type": "Image",
-            "id": "6fc93593-c940-4ac4-9d25-7addf90d1893",
-            "label": "table2",
-            "texture": {
-                "key": "dock",
-                "frame": "table2"
-            },
-            "x": 828.00002760472,
-            "y": 311.34824674331423,
-            "originX": 0.4097222222222222,
-            "originY": 0.1971391980227298
-        },
-        {
-            "type": "Image",
-            "id": "243fdfa9-405e-4c58-b677-6a2b6595cb9e",
-            "label": "tabale",
-            "texture": {
-                "key": "dock",
-                "frame": "tabale"
-            },
-            "x": 966,
-            "y": 336,
-            "originX": 0.5883534136546185,
-            "originY": 0.3974358974358974
-        },
-        {
-            "type": "Image",
-            "id": "01d8032b-cff6-4f92-8e49-4fd5ede52aca",
-            "label": "tree_fg",
-            "texture": {
-                "key": "dock",
-                "frame": "tree_fg"
-            },
-            "x": 365,
-            "y": 486
-        },
-        {
-            "type": "Image",
-            "id": "a84184a5-7687-4049-b4b4-e472f52c7457",
+            "type": "Sprite",
+            "id": "01ad15ad-5a36-4186-a731-a60e5918f0b4",
             "label": "boat",
             "scope": "CLASS",
             "components": [
@@ -103,181 +43,238 @@
                 "key": "dock",
                 "frame": "boat"
             },
-            "x": 173,
-            "y": 641
+            "x": 151,
+            "y": 631
         },
         {
             "type": "Image",
-            "id": "09cacc3f-31b9-4cdf-a2a9-4866f6be48dc",
-            "label": "fg2",
+            "id": "912fbd7d-b484-4dbb-abf4-fb8803319c53",
+            "label": "fence2",
             "texture": {
                 "key": "dock",
-                "frame": "fg2"
+                "frame": "fence2"
             },
-            "x": 114.83660557045329,
-            "y": 475.7219760867117,
-            "originX": 0.3014677290709707,
-            "originY": 0.2295572351198286
+            "x": 1341,
+            "y": 659
         },
         {
             "type": "Image",
-            "id": "62b5cad9-8980-404c-a72e-a22dfadf482e",
-            "label": "pillar2",
+            "id": "a88bdc26-808b-4fbf-9d1d-cf74cee7eb24",
+            "label": "door",
             "texture": {
                 "key": "dock",
-                "frame": "pillar2"
+                "frame": "door"
             },
-            "x": 537,
+            "x": 914,
+            "y": 658
+        },
+        {
+            "type": "Image",
+            "id": "658c5942-0080-496c-b12f-b5f6e09213e7",
+            "label": "fence1",
+            "texture": {
+                "key": "dock",
+                "frame": "fence1"
+            },
+            "x": 858,
+            "y": 792
+        },
+        {
+            "type": "Image",
+            "id": "8211c12c-1c99-406c-a51e-7bb9d46fd3fd",
+            "label": "trees",
+            "texture": {
+                "key": "dock",
+                "frame": "trees"
+            },
+            "x": 1509,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "41f840e4-ca2e-4d6c-bbba-845f53fcfc16",
+            "label": "table",
+            "texture": {
+                "key": "dock",
+                "frame": "table"
+            },
+            "x": 202,
+            "y": 374
+        },
+        {
+            "type": "Image",
+            "id": "9ff9e3e8-5a22-4f87-8b0d-0ee5d4cbade7",
+            "label": "hurdle",
+            "texture": {
+                "key": "dock",
+                "frame": "hurdle"
+            },
+            "x": 145,
+            "y": 447
+        },
+        {
+            "type": "Image",
+            "id": "fbe874de-87fc-4ccf-8438-4857406292b2",
+            "label": "treewhurdle",
+            "texture": {
+                "key": "dock",
+                "frame": "treewhurdle"
+            },
+            "x": 434,
+            "y": 447
+        },
+        {
+            "type": "Image",
+            "id": "b5feac44-1fcf-4959-88f4-e7865e246203",
+            "label": "nest",
+            "texture": {
+                "key": "dock",
+                "frame": "nest"
+            },
+            "x": 965,
+            "y": 286
+        },
+        {
+            "type": "Image",
+            "id": "010fe2b0-72b2-4964-b347-e22263b09c99",
+            "label": "pillar",
+            "texture": {
+                "key": "dock",
+                "frame": "pillar"
+            },
+            "x": 884,
+            "y": 240
+        },
+        {
+            "type": "Image",
+            "id": "a8fcd134-84f9-4382-969f-b6a54c156486",
+            "label": "ceiling",
+            "texture": {
+                "key": "dock",
+                "frame": "ceiling"
+            },
+            "x": 1076,
+            "y": 196
+        },
+        {
+            "type": "Image",
+            "id": "6934af32-e715-4893-a1f7-e1817b383a56",
+            "label": "rightSIgn",
+            "texture": {
+                "key": "dock",
+                "frame": "rightSIgn"
+            },
+            "x": 1139,
+            "y": 433
+        },
+        {
+            "type": "Image",
+            "id": "5323de27-e647-4776-a60d-d62beb52b226",
+            "label": "smallhouse",
+            "texture": {
+                "key": "dock",
+                "frame": "smallhouse"
+            },
+            "x": 721,
+            "y": 290
+        },
+        {
+            "type": "Image",
+            "id": "06e6edf6-e69c-464e-bd5a-6b3f152db598",
+            "label": "foreground",
+            "texture": {
+                "key": "dock",
+                "frame": "foreground"
+            },
+            "x": 495,
+            "y": 487
+        },
+        {
+            "type": "Image",
+            "id": "7c316d17-6528-4204-a0d2-42f3d8616550",
+            "label": "dock",
+            "texture": {
+                "key": "dock",
+                "frame": "dock"
+            },
+            "x": 258,
+            "y": 704
+        },
+        {
+            "type": "Image",
+            "id": "6adbaa3e-eb03-4dcc-91f2-b41cbb730637",
+            "label": "pole",
+            "texture": {
+                "key": "dock",
+                "frame": "pole"
+            },
+            "x": 269,
+            "y": 819
+        },
+        {
+            "type": "Image",
+            "id": "71fabac9-96c9-4226-9d75-e46f9a154f1e",
+            "label": "pole2",
+            "texture": {
+                "key": "dock",
+                "frame": "pole2"
+            },
+            "x": 522,
             "y": 632
         },
         {
             "type": "Image",
-            "id": "97bb758c-9bbb-4167-bdac-dc8346ff07fc",
-            "label": "pillar1",
+            "id": "cc0c5e79-cac4-4e60-96e4-c6256db3f21b",
+            "label": "pot",
             "texture": {
                 "key": "dock",
-                "frame": "pillar1"
+                "frame": "pot"
             },
-            "x": 290,
-            "y": 828
+            "x": 553,
+            "y": 690,
+            "tintTopLeft": "#afafaf",
+            "tintTopRight": "#afafaf",
+            "tintBottomLeft": "#afafaf",
+            "tintBottomRight": "#afafaf"
         },
         {
             "type": "Sprite",
-            "id": "d5ba699c-729d-40ed-8645-6474436bc806",
-            "label": "ring",
+            "id": "c677b272-5dec-4c4f-886c-7de4f04e17c2",
+            "label": "coins",
             "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "ring_",
-            "Animation.end": 34,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
             "texture": {
                 "key": "dock",
-                "frame": "ring_0001"
+                "frame": "coins0001"
             },
-            "x": 524.5138040019274,
-            "y": 716.6663020350195,
-            "originX": 0.7958926666696138,
-            "originY": 0.9202893887915851
+            "x": 555,
+            "y": 654
+        },
+        {
+            "type": "Sprite",
+            "id": "48f6185a-9d6c-4d53-be21-7bdd5bc0ba97",
+            "label": "change",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.hoverCallback": "() => this.onHoverChange()",
+            "texture": {
+                "key": "dock",
+                "frame": "change"
+            },
+            "x": 554,
+            "y": 653
         },
         {
             "type": "Image",
-            "id": "f82f2fa5-2f3a-4e51-a116-fe16b3ccb443",
-            "label": "torch1",
+            "id": "d1988015-96a8-4300-b54c-dc729a399c70",
+            "label": "leg",
             "texture": {
                 "key": "dock",
-                "frame": "torch1"
+                "frame": "leg"
             },
-            "x": 474,
-            "y": 497
-        },
-        {
-            "type": "Image",
-            "id": "7efde595-c20e-4db9-bf33-4c580e0d44a3",
-            "label": "forest",
-            "texture": {
-                "key": "dock",
-                "frame": "forest"
-            },
-            "x": 1645.8761446555077,
-            "y": 637.5082886271437,
-            "originX": 0.9865161701460728,
-            "originY": 0.950398119952734
-        },
-        {
-            "type": "Image",
-            "id": "40394bab-da80-4335-b478-b967015a0b7f",
-            "label": "snow_fg",
-            "texture": {
-                "key": "dock",
-                "frame": "snow_fg"
-            },
-            "x": 1251.2844576597856,
-            "y": 645.4935482871178,
-            "originX": 0.5421769883029249,
-            "originY": 0.4248847922605049
-        },
-        {
-            "type": "Container",
-            "id": "6205a149-90ee-48f3-97b7-bff98603a268",
-            "label": "container_1",
-            "x": 775.3025600933964,
-            "y": 699.3791158270643,
-            "list": [
-                {
-                    "type": "Image",
-                    "id": "5536dc90-1fe7-445b-a8f7-cf7d230d9547",
-                    "label": "catalogfg",
-                    "texture": {
-                        "key": "dock",
-                        "frame": "catalogfg"
-                    },
-                    "x": 6.8331972372499195,
-                    "y": -0.045120605207898734,
-                    "originX": 0.49072525928861027,
-                    "originY": 0.7352056908444423
-                },
-                {
-                    "type": "Sprite",
-                    "id": "35acd7e9-5e2b-47f1-b78e-0f884c592699",
-                    "label": "smallcatalog",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "catalog",
-                    "Animation.end": 4,
-                    "Animation.repeat": 0,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dock",
-                        "frame": "catalog0001"
-                    },
-                    "x": -25.30257975094662,
-                    "y": -44.37913859754099
-                }
-            ]
-        },
-        {
-            "type": "Rectangle",
-            "id": "5c073700-47a9-4a36-aef7-699aefff1c31",
-            "label": "rectangle_1",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => { this.smallcatalog.__Animation.play() }",
-            "SimpleButton.hoverOutCallback": "() => { this.smallcatalog.__Animation.stop(); this.smallcatalog.setFrame(\"catalog0001\") }",
-            "SimpleButton.callback": "() => this.interface.loadExternal('Hydro')",
-            "x": 749,
-            "y": 639,
-            "scaleX": 0.6479719067963792,
-            "scaleY": 0.632333043277452,
-            "fillColor": "#1a90ff",
-            "fillAlpha": 100,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Rectangle",
-            "id": "dec5a9b8-f075-4c7b-9e85-97a77fba096c",
-            "label": "rectangle",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => { this.ring.__Animation.play(); this.shell.musicController.addSfx('dock-tubes') }",
-            "SimpleButton.hoverOutCallback": "() => {}",
-            "x": 526,
-            "y": 699,
-            "scaleX": 1.4952694746750035,
-            "scaleY": 1.3247912439284337,
-            "fillColor": "#1a90ff",
-            "fillAlpha": 100,
-            "width": 128,
-            "height": 128
+            "x": 548,
+            "y": 701
         }
     ],
     "plainObjects": [],
@@ -286,28 +283,5 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 4
-    },
-    "lists": [
-        {
-            "id": "9fa0fb95-b09b-4b5f-af02-e88358b10f34",
-            "label": "sort",
-            "objectIds": [
-                "40394bab-da80-4335-b478-b967015a0b7f",
-                "d5ba699c-729d-40ed-8645-6474436bc806",
-                "97bb758c-9bbb-4167-bdac-dc8346ff07fc",
-                "09cacc3f-31b9-4cdf-a2a9-4866f6be48dc",
-                "62b5cad9-8980-404c-a72e-a22dfadf482e",
-                "6fc93593-c940-4ac4-9d25-7addf90d1893",
-                "7efde595-c20e-4db9-bf33-4c580e0d44a3",
-                "cd8cfd8c-45fd-4387-b329-e7dc871c0f67",
-                "3677084f-77ce-40ee-8bce-1de1b00d0865",
-                "6205a149-90ee-48f3-97b7-bff98603a268",
-                "243fdfa9-405e-4c58-b677-6a2b6595cb9e"
-            ]
-        },
-        {
-            "id": "e01e1b0f-feb4-4c65-ae50-e3715f242920",
-            "label": "waterZones"
-        }
-    ]
+    }
 }
