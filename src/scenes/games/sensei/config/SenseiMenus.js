@@ -21,7 +21,7 @@ export function start(menu) {
                 menu.showSpeech(menu.getString('menu_description_sensei'))
             },
             up: () => {
-                menu.network.send('join_sensei')
+                menu.airtower.send('join_sensei')
             }
         },
         {

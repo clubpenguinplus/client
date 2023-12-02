@@ -173,6 +173,9 @@ export default class Mancala extends BaseContainer {
 
         /* START-USER-CTR-CODE */
 
+        x_buttonButton.start()
+        thisDraggableContainer.start()
+
         this.maxStoneColor = 5
         this.holeSize = 49
         this.dropDelay = 168
@@ -182,6 +185,13 @@ export default class Mancala extends BaseContainer {
         popup.on('animationcomplete', (animation) => this.onPopupComplete(animation))
 
         this.createButtons()
+
+        this.boundHandleGetGame = this.handleGetGame.bind(this)
+        this.boundHandleJoinGame = this.handleJoinGame.bind(this)
+        this.boundHandleUpdateGame = this.handleUpdateGame.bind(this)
+        this.boundHandleStartGame = this.handleStartGame.bind(this)
+        this.boundHandleSendMove = this.handleSendMove.bind(this)
+        this.boundHandleCloseGame = this.handleCloseGame.bind(this)
 
         /* END-USER-CTR-CODE */
     }
@@ -201,21 +211,21 @@ export default class Mancala extends BaseContainer {
     }
 
     addListeners() {
-        this.network.events.on('get_game', this.handleGetGame, this)
-        this.network.events.on('join_game', this.handleJoinGame, this)
-        this.network.events.on('update_game', this.handleUpdateGame, this)
-        this.network.events.on('start_game', this.handleStartGame, this)
-        this.network.events.on('send_move', this.handleSendMove, this)
-        this.network.events.on('close_game', this.handleCloseGame, this)
+        this.airtower.events.on('get_game', this.boundHandleGetGame, this)
+        this.airtower.events.on('join_game', this.boundHandleJoinGame, this)
+        this.airtower.events.on('update_game', this.boundHandleUpdateGame, this)
+        this.airtower.events.on('start_game', this.boundHandleStartGame, this)
+        this.airtower.events.on('send_move', this.boundHandleSendMove, this)
+        this.airtower.events.on('close_game', this.boundHandleCloseGame, this)
     }
 
     removeListeners() {
-        this.network.events.off('get_game', this.handleGetGame, this)
-        this.network.events.off('join_game', this.handleJoinGame, this)
-        this.network.events.off('update_game', this.handleUpdateGame, this)
-        this.network.events.off('start_game', this.handleStartGame, this)
-        this.network.events.off('send_move', this.handleSendMove, this)
-        this.network.events.off('close_game', this.handleCloseGame, this)
+        this.airtower.events.off('get_game', this.boundHandleGetGame, this)
+        this.airtower.events.off('join_game', this.boundHandleJoinGame, this)
+        this.airtower.events.off('update_game', this.boundHandleUpdateGame, this)
+        this.airtower.events.off('start_game', this.boundHandleStartGame, this)
+        this.airtower.events.off('send_move', this.boundHandleSendMove, this)
+        this.airtower.events.off('close_game', this.boundHandleCloseGame, this)
     }
 
     show() {
@@ -235,7 +245,7 @@ export default class Mancala extends BaseContainer {
         super.show()
 
         this.addListeners()
-        this.network.sendXt('get_game')
+        this.airtower.sendXt('get_game')
     }
 
     close() {
@@ -263,7 +273,7 @@ export default class Mancala extends BaseContainer {
             return this.setupMap()
         }
 
-        this.network.sendXt('join_game')
+        this.airtower.sendXt('join_game')
     }
 
     handleJoinGame(args) {
@@ -277,7 +287,6 @@ export default class Mancala extends BaseContainer {
     }
 
     handleStartGame() {
-        args = JSON.parse(args)
         this.started = true
         this.setupMap()
     }
@@ -353,6 +362,8 @@ export default class Mancala extends BaseContainer {
 
             button.hoverCallback = () => this.onHoleOver(hole)
             button.hoverOutCallback = () => this.onHoleOut(hole)
+
+            button.start()
         }
     }
 
@@ -376,7 +387,7 @@ export default class Mancala extends BaseContainer {
         this.hint.hideHint()
 
         if (!this.wait && this.currentPlayer.holes.includes(hole) && hole.stones.length) {
-            this.network.sendXt('send_move', JSON.stringify({hole: this.holes.indexOf(hole)}))
+            this.airtower.sendXt('send_move', JSON.stringify({hole: this.holes.indexOf(hole)}))
         }
     }
 
@@ -561,7 +572,7 @@ export default class Mancala extends BaseContainer {
     }
 
     sendLeaveTable() {
-        this.network.sendXt('leave_table')
+        this.airtower.sendXt('leave_table')
         this.leaveTable()
     }
 

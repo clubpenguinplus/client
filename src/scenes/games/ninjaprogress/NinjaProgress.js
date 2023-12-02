@@ -92,17 +92,17 @@ export default class NinjaProgress extends BaseContainer {
     /* START-USER-CODE */
 
     addListeners() {
-        this.network.events.on('get_ninja', this.handleGetNinja, this)
+        this.airtower.events.on('get_ninja', this.handleGetNinja, this)
     }
 
     removeListeners() {
-        this.network.events.off('get_ninja', this.handleGetNinja, this)
+        this.airtower.events.off('get_ninja', this.handleGetNinja, this)
     }
 
     show() {
         this.addListeners()
 
-        this.network.send('get_ninja')
+        this.airtower.send('get_ninja')
 
         super.show()
     }

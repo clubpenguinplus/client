@@ -56,7 +56,7 @@ export function introCards(widget) {
             widget.scene.instructions.showCards()
         },
         () => {
-            widget.network.send('add_starter_deck')
+            widget.airtower.send('add_starter_deck')
 
             widget.scene.instructions.hideCards()
             widget.scene.showMenu(menus.instrWhatDoIDo)

@@ -98,13 +98,13 @@ export default class SenseiMatch extends BaseContainer {
     /* START-USER-CODE */
 
     addListeners() {
-        this.network.events.on('join_matchmaking', this.handleJoinMatchmaking, this)
-        this.network.events.on('tick_matchmaking', this.handleTickMatchmaking, this)
+        this.airtower.events.on('join_matchmaking', this.handleJoinMatchmaking, this)
+        this.airtower.events.on('tick_matchmaking', this.handleTickMatchmaking, this)
     }
 
     removeListeners() {
-        this.network.events.off('join_matchmaking', this.handleJoinMatchmaking, this)
-        this.network.events.off('tick_matchmaking', this.handleTickMatchmaking, this)
+        this.airtower.events.off('join_matchmaking', this.handleJoinMatchmaking, this)
+        this.airtower.events.off('tick_matchmaking', this.handleTickMatchmaking, this)
     }
 
     show() {
@@ -114,13 +114,13 @@ export default class SenseiMatch extends BaseContainer {
         this.y = this.originalY
 
         this.addListeners()
-        this.scene.network.send('join_matchmaking')
+        this.scene.airtower.send('join_matchmaking')
 
         super.show()
     }
 
     close() {
-        this.scene.network.send('leave_matchmaking')
+        this.scene.airtower.send('leave_matchmaking')
         this.removeListeners()
 
         super.close()
