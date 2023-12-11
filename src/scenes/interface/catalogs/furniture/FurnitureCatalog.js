@@ -83,7 +83,7 @@ export default class FurnitureCatalog extends Book {
     get catJson() {
         return {
             releaseDate: '2023-12-01',
-            front: 'june15',
+            front: 'walrus',
             singleIgloos: [98],
             doubleIgloos: [
                 {
@@ -260,7 +260,7 @@ export default class FurnitureCatalog extends Book {
                 }
             ],
             flooring: [17, 21, 22, 14, 15, 11, 19, 7],
-            locationPages: [4, 2, 3]
+            locationPages: [2, 3]
         }
     }
 
