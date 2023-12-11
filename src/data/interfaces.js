@@ -1,3 +1,5 @@
+import Cfc from '@scenes/interface/closeups/Cfc'
+
 const interfaces = {
     ClothingCatalog: require('@scenes/interface/catalogs/clothing/ClothingCatalog').default,
     FurnitureCatalog: require('@scenes/interface/catalogs/furniture/FurnitureCatalog').default,
@@ -26,7 +28,8 @@ const interfaces = {
     Elevator: require('@scenes/interface/closeups/Elevator').default,
     RainbowQuest: require('@scenes/interface/closeups/RainbowQuest').default,
     EPFPhone: require('@scenes/interface/game/spyphone/EPFPhone').default,
-    PuffleCreatureCare: require('@scenes/interface/closeups/PuffleCreatureCare').default
+    PuffleCreatureCare: require('@scenes/interface/closeups/PuffleCreatureCare').default,
+    Cfc: require('@scenes/interface/closeups/Cfc').default
 }
 
 export default interfaces

@@ -175,16 +175,6 @@ export default class Main extends BaseScene {
         this.safe
         /** @type {Waddle} */
         this.waddle
-        /** @type {Phaser.GameObjects.Image} */
-        this.stampEarnedBg
-        /** @type {Phaser.GameObjects.Image} */
-        this.stampEarnedImage
-        /** @type {Phaser.GameObjects.Text} */
-        this.stampEarnedHeader
-        /** @type {Phaser.GameObjects.Text} */
-        this.stampEarnedBody
-        /** @type {Phaser.GameObjects.Container} */
-        this.stampEarned
         /** @type {PuffleCare} */
         this.puffleCare
         /** @type {Map} */
@@ -490,34 +480,6 @@ export default class Main extends BaseScene {
         this.add.existing(waddle)
         waddle.visible = false
 
-        // stampEarned
-        const stampEarned = this.add.container(933, -150)
-
-        // stampEarnedBg
-        const stampEarnedBg = this.add.image(196, 0, 'main', 'stamps/bg')
-        stampEarnedBg.alpha = 0.7
-        stampEarnedBg.alphaTopLeft = 0.7
-        stampEarnedBg.alphaTopRight = 0.7
-        stampEarnedBg.alphaBottomLeft = 0.7
-        stampEarnedBg.alphaBottomRight = 0.7
-        stampEarned.add(stampEarnedBg)
-
-        // stampEarnedImage
-        const stampEarnedImage = this.add.image(0, 70, 'main', 'stamps/activities0001')
-        stampEarned.add(stampEarnedImage)
-
-        // stampEarnedHeader
-        const stampEarnedHeader = this.add.text(88, 25, '', {})
-        stampEarnedHeader.text = 'STAMP EARNED!'
-        stampEarnedHeader.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold italic'})
-        stampEarned.add(stampEarnedHeader)
-
-        // stampEarnedBody
-        const stampEarnedBody = this.add.text(90, 80, '', {})
-        stampEarnedBody.text = 'Stamp Name'
-        stampEarnedBody.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '35px'})
-        stampEarned.add(stampEarnedBody)
-
         // puffleCare
         const puffleCare = new PuffleCare(this, 500, 583)
         this.add.existing(puffleCare)
@@ -779,11 +741,6 @@ export default class Main extends BaseScene {
         this.puffleTricks = puffleTricks
         this.safe = safe
         this.waddle = waddle
-        this.stampEarnedBg = stampEarnedBg
-        this.stampEarnedImage = stampEarnedImage
-        this.stampEarnedHeader = stampEarnedHeader
-        this.stampEarnedBody = stampEarnedBody
-        this.stampEarned = stampEarned
         this.puffleCare = puffleCare
         this.map = map
         this.hideOnSleep = hideOnSleep
@@ -1019,25 +976,6 @@ export default class Main extends BaseScene {
             item.visible = true
         }
         this.showTR()
-    }
-
-    stampTween() {
-        let tween = this.tweens.add({
-            targets: this.stampEarned,
-            y: 0,
-            delay: 1000,
-            duration: 300,
-            onComplete: () => this.onStampTweenComplete()
-        })
-    }
-
-    onStampTweenComplete() {
-        let tween = this.tweens.add({
-            targets: this.stampEarned,
-            y: -150,
-            delay: 1500,
-            duration: 300
-        })
     }
 
     onPIntOver() {
