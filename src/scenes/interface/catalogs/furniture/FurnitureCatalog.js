@@ -84,12 +84,17 @@ export default class FurnitureCatalog extends Book {
         return {
             releaseDate: '2023-12-01',
             front: 'walrus',
-            singleIgloos: [98],
+            singleIgloos: [43, 56],
             doubleIgloos: [
                 {
-                    background: 1,
-                    left: 21,
-                    right: 8
+                    background: 8,
+                    left: 15,
+                    right: 16
+                },
+                {
+                    background: 8,
+                    left: 55,
+                    right: 67
                 }
             ],
             furniturePages: [

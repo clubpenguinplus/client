@@ -1,7 +1,7 @@
 const rooms = {
     100: {
-        key: 'Town',
-        scene: require('@rooms/town/Town').default,
+        key: 'TownHoliday16',
+        scene: require('@rooms/town/holiday16/TownHoliday16').default,
         x: 760,
         y: 660
     },

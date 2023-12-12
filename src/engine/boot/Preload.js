@@ -62,6 +62,8 @@ export default class Preload extends BaseScene {
             scene.cameras.main.setZoom(scene.cameras.trueScale ? window.currentScale * scene.cameras.trueScale : window.currentScale)
             scene.cameras.main.setOrigin(0, 0)
         }
+
+        if (this.shell) this.shell.events.emit('updateScaling')
     }
 
     lowerQuality() {

@@ -42,6 +42,7 @@ export default class RoomScene extends BaseScene {
     }
 
     create() {
+        super.create()
         this._create()
         this.sortChildren()
 
@@ -230,7 +231,6 @@ export default class RoomScene extends BaseScene {
 
     get roomPhysics() {
         let key = this.isPreview ? this.key.toLowerCase().split('-').slice(0, -2).join('-') : this.key.toLowerCase()
-
         return this.cache.json.get(`${key}-physics`)
     }
 

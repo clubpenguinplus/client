@@ -31,12 +31,18 @@
             "type": "Image",
             "id": "13ac3ffb-d6d6-4c9b-891f-6d7da851c5fb",
             "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
             "texture": {
                 "key": "icecastle",
                 "frame": "door"
             },
-            "x": 755,
-            "y": 551
+            "x": 758.8427484645825,
+            "y": 639.3832146853995,
+            "originX": 0.5202249919188555,
+            "originY": 0.9532472547969204
         },
         {
             "type": "Image",
@@ -46,6 +52,17 @@
             "texture": {
                 "key": "icecastle",
                 "frame": "bg-upper"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "62bab48c-b633-47fe-a8ee-25ff13cf74cc",
+            "label": "fg",
+            "texture": {
+                "key": "icecastle",
+                "frame": "fg"
             },
             "x": 760,
             "y": 480
