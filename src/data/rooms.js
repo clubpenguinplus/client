@@ -190,8 +190,8 @@ const rooms = {
         y: 480
     },
     800: {
-        key: 'Dock',
-        scene: require('@rooms/dock/Dock').default,
+        key: 'DockHoliday16',
+        scene: require('@rooms/dock/holiday16/DockHoliday16').default,
         x: 800,
         y: 400
     },
