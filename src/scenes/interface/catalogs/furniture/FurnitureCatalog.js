@@ -99,42 +99,168 @@ export default class FurnitureCatalog extends Book {
             ],
             furniturePages: [
                 {
-                    background: 2,
+                    background: 8,
                     left: [
                         {
-                            id: 2361,
+                            id: 591, // Santa Chair
                             size: 'quarter',
                             btnPos: 'bottom'
                         },
                         {
-                            id: 2360,
+                            id: 927, // Candy Cane Arch
                             size: 'quarter',
                             btnPos: 'bottom'
                         },
                         {
-                            id: 2359,
+                            id: 661, // Giant snow tree
                             size: 'quarter',
                             btnPos: 'bottom'
                         },
                         {
-                            id: 2208,
+                            id: 804, // Cozy FirePlace
                             size: 'quarter',
                             btnPos: 'bottom'
                         }
                     ],
                     right: [
                         {
-                            id: 2210,
+                            id: 131, // Christmas Wreath
                             size: 'half',
                             btnPos: 'bottom'
                         },
                         {
-                            id: 2209,
+                            id: 470, // Christmas Ribbon Red
                             size: 'quarter',
                             btnPos: 'bottom'
                         },
                         {
-                            id: 2211,
+                            id: 472, // Wall Snowflake.
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ]
+                },
+                {
+                    background: 8,
+                    left: [
+                        {
+                            id: 585, // Coins for change StandPlace
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 794, // Gingerbread Couch
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 795, // Gingerbread Chair
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 934, // Holly Jolly Tree
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ],
+                    right: [
+                        {
+                            id: 426, // Coins for change banner
+                            size: 'half',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 590, // Holiday Bells
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 935, // Holiday Fireplace
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ]
+                },
+                {
+                    background: 8,
+                    left: [
+                        {
+                            id: 653, // Iron Chandelier
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 2320, // The Merry Walrus Snow Sculpture
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 138, // NutCracker
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 55, // Ice Sculture
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ],
+                    right: [
+                        {
+                            id: 140, // Present
+                            size: 'half',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 656, // Blue Present
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 585, // Santa Desk
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ]
+                },
+                {
+                    background: 8,
+                    left: [
+                        {
+                            id: 586, // Santa SnowMan
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 483, // Snow Arch
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 480, // SnowWall
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 482, // Snow Fortress Wall
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        }
+                    ],
+                    right: [
+                        {
+                            id: 486, // Snowy Tree
+                            size: 'half',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 133, // Small Christmas Tree
+                            size: 'quarter',
+                            btnPos: 'bottom'
+                        },
+                        {
+                            id: 474, // Stocking
                             size: 'quarter',
                             btnPos: 'bottom'
                         }

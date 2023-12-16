@@ -274,6 +274,13 @@ const rooms = {
         y: 480,
         preventTeleport: true
     },
+    850: {
+        key: 'HolidayTrain',
+        scene: require('@rooms/holidaytrain/HolidayTrain').default,
+        x: 900,
+        y: 850,
+        preventTeleport: true
+    },
     916: {
         key: 'AquaGrabber',
         scene: require('@games/aquagrabber/AquaGrabber').default,
