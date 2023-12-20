@@ -187,7 +187,7 @@ export default class Party1Holiday13 extends RoomScene {
 
         // lists
         const sort = [container_1, starry, cane4, cane3, cane2, cane, barrierr, barrieroffice, barrier, conveyor, desk, ticketoffice2, ticketoffice, thingy, thing2, thing, suitcase, sidepresents, rear, present4, present3, present2, present1, platform, divider2, divider, wallpresenets, fg]
-        const displays = [digit0001, digit_8, digit_7, digit_6, digit_5, digit_4, digit_3, digit_2, digit_1, digit]
+        const displays = [digit0001, digit, digit_1, digit_2, digit_3, digit_4, digit_5, digit_6, digit_7, digit_8]
 
         this.sort = sort
         this.displays = displays
@@ -202,7 +202,11 @@ export default class Party1Holiday13 extends RoomScene {
     create() {
         super.create()
         this.airtower.events.once('cfct', (data) => {
-            this.showTotal(data)
+            if (this.displays[0]) {
+                this.showTotal(data)
+            } else {
+                this.airtower.sendXt('p#cfc')
+            }
         })
         this.airtower.sendXt('p#cfc')
     }

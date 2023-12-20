@@ -196,7 +196,11 @@ export default class FortsHoliday13 extends RoomScene {
     create() {
         super.create()
         this.airtower.events.once('cfct', (data) => {
-            this.showTotal(data)
+            if (this.displays[0]) {
+                this.showTotal(data)
+            } else {
+                this.airtower.sendXt('p#cfc')
+            }
         })
         this.airtower.sendXt('p#cfc')
     }
