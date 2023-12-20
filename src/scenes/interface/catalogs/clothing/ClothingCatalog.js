@@ -99,10 +99,121 @@ export default class ClothingCatalog extends Book {
 
     get catJson() {
         return {
-            releaseDate: '2023-11-09',
-            frontPenguin: 'november',
-            backgrounds: [9283, 9157, 9284, 9061, 9006, 9044, 9170, 9045],
+            releaseDate: '2023-12-19',
+            frontPenguin: 'december',
+            backgrounds: [9081, 9287, 9122, 9119, 9283, 9157, 9284, 9061],
             new: [
+                {
+                    background: 20,
+                    leftItems: [
+                        {id: 652, type: 'icon'},
+                        {id: 1112, type: 'icon'},
+                        {id: 1324, type: 'icon'},
+                        {id: 3091, type: 'icon'},
+                        {id: 3040, type: 'icon'},
+                        {id: 3092, type: 'icon'},
+                        {id: 4459, type: 'icon'},
+                        {id: 4460, type: 'icon'},
+                        {id: 4461, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 5129, type: 'icon'},
+                        {id: 365, type: 'icon'},
+                        {id: 456, type: 'icon'},
+                        {id: 452, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 13,
+                    leftItems: [
+                        {id: 1193, type: 'icon'},
+                        {id: 1194, type: 'icon'},
+                        {id: 1110, type: 'icon'},
+                        {id: 3004, type: 'icon'},
+                        {id: 3030, type: 'icon'},
+                        {id: 6031, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1505, type: 'icon'},
+                        {id: 3145, type: 'icon'},
+                        {id: 1504, type: 'icon'},
+                        {id: 4755, type: 'icon'},
+                        {id: 3141, type: 'icon'},
+                        {id: 4754, type: 'icon'},
+                        {id: 6141, type: 'icon'},
+                        {id: 5053, type: 'icon'},
+                        {id: 6140, type: 'icon'}
+                    ]
+                }
+            ],
+            party: [
+                {
+                    background: 1,
+                    leftItems: [
+                        {id: 1325, type: 'icon'},
+                        {id: 1326, type: 'icon'},
+                        {id: 3037, type: 'icon'},
+                        {id: 5130, type: 'icon'},
+                        {id: 4288, type: 'icon'},
+                        {id: 4462, type: 'icon'},
+                        {id: 3093, type: 'icon'},
+                        {id: 5087, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1328, type: 'icon'},
+                        {id: 1327, type: 'icon'},
+                        {id: 4463, type: 'icon'},
+                        {id: 4287, type: 'icon'},
+                        {id: 5387, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 4,
+                    leftItems: [
+                        {id: 482, type: 'icon'},
+                        {id: 289, type: 'icon'},
+                        {id: 3035, type: 'icon'},
+                        {id: 483, type: 'icon'},
+                        {id: 5011, type: 'icon'},
+                        {id: 342, type: 'icon'},
+                        {id: 4149, type: 'icon'},
+                        {id: 241, type: 'icon'},
+                        {id: 467, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1106, type: 'icon'},
+                        {id: 2014, type: 'icon'},
+                        {id: 4146, type: 'icon'},
+                        {id: 3038, type: 'icon'},
+                        {id: 4147, type: 'icon'},
+                        {id: 4465, type: 'icon'},
+                        {id: 1091, type: 'icon'},
+                        {id: 3033, type: 'icon'},
+                        {id: 4123, type: 'icon'}
+                    ]
+                },
+                {
+                    background: 2,
+                    leftItems: [
+                        {id: 4286, type: 'icon'},
+                        {id: 471, type: 'icon'},
+                        {id: 1105, type: 'icon'},
+                        {id: 4145, type: 'icon'},
+                        {id: 6010, type: 'icon'},
+                        {id: 1026, type: 'icon'},
+                        {id: 4041, type: 'icon'}
+                    ],
+                    rightItems: [
+                        {id: 1203, type: 'icon'},
+                        {id: 4283, type: 'icon'},
+                        {id: 1204, type: 'icon'},
+                        {id: 4284, type: 'icon'},
+                        {id: 4285, type: 'icon'},
+                        {id: 6144, type: 'icon'}
+                    ]
+                }
+            ],
+            returning: [
                 {
                     background: 2,
                     leftItems: [
@@ -162,8 +273,7 @@ export default class ClothingCatalog extends Book {
                     ]
                 }
             ],
-            party: [],
-            returning: [
+            lastChance: [
                 {
                     background: 1,
                     leftItems: [
@@ -209,163 +319,6 @@ export default class ClothingCatalog extends Book {
                         {id: 4048, type: 'icon'},
                         {id: 731, type: 'icon'},
                         {id: 6081, type: 'icon'}
-                    ]
-                }
-            ],
-            lastChance: [
-                {
-                    background: 1,
-                    leftItems: [
-                        {id: 1690, type: 'icon'},
-                        {id: 1689, type: 'icon'},
-                        {id: 1655, type: 'icon'},
-                        {id: 4945, type: 'paper'},
-                        {id: 4944, type: 'paper'},
-                        {id: 4908, type: 'paper'},
-                        {id: 5349, type: 'paper'},
-                        {id: 3215, type: 'icon'},
-                        {id: 6155, type: 'paper'}
-                    ],
-                    rightItems: [
-                        {id: 1657, type: 'icon'},
-                        {id: 4909, type: 'paper'},
-                        {id: 6181, type: 'icon'},
-                        {id: 1227, type: 'icon'},
-                        {id: 24194, type: 'paper'},
-                        {id: 6109, type: 'paper'},
-                        {id: 417, type: 'paper'},
-                        {id: 243, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 16,
-                    leftItems: [
-                        {id: 1007, type: 'icon'},
-                        {id: 3004, type: 'icon'},
-                        {id: 1911, type: 'icon'},
-                        {id: 4311, type: 'paper'},
-                        {id: 24196, type: 'paper'},
-                        {id: 352, type: 'icon'},
-                        {id: 6233, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 24199, type: 'icon'},
-                        {id: 21075, type: 'icon'},
-                        {id: 175, type: 'icon'},
-                        {id: 106, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 4,
-                    leftItems: [
-                        {id: 3227, type: 'icon'},
-                        {id: 3225, type: 'icon'},
-                        {id: 3226, type: 'icon'},
-                        {id: 3221, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 3222, type: 'icon'},
-                        {id: 5489, type: 'icon'},
-                        {id: 5506, type: 'icon'},
-                        {id: 5491, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 10,
-                    leftItems: [
-                        {id: 1125, type: 'icon'},
-                        {id: 101, type: 'icon'},
-                        {id: 214, type: 'icon'},
-                        {id: 294, type: 'icon'},
-                        {id: 334, type: 'icon'},
-                        {id: 358, type: 'icon'},
-                        {id: 423, type: 'icon'},
-                        {id: 261, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 1040, type: 'icon'},
-                        {id: 119, type: 'icon'},
-                        {id: 3015, type: 'icon'},
-                        {id: 4065, type: 'icon'},
-                        {id: 323, type: 'icon'},
-                        {id: 6015, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 20,
-                    leftItems: [
-                        {id: 446, type: 'icon'},
-                        {id: 103, type: 'icon'},
-                        {id: 172, type: 'icon'},
-                        {id: 265, type: 'icon'},
-                        {id: 346, type: 'icon'},
-                        {id: 5196, type: 'icon'},
-                        {id: 351, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 24280, type: 'paper'},
-                        {id: 201, type: 'icon'},
-                        {id: 202, type: 'icon'},
-                        {id: 4808, type: 'paper'},
-                        {id: 366, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 2,
-                    leftItems: [
-                        {id: 221, type: 'icon'},
-                        {id: 4046, type: 'icon'},
-                        {id: 222, type: 'icon'},
-                        {id: 223, type: 'icon'},
-                        {id: 4108, type: 'icon'},
-                        {id: 4009, type: 'icon'},
-                        {id: 4259, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 3109, type: 'icon'},
-                        {id: 3111, type: 'icon'},
-                        {id: 3115, type: 'icon'},
-                        {id: 3112, type: 'icon'},
-                        {id: 3078, type: 'icon'},
-                        {id: 3110, type: 'icon'},
-                        {id: 3114, type: 'icon'},
-                        {id: 3108, type: 'icon'},
-                        {id: 3113, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 18,
-                    leftItems: [
-                        {id: 176, type: 'icon'},
-                        {id: 187, type: 'icon'},
-                        {id: 167, type: 'icon'},
-                        {id: 188, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 3238, type: 'icon'},
-                        {id: 3005, type: 'icon'},
-                        {id: 189, type: 'icon'},
-                        {id: 177, type: 'icon'}
-                    ]
-                },
-                {
-                    background: 16,
-                    leftItems: [
-                        {id: 131, type: 'icon'},
-                        {id: 139, type: 'icon'},
-                        {id: 135, type: 'icon'},
-                        {id: 132, type: 'icon'},
-                        {id: 382, type: 'icon'},
-                        {id: 367, type: 'icon'}
-                    ],
-                    rightItems: [
-                        {id: 1663, type: 'icon'},
-                        {id: 4199, type: 'icon'},
-                        {id: 21090, type: 'paper'},
-                        {id: 763, type: 'icon'},
-                        {id: 239, type: 'icon'},
-                        {id: 364, type: 'icon'},
-                        {id: 362, type: 'icon'}
                     ]
                 }
             ]

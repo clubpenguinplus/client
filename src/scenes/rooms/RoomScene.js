@@ -83,6 +83,7 @@ export default class RoomScene extends BaseScene {
         this.worldStampInterval = setInterval(() => this.checkForWorldStamps(), 2000)
 
         window.updateScaling()
+        if (this.isEmu) return
         this.interface.hideLoading()
     }
 
@@ -136,6 +137,7 @@ export default class RoomScene extends BaseScene {
         if (penguin.isTweening) penguin.removeTween()
 
         if (penguin.balloon) penguin.balloon.destroy()
+        if (this.isEmu) this.shell.RuffleManager.removePenguin(penguin.id)
         penguin.nameTag.destroy()
         penguin.destroy()
 
@@ -231,7 +233,19 @@ export default class RoomScene extends BaseScene {
 
     get roomPhysics() {
         let key = this.isPreview ? this.key.toLowerCase().split('-').slice(0, -2).join('-') : this.key.toLowerCase()
-        return this.cache.json.get(`${key}-physics`)
+        if (this.cache.json.get(`${key}-physics`)) {
+            return this.cache.json.get(`${key}-physics`)
+        } else {
+            let splitter
+            for (let i = 1; i < this.key.length; i++) {
+                if (this.key[i] == this.key[i].toUpperCase()) {
+                    splitter = this.key[i]
+                    break
+                }
+            }
+            let split = this.key.split(splitter)
+            return this.cache.json.get(`${split[0].toLowerCase()}-physics`)
+        }
     }
 
     addPhysics() {
@@ -305,6 +319,7 @@ export default class RoomScene extends BaseScene {
 
         let room = this.crumbs.scenes.rooms[id]
         if (!room) return console.error(`[RoomScene] Room ${id} not found`)
+        this.shell.RuffleManager.rufflePlayer.destroy()
         this.shell.client.sendJoinRoom(id, room.key, x, y)
     }
 

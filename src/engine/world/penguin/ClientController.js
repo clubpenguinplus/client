@@ -176,6 +176,7 @@ export default class ClientController {
     }
 
     get isEPF() {
+        if (!this.penguin) return false
         return this.penguin.epfStatus == 1
     }
 

@@ -6,8 +6,8 @@ const rooms = {
         y: 660
     },
     110: {
-        key: 'Coffee',
-        scene: require('@rooms/coffee/Coffee').default,
+        key: 'CoffeeHoliday16',
+        scene: require('@rooms/coffee/CoffeeHoliday16').default,
         x: 640,
         y: 480
     },
@@ -30,14 +30,14 @@ const rooms = {
         y: 570
     },
     122: {
-        key: 'School',
-        scene: require('@rooms/school/School').default,
+        key: 'SchoolHoliday16',
+        scene: require('@rooms/school/SchoolHoliday16').default,
         x: 1120,
         y: 640
     },
     130: {
-        key: 'Shop',
-        scene: require('@rooms/shop/Shop').default,
+        key: 'ShopHoliday16',
+        scene: require('@rooms/shop/ShopHoliday16').default,
         x: 1000,
         y: 560
     },
@@ -60,20 +60,20 @@ const rooms = {
         y: 450
     },
     221: {
-        key: 'Attic',
-        scene: require('@rooms/attic/Attic').default,
+        key: 'AtticHoliday16',
+        scene: require('@rooms/attic/AtticHoliday16').default,
         x: 966,
         y: 560
     },
     230: {
-        key: 'Mtn',
-        scene: require('@rooms/mtn/Mtn').default,
+        key: 'MtnHoliday16',
+        scene: require('@rooms/mtn/MtnHoliday16').default,
         x: 760,
         y: 440
     },
     300: {
-        key: 'Plaza',
-        scene: require('@rooms/plaza/Plaza').default,
+        key: 'PlazaHoliday16',
+        scene: require('@rooms/plaza/PlazaHoliday16').default,
         x: 760,
         y: 680
     },
@@ -102,32 +102,32 @@ const rooms = {
         y: 480
     },
     330: {
-        key: 'Pizza',
-        scene: require('@rooms/pizza/Pizza').default,
+        key: 'PizzaHoliday16',
+        scene: require('@rooms/pizza/PizzaHoliday16').default,
         x: 780,
         y: 790
     },
     340: {
-        key: 'Mall',
-        scene: require('@rooms/mall/Mall').default,
+        key: 'MallHoliday16',
+        scene: require('@rooms/mall/MallHoliday16').default,
         x: 250,
         y: 700
     },
     400: {
-        key: 'Beach',
-        scene: require('@rooms/beach/Beach').default,
+        key: 'BeachHoliday16',
+        scene: require('@rooms/beach/BeachHoliday16').default,
         x: 840,
         y: 680
     },
     410: {
-        key: 'Lighthouse',
-        scene: require('@rooms/lighthouse/Lighthouse').default,
+        key: 'LighthouseHoliday16',
+        scene: require('@rooms/lighthouse/LighthouseHoliday16').default,
         x: 840,
         y: 680
     },
     411: {
-        key: 'Beacon',
-        scene: require('@rooms/beacon/Beacon').default,
+        key: 'BeaconHoliday16',
+        scene: require('@rooms/beacon/BeaconHoliday16').default,
         x: 410,
         y: 800
     },
@@ -184,8 +184,8 @@ const rooms = {
         y: 480
     },
     436: {
-        key: 'Wild',
-        scene: require('@rooms/wild/Wild').default,
+        key: 'WildHoliday16',
+        scene: require('@rooms/wild/WildHoliday16').default,
         x: 760,
         y: 480
     },
@@ -196,26 +196,26 @@ const rooms = {
         y: 400
     },
     801: {
-        key: 'Forts',
-        scene: require('@rooms/forts/Forts').default,
+        key: 'FortsHoliday13',
+        scene: require('@rooms/forts/FortsHoliday13').default,
         x: 960,
         y: 610
     },
     802: {
-        key: 'Rink',
-        scene: require('@rooms/rink/Rink').default,
+        key: 'RinkHoliday16',
+        scene: require('@rooms/rink/RinkHoliday16').default,
         x: 770,
         y: 400
     },
     804: {
-        key: 'Boiler',
-        scene: require('@rooms/boiler/Boiler').default,
+        key: 'BoilerHoliday16',
+        scene: require('@rooms/boiler/BoilerHoliday16').default,
         x: 610,
         y: 620
     },
     805: {
-        key: 'Berg',
-        scene: require('@rooms/berg/Berg').default,
+        key: 'BergHoliday16',
+        scene: require('@rooms/berg/BergHoliday16').default,
         x: 652,
         y: 448
     },
@@ -226,8 +226,8 @@ const rooms = {
         y: 700
     },
     807: {
-        key: 'Shack',
-        scene: require('@rooms/shack/Shack').default,
+        key: 'ShackHoliday16',
+        scene: require('@rooms/shack/ShackHoliday16').default,
         x: 760,
         y: 680
     },
@@ -238,14 +238,14 @@ const rooms = {
         y: 680
     },
     809: {
-        key: 'Forest',
-        scene: require('@rooms/forest/Forest').default,
+        key: 'ForestHoliday16',
+        scene: require('@rooms/forest/ForestHoliday16').default,
         x: 760,
         y: 430
     },
     810: {
-        key: 'Cove',
-        scene: require('@rooms/cove/Cove').default,
+        key: 'CoveHoliday16',
+        scene: require('@rooms/cove/CoveHoliday16').default,
         x: 840,
         y: 480
     },
@@ -279,6 +279,13 @@ const rooms = {
         scene: require('@rooms/holidaytrain/HolidayTrain').default,
         x: 900,
         y: 850,
+        preventTeleport: true
+    },
+    851: {
+        key: 'Party1',
+        scene: require('@rooms/party1/Party1Holiday13').default,
+        x: 760,
+        y: 480,
         preventTeleport: true
     },
     916: {

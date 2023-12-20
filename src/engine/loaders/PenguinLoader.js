@@ -34,15 +34,23 @@ export default class PenguinLoader {
     addPenguin(penguin) {
         penguin.bodySprite = PenguinSpriteFactory.create(penguin, 'body', 1000)
         penguin.penguinSprite = PenguinSpriteFactory.create(penguin, 'penguin', 1001)
+        if (penguin.room.isEmu) {
+            penguin.bodySprite.visible = false
+            penguin.penguinSprite.visible = false
+            this.shell.RuffleManager.loadPenguin(penguin)
+        }
+        penguin.visible = false
     }
 
     addShadow(penguin) {
+        if (penguin.room.isEmu) return
         let shadow = penguin.room.add.image(0, 0, 'penguin_base', 'shadow')
 
         penguin.addAt(shadow, 0)
     }
 
     addRing(penguin) {
+        if (penguin.room.isEmu) return
         let ring = penguin.room.add.image(0, 0, 'penguin_base', 'ring')
 
         penguin.addAt(ring, 0)
