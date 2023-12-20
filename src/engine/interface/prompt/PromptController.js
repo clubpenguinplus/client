@@ -4,6 +4,7 @@ import LoadingPrompt from '@scenes/interface/prompts/LoadingPrompt'
 import WindowPrompt from '@scenes/interface/prompts/WindowPrompt'
 import CoinsPrompt from '@scenes/interface/prompts/CoinsPrompt'
 import WarnPrompt from '@scenes/interface/prompts/WarnPrompt'
+import StampPrompt from '@scenes/interface/prompts/StampPrompt'
 
 export default class PromptController {
     constructor(_interface) {
@@ -15,6 +16,7 @@ export default class PromptController {
         this.window = new WindowPrompt(_interface, 760, 480)
         this.coins = new CoinsPrompt(_interface, 760, 480)
         this.warn = new WarnPrompt(_interface, 760, 480)
+        this.stamp = new StampPrompt(_interface, 760, 480)
 
         _interface.add.existing(this.error)
         _interface.add.existing(this.item)
@@ -22,6 +24,7 @@ export default class PromptController {
         _interface.add.existing(this.window)
         _interface.add.existing(this.coins)
         _interface.add.existing(this.warn)
+        _interface.add.existing(this.stamp)
     }
 
     hideAllForIP() {
@@ -138,6 +141,18 @@ export default class PromptController {
         }
 
         this.interface.bringToTop(this.warn)
+    }
+
+    showStamp(stamp) {
+        this.stamp.stampEarnedBody.text = this.interface.crumbs.stamps[stamp].name
+        if (this.interface.crumbs.stamps[stamp].groupid == 7) {
+            this.stamp.stampEarnedImage.setFrame(`stamps/activities000${this.interface.crumbs.stamps[stamp].difficulty.toString()}`)
+        } else {
+            this.stamp.stampEarnedImage.setFrame(`stamps/events000${this.interface.crumbs.stamps[stamp].difficulty.toString()}`)
+        }
+        this.stamp.stampTween()
+        this.setCursor()
+        this.interface.bringToTop(this.stamp)
     }
 
     hideAll() {

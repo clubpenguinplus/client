@@ -25,7 +25,7 @@ export default class Ignore extends BaseContainer {
         const text = scene.add.text(0, -236, '', {})
         text.setOrigin(0.5, 0.5)
         text.text = 'Ignore List'
-        text.setStyle({align: 'center', color: '#000000', fixedWidth: 420, fontFamily: 'Arial Narrow', fontSize: '32px'})
+        text.setStyle({align: 'center', color: '#000000', fixedWidth: 420, fontFamily: 'cpBurbankSmall', fontSize: '32px'})
         this.add(text)
 
         // x_button
@@ -92,7 +92,7 @@ export default class Ignore extends BaseContainer {
         // total
         const total = scene.add.text(-132, 273, '', {})
         total.setOrigin(0.5, 0.5)
-        total.setStyle({color: '#003366', fixedWidth: 100, fontFamily: 'Arial Narrow', fontSize: '24px'})
+        total.setStyle({color: '#003366', fixedWidth: 100, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(total)
 
         // lists

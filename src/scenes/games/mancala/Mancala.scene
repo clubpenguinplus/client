@@ -1,8 +1,10 @@
 {
-    "id": "ce0a15ab-d3a1-4e2d-bac2-8a202f2a25a7",
+    "id": "f4fdbbc7-bf40-42c0-92c9-e80824c1e652",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
+        "snapWidth": 58,
+        "snapHeight": 60,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "superClassName": "BaseContainer",
@@ -15,7 +17,7 @@
     "displayList": [
         {
             "type": "Container",
-            "id": "c78a9501-c3e6-456b-b088-10901aee86b1",
+            "id": "2e89319d-c037-4f9f-8b8c-a4af45dadf38",
             "label": "container_1",
             "components": [
                 "DraggableContainer"
@@ -26,453 +28,349 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "444f3793-1a41-4386-9e05-e712dbd5f24d",
+                    "id": "55d91bff-c9af-40fd-ad97-0bdc375a99d4",
                     "label": "window",
                     "components": [],
                     "texture": {
                         "key": "mancala",
-                        "frame": "container"
+                        "frame": "window"
                     }
                 },
                 {
                     "type": "Image",
-                    "id": "7b74e112-09fc-4922-be64-66119c9a3c31",
-                    "label": "lower_wait",
-                    "scope": "CLASS",
+                    "id": "76bf3f20-f10a-45ab-b2c6-76fe7a7ba86a",
+                    "label": "bg2",
                     "components": [],
                     "texture": {
                         "key": "mancala",
-                        "frame": "lower_wait"
+                        "frame": "player/bg"
                     },
-                    "y": 116
+                    "y": 118,
+                    "flipY": true
                 },
                 {
                     "type": "Image",
-                    "id": "54f9e076-1648-4a1c-88f1-c4ed684ac4a7",
-                    "label": "upper_wait",
-                    "scope": "CLASS",
+                    "id": "001894b7-e6e0-4caf-b9cc-04ce634e5282",
+                    "label": "bg1",
                     "components": [],
                     "texture": {
                         "key": "mancala",
-                        "frame": "upper_wait"
+                        "frame": "player/bg"
                     },
-                    "y": -80
+                    "y": -86
                 },
                 {
                     "type": "Image",
-                    "id": "ffb54173-b9ac-4fe1-bab7-7a6b435da288",
+                    "id": "029699bc-46a0-4c39-8794-64b9bac2700a",
+                    "label": "shadow",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "shadow"
+                    },
+                    "y": 16
+                },
+                {
+                    "type": "Image",
+                    "id": "8a60289b-06e8-4dae-a743-3da28ce00a85",
                     "label": "board",
-                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "mancala",
                         "frame": "board"
                     },
-                    "y": 16
+                    "y": 10
                 },
                 {
-                    "prefabId": "81f9f79e-3ff3-47fb-b6c0-aff4692bab0f",
-                    "id": "df191ca7-415a-4fc9-a8d5-e65fef52082c",
+                    "type": "Image",
+                    "id": "d6000b2f-67d1-49df-91c3-49711c59fc64",
+                    "label": "hole_13",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole_1"
+                    },
+                    "x": -200,
+                    "y": 11,
+                    "originY": 0.5047619047619047
+                },
+                {
+                    "type": "Image",
+                    "id": "152805b6-0b3d-4b6c-bee7-378c9c5d726f",
+                    "label": "hole_12",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": -144,
+                    "y": -20,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "36432eed-487c-415d-85b8-fb68cab93e36",
+                    "label": "hole_11",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": -86,
+                    "y": -20,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "2c5d315e-9b9e-416d-b814-724181ec2064",
+                    "label": "hole_10",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": -28,
+                    "y": -20,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "ee42fdb0-7cdd-45a7-879a-77f2db75ba4c",
+                    "label": "hole_9",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": 30,
+                    "y": -20,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "c11152e4-188c-4cbf-a6c3-fdc8945f4151",
+                    "label": "hole_8",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": 88,
+                    "y": -20,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "12f66ea0-f7b9-47b9-9c6e-76ea297e9495",
+                    "label": "hole_7",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": 146,
+                    "y": -20,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "6aac4be8-f26c-47fe-ba0c-52d28eefa127",
+                    "label": "hole_6",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole_2"
+                    },
+                    "x": 200,
+                    "y": 11,
+                    "originY": 0.5047619047619047
+                },
+                {
+                    "type": "Image",
+                    "id": "0202ccd0-af01-44bb-a24d-0a2bb9384aa8",
+                    "label": "hole_5",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": 146,
+                    "y": 40,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "efae5d11-1f07-4f2a-b36c-1dbec458382e",
+                    "label": "hole_4",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": 88,
+                    "y": 40,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "e713e514-0694-489b-a3a2-cfd099f34187",
+                    "label": "hole_3",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": 30,
+                    "y": 40,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "9f44682c-679f-495b-ae2b-674d1a589c4b",
+                    "label": "hole_2",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": -28,
+                    "y": 40,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "b8baf473-a75f-4135-a894-537390a919a9",
+                    "label": "hole_1",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": -86,
+                    "y": 40,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "type": "Image",
+                    "id": "9389f3d3-994d-43d1-92c5-4024661b79f4",
+                    "label": "hole_0",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "hole"
+                    },
+                    "x": -144,
+                    "y": 40,
+                    "originX": 0.5102040816326531,
+                    "originY": 0.5102040816326531
+                },
+                {
+                    "prefabId": "bb969ff5-2103-4d09-a09b-4cad958047d4",
+                    "id": "f52d5978-c409-4410-b4ab-487c7096d3cb",
                     "unlock": [
                         "x",
-                        "y"
+                        "y",
+                        "bg",
+                        "mancala"
                     ],
-                    "label": "player2",
+                    "label": "mancalaPlayer1",
+                    "scope": "CLASS",
+                    "bg": "bg2",
+                    "mancala": "hole_6",
                     "components": [],
-                    "x": -220,
-                    "y": -125,
+                    "x": -193,
+                    "y": 136,
                     "nestedPrefabs": [],
                     "list": []
                 },
                 {
-                    "prefabId": "81f9f79e-3ff3-47fb-b6c0-aff4692bab0f",
-                    "id": "464b8f4f-cdab-4139-af39-d1ac85c8631e",
+                    "prefabId": "bb969ff5-2103-4d09-a09b-4cad958047d4",
+                    "id": "ad4829d1-d06f-453a-a05e-aa2401544ad2",
                     "unlock": [
                         "x",
-                        "y"
+                        "y",
+                        "bg",
+                        "mancala"
                     ],
-                    "label": "player1",
+                    "label": "mancalaPlayer2",
+                    "scope": "CLASS",
+                    "bg": "bg1",
+                    "mancala": "hole_13",
                     "components": [],
-                    "x": -217,
-                    "y": 163,
+                    "x": -193,
+                    "y": -104,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "type": "Sprite",
+                    "id": "09ec3328-6878-41df-9d53-721df330da61",
+                    "label": "popup",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "mancala",
+                        "frame": "popup/popup0005"
+                    },
+                    "x": 4,
+                    "y": 16,
+                    "visible": false
+                },
+                {
+                    "prefabId": "325c2f02-83fe-4592-9a90-32228cab6f13",
+                    "id": "e864d2f5-b71b-4106-ace2-d974512d3eff",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "hint",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -144,
+                    "y": -20,
+                    "visible": false,
                     "nestedPrefabs": [],
                     "list": []
                 },
                 {
                     "type": "Image",
-                    "id": "9eee329c-ab1e-4e40-9949-fd7a1f1a0508",
+                    "id": "f0061852-6a3b-4abe-b30f-17ab057412d8",
                     "label": "x_button",
                     "components": [
                         "Button"
                     ],
-                    "Button.callback": "() => this.onClose()",
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "main",
                         "frame": "blue-button"
                     },
-                    "x": 247,
-                    "y": -151
+                    "x": 252,
+                    "y": -160
                 },
                 {
                     "type": "Image",
-                    "id": "7583ca44-3abe-403e-9adb-f44e6d03c299",
+                    "id": "50799ffa-d7f7-4746-9483-ea71c5beeedd",
                     "label": "blue_x",
                     "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "blue-x"
                     },
-                    "x": 247,
-                    "y": -153
-                },
-                {
-                    "type": "Container",
-                    "id": "0a4b10d7-2a94-4fb2-8652-09e09d0f3ec4",
-                    "label": "counterContainer",
-                    "scope": "CLASS",
-                    "components": [],
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "6c36ac06-9f6e-424c-b5b7-8369d9b913c6",
-                    "label": "end_hitbox0004",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(7)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(7)",
-                    "SimpleButton.callback": "() => null",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "end-hitbox0004"
-                    },
-                    "x": -199,
-                    "y": 11,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "afcd824f-ff27-4d52-a4fd-a7fe8111333f",
-                    "label": "cup_hitbox0004",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(6)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(6)",
-                    "SimpleButton.callback": "() => this.moveStones(1, 6)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": -142,
-                    "y": -20,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "e681e47f-9a03-4d2d-9d06-b0f4fa363c2a",
-                    "label": "cup_hitbox",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(5)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(5)",
-                    "SimpleButton.callback": "() => this.moveStones(1, 5)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": -85,
-                    "y": -20,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "12bae6c3-8f60-4c24-8541-949fdcde6954",
-                    "label": "cup_hitbox_1",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(3)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(3)",
-                    "SimpleButton.callback": "() => this.moveStones(1, 3)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": 29,
-                    "y": -20,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "310477e5-b88a-4ae6-b337-062d5361b549",
-                    "label": "cup_hitbox_2",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(4)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(4)",
-                    "SimpleButton.callback": "() => this.moveStones(1, 4)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": -28,
-                    "y": -20,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "703f721e-9b5b-427a-a6ab-eeb71ddf15cb",
-                    "label": "cup_hitbox_3",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(1)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(1)",
-                    "SimpleButton.callback": "() => this.moveStones(1, 1)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": 143,
-                    "y": -20,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "4f60b201-12d6-488f-80a9-6f85f8d8ab73",
-                    "label": "cup_hitbox_4",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(2)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(2)",
-                    "SimpleButton.callback": "() => this.moveStones(1, 2)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": 86,
-                    "y": -20,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "3463abd4-be47-4b74-9555-4bb94dead85a",
-                    "label": "cup_hitbox_5",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(8)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(8)",
-                    "SimpleButton.callback": "() => this.moveStones(0, 8)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": -142,
-                    "y": 39,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "0d3979a3-53fd-48a8-a2d9-e2406715b219",
-                    "label": "cup_hitbox_6",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(12)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(12)",
-                    "SimpleButton.callback": "() => this.moveStones(0, 12)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": 86,
-                    "y": 39,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "94a18d81-645b-4ea0-acdd-9b5fab2ae12c",
-                    "label": "cup_hitbox_7",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(13)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(13)",
-                    "SimpleButton.callback": "() => this.moveStones(0, 13)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": 143,
-                    "y": 39,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "7b863c34-ff01-4022-a8f9-2ec438f9c31e",
-                    "label": "cup_hitbox_8",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(10)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(10)",
-                    "SimpleButton.callback": "() => this.moveStones(0, 10)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": -28,
-                    "y": 39,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "b210ab4f-36c6-4dc8-aad9-614ed0c589d3",
-                    "label": "cup_hitbox_9",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(11)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(11)",
-                    "SimpleButton.callback": "() => this.moveStones(0, 11)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": 29,
-                    "y": 39,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "38057644-2a73-4098-923e-76c19d702da3",
-                    "label": "cup_hitbox_10",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(9)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(9)",
-                    "SimpleButton.callback": "() => this.moveStones(0, 9)",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "cup_hitbox0004"
-                    },
-                    "x": -85,
-                    "y": 39,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "b896b051-9bc5-46d2-b614-5339735eaa4d",
-                    "label": "end_hitbox",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onHitboxOver(0)",
-                    "SimpleButton.hoverOutCallback": "() => this.onHitboxOut(0)",
-                    "SimpleButton.callback": "() => null",
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "end-hitbox0004"
-                    },
-                    "x": 200,
-                    "y": 11,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "481f0f91-6de4-4e2e-9380-c5eaf547d7c4",
-                    "label": "currentArrow",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "mancala",
-                        "frame": "current_arrow0001"
-                    },
-                    "x": -141,
-                    "y": -91,
-                    "visible": false
-                },
-                {
-                    "type": "Text",
-                    "id": "505b2cab-de22-499c-b83f-360665733964",
-                    "label": "currentArrowText",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": -143,
-                    "y": -84,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "visible": false,
-                    "text": "4",
-                    "fontFamily": "cpBurbankSmall",
-                    "fontSize": "30px",
-                    "fontStyle": "bold",
-                    "color": "#000000ff",
-                    "stroke": "#000000ff",
-                    "shadow.blur": 5
+                    "x": 252,
+                    "y": -162
                 }
             ]
         }
@@ -486,31 +384,23 @@
     },
     "lists": [
         {
-            "id": "fed2c198-258f-4f6a-b7e3-21b688fed227",
-            "label": "placers",
+            "id": "0cc252c2-494b-4324-baf9-ad1f2bf25c77",
+            "label": "holes",
             "objectIds": [
-                "6c36ac06-9f6e-424c-b5b7-8369d9b913c6",
-                "afcd824f-ff27-4d52-a4fd-a7fe8111333f",
-                "e681e47f-9a03-4d2d-9d06-b0f4fa363c2a",
-                "310477e5-b88a-4ae6-b337-062d5361b549",
-                "12bae6c3-8f60-4c24-8541-949fdcde6954",
-                "4f60b201-12d6-488f-80a9-6f85f8d8ab73",
-                "703f721e-9b5b-427a-a6ab-eeb71ddf15cb",
-                "b896b051-9bc5-46d2-b614-5339735eaa4d",
-                "3463abd4-be47-4b74-9555-4bb94dead85a",
-                "38057644-2a73-4098-923e-76c19d702da3",
-                "7b863c34-ff01-4022-a8f9-2ec438f9c31e",
-                "b210ab4f-36c6-4dc8-aad9-614ed0c589d3",
-                "0d3979a3-53fd-48a8-a2d9-e2406715b219",
-                "94a18d81-645b-4ea0-acdd-9b5fab2ae12c"
-            ]
-        },
-        {
-            "id": "4974b1ce-2910-4903-af1b-8077c4c1c801",
-            "label": "items",
-            "objectIds": [
-                "464b8f4f-cdab-4139-af39-d1ac85c8631e",
-                "df191ca7-415a-4fc9-a8d5-e65fef52082c"
+                "9389f3d3-994d-43d1-92c5-4024661b79f4",
+                "b8baf473-a75f-4135-a894-537390a919a9",
+                "9f44682c-679f-495b-ae2b-674d1a589c4b",
+                "e713e514-0694-489b-a3a2-cfd099f34187",
+                "efae5d11-1f07-4f2a-b36c-1dbec458382e",
+                "0202ccd0-af01-44bb-a24d-0a2bb9384aa8",
+                "6aac4be8-f26c-47fe-ba0c-52d28eefa127",
+                "12f66ea0-f7b9-47b9-9c6e-76ea297e9495",
+                "c11152e4-188c-4cbf-a6c3-fdc8945f4151",
+                "ee42fdb0-7cdd-45a7-879a-77f2db75ba4c",
+                "2c5d315e-9b9e-416d-b814-724181ec2064",
+                "36432eed-487c-415d-85b8-fb68cab93e36",
+                "152805b6-0b3d-4b6c-bee7-378c9c5d726f",
+                "d6000b2f-67d1-49df-91c3-49711c59fc64"
             ]
         }
     ]

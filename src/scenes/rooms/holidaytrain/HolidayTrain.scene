@@ -1,0 +1,147 @@
+{
+    "id": "821a95cd-8e95-4a43-8ce7-bf3752756abc",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/holidaytrain/holidaytrain-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "HolidayTrain",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "af2de4bb-ce46-45db-9f7e-41d021463e7b",
+            "label": "bg_cntr",
+            "scope": "CLASS"
+        },
+        {
+            "type": "Image",
+            "id": "a0fc3cdf-cf3d-4661-8ee8-352ad93c9350",
+            "label": "bag",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "bag"
+            },
+            "x": 1143.4130149529456,
+            "y": 459.88653036312417,
+            "originX": 0.7522454045743063,
+            "originY": 0.47904846912825433
+        },
+        {
+            "type": "Image",
+            "id": "083dbb1c-88af-4a58-b45b-b2f36265bd3a",
+            "label": "hay1",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "hay1"
+            },
+            "x": 378.25362834433935,
+            "y": 303.77408439404553,
+            "originX": 0.24885106617337013,
+            "originY": 0.3164313252509251
+        },
+        {
+            "type": "Image",
+            "id": "aba08a53-f3b7-4110-9bac-b7f8248493da",
+            "label": "hay2",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "hay2"
+            },
+            "x": 430.5559003194862,
+            "y": 330.5278491872512,
+            "originX": 0.2832604563676702,
+            "originY": 0.34429986264848594
+        },
+        {
+            "type": "Image",
+            "id": "6220f010-fdf3-4244-b4b2-491e739f2f7b",
+            "label": "hay3",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "hay3"
+            },
+            "x": 389.4183484105325,
+            "y": 365.36836942481193,
+            "originX": 0.2561962965483345,
+            "originY": 0.3805920441523527
+        },
+        {
+            "type": "Image",
+            "id": "f7ad9643-608f-4a4d-b0f4-002b6b1afabc",
+            "label": "hay4",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "hay4"
+            },
+            "x": 498.13510441786167,
+            "y": 398.3823904427662,
+            "originX": 0.32772045955830253,
+            "originY": 0.41498165304504414
+        },
+        {
+            "type": "Image",
+            "id": "e512dfe0-4e4f-4510-bcf5-8b059380657d",
+            "label": "hay5",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "hay5"
+            },
+            "x": 430.5729287371702,
+            "y": 430.40770658301506,
+            "originX": 0.28327165475556415,
+            "originY": 0.4483413728625356
+        },
+        {
+            "type": "Image",
+            "id": "8dfae136-359c-4655-a0d1-b1fba9ee4229",
+            "label": "hay6",
+            "texture": {
+                "key": "holidaytrain",
+                "frame": "hay6"
+            },
+            "x": 458.23477534690386,
+            "y": 476.6539844762558,
+            "originX": 0.30147025635081326,
+            "originY": 0.4965145533002743
+        },
+        {
+            "type": "Container",
+            "id": "fa5a2107-e1e0-4fd2-80c7-141f897cd671",
+            "label": "fg_cntr",
+            "scope": "CLASS",
+            "y": 960
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "a6c79db4-08ed-4d78-93f8-33da658e5027",
+            "label": "sort",
+            "objectIds": [
+                "083dbb1c-88af-4a58-b45b-b2f36265bd3a",
+                "aba08a53-f3b7-4110-9bac-b7f8248493da",
+                "6220f010-fdf3-4244-b4b2-491e739f2f7b",
+                "f7ad9643-608f-4a4d-b0f4-002b6b1afabc",
+                "e512dfe0-4e4f-4510-bcf5-8b059380657d",
+                "8dfae136-359c-4655-a0d1-b1fba9ee4229",
+                "a0fc3cdf-cf3d-4661-8ee8-352ad93c9350",
+                "fa5a2107-e1e0-4fd2-80c7-141f897cd671"
+            ]
+        }
+    ]
+}

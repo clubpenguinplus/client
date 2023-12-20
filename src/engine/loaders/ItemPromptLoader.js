@@ -23,7 +23,7 @@ export default class ItemPromptLoader extends BaseLoader {
                 suffix = '/client/media/igloos/locations/icon/'
                 break
             case 'flooring':
-                suffix = '/client/media/igloos/flooring/icon/'
+                suffix = '/client/media/igloos/flooring/catalogicon/'
                 break
             default:
                 suffix = '/client/media/clothing/icon/large/'

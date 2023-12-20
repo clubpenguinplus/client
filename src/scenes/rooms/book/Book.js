@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import {SimpleButton, Button, MoveTo, ShowHint, Seat} from '@components/components'
+import {SimpleButton, Button, MoveTo, ShowHint, Seat, WaddleSeat} from '@components/components'
 /* START OF COMPILED CODE */
 
 export default class Book extends RoomScene {
@@ -27,6 +27,14 @@ export default class Book extends RoomScene {
         this.seatzone_1
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container|Phaser.GameObjects.Sprite>} */
         this.sort
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats100
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats101
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats102
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats103
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
@@ -253,11 +261,39 @@ export default class Book extends RoomScene {
         const wanted_en = this.add.image(315.4850493101891, 652.551479305673, 'book', 'wanted_en')
         wanted_en.setOrigin(0.549085201551959, 2.6781558188681864)
 
+        // ellipse_8
+        const ellipse_8 = this.add.ellipse(1258, 499, 50, 50)
+
+        // ellipse
+        const ellipse = this.add.ellipse(1221, 587, 50, 50)
+
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(1101, 668, 50, 50)
+
+        // ellipse_2
+        const ellipse_2 = this.add.ellipse(1152, 581, 50, 50)
+
+        // ellipse_3
+        const ellipse_3 = this.add.ellipse(1145, 791, 50, 50)
+
+        // ellipse_4
+        const ellipse_4 = this.add.ellipse(1197, 708, 50, 50)
+
+        // ellipse_5
+        const ellipse_5 = this.add.ellipse(1264, 697, 50, 50)
+
+        // ellipse_6
+        const ellipse_6 = this.add.ellipse(1313, 615, 50, 50)
+
         // lists
         const sort = [bookfg, backrightcouchfrontarm, tree, righttable, frontrightcouch, mancala_board_3, mancala_board_2, mancala_board_1, mancala_board, circledesk, circlechair, walldivider, railing, bigdesk, wanted_board, newslobbydivider, newsdivider, newsdesk, wheelchair, chair_1, chair, newsline, newspaper, newslineholder, tales_en, wanted_en]
+        const seats100 = [ellipse_8, ellipse]
+        const seats101 = [ellipse_2, ellipse_1]
+        const seats102 = [ellipse_6, ellipse_5]
+        const seats103 = [ellipse_4, ellipse_3]
 
         // mancala_en (components)
-        const mancala_enButton = new Button(mancala_en)
+        new Button(mancala_en)
 
         // mancala_board (components)
         const mancala_boardShowHint = new ShowHint(mancala_board)
@@ -265,6 +301,7 @@ export default class Book extends RoomScene {
 
         // mancala_board4 (components)
         const mancala_board4Button = new Button(mancala_board4)
+        mancala_board4Button.callback = () => this.triggerWaddle(102)
 
         // mancala_board_1 (components)
         const mancala_board_1ShowHint = new ShowHint(mancala_board_1)
@@ -272,6 +309,7 @@ export default class Book extends RoomScene {
 
         // mancala_board1 (components)
         const mancala_board1Button = new Button(mancala_board1)
+        mancala_board1Button.callback = () => this.triggerWaddle(100)
 
         // mancala_board_2 (components)
         const mancala_board_2ShowHint = new ShowHint(mancala_board_2)
@@ -279,6 +317,7 @@ export default class Book extends RoomScene {
 
         // mancala_board2 (components)
         const mancala_board2Button = new Button(mancala_board2)
+        mancala_board2Button.callback = () => this.triggerWaddle(101)
 
         // mancala_board_3 (components)
         const mancala_board_3ShowHint = new ShowHint(mancala_board_3)
@@ -286,6 +325,7 @@ export default class Book extends RoomScene {
 
         // mancala_board3 (components)
         const mancala_board3Button = new Button(mancala_board3)
+        mancala_board3Button.callback = () => this.triggerWaddle(103)
 
         // part_frames (components)
         const part_framesSimpleButton = new SimpleButton(part_frames)
@@ -293,7 +333,7 @@ export default class Book extends RoomScene {
         part_framesSimpleButton.hoverOutCallback = () => this.ArtOut()
 
         // bookcase (components)
-        const bookcaseButton = new Button(bookcase)
+        new Button(bookcase)
 
         // tales_en (components)
         const tales_enButton = new Button(tales_en)
@@ -312,6 +352,38 @@ export default class Book extends RoomScene {
         // seatzone_1 (components)
         new Seat(seatzone_1)
 
+        // ellipse_8 (components)
+        const ellipse_8WaddleSeat = new WaddleSeat(ellipse_8)
+        ellipse_8WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse (components)
+        const ellipseWaddleSeat = new WaddleSeat(ellipse)
+        ellipseWaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_1 (components)
+        const ellipse_1WaddleSeat = new WaddleSeat(ellipse_1)
+        ellipse_1WaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_2 (components)
+        const ellipse_2WaddleSeat = new WaddleSeat(ellipse_2)
+        ellipse_2WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse_3 (components)
+        const ellipse_3WaddleSeat = new WaddleSeat(ellipse_3)
+        ellipse_3WaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_4 (components)
+        const ellipse_4WaddleSeat = new WaddleSeat(ellipse_4)
+        ellipse_4WaddleSeat.sitdirection = 'southwest'
+
+        // ellipse_5 (components)
+        const ellipse_5WaddleSeat = new WaddleSeat(ellipse_5)
+        ellipse_5WaddleSeat.sitdirection = 'northeast'
+
+        // ellipse_6 (components)
+        const ellipse_6WaddleSeat = new WaddleSeat(ellipse_6)
+        ellipse_6WaddleSeat.sitdirection = 'southwest'
+
         this.mancala_board = mancala_board
         this.mancala_board_1 = mancala_board_1
         this.mancala_board_2 = mancala_board_2
@@ -322,6 +394,10 @@ export default class Book extends RoomScene {
         this.seatzone = seatzone
         this.seatzone_1 = seatzone_1
         this.sort = sort
+        this.seats100 = seats100
+        this.seats101 = seats101
+        this.seats102 = seats102
+        this.seats103 = seats103
 
         this.events.emit('scene-awake')
     }
@@ -368,6 +444,19 @@ export default class Book extends RoomScene {
 
     ArtOut() {
         this.part_frames.setScale(1, 1)
+    }
+
+    triggerWaddle(id) {
+        if (this.shell.client.activeSeat) {
+            return
+        }
+        let mancala = this.crumbs.getString('mancala')
+        let game = this.crumbs.getString('game')
+        let text = this.crumbs.getString(`join-multiplayer,${mancala + ' ' + game}`)
+        this.interface.prompt.showWindow(text, 'dual', () => {
+            this.airtower.sendXt('join_table', id)
+            this.interface.prompt.window.visible = false
+        })
     }
 
     /* END-USER-CODE */

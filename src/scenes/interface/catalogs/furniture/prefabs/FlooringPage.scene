@@ -1,0 +1,236 @@
+{
+    "id": "b9655c67-e8ca-47be-8bd5-933000a4bf05",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
+            "label": "page1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
+                    "label": "pages",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "pages"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
+                    "label": "background",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "catalog/backgrounds/6"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "c35927bb-1b20-4c1d-97dc-bf523ff07388",
+                    "label": "middle",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "middle"
+                    },
+                    "x": 755,
+                    "y": 474
+                },
+                {
+                    "type": "Image",
+                    "id": "9b099d10-076b-4510-bdb0-0db4aec444e1",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nextPage-btn"
+                    },
+                    "x": 1425,
+                    "y": 809
+                },
+                {
+                    "type": "Text",
+                    "id": "40fe935b-bdcf-4afe-8b3b-c6194f312945",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "x": 967,
+                    "y": 937,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your Coins: 99999999",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "fontStyle": "bold italic",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "edc46158-88b3-4fe1-9634-ad84c65255b9",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "prevPage-btn"
+                    },
+                    "x": 86,
+                    "y": 809
+                },
+                {
+                    "type": "Image",
+                    "id": "3b08e1a0-363e-4db8-93ff-52d2b00f8971",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 1489,
+                    "y": 25,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "92737134-c265-4cce-9194-47da80c6b703",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem",
+                    "x": 222,
+                    "y": 290
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "1a177c9b-3720-4fbd-9631-a61fc5e5b261",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_1",
+                    "x": 222,
+                    "y": 621
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "d429784a-3da5-44eb-9ff9-a9751e8c7989",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_2",
+                    "x": 540,
+                    "y": 621
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "04ab6749-f429-411a-bb8f-5135642a9281",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_3",
+                    "x": 540,
+                    "y": 290
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "03127227-fe2d-4067-8e0a-88f8985c03fb",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_4",
+                    "x": 1291,
+                    "y": 621
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "80c71bee-039c-4c35-a9d7-f94df85a9596",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_5",
+                    "x": 1291,
+                    "y": 290
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "b3f4d14f-d4ee-4256-add6-43941f34a6b5",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_6",
+                    "x": 973,
+                    "y": 290
+                },
+                {
+                    "prefabId": "2a400c84-6d4d-472d-9d0d-1cc0a5b7442f",
+                    "id": "23e57a82-ecbc-43b8-a81b-9d384844185a",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "flooringItem_7",
+                    "x": 973,
+                    "y": 621
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "69c6b51c-6d5e-4ef6-b672-b799bb8c4400",
+            "label": "flooringItems",
+            "objectIds": [
+                "92737134-c265-4cce-9194-47da80c6b703",
+                "04ab6749-f429-411a-bb8f-5135642a9281",
+                "1a177c9b-3720-4fbd-9631-a61fc5e5b261",
+                "d429784a-3da5-44eb-9ff9-a9751e8c7989",
+                "b3f4d14f-d4ee-4256-add6-43941f34a6b5",
+                "80c71bee-039c-4c35-a9d7-f94df85a9596",
+                "23e57a82-ecbc-43b8-a81b-9d384844185a",
+                "03127227-fe2d-4067-8e0a-88f8985c03fb"
+            ]
+        }
+    ]
+}

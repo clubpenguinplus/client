@@ -578,6 +578,20 @@ export default class IglooEdit extends BaseScene {
         this.input.on('pointerdown', (pointer) => this.onPointerDown(pointer))
         this.input.on('pointerup', (pointer) => this.onPointerDown(pointer))
 
+        this.createMasks()
+
+        this.controls.state = 'maximised'
+
+        this.minX = 168
+        this.maxX = 1257
+
+        this.scrollbar.setInteractive()
+        this.scrollbar.on('pointerdown', (pointer) => this.onScrollerDown(pointer))
+
+        this.loadItems(0)
+    }
+
+    createMasks() {
         let previewMask0 = this.add.graphics()
         previewMask0.fillStyle(0xffffff, 0)
         previewMask0.beginPath()
@@ -614,16 +628,6 @@ export default class IglooEdit extends BaseScene {
         itemsMask.fillRect(0, 0, 1404.5 * window.currentScale, 182.5 * window.currentScale)
         this.itemsMask = itemsMask.createGeometryMask()
         this.itemContainer.setMask(this.itemsMask)
-
-        this.controls.state = 'maximised'
-
-        this.minX = 168
-        this.maxX = 1257
-
-        this.scrollbar.setInteractive()
-        this.scrollbar.on('pointerdown', (pointer) => this.onScrollerDown(pointer))
-
-        this.loadItems(0)
     }
 
     onSleep() {
@@ -712,6 +716,11 @@ export default class IglooEdit extends BaseScene {
     }
 
     scalePreview(preview, position) {
+        if (this.lastScale != window.currentScale) {
+            this.createMasks()
+        }
+        this.lastScale = window.currentScale
+        this.shell.events.on('updateScaling', () => this.scalePreview(preview, position))
         let scale, x, y, mask
 
         switch (position) {
@@ -760,10 +769,12 @@ export default class IglooEdit extends BaseScene {
         this.chooseIgloo.visible = false
 
         this.previews.forEach((preview) => preview.stop())
+        this.shell.events.off('updateScaling')
     }
 
     onEditClick() {
         this.chooseIgloo.visible = false
+        this.shell.events.off('updateScaling')
         this.previews.forEach((preview) => preview.stop())
         this.shell.room.hidePenguins()
         this.shell.room.enableFurnitureInput()

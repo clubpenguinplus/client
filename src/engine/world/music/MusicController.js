@@ -57,12 +57,12 @@ export default class MusicController extends Phaser.Scene {
         }
     }
 
-    addSfx(track, loop, fileExtension = 'mp3') {
+    addSfx(track, loop, fileExtension = 'mp3', volume = 1) {
         if (this.sfxMuted) return
         if (!this.cache.audio.exists(`sfx/${track}`)) {
-            this.sfxLoader.loadFile(track, fileExtension, loop)
+            this.sfxLoader.loadFile(track, fileExtension, loop, volume)
         } else {
-            this.playSfx(`sfx/${track}`, loop)
+            this.playSfx(`sfx/${track}`, loop, volume)
         }
     }
 
@@ -76,11 +76,11 @@ export default class MusicController extends Phaser.Scene {
         this.musicPlaying = key
     }
 
-    playSfx(key, loop = false) {
+    playSfx(key, loop = false, volume = 1) {
         // Rate limit to 20 sounds per second
         if (this.lastPlayed[key] && Date.now() - this.lastPlayed[key] < 50) return
         this.lastPlayed[key] = Date.now()
-        this.sound.add(key, {loop: loop, volume: this.shell.settings.sv}).play()
+        this.sound.add(key, {loop: loop, volume: this.shell.settings.sv * volume}).play()
         if (loop) {
             this.sfxLooping.push(key)
         }

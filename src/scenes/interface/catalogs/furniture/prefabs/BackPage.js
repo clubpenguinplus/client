@@ -1,5 +1,5 @@
 import Page from './Page'
-import {Button, SimpleButton} from '@components/components'
+import {Button, SimpleButton, LocalisedString} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -7,40 +7,38 @@ export default class BackPage extends Page {
     constructor(scene, x, y) {
         super(scene, x ?? 0, y ?? 0)
 
-        // page1Bg
-        const page1Bg = scene.add.image(760, 454, 'constant', 'back')
-        this.add(page1Bg)
-
-        // closebtn
-        const closebtn = scene.add.image(1134, 52, 'constant', 'closebtn')
-        this.add(closebtn)
+        // background
+        const background = scene.add.image(760, 480, 'furniturecatalog', 'back')
+        this.add(background)
 
         // prevPage
-        const prevPage = scene.add.image(519, 731, 'constant', 'prevPage')
+        const prevPage = scene.add.image(502, 808, 'furniturecatalog', 'prevPage-btn')
         this.add(prevPage)
 
-        // closebtn (components)
-        const closebtnSimpleButton = new SimpleButton(closebtn)
-        closebtnSimpleButton.callback = () => this.close()
+        // closebtn
+        const closebtn = scene.add.image(1162, 40, 'main', 'white-x')
+        closebtn.scaleX = 0.666667
+        closebtn.scaleY = 0.666667
+        this.add(closebtn)
 
         // prevPage (components)
         const prevPageButton = new Button(prevPage)
         prevPageButton.callback = () => this.prevPage()
 
-        this.page1Bg = page1Bg
+        // closebtn (components)
+        const closebtnSimpleButton = new SimpleButton(closebtn)
+        closebtnSimpleButton.callback = () => this.close()
+
+        this.background = background
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
         /* END-USER-CTR-CODE */
     }
 
     /** @type {Phaser.GameObjects.Image} */
-    page1Bg
+    background
 
     /* START-USER-CODE */
-
-    // Write your code here.
-
     /* END-USER-CODE */
 }
 

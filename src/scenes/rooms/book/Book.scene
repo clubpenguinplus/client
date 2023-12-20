@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "f781c27c-c7eb-42df-a7d2-f8d82a15fec4",
             "label": "bookbg",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "bookbg"
@@ -32,7 +31,6 @@
             "type": "Image",
             "id": "e1a5d18c-ba98-44c1-865d-d743016d8ddd",
             "label": "righttable",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "righttable"
@@ -44,7 +42,6 @@
             "type": "Image",
             "id": "64430aa9-642b-42ee-b719-70017f4254f9",
             "label": "frontrightcouch",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "frontrightcouch"
@@ -56,7 +53,6 @@
             "type": "Image",
             "id": "3f396f73-5a3b-47e8-a966-5de781adc564",
             "label": "backrightcouch",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "backrightcouch"
@@ -68,7 +64,6 @@
             "type": "Image",
             "id": "b36baa4f-7af8-465d-be00-52d028a6e5ab",
             "label": "backrightcouchfrontarm",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "backrightcouchfrontarm"
@@ -82,7 +77,6 @@
             "type": "Image",
             "id": "54872927-6f76-4017-90c4-fc991564c26f",
             "label": "cptholder",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "cptholder"
@@ -94,7 +88,6 @@
             "type": "Image",
             "id": "08c3e75a-99a1-4228-a89b-fbe371aeadb9",
             "label": "tree",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "tree"
@@ -120,7 +113,6 @@
             "type": "Image",
             "id": "d69cd1cc-c816-4538-a9d8-9516dc498541",
             "label": "bookfg",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "bookfg"
@@ -146,7 +138,6 @@
                     "type": "Image",
                     "id": "e924ea68-4559-4605-bd71-623a24dd3485",
                     "label": "mancala_table",
-                    "components": [],
                     "texture": {
                         "key": "book",
                         "frame": "mancala_table"
@@ -162,6 +153,7 @@
                     "components": [
                         "Button"
                     ],
+                    "Button.callback": "() => this.triggerWaddle(102)",
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -188,7 +180,6 @@
                     "type": "Image",
                     "id": "700939b5-f35c-4201-b3ef-906a6a2f184e",
                     "label": "mancala_table1",
-                    "components": [],
                     "texture": {
                         "key": "book",
                         "frame": "mancala_table"
@@ -204,6 +195,7 @@
                     "components": [
                         "Button"
                     ],
+                    "Button.callback": "() => this.triggerWaddle(100)",
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -230,7 +222,6 @@
                     "type": "Image",
                     "id": "b99244dd-a9d4-4758-89ad-84a0367f8ad6",
                     "label": "mancala_table2",
-                    "components": [],
                     "texture": {
                         "key": "book",
                         "frame": "mancala_table"
@@ -246,6 +237,7 @@
                     "components": [
                         "Button"
                     ],
+                    "Button.callback": "() => this.triggerWaddle(101)",
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -272,7 +264,6 @@
                     "type": "Image",
                     "id": "5ff7faa5-a5c1-4f6b-9b7e-8b78abc78bac",
                     "label": "mancala_table3",
-                    "components": [],
                     "texture": {
                         "key": "book",
                         "frame": "mancala_table"
@@ -288,6 +279,7 @@
                     "components": [
                         "Button"
                     ],
+                    "Button.callback": "() => this.triggerWaddle(103)",
                     "texture": {
                         "key": "book",
                         "frame": "mancala_board"
@@ -302,7 +294,6 @@
             "type": "Image",
             "id": "3a78aea2-e4a5-4b5a-8c35-b28ff4086e1a",
             "label": "computerdesk",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "computerdesk"
@@ -314,7 +305,6 @@
             "type": "Image",
             "id": "38ca8d7c-a399-437d-baf2-042ce315b3e4",
             "label": "circlechair",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "circlechair"
@@ -328,7 +318,6 @@
             "type": "Image",
             "id": "e62c982a-0678-4a21-8a0c-2c11aa664d80",
             "label": "circledesk",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "circledesk"
@@ -342,7 +331,6 @@
             "type": "Image",
             "id": "0d9187d8-f287-4e12-b10c-76dd27005afa",
             "label": "cpt_en",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "cpt_en"
@@ -371,7 +359,6 @@
             "type": "Image",
             "id": "dcd203aa-6b86-42f1-9ee7-02969a038284",
             "label": "coatrack",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "coatrack"
@@ -383,7 +370,6 @@
             "type": "Image",
             "id": "ec1fc12a-ef3c-464c-958a-fe8f78d852db",
             "label": "plant",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "plant"
@@ -395,7 +381,6 @@
             "type": "Image",
             "id": "c1260614-4ab1-4f68-a1ce-5f978b17ae8b",
             "label": "walldivider",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "walldivider"
@@ -409,7 +394,6 @@
             "type": "Image",
             "id": "cf9faf92-d63e-4bb6-9a3a-99df85aadd75",
             "label": "railing",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "railing"
@@ -421,7 +405,6 @@
             "type": "Image",
             "id": "e7f3c9d0-f382-4e47-a43e-3ecb5d1247c5",
             "label": "deskchair",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "deskchair"
@@ -433,7 +416,6 @@
             "type": "Image",
             "id": "5074e793-886e-4aff-974c-19286c8769a3",
             "label": "bigdesk",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "bigdesk"
@@ -447,7 +429,6 @@
             "type": "Image",
             "id": "3624da5c-ea07-466f-af3b-2bd151a417c6",
             "label": "partholder",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "partholder"
@@ -459,7 +440,6 @@
             "type": "Image",
             "id": "dca0fd87-2045-483b-9fff-5eeb74c8b74a",
             "label": "part_en",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "part_en"
@@ -485,7 +465,6 @@
             "type": "Image",
             "id": "91b30008-32a3-4873-8d4e-e52a24b39305",
             "label": "filecabinet",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "filecabinet"
@@ -497,7 +476,6 @@
             "type": "Image",
             "id": "94afea77-e913-4e4b-b7a0-5e9d6fcb2bca",
             "label": "wanted_board",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "wanted_board"
@@ -511,7 +489,6 @@
             "type": "Image",
             "id": "0007d115-353c-4aa0-b62a-5e285cdbf999",
             "label": "chair",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "chair"
@@ -525,7 +502,6 @@
             "type": "Image",
             "id": "317d4ab6-4653-463c-bd1a-6f0ee4bf92b5",
             "label": "chair_1",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "chair"
@@ -538,7 +514,6 @@
             "type": "Image",
             "id": "b84baeb4-fd2d-4b37-94e5-526bcd17c625",
             "label": "newsline",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newsline"
@@ -552,7 +527,6 @@
             "type": "Image",
             "id": "7dee65d8-b6f1-4586-8443-d0d70b8a8d35",
             "label": "lobbydesk",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "lobbydesk"
@@ -564,7 +538,6 @@
             "type": "Image",
             "id": "bb6cf924-f0e4-4cbc-bf4d-bf7df56bf69f",
             "label": "newsdivider",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newsdivider"
@@ -578,7 +551,6 @@
             "type": "Image",
             "id": "bf627c7f-da56-4f15-9d97-d67440de19b6",
             "label": "wheelchair",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "wheelchair"
@@ -592,7 +564,6 @@
             "type": "Image",
             "id": "e7a6d2ad-6643-4bb8-8c8f-6a5ef2c364b9",
             "label": "newsdesk",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newsdesk"
@@ -604,7 +575,6 @@
             "type": "Image",
             "id": "85b038ab-456f-48b2-81c4-69b5c4928aa6",
             "label": "newslobbydivider",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newslobbydivider"
@@ -617,7 +587,6 @@
             "id": "e7b8502e-58ab-4c9d-87bd-93a1b59488f5",
             "label": "newspaper",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newspaper0001"
@@ -631,7 +600,6 @@
             "type": "Image",
             "id": "4c632917-8ff0-4ec6-ba91-0448b547a384",
             "label": "newslineholder",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newslineholder"
@@ -646,7 +614,6 @@
             "id": "0986fd62-0063-431e-a8aa-89cd2f53db63",
             "label": "newssquiggle",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "newssquiggle0001"
@@ -730,7 +697,6 @@
             "type": "Image",
             "id": "60ec91ee-478a-40b9-a07f-f9e57556e6c8",
             "label": "wanted_en",
-            "components": [],
             "texture": {
                 "key": "book",
                 "frame": "wanted_en"
@@ -739,6 +705,110 @@
             "y": 652.551479305673,
             "originX": 0.549085201551959,
             "originY": 2.6781558188681864
+        },
+        {
+            "type": "Ellipse",
+            "id": "adc8be03-c8fb-44c1-8e04-0f70f2f929f8",
+            "label": "ellipse_8",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
+            "x": 1258,
+            "y": 499,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "4dbabc41-64dc-409e-a20d-eed0b51cf82f",
+            "label": "ellipse",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
+            "x": 1221,
+            "y": 587,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "39ad52fd-d612-4eba-a060-e4ef2c18a6cc",
+            "label": "ellipse_1",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
+            "x": 1101,
+            "y": 668,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "40c7c412-57c5-4d35-a154-858832e07ed8",
+            "label": "ellipse_2",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
+            "x": 1152,
+            "y": 581,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "43528f9a-d5e7-4440-a120-4162b8edf8e8",
+            "label": "ellipse_3",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
+            "x": 1145,
+            "y": 791,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "ca989364-6270-4b70-ad0d-a2f1672e15bd",
+            "label": "ellipse_4",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
+            "x": 1197,
+            "y": 708,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "ef5f08f8-e842-4c3e-bc03-c3126d819337",
+            "label": "ellipse_5",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "northeast",
+            "x": 1264,
+            "y": 697,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "c2a1ddb4-9231-4831-90c2-de99ad74d704",
+            "label": "ellipse_6",
+            "components": [
+                "WaddleSeat"
+            ],
+            "WaddleSeat.sitdirection": "southwest",
+            "x": 1313,
+            "y": 615,
+            "width": 50,
+            "height": 50
         }
     ],
     "plainObjects": [],
@@ -746,7 +816,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
@@ -779,6 +849,38 @@
                 "4c632917-8ff0-4ec6-ba91-0448b547a384",
                 "73a0cbdf-ade4-4b69-b08c-57eb1f4ba7ec",
                 "60ec91ee-478a-40b9-a07f-f9e57556e6c8"
+            ]
+        },
+        {
+            "id": "b2b9b861-9573-4238-9c36-e709ce5afa99",
+            "label": "seats100",
+            "objectIds": [
+                "adc8be03-c8fb-44c1-8e04-0f70f2f929f8",
+                "4dbabc41-64dc-409e-a20d-eed0b51cf82f"
+            ]
+        },
+        {
+            "id": "1861cb2c-686f-4111-8e39-bc3acc7dd615",
+            "label": "seats101",
+            "objectIds": [
+                "40c7c412-57c5-4d35-a154-858832e07ed8",
+                "39ad52fd-d612-4eba-a060-e4ef2c18a6cc"
+            ]
+        },
+        {
+            "id": "6dee61a4-3a2a-44c9-9592-63d51ff26076",
+            "label": "seats102",
+            "objectIds": [
+                "c2a1ddb4-9231-4831-90c2-de99ad74d704",
+                "ef5f08f8-e842-4c3e-bc03-c3126d819337"
+            ]
+        },
+        {
+            "id": "c20b0347-54bc-4269-a082-afddc568c35b",
+            "label": "seats103",
+            "objectIds": [
+                "ca989364-6270-4b70-ad0d-a2f1672e15bd",
+                "43528f9a-d5e7-4440-a120-4162b8edf8e8"
             ]
         }
     ]

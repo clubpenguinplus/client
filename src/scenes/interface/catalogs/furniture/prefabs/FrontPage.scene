@@ -17,20 +17,18 @@
             "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
             "label": "page1",
             "scope": "CLASS",
-            "components": [],
             "list": [
                 {
                     "type": "Image",
                     "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
                     "label": "page1Bg",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
-                        "key": "constant",
+                        "key": "furniturecatalog",
                         "frame": "front"
                     },
                     "x": 760,
-                    "y": 454
+                    "y": 480
                 },
                 {
                     "type": "Text",
@@ -40,62 +38,35 @@
                     "components": [
                         "LocalisedString"
                     ],
-                    "LocalisedString.id": "penguinStyle",
+                    "LocalisedString.id": "furnitureCatalog",
                     "x": 785,
-                    "y": 98,
+                    "y": 153,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Penguin Style",
+                    "text": "Furniture & Igloo Catalog",
                     "fixedWidth": 650,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "80px",
-                    "fontStyle": "bold italic"
+                    "fontSize": "70px",
+                    "fontStyle": "bold italic",
+                    "color": "#d4fefdff",
+                    "wordWrapWidth": 450
                 },
                 {
                     "type": "Text",
                     "id": "1173ecb4-25fa-462e-802a-626c1d11760e",
                     "label": "monthText",
                     "scope": "CLASS",
-                    "components": [],
-                    "x": 833,
-                    "y": 158,
+                    "x": 785,
+                    "y": 258,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "December 2022",
                     "fixedWidth": 500,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
-                    "fontSize": "25px",
-                    "fontStyle": "italic"
-                },
-                {
-                    "type": "Ellipse",
-                    "id": "6ecc3946-4e33-43b5-8777-9cf11495a6ca",
-                    "label": "closeBtn_1",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 1124,
-                    "y": 39,
-                    "fillColor": "#26efeb",
-                    "fillAlpha": 0.5,
-                    "width": 50,
-                    "height": 50
-                },
-                {
-                    "type": "Image",
-                    "id": "9b099d10-076b-4510-bdb0-0db4aec444e1",
-                    "label": "nextPage",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.callback": "() => this.nextPage()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "nextPage"
-                    },
-                    "x": 1063,
-                    "y": 729
+                    "fontSize": "30px",
+                    "color": "#d4fefdff"
                 },
                 {
                     "type": "Image",
@@ -106,11 +77,58 @@
                     ],
                     "SimpleButton.callback": "() => this.close()",
                     "texture": {
-                        "key": "constant",
-                        "frame": "closebtn"
+                        "key": "main",
+                        "frame": "white-x"
                     },
-                    "x": 1118,
-                    "y": 39
+                    "x": 1152,
+                    "y": 27,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
+                },
+                {
+                    "type": "Image",
+                    "id": "b39d4b1a-6d7a-40d6-9953-379300978f44",
+                    "label": "frontcircle",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "june15"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "8b89cc94-a19c-46ba-8d33-1b31d655411f",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nextPage-btn"
+                    },
+                    "x": 1094,
+                    "y": 810
+                },
+                {
+                    "type": "Text",
+                    "id": "ea412eaf-cf9a-47ac-b4ef-f7a68488484f",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "x": 635,
+                    "y": 936,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your Coins: 99999999",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "fontStyle": "bold italic",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
                 }
             ]
         }
@@ -120,6 +138,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

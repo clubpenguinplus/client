@@ -17,6 +17,7 @@ export default class ItemLoader extends SpriteLoader {
     }
 
     loadItems() {
+        if (this.penguin.room.isEmu) return
         for (let slot in this.equipped) {
             let item = this.equipped[slot]
 

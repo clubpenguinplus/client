@@ -7,7 +7,7 @@
         "snapHeight": 260,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "News",
+        "superClassName": "Book",
         "preloadPackFiles": [
             "client/client/media/interface/catalogs/catalogs-master-pack.json",
             "client/client/media/interface/catalogs/waves-pack.json"

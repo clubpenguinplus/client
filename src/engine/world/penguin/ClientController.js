@@ -151,6 +151,10 @@ export default class ClientController {
         return this.interface.main.waddle.activeSeat
     }
 
+    set activeSeat(seat) {
+        this.interface.main.waddle.activeSeat = seat
+    }
+
     get input() {
         return this.interface.main.input
     }
@@ -172,6 +176,7 @@ export default class ClientController {
     }
 
     get isEPF() {
+        if (!this.penguin) return false
         return this.penguin.epfStatus == 1
     }
 
@@ -373,13 +378,7 @@ export default class ClientController {
 
         this.stamps.push(stamp)
         if (!isServerSide) this.airtower.sendXt('st#sse', stamp)
-        this.interface.main.stampEarnedBody.text = this.crumbs.stamps[stamp].name
-        if (this.crumbs.stamps[stamp].groupid == 7) {
-            this.interface.main.stampEarnedImage.setFrame(`stamps/activities000${this.crumbs.stamps[stamp].difficulty.toString()}`)
-        } else {
-            this.interface.main.stampEarnedImage.setFrame(`stamps/events000${this.crumbs.stamps[stamp].difficulty.toString()}`)
-        }
-        this.interface.main.stampTween()
+        this.interface.prompt.showStamp(stamp)
     }
 
     hasItem(item) {
@@ -390,5 +389,80 @@ export default class ClientController {
             }
         }
         return false
+    }
+
+    sendJoinLastRoom() {
+        if (!this.shell.lastRoom || (this.shell.room && this.shell.lastRoom === this.shell.room.id)) {
+            return
+        }
+
+        const room = this.crumbs.scenes.rooms[this.shell.lastRoom]
+
+        if (room) {
+            this.sendJoinRoom(this.shell.lastRoom, room.key, room.x, room.y, 80)
+        }
+    }
+
+    sendMoveToSeat(id, seat, type = 'table') {
+        let container
+
+        switch (type) {
+            case 'table':
+                container = this.shell.room.getTable(id)
+                break
+            case 'waddle':
+                container = this.shell.room.getWaddle(id)
+                break
+        }
+
+        if (!container) {
+            seat = this.shell.room[`seats${id}`][seat - 1]
+        } else {
+            seat = container[`seat${seat}`]
+        }
+
+        console.log(seat)
+
+        if (seat) {
+            this.activeSeat = seat
+
+            let pos = this.getSeatWorldPos(seat)
+            this.sendMove(pos.x, pos.y, seat.sitFrame)
+        } else {
+            this.activeSeat = true
+        }
+    }
+
+    sendMove(x, y, frame = 1) {
+        if (!this.visible || this.isTweening) {
+            return
+        }
+
+        this.penguin.move(x, y, frame)
+    }
+
+    sendLeaveSeat() {
+        if (!this.activeSeat) {
+            return
+        }
+
+        let done = this.activeSeat.donePoint
+
+        if (done) {
+            let pos = this.getSeatWorldPos(done)
+            this.sendMove(pos.x, pos.y)
+        }
+
+        this.activeSeat = null
+        this.shell.events.emit('leftseat')
+    }
+
+    getSeatWorldPos(seat) {
+        let matrix = seat.getWorldTransformMatrix()
+
+        return {
+            x: matrix.getX(0, 0),
+            y: matrix.getY(0, 0)
+        }
     }
 }

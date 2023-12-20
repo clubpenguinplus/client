@@ -19,7 +19,6 @@
             "type": "Image",
             "id": "45c376b0-16f4-4ce4-91c9-05d953d60e72",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "bg"
@@ -27,110 +26,132 @@
             "x": -124.80423540374727,
             "y": 987.0732936798435,
             "originX": 0.0006852446809371995,
-            "originY": 1.0032013740410073
+            "originY": 1.0032013740410073,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "4a6c4ef8-d069-4425-8b7e-109da9c7c4bb",
             "label": "rockstube",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "rockstube"
             },
             "x": 608,
-            "y": 415
+            "y": 415,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "e8d5e695-1c1f-43c1-8e0c-25e82f517d96",
             "label": "pufflewild",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "pufflewild"
             },
             "x": 716,
-            "y": 245
+            "y": 245,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "227ceba7-dc10-4262-b6a5-7028e1117683",
             "label": "lodge",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "lodge"
             },
             "x": 1088,
-            "y": 249
+            "y": 249,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "4c40daba-0c69-4ae2-ae32-5e9515b5201e",
             "label": "buildingtree",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "buildingtree"
             },
             "x": 1362,
-            "y": 512
+            "y": 512,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "0c278e86-5509-485e-8af2-e291e6b046a0",
             "label": "epf",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "epf"
             },
             "x": 1383,
-            "y": 303
+            "y": 303,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Container",
             "id": "45e369a4-d0bc-465d-818d-25dd5932db92",
             "label": "tubelift",
             "scope": "CLASS",
-            "components": [],
             "x": 122,
             "y": 286,
             "scaleX": 0.5,
-            "scaleY": 0.5,
-            "list": []
+            "scaleY": 0.5
         },
         {
             "type": "Sprite",
             "id": "35867a2f-4eb3-4f11-80bc-ce770c4c9981",
             "label": "tubepile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "tubepile0001"
             },
             "x": 499,
-            "y": 443
+            "y": 443,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "b6cd28f6-4e31-41aa-948c-3f14e8e76358",
             "label": "liftramp",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "liftramp"
             },
             "x": 759,
-            "y": 334
+            "y": 334,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "2473504c-897c-4275-986b-1257a48593b4",
             "label": "leftside",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "leftside"
@@ -138,13 +159,16 @@
             "x": 56.80749526416906,
             "y": 467.8430058465068,
             "originX": 0.2363267202866612,
-            "originY": 0.2559405019542914
+            "originY": 0.2559405019542914,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "9999956b-91ee-4100-b865-f34ec512a6e5",
             "label": "fg",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "fg"
@@ -152,13 +176,16 @@
             "x": 816.5228013046404,
             "y": 1031.1123778211133,
             "originX": 0.4943822177265207,
-            "originY": 1.0066426975506708
+            "originY": 1.0066426975506708,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "f88ff9ac-8628-4ce9-8832-6cf37e790d00",
             "label": "rightarrow",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "rightarrow"
@@ -166,7 +193,11 @@
             "x": 1392,
             "y": 632,
             "originX": 0.4609375372502956,
-            "originY": 0.6382210220374185
+            "originY": 0.6382210220374185,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -182,7 +213,11 @@
             "x": 1334.8644190469176,
             "y": 1147.1305145761075,
             "originX": 0.49142336966633593,
-            "originY": 7.249087897527539
+            "originY": 7.249087897527539,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
@@ -202,7 +237,11 @@
             "x": 1322.114776864153,
             "y": 526.7223596297904,
             "originX": 0.32509984367671013,
-            "originY": 0.9420866020273132
+            "originY": 0.9420866020273132,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
@@ -222,13 +261,16 @@
             "x": 1005.5370304938195,
             "y": 400.73710116056884,
             "originX": 0.4481050057420877,
-            "originY": 0.8215963320630062
+            "originY": 0.8215963320630062,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "14a1f16f-237b-4d27-a7af-d265f0256637",
             "label": "leftreeandramp",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "leftreeandramp"
@@ -236,14 +278,17 @@
             "x": 72.44437072569082,
             "y": 720.737628402159,
             "originX": 0.4632254627084889,
-            "originY": 0.6821614522107083
+            "originY": 0.6821614522107083,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
             "id": "9e6750c8-83f7-4e71-8273-3d94ba863860",
             "label": "tours",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "tours"
@@ -251,14 +296,17 @@
             "x": 231.48480710978953,
             "y": 675.1643662178799,
             "originX": 0.6270200296241231,
-            "originY": 0.7870039146644123
+            "originY": 0.7870039146644123,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
             "id": "67cf5927-3e42-42d5-943a-e7e91401d245",
             "label": "toursign_en",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "toursign-en"
@@ -266,29 +314,34 @@
             "x": 235.15781421589907,
             "y": 749.1208021563593,
             "originX": 0.5872172481438145,
-            "originY": 2.461207972926635
+            "originY": 2.461207972926635,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
             "id": "156ace7a-0d7d-45cf-8ce7-fa894be88ec0",
             "label": "arrow",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "arrow"
             },
             "x": 608,
-            "y": 375
+            "y": 375,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Container",
             "id": "e9a65a5b-9a59-4208-9de1-89e3d920f646",
             "label": "skichair",
             "scope": "CLASS",
-            "components": [],
             "x": 261.99604271365615,
-            "y": 410.1601804653192,
-            "list": []
+            "y": 410.1601804653192
         },
         {
             "type": "Rectangle",
@@ -312,7 +365,6 @@
             "type": "Image",
             "id": "ca0b59b7-34f3-42f1-bc3b-93532f0c8a5a",
             "label": "phone_speaker",
-            "components": [],
             "texture": {
                 "key": "village",
                 "frame": "phone_speaker"
@@ -326,7 +378,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

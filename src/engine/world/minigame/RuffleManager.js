@@ -35,6 +35,7 @@ export default class RuffleManager {
         window.getMyPlayerUsername = this.getMyPlayerUsername.bind(this)
         window.startMusicById = this.startMusicById.bind(this)
         window.stampEarned = this.stampEarned.bind(this)
+        window.messageFromRoom = this.messageFromRoom.bind(this)
     }
 
     get io() {
@@ -112,6 +113,7 @@ export default class RuffleManager {
     }
 
     handleLoadMinigame(minigame) {
+        this.loaderIsInit = false
         this.swfInstance = this.rufflePlayer.load({
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
@@ -124,6 +126,7 @@ export default class RuffleManager {
     }
 
     handleLoadOtherSwf(path, params) {
+        this.loaderIsInit = false
         this.swfInstance = this.rufflePlayer.load({
             url: `${this.prefix}client/media/swf/loader.swf`,
             allowScriptAccess: true,
@@ -134,7 +137,14 @@ export default class RuffleManager {
         this.swf = {path: path, params: params}
     }
 
+    handleLoadRoom(room) {
+        this.handleLoadOtherSwf('rooms/' + room, {})
+        this.isRoom = true
+    }
+
     onLoaderInit() {
+        if (this.loaderIsInit) return
+        this.loaderIsInit = true
         var ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
         ruffleplayer.setMediaPath(`${this.prefix}client/media/games/swf/`, `${this.prefix}client/media/swf/`)
         ruffleplayer.style.visibility = 'visible'
@@ -158,6 +168,14 @@ export default class RuffleManager {
         }, 200)
 
         this.swf = {}
+
+        if (this.isRoom) {
+            ruffleplayer.style.zindex = -1
+            document.getElementById('game_canvas').style.zindex = 1
+            document.getElementById('game_canvas').style.position = 'fixed'
+        } else {
+            document.getElementById('game_canvas').style.visibility = 'hidden'
+        }
     }
 
     getMyPlayerHex() {
@@ -168,6 +186,7 @@ export default class RuffleManager {
         var ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
         this.rufflePlayer.pause()
         ruffleplayer.style.visibility = 'hidden'
+        document.getElementById('game_canvas').style.visibility = 'visible'
         let room = this.crumbs.scenes.rooms[roomid]
         this.shell.client.sendJoinRoom(roomid, room.key)
 
@@ -402,5 +421,139 @@ export default class RuffleManager {
 
         this.shell.client.stamps.push(id)
         this.shell.airtower.sendXt('st#sse', id)
+    }
+
+    loadPenguin(penguin) {
+        setTimeout(() => this.lp(penguin), 3000)
+        setTimeout(() => {
+            penguin.visible = true
+        }, 4000)
+    }
+
+    lp(penguin) {
+        penguin = {
+            id: penguin.id,
+            username: penguin.username,
+            color: this.shell.getColor(penguin.color),
+            x: penguin.x / 2,
+            y: penguin.y / 2,
+            head: penguin.head,
+            face: penguin.face,
+            neck: penguin.neck,
+            body: penguin.body,
+            hand: penguin.hand,
+            feet: penguin.feet
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return setTimeout(() => this.loadPenguin(penguin), 100)
+        ruffleplayer.communicateWithRoom({type: 'loadPenguin', penguin})
+    }
+
+    playFrame(pid, frame) {
+        let penguin = {
+            id: pid
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'playPenguinFrame', penguin, frame})
+    }
+
+    setPos(pid, x, y) {
+        let penguin = {
+            id: pid
+        }
+        let pos = {
+            x: x / 2,
+            y: y / 2
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'setPenguinPos', penguin, pos})
+    }
+
+    setColor(pid, color) {
+        let penguin = {
+            id: pid,
+            color: this.shell.getColor(color)
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        console.log(ruffleplayer, penguin)
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinColor', penguin})
+    }
+
+    setHead(pid, head) {
+        let penguin = {
+            id: pid,
+            head: head
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinHead', penguin})
+    }
+
+    setFace(pid, face) {
+        let penguin = {
+            id: pid,
+            face: face
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinFace', penguin})
+    }
+
+    setNeck(pid, neck) {
+        let penguin = {
+            id: pid,
+            neck: neck
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinNeck', penguin})
+    }
+
+    setBody(pid, body) {
+        let penguin = {
+            id: pid,
+            body: body
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinBody', penguin})
+    }
+
+    setHand(pid, hand) {
+        let penguin = {
+            id: pid,
+            hand: hand
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinHand', penguin})
+    }
+
+    setFeet(pid, feet) {
+        let penguin = {
+            id: pid,
+            feet: feet
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'updatePenguinFeet', penguin})
+    }
+
+    removePenguin(pid) {
+        let penguin = {
+            id: pid
+        }
+        let ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
+        if (!ruffleplayer.communicateWithRoom) return
+        ruffleplayer.communicateWithRoom({type: 'removePenguin', penguin})
+    }
+
+    messageFromRoom(message) {
+        if (message == 'hideLoading') {
+            this.shell.room.hideLoading()
+        }
     }
 }

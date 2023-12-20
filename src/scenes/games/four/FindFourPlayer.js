@@ -8,6 +8,10 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
         this.spinner
         /** @type {Phaser.GameObjects.Text} */
         this.waiting
+        /** @type {Phaser.GameObjects.Image} */
+        this.counter
+        /** @type {Phaser.GameObjects.Text} */
+        this.username
 
         // spinner
         const spinner = scene.add.image(0, 0, 'four', 'spinner')
@@ -20,10 +24,27 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
         waiting.setStyle({fixedWidth: 260, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(waiting)
 
+        // counter
+        const counter = scene.add.image(0, 0, 'four', 'counter_1')
+        counter.visible = false
+        this.add(counter)
+
+        // username
+        const username = scene.add.text(40, 0, '', {})
+        username.setOrigin(0, 0.5)
+        username.visible = false
+        username.text = 'USERNAME'
+        username.setStyle({color: '#d5f1ff', fixedWidth: 260, fontFamily: 'CCFaceFront', fontSize: '32px', stroke: '#336699', strokeThickness: 9})
+        this.add(username)
+
         this.spinner = spinner
         this.waiting = waiting
+        this.counter = counter
+        this.username = username
 
         /* START-USER-CTR-CODE */
+
+        this.turnId
 
         // Spinner
         this.spinnerTween = scene.tweens.add({
@@ -34,38 +55,50 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
             ease: 'Cubic'
         })
 
+        this.inactiveColor = username.style.color
+        this.inactiveStroke = username.style.stroke
+
         /* END-USER-CTR-CODE */
     }
 
     /* START-USER-CODE */
 
-    setItem(username, seat) {
-        this.visible = true
-        this.seat = seat ? parseInt(seat) + 1 : 1
+    set(username, turn) {
+        this.turnId = turn
 
-        this.waiting.text = username ? username : 'Waiting for Player'
+        this.spinner.visible = false
+        this.waiting.visible = false
 
-        if (username) {
-            this.stopSpinner()
-            this.spinner.setTexture('four', 'counter_' + this.seat.toString())
-        } else {
-            this.startSpinner()
-        }
+        this.username.text = username.toUpperCase()
+        this.username.visible = true
+
+        this.counter.setFrame(`counter_${turn}`)
+        this.counter.visible = true
     }
 
-    hideItem() {
-        this.visible = false
-        this.stopSpinner()
+    reset() {
+        this.turnId = null
+
+        this.spinner.visible = true
+        this.waiting.visible = true
+
+        this.username.text = ''
+        this.username.visible = false
+
+        this.counter.setFrame('counter_1')
+        this.counter.visible = false
+
+        this.setActive(true)
     }
 
-    startSpinner() {
-        this.spinner.setTexture('four', 'spinner')
-        this.spinnerTween.seek(0)
-        this.spinnerTween.resume()
-    }
+    setActive(reset = null) {
+        let active = reset ? false : this.turnId === this.parentContainer.currentTurn
 
-    stopSpinner() {
-        this.spinnerTween.pause()
+        let color = active ? '#fff' : this.inactiveColor
+        let stroke = active ? '#000' : this.inactiveStroke
+
+        this.username.setColor(color)
+        this.username.setStroke(stroke)
     }
 
     /* END-USER-CODE */

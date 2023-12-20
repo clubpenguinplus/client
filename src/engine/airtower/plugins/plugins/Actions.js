@@ -38,6 +38,11 @@ export default class Actions extends Plugin {
             })
         }
 
+        if (this.room.isEmu) {
+            this.shell.RuffleManager.setPos(args[0], args[1], args[2])
+            this.shell.RuffleManager.playFrame(args[0], 1)
+        }
+
         if (this.room.penguins[args[0]].isClient) return
 
         if (this.room.penguins[args[0]]) {

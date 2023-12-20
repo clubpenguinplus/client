@@ -20,7 +20,6 @@
             "type": "Image",
             "id": "35457aaa-97a7-4ce5-8a8c-50288c3378b3",
             "label": "bg",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "bg"
@@ -34,7 +33,6 @@
             "type": "Image",
             "id": "cdcfe027-9fba-456d-9307-2e7aafea8a0d",
             "label": "pizzabox",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "pizzabox"
@@ -46,7 +44,6 @@
             "type": "Image",
             "id": "724f93d9-dafa-444a-86ed-ea5a38c884dd",
             "label": "leftbluechair",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftbluechair"
@@ -58,7 +55,6 @@
             "type": "Image",
             "id": "513201ba-a197-4f3d-90b5-5d7312d30b03",
             "label": "bluechair",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "bluechair"
@@ -72,7 +68,6 @@
             "type": "Image",
             "id": "96ee913d-c020-4e05-8c56-a8678d293027",
             "label": "rug",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rug"
@@ -86,7 +81,6 @@
             "type": "Image",
             "id": "90566074-0da9-45fb-8991-7bbdd9031cfa",
             "label": "lamp",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "lamp"
@@ -100,7 +94,6 @@
             "type": "Image",
             "id": "3b2d2389-2eb3-4690-952c-ae856d428fcc",
             "label": "pirate_fixed",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "pirate_fixed"
@@ -112,7 +105,6 @@
             "type": "Image",
             "id": "def8d478-a051-4c5d-9c67-da33a2a7285d",
             "label": "paintings",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "paintings"
@@ -124,7 +116,6 @@
             "type": "Image",
             "id": "70455f9c-2420-4398-9558-e1f822b56af2",
             "label": "pufflebag",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "pufflebag"
@@ -136,7 +127,6 @@
             "type": "Image",
             "id": "2d8af1d1-0412-4d24-a937-71aabc54955a",
             "label": "yellowpuffbag",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "yellowpuffbag"
@@ -166,7 +156,6 @@
             "type": "Image",
             "id": "6e9740e2-b3f8-41a8-bb83-6b956c47543b",
             "label": "chairback",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "chairback"
@@ -180,7 +169,6 @@
             "type": "Image",
             "id": "978eca94-bc31-47ed-bfab-a182897197b4",
             "label": "circlestool",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "circlestool"
@@ -193,7 +181,6 @@
             "type": "Image",
             "id": "7294d42f-064f-4920-930d-6b011cc48921",
             "label": "plantable",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "plantable"
@@ -207,7 +194,6 @@
             "type": "Image",
             "id": "46d3517d-8533-4356-b106-84cc8f54645a",
             "label": "squarestool",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "squarestool"
@@ -221,7 +207,6 @@
             "type": "Image",
             "id": "b129cdc8-846f-4d18-b5c7-5193f7445d81",
             "label": "fg_left",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "fg_left"
@@ -235,7 +220,6 @@
             "type": "Image",
             "id": "305d78b7-ea92-40ed-b2cc-8473c6bf17bf",
             "label": "brownchairfront",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "brownchairfront"
@@ -247,7 +231,6 @@
             "type": "Image",
             "id": "932eea53-0702-497e-90cb-6e992ec0343c",
             "label": "brownchair",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "brownchair"
@@ -262,7 +245,6 @@
             "id": "e484bff0-be88-4677-8d31-c6be47a8d8c5",
             "label": "boxdimension",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension"
@@ -295,7 +277,6 @@
             "id": "a1345f1f-e326-4e94-8bbe-6dfe7f11ae55",
             "label": "boxdimension-anim",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension-hover-anim0001"
@@ -311,7 +292,6 @@
             "id": "0389399c-148e-406f-9410-7e5738e7f63f",
             "label": "boxdimension-flaps",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "boxdimension-hover-flaps"
@@ -326,7 +306,6 @@
             "type": "Image",
             "id": "84040747-7635-4ac3-9a30-8c04d0cedfe3",
             "label": "fg_right",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "fg_right"
@@ -340,7 +319,6 @@
             "type": "Image",
             "id": "9aa0d430-ae3b-421a-bd01-7b0f9c6fd49c",
             "label": "frontpizzabox",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "frontpizzabox"
@@ -353,7 +331,6 @@
             "type": "Image",
             "id": "fcaa31de-ba98-4429-a954-99e79e9af82c",
             "label": "leftpencil",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftpencil"
@@ -365,7 +342,6 @@
             "type": "Image",
             "id": "44c16782-8674-42db-aa70-49333dc4dcc9",
             "label": "circlestoolmirror",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "circlestoolmirror"
@@ -378,7 +354,6 @@
             "type": "Image",
             "id": "fd0c1440-8005-447b-8832-2c204d1c335a",
             "label": "leftstairhandle",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftstairhandle"
@@ -392,7 +367,6 @@
             "type": "Image",
             "id": "c71c27bc-1f15-42dd-b06b-e10cb4c0b650",
             "label": "rightstairhandle",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rightstairhandle"
@@ -410,7 +384,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.callback": "() => this.triggerWaddle(110)",
+            "Button.callback": "() => this.triggerWaddle(200)",
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -427,7 +401,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.callback": "() => this.triggerWaddle(109)",
+            "Button.callback": "() => this.triggerWaddle(201)",
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -444,7 +418,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.callback": "() => this.triggerWaddle(107)",
+            "Button.callback": "() => this.triggerWaddle(203)",
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -462,7 +436,7 @@
                 "Button",
                 "ShowHint"
             ],
-            "Button.callback": "() => this.triggerWaddle(108)",
+            "Button.callback": "() => this.triggerWaddle(202)",
             "ShowHint.text": "four",
             "texture": {
                 "key": "attic",
@@ -476,7 +450,6 @@
             "type": "Image",
             "id": "4eb2140a-9ba7-48c8-839d-0f4408d1d438",
             "label": "leftsoda",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "leftsoda"
@@ -490,7 +463,6 @@
             "type": "Image",
             "id": "b5d2ceca-0326-4ec8-8045-48b0756ada70",
             "label": "rightpencil",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rightpencil"
@@ -502,7 +474,6 @@
             "type": "Image",
             "id": "8e3180dd-9ece-498e-9993-3ff75eac5598",
             "label": "apple",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "apple"
@@ -514,7 +485,6 @@
             "type": "Image",
             "id": "2e3edcd1-a29a-4e08-819c-64830ee98385",
             "label": "book",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "book"
@@ -526,7 +496,6 @@
             "type": "Image",
             "id": "efbcbdf8-0ced-4188-a2cb-72ad3fbc0d92",
             "label": "rightsoda",
-            "components": [],
             "texture": {
                 "key": "attic",
                 "frame": "rightsoda"
@@ -764,7 +733,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {
@@ -798,7 +767,7 @@
         },
         {
             "id": "f4cf2ecf-108c-46c2-81cd-330254e03671",
-            "label": "seats107",
+            "label": "seats203",
             "objectIds": [
                 "a3162ced-a697-46de-b527-ab4a86f728f6",
                 "d06194fb-f6c9-4834-89f3-f0c6e776fbe3"
@@ -806,7 +775,7 @@
         },
         {
             "id": "dbdce0db-f998-48e7-8c1a-62f6f58f751c",
-            "label": "seats108",
+            "label": "seats202",
             "objectIds": [
                 "931d2c55-1129-4788-b56f-ad18882f1f4e",
                 "e7f05e21-f1c1-437e-8994-933647630750"
@@ -814,7 +783,7 @@
         },
         {
             "id": "9c24a3c0-ce51-4e9e-8ed2-17772238c8a8",
-            "label": "seats109",
+            "label": "seats201",
             "objectIds": [
                 "d253161d-30ad-4d74-a8cd-418d234ac9f7",
                 "0a229ee6-d09a-45fa-8be9-76daa40c4606"
@@ -822,7 +791,7 @@
         },
         {
             "id": "d70cfdc7-9859-40b4-a0af-0948126eea6c",
-            "label": "seats110",
+            "label": "seats200",
             "objectIds": [
                 "368e9356-d097-4b5d-99b9-57501edbab7d",
                 "18ac4c46-e3a2-4120-8306-bfebe14c5516"

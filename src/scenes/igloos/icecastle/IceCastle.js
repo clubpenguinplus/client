@@ -35,10 +35,18 @@ export default class IceCastle extends IglooScene {
         this.add.image(760, 634, 'icecastle', 'bg-lower')
 
         // door
-        this.add.image(755, 551, 'icecastle', 'door')
+        const door = this.add.image(758.8427484645825, 639.3832146853995, 'icecastle', 'door')
+        door.setOrigin(0.5202249919188555, 0.9532472547969204)
 
         // floor
         const floor = this.add.image(760, 480, 'icecastle', 'bg-upper')
+
+        // fg
+        this.add.image(760, 480, 'icecastle', 'fg')
+
+        // door (components)
+        new Button(door)
+        new MoveTo(door)
 
         this.floor = floor
 

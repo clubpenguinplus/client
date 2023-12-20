@@ -5,6 +5,7 @@
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
+        "autoImport": true,
         "superClassName": "BaseContainer",
         "preloadMethodName": "",
         "preloadPackFiles": [],
@@ -17,16 +18,23 @@
             "type": "Container",
             "id": "460fe828-2a5c-48b5-8e64-374780777136",
             "label": "container_1",
-            "components": [],
             "x": 760,
             "y": 480,
             "list": [
                 {
                     "type": "Image",
+                    "id": "13a92a5e-3ca1-4352-a27b-7613c2243d6b",
+                    "label": "waddle_item",
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/item"
+                    }
+                },
+                {
+                    "type": "Image",
                     "id": "93bfe9fd-2100-410e-928f-454002f9117d",
                     "label": "icon",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "buddy/icon-load"
@@ -38,7 +46,6 @@
                     "id": "730363a5-60c9-4711-80a6-53256a41c9bd",
                     "label": "username",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 25,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -55,6 +62,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

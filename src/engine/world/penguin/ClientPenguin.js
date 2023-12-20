@@ -69,6 +69,7 @@ export default class ClientPenguin extends Penguin {
         if (path) {
             this.addMoveTween(path)
             this.airtower.sendXt('u#sp', `${x}%${y}`)
+            this.scene.events.emit('move_start', {x: x, y: y})
         }
 
         return {x, y}
@@ -79,6 +80,8 @@ export default class ClientPenguin extends Penguin {
 
         super.onMoveComplete()
         this.isTrigger()
+
+        this.scene.events.emit('move_end')
     }
 
     isTrigger() {

@@ -3,6 +3,9 @@
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "autoImport": true,
         "superClassName": "BaseContainer",
         "preloadMethodName": "",
         "preloadPackFiles": [],
@@ -15,38 +18,28 @@
             "type": "Container",
             "id": "9334ff58-067c-40e2-9b3d-1b299b91db6c",
             "label": "container_1",
-            "components": [],
-            "x": 762.7999091536982,
-            "y": 493.71355027564255,
             "list": [
                 {
                     "type": "Image",
                     "id": "523eb17a-5183-41e2-9689-839e81be5d45",
                     "label": "shadow",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "sled",
                         "frame": "player/shadow"
-                    },
-                    "x": -2.799923880965366,
-                    "y": -13.713563346765511
+                    }
                 },
                 {
                     "type": "Container",
-                    "id": "316e4e92-d640-4231-8de8-b1a6ad3bf6c2",
-                    "label": "art",
+                    "id": "7318985e-1f9e-491b-9d43-b9bf9daff2c3",
+                    "label": "character",
                     "scope": "CLASS",
-                    "components": [],
-                    "x": -2.799923880965366,
-                    "y": -13.713563346765511,
                     "list": [
                         {
                             "type": "Sprite",
-                            "id": "2285862c-5e53-4a2f-ae24-0d7addbfe60e",
+                            "id": "1c9358a4-54e5-4936-8687-bea28faebd38",
                             "label": "sled",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "sled",
                                 "frame": "player/tube/1/sled"
@@ -55,10 +48,9 @@
                         },
                         {
                             "type": "Sprite",
-                            "id": "b3e4973f-7ee3-45f4-b2d1-092b08057f26",
+                            "id": "0f09eeaf-fc93-4d85-a884-a60f4538b08d",
                             "label": "body",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "sled",
                                 "frame": "player/tube/1/body"
@@ -66,10 +58,9 @@
                         },
                         {
                             "type": "Sprite",
-                            "id": "c9f5b708-bac1-4b8d-82d7-457c1fdbc914",
+                            "id": "7ed04b1a-8c65-4f95-a461-b9e1c87ff89e",
                             "label": "penguin",
                             "scope": "CLASS",
-                            "components": [],
                             "texture": {
                                 "key": "sled",
                                 "frame": "player/tube/1/penguin"
@@ -77,14 +68,11 @@
                         },
                         {
                             "type": "Text",
-                            "id": "2d63e98f-8336-41a3-9ddf-836d891f04d4",
+                            "id": "420c4e5e-c3bc-470a-8c2e-97ee49696531",
                             "label": "username",
                             "scope": "CLASS",
-                            "components": [],
-                            "x": 3,
-                            "y": -50,
+                            "y": -91,
                             "originX": 0.5,
-                            "originY": 1,
                             "text": "Username",
                             "fixedWidth": 200,
                             "align": "center",
@@ -102,18 +90,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
-    },
-    "prefabProperties": [
-        {
-            "name": "fixedX",
-            "label": "fixedX",
-            "tooltip": "fixedX",
-            "defValue": 0,
-            "customDefinition": false,
-            "type": {
-                "id": "number"
-            }
-        }
-    ]
+        "version": 4
+    }
 }

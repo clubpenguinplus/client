@@ -38,6 +38,9 @@ export default class IceCastle extends IglooScene {
         // door
         this.add.image(755, 551, 'icecastle', 'door')
 
+        // fg
+        const fg = this.add.image(760, 480, 'icecastle', 'fg')
+
         // floor
         const floor = this.add.image(760, 480, 'icecastle', 'bg-upper')
 
