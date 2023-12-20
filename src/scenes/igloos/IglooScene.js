@@ -138,10 +138,8 @@ export default class IglooScene extends RoomScene {
         this.shell.interface.loadExternal('IglooLikesWidget')
 
         this.interface.showInterface()
-        setTimeout(() => {
-            this.interface.main.safetyquiz.visible = false
-            this.interface.main.moderatoricon.visible = false
-        }, 100)
+        if (this.interface.main.safetyquiz) this.interface.main.safetyquiz.visible = false
+        if (this.interface.main.moderatoricon) this.interface.main.moderatoricon.visible = false
 
         this.likesWidget = this.scene.get('IglooLikesWidget')
     }

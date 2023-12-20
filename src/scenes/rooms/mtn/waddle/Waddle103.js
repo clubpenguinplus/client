@@ -25,6 +25,10 @@ export default class Waddle103 extends BaseContainer {
         // barrier
         const barrier = scene.add.image(66, 29, 'mtn', 'barrier_7')
         barrier.setOrigin(0.5, 0.45901639344262296)
+        barrier.tintTopLeft = 10396607
+        barrier.tintTopRight = 10396607
+        barrier.tintBottomLeft = 10396607
+        barrier.tintBottomRight = 10396607
         this.add(barrier)
 
         // done1

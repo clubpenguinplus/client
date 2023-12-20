@@ -61,6 +61,14 @@ export default class RoomScene extends BaseScene {
         if (this.waddles) this.sendGetWaddles()
 
         this.interface.showInterface()
+        if (this.isIgloo) {
+            if (this.interface.main.coinforchange) this.interface.main.coinforchange.visible = false
+            if (this.interface.main.safetyquiz) this.interface.main.safetyquiz.visible = false
+            if (this.interface.main.moderatoricon) this.interface.main.moderatoricon.visible = false
+        } else {
+            if (this.interface.main.coinforchange) this.interface.main.coinforchange.visible = true
+            if (this.interface.main.moderatoricon) this.interface.main.showTR()
+        }
 
         if (this.crumbs.pin.id && this.crumbs.pin.room == this.id) this.interface.addPin()
 

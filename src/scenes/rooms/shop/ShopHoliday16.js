@@ -1,4 +1,5 @@
 import RuffleRoom from '@scenes/rooms/RuffleRoom'
+import {Button} from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -16,7 +17,20 @@ export default class ShopHoliday16 extends RuffleRoom {
 
     // Write your code here
 
-    _create() {}
+    _create() {
+        const catalog_en = this.add.sprite(1340, 1055, 'shop', 'catalog-en')
+        catalog_en.setOrigin(0, 2)
+        this.add.existing(catalog_en)
+
+        const catalog_enButton = new Button(catalog_en)
+        catalog_enButton.hoverCallback = () => this.shell.musicController.addSfx('book-bookopen')
+        catalog_enButton.hoverOutCallback = () => this.shell.musicController.addSfx('book-bookclose')
+        catalog_enButton.callback = () => this.showClothingCat()
+        catalog_enButton.pixelPerfect = true
+        catalog_enButton.isLocalised = true
+
+        this.sort = [catalog_en]
+    }
 
     _preload() {
         this.load.pack('shop-pack', 'client/media/rooms/shop/shop-pack.json')
@@ -32,6 +46,10 @@ export default class ShopHoliday16 extends RuffleRoom {
         setTimeout(() => {
             this.startRoom()
         }, 50)
+    }
+
+    showClothingCat() {
+        this.interface.loadExternal('ClothingCatalog')
     }
 
     /* END-USER-CODE */

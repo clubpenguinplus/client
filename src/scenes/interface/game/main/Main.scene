@@ -928,6 +928,21 @@
             "visible": false
         },
         {
+            "type": "Image",
+            "id": "a5b11c86-180b-4c14-9394-6ddb937fb951",
+            "label": "coinforchange",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Cfc')",
+            "texture": {
+                "key": "coinforchange"
+            },
+            "x": 1321,
+            "y": 74
+        },
+        {
             "type": "Rectangle",
             "id": "188d6944-ef9f-4160-ae5b-55ba22831852",
             "label": "blocker",

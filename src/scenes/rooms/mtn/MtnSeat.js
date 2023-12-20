@@ -12,6 +12,10 @@ export default class MtnSeat extends Phaser.GameObjects.Image {
         this.direction = 'sw'
 
         this.setOrigin(0.504950495049505, 0.37662337662337664)
+        this.tintTopLeft = 10396607
+        this.tintTopRight = 10396607
+        this.tintBottomLeft = 10396607
+        this.tintBottomRight = 10396607
 
         /* START-USER-CTR-CODE */
         setTimeout(() => this.setDirFrame, 10)

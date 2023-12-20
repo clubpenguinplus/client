@@ -61,22 +61,44 @@ export default class Mtn extends RoomScene {
     /** @returns {void} */
     _create() {
         // mtnbg
-        this.add.image(760, 480, 'mtn', 'mtnbg')
+        const mtnbg = this.add.image(760, 480, 'mtn', 'mtnbg')
+        mtnbg.tintTopLeft = 4206962
+        mtnbg.tintTopRight = 4206962
 
         // skichairback
         const skichairback = this.add.sprite(1293, 422, 'mtn', 'skichair0160')
+        skichairback.tintTopLeft = 10396607
+        skichairback.tintTopRight = 10396607
+        skichairback.tintBottomLeft = 10396607
+        skichairback.tintBottomRight = 10396607
 
         // skichairtopback
         const skichairtopback = this.add.sprite(470, 142, 'mtn', 'skichairtopback0001')
+        skichairtopback.tintTopLeft = 10396607
+        skichairtopback.tintTopRight = 10396607
+        skichairtopback.tintBottomLeft = 10396607
+        skichairtopback.tintBottomRight = 10396607
 
         // skichairfront
         const skichairfront = this.add.sprite(1285, 414, 'mtn', 'skichair0001')
+        skichairfront.tintTopLeft = 10396607
+        skichairfront.tintTopRight = 10396607
+        skichairfront.tintBottomLeft = 10396607
+        skichairfront.tintBottomRight = 10396607
 
         // mountain
-        this.add.image(760, 480, 'mtn', 'mountain')
+        const mountain = this.add.image(760, 480, 'mtn', 'mountain')
+        mountain.tintTopLeft = 10396607
+        mountain.tintTopRight = 10396607
+        mountain.tintBottomLeft = 10396607
+        mountain.tintBottomRight = 10396607
 
         // concrete
-        this.add.image(952, 337, 'mtn', 'concrete')
+        const concrete = this.add.image(952, 337, 'mtn', 'concrete')
+        concrete.tintTopLeft = 10396607
+        concrete.tintTopRight = 10396607
+        concrete.tintBottomLeft = 10396607
+        concrete.tintBottomRight = 10396607
 
         // waddle103
         const waddle103 = new Waddle103(this, 1040, 586)
@@ -95,41 +117,89 @@ export default class Mtn extends RoomScene {
         this.add.existing(waddle100)
 
         // liftwheel
-        this.add.image(666, 143, 'mtn', 'liftwheel')
+        const liftwheel = this.add.image(666, 143, 'mtn', 'liftwheel')
+        liftwheel.tintTopLeft = 10396607
+        liftwheel.tintTopRight = 10396607
+        liftwheel.tintBottomLeft = 10396607
+        liftwheel.tintBottomRight = 10396607
 
         // blue_circles
-        this.add.image(478, 586, 'mtn', 'blue_circles')
+        const blue_circles = this.add.image(478, 586, 'mtn', 'blue_circles')
+        blue_circles.tintTopLeft = 10396607
+        blue_circles.tintTopRight = 10396607
+        blue_circles.tintBottomLeft = 10396607
+        blue_circles.tintBottomRight = 10396607
 
         // green_circles
-        this.add.image(1210, 550, 'mtn', 'green_circles')
+        const green_circles = this.add.image(1210, 550, 'mtn', 'green_circles')
+        green_circles.tintTopLeft = 10396607
+        green_circles.tintTopRight = 10396607
+        green_circles.tintBottomLeft = 10396607
+        green_circles.tintBottomRight = 10396607
 
         // skichairtopfront
         const skichairtopfront = this.add.sprite(505, 151, 'mtn', 'skichairtopfront0001')
+        skichairtopfront.tintTopLeft = 10396607
+        skichairtopfront.tintTopRight = 10396607
+        skichairtopfront.tintBottomLeft = 10396607
+        skichairtopfront.tintBottomRight = 10396607
 
         // hut_back
-        this.add.image(1044, 262, 'mtn', 'hut_back')
+        const hut_back = this.add.image(1044, 262, 'mtn', 'hut_back')
+        hut_back.tintTopLeft = 10396607
+        hut_back.tintTopRight = 10396607
+        hut_back.tintBottomLeft = 10396607
+        hut_back.tintBottomRight = 10396607
 
         // hut
         const hut = this.add.image(1073.817548829116, 321.96074095961126, 'mtn', 'hut')
         hut.setOrigin(0.4186582388937918, 0.8898691418112477)
+        hut.tintTopLeft = 10396607
+        hut.tintTopRight = 10396607
+        hut.tintBottomLeft = 10396607
+        hut.tintBottomRight = 10396607
 
         // green_squares
-        this.add.image(1019, 662, 'mtn', 'green_squares')
+        const green_squares = this.add.image(1019, 662, 'mtn', 'green_squares')
+        green_squares.tintTopLeft = 10396607
+        green_squares.tintTopRight = 10396607
+        green_squares.tintBottomLeft = 10396607
+        green_squares.tintBottomRight = 10396607
 
         // tubestuckleftest
-        this.add.image(355, 358, 'mtn', 'tubestuckleftest')
+        const tubestuckleftest = this.add.image(355, 358, 'mtn', 'tubestuckleftest')
+        tubestuckleftest.tintTopLeft = 10396607
+        tubestuckleftest.tintTopRight = 10396607
+        tubestuckleftest.tintBottomLeft = 10396607
+        tubestuckleftest.tintBottomRight = 10396607
 
         // tubetop
-        this.add.image(551, 206, 'mtn', 'tubetop')
+        const tubetop = this.add.image(551, 206, 'mtn', 'tubetop')
+        tubetop.tintTopLeft = 10396607
+        tubetop.tintTopRight = 10396607
+        tubetop.tintBottomLeft = 10396607
+        tubetop.tintBottomRight = 10396607
 
         // tubeundercat
-        this.add.image(515, 255, 'mtn', 'tubeundercat')
+        const tubeundercat = this.add.image(515, 255, 'mtn', 'tubeundercat')
+        tubeundercat.tintTopLeft = 10396607
+        tubeundercat.tintTopRight = 10396607
+        tubeundercat.tintBottomLeft = 10396607
+        tubeundercat.tintBottomRight = 10396607
 
         // bench
-        this.add.image(559, 299, 'mtn', 'bench')
+        const bench = this.add.image(559, 299, 'mtn', 'bench')
+        bench.tintTopLeft = 10396607
+        bench.tintTopRight = 10396607
+        bench.tintBottomLeft = 10396607
+        bench.tintBottomRight = 10396607
 
         // ski_cat
         const ski_cat = this.add.sprite(486, 172, 'mtn', 'ski_cat0001')
+        ski_cat.tintTopLeft = 10396607
+        ski_cat.tintTopRight = 10396607
+        ski_cat.tintBottomLeft = 10396607
+        ski_cat.tintBottomRight = 10396607
 
         // skicatbottom
         const skicatbottom = this.add.image(1451, 896, 'mtn', 'skicatbottom')

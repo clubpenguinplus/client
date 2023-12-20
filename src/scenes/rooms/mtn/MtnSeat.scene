@@ -21,7 +21,11 @@
                 "frame": "seat"
             },
             "originX": 0.504950495049505,
-            "originY": 0.37662337662337664
+            "originY": 0.37662337662337664,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         }
     ],
     "plainObjects": [],

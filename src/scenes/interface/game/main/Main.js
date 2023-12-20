@@ -151,6 +151,8 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
+        /** @type {Phaser.GameObjects.Image} */
+        this.coinforchange
         /** @type {Phaser.GameObjects.Rectangle} */
         this.blocker
         /** @type {Friend} */
@@ -423,6 +425,9 @@ export default class Main extends BaseScene {
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
 
+        // coinforchange
+        const coinforchange = this.add.image(1321, 74, 'coinforchange')
+
         // blocker
         const blocker = this.add.rectangle(760, 480, 1520, 960)
         blocker.visible = false
@@ -666,6 +671,10 @@ export default class Main extends BaseScene {
         const moderatoriconButton = new Button(moderatoricon)
         moderatoriconButton.callback = () => this.onModClick()
 
+        // coinforchange (components)
+        const coinforchangeSimpleButton = new SimpleButton(coinforchange)
+        coinforchangeSimpleButton.callback = () => this.interface.loadExternal('Cfc')
+
         // blocker (components)
         new Interactive(blocker)
 
@@ -729,6 +738,7 @@ export default class Main extends BaseScene {
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
+        this.coinforchange = coinforchange
         this.blocker = blocker
         this.friend = friend
         this.playerCard = playerCard

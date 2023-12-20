@@ -1,0 +1,570 @@
+{
+    "id": "f860e61d-3876-42e2-9fa7-cf8992eb84ce",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/party1/holiday13/party1holiday13-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Party1Holiday13",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "4278f163-324f-45fb-9609-0faf462b341d",
+            "label": "bg",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "db6dab30-bdb0-46f2-ad76-bcd4a187e093",
+            "label": "wallpresenets",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "wallpresenets"
+            },
+            "x": 1435.7581577304609,
+            "y": 320.34285284390216,
+            "originX": 0.9445777353489874,
+            "originY": 0.3336904717123981
+        },
+        {
+            "type": "Image",
+            "id": "489dfc39-da21-40e7-b0f9-d5623397438f",
+            "label": "divider",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "divider"
+            },
+            "x": 455.53753333023195,
+            "y": 795.6013374015888,
+            "originX": 0.2996957456119947,
+            "originY": 0.828751393126655
+        },
+        {
+            "type": "Image",
+            "id": "2b9f048b-edc6-4304-a8c5-6ab875c01d51",
+            "label": "divider2",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "divider2"
+            },
+            "x": 1066.3189451250714,
+            "y": 851.2956910606927,
+            "originX": 0.7015256217928102,
+            "originY": 0.8867663448548881
+        },
+        {
+            "type": "Image",
+            "id": "55bc7dc4-d424-408d-8a00-6b2257f5adbe",
+            "label": "platform",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "platform"
+            },
+            "x": 761.8564784553035,
+            "y": 413.16677560907533,
+            "originX": 0.5012213674048049,
+            "originY": 0.4303820579261201
+        },
+        {
+            "type": "Image",
+            "id": "4887f862-694f-4577-a598-5a2f271763fc",
+            "label": "present1",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "present1"
+            },
+            "x": 420.2644426794662,
+            "y": 454.0093016257515,
+            "originX": 0.27648976492070143,
+            "originY": 0.4729263558601578
+        },
+        {
+            "type": "Image",
+            "id": "18e757b1-f2da-471c-9733-5e1659c9a657",
+            "label": "present2",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "present2"
+            },
+            "x": 468.53288251735614,
+            "y": 513.4166121954623,
+            "originX": 0.30824531744562905,
+            "originY": 0.5348089710369399
+        },
+        {
+            "type": "Image",
+            "id": "6df27015-5622-4ffd-9852-0b62c7b2521c",
+            "label": "present3",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "present3"
+            },
+            "x": 425.83387804537654,
+            "y": 539.4073105697108,
+            "originX": 0.28015386713511614,
+            "originY": 0.5618826151767821
+        },
+        {
+            "type": "Image",
+            "id": "97ec8df8-0689-4a30-aeac-499c22d96962",
+            "label": "present4",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "present4"
+            },
+            "x": 1506.3043390319922,
+            "y": 775.1800743932507,
+            "originX": 0.9909896967315738,
+            "originY": 0.8074792441596361
+        },
+        {
+            "type": "Image",
+            "id": "a90958a7-ea3a-4224-8af4-f42fbd6ecd94",
+            "label": "rear",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "rear"
+            },
+            "x": 1006.9116345553607,
+            "y": 699.0644577258087,
+            "originX": 0.6624418648390531,
+            "originY": 0.728192143464384
+        },
+        {
+            "type": "Image",
+            "id": "17cfb29a-7f38-40cb-845d-04a1b3378733",
+            "label": "sidepresents",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "sidepresents"
+            },
+            "x": 19.265096333917995,
+            "y": 593.2451857735113,
+            "originX": 0.012674405482840786,
+            "originY": 0.6179637351807409
+        },
+        {
+            "type": "Image",
+            "id": "63543a1a-b710-49bf-ac82-293bb3e06497",
+            "label": "suitcase",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "suitcase"
+            },
+            "x": 1107.1614711417476,
+            "y": 500.42126300833803,
+            "originX": 0.7283957046985181,
+            "originY": 0.5212721489670188
+        },
+        {
+            "type": "Image",
+            "id": "c4ffec78-5b16-4d98-939d-206dd96f262c",
+            "label": "thing",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "thing"
+            },
+            "x": 492.66710243630126,
+            "y": 429.8750817068065,
+            "originX": 0.32412309370809295,
+            "originY": 0.4477865434445901
+        },
+        {
+            "type": "Image",
+            "id": "0b70da56-6900-4699-ade8-e14b3b19a4fc",
+            "label": "thing2",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "thing2"
+            },
+            "x": 1045.8976821167334,
+            "y": 426.1621247961996,
+            "originX": 0.6880905803399562,
+            "originY": 0.44391887999604124
+        },
+        {
+            "type": "Image",
+            "id": "7d26786b-cc5e-45bf-b77c-3722752713cd",
+            "label": "thingy",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "thingy"
+            },
+            "x": 1217.9554534126971,
+            "y": 498.71474840818246,
+            "originX": 0.8012865023790244,
+            "originY": 0.519494546343424
+        },
+        {
+            "type": "Image",
+            "id": "9fe1b16e-2be9-41ed-a86b-8abe65b540a1",
+            "label": "ticketoffice",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "ticketoffice"
+            },
+            "x": 329.29699836959645,
+            "y": 585.8192719522974,
+            "originX": 0.21664276208526081,
+            "originY": 0.6102284082836431
+        },
+        {
+            "type": "Image",
+            "id": "50e82407-e5d6-4eab-8dbd-714fb00df443",
+            "label": "ticketoffice2",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "ticketoffice2"
+            },
+            "x": 178.92224349001594,
+            "y": 626.6617979689736,
+            "originX": 0.11771200229606311,
+            "originY": 0.6527727062176808
+        },
+        {
+            "type": "Image",
+            "id": "2984d87d-5080-466d-a0b8-8308289db09f",
+            "label": "desk",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "desk"
+            },
+            "x": 1242.6843983789006,
+            "y": 615.5229272371528,
+            "originX": 0.8175555252492767,
+            "originY": 0.6411697158720341
+        },
+        {
+            "type": "Image",
+            "id": "636f4358-3fdc-4688-a534-833569a2ebd8",
+            "label": "conveyor",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "conveyor"
+            },
+            "x": 1415.3368947221227,
+            "y": 557.9720951227455,
+            "originX": 0.9311426938961334,
+            "originY": 0.5812209324195265
+        },
+        {
+            "type": "Image",
+            "id": "a3f2a40c-fb49-4809-9b59-a943278d2fe0",
+            "label": "barrier",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "barrier"
+            },
+            "x": 722.8704308939307,
+            "y": 760.3282467508229,
+            "originX": 0.47557265190390174,
+            "originY": 0.7920085903654406
+        },
+        {
+            "type": "Image",
+            "id": "07c29a17-7f46-44fd-8bad-1f2dddd9a739",
+            "label": "barrieroffice",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "barrieroffice"
+            },
+            "x": 1019.906983742485,
+            "y": 832.7309065076581,
+            "originX": 0.6709914366726875,
+            "originY": 0.8674280276121439
+        },
+        {
+            "type": "Image",
+            "id": "455fe5e0-ee65-4c71-9216-f72c7d43f029",
+            "label": "barrierr",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "barrierr"
+            },
+            "x": 938.2219317091325,
+            "y": 758.4717682955195,
+            "originX": 0.6172512708612714,
+            "originY": 0.7900747586411662
+        },
+        {
+            "type": "Image",
+            "id": "71398bcb-b8be-4ffe-9331-c2fb3f320d7d",
+            "label": "cane",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "cane"
+            },
+            "x": 990.2033284576295,
+            "y": 472.57408617878616,
+            "originX": 0.6514495581958089,
+            "originY": 0.49226467310290223
+        },
+        {
+            "type": "Image",
+            "id": "90c8cedf-4c8f-4206-a691-ef1928dfd296",
+            "label": "cane2",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "cane2"
+            },
+            "x": 533.5096284529775,
+            "y": 463.29169390226883,
+            "originX": 0.350993176613801,
+            "originY": 0.48259551448153004
+        },
+        {
+            "type": "Image",
+            "id": "16dc620f-2688-4620-9532-4168b5f296d9",
+            "label": "cane4",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "cane4"
+            },
+            "x": 1493.308989844868,
+            "y": 706.4903715470225,
+            "originX": 0.9824401248979394,
+            "originY": 0.7359274703614818
+        },
+        {
+            "type": "Image",
+            "id": "1a4b3415-9b8d-41b8-a58d-8790c749aee3",
+            "label": "starry",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "starry"
+            },
+            "x": 58.25114389529074,
+            "y": 656.3654532538291,
+            "originX": 0.03832312098374391,
+            "originY": 0.6837140138060719
+        },
+        {
+            "type": "Image",
+            "id": "c2d4806e-b2b4-4e0e-83ca-735d38e08ec4",
+            "label": "cane3",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "cane3"
+            },
+            "x": 61.964100805897715,
+            "y": 751.0458544743057,
+            "originX": 0.04076585579335376,
+            "originY": 0.7823394317440684
+        },
+        {
+            "type": "Container",
+            "id": "31a7f376-bf59-402e-88f4-e9ece3df06c3",
+            "label": "container_1",
+            "x": 247,
+            "y": 460,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7a965ba1-9932-489f-9c58-41897b3481be",
+                    "label": "cointotal",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "cointotal"
+                    },
+                    "x": 513,
+                    "y": 19
+                },
+                {
+                    "type": "Sprite",
+                    "id": "29024cd8-605f-4e78-a74b-48ac2ec6da7a",
+                    "label": "digit0001",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": 107,
+                    "y": -78
+                },
+                {
+                    "type": "Sprite",
+                    "id": "697474a5-13a1-4b75-b206-9565c1f05315",
+                    "label": "digit",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": 80,
+                    "y": -73
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e64a16f2-ca6e-481b-a397-bac011975cf6",
+                    "label": "digit_1",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": 53,
+                    "y": -69
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8d8bfd0b-6a52-442b-ba12-d262a238d17d",
+                    "label": "digit_2",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": 26,
+                    "y": -65
+                },
+                {
+                    "type": "Sprite",
+                    "id": "cc010cc2-d212-4f7a-a468-37d85a554967",
+                    "label": "digit_3",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": -1,
+                    "y": -60
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dcc1efa8-84d4-45b2-bb6e-dfc28167a863",
+                    "label": "digit_4",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": -28,
+                    "y": -55
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8cf08ad7-a916-436b-a763-1a88a63948ef",
+                    "label": "digit_5",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": -55,
+                    "y": -51
+                },
+                {
+                    "type": "Sprite",
+                    "id": "fb5dd588-2957-4761-b2e4-220e75d3c38a",
+                    "label": "digit_6",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": -82,
+                    "y": -46
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1d22eb34-8ad1-42ee-8f52-9ef5bf02c7df",
+                    "label": "digit_7",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": -109,
+                    "y": -41
+                },
+                {
+                    "type": "Sprite",
+                    "id": "aab2a879-d36d-4558-88b8-df8b43d8b75f",
+                    "label": "digit_8",
+                    "texture": {
+                        "key": "party1holiday13",
+                        "frame": "digit0001"
+                    },
+                    "x": -136,
+                    "y": -36
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "6f3df416-79f4-4ed1-8afb-827847e7e995",
+            "label": "fg",
+            "texture": {
+                "key": "party1holiday13",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 963.5026701585379,
+            "originY": 1.0036486147484769
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "3e5a1cf2-75d9-48d9-9daa-8dc6fc008ee8",
+            "label": "sort",
+            "objectIds": [
+                "31a7f376-bf59-402e-88f4-e9ece3df06c3",
+                "1a4b3415-9b8d-41b8-a58d-8790c749aee3",
+                "16dc620f-2688-4620-9532-4168b5f296d9",
+                "c2d4806e-b2b4-4e0e-83ca-735d38e08ec4",
+                "90c8cedf-4c8f-4206-a691-ef1928dfd296",
+                "71398bcb-b8be-4ffe-9331-c2fb3f320d7d",
+                "455fe5e0-ee65-4c71-9216-f72c7d43f029",
+                "07c29a17-7f46-44fd-8bad-1f2dddd9a739",
+                "a3f2a40c-fb49-4809-9b59-a943278d2fe0",
+                "636f4358-3fdc-4688-a534-833569a2ebd8",
+                "2984d87d-5080-466d-a0b8-8308289db09f",
+                "50e82407-e5d6-4eab-8dbd-714fb00df443",
+                "9fe1b16e-2be9-41ed-a86b-8abe65b540a1",
+                "7d26786b-cc5e-45bf-b77c-3722752713cd",
+                "0b70da56-6900-4699-ade8-e14b3b19a4fc",
+                "c4ffec78-5b16-4d98-939d-206dd96f262c",
+                "63543a1a-b710-49bf-ac82-293bb3e06497",
+                "17cfb29a-7f38-40cb-845d-04a1b3378733",
+                "a90958a7-ea3a-4224-8af4-f42fbd6ecd94",
+                "97ec8df8-0689-4a30-aeac-499c22d96962",
+                "6df27015-5622-4ffd-9852-0b62c7b2521c",
+                "18e757b1-f2da-471c-9733-5e1659c9a657",
+                "4887f862-694f-4577-a598-5a2f271763fc",
+                "55bc7dc4-d424-408d-8a00-6b2257f5adbe",
+                "2b9f048b-edc6-4304-a8c5-6ab875c01d51",
+                "489dfc39-da21-40e7-b0f9-d5623397438f",
+                "db6dab30-bdb0-46f2-ad76-bcd4a187e093",
+                "6f3df416-79f4-4ed1-8afb-827847e7e995"
+            ]
+        },
+        {
+            "id": "fad1daf5-a9c1-4ca2-8acb-05d76b5f6dae",
+            "label": "displays",
+            "objectIds": [
+                "29024cd8-605f-4e78-a74b-48ac2ec6da7a",
+                "aab2a879-d36d-4558-88b8-df8b43d8b75f",
+                "1d22eb34-8ad1-42ee-8f52-9ef5bf02c7df",
+                "fb5dd588-2957-4761-b2e4-220e75d3c38a",
+                "8cf08ad7-a916-436b-a763-1a88a63948ef",
+                "dcc1efa8-84d4-45b2-bb6e-dfc28167a863",
+                "cc010cc2-d212-4f7a-a468-37d85a554967",
+                "8d8bfd0b-6a52-442b-ba12-d262a238d17d",
+                "e64a16f2-ca6e-481b-a397-bac011975cf6",
+                "697474a5-13a1-4b75-b206-9565c1f05315"
+            ]
+        }
+    ]
+}

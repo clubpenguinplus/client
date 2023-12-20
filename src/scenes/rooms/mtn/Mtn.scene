@@ -26,7 +26,9 @@
                 "frame": "mtnbg"
             },
             "x": 760,
-            "y": 480
+            "y": 480,
+            "tintTopLeft": "#403172",
+            "tintTopRight": "#403172"
         },
         {
             "type": "Sprite",
@@ -38,7 +40,11 @@
                 "frame": "skichair0160"
             },
             "x": 1293,
-            "y": 422
+            "y": 422,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
@@ -50,7 +56,11 @@
                 "frame": "skichairtopback0001"
             },
             "x": 470,
-            "y": 142
+            "y": 142,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
@@ -62,7 +72,11 @@
                 "frame": "skichair0001"
             },
             "x": 1285,
-            "y": 414
+            "y": 414,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -73,7 +87,11 @@
                 "frame": "mountain"
             },
             "x": 760,
-            "y": 480
+            "y": 480,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -84,7 +102,11 @@
                 "frame": "concrete"
             },
             "x": 952,
-            "y": 337
+            "y": 337,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "prefabId": "a0e50964-499b-4974-bffb-4291c8761c1e",
@@ -143,7 +165,11 @@
                 "frame": "liftwheel"
             },
             "x": 666,
-            "y": 143
+            "y": 143,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -154,7 +180,11 @@
                 "frame": "blue_circles"
             },
             "x": 478,
-            "y": 586
+            "y": 586,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -165,7 +195,11 @@
                 "frame": "green_circles"
             },
             "x": 1210,
-            "y": 550
+            "y": 550,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
@@ -177,7 +211,11 @@
                 "frame": "skichairtopfront0001"
             },
             "x": 505,
-            "y": 151
+            "y": 151,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -188,7 +226,11 @@
                 "frame": "hut_back"
             },
             "x": 1044,
-            "y": 262
+            "y": 262,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -201,7 +243,11 @@
             "x": 1073.817548829116,
             "y": 321.96074095961126,
             "originX": 0.4186582388937918,
-            "originY": 0.8898691418112477
+            "originY": 0.8898691418112477,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -212,7 +258,11 @@
                 "frame": "green_squares"
             },
             "x": 1019,
-            "y": 662
+            "y": 662,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -223,7 +273,11 @@
                 "frame": "tubestuckleftest"
             },
             "x": 355,
-            "y": 358
+            "y": 358,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -234,7 +288,11 @@
                 "frame": "tubetop"
             },
             "x": 551,
-            "y": 206
+            "y": 206,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -245,7 +303,11 @@
                 "frame": "tubeundercat"
             },
             "x": 515,
-            "y": 255
+            "y": 255,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",
@@ -256,7 +318,11 @@
                 "frame": "bench"
             },
             "x": 559,
-            "y": 299
+            "y": 299,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Sprite",
@@ -274,7 +340,11 @@
                 "frame": "ski_cat0001"
             },
             "x": 486,
-            "y": 172
+            "y": 172,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         },
         {
             "type": "Image",

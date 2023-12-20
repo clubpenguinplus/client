@@ -174,9 +174,7 @@ export default class RuffleManager {
             document.getElementById('game_canvas').style.zindex = 1
             document.getElementById('game_canvas').style.position = 'fixed'
         } else {
-            ruffleplayer.style.zindex = 2
-            document.getElementById('game_canvas').style.zindex = 1
-            document.getElementById('game_canvas').style.position = 'absolute'
+            document.getElementById('game_canvas').style.visibility = 'hidden'
         }
     }
 
@@ -188,6 +186,7 @@ export default class RuffleManager {
         var ruffleplayer = document.getElementsByTagName('ruffle-player')[0]
         this.rufflePlayer.pause()
         ruffleplayer.style.visibility = 'hidden'
+        document.getElementById('game_canvas').style.visibility = 'visible'
         let room = this.crumbs.scenes.rooms[roomid]
         this.shell.client.sendJoinRoom(roomid, room.key)
 

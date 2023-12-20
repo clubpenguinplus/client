@@ -7,7 +7,9 @@ export default class BergHoliday16 extends RuffleRoom {
         super('BergHoliday16')
 
         /* START-USER-CTR-CODE */
-        this.roomTriggers = {}
+        this.roomTriggers = {
+            aqua: () => this.triggerGame('aquagrabber', 916, 'ruffle')
+        }
         this.music = 1069
         /* END-USER-CTR-CODE */
     }

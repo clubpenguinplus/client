@@ -66,8 +66,8 @@ const rooms = {
         y: 560
     },
     230: {
-        key: 'MtnHoliday16',
-        scene: require('@rooms/mtn/MtnHoliday16').default,
+        key: 'Mtn',
+        scene: require('@rooms/mtn/Mtn').default,
         x: 760,
         y: 440
     },
@@ -282,7 +282,7 @@ const rooms = {
         preventTeleport: true
     },
     851: {
-        key: 'Party1',
+        key: 'Party1Holiday13',
         scene: require('@rooms/party1/Party1Holiday13').default,
         x: 760,
         y: 480,

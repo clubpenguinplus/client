@@ -30,7 +30,11 @@
                     "x": 126,
                     "y": 36,
                     "originX": 0.48,
-                    "originY": 0.47761194029850745
+                    "originY": 0.47761194029850745,
+                    "tintTopLeft": "#9ea3bf",
+                    "tintTopRight": "#9ea3bf",
+                    "tintBottomLeft": "#9ea3bf",
+                    "tintBottomRight": "#9ea3bf"
                 },
                 {
                     "type": "Image",
@@ -42,7 +46,11 @@
                     },
                     "x": 23,
                     "y": 36,
-                    "originY": 0.45901639344262296
+                    "originY": 0.45901639344262296,
+                    "tintTopLeft": "#9ea3bf",
+                    "tintTopRight": "#9ea3bf",
+                    "tintBottomLeft": "#9ea3bf",
+                    "tintBottomRight": "#9ea3bf"
                 },
                 {
                     "prefabId": "3d402c83-0ef8-4993-bf56-3e076074ec9e",

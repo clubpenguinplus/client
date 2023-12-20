@@ -7,7 +7,10 @@ export default class BeaconHoliday16 extends RuffleRoom {
         super('BeaconHoliday16')
 
         /* START-USER-CTR-CODE */
-        this.roomTriggers = {}
+        this.roomTriggers = {
+            light: () => this.triggerRoom(410, 454, 185, 5),
+            jetpack: () => this.triggerGame('jetpackadventure', 906, 'ruffle')
+        }
         this.music = 583
         /* END-USER-CTR-CODE */
     }
