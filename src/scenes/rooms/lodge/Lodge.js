@@ -61,11 +61,11 @@ export default class Lodge extends RoomScene {
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
         this.sort
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats106
+        this.seats207
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats105
+        this.seats206
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats104
+        this.seats205
 
         /* START-USER-CTR-CODE */
 
@@ -76,7 +76,7 @@ export default class Lodge extends RoomScene {
             fishing: () => this.triggerGame('icefishing', 904, 'ruffle')
         }
         this.music = 589
-        this.waddles = {}
+        this.tables = {}
         this.loadSfx = ['lodge-DoorLOpen', 'lodge-DoorLClose', 'lodge-DoorROpen', 'lodge-DoorRClose', 'lodge-LightOn', 'lodge-LightOff', 'lodge-DoorMOpen', 'lodge-DoorMClose']
 
         /* END-USER-CTR-CODE */
@@ -219,9 +219,9 @@ export default class Lodge extends RoomScene {
 
         // lists
         const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace, catalog]
-        const seats106 = [ellipse_4, ellipse_5]
-        const seats105 = [ellipse_3, ellipse_2]
-        const seats104 = [ellipse_1, ellipse]
+        const seats207 = [ellipse_4, ellipse_5]
+        const seats206 = [ellipse_3, ellipse_2]
+        const seats205 = [ellipse_1, ellipse]
 
         // maindoor (components)
         const maindoorButton = new Button(maindoor)
@@ -251,21 +251,21 @@ export default class Lodge extends RoomScene {
 
         // findfour_1 (components)
         const findfour_1Button = new Button(findfour_1)
-        findfour_1Button.callback = () => this.triggerWaddle(104)
+        findfour_1Button.callback = () => this.triggerWaddle(205)
         findfour_1Button.pixelPerfect = true
         const findfour_1ShowHint = new ShowHint(findfour_1)
         findfour_1ShowHint.text = 'four'
 
         // findfour_2 (components)
         const findfour_2Button = new Button(findfour_2)
-        findfour_2Button.callback = () => this.triggerWaddle(105)
+        findfour_2Button.callback = () => this.triggerWaddle(206)
         findfour_2Button.pixelPerfect = true
         const findfour_2ShowHint = new ShowHint(findfour_2)
         findfour_2ShowHint.text = 'four'
 
         // findfour_3 (components)
         const findfour_3Button = new Button(findfour_3)
-        findfour_3Button.callback = () => this.triggerWaddle(106)
+        findfour_3Button.callback = () => this.triggerWaddle(207)
         findfour_3Button.pixelPerfect = true
         const findfour_3ShowHint = new ShowHint(findfour_3)
         findfour_3ShowHint.text = 'four'
@@ -334,9 +334,9 @@ export default class Lodge extends RoomScene {
         this.fg = fg
         this.wilddoor = wilddoor
         this.sort = sort
-        this.seats106 = seats106
-        this.seats105 = seats105
-        this.seats104 = seats104
+        this.seats207 = seats207
+        this.seats206 = seats206
+        this.seats205 = seats205
 
         this.events.emit('scene-awake')
     }
@@ -357,7 +357,7 @@ export default class Lodge extends RoomScene {
         let game = this.crumbs.getString('game')
         let text = this.crumbs.getString(`join-multiplayer,${four + ' ' + game}`)
         this.interface.prompt.showWindow(text, 'dual', () => {
-            this.airtower.sendXt('a#jt', id)
+            this.airtower.sendXt('join_table', id)
             this.interface.prompt.window.visible = false
         })
     }

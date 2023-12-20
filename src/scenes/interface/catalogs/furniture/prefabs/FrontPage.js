@@ -8,53 +8,62 @@ export default class FrontPage extends Page {
         super(scene, x ?? 0, y ?? 0)
 
         // page1Bg
-        const page1Bg = scene.add.image(760, 454, 'constant', 'front')
+        const page1Bg = scene.add.image(760, 480, 'furniturecatalog', 'front')
         this.add(page1Bg)
 
         // titleText
-        const titleText = scene.add.text(785, 98, '', {})
+        const titleText = scene.add.text(785, 153, '', {})
         titleText.setOrigin(0.5, 0.5)
-        titleText.text = 'Penguin Style'
-        titleText.setStyle({align: 'center', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '80px', fontStyle: 'bold italic'})
+        titleText.text = 'Furniture & Igloo Catalog'
+        titleText.setStyle({align: 'center', color: '#d4fefdff', fixedWidth: 650, fontFamily: 'cpBurbankSmall', fontSize: '70px', fontStyle: 'bold italic'})
+        titleText.setWordWrapWidth(450)
         this.add(titleText)
 
         // monthText
-        const monthText = scene.add.text(833, 158, '', {})
+        const monthText = scene.add.text(785, 258, '', {})
         monthText.setOrigin(0.5, 0.5)
         monthText.text = 'December 2022'
-        monthText.setStyle({align: 'center', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '25px', fontStyle: 'italic'})
+        monthText.setStyle({align: 'center', color: '#d4fefdff', fixedWidth: 500, fontFamily: 'cpBurbankSmall', fontSize: '30px'})
         this.add(monthText)
 
-        // closeBtn_1
-        const closeBtn_1 = scene.add.ellipse(1124, 39, 50, 50)
-        closeBtn_1.fillColor = 2551787
-        closeBtn_1.fillAlpha = 0.5
-        this.add(closeBtn_1)
+        // closebtn
+        const closebtn = scene.add.image(1152, 27, 'main', 'white-x')
+        closebtn.scaleX = 0.666667
+        closebtn.scaleY = 0.666667
+        this.add(closebtn)
+
+        // frontcircle
+        const frontcircle = scene.add.image(760, 480, 'june15')
+        this.add(frontcircle)
 
         // nextPage
-        const nextPage = scene.add.image(1063, 729, 'constant', 'nextPage')
+        const nextPage = scene.add.image(1094, 810, 'furniturecatalog', 'nextPage-btn')
         this.add(nextPage)
 
-        // closebtn
-        const closebtn = scene.add.image(1118, 39, 'constant', 'closebtn')
-        this.add(closebtn)
+        // coins
+        const coins = scene.add.text(635, 936, '', {})
+        coins.setOrigin(0.5, 0.5)
+        coins.text = 'Your Coins: 99999999'
+        coins.setStyle({color: '#4b2500ff', fontFamily: 'cpBurbankSmall', fontSize: '28px', fontStyle: 'bold italic', 'shadow.offsetX': 1, 'shadow.offsetY': 1, 'shadow.color': '#f1f2b5ff', 'shadow.fill': true})
+        this.add(coins)
 
         // titleText (components)
         const titleTextLocalisedString = new LocalisedString(titleText)
-        titleTextLocalisedString.id = 'penguinStyle'
-
-        // nextPage (components)
-        const nextPageButton = new Button(nextPage)
-        nextPageButton.callback = () => this.nextPage()
+        titleTextLocalisedString.id = 'furnitureCatalog'
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn)
         closebtnSimpleButton.callback = () => this.close()
 
+        // nextPage (components)
+        const nextPageButton = new Button(nextPage)
+        nextPageButton.callback = () => this.nextPage()
+
         this.page1Bg = page1Bg
         this.titleText = titleText
         this.monthText = monthText
-        this.closeBtn_1 = closeBtn_1
+        this.frontcircle = frontcircle
+        this.coins = coins
 
         /* START-USER-CTR-CODE */
         let r = new Date(this.releaseDate)
@@ -69,12 +78,24 @@ export default class FrontPage extends Page {
     titleText
     /** @type {Phaser.GameObjects.Text} */
     monthText
-    /** @type {Phaser.GameObjects.Ellipse} */
-    closeBtn_1
+    /** @type {Phaser.GameObjects.Image} */
+    frontcircle
+    /** @type {Phaser.GameObjects.Text} */
+    coins
 
     /* START-USER-CODE */
 
-    // Write your code here.
+    loadFront(front) {
+        this.visible = false
+        this.front = front
+        this.shell.events.once(`textureLoaded:catalog/fronts/${front}`, () => this.showFront())
+        this.scene.iglooCatalogFrontLoader.loadFront(front)
+    }
+
+    showFront() {
+        this.frontcircle.setTexture(`catalog/fronts/${this.front}`)
+        this.visible = true
+    }
 
     /* END-USER-CODE */
 }

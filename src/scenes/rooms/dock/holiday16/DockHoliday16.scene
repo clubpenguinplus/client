@@ -1,0 +1,346 @@
+{
+    "id": "b0ecbde7-f775-479b-a175-eb814c9727a4",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/dock/parties/dockholiday16-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "DockHoliday16",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "0064f501-50cf-4f44-9db5-cd2fa27ad805",
+            "label": "bg",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "bg"
+            },
+            "x": 768,
+            "y": 421.5
+        },
+        {
+            "type": "Sprite",
+            "id": "01ad15ad-5a36-4186-a731-a60e5918f0b4",
+            "label": "boat",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "ShowHint.text": "hydrohopper",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "boat"
+            },
+            "x": 151,
+            "y": 631
+        },
+        {
+            "type": "Image",
+            "id": "912fbd7d-b484-4dbb-abf4-fb8803319c53",
+            "label": "fence2",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "fence2"
+            },
+            "x": 1318.8972511860202,
+            "y": 615.9578049411973,
+            "originX": 0.46297697016083783,
+            "originY": 0.31990713364517703
+        },
+        {
+            "type": "Image",
+            "id": "a88bdc26-808b-4fbf-9d1d-cf74cee7eb24",
+            "label": "door",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "door"
+            },
+            "x": 914,
+            "y": 658
+        },
+        {
+            "type": "Image",
+            "id": "658c5942-0080-496c-b12f-b5f6e09213e7",
+            "label": "fence1",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "fence1"
+            },
+            "x": 858,
+            "y": 792
+        },
+        {
+            "type": "Image",
+            "id": "8211c12c-1c99-406c-a51e-7bb9d46fd3fd",
+            "label": "trees",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "trees"
+            },
+            "x": 1509,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "41f840e4-ca2e-4d6c-bbba-845f53fcfc16",
+            "label": "table",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "table"
+            },
+            "x": 202,
+            "y": 374
+        },
+        {
+            "type": "Image",
+            "id": "9ff9e3e8-5a22-4f87-8b0d-0ee5d4cbade7",
+            "label": "hurdle",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "hurdle"
+            },
+            "x": 147.83091504340908,
+            "y": 506.4492159115898,
+            "originX": 0.5070772876085227,
+            "originY": 0.7368494657832264
+        },
+        {
+            "type": "Image",
+            "id": "fbe874de-87fc-4ccf-8438-4857406292b2",
+            "label": "treewhurdle",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "treewhurdle"
+            },
+            "x": 434,
+            "y": 447
+        },
+        {
+            "type": "Image",
+            "id": "b5feac44-1fcf-4959-88f4-e7865e246203",
+            "label": "nest",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "nest"
+            },
+            "x": 958.6851017026092,
+            "y": 262.2963309650179,
+            "originX": 0.4697851142163944,
+            "originY": 0.3353909901805804
+        },
+        {
+            "type": "Image",
+            "id": "010fe2b0-72b2-4964-b347-e22263b09c99",
+            "label": "pillar",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "pillar"
+            },
+            "x": 885.3737792432834,
+            "y": 306.40523561006484,
+            "originX": 0.506133009880491,
+            "originY": 0.8088616026503682
+        },
+        {
+            "type": "Image",
+            "id": "a8fcd134-84f9-4382-969f-b6a54c156486",
+            "label": "ceiling",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "ceiling"
+            },
+            "x": 1113.7073417721908,
+            "y": 392.9159834604551,
+            "originX": 0.5601392565945352,
+            "originY": 0.9290108333537528
+        },
+        {
+            "type": "Image",
+            "id": "6934af32-e715-4893-a1f7-e1817b383a56",
+            "label": "rightSIgn",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "rightSIgn"
+            },
+            "x": 1139,
+            "y": 433
+        },
+        {
+            "type": "Image",
+            "id": "5323de27-e647-4776-a60d-d62beb52b226",
+            "label": "smallhouse",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "smallhouse"
+            },
+            "x": 721,
+            "y": 290
+        },
+        {
+            "type": "Image",
+            "id": "06e6edf6-e69c-464e-bd5a-6b3f152db598",
+            "label": "foreground",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "foreground"
+            },
+            "x": 495,
+            "y": 487
+        },
+        {
+            "type": "Image",
+            "id": "7c316d17-6528-4204-a0d2-42f3d8616550",
+            "label": "dock",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "dock"
+            },
+            "x": 379.23444661488344,
+            "y": 579.9129781706487,
+            "originX": 0.7563096122936225,
+            "originY": 0.13178925273189518
+        },
+        {
+            "type": "Image",
+            "id": "6adbaa3e-eb03-4dcc-91f2-b41cbb730637",
+            "label": "pole",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "pole"
+            },
+            "x": 269,
+            "y": 819
+        },
+        {
+            "type": "Image",
+            "id": "71fabac9-96c9-4226-9d75-e46f9a154f1e",
+            "label": "pole2",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "pole2"
+            },
+            "x": 511.45756027946476,
+            "y": 632.8785544052123,
+            "originX": 0.3698464586752434,
+            "originY": 0.5066555788177425
+        },
+        {
+            "type": "Image",
+            "id": "cc0c5e79-cac4-4e60-96e4-c6256db3f21b",
+            "label": "pot",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "pot"
+            },
+            "x": 553,
+            "y": 690,
+            "tintTopLeft": "#afafaf",
+            "tintTopRight": "#afafaf",
+            "tintBottomLeft": "#afafaf",
+            "tintBottomRight": "#afafaf"
+        },
+        {
+            "type": "Sprite",
+            "id": "c677b272-5dec-4c4f-886c-7de4f04e17c2",
+            "label": "coins",
+            "scope": "CLASS",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "coins0001"
+            },
+            "x": 551.8567481760598,
+            "y": 635.6944012913002,
+            "originX": 0.43585200359305704,
+            "originY": 0.36638227461882017
+        },
+        {
+            "type": "Sprite",
+            "id": "48f6185a-9d6c-4d53-be21-7bdd5bc0ba97",
+            "label": "change",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.hoverCallback": "() => this.onHoverChange()",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "change"
+            },
+            "x": 548.7287815763474,
+            "y": 701.3195022168159,
+            "originX": 0.4638957642215574,
+            "originY": 0.7290023801744827
+        },
+        {
+            "type": "Image",
+            "id": "d1988015-96a8-4300-b54c-dc729a399c70",
+            "label": "leg",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "leg"
+            },
+            "x": 551.5141063913345,
+            "y": 715.9350999295234,
+            "originX": 0.6098170504927651,
+            "originY": 0.6157761152481848
+        },
+        {
+            "type": "Image",
+            "id": "3980b063-65dc-4f47-8a7a-0db6bc36e547",
+            "label": "barrell",
+            "texture": {
+                "key": "dockholiday16",
+                "frame": "barrell"
+            },
+            "x": 1033.4899077074706,
+            "y": 819.7945023720405,
+            "originX": 0.49397870687377515,
+            "originY": 0.24067388648596363
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "761fa2af-6553-41e5-a9ce-3002b4507b36",
+            "label": "sort",
+            "objectIds": [
+                "c677b272-5dec-4c4f-886c-7de4f04e17c2",
+                "48f6185a-9d6c-4d53-be21-7bdd5bc0ba97",
+                "71fabac9-96c9-4226-9d75-e46f9a154f1e",
+                "a88bdc26-808b-4fbf-9d1d-cf74cee7eb24",
+                "912fbd7d-b484-4dbb-abf4-fb8803319c53",
+                "6934af32-e715-4893-a1f7-e1817b383a56",
+                "5323de27-e647-4776-a60d-d62beb52b226",
+                "06e6edf6-e69c-464e-bd5a-6b3f152db598",
+                "fbe874de-87fc-4ccf-8438-4857406292b2",
+                "9ff9e3e8-5a22-4f87-8b0d-0ee5d4cbade7",
+                "6adbaa3e-eb03-4dcc-91f2-b41cbb730637",
+                "8211c12c-1c99-406c-a51e-7bb9d46fd3fd",
+                "b5feac44-1fcf-4959-88f4-e7865e246203",
+                "010fe2b0-72b2-4964-b347-e22263b09c99",
+                "7c316d17-6528-4204-a0d2-42f3d8616550",
+                "658c5942-0080-496c-b12f-b5f6e09213e7",
+                "d1988015-96a8-4300-b54c-dc729a399c70",
+                "a8fcd134-84f9-4382-969f-b6a54c156486",
+                "3980b063-65dc-4f47-8a7a-0db6bc36e547"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,445 @@
+{
+    "id": "36753e27-6234-4cc1-a296-51225f40b38d",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Closeup",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/interface/closeups/cfc/cfc-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Cfc",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "5a7486e8-0b05-4882-b147-cc88010ac723",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "cfc",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "f33cfcda-bcb5-4837-8bb9-34c3614ec3d1",
+            "label": "coinsbg",
+            "texture": {
+                "key": "cfc",
+                "frame": "coinsbg"
+            },
+            "x": 301,
+            "y": 406
+        },
+        {
+            "type": "Sprite",
+            "id": "db43a73c-708e-4cf1-84e5-57c443e4b808",
+            "label": "coinsanim",
+            "scope": "CLASS",
+            "texture": {
+                "key": "cfc",
+                "frame": "coins0001"
+            },
+            "x": 300,
+            "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "6039debc-7473-4118-8aee-f385bbe3019f",
+            "label": "coinsfg",
+            "texture": {
+                "key": "cfc",
+                "frame": "coinsfg"
+            },
+            "x": 301,
+            "y": 409
+        },
+        {
+            "type": "Image",
+            "id": "db4cc280-0474-4716-9b43-4b728f030d72",
+            "label": "button",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => this.donateCoins(100)",
+            "texture": {
+                "key": "cfc",
+                "frame": "button"
+            },
+            "x": 757,
+            "y": 792
+        },
+        {
+            "type": "Image",
+            "id": "567a1336-4e3a-4ea7-83fd-e76e4b761b08",
+            "label": "button_1",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => this.donateCoins(1000)",
+            "texture": {
+                "key": "cfc",
+                "frame": "button"
+            },
+            "x": 1016,
+            "y": 792
+        },
+        {
+            "type": "Image",
+            "id": "efe46273-ea25-42e6-9df2-5bf9c95380f8",
+            "label": "button_2",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => this.donateCoins(10000)",
+            "texture": {
+                "key": "cfc",
+                "frame": "button"
+            },
+            "x": 1275,
+            "y": 792
+        },
+        {
+            "type": "Sprite",
+            "id": "f43bcfe5-1d3d-4ea6-83cc-ac7f542696e8",
+            "label": "display_1",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 750,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "59ef321d-d8f6-49a5-9173-d3d6cbadfd14",
+            "label": "display_2",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 810,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "b2972e98-7792-42a1-9c92-c98735cf30a7",
+            "label": "display_3",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 870,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "c7190409-c439-4ee7-ae0f-a60a5343423d",
+            "label": "display_4",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 930,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "b68eeb43-595a-4026-a6e1-3af75ffea133",
+            "label": "display_5",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 990,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "e1f0054c-b7a3-4392-ad37-5b296531c44c",
+            "label": "display_6",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 1050,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "8d46cc17-dd65-4a43-8c31-584b9260f6e6",
+            "label": "display_7",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 1110,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "6bc2c125-731f-423d-908a-fa2c5137be4b",
+            "label": "display_8",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 1170,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "20316f54-4c6e-43d3-a0c8-5bbb5a0b21ae",
+            "label": "display_9",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 1230,
+            "y": 620
+        },
+        {
+            "type": "Sprite",
+            "id": "82a43441-51cf-49de-8295-b1217d553478",
+            "label": "display_10",
+            "texture": {
+                "key": "cfc",
+                "frame": "display0001"
+            },
+            "x": 1290,
+            "y": 620
+        },
+        {
+            "type": "Image",
+            "id": "bf277d6d-dfef-4b65-9ce5-b51fb218cab2",
+            "label": "fISH",
+            "texture": {
+                "key": "cfc",
+                "frame": "FISH"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Text",
+            "id": "5f676192-ce82-41da-b4cc-cff49eb9382d",
+            "label": "p100c",
+            "scope": "CLASS",
+            "x": 748,
+            "y": 794,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "100",
+            "fixedWidth": 150,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "34px",
+            "fontStyle": "bold",
+            "color": "#4b2500ff",
+            "stroke": "#ffffffff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 100
+        },
+        {
+            "type": "Text",
+            "id": "1490f1e5-5a73-4480-8800-6576682f3c3e",
+            "label": "p100c_1",
+            "scope": "CLASS",
+            "x": 1007,
+            "y": 794,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "1000",
+            "fixedWidth": 150,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "34px",
+            "fontStyle": "bold",
+            "color": "#4b2500ff",
+            "stroke": "#ffffffff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 100
+        },
+        {
+            "type": "Text",
+            "id": "424558f3-f59f-479b-aba2-e3d07ff0c8e2",
+            "label": "p100c_2",
+            "scope": "CLASS",
+            "x": 1268,
+            "y": 794,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "10000",
+            "fixedWidth": 150,
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "34px",
+            "fontStyle": "bold",
+            "color": "#4b2500ff",
+            "stroke": "#ffffffff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff",
+            "wordWrapWidth": 100
+        },
+        {
+            "type": "Text",
+            "id": "09a4de32-74b1-4ce4-a96c-bcd6c34baf2a",
+            "label": "headerText",
+            "scope": "CLASS",
+            "x": 1019,
+            "y": 554,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Our Grand Total:",
+            "fixedWidth": 800,
+            "align": "center",
+            "fontFamily": "cpCatseye",
+            "fontSize": "36px",
+            "color": "#3d2615ff",
+            "shadow.offsetX": -1,
+            "shadow.offsetY": 1,
+            "shadow.fill": true,
+            "shadow.color": "#ffde80ff"
+        },
+        {
+            "type": "Text",
+            "id": "a1de9016-c848-4338-a412-ac917f96f447",
+            "label": "p100c_3",
+            "scope": "CLASS",
+            "x": 1019,
+            "y": 718,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Click the buttons below to donate:",
+            "lineSpacing": 5,
+            "align": "center",
+            "fontFamily": "cpBurbankSmall",
+            "fontSize": "34px",
+            "fontStyle": "bold",
+            "color": "#4b2500ff",
+            "stroke": "#ffffffff",
+            "shadow.fill": true,
+            "shadow.color": "#ffffffff"
+        },
+        {
+            "type": "Text",
+            "id": "5e0e4367-2a68-4fd2-b71b-952944a22bc2",
+            "label": "contributionsCoins",
+            "scope": "CLASS",
+            "x": 1019,
+            "y": 678,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Your Contributions: 99999                     Your Coins: 99999",
+            "fixedWidth": 800,
+            "align": "center",
+            "fontFamily": "cpCatseye",
+            "fontSize": "24px",
+            "color": "#3d2615ff",
+            "shadow.offsetX": -1,
+            "shadow.offsetY": 1,
+            "shadow.fill": true,
+            "shadow.color": "#ffde80ff"
+        },
+        {
+            "type": "Text",
+            "id": "89a7b1e0-7c5b-48ad-9b27-16370571b38c",
+            "label": "headerText_2",
+            "scope": "CLASS",
+            "x": 1019,
+            "y": 417,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Donate to Coins for Change to support real charities around the world. Donate coins here to earn rewards, or spend money in catalogs.",
+            "fixedWidth": 800,
+            "align": "center",
+            "fontFamily": "cpCatseye",
+            "fontSize": "36px",
+            "color": "#f1f2f0ff",
+            "shadow.offsetX": 3,
+            "shadow.offsetY": 2,
+            "shadow.fill": true,
+            "shadow.color": "#1b241cff",
+            "shadow.blur": 4,
+            "wordWrapWidth": 800
+        },
+        {
+            "type": "Text",
+            "id": "33095818-14d1-45c1-8a61-cdb0d8004618",
+            "label": "headerText_3",
+            "scope": "CLASS",
+            "x": 1462,
+            "y": 32,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "O",
+            "fixedWidth": 50,
+            "align": "center",
+            "fontFamily": "Arial",
+            "fontSize": "59px",
+            "color": "#f1f2f0ff",
+            "shadow.offsetX": 3,
+            "shadow.offsetY": 2,
+            "shadow.fill": true,
+            "shadow.color": "#000000ff",
+            "shadow.blur": 5
+        },
+        {
+            "type": "Image",
+            "id": "acc8c0f7-f7c4-4701-b41a-08f1383f3897",
+            "label": "exit",
+            "components": [
+                "Button"
+            ],
+            "Button.callback": "() => this.stop()",
+            "texture": {
+                "key": "main",
+                "frame": "white-x"
+            },
+            "x": 1462,
+            "y": 30,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "9fe8cf00-f5b1-45ce-a77e-e697ff894f4e",
+            "label": "displays",
+            "objectIds": [
+                "f43bcfe5-1d3d-4ea6-83cc-ac7f542696e8",
+                "59ef321d-d8f6-49a5-9173-d3d6cbadfd14",
+                "b2972e98-7792-42a1-9c92-c98735cf30a7",
+                "c7190409-c439-4ee7-ae0f-a60a5343423d",
+                "b68eeb43-595a-4026-a6e1-3af75ffea133",
+                "e1f0054c-b7a3-4392-ad37-5b296531c44c",
+                "8d46cc17-dd65-4a43-8c31-584b9260f6e6",
+                "6bc2c125-731f-423d-908a-fa2c5137be4b",
+                "20316f54-4c6e-43d3-a0c8-5bbb5a0b21ae",
+                "82a43441-51cf-49de-8295-b1217d553478"
+            ]
+        }
+    ]
+}

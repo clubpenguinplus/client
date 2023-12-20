@@ -243,6 +243,10 @@ export default class Inventory extends BaseContainer {
 
         this.inventory_bg.setInteractive({pixelPerfect: true})
 
+        this.textFilter
+
+        window.setTextFilter = this.setTextFilter.bind(this)
+
         /* END-USER-CTR-CODE */
     }
 
@@ -250,6 +254,13 @@ export default class Inventory extends BaseContainer {
 
     get inventory() {
         let inventory = this.shell.client.inventory
+
+        if (this.textFilter) {
+            const tf = this.textFilter.toLowerCase()
+            return Object.values(inventory)
+                .flat()
+                .filter((item) => this.shell.crumbs.items[item].name.toLowerCase().includes(tf))
+        }
 
         if (this.filter) {
             // If filter is other then inventory results in concat of flags, photos and awards
@@ -298,6 +309,8 @@ export default class Inventory extends BaseContainer {
 
         this.container.visible = !this.container.visible
         this.arrow.toggleFlipY()
+        this.textFilter = null
+        this.showPage()
     }
 
     onSlotClick(slotId) {
@@ -306,6 +319,13 @@ export default class Inventory extends BaseContainer {
         if (!item || !item.id || !item.active) return
 
         this.airtower.sendXt('s#up', item.id)
+    }
+
+    setTextFilter(text) {
+        this.textFilter = text
+
+        this.active_text.text = 'Text Filter'
+        this.showPage()
     }
 
     /* END-USER-CODE */

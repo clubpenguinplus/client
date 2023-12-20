@@ -1,30 +1,35 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import Button from '@scenes/components/Button'
-import DraggableContainer from '@scenes/components/DraggableContainer'
-import Interactive from '@scenes/components/Interactive'
-import SimpleButton from '@scenes/components/SimpleButton'
+import {Button, DraggableContainer, SimpleButton} from '@components/components'
 
 import FindFourPlayer from './FindFourPlayer'
+
+export const preload = {
+    key: 'four-pack',
+    url: 'client/media/games/four/four-pack.json',
+    loadString: 'four'
+}
 
 /* START OF COMPILED CODE */
 
 export default class FindFour extends BaseContainer {
     constructor(scene, x, y) {
-        super(scene, x ?? 760, y ?? 480)
+        super(scene, x ?? 730, y ?? 340)
 
-        /** @type {Phaser.GameObjects.Container} */
-        this.counterContainer
         /** @type {Phaser.GameObjects.Image} */
-        this.board
+        this.window
+        /** @type {Phaser.GameObjects.Image} */
+        this.shadow
+        /** @type {FindFourPlayer} */
+        this.player2
+        /** @type {FindFourPlayer} */
+        this.player1
         /** @type {Phaser.GameObjects.Image} */
         this.hover
-        /** @type {Phaser.GameObjects.Container} */
-        this.hitbox
-        /** @type {Array<any>} */
+        /** @type {Phaser.GameObjects.Image} */
+        this.x_button
+        /** @type {Phaser.GameObjects.Image[]} */
         this.placers
-        /** @type {FindFourPlayer[]} */
-        this.items
 
         // window
         const window = scene.add.image(0, 0, 'four', 'window')
@@ -34,9 +39,40 @@ export default class FindFour extends BaseContainer {
         const shadow = scene.add.image(0, -44, 'four', 'shadow')
         this.add(shadow)
 
-        // counterContainer
-        const counterContainer = scene.add.container(0, 0)
-        this.add(counterContainer)
+        // placer6
+        const placer6 = scene.add.image(-146, 77, 'four', 'counter_1')
+        placer6.visible = false
+        this.add(placer6)
+
+        // placer5
+        const placer5 = scene.add.image(-146, 29, 'four', 'counter_1')
+        placer5.visible = false
+        this.add(placer5)
+
+        // placer4
+        const placer4 = scene.add.image(-146, -20, 'four', 'counter_1')
+        placer4.visible = false
+        this.add(placer4)
+
+        // placer3
+        const placer3 = scene.add.image(-146, -68, 'four', 'counter_1')
+        placer3.visible = false
+        this.add(placer3)
+
+        // placer2
+        const placer2 = scene.add.image(-146, -117, 'four', 'counter_1')
+        placer2.visible = false
+        this.add(placer2)
+
+        // placer1
+        const placer1 = scene.add.image(-146, -165, 'four', 'counter_1')
+        placer1.visible = false
+        this.add(placer1)
+
+        // placer0
+        const placer0 = scene.add.image(-146, -205, 'four', 'counter_1')
+        placer0.visible = false
+        this.add(placer0)
 
         // board
         const board = scene.add.image(0, -44, 'four', 'board')
@@ -50,6 +86,12 @@ export default class FindFour extends BaseContainer {
         const player1 = new FindFourPlayer(scene, -126, 172)
         this.add(player1)
 
+        // hover
+        const hover = scene.add.image(-145, -194, 'four', 'button/counter_1')
+        hover.setOrigin(0.5, 0.7)
+        hover.visible = false
+        this.add(hover)
+
         // x_button
         const x_button = scene.add.image(181, -243, 'main', 'blue-button')
         this.add(x_button)
@@ -58,128 +100,187 @@ export default class FindFour extends BaseContainer {
         const blue_x = scene.add.image(181, -245, 'main', 'blue-x')
         this.add(blue_x)
 
-        // hover
-        const hover = scene.add.image(-145, -194, 'four', 'counter_1')
-        hover.setOrigin(0.5, 0.7)
-        hover.visible = false
-        this.add(hover)
-
-        // hitbox
-        const hitbox = scene.add.container(-152, -44)
-        hitbox.visible = false
-        this.add(hitbox)
-
-        // column1
-        const column1 = scene.add.rectangle(0, 0, 60, 304)
-        column1.fillColor = 14876672
-        column1.fillAlpha = 0.5
-        hitbox.add(column1)
-
-        // column2
-        const column2 = scene.add.rectangle(55, 0, 49, 304)
-        column2.fillColor = 12247808
-        column2.fillAlpha = 0.5
-        hitbox.add(column2)
-
-        // column3
-        const column3 = scene.add.rectangle(103, 0, 49, 304)
-        column3.fillColor = 58115
-        column3.fillAlpha = 0.5
-        hitbox.add(column3)
-
-        // column4
-        const column4 = scene.add.rectangle(152, 0, 49, 304)
-        column4.fillColor = 58299
-        column4.fillAlpha = 0.5
-        hitbox.add(column4)
-
-        // column5
-        const column5 = scene.add.rectangle(201, 0, 49, 304)
-        column5.fillColor = 27619
-        column5.fillAlpha = 0.5
-        hitbox.add(column5)
-
-        // column6
-        const column6 = scene.add.rectangle(250, 0, 49, 304)
-        column6.fillColor = 5767395
-        column6.fillAlpha = 0.5
-        hitbox.add(column6)
-
-        // column7
-        const column7 = scene.add.rectangle(304, 0, 60, 304)
-        column7.fillColor = 14907392
-        column7.fillAlpha = 0.5
-        hitbox.add(column7)
-
         // lists
-        const placers = []
-        const items = [player1, player2]
+        const placers = [placer0, placer1, placer2, placer3, placer4, placer5, placer6]
 
-        // this (components)
-        const thisDraggableContainer = new DraggableContainer(this)
-        thisDraggableContainer.handle = window
-
-        // x_button (components)
-        const x_buttonButton = new Button(x_button)
-        x_buttonButton.callback = () => this.onClose()
-
-        // column1 (components)
-        const column1SimpleButton = new SimpleButton(column1)
-        column1SimpleButton.hoverCallback = () => this.onHover(-145)
-        column1SimpleButton.callback = () => this.onCounterPlace(0)
-
-        // column2 (components)
-        const column2SimpleButton = new SimpleButton(column2)
-        column2SimpleButton.hoverCallback = () => this.onHover(-97)
-        column2SimpleButton.callback = () => this.onCounterPlace(1)
-
-        // column3 (components)
-        const column3SimpleButton = new SimpleButton(column3)
-        column3SimpleButton.hoverCallback = () => this.onHover(-49)
-        column3SimpleButton.callback = () => this.onCounterPlace(2)
-
-        // column4 (components)
-        const column4SimpleButton = new SimpleButton(column4)
-        column4SimpleButton.hoverCallback = () => this.onHover(0)
-        column4SimpleButton.callback = () => this.onCounterPlace(3)
-
-        // column5 (components)
-        const column5SimpleButton = new SimpleButton(column5)
-        column5SimpleButton.hoverCallback = () => this.onHover(49)
-        column5SimpleButton.callback = () => this.onCounterPlace(4)
-
-        // column6 (components)
-        const column6SimpleButton = new SimpleButton(column6)
-        column6SimpleButton.hoverCallback = () => this.onHover(98)
-        column6SimpleButton.callback = () => this.onCounterPlace(5)
-
-        // column7 (components)
-        const column7SimpleButton = new SimpleButton(column7)
-        column7SimpleButton.hoverCallback = () => this.onHover(145)
-        column7SimpleButton.callback = () => this.onCounterPlace(6)
-
-        this.counterContainer = counterContainer
-        this.board = board
+        this.window = window
+        this.shadow = shadow
+        this.player2 = player2
+        this.player1 = player1
         this.hover = hover
-        this.hitbox = hitbox
+        this.x_button = x_button
         this.placers = placers
-        this.items = items
 
         /* START-USER-CTR-CODE */
 
-        this.activeWaddleId
-        this.activeSeat
+        this.scene = scene
 
+        this.counters = []
+        this.buttons = []
+        this.createButtons()
+
+        this.boundGetGame = this.handleGetGame.bind(this)
+        this.boundJoinGame = this.handleJoinGame.bind(this)
+        this.boundUpdateGame = this.handleUpdateGame.bind(this)
+        this.boundStartGame = this.handleStartGame.bind(this)
+        this.boundSendMove = this.handleSendMove.bind(this)
+        this.boundCloseGame = this.handleCloseGame.bind(this)
         /* END-USER-CTR-CODE */
     }
 
     /* START-USER-CODE */
 
+    get isMyTurn() {
+        return this.currentTurn === this.myTurn
+    }
+
+    addListeners() {
+        this.airtower.events.on('get_game', this.boundGetGame, this)
+        this.airtower.events.on('join_game', this.boundJoinGame, this)
+        this.airtower.events.on('update_game', this.boundUpdateGame, this)
+        this.airtower.events.on('start_game', this.boundStartGame, this)
+        this.airtower.events.on('send_move', this.boundSendMove, this)
+        this.airtower.events.on('close_game', this.boundCloseGame, this)
+    }
+
+    removeListeners() {
+        this.airtower.events.off('get_game', this.boundGetGame, this)
+        this.airtower.events.off('join_game', this.boundJoinGame, this)
+        this.airtower.events.off('update_game', this.boundUpdateGame, this)
+        this.airtower.events.off('start_game', this.boundStartGame, this)
+        this.airtower.events.off('send_move', this.boundSendMove, this)
+        this.airtower.events.off('close_game', this.boundCloseGame, this)
+    }
+
+    show() {
+        this.map = null
+        this.myTurn = null
+        this.currentTurn = 1
+        this.started = false
+
+        this.visible = true
+
+        // this (components)
+        const thisDraggableContainer = new DraggableContainer(this)
+        thisDraggableContainer.handle = this.window
+        thisDraggableContainer.start()
+
+        // x_button (components)
+        const x_buttonButton = new Button(this.x_button)
+        x_buttonButton.callback = () => this.close()
+        x_buttonButton.start()
+
+        this.updateButtons()
+        this.updateHover()
+
+        this.addListeners()
+        this.airtower.sendXt('get_game')
+
+        this.shell.interface.main.blocker.visible = true
+
+        this.shell.four = this
+    }
+
+    close() {
+        if (!this.started) {
+            this.shell.interface.main.blocker.visible = false
+            return this.sendLeaveTable()
+        }
+
+        this.interface.prompt.showWindow(this.getString('quit_game_prompt'), 'dual', () => {
+            this.sendLeaveTable()
+
+            this.interface.prompt.window.visible = false
+        })
+    }
+
+    handleGetGame(args) {
+        args = JSON.parse(args)
+        this.map = args.map
+        this.setupMap()
+
+        for (let user of args.users) {
+            this.setPlayer(user, args.users.indexOf(user) + 1)
+        }
+
+        this.airtower.sendXt('join_game')
+    }
+
+    handleJoinGame(args) {
+        args = JSON.parse(args)
+        this.myTurn = args.turn
+    }
+
+    handleUpdateGame(args) {
+        args = JSON.parse(args)
+        this.setPlayer(args.username, args.turn)
+    }
+
+    handleStartGame() {
+        this.started = true
+
+        this.updateButtons()
+
+        this.player1.setActive()
+        this.player2.setActive()
+    }
+
+    handleSendMove(args) {
+        args = JSON.parse(args)
+        this.currentTurn = args.turn
+
+        this.addCounter(args.turn, args.x, args.y)
+    }
+
+    handleCloseGame(args) {
+        args = JSON.parse(args)
+        if (args.username) {
+            let text = this.getFormatString('player_quit_prompt', args.username)
+            this.interface.prompt.showWindow(text, 'single')
+        }
+
+        this.leaveTable()
+    }
+
+    createButtons() {
+        let x = -146
+
+        for (let column = 0; column < 7; column++) {
+            let button = this.scene.add.image(x, -194, 'four', 'button/button')
+
+            button.setOrigin(0.5, 0.078125)
+            this.add(button)
+            this.buttons.push(button)
+
+            let component = new SimpleButton(button)
+
+            component.callback = () => this.onButtonClick(column)
+            component.hoverCallback = () => this.onButtonOver(button)
+            component.hoverOutCallback = () => this.onButtonOut()
+
+            component.start()
+
+            x += 48.6
+        }
+    }
+
     onButtonClick(column) {
-        this.addCounter(column, 5)
+        if (!this.isMyTurn) {
+            return
+        }
+
+        if (this.map[column][0]) {
+            return this.shell.musicController.addSfx('four-error', false, 'mp3', 0.5)
+        }
+
+        this.airtower.sendXt('send_move', JSON.stringify({column: column}))
     }
 
     onButtonOver(button) {
+        if (!this.isMyTurn) {
+            return
+        }
+
         this.hover.visible = true
 
         this.hover.x = button.x
@@ -187,140 +288,118 @@ export default class FindFour extends BaseContainer {
     }
 
     onButtonOut() {
+        if (!this.isMyTurn) {
+            return
+        }
+
         this.hover.visible = false
     }
 
-    get activeWaddle() {
-        return this.shell.room.waddles[this.activeWaddleId]
-    }
+    setupMap() {
+        for (let [x, col] of this.map.entries()) {
+            for (let [y, row] of col.entries()) {
+                if (row == 0) {
+                    continue
+                }
 
-    getSeat(waddle, seat) {
-        return this.shell.room[`seats${waddle}`][seat]
-    }
-
-    onClose() {
-        this.airtower.sendXt('a#lt')
-
-        this.leaveSeat()
-
-        this.activeWaddleId = null
-        this.visible = false
-        this.shell.interface.main.blocker.visible = false
-    }
-
-    showWaddle(waddle, seat) {
-        this.activeWaddleId = waddle
-
-        this.seat = parseInt(seat)
-
-        this.enterSeat(waddle, seat)
-
-        this.items.forEach((item) => {
-            item.setItem(null)
-        })
-
-        for (let index in this.activeWaddle.seats) {
-            let username = this.activeWaddle.seats[index]
-            this.items[index].setItem(username, index)
-        }
-
-        this.visible = true
-        this.shell.interface.main.blocker.visible = true
-    }
-
-    updateWaddle(waddle, seat, username) {
-        let sprite = this.getSeat(waddle, seat)
-        sprite.visible = username != null
-
-        this.shell.room.waddles[waddle].seats[seat] = username
-
-        if (waddle == this.activeWaddleId) {
-            this.items[seat].setItem(username, seat)
-        }
-    }
-
-    init(users, turn) {
-        users = users.split(',')
-        for (var x in users) {
-            let username = this.shell.room.penguins[users[x]].username
-            this.items[x].setItem(username, x)
-            if (users[x] == this.shell.client.id) {
-                this.seat = parseInt(x)
+                this.addCounter(this.map[x][y], x, y, false)
             }
         }
-        this.map = [
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0]
-        ]
-        this.xcoords = [-145, -97, -49, 0, 49, 97, 145]
-        this.ycoords = [121, 73, 24, -24, -73, -121]
-        let counters = this.scene.add.container(0, -44)
-        this.counterContainer.add(counters)
-        this.counters = counters
+    }
 
-        if (this.shell.client.id == turn) {
-            this.hover.setTexture('four', 'counter_1')
-            this.hover.visible = true
-            this.hitbox.visible = true
+    setPlayer(username, turn) {
+        let player = this[`player${turn}`]
+        player.set(username, turn)
+    }
+
+    addCounter(turn, x, y, drop = true) {
+        this.map[x][y] = turn
+
+        y++
+
+        // Get x from column button position
+        let counterX = this.buttons[x].x
+        // Get y from placer position
+        let counterY = this.placers[0].y
+
+        let counter = this.scene.add.image(counterX, counterY, 'four', `counter_${turn}`)
+        this.counters.push(counter)
+
+        if (!drop) {
+            counter.y = this.placers[y].y
         } else {
-            this.hover.setTexture('four', 'counter_2')
-            this.hover.visible = false
-            this.hitbox.visible = false
+            this.playDrop(turn, counter, y)
+        }
+
+        this.addAt(counter, this.getIndex(this.shadow) + 1)
+    }
+
+    playDrop(turn, counter, y) {
+        let i = 0
+
+        let timer = this.scene.time.addEvent({
+            delay: 38,
+            callback: () => {
+                counter.y = this.placers[i].y
+
+                if (i === y) {
+                    this.shell.musicController.addSfx('four-drop', false, 'mp3', 0.5)
+                    this.scene.time.removeEvent(timer)
+                    this.updateTurn(turn)
+                }
+
+                i++
+            },
+            repeat: y
+        })
+    }
+
+    updateTurn(turn) {
+        this.currentTurn = turn === 1 ? 2 : 1
+
+        this.updateButtons()
+        this.updateHover()
+
+        this.player1.setActive()
+        this.player2.setActive()
+    }
+
+    updateButtons() {
+        if (this.started && this.isMyTurn) {
+            this.buttons.map((b) => b.setInteractive())
+        } else {
+            this.buttons.map((b) => b.disableInteractive())
+            this.scene.input.setDefaultCursor('default')
         }
     }
 
-    enterSeat(waddle, seat) {
-        this.activeSeat = this.getSeat(waddle, seat)
-
-        this.shell.client.penguin.move(this.activeSeat.x, this.activeSeat.y, this.activeSeat.sitFrame)
+    updateHover() {
+        this.hover.visible = false
+        this.hover.setFrame(`button/counter_${this.currentTurn}`)
     }
 
-    leaveSeat() {
-        let x = this.activeSeat.x + this.activeSeat.offsetX
-        let y = this.activeSeat.y + this.activeSeat.offsetY
-
-        this.activeSeat = null
-
-        this.shell.client.penguin.move(x, y)
+    sendLeaveTable() {
+        this.airtower.sendXt('leave_table')
+        this.leaveTable()
     }
 
-    onHover(x) {
-        this.hover.x = x
-    }
+    leaveTable() {
+        this.removeListeners()
+        this.resetGame()
 
-    onCounterPlace(column) {
-        for (let row = 0; row < 6; row++) {
-            if (this.map[column][row] == 0) {
-                this.placeCounter(row, column, this.seat + 1)
-                this.hitbox.visible = false
-                this.hover.visible = false
-                this.airtower.sendXt('a#pc', `${column}%${row}`)
-                return
-            }
-        }
-    }
-
-    placeCounter(row, column, player) {
-        if (this.map[column][row] !== 0) return
-        this.map[column][row] = this.scene.add.image(this.xcoords[column], this.ycoords[row], 'four', `counter_${player}`)
-        this.counters.add(this.map[column][row])
-    }
-
-    changeTurn(turn) {
-        if (this.shell.client.id == turn) {
-            this.hover.visible = true
-            this.hitbox.visible = true
-        }
-    }
-
-    reset() {
-        this.counters.destroy()
         this.visible = false
+
+        this.shell.interface.main.blocker.visible = false
+        this.shell.client.sendLeaveSeat()
+    }
+
+    resetGame() {
+        for (let counter of this.counters) {
+            counter.destroy()
+        }
+
+        this.player1.reset()
+        this.player2.reset()
     }
 
     /* END-USER-CODE */

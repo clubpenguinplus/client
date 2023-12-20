@@ -21,13 +21,13 @@ export default class Attic extends RoomScene {
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
         this.sort
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats107
+        this.seats203
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats108
+        this.seats202
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats109
+        this.seats201
         /** @type {Phaser.GameObjects.Ellipse[]} */
-        this.seats110
+        this.seats200
 
         /* START-USER-CTR-CODE */
 
@@ -36,7 +36,7 @@ export default class Attic extends RoomScene {
             boxdimension: () => this.triggerRoom(811, 1180, 260)
         }
         this.music = 884
-        this.waddles = {}
+        this.tables = {}
         this.loadSfx = ['attic-HorseNeigh', 'attic-BoxOpen', 'attic-BoxClose', 'attic-BoxLoop']
 
         /* END-USER-CTR-CODE */
@@ -242,10 +242,10 @@ export default class Attic extends RoomScene {
 
         // lists
         const sort = [horse, fg_left, fg_right, plantable, brownchair, frontpizzabox, boxdimension, circlestoolmirror, leftstairhandle, rightstairhandle, rug, lamp, leftbluechair, findfourtable, leftsoda, book, apple, rightsoda, boxdimension_anim, boxdimension_flaps, squarestool, circlestool, chairback]
-        const seats107 = [ellipse_8, ellipse_9]
-        const seats108 = [ellipse_11, ellipse_10]
-        const seats109 = [ellipse_12, ellipse_13]
-        const seats110 = [ellipse_14, ellipse_15]
+        const seats203 = [ellipse_8, ellipse_9]
+        const seats202 = [ellipse_11, ellipse_10]
+        const seats201 = [ellipse_12, ellipse_13]
+        const seats200 = [ellipse_14, ellipse_15]
 
         // horse (components)
         const horseSimpleButton = new SimpleButton(horse)
@@ -261,25 +261,25 @@ export default class Attic extends RoomScene {
 
         // findfourtable (components)
         const findfourtableButton = new Button(findfourtable)
-        findfourtableButton.callback = () => this.triggerWaddle(110)
+        findfourtableButton.callback = () => this.triggerWaddle(200)
         const findfourtableShowHint = new ShowHint(findfourtable)
         findfourtableShowHint.text = 'four'
 
         // findfourtable_1 (components)
         const findfourtable_1Button = new Button(findfourtable_1)
-        findfourtable_1Button.callback = () => this.triggerWaddle(109)
+        findfourtable_1Button.callback = () => this.triggerWaddle(201)
         const findfourtable_1ShowHint = new ShowHint(findfourtable_1)
         findfourtable_1ShowHint.text = 'four'
 
         // findfourtable_3 (components)
         const findfourtable_3Button = new Button(findfourtable_3)
-        findfourtable_3Button.callback = () => this.triggerWaddle(107)
+        findfourtable_3Button.callback = () => this.triggerWaddle(203)
         const findfourtable_3ShowHint = new ShowHint(findfourtable_3)
         findfourtable_3ShowHint.text = 'four'
 
         // findfourtable_2 (components)
         const findfourtable_2Button = new Button(findfourtable_2)
-        findfourtable_2Button.callback = () => this.triggerWaddle(108)
+        findfourtable_2Button.callback = () => this.triggerWaddle(202)
         const findfourtable_2ShowHint = new ShowHint(findfourtable_2)
         findfourtable_2ShowHint.text = 'four'
 
@@ -353,10 +353,10 @@ export default class Attic extends RoomScene {
         this.boxdimension_anim = boxdimension_anim
         this.boxdimension_flaps = boxdimension_flaps
         this.sort = sort
-        this.seats107 = seats107
-        this.seats108 = seats108
-        this.seats109 = seats109
-        this.seats110 = seats110
+        this.seats203 = seats203
+        this.seats202 = seats202
+        this.seats201 = seats201
+        this.seats200 = seats200
 
         this.events.emit('scene-awake')
     }
@@ -397,7 +397,7 @@ export default class Attic extends RoomScene {
         let game = this.crumbs.getString('game')
         let text = this.crumbs.getString(`join-multiplayer,${four + ' ' + game}`)
         this.interface.prompt.showWindow(text, 'dual', () => {
-            this.airtower.sendXt('a#jt', id)
+            this.airtower.sendXt('join_table', id)
             this.interface.prompt.window.visible = false
         })
     }

@@ -3,9 +3,9 @@ import Book from '@scenes/interface/books/Book'
 
 /* START OF COMPILED CODE */
 
-export default class Sled extends Book {
+export default class SledCatalog extends Book {
     constructor() {
-        super('Sled')
+        super('SledCatalog')
 
         /** @type {Phaser.GameObjects.Text} */
         this.text

@@ -25,23 +25,19 @@
             "y": 480,
             "list": [
                 {
-                    "type": "Rectangle",
-                    "id": "d4e96aaa-1fbf-41ac-a36e-ef5c83d42ab7",
+                    "type": "Image",
+                    "id": "0cec3224-ef6f-45d5-923a-3dbff900f144",
                     "label": "bg",
-                    "components": [
-                        "NineSlice"
-                    ],
-                    "NineSlice.corner": 50,
-                    "isFilled": true,
-                    "fillColor": "#0280CD",
-                    "width": 464,
-                    "height": 360
+                    "texture": {
+                        "key": "main",
+                        "frame": "waddle"
+                    },
+                    "y": -16
                 },
                 {
                     "type": "Image",
                     "id": "d38ec65c-43c9-47d1-8bba-246ed197fe3e",
-                    "label": "tab_2",
-                    "components": [],
+                    "label": "tab",
                     "texture": {
                         "key": "main",
                         "frame": "tab-2"
@@ -56,10 +52,8 @@
                         "y"
                     ],
                     "label": "waddle_item_3",
-                    "components": [],
                     "x": 0,
-                    "y": 100,
-                    "nestedPrefabs": []
+                    "y": 100
                 },
                 {
                     "prefabId": "64de3f26-671d-4f1f-acbf-49ffc1eeaa13",
@@ -69,10 +63,8 @@
                         "y"
                     ],
                     "label": "waddle_item_2",
-                    "components": [],
                     "x": 0,
-                    "y": 48,
-                    "nestedPrefabs": []
+                    "y": 48
                 },
                 {
                     "prefabId": "64de3f26-671d-4f1f-acbf-49ffc1eeaa13",
@@ -82,10 +74,8 @@
                         "y"
                     ],
                     "label": "waddle_item_1",
-                    "components": [],
                     "x": 0,
-                    "y": -4,
-                    "nestedPrefabs": []
+                    "y": -4
                 },
                 {
                     "prefabId": "64de3f26-671d-4f1f-acbf-49ffc1eeaa13",
@@ -95,21 +85,17 @@
                         "y"
                     ],
                     "label": "waddle_item",
-                    "components": [],
                     "x": 0,
-                    "y": -56,
-                    "nestedPrefabs": []
+                    "y": -56
                 },
                 {
                     "type": "Text",
                     "id": "635f3877-d38a-4af7-b58d-0687b7fec219",
                     "label": "text",
                     "scope": "CLASS",
-                    "components": [],
                     "y": -122,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Sled Racing",
                     "fixedWidth": 420,
                     "align": "center",
                     "fontFamily": "cpBurbankSmall",
@@ -135,7 +121,6 @@
                     "type": "Image",
                     "id": "fd73af25-c9a4-4206-b587-e346a9db89b5",
                     "label": "blue_x",
-                    "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "blue-x"
@@ -151,7 +136,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "lists": [
         {

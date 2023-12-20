@@ -1,0 +1,248 @@
+{
+    "id": "ff2c53d8-2268-4fd4-8d1f-c2121594b2ea",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/town/parties/townHoliday16-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "TownHoliday16",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "3ed830ae-b045-487b-a3f8-d842db3872ba",
+            "label": "bg",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "0498a30e-892d-4b0c-851e-ac3882cee47f",
+            "label": "cfcanim",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCfcAnimOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCfcAnimOut()",
+            "MoveTo.x": 784,
+            "MoveTo.y": 736,
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "cfcanim0001"
+            },
+            "x": 784.5740416266104,
+            "y": 683.8150515124041,
+            "originX": 0.4753527095903339,
+            "originY": 0.5806111380457324
+        },
+        {
+            "type": "Image",
+            "id": "d5f72b10-414d-474e-bb1e-8d837c566b81",
+            "label": "clothesdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.ShopDoorOver()",
+            "Button.hoverOutCallback": "() => this.ShopDoorOut()",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "clothesdoor"
+            },
+            "x": 1074.4159420765213,
+            "y": 530.6811584695744,
+            "originX": 0.4608476072200202,
+            "originY": 0.846853412547479
+        },
+        {
+            "type": "Image",
+            "id": "3c47dc60-361c-41dc-b8b0-e110fa617f3f",
+            "label": "coffeedoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.CoffeeDoorOver()",
+            "Button.hoverOutCallback": "() => this.CoffeeDoorOut()",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "coffeedoor"
+            },
+            "x": 422.07971038260644,
+            "y": 563.7695639339254,
+            "originX": 0.42939732449511714,
+            "originY": 0.8291017166694593
+        },
+        {
+            "type": "Image",
+            "id": "2f0123bc-6668-4d0d-a316-f753529cc60b",
+            "label": "danceclubdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.DiscoDoorOver()",
+            "Button.hoverOutCallback": "() => this.DiscoDoorOut()",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "danceclubdoor"
+            },
+            "x": 745.8613526411596,
+            "y": 489.2149744985636,
+            "originX": 0.5066771522570508,
+            "originY": 0.9384130209494826
+        },
+        {
+            "type": "Image",
+            "id": "2e29bc2a-94f6-4eba-a091-271d9b06adb0",
+            "label": "bauble",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "bauble"
+            },
+            "x": 1453.1664841911156,
+            "y": 586.6410076114089,
+            "originX": 0.9560305821774504,
+            "originY": 0.6110843725816866
+        },
+        {
+            "type": "Image",
+            "id": "cb57c702-456f-4879-ae52-940e47160f35",
+            "label": "fg",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 958.6734094076915,
+            "originY": 0.9986181347996786
+        },
+        {
+            "type": "Image",
+            "id": "70dc5218-ba7e-4184-862b-05e2c119d9d2",
+            "label": "light1",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "light1"
+            },
+            "x": 701.1792543832117,
+            "y": 578.0345760279804,
+            "originX": 0.4613021410415867,
+            "originY": 0.6021193500291463
+        },
+        {
+            "type": "Image",
+            "id": "030f7292-6e4f-4d1f-b2dc-3790f6f70079",
+            "label": "light2",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "light2"
+            },
+            "x": 878.7948391868468,
+            "y": 593.0280994204951,
+            "originX": 0.5781544994650308,
+            "originY": 0.6177376035630158
+        },
+        {
+            "type": "Image",
+            "id": "e8d76353-d1cd-40fa-8805-d7f685a8b333",
+            "label": "light3",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "light3"
+            },
+            "x": 1043.7235965045081,
+            "y": 663.3823245699868,
+            "originX": 0.6866602608582291,
+            "originY": 0.6910232547604029
+        },
+        {
+            "type": "Image",
+            "id": "e5b02149-6552-4584-a0d1-5459eac4bd68",
+            "label": "light4",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "light4"
+            },
+            "x": 1225.9525731212245,
+            "y": 569.9611403550879,
+            "originX": 0.8065477454744898,
+            "originY": 0.5937095212032165
+        },
+        {
+            "type": "Image",
+            "id": "c6aed9a0-bd21-4ad4-8b96-35235e9e4928",
+            "label": "lights",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "lights"
+            },
+            "x": 726.4278564453125,
+            "y": 217.34716767321413,
+            "originX": 0.4779130487264483,
+            "originY": 0.22640330456732738
+        },
+        {
+            "type": "Image",
+            "id": "86838add-9801-46ec-a6f9-376c6f3e21a1",
+            "label": "snow",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "snow"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "8dbc3eb3-a544-47f1-b044-c3f119efb3a0",
+            "label": "thingy",
+            "texture": {
+                "key": "townHoliday16",
+                "frame": "thingy"
+            },
+            "x": 783.697998046875,
+            "y": 730.8038322892035,
+            "originX": 0.5155907891342718,
+            "originY": 0.7612539873680408
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "2e29bc2a-94f6-4eba-a091-271d9b06adb0",
+                "8dbc3eb3-a544-47f1-b044-c3f119efb3a0",
+                "86838add-9801-46ec-a6f9-376c6f3e21a1",
+                "c6aed9a0-bd21-4ad4-8b96-35235e9e4928",
+                "e5b02149-6552-4584-a0d1-5459eac4bd68",
+                "e8d76353-d1cd-40fa-8805-d7f685a8b333",
+                "030f7292-6e4f-4d1f-b2dc-3790f6f70079",
+                "70dc5218-ba7e-4184-862b-05e2c119d9d2",
+                "cb57c702-456f-4879-ae52-940e47160f35",
+                "0498a30e-892d-4b0c-851e-ac3882cee47f"
+            ]
+        }
+    ]
+}

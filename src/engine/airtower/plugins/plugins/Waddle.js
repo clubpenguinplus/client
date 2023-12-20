@@ -18,7 +18,7 @@ export default class Waddle extends Plugin {
         if (args[2] == 'four') {
             this.interface.main.findFour.showWaddle(args[0], args[1])
         } else {
-            this.interface.main.waddle.showWaddle(args[0], args[1])
+            this.interface.main.waddle.showWaddle(args[0], args[1], args[2])
         }
     }
 
@@ -27,7 +27,7 @@ export default class Waddle extends Plugin {
             if (args[3] == 'four') {
                 this.interface.main.findFour.updateWaddle(args[0], args[1], args[2])
             } else {
-                this.interface.main.waddle.updateWaddle(args[0], args[1], args[2])
+                this.shell.room.updateWaddle(args[0], args[1], args[2])
             }
         }
     }

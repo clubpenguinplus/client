@@ -29,7 +29,7 @@ export default class IgnoreItem extends BaseContainer {
         // username
         const username = scene.add.text(25, 0, '', {})
         username.setOrigin(0.5, 0.5)
-        username.setStyle({fixedWidth: 270, fontFamily: 'Arial', fontSize: '24px'})
+        username.setStyle({fixedWidth: 270, fontFamily: 'cpBurbankSmall', fontSize: '24px'})
         this.add(username)
 
         // ignore_item (components)

@@ -14,17 +14,18 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "cbcb1ec8-e7e2-4e4b-b3fc-5c03bfa1e1de",
+            "id": "08c2bfb3-cd25-44af-95ab-6dbb19a94c6e",
             "label": "seat",
-            "components": [],
             "texture": {
                 "key": "mtn",
                 "frame": "seat"
             },
-            "x": 760,
-            "y": 480,
-            "originX": 0.49504950495049505,
-            "originY": 0.5064935064935064
+            "originX": 0.504950495049505,
+            "originY": 0.37662337662337664,
+            "tintTopLeft": "#9ea3bf",
+            "tintTopRight": "#9ea3bf",
+            "tintBottomLeft": "#9ea3bf",
+            "tintBottomRight": "#9ea3bf"
         }
     ],
     "plainObjects": [],
@@ -32,7 +33,7 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "prefabProperties": [
         {
@@ -46,23 +47,24 @@
             }
         },
         {
-            "name": "offsetX",
-            "label": "offsetX",
-            "tooltip": "Offset X for penguin exit",
-            "defValue": 0,
+            "name": "donePoint",
+            "label": "donePoint",
+            "tooltip": "donePoint",
+            "defValue": "",
             "customDefinition": false,
             "type": {
-                "id": "number"
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.GameObject"
             }
         },
         {
-            "name": "offsetY",
-            "label": "offsetY",
-            "tooltip": "Offset Y for penguin exit",
-            "defValue": 0,
+            "name": "direction",
+            "label": "Direction",
+            "tooltip": "",
+            "defValue": "sw",
             "customDefinition": false,
             "type": {
-                "id": "number"
+                "id": "string"
             }
         }
     ]

@@ -23,6 +23,9 @@ export default class RoomScene extends BaseScene {
         this.swim_check = [806]
         this.berg_check = [805]
         this.medal_check = [800, 200, 100, 400, 801, 300, 809, 810, 805, 806]
+
+        this.waddles
+        this.tables
     }
 
     get client() {
@@ -39,6 +42,7 @@ export default class RoomScene extends BaseScene {
     }
 
     create() {
+        super.create()
         this._create()
         this.sortChildren()
 
@@ -53,9 +57,18 @@ export default class RoomScene extends BaseScene {
         if (!this.music) this.music = 0
         this.addMusic()
 
-        if (this.waddles) this.getWaddles()
+        if (this.tables) this.sendGetTables()
+        if (this.waddles) this.sendGetWaddles()
 
         this.interface.showInterface()
+        if (this.isIgloo) {
+            if (this.interface.main.coinforchange) this.interface.main.coinforchange.visible = false
+            if (this.interface.main.safetyquiz) this.interface.main.safetyquiz.visible = false
+            if (this.interface.main.moderatoricon) this.interface.main.moderatoricon.visible = false
+        } else {
+            if (this.interface.main.coinforchange) this.interface.main.coinforchange.visible = true
+            if (this.interface.main.moderatoricon) this.interface.main.showTR()
+        }
 
         if (this.crumbs.pin.id && this.crumbs.pin.room == this.id) this.interface.addPin()
 
@@ -78,6 +91,7 @@ export default class RoomScene extends BaseScene {
         this.worldStampInterval = setInterval(() => this.checkForWorldStamps(), 2000)
 
         window.updateScaling()
+        if (this.isEmu) return
         this.interface.hideLoading()
     }
 
@@ -131,6 +145,7 @@ export default class RoomScene extends BaseScene {
         if (penguin.isTweening) penguin.removeTween()
 
         if (penguin.balloon) penguin.balloon.destroy()
+        if (this.isEmu) this.shell.RuffleManager.removePenguin(penguin.id)
         penguin.nameTag.destroy()
         penguin.destroy()
 
@@ -150,10 +165,6 @@ export default class RoomScene extends BaseScene {
         }
     }
 
-    getWaddles() {
-        this.airtower.sendXt('a#gt')
-    }
-
     setWaddles(waddles) {
         this.waddles = {}
         waddles = waddles.map((waddle) => {
@@ -165,7 +176,8 @@ export default class RoomScene extends BaseScene {
             }
             return {
                 id: waddle[0],
-                seats: seats
+                seats: seats,
+                seatCount: waddle[1].split(',').length
             }
         })
         waddles.forEach((waddle) => {
@@ -229,8 +241,19 @@ export default class RoomScene extends BaseScene {
 
     get roomPhysics() {
         let key = this.isPreview ? this.key.toLowerCase().split('-').slice(0, -2).join('-') : this.key.toLowerCase()
-
-        return this.cache.json.get(`${key}-physics`)
+        if (this.cache.json.get(`${key}-physics`)) {
+            return this.cache.json.get(`${key}-physics`)
+        } else {
+            let splitter
+            for (let i = 1; i < this.key.length; i++) {
+                if (this.key[i] == this.key[i].toUpperCase()) {
+                    splitter = this.key[i]
+                    break
+                }
+            }
+            let split = this.key.split(splitter)
+            return this.cache.json.get(`${split[0].toLowerCase()}-physics`)
+        }
     }
 
     addPhysics() {
@@ -304,6 +327,7 @@ export default class RoomScene extends BaseScene {
 
         let room = this.crumbs.scenes.rooms[id]
         if (!room) return console.error(`[RoomScene] Room ${id} not found`)
+        this.shell.RuffleManager.rufflePlayer.destroy()
         this.shell.client.sendJoinRoom(id, room.key, x, y)
     }
 
@@ -460,6 +484,56 @@ export default class RoomScene extends BaseScene {
                 if (user.wearingItem(4174) || user.wearingItem(14174) || user.wearingItem(24238)) trees++
             }
             if (trees >= 10) this.shell.client.stampEarned(364)
+        }
+    }
+
+    getPenguinByUsername(username) {
+        return Object.values(this.penguins).find((penguin) => penguin.username === username)
+    }
+
+    updateWaddle(waddle, seat, username) {
+        this.interface.main.waddle.updateWaddle(waddle, seat, username)
+    }
+
+    sendGetTables() {
+        this.airtower.sendXt('get_tables')
+    }
+
+    sendGetWaddles() {
+        this.airtower.sendXt('a#gt')
+    }
+
+    getTable(id) {
+        return this[`table${id}`]
+    }
+
+    getWaddle(id) {
+        return this[`waddle${id}`]
+    }
+
+    setTables(tables) {
+        this.tables = tables
+
+        for (let [table, seats] of Object.entries(tables)) {
+            this.updateTable(table, seats.length)
+        }
+    }
+
+    updateTable(table, seat) {
+        table = this.shell.room.getTable(table)
+        if (!table) {
+            return
+        }
+
+        let button = table.game.__Button
+        let name = button.spriteName
+
+        if (seat > 1) {
+            table.game.setFrame(`${name}-hover`)
+            button.lockFrame = true
+        } else {
+            table.game.setFrame(name)
+            button.lockFrame = false
         }
     }
 

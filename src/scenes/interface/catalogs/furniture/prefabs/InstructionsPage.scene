@@ -1,0 +1,224 @@
+{
+    "id": "750dba94-7728-407e-8f54-d329337ee1a9",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
+            "label": "page1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
+                    "label": "pages",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "pages"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
+                    "label": "background",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "instructions"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "c35927bb-1b20-4c1d-97dc-bf523ff07388",
+                    "label": "middle",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "middle"
+                    },
+                    "x": 755,
+                    "y": 474
+                },
+                {
+                    "type": "Image",
+                    "id": "9b099d10-076b-4510-bdb0-0db4aec444e1",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nextPage-btn"
+                    },
+                    "x": 1425,
+                    "y": 809
+                },
+                {
+                    "type": "Text",
+                    "id": "40fe935b-bdcf-4afe-8b3b-c6194f312945",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "x": 967,
+                    "y": 937,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your Coins: 99999999",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "fontStyle": "bold italic",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "edc46158-88b3-4fe1-9634-ad84c65255b9",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "prevPage-btn"
+                    },
+                    "x": 86,
+                    "y": 809
+                },
+                {
+                    "type": "Image",
+                    "id": "3b08e1a0-363e-4db8-93ff-52d2b00f8971",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 1489,
+                    "y": 25,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
+                },
+                {
+                    "type": "Text",
+                    "id": "c03afa5c-b933-4442-aa09-22b22a7bc2ff",
+                    "label": "text1",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "igloocat-text1",
+                    "x": 364,
+                    "y": 119,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Make the most\nof your furniture!",
+                    "lineSpacing": -10,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "45px",
+                    "fontStyle": "bold",
+                    "color": "#9cd1f3ff",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 3,
+                    "shadow.fill": true,
+                    "shadow.color": "#040227b0"
+                },
+                {
+                    "type": "Text",
+                    "id": "96103cd0-75d1-46f7-9b62-ce383e01d9b2",
+                    "label": "text2",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "igloocat-text2",
+                    "x": 192,
+                    "y": 403,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Go to edit mode\nand select an item.",
+                    "lineSpacing": -3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "25px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.color": "#ffffff00"
+                },
+                {
+                    "type": "Text",
+                    "id": "0938d08f-1c79-478f-b66d-c75f2e37db3e",
+                    "label": "text3",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "igloocat-text3",
+                    "x": 563,
+                    "y": 372,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Rotate!",
+                    "lineSpacing": -3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "35px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.color": "#ffffff00"
+                },
+                {
+                    "type": "Text",
+                    "id": "c75d1813-38a3-4c27-b50a-33e201886473",
+                    "label": "text4",
+                    "scope": "CLASS",
+                    "components": [
+                        "LocalisedString"
+                    ],
+                    "LocalisedString.id": "igloocat-text4",
+                    "x": 323,
+                    "y": 766,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Discover\ndifferent looks!",
+                    "lineSpacing": -3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "35px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.color": "#ffffff00"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

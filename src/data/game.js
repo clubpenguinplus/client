@@ -3,6 +3,7 @@ import igloos from './igloos'
 import interfaces from './interfaces'
 import rooms from './rooms'
 import pin from './pin'
+import widgets from './widgets'
 
 if (!localStorage.getItem('webgl')) {
     localStorage.setItem('webgl', 'true')
@@ -25,7 +26,7 @@ function baseURL() {
         case 'beta.cpplus.pw':
             return 'https://betamedia.cpplus.pw'
         default:
-            return `${window.location.origin}/`
+            return `${window.location.origin}`
     }
 }
 
@@ -73,6 +74,7 @@ const clubpenguinplus = {
             interfaces: interfaces,
             rooms: rooms
         },
+        widgets: widgets,
         iglooIdOffset: 2000
     }
 }

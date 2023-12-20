@@ -1,0 +1,348 @@
+{
+    "id": "546b9a19-38dc-4f8a-bac2-7a1cb4ad8c8f",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
+            "label": "page1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
+                    "label": "background",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "pages"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
+                    "label": "bgImage",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "c35927bb-1b20-4c1d-97dc-bf523ff07388",
+                    "label": "middle",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "middle"
+                    },
+                    "x": 755,
+                    "y": 474
+                },
+                {
+                    "type": "Image",
+                    "id": "9b099d10-076b-4510-bdb0-0db4aec444e1",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nextPage-btn"
+                    },
+                    "x": 1425,
+                    "y": 809
+                },
+                {
+                    "type": "Text",
+                    "id": "40fe935b-bdcf-4afe-8b3b-c6194f312945",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "x": 967,
+                    "y": 937,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your Coins: 99999999",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "fontStyle": "bold italic",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "edc46158-88b3-4fe1-9634-ad84c65255b9",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "prevPage-btn"
+                    },
+                    "x": 86,
+                    "y": 809
+                },
+                {
+                    "type": "Image",
+                    "id": "3b08e1a0-363e-4db8-93ff-52d2b00f8971",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 1489,
+                    "y": 25,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
+                },
+                {
+                    "type": "Image",
+                    "id": "11796824-8179-4625-8d91-426b7e5cd5e6",
+                    "label": "leftImage",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 395,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "832c719c-287a-41a1-a26c-48c4144dfb09",
+                    "label": "rightImage",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 1125,
+                    "y": 480
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "aa4083dc-2ded-42f4-9dac-f3e8cb2c1ea7",
+                    "label": "ninepatchcontainer",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nineslice"
+                    },
+                    "x": 386,
+                    "y": 714,
+                    "width": 450,
+                    "height": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "ce74674b-a747-4abb-9ca5-9a6d899e4d3f",
+                    "label": "leftHeader",
+                    "scope": "CLASS",
+                    "x": 314,
+                    "y": 665,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Stage Igloo",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "55272619-ee30-487e-8cb3-e9a9edf0f7cf",
+                    "label": "leftDesc",
+                    "scope": "CLASS",
+                    "x": 314,
+                    "y": 735,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Act out classic plays or make up your own on this lavish stage!",
+                    "fixedWidth": 250,
+                    "lineSpacing": 3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 250
+                },
+                {
+                    "type": "Image",
+                    "id": "ad029a95-43b9-41c3-bef0-bc6ba9061d1e",
+                    "label": "leftIcon",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 510,
+                    "y": 679,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Sprite",
+                    "id": "055bd52f-e6c2-46c8-8a6c-73ef09af94a9",
+                    "label": "leftBuyBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.buyLeft()",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 509,
+                    "y": 758
+                },
+                {
+                    "type": "Text",
+                    "id": "a5a2a9ef-3201-43ab-a8d7-ff1be8e2447b",
+                    "label": "leftCost",
+                    "scope": "CLASS",
+                    "x": 507,
+                    "y": 758,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1500",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                },
+                {
+                    "type": "NinePatchContainer",
+                    "id": "18c80a97-55ed-4baf-bdce-633d952c1951",
+                    "label": "ninepatchcontainer_2",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nineslice"
+                    },
+                    "x": 1099,
+                    "y": 714,
+                    "width": 450,
+                    "height": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "aa26aa3e-71a3-4547-9078-6a8b785477fb",
+                    "label": "rightHeader",
+                    "scope": "CLASS",
+                    "x": 1027,
+                    "y": 665,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Stage Igloo",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "01e44007-44a7-40bf-bd98-4b7bb34c7f39",
+                    "label": "rightDesc",
+                    "scope": "CLASS",
+                    "x": 1027,
+                    "y": 735,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Act out classic plays or make up your own on this lavish stage!",
+                    "fixedWidth": 250,
+                    "lineSpacing": 3,
+                    "align": "center",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 250
+                },
+                {
+                    "type": "Image",
+                    "id": "44930d43-4a00-401b-b8fc-3404927471c2",
+                    "label": "rightIcon",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 1223,
+                    "y": 679,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Sprite",
+                    "id": "3f3697a0-edd6-4163-a81c-352b583c0eb2",
+                    "label": "rightBuyBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.buyRight()",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 1222,
+                    "y": 758
+                },
+                {
+                    "type": "Text",
+                    "id": "57329e6b-cf88-4a9a-b152-6da0a7060c24",
+                    "label": "rightCost",
+                    "scope": "CLASS",
+                    "x": 1220,
+                    "y": 758,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1500",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

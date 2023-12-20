@@ -2,22 +2,30 @@
 
 export default class MtnSeat extends Phaser.GameObjects.Image {
     constructor(scene, x, y, texture, frame) {
-        super(scene, x ?? 760, y ?? 480, texture || 'mtn', frame ?? 'seat')
+        super(scene, x ?? 0, y ?? 0, texture || 'mtn', frame ?? 'seat')
 
         /** @type {number} */
         this.sitFrame = 17
-        /** @type {number} */
-        this.offsetX = 0
-        /** @type {number} */
-        this.offsetY = 0
+        /** @type {Phaser.GameObjects.GameObject} */
+        this.donePoint
+        /** @type {string} */
+        this.direction = 'sw'
 
-        this.setOrigin(0.49504950495049505, 0.5064935064935064)
+        this.setOrigin(0.504950495049505, 0.37662337662337664)
+        this.tintTopLeft = 10396607
+        this.tintTopRight = 10396607
+        this.tintBottomLeft = 10396607
+        this.tintBottomRight = 10396607
 
         /* START-USER-CTR-CODE */
+        setTimeout(() => this.setDirFrame, 10)
         /* END-USER-CTR-CODE */
     }
 
     /* START-USER-CODE */
+    setDirFrame() {
+        this.setFrame(`seat_${this.direction}`)
+    }
     /* END-USER-CODE */
 }
 

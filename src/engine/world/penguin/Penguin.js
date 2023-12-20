@@ -116,6 +116,32 @@ export default class Penguin extends BaseContainer {
     }
 
     update(item, slot) {
+        if (this.room.isEmu) {
+            switch (slot) {
+                case 'color':
+                    this.shell.RuffleManager.setColor(this.id, item)
+                    break
+                case 'head':
+                    this.shell.RuffleManager.setHead(this.id, item)
+                    break
+                case 'face':
+                    this.shell.RuffleManager.setFace(this.id, item)
+                    break
+                case 'neck':
+                    this.shell.RuffleManager.setNeck(this.id, item)
+                    break
+                case 'body':
+                    this.shell.RuffleManager.setBody(this.id, item)
+                    break
+                case 'hand':
+                    this.shell.RuffleManager.setHand(this.id, item)
+                    break
+                case 'feet':
+                    this.shell.RuffleManager.setFeet(this.id, item)
+                    break
+            }
+        }
+
         if (item == 0) {
             this.itemLoader.removeItem(slot)
             if (this.playerCard.visible && this.playerCard.id == this.id) this.paperDollLoader.removeItem(slot)
@@ -132,9 +158,11 @@ export default class Penguin extends BaseContainer {
         }
 
         // Load item sprite
-        if (slot in this.items.equipped) {
-            this.itemLoader.loadItem(item, slot)
-            this.itemLoader.load.start()
+        if (!this.room.isEmu) {
+            if (slot in this.items.equipped) {
+                this.itemLoader.loadItem(item, slot)
+                this.itemLoader.load.start()
+            }
         }
 
         // Load item paper, only if card is active
@@ -204,6 +232,10 @@ export default class Penguin extends BaseContainer {
     /*========== Animations ==========*/
 
     playFrame(_frame, set = true) {
+        if (!this.room) return
+        if (this.room.isEmu) {
+            this.shell.RuffleManager.playFrame(this.id, _frame)
+        }
         _frame = parseInt(_frame)
         // Moving penguin can only update when frames are movement frames (9-16)
         if (this.isTweening && (_frame < 9 || _frame > 16)) {
@@ -345,6 +377,8 @@ export default class Penguin extends BaseContainer {
     }
 
     playAnim(sprite, key, frame) {
+        if (this.room.isEmu) return
+
         if (!this.checkAnim(`${key}_${frame}`)) {
             return sprite.anims.play(`${key}_1`)
         }
@@ -568,6 +602,10 @@ export default class Penguin extends BaseContainer {
 
         this.prevX = this.x
         this.prevY = this.y
+
+        if (this.room.isEmu) {
+            this.shell.RuffleManager.setPos(this.id, this.x, this.y)
+        }
     }
 
     onMoveComplete() {

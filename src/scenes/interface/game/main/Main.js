@@ -151,6 +151,10 @@ export default class Main extends BaseScene {
         this.safetyquiz
         /** @type {Phaser.GameObjects.Image} */
         this.moderatoricon
+        /** @type {Phaser.GameObjects.Image} */
+        this.coinforchange
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.blocker
         /** @type {Friend} */
         this.friend
         /** @type {PlayerCard} */
@@ -171,24 +175,8 @@ export default class Main extends BaseScene {
         this.puffleTricks
         /** @type {Safe} */
         this.safe
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.blocker
         /** @type {Waddle} */
         this.waddle
-        /** @type {FindFour} */
-        this.findFour
-        /** @type {Mancala} */
-        this.mancala
-        /** @type {Phaser.GameObjects.Image} */
-        this.stampEarnedBg
-        /** @type {Phaser.GameObjects.Image} */
-        this.stampEarnedImage
-        /** @type {Phaser.GameObjects.Text} */
-        this.stampEarnedHeader
-        /** @type {Phaser.GameObjects.Text} */
-        this.stampEarnedBody
-        /** @type {Phaser.GameObjects.Container} */
-        this.stampEarned
         /** @type {PuffleCare} */
         this.puffleCare
         /** @type {Map} */
@@ -437,6 +425,13 @@ export default class Main extends BaseScene {
         moderatoricon.setOrigin(0.5, 0.5047169811320755)
         moderatoricon.visible = false
 
+        // coinforchange
+        const coinforchange = this.add.image(1321, 74, 'coinforchange')
+
+        // blocker
+        const blocker = this.add.rectangle(760, 480, 1520, 960)
+        blocker.visible = false
+
         // widgetLayer
         const widgetLayer = this.add.layer()
 
@@ -485,52 +480,10 @@ export default class Main extends BaseScene {
         this.add.existing(safe)
         safe.visible = false
 
-        // blocker
-        const blocker = this.add.rectangle(760, 480, 1520, 960)
-        blocker.visible = false
-
         // waddle
         const waddle = new Waddle(this, 733, 422)
         this.add.existing(waddle)
         waddle.visible = false
-
-        // findFour
-        const findFour = new FindFour(this, 736, 472)
-        this.add.existing(findFour)
-        findFour.visible = false
-
-        // mancala
-        const mancala = new Mancala(this, 529, 365)
-        this.add.existing(mancala)
-        mancala.visible = false
-
-        // stampEarned
-        const stampEarned = this.add.container(933, -150)
-
-        // stampEarnedBg
-        const stampEarnedBg = this.add.image(196, 0, 'main', 'stamps/bg')
-        stampEarnedBg.alpha = 0.7
-        stampEarnedBg.alphaTopLeft = 0.7
-        stampEarnedBg.alphaTopRight = 0.7
-        stampEarnedBg.alphaBottomLeft = 0.7
-        stampEarnedBg.alphaBottomRight = 0.7
-        stampEarned.add(stampEarnedBg)
-
-        // stampEarnedImage
-        const stampEarnedImage = this.add.image(0, 70, 'main', 'stamps/activities0001')
-        stampEarned.add(stampEarnedImage)
-
-        // stampEarnedHeader
-        const stampEarnedHeader = this.add.text(88, 25, '', {})
-        stampEarnedHeader.text = 'STAMP EARNED!'
-        stampEarnedHeader.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '40px', fontStyle: 'bold italic'})
-        stampEarned.add(stampEarnedHeader)
-
-        // stampEarnedBody
-        const stampEarnedBody = this.add.text(90, 80, '', {})
-        stampEarnedBody.text = 'Stamp Name'
-        stampEarnedBody.setStyle({fixedWidth: 380, fontFamily: 'cpBurbankSmall', fontSize: '35px'})
-        stampEarned.add(stampEarnedBody)
 
         // puffleCare
         const puffleCare = new PuffleCare(this, 500, 583)
@@ -718,6 +671,10 @@ export default class Main extends BaseScene {
         const moderatoriconButton = new Button(moderatoricon)
         moderatoriconButton.callback = () => this.onModClick()
 
+        // coinforchange (components)
+        const coinforchangeSimpleButton = new SimpleButton(coinforchange)
+        coinforchangeSimpleButton.callback = () => this.interface.loadExternal('Cfc')
+
         // blocker (components)
         new Interactive(blocker)
 
@@ -781,6 +738,8 @@ export default class Main extends BaseScene {
         this.news_button = news_button
         this.safetyquiz = safetyquiz
         this.moderatoricon = moderatoricon
+        this.coinforchange = coinforchange
+        this.blocker = blocker
         this.friend = friend
         this.playerCard = playerCard
         this.friendSmall = friendSmall
@@ -791,15 +750,7 @@ export default class Main extends BaseScene {
         this.emotesMenu = emotesMenu
         this.puffleTricks = puffleTricks
         this.safe = safe
-        this.blocker = blocker
         this.waddle = waddle
-        this.findFour = findFour
-        this.mancala = mancala
-        this.stampEarnedBg = stampEarnedBg
-        this.stampEarnedImage = stampEarnedImage
-        this.stampEarnedHeader = stampEarnedHeader
-        this.stampEarnedBody = stampEarnedBody
-        this.stampEarned = stampEarned
         this.puffleCare = puffleCare
         this.map = map
         this.hideOnSleep = hideOnSleep
@@ -1037,25 +988,6 @@ export default class Main extends BaseScene {
         this.showTR()
     }
 
-    stampTween() {
-        let tween = this.tweens.add({
-            targets: this.stampEarned,
-            y: 0,
-            delay: 1000,
-            duration: 300,
-            onComplete: () => this.onStampTweenComplete()
-        })
-    }
-
-    onStampTweenComplete() {
-        let tween = this.tweens.add({
-            targets: this.stampEarned,
-            y: -150,
-            delay: 1500,
-            duration: 300
-        })
-    }
-
     onPIntOver() {
         this.party_interface.scaleX = 0.5
         this.party_interface.scaleY = 0.5
@@ -1129,6 +1061,15 @@ export default class Main extends BaseScene {
         this.puffle_icon.setFrame(`puffle-icon-${color}`)
         this.puffle_button.visible = true
         this.puffle_button_disabled.visible = false
+    }
+
+    addToWidgetLayer(widget) {
+        this.widgetLayer.add(widget)
+        this.setupWidget(widget)
+    }
+
+    setupWidget(widget) {
+        widget.widgetLayer = this.widgetLayer
     }
 
     /* END-USER-CODE */

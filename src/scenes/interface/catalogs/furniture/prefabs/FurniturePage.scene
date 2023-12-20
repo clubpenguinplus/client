@@ -1,0 +1,138 @@
+{
+    "id": "9d57f915-f9f2-4801-b72d-c637ac58cf87",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "Page",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
+            "label": "page1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
+                    "label": "pages",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "pages"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "ee6299e7-574f-4088-a9e9-03ebcefe0288",
+                    "label": "background",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "2"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Container",
+                    "id": "b3b50e56-69a1-4e61-a823-bb00cc107a62",
+                    "label": "furnitureItemContainer",
+                    "scope": "CLASS"
+                },
+                {
+                    "type": "Image",
+                    "id": "c35927bb-1b20-4c1d-97dc-bf523ff07388",
+                    "label": "middle",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "middle"
+                    },
+                    "x": 755,
+                    "y": 474
+                },
+                {
+                    "type": "Image",
+                    "id": "9b099d10-076b-4510-bdb0-0db4aec444e1",
+                    "label": "nextPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.nextPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "nextPage-btn"
+                    },
+                    "x": 1425,
+                    "y": 809
+                },
+                {
+                    "type": "Text",
+                    "id": "40fe935b-bdcf-4afe-8b3b-c6194f312945",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "x": 967,
+                    "y": 937,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your Coins: 99999999",
+                    "fontFamily": "cpBurbankSmall",
+                    "fontSize": "28px",
+                    "fontStyle": "bold italic",
+                    "color": "#4b2500ff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#f1f2b5ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "edc46158-88b3-4fe1-9634-ad84c65255b9",
+                    "label": "prevPage",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "furniturecatalog",
+                        "frame": "prevPage-btn"
+                    },
+                    "x": 86,
+                    "y": 809
+                },
+                {
+                    "type": "Image",
+                    "id": "3b08e1a0-363e-4db8-93ff-52d2b00f8971",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 1489,
+                    "y": 25,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

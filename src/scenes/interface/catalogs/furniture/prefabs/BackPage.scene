@@ -1,5 +1,5 @@
 {
-    "id": "4322e26a-d627-49f0-99a3-7a02621c2592",
+    "id": "b9bc237a-38cd-405a-ad8a-4cb4257af036",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
@@ -17,50 +17,50 @@
             "id": "e173db3e-1e8e-4f62-9240-ccc7fd761aa8",
             "label": "page1",
             "scope": "CLASS",
-            "components": [],
             "list": [
                 {
                     "type": "Image",
                     "id": "b5b9b032-e76e-4ba0-952a-a241a21d2f61",
-                    "label": "page1Bg",
+                    "label": "background",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
-                        "key": "constant",
+                        "key": "furniturecatalog",
                         "frame": "back"
                     },
                     "x": 760,
-                    "y": 454
+                    "y": 480
                 },
                 {
                     "type": "Image",
-                    "id": "f2dfbbf7-0172-4b12-964d-e1428bb09d38",
-                    "label": "closebtn",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.close()",
-                    "texture": {
-                        "key": "constant",
-                        "frame": "closebtn"
-                    },
-                    "x": 1134,
-                    "y": 52
-                },
-                {
-                    "type": "Image",
-                    "id": "600957d9-284a-4ed6-bede-504493a6ad39",
+                    "id": "edc46158-88b3-4fe1-9634-ad84c65255b9",
                     "label": "prevPage",
                     "components": [
                         "Button"
                     ],
                     "Button.callback": "() => this.prevPage()",
                     "texture": {
-                        "key": "constant",
-                        "frame": "prevPage"
+                        "key": "furniturecatalog",
+                        "frame": "prevPage-btn"
                     },
-                    "x": 519,
-                    "y": 731
+                    "x": 502,
+                    "y": 808
+                },
+                {
+                    "type": "Image",
+                    "id": "3b08e1a0-363e-4db8-93ff-52d2b00f8971",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "white-x"
+                    },
+                    "x": 1162,
+                    "y": 40,
+                    "scaleX": 0.666667,
+                    "scaleY": 0.666667
                 }
             ]
         }
@@ -70,6 +70,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

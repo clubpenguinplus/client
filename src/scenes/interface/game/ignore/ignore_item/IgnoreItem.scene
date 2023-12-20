@@ -61,7 +61,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "fixedWidth": 270,
-                    "fontFamily": "Arial",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px"
                 }
             ]

@@ -1,0 +1,408 @@
+{
+    "id": "eeeeaee7-27fe-4f29-9605-e71d4e5c708b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/client/media/rooms/plaza/holiday16/plazaholiday16-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "PlazaHoliday16",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b1ffb972-c119-4553-9484-bd7f933334ab",
+            "label": "bg",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "6a3b5384-910f-4c3c-9847-a4545031093e",
+            "label": "bell1",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell10001"
+            },
+            "x": 174,
+            "y": 187
+        },
+        {
+            "type": "Sprite",
+            "id": "4376196f-b4eb-4316-adcf-e00863eb147b",
+            "label": "bell2",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell20001"
+            },
+            "x": 394,
+            "y": 113
+        },
+        {
+            "type": "Sprite",
+            "id": "8406d27b-4fb1-4fae-a02b-8305c708da8e",
+            "label": "bell3",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell30001"
+            },
+            "x": 399,
+            "y": 241
+        },
+        {
+            "type": "Sprite",
+            "id": "8464b4e9-c4d1-47ad-b0e1-2fdbd66dc36f",
+            "label": "bell4",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell40001"
+            },
+            "x": 557,
+            "y": 227
+        },
+        {
+            "type": "Sprite",
+            "id": "865ce176-b322-44c3-b992-a03de43c8320",
+            "label": "bell5",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell50001"
+            },
+            "x": 770,
+            "y": 122
+        },
+        {
+            "type": "Sprite",
+            "id": "e2348f8b-9a9d-47aa-b914-f79015abb608",
+            "label": "bell6",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell60001"
+            },
+            "x": 982,
+            "y": 100
+        },
+        {
+            "type": "Sprite",
+            "id": "d1969655-dcd5-4ddb-9737-fd7ae4134b03",
+            "label": "bell7",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell70001"
+            },
+            "x": 1081,
+            "y": 266
+        },
+        {
+            "type": "Sprite",
+            "id": "b345cf41-2976-48af-8ac6-78bb6cd22fe6",
+            "label": "bell8",
+            "scope": "CLASS",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bell80001"
+            },
+            "x": 1318,
+            "y": 316
+        },
+        {
+            "type": "Image",
+            "id": "689b4c8d-222d-485c-8bca-bbc978e5cb0d",
+            "label": "buildings",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "buildings"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "c4c7b9d9-3b09-46af-8441-fee8ea2d63fe",
+            "label": "bauble",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "bauble"
+            },
+            "x": 670.9840791930233,
+            "y": 558.0841410587515,
+            "originX": 0.44143689420593635,
+            "originY": 0.5813376469361995
+        },
+        {
+            "type": "Sprite",
+            "id": "cbf3cd84-5ee1-4401-8476-e4b341a4f535",
+            "label": "cfcanim",
+            "scope": "CLASS",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 1115,
+            "MoveTo.y": 740,
+            "SimpleButton.hoverCallback": "() => this.onCfcOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCfcOut()",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "cfcanim0001"
+            },
+            "x": 1114.3149515364748,
+            "y": 697.7401938541003,
+            "originX": 0.4662946153703226,
+            "originY": 0.5847972572583725
+        },
+        {
+            "type": "Image",
+            "id": "9a65abf9-993f-4d86-acfc-69d60c4d883e",
+            "label": "cfcsign",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "cfcsign"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "fd32500b-64a1-4bae-af04-9c958e7319c7",
+            "label": "foreground",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "foreground"
+            },
+            "x": 760,
+            "y": 962.2696149648463,
+            "originY": 1.0023641600110254
+        },
+        {
+            "type": "Image",
+            "id": "1898b7cf-15dd-4685-b624-c6daf1350d83",
+            "label": "hoteldoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onHotelOver()",
+            "Button.hoverOutCallback": "() => this.onHotelOut()",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "hoteldoor"
+            },
+            "x": 582.7652315826928,
+            "y": 481.7979289745221,
+            "originX": 0.573913225419138,
+            "originY": 0.8096142887001637
+        },
+        {
+            "type": "Image",
+            "id": "e094fdef-0c7e-44b2-9913-794a571e4bda",
+            "label": "light4",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "light4"
+            },
+            "x": 1301.9039389477352,
+            "y": 606.4963085151774,
+            "originX": 0.8565157493077206,
+            "originY": 0.6317669880366431
+        },
+        {
+            "type": "Image",
+            "id": "14a4dc78-6ff3-43ee-b058-5b9a776d1a1d",
+            "label": "light5",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "light5"
+            },
+            "x": 625.6952773789475,
+            "y": 748.609445242105,
+            "originX": 0.4116416298545707,
+            "originY": 0.7798015054605261
+        },
+        {
+            "type": "Image",
+            "id": "52acf011-e609-450e-8aac-98d768a8251e",
+            "label": "light1",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "light1"
+            },
+            "x": 872.4411631246022,
+            "y": 704.8823262492042,
+            "originX": 0.5739744494240804,
+            "originY": 0.7342524231762544
+        },
+        {
+            "type": "Image",
+            "id": "1d47cd38-57e0-4a0c-884a-01ccb60f4369",
+            "label": "malldoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onMallOver()",
+            "Button.hoverOutCallback": "() => this.onMallOut()",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "malldoor"
+            },
+            "x": 867.1173842086537,
+            "y": 485.53493161827345,
+            "originX": 0.484248001140184,
+            "originY": 0.8363051756570747
+        },
+        {
+            "type": "Image",
+            "id": "82db6f79-3bc4-4c4c-9500-7f9492181aca",
+            "label": "light2",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "light2"
+            },
+            "x": 368.0176118850676,
+            "y": 651.7851103292533,
+            "originX": 0.24211684992438656,
+            "originY": 0.6789428232596388
+        },
+        {
+            "type": "Image",
+            "id": "9f985aea-d3f6-449b-a37c-a8613cac6475",
+            "label": "light3",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "light3"
+            },
+            "x": 1056.7197360232556,
+            "y": 570.5776036281517,
+            "originX": 0.6952103526468787,
+            "originY": 0.5943516704459914
+        },
+        {
+            "type": "Sprite",
+            "id": "77463722-ef06-46db-92f7-e82206156cb1",
+            "label": "cover",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onHoleOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onHoleOut()",
+            "MoveTo.x": 500,
+            "MoveTo.y": 700,
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "manhole0001"
+            },
+            "x": 503.12336564235005,
+            "y": 672.9317797482252,
+            "originX": 0.5297463394509528,
+            "originY": 0.5709855827806828
+        },
+        {
+            "type": "Image",
+            "id": "4cb5df7d-a71f-4c1e-80b1-3ef9acb4a2ac",
+            "label": "petdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onPetOver()",
+            "Button.hoverOutCallback": "() => this.onPetOut()",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "petdoor"
+            },
+            "x": 416.8826157913464,
+            "y": 518.4740052875026,
+            "originX": 0.5488578947685827,
+            "originY": 0.8258609155435006
+        },
+        {
+            "type": "Image",
+            "id": "aa2beddc-4fc0-4d01-9213-c94287c8b89e",
+            "label": "thirdleg",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "thirdleg"
+            },
+            "x": 1106.734656297429,
+            "y": 753.5468541950122,
+            "originX": 0.7281149402460213,
+            "originY": 0.7849446365105598
+        },
+        {
+            "type": "Image",
+            "id": "adbab157-4b8c-4f0c-9c37-b5d7216c3468",
+            "label": "signs",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "signs"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "1ce47c37-30bb-486a-a510-7bccd9c7148c",
+            "label": "pizzadoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.hoverCallback": "() => this.onMallOver()",
+            "Button.hoverOutCallback": "() => this.onMallOut()",
+            "texture": {
+                "key": "plazaholiday16",
+                "frame": "pizzadoor"
+            },
+            "x": 1183.1173842086537,
+            "y": 512.7979289745222,
+            "originX": 0.46526968926088763,
+            "originY": 0.8698931767656829
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "lists": [
+        {
+            "id": "458b4e63-d0df-4d50-95f0-9066e98b6595",
+            "label": "sort",
+            "objectIds": [
+                "fd32500b-64a1-4bae-af04-9c958e7319c7",
+                "82db6f79-3bc4-4c4c-9500-7f9492181aca",
+                "77463722-ef06-46db-92f7-e82206156cb1",
+                "14a4dc78-6ff3-43ee-b058-5b9a776d1a1d",
+                "c4c7b9d9-3b09-46af-8441-fee8ea2d63fe",
+                "52acf011-e609-450e-8aac-98d768a8251e",
+                "9f985aea-d3f6-449b-a37c-a8613cac6475",
+                "cbf3cd84-5ee1-4401-8476-e4b341a4f535",
+                "e094fdef-0c7e-44b2-9913-794a571e4bda",
+                "aa2beddc-4fc0-4d01-9213-c94287c8b89e"
+            ]
+        }
+    ]
+}

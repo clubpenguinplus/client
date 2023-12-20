@@ -47,7 +47,7 @@
                     "text": "Ignore List",
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "32px",
                     "color": "#000000"
                 },
@@ -268,7 +268,7 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "fixedWidth": 100,
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "cpBurbankSmall",
                     "fontSize": "24px",
                     "color": "#003366"
                 }

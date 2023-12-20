@@ -292,6 +292,7 @@ export default class IglooLikesWidget extends BaseScene {
         }
 
         this.likes = likes
+        this.events.emit('create')
     }
 
     onLikeOver() {

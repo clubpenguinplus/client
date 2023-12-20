@@ -11,6 +11,7 @@ import Activate from '@scenes/interface/menus/activate/Activate'
 import Register from '@scenes/interface/menus/register/Register'
 import Reset from '@scenes/interface/menus/reset/Reset'
 import Request from '@scenes/interface/menus/reset/Request'
+import FontLoader from '@engine/loaders/FontLoader'
 
 export default class Preload extends BaseScene {
     preload() {
@@ -61,6 +62,8 @@ export default class Preload extends BaseScene {
             scene.cameras.main.setZoom(scene.cameras.trueScale ? window.currentScale * scene.cameras.trueScale : window.currentScale)
             scene.cameras.main.setOrigin(0, 0)
         }
+
+        if (this.shell) this.shell.events.emit('updateScaling')
     }
 
     lowerQuality() {
@@ -86,14 +89,10 @@ export default class Preload extends BaseScene {
     }
 
     async create() {
-        this.fontsLoaded = 0
-        this.abandonFontsTimeout = setTimeout(() => {
-            console.warn(`Abandoning font loading after 10 seconds. Loaded ${this.fontsLoaded} fonts.`)
+        let fontLoader = new FontLoader(this.crumbs)
+        fontLoader.events.once('fontsLoaded', () => {
             this._create()
-        }, 10000)
-        for (let font of this.crumbs.fonts) {
-            this.loadFont(font.name, font.url, font.style ? font.style : 'normal', font.weight ? font.weight : 'normal')
-        }
+        })
     }
 
     _create() {
@@ -208,19 +207,5 @@ export default class Preload extends BaseScene {
         let prog = frame.toString().length == 1 ? `0${frame}` : frame
         this.interface.loading.bar.anims.stop()
         this.interface.loading.bar.setFrame(`beam_00${prog}`)
-    }
-
-    async loadFont(name, url, style = 'normal', weight = 'normal') {
-        var newFont = new FontFace(name, `url('${url}')`, {
-            style: style,
-            weight: weight
-        })
-        await newFont.load()
-        document.fonts.add(newFont)
-        this.fontsLoaded++
-        if (this.fontsLoaded == this.crumbs.fonts.length) {
-            clearTimeout(this.abandonFontsTimeout)
-            this._create()
-        }
     }
 }
