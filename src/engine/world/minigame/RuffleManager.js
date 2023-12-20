@@ -113,6 +113,7 @@ export default class RuffleManager {
     }
 
     handleLoadMinigame(minigame) {
+        this.isRoom = false
         this.loaderIsInit = false
         this.swfInstance = this.rufflePlayer.load({
             url: `${this.prefix}client/media/swf/loader.swf`,
@@ -126,6 +127,7 @@ export default class RuffleManager {
     }
 
     handleLoadOtherSwf(path, params) {
+        this.isRoom = false
         this.loaderIsInit = false
         this.swfInstance = this.rufflePlayer.load({
             url: `${this.prefix}client/media/swf/loader.swf`,
